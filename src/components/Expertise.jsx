@@ -16,15 +16,24 @@ export default function SpecialtiesSection() {
 
         {/* Primary Specialty Badge */}
         <div className="bg-[#c3eefa]/10 rounded-2xl p-8 mb-12">
-          <div className="text-center mb-8">
-  <span
-              className="inline-block mx-auto rounded-md font-medium whitespace-nowrap text-gray-900 bg-[#c3eefa] px-4 py-2 text-base sm:text-lg"
-              style={{ width: 'max-content' }}
-            >
-              Primary Specialty: Obstetrics &amp; Gynaecology
-            </span>
+        <div className="text-center mb-8">
+       <span
+  data-slot="badge"
+  className="
+    inline-flex items-center justify-center
+    mx-auto rounded-md font-medium
+    bg-[#c3eefa] text-gray-900
+    px-4 py-2
+    text-sm sm:text-base
+    max-w-full text-center
+    whitespace-normal break-words leading-snug
+  "
+>
+  Primary Specialty: Obstetrics &amp; Gynaecology
+</span>
 
-</div>
+      </div>
+
 
 
           {/* Specialties Grid */}
