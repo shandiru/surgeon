@@ -12,9 +12,15 @@ export default function SpecialtiesSection() {
         </div>
         <div className="bg-[#c3eefa]/10 rounded-2xl p-8 mb-12">
           <div className="text-center mb-8">
-            <span data-slot="badge" className="inline-flex items-center justify-center rounded-md border font-medium w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden border-transparent [a&]:hover:bg-primary/90 bg-[#c3eefa] text-gray-900 text-lg px-6 py-2">
+            {/* <span data-slot="badge" className="inline-flex items-center justify-center rounded-md border font-medium w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden border-transparent [a&]:hover:bg-primary/90 bg-[#c3eefa] text-gray-900 text-lg px-6 py-2">
               Primary Specialty: Obstetrics &amp; Gynaecology
-            </span>
+            </span> */}
+                    <span
+            data-slot="badge"
+            className="inline-block mx-auto rounded-md font-medium whitespace-nowrap bg-[#c3eefa] text-gray-900 text-lg px-6 py-2"
+          >
+            Primary Specialty: Obstetrics &amp; Gynaecology
+          </span>
           </div>
           <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-6">
             <div className="text-center">
