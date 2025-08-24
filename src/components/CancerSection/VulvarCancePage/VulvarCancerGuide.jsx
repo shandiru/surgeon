@@ -205,9 +205,12 @@ const StepCard = ({
 
             {/* Alert Box */}
             {alert && (
-              <div className={`mt-8 p-6 ${colors[color].tag.split(" ")[0]} rounded-xl border-l-4 ${colors[color].circle}`}>
-                <p className="text-red-900 font-semibold text-lg">{alert}</p>
-              </div>
+              <div className="mt-8 p-6 rounded-xl border border-red-200 bg-red-50">
+                <p className="text-red-700 font-semibold text-lg">
+                      {alert}
+                </p>
+             </div>
+
             )}
 
             {/* Subsections */}
