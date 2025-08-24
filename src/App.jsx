@@ -8,6 +8,7 @@ import VaginalCancerInformationPage from "../src/Page/VaginalCancerInformationPa
 import OvarianCancerInformationPage from "../src/Page/OvarianCancerInformationPage";
 import EndometrialCancerInformationPage from "../src/Page/EndometrialCancerInformationPage";
 
+import RoboticSurgeryPage from "../src/Page/RoboticSurgeryPage";
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
         <Route path="/Cancer/Vulvar" element={<VulvarCancerPage />} />
        <Route path="/Cancer/VaginalCancer" element={<  VaginalCancerInformationPage />} />
         <Route path="/Cancer/OvarianCancer" element={<  OvarianCancerInformationPage />} />
-            <Route path="/Cancer/EndometrialCancer" element={<   EndometrialCancerInformationPage />} />
+        <Route path="/Cancer/EndometrialCancer" element={<   EndometrialCancerInformationPage />} />
+         <Route path="/RoboticSurgery" element={<   RoboticSurgeryPage />} />
 
 
        
