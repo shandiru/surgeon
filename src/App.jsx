@@ -3,21 +3,16 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./Page/Home";
-import VulvarCancePage from "./Page/VulvarCancePage"; // ✅ import your page
+import VulvarCancerPage from "../src/Page/VulvarCancePage"; // <-- EXACT match
 
 function App() {
   return (
     <Router>
       <Navbar />
-
       <Routes>
-        {/* Home page */}
         <Route path="/" element={<Home />} />
-
-        {/* Vulvar Cancer Page */}
-        <Route path="/Cancer/Vulvar" element={<VulvarCancePage />} />
+        <Route path="/Cancer/Vulvar" element={<VulvarCancerPage />} />
       </Routes>
-
       <Footer />
     </Router>
   );
