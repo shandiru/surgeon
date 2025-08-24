@@ -7,7 +7,7 @@ import VulvarCancerPage from "../src/Page/VulvarCancePage"; // <-- EXACT match
 import VaginalCancerInformationPage from "../src/Page/VaginalCancerInformationPage"; // <-- EXACT match
 import OvarianCancerInformationPage from "../src/Page/OvarianCancerInformationPage";
 import EndometrialCancerInformationPage from "../src/Page/EndometrialCancerInformationPage";
-
+import CervicalCancerOverviewPage from "../src/Page/CervicalCancerOverviewPage";
 import RoboticSurgeryPage from "../src/Page/RoboticSurgeryPage";
 
 function App() {
@@ -20,6 +20,7 @@ function App() {
        <Route path="/Cancer/VaginalCancer" element={<  VaginalCancerInformationPage />} />
         <Route path="/Cancer/OvarianCancer" element={<  OvarianCancerInformationPage />} />
         <Route path="/Cancer/EndometrialCancer" element={<   EndometrialCancerInformationPage />} />
+         <Route path="/Cancer/CervicalCancer" element={<  CervicalCancerOverviewPage />} />
          <Route path="/RoboticSurgery" element={<   RoboticSurgeryPage />} />
 
 
