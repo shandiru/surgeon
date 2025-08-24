@@ -6,6 +6,9 @@ import Home from "./Page/Home";
 import VulvarCancerPage from "../src/Page/VulvarCancePage"; // <-- EXACT match
 import VaginalCancerInformationPage from "../src/Page/VaginalCancerInformationPage"; // <-- EXACT match
 import OvarianCancerInformationPage from "../src/Page/OvarianCancerInformationPage";
+import EndometrialCancerInformationPage from "../src/Page/EndometrialCancerInformationPage";
+
+
 function App() {
   return (
     <Router>
@@ -15,6 +18,10 @@ function App() {
         <Route path="/Cancer/Vulvar" element={<VulvarCancerPage />} />
        <Route path="/Cancer/VaginalCancer" element={<  VaginalCancerInformationPage />} />
         <Route path="/Cancer/OvarianCancer" element={<  OvarianCancerInformationPage />} />
+            <Route path="/Cancer/EndometrialCancer" element={<   EndometrialCancerInformationPage />} />
+
+
+       
       
       </Routes>
       <Footer />
