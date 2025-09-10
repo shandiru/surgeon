@@ -17,27 +17,27 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-white">
+      <section id="about" className=" bg-white">
         <About />
       </section>
 
       {/* Education + Languages */}
-      <section id="education" className="py-20 bg-gray-50">
+      <section id="education" className=" bg-gray-50">
         <EducationLanguagesSection />
       </section>
 
       {/* Experience */}
-      <section id="experience" className="py-20 bg-gray-50">
+      <section id="experience" className=" bg-gray-50">
         <Experience />
       </section>
 
       {/* Specialties / Expertise */}
-      <section id="specialties" className="py-20 bg-white">
+      <section id="specialties" className=" bg-white">
         <Expertise />
       </section>
 
       {/* Contact */}
-      <section id="contact" className="py-20 bg-[#c3eefa]">
+      <section id="contact" className=" ">
         <GetInTouchSection />
       </section>
     </div>

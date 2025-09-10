@@ -6,7 +6,6 @@ export default function EducationLanguagesSection() {
   return (
     <section id="education" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* 👇 items-stretch makes both sides equal height */}
         <div className="grid lg:grid-cols-2 gap-12 items-stretch">
           {/* Education & Qualifications */}
           <div className="flex flex-col">
@@ -39,12 +38,12 @@ export default function EducationLanguagesSection() {
               ].map((item, i) => (
                 <div
                   key={i}
-                  className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-[#c3eefa] text-center lg:text-left"
+                  className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-[#ffc5d3] text-center lg:text-left"
                 >
                   <h3 className="text-lg font-semibold text-gray-900">
                     {item.title}
                   </h3>
-                  <p className="text-[#5a9bb8] font-medium">{item.place}</p>
+                  <p className="text-[#ffc5d3] font-medium">{item.place}</p>
                   <p className="text-gray-500 text-sm">{item.years}</p>
                 </div>
               ))}
@@ -52,12 +51,11 @@ export default function EducationLanguagesSection() {
           </div>
 
           {/* Languages Spoken */}
-          {/* 👇 h-full + flex ensures it matches Education height */}
           <div className="bg-white rounded-xl border shadow-sm p-8 flex flex-col h-full">
             <div className="text-center pb-6">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-12 w-12 text-[#5a9bb8] mx-auto mb-4"
+                className="h-12 w-12 text-[#ffc5d3] mx-auto mb-4"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -72,12 +70,14 @@ export default function EducationLanguagesSection() {
 
             <div className="flex-1 flex flex-col items-center justify-center">
               <div className="flex flex-wrap justify-center gap-4">
-                <span className="inline-flex items-center justify-center rounded-md border font-medium text-lg px-6 py-2">
-                  English
-                </span>
-                <span className="inline-flex items-center justify-center rounded-md border font-medium text-lg px-6 py-2">
-                  Hindi
-                </span>
+                {['English', 'Hindi'].map((lang, idx) => (
+                  <span
+                    key={idx}
+                    className="inline-flex items-center justify-center rounded-md border border-gray-300 hover:border-[#ffc5d3] hover:text-[#ffc5d3] font-medium text-lg px-6 py-2 transition"
+                  >
+                    {lang}
+                  </span>
+                ))}
               </div>
 
               <p className="text-gray-600 mt-6 text-center">
