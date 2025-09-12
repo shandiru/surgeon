@@ -1,8 +1,36 @@
 'use client'
 
-import React from 'react'
+import React, { useLayoutEffect, useRef } from 'react'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
 
 export default function EducationLanguagesSection() {
+  const root = useRef(null)
+
+  useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.set('.edu-card', { opacity: 1 })
+      gsap.set('.lang-card', { opacity: 1 })
+
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: root.current,
+          start: 'top 80%',
+          once: true,
+        },
+        defaults: { ease: 'power3.out', duration: 0.8 },
+      })
+
+      tl.from('.section-title', { y: 40, opacity: 0 })
+        .from('.edu-card', { y: 50, opacity: 0, stagger: 0.2 }, '-=0.3')
+        .from('.lang-card', { scale: 0.9, opacity: 0, y: 30 }, '-=0.2')
+    }, root)
+
+    return () => ctx.revert()
+  }, [])
+
   const education = [
     {
       title: 'MD, Biological Sciences',
@@ -27,12 +55,12 @@ export default function EducationLanguagesSection() {
   ]
 
   return (
-    <section id="education" className="py-20 bg-gray-50">
+    <section ref={root} id="education" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-stretch">
           {/* Education & Qualifications */}
           <div className="flex flex-col">
-            <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center lg:text-left">
+            <h2 className="section-title text-4xl font-bold text-gray-900 mb-8 text-center lg:text-left">
               Education & Qualifications
             </h2>
 
@@ -40,7 +68,7 @@ export default function EducationLanguagesSection() {
               {education.map((item, i) => (
                 <div
                   key={i}
-                  className="bg-white p-6 rounded-lg shadow-sm text-center lg:text-left transition-all duration-300 hover:shadow-[0_0_25px_2px_rgba(255,197,211,0.9)] hover:scale-[1.02]"
+                  className="edu-card opacity-100 bg-white p-6 rounded-lg shadow-sm text-center lg:text-left transition-all duration-300 hover:shadow-[0_0_25px_2px_rgba(255,197,211,0.9)] hover:scale-[1.02]"
                 >
                   <h3 className="text-lg font-semibold text-gray-900">
                     {item.title}
@@ -53,7 +81,7 @@ export default function EducationLanguagesSection() {
           </div>
 
           {/* Languages Spoken */}
-          <div className="bg-white rounded-xl shadow-sm p-8 flex flex-col h-full transition-all duration-300 hover:shadow-[0_0_30px_2px_rgba(255,197,211,0.8)]">
+          <div className="lang-card opacity-100 bg-white rounded-xl shadow-sm p-8 flex flex-col h-full transition-all duration-300 hover:shadow-[0_0_30px_2px_rgba(255,197,211,0.8)]">
             <div className="text-center pb-6">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +95,9 @@ export default function EducationLanguagesSection() {
                 <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
                 <path d="M2 12h20" />
               </svg>
-              <div className="font-semibold text-2xl text-gray-900">Languages Spoken</div>
+              <div className="font-semibold text-2xl text-gray-900">
+                Languages Spoken
+              </div>
             </div>
 
             <div className="flex-1 flex flex-col items-center justify-center">

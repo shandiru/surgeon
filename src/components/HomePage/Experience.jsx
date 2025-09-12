@@ -1,15 +1,47 @@
 'use client';
 
+import React, { useRef, useLayoutEffect } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
+
 export default function ProfessionalExperience() {
+  const root = useRef(null);
+
+  useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.set('.hospital-card', { opacity: 1, y: 0 });
+
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: root.current,
+          start: 'top 80%',
+          once: true,
+        },
+        defaults: { ease: 'power3.out', duration: 0.8 },
+      });
+
+      tl.from('.experience-heading', { y: 40, opacity: 0 })
+        .from('.experience-subheading', { y: 30, opacity: 0 }, '-=0.4')
+        .from('.hospital-card', { y: 60, opacity: 0, stagger: 0.2 }, '-=0.2')
+        .from('.membership-title', { y: 40, opacity: 0 }, '-=0.3')
+        .from('.membership-item', { y: 20, opacity: 0, stagger: 0.1 }, '-=0.3')
+        .from('.leadership-card', { y: 40, opacity: 0, stagger: 0.2 }, '-=0.4');
+    }, root);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <section id="experience" className="py-20 bg-gray-50">
+    <section id="experience" className="py-20 bg-gray-50" ref={root}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="experience-heading text-4xl font-bold text-gray-900 mb-4">
             Professional Experience
           </h2>
-          <p className="text-xl text-gray-600">
+          <p className="experience-subheading text-xl text-gray-600">
             Current positions and affiliations
           </p>
         </div>
@@ -38,7 +70,7 @@ export default function ProfessionalExperience() {
           ].map((item, idx) => (
             <div
               key={idx}
-              className="bg-white flex flex-col gap-6 rounded-xl shadow-sm p-6 transition-all duration-300 hover:shadow-[0_0_25px_2px_rgba(255,197,211,0.8)] hover:scale-[1.02]"
+              className="hospital-card bg-white flex flex-col gap-6 rounded-xl shadow-sm p-6 transition-all duration-300 hover:shadow-[0_0_25px_2px_rgba(255,197,211,0.8)] hover:scale-[1.02]"
             >
               <div className="grid auto-rows-min items-start gap-1.5 px-6 pb-4">
                 <div className="w-12 h-12 bg-[#ffc5d3] rounded-lg flex items-center justify-center mb-4">
@@ -69,7 +101,7 @@ export default function ProfessionalExperience() {
         {/* Membership & Leadership Section */}
         <div className="bg-white flex flex-col gap-6 rounded-xl shadow-sm p-8 transition-all duration-300 hover:shadow-[0_0_25px_2px_rgba(255,197,211,0.8)]">
           <div className="text-center pb-6">
-            <h2 className="font-semibold text-2xl text-gray-900">
+            <h2 className="membership-title font-semibold text-2xl text-gray-900">
               Professional Memberships &amp; Leadership
             </h2>
           </div>
@@ -86,7 +118,7 @@ export default function ProfessionalExperience() {
                   'British Society of Colposcopy and Cervical Cytology',
                   'International Gynaecological Cancer Society',
                 ].map((item, idx) => (
-                  <div key={idx} className="flex items-start gap-3">
+                  <div key={idx} className="membership-item flex items-start gap-3">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-5 w-5 text-[#ff97b3] mt-0.5"
@@ -109,22 +141,20 @@ export default function ProfessionalExperience() {
                 Leadership Positions
               </h3>
               <div className="space-y-4">
-                <div className="bg-[#ffc5d3]/10 p-4 rounded-lg">
+                <div className="leadership-card bg-[#ffc5d3]/10 p-4 rounded-lg">
                   <h4 className="font-semibold text-gray-900">Honorary Secretary</h4>
                   <p className="text-gray-600 text-sm">
                     British Gynaecological Cancer Society
                   </p>
                 </div>
-                <div className="bg-[#ffc5d3]/10 p-4 rounded-lg">
+                <div className="leadership-card bg-[#ffc5d3]/10 p-4 rounded-lg">
                   <h4 className="font-semibold text-gray-900">
                     IT and Social Media Subgroup Chair
                   </h4>
                   <p className="text-gray-600 text-sm">
                     British Gynaecological Cancer Society
                   </p>
-                  <p className="text-gray-500 text-xs">
-                    July 2020 - July 2023
-                  </p>
+                  <p className="text-gray-500 text-xs">July 2020 - July 2023</p>
                 </div>
               </div>
             </div>
