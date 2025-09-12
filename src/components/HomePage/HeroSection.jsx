@@ -2,23 +2,26 @@ import React from "react";
 
 const HeroSectionView = () => {
   return (
-    <section className="relative bg-[#fff7f9] py-20"> {/* Light pink background */}
+    <section className="relative bg-[#fff7f9] py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
 
           {/* Left Section */}
           <div>
+            {/* Badge */}
             <div className="mb-4">
               <span className="inline-block border border-[#FFC5D3] text-[#FFC5D3] text-xs font-semibold px-3 py-1 rounded-full">
                 Consultant Gynaecological Oncologist
               </span>
             </div>
 
+            {/* Heading */}
             <h1 className="text-5xl font-bold text-gray-900 mb-6 leading-tight">
               Expert Care in{" "}
               <span className="text-[#FFC5D3]">Women's Health</span>
             </h1>
 
+            {/* Description */}
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
               With 26 years of dedicated experience in gynaecological oncology,
               providing compassionate, evidence-based care for women across Nottingham and beyond.
@@ -28,7 +31,7 @@ const HeroSectionView = () => {
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center gap-2 text-sm font-semibold px-6 h-10 rounded-md bg-[#FFC5D3] text-white hover:bg-[#ffb7c8] transition"
+                className="inline-flex items-center justify-center gap-2 text-sm font-semibold px-6 h-10 rounded-md bg-[#FFC5D3] text-white shadow-sm hover:shadow-[0_0_15px_2px_rgba(255,197,211,0.5)] hover:-translate-y-0.5 transition-all"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                   <path d="M8 2v4" />
@@ -41,7 +44,7 @@ const HeroSectionView = () => {
 
               <a
                 href="#about"
-                className="inline-flex items-center justify-center gap-2 text-sm font-semibold px-6 h-10 rounded-md border border-[#FFC5D3] text-[#FFC5D3] hover:bg-[#ffe5ec] transition"
+                className="inline-flex items-center justify-center gap-2 text-sm font-semibold px-6 h-10 rounded-md border border-[#FFC5D3] text-[#FFC5D3] hover:bg-[#ffe5ec] hover:shadow-[0_0_15px_2px_rgba(255,197,211,0.4)] hover:-translate-y-0.5 transition-all"
               >
                 Learn More
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
@@ -72,7 +75,7 @@ const HeroSectionView = () => {
 
           {/* Right Section - Image */}
           <div className="relative">
-            <div className="bg-white rounded-2xl shadow-xl p-6 relative">
+            <div className="bg-white rounded-2xl shadow-xl p-6 relative transition-all duration-300 hover:shadow-[0_0_30px_4px_rgba(255,197,211,0.4)] hover:-translate-y-1">
               <img
                 src="/doctor.png"
                 alt="Mr Ketankumar Gajjar"

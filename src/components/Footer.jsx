@@ -78,7 +78,11 @@ export default function Footer() {
             <h2 className="text-lg font-bold mb-3">Quick Links</h2>
             <ul className="text-white/90 space-y-1">
               {["About","Experience","Specialties","Education","Contact"].map((link,i)=>(
-                <li key={i}><a href={`#${link.toLowerCase()}`} className="hover:underline">{link}</a></li>
+                <li key={i}>
+                  <a href={`#${link.toLowerCase()}`} className="hover:underline">
+                    {link}
+                  </a>
+                </li>
               ))}
             </ul>
           </div>
@@ -107,8 +111,19 @@ export default function Footer() {
 
         {/* Bottom Line */}
         <div className="border-t border-white/40 mt-10 pt-6 text-center text-sm text-white/80">
-          <p>© 2024 Mr Ketankumar Gajjar – Consultant Gynaecological Oncologist. All rights reserved.</p>
+          <p>© 2025 Mr Ketankumar Gajjar – Consultant Gynaecological Oncologist. All rights reserved.</p>
           <p className="mt-1">Professional medical services | GMC Registered</p>
+          <p className="mt-3 text-white/70">
+            Powered by{" "}
+            <a 
+              href="https://www.ansely.co.uk/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="underline hover:text-white"
+            >
+              Anlsey
+            </a>
+          </p>
         </div>
       </div>
     </footer>
