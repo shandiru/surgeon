@@ -1,13 +1,13 @@
 import React from "react";
 import {
-  FaExclamationTriangle, // AlertTriangle
-  FaHeartbeat,           // Activity
-  FaCheckCircle,         // CircleCheckBig
-  FaStethoscope,         // Stethoscope
-  FaSearch,              // Search
-  FaCut,                 // Scissors
-  FaBolt,                // Zap
-  FaPills,               // Pill
+  FaExclamationTriangle,
+  FaHeartbeat,
+  FaCheckCircle,
+  FaStethoscope,
+  FaSearch,
+  FaCut,
+  FaBolt,
+  FaPills,
 } from "react-icons/fa";
 
 const VulvarCancerPage = () => {
@@ -16,7 +16,8 @@ const VulvarCancerPage = () => {
       <div className="container mx-auto px-4 py-12 max-w-6xl">
         {/* Header Section */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium mb-6"
+            style={{ backgroundColor: "#FFC5D3", color: "#fff" }}>
             <FaHeartbeat className="h-4 w-4" /> Medical Information Guide
           </div>
           <h1 className="text-5xl font-bold text-gray-900 mb-6">
@@ -29,11 +30,13 @@ const VulvarCancerPage = () => {
 
         {/* Timeline Vertical Line */}
         <div className="relative">
-          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-red-200 via-blue-200 to-green-200 hidden lg:block"></div>
+          <div
+            className="absolute left-8 top-0 bottom-0 w-0.5 hidden lg:block"
+            style={{ backgroundColor: "#FFC5D3" }}
+          ></div>
 
           {/* Step 1: Symptoms */}
           <StepCard
-            color="red"
             step="Step 1"
             title="Recognizing Symptoms"
             icon={<FaExclamationTriangle className="h-8 w-8" />}
@@ -52,7 +55,6 @@ const VulvarCancerPage = () => {
 
           {/* Step 2: Diagnosis */}
           <StepCard
-            color="blue"
             step="Step 2"
             title="Getting Diagnosed"
             icon={<FaStethoscope className="h-8 w-8" />}
@@ -84,7 +86,6 @@ const VulvarCancerPage = () => {
 
           {/* Step 3: Treatment */}
           <StepCard
-            color="green"
             step="Step 3"
             title="Treatment Options"
             icon={<FaCut className="h-8 w-8" />}
@@ -121,8 +122,9 @@ const VulvarCancerPage = () => {
         </div>
 
         {/* Disclaimer */}
-        <div className="text-center mt-20 p-8 bg-gray-50 rounded-2xl">
-          <p className="text-gray-600 text-lg leading-relaxed max-w-3xl mx-auto">
+        <div className="text-center mt-20 p-8 rounded-2xl"
+          style={{ backgroundColor: "#FFC5D3" }}>
+          <p className="text-white text-lg leading-relaxed max-w-3xl mx-auto">
             This information is for educational purposes only and should not replace professional medical advice.
             Always consult with your healthcare provider for personalized medical guidance.
           </p>
@@ -133,57 +135,26 @@ const VulvarCancerPage = () => {
 };
 
 // Step Card Component
-const StepCard = ({
-  step,
-  color,
-  title,
-  icon,
-  description,
-  points,
-  alert,
-  subsections,
-  tags,
-  treatments,
-}) => {
-  const colors = {
-    red: {
-      bg: "bg-red-50",
-      border: "border-red-100",
-      text: "text-red-600",
-      circle: "bg-red-500",
-      tag: "bg-red-100 text-red-800",
-    },
-    blue: {
-      bg: "bg-blue-50",
-      border: "border-blue-100",
-      text: "text-blue-600",
-      circle: "bg-blue-500",
-      tag: "bg-blue-100 text-blue-800",
-    },
-    green: {
-      bg: "bg-green-50",
-      border: "border-green-100",
-      text: "text-green-600",
-      circle: "bg-green-500",
-      tag: "bg-green-100 text-green-800",
-    },
-  };
+const StepCard = ({ step, title, icon, description, points, alert, subsections, tags, treatments }) => {
+  const pink = "#FFC5D3";
 
   return (
     <div className="relative mb-20">
       <div className="lg:flex lg:items-start lg:gap-12">
         {/* Step Circle */}
         <div
-          className={`hidden lg:flex items-center justify-center w-16 h-16 ${colors[color].circle} rounded-full text-white mb-8 lg:mb-0 relative z-10`}
+          className="hidden lg:flex items-center justify-center w-16 h-16 rounded-full text-white mb-8 lg:mb-0 relative z-10"
+          style={{ backgroundColor: pink }}
         >
           {icon}
         </div>
 
         {/* Card */}
         <div className="flex-1">
-          <div className={`${colors[color].bg} rounded-2xl p-8 border ${colors[color].border}`}>
+          <div className="rounded-2xl p-8 border"
+            style={{ backgroundColor: "#fff", borderColor: pink }}>
             <div className="mb-6">
-              <span className={`${colors[color].text} font-semibold text-sm uppercase tracking-wide`}>
+              <span className="font-semibold text-sm uppercase tracking-wide" style={{ color: pink }}>
                 {step}
               </span>
               <h2 className="text-3xl font-bold text-gray-900 mt-2">{title}</h2>
@@ -191,12 +162,13 @@ const StepCard = ({
 
             {description && <p className="text-gray-700 mb-8 text-lg">{description}</p>}
 
-            {/* Symptom Points */}
+            {/* Points */}
             {points && (
               <div className="grid md:grid-cols-2 gap-4">
                 {points.map((point, i) => (
-                  <div key={i} className={`flex items-start gap-3 p-4 bg-white rounded-lg border ${colors[color].border}`}>
-                    <FaCheckCircle className={`h-5 w-5 ${colors[color].text} mt-0.5 flex-shrink-0`} />
+                  <div key={i} className="flex items-start gap-3 p-4 bg-white rounded-lg border"
+                    style={{ borderColor: pink }}>
+                    <FaCheckCircle className="h-5 w-5 mt-0.5 flex-shrink-0" style={{ color: pink }} />
                     <span className="text-gray-800">{point}</span>
                   </div>
                 ))}
@@ -205,40 +177,41 @@ const StepCard = ({
 
             {/* Alert Box */}
             {alert && (
-              <div className="mt-8 p-6 rounded-xl border border-red-200 bg-red-50">
-                <p className="text-red-700 font-semibold text-lg">
-                      {alert}
-                </p>
-             </div>
-
+              <div className="mt-8 p-6 rounded-xl border"
+                style={{ borderColor: pink, backgroundColor: pink }}>
+                <p className="text-white font-semibold text-lg">{alert}</p>
+              </div>
             )}
 
             {/* Subsections */}
-            {subsections &&
-              subsections.map((section, i) => (
-                <div key={i} className="space-y-6">
-                  <h3 className="text-xl font-semibold text-gray-900">{section.title}</h3>
-                  <div className="space-y-4">
-                    {section.items.map((item, j) => (
-                      <div key={j} className={`flex items-start gap-6 p-6 bg-white rounded-xl border ${colors[color].border}`}>
-                        <div className={`flex items-center justify-center w-12 h-12 ${colors[color].tag.split(" ")[0]} rounded-lg ${colors[color].text} flex-shrink-0`}>
-                          {item.icon}
-                        </div>
-                        <div>
-                          <h4 className="text-lg font-semibold text-gray-900 mb-2">{item.heading}</h4>
-                          <p className="text-gray-700">{item.text}</p>
-                        </div>
+            {subsections && subsections.map((section, i) => (
+              <div key={i} className="space-y-6 mt-8">
+                <h3 className="text-xl font-semibold text-gray-900">{section.title}</h3>
+                <div className="space-y-4">
+                  {section.items.map((item, j) => (
+                    <div key={j} className="flex items-start gap-6 p-6 bg-white rounded-xl border"
+                      style={{ borderColor: pink }}>
+                      <div className="flex items-center justify-center w-12 h-12 rounded-lg flex-shrink-0"
+                        style={{ backgroundColor: pink, color: "#fff" }}>
+                        {item.icon}
                       </div>
-                    ))}
-                  </div>
+                      <div>
+                        <h4 className="text-lg font-semibold text-gray-900 mb-2">{item.heading}</h4>
+                        <p className="text-gray-700">{item.text}</p>
+                      </div>
+                    </div>
+                  ))}
                 </div>
-              ))}
+              </div>
+            ))}
 
             {/* Tags */}
             {tags && (
               <div className="mt-8 flex flex-wrap gap-3">
                 {tags.map((tag, i) => (
-                  <span key={i} className={`px-4 py-2 rounded-md text-sm font-medium ${colors[color].tag}`}>
+                  <span key={i}
+                    className="px-4 py-2 rounded-md text-sm font-medium"
+                    style={{ backgroundColor: pink, color: "#fff" }}>
                     {tag}
                   </span>
                 ))}
@@ -247,18 +220,19 @@ const StepCard = ({
 
             {/* Treatments */}
             {treatments && (
-              <div className="space-y-8">
-                {/* Surgery */}
+              <div className="space-y-8 mt-10">
                 <div>
                   <div className="flex items-center gap-3 mb-6">
-                    <div className={`flex items-center justify-center w-8 h-8 ${colors[color].circle} rounded-full text-white text-sm font-bold`}>
+                    <div className="flex items-center justify-center w-8 h-8 rounded-full text-white text-sm font-bold"
+                      style={{ backgroundColor: pink }}>
                       1
                     </div>
                     <h3 className="text-xl font-semibold text-gray-900">Surgery (Primary Treatment)</h3>
                   </div>
                   <div className="grid gap-4">
                     {treatments.surgery.map((s, i) => (
-                      <div key={i} className={`p-6 bg-white rounded-xl border ${colors[color].border}`}>
+                      <div key={i} className="p-6 bg-white rounded-xl border"
+                        style={{ borderColor: pink }}>
                         <h4 className="text-lg font-semibold text-gray-900 mb-2">{s.heading}</h4>
                         <p className="text-gray-700">{s.text}</p>
                       </div>
@@ -266,18 +240,20 @@ const StepCard = ({
                   </div>
                 </div>
 
-                {/* Additional */}
                 <div>
                   <div className="flex items-center gap-3 mb-6">
-                    <div className={`flex items-center justify-center w-8 h-8 ${colors[color].circle} rounded-full text-white text-sm font-bold`}>
+                    <div className="flex items-center justify-center w-8 h-8 rounded-full text-white text-sm font-bold"
+                      style={{ backgroundColor: pink }}>
                       2
                     </div>
                     <h3 className="text-xl font-semibold text-gray-900">Additional Treatments</h3>
                   </div>
                   <div className="grid md:grid-cols-2 gap-4">
                     {treatments.additional.map((a, i) => (
-                      <div key={i} className={`flex items-start gap-4 p-6 bg-white rounded-xl border ${colors[color].border}`}>
-                        <div className={`flex items-center justify-center w-12 h-12 ${colors[color].tag.split(" ")[0]} rounded-lg ${colors[color].text} flex-shrink-0`}>
+                      <div key={i} className="flex items-start gap-4 p-6 bg-white rounded-xl border"
+                        style={{ borderColor: pink }}>
+                        <div className="flex items-center justify-center w-12 h-12 rounded-lg flex-shrink-0"
+                          style={{ backgroundColor: pink, color: "#fff" }}>
                           {a.icon}
                         </div>
                         <div>
@@ -290,6 +266,7 @@ const StepCard = ({
                 </div>
               </div>
             )}
+
           </div>
         </div>
       </div>
