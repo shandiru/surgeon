@@ -1,10 +1,13 @@
 'use client'
 
 import React from 'react'
+import { FaStethoscope, FaMicroscope, FaPills, FaInfoCircle } from 'react-icons/fa'
 
 export default function VaginalCancerInfo() {
+  const pink = "#FFC5D3"
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+    <div className="min-h-screen" style={{ backgroundColor: "#fff" }}>
       <div className="max-w-4xl mx-auto px-4 py-8">
 
         {/* Header */}
@@ -16,10 +19,11 @@ export default function VaginalCancerInfo() {
         </div>
 
         {/* Symptoms */}
-        <div className="bg-white border rounded-xl shadow-lg mb-8">
-          <div className="bg-red-50 px-6 py-4 rounded-t-xl">
-            <h2 className="text-2xl font-semibold text-red-800 flex items-center gap-2">
-              🩺 Symptoms of Vaginal Cancer
+        <div className="bg-white border rounded-xl shadow-lg mb-8" style={{ borderColor: pink }}>
+          <div className="px-6 py-4 rounded-t-xl flex items-center gap-2" style={{ backgroundColor: pink }}>
+            <FaStethoscope className="text-white h-6 w-6" />
+            <h2 className="text-2xl font-semibold text-white">
+              Symptoms of Vaginal Cancer
             </h2>
           </div>
           <div className="px-6 pt-4 pb-6">
@@ -35,21 +39,24 @@ export default function VaginalCancerInfo() {
                 "Pelvic pain"
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-2 text-sm text-gray-700">
-                  <span className="text-red-600 text-lg">•</span>{item}
+                  <span style={{ color: pink }} className="text-lg">•</span>{item}
                 </li>
               ))}
             </ul>
-            <div className="p-4 bg-blue-50 border-l-4 border-blue-400 rounded">
-              <p className="text-blue-800 font-medium">👉 Routine pelvic exams are important for early detection.</p>
+            <div className="p-4 rounded border-l-4 flex items-center gap-2"
+              style={{ backgroundColor: "#fff", borderColor: pink }}>
+              <FaInfoCircle style={{ color: pink }} className="h-5 w-5" />
+              <p className="font-medium" style={{ color: pink }}>Routine pelvic exams are important for early detection.</p>
             </div>
           </div>
         </div>
 
         {/* Diagnosis */}
-        <div className="bg-white border rounded-xl shadow-lg mb-8">
-          <div className="bg-blue-50 px-6 py-4 rounded-t-xl">
-            <h2 className="text-2xl font-semibold text-blue-800 flex items-center gap-2">
-              🔬 Diagnosis of Vaginal Cancer
+        <div className="bg-white border rounded-xl shadow-lg mb-8" style={{ borderColor: pink }}>
+          <div className="px-6 py-4 rounded-t-xl flex items-center gap-2" style={{ backgroundColor: pink }}>
+            <FaMicroscope className="text-white h-6 w-6" />
+            <h2 className="text-2xl font-semibold text-white">
+              Diagnosis of Vaginal Cancer
             </h2>
           </div>
           <div className="px-6 pt-4 pb-6">
@@ -76,23 +83,27 @@ export default function VaginalCancerInfo() {
                   desc: "Removal of a small tissue sample during colposcopy to test for cancer cells"
                 }
               ].map((step, i) => (
-                <div key={i} className="bg-white border border-blue-200 rounded-md px-4 py-3 shadow-sm">
+                <div key={i} className="border rounded-md px-4 py-3 shadow-sm bg-white"
+                  style={{ borderColor: pink }}>
                   <strong className="text-gray-800">{step.title}</strong>
                   <span className="text-gray-600"> – {step.desc}</span>
                 </div>
               ))}
             </div>
-            <div className="mt-6 p-4 bg-green-50 border-l-4 border-green-400 rounded">
-              <p className="text-green-800 font-medium">👉 These tests help confirm diagnosis and guide treatment planning.</p>
+            <div className="mt-6 p-4 rounded border-l-4 flex items-center gap-2"
+              style={{ backgroundColor: "#fff", borderColor: pink }}>
+              <FaInfoCircle style={{ color: pink }} className="h-5 w-5" />
+              <p className="font-medium" style={{ color: pink }}>These tests help confirm diagnosis and guide treatment planning.</p>
             </div>
           </div>
         </div>
 
         {/* Treatment */}
-        <div className="bg-white border rounded-xl shadow-lg mb-8">
-          <div className="bg-purple-50 px-6 py-4 rounded-t-xl">
-            <h2 className="text-2xl font-semibold text-purple-800 flex items-center gap-2">
-              💊 Treatment of Vaginal Cancer
+        <div className="bg-white border rounded-xl shadow-lg mb-8" style={{ borderColor: pink }}>
+          <div className="px-6 py-4 rounded-t-xl flex items-center gap-2" style={{ backgroundColor: pink }}>
+            <FaPills className="text-white h-6 w-6" />
+            <h2 className="text-2xl font-semibold text-white">
+              Treatment of Vaginal Cancer
             </h2>
           </div>
           <div className="px-6 pt-4 pb-6 text-sm text-gray-700">
@@ -100,27 +111,32 @@ export default function VaginalCancerInfo() {
 
             <h3 className="text-lg font-semibold text-gray-800 mb-3">1. Surgery (Often the Primary Treatment)</h3>
             <div className="space-y-3 mb-4">
-              <div className="border border-purple-200 rounded-md px-4 py-3">
+              <div className="border rounded-md px-4 py-3 bg-white"
+                style={{ borderColor: pink }}>
                 <strong className="text-gray-800">Vaginectomy</strong>
                 <span> – Removal of part or all of the vagina; may include nearby lymph nodes. Reconstruction with tissue grafts can restore vaginal function.</span>
               </div>
-              <div className="border border-purple-200 rounded-md px-4 py-3">
+              <div className="border rounded-md px-4 py-3 bg-white"
+                style={{ borderColor: pink }}>
                 <strong className="text-gray-800">Hysterectomy</strong>
                 <span> – Removal of the uterus and sometimes ovaries, fallopian tubes, and lymph nodes; often combined with vaginectomy for advanced cases.</span>
               </div>
             </div>
-            <div className="text-gray-600 text-sm mb-6 p-3 bg-gray-50 rounded-md">
+            <div className="text-gray-600 text-sm mb-6 p-3 rounded-md"
+              style={{ backgroundColor: "#fff", border: `1px solid ${pink}` }}>
               After surgery, patients receive enhanced recovery support to aid healing.
             </div>
 
             <h3 className="text-lg font-semibold text-gray-800 mb-3">2. Combination Treatments</h3>
             <p className="mb-3">In some cases, surgery may be combined with:</p>
             <div className="space-y-3">
-              <div className="border border-indigo-200 rounded-md px-4 py-3">
+              <div className="border rounded-md px-4 py-3 bg-white"
+                style={{ borderColor: pink }}>
                 <strong className="text-gray-800">Radiation therapy</strong>
                 <span> – Targeted energy to destroy cancer cells</span>
               </div>
-              <div className="border border-indigo-200 rounded-md px-4 py-3">
+              <div className="border rounded-md px-4 py-3 bg-white"
+                style={{ borderColor: pink }}>
                 <strong className="text-gray-800">Chemotherapy</strong>
                 <span> – Drugs to kill or slow cancer growth</span>
               </div>
@@ -129,8 +145,9 @@ export default function VaginalCancerInfo() {
         </div>
 
         {/* Disclaimer */}
-        <div className="bg-white p-6 rounded-lg shadow-md text-center">
-          <p className="text-gray-600 text-sm">
+        <div className="p-6 rounded-lg shadow-md text-center"
+          style={{ backgroundColor: pink }}>
+          <p className="text-sm text-white">
             This information is for educational purposes only. Always consult with healthcare professionals for personalized medical advice.
           </p>
         </div>
