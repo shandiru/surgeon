@@ -3,10 +3,12 @@
 import React from 'react'
 
 const Footer = () => {
+  const pink = '#FFC5D3'
+
   return (
-    <footer className="bg-white border-t mt-16">
+    <footer style={{ backgroundColor: pink }} className="mt-16">
       <div className="container mx-auto px-4 py-8">
-        <div className="text-center text-gray-500">
+        <div className="text-center text-white">
           <p className="mb-2">
             This information is provided for educational purposes only.
           </p>
