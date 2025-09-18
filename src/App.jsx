@@ -9,7 +9,7 @@ import OvarianCancerInformationPage from "../src/Page/OvarianCancerInformationPa
 import EndometrialCancerInformationPage from "../src/Page/EndometrialCancerInformationPage";
 import CervicalCancerOverviewPage from "../src/Page/CervicalCancerOverviewPage";
 import RoboticSurgeryPage from "../src/Page/RoboticSurgeryPage";
-
+import CervicalScreeningPage from "./Page/CervicalScreeningPage";
 function App() {
   return (
     <Router>
@@ -22,7 +22,7 @@ function App() {
         <Route path="/Cancer/EndometrialCancer" element={<   EndometrialCancerInformationPage />} />
          <Route path="/Cancer/CervicalCancer" element={<  CervicalCancerOverviewPage />} />
          <Route path="/RoboticSurgery" element={<   RoboticSurgeryPage />} />
-
+          <Route path="/CervicalScreening" element={<   CervicalScreeningPage />} />
 
        
       
