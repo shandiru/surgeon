@@ -13,6 +13,7 @@ import CervicalScreeningPage from "./Page/CervicalScreeningPage";
 import IrregularBleedingInfoPage from "./Page/IrregularBleedingInfoPage";
 import EndometriosisInformation from "./Page/EndometriosisInformation";
 import FibroidInformationPage from "./Page/FibroidInformationPage";
+import MenstrualDisordersInformationPage from "./Page/MenstrualDisordersInformationPage"
 function App() {
   return (
     <Router>
@@ -28,7 +29,9 @@ function App() {
           <Route path="/CervicalScreening" element={<   CervicalScreeningPage />} />
           <Route path="/IrregularBleedingInfo" element={<   IrregularBleedingInfoPage />} />
           <Route path="/EndometriosisInformation" element={<   EndometriosisInformation />} />
-          <Route path="/FibroidInformation" element={<   FibroidInformationPage />} />
+          <Route path="/FibroidInformation" element={< FibroidInformationPage />} />
+           <Route path="/MenstrualDisordersInformation" element={< MenstrualDisordersInformationPage />} />
+
        
       
       </Routes>
