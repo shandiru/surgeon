@@ -11,6 +11,7 @@ import CervicalCancerOverviewPage from "../src/Page/CervicalCancerOverviewPage";
 import RoboticSurgeryPage from "../src/Page/RoboticSurgeryPage";
 import CervicalScreeningPage from "./Page/CervicalScreeningPage";
 import IrregularBleedingInfoPage from "./Page/IrregularBleedingInfoPage";
+import EndometriosisInformation from "./Page/EndometriosisInformation";
 function App() {
   return (
     <Router>
@@ -25,7 +26,7 @@ function App() {
          <Route path="/RoboticSurgery" element={<   RoboticSurgeryPage />} />
           <Route path="/CervicalScreening" element={<   CervicalScreeningPage />} />
           <Route path="/IrregularBleedingInfo" element={<   IrregularBleedingInfoPage />} />
-
+          <Route path="/EndometriosisInformation" element={<   EndometriosisInformation />} />
        
       
       </Routes>
