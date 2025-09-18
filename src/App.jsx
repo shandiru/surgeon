@@ -16,6 +16,7 @@ import FibroidInformationPage from "./Page/FibroidInformationPage";
 import MenstrualDisordersInformationPage from "./Page/MenstrualDisordersInformationPage"
 import OvarianCystsPage from "./Page/OvarianCystsPage"
 import Colposcopy from "./Page/Colposcopy";
+import PostcoitalBleeding from "./Page/PostcoitalBleeding"
 function App() {
   return (
     <Router>
@@ -35,6 +36,8 @@ function App() {
         <Route path="/MenstrualDisordersInformation" element={< MenstrualDisordersInformationPage />} />
          <Route path="/OvarianCystsPage" element={<OvarianCystsPage />} />
         <Route path="/colposcopy" element={< Colposcopy />} />
+         <Route path="/PostcoitalBleeding" element={< PostcoitalBleeding />} />
+
 
       </Routes>
       <Footer />
