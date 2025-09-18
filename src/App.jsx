@@ -14,6 +14,7 @@ import IrregularBleedingInfoPage from "./Page/IrregularBleedingInfoPage";
 import EndometriosisInformation from "./Page/EndometriosisInformation";
 import FibroidInformationPage from "./Page/FibroidInformationPage";
 import MenstrualDisordersInformationPage from "./Page/MenstrualDisordersInformationPage"
+import Colposcopy from "./Page/Colposcopy";
 function App() {
   return (
     <Router>
@@ -21,19 +22,18 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Cancer/Vulvar" element={<VulvarCancerPage />} />
-       <Route path="/Cancer/VaginalCancer" element={<  VaginalCancerInformationPage />} />
+        <Route path="/Cancer/VaginalCancer" element={<  VaginalCancerInformationPage />} />
         <Route path="/Cancer/OvarianCancer" element={<  OvarianCancerInformationPage />} />
         <Route path="/Cancer/EndometrialCancer" element={<   EndometrialCancerInformationPage />} />
-         <Route path="/Cancer/CervicalCancer" element={<  CervicalCancerOverviewPage />} />
-         <Route path="/RoboticSurgery" element={<   RoboticSurgeryPage />} />
-          <Route path="/CervicalScreening" element={<   CervicalScreeningPage />} />
-          <Route path="/IrregularBleedingInfo" element={<   IrregularBleedingInfoPage />} />
-          <Route path="/EndometriosisInformation" element={<   EndometriosisInformation />} />
-          <Route path="/FibroidInformation" element={< FibroidInformationPage />} />
-           <Route path="/MenstrualDisordersInformation" element={< MenstrualDisordersInformationPage />} />
+        <Route path="/Cancer/CervicalCancer" element={<  CervicalCancerOverviewPage />} />
+        <Route path="/RoboticSurgery" element={<   RoboticSurgeryPage />} />
+        <Route path="/CervicalScreening" element={<   CervicalScreeningPage />} />
+        <Route path="/IrregularBleedingInfo" element={<   IrregularBleedingInfoPage />} />
+        <Route path="/EndometriosisInformation" element={<   EndometriosisInformation />} />
+        <Route path="/FibroidInformation" element={< FibroidInformationPage />} />
+        <Route path="/MenstrualDisordersInformation" element={< MenstrualDisordersInformationPage />} />
+        <Route path="/colposcopy" element={< Colposcopy />} />
 
-       
-      
       </Routes>
       <Footer />
     </Router>
