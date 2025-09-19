@@ -284,31 +284,80 @@ const Navbar = () => {
               <div className="pl-6 space-y-1">
                 <Link
                   to="/CervicalScreening"
-                  className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   onClick={closeDropdowns}
                 >
                   Cervical Screening
                 </Link>
                 <Link
                   to="/IrregularBleedingInfo"
-                  className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   onClick={closeDropdowns}
                 >
                   Irregular Bleeding
                 </Link>
                 <Link
                   to="/EndometriosisInformation"
-                  className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   onClick={closeDropdowns}
                 >
                   Endometriosis
                 </Link>
                 <Link
                   to="/FibroidInformation"
-                  className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   onClick={closeDropdowns}
                 >
                   Fibroids
+                </Link>
+                <Link
+                  to="/MenstrualDisordersInformation"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  onClick={closeDropdowns}
+                >
+                  Menstrual Disorders
+                </Link>
+                <Link
+                  to="/OvarianCystsPage"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  onClick={closeDropdowns}
+                >
+                  Ovarian Cysts
+                </Link>
+                <Link
+                  to="/PostcoitalBleeding"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  onClick={closeDropdowns}
+                >
+                  Postcoital Bleeding
+                </Link>
+                <Link
+                  to="/postmenopausal-bleeding"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  onClick={closeDropdowns}
+                >
+                  Postmenopausal Bleeding
+                </Link>
+                <Link
+                  to="/colposcopy"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  onClick={closeDropdowns}
+                >
+                  Colposcopy
+                </Link>
+                <Link
+                  to="/pelvic-pain-information"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  onClick={closeDropdowns}
+                >
+                  Pelvic Pain Information
+                </Link>
+                <Link
+                  to="/vulvar-vaginal-lumps"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  onClick={closeDropdowns}
+                >
+                  Vulvar Vaginal Lumps
                 </Link>
               </div>
             )}
