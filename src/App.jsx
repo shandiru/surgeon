@@ -19,6 +19,7 @@ import Colposcopy from "./Page/Colposcopy";
 import PostcoitalBleeding from "./Page/PostcoitalBleeding"
 import Ultrasound from "./Page/Ultrasound";
 import Hysteroscopy from "./Page/Copy";
+import Pelvic from "./Page/Pelvic";
 function App() {
   return (
     <Router>
@@ -41,6 +42,7 @@ function App() {
         <Route path="/colposcopy" element={< Colposcopy />} />
         <Route path="/ultrasound" element={< Ultrasound />} />
         <Route path="/hysteroscopy" element={< Hysteroscopy />} />
+        <Route path="/pelvic-pain-information" element={< Pelvic />} />
       </Routes>
       <Footer />
     </Router>
