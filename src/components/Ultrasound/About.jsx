@@ -22,7 +22,7 @@ const UltraSoundGuide = () => {
             <line x1="8" x2="16" y1="21" y2="21"></line>
             <line x1="12" x2="12" y1="17" y2="21"></line>
           </svg>
-          <span className="text-primary font-medium">Medical Education</span>
+          <span className="font-medium ">Medical Education</span>
         </div>
 
         {/* Heading and Subheading */}
