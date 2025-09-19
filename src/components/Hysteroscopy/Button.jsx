@@ -43,7 +43,7 @@ const HysterosButtons = ({ setShowCard }) => {
   };
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 ml-15 xl:ml-25 max-w-6xl mx-auto mb-8">
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 ml-4 sm:ml-6 xl:ml-12 max-w-6xl mx-auto mb-8">
       {buttons.map((button, index) => (
         <button
           key={index}
@@ -53,7 +53,7 @@ const HysterosButtons = ({ setShowCard }) => {
           }`}
         >
           {button.icon}
-          <span className="text-xs leading-tight">{button.label}</span>
+          <span className="text-xs sm:text-sm leading-tight">{button.label}</span>
         </button>
       ))}
     </div>

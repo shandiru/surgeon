@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'; // If using react-router for navigation
 const HysteroscopyButtons = () => {
   return (
     <div className="flex justify-center mb-6">
-      <div className="flex gap-2 p-1 bg-muted rounded-lg mt-10">
+      <div className="flex flex-col sm:flex-row gap-4 sm:gap-2 p-1 bg-muted rounded-lg mt-10 w-full sm:w-auto">
         {/* Colposcopy Guide Button */}
         <Link
           to="/colposcopy"
