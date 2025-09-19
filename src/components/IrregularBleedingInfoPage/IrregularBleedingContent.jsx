@@ -50,20 +50,20 @@ const IrregularBleedingContent = ({ activeTab }) => {
         </div>
       )}
 
-     {activeTab === "Causes" && (
+   {activeTab === "Causes" && (
   <div
     data-slot="card"
-    className="bg-white text-[#333] flex flex-col gap-6 rounded-xl border border-[#ff97b3] py-6 shadow-sm"
+    className="bg-[#FFF1F5] text-[#4B0D26] flex flex-col gap-6 rounded-xl border border-[#FFB3C9] py-6 shadow-sm"
   >
     {/* Header */}
     <div
       data-slot="card-header"
-      className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 border-b border-[#ff97b3] pb-6"
+      className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 border-b border-[#FFB3C9] pb-6"
     >
-      <div className="leading-none font-semibold flex items-center gap-2 text-[#ff97b3]">
+      <div className="leading-none font-semibold flex items-center gap-2 text-[#FF4B8B]">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="lucide lucide-triangle-alert w-5 h-5 text-[#ff97b3]"
+          className="lucide lucide-triangle-alert w-5 h-5 text-[#FF4B8B]"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -77,7 +77,7 @@ const IrregularBleedingContent = ({ activeTab }) => {
         </svg>
         Common Causes
       </div>
-      <div className="text-sm text-[#666]">
+      <div className="text-sm text-[#804659]">
         Irregular vaginal bleeding can be linked to several conditions. In most cases, the cause is not serious, but it's important to get checked.
       </div>
     </div>
@@ -86,28 +86,28 @@ const IrregularBleedingContent = ({ activeTab }) => {
     <div data-slot="card-content" className="px-6">
       <div className="grid gap-4">
         {[
-          { label: "common", color: "bg-blue-100 text-blue-800 border-blue-200", title: "Fibroids", desc: "Non-cancerous growths in the uterus" },
-          { label: "common", color: "bg-blue-100 text-blue-800 border-blue-200", title: "Endometriosis", desc: "Tissue similar to uterine lining grows outside uterus" },
-          { label: "common", color: "bg-blue-100 text-blue-800 border-blue-200", title: "PCOS", desc: "Polycystic Ovary Syndrome affects hormone levels" },
-          { label: "common", color: "bg-blue-100 text-blue-800 border-blue-200", title: "Hormonal imbalances", desc: "Changes in estrogen and progesterone levels" },
-          { label: "normal", color: "bg-green-100 text-green-800 border-green-200", title: "Puberty or menopause", desc: "Natural life stage transitions" },
-          { label: "normal", color: "bg-green-100 text-green-800 border-green-200", title: "Pregnancy", desc: "Early pregnancy can cause irregular bleeding" },
-          { label: "lifestyle", color: "bg-yellow-100 text-yellow-800 border-yellow-200", title: "Excessive exercise", desc: "Intense physical activity can affect cycles" },
-          { label: "serious", color: "bg-red-100 text-red-800 border-red-200", title: "PID", desc: "Pelvic inflammatory disease requires treatment" },
-          { label: "serious", color: "bg-red-100 text-red-800 border-red-200", title: "Tumours or growths", desc: "Abnormal growths need medical evaluation" },
+          { label: "common", title: "Fibroids", desc: "Non-cancerous growths in the uterus" },
+          { label: "common", title: "Endometriosis", desc: "Tissue similar to uterine lining grows outside uterus" },
+          { label: "common", title: "PCOS", desc: "Polycystic Ovary Syndrome affects hormone levels" },
+          { label: "common", title: "Hormonal imbalances", desc: "Changes in estrogen and progesterone levels" },
+          { label: "normal", title: "Puberty or menopause", desc: "Natural life stage transitions" },
+          { label: "normal", title: "Pregnancy", desc: "Early pregnancy can cause irregular bleeding" },
+          { label: "lifestyle", title: "Excessive exercise", desc: "Intense physical activity can affect cycles" },
+          { label: "serious", title: "PID", desc: "Pelvic inflammatory disease requires treatment" },
+          { label: "serious", title: "Tumours or growths", desc: "Abnormal growths need medical evaluation" },
         ].map((item, idx) => (
           <div
             key={idx}
-            className="flex items-start gap-3 p-3 rounded-lg border bg-[#fff7f9]"
+            className="flex items-start gap-3 p-3 rounded-lg border border-[#FFB3C9] bg-[#FFF5FA]"
           >
             <span
-              className={`inline-flex items-center justify-center rounded-md border px-2 py-0.5 text-xs font-medium w-fit whitespace-nowrap shrink-0 ${item.color}`}
+              className="inline-flex items-center justify-center rounded-md border border-[#FFB3C9] px-2 py-0.5 text-xs font-medium text-[#FF4B8B] bg-[#FFE0EB] w-fit whitespace-nowrap shrink-0"
             >
               {item.label}
             </span>
             <div className="flex-1">
-              <h4 className="font-semibold text-[#ff97b3]">{item.title}</h4>
-              <p className="text-sm text-[#666] mt-1">{item.desc}</p>
+              <h4 className="font-semibold text-[#FF4B8B]">{item.title}</h4>
+              <p className="text-sm text-[#804659] mt-1">{item.desc}</p>
             </div>
           </div>
         ))}
@@ -386,17 +386,17 @@ const IrregularBleedingContent = ({ activeTab }) => {
     {/* Treatment Options Card */}
     <div
       data-slot="card"
-      className="bg-white text-[#333] flex flex-col gap-4 sm:gap-6 rounded-xl border border-[#ff97b3] py-5 sm:py-6 shadow-sm"
+      className="bg-[#FFF7F9] text-[#804659] flex flex-col gap-4 sm:gap-6 rounded-xl border border-[#FFB3C9] py-5 sm:py-6 shadow-sm"
     >
       {/* Header */}
       <div
         data-slot="card-header"
-        className="grid auto-rows-min items-start gap-1.5 px-4 sm:px-6 border-b border-[#ff97b3] pb-4 sm:pb-6"
+        className="grid auto-rows-min items-start gap-1.5 px-4 sm:px-6 border-b border-[#FFB3C9] pb-4 sm:pb-6"
       >
-        <div className="leading-snug font-semibold flex items-center gap-2 text-[#ff97b3] text-lg sm:text-xl">
+        <div className="leading-snug font-semibold flex items-center gap-2 text-[#FF4B8B] text-lg sm:text-xl">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="lucide lucide-pill w-5 h-5 text-[#ff97b3] flex-shrink-0"
+            className="w-5 h-5 text-[#FF4B8B] flex-shrink-0"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -407,7 +407,7 @@ const IrregularBleedingContent = ({ activeTab }) => {
           </svg>
           Treatment Options
         </div>
-        <div className="text-sm sm:text-base text-[#666]">
+        <div className="text-sm sm:text-base text-[#804659]">
           Treatment depends on what's causing the bleeding. We'll talk through every option with you so you can make an informed choice.
         </div>
       </div>
@@ -454,17 +454,17 @@ const IrregularBleedingContent = ({ activeTab }) => {
                 </>
               ),
               title: "Some cases",
-              desc: "No treatment needed - issue settles on its own",
+              desc: "No treatment needed – issue settles on its own",
             },
           ].map((item, idx) => (
             <div
               key={idx}
-              className="flex items-start gap-4 p-4 rounded-lg border border-[#ff97b3]/30 bg-[#fff7f9]"
+              className="flex items-start gap-4 p-4 rounded-lg border border-[#FFB3C9]/50 bg-[#FFE0EB]"
             >
-              <div className="p-2 rounded-full bg-[#ff97b3]/10 flex-shrink-0">
+              <div className="p-2 rounded-full bg-[#FF4B8B]/10 flex-shrink-0">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-5 h-5 text-[#ff97b3]"
+                  className="w-5 h-5 text-[#FF4B8B]"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -474,10 +474,10 @@ const IrregularBleedingContent = ({ activeTab }) => {
                 </svg>
               </div>
               <div>
-                <h4 className="font-semibold text-[#ff97b3] text-sm sm:text-base">
+                <h4 className="font-semibold text-[#FF4B8B] text-sm sm:text-base">
                   {item.title}
                 </h4>
-                <p className="text-xs sm:text-sm text-[#666] mt-1">{item.desc}</p>
+                <p className="text-xs sm:text-sm text-[#804659] mt-1">{item.desc}</p>
               </div>
             </div>
           ))}
@@ -488,15 +488,15 @@ const IrregularBleedingContent = ({ activeTab }) => {
     {/* Remember Card */}
     <div
       data-slot="card"
-      className="text-[#333] flex flex-col gap-4 sm:gap-6 rounded-xl border border-[#ff97b3]/30 py-5 sm:py-6 shadow-sm bg-[#fff7f9]"
+      className="text-[#804659] flex flex-col gap-4 sm:gap-6 rounded-xl border border-[#FFB3C9]/50 py-5 sm:py-6 shadow-sm bg-[#FFF7F9]"
     >
       <div
         data-slot="card-header"
-        className="px-4 sm:px-6 font-semibold flex items-center gap-2 text-[#ff97b3] text-lg sm:text-xl"
+        className="px-4 sm:px-6 font-semibold flex items-center gap-2 text-[#FF4B8B] text-lg sm:text-xl"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="lucide lucide-heart w-5 h-5 text-[#ff97b3]"
+          className="lucide lucide-heart w-5 h-5 text-[#FF4B8B]"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -513,10 +513,10 @@ const IrregularBleedingContent = ({ activeTab }) => {
           "It's important to find the cause early",
           "We're here to support and guide you every step of the way",
         ].map((text, idx) => (
-          <div key={idx} className="flex items-center gap-2 text-[#666]">
+          <div key={idx} className="flex items-center gap-2 text-[#804659]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="lucide lucide-circle-check-big w-4 h-4 text-green-600 flex-shrink-0"
+              className="w-4 h-4 text-[#FF4B8B] flex-shrink-0"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
