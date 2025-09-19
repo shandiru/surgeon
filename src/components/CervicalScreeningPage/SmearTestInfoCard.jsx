@@ -1,21 +1,20 @@
 // src/components/SmearTestInfoCard.jsx
 export default function SmearTestInfoCard() {
   return (
-    <section className="px-6">
+    <section className="px-4 sm:px-6">
       <div
         data-slot="card"
-        className="bg-[#ff97b3] text-white flex flex-col gap-6 rounded-xl border border-[#ff97b3] py-6 shadow-sm"
+        className="bg-[#ff97b3] text-white flex flex-col gap-4 sm:gap-6 rounded-xl border border-[#ff97b3] py-5 sm:py-6 shadow-sm"
       >
         {/* Card Header */}
         <div
           data-slot="card-header"
-          className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6"
+          className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-4 sm:px-6"
         >
           <div
             data-slot="card-title"
-            className="font-semibold flex items-center gap-2 text-2xl"
+            className="font-semibold flex items-center gap-2 text-xl sm:text-2xl leading-snug"
           >
-            {/* Icon */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -38,24 +37,23 @@ export default function SmearTestInfoCard() {
         </div>
 
         {/* Card Content */}
-        <div data-slot="card-content" className="px-6 space-y-4">
-          <div className="grid md:grid-cols-2 gap-6">
+        <div data-slot="card-content" className="px-4 sm:px-6 space-y-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
             <div className="space-y-3">
               {/* Badge */}
               <span
                 data-slot="badge"
-                className="inline-flex items-center justify-center rounded-md border border-transparent bg-white text-[#ff97b3] px-2 py-0.5 font-medium w-fit text-sm"
+                className="inline-flex items-center justify-center rounded-md border border-transparent bg-white text-[#ff97b3] px-2 py-0.5 font-medium w-fit text-xs sm:text-sm"
               >
                 Recommended
               </span>
 
               {/* List */}
-              <ul className="space-y-2">
-                {/* Item 1 */}
-                <li className="flex items-center gap-2">
+              <ul className="space-y-2 text-sm sm:text-base">
+                <li className="flex items-start gap-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-4 w-4 text-white"
+                    className="h-4 w-4 mt-0.5 flex-shrink-0 text-white"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -67,11 +65,10 @@ export default function SmearTestInfoCard() {
                   Women aged 25–64
                 </li>
 
-                {/* Item 2 */}
-                <li className="flex items-center gap-2">
+                <li className="flex items-start gap-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-4 w-4 text-white"
+                    className="h-4 w-4 mt-0.5 flex-shrink-0 text-white"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -83,11 +80,10 @@ export default function SmearTestInfoCard() {
                   Every 3–5 years
                 </li>
 
-                {/* Item 3 */}
-                <li className="flex items-center gap-2">
+                <li className="flex items-start gap-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-4 w-4 text-white"
+                    className="h-4 w-4 mt-0.5 flex-shrink-0 text-white"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
