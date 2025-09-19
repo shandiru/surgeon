@@ -4,22 +4,22 @@ const accordionData = [
   {
     title: "Normal Result",
     iconColor: "text-green-600",
-    description: "This means no abnormal cells were found. Continue routine screening.",
+    description: "Next test in 3 or 5 years.",
   },
   {
     title: "Inadequate Sample",
     iconColor: "text-yellow-600",
-    description: "Sometimes the sample isn't clear enough. You may need to repeat the test.",
+    description: "Repeat test in 3 months.",
   },
   {
     title: "HPV Positive + Normal Cells",
     iconColor: "text-orange-600",
-    description: "You'll usually be asked to come back in a year to check again.",
+    description: "Repeat test in 12 months.",
   },
   {
     title: "HPV Positive + Abnormal Cells",
     iconColor: "text-red-600",
-    description: "You may be referred for further tests such as a colposcopy.",
+    description: "Referred for Colposcopy ,Colposcopy is a closer examination by a Gynaecologist using magnification.",
   },
 ];
 
