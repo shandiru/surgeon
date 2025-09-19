@@ -9,6 +9,7 @@ import DiagnosisAndSelfCareSection from "../components/OvarianCystsPage/Diagnosi
 import EmotionalWellbeingCard from "../components/OvarianCystsPage/EmotionalWellbeingCard"
 import RiskFertilityCards from "../components/OvarianCystsPage/RiskFertilityCards"
 import SymptomsCard from "../components/OvarianCystsPage/SymptomsCard"
+import OvarianCysts from "../components/OvarianCystsPage/TypesOfOvarianCysts"
 export default function OvarianCystsPage() {
   return (
     <div>
@@ -22,6 +23,9 @@ export default function OvarianCystsPage() {
       </section>
        <section className="max-w-4xl mx-auto px-6 py-6 ">
         <CystAlert />
+      </section>
+        <section className="max-w-4xl mx-auto px-6 py-6 ">
+        <OvarianCysts />
       </section>
       <section className="max-w-4xl mx-auto px-6 py-6 ">
         <SymptomsCard />
