@@ -3,14 +3,13 @@ import React, { useState } from 'react';
 import GuideButtons from '../components/colposcopy/Header';
 import ColposcopyGuide from '../components/colposcopy/About';
 import ColposcopyCard1 from '../components/colposcopy/Card1';
-// import ColposcopyCard4 from '../components/colposcopy/Card4';
-// import ColposcopyCard5 from '../components/colposcopy/Card5';
-// import ColposcopyCard6 from '../components/colposcopy/Card6';
-// import ColposcopyCard7 from '../components/colposcopy/Card7';
-// import ColposcopyCard8 from '../components/colposcopy/Card8';
 import ColposcopyGuideButtons from '../components/colposcopy/Button';
 import ColposcopyCard2 from '../components/colposcopy/card2';
 import Colposcopycard3 from '../components/colposcopy/card3';
+import ColposcopyCard4 from '../components/colposcopy/card4';
+import Colposcopycard5 from '../components/colposcopy/card5';
+import Colposcopycard6 from '../components/colposcopy/card6';
+import Colposcopycard7 from '../components/colposcopy/card7';
 
 const Colposcopy = () => {
   // State to keep track of which card is being shown
@@ -31,11 +30,10 @@ const Colposcopy = () => {
       {showCard === 1 && <ColposcopyCard1 />}
       {showCard === 2 && <ColposcopyCard2 />}
       {showCard === 3 && <Colposcopycard3 />}
-      {/* {showCard === 4 && <ColposcopyCard4 />}
-      {showCard === 5 && <ColposcopyCard5 />}
-      {showCard === 6 && <ColposcopyCard6 />}
-      {showCard === 7 && <ColposcopyCard7 />}
-      {showCard === 8 && <ColposcopyCard8 />} */}
+      {showCard === 4 && <ColposcopyCard4 />}
+      {showCard === 5 && <Colposcopycard5 />}
+      {showCard === 6 && <Colposcopycard6 />}
+      {showCard === 7 && <Colposcopycard7 />}
     </div>
   );
 };
