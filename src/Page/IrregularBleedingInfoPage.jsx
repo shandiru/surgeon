@@ -1,28 +1,32 @@
-import React from "react";
+// src/app/IrregularBleedingInfoPage.jsx
+'use client';
+import React, { useState } from "react";
 
-// Sections from components/HomePage
 import IrregularBleedingHeader from "../components/IrregularBleedingInfoPage/IrregularBleedingHeader";
 import IrregularBleedingNavbar from "../components/IrregularBleedingInfoPage/IrregularBleedingNavbar";
 import IrregularBleedingContent from "../components/IrregularBleedingInfoPage/IrregularBleedingContent";
 import IrregularBleedingFooter from "../components/IrregularBleedingInfoPage/IrregularBleedingFooter";
+
 export default function IrregularBleedingInfoPage() {
+  const [activeTab, setActiveTab] = useState("Overview");
+
   return (
     <div>
-      
-        <section >
+      <section>
         <IrregularBleedingHeader />
-        </section>
-        <section className=" px-4">
-        <IrregularBleedingNavbar />
-        </section>
-        <section className="my-12 px-4">
-        <IrregularBleedingContent />
-        </section>
+      </section>
 
-        <section className="my-12 px-4">
+      <section className="px-4">
+        <IrregularBleedingNavbar activeTab={activeTab} setActiveTab={setActiveTab} />
+      </section>
+
+      <section className="my-12 px-4">
+        <IrregularBleedingContent activeTab={activeTab} />
+      </section>
+
+      <section className="my-12 px-4">
         <IrregularBleedingFooter />
-        </section>
-    
+      </section>
     </div>
   );
 }

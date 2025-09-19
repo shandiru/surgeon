@@ -1,15 +1,9 @@
+// src/components/IrregularBleedingInfoPage/IrregularBleedingNavbar.jsx
 'use client';
 
 import React, { useState } from 'react';
 import {
-  Info,
-  TriangleAlert,
-  Stethoscope,
-  FileText,
-  TestTube,
-  Pill,
-  Menu,
-  X,
+  Info, TriangleAlert, Stethoscope, FileText, TestTube, Pill, Menu, X
 } from 'lucide-react';
 
 const tabs = [
@@ -21,7 +15,7 @@ const tabs = [
   { label: 'Treatment', icon: <Pill size={16} /> },
 ];
 
-const IrregularBleedingNavbar = () => {
+const IrregularBleedingNavbar = ({ activeTab, setActiveTab }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -30,29 +24,38 @@ const IrregularBleedingNavbar = () => {
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center justify-center gap-2 py-4">
           {tabs.map((tab, idx) => (
-            <TabButton key={idx} icon={tab.icon} label={tab.label} />
+            <TabButton
+              key={idx}
+              icon={tab.icon}
+              label={tab.label}
+              active={activeTab === tab.label}
+              onClick={() => setActiveTab(tab.label)}
+            />
           ))}
         </div>
 
-        {/* Mobile Header with Hamburger */}
+        {/* Mobile Menu */}
         <div className="md:hidden flex justify-between items-center py-4">
-          <span className="text-base font-semibold text-card-foreground">
-            Menu
-          </span>
-          <button
-            className="text-primary focus:outline-none"
-            onClick={() => setIsOpen(!isOpen)}
-            aria-label="Toggle Menu"
-          >
+          <span className="text-base font-semibold text-card-foreground">Menu</span>
+          <button onClick={() => setIsOpen(!isOpen)} className="text-primary">
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
-        {/* Mobile Menu */}
         {isOpen && (
           <div className="md:hidden flex flex-col gap-2 pb-4">
             {tabs.map((tab, idx) => (
-              <TabButton key={idx} icon={tab.icon} label={tab.label} fullWidth />
+              <TabButton
+                key={idx}
+                icon={tab.icon}
+                label={tab.label}
+                active={activeTab === tab.label}
+                onClick={() => {
+                  setActiveTab(tab.label);
+                  setIsOpen(false);
+                }}
+                fullWidth
+              />
             ))}
           </div>
         )}
@@ -61,15 +64,17 @@ const IrregularBleedingNavbar = () => {
   );
 };
 
-const TabButton = ({ icon, label, fullWidth = false }) => {
-  const base =
-    'flex items-center gap-2 px-3 py-2 text-sm font-medium rounded-md transition-all';
-  const active =
-    'bg-primary text-primary-foreground hover:bg-primary/90';
-  const layout = fullWidth ? 'w-full justify-start' : 'justify-center whitespace-nowrap shrink-0';
+const TabButton = ({ icon, label, fullWidth = false, active, onClick }) => {
+  const base = 'flex items-center gap-2 px-3 py-2 text-sm font-medium rounded-md transition-all';
+  const activeClasses = active
+    ? 'bg-primary text-primary-foreground'
+    : 'bg-gray-100 text-gray-600 hover:bg-gray-200';
+  const layout = fullWidth
+    ? 'w-full justify-start'
+    : 'justify-center whitespace-nowrap shrink-0';
 
   return (
-    <button className={`${base} ${active} ${layout}`}>
+    <button onClick={onClick} className={`${base} ${activeClasses} ${layout}`}>
       {icon}
       {label}
     </button>
