@@ -25,10 +25,10 @@ const IrregularBleedingNavbar = ({ activeTab, setActiveTab }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-10 bg-[#FFF1F5] shadow-sm">
-      <div className="max-w-4xl mx-auto px-4">
+    <nav className="sticky top-0 z-20 bg-[#FFF1F5] shadow-sm rounded-full">
+      <div className="max-w-5xl mx-auto px-4">
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center justify-center gap-2 py-4">
+        <div className="hidden md:flex items-center justify-center gap-3 py-4">
           {tabs.map((tab, idx) => (
             <TabButton
               key={idx}
@@ -40,15 +40,18 @@ const IrregularBleedingNavbar = ({ activeTab, setActiveTab }) => {
           ))}
         </div>
 
-        {/* Mobile Menu Toggle */}
+        {/* Mobile Toggle */}
         <div className="md:hidden flex justify-between items-center py-4">
           <span className="text-base font-semibold text-[#1F2937]">Menu</span>
-          <button onClick={() => setIsOpen(!isOpen)} className="text-[#FF4B8B]">
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="text-[#FF4B8B] focus:outline-none"
+          >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
-        {/* Mobile Menu Items */}
+        {/* Mobile Items */}
         {isOpen && (
           <div className="md:hidden flex flex-col gap-2 pb-4">
             {tabs.map((tab, idx) => (
@@ -73,17 +76,19 @@ const IrregularBleedingNavbar = ({ activeTab, setActiveTab }) => {
 
 const TabButton = ({ icon, label, fullWidth = false, active, onClick }) => {
   const base =
-    'flex items-center gap-2 px-3 py-2 text-sm font-medium rounded-md transition-all';
+    'flex items-center gap-2 px-4 py-2 text-sm font-medium transition-all';
   const activeClasses = active
     ? 'bg-[#FF4B8B] text-white'
     : 'bg-[#FFE5ED] text-[#1F2937] hover:bg-[#FFD2E1]';
   const layout = fullWidth
-    ? 'w-full justify-start'
-    : 'justify-center whitespace-nowrap shrink-0';
+    ? 'w-full justify-start rounded-md'
+    : 'justify-center whitespace-nowrap shrink-0 rounded-full';
 
   return (
     <button onClick={onClick} className={`${base} ${activeClasses} ${layout}`}>
-      {icon}
+      <span className="p-1 rounded-full bg-white text-[#FF4B8B]">
+        {icon}
+      </span>
       {label}
     </button>
   );

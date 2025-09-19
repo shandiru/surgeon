@@ -16,7 +16,7 @@ export default function IrregularBleedingInfoPage() {
         <IrregularBleedingHeader />
       </section>
 
-      <section className="px-4">
+      <section className="px-4 pt-12">
         <IrregularBleedingNavbar activeTab={activeTab} setActiveTab={setActiveTab} />
       </section>
 
