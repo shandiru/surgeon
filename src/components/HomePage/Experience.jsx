@@ -1,9 +1,14 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 export default function ProfessionalExperience() {
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
+
   return (
     <section id="experience" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -48,7 +53,7 @@ export default function ProfessionalExperience() {
           ].map((item, idx) => (
             <div
               key={idx}
-              className="hospital-card bg-white flex flex-col gap-6 rounded-xl shadow-sm p-6 transition-all duration-300 hover:shadow-[0_0_25px_2px_rgba(255,197,211,0.8)] hover:scale-[1.02]"
+              className="hospital-card bg-white flex flex-col gap-6 rounded-xl shadow-sm p-6 transition-all duration-300 hover:shadow-[0_0_25px_2px_rgba(255,197,211,0.8)] hover:scale-[1.02] active:shadow-[0_0_25px_2px_rgba(255,197,211,0.8)] active:scale-[1.02]"
               data-aos="fade-up"
               data-aos-delay={`${idx * 150}`}
             >
@@ -80,7 +85,7 @@ export default function ProfessionalExperience() {
 
         {/* Membership & Leadership Section */}
         <div
-          className="bg-white flex flex-col gap-6 rounded-xl shadow-sm p-8 transition-all duration-300 hover:shadow-[0_0_25px_2px_rgba(255,197,211,0.8)]"
+          className="bg-white flex flex-col gap-6 rounded-xl shadow-sm p-8 transition-all duration-300 hover:shadow-[0_0_25px_2px_rgba(255,197,211,0.8)] active:shadow-[0_0_25px_2px_rgba(255,197,211,0.8)]"
           data-aos="fade-up"
           data-aos-delay="200"
         >
@@ -131,7 +136,7 @@ export default function ProfessionalExperience() {
               </h3>
               <div className="space-y-4">
                 <div
-                  className="leadership-card bg-[#ffc5d3]/10 p-4 rounded-lg"
+                  className="leadership-card bg-[#ffc5d3]/10 p-4 rounded-lg transition-all duration-300 hover:shadow-[0_0_25px_2px_rgba(255,197,211,0.8)] active:shadow-[0_0_25px_2px_rgba(255,197,211,0.8)]"
                   data-aos="fade-up"
                   data-aos-delay="300"
                 >
@@ -143,7 +148,7 @@ export default function ProfessionalExperience() {
                   </p>
                 </div>
                 <div
-                  className="leadership-card bg-[#ffc5d3]/10 p-4 rounded-lg"
+                  className="leadership-card bg-[#ffc5d3]/10 p-4 rounded-lg transition-all duration-300 hover:shadow-[0_0_25px_2px_rgba(255,197,211,0.8)] active:shadow-[0_0_25px_2px_rgba(255,197,211,0.8)]"
                   data-aos="fade-up"
                   data-aos-delay="400"
                 >
