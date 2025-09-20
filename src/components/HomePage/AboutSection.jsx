@@ -7,7 +7,7 @@ export default function AboutSectionView() {
   useEffect(() => {
     AOS.init({
       duration: 800,
-      once: false, // animation triggers again when scrolling back
+      once: false,
     });
   }, []);
 
@@ -76,11 +76,13 @@ export default function AboutSectionView() {
           {cards.map((card, i) => (
             <div
               key={i}
-              className="group bg-white text-gray-900 flex flex-col gap-6 rounded-xl border border-[#ffd6e0] shadow-sm text-center p-6 transition-all duration-300 scale-100 shadow-none md:hover:scale-105 md:hover:shadow-[0_0_35px_4px_rgba(255,197,211,1)]"
+              className="group bg-white text-gray-900 flex flex-col gap-6 rounded-xl border border-[#ffd6e0] shadow-sm text-center p-6 transition-all duration-300 scale-100 shadow-none 
+                         md:hover:scale-105 md:hover:shadow-[0_0_35px_4px_rgba(255,197,211,1)]
+                         active:scale-95 active:shadow-[0_0_25px_2px_rgba(255,197,211,0.7)]"
               data-aos="fade-up"
               data-aos-delay={i * 200}
             >
-              <div className="bg-[#ffc5d3]/30 md:group-hover:bg-[#ffc5d3]/40 transition-colors duration-300 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-[#ffc5d3]/30 group-hover:bg-[#ffc5d3]/40 active:bg-[#ffc5d3]/50 transition-colors duration-300 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-8 w-8 text-[#ff97b3]"
