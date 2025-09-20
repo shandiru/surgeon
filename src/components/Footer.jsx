@@ -1,46 +1,15 @@
 'use client';
 
-import React, { useLayoutEffect, useRef } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
-gsap.registerPlugin(ScrollTrigger);
+import React from 'react';
+import 'aos/dist/aos.css';
 
 export default function Footer() {
-  const root = useRef(null);
-
-  useLayoutEffect(() => {
-    const ctx = gsap.context(() => {
-      // Set initial hidden state
-      gsap.set(['.footer-heading', '.footer-col', '.footer-bottom'], {
-        opacity: 0,
-        y: 40,
-      });
-
-      // Timeline animation
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: root.current,
-          start: 'top 90%',
-          once: true,
-        },
-        defaults: { duration: 0.8, ease: 'power3.out' },
-      });
-
-      tl.to('.footer-heading', { opacity: 1, y: 0 })
-        .to('.footer-col', { opacity: 1, y: 0, stagger: 0.2 }, '-=0.4')
-        .to('.footer-bottom', { opacity: 1, y: 0 }, '-=0.3');
-    }, root);
-
-    return () => ctx.revert();
-  }, []);
-
   return (
-    <footer className="bg-[#FF94B8] text-white pt-16" ref={root}>
+    <footer className="bg-[#FF94B8] text-white pt-16" id="footer">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
         <div className="grid md:grid-cols-3 gap-8 text-sm md:text-base">
           {/* Left Column */}
-          <div className="footer-col">
+          <div className="footer-col" data-aos="fade-up" data-aos-delay="0">
             <h2 className="footer-heading text-lg font-bold mb-3">Mr Ketankumar Gajjar</h2>
             <p className="text-white/90">
               Consultant Gynaecological Oncologist with 26 years of experience providing exceptional care in women's health and cancer treatment.
@@ -120,7 +89,7 @@ export default function Footer() {
           </div>
 
           {/* Middle Column */}
-          <div className="footer-col">
+          <div className="footer-col" data-aos="fade-up" data-aos-delay="150">
             <h2 className="text-lg font-bold mb-3">Quick Links</h2>
             <ul className="text-white/90 space-y-1">
               {["About", "Experience", "Specialties", "Education", "Contact"].map(
@@ -136,7 +105,7 @@ export default function Footer() {
           </div>
 
           {/* Right Column */}
-          <div className="footer-col">
+          <div className="footer-col" data-aos="fade-up" data-aos-delay="300">
             <h2 className="text-lg font-bold mb-3">Locations</h2>
             <ul className="text-white/90 space-y-1">
               <li>Nottingham University Hospital</li>
@@ -163,7 +132,11 @@ export default function Footer() {
         </div>
 
         {/* Bottom Line */}
-        <div className="footer-bottom border-t border-white/40 mt-10 pt-6 text-center text-sm text-white/80">
+        <div
+          className="footer-bottom border-t border-white/40 mt-10 pt-6 text-center text-sm text-white/80"
+          data-aos="fade-up"
+          data-aos-delay="500"
+        >
           <p>© 2025 Mr Ketankumar Gajjar – Consultant Gynaecological Oncologist. All rights reserved.</p>
           <p className="mt-1">Professional medical services | GMC Registered</p>
           <p className="mt-3 text-white/70">

@@ -1,35 +1,13 @@
-'use client'
+'use client';
 
-import React, { useLayoutEffect, useRef } from 'react'
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-
-gsap.registerPlugin(ScrollTrigger)
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function EducationLanguagesSection() {
-  const root = useRef(null)
-
-  useLayoutEffect(() => {
-    const ctx = gsap.context(() => {
-      gsap.set('.edu-card', { opacity: 1 })
-      gsap.set('.lang-card', { opacity: 1 })
-
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: root.current,
-          start: 'top 80%',
-          once: true,
-        },
-        defaults: { ease: 'power3.out', duration: 0.8 },
-      })
-
-      tl.from('.section-title', { y: 40, opacity: 0 })
-        .from('.edu-card', { y: 50, opacity: 0, stagger: 0.2 }, '-=0.3')
-        .from('.lang-card', { scale: 0.9, opacity: 0, y: 30 }, '-=0.2')
-    }, root)
-
-    return () => ctx.revert()
-  }, [])
+  useEffect(() => {
+    AOS.init({ duration: 800, once: false });
+  }, []);
 
   const education = [
     {
@@ -52,14 +30,14 @@ export default function EducationLanguagesSection() {
       place: 'The Maharaja Sayjirao University of Baroda, India',
       years: '1993 - 1999',
     },
-  ]
+  ];
 
   return (
-    <section ref={root} id="education" className="py-20 bg-gray-50">
+    <section id="education" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-stretch">
           {/* Education & Qualifications */}
-          <div className="flex flex-col">
+          <div className="flex flex-col" data-aos="fade-right">
             <h2 className="section-title text-4xl font-bold text-gray-900 mb-8 text-center lg:text-left">
               Education & Qualifications
             </h2>
@@ -68,7 +46,9 @@ export default function EducationLanguagesSection() {
               {education.map((item, i) => (
                 <div
                   key={i}
-                  className="edu-card opacity-100 bg-white p-6 rounded-lg shadow-sm text-center lg:text-left transition-all duration-300 hover:shadow-[0_0_25px_2px_rgba(255,197,211,0.9)] hover:scale-[1.02]"
+                  className="bg-white p-6 rounded-lg shadow-sm text-center lg:text-left transition-all duration-300 hover:shadow-[0_0_25px_2px_rgba(255,197,211,0.9)] hover:scale-[1.02]"
+                  data-aos="fade-up"
+                  data-aos-delay={i * 100}
                 >
                   <h3 className="text-lg font-semibold text-gray-900">
                     {item.title}
@@ -81,7 +61,11 @@ export default function EducationLanguagesSection() {
           </div>
 
           {/* Languages Spoken */}
-          <div className="lang-card opacity-100 bg-white rounded-xl shadow-sm p-8 flex flex-col h-full transition-all duration-300 hover:shadow-[0_0_30px_2px_rgba(255,197,211,0.8)]">
+          <div
+            className="bg-white rounded-xl shadow-sm p-8 flex flex-col h-full transition-all duration-300 hover:shadow-[0_0_30px_2px_rgba(255,197,211,0.8)]"
+            data-aos="fade-left"
+            data-aos-delay="300"
+          >
             <div className="text-center pb-6">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -106,13 +90,19 @@ export default function EducationLanguagesSection() {
                   <span
                     key={idx}
                     className="inline-flex items-center justify-center rounded-md font-medium text-lg px-6 py-2 transition-all duration-300 hover:text-[#ff97b3] hover:shadow-[0_0_15px_1px_rgba(255,197,211,0.8)] hover:scale-105"
+                    data-aos="zoom-in"
+                    data-aos-delay={idx * 200}
                   >
                     {lang}
                   </span>
                 ))}
               </div>
 
-              <p className="text-gray-600 mt-6 text-center">
+              <p
+                className="text-gray-600 mt-6 text-center"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
                 Fluent communication in multiple languages to better serve
                 diverse patient populations.
               </p>
@@ -121,5 +111,5 @@ export default function EducationLanguagesSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

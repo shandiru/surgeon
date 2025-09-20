@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useLayoutEffect, useRef } from 'react';
+import React from 'react';
 import {
   FaStethoscope,
   FaUserFriends,
@@ -8,47 +8,8 @@ import {
   FaMicroscope,
   FaCheckCircle,
 } from 'react-icons/fa';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
-gsap.registerPlugin(ScrollTrigger);
 
 export default function SpecialtiesSection() {
-  const root = useRef(null);
-
-  useLayoutEffect(() => {
-    const ctx = gsap.context(() => {
-      // Set initial hidden state
-      gsap.set([
-        '.specialties-heading',
-        '.specialties-subtext',
-        '.specialty-card',
-        '.surgical-box',
-        '.cancer-box'
-      ], {
-        opacity: 0,
-        y: 40,
-      });
-
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: root.current,
-          start: 'top 80%',
-          once: true,
-        },
-        defaults: { ease: 'power3.out', duration: 0.8 },
-      });
-
-      tl.to('.specialties-heading', { y: 0, opacity: 1 })
-        .to('.specialties-subtext', { y: 0, opacity: 1 }, '-=0.5')
-        .to('.specialty-card', { y: 0, opacity: 1, stagger: 0.1 }, '-=0.3')
-        .to('.surgical-box', { x: 0, y: 0, opacity: 1 }, '-=0.2')
-        .to('.cancer-box', { x: 0, y: 0, opacity: 1 }, '-=0.5');
-    }, root);
-
-    return () => ctx.revert();
-  }, []);
-
   const specialties = [
     {
       title: 'Laparoscopic Hysterectomy',
@@ -119,20 +80,31 @@ export default function SpecialtiesSection() {
   ];
 
   return (
-    <section id="specialties" className="py-20 bg-gray-50" ref={root}>
+    <section id="specialties" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="specialties-heading text-4xl font-bold text-gray-900 mb-4">
+          <h2
+            className="text-4xl font-bold text-gray-900 mb-4"
+            data-aos="fade-up"
+          >
             Areas of Expertise
           </h2>
-          <p className="specialties-subtext text-xl text-gray-600">
+          <p
+            className="text-xl text-gray-600"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             Specialized procedures and treatments in women's health
           </p>
         </div>
 
         {/* Primary Specialties */}
-        <div className="bg-[#FFF0F4] rounded-2xl p-8 mb-12 shadow-sm">
+        <div
+          className="bg-[#FFF0F4] rounded-2xl p-8 mb-12 shadow-sm"
+          data-aos="fade-up"
+          data-aos-delay="150"
+        >
           <div className="text-center mb-8">
             <span className="inline-flex items-center justify-center mx-auto rounded-md font-medium bg-[#FFC5D3] text-white px-4 py-2 text-sm sm:text-base">
               Primary Specialty: Obstetrics & Gynaecology
@@ -143,7 +115,9 @@ export default function SpecialtiesSection() {
             {specialties.map((item, idx) => (
               <div
                 key={idx}
-                className="specialty-card text-center group transition-all duration-300 hover:scale-[1.05] hover:shadow-[0_0_20px_2px_rgba(255,197,211,0.7)] rounded-xl p-3 bg-white"
+                className="text-center group transition-all duration-300 hover:scale-[1.05] hover:shadow-[0_0_20px_2px_rgba(255,197,211,0.7)] rounded-xl p-3 bg-white"
+                data-aos="fade-up"
+                data-aos-delay={200 + idx * 100}
               >
                 <div className="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-sm">
                   {item.icon}
@@ -160,7 +134,10 @@ export default function SpecialtiesSection() {
         {/* Detailed Expertise */}
         <div className="grid md:grid-cols-2 gap-8">
           {/* Surgical */}
-          <div className="surgical-box bg-white rounded-xl shadow-sm p-6 flex flex-col gap-6 transition-all duration-300 hover:shadow-[0_0_25px_2px_rgba(255,197,211,0.6)]">
+          <div
+            className="bg-white rounded-xl shadow-sm p-6 flex flex-col gap-6 transition-all duration-300 hover:shadow-[0_0_25px_2px_rgba(255,197,211,0.6)]"
+            data-aos="fade-up"
+          >
             <div className="text-xl font-semibold text-[#FF97B3]">
               Surgical Expertise
             </div>
@@ -169,7 +146,9 @@ export default function SpecialtiesSection() {
                 <li key={idx} className="flex items-start gap-3">
                   <FaCheckCircle className="text-[#FFC5D3] mt-1" />
                   <div>
-                    <div className="font-semibold text-gray-900">{item.title}</div>
+                    <div className="font-semibold text-gray-900">
+                      {item.title}
+                    </div>
                     <p className="text-sm text-gray-600">{item.description}</p>
                   </div>
                 </li>
@@ -178,7 +157,10 @@ export default function SpecialtiesSection() {
           </div>
 
           {/* Cancer Care */}
-          <div className="cancer-box bg-white rounded-xl shadow-sm p-6 flex flex-col gap-6 transition-all duration-300 hover:shadow-[0_0_25px_2px_rgba(255,197,211,0.6)]">
+          <div
+            className="bg-white rounded-xl shadow-sm p-6 flex flex-col gap-6 transition-all duration-300 hover:shadow-[0_0_25px_2px_rgba(255,197,211,0.6)]"
+            data-aos="fade-down"
+          >
             <div className="text-xl font-semibold text-[#FF97B3]">
               Cancer Care
             </div>
@@ -187,7 +169,9 @@ export default function SpecialtiesSection() {
                 <li key={idx} className="flex items-start gap-3">
                   <FaCheckCircle className="text-[#FFC5D3] mt-1" />
                   <div>
-                    <div className="font-semibold text-gray-900">{item.title}</div>
+                    <div className="font-semibold text-gray-900">
+                      {item.title}
+                    </div>
                     <p className="text-sm text-gray-600">{item.description}</p>
                   </div>
                 </li>

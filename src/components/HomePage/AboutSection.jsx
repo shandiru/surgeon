@@ -1,33 +1,14 @@
 'use client';
-import React, { useLayoutEffect, useRef } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
-gsap.registerPlugin(ScrollTrigger);
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function AboutSectionView() {
-  const root = useRef(null);
-
-  useLayoutEffect(() => {
-    const ctx = gsap.context(() => {
-      // ensure cards are visible initially (fixes hidden bug)
-      gsap.set('.about-card', { opacity: 1, y: 0 });
-
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: root.current,
-          start: 'top 80%', // when section is 80% from top of viewport
-          once: true,       // only play once
-        },
-        defaults: { ease: 'power3.out', duration: 0.8 }
-      });
-
-      tl.from('.about-heading', { y: 40, opacity: 0 })
-        .from('.about-desc', { y: 30, opacity: 0 }, '-=0.4')
-        .from('.about-card', { y: 60, opacity: 0, stagger: 0.2 }, '-=0.2');
-    }, root);
-
-    return () => ctx.revert();
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: false, // animation triggers again when scrolling back
+    });
   }, []);
 
   const cards = [
@@ -69,16 +50,24 @@ export default function AboutSectionView() {
   ];
 
   return (
-    <section ref={root} className="py-20 bg-white" id="about">
+    <section className="py-20 bg-white" id="about">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="about-heading text-4xl font-bold text-gray-900 mb-4">
+          <h2
+            className="text-4xl font-bold text-gray-900 mb-4"
+            data-aos="fade-up"
+          >
             About Mr Ketankumar Gajjar
           </h2>
-          <p className="about-desc text-xl text-gray-600 max-w-3xl mx-auto">
-            A leading consultant in gynaecological oncology, dedicated to providing exceptional care and advancing women's health through clinical excellence and research.
+          <p
+            className="text-xl text-gray-600 max-w-3xl mx-auto"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            A leading consultant in gynaecological oncology, dedicated to providing
+            exceptional care and advancing women's health through clinical excellence
+            and research.
           </p>
         </div>
 
@@ -87,7 +76,9 @@ export default function AboutSectionView() {
           {cards.map((card, i) => (
             <div
               key={i}
-              className="about-card opacity-100 group bg-white text-gray-900 flex flex-col gap-6 rounded-xl border border-[#ffd6e0] shadow-sm text-center p-6 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_35px_4px_rgba(255,197,211,1)]"
+              className="group bg-white text-gray-900 flex flex-col gap-6 rounded-xl border border-[#ffd6e0] shadow-sm text-center p-6 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_35px_4px_rgba(255,197,211,1)]"
+              data-aos="fade-up"
+              data-aos-delay={i * 200}
             >
               <div className="bg-[#ffc5d3]/30 group-hover:bg-[#ffc5d3]/40 transition-colors duration-300 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg
