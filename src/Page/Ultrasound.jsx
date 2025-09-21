@@ -11,26 +11,37 @@ import UltrasoundCard5 from '../components/Ultrasound/card5';
 import UltrasoundCard6 from '../components/Ultrasound/card6';
 
 const Ultrasound = () => {
-    // State to keep track of which card is being shown
-    const [showCard, setShowCard] = useState(1); // Default to Card 1
+    const [showCard, setShowCard] = useState(1);
+    const [activeButton, setActiveButton] = useState(0);
 
     return (
         <div>
-            {/* Render Guide Buttons */}
             <UltraSoundGuideButtons />
+            <UltraSoundGuide activeButton={activeButton} />
+            <UltraSoundButtons
+                setShowCard={setShowCard}
+                activeButton={activeButton}
+                setActiveButton={setActiveButton}
+            />
 
-            {/* Render Colposcopy Guide */}
-            <UltraSoundGuide />
-
-            {/* Render Colposcopy Guide Buttons (to toggle cards) */}
-            <UltraSoundButtons setShowCard={setShowCard} />
-
-            {showCard === 1 && <UltrasoundCard1 />}
-            {showCard === 2 && <UltrasoundCard2 />}
-            {showCard === 3 && <UltrasoundCard3 />}
-            {showCard === 4 && <UltrasoundCard4 />}
-            {showCard === 5 && <UltrasoundCard5 />}
-            {showCard === 6 && <UltrasoundCard6 />}
+            {showCard === 1 && (
+                <UltrasoundCard1 setShowCard={setShowCard} setActiveButton={setActiveButton} />
+            )}
+            {showCard === 2 && (
+                <UltrasoundCard2 setShowCard={setShowCard} setActiveButton={setActiveButton} />
+            )}
+            {showCard === 3 && (
+                <UltrasoundCard3 setShowCard={setShowCard} setActiveButton={setActiveButton} />
+            )}
+            {showCard === 4 && (
+                <UltrasoundCard4 setShowCard={setShowCard} setActiveButton={setActiveButton} />
+            )}
+            {showCard === 5 && (
+                <UltrasoundCard5 setShowCard={setShowCard} setActiveButton={setActiveButton} />
+            )}
+            {showCard === 6 && (
+                <UltrasoundCard6 setShowCard={setShowCard} setActiveButton={setActiveButton} />
+            )}
         </div>
     );
 };

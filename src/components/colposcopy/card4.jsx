@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const ColposcopyCard4 = () => {
+const ColposcopyCard4 = ({ setShowCard, setActiveButton }) => {
   const [openAccordion, setOpenAccordion] = useState(null);
 
   const toggleAccordion = (index) => {
@@ -193,7 +193,10 @@ const ColposcopyCard4 = () => {
         {/* Learn About Biopsies Button */}
         <div className="pt-4">
           <button
-            data-slot="button"
+            onClick={() => {
+              setShowCard(5);       // move to Card 4
+              setActiveButton(4);   // index for Card 4
+            }}
             className="items-center w-[90%] mx-5 md:mx-10 lg:mx-12  bg-[#FF4B8B] justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-9 px-4 py-2 has-[&_svg]:px-3"
           >
             Understand Your Results

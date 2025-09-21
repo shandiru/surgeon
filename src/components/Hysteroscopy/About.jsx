@@ -1,15 +1,11 @@
 import React, { useState } from 'react';
 import { Heart } from 'lucide-react';
 
-const HysteroscopyGuide = () => {
-  const [progress, setProgress] = useState(0);
+const HysteroscopyGuide = ({ activeButton }) => {
+  const totalSteps = 6;
+  const completed = activeButton + 1;
+  const progressPercentage = Math.round((completed / totalSteps) * 100);
 
-  // Function to simulate progress for demonstration
-  const updateProgress = () => {
-    if (progress < 100) {
-      setProgress(progress + 16.67); // Simulating 6 sections, each 16.67% completion
-    }
-  };
 
   return (
     <div className="text-center mb-8 px-4 sm:px-6 lg:px-8">
@@ -25,25 +21,23 @@ const HysteroscopyGuide = () => {
       <div className="mt-6 max-w-md mx-auto">
         <div className="flex justify-between items-center mb-2">
           <span className="text-sm text-[#d60d64]">Your Progress</span>
-          <span className="text-sm font-medium text-[#d60d64]">{Math.round(progress)}/6 sections</span>
+          <span className="text-sm font-medium text-[#BB125B]">
+            {completed}/{totalSteps} sections
+          </span>
         </div>
 
-        {/* Progress Bar */}
+        {/* Progress Bar Container */}
         <div
-          aria-valuemax="100"
-          aria-valuemin="0"
           role="progressbar"
-          data-state="indeterminate"
-          data-max="100"
-          data-slot="progress"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          aria-valuenow={progressPercentage}
           className="bg-[#FF4B8B]/10 relative w-full overflow-hidden rounded-full h-2"
         >
+          {/* Progress Fill */}
           <div
-            data-state="indeterminate"
-            data-max="100"
-            data-slot="progress-indicator"
-            className="bg-[#FF4B8B]/50 h-full transition-all"
-            style={{ transform: `translateX(-${100 - progress}%)` }}
+            className="bg-[#FF4B8B]/80 h-full transition-all duration-300"
+            style={{ width: `${progressPercentage}%` }}
           ></div>
         </div>
       </div>

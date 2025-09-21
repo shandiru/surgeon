@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const ColposcopyGuide = () => {
-  const [progress, setProgress] = useState(0); // Progress state
+const ColposcopyGuide = ({ activeButton }) => {
+  const totalSteps = 7;
+  const completed = activeButton + 1;
+  const progressPercentage = Math.round((completed / totalSteps) * 100);
 
   return (
-    <div className="text-center mb-8 px-4 sm:px-6 lg:px-8">
+    <div className="text-center mb-8 px-4 sm:px-6 md:px-8 lg:px-16">
       {/* Tag and Title */}
-      <div className="inline-flex bg-[#FF4B8B]/10 text-[#BB125B] items-center gap-2 bg-primary/10 px-4 py-2 rounded-full mb-4">
+      <div className="inline-flex bg-[#FF4B8B]/10 text-[#BB125B] items-center gap-2 px-4 py-2 rounded-full mb-4">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -25,10 +27,10 @@ const ColposcopyGuide = () => {
       </div>
 
       {/* Main Title */}
-      <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-balance mb-4 text-[#BB125B]">
+      <h1 className="text-3xl sm:text-4xl font-bold text-balance mb-4 text-[#BB125B]">
         Understanding Colposcopy
       </h1>
-      <p className="text-xl sm:text-2xl text-muted-foreground text-balance text-[#BB125B]">
+      <p className="text-lg sm:text-xl text-muted-foreground text-balance text-[#BB125B]">
         What it is, why it's done, and what to expect
       </p>
 
@@ -36,26 +38,23 @@ const ColposcopyGuide = () => {
       <div className="mt-6 max-w-md mx-auto">
         <div className="flex justify-between items-center mb-2">
           <span className="text-sm text-muted-foreground text-[#BB125B]">Your Progress</span>
-          <span className="text-sm font-medium text-[#BB125B]">{progress}/7 sections</span>
+          <span className="text-sm font-medium text-[#BB125B]">
+            {completed}/{totalSteps} sections
+          </span>
         </div>
 
         {/* Progress Bar Container */}
         <div
-          aria-valuemax="100"
-          aria-valuemin="0"
           role="progressbar"
-          data-state="indeterminate"
-          data-max="100"
-          data-slot="progress"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          aria-valuenow={progressPercentage}
           className="bg-[#FF4B8B]/10 relative w-full overflow-hidden rounded-full h-2"
         >
-          {/* Progress Indicator */}
+          {/* Progress Fill */}
           <div
-            data-state="indeterminate"
-            data-max="100"
-            data-slot="progress-indicator"
-            className="bg-[#FF4B8B]/20 h-full w-full flex-1 transition-all"
-            style={{ transform: `translateX(-${(100 - (progress / 7) * 100)}%)` }} // Progress calculation
+            className="bg-[#FF4B8B]/80 h-full transition-all duration-300"
+            style={{ width: `${progressPercentage}%` }}
           ></div>
         </div>
       </div>

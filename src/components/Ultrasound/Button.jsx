@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import { Monitor, Stethoscope, Zap, FileText, CircleCheck, Heart } from 'lucide-react';
 
-const UltraSoundButtons = ({ setShowCard }) => {
-  const [activeButton, setActiveButton] = useState(0); // Track active button
-
+const UltraSoundButtons = ({ setShowCard, activeButton, setActiveButton }) => {
   const buttons = [
     {
       label: 'What is Gynaecological Ultrasound?',
@@ -48,7 +46,7 @@ const UltraSoundButtons = ({ setShowCard }) => {
         <button
           key={index}
           onClick={() => handleButtonClick(button.card, index)} // Update active button and card displayed
-          className={`items-center justify-center text-center font-semibold text-[#BB125B] hover:bg-[#FF4B8B]/30 bg-[#FF4B8B]/10 whitespace-normal text-xs sm:text-sm md:text-base transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 rounded-md px-3 py-3 flex flex-col gap-1 relative max-w-full ${
+          className={`items-center justify-center text-center -ml-2 sm:ml-0 font-semibold text-[#BB125B] hover:bg-[#FF4B8B]/30 bg-[#FF4B8B]/10 whitespace-normal text-xs sm:text-sm md:text-base transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 rounded-md px-3 py-3 flex flex-col gap-1 relative max-w-full ${
             activeButton === index ? 'bg-[#FF4B8B]/50 text-black' : '' // Active button styling
           }`}
         >

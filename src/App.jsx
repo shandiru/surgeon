@@ -18,7 +18,7 @@ import OvarianCystsPage from "./Page/OvarianCystsPage"
 import Colposcopy from "./Page/Colposcopy";
 import PostcoitalBleeding from "./Page/PostcoitalBleeding"
 import Ultrasound from "./Page/Ultrasound";
-import Hysteroscopy from "./Page/Copy";
+import Hysteroscopy from "./Page/Hysteroscopy";
 import Pelvic from "./Page/Pelvic";
 import Vulvar from "./Page/Vulvar";
 import PostmenopausalBleedingPage from "./Page/PostmenopausalBleedingPage";
@@ -41,7 +41,7 @@ function App() {
         <Route path="/MenstrualDisordersInformation" element={< MenstrualDisordersInformationPage />} />
         <Route path="/OvarianCystsPage" element={<OvarianCystsPage />} />
         <Route path="/PostcoitalBleeding" element={< PostcoitalBleeding />} />
-         <Route path="/postmenopausal-bleeding" element={< PostmenopausalBleedingPage />} />
+        <Route path="/postmenopausal-bleeding" element={< PostmenopausalBleedingPage />} />
         <Route path="/colposcopy" element={< Colposcopy />} />
         <Route path="/ultrasound" element={< Ultrasound />} />
         <Route path="/hysteroscopy" element={< Hysteroscopy />} />

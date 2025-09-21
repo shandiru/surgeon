@@ -1,7 +1,7 @@
 import React from 'react';
 import { Camera, Zap, Clock } from 'lucide-react';
 
-const Hysteroscopycard4 = () => {
+const Hysteroscopycard4 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6">
       <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl text-[#BB125B] mx-auto mb-10 flex flex-col gap-6 rounded-xl border py-6 shadow-sm animate-in slide-in-from-right-5 duration-300">
@@ -116,7 +116,10 @@ const Hysteroscopycard4 = () => {
           {/* Continue Button */}
           <div className="pt-4">
             <button
-              data-slot="button"
+              onClick={() => {
+                setShowCard(5);       // move to Card 4
+                setActiveButton(4);   // index for Card 4
+              }}
               className="inline-flex items-center justify-center bg-[#FF4B8B] gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-9 px-4 py-2 has-[&_svg]:px-3 w-full"
             >
               Learn About Recovery
