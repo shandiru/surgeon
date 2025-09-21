@@ -203,7 +203,7 @@ const Navbar = () => {
 
           {/* Right: CTA Button */}
           <div className="hidden md:block">
-            <button className="ml-4 inline-flex items-center justify-center rounded-md text-sm font-medium transition-all shadow-xs h-9 px-4 py-2 bg-[#FFC5D3] hover:bg-[#FFC5D3] text-gray-900">
+            <button className="ml-4 inline-flex items-center justify-center rounded-md text-xs font-bold transition-all shadow-xs h-9 px-4 py-3 bg-[#FFC5D3] hover:bg-[#FFC5D3] text-gray-900">
               Book Consultation
             </button>
           </div>
