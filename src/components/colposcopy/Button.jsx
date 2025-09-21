@@ -31,7 +31,7 @@ const ColposcopyGuideButtons = ({ setShowCard, activeButton, setActiveButton }) 
         <button
           key={index}
           onClick={() => handleButtonClick(button.card, index)}
-          className={`items-center justify-center w-full font-semibold text-[#BB125B] hover:bg-[#FF4B8B]/30 bg-[#FF4B8B]/10 whitespace-nowrap text-sm transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] rounded-md px-3 has-[&_svg]:px-2.5 flex flex-col gap-1 h-auto py-3 relative ${
+          className={`items-center -ml-2 md:ml-20 justify-center w-full font-semibold text-[#BB125B] hover:bg-[#FF4B8B]/30 bg-[#FF4B8B]/10 whitespace-nowrap text-sm transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] rounded-md px-3 has-[&_svg]:px-2.5 flex flex-col gap-1 h-auto py-3 relative ${
             activeButton === index ? 'bg-[#FF4B8B]/50 text-black' : ''
           }`}
         >

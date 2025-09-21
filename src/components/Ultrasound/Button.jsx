@@ -1,54 +1,34 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Monitor, Stethoscope, Zap, FileText, CircleCheck, Heart } from 'lucide-react';
 
 const UltraSoundButtons = ({ setShowCard, activeButton, setActiveButton }) => {
   const buttons = [
-    {
-      label: 'What is Gynaecological Ultrasound?',
-      icon: <Monitor className="w-4 h-4" />,
-      card: 1,
-    },
-    {
-      label: "Why It's Done",
-      icon: <Stethoscope className="w-4 h-4" />,
-      card: 2,
-    },
-    {
-      label: 'Types of Ultrasound',
-      icon: <Zap className="w-4 h-4" />,
-      card: 3,
-    },
-    {
-      label: 'During the Scan',
-      icon: <FileText className="w-4 h-4" />,
-      card: 4,
-    },
-    {
-      label: 'After Your Scan',
-      icon: <CircleCheck className="w-4 h-4" />,
-      card: 5,
-    },
-    {
-      label: 'Emotional Wellbeing',
-      icon: <Heart className="w-4 h-4" />,
-      card: 6,
-    },
+    { label: 'What is Gynaecological Ultrasound?', icon: <Monitor className="w-4 h-4" />, card: 1 },
+    { label: "Why It's Done", icon: <Stethoscope className="w-4 h-4" />, card: 2 },
+    { label: 'Types of Ultrasound', icon: <Zap className="w-4 h-4" />, card: 3 },
+    { label: 'During the Scan', icon: <FileText className="w-4 h-4" />, card: 4 },
+    { label: 'After Your Scan', icon: <CircleCheck className="w-4 h-4" />, card: 5 },
+    { label: 'Emotional Wellbeing', icon: <Heart className="w-4 h-4" />, card: 6 },
   ];
 
   const handleButtonClick = (card, index) => {
     setShowCard(card);
-    setActiveButton(index); // Set active button
+    setActiveButton(index);
   };
 
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-6 xl:gap-8 ml-4 sm:ml-6 xl:ml-12 max-w-6xl mx-auto mb-8">
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-4 md:gap-6 px-4 sm:px-6 xl:px-12 max-w-6xl mx-auto mb-8">
       {buttons.map((button, index) => (
         <button
           key={index}
-          onClick={() => handleButtonClick(button.card, index)} // Update active button and card displayed
-          className={`items-center justify-center text-center -ml-2 sm:ml-0 font-semibold text-[#BB125B] hover:bg-[#FF4B8B]/30 bg-[#FF4B8B]/10 whitespace-normal text-xs sm:text-sm md:text-base transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 rounded-md px-3 py-3 flex flex-col gap-1 relative max-w-full ${
-            activeButton === index ? 'bg-[#FF4B8B]/50 text-black' : '' // Active button styling
-          }`}
+          onClick={() => handleButtonClick(button.card, index)}
+          className={`flex flex-col items-center justify-center text-center 
+            w-full py-2 sm:py-3 px-3 sm:px-4 
+            font-semibold rounded-md 
+            text-[#BB125B] bg-[#FF4B8B]/10 hover:bg-[#FF4B8B]/30 
+            text-xs sm:text-sm md:text-base 
+            transition-all 
+            ${activeButton === index ? 'bg-[#FF4B8B]/50 text-black' : ''}`}
         >
           {button.icon}
           <span className="leading-tight">{button.label}</span>
