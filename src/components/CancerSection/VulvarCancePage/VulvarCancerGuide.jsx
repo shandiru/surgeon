@@ -175,7 +175,7 @@ const StepCard = ({
         {/* Card */}
         <div className="flex-1">
           <div
-            className="rounded-2xl p-8 border transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd]"
+            className="rounded-2xl p-8 border transition-all duration-300 active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd]"
             style={{ backgroundColor: "#fff", borderColor: pink }}
           >
             <div className="mb-6">
@@ -198,7 +198,7 @@ const StepCard = ({
                 {points.map((point, i) => (
                   <div
                     key={i}
-                    className="flex items-start gap-3 p-4 bg-white rounded-lg border transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd]"
+                    className="flex items-start gap-3 p-4 bg-white rounded-lg border transition-all duration-300 active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd]"
                     style={{ borderColor: pink }}
                   >
                     <FaCheckCircle className="h-5 w-5 mt-0.5 flex-shrink-0" style={{ color: pink }} />
@@ -227,7 +227,7 @@ const StepCard = ({
                     {section.items.map((item, j) => (
                       <div
                         key={j}
-                        className="flex items-start gap-6 p-6 bg-white rounded-xl border transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd]"
+                        className="flex items-start gap-6 p-6 bg-white rounded-xl border transition-all duration-300 active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd]"
                         style={{ borderColor: pink }}
                       >
                         <div
@@ -278,7 +278,7 @@ const StepCard = ({
                     {treatments.surgery.map((s, i) => (
                       <div
                         key={i}
-                        className="p-6 bg-white rounded-xl border transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd]"
+                        className="p-6 bg-white rounded-xl border transition-all duration-300 active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd]"
                         style={{ borderColor: pink }}
                       >
                         <h4 className="text-lg font-semibold text-gray-900 mb-2">{s.heading}</h4>
@@ -302,7 +302,7 @@ const StepCard = ({
                     {treatments.additional.map((a, i) => (
                       <div
                         key={i}
-                        className="flex items-start gap-4 p-6 bg-white rounded-xl border transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd]"
+                        className="flex items-start gap-4 p-6 bg-white rounded-xl border transition-all duration-300 active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd]"
                         style={{ borderColor: pink }}
                       >
                         <div
