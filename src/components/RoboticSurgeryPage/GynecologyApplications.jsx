@@ -60,7 +60,10 @@ export default function GynecologyApplications() {
             {cards.map((card, index) => (
               <div
                 key={index}
-                className="bg-white text-[#b03b66] flex flex-col gap-6 rounded-xl border border-l-4 py-6 px-6 shadow-sm transition-shadow duration-300 hover:shadow-[0_0_20px_rgba(255,197,211,0.5)]"
+                className="bg-white text-[#b03b66] flex flex-col gap-6 rounded-xl border border-l-4 py-6 px-6 shadow-sm 
+                  transition duration-300 transform
+                  hover:scale-105 hover:-translate-y-2 hover:shadow-[0_8px_30px_rgba(176,59,102,0.4)]
+                  active:scale-105 active:-translate-y-2 active:shadow-[0_8px_30px_rgba(176,59,102,0.4)]"
                 style={{ borderColor: pink, borderLeftColor: deepPink }}
               >
                 <div>
