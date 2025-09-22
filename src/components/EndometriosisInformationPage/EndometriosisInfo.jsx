@@ -4,6 +4,7 @@ function EndometriosisInfo() {
   return (
     <section className="py-16 bg-white text-[#333] px-4">
       <div className="max-w-4xl mx-auto">
+        {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4 text-[#ff97b3]">What Is Endometriosis?</h2>
           <p className="text-lg text-gray-600">
@@ -11,11 +12,13 @@ function EndometriosisInfo() {
           </p>
         </div>
 
-        <div className="flex flex-col gap-6 rounded-xl border py-6 px-6 shadow-sm bg-white text-[#333] mb-8">
+        {/* Card */}
+        <div className="flex flex-col gap-6 rounded-2xl bg-white text-[#333] shadow-lg hover:shadow-xl transition-shadow duration-300 p-8">
+          {/* Title */}
           <div className="flex items-center gap-2 font-semibold text-[#ff97b3] text-lg">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
+              className="h-6 w-6"
               fill="none"
               viewBox="0 0 24 24"
               stroke="#ff97b3"
@@ -26,13 +29,14 @@ function EndometriosisInfo() {
             The Condition Explained
           </div>
 
-          <div className="space-y-4 mt-4">
+          {/* Content */}
+          <div className="space-y-4 mt-2">
             <p className="text-lg leading-relaxed">
               Endometriosis is a condition where the tissue that normally lines your uterus
               (called the endometrium) grows outside the uterus.
             </p>
 
-            <div className="grid md:grid-cols-2 gap-6 mt-6">
+            <div className="grid md:grid-cols-2 gap-8 mt-6">
               {/* Left Side */}
               <div>
                 <h4 className="font-semibold mb-3 text-[#ff97b3]">This abnormal tissue can affect:</h4>
@@ -51,13 +55,13 @@ function EndometriosisInfo() {
                 <h4 className="font-semibold mb-3 text-[#ff97b3]">This can lead to:</h4>
                 <ul className="space-y-2">
                   {['Inflammation', 'Pain', 'Scarring and adhesions'].map((item, i) => (
-                    <li key={i} className="flex items-center gap-2 text-red-500">
+                    <li key={i} className="flex items-center gap-2 text-[#ff97b3]">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="w-4 h-4"
+                        className="w-4 h-4 flex-shrink-0"
                         fill="none"
                         viewBox="0 0 24 24"
-                        stroke="currentColor"
+                        stroke="#ff97b3"
                         strokeWidth="2"
                       >
                         <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" />
@@ -71,7 +75,8 @@ function EndometriosisInfo() {
               </div>
             </div>
 
-            <div className="bg-[#ffe6ee] p-4 rounded-lg mt-6">
+            {/* Highlight Note */}
+            <div className="bg-[#ffe6ee] p-4 rounded-lg mt-6 shadow-inner">
               <p className="text-sm text-gray-700">
                 <strong>Important:</strong> Endometriosis is not dangerous, but it can cause significant pain
                 and affect fertility if untreated.
