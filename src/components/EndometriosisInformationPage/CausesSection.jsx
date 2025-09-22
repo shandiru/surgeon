@@ -10,30 +10,33 @@ const causes = [
 
 const CausesSection = () => {
   return (
-    <section className="py-16 bg-[#ffe5ec]">
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-8 text-[#E91E63]">
+    <section className="py-20 bg-[#ffe5ec]">
+      <div className="container mx-auto px-6 md:px-12">
+        <div className="max-w-4xl mx-auto text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#b03b66]">
             What Causes Endometriosis?
           </h2>
-          <p className="text-lg text-[#555] mb-8">
+          <p className="text-lg text-gray-700">
             The exact cause is unknown, but research suggests several possible factors:
           </p>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {causes.map((item, index) => (
-              <div
-                key={index}
-                className="bg-white text-[#333] flex flex-col gap-6 rounded-xl border border-[#E91E63] py-6 shadow-sm text-center"
-              >
-                <div className="px-6 pt-6">
-                  <div className="w-12 h-12 bg-[#E91E63]/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <div className="w-6 h-6 bg-[#E91E63] rounded-full" />
-                  </div>
-                  <p className="font-medium">{item}</p>
-                </div>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {causes.map((item, index) => (
+            <div
+              key={index}
+              className="bg-white text-[#333] flex flex-col items-center justify-center p-8 rounded-2xl shadow-md 
+              transition duration-300 hover:shadow-[0_0_25px_rgba(255,151,179,0.4)] hover:-translate-y-2 active:scale-[0.98]"
+            >
+              {/* Icon */}
+              <div className="w-14 h-14 bg-[#ff97b3]/20 rounded-full flex items-center justify-center mb-4">
+                <div className="w-6 h-6 bg-[#ff97b3] rounded-full" />
               </div>
-            ))}
-          </div>
+
+              {/* Text */}
+              <p className="font-medium text-center text-gray-800">{item}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

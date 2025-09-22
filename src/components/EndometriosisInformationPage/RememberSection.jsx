@@ -6,28 +6,26 @@ export default function RememberSection() {
   const primaryColor = '#f0acc1'
 
   return (
-    <section className="py-16">
+    <section className="py-16 bg-[#fff5f8]">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-8">Remember</h2>
+          {/* Title */}
+          <h2 className="text-3xl md:text-4xl font-bold mb-10 text-[#b03b66]">
+            Remember
+          </h2>
 
           {/* Cards */}
-          <div className="grid md:grid-cols-3 gap-6 mb-8">
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
             {[
               {
                 icon: (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
+                    className="h-10 w-10 mx-auto mb-4"
                     fill="none"
-                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    stroke={primaryColor}
                     strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="h-8 w-8 mx-auto mb-4"
-                    style={{ color: primaryColor }}
                   >
                     <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
                   </svg>
@@ -38,16 +36,11 @@ export default function RememberSection() {
                 icon: (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
+                    className="h-10 w-10 mx-auto mb-4"
                     fill="none"
-                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    stroke={primaryColor}
                     strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="h-8 w-8 mx-auto mb-4"
-                    style={{ color: primaryColor }}
                   >
                     <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
                     <circle cx="9" cy="7" r="4" />
@@ -61,16 +54,11 @@ export default function RememberSection() {
                 icon: (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
+                    className="h-10 w-10 mx-auto mb-4"
                     fill="none"
-                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    stroke={primaryColor}
                     strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="h-8 w-8 mx-auto mb-4"
-                    style={{ color: primaryColor }}
                   >
                     <path d="M11 2v2" />
                     <path d="M5 2v2" />
@@ -84,35 +72,35 @@ export default function RememberSection() {
             ].map((item, idx) => (
               <div
                 key={idx}
-                className="flex flex-col gap-6 rounded-xl border py-6 shadow-sm text-card-foreground text-center"
+                className="flex flex-col items-center text-center rounded-2xl p-6 shadow-md border transition duration-300 hover:shadow-xl hover:-translate-y-2 active:scale-[0.98]"
                 style={{
-                  backgroundColor: `${primaryColor}15`, // light pink bg
-                  borderColor: `${primaryColor}33`, // soft border
+                  backgroundColor: `${primaryColor}15`,
+                  borderColor: `${primaryColor}40`,
                 }}
               >
-                <div className="px-6 pt-6">
-                  {item.icon}
-                  <p className="font-medium">{item.text}</p>
-                </div>
+                {item.icon}
+                <p className="font-medium text-gray-700">{item.text}</p>
               </div>
             ))}
           </div>
 
           {/* CTA */}
-          <div className="p-8 rounded-lg border bg-white" style={{ borderColor: `${primaryColor}33` }}>
-            <p className="text-lg mb-6">
-              If you think you may have endometriosis, book an appointment — we're here to help.
+          <div
+            className="p-8 rounded-2xl shadow-lg bg-white border"
+            style={{ borderColor: `${primaryColor}40` }}
+          >
+            <p className="text-lg mb-6 text-gray-700">
+              If you think you may have endometriosis, book an appointment — we&apos;re here to help.
             </p>
 
             <div className="flex flex-col sm:flex-row justify-center gap-4">
+              {/* Primary Button */}
               <button
-                className="inline-flex items-center justify-center gap-2 text-sm font-medium h-10 px-6 rounded-md text-white shadow-md"
-                style={{
-                  backgroundColor: primaryColor,
-                }}
+                className="inline-flex items-center justify-center gap-2 text-sm font-medium h-11 px-6 rounded-lg text-white shadow-md transition hover:opacity-90 active:scale-[0.97]"
+                style={{ backgroundColor: primaryColor }}
               >
                 <svg
-                  className="mr-2 h-5 w-5"
+                  className="h-5 w-5"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -124,15 +112,13 @@ export default function RememberSection() {
                 Book Appointment
               </button>
 
+              {/* Secondary Button */}
               <button
-                className="inline-flex items-center justify-center gap-2 text-sm font-medium h-10 px-6 rounded-md border"
-                style={{
-                  borderColor: primaryColor,
-                  color: primaryColor,
-                }}
+                className="inline-flex items-center justify-center gap-2 text-sm font-medium h-11 px-6 rounded-lg border shadow-sm transition hover:bg-pink-50 active:scale-[0.97]"
+                style={{ borderColor: primaryColor, color: primaryColor }}
               >
                 <svg
-                  className="mr-2 h-5 w-5"
+                  className="h-5 w-5"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
