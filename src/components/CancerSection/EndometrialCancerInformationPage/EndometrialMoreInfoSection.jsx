@@ -4,7 +4,7 @@ export default function MoreInfoSection() {
   const pink = '#FFC5D3'
 
   return (
-    <section className="text-center py-12 px-4 bg-white rounded-lg border" style={{ borderColor: pink }}>
+    <section className="text-center py-12 px-4 max-w-6xl mx-auto bg-white rounded-lg border" style={{ borderColor: pink }}>
       <h3 className="text-2xl font-bold text-gray-900 mb-4">
         Need More Information?
       </h3>
