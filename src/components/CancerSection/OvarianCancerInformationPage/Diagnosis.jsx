@@ -50,7 +50,7 @@ export default function OvarianCancerDiagnosis() {
           {tests.map((test) => (
             <div
               key={test.id}
-              className="bg-white text-gray-800 flex flex-col gap-4 rounded-xl border py-6 shadow-sm"
+              className="bg-white text-gray-800 flex flex-col gap-4 rounded-xl border py-6 shadow-sm transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]"
               style={{ borderColor: pink }}
             >
               <div className="px-6">

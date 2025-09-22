@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import { FaPhone } from 'react-icons/fa'
+import { FiPhone } from 'react-icons/fi'
 
 export default function MedicalAdviceSection() {
   const pink = '#FFC5D3'
@@ -25,7 +25,7 @@ export default function MedicalAdviceSection() {
         onMouseOver={e => (e.currentTarget.style.backgroundColor = pinkHover)}
         onMouseOut={e => (e.currentTarget.style.backgroundColor = pink)}
       >
-        <FaPhone className="w-4 h-4" />
+        <FiPhone className="w-4 h-4" />
         Contact Your Healthcare Provider
       </button>
     </section>

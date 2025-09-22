@@ -2,7 +2,7 @@ import { FaExclamation } from "react-icons/fa";
 import { LuTriangleAlert } from "react-icons/lu";
 
 export default function EndometrialSymptomsSection() {
-  const pink = '#FFC5D3'
+  const pink = '#FFC5D3';
 
   return (
     <section className="mb-16 py-10 px-4 md:px-6 lg:px-8">
@@ -17,7 +17,7 @@ export default function EndometrialSymptomsSection() {
 
         {/* Card Container */}
         <div
-          className="bg-white text-gray-900 flex flex-col gap-6 rounded-xl border py-6 shadow-sm mb-6"
+          className="bg-white text-gray-900 flex flex-col gap-6 rounded-xl border py-6 shadow-sm mb-6 hover:shadow-lg hover:bg-[#fce3e8] hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] transition-all duration-300"
           style={{ borderColor: pink }}
         >
           {/* Card Header */}

@@ -56,7 +56,7 @@ export default function OvarianCancerTreatment() {
           {treatments.map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg p-6 hover:shadow-md transition-shadow"
+              className="bg-white rounded-lg p-6 transition-all duration-300 hover:shadow-md hover:bg-[#fce3e8] hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-md active:border-[#f5a9bd]"
               style={{ border: `1px solid ${pink}` }}
             >
               <h4 className="font-semibold text-lg mb-2" style={{ color: pink }}>

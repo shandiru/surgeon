@@ -56,7 +56,7 @@ export default function CervicalCancerDiagnosis() {
                 {methods.map((method, index) => (
                   <div
                     key={index}
-                    className="flex gap-4 p-4 bg-white border border-[#f5c2d2] rounded-lg hover:shadow-md hover:ring-1 hover:ring-[#b03b66] transition-all"
+                    className="flex gap-4 p-4 bg-white border border-[#f5c2d2] rounded-lg transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]"
                   >
                     <div className="w-8 h-8 flex items-center justify-center rounded-full bg-[#FFC5D3] text-[#b03b66] text-sm font-bold flex-shrink-0">
                       {index + 1}

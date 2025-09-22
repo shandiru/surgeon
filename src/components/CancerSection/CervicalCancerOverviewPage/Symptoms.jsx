@@ -32,7 +32,7 @@ export default function CervicalCancerSymptoms() {
               {symptoms.map((symptom, index) => (
                 <div
                   key={index}
-                  className="flex items-center gap-3 p-3 bg-white w-full border border-[#f5c2d2] rounded-lg"
+                  className="flex items-center gap-3 p-3 bg-white w-full border border-[#f5c2d2] rounded-lg transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]"
                 >
                   <div className="w-2 h-2 bg-[#b03b66] rounded-full flex-shrink-0"></div>
                   <span className="text-sm font-medium text-[#4b1e30]">{symptom}</span>

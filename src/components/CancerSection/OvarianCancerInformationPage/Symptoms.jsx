@@ -40,7 +40,7 @@ export default function OvarianCancerSymptoms() {
           {symptoms.map((symptom, index) => (
             <div
               key={index}
-              className="bg-white text-gray-900 flex flex-col rounded-xl border shadow-lg transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd]"
+              className="bg-white text-gray-900 flex flex-col rounded-xl border shadow-lg transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]"
               style={{ borderColor: pink }}
             >
               <div className="p-4">

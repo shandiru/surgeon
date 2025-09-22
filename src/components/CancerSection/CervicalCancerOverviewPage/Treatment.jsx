@@ -19,16 +19,16 @@ export default function CervicalCancerTreatment() {
 
           {/* “We Consider” Section */}
           <div className="mt-8">
-            <div className="bg-white p-4 rounded-lg border border-[#f5c2d2]">
+            <div className="bg-white p-4 rounded-lg border border-[#f5c2d2] transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]">
               <h3 className="font-semibold mb-2 text-[#4b1e30]">We consider:</h3>
-              <div className="grid md:grid-cols-2 gap-2 text-sm text-[#7a2f4f]">
+              <div className="grid md:grid-cols-2 gap-2 text-sm text-[#7a2f4f ]">
                 {[
                   "Type and stage of cancer",
                   "Size and location of cancer cells",
                   "Whether the cancer has spread",
                   "Your overall health and personal needs",
                 ].map((text, i) => (
-                  <div key={i} className="flex items-center gap-2">
+                  <div key={i} className="flex items-center gap-2 ">
                     <div className="w-1.5 h-1.5 bg-[#b03b66] rounded-full"></div>
                     <span>{text}</span>
                   </div>
@@ -71,7 +71,7 @@ export default function CervicalCancerTreatment() {
               ].map((item, idx) => (
                 <div
                   key={idx}
-                  className="flex gap-3 p-4 bg-white rounded-lg border border-[#f5c2d2]"
+                  className="flex gap-3 p-4 bg-white rounded-lg border border-[#f5c2d2] transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]"
                 >
                   <div className="w-2 h-2 bg-[#b03b66] rounded-full mt-2 flex-shrink-0"></div>
                   <div>
@@ -109,7 +109,7 @@ export default function CervicalCancerTreatment() {
               ].map((item, idx) => (
                 <div
                   key={idx}
-                  className="flex gap-3 p-4 bg-white rounded-lg border border-[#f5c2d2]"
+                  className="flex gap-3 p-4 bg-white rounded-lg border border-[#f5c2d2] transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]"
                 >
                   <div className="w-2 h-2 bg-[#b03b66] rounded-full mt-2 flex-shrink-0"></div>
                   <div>
@@ -128,7 +128,7 @@ export default function CervicalCancerTreatment() {
               3. Recovery & Support
             </h3>
             <div className="space-y-4">
-              <div className="p-4 bg-white rounded-lg border border-[#f5c2d2]">
+              <div className="p-4 bg-white rounded-lg border border-[#f5c2d2] transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]">
                 <h4 className="font-medium text-[#b03b66] mb-2">
                   Enhanced Recovery Programs
                 </h4>
@@ -136,7 +136,7 @@ export default function CervicalCancerTreatment() {
                   Enhanced recovery after surgery programs help you heal faster.
                 </p>
               </div>
-              <div className="p-4 bg-white rounded-lg border border-[#f5c2d2]">
+              <div className="p-4 bg-white rounded-lg border border-[#f5c2d2] transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]">
                 <h4 className="font-medium text-[#b03b66] mb-2">
                   Multi-specialty Approach
                 </h4>

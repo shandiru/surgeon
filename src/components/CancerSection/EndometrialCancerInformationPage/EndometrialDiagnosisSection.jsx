@@ -76,8 +76,8 @@ export default function EndometrialDiagnosisSection() {
 
           {/* Stage Info Box */}
           <div
-            className="mt-4 mx-6 p-4 rounded-lg border"
-            style={{ backgroundColor: '#FFFFFF', borderColor: pink }}
+            className="mt-4 mx-6 p-4 rounded-lg border transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-xl hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]"
+            style={{ borderColor: pink }}
           >
             <h4 className="font-semibold mb-2">If cancer is confirmed:</h4>
             <p className="text-sm text-gray-600 mb-2">
