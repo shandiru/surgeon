@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function HeroSection() {
   return (
-    <div className="relative overflow-hidden border-b bg-[#FEE6EA]">
+    <div className="relative overflow-hidden bg-[#FEE6EA]"> {/* removed border-b */}
       {/* Subtle grid effect mask */}
       <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))]" />
 

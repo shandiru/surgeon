@@ -18,7 +18,7 @@ export default function OvarianCystsPage() {
         <HeroSection />
       </section>
 
-      <section className="max-w-4xl mx-auto px-6 py-6 ">
+      <section className="max-w-4xl mx-auto px-6 py-6 mt-10 ">
         <WhatAreOvarianCysts />
       </section>
        <section className="max-w-4xl mx-auto px-6 py-6 ">
