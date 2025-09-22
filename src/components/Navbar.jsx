@@ -46,10 +46,15 @@ const Navbar = () => {
 
           {/* Desktop navigation */}
           <div className="hidden md:flex ml-10 space-x-3 items-center relative">
-            <Link to="#about" className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">About</Link>
+            {/* <Link to="#about" className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">About</Link>
             <Link to="#experience" className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">Experience</Link>
             <Link to="#specialties" className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">Specialties</Link>
-            <Link to="#education" className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">Education</Link>
+            <Link to="#education" className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">Education</Link> */}
+            <a href="#about" className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">About</a>
+<a href="#experience" className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">Experience</a>
+<a href="#specialties" className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">Specialties</a>
+<a href="#education" className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">Education</a>
+
 
             {/* Services Dropdown */}
             <div className="relative">
@@ -212,10 +217,15 @@ const Navbar = () => {
         {/* Mobile Dropdown */}
         {isOpen && (
           <div className="md:hidden mt-2 space-y-1">
-            <Link to="#about" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900">About</Link>
+            {/* <Link to="#about" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900">About</Link>
             <Link to="#experience" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900">Experience</Link>
             <Link to="#specialties" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900">Specialties</Link>
-            <Link to="#education" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900">Education</Link>
+            <Link to="#education" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900">Education</Link> */}
+            <a href="#about" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900">About</a>
+<a href="#experience" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900">Experience</a>
+<a href="#specialties" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900">Specialties</a>
+<a href="#education" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900">Education</a>
+
 
             {/* Services Mobile Collapsible */}
             <button
