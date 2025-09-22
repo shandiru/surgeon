@@ -33,7 +33,7 @@ const ColposcopyCard1 = ({ setShowCard, setActiveButton }) => {
         {/* Card Content */}
         <div className="px-6 space-y-4">
           {/* Quick Facts */}
-          <div className="bg-primary/5 p-4 rounded-lg border border-primary/20">
+          <div className="bg-primary/5 p-4 rounded-lg border hover:z-50 transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:scale-105 active:scale-100">
             <p className="text-lg leading-relaxed">
               A colposcopy is a <strong>simple procedure</strong> to look for abnormal cells on the cervix or vagina.
             </p>
@@ -106,7 +106,7 @@ const ColposcopyCard1 = ({ setShowCard, setActiveButton }) => {
                 setShowCard(2);
                 setActiveButton(1);
               }}
-              className="inline-flex items-center bg-[#FF4B8B] justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all hover:bg-primary/90 h-9 px-4 py-2 w-full"
+              className="inline-flex items-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all hover:bg-primary/90 h-9 px-4 py-2 w-full"
             >
               Continue to Next Section
             </button>
