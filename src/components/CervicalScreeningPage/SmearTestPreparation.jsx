@@ -1,88 +1,98 @@
 // src/components/SmearTestPreparation.jsx
 export default function SmearTestPreparation() {
   return (
-    <section className="px-4 sm:px-6">
-      <div
-        data-slot="card"
-        className="bg-[#ff97b3] text-white flex flex-col gap-4 sm:gap-6 rounded-xl border border-[#ff97b3] py-5 sm:py-6 shadow-sm"
-      >
-        {/* Header */}
-        <div
-          data-slot="card-header"
-          className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-4 sm:px-6"
-        >
-          <div className="font-semibold flex items-center gap-2 text-xl sm:text-2xl leading-snug">
-            {/* Calendar Icon */}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 text-white flex-shrink-0"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth="2"
-            >
-              <path d="M8 2v4" />
-              <path d="M16 2v4" />
-              <rect width="18" height="18" x="3" y="4" rx="2" />
-              <path d="M3 10h18" />
-            </svg>
-            Getting Ready
-          </div>
-        </div>
+    <section className="py-16 bg-[#FFF5F8] rounded-xl">
+      <div className="container mx-auto px-6 md:px-12">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          
+          {/* Left Card */}
+          <div
+            className="bg-white text-[#b03b66] rounded-2xl border border-[#ff97b3] shadow-md p-8 
+                       transition duration-300 ease-in-out 
+                       hover:shadow-2xl hover:-translate-y-2 
+                       active:scale-[0.98] active:shadow-lg cursor-pointer"
+          >
+            {/* Header */}
+            <div className="flex items-center gap-3 mb-6">
+              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#ff97b3] shadow">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                >
+                  <path d="M8 2v4" />
+                  <path d="M16 2v4" />
+                  <rect width="18" height="18" x="3" y="4" rx="2" />
+                  <path d="M3 10h18" />
+                </svg>
+              </div>
+              <h2 className="text-2xl md:text-3xl font-bold">Getting Ready</h2>
+            </div>
 
-        {/* Content */}
-        <div data-slot="card-content" className="px-4 sm:px-6">
-          <ul className="space-y-3 text-sm sm:text-base">
-            {/* Tip 1 */}
-            <li className="flex items-start gap-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 text-white mt-0.5 flex-shrink-0"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth="2"
-              >
-                <path d="M21.801 10A10 10 0 1 1 17 3.335" />
-                <path d="m9 11 3 3L22 4" />
-              </svg>
-              <span>Book your test mid-cycle (about a week after your period)</span>
-            </li>
+            {/* Tips */}
+            <ul className="space-y-4 text-gray-700 leading-relaxed">
+              <li className="flex items-start gap-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5 text-[#ff97b3] mt-1 flex-shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                >
+                  <path d="M21.801 10A10 10 0 1 1 17 3.335" />
+                  <path d="m9 11 3 3L22 4" />
+                </svg>
+                Book your test mid-cycle (about a week after your period)
+              </li>
 
-            {/* Tip 2 */}
-            <li className="flex items-start gap-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 text-white mt-0.5 flex-shrink-0"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth="2"
-              >
-                <path d="M21.801 10A10 10 0 1 1 17 3.335" />
-                <path d="m9 11 3 3L22 4" />
-              </svg>
-              <span>
+              <li className="flex items-start gap-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5 text-[#ff97b3] mt-1 flex-shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                >
+                  <path d="M21.801 10A10 10 0 1 1 17 3.335" />
+                  <path d="m9 11 3 3L22 4" />
+                </svg>
                 Avoid spermicides, lubricants, pessaries or vaginal creams for a few days before
-              </span>
-            </li>
+              </li>
 
-            {/* Tip 3 */}
-            <li className="flex items-start gap-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 text-white mt-0.5 flex-shrink-0"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth="2"
-              >
-                <path d="M21.801 10A10 10 0 1 1 17 3.335" />
-                <path d="m9 11 3 3L22 4" />
-              </svg>
-              <span>Don't have the test during your period</span>
-            </li>
-          </ul>
+              <li className="flex items-start gap-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5 text-[#ff97b3] mt-1 flex-shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                >
+                  <path d="M21.801 10A10 10 0 1 1 17 3.335" />
+                  <path d="m9 11 3 3L22 4" />
+                </svg>
+                Don&apos;t have the test during your period
+              </li>
+            </ul>
+          </div>
+
+          {/* Right Image */}
+          <div
+            className="flex justify-center md:justify-end transition duration-300 ease-in-out 
+                       hover:scale-105 active:scale-[0.97] cursor-pointer"
+          >
+            <img
+              src="/smear-test-prep.png" // <-- place generated illustration in /public
+              alt="Smear test preparation illustration"
+              className="w-full max-w-md rounded-2xl shadow-xl border-4 border-white"
+              loading="lazy"
+            />
+          </div>
         </div>
       </div>
     </section>
