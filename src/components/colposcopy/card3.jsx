@@ -52,7 +52,7 @@ const Colposcopycard3 = ({ setShowCard, setActiveButton }) => {
               icon: '🔍',
               description: 'The colposcope examines your cervix and vulva from outside your body',
             }].map((item, index) => (
-              <div key={index} className="flex gap-4 p-4 bg-card rounded-lg border">
+              <div key={index} className="flex gap-4 p-4 bg-card rounded-lg border hover:z-50 transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:scale-105 active:scale-100">
                 <div className="flex-shrink-0">
                   <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold">
                     {index + 1}
@@ -85,7 +85,7 @@ const Colposcopycard3 = ({ setShowCard, setActiveButton }) => {
                 setShowCard(4);       // move to Card 4
                 setActiveButton(3);   // index for Card 4
               }}
-              className="inline-flex items-center bg-[#FF4B8B] justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all hover:bg-primary/90 h-9 px-4 py-2 w-full"
+              className="inline-flex items-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all hover:bg-primary/90 h-9 px-4 py-2 w-full"
             >
               Learn About Biopsies
             </button>

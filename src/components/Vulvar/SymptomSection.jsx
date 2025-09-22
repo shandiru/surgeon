@@ -34,7 +34,7 @@ const SymptomsSection = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
             {/* Symptom Checker Card */}
-            <div className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm">
+            <div className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm hover:z-50 transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:scale-105 active:scale-100">
               <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6">
                 <div className="leading-none font-semibold flex items-center space-x-2">
                   <svg
@@ -87,7 +87,7 @@ const SymptomsSection = () => {
             </div>
 
             {/* Assessment Card */}
-            <div className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm">
+            <div className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm hover:z-50 transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:scale-105 active:scale-100">
               <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6">
                 <div className="leading-none font-semibold flex items-center space-x-2">
                   <svg

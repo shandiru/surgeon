@@ -78,7 +78,7 @@ const VulvarVaginalSection = () => {
 
                     <div className="space-y-4">
                         {sections.map((section) => (
-                            <div key={section.id} className="bg-card text-card-foreground flex flex-col rounded-xl border py-6 shadow-sm overflow-hidden">
+                            <div key={section.id} className="bg-card text-card-foreground flex flex-col rounded-xl border py-6 shadow-sm overflow-hidden hover:z-50 transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:scale-105 active:scale-100">
                                 <div
                                     className="cursor-pointer grid auto-rows-min grid-rows-[auto_auto] items-start px-6 pb-2 hover:bg-muted/50 transition-colors"
                                     onClick={() => handleToggle(section.id)}

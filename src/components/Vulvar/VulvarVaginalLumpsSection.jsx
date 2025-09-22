@@ -34,7 +34,10 @@ const VulvarVaginalLumpsSection = () => {
         </p>
         <div className="grid md:grid-cols-3 gap-6 mt-12">
           {cards.map((card) => (
-            <div key={card.id} className="text-[#d60d64] bg-[#FF4B8B]/10 flex flex-col gap-6 rounded-xl border py-6 shadow-sm border-primary/20 hover:border-primary/40 transition-colors">
+            <div
+              key={card.id}
+              className="text-[#d60d64] bg-[#FF4B8B]/10 flex flex-col gap-6 rounded-xl border py-6 shadow-sm border-primary/20 hover:border-primary/40 hover:z-50 transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:scale-105 active:scale-100"
+            >
               <div className="p-6 text-center">
                 {card.icon}
                 <h3 className="text-lg font-semibold mb-2">{card.title}</h3>
