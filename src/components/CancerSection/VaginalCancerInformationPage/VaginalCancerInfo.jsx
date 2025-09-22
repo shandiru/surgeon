@@ -26,30 +26,42 @@ export default function VaginalCancerInfo() {
               Symptoms of Vaginal Cancer
             </h2>
           </div>
-          <div className="px-6 pt-4 pb-6">
-            <p className="text-gray-600 mb-4">Early vaginal cancer often has no symptoms. As it progresses, signs may include:</p>
-            <ul className="space-y-2 mb-6">
-              {[
-                "Unusual vaginal bleeding (after intercourse or after menopause)",
-                "Watery vaginal discharge",
-                "A lump or mass in the vagina",
-                "Painful urination",
-                "Frequent urination",
-                "Constipation",
-                "Pelvic pain"
-              ].map((item, i) => (
-                <li key={i} className="flex items-start gap-2 text-sm text-gray-700">
-                  <span style={{ color: pink }} className="text-lg">•</span>{item}
-                </li>
-              ))}
-            </ul>
-            <div className="p-4 rounded border-l-4 flex items-center gap-2"
-              style={{ backgroundColor: "#fff", borderColor: pink }}>
-              <FaInfoCircle style={{ color: pink }} className="h-5 w-5" />
-              <p className="font-medium" style={{ color: pink }}>Routine pelvic exams are important for early detection.</p>
+          <div className="px-6 pt-4 pb-6 flex">
+            <div>
+              <p className="text-gray-600 mb-4">Early vaginal cancer often has no symptoms. As it progresses, signs may include:</p>
+              <ul className="space-y-2 mb-6">
+                {[
+                  "Unusual vaginal bleeding (after intercourse or after menopause)",
+                  "Watery vaginal discharge",
+                  "A lump or mass in the vagina",
+                  "Painful urination",
+                  "Frequent urination",
+                  "Constipation",
+                  "Pelvic pain"
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-2 text-sm text-gray-700">
+                    <span style={{ color: pink }} className="text-lg">•</span>{item}
+                  </li>
+                ))}
+              </ul>
             </div>
+            {/* Insert Image */}
+            <div className="flex justify-center">
+              <img
+                src="/vaginal.png"  // Image path
+                className="w-full max-w-xs h-auto rounded-xl mt-10"
+                alt="Vaginal Cancer Awareness"
+              />
+            </div>
+
+          </div>
+          <div className="p-4 rounded border-l-4 flex items-center gap-2 ml-5 mb-2"
+            style={{ backgroundColor: "#fff", borderColor: pink }}>
+            <FaInfoCircle style={{ color: pink }} className="h-5 w-5" />
+            <p className="font-medium" style={{ color: pink }}>Routine pelvic exams are important for early detection.</p>
           </div>
         </div>
+
 
         {/* Diagnosis */}
         <div className="bg-white border rounded-xl shadow-lg mb-8" style={{ borderColor: pink }}>
