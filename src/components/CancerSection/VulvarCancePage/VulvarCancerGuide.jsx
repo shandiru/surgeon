@@ -1,3 +1,5 @@
+'use client'
+
 import React from "react";
 import {
   FaExclamationTriangle,
@@ -146,7 +148,6 @@ const VulvarCancerPage = () => {
   );
 };
 
-// Step Card Component
 const StepCard = ({
   step,
   title,
@@ -174,7 +175,7 @@ const StepCard = ({
         {/* Card */}
         <div className="flex-1">
           <div
-            className="rounded-2xl p-8 border"
+            className="rounded-2xl p-8 border transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd]"
             style={{ backgroundColor: "#fff", borderColor: pink }}
           >
             <div className="mb-6">
@@ -191,13 +192,13 @@ const StepCard = ({
               <p className="text-gray-700 mb-8 text-lg">{description}</p>
             )}
 
-            {/* Points */}
+            {/* Points with Hover Effect */}
             {points && (
               <div className="grid md:grid-cols-2 gap-4">
                 {points.map((point, i) => (
                   <div
                     key={i}
-                    className="flex items-start gap-3 p-4 bg-white rounded-lg border"
+                    className="flex items-start gap-3 p-4 bg-white rounded-lg border transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd]"
                     style={{ borderColor: pink }}
                   >
                     <FaCheckCircle className="h-5 w-5 mt-0.5 flex-shrink-0" style={{ color: pink }} />
@@ -217,7 +218,7 @@ const StepCard = ({
               </div>
             )}
 
-            {/* Subsections */}
+            {/* Subsections with Hover Effect */}
             {subsections &&
               subsections.map((section, i) => (
                 <div key={i} className="space-y-6 mt-8">
@@ -226,7 +227,7 @@ const StepCard = ({
                     {section.items.map((item, j) => (
                       <div
                         key={j}
-                        className="flex items-start gap-6 p-6 bg-white rounded-xl border"
+                        className="flex items-start gap-6 p-6 bg-white rounded-xl border transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd]"
                         style={{ borderColor: pink }}
                       >
                         <div
@@ -260,7 +261,7 @@ const StepCard = ({
               </div>
             )}
 
-            {/* Treatments */}
+            {/* Treatments with Hover Effect */}
             {treatments && (
               <div className="space-y-8 mt-10">
                 <div>
@@ -277,7 +278,7 @@ const StepCard = ({
                     {treatments.surgery.map((s, i) => (
                       <div
                         key={i}
-                        className="p-6 bg-white rounded-xl border"
+                        className="p-6 bg-white rounded-xl border transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd]"
                         style={{ borderColor: pink }}
                       >
                         <h4 className="text-lg font-semibold text-gray-900 mb-2">{s.heading}</h4>
@@ -301,7 +302,7 @@ const StepCard = ({
                     {treatments.additional.map((a, i) => (
                       <div
                         key={i}
-                        className="flex items-start gap-4 p-6 bg-white rounded-xl border"
+                        className="flex items-start gap-4 p-6 bg-white rounded-xl border transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd]"
                         style={{ borderColor: pink }}
                       >
                         <div

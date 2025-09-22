@@ -1,10 +1,10 @@
 'use client'
 
-import React from 'react'
-import { FaStethoscope, FaMicroscope, FaPills, FaInfoCircle } from 'react-icons/fa'
+import React from "react";
+import { FaStethoscope, FaMicroscope, FaPills, FaInfoCircle } from "react-icons/fa";
 
 export default function VaginalCancerInfo() {
-  const pink = "#FFC5D3"
+  const pink = "#FFC5D3";
 
   return (
     <div className="min-h-screen" style={{ backgroundColor: "#fff" }}>
@@ -19,7 +19,7 @@ export default function VaginalCancerInfo() {
         </div>
 
         {/* Symptoms */}
-        <div className="bg-white border rounded-xl shadow-lg mb-8" style={{ borderColor: pink }}>
+        <div className="bg-white border rounded-xl shadow-lg mb-8 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd]" style={{ borderColor: pink }}>
           <div className="px-6 py-4 rounded-t-xl flex items-center gap-2" style={{ backgroundColor: pink }}>
             <FaStethoscope className="text-white h-6 w-6" />
             <h2 className="text-2xl font-semibold text-white">
@@ -62,9 +62,8 @@ export default function VaginalCancerInfo() {
           </div>
         </div>
 
-
         {/* Diagnosis */}
-        <div className="bg-white border rounded-xl shadow-lg mb-8" style={{ borderColor: pink }}>
+        <div className="bg-white border rounded-xl shadow-lg mb-8 " style={{ borderColor: pink }}>
           <div className="px-6 py-4 rounded-t-xl flex items-center gap-2" style={{ backgroundColor: pink }}>
             <FaMicroscope className="text-white h-6 w-6" />
             <h2 className="text-2xl font-semibold text-white">
@@ -95,8 +94,7 @@ export default function VaginalCancerInfo() {
                   desc: "Removal of a small tissue sample during colposcopy to test for cancer cells"
                 }
               ].map((step, i) => (
-                <div key={i} className="border rounded-md px-4 py-3 shadow-sm bg-white"
-                  style={{ borderColor: pink }}>
+                <div key={i} className="border rounded-md px-4 py-3 shadow-sm bg-white hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd]" style={{ borderColor: pink }}>
                   <strong className="text-gray-800">{step.title}</strong>
                   <span className="text-gray-600"> – {step.desc}</span>
                 </div>
@@ -111,7 +109,7 @@ export default function VaginalCancerInfo() {
         </div>
 
         {/* Treatment */}
-        <div className="bg-white border rounded-xl shadow-lg mb-8" style={{ borderColor: pink }}>
+        <div className="bg-white border rounded-xl shadow-lg mb-8 " style={{ borderColor: pink }}>
           <div className="px-6 py-4 rounded-t-xl flex items-center gap-2" style={{ backgroundColor: pink }}>
             <FaPills className="text-white h-6 w-6" />
             <h2 className="text-2xl font-semibold text-white">
@@ -123,31 +121,31 @@ export default function VaginalCancerInfo() {
 
             <h3 className="text-lg font-semibold text-gray-800 mb-3">1. Surgery (Often the Primary Treatment)</h3>
             <div className="space-y-3 mb-4">
-              <div className="border rounded-md px-4 py-3 bg-white"
+              <div className="border rounded-md px-4 py-3 bg-white hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd]"
                 style={{ borderColor: pink }}>
                 <strong className="text-gray-800">Vaginectomy</strong>
                 <span> – Removal of part or all of the vagina; may include nearby lymph nodes. Reconstruction with tissue grafts can restore vaginal function.</span>
               </div>
-              <div className="border rounded-md px-4 py-3 bg-white"
+              <div className="border rounded-md px-4 py-3 bg-white hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd]"
                 style={{ borderColor: pink }}>
                 <strong className="text-gray-800">Hysterectomy</strong>
                 <span> – Removal of the uterus and sometimes ovaries, fallopian tubes, and lymph nodes; often combined with vaginectomy for advanced cases.</span>
               </div>
             </div>
-            <div className="text-gray-600 text-sm mb-6 p-3 rounded-md"
-              style={{ backgroundColor: "#fff", border: `1px solid ${pink}` }}>
+            <div className="text-gray-600 text-sm mb-6 p-3 rounded-md border bg-white hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd]"
+              style={{ border: `1px solid ${pink}` }}>
               After surgery, patients receive enhanced recovery support to aid healing.
             </div>
 
             <h3 className="text-lg font-semibold text-gray-800 mb-3">2. Combination Treatments</h3>
             <p className="mb-3">In some cases, surgery may be combined with:</p>
             <div className="space-y-3">
-              <div className="border rounded-md px-4 py-3 bg-white"
+              <div className="border rounded-md px-4 py-3 bg-white hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd]"
                 style={{ borderColor: pink }}>
                 <strong className="text-gray-800">Radiation therapy</strong>
                 <span> – Targeted energy to destroy cancer cells</span>
               </div>
-              <div className="border rounded-md px-4 py-3 bg-white"
+              <div className="border rounded-md px-4 py-3 bg-white hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd]"
                 style={{ borderColor: pink }}>
                 <strong className="text-gray-800">Chemotherapy</strong>
                 <span> – Drugs to kill or slow cancer growth</span>
@@ -165,5 +163,5 @@ export default function VaginalCancerInfo() {
         </div>
       </div>
     </div>
-  )
+  );
 }
