@@ -38,7 +38,9 @@ const treatmentOptions = [
         <ul className="list-disc pl-5 space-y-1">
           <li>Hysteroscopy or laparoscopy to treat specific areas of concern</li>
           <li>Endometrial ablation to destroy the womb lining and stop periods</li>
-          <li>Hysterectomy (removal of the womb) - only if other treatments haven't worked and you don't plan more pregnancies</li>
+          <li>
+            Hysterectomy (removal of the womb) – only if other treatments haven't worked and you don’t plan more pregnancies
+          </li>
         </ul>
       </>
     )
@@ -55,12 +57,17 @@ export default function TreatmentOptions() {
   return (
     <section className="mb-16 px-6 md:px-12">
       <h2 className="text-2xl font-bold mb-6 text-[#FF4B8B]">Treatment Options</h2>
-      <div className="w-full border rounded-md overflow-hidden divide-y divide-[#FF4B8B]/30">
+      
+      <div className="space-y-4">
         {treatmentOptions.map((option, index) => (
-          <div key={index} className="bg-[#FEE6EA] text-[#BB125B]">
+          <div
+            key={index}
+            className="bg-[#FEE6EA] rounded-xl shadow-md hover:shadow-lg transition-shadow"
+          >
+            {/* Accordion Header */}
             <button
               onClick={() => toggleAccordion(index)}
-              className="w-full flex items-center justify-between text-left font-medium py-4 px-4 text-lg transition-all hover:underline focus:outline-none"
+              className="w-full flex items-center justify-between text-left font-medium py-4 px-6 text-lg text-[#BB125B] focus:outline-none"
             >
               <span>{option.title}</span>
               <svg
@@ -78,8 +85,12 @@ export default function TreatmentOptions() {
                 <path d="m6 9 6 6 6-6" />
               </svg>
             </button>
+
+            {/* Accordion Content */}
             {openIndex === index && (
-              <div className="px-4 pb-4 text-sm">{option.content}</div>
+              <div className="px-6 pb-6 text-sm text-[#5C2A3B] animate-fadeIn">
+                {option.content}
+              </div>
             )}
           </div>
         ))}

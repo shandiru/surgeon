@@ -29,35 +29,35 @@ const disorders = [
 
 const MenstrualDisordersSection = () => {
   return (
-    <section className="py-12 px-4 sm:px-6 lg:px-12">
+    <section className="py-20 px-6 sm:px-10 lg:px-20 bg-white">
       {/* Header */}
-      <div className="flex items-center gap-3 mb-6 text-center sm:text-left">
-        <LuStethoscope className="h-6 w-6" style={{ color: "#e91e63" }} />
-        <h2 className="text-2xl font-bold" style={{ color: "#c2185b" }}>
+      <div className="flex items-center gap-3 mb-12 text-center sm:text-left">
+        <LuStethoscope className="h-8 w-8 text-[#e91e63]" />
+        <h2 className="text-3xl md:text-4xl font-bold text-[#c2185b]">
           Types of Menstrual Disorders
         </h2>
       </div>
 
       {/* Grid */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
         {disorders.map((disorder, index) => (
           <div
             key={index}
-            className="flex flex-col gap-4 rounded-xl border py-6 px-6 shadow-sm hover:shadow-md transition-shadow"
+            className="flex flex-col gap-4 rounded-2xl p-8 shadow-md hover:shadow-xl 
+                       hover:-translate-y-1 active:scale-95 transition-all duration-300"
             style={{
-              backgroundColor: "#fdecef",
+              background: "linear-gradient(135deg, #fdecef 0%, #fff5f9 100%)",
               color: "#3c0c0c",
-              borderColor: "#f8bbd0",
             }}
           >
             {/* Badge */}
             <div>
               <span
-                className="inline-flex items-center justify-center rounded-md border px-3 py-1 text-xs font-semibold w-fit"
+                className="inline-block rounded-full px-4 py-1 text-xs font-semibold tracking-wide"
                 style={{
-                  backgroundColor: "#fdecef",
-                  borderColor: "#f8bbd0",
+                  backgroundColor: "#fff",
                   color: "#c2185b",
+                  boxShadow: "0 2px 6px rgba(233, 30, 99, 0.15)",
                 }}
               >
                 {disorder.title}
@@ -65,7 +65,7 @@ const MenstrualDisordersSection = () => {
             </div>
 
             {/* Description */}
-            <p className="text-sm" style={{ color: "#3c0c0c" }}>
+            <p className="text-sm md:text-base leading-relaxed text-[#3c0c0c]">
               {disorder.description}
             </p>
           </div>
