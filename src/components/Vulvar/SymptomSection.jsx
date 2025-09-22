@@ -34,7 +34,7 @@ const SymptomsSection = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
             {/* Symptom Checker Card */}
-            <div className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm hover:z-50 transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:scale-105 active:scale-100">
+            <div className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl  py-6 shadow-sm hover:z-50 transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-[0_0_25px_rgba(255,151,179,0.5)] hover:-translate-y-2 active:scale-[0.98] hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:scale-105 active:scale-100">
               <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6">
                 <div className="leading-none font-semibold flex items-center space-x-2">
                   <svg
@@ -74,7 +74,7 @@ const SymptomsSection = () => {
                       aria-checked={symptoms[id] ? 'true' : 'false'}
                       onClick={handleCheckboxChange}
                       data-state={symptoms[id] ? 'checked' : 'unchecked'}
-                      className="peer border-input dark:bg-input/30 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground dark:data-[state=checked]:bg-primary data-[state=checked]:border-primary focus-visible:border-ring focus-visible:ring-ring/50"
+                      className="peer -input dark:bg-input/30 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground dark:data-[state=checked]:bg-primary data-[state=checked]:-primary focus-visible:-ring focus-visible:ring-ring/50"
                       id={id}
                     ></button>
                     <label htmlFor={id} className="text-sm cursor-pointer leading-relaxed">
@@ -87,7 +87,7 @@ const SymptomsSection = () => {
             </div>
 
             {/* Assessment Card */}
-            <div className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm hover:z-50 transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:scale-105 active:scale-100">
+            <div className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl p-6 py-6 shadow-sm hover:z-50 transition-all duration-300 hover:bg-[#fce3e8]  hover:shadow-[0_0_25px_rgba(255,151,179,0.5)] hover:-translate-y-2 active:scale-[0.98] hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:scale-105 active:scale-100">
               <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6">
                 <div className="leading-none font-semibold flex items-center space-x-2">
                   <svg

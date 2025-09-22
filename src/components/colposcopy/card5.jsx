@@ -28,7 +28,7 @@ const Colposcopycard5 = ({ setShowCard, setActiveButton }) => {
         </div>
         <div className="px-6 space-y-4">
           <div className="grid md:grid-cols-2 gap-4">
-            <div className="p-4 bg-primary/10 rounded-lg border border-primary/20">
+            <div className="p-4 bg-primary/10 rounded-lg border border-primary/20 hover:z-50 transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-[0_0_25px_rgba(255,151,179,0.5)]  hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:scale-105 active:scale-100">
               <h4 className="font-semibold text-primary mb-2 flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-circle-check-big w-4 h-4">
                   <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
@@ -43,7 +43,7 @@ const Colposcopycard5 = ({ setShowCard, setActiveButton }) => {
                 <li>• Continue regular screening</li>
               </ul>
             </div>
-            <div className="p-4 bg-accent/10 rounded-lg border border-accent/20">
+            <div className="p-4 bg-accent/10 rounded-lg border hover:z-50 transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-[0_0_25px_rgba(255,151,179,0.5)]  hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:scale-105 active:scale-100">
               <h4 className="font-semibold text-accent-foreground mb-2 flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-circle-alert w-4 h-4">
                   <circle cx="12" cy="12" r="10"></circle>

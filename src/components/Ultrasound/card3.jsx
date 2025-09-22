@@ -17,7 +17,7 @@ const UltrasoundCard3 = ({ setShowCard, setActiveButton }) => {
         <div className="px-6 space-y-4">
           <div className="grid md:grid-cols-2 gap-6">
             {/* Transabdominal Ultrasound */}
-            <div className="p-4 bg-primary/5 rounded-lg border border-primary/20">
+            <div className="p-4 bg-primary/5 rounded-lg border hover:z-50 transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-[0_0_25px_rgba(255,151,179,0.5)]  hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:scale-105 active:scale-100">
               <h4 className="font-semibold text-primary mb-3 flex items-center gap-2">
                 <Monitor className="w-5 h-5" />
                 Transabdominal Ultrasound
@@ -40,7 +40,7 @@ const UltrasoundCard3 = ({ setShowCard, setActiveButton }) => {
             </div>
 
             {/* Transvaginal Ultrasound */}
-            <div className="p-4 bg-accent/5 rounded-lg border border-accent/20">
+            <div className="p-4 bg-accent/5 rounded-lg border hover:z-50 transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-[0_0_25px_rgba(255,151,179,0.5)]  hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:scale-105 active:scale-100">
               <h4 className="font-semibold text-accent-foreground mb-3 flex items-center gap-2">
                 <Stethoscope className="w-5 h-5" />
                 Transvaginal Ultrasound
@@ -81,7 +81,7 @@ const UltrasoundCard3 = ({ setShowCard, setActiveButton }) => {
                 setShowCard(4);
                 setActiveButton(3);
               }}
-              className="inline-flex items-center bg-[#FF4B8B] text-black justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-9 px-4 py-2 has-[&_svg]:px-3 w-full"
+              className="inline-flex items-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-black justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-9 px-4 py-2 has-[&_svg]:px-3 w-full"
             >
               Learn About the Procedure
             </button>

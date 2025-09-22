@@ -39,7 +39,7 @@ const UltrasoundCard4 = ({ setShowCard, setActiveButton }) => {
               description: "For internal scan, probe is covered with sheath and lubricated before gentle insertion",
               number: "4"
             }].map((item, index) => (
-              <div key={index} className="flex gap-4 p-4 bg-card rounded-lg border">
+              <div key={index} className="flex gap-4 p-4 bg-card rounded-lg border hover:z-50 transition-all duration-300 hover:bg-[#fce3e8]  hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:scale-105 active:scale-100">
                 <div className="flex-shrink-0">
                   <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold">
                     {item.number}
@@ -75,7 +75,7 @@ const UltrasoundCard4 = ({ setShowCard, setActiveButton }) => {
                 setShowCard(5);
                 setActiveButton(4);
               }}
-              className="inline-flex items-center bg-[#FF4B8B] text-black justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-9 px-4 py-2 has-[&_svg]:px-3 w-full"
+              className="inline-flex items-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-black justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-9 px-4 py-2 has-[&_svg]:px-3 w-full"
             >
               Learn What Happens After
             </button>

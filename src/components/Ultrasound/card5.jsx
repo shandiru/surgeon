@@ -24,7 +24,7 @@ const UltrasoundCard5 = ({ setShowCard, setActiveButton }) => {
         <div className="px-6 space-y-4">
           <div className="grid md:grid-cols-2 gap-4">
             {/* Immediate Recovery Section */}
-            <div className="p-4 bg-primary/10 rounded-lg border border-primary/20">
+            <div className="p-4 bg-primary/10 rounded-lg border hover:z-50 transition-all duration-300 hover:bg-[#fce3e8]  hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:scale-105 active:scale-100">
               <h4 className="font-semibold text-primary mb-2 flex items-center gap-2">
                 <CircleCheck className="w-4 h-4 text-primary" />
                 Immediate Recovery
@@ -38,7 +38,7 @@ const UltrasoundCard5 = ({ setShowCard, setActiveButton }) => {
             </div>
 
             {/* Your Results Section */}
-            <div className="p-4 bg-accent/10 rounded-lg border border-accent/20">
+            <div className="p-4 bg-accent/10 rounded-lg border hover:z-50 transition-all duration-300 hover:bg-[#fce3e8]  hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:scale-105 active:scale-100">
               <h4 className="font-semibold text-accent-foreground mb-2 flex items-center gap-2">
                 <FileText className="w-4 h-4 text-accent" />
                 Your Results
@@ -97,7 +97,7 @@ const UltrasoundCard5 = ({ setShowCard, setActiveButton }) => {
                 setShowCard(6);
                 setActiveButton(5);
               }}
-              className="inline-flex items-center justify-center gap-2 bg-[#FF4B8B] text-black whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-9 px-4 py-2 has-[&_svg]:px-3 w-full"
+              className="inline-flex items-center justify-center gap-2 bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-black whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-9 px-4 py-2 has-[&_svg]:px-3 w-full"
             >
               Emotional Support
             </button>

@@ -43,7 +43,7 @@ const UrgentHelp = () => {
             {cardData.map((card) => (
               <div
                 key={card.id}
-                className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm hover:z-50 transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:scale-105 active:scale-100"
+                className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl  py-6 shadow-sm hover:z-50 transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-[0_0_25px_rgba(255,151,179,0.5)] hover:-translate-y-2 active:scale-[0.98] hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:scale-105 active:scale-100"
               >
                 <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 text-center pb-3">
                   <div className="flex items-center space-x-3">

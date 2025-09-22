@@ -26,7 +26,7 @@ const UltrasoundCard2 = ({ setShowCard, setActiveButton }) => {
                   "Fertility issues",
                   "Menstrual problems"
                 ].map((item, index) => (
-                  <div key={index} className="flex items-start gap-3 p-3 bg-card rounded-lg border">
+                  <div key={index} className="flex items-start gap-3 p-3 bg-card rounded-lg border hover:z-50 transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-[0_0_25px_rgba(255,151,179,0.5)]  hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:scale-105 active:scale-100">
                     <div className="w-6 h-6 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                       <span className="text-xs font-bold text-primary">{index + 1}</span>
                     </div>
@@ -80,7 +80,7 @@ const UltrasoundCard2 = ({ setShowCard, setActiveButton }) => {
                 setShowCard(3);
                 setActiveButton(2);
               }}
-              className="inline-flex items-center bg-[#FF4B8B] text-black justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-9 px-4 py-2 has-[&_svg]:px-3 w-full"
+              className="inline-flex items-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-black justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-9 px-4 py-2 has-[&_svg]:px-3 w-full"
             >
               Learn About Types of Ultrasound
             </button>
