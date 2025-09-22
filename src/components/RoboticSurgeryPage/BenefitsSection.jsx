@@ -25,7 +25,12 @@ export default function BenefitsSection() {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12">
             {/* Benefits for Patients */}
-            <div className="hover:shadow-[0_0_15px_rgba(255,197,211,0.4)] transition-shadow duration-300 rounded-lg p-6 bg-white border border-[#FFC5D3]">
+            <div
+              className="rounded-lg p-6 bg-white border border-[#FFC5D3] 
+              transition duration-300 transform
+              hover:scale-105 hover:-translate-y-2 hover:shadow-[0_8px_30px_rgba(176,59,102,0.35)]
+              active:scale-105 active:-translate-y-2 active:shadow-[0_8px_30px_rgba(176,59,102,0.35)]"
+            >
               <h3 className="text-2xl font-bold mb-8 text-[#b03b66] flex items-center gap-2">
                 <LuUsers className="w-6 h-6 text-[#b03b66]" />
                 Benefits for Patients
@@ -41,7 +46,12 @@ export default function BenefitsSection() {
             </div>
 
             {/* Advantages for Surgeons */}
-            <div className="hover:shadow-[0_0_15px_rgba(255,197,211,0.4)] transition-shadow duration-300 rounded-lg p-6 bg-white border border-[#FFC5D3]">
+            <div
+              className="rounded-lg p-6 bg-white border border-[#FFC5D3] 
+              transition duration-300 transform
+              hover:scale-105 hover:-translate-y-2 hover:shadow-[0_8px_30px_rgba(176,59,102,0.35)]
+              active:scale-105 active:-translate-y-2 active:shadow-[0_8px_30px_rgba(176,59,102,0.35)]"
+            >
               <h3 className="text-2xl font-bold mb-8 text-[#b03b66] flex items-center gap-2">
                 <LuStethoscope className="w-6 h-6 text-[#b03b66]" />
                 Advantages for Surgeons

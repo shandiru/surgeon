@@ -9,6 +9,7 @@ export default function RoboticSurgeryOverview() {
             Overview of Robotic Surgery
           </h2>
           <div className="grid md:grid-cols-2 gap-8 items-center">
+            
             {/* Text Content */}
             <div>
               <p className="text-lg text-gray-700 mb-6">
@@ -27,28 +28,50 @@ export default function RoboticSurgeryOverview() {
             </div>
 
             {/* Features Box */}
-            <div className="bg-[#FFE6EE] p-8 rounded-lg border border-[#FFC5D3]">
+            <div
+              className="bg-[#FFE6EE] p-8 rounded-lg border border-[#FFC5D3] 
+              transition transform duration-300 
+              hover:scale-105 hover:shadow-[0_0_30px_6px_rgba(176,59,102,0.3)]
+              active:scale-105 active:shadow-[0_0_30px_6px_rgba(176,59,102,0.3)]"
+            >
               <div className="grid grid-cols-2 gap-4">
-                <div className="text-center transition-shadow duration-300 hover:shadow-[0_0_15px_2px_rgba(255,197,211,0.6)] rounded-lg p-4 bg-white">
-                  <LuScissors className="w-12 h-12 text-[#b03b66] mx-auto mb-2" />
+                
+                {/* Feature Card */}
+                <div className="text-center transition-shadow duration-300 
+                  hover:shadow-[0_0_15px_2px_rgba(255,197,211,0.6)] 
+                  active:shadow-[0_0_15px_2px_rgba(255,197,211,0.6)]
+                  rounded-lg p-6 bg-white cursor-pointer">
+                  <LuScissors className="w-14 h-14 text-[#b03b66] mx-auto mb-3" />
                   <p className="font-semibold text-[#b03b66]">
                     Minimally Invasive
                   </p>
                 </div>
-                <div className="text-center transition-shadow duration-300 hover:shadow-[0_0_15px_2px_rgba(255,197,211,0.6)] rounded-lg p-4 bg-white">
-                  <LuEye className="w-12 h-12 text-[#b03b66] mx-auto mb-2" />
+
+                <div className="text-center transition-shadow duration-300 
+                  hover:shadow-[0_0_15px_2px_rgba(255,197,211,0.6)] 
+                  active:shadow-[0_0_15px_2px_rgba(255,197,211,0.6)]
+                  rounded-lg p-6 bg-white cursor-pointer">
+                  <LuEye className="w-14 h-14 text-[#b03b66] mx-auto mb-3" />
                   <p className="font-semibold text-[#b03b66]">
                     Enhanced Vision
                   </p>
                 </div>
-                <div className="text-center transition-shadow duration-300 hover:shadow-[0_0_15px_2px_rgba(255,197,211,0.6)] rounded-lg p-4 bg-white">
-                  <LuHand className="w-12 h-12 text-[#b03b66] mx-auto mb-2" />
+
+                <div className="text-center transition-shadow duration-300 
+                  hover:shadow-[0_0_15px_2px_rgba(255,197,211,0.6)] 
+                  active:shadow-[0_0_15px_2px_rgba(255,197,211,0.6)]
+                  rounded-lg p-6 bg-white cursor-pointer">
+                  <LuHand className="w-14 h-14 text-[#b03b66] mx-auto mb-3" />
                   <p className="font-semibold text-[#b03b66]">
                     Precise Control
                   </p>
                 </div>
-                <div className="text-center transition-shadow duration-300 hover:shadow-[0_0_15px_2px_rgba(255,197,211,0.6)] rounded-lg p-4 bg-white">
-                  <LuZap className="w-12 h-12 text-[#b03b66] mx-auto mb-2" />
+
+                <div className="text-center transition-shadow duration-300 
+                  hover:shadow-[0_0_15px_2px_rgba(255,197,211,0.6)] 
+                  active:shadow-[0_0_15px_2px_rgba(255,197,211,0.6)]
+                  rounded-lg p-6 bg-white cursor-pointer">
+                  <LuZap className="w-14 h-14 text-[#b03b66] mx-auto mb-3" />
                   <p className="font-semibold text-[#b03b66]">
                     Advanced Technology
                   </p>
