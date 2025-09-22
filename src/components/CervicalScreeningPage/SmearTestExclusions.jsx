@@ -1,74 +1,55 @@
 // src/components/SmearTestExclusions.jsx
 export default function SmearTestExclusions() {
   return (
-    <section className="px-4 sm:px-6">
-      <div
-        data-slot="card"
-        className="bg-[#ff97b3] text-white flex flex-col gap-4 sm:gap-6 rounded-xl border border-[#ff97b3] py-5 sm:py-6 shadow-sm"
-      >
-        {/* Card Header */}
-        <div
-          data-slot="card-header"
-          className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1 px-4 sm:px-6"
-        >
-          <div
-            data-slot="card-title"
-            className="font-semibold flex items-center gap-2 text-lg sm:text-2xl leading-snug"
-          >
-            {/* Alert Icon */}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5 sm:h-6 sm:w-6 text-white flex-shrink-0"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth="2"
-            >
-              <circle cx="12" cy="12" r="10" />
-              <line x1="12" y1="8" x2="12" y2="12" />
-              <line x1="12" y1="16" x2="12.01" y2="16" />
-            </svg>
-            Who Doesn't Usually Need One?
+    <section className="py-16 bg-[#FFF5F8] rounded-xl">
+      <div className="container mx-auto px-6 md:px-12">
+        {/* Wrapper */}
+        <div className="max-w-5xl mx-auto">
+          {/* Header */}
+          <div className="flex items-center gap-3 mb-10">
+            <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#ff97b3] shadow-md">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <line x1="12" y1="8" x2="12" y2="12" />
+                <line x1="12" y1="16" x2="12.01" y2="16" />
+              </svg>
+            </div>
+            <h2 className="text-2xl md:text-3xl font-bold text-[#b03b66]">
+              Who Doesn&apos;t Usually Need One?
+            </h2>
           </div>
-        </div>
 
-        {/* Card Content */}
-        <div data-slot="card-content" className="px-4 sm:px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
-            {/* Under 25 card */}
-            <div
-              data-slot="card"
-              className="bg-white text-[#333] flex flex-col gap-3 sm:gap-4 rounded-xl border border-[#ff97b3] py-4 sm:py-6 shadow-sm"
-            >
-              <div className="grid items-start gap-1 px-4 sm:px-6">
-                <div className="font-semibold text-sm sm:text-lg text-[#ff97b3]">
-                  Under 25
-                </div>
-              </div>
-              <div className="px-4 sm:px-6 space-y-2 text-xs sm:text-base">
-                <p>• Cervical changes are common and usually harmless</p>
-                <p>• Early treatment can affect future fertility</p>
-                <p className="text-[11px] sm:text-sm text-[#666]">
-                  <strong>Note:</strong> See a doctor if you have unusual bleeding or bleeding after sex
-                </p>
-              </div>
+          {/* Cards */}
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Under 25 */}
+            <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm transition duration-300 hover:shadow-xl hover:border-[#ff97b3] hover:-translate-y-2 active:scale-[0.98]">
+              <h3 className="text-xl font-semibold text-[#ff97b3] mb-4">
+                Under 25
+              </h3>
+              <ul className="space-y-2 text-gray-700 leading-relaxed">
+                <li>• Cervical changes are common and usually harmless</li>
+                <li>• Early treatment can affect future fertility</li>
+              </ul>
+              <p className="text-sm text-gray-600 mt-4">
+                <strong>Note:</strong> See a doctor if you have unusual bleeding or bleeding after sex
+              </p>
             </div>
 
-            {/* Over 65 card */}
-            <div
-              data-slot="card"
-              className="bg-white text-[#333] flex flex-col gap-3 sm:gap-4 rounded-xl border border-[#ff97b3] py-4 sm:py-6 shadow-sm"
-            >
-              <div className="grid items-start gap-1 px-4 sm:px-6">
-                <div className="font-semibold text-sm sm:text-lg text-[#ff97b3]">
-                  Over 65
-                </div>
-              </div>
-              <div className="px-4 sm:px-6 text-xs sm:text-base">
-                <p>
-                  If you've had 3 normal tests in a row, no further smears are usually needed
-                </p>
-              </div>
+            {/* Over 65 */}
+            <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm transition duration-300 hover:shadow-xl hover:border-[#ff97b3] hover:-translate-y-2 active:scale-[0.98]">
+              <h3 className="text-xl font-semibold text-[#ff97b3] mb-4">
+                Over 65
+              </h3>
+              <p className="text-gray-700 leading-relaxed">
+                If you&apos;ve had 3 normal tests in a row, no further smears are usually needed
+              </p>
             </div>
           </div>
         </div>

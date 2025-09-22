@@ -1,89 +1,86 @@
 // src/components/SmearTestInfoCard.jsx
 export default function SmearTestInfoCard() {
   return (
-    <section className="px-4 sm:px-6">
-      <div
-        data-slot="card"
-        className="bg-[#ff97b3] text-white flex flex-col gap-4 sm:gap-6 rounded-xl border border-[#ff97b3] py-5 sm:py-6 shadow-sm"
-      >
-        {/* Card Header */}
-        <div
-          data-slot="card-header"
-          className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-4 sm:px-6"
-        >
+    <section className="py-16 bg-[#FFF5F8] rounded-xl">
+      <div className="container mx-auto px-6 md:px-12">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          
+          {/* Left Content Card */}
           <div
-            data-slot="card-title"
-            className="font-semibold flex items-center gap-2 text-xl sm:text-2xl leading-snug"
+            data-slot="card"
+            className="bg-white text-[#b03b66] flex flex-col gap-6 rounded-xl border border-[#ff97b3] py-8 px-6 shadow-md 
+              transition duration-300 transform
+              hover:scale-105 hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(176,59,102,0.25)]
+              active:scale-105 active:-translate-y-2 active:shadow-[0_10px_30px_rgba(176,59,102,0.25)]"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="h-6 w-6 text-white"
+            {/* Card Header */}
+            <div
+              data-slot="card-header"
+              className="flex items-center gap-3 text-2xl font-bold"
             >
-              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-              <circle cx="9" cy="7" r="4" />
-              <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-            </svg>
-             Who Needs a Smear Test?
-          </div>
-        </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="h-7 w-7 text-[#ff97b3]"
+              >
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+              Who Needs a Smear Test?
+            </div>
 
-        {/* Card Content */}
-        <div data-slot="card-content" className="px-4 sm:px-6 space-y-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
-            <div className="space-y-3">
-              {/* Badge */}
+            {/* Card Content */}
+            <div className="space-y-6">
               <span
                 data-slot="badge"
-                className="inline-flex items-center justify-center rounded-md border border-transparent bg-white text-[#ff97b3] px-2 py-0.5 font-medium w-fit text-xs sm:text-sm"
+                className="inline-flex items-center justify-center rounded-md bg-[#ff97b3] text-white px-3 py-1 font-medium text-sm w-fit"
               >
                 Recommended
               </span>
 
-              {/* List */}
-              <ul className="space-y-2 text-sm sm:text-base">
-                <li className="flex items-start gap-2">
+              <ul className="space-y-4 text-base text-gray-700">
+                <li className="flex items-start gap-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-4 w-4 mt-0.5 flex-shrink-0 text-white"
+                    className="h-5 w-5 mt-0.5 flex-shrink-0 text-[#ff97b3]"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                     strokeWidth="2"
                   >
-                    <path d="M21.801 10A10 10 0 1 1 17 3.335" />
                     <path d="m9 11 3 3L22 4" />
                   </svg>
                   Women aged 25–64
                 </li>
 
-                <li className="flex items-start gap-2">
+                <li className="flex items-start gap-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-4 w-4 mt-0.5 flex-shrink-0 text-white"
+                    className="h-5 w-5 mt-0.5 flex-shrink-0 text-[#ff97b3]"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                     strokeWidth="2"
                   >
-                    <circle cx="12" cy="12" r="10" />
                     <polyline points="12 6 12 12 16 14" />
+                    <circle cx="12" cy="12" r="10" />
                   </svg>
                   Every 3–5 years
                 </li>
 
-                <li className="flex items-start gap-2">
+                <li className="flex items-start gap-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-4 w-4 mt-0.5 flex-shrink-0 text-white"
+                    className="h-5 w-5 mt-0.5 flex-shrink-0 text-[#ff97b3]"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -99,6 +96,19 @@ export default function SmearTestInfoCard() {
                 </li>
               </ul>
             </div>
+          </div>
+
+          {/* Right Image */}
+          <div className="flex justify-center md:justify-end">
+            <img
+              src="/smear-test-info.png" // <-- place illustration in /public
+              alt="Smear test illustration"
+              className="w-full max-w-md rounded-2xl shadow-xl border-4 border-white
+                transition duration-300 transform
+                hover:scale-105 hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(255,255,255,0.5)]
+                active:scale-105 active:-translate-y-2 active:shadow-[0_10px_30px_rgba(255,255,255,0.5)]"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>
