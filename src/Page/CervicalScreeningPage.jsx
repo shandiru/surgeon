@@ -21,35 +21,35 @@ export default function CervicalScreeningPage() {
 
      
        
-       <section className="my-12 px-4 md:px-12">
+       <section >
         <SmearTestInfoCard />
        </section>
 
-         <section className="my-12 px-4 md:px-12">
+         <section >
         <SmearTestExclusions />
          </section>
 
-            <section className="my-12 px-4 md:px-12">
+            <section >
         <SmearTestPreparation />
             </section>
 
-         <section className="my-12  px-4 md:px-12">
+         <section >
         <SmearTestProcedure />
             </section>
 
-            <section className="my-12 px-4 md:px-12">
+            <section>
         <SmearTestResultsAccordion />
             </section>
       
-            <section className="my-12 px-4 md:px-12">
+            <section >
         <SmearTestReminder />
             </section>
 
-            <section className="my-12 px-4 md:px-12">
+            <section>
         <SmearTestCTA />
             </section>
       
-        <section className="my-12 px-4 md:px-12">
+        <section>
         <SmearTestFooter />
             </section>
     

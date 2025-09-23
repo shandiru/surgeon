@@ -1,14 +1,14 @@
 // src/components/SmearTestInfoCard.jsx
 export default function SmearTestInfoCard() {
   return (
-    <section className="py-16 bg-[#FFF5F8] rounded-xl">
+    <section className="py-16 bg-white">
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           
           {/* Left Content Card */}
           <div
             data-slot="card"
-            className="bg-white text-[#b03b66] flex flex-col gap-6 rounded-xl border border-[#ff97b3] py-8 px-6 shadow-md 
+            className="bg-white text-[#b03b66] flex flex-col gap-6 rounded-xl py-8 px-6 shadow-md 
               transition duration-300 transform
               hover:scale-105 hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(176,59,102,0.25)]
               active:scale-105 active:-translate-y-2 active:shadow-[0_10px_30px_rgba(176,59,102,0.25)]"
@@ -101,12 +101,12 @@ export default function SmearTestInfoCard() {
           {/* Right Image */}
           <div className="flex justify-center md:justify-end">
             <img
-              src="/smear-test-info.png" // <-- place illustration in /public
+              src="/smear-test-info.png"
               alt="Smear test illustration"
-              className="w-full max-w-md rounded-2xl shadow-xl border-4 border-white
+              className="w-full max-w-md rounded-2xl shadow-xl
                 transition duration-300 transform
-                hover:scale-105 hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(255,255,255,0.5)]
-                active:scale-105 active:-translate-y-2 active:shadow-[0_10px_30px_rgba(255,255,255,0.5)]"
+                hover:scale-105 hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(255,75,139,0.5)]
+                active:scale-105 active:-translate-y-2 active:shadow-[0_10px_30px_rgba(255,75,139,0.5)]"
               loading="lazy"
             />
           </div>

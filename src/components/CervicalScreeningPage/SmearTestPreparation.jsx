@@ -1,15 +1,15 @@
 // src/components/SmearTestPreparation.jsx
 export default function SmearTestPreparation() {
   return (
-    <section className="py-16 bg-[#FFF5F8] rounded-xl">
+    <section className="py-16 bg-white rounded-xl">
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           
           {/* Left Card */}
           <div
-            className="bg-white text-[#b03b66] rounded-2xl border border-[#ff97b3] shadow-md p-8 
+            className="bg-white text-[#b03b66] rounded-2xl shadow-md p-8 
                        transition duration-300 ease-in-out 
-                       hover:shadow-2xl hover:-translate-y-2 
+                       hover:scale-105 hover:-translate-y-2 hover:shadow-[0_8px_30px_rgba(176,59,102,0.25)]
                        active:scale-[0.98] active:shadow-lg cursor-pointer"
           >
             {/* Header */}
@@ -89,7 +89,9 @@ export default function SmearTestPreparation() {
             <img
               src="/smear-test-prep.png" // <-- place generated illustration in /public
               alt="Smear test preparation illustration"
-              className="w-full max-w-md rounded-2xl shadow-xl border-4 border-white"
+              className="w-full max-w-md rounded-2xl shadow-xl border-4 border-white
+                         transition duration-300 transform
+                         hover:shadow-[0_10px_30px_rgba(255,75,139,0.5)]"
               loading="lazy"
             />
           </div>

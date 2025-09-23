@@ -28,9 +28,9 @@ export default function SmearTestResultsAccordion() {
   };
 
   return (
-    <section className="py-20 bg-[#FFF5F8] rounded-xl">
+    <section className="py-20 bg-white">
       <div className="container mx-auto px-6 md:px-12">
-        <div className="bg-white text-[#b03b66] flex flex-col gap-8 rounded-2xl border border-[#ff97b3] p-10 shadow-lg max-w-8xl mx-auto transition hover:shadow-2xl">
+        <div className="bg-white text-[#b03b66] flex flex-col gap-8 rounded-2xl border border-gray-200 p-10 shadow-lg max-w-8xl mx-auto transition hover:shadow-[0_8px_30px_rgba(255,197,211,0.35)]">
           {/* Header */}
           <div className="text-center md:text-left">
             <h2 className="text-3xl md:text-4xl font-bold mb-2">📋 After Your Test</h2>
@@ -38,7 +38,7 @@ export default function SmearTestResultsAccordion() {
           </div>
 
           {/* Accordion */}
-          <div className="divide-y divide-[#ff97b3]/40">
+          <div className="divide-y divide-gray-200">
             {accordionData.map((item, index) => (
               <div key={index} className="py-4">
                 <h3>
@@ -77,7 +77,7 @@ export default function SmearTestResultsAccordion() {
                 </h3>
 
                 {openIndex === index && (
-                  <div className="mt-3 p-5 bg-[#FFF5F8] border border-[#ff97b3]/30 rounded-lg text-base text-[#7a2f4f] leading-relaxed">
+                  <div className="mt-3 p-5 bg-[#FFF5F8] border border-gray-200 rounded-lg text-base text-[#7a2f4f] leading-relaxed">
                     {item.description}
                   </div>
                 )}

@@ -1,15 +1,17 @@
 // src/components/SmearTestProcedure.jsx
 export default function SmearTestProcedure() {
   return (
-    <section className="py-16 bg-[#FFF5F8] rounded-xl">
+    <section className="py-16 bg-white">
       <div className="container mx-auto px-6 md:px-12">
         <div
           data-slot="card"
-          className="bg-white text-[#b03b66] flex flex-col gap-8 rounded-2xl border border-[#ff97b3] p-8 shadow-md transition duration-300 hover:shadow-xl hover:-translate-y-2 active:scale-[0.98]"
+          className="bg-white text-[#b03b66] flex flex-col gap-8 rounded-2xl p-8 shadow-md border border-gray-200
+                     transition duration-300 hover:shadow-[0_10px_30px_rgba(255,197,211,0.45)] hover:-translate-y-2 
+                     active:scale-[0.98]"
         >
           {/* Header */}
           <div className="flex items-center gap-3">
-            <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#ff97b3] shadow">
+            <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#FFC5D3] shadow-md">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6 text-white"
@@ -31,7 +33,7 @@ export default function SmearTestProcedure() {
           </div>
 
           {/* Highlight Box */}
-          <div className="bg-[#FFF5F8] border border-[#ff97b3]/40 text-[#b03b66] p-4 rounded-lg shadow-sm">
+          <div className="bg-[#FFF5F8] border border-gray-200 text-[#b03b66] p-4 rounded-lg shadow-sm">
             <p className="font-semibold text-[#ff97b3] mb-1">
               Takes just 5 minutes
             </p>
@@ -42,36 +44,22 @@ export default function SmearTestProcedure() {
 
           {/* Steps */}
           <div className="space-y-4">
-            <div className="flex items-start gap-3">
-              <div className="bg-[#ff97b3] text-white rounded-full w-7 h-7 flex items-center justify-center text-sm font-bold shadow">
-                1
+            {[
+              "A small speculum gently opens the vagina",
+              "A soft brush collects cells from your cervix",
+              "Your sample is sent to a lab for testing",
+            ].map((step, index) => (
+              <div key={index} className="flex items-start gap-3">
+                <div className="bg-[#FFC5D3] text-white rounded-full w-7 h-7 flex items-center justify-center text-sm font-bold shadow">
+                  {index + 1}
+                </div>
+                <p className="text-gray-700">{step}</p>
               </div>
-              <p className="text-gray-700">
-                A small speculum gently opens the vagina
-              </p>
-            </div>
-
-            <div className="flex items-start gap-3">
-              <div className="bg-[#ff97b3] text-white rounded-full w-7 h-7 flex items-center justify-center text-sm font-bold shadow">
-                2
-              </div>
-              <p className="text-gray-700">
-                A soft brush collects cells from your cervix
-              </p>
-            </div>
-
-            <div className="flex items-start gap-3">
-              <div className="bg-[#ff97b3] text-white rounded-full w-7 h-7 flex items-center justify-center text-sm font-bold shadow">
-                3
-              </div>
-              <p className="text-gray-700">
-                Your sample is sent to a lab for testing
-              </p>
-            </div>
+            ))}
           </div>
 
           {/* Dual Testing Box */}
-          <div className="bg-[#FFF5F8] border border-[#ff97b3]/40 text-[#b03b66] p-4 rounded-lg shadow-sm">
+          <div className="bg-[#FFF5F8] border border-gray-200 text-[#b03b66] p-4 rounded-lg shadow-sm">
             <p className="font-semibold text-[#ff97b3] mb-1">
               We use Dual Testing:
             </p>

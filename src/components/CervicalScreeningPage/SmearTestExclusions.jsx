@@ -1,7 +1,7 @@
 // src/components/SmearTestExclusions.jsx
 export default function SmearTestExclusions() {
   return (
-    <section className="py-16 bg-[#FFF5F8] rounded-xl">
+    <section className="py-16 bg-white">
       <div className="container mx-auto px-6 md:px-12">
         {/* Wrapper */}
         <div className="max-w-5xl mx-auto">
@@ -29,8 +29,10 @@ export default function SmearTestExclusions() {
           {/* Cards */}
           <div className="grid md:grid-cols-2 gap-8">
             {/* Under 25 */}
-            <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm transition duration-300 hover:shadow-xl hover:border-[#ff97b3] hover:-translate-y-2 active:scale-[0.98]">
-              <h3 className="text-xl font-semibold text-[#ff97b3] mb-4">
+            <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm 
+                            transition duration-300 hover:shadow-[0_8px_30px_rgba(255,151,179,0.35)] 
+                            hover:border-[#ff97b3] hover:-translate-y-2 active:scale-[0.98]">
+              <h3 className="text-xl font-semibold text-[#b03b66] mb-4">
                 Under 25
               </h3>
               <ul className="space-y-2 text-gray-700 leading-relaxed">
@@ -38,13 +40,15 @@ export default function SmearTestExclusions() {
                 <li>• Early treatment can affect future fertility</li>
               </ul>
               <p className="text-sm text-gray-600 mt-4">
-                <strong>Note:</strong> See a doctor if you have unusual bleeding or bleeding after sex
+                <strong className="text-[#ff97b3]">Note:</strong> See a doctor if you have unusual bleeding or bleeding after sex
               </p>
             </div>
 
             {/* Over 65 */}
-            <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm transition duration-300 hover:shadow-xl hover:border-[#ff97b3] hover:-translate-y-2 active:scale-[0.98]">
-              <h3 className="text-xl font-semibold text-[#ff97b3] mb-4">
+            <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm 
+                            transition duration-300 hover:shadow-[0_8px_30px_rgba(255,151,179,0.35)] 
+                            hover:border-[#ff97b3] hover:-translate-y-2 active:scale-[0.98]">
+              <h3 className="text-xl font-semibold text-[#b03b66] mb-4">
                 Over 65
               </h3>
               <p className="text-gray-700 leading-relaxed">
