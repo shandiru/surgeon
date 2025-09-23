@@ -1,7 +1,7 @@
 // src/components/GynecologyFutureSection.jsx
 export default function GynecologyFutureSection() {
   return (
-    <section className="py-16" style={{ backgroundColor: "#FFC5D3" }}>
+    <section className="py-16 bg-white">
       <div className="container mx-auto px-6 md:px-16">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           
@@ -12,8 +12,8 @@ export default function GynecologyFutureSection() {
               alt="Future of gynecologic robotic surgery"
               className="w-full max-w-lg rounded-2xl border-4 border-white shadow-xl 
               transition duration-300 transform
-              hover:scale-105 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(255,255,255,0.6)]
-              active:scale-105 active:-translate-y-2 active:shadow-[0_10px_40px_rgba(255,255,255,0.6)]"
+              hover:scale-105 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(176,59,102,0.3)]
+              active:scale-105 active:-translate-y-2 active:shadow-[0_10px_40px_rgba(176,59,102,0.3)]"
               loading="lazy"
             />
           </div>
@@ -33,9 +33,9 @@ export default function GynecologyFutureSection() {
             </p>
 
             {/* Highlight Box */}
-            <div className="bg-white p-6 rounded-lg border border-[#f5a9bd] shadow-md transition duration-300 
-              hover:shadow-[0_8px_30px_rgba(176,59,102,0.3)]
-              active:shadow-[0_8px_30px_rgba(176,59,102,0.3)]">
+            <div className="bg-[#FFF5F8] p-6 rounded-lg shadow-md transition duration-300 
+              hover:shadow-[0_8px_30px_rgba(176,59,102,0.25)]
+              active:shadow-[0_8px_30px_rgba(176,59,102,0.25)]">
               <p className="text-xl font-semibold mb-2 text-[#b03b66]">
                 Expert Care, Advanced Technology
               </p>

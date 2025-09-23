@@ -20,16 +20,15 @@ export default function BenefitsSection() {
   ]
 
   return (
-    <section className="py-16" style={{ backgroundColor: '#FFF5F8' }}>
+    <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12">
             {/* Benefits for Patients */}
             <div
-              className="rounded-lg p-6 bg-white border border-[#FFC5D3] 
+              className="rounded-lg p-6 bg-white border border-gray-200 shadow-sm
               transition duration-300 transform
-              hover:scale-105 hover:-translate-y-2 hover:shadow-[0_8px_30px_rgba(176,59,102,0.35)]
-              active:scale-105 active:-translate-y-2 active:shadow-[0_8px_30px_rgba(176,59,102,0.35)]"
+              hover:scale-105 hover:-translate-y-2 hover:shadow-[0_8px_25px_rgba(176,59,102,0.25)]"
             >
               <h3 className="text-2xl font-bold mb-8 text-[#b03b66] flex items-center gap-2">
                 <LuUsers className="w-6 h-6 text-[#b03b66]" />
@@ -47,10 +46,9 @@ export default function BenefitsSection() {
 
             {/* Advantages for Surgeons */}
             <div
-              className="rounded-lg p-6 bg-white border border-[#FFC5D3] 
+              className="rounded-lg p-6 bg-white border border-gray-200 shadow-sm
               transition duration-300 transform
-              hover:scale-105 hover:-translate-y-2 hover:shadow-[0_8px_30px_rgba(176,59,102,0.35)]
-              active:scale-105 active:-translate-y-2 active:shadow-[0_8px_30px_rgba(176,59,102,0.35)]"
+              hover:scale-105 hover:-translate-y-2 hover:shadow-[0_8px_25px_rgba(176,59,102,0.25)]"
             >
               <h3 className="text-2xl font-bold mb-8 text-[#b03b66] flex items-center gap-2">
                 <LuStethoscope className="w-6 h-6 text-[#b03b66]" />
