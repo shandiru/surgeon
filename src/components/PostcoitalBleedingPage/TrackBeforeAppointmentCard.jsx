@@ -2,20 +2,21 @@ import React from 'react';
 
 const TrackBeforeAppointmentCard = () => {
   return (
-    <div className="max-w-6xl text-[#BB125B] mx-auto mb-10 flex flex-col gap-6 rounded-xl border py-6 shadow-sm">
-      <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 border-b pb-6">
-        <div className="font-semibold flex items-center gap-2 text-2xl">
+    <div className="max-w-6xl text-[#BB125B] mx-auto mb-10 flex flex-col gap-6 rounded-xl bg-white py-6 shadow-md hover:shadow-lg transition-shadow">
+      {/* Header */}
+      <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-2 px-6 border-b border-[#FEE6EA] pb-6">
+        <div className="font-semibold flex items-center gap-2 text-2xl text-[#FF4B8B]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
             viewBox="0 0 24 24"
             fill="none"
-            stroke="currentColor"
+            stroke="#FF4B8B"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className="lucide lucide-calendar h-6 w-6 text-primary"
+            className="h-6 w-6"
           >
             <path d="M8 2v4"></path>
             <path d="M16 2v4"></path>
@@ -24,20 +25,33 @@ const TrackBeforeAppointmentCard = () => {
           </svg>
           What to Track Before Your Appointment
         </div>
-        <div className="text-muted-foreground text-sm">
+        <div className="text-sm text-[#6B7280]">
           Bring this info with you — it can help your doctor find the cause quickly
         </div>
       </div>
 
+      {/* Content */}
       <div className="px-6">
         <div className="grid md:grid-cols-2 gap-6">
-          <ul className="space-y-2">
-            <li>• When the bleeding happens (timing and cycle day)</li>
-            <li>• How much blood (light spots or heavier flow)</li>
+          <ul className="space-y-3 text-sm">
+            <li className="flex items-start gap-2">
+              <span className="w-2 h-2 bg-[#FF4B8B] rounded-full mt-2"></span>
+              When the bleeding happens (timing and cycle day)
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="w-2 h-2 bg-[#FF4B8B] rounded-full mt-2"></span>
+              How much blood (light spots or heavier flow)
+            </li>
           </ul>
-          <ul className="space-y-2">
-            <li>• If there's pain during or after sex</li>
-            <li>• Any other symptoms (discharge, odour, pelvic pain, fever)</li>
+          <ul className="space-y-3 text-sm">
+            <li className="flex items-start gap-2">
+              <span className="w-2 h-2 bg-[#FF4B8B] rounded-full mt-2"></span>
+              If there's pain during or after sex
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="w-2 h-2 bg-[#FF4B8B] rounded-full mt-2"></span>
+              Any other symptoms (discharge, odour, pelvic pain, fever)
+            </li>
           </ul>
         </div>
       </div>

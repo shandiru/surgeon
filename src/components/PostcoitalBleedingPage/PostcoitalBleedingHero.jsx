@@ -3,31 +3,31 @@ import React from 'react';
 export default function PostcoitalBleedingHero() {
   return (
     <section
-      className="py-16 px-4"
-      style={{ backgroundColor: '#FF4B8B', color: '#FFFFFF' }} // bg-primary + text-primary-foreground
+      className="py-20 px-6 shadow-inner text-center"
+      style={{ backgroundColor: '#FEE6EA', color: '#BB125B' }} // ✅ soft pink bg + magenta text
     >
-      <div className="max-w-4xl mx-auto text-center">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
+      <div className="max-w-3xl mx-auto">
+        {/* Heading */}
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight text-[#BB125B]">
           Understanding Postcoital Bleeding
         </h1>
-        <p className="text-xl mb-8 opacity-90">
+
+        {/* Subtext */}
+        <p className="text-lg md:text-xl mb-8 opacity-90 text-[#BB125B]">
           What it is, causes, and when to seek help
         </p>
 
+        {/* CTA Button */}
         <button
           data-slot="button"
-          className="inline-flex items-center justify-center gap-2 text-sm font-semibold rounded-md px-6 h-10 shadow transition-all hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2"
-          style={{
-            backgroundColor: '#FEB6C5', // bg-secondary
-            color: '#1F2937',           // text-secondary-foreground
-          }}
+          className="inline-flex items-center justify-center gap-2 text-sm font-semibold rounded-md px-7 h-11 bg-[#FF4B8B] text-white shadow-md hover:shadow-lg hover:bg-[#e43d7a] transition-all duration-300"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="mr-2 h-5 w-5"
+            className="h-5 w-5"
             viewBox="0 0 24 24"
             fill="none"
-            stroke="currentColor"
+            stroke="white"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"

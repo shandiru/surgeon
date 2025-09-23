@@ -2,20 +2,24 @@ import React from 'react';
 
 const PostcoitalCard = () => {
   return (
-    <div className="max-w-6xl text-[#BB125B] mx-auto mb-10 flex flex-col gap-6 rounded-xl border py-6 shadow-sm">
-      <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 border-b pb-6">
-        <div className="font-semibold flex items-center gap-2 text-2xl">
+    <div
+      className="max-w-6xl mx-auto mb-10 flex flex-col gap-6 rounded-xl bg-white py-6 px-6 shadow-md hover:shadow-xl hover:scale-[1.02] transition-all duration-300"
+      style={{ color: '#BB125B' }}
+    >
+      {/* Header */}
+      <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 border-b pb-6">
+        <div className="font-semibold flex items-center gap-2 text-2xl text-[#FF4B8B]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
             viewBox="0 0 24 24"
             fill="none"
-            stroke="currentColor"
+            stroke="#FF4B8B"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className="lucide lucide-stethoscope h-6 w-6 text-primary"
+            className="h-6 w-6"
           >
             <path d="M11 2v2"></path>
             <path d="M5 2v2"></path>
@@ -26,11 +30,13 @@ const PostcoitalCard = () => {
           What Is Postcoital Bleeding?
         </div>
       </div>
-      <div className="px-6 space-y-4">
+
+      {/* Content */}
+      <div className="space-y-4">
         <p className="text-lg leading-relaxed">
           Postcoital bleeding is bleeding that happens after vaginal sex. It is not part of your period.
         </p>
-        <ul className="space-y-2 text-muted-foreground">
+        <ul className="space-y-2 text-[#6B7280]">
           <li>• The amount of blood can range from light spotting to heavier flow</li>
           <li>• It can happen after penetration by a penis, sex toys, or fingers</li>
           <li>• Around 1 in 10 women experience this at some point — it is common and usually not serious</li>
