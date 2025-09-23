@@ -4,15 +4,16 @@ export default function EmotionalAndSupportSection() {
   return (
     <section className="mb-12 px-4">
       <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        
         {/* Emotional Wellbeing Card */}
-        <div className="bg-white text-[#1F2937] flex flex-col gap-6 rounded-xl border border-[#FBCFE8] py-6 shadow-sm">
-          <div className="grid items-start gap-1.5 px-6 border-b pb-6">
-            <div className="leading-none font-semibold flex items-center gap-2 text-xl sm:text-2xl text-[#FF4B8B]">
-              <span className="text-2xl">💖</span>
+        <div className="bg-gradient-to-br from-[#FFF7FA] to-[#FEE6EA] text-[#1F2937] flex flex-col gap-6 rounded-2xl py-8 shadow-md hover:shadow-lg transition">
+          <div className="px-8 pb-5 border-b border-[#FFD6E5]">
+            <div className="flex items-center gap-3 text-2xl font-bold text-[#FF4B8B]">
+              
               Emotional Wellbeing
             </div>
           </div>
-          <div className="px-6 space-y-3 text-sm text-[#4B5563]">
+          <div className="px-8 space-y-3 text-base text-[#4B5563] leading-relaxed">
             <p>• Postmenopausal bleeding can cause worry or fear of cancer</p>
             <p>• Most causes are not serious</p>
             <p>• Getting checked quickly can bring peace of mind and prompt treatment</p>
@@ -21,14 +22,14 @@ export default function EmotionalAndSupportSection() {
         </div>
 
         {/* Follow-Up & Support Card */}
-        <div className="bg-white text-[#1F2937] flex flex-col gap-6 rounded-xl border border-[#FBCFE8] py-6 shadow-sm">
-          <div className="grid items-start gap-1.5 px-6 border-b pb-6">
-            <div className="leading-none font-semibold flex items-center gap-2 text-xl sm:text-2xl text-[#FF4B8B]">
-              <span className="text-2xl">🗨️</span>
+        <div className="bg-gradient-to-br from-[#FFF7FA] to-[#FEE6EA] text-[#1F2937] flex flex-col gap-6 rounded-2xl py-8 shadow-md hover:shadow-lg transition">
+          <div className="px-8 pb-5 border-b border-[#FFD6E5]">
+            <div className="flex items-center gap-3 text-2xl font-bold text-[#FF4B8B]">
+            
               Follow-Up & Support
             </div>
           </div>
-          <div className="px-6 space-y-3 text-sm text-[#4B5563]">
+          <div className="px-8 space-y-3 text-base text-[#4B5563] leading-relaxed">
             <p>• Most women get a clear answer within a few weeks</p>
             <p>• If needed, your doctor will create a treatment plan and follow-up schedule</p>
             <p>• You are not alone — support is available every step of the way</p>

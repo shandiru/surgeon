@@ -29,7 +29,7 @@ const accordionItems = [
 ];
 
 export default function HowItsDiagnosed() {
-  const [openIndex, setOpenIndex] = useState(3); // default open index
+  const [openIndex, setOpenIndex] = useState(0); // default first open
 
   const toggleItem = (index) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -37,43 +37,47 @@ export default function HowItsDiagnosed() {
 
   return (
     <section className="mb-12 px-4">
-      <div className="bg-white text-[#1F2937] flex flex-col gap-6 rounded-xl shadow-md py-6 max-w-4xl mx-auto">
+      <div className="bg-white text-[#1F2937] flex flex-col gap-6 rounded-2xl shadow-lg py-8 max-w-4xl mx-auto">
+        
         {/* Header */}
-        <div className="grid auto-rows-min items-start gap-1.5 px-6 border-b border-[#FEE6EA] pb-6">
-          <div className="font-semibold flex items-center gap-2 text-xl sm:text-2xl text-[#FF4B8B]">
-            <Stethoscope className="h-6 w-6" />
+        <div className="px-8 pb-6 border-b border-[#FEE6EA]">
+          <div className="font-bold flex items-center gap-3 text-2xl text-[#FF4B8B]">
+            <Stethoscope className="h-7 w-7" />
             How It’s Diagnosed
           </div>
-          <p className="text-sm text-[#6B7280]">
-            These tests are usually quick and done as an outpatient procedure.
+          <p className="mt-2 text-sm text-[#6B7280]">
+            These tests are usually quick and done as outpatient procedures.
           </p>
         </div>
 
         {/* Accordion */}
         <div className="px-6">
           {accordionItems.map((item, index) => (
-            <div key={item.id} className="border-b border-[#FEE6EA] last:border-b-0">
-              <h3>
-                <button
-                  type="button"
-                  onClick={() => toggleItem(index)}
-                  className={`flex w-full items-start justify-between py-4 text-left text-sm font-medium transition-all outline-none hover:underline focus-visible:ring-2 focus-visible:ring-[#FF4B8B] ${
-                    openIndex === index ? 'text-[#FF4B8B]' : 'text-[#374151]'
+            <div
+              key={item.id}
+              className="border-b border-[#FEE6EA] last:border-b-0"
+            >
+              <button
+                type="button"
+                onClick={() => toggleItem(index)}
+                className={`flex w-full items-center justify-between py-4 text-left text-base font-medium transition-colors ${
+                  openIndex === index ? 'text-[#FF4B8B]' : 'text-[#374151]'
+                }`}
+              >
+                {item.title}
+                <ChevronDown
+                  className={`h-5 w-5 text-[#6B7280] transition-transform duration-300 ${
+                    openIndex === index ? 'rotate-180 text-[#FF4B8B]' : ''
                   }`}
-                >
-                  {item.title}
-                  <ChevronDown
-                    className={`h-4 w-4 text-[#6B7280] transition-transform duration-200 ${
-                      openIndex === index ? 'rotate-180' : ''
-                    }`}
-                  />
-                </button>
-              </h3>
-              {openIndex === index && (
-                <div className="text-sm text-[#4B5563] pb-4 transition-all duration-200">
-                  {item.content}
-                </div>
-              )}
+                />
+              </button>
+              <div
+                className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                  openIndex === index ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
+                }`}
+              >
+                <p className="pb-4 text-sm text-[#4B5563]">{item.content}</p>
+              </div>
             </div>
           ))}
         </div>

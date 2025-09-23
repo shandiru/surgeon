@@ -3,17 +3,16 @@ import React from 'react';
 export default function CausesOfBleedingSection() {
   return (
     <section className="mb-12 px-4">
-      <div className="bg-white text-[#1F2937] flex flex-col gap-6 rounded-xl border border-[#FF4B8B] py-6 shadow-sm max-w-4xl mx-auto">
+      <div className="bg-white text-[#1F2937] flex flex-col gap-6 rounded-2xl shadow-md py-8 max-w-4xl mx-auto transition hover:shadow-lg">
         
         {/* Card Header */}
-        <div className="grid auto-rows-min items-start gap-1.5 px-6 border-b pb-6">
-          <div className="leading-none font-semibold flex items-center gap-2 text-xl sm:text-2xl">
-            <span role="img" aria-label="lightbulb">💡</span>
+        <div className="px-6 text-center md:text-left">
+          <h2 className="font-bold flex items-center justify-center md:justify-start gap-2 text-2xl text-[#BB125B]">
             Causes of Postmenopausal Bleeding
-          </div>
-          <div className="text-sm text-[#6B7280]">
+          </h2>
+          <p className="text-sm text-[#6B7280] mt-2">
             Bleeding can range from light spotting or brown discharge to heavier, period-like bleeding.
-          </div>
+          </p>
         </div>
 
         {/* Card Content */}
@@ -21,29 +20,29 @@ export default function CausesOfBleedingSection() {
           <div className="grid md:grid-cols-2 gap-6">
             
             {/* Serious Causes */}
-            <div className="space-y-3">
-              <div className="inline-flex items-center rounded-md bg-[#FF4B8B] text-white text-xs font-medium w-full justify-start p-3">
-                Serious Causes
+            <div className="space-y-3 rounded-xl bg-gradient-to-br from-[#fff0f5] to-[#ffe6ed] p-5 shadow-sm">
+              <div className="inline-flex items-center gap-2 text-sm font-semibold text-[#FF4B8B] mb-2">
+                 Serious Causes
               </div>
-              <ul className="space-y-2 text-sm pl-4">
-                <li>• Endometrial (womb) cancer or uterine sarcoma</li>
-                <li>• Cervical or vaginal cancer</li>
+              <ul className="space-y-2 text-sm text-[#374151] list-disc list-inside">
+                <li>Endometrial (womb) cancer or uterine sarcoma</li>
+                <li>Cervical or vaginal cancer</li>
               </ul>
             </div>
 
             {/* Common Benign Causes */}
-            <div className="space-y-3">
-              <div className="inline-flex items-center rounded-md bg-[#FFE3EC] text-[#1F2937] text-xs font-medium w-full justify-start p-3">
-                Common Benign Causes
+            <div className="space-y-3 rounded-xl bg-gradient-to-br from-[#fef6f9] to-[#fff] p-5 shadow-sm">
+              <div className="inline-flex items-center gap-2 text-sm font-semibold text-[#BB125B] mb-2">
+                 Common Benign Causes
               </div>
-              <ul className="space-y-2 text-sm pl-4">
-                <li>• Endometrial or vaginal atrophy</li>
-                <li>• Uterine fibroids or polyps</li>
-                <li>• Endometrial hyperplasia</li>
-                <li>• Infection of the womb lining</li>
-                <li>• Hormone therapy or tamoxifen</li>
-                <li>• Pelvic trauma</li>
-                <li>• Bleeding from urinary tract or rectum</li>
+              <ul className="space-y-2 text-sm text-[#374151] list-disc list-inside">
+                <li>Endometrial or vaginal atrophy</li>
+                <li>Uterine fibroids or polyps</li>
+                <li>Endometrial hyperplasia</li>
+                <li>Infection of the womb lining</li>
+                <li>Hormone therapy or tamoxifen</li>
+                <li>Pelvic trauma</li>
+                <li>Bleeding from urinary tract or rectum</li>
               </ul>
             </div>
 
