@@ -2,27 +2,27 @@ import React from 'react';
 
 const EndometriosisHeroSection = () => {
   return (
-    <section className="py-16 bg-gradient-to-b from-[#ffeef3] to-white">
+    <section className="py-16 bg-gradient-to-b from-[#FFC5D3] to-white">
       <div className="container mx-auto px-4 text-center">
         <span
           data-slot="badge"
-          className="inline-flex items-center justify-center rounded-md px-2 py-0.5 text-xs font-medium border border-[#ff97b3] bg-[#ff97b3]/10 text-[#ff97b3] mb-4"
+          className="inline-flex items-center justify-center rounded-md px-2 py-0.5 text-xs font-medium border border-[#b03b66] bg-[#b03b66]/10 text-[#b03b66] mb-4"
         >
           Medical Information Guide
         </span>
 
-        <h1 className="text-4xl md:text-6xl font-bold text-balance mb-6 text-[#ff97b3]">
+        <h1 className="text-4xl md:text-6xl font-bold text-balance mb-6 text-[#b03b66]">
           Understanding Endometriosis
         </h1>
 
-        <p className="text-xl text-[#ff97b3]/80 text-balance mb-8 max-w-2xl mx-auto">
+        <p className="text-xl text-[#7a2f4f] text-balance mb-8 max-w-2xl mx-auto">
           A comprehensive guide to symptoms, diagnosis & treatment options for endometriosis
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           {/* Button: Learn About Symptoms */}
           <button
-            className="inline-flex items-center justify-center gap-2 text-sm font-medium bg-[#ff97b3] text-white hover:bg-[#ff97b3]/90 h-10 rounded-md px-6 transition-all"
+            className="inline-flex items-center justify-center gap-2 text-sm font-medium bg-[#b03b66] text-white hover:bg-[#7a2f4f] h-10 rounded-md px-6 transition-all"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +43,7 @@ const EndometriosisHeroSection = () => {
 
           {/* Button: Get Support */}
           <button
-            className="inline-flex items-center justify-center gap-2 text-sm font-medium border border-[#ff97b3] text-[#ff97b3] hover:bg-[#ff97b3]/10 h-10 rounded-md px-6 transition-all"
+            className="inline-flex items-center justify-center gap-2 text-sm font-medium border border-[#b03b66] text-[#b03b66] hover:bg-[#FFC5D3]/30 h-10 rounded-md px-6 transition-all"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
