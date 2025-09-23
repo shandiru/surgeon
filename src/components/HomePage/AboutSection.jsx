@@ -55,7 +55,7 @@ export default function AboutSectionView() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2
-            className="text-4xl font-bold text-gray-900 mb-4"
+            className="text-4xl font-bold text-[#FF4B8B] mb-4"
             data-aos="fade-up"
           >
             About Mr Ketankumar Gajjar
@@ -76,16 +76,16 @@ export default function AboutSectionView() {
           {cards.map((card, i) => (
             <div
               key={i}
-              className="group bg-white text-gray-900 flex flex-col gap-6 rounded-xl border border-[#ffd6e0] shadow-sm text-center p-6 transition-all duration-300 scale-100 shadow-none 
-                         md:hover:scale-105 md:hover:shadow-[0_0_35px_4px_rgba(255,197,211,1)]
-                         active:scale-95 active:shadow-[0_0_25px_2px_rgba(255,197,211,0.7)]"
+              className="group bg-white text-gray-900 flex flex-col gap-6 rounded-xl border border-[#FF4B8B]/20 shadow-sm text-center p-6 transition-all duration-300 
+                         md:hover:scale-105 md:hover:shadow-[0_0_25px_3px_rgba(255,75,139,0.3)]
+                         active:scale-95 active:shadow-[0_0_15px_2px_rgba(255,75,139,0.25)]"
               data-aos="fade-up"
               data-aos-delay={i * 200}
             >
-              <div className="bg-[#ffc5d3]/30 group-hover:bg-[#ffc5d3]/40 active:bg-[#ffc5d3]/50 transition-colors duration-300 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-[#FF4B8B]/10 group-hover:bg-[#FF4B8B]/20 transition-colors duration-300 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-8 w-8 text-[#ff97b3]"
+                  className="h-8 w-8 text-[#FF4B8B]"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -94,7 +94,9 @@ export default function AboutSectionView() {
                   {card.icon}
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-2">{card.title}</h3>
+              <h3 className="text-xl font-semibold mb-2 text-[#1F2937]">
+                {card.title}
+              </h3>
               <p className="text-gray-600">{card.desc}</p>
             </div>
           ))}
