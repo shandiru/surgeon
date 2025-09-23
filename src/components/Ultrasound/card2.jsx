@@ -1,5 +1,5 @@
 import React from 'react';
-import { Stethoscope, Zap, FileText, CircleCheck } from 'lucide-react';
+import { Stethoscope, Zap, FileText, CircleCheck, Lightbulb } from 'lucide-react';
 
 const UltrasoundCard2 = ({ setShowCard, setActiveButton }) => {
   return (
@@ -67,7 +67,9 @@ const UltrasoundCard2 = ({ setShowCard, setActiveButton }) => {
 
           {/* Important Note */}
           <div className="bg-primary/10 border border-primary/20 p-4 rounded-lg">
-            <h4 className="font-semibold text-primary mb-2">💡 Important Note</h4>
+            <h4 className="font-semibold text-primary mb-2">
+              <Lightbulb className="w-5 h-5 inline-block" /> Important Note
+            </h4>
             <p className="text-sm">
               If the womb lining is thicker than expected, you may be offered a hysteroscopy and biopsy to investigate further. This is a precautionary measure to ensure your health.
             </p>

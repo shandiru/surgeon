@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import { Users } from 'lucide-react';
+import { Users, Heart, Leaf, FileText } from 'lucide-react';
 
 export default function SupportSelfCare() {
   return (
@@ -15,18 +15,36 @@ export default function SupportSelfCare() {
       <div className="grid md:grid-cols-2 gap-6">
         {/* Self-Care Tips Card */}
         <div className="bg-[#FEE6EA] text-[#BB125B] flex flex-col gap-4 rounded-xl p-6 shadow-md hover:shadow-lg hover:-translate-y-1 transition-all active:scale-[0.98]">
-          <h3 className="text-lg font-semibold mb-2">🌿 Self-Care Tips</h3>
+          <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
+            <Leaf className="h-5 w-5 text-[#BB125B]" />
+            Self-Care Tips
+          </h3>
           <ul className="space-y-2 text-sm leading-relaxed">
-            <li>📝 Track your periods and symptoms</li>
-            <li>😴 Rest during heavy or painful days</li>
-            <li>💧 Stay hydrated and include iron-rich foods</li>
-            <li>🩺 Talk to your doctor early if something feels "off"</li>
+            <li className="flex items-center gap-2">
+              <FileText className="h-5 w-5 text-[#BB125B]" />
+              Track your periods and symptoms
+            </li>
+            <li className="flex items-center gap-2">
+              <Heart className="h-5 w-5 text-[#BB125B]" />
+              Rest during heavy or painful days
+            </li>
+            <li className="flex items-center gap-2">
+              <Leaf className="h-5 w-5 text-[#BB125B]" />
+              Stay hydrated and include iron-rich foods
+            </li>
+            <li className="flex items-center gap-2">
+              <FileText className="h-5 w-5 text-[#BB125B]" />
+              Talk to your doctor early if something feels "off"
+            </li>
           </ul>
         </div>
 
         {/* Emotional Support Card */}
         <div className="bg-[#FEE6EA] text-[#BB125B] flex flex-col gap-4 rounded-xl p-6 shadow-md hover:shadow-lg hover:-translate-y-1 transition-all active:scale-[0.98]">
-          <h3 className="text-lg font-semibold mb-2">💖 Emotional Support</h3>
+          <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
+            <Heart className="h-5 w-5 text-[#BB125B]" />
+            Emotional Support
+          </h3>
           <p className="text-sm leading-relaxed">
             Severe symptoms can affect mood, energy, confidence and relationships. 
             It's okay to ask for emotional support or counselling.

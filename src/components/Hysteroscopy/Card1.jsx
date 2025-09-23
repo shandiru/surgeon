@@ -1,5 +1,5 @@
 import React from 'react';
-import { Stethoscope, Activity, CircleCheck, Heart, Shield } from 'lucide-react';
+import { Stethoscope, Activity, CircleCheck, Heart, Shield, Lightbulb } from 'lucide-react';
 
 const HysteroscopyCard1 = ({ setShowCard, setActiveButton }) => {
   return (
@@ -73,7 +73,9 @@ const HysteroscopyCard1 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           <div className="bg-accent/10 p-4 rounded-lg">
-            <h4 className="font-semibold text-accent-foreground mb-2">💡 Remember</h4>
+            <h4 className="flex items-start gap-2">
+              <Lightbulb className="w-5 h-5" /> Remember
+            </h4>
             <p className="text-sm">
               Hysteroscopy is commonly offered for abnormal bleeding or fertility issues. It's a safe way to find and treat common womb problems.
             </p>

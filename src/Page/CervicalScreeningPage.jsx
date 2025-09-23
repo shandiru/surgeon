@@ -14,45 +14,42 @@ import SmearTestFooter from "../components/CervicalScreeningPage/SmearTestFooter
 export default function CervicalScreeningPage() {
   return (
     <div>
-      
+
       <section >
         <CervicalScreening />
       </section>
-
-     
-       
-       <section >
+      <section >
         <SmearTestInfoCard />
-       </section>
+      </section>
 
-         <section >
+      <section >
         <SmearTestExclusions />
-         </section>
+      </section>
 
-            <section >
+      <section >
         <SmearTestPreparation />
-            </section>
+      </section>
 
-         <section >
+      <section >
         <SmearTestProcedure />
-            </section>
+      </section>
 
-            <section>
+      <section>
         <SmearTestResultsAccordion />
-            </section>
-      
-            <section >
-        <SmearTestReminder />
-            </section>
+      </section>
 
-            <section>
+      <section >
+        <SmearTestReminder />
+      </section>
+
+      <section>
         <SmearTestCTA />
-            </section>
-      
-        <section>
+      </section>
+
+      <section>
         <SmearTestFooter />
-            </section>
-    
+      </section>
+
     </div>
   );
 }

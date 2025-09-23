@@ -6,9 +6,9 @@ const Footer = () => {
   const pink = '#FFC5D3'
 
   return (
-    <footer style={{ backgroundColor: pink }} className="mt-16">
+    <footer className="bg-[#FFE6EA]">
       <div className="container mx-auto px-4 py-8">
-        <div className="text-center text-white">
+        <div className="text-center text-black">
           <p className="mb-2">
             This information is provided for educational purposes only.
           </p>

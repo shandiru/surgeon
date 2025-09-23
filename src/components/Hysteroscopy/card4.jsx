@@ -1,5 +1,5 @@
 import React from 'react';
-import { Camera, Zap, Clock } from 'lucide-react';
+import { Camera, Wrench, Droplet, Search, Clock, Zap, Lightbulb } from 'lucide-react';
 
 const Hysteroscopycard4 = ({ setShowCard, setActiveButton }) => {
   return (
@@ -56,7 +56,7 @@ const Hysteroscopycard4 = ({ setShowCard, setActiveButton }) => {
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold">1</div>
               <div className="flex-1">
                 <h4 className="font-semibold mb-1 flex items-center gap-2">
-                  <span>🛏️</span> Positioning
+                  <Camera className="w-5 h-5 text-primary" /> Positioning
                 </h4>
                 <p className="text-muted-foreground text-sm">You lie on a couch with your legs supported</p>
               </div>
@@ -67,7 +67,7 @@ const Hysteroscopycard4 = ({ setShowCard, setActiveButton }) => {
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold">2</div>
               <div className="flex-1">
                 <h4 className="font-semibold mb-1 flex items-center gap-2">
-                  <span>🔧</span> Speculum Use
+                  <Wrench className="w-5 h-5 text-primary" /> Speculum Use
                 </h4>
                 <p className="text-muted-foreground text-sm">A speculum may be used to gently hold the vagina open</p>
               </div>
@@ -78,7 +78,7 @@ const Hysteroscopycard4 = ({ setShowCard, setActiveButton }) => {
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold">3</div>
               <div className="flex-1">
                 <h4 className="font-semibold mb-1 flex items-center gap-2">
-                  <span>📹</span> Hysteroscope Insertion
+                  <Camera className="w-5 h-5 text-primary" /> Hysteroscope Insertion
                 </h4>
                 <p className="text-muted-foreground text-sm">The hysteroscope is passed into the womb through the vagina and cervix</p>
               </div>
@@ -89,7 +89,7 @@ const Hysteroscopycard4 = ({ setShowCard, setActiveButton }) => {
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold">4</div>
               <div className="flex-1">
                 <h4 className="font-semibold mb-1 flex items-center gap-2">
-                  <span>💧</span> Fluid Expansion
+                  <Droplet className="w-5 h-5 text-primary" /> Fluid Expansion
                 </h4>
                 <p className="text-muted-foreground text-sm">Fluid is gently pumped in to expand the womb and improve visibility</p>
               </div>
@@ -100,7 +100,7 @@ const Hysteroscopycard4 = ({ setShowCard, setActiveButton }) => {
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold">5</div>
               <div className="flex-1">
                 <h4 className="font-semibold mb-1 flex items-center gap-2">
-                  <span>🔍</span> Examination &amp; Treatment
+                  <Search className="w-5 h-5 text-primary" /> Examination & Treatment
                 </h4>
                 <p className="text-muted-foreground text-sm">A camera sends pictures to a monitor so your doctor can see and treat any abnormalities</p>
               </div>
@@ -109,7 +109,9 @@ const Hysteroscopycard4 = ({ setShowCard, setActiveButton }) => {
 
           {/* What You'll Feel */}
           <div className="bg-accent/10 p-4 rounded-lg border border-accent/20">
-            <h4 className="font-semibold text-accent-foreground mb-2">💭 What You'll Feel</h4>
+            <h4 className="flex items-center gap-2 mb-2">
+              <Lightbulb className="w-5 h-5 text-accent-foreground" /> What You'll Feel
+            </h4>
             <p className="text-sm">You may feel cramping similar to period pain, but it should not be painful. The procedure is generally well-tolerated by most people.</p>
           </div>
 

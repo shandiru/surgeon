@@ -1,6 +1,6 @@
-'use client'
-
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 import {
   FaExclamationTriangle,
   FaHeartbeat,
@@ -13,11 +13,21 @@ import {
 } from "react-icons/fa";
 
 const VulvarCancerPage = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+      once: true, // Ensures animation happens once when scrolled
+    });
+  }, []);
+
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-[#FFE6EA]">
       <div className="container mx-auto px-4 py-12 max-w-6xl">
         {/* Header Section */}
-        <div className="flex flex-col lg:flex-row justify-center md:gap-20 items-center mb-16">
+        <div
+          className="flex flex-col lg:flex-row justify-center md:gap-20 items-center mb-16"
+          data-aos="fade-up"
+        >
           <div className="mb-8 lg:mb-0 text-center lg:text-left">
             <div
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium mb-6"
@@ -25,7 +35,9 @@ const VulvarCancerPage = () => {
             >
               <FaHeartbeat className="h-4 w-4" /> Medical Information Guide
             </div>
-            <h1 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-6">Vulvar Cancer</h1>
+            <h1 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-6">
+              Vulvar Cancer
+            </h1>
             <p className="text-lg lg:text-xl text-gray-600 leading-relaxed">
               A comprehensive guide covering symptoms, diagnosis,
               <br /> and treatment options
@@ -37,6 +49,7 @@ const VulvarCancerPage = () => {
             src="/vulvar.png"
             className="w-3/4 sm:w-1/2 md:w-1/3 lg:w-1/4 h-auto rounded-xl"
             alt="Vulvar Cancer Image"
+            data-aos="fade-left"
           />
         </div>
 
@@ -63,6 +76,7 @@ const VulvarCancerPage = () => {
               "Changes in a mole or birthmark on the vulva (size, colour, or texture)",
             ]}
             alert="If you notice any of these symptoms, it's important to see your doctor promptly."
+            data-aos="fade-up"
           />
 
           {/* Step 2: Diagnosis */}
@@ -94,6 +108,7 @@ const VulvarCancerPage = () => {
               },
             ]}
             tags={["Chest X-ray", "CT or PET-CT scan", "MRI", "Endoscopy (if needed)"]}
+            data-aos="fade-up"
           />
 
           {/* Step 3: Treatment */}
@@ -130,6 +145,7 @@ const VulvarCancerPage = () => {
                 },
               ],
             }}
+            data-aos="fade-up"
           />
         </div>
 
@@ -137,6 +153,7 @@ const VulvarCancerPage = () => {
         <div
           className="text-center mt-20 p-8 rounded-2xl"
           style={{ backgroundColor: "#FFC5D3" }}
+          data-aos="fade-up"
         >
           <p className="text-white text-lg leading-relaxed max-w-3xl mx-auto">
             This information is for educational purposes only and should not replace professional medical advice.
@@ -162,7 +179,7 @@ const StepCard = ({
   const pink = "#FFC5D3";
 
   return (
-    <div className="relative mb-20">
+    <div className="relative mb-20" data-aos="fade-up">
       <div className="lg:flex lg:items-start lg:gap-12">
         {/* Step Circle */}
         <div

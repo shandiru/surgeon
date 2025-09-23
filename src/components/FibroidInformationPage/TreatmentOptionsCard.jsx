@@ -1,14 +1,16 @@
 'use client'
 
+import { Pill, User } from "lucide-react"
+
 export default function TreatmentOptionsCard() {
   return (
     <section className="py-16 px-4 md:px-6">
       <div className="bg-[#fff0f6] text-[#212529] flex flex-col gap-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 p-8">
-        
+
         {/* Card Header */}
         <div className="text-center">
           <div className="flex items-center justify-center gap-2 mb-3">
-            <span className="text-3xl">💊</span>
+            <Pill className="text-3xl text-[#d63384]" />
             <h2 className="font-bold text-2xl md:text-3xl text-[#d63384]">Treatment Options</h2>
           </div>
           <p className="text-base text-[#495057]">
@@ -65,8 +67,9 @@ export default function TreatmentOptionsCard() {
 
           {/* Doctor Advice Note */}
           <div className="bg-[#ffe3ec] border border-[#f8c4d9] rounded-xl p-5 text-center shadow-sm">
-            <p className="text-[#d63384] font-medium">
-              👩‍⚕️ Your doctor will help you choose the safest and most effective option
+            <p className="text-[#d63384] font-medium flex items-center gap-2">
+              <User className="text-2xl" />
+              Your doctor will help you choose the safest and most effective option
               based on your symptoms and fertility plans.
             </p>
           </div>

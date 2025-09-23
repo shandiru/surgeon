@@ -1,3 +1,4 @@
+import { Target } from 'lucide-react';
 import React, { useState } from 'react';
 
 const Colposcopycard5 = ({ setShowCard, setActiveButton }) => {
@@ -90,7 +91,10 @@ const Colposcopycard5 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           <div className="bg-primary/5 p-4 rounded-lg border border-primary/20">
-            <h4 className="font-semibold text-primary mb-2">🎯 Key Point</h4>
+            <h4 className="font-semibold text-primary mb-2 flex items-center gap-2">
+              <Target className="w-5 h-5 text-[#FF4B8B]" />
+              Key Point
+            </h4>
             <p className="text-sm">Treating abnormal cells early can <strong>prevent cervical cancer from developing</strong>. These procedures are highly effective and have excellent success rates.</p>
           </div>
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { TrendingUp, ShieldAlert, Clock, Phone } from 'lucide-react'; // Import Lucide icons
+import { TrendingUp, ShieldAlert, Clock, Phone, AlertCircle } from 'lucide-react'; // Import Lucide icons
 
 const cardData = [
   {
@@ -34,7 +34,10 @@ const UrgentHelp = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl text-[#d60d64] mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-4">🚨 When to Seek Urgent Help</h2>
+            <h2 className="text-3xl font-bold text-foreground mb-4">
+              <AlertCircle className="inline-block mr-2 text-red-500" />
+              When to Seek Urgent Help
+            </h2>
             <p className="text-lg text-muted-foreground text-pretty">
               Get medical advice quickly if you notice any of these warning signs
             </p>

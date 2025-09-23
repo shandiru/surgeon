@@ -1,12 +1,24 @@
-// src/components/GynecologyFutureSection.jsx
+'use client'
+
+import React, { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
+
 export default function GynecologyFutureSection() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+      once: true, // Animation happens only once when scrolled
+    });
+  }, []);
+
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-white" data-aos="fade-up">
       <div className="container mx-auto px-6 md:px-16">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           
           {/* Left Image with Hover/Active */}
-          <div className="flex justify-center">
+          <div className="flex justify-center" data-aos="zoom-in">
             <img
               src="/gynecology-future.png" // <-- put your image in /public
               alt="Future of gynecologic robotic surgery"
@@ -19,7 +31,7 @@ export default function GynecologyFutureSection() {
           </div>
 
           {/* Right Text */}
-          <div className="text-center md:text-left text-[#b03b66] space-y-6">
+          <div className="text-center md:text-left text-[#b03b66] space-y-6" data-aos="fade-right">
             <h2 className="text-3xl font-bold">
               The Future of Gynecologic Surgery
             </h2>
@@ -35,7 +47,7 @@ export default function GynecologyFutureSection() {
             {/* Highlight Box */}
             <div className="bg-[#FFF5F8] p-6 rounded-lg shadow-md transition duration-300 
               hover:shadow-[0_8px_30px_rgba(176,59,102,0.25)]
-              active:shadow-[0_8px_30px_rgba(176,59,102,0.25)]">
+              active:shadow-[0_8px_30px_rgba(176,59,102,0.25)]" data-aos="fade-left">
               <p className="text-xl font-semibold mb-2 text-[#b03b66]">
                 Expert Care, Advanced Technology
               </p>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronRight } from 'lucide-react';
+import { Circle, CircleDashed, AlertCircle } from 'lucide-react'; 
 
 const VulvarVaginalSection = () => {
     const [openSections, setOpenSections] = useState({}); // Track open sections
@@ -14,7 +15,7 @@ const VulvarVaginalSection = () => {
     const sections = [
         {
             id: 'vaginalCysts',
-            icon: '🔵',
+            icon: <AlertCircle className="text-black" />, // Replacing emoji with Lucide icon
             title: 'Vaginal Cysts',
             description: 'Pouch-like sacs that can contain pus, air, or scar tissue',
             details: [
@@ -27,19 +28,19 @@ const VulvarVaginalSection = () => {
         },
         {
             id: 'vaginalPolyps',
-            icon: '🟡',
+            icon: <CircleDashed className="text-yellow-500" />, // Replacing emoji with Lucide icon
             title: 'Vaginal Polyps (Skin Tags)',
             description: 'Small, soft outgrowths of skin',
             details: [
                 'Usually harmless and painless',
                 'Treated only if they bleed or cause discomfort',
-                "Can appear as small, flesh-colored bumps",
-                "May develop due to hormonal changes or irritation"
+                'Can appear as small, flesh-colored bumps',
+                'May develop due to hormonal changes or irritation'
             ],
         },
         {
             id: 'vaginalWarts',
-            icon: '🔴',
+            icon: <AlertCircle className="text-red-500" />, // Replacing emoji with Lucide icon
             title: 'Vaginal Warts or Herpes Blisters',
             description: 'Caused by viral infections (HPV or herpes)',
             details: [
@@ -51,7 +52,7 @@ const VulvarVaginalSection = () => {
         },
         {
             id: 'vaginalCancer',
-            icon: '⚫',
+            icon: <Circle className="text-blue-500" />,// Replacing emoji with Lucide icon
             title: 'Vaginal Cancer (Rare)',
             description: 'Uncommon but requires immediate medical attention',
             details: [
@@ -69,7 +70,7 @@ const VulvarVaginalSection = () => {
                 <div className="max-w-4xl mx-auto">
                     <div className="text-center mb-12">
                         <h2 className="text-3xl font-bold text-foreground mb-4">
-                            💡 Common Causes of Vulvar &amp; Vaginal Lumps
+                            Common Causes of Vulvar &amp; Vaginal Lumps
                         </h2>
                         <p className="text-lg text-muted-foreground text-pretty">
                             Understanding the different types of lumps can help you know what to expect

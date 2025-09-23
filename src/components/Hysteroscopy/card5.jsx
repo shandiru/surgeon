@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heart, CircleCheck } from 'lucide-react';
+import { Heart, CircleCheck, Clipboard, Clock } from 'lucide-react';
 
 const Hysteroscopycard5 = ({ setShowCard, setActiveButton }) => {
   return (
@@ -69,7 +69,10 @@ const Hysteroscopycard5 = ({ setShowCard, setActiveButton }) => {
 
           {/* Results Discussion Section */}
           <div className="bg-primary/5 p-4 rounded-lg border border-primary/20">
-            <h4 className="font-semibold text-primary mb-2">📋 Results Discussion</h4>
+            <h4 className="font-semibold text-primary mb-2">
+              <Clipboard className="w-5 h-5 inline-block mr-2 text-primary" />
+              Results Discussion
+            </h4>
             <p className="text-sm">
               Your doctor will discuss your results and next steps before you leave. Make sure to ask any questions you have about your findings or follow-up care.
             </p>
@@ -77,7 +80,10 @@ const Hysteroscopycard5 = ({ setShowCard, setActiveButton }) => {
 
           {/* Recovery Timeline Section */}
           <div className="bg-accent/10 p-4 rounded-lg border border-accent/20">
-            <h4 className="font-semibold text-accent-foreground mb-2">⏰ Recovery Timeline</h4>
+            <h4 className="font-semibold text-accent-foreground mb-2">
+              <Clock className="w-5 h-5 inline-block mr-2 text-accent-foreground" />
+              Recovery Timeline
+            </h4>
             <ul className="text-sm space-y-1">
               <li>• <strong>Day 1:</strong> Most people return to normal activities</li>
               <li>• <strong>2-3 days:</strong> If you had general anaesthetic, you may want extra rest</li>

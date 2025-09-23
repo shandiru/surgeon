@@ -1,14 +1,26 @@
-import { FiPhone } from "react-icons/fi";
+'use client'
+
+import React, { useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'  // Import AOS styles
+import { FiPhone } from 'react-icons/fi'
 
 export default function EndometrialInfoSection() {
   const pink = '#FFC5D3';
   const pinkHover = '#e6b0c0'; // slightly darker hover
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+      once: true, // Animation happens only once when scrolled
+    })
+  }, [])
+
   return (
-    <section className="py-12" style={{ backgroundColor: '#FFFFFF' }}>
+    <section className="py-12 bg-[#FFE6EA]" data-aos="fade-up">
       <div className="container px-4 max-w-6xl mx-auto text-center md:text-left flex flex-col md:flex-row items-center">
         {/* Content Section */}
-        <div className="text-center md:text-left md:mr-12 mb-8 md:mb-0">
+        <div className="text-center md:text-left md:mr-12 mb-8 md:mb-0" data-aos="fade-left">
           <h2 className="text-4xl font-bold mb-4" style={{ color: '#111827' }}>
             Endometrial Cancer Information
           </h2>
@@ -32,7 +44,7 @@ export default function EndometrialInfoSection() {
         </div>
 
         {/* Image Section */}
-        <div className="flex justify-center md:justify-start mt-8 md:mt-0">
+        <div className="flex justify-center md:justify-start mt-8 md:mt-0" data-aos="fade-right">
           <img
             src="/Endometrial.png" // Replace with the actual image URL
             alt="Endometrial Cancer Awareness"

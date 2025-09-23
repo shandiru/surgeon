@@ -1,4 +1,6 @@
+'use client';
 import React from 'react';
+import { Bed, Wrench, Droplet, Search, Sparkles } from 'lucide-react';
 
 const Colposcopycard3 = ({ setShowCard, setActiveButton }) => {
   return (
@@ -37,19 +39,19 @@ const Colposcopycard3 = ({ setShowCard, setActiveButton }) => {
           <div className="space-y-4">
             {[{
               step: 'Positioning',
-              icon: '🛏️',
+              icon: <Bed className="w-5 h-5 text-[#BB125B]" />,
               description: 'You\'ll lie on an examination table, just like during a smear test',
             }, {
               step: 'Speculum Insertion',
-              icon: '🔧',
+              icon: <Wrench className="w-5 h-5 text-[#BB125B]" />,
               description: 'A speculum is gently inserted to hold the vagina open',
             }, {
               step: 'Solution Application',
-              icon: '💧',
+              icon: <Droplet className="w-5 h-5 text-[#BB125B]" />,
               description: 'A vinegar-like solution is applied to highlight abnormal cells',
             }, {
               step: 'Examination',
-              icon: '🔍',
+              icon: <Search className="w-5 h-5 text-[#BB125B]" />,
               description: 'The colposcope examines your cervix and vulva from outside your body',
             }].map((item, index) => (
               <div key={index} className="flex gap-4 p-4 bg-card rounded-lg border hover:z-50 transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:scale-105 active:scale-100">
@@ -67,12 +69,14 @@ const Colposcopycard3 = ({ setShowCard, setActiveButton }) => {
                 </div>
               </div>
             ))}
-
           </div>
 
           {/* Additional Information */}
           <div className="bg-accent/10 p-4 rounded-lg border border-accent/20">
-            <h4 className="font-semibold text-accent-foreground mb-2">✨ Good to Know</h4>
+            <h4 className="font-semibold text-accent-foreground mb-2 flex items-center gap-2">
+              <Sparkles className="w-5 h-5 text-[#FF4B8B]" />
+              Good to Know
+            </h4>
             <p className="text-sm">
               The colposcope stays <strong>outside your body</strong> — it does not go inside the vagina. Think of it like a special microscope that gives your doctor a better view.
             </p>

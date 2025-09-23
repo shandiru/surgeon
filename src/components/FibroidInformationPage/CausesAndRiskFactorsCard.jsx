@@ -1,14 +1,16 @@
 'use client'
 
+import { Lightbulb } from "lucide-react"
+
 export default function CausesAndRiskFactorsCard() {
   return (
     <section className="py-16 px-4 md:px-6 bg-[#fff5f9]">
       <div className="max-w-4xl mx-auto bg-white text-[#212529] flex flex-col gap-6 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 p-8">
-        
+
         {/* Header */}
         <div className="flex flex-col gap-2 mb-4">
           <div className="flex items-center gap-3">
-            <span className="text-3xl">💡</span>
+            <Lightbulb className="text-3xl text-[#d63384]" />
             <h2 className="font-bold text-2xl md:text-3xl text-[#d63384]">
               Causes & Risk Factors
             </h2>

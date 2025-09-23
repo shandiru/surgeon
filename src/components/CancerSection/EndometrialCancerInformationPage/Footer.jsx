@@ -1,8 +1,7 @@
 export default function FooterNote() {
   return (
     <footer
-      className="py-8 mt-16"
-      style={{ backgroundColor: '#FFC5D3' }}
+      className="py-8 bg-[#FFE6EA]"
     >
       <div className="container mx-auto px-4 text-center">
         <p className="text-sm text-gray-800 max-w-2xl mx-auto">

@@ -33,7 +33,7 @@ export default function SmearTestResultsAccordion() {
         <div className="bg-white text-[#b03b66] flex flex-col gap-8 rounded-2xl border border-gray-200 p-10 shadow-lg max-w-8xl mx-auto transition hover:shadow-[0_8px_30px_rgba(255,197,211,0.35)]">
           {/* Header */}
           <div className="text-center md:text-left">
-            <h2 className="text-3xl md:text-4xl font-bold mb-2">📋 After Your Test</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-2"> After Your Test</h2>
             <p className="text-base text-[#7a2f4f]">Results usually within 1–2 weeks</p>
           </div>
 

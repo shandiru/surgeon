@@ -1,17 +1,26 @@
 'use client'
 
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 import { FaStethoscope, FaMicroscope, FaPills, FaInfoCircle } from "react-icons/fa";
 
 export default function VaginalCancerInfo() {
   const pink = "#FFC5D3";
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+      once: true, // Animation happens only once on scroll
+    });
+  }, []);
+
   return (
-    <div className="min-h-screen" style={{ backgroundColor: "#fff" }}>
+    <div className="min-h-screen bg-[#FFE6EA]">
       <div className="max-w-4xl mx-auto px-4 py-8">
 
         {/* Header */}
-        <div className="text-center mb-8">
+        <div className="text-center mb-8" data-aos="fade-up">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Vaginal Cancer Information</h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Comprehensive guide covering symptoms, diagnosis, and treatment options for vaginal cancer
@@ -19,7 +28,11 @@ export default function VaginalCancerInfo() {
         </div>
 
         {/* Symptoms */}
-        <div className="bg-white border rounded-xl shadow-lg mb-8 transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]" style={{ borderColor: pink }}>
+        <div 
+          className="bg-white border rounded-xl shadow-lg mb-8 transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]" 
+          style={{ borderColor: pink }} 
+          data-aos="fade-up"
+        >
           <div className="px-6 py-4 rounded-t-xl flex items-center gap-2" style={{ backgroundColor: pink }}>
             <FaStethoscope className="text-white h-6 w-6" />
             <h2 className="text-2xl font-semibold text-white">
@@ -51,18 +64,26 @@ export default function VaginalCancerInfo() {
                 src="/vaginal.png"  // Image path
                 className="w-full max-w-xs h-auto rounded-xl mt-10"
                 alt="Vaginal Cancer Awareness"
+                data-aos="fade-left"
               />
             </div>
           </div>
-          <div className="p-4 rounded border-l-4 flex items-center gap-2 ml-5 mb-2"
-            style={{ backgroundColor: "#fff", borderColor: pink }}>
+          <div 
+            className="p-4 rounded border-l-4 flex items-center gap-2 ml-5 mb-2" 
+            style={{ backgroundColor: "#fff", borderColor: pink }} 
+            data-aos="fade-up"
+          >
             <FaInfoCircle style={{ color: pink }} className="h-5 w-5" />
             <p className="font-medium" style={{ color: pink }}>Routine pelvic exams are important for early detection.</p>
           </div>
         </div>
 
         {/* Diagnosis */}
-        <div className="bg-white border rounded-xl shadow-lg mb-8 transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]" style={{ borderColor: pink }}>
+        <div 
+          className="bg-white border rounded-xl shadow-lg mb-8 transition-all duration-300  hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]" 
+          style={{ borderColor: pink }} 
+          data-aos="fade-up"
+        >
           <div className="px-6 py-4 rounded-t-xl flex items-center gap-2" style={{ backgroundColor: pink }}>
             <FaMicroscope className="text-white h-6 w-6" />
             <h2 className="text-2xl font-semibold text-white">
@@ -91,14 +112,22 @@ export default function VaginalCancerInfo() {
                 title: "Biopsy",
                 desc: "Removal of a small tissue sample during colposcopy to test for cancer cells"
               }].map((step, i) => (
-                <div key={i} className="border rounded-md px-4 py-3 shadow-sm bg-white transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]" style={{ borderColor: pink }}>
+                <div 
+                  key={i} 
+                  className="border rounded-md px-4 py-3 shadow-sm bg-white transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]" 
+                  style={{ borderColor: pink }} 
+                  data-aos="fade-left"
+                >
                   <strong className="text-gray-800">{step.title}</strong>
                   <span className="text-gray-600"> – {step.desc}</span>
                 </div>
               ))}
             </div>
-            <div className="mt-6 p-4 rounded border-l-4 flex items-center gap-2"
-              style={{ backgroundColor: "#fff", borderColor: pink }}>
+            <div 
+              className="mt-6 p-4 rounded border-l-4 flex items-center gap-2" 
+              style={{ backgroundColor: "#fff", borderColor: pink }} 
+              data-aos="fade-up"
+            >
               <FaInfoCircle style={{ color: pink }} className="h-5 w-5" />
               <p className="font-medium" style={{ color: pink }}>These tests help confirm diagnosis and guide treatment planning.</p>
             </div>
@@ -106,7 +135,11 @@ export default function VaginalCancerInfo() {
         </div>
 
         {/* Treatment */}
-        <div className="bg-white border rounded-xl shadow-lg mb-8 transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]" style={{ borderColor: pink }}>
+        <div 
+          className="bg-white border rounded-xl shadow-lg mb-8 transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]" 
+          style={{ borderColor: pink }} 
+          data-aos="fade-up"
+        >
           <div className="px-6 py-4 rounded-t-xl flex items-center gap-2" style={{ backgroundColor: pink }}>
             <FaPills className="text-white h-6 w-6" />
             <h2 className="text-2xl font-semibold text-white">
@@ -118,32 +151,47 @@ export default function VaginalCancerInfo() {
 
             <h3 className="text-lg font-semibold text-gray-800 mb-3">1. Surgery (Often the Primary Treatment)</h3>
             <div className="space-y-3 mb-4">
-              <div className="border rounded-md px-4 py-3 bg-white transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]"
-                style={{ borderColor: pink }}>
+              <div 
+                className="border rounded-md px-4 py-3 bg-white transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]" 
+                style={{ borderColor: pink }} 
+                data-aos="fade-left"
+              >
                 <strong className="text-gray-800">Vaginectomy</strong>
                 <span> – Removal of part or all of the vagina; may include nearby lymph nodes. Reconstruction with tissue grafts can restore vaginal function.</span>
               </div>
-              <div className="border rounded-md px-4 py-3 bg-white transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]"
-                style={{ borderColor: pink }}>
+              <div 
+                className="border rounded-md px-4 py-3 bg-white transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]" 
+                style={{ borderColor: pink }} 
+                data-aos="fade-left"
+              >
                 <strong className="text-gray-800">Hysterectomy</strong>
                 <span> – Removal of the uterus and sometimes ovaries, fallopian tubes, and lymph nodes; often combined with vaginectomy for advanced cases.</span>
               </div>
             </div>
-            <div className="text-gray-600 text-sm mb-6 p-3 rounded-md border bg-white transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]"
-              style={{ border: `1px solid ${pink}` }}>
+            <div 
+              className="text-gray-600 text-sm mb-6 p-3 rounded-md border bg-white transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]" 
+              style={{ border: `1px solid ${pink}` }} 
+              data-aos="fade-up"
+            >
               After surgery, patients receive enhanced recovery support to aid healing.
             </div>
 
             <h3 className="text-lg font-semibold text-gray-800 mb-3">2. Combination Treatments</h3>
             <p className="mb-3">In some cases, surgery may be combined with:</p>
             <div className="space-y-3">
-              <div className="border rounded-md px-4 py-3 bg-white transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]"
-                style={{ borderColor: pink }}>
+              <div 
+                className="border rounded-md px-4 py-3 bg-white transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]" 
+                style={{ borderColor: pink }} 
+                data-aos="fade-left"
+              >
                 <strong className="text-gray-800">Radiation therapy</strong>
                 <span> – Targeted energy to destroy cancer cells</span>
               </div>
-              <div className="border rounded-md px-4 py-3 bg-white transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]"
-                style={{ borderColor: pink }}>
+              <div 
+                className="border rounded-md px-4 py-3 bg-white transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]" 
+                style={{ borderColor: pink }} 
+                data-aos="fade-left"
+              >
                 <strong className="text-gray-800">Chemotherapy</strong>
                 <span> – Drugs to kill or slow cancer growth</span>
               </div>
@@ -152,8 +200,11 @@ export default function VaginalCancerInfo() {
         </div>
 
         {/* Disclaimer */}
-        <div className="p-6 rounded-lg shadow-md text-center"
-          style={{ backgroundColor: pink }}>
+        <div 
+          className="p-6 rounded-lg shadow-md text-center" 
+          style={{ backgroundColor: pink }} 
+          data-aos="fade-up"
+        >
           <p className="text-sm text-white">
             This information is for educational purposes only. Always consult with healthcare professionals for personalized medical advice.
           </p>

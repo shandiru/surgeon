@@ -1,3 +1,4 @@
+import { Lightbulb } from 'lucide-react';
 import React from 'react';
 
 const ColposcopyCard1 = ({ setShowCard, setActiveButton }) => {
@@ -91,7 +92,10 @@ const ColposcopyCard1 = ({ setShowCard, setActiveButton }) => {
 
             {/* Reminder Section */}
             <div className="bg-accent/10 p-4 rounded-lg">
-              <h4 className="font-semibold text-accent-foreground mb-2">💡 Remember</h4>
+              <h4 className="font-semibold text-accent-foreground mb-2 flex items-center gap-2">
+                <Lightbulb className="text-xl text-[#d63384]" />
+                Remember
+              </h4>
               <p className="text-sm">
                 A colposcopy helps detect early cell changes <strong>before</strong> they develop into cancer. It's a
                 preventive measure that can protect your health.

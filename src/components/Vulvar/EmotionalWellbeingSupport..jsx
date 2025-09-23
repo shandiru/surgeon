@@ -34,7 +34,9 @@ const EmotionalWellbeingSupport = () => {
       <div className="container mx-auto px-4 text-[#d60d64]">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-4">💖 Emotional Wellbeing &amp; Support</h2>
+            <h2 className="text-3xl font-bold text-foreground mb-4">
+              Emotional Wellbeing &amp; Support
+            </h2>
             <p className="text-lg text-muted-foreground text-pretty">
               Your emotional health is just as important as your physical health
             </p>
@@ -64,7 +66,10 @@ const EmotionalWellbeingSupport = () => {
           {/* Remember Section */}
           <div className="bg-primary/5 border border-primary/20 rounded-lg p-6">
             <div className="text-center">
-              <h3 className="text-xl font-semibold text-foreground mb-3">💗 Remember</h3>
+              <h3 className="text-xl font-semibold text-foreground mb-3">
+                <Heart className="inline-block mr-2 text-[#d60d64]" />
+                Remember
+              </h3>
               <div className="space-y-2 mb-6">
                 <p className="text-muted-foreground">• Vulvar and vaginal lumps are common and usually harmless</p>
                 <p className="text-muted-foreground">• Most are not cancerous and are easily treatable</p>

@@ -1,3 +1,4 @@
+import { Stethoscope } from 'lucide-react';
 import { useState } from 'react';
 
 const SymptomsSection = () => {
@@ -26,7 +27,10 @@ const SymptomsSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-4">🩺 When to See Your Doctor</h2>
+            <h2 className="text-3xl font-bold text-foreground mb-4">
+              <Stethoscope className="inline-block mr-2" />
+              When to See Your Doctor
+            </h2>
             <p className="text-lg text-muted-foreground text-pretty">
               Check any symptoms you're experiencing to understand when medical attention is needed
             </p>

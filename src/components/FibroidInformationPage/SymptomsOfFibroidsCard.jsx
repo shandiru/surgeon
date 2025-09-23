@@ -1,10 +1,12 @@
 'use client'
 
+import { AlertCircle } from "lucide-react"
+
 export default function SymptomsOfFibroidsCard() {
   return (
     <section className="py-16 px-6 bg-[#fff5f9]">
       <div className="max-w-5xl mx-auto bg-white text-[#212529] flex flex-col gap-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-8 border border-[#f8c6d8]">
-        
+
         {/* Header */}
         <div>
           <div className="flex items-center gap-3 mb-3">
@@ -62,8 +64,9 @@ export default function SymptomsOfFibroidsCard() {
 
         {/* Highlight Box */}
         <div className="bg-gradient-to-r from-[#fff0f6] to-[#ffe6ef] border border-[#f783ac]/50 rounded-lg p-5 shadow-sm">
-          <p className="text-[#d63384] font-medium text-base">
-            ⚠️ If left untreated, fibroids can grow and may cause complications.
+          <p className="text-[#d63384] font-medium text-base flex items-center gap-2">
+            <AlertCircle className="text-xl" />
+            If left untreated, fibroids can grow and may cause complications.
           </p>
         </div>
       </div>

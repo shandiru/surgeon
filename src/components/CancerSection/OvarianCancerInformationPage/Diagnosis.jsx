@@ -1,6 +1,8 @@
 'use client'
 
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'  // Import AOS styles
 import { FaStethoscope } from 'react-icons/fa'
 
 const tests = [
@@ -30,14 +32,21 @@ const tests = [
 export default function OvarianCancerDiagnosis() {
   const pink = '#FFC5D3'
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+      once: true, // Animation happens only once when scrolled
+    })
+  }, [])
+
   return (
-    <section id="diagnosis" className="py-12">
+    <section id="diagnosis" className="py-12 bg-[#FFE6EA]">
       <div className="max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
 
         {/* Title */}
-        <div className="text-center mb-8">
+        <div className="text-center mb-8" data-aos="fade-up">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <FaStethoscope className="h-8 w-8" style={{ color: pink }} />
+            <FaStethoscope className="h-8 w-8" />
             <h3 className="text-3xl font-bold text-gray-900">Diagnosis of Ovarian Cancer</h3>
           </div>
           <p className="text-gray-700 text-lg">
@@ -52,6 +61,7 @@ export default function OvarianCancerDiagnosis() {
               key={test.id}
               className="bg-white text-gray-800 flex flex-col gap-4 rounded-xl border py-6 shadow-sm transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]"
               style={{ borderColor: pink }}
+              data-aos="fade-up" // Animation for each test
             >
               <div className="px-6">
                 <div className="flex items-center gap-2 font-semibold" style={{ color: pink }}>
@@ -75,6 +85,7 @@ export default function OvarianCancerDiagnosis() {
         <div
           className="rounded-xl px-6 py-6 shadow-sm"
           style={{ border: `1px solid ${pink}`, backgroundColor: pink }}
+          data-aos="fade-up" // Animation for summary box
         >
           <div className="flex items-start gap-3">
             <div

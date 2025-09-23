@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, Camera } from 'lucide-react';
+import { Shield, Lightbulb, AlertCircle, User } from 'lucide-react';
 
 const HysteroscopyCard2 = ({ setShowCard, setActiveButton }) => {
   return (
@@ -8,22 +8,27 @@ const HysteroscopyCard2 = ({ setShowCard, setActiveButton }) => {
         data-slot="card"
         className="max-w-sm sm:max-w-2xl lg:max-w-5xl text-[#BB125B] mx-auto mb-10 flex flex-col gap-6 rounded-xl border py-6 shadow-sm animate-in slide-in-from-right-5 duration-300"
       >
+        {/* Card Header */}
         <div
           data-slot="card-header"
           className="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6"
         >
           <div
             data-slot="card-title"
-            className="leading-none font-semibold flex items-center gap-2"
+            className="flex items-center gap-2"
           >
             <Shield className="w-6 h-6 text-primary" />
-            When to Seek Help
+            <span>When to Seek Help</span>
           </div>
         </div>
 
         <div data-slot="card-content" className="px-6 space-y-4">
+          {/* Validating Feelings Section */}
           <div className="bg-primary/10 p-4 rounded-lg border border-primary/20">
-            <h4 className="font-semibold text-primary mb-2">🚨 Important Signs</h4>
+            <h4 className="font-semibold text-primary mb-2 flex items-center gap-2">
+              <AlertCircle className="w-5 h-5 text-primary" />
+              Important Signs
+            </h4>
             <p className="text-sm leading-relaxed">
               If you experience any of the following symptoms, you should seek medical advice and possibly consider a hysteroscopy:
             </p>
@@ -36,8 +41,12 @@ const HysteroscopyCard2 = ({ setShowCard, setActiveButton }) => {
             </ul>
           </div>
 
+          {/* Consultation with Your Doctor */}
           <div className="bg-primary/10 p-4 rounded-lg border border-primary/20">
-            <h4 className="font-semibold text-primary mb-2">👨‍⚕️ Consultation with Your Doctor</h4>
+            <h4 className="font-semibold text-primary mb-2 flex items-center gap-2">
+              <User className="w-5 h-5 text-primary" />
+              Consultation with Your Doctor
+            </h4>
             <p className="text-sm leading-relaxed">
               Before scheduling a hysteroscopy, you will have a consultation with your doctor to discuss:
             </p>
@@ -49,8 +58,12 @@ const HysteroscopyCard2 = ({ setShowCard, setActiveButton }) => {
             </ul>
           </div>
 
+          {/* Additional Tips Section */}
           <div className="bg-accent/10 p-4 rounded-lg border border-accent/20">
-            <h4 className="font-semibold text-accent-foreground mb-2">💡 Additional Tips</h4>
+            <h4 className="font-semibold text-accent-foreground mb-2 flex items-center gap-2">
+              <Lightbulb className="w-5 h-5 text-accent-foreground" />
+              Additional Tips
+            </h4>
             <p className="text-sm">
               It's important to be fully prepared for your hysteroscopy to ensure a smooth process. You may need to:
             </p>
@@ -62,6 +75,8 @@ const HysteroscopyCard2 = ({ setShowCard, setActiveButton }) => {
             </ul>
           </div>
         </div>
+
+        {/* Button to Learn About Preparation */}
         <div className="pt-4">
           <button
             onClick={() => {

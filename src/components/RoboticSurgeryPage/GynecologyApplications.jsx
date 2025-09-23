@@ -1,10 +1,9 @@
-import {
-  LuStethoscope,
-  LuHeart,
-  LuEye,
-  LuActivity,
-  LuCircleCheckBig,
-} from "react-icons/lu";
+'use client'
+
+import React, { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
+import { LuStethoscope, LuHeart, LuEye, LuActivity, LuCircleCheckBig } from "react-icons/lu";
 
 export default function GynecologyApplications() {
   const accentPink = "#F93981"; // CTA/Highlight
@@ -48,11 +47,18 @@ export default function GynecologyApplications() {
     },
   ];
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+      once: true, // Animation happens only once when scrolled
+    });
+  }, []);
+
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-white" data-aos="fade-up">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12 text-[#B51252]">
+          <h2 className="text-3xl font-bold text-center mb-12 text-[#B51252]" data-aos="fade-down">
             Applications in Gynecology
           </h2>
 
@@ -60,18 +66,19 @@ export default function GynecologyApplications() {
             {cards.map((card, index) => (
               <div
                 key={index}
-                className="bg-white flex flex-col gap-6 rounded-xl border-l-4 py-6 px-6 shadow-sm 
+                className="bg-white flex flex-col gap-6 rounded-xl border-l-4 py-6 px-6 text-center shadow-sm 
                   transition duration-300 transform
                   hover:scale-105 hover:-translate-y-2 hover:shadow-[0_8px_30px_rgba(185,18,82,0.3)]
                   active:scale-105 active:-translate-y-2 active:shadow-[0_8px_30px_rgba(185,18,82,0.3)]"
                 style={{ borderLeftColor: accentPink }}
+                data-aos="zoom-in"
               >
                 <div>
-                  <div className="flex items-center gap-2 font-semibold mb-1 text-[#B51252]">
+                  <div className="flex items-center justify-center gap-2  font-semibold mb-1 text-[#B51252]" data-aos="fade-right">
                     {card.icon}
                     {card.title}
                   </div>
-                  <span className="inline-flex rounded-md px-2 py-0.5 text-xs font-medium bg-[#FDEBED] text-[#B51252] w-fit">
+                  <span className="inline-flex rounded-md px-2 py-0.5 text-xs font-medium bg-[#FDEBED] text-[#B51252]">
                     {card.badge}
                   </span>
                 </div>

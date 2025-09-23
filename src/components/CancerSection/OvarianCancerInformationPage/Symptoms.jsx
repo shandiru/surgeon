@@ -1,6 +1,8 @@
 'use client'
 
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'  // Import AOS styles
 import { FaExclamationTriangle } from 'react-icons/fa'
 
 const symptoms = [
@@ -20,12 +22,19 @@ const symptoms = [
 export default function OvarianCancerSymptoms() {
   const pink = '#FFC5D3'
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+      once: true, // Animation happens only once when scrolled
+    })
+  }, [])
+
   return (
-    <section id="symptoms" className="py-12">
+    <section id="symptoms" className="py-12 bg-[#FFE6EA]">
       <div className="max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
 
         {/* Title and Intro */}
-        <div className="text-center mb-8">
+        <div className="text-center mb-8" data-aos="fade-up">
           <div className="flex items-center justify-center gap-2 mb-4">
             <FaExclamationTriangle className="h-8 w-8" style={{ color: pink }} />
             <h3 className="text-3xl font-bold text-gray-900">Symptoms of Ovarian Cancer</h3>
@@ -42,6 +51,7 @@ export default function OvarianCancerSymptoms() {
               key={index}
               className="bg-white text-gray-900 flex flex-col rounded-xl border shadow-lg transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]"
               style={{ borderColor: pink }}
+              data-aos="fade-up" // Add animation to each symptom
             >
               <div className="p-4">
                 <div className="flex items-center gap-3">
@@ -57,6 +67,7 @@ export default function OvarianCancerSymptoms() {
         <div
           className="rounded-xl px-6 py-5 shadow-sm"
           style={{ border: `1px solid ${pink}`, backgroundColor: pink }}
+          data-aos="fade-up" // Animation for the alert box
         >
           <div className="flex items-start gap-3">
             <div

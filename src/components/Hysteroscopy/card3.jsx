@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, FileText, Heart } from 'lucide-react';
+import { Shield, TestTube, Pill, FileText } from 'lucide-react';
 
 const HysteroscopyCard3 = ({ setShowCard, setActiveButton }) => {
   return (
@@ -28,7 +28,7 @@ const HysteroscopyCard3 = ({ setShowCard, setActiveButton }) => {
               </div>
               <div className="flex-1">
                 <h4 className="font-semibold mb-1 flex items-center gap-2">
-                  <span>🧪</span> Pregnancy Test
+                  <TestTube className="w-5 h-5 text-primary" /> Pregnancy Test
                   <span className="inline-flex items-center justify-center rounded-md border px-2 py-0.5 font-medium w-fit whitespace-nowrap shrink-0 bg-secondary text-secondary-foreground text-xs">
                     Important
                   </span>
@@ -48,7 +48,7 @@ const HysteroscopyCard3 = ({ setShowCard, setActiveButton }) => {
               </div>
               <div className="flex-1">
                 <h4 className="font-semibold mb-1 flex items-center gap-2">
-                  <span>🛡️</span> Use Contraception
+                  <Shield className="w-5 h-5 text-primary" /> Use Contraception
                   <span className="inline-flex items-center justify-center rounded-md border px-2 py-0.5 font-medium w-fit whitespace-nowrap shrink-0 bg-secondary text-secondary-foreground text-xs">
                     Important
                   </span>
@@ -68,7 +68,7 @@ const HysteroscopyCard3 = ({ setShowCard, setActiveButton }) => {
               </div>
               <div className="flex-1">
                 <h4 className="font-semibold mb-1 flex items-center gap-2">
-                  <span>💊</span> Pre-treatment Medicine
+                  <Pill className="w-5 h-5 text-primary" /> Pre-treatment Medicine
                 </h4>
                 <p className="text-muted-foreground text-sm">
                   If you're having fibroids removed, you may be given medicine beforehand to shrink them.
@@ -79,7 +79,9 @@ const HysteroscopyCard3 = ({ setShowCard, setActiveButton }) => {
 
           {/* What to Expect */}
           <div className="bg-accent/10 p-4 rounded-lg border border-accent/20">
-            <h4 className="font-semibold text-accent-foreground mb-2">📋 What to Expect</h4>
+            <h4 className="flex items-center gap-2">
+              <FileText className="w-5 h-5 text-primary" /> What to Expect
+            </h4>
             <p className="text-sm">
               Your healthcare team will give you specific instructions based on your individual case. Don't hesitate to ask questions about preparation or the procedure itself.
             </p>

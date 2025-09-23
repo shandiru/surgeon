@@ -1,8 +1,20 @@
+'use client'
+
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
 import { LuScissors, LuZap, LuShield } from "react-icons/lu";
 
 export default function CervicalCancerTreatment() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+      once: true, // Animation happens only once when scrolled
+    });
+  }, []);
+
   return (
-    <section className="py-12">
+    <section className="py-12" data-aos="fade-up">
       <div className="max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
         <div className="relative bg-[#fff5f8] text-[#4b1e30] rounded-xl shadow-sm px-6 py-8 mt-4 overflow-hidden border border-[#f5c2d2]">
 
@@ -10,7 +22,7 @@ export default function CervicalCancerTreatment() {
           <div className="absolute top-0 left-0 h-full w-[6px] bg-[#b03b66] rounded-bl-2xl"></div>
 
           {/* Header */}
-          <div>
+          <div data-aos="fade-left">
             <div className="flex items-center gap-2 text-xl font-semibold text-[#b03b66] mb-4">
               <LuScissors className="w-6 h-6 text-[#b03b66]" />
               How is Cervical Cancer Treated?
@@ -18,7 +30,7 @@ export default function CervicalCancerTreatment() {
           </div>
 
           {/* “We Consider” Section */}
-          <div className="mt-8">
+          <div className="mt-8" data-aos="fade-up">
             <div className="bg-white p-4 rounded-lg border border-[#f5c2d2] transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]">
               <h3 className="font-semibold mb-2 text-[#4b1e30]">We consider:</h3>
               <div className="grid md:grid-cols-2 gap-2 text-sm text-[#7a2f4f ]">
@@ -41,7 +53,7 @@ export default function CervicalCancerTreatment() {
           </div>
 
           {/* Surgery Section */}
-          <div className="mt-10">
+          <div className="mt-10" data-aos="fade-up">
             <h3 className="font-semibold text-lg mb-4 flex items-center gap-2 text-[#b03b66]">
               <LuScissors className="w-5 h-5 text-[#b03b66]" />
               1. Surgery (Often the First Step)
@@ -84,7 +96,7 @@ export default function CervicalCancerTreatment() {
           </div>
 
           {/* Combination Treatments */}
-          <div className="mt-10">
+          <div className="mt-10" data-aos="fade-up">
             <h3 className="font-semibold text-lg mb-4 flex items-center gap-2 text-[#b03b66]">
               <LuZap className="w-5 h-5 text-[#b03b66]" />
               2. Combination Treatments
@@ -122,7 +134,7 @@ export default function CervicalCancerTreatment() {
           </div>
 
           {/* Recovery and Support */}
-          <div className="mt-10">
+          <div className="mt-10" data-aos="fade-up">
             <h3 className="font-semibold text-lg mb-4 flex items-center gap-2 text-[#b03b66]">
               <LuShield className="w-5 h-5 text-[#b03b66]" />
               3. Recovery & Support

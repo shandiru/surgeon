@@ -19,22 +19,22 @@ const UltrasoundCard4 = ({ setShowCard, setActiveButton }) => {
           {/* Steps Section */}
           <div className="space-y-4">
             {[{
-              step: "🛏️",
+              step: <Stethoscope className="w-6 h-6" />,
               title: "Positioning",
               description: "You'll lie on an examination couch in a comfortable position",
               number: "1"
             }, {
-              step: "💧",
+              step: <Zap className="w-6 h-6" />,
               title: "Gel Application",
               description: "A small amount of warm gel is placed on your lower abdomen",
               number: "2"
             }, {
-              step: "🔍",
+              step: <Heart className="w-6 h-6" />,
               title: "Scanning",
               description: "The ultrasound probe is moved gently across the skin",
               number: "3"
             }, {
-              step: "🩺",
+              step: <Clock className="w-6 h-6" />,
               title: "Transvaginal (if needed)",
               description: "For internal scan, probe is covered with sheath and lubricated before gentle insertion",
               number: "4"
@@ -63,7 +63,9 @@ const UltrasoundCard4 = ({ setShowCard, setActiveButton }) => {
               <p className="text-sm">The scan usually takes about <strong>10–15 minutes</strong></p>
             </div>
             <div className="bg-accent/10 p-4 rounded-lg border border-accent/20">
-              <h4 className="font-semibold text-accent-foreground mb-2">✨ Comfort</h4>
+              <h4 className="font-semibold text-accent-foreground mb-2">
+                <Zap className="inline w-5 h-5 mr-2 text-accent-foreground" /> Comfort
+              </h4>
               <p className="text-sm">Most patients find the procedure comfortable and painless</p>
             </div>
           </div>

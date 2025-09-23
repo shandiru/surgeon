@@ -1,20 +1,34 @@
+'use client'
+
+import React, { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
 import { LuMonitor, LuActivity, LuEye, LuHand } from "react-icons/lu";
 
 export default function DaVinciSurgicalSystem() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+      once: true, // Animation happens only once when scrolled
+    });
+  }, []);
+
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-white" data-aos="fade-up">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12 text-[#b03b66]">
+          <h2 className="text-3xl font-bold text-center mb-12 text-[#b03b66]" data-aos="fade-down">
             The da Vinci Surgical System
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6" data-aos="fade-up">
+            
             {/* Card 1 */}
             <div
               className="bg-white text-[#b03b66] flex flex-col gap-4 rounded-xl py-8 px-6 text-center shadow-sm 
               transition duration-300 transform
               hover:scale-105 hover:-translate-y-2 hover:shadow-[0_8px_30px_rgba(176,59,102,0.4)]
               active:scale-105 active:-translate-y-2 active:shadow-[0_8px_30px_rgba(176,59,102,0.4)]"
+              data-aos="zoom-in"
             >
               <LuMonitor className="w-14 h-14 text-[#b03b66] mx-auto mb-2" />
               <h3 className="font-semibold text-lg">Surgeon Console</h3>
@@ -29,6 +43,7 @@ export default function DaVinciSurgicalSystem() {
               transition duration-300 transform
               hover:scale-105 hover:-translate-y-2 hover:shadow-[0_8px_30px_rgba(176,59,102,0.4)]
               active:scale-105 active:-translate-y-2 active:shadow-[0_8px_30px_rgba(176,59,102,0.4)]"
+              data-aos="zoom-in"
             >
               <LuActivity className="w-14 h-14 text-[#b03b66] mx-auto mb-2" />
               <h3 className="font-semibold text-lg">Patient-side Cart</h3>
@@ -43,6 +58,7 @@ export default function DaVinciSurgicalSystem() {
               transition duration-300 transform
               hover:scale-105 hover:-translate-y-2 hover:shadow-[0_8px_30px_rgba(176,59,102,0.4)]
               active:scale-105 active:-translate-y-2 active:shadow-[0_8px_30px_rgba(176,59,102,0.4)]"
+              data-aos="zoom-in"
             >
               <LuEye className="w-14 h-14 text-[#b03b66] mx-auto mb-2" />
               <h3 className="font-semibold text-lg">Vision System</h3>
@@ -57,6 +73,7 @@ export default function DaVinciSurgicalSystem() {
               transition duration-300 transform
               hover:scale-105 hover:-translate-y-2 hover:shadow-[0_8px_30px_rgba(176,59,102,0.4)]
               active:scale-105 active:-translate-y-2 active:shadow-[0_8px_30px_rgba(176,59,102,0.4)]"
+              data-aos="zoom-in"
             >
               <LuHand className="w-14 h-14 text-[#b03b66] mx-auto mb-2" />
               <h3 className="font-semibold text-lg">Wristed Instruments</h3>

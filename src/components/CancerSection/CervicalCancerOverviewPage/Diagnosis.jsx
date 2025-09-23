@@ -1,4 +1,9 @@
-import { LuMicroscope } from "react-icons/lu";
+'use client'
+
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
+import { LuMicroscope } from 'react-icons/lu';
 
 export default function CervicalCancerDiagnosis() {
   const methods = [
@@ -30,13 +35,20 @@ export default function CervicalCancerDiagnosis() {
 
   const imagingTests = ["X-rays", "CT scans", "MRIs"];
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+      once: true, // Animation happens only once when scrolled
+    });
+  }, []);
+
   return (
-    <section className="py-12">
+    <section className="py-12" data-aos="fade-up">
       <div className="max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
         <div className="bg-[#fff5f8] text-[#4b1e30] flex flex-col gap-6 rounded-xl border border-[#f5a9bd] border-l-4 border-l-[#b03b66] shadow-sm py-6">
           
           {/* Header */}
-          <div className="px-6 grid gap-1.5">
+          <div className="px-6 grid gap-1.5" data-aos="fade-left">
             <div className="flex items-center gap-2 text-xl font-semibold text-[#b03b66]">
               <LuMicroscope className="w-6 h-6" />
               How is Cervical Cancer Diagnosed?
@@ -47,7 +59,7 @@ export default function CervicalCancerDiagnosis() {
           </div>
 
           {/* Common Diagnostic Methods */}
-          <div className="px-6 space-y-6">
+          <div className="px-6 space-y-6" data-aos="fade-up">
             <div>
               <h3 className="font-semibold text-lg mb-4 text-[#4b1e30]">
                 Common Diagnostic Methods
@@ -57,6 +69,7 @@ export default function CervicalCancerDiagnosis() {
                   <div
                     key={index}
                     className="flex gap-4 p-4 bg-white border border-[#f5c2d2] rounded-lg transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]"
+                    data-aos="fade-left"
                   >
                     <div className="w-8 h-8 flex items-center justify-center rounded-full bg-[#FFC5D3] text-[#b03b66] text-sm font-bold flex-shrink-0">
                       {index + 1}
@@ -76,7 +89,7 @@ export default function CervicalCancerDiagnosis() {
             <hr className="border-t border-[#f5c2d2]" />
 
             {/* Additional Imaging Tests */}
-            <div>
+            <div data-aos="fade-up">
               <h3 className="font-semibold text-lg mb-4 text-[#4b1e30]">
                 Additional Imaging Tests
               </h3>

@@ -1,13 +1,25 @@
-import { LuStethoscope } from "react-icons/lu";
+'use client'
+
+import React, { useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'  // Import AOS styles
+import { LuStethoscope } from 'react-icons/lu'
 
 export default function EndometrialDiagnosisSection() {
   const pink = '#FFC5D3'
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+      once: true, // Animation happens only once when scrolled
+    })
+  }, [])
+
   return (
-    <section className="mb-16 px-4 md:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto">
+    <section className="px-4 md:px-6 lg:px-8 py-14 bg-[#FFE6EA]" data-aos="fade-up">
+      <div className="max-w-6xl mx-auto ">
         {/* Section Heading */}
-        <div className="flex items-center gap-3 mb-6">
+        <div className="flex items-center gap-3 mb-6" data-aos="fade-left">
           <LuStethoscope className="h-8 w-8" style={{ color: pink }} />
           <h2 className="text-3xl font-bold text-gray-900">
             Diagnosis of Endometrial Cancer
@@ -18,6 +30,7 @@ export default function EndometrialDiagnosisSection() {
         <div
           className="bg-white text-gray-900 flex flex-col gap-6 rounded-2xl border py-6 shadow-sm mb-6"
           style={{ borderColor: pink }}
+          data-aos="fade-up"
         >
           {/* Card Header */}
           <div className="px-6 grid gap-1.5">
@@ -34,7 +47,7 @@ export default function EndometrialDiagnosisSection() {
 
               <div className="grid md:grid-cols-2 gap-4">
                 {/* Left Column */}
-                <div className="space-y-3">
+                <div className="space-y-3" data-aos="fade-left">
                   {[
                     "Medical & family history review",
                     "Physical exam – checking for lumps or masses in the abdomen",
@@ -53,7 +66,7 @@ export default function EndometrialDiagnosisSection() {
                 </div>
 
                 {/* Right Column */}
-                <div className="space-y-3">
+                <div className="space-y-3" data-aos="fade-left">
                   {[
                     "Transvaginal ultrasound – imaging of the uterus and reproductive organs",
                     "Endometrial biopsy – taking a tissue sample from the uterus for examination",
@@ -78,6 +91,7 @@ export default function EndometrialDiagnosisSection() {
           <div
             className="mt-4 mx-6 p-4 rounded-lg border transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-xl hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]"
             style={{ borderColor: pink }}
+            data-aos="fade-up"
           >
             <h4 className="font-semibold mb-2">If cancer is confirmed:</h4>
             <p className="text-sm text-gray-600 mb-2">
@@ -94,6 +108,7 @@ export default function EndometrialDiagnosisSection() {
           <div
             className="mt-4 mx-6 p-4 rounded-lg border"
             style={{ backgroundColor: pink, borderColor: pink }}
+            data-aos="fade-up"
           >
             <p className="text-sm font-medium text-white">
               <strong>Key Point:</strong> Early detection significantly improves treatment success.
