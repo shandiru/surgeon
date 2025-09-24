@@ -4,22 +4,22 @@ import { Calendar, Heart, Pill, Stethoscope } from 'lucide-react';
 
 const treatments = [
   {
-    icon: <Pill className="h-6 w-6 text-[#ff97b3]" />,
+    icon: <Pill className="h-6 w-6 text-[#b03b66]" />,
     title: 'Pain Relief Medication',
     description: 'Over-the-counter or prescription pain medications to manage symptoms.',
   },
   {
-    icon: <Calendar className="h-6 w-6 text-[#ff97b3]" />,
+    icon: <Calendar className="h-6 w-6 text-[#b03b66]" />,
     title: 'Hormone Therapy',
     description: 'Treatments to slow or stop endometrial tissue growth.',
   },
   {
-    icon: <Stethoscope className="h-6 w-6 text-[#ff97b3]" />,
+    icon: <Stethoscope className="h-6 w-6 text-[#b03b66]" />,
     title: 'Conservative Surgery',
     description: 'Removal of endometriosis tissue while preserving reproductive organs.',
   },
   {
-    icon: <Heart className="h-6 w-6 text-[#ff97b3]" />,
+    icon: <Heart className="h-6 w-6 text-[#b03b66]" />,
     title: 'Hysterectomy',
     description:
       "Considered only if other treatments haven't helped and you're not planning future pregnancies.",
@@ -28,7 +28,7 @@ const treatments = [
 
 const TreatmentSection = () => {
   return (
-    <section id="treatment" className="py-20 bg-[#FFF5F8]">
+    <section id="treatment" className="py-20 bg-white">
       <div className="container mx-auto px-6 md:px-12">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
@@ -47,7 +47,7 @@ const TreatmentSection = () => {
               <div
                 key={index}
                 className="bg-white text-[#333] flex flex-col gap-4 rounded-2xl shadow-md p-6 
-                transition duration-300 hover:shadow-[0_0_25px_rgba(255,151,179,0.35)] 
+                transition duration-300 hover:shadow-[0_0_25px_rgba(176,59,102,0.35)] 
                 hover:-translate-y-2 active:scale-[0.98]"
               >
                 <div className="flex items-center gap-3 font-semibold text-lg text-[#b03b66]">
@@ -61,9 +61,9 @@ const TreatmentSection = () => {
 
           {/* Closing Note */}
           <div
-            className="mt-10 rounded-2xl p-8 text-center bg-gradient-to-r 
-            from-[#ff97b3] to-[#ffb3c9] text-white shadow-md transition duration-300 
+            className="mt-10 rounded-2xl p-8 text-center text-white shadow-md transition duration-300 
             hover:shadow-xl hover:-translate-y-1 active:scale-[0.98]"
+            style={{ backgroundColor: '#b03b66' }}
           >
             <p className="text-lg font-medium">
               We&apos;ll work closely with you to find the right balance of treatment

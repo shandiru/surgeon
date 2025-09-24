@@ -3,14 +3,15 @@
 import React from 'react'
 
 export default function RememberSection() {
-  const primaryColor = '#f0acc1'
+  const pink = '#FFC5D3'
+  const deepPink = '#b03b66'
 
   return (
-    <section className="py-16 bg-[#fff5f8]">
+    <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
           {/* Title */}
-          <h2 className="text-3xl md:text-4xl font-bold mb-10 text-[#b03b66]">
+          <h2 className="text-3xl md:text-4xl font-bold mb-10" style={{ color: deepPink }}>
             Remember
           </h2>
 
@@ -24,7 +25,7 @@ export default function RememberSection() {
                     className="h-10 w-10 mx-auto mb-4"
                     fill="none"
                     viewBox="0 0 24 24"
-                    stroke={primaryColor}
+                    stroke={deepPink}
                     strokeWidth="2"
                   >
                     <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
@@ -39,7 +40,7 @@ export default function RememberSection() {
                     className="h-10 w-10 mx-auto mb-4"
                     fill="none"
                     viewBox="0 0 24 24"
-                    stroke={primaryColor}
+                    stroke={deepPink}
                     strokeWidth="2"
                   >
                     <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
@@ -57,7 +58,7 @@ export default function RememberSection() {
                     className="h-10 w-10 mx-auto mb-4"
                     fill="none"
                     viewBox="0 0 24 24"
-                    stroke={primaryColor}
+                    stroke={deepPink}
                     strokeWidth="2"
                   >
                     <path d="M11 2v2" />
@@ -72,10 +73,9 @@ export default function RememberSection() {
             ].map((item, idx) => (
               <div
                 key={idx}
-                className="flex flex-col items-center text-center rounded-2xl p-6 shadow-md border transition duration-300 hover:shadow-xl hover:-translate-y-2 active:scale-[0.98]"
+                className="flex flex-col items-center text-center rounded-2xl p-6 shadow-md transition duration-300 hover:shadow-xl hover:-translate-y-2 active:scale-[0.98]"
                 style={{
-                  backgroundColor: `${primaryColor}15`,
-                  borderColor: `${primaryColor}40`,
+                  backgroundColor: `${pink}20`,
                 }}
               >
                 {item.icon}
@@ -85,10 +85,7 @@ export default function RememberSection() {
           </div>
 
           {/* CTA */}
-          <div
-            className="p-8 rounded-2xl shadow-lg bg-white border"
-            style={{ borderColor: `${primaryColor}40` }}
-          >
+          <div className="p-8 rounded-2xl shadow-lg bg-white">
             <p className="text-lg mb-6 text-gray-700">
               If you think you may have endometriosis, book an appointment — we&apos;re here to help.
             </p>
@@ -97,7 +94,7 @@ export default function RememberSection() {
               {/* Primary Button */}
               <button
                 className="inline-flex items-center justify-center gap-2 text-sm font-medium h-11 px-6 rounded-lg text-white shadow-md transition hover:opacity-90 active:scale-[0.97]"
-                style={{ backgroundColor: primaryColor }}
+                style={{ backgroundColor: deepPink }}
               >
                 <svg
                   className="h-5 w-5"
@@ -114,8 +111,8 @@ export default function RememberSection() {
 
               {/* Secondary Button */}
               <button
-                className="inline-flex items-center justify-center gap-2 text-sm font-medium h-11 px-6 rounded-lg border shadow-sm transition hover:bg-pink-50 active:scale-[0.97]"
-                style={{ borderColor: primaryColor, color: primaryColor }}
+                className="inline-flex items-center justify-center gap-2 text-sm font-medium h-11 px-6 rounded-lg shadow-sm transition hover:bg-[#FFC5D3]/20 active:scale-[0.97]"
+                style={{ color: deepPink }}
               >
                 <svg
                   className="h-5 w-5"

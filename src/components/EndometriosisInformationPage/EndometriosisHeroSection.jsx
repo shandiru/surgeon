@@ -1,28 +1,40 @@
 import React from 'react';
 
 const EndometriosisHeroSection = () => {
+  const pink = '#FFC5D3';
+  const deepPink = '#b03b66';
+
   return (
-    <section className="py-16 bg-gradient-to-b from-[#FFC5D3] to-white">
+    <section className="py-16" style={{ backgroundColor: pink }}>
       <div className="container mx-auto px-4 text-center">
+        {/* Badge */}
         <span
           data-slot="badge"
-          className="inline-flex items-center justify-center rounded-md px-2 py-0.5 text-xs font-medium border border-[#b03b66] bg-[#b03b66]/10 text-[#b03b66] mb-4"
+          className="inline-flex items-center justify-center rounded-md px-2 py-0.5 text-xs font-medium mb-4"
+          style={{ backgroundColor: 'white', color: deepPink, border: `1px solid ${deepPink}` }}
         >
           Medical Information Guide
         </span>
 
-        <h1 className="text-4xl md:text-6xl font-bold text-balance mb-6 text-[#b03b66]">
+        {/* Heading */}
+        <h1
+          className="text-4xl md:text-6xl font-bold text-balance mb-6"
+          style={{ color: deepPink }}
+        >
           Understanding Endometriosis
         </h1>
 
-        <p className="text-xl text-[#7a2f4f] text-balance mb-8 max-w-2xl mx-auto">
+        {/* Subtext */}
+        <p className="text-xl mb-8 max-w-2xl mx-auto" style={{ color: '#7a2f4f' }}>
           A comprehensive guide to symptoms, diagnosis & treatment options for endometriosis
         </p>
 
+        {/* Buttons */}
         <div className="flex flex-col sm:flex-row justify-center gap-4">
-          {/* Button: Learn About Symptoms */}
+          {/* Learn About Symptoms */}
           <button
-            className="inline-flex items-center justify-center gap-2 text-sm font-medium bg-[#b03b66] text-white hover:bg-[#7a2f4f] h-10 rounded-md px-6 transition-all"
+            className="inline-flex items-center justify-center gap-2 text-sm font-medium h-10 rounded-md px-6 transition-all shadow-sm"
+            style={{ backgroundColor: deepPink, color: 'white' }}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -41,9 +53,10 @@ const EndometriosisHeroSection = () => {
             Learn About Symptoms
           </button>
 
-          {/* Button: Get Support */}
+          {/* Get Support */}
           <button
-            className="inline-flex items-center justify-center gap-2 text-sm font-medium border border-[#b03b66] text-[#b03b66] hover:bg-[#FFC5D3]/30 h-10 rounded-md px-6 transition-all"
+            className="inline-flex items-center justify-center gap-2 text-sm font-medium h-10 rounded-md px-6 transition-all shadow-sm border"
+            style={{ borderColor: deepPink, color: deepPink, backgroundColor: 'white' }}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

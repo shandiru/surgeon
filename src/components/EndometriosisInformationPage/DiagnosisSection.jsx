@@ -21,7 +21,7 @@ const steps = [
 
 const DiagnosisSection = () => {
   return (
-    <section id="diagnosis" className="py-20 bg-[#FFF5F8]">
+    <section id="diagnosis" className="py-20 bg-white">
       <div className="container mx-auto px-6 md:px-12">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
@@ -40,12 +40,12 @@ const DiagnosisSection = () => {
               <div
                 key={index}
                 className="bg-white text-[#333] rounded-2xl shadow-md p-6 md:p-8 
-                transition duration-300 hover:shadow-[0_0_25px_rgba(255,151,179,0.35)] 
+                transition duration-300 hover:shadow-[0_0_25px_rgba(176,59,102,0.35)] 
                 hover:-translate-y-2 active:scale-[0.98]"
               >
                 <div className="flex items-start gap-6">
                   {/* Step Number */}
-                  <div className="w-12 h-12 bg-[#ff97b3] text-white rounded-full flex items-center justify-center font-bold text-lg shadow-md">
+                  <div className="w-12 h-12 bg-[#b03b66] text-white rounded-full flex items-center justify-center font-bold text-lg shadow-md">
                     {index + 1}
                   </div>
 

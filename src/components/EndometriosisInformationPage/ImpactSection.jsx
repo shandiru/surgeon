@@ -3,7 +3,7 @@ import React from "react";
 
 const ImpactSection = () => {
   return (
-    <section className="py-20 bg-[#FFF5F8]">
+    <section className="py-20 bg-white">
       <div className="container mx-auto px-6 md:px-12">
         <div className="max-w-5xl mx-auto text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-bold text-[#b03b66]">
@@ -19,12 +19,12 @@ const ImpactSection = () => {
         <div className="grid md:grid-cols-2 gap-10">
           {/* Fertility Impact */}
           <div className="bg-white text-gray-800 rounded-2xl p-8 shadow-lg transition duration-300 
-          hover:shadow-[0_0_25px_rgba(255,151,179,0.5)] hover:-translate-y-2 active:scale-[0.98]">
+          hover:shadow-[0_0_25px_rgba(176,59,102,0.4)] hover:-translate-y-2 active:scale-[0.98]">
             <div className="flex items-center gap-3 mb-4">
-              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#ff97b3]/10">
+              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#b03b66]/10">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-[#ff97b3]"
+                  className="h-6 w-6 text-[#b03b66]"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -49,12 +49,12 @@ const ImpactSection = () => {
 
           {/* Emotional Wellbeing */}
           <div className="bg-white text-gray-800 rounded-2xl p-8 shadow-lg transition duration-300 
-          hover:shadow-[0_0_25px_rgba(255,151,179,0.5)] hover:-translate-y-2 active:scale-[0.98]">
+          hover:shadow-[0_0_25px_rgba(176,59,102,0.4)] hover:-translate-y-2 active:scale-[0.98]">
             <div className="flex items-center gap-3 mb-4">
-              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#ff97b3]/10">
+              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#b03b66]/10">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-[#ff97b3]"
+                  className="h-6 w-6 text-[#b03b66]"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
