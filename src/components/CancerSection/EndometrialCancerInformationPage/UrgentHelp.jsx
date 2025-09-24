@@ -1,83 +1,111 @@
-import React from 'react';
-import { TrendingUp, ShieldAlert, Clock, Phone, AlertCircle } from 'lucide-react'; // Import Lucide icons
+import React from 'react'
+import { TrendingUp, ShieldAlert, Clock, Phone, AlertCircle } from 'lucide-react'
 
 const cardData = [
   {
     id: 1,
-    icon: <TrendingUp className="w-10 h-10 text-destructive/10" />,
+    icon: <TrendingUp className="w-6 h-6" style={{ color: '#b03b66' }} />,
     title: 'Rapidly growing lump',
     description: 'Any lump that increases in size quickly over days or weeks',
   },
   {
     id: 2,
-    icon: <ShieldAlert className="w-10 h-10 text-destructive/10" />,
+    icon: <ShieldAlert className="w-6 h-6" style={{ color: '#b03b66' }} />,
     title: 'Severe pain, fever or spreading redness',
     description: 'Signs of serious infection that need immediate treatment',
   },
   {
     id: 3,
-    icon: <ShieldAlert className="w-10 h-10 text-destructive/10" />,
-    title: 'Bleeding that won\'t stop',
+    icon: <ShieldAlert className="w-6 h-6" style={{ color: '#b03b66' }} />,
+    title: "Bleeding that won't stop",
     description: 'Persistent or heavy bleeding from the affected area',
   },
   {
     id: 4,
-    icon: <Clock className="w-10 h-10 text-destructive/10" />,
+    icon: <Clock className="w-6 h-6" style={{ color: '#b03b66' }} />,
     title: 'Lumps appearing after menopause',
     description: 'New lumps in post-menopausal women require prompt evaluation',
   },
-];
+]
 
 const UrgentHelp = () => {
+  const pink = '#FFC5D3'
+  const deepPink = '#b03b66'
+
   return (
-    <section id="urgent-help" className="py-16 bg-destructive/5">
+    <section id="urgent-help" className="py-16 bg-white">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl text-[#d60d64] mx-auto">
+        <div className="max-w-4xl mx-auto">
+          {/* Section Header */}
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-4">
-              <AlertCircle className="inline-block mr-2 text-red-500" />
+            <h2 className="text-3xl font-bold mb-4" style={{ color: deepPink }}>
+              <AlertCircle className="inline-block mr-2" style={{ color: deepPink }} />
               When to Seek Urgent Help
             </h2>
-            <p className="text-lg text-muted-foreground text-pretty">
+            <p className="text-lg text-gray-700">
               Get medical advice quickly if you notice any of these warning signs
             </p>
           </div>
+
+          {/* Warning Cards */}
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             {cardData.map((card) => (
               <div
                 key={card.id}
-                className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl  py-6 shadow-sm hover:z-50 transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-[0_0_25px_rgba(255,151,179,0.5)] hover:-translate-y-2 active:scale-[0.98] hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:scale-105 active:scale-100"
+                className="bg-white flex flex-col gap-4 rounded-xl py-6 shadow-sm transition-all duration-300 hover:shadow-md hover:scale-[1.02] active:scale-[0.98]"
               >
-                <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 text-center pb-3">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-10 h-10 bg-destructive/10 rounded-full flex items-center justify-center">
-                      {card.icon}
-                    </div>
-                    <div className="font-semibold text-lg text-destructive">{card.title}</div>
+                <div className="flex items-center gap-3 px-6">
+                  <div
+                    className="w-10 h-10 rounded-full flex items-center justify-center"
+                    style={{ backgroundColor: pink }}
+                  >
+                    {card.icon}
+                  </div>
+                  <div className="font-semibold text-lg" style={{ color: deepPink }}>
+                    {card.title}
                   </div>
                 </div>
                 <div className="px-6">
-                  <p className="text-sm text-muted-foreground leading-relaxed">{card.description}</p>
+                  <p className="text-sm text-gray-700 leading-relaxed">{card.description}</p>
                 </div>
               </div>
             ))}
           </div>
 
           {/* Urgent Help Call To Action */}
-          <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-6">
+          <div
+            className="rounded-lg p-6 shadow-sm"
+            style={{ backgroundColor: pink }}
+          >
             <div className="flex items-center justify-between flex-wrap gap-4">
               <div className="flex items-center space-x-3">
-                <Phone className="w-6 h-6 text-destructive" />
+                <Phone className="w-6 h-6" style={{ color: deepPink }} />
                 <div>
-                  <h3 className="font-semibold text-destructive">Need Immediate Help?</h3>
-                  <p className="text-sm text-muted-foreground">Don't wait if you're experiencing urgent symptoms</p>
+                  <h3 className="font-semibold" style={{ color: deepPink }}>
+                    Need Immediate Help?
+                  </h3>
+                  <p className="text-sm text-gray-800">
+                    Don't wait if you're experiencing urgent symptoms
+                  </p>
                 </div>
               </div>
               <div className="flex space-x-3">
-                <button className="inline-flex items-center bg-[#FF4B8B]/10 justify-center gap-2 rounded-md text-sm font-medium transition-all shadow-sm hover:bg-[#FF4B8B]/90 hover:text-white h-9 px-4 py-2">
+                <button
+                  className="inline-flex items-center justify-center gap-2 rounded-md text-sm font-medium transition-all shadow-sm h-9 px-4 py-2"
+                  style={{
+                    backgroundColor: deepPink,
+                    color: 'white',
+                  }}
+                >
                   Call Emergency Services
                 </button>
-                <button className="inline-flex items-center justify-center px-4 gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all border shadow-xs bg-transparent text-destructive hover:bg-destructive hover:text-destructive-foreground border-destructive">
+                <button
+                  className="inline-flex items-center justify-center px-4 gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all shadow-sm h-9 border"
+                  style={{
+                    borderColor: deepPink,
+                    color: deepPink,
+                  }}
+                >
                   Find Urgent Care
                 </button>
               </div>
@@ -86,7 +114,7 @@ const UrgentHelp = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default UrgentHelp;
+export default UrgentHelp

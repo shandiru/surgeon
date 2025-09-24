@@ -1,116 +1,133 @@
-import React, { useState } from 'react';
-import { ChevronRight } from 'lucide-react';
-import { Circle, CircleDashed, AlertCircle } from 'lucide-react'; 
+import React, { useState } from 'react'
+import { ChevronRight, Circle, CircleDashed, AlertCircle } from 'lucide-react'
 
 const VulvarVaginalSection = () => {
-    const [openSections, setOpenSections] = useState({}); // Track open sections
+  const [openSections, setOpenSections] = useState({})
+  const pink = '#FFC5D3'
+  const deepPink = '#b03b66'
 
-    const handleToggle = (section) => {
-        setOpenSections((prevState) => ({
-            ...prevState,
-            [section]: !prevState[section], // Toggle the state for specific section
-        }));
-    };
+  const handleToggle = (section) => {
+    setOpenSections((prevState) => ({
+      ...prevState,
+      [section]: !prevState[section],
+    }))
+  }
 
-    const sections = [
-        {
-            id: 'vaginalCysts',
-            icon: <AlertCircle className="text-black" />, // Replacing emoji with Lucide icon
-            title: 'Vaginal Cysts',
-            description: 'Pouch-like sacs that can contain pus, air, or scar tissue',
-            details: [
-                'Usually small and painless',
-                'Bartholin\'s cysts – near the vaginal opening',
-                'Endometriosis cysts – caused by endometriosis tissue',
-                'Gartner\'s duct cysts – often during pregnancy',
-                'Inclusion cysts – from vaginal trauma, e.g. after childbirth',
-            ],
-        },
-        {
-            id: 'vaginalPolyps',
-            icon: <CircleDashed className="text-yellow-500" />, // Replacing emoji with Lucide icon
-            title: 'Vaginal Polyps (Skin Tags)',
-            description: 'Small, soft outgrowths of skin',
-            details: [
-                'Usually harmless and painless',
-                'Treated only if they bleed or cause discomfort',
-                'Can appear as small, flesh-colored bumps',
-                'May develop due to hormonal changes or irritation'
-            ],
-        },
-        {
-            id: 'vaginalWarts',
-            icon: <AlertCircle className="text-red-500" />, // Replacing emoji with Lucide icon
-            title: 'Vaginal Warts or Herpes Blisters',
-            description: 'Caused by viral infections (HPV or herpes)',
-            details: [
-                'Warts are caused by HPV (a common STI)',
-                'May appear as small, irregular growths around the vaginal opening',
-                'Herpes can cause blisters or sores that may look like pimples',
-                'Both conditions are treatable with proper medical care'
-            ],
-        },
-        {
-            id: 'vaginalCancer',
-            icon: <Circle className="text-blue-500" />,// Replacing emoji with Lucide icon
-            title: 'Vaginal Cancer (Rare)',
-            description: 'Uncommon but requires immediate medical attention',
-            details: [
-                'Can cause persistent lumps',
-                'May also cause unusual bleeding or discharge',
-                'Advanced symptoms can include pelvic pain, back pain, constipation or leg swelling',
-                'These symptoms are much more likely to be caused by infections or benign lumps'
-            ],
-        },
-    ];
+  const sections = [
+    {
+      id: 'vaginalCysts',
+      icon: <AlertCircle className="w-6 h-6" style={{ color: deepPink }} />,
+      title: 'Vaginal Cysts',
+      description: 'Pouch-like sacs that can contain pus, air, or scar tissue',
+      details: [
+        'Usually small and painless',
+        "Bartholin's cysts – near the vaginal opening",
+        'Endometriosis cysts – caused by endometriosis tissue',
+        "Gartner's duct cysts – often during pregnancy",
+        'Inclusion cysts – from vaginal trauma, e.g. after childbirth',
+      ],
+    },
+    {
+      id: 'vaginalPolyps',
+      icon: <CircleDashed className="w-6 h-6" style={{ color: deepPink }} />,
+      title: 'Vaginal Polyps (Skin Tags)',
+      description: 'Small, soft outgrowths of skin',
+      details: [
+        'Usually harmless and painless',
+        'Treated only if they bleed or cause discomfort',
+        'Can appear as small, flesh-colored bumps',
+        'May develop due to hormonal changes or irritation',
+      ],
+    },
+    {
+      id: 'vaginalWarts',
+      icon: <AlertCircle className="w-6 h-6" style={{ color: deepPink }} />,
+      title: 'Vaginal Warts or Herpes Blisters',
+      description: 'Caused by viral infections (HPV or herpes)',
+      details: [
+        'Warts are caused by HPV (a common STI)',
+        'May appear as small, irregular growths around the vaginal opening',
+        'Herpes can cause blisters or sores that may look like pimples',
+        'Both conditions are treatable with proper medical care',
+      ],
+    },
+    {
+      id: 'vaginalCancer',
+      icon: <Circle className="w-6 h-6" style={{ color: deepPink }} />,
+      title: 'Vaginal Cancer (Rare)',
+      description: 'Uncommon but requires immediate medical attention',
+      details: [
+        'Can cause persistent lumps',
+        'May also cause unusual bleeding or discharge',
+        'Advanced symptoms can include pelvic pain, back pain, constipation or leg swelling',
+        'These symptoms are much more likely to be caused by infections or benign lumps',
+      ],
+    },
+  ]
 
-    return (
-        <section id="causes" className="py-16 text-[#d60d64]">
-            <div className="container mx-auto px-4">
-                <div className="max-w-4xl mx-auto">
-                    <div className="text-center mb-12">
-                        <h2 className="text-3xl font-bold text-foreground mb-4">
-                            Common Causes of Vulvar &amp; Vaginal Lumps
-                        </h2>
-                        <p className="text-lg text-muted-foreground text-pretty">
-                            Understanding the different types of lumps can help you know what to expect
-                        </p>
+  return (
+    <section id="causes" className="py-16 bg-white">
+      <div className="container mx-auto px-4">
+        <div className="max-w-4xl mx-auto">
+          {/* Section Header */}
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4" style={{ color: deepPink }}>
+              Common Causes of Vulvar &amp; Vaginal Lumps
+            </h2>
+            <p className="text-lg text-gray-700">
+              Understanding the different types of lumps can help you know what to expect
+            </p>
+          </div>
+
+          {/* Expandable Cards */}
+          <div className="space-y-4">
+            {sections.map((section) => (
+              <div
+                key={section.id}
+                className="flex flex-col rounded-xl bg-white py-6 shadow-sm overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01] active:scale-[0.99]"
+              >
+                {/* Card Header */}
+                <div
+                  className="cursor-pointer px-6 pb-2"
+                  onClick={() => handleToggle(section.id)}
+                >
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center space-x-3">
+                      <span>{section.icon}</span>
+                      <div>
+                        <div
+                          className="font-semibold text-left"
+                          style={{ color: deepPink }}
+                        >
+                          {section.title}
+                        </div>
+                        <p className="text-sm text-gray-600">{section.description}</p>
+                      </div>
                     </div>
-
-                    <div className="space-y-4">
-                        {sections.map((section) => (
-                            <div key={section.id} className="bg-card text-card-foreground flex flex-col rounded-xl border py-6 shadow-sm overflow-hidden hover:z-50 transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:scale-105 active:scale-100">
-                                <div
-                                    className="cursor-pointer grid auto-rows-min grid-rows-[auto_auto] items-start px-6 pb-2 hover:bg-muted/50 transition-colors"
-                                    onClick={() => handleToggle(section.id)}
-                                >
-                                    <div className="flex items-center justify-between">
-                                        <div className="flex items-center space-x-3">
-                                            <span className="text-2xl">{section.icon}</span>
-                                            <div>
-                                                <div className="leading-none font-semibold text-left">{section.title}</div>
-                                                <p className="text-sm text-muted-foreground mt-1">{section.description}</p>
-                                            </div>
-                                        </div>
-                                        <ChevronRight
-                                            className={`transform transition-all ${openSections[section.id] ? 'rotate-90' : ''}`}
-                                        />
-                                    </div>
-                                </div>
-                                {openSections[section.id] && (
-                                    <ul className="px-14 space-y-1 list-disc text-sm">
-                                        {section.details.map((detail, index) => (
-                                            <li key={index}>{detail}</li>
-                                        ))}
-                                    </ul>
-                                )}
-                            </div>
-                        ))}
-                    </div>
+                    <ChevronRight
+                      className={`transition-transform ${
+                        openSections[section.id] ? 'rotate-90' : ''
+                      }`}
+                      style={{ color: deepPink }}
+                    />
+                  </div>
                 </div>
-            </div>
-        </section>
-    );
-};
 
-export default VulvarVaginalSection;
+                {/* Card Details */}
+                {openSections[section.id] && (
+                  <ul className="px-14 space-y-1 list-disc text-sm text-gray-700">
+                    {section.details.map((detail, index) => (
+                      <li key={index}>{detail}</li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default VulvarVaginalSection
