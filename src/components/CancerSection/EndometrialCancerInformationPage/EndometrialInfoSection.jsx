@@ -2,41 +2,49 @@
 
 import React, { useEffect } from 'react'
 import AOS from 'aos'
-import 'aos/dist/aos.css'  // Import AOS styles
+import 'aos/dist/aos.css'  
 import { FiPhone } from 'react-icons/fi'
 
 export default function EndometrialInfoSection() {
-  const pink = '#FFC5D3';
-  const pinkHover = '#e6b0c0'; // slightly darker hover
+  const pink = '#FFC5D3'      // main pink
+  const deepPink = '#b03b66'  // brand text color
+  const pinkHover = '#f5a9bd' // hover shade
+  const pinkActive = '#e191af' // active shade
 
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration
-      once: true, // Animation happens only once when scrolled
+      duration: 1000,
+      once: true,
     })
   }, [])
 
   return (
     <section className="py-12 bg-[#FFE6EA]" data-aos="fade-up">
-      <div className="container px-4 max-w-6xl mx-auto text-center md:text-left flex flex-col md:flex-row items-center">
+      <div className="container px-4 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+        
         {/* Content Section */}
-        <div className="text-center md:text-left md:mr-12 mb-8 md:mb-0" data-aos="fade-left">
-          <h2 className="text-4xl font-bold mb-4" style={{ color: '#111827' }}>
+        <div className="flex-1 text-center md:text-left" data-aos="fade-left">
+          <h2 className="text-4xl font-bold mb-4" style={{ color: deepPink }}>
             Endometrial Cancer Information
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto md:mx-0 mb-8">
+          <p className="text-lg text-gray-700 max-w-2xl mx-auto md:mx-0 mb-8">
             Early detection and understanding are key to successful treatment. Learn about
             symptoms, diagnosis, and treatment options for endometrial cancer.
           </p>
 
           <button
-            className="inline-flex items-center justify-center gap-2 text-sm font-medium text-white px-6 py-2 rounded-md shadow focus-visible:ring-2 focus-visible:ring-offset-2 transition-all duration-300 ease-in-out hover:bg-[#f5a9bd] hover:shadow-lg active:bg-[#e6b0c0] active:shadow-md"
+            className="inline-flex items-center justify-center gap-2 text-base font-semibold px-6 py-3 rounded-md shadow-md 
+                       transition-all duration-300 ease-in-out
+                       hover:scale-105 hover:shadow-lg active:scale-95 active:shadow-md"
             style={{
               backgroundColor: pink,
-              border: `1px solid ${pink}`,
+              color: '#ffffff',       // ✅ white text so it's always visible
+              color: deepPink,
             }}
             onMouseOver={(e) => (e.currentTarget.style.backgroundColor = pinkHover)}
             onMouseOut={(e) => (e.currentTarget.style.backgroundColor = pink)}
+            onMouseDown={(e) => (e.currentTarget.style.backgroundColor = pinkActive)}
+            onMouseUp={(e) => (e.currentTarget.style.backgroundColor = pinkHover)}
           >
             <FiPhone className="h-5 w-5" />
             Speak with a Healthcare Provider
@@ -44,15 +52,16 @@ export default function EndometrialInfoSection() {
         </div>
 
         {/* Image Section */}
-        <div className="flex justify-center md:justify-start mt-8 md:mt-0" data-aos="fade-right">
+        <div className="flex-1 flex justify-center md:justify-end" data-aos="fade-right">
           <img
-            src="/Endometrial.png" // Replace with the actual image URL
+            src="/Endometrial.png"
             alt="Endometrial Cancer Awareness"
-            className="mx-auto rounded-md shadow-lg transition-all duration-300 ease-in-out hover:scale-105 active:scale-95"
-            style={{ maxWidth: '100%', height: 'auto', maxHeight: '400px' }}
+            className="w-full max-w-md rounded-xl shadow-lg 
+                       transition-all duration-300 ease-in-out
+                       hover:scale-105 hover:shadow-xl active:scale-95 active:shadow-md"
           />
         </div>
       </div>
     </section>
-  );
+  )
 }

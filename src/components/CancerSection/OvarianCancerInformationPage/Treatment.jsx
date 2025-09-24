@@ -50,7 +50,7 @@ export default function OvarianCancerTreatment() {
         {/* Section Header */}
         <div className="text-center mb-12" data-aos="fade-up">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <FaHeart className="h-8 w-8" style={{ color: pink }} />
+            <FaHeart className="h-8 w-8" style={{ color: deepPink }} />
             <h3 className="text-3xl font-bold" style={{ color: deepPink }}>
               Treatment of Ovarian Cancer
             </h3>

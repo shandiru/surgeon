@@ -47,7 +47,7 @@ export default function OvarianCancerDiagnosis() {
         {/* Title */}
         <div className="text-center mb-12" data-aos="fade-up">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <FaStethoscope className="h-8 w-8" style={{ color: pink }} />
+            <FaStethoscope className="h-8 w-8" style={{ color: deepPink }} />
             <h3 className="text-3xl font-bold text-[#b03b66]">
               Diagnosis of Ovarian Cancer
             </h3>
@@ -94,7 +94,7 @@ export default function OvarianCancerDiagnosis() {
             >
               →
             </div>
-            <p className="text-white font-medium">
+            <p className="text-white font-medium" style={{ color: deepPink }}>
               If ovarian cancer is suspected, these tests also help determine how far the cancer has spread.
             </p>
           </div>

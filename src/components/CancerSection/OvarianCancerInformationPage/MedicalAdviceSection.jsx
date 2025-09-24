@@ -39,7 +39,7 @@ export default function MedicalAdviceSection() {
         <button
           type="button"
           className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full font-semibold text-white shadow-md transition-all duration-300 hover:shadow-lg hover:-translate-y-1 active:scale-95"
-          style={{ backgroundColor: pink }}
+          style={{ backgroundColor: pink , color: deepPink}}
         >
           <FiPhone className="w-5 h-5" />
           Contact Your Healthcare Provider

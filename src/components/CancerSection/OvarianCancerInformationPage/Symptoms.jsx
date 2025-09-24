@@ -37,7 +37,7 @@ export default function OvarianCancerSymptoms() {
         {/* Title and Intro */}
         <div className="text-center mb-10" data-aos="fade-up">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <FaExclamationTriangle className="h-8 w-8" style={{ color: pink }} />
+            <FaExclamationTriangle className="h-8 w-8" style={{ color: deepPink }} />
             <h3 className="text-3xl font-bold text-[#b03b66]">Symptoms of Ovarian Cancer</h3>
           </div>
           <p className="text-[#7a2f4f] text-lg">
@@ -75,7 +75,7 @@ export default function OvarianCancerSymptoms() {
             >
               !
             </div>
-            <p className="font-medium">
+            <p className="font-medium" style={{ color: deepPink }}>
               If you experience these symptoms, it&apos;s important to see your GP for further tests.
             </p>
           </div>

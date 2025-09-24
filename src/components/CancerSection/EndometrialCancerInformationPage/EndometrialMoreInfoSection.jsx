@@ -7,6 +7,7 @@ import { LuPhone } from 'react-icons/lu';
 
 export default function MoreInfoSection() {
   const pink = '#FFC5D3';
+  const deepPink = '#b03b66';
 
   useEffect(() => {
     AOS.init({
@@ -16,21 +17,33 @@ export default function MoreInfoSection() {
   }, []);
 
   return (
-    <section className="bg-[#FFE6EA]" data-aos="fade-up">
-      <div className="max-w-6xl mx-auto text-center py-12 px-4 rounded-lg border" data-aos="fade-up">
-        <h3 className="text-2xl font-bold text-gray-900 mb-4" data-aos="fade-left">
+    <section className="bg-white" data-aos="fade-up">
+      <div className="max-w-6xl mx-auto text-center py-12 px-4 rounded-lg shadow-sm">
+        {/* Heading */}
+        <h3
+          className="text-2xl font-bold mb-4"
+          style={{ color: deepPink }}
+          data-aos="fade-left"
+        >
           Need More Information?
         </h3>
-        <p className="text-gray-600 mb-6" data-aos="fade-left">
+
+        {/* Paragraph */}
+        <p className="text-gray-700 mb-6 max-w-2xl mx-auto" data-aos="fade-left">
           If you have concerns about any symptoms or need personalized medical advice,
           please consult with a healthcare professional.
         </p>
+
+        {/* Button */}
         <button
-          className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-semibold transition-all disabled:pointer-events-none disabled:opacity-50 text-white shadow-xs h-10 rounded-md px-6"
-          style={{ backgroundColor: pink }}
+          className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-semibold transition-all h-10 rounded-md px-6 shadow-md hover:scale-105 active:scale-95"
+          style={{
+            backgroundColor: pink,
+            color: '#fff',
+          }}
           data-aos="fade-up"
         >
-          <LuPhone className="h-5 w-5 mr-2" />
+          <LuPhone className="h-5 w-5" />
           Contact Your Healthcare Provider
         </button>
       </div>
