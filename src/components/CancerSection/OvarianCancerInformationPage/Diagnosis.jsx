@@ -2,7 +2,7 @@
 
 import React, { useEffect } from 'react'
 import AOS from 'aos'
-import 'aos/dist/aos.css'  // Import AOS styles
+import 'aos/dist/aos.css'
 import { FaStethoscope } from 'react-icons/fa'
 
 const tests = [
@@ -31,70 +31,70 @@ const tests = [
 
 export default function OvarianCancerDiagnosis() {
   const pink = '#FFC5D3'
+  const deepPink = '#b03b66'
 
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration
-      once: true, // Animation happens only once when scrolled
+      duration: 1000,
+      once: true,
     })
   }, [])
 
   return (
-    <section id="diagnosis" className="py-12 bg-[#FFE6EA]">
+    <section id="diagnosis" className="py-16 bg-white">
       <div className="max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
 
         {/* Title */}
-        <div className="text-center mb-8" data-aos="fade-up">
+        <div className="text-center mb-12" data-aos="fade-up">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <FaStethoscope className="h-8 w-8" />
-            <h3 className="text-3xl font-bold text-gray-900">Diagnosis of Ovarian Cancer</h3>
+            <FaStethoscope className="h-8 w-8" style={{ color: deepPink }} />
+            <h3 className="text-3xl font-bold text-[#b03b66]">
+              Diagnosis of Ovarian Cancer
+            </h3>
           </div>
-          <p className="text-gray-700 text-lg">
+          <p className="text-[#7a2f4f] text-lg">
             Several tests and scans can help identify ovarian cancer, including:
           </p>
         </div>
 
         {/* Diagnostic Tests */}
-        <div className="grid md:grid-cols-2 gap-6 mb-8">
+        <div className="grid md:grid-cols-2 gap-6 mb-12">
           {tests.map((test) => (
             <div
               key={test.id}
-              className="bg-white text-gray-800 flex flex-col gap-4 rounded-xl border py-6 shadow-sm transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]"
-              style={{ borderColor: pink }}
-              data-aos="fade-up" // Animation for each test
+              className="bg-white text-[#333] flex flex-col gap-4 rounded-xl p-6 shadow-md 
+                         transition duration-300 ease-in-out 
+                         hover:shadow-xl hover:-translate-y-2 active:scale-[0.98] cursor-pointer"
+              data-aos="fade-up"
             >
-              <div className="px-6">
-                <div className="flex items-center gap-2 font-semibold" style={{ color: pink }}>
-                  <span
-                    className="w-8 h-8 flex items-center justify-center rounded-full border text-sm text-gray-800"
-                    style={{ borderColor: pink }}
-                  >
-                    {test.id}
-                  </span>
-                  {test.title}
-                </div>
+              <div className="flex items-center gap-3 font-semibold text-[#b03b66]">
+                <span
+                  className="w-8 h-8 flex items-center justify-center rounded-full border text-sm font-bold"
+                  style={{ borderColor: pink, color: deepPink }}
+                >
+                  {test.id}
+                </span>
+                {test.title}
               </div>
-              <div className="px-6">
-                <p className="text-gray-600">{test.description}</p>
-              </div>
+              <p className="text-gray-600">{test.description}</p>
             </div>
           ))}
         </div>
 
         {/* Summary Box */}
         <div
-          className="rounded-xl px-6 py-6 shadow-sm"
-          style={{ border: `1px solid ${pink}`, backgroundColor: pink }}
-          data-aos="fade-up" // Animation for summary box
+          className="rounded-xl px-6 py-6 shadow-md"
+          style={{ backgroundColor: pink }}
+          data-aos="fade-up"
         >
           <div className="flex items-start gap-3">
             <div
-              className="w-6 h-6 text-white rounded-full flex items-center justify-center mt-0.5"
-              style={{ backgroundColor: '#fff', color: pink, border: `1px solid ${pink}` }}
+              className="w-6 h-6 rounded-full flex items-center justify-center font-bold"
+              style={{ backgroundColor: '#fff', color: deepPink }}
             >
-              <span className="text-sm font-bold">→</span>
+              →
             </div>
-            <p className="text-white font-medium">
+            <p className="text-white font-medium" style={{ color: deepPink }}>
               If ovarian cancer is suspected, these tests also help determine how far the cancer has spread.
             </p>
           </div>

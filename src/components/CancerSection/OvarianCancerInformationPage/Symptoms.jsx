@@ -2,7 +2,7 @@
 
 import React, { useEffect } from 'react'
 import AOS from 'aos'
-import 'aos/dist/aos.css'  // Import AOS styles
+import 'aos/dist/aos.css'
 import { FaExclamationTriangle } from 'react-icons/fa'
 
 const symptoms = [
@@ -21,43 +21,43 @@ const symptoms = [
 
 export default function OvarianCancerSymptoms() {
   const pink = '#FFC5D3'
+  const deepPink = '#b03b66'
 
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration
-      once: true, // Animation happens only once when scrolled
+      duration: 1000,
+      once: true,
     })
   }, [])
 
   return (
-    <section id="symptoms" className="py-12 bg-[#FFE6EA]">
+    <section id="symptoms" className="py-16 bg-white">
       <div className="max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
-
+        
         {/* Title and Intro */}
-        <div className="text-center mb-8" data-aos="fade-up">
+        <div className="text-center mb-10" data-aos="fade-up">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <FaExclamationTriangle className="h-8 w-8" style={{ color: pink }} />
-            <h3 className="text-3xl font-bold text-gray-900">Symptoms of Ovarian Cancer</h3>
+            <FaExclamationTriangle className="h-8 w-8" style={{ color: deepPink }} />
+            <h3 className="text-3xl font-bold text-[#b03b66]">Symptoms of Ovarian Cancer</h3>
           </div>
-          <p className="text-gray-700 text-lg">
+          <p className="text-[#7a2f4f] text-lg">
             Ovarian cancer can cause a variety of symptoms. Some of the most common include:
           </p>
         </div>
 
         {/* Symptoms Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {symptoms.map((symptom, index) => (
             <div
               key={index}
-              className="bg-white text-gray-900 flex flex-col rounded-xl border shadow-lg transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]"
-              style={{ borderColor: pink }}
-              data-aos="fade-up" // Add animation to each symptom
+              className="bg-white text-[#b03b66] rounded-xl p-5 shadow-md cursor-pointer 
+                         transition duration-300 ease-in-out 
+                         hover:shadow-xl hover:-translate-y-2 active:scale-[0.98]"
+              data-aos="fade-up"
             >
-              <div className="p-4">
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: pink }} />
-                  <p className="font-medium">{symptom}</p>
-                </div>
+              <div className="flex items-center gap-3">
+                <div className="w-3 h-3 rounded-full flex-shrink-0" style={{ backgroundColor: pink }} />
+                <p className="font-medium">{symptom}</p>
               </div>
             </div>
           ))}
@@ -65,19 +65,18 @@ export default function OvarianCancerSymptoms() {
 
         {/* Alert Note */}
         <div
-          className="rounded-xl px-6 py-5 shadow-sm"
-          style={{ border: `1px solid ${pink}`, backgroundColor: pink }}
-          data-aos="fade-up" // Animation for the alert box
+          className="rounded-xl px-6 py-5 shadow-md bg-[#FFC5D3] text-white"
+          data-aos="fade-up"
         >
           <div className="flex items-start gap-3">
             <div
-              className="w-6 h-6 text-white rounded-full flex items-center justify-center mt-0.5"
-              style={{ backgroundColor: '#fff', color: pink, border: `1px solid ${pink}` }}
+              className="w-6 h-6 rounded-full flex items-center justify-center mt-0.5 font-bold"
+              style={{ backgroundColor: '#fff', color: deepPink }}
             >
-              <span className="text-sm font-bold">!</span>
+              !
             </div>
-            <p className="text-white font-medium">
-              If you experience these symptoms, it's important to see your GP for further tests.
+            <p className="font-medium" style={{ color: deepPink }}>
+              If you experience these symptoms, it&apos;s important to see your GP for further tests.
             </p>
           </div>
         </div>

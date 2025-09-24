@@ -2,42 +2,48 @@
 
 import React, { useEffect } from 'react'
 import AOS from 'aos'
-import 'aos/dist/aos.css'  // Import AOS styles
+import 'aos/dist/aos.css'
 import { FiPhone } from 'react-icons/fi'
 
 export default function MedicalAdviceSection() {
   const pink = '#FFC5D3'
-  const pinkHover = '#e6b0c0' // slightly darker for hover
+  const deepPink = '#b03b66'
 
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration
-      once: true, // Animation happens only once when scrolled
+      duration: 1000,
+      once: true,
     })
   }, [])
 
   return (
-    <section
-      className="bg-[#FFE6EA]"
-      
-    >
-      <div className="text-center rounded-lg max-w-5xl mx-auto px-4 py-12 md:px-6 lg:px-8 shadow-sm bg-[#FFE6EA]" data-aos="fade-up">
-      <h4 className="text-2xl font-bold text-gray-900 mb-4">Need Medical Advice?</h4>
-      <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
-        This information is for educational purposes only. Always consult with qualified healthcare
-        professionals for personalized medical advice and treatment options.
-      </p>
-      <button
-        className="inline-flex items-center justify-center gap-2 text-white font-medium text-sm px-6 py-2 rounded-md transition-all"
-        style={{
-          backgroundColor: pink,
-        }}
-        onMouseOver={e => (e.currentTarget.style.backgroundColor = pinkHover)}
-        onMouseOut={e => (e.currentTarget.style.backgroundColor = pink)}
+    <section className="py-16 bg-white">
+      <div
+        className="text-center rounded-2xl max-w-4xl mx-auto px-6 py-12 shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+        data-aos="fade-up"
+        style={{ border: `1px solid ${pink}` }}
       >
-        <FiPhone className="w-4 h-4" />
-        Contact Your Healthcare Provider
-      </button>
+        {/* Title */}
+        <h4 className="text-2xl font-bold mb-4" style={{ color: deepPink }}>
+          Need Medical Advice?
+        </h4>
+
+        {/* Paragraph */}
+        <p className="text-gray-700 mb-8 max-w-2xl mx-auto leading-relaxed">
+          This information is for educational purposes only. Always consult with
+          qualified healthcare professionals for personalized medical advice
+          and treatment options.
+        </p>
+
+        {/* CTA Button */}
+        <button
+          type="button"
+          className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full font-semibold text-white shadow-md transition-all duration-300 hover:shadow-lg hover:-translate-y-1 active:scale-95"
+          style={{ backgroundColor: pink , color: deepPink}}
+        >
+          <FiPhone className="w-5 h-5" />
+          Contact Your Healthcare Provider
+        </button>
       </div>
     </section>
   )
