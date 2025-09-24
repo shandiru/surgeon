@@ -31,14 +31,14 @@ const VulvarCancerPage = () => {
           <div className="mb-8 lg:mb-0 text-center lg:text-left">
             <div
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium mb-6"
-              style={{ backgroundColor: "#FFC5D3", color: "#fff" }}
+              style={{ backgroundColor: "#b03b66", color: "#fff" }}
             >
               <FaHeartbeat className="h-4 w-4" /> Medical Information Guide
             </div>
-            <h1 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-6">
+            <h1 className="text-3xl lg:text-5xl font-bold text-[#b03b66] mb-6">
               Vulvar Cancer
             </h1>
-            <p className="text-lg lg:text-xl text-gray-600 leading-relaxed">
+            <p className="text-lg lg:text-xl text-[#7a2f4f] leading-relaxed">
               A comprehensive guide covering symptoms, diagnosis,
               <br /> and treatment options
             </p>
@@ -57,7 +57,7 @@ const VulvarCancerPage = () => {
         <div className="relative">
           <div
             className="absolute left-8 top-0 bottom-0 w-0.5 hidden lg:block"
-            style={{ backgroundColor: "#FFC5D3" }}
+            style={{ backgroundColor: "#b03b66" }}
           ></div>
 
           {/* Step 1: Symptoms */}
@@ -152,7 +152,7 @@ const VulvarCancerPage = () => {
         {/* Disclaimer */}
         <div
           className="text-center mt-20 p-8 rounded-2xl"
-          style={{ backgroundColor: "#FFC5D3" }}
+          style={{ backgroundColor: "#b03b66" }}
           data-aos="fade-up"
         >
           <p className="text-white text-lg leading-relaxed max-w-3xl mx-auto">
@@ -176,7 +176,8 @@ const StepCard = ({
   tags,
   treatments,
 }) => {
-  const pink = "#FFC5D3";
+  const primaryPink = "#FFC5D3";
+  const deepPink = "#b03b66";
 
   return (
     <div className="relative mb-20" data-aos="fade-up">
@@ -184,7 +185,7 @@ const StepCard = ({
         {/* Step Circle */}
         <div
           className="hidden lg:flex items-center justify-center w-16 h-16 rounded-full text-white mb-8 lg:mb-0 relative z-10"
-          style={{ backgroundColor: pink }}
+          style={{ backgroundColor: deepPink }}
         >
           {icon}
         </div>
@@ -192,21 +193,21 @@ const StepCard = ({
         {/* Card */}
         <div className="flex-1">
           <div
-            className="rounded-2xl p-8 border transition-all duration-300 active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd]"
-            style={{ backgroundColor: "#fff", borderColor: pink }}
+            className="rounded-2xl p-8 border transition-all duration-300 active:bg-[#FFF5F8] active:shadow-lg hover:bg-[#FFF5F8] hover:shadow-lg"
+            style={{ backgroundColor: "#fff", borderColor: primaryPink }}
           >
             <div className="mb-6">
               <span
                 className="font-semibold text-sm uppercase tracking-wide"
-                style={{ color: pink }}
+                style={{ color: deepPink }}
               >
                 {step}
               </span>
-              <h2 className="text-3xl font-bold text-gray-900 mt-2">{title}</h2>
+              <h2 className="text-3xl font-bold text-[#b03b66] mt-2">{title}</h2>
             </div>
 
             {description && (
-              <p className="text-gray-700 mb-8 text-lg">{description}</p>
+              <p className="text-[#7a2f4f] mb-8 text-lg">{description}</p>
             )}
 
             {/* Points with Hover Effect */}
@@ -215,11 +216,14 @@ const StepCard = ({
                 {points.map((point, i) => (
                   <div
                     key={i}
-                    className="flex items-start gap-3 p-4 bg-white rounded-lg border transition-all duration-300 active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd]"
-                    style={{ borderColor: pink }}
+                    className="flex items-start gap-3 p-4 bg-white rounded-lg border transition-all duration-300 active:bg-[#FFF5F8] active:shadow-lg hover:bg-[#FFF5F8] hover:shadow-lg"
+                    style={{ borderColor: primaryPink }}
                   >
-                    <FaCheckCircle className="h-5 w-5 mt-0.5 flex-shrink-0" style={{ color: pink }} />
-                    <span className="text-gray-800">{point}</span>
+                    <FaCheckCircle
+                      className="h-5 w-5 mt-0.5 flex-shrink-0"
+                      style={{ color: deepPink }}
+                    />
+                    <span className="text-[#7a2f4f]">{point}</span>
                   </div>
                 ))}
               </div>
@@ -228,8 +232,8 @@ const StepCard = ({
             {/* Alert Box */}
             {alert && (
               <div
-                className="mt-8 p-6 rounded-xl border"
-                style={{ borderColor: pink, backgroundColor: pink }}
+                className="mt-8 p-6 rounded-xl"
+                style={{ backgroundColor: deepPink }}
               >
                 <p className="text-white font-semibold text-lg">{alert}</p>
               </div>
@@ -239,23 +243,27 @@ const StepCard = ({
             {subsections &&
               subsections.map((section, i) => (
                 <div key={i} className="space-y-6 mt-8">
-                  <h3 className="text-xl font-semibold text-gray-900">{section.title}</h3>
+                  <h3 className="text-xl font-semibold text-[#b03b66]">
+                    {section.title}
+                  </h3>
                   <div className="space-y-4">
                     {section.items.map((item, j) => (
                       <div
                         key={j}
-                        className="flex items-start gap-6 p-6 bg-white rounded-xl border transition-all duration-300 active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd]"
-                        style={{ borderColor: pink }}
+                        className="flex items-start gap-6 p-6 bg-white rounded-xl border transition-all duration-300 active:bg-[#FFF5F8] active:shadow-lg hover:bg-[#FFF5F8] hover:shadow-lg"
+                        style={{ borderColor: primaryPink }}
                       >
                         <div
                           className="flex items-center justify-center w-12 h-12 rounded-lg flex-shrink-0"
-                          style={{ backgroundColor: pink, color: "#fff" }}
+                          style={{ backgroundColor: deepPink, color: "#fff" }}
                         >
                           {item.icon}
                         </div>
                         <div>
-                          <h4 className="text-lg font-semibold text-gray-900 mb-2">{item.heading}</h4>
-                          <p className="text-gray-700">{item.text}</p>
+                          <h4 className="text-lg font-semibold text-[#b03b66] mb-2">
+                            {item.heading}
+                          </h4>
+                          <p className="text-[#7a2f4f]">{item.text}</p>
                         </div>
                       </div>
                     ))}
@@ -270,7 +278,7 @@ const StepCard = ({
                   <span
                     key={i}
                     className="px-4 py-2 rounded-md text-sm font-medium"
-                    style={{ backgroundColor: pink, color: "#fff" }}
+                    style={{ backgroundColor: deepPink, color: "#fff" }}
                   >
                     {tag}
                   </span>
@@ -285,21 +293,25 @@ const StepCard = ({
                   <div className="flex items-center gap-3 mb-6">
                     <div
                       className="flex items-center justify-center w-8 h-8 rounded-full text-white text-sm font-bold"
-                      style={{ backgroundColor: pink }}
+                      style={{ backgroundColor: deepPink }}
                     >
                       1
                     </div>
-                    <h3 className="text-xl font-semibold text-gray-900">Surgery (Primary Treatment)</h3>
+                    <h3 className="text-xl font-semibold text-[#b03b66]">
+                      Surgery (Primary Treatment)
+                    </h3>
                   </div>
                   <div className="grid gap-4">
                     {treatments.surgery.map((s, i) => (
                       <div
                         key={i}
-                        className="p-6 bg-white rounded-xl border transition-all duration-300 active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd]"
-                        style={{ borderColor: pink }}
+                        className="p-6 bg-white rounded-xl border transition-all duration-300 active:bg-[#FFF5F8] active:shadow-lg hover:bg-[#FFF5F8] hover:shadow-lg"
+                        style={{ borderColor: primaryPink }}
                       >
-                        <h4 className="text-lg font-semibold text-gray-900 mb-2">{s.heading}</h4>
-                        <p className="text-gray-700">{s.text}</p>
+                        <h4 className="text-lg font-semibold text-[#b03b66] mb-2">
+                          {s.heading}
+                        </h4>
+                        <p className="text-[#7a2f4f]">{s.text}</p>
                       </div>
                     ))}
                   </div>
@@ -309,28 +321,32 @@ const StepCard = ({
                   <div className="flex items-center gap-3 mb-6">
                     <div
                       className="flex items-center justify-center w-8 h-8 rounded-full text-white text-sm font-bold"
-                      style={{ backgroundColor: pink }}
+                      style={{ backgroundColor: deepPink }}
                     >
                       2
                     </div>
-                    <h3 className="text-xl font-semibold text-gray-900">Additional Treatments</h3>
+                    <h3 className="text-xl font-semibold text-[#b03b66]">
+                      Additional Treatments
+                    </h3>
                   </div>
                   <div className="grid md:grid-cols-2 gap-4">
                     {treatments.additional.map((a, i) => (
                       <div
                         key={i}
-                        className="flex items-start gap-4 p-6 bg-white rounded-xl border transition-all duration-300 active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd]"
-                        style={{ borderColor: pink }}
+                        className="flex items-start gap-4 p-6 bg-white rounded-xl border transition-all duration-300 active:bg-[#FFF5F8] active:shadow-lg hover:bg-[#FFF5F8] hover:shadow-lg"
+                        style={{ borderColor: primaryPink }}
                       >
                         <div
                           className="flex items-center justify-center w-12 h-12 rounded-lg flex-shrink-0"
-                          style={{ backgroundColor: pink, color: "#fff" }}
+                          style={{ backgroundColor: deepPink, color: "#fff" }}
                         >
                           {a.icon}
                         </div>
                         <div>
-                          <h4 className="text-lg font-semibold text-gray-900 mb-2">{a.heading}</h4>
-                          <p className="text-gray-700">{a.text}</p>
+                          <h4 className="text-lg font-semibold text-[#b03b66] mb-2">
+                            {a.heading}
+                          </h4>
+                          <p className="text-[#7a2f4f]">{a.text}</p>
                         </div>
                       </div>
                     ))}

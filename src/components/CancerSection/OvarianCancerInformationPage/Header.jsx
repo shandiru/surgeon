@@ -2,43 +2,44 @@
 
 import React, { useEffect } from 'react'
 import AOS from 'aos'
-import 'aos/dist/aos.css'  // Import AOS styles
+import 'aos/dist/aos.css'
 
 export default function OvarianCancerHeader() {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration
-      once: true, // Animation happens only once when scrolled
+      duration: 1000,
+      once: true,
     })
   }, [])
 
   return (
-    <section className="py-12 bg-[#FFE6EA]">
-      <div className="container text-center md:text-left flex flex-col md:flex-row items-center">
+    <section className="py-16 bg-[#FFE6EA]">
+      <div className="container mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center gap-12">
+        
         {/* Text Section */}
         <div 
-          className="text-center md:text-left md:mr-25 mb-8 md:mb-0 max-w-2xl mx-auto" 
-          data-aos="fade-up" // Apply fade-up animation
+          className="flex-1 text-center md:text-left space-y-6"
+          data-aos="fade-up"
         >
-          <h2 className="text-4xl font-bold mb-4 text-[#b03b66]">
+          <h2 className="text-4xl md:text-5xl font-bold leading-snug text-[#b03b66]">
             Ovarian Cancer Information
           </h2>
-          <p className="text-xl max-w-3xl mx-auto md:mx-0 leading-relaxed text-[#b03b66]/90">
+          <p className="text-lg md:text-xl leading-relaxed text-[#7a2f4f]">
             Understanding the symptoms, diagnosis, and treatment options for ovarian cancer.
-            Early detection and proper medical care are crucial for the best outcomes.
+            <br className="hidden md:block" />
+            <span className="block mt-2">Early detection and proper medical care are crucial for the best outcomes.</span>
           </p>
         </div>
 
         {/* Image Section */}
         <div 
-          className="flex justify-center" 
-          data-aos="fade-left" // Apply fade-left animation
+          className="flex-1 flex justify-center md:justify-end"
+          data-aos="fade-left"
         >
           <img
-            src="/Ovarian.png" // Replace with the actual image URL
+            src="/Ovarian.png"
             alt="Ovarian Cancer Awareness"
-            className="rounded-md shadow-lg"
-            style={{ maxWidth: '100%', height: 'auto', maxHeight: '400px' }} // Make sure the image is responsive
+            className="rounded-xl shadow-xl border-4 border-[#FFC5D3] max-w-sm md:max-w-md lg:max-w-lg w-full h-auto"
           />
         </div>
       </div>
