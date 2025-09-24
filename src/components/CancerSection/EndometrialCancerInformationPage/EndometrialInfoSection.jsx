@@ -38,7 +38,7 @@ export default function EndometrialInfoSection() {
                        hover:scale-105 hover:shadow-lg active:scale-95 active:shadow-md"
             style={{
               backgroundColor: pink,
-              color: '#ffffff',       // ✅ white text so it's always visible
+                  // ✅ white text so it's always visible
               color: deepPink,
             }}
             onMouseOver={(e) => (e.currentTarget.style.backgroundColor = pinkHover)}
