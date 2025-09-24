@@ -61,7 +61,7 @@ const TreatmentSection = () => {
 
           {/* Closing Note */}
           <div
-            className="text-[#333] mt-10 rounded-2xl p-8 text-center bg-gradient-to-r 
+            className="mt-10 rounded-2xl p-8 text-center bg-gradient-to-r 
             from-[#ff97b3] to-[#ffb3c9] text-white shadow-md transition duration-300 
             hover:shadow-xl hover:-translate-y-1 active:scale-[0.98]"
           >

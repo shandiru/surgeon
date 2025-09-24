@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Heart, Activity, CircleCheck, AlertTriangle, ChevronDown, Target } from 'lucide-react';
+import { Heart, Activity, CircleCheck, AlertTriangle, ChevronDown, Target, Stethoscope } from 'lucide-react';
 
 const PelvicPainAccordion = () => {
     const [openSection, setOpenSection] = useState(null); // Track only the currently open section
@@ -13,10 +13,11 @@ const PelvicPainAccordion = () => {
             <div className="text-[#d60d64] bg-[#FF4B8B]/10 max-w-5xl mx-auto mb-10 rounded-xl p-6 hover:z-50 transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:scale-105 active:scale-100">
                 {/* Gynaecological Causes Accordion */}
                 <div className="text-center mb-6">
-                    <h1 className="text-3xl font-semibold text-primary mb-4">Pelvic Pain Causes</h1>
-                    <p className="text-lg text-muted-foreground">
-                        Common causes of pelvic pain related to reproductive health
-                    </p>
+                       <div className="text-3xl font-semibold flex gap-2 text-left">
+                              <Stethoscope className="h-8 w-8 mt-2" />
+                              Common Causes of Pelvic Pain
+                            </div>
+                    <h1 className=""></h1>
                 </div>
 
                 {/* Gynaecological Causes Accordion Trigger */}

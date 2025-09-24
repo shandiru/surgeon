@@ -7,43 +7,43 @@ import SymptomsSection from "../components/EndometriosisInformationPage/Symptoms
 import ImpactSection from "../components/EndometriosisInformationPage/ImpactSection";
 import CausesSection from "../components/EndometriosisInformationPage/CausesSection";
 import DiagnosisSection from "../components/EndometriosisInformationPage/DiagnosisSection";
- import TreatmentSection from "../components/EndometriosisInformationPage/TreatmentSection";
- import RememberSection from "../components/EndometriosisInformationPage/RememberSection";
+import TreatmentSection from "../components/EndometriosisInformationPage/TreatmentSection";
+import RememberSection from "../components/EndometriosisInformationPage/RememberSection";
 export default function EndometriosisInformation() {
   return (
     <div>
-      
-        <section >
+
+      <section >
         <EndometriosisHeroSection />
-        </section>
-      
-        <section >
+      </section>
+
+      <section >
         <EndometriosisInfo />
       </section>
 
-        <section >
+      <section >
         <SymptomsSection />
       </section>
 
-         <section >
+      <section >
         <ImpactSection />
       </section>
 
-         <section >
+      <section >
         <CausesSection />
-        </section>
+      </section>
 
-            <section >
+      <section >
         <DiagnosisSection />
-        </section>
+      </section>
 
-            <section >
+      <section >
         <TreatmentSection />
-        </section>
+      </section>
 
-            <section >
+      <section >
         <RememberSection />
-        </section>
+      </section>
     </div>
   );
 }
