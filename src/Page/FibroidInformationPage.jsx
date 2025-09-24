@@ -18,40 +18,40 @@ export default function FibroidInformationPage() {
       <section>
         <UnderstandingFibroidsSection />
       </section>
-        <section className="px-4 py-12">
+        <section >
         <WhatAreFibroidsCard />
         </section>
-        <section className="px-4 ">
+        <section >
         <SymptomsOfFibroidsCard />
         </section>
-        <section className="px-4 ">
+        <section>
         <TypesOfFibroidsCard />
         </section>
 
-        <section className="px-4 ">
+        <section>
         <CausesAndRiskFactorsCard />
         </section>
 
 
-        <section className="px-4 ">
+        <section >
         <FertilityAndPregnancyCard />
         </section>
 
 
-        <section className="px-4 ">
+        <section >
         <EmotionalWellbeingCard />
         </section>
 
-        <section className="px-4 ">
+        <section >
         <TreatmentOptionsCard />
         </section>
 
-        <section className="px-4 pb-12">
+        <section >
         <SelfCareSupportCards />
         </section>
 
 
-        <section className="px-4 pb-12">
+        <section >
         <RememberCard />
         </section>
       </div>

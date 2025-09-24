@@ -2,14 +2,13 @@
 
 export default function RememberCard() {
   return (
-    <section className="py-12 px-4 md:px-6">
+    <section className="py-12 px-4 md:px-50 bg-white">
       <div
         data-slot="card"
-        className="bg-gradient-to-r from-[#fff0f6] to-[#fff5f9] text-[#212529] flex flex-col gap-6 rounded-2xl border border-[#f8c4d9] py-10 px-6 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+        className="bg-white text-[#212529] flex flex-col gap-6 rounded-2xl py-10 px-6 shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
       >
         {/* Header */}
         <div className="flex items-center gap-3 mb-4">
-         
           <h2 className="font-bold text-3xl text-[#d63384]">Remember</h2>
         </div>
 
@@ -26,7 +25,7 @@ export default function RememberCard() {
         </div>
 
         {/* Divider */}
-        <div className="h-px bg-[#f8c4d9] my-2" />
+        <div className="h-px bg-[#FFC5D3] my-2" />
 
         {/* Call-to-action */}
         <div className="text-center">
@@ -34,11 +33,12 @@ export default function RememberCard() {
             If you have symptoms of fibroids, book an appointment — we're here to help.
           </p>
           <button
-            className="inline-flex items-center justify-center gap-2 text-sm font-medium text-white bg-[#d63384] hover:bg-[#c22573] transition-all h-12 rounded-md px-8 shadow-lg hover:shadow-xl active:scale-[0.97]"
+            className="inline-flex items-center justify-center gap-2 text-sm font-medium text-white bg-[#d63384] hover:bg-[#c22573] transition-all h-12 rounded-md px-8 shadow-md hover:shadow-lg active:scale-[0.97]"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="22" height="22"
+              width="22"
+              height="22"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"

@@ -3,17 +3,22 @@
 import { Pill, User } from "lucide-react"
 
 export default function TreatmentOptionsCard() {
+  const pink = "#FFC5D3"
+  const deepPink = "#b03b66"
+
   return (
-    <section className="py-16 px-4 md:px-6">
-      <div className="bg-[#fff0f6] text-[#212529] flex flex-col gap-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 p-8">
+    <section className="py-16 px-4 md:px-50 bg-white">
+      <div className="bg-white text-[#212529] flex flex-col gap-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 p-8">
 
         {/* Card Header */}
         <div className="text-center">
           <div className="flex items-center justify-center gap-2 mb-3">
-            <Pill className="text-3xl text-[#d63384]" />
-            <h2 className="font-bold text-2xl md:text-3xl text-[#d63384]">Treatment Options</h2>
+            <Pill className="text-3xl" style={{ color: deepPink }} />
+            <h2 className="font-bold text-2xl md:text-3xl" style={{ color: deepPink }}>
+              Treatment Options
+            </h2>
           </div>
-          <p className="text-base text-[#495057]">
+          <p className="text-base text-gray-600">
             Treatment depends on your symptoms and their severity:
           </p>
         </div>
@@ -22,7 +27,9 @@ export default function TreatmentOptionsCard() {
         <div className="space-y-10">
           {/* Medication Section */}
           <div>
-            <h3 className="text-xl font-semibold mb-6 text-[#d63384]">Medication</h3>
+            <h3 className="text-xl font-semibold mb-6" style={{ color: deepPink }}>
+              Medication
+            </h3>
             <div className="grid md:grid-cols-2 gap-6">
               {[
                 { title: "Anti-inflammatory medicines", desc: "Relieve pain" },
@@ -32,21 +39,25 @@ export default function TreatmentOptionsCard() {
               ].map((item, i) => (
                 <div
                   key={i}
-                  className="border border-[#f8c4d9] rounded-xl p-5 bg-white hover:shadow-md hover:-translate-y-1 transition-all"
+                  className="rounded-xl p-5 bg-white shadow-md hover:shadow-lg hover:-translate-y-1 transition-all"
                 >
-                  <h4 className="font-semibold mb-2 text-[#d63384]">{item.title}</h4>
-                  <p className="text-sm text-[#6c757d]">{item.desc}</p>
+                  <h4 className="font-semibold mb-2" style={{ color: deepPink }}>
+                    {item.title}
+                  </h4>
+                  <p className="text-sm text-gray-600">{item.desc}</p>
                 </div>
               ))}
             </div>
           </div>
 
           {/* Divider */}
-          <div className="h-px w-full bg-[#f8c4d9]" />
+          <div className="h-px w-full" style={{ backgroundColor: pink }} />
 
           {/* Procedures Section */}
           <div>
-            <h3 className="text-xl font-semibold mb-6 text-[#d63384]">Procedures & Surgery</h3>
+            <h3 className="text-xl font-semibold mb-6" style={{ color: deepPink }}>
+              Procedures & Surgery
+            </h3>
             <div className="grid md:grid-cols-2 gap-6">
               {[
                 { title: "Myomectomy", desc: "Removes fibroids while keeping the womb" },
@@ -56,18 +67,23 @@ export default function TreatmentOptionsCard() {
               ].map((item, i) => (
                 <div
                   key={i}
-                  className="border border-[#f8c4d9] rounded-xl p-5 bg-white hover:shadow-md hover:-translate-y-1 transition-all"
+                  className="rounded-xl p-5 bg-white shadow-md hover:shadow-lg hover:-translate-y-1 transition-all"
                 >
-                  <h4 className="font-semibold mb-2 text-[#d63384]">{item.title}</h4>
-                  <p className="text-sm text-[#6c757d]">{item.desc}</p>
+                  <h4 className="font-semibold mb-2" style={{ color: deepPink }}>
+                    {item.title}
+                  </h4>
+                  <p className="text-sm text-gray-600">{item.desc}</p>
                 </div>
               ))}
             </div>
           </div>
 
           {/* Doctor Advice Note */}
-          <div className="bg-[#ffe3ec] border border-[#f8c4d9] rounded-xl p-5 text-center shadow-sm">
-            <p className="text-[#d63384] font-medium flex items-center gap-2">
+          <div
+            className="rounded-xl p-5 text-center shadow-md"
+            style={{ backgroundColor: pink }}
+          >
+            <p className="font-medium flex items-center gap-2 justify-center" style={{ color: deepPink }}>
               <User className="text-2xl" />
               Your doctor will help you choose the safest and most effective option
               based on your symptoms and fertility plans.
