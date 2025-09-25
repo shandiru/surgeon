@@ -83,6 +83,24 @@ export default function Footer() {
                   <circle cx="12" cy="11" r="2.5" />
                 </svg>
               </a>
+
+              {/* Twitter / X */}
+              <a
+                href="https://x.com/ketan_gajjar20?lang=en"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white p-2 rounded-md hover:bg-pink-50 hover:shadow-[0_0_10px_rgba(255,75,139,0.5)] transition"
+                aria-label="Twitter"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5 text-[#FF4B8B]"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path d="M18.244 2H21.5l-7.397 8.445L22 22h-7.184l-5.59-7.358L3.5 22H.25l7.89-9L2 2h7.25l5.106 6.732L18.244 2zM16.9 20h2.1L7.2 4H5.1L16.9 20z" />
+                </svg>
+              </a>
             </div>
           </div>
 

@@ -7,7 +7,7 @@ import Experience from "../components/HomePage/Experience";
 import Expertise from "../components/HomePage/Expertise";
 import EducationLanguagesSection from "../components/HomePage/EducationLanguagesSection";
 import GetInTouchSection from "../components/HomePage/GetInTouchSection";
-
+import ExperienceImage from "../components/HomePage/ExperienceImage"
 export default function Home() {
   return (
     <div>
@@ -29,6 +29,9 @@ export default function Home() {
       {/* Experience */}
       <section id="experience" className=" bg-gray-50">
         <Experience />
+      </section>
+      <section>
+        <ExperienceImage />
       </section>
 
       {/* Specialties / Expertise */}

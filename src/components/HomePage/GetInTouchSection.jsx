@@ -26,6 +26,7 @@ export default function GetInTouchSection() {
       title: 'Park Hospital',
       subtitle: 'Private Consultations',
       btn: 'Book Private Appointment',
+      link: 'https://www.circlehealthgroup.co.uk/online-booking?consultant=C6083162', // 🔗 Replace with real booking link
       icon: (
         <>
           <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
@@ -95,7 +96,17 @@ export default function GetInTouchSection() {
               </h3>
               <p className="text-gray-600 text-sm mb-4">{card.subtitle}</p>
 
-              {card.variant === 'outline' ? (
+              {/* Button / Link */}
+              {card.link ? (
+                <a
+                  href={card.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-all w-full px-4 py-2 bg-[#FF4B8B] hover:bg-[#ff5d96] text-white"
+                >
+                  {card.btn}
+                </a>
+              ) : card.variant === 'outline' ? (
                 <button className="inline-flex items-center justify-center rounded-md border text-sm font-medium transition-all w-full px-4 py-2 bg-transparent text-[#FF4B8B] border-[#FF4B8B] hover:bg-[#FFE3EC]">
                   {card.btn}
                 </button>

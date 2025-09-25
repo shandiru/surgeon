@@ -69,6 +69,16 @@ export default function EducationLanguagesSection() {
             data-aos="fade-left"
             data-aos-delay="300"
           >
+            {/* Doctor Image */}
+            <div className="flex justify-center mb-6">
+              <img
+                src="/new-doctor.png" // <-- உங்கள் doctor image path
+                alt="Doctor"
+                className="w-32 h-32 object-cover rounded-full border-4 border-[#FF4B8B]/30 shadow-md"
+                data-aos="zoom-in"
+              />
+            </div>
+
             <div className="text-center pb-6">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
