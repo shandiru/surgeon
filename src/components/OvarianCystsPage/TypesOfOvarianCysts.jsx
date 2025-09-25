@@ -87,7 +87,7 @@ const OvarianCystsCard = () => {
   );
 
   return (
-    <div className="bg-[#FEE6EA] text-[#BB125B] flex flex-col gap-6 rounded-xl p-6 shadow-lg">
+    <div className="bg-[#FEE6EA] text-[#FF4B8B] flex flex-col gap-6 rounded-xl p-6 shadow-lg">
       {/* Header */}
       <div className="pb-4 border-b border-[#FF4B8B]/30">
         <div className="font-semibold flex items-center gap-3 text-2xl">

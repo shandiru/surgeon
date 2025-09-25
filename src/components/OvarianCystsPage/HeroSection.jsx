@@ -9,13 +9,13 @@ export default function HeroSection() {
 
       <div className="relative max-w-4xl mx-auto px-6 py-16 text-center">
         {/* Tagline */}
-        <div className="inline-flex items-center gap-2 bg-[#FF4B8B]/10 text-[#BB125B] px-4 py-2 rounded-full text-sm font-medium mb-6">
+        <div className="inline-flex items-center gap-2 bg-[#FF4B8B]/10 text-[#FF4B8B] px-4 py-2 rounded-full text-sm font-medium mb-6">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="w-4 h-4"
             fill="none"
             viewBox="0 0 24 24"
-            stroke="#BB125B"
+            stroke="#FF4B8B"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -26,7 +26,7 @@ export default function HeroSection() {
         </div>
 
         {/* Heading */}
-        <h1 className="text-4xl md:text-6xl font-bold text-[#BB125B] mb-6">
+        <h1 className="text-4xl md:text-6xl font-bold text-[#FF4B8B] mb-6">
           Understanding Ovarian Cysts
         </h1>
 

@@ -8,7 +8,7 @@ export default function SupportSelfCare() {
       {/* Section Header */}
       <div className="flex items-center gap-3 mb-8">
         <Users className="h-7 w-7 text-[#FF4B8B]" />
-        <h2 className="text-3xl font-bold text-[#BB125B]">Support &amp; Self-Care</h2>
+        <h2 className="text-3xl font-bold text-[#FF4B8B]">Support &amp; Self-Care</h2>
       </div>
 
       {/* Grid Section */}

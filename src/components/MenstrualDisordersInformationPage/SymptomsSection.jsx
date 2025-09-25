@@ -21,7 +21,7 @@ export default function SymptomsSection() {
           <path d="M12 9v4" />
           <path d="M12 17h.01" />
         </svg>
-        <h2 className="text-3xl font-bold text-[#c2185b]">Symptoms to Watch For</h2>
+        <h2 className="text-3xl font-bold text-[#FF4B8B]">Symptoms to Watch For</h2>
       </div>
 
       {/* Cards Grid */}

@@ -14,7 +14,7 @@ const HysteroscopyGuide = ({ activeButton }) => {
         <Heart className="w-5 h-5 text-primary" />
         <span className="text-primary font-medium">Medical Education</span>
       </div>
-      <h1 className="text-3xl sm:text-4xl font-bold text-[#d60d64] mb-4">Understanding Hysteroscopy</h1>
+      <h1 className="text-3xl sm:text-4xl font-bold text-[#FF4B8B] mb-4">Understanding Hysteroscopy</h1>
       <p className="text-lg sm:text-xl text-muted-foreground text-[#d60d64] mb-6">What it is, why it's done, and what to expect</p>
 
       {/* Progress Section */}

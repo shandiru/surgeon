@@ -13,7 +13,7 @@ const PelvicHeader = () => {
         </div>
 
         {/* Title */}
-        <h1 className="text-4xl text-[#d60d64] md:text-5xl font-bold text-balance mb-4 text-foreground">
+        <h1 className="text-4xl text-[#FF4B8B] md:text-5xl font-bold text-balance mb-4 text-foreground">
           Understanding Pelvic Pain
         </h1>
 

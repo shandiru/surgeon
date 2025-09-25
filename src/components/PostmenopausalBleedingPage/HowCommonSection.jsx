@@ -6,7 +6,7 @@ export default function HowCommonSection() {
       <div className="bg-white text-[#1F2937] flex flex-col gap-6 rounded-2xl shadow-md py-8 max-w-3xl mx-auto transition hover:shadow-lg">
         {/* Card Header */}
         <div className="px-6">
-          <div className="flex items-center gap-2 text-2xl font-bold text-[#BB125B]">
+          <div className="flex items-center gap-2 text-2xl font-bold text-[#FF4B8B]">
              How Common Is It?
           </div>
         </div>

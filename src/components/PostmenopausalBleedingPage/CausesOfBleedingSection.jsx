@@ -7,7 +7,7 @@ export default function CausesOfBleedingSection() {
         
         {/* Card Header */}
         <div className="px-6 text-center md:text-left">
-          <h2 className="font-bold flex items-center justify-center md:justify-start gap-2 text-2xl text-[#BB125B]">
+          <h2 className="font-bold flex items-center justify-center md:justify-start gap-2 text-2xl text-[#FF4B8B]">
             Causes of Postmenopausal Bleeding
           </h2>
           <p className="text-sm text-[#6B7280] mt-2">
@@ -32,7 +32,7 @@ export default function CausesOfBleedingSection() {
 
             {/* Common Benign Causes */}
             <div className="space-y-3 rounded-xl bg-gradient-to-br from-[#fef6f9] to-[#fff] p-5 shadow-sm">
-              <div className="inline-flex items-center gap-2 text-sm font-semibold text-[#BB125B] mb-2">
+              <div className="inline-flex items-center gap-2 text-sm font-semibold text-[#FF4B8B] mb-2">
                  Common Benign Causes
               </div>
               <ul className="space-y-2 text-sm text-[#374151] list-disc list-inside">

@@ -16,10 +16,10 @@ const PelvicPainAlert = () => {
       role="alert"
       className="relative w-full rounded-lg  px-4 py-3 text-[#d60d64] bg-[#FF4B8B]/10 max-w-5xl mx-auto mb-10 text-sm grid has-[&gt;svg]:grid-cols-[calc(var(--spacing)*4)_1fr] grid-cols-[0_1fr] has-[&gt;svg]:gap-x-3 gap-y-0.5 items-start [&amp;&gt;svg]:size-4 [&amp;&gt;svg]:translate-y-0.5 [&amp;&gt;svg]:text-current text-card-foreground border-destructive/50 bg-destructive/5 hover:z-50 transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:scale-105 active:scale-100"
     >
-      <TriangleAlert className="lucide lucide-triangle-alert h-5 w-5 mt-1 text-black text-destructive" />
+      <TriangleAlert className="lucide lucide-triangle-alert h-5 w-5 mt-1 text-[#FF4B8B] text-destructive" />
       <div data-slot="alert-description" className="text-muted-foreground col-start-2 grid justify-items-start gap-1 text-sm [&amp;_p]:leading-relaxed">
         <div className="space-y-4">
-          <h3 className="font-semibold text-lg text-destructive ml-8">When to See a Doctor</h3>
+          <h3 className="font-semibold text-lg text-[#FF4B8B] ml-8">When to See a Doctor</h3>
           <div>
 
           </div>

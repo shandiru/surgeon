@@ -6,7 +6,7 @@ const MenstrualHelpSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
           {/* Heading */}
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#4B1C1C] leading-snug">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#FF4B8B] leading-snug">
             You don't have to struggle through menstrual problems
           </h2>
 

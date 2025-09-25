@@ -5,7 +5,7 @@ export default function RememberSection() {
   return (
     <section className="py-16 px-6 md:px-12">
       <div className="text-center bg-gradient-to-r from-[#FEE6EA] to-[#fff5f9] rounded-2xl p-10 shadow-md hover:shadow-lg transition-shadow">
-        <h2 className="text-3xl font-bold mb-4 text-[#BB125B]">
+        <h2 className="text-3xl font-bold mb-4 text-[#FF4B8B]">
           Remember: You Don't Have to Suffer in Silence
         </h2>
 

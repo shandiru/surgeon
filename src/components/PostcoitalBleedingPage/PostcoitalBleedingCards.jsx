@@ -58,7 +58,7 @@ export default function PostcoitalBleedingCards() {
               </svg>
 
               {/* Title */}
-              <div className="font-semibold text-lg text-[#BB125B]">
+              <div className="font-semibold text-lg text-[#FF4B8B]">
                 {card.title}
               </div>
 

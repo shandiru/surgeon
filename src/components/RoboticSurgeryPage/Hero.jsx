@@ -11,7 +11,7 @@ export default function RoboticSurgeryHero() {
         <div className="grid md:grid-cols-2 gap-10 items-center">
           {/* Left Text Content */}
           <div className="text-center md:text-left space-y-6">
-            <h1 className="text-4xl md:text-5xl font-bold text-[#B51252] leading-tight">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#FF4B8B] leading-tight">
               Robotic Surgery in Gynecology
             </h1>
             <p className="text-xl md:text-2xl text-[#B51252]/80">
