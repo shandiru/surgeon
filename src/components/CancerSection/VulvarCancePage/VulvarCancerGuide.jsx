@@ -31,11 +31,11 @@ const VulvarCancerPage = () => {
           <div className="mb-8 lg:mb-0 text-center lg:text-left">
             <div
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium mb-6"
-              style={{ backgroundColor: "#b03b66", color: "#fff" }}
+              style={{ backgroundColor: "#FF4B8B", color: "#fff" }}
             >
               <FaHeartbeat className="h-4 w-4" /> Medical Information Guide
             </div>
-            <h1 className="text-3xl lg:text-5xl font-bold text-[#b03b66] mb-6">
+            <h1 className="text-3xl lg:text-5xl font-bold text-[#FF4B8B] mb-6">
               Vulvar Cancer
             </h1>
             <p className="text-lg lg:text-xl text-[#7a2f4f] leading-relaxed">
@@ -57,7 +57,7 @@ const VulvarCancerPage = () => {
         <div className="relative">
           <div
             className="absolute left-8 top-0 bottom-0 w-0.5 hidden lg:block"
-            style={{ backgroundColor: "#b03b66" }}
+            style={{ backgroundColor: "#FF4B8B" }}
           ></div>
 
           {/* Step 1: Symptoms */}
@@ -152,7 +152,7 @@ const VulvarCancerPage = () => {
         {/* Disclaimer */}
         <div
           className="text-center mt-20 p-8 rounded-2xl"
-          style={{ backgroundColor: "#b03b66" }}
+          style={{ backgroundColor: "#FF4B8B" }}
           data-aos="fade-up"
         >
           <p className="text-white text-lg leading-relaxed max-w-3xl mx-auto">
@@ -177,7 +177,7 @@ const StepCard = ({
   treatments,
 }) => {
   const primaryPink = "#FFC5D3";
-  const deepPink = "#b03b66";
+  const deepPink = "#FF4B8B";
 
   return (
     <div className="relative mb-20" data-aos="fade-up">
@@ -203,7 +203,7 @@ const StepCard = ({
               >
                 {step}
               </span>
-              <h2 className="text-3xl font-bold text-[#b03b66] mt-2">{title}</h2>
+              <h2 className="text-3xl font-bold text-[#FF4B8B] mt-2">{title}</h2>
             </div>
 
             {description && (
@@ -243,7 +243,7 @@ const StepCard = ({
             {subsections &&
               subsections.map((section, i) => (
                 <div key={i} className="space-y-6 mt-8">
-                  <h3 className="text-xl font-semibold text-[#b03b66]">
+                  <h3 className="text-xl font-semibold text-[#FF4B8B]">
                     {section.title}
                   </h3>
                   <div className="space-y-4">
@@ -260,7 +260,7 @@ const StepCard = ({
                           {item.icon}
                         </div>
                         <div>
-                          <h4 className="text-lg font-semibold text-[#b03b66] mb-2">
+                          <h4 className="text-lg font-semibold text-[#FF4B8B] mb-2">
                             {item.heading}
                           </h4>
                           <p className="text-[#7a2f4f]">{item.text}</p>
@@ -297,7 +297,7 @@ const StepCard = ({
                     >
                       1
                     </div>
-                    <h3 className="text-xl font-semibold text-[#b03b66]">
+                    <h3 className="text-xl font-semibold text-[#FF4B8B]">
                       Surgery (Primary Treatment)
                     </h3>
                   </div>
@@ -308,7 +308,7 @@ const StepCard = ({
                         className="p-6 bg-white rounded-xl border transition-all duration-300 active:bg-[#FFF5F8] active:shadow-lg hover:bg-[#FFF5F8] hover:shadow-lg"
                         style={{ borderColor: primaryPink }}
                       >
-                        <h4 className="text-lg font-semibold text-[#b03b66] mb-2">
+                        <h4 className="text-lg font-semibold text-[#FF4B8B] mb-2">
                           {s.heading}
                         </h4>
                         <p className="text-[#7a2f4f]">{s.text}</p>
@@ -325,7 +325,7 @@ const StepCard = ({
                     >
                       2
                     </div>
-                    <h3 className="text-xl font-semibold text-[#b03b66]">
+                    <h3 className="text-xl font-semibold text-[#FF4B8B]">
                       Additional Treatments
                     </h3>
                   </div>
@@ -343,7 +343,7 @@ const StepCard = ({
                           {a.icon}
                         </div>
                         <div>
-                          <h4 className="text-lg font-semibold text-[#b03b66] mb-2">
+                          <h4 className="text-lg font-semibold text-[#FF4B8B] mb-2">
                             {a.heading}
                           </h4>
                           <p className="text-[#7a2f4f]">{a.text}</p>

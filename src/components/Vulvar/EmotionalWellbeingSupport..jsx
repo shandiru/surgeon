@@ -4,28 +4,28 @@ import { Heart, Shield, MessageCircle, Users } from 'lucide-react'
 const cards = [
   {
     id: 1,
-    icon: <Heart className="w-10 h-10 mx-auto mb-4" style={{ color: '#b03b66' }} />,
+    icon: <Heart className="w-10 h-10 mx-auto mb-4" style={{ color: '#FF4B8B' }} />,
     title: "It's Normal to Feel Worried",
     description:
       'Lumps on intimate areas can feel worrying or embarrassing - these feelings are completely normal and valid.',
   },
   {
     id: 2,
-    icon: <Shield className="w-10 h-10 mx-auto mb-4" style={{ color: '#b03b66' }} />,
+    icon: <Shield className="w-10 h-10 mx-auto mb-4" style={{ color: '#FF4B8B' }} />,
     title: 'Most Are Harmless',
     description:
       'The vast majority of lumps are not cancer and are easily treatable or resolve on their own.',
   },
   {
     id: 3,
-    icon: <MessageCircle className="w-10 h-10 mx-auto mb-4" style={{ color: '#b03b66' }} />,
+    icon: <MessageCircle className="w-10 h-10 mx-auto mb-4" style={{ color: '#FF4B8B' }} />,
     title: 'Ask Questions',
     description:
       "It's okay to ask questions and get reassurance from your healthcare provider - we are here to help.",
   },
   {
     id: 4,
-    icon: <Users className="w-10 h-10 mx-auto mb-4" style={{ color: '#b03b66' }} />,
+    icon: <Users className="w-10 h-10 mx-auto mb-4" style={{ color: '#FF4B8B' }} />,
     title: "You're Not Alone",
     description:
       'Many people experience similar concerns. Support groups and resources are available.',
@@ -34,7 +34,7 @@ const cards = [
 
 const EmotionalWellbeingSupport = () => {
   const pink = '#FFC5D3'
-  const deepPink = '#b03b66'
+  const deepPink = '#FF4B8B'
 
   return (
     <section className="py-16 bg-white">

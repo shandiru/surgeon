@@ -4,21 +4,21 @@ import { Heart, Shield, Users } from 'lucide-react'
 const cards = [
   {
     id: 1,
-    icon: <Heart className="w-12 h-12 mx-auto mb-4" style={{ color: '#b03b66' }} />,
+    icon: <Heart className="w-12 h-12 mx-auto mb-4" style={{ color: '#FF4B8B' }} />,
     title: 'Common & Normal',
     description:
       'Lumps are very common at all ages and most are completely harmless',
   },
   {
     id: 2,
-    icon: <Shield className="w-12 h-12 mx-auto mb-4" style={{ color: '#b03b66' }} />,
+    icon: <Shield className="w-12 h-12 mx-auto mb-4" style={{ color: '#FF4B8B' }} />,
     title: 'Professional Care',
     description:
       'Getting checked by a healthcare provider gives peace of mind',
   },
   {
     id: 3,
-    icon: <Users className="w-12 h-12 mx-auto mb-4" style={{ color: '#b03b66' }} />,
+    icon: <Users className="w-12 h-12 mx-auto mb-4" style={{ color: '#FF4B8B' }} />,
     title: "You're Not Alone",
     description:
       'Many people experience this - support and information are available',
@@ -27,7 +27,7 @@ const cards = [
 
 const VulvarVaginalLumpsSection = () => {
   const pink = '#FFC5D3'
-  const deepPink = '#b03b66'
+  const deepPink = '#FF4B8B'
 
   return (
     <div className="container mx-auto px-4">

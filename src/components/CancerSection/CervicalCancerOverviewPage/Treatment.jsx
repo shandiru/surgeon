@@ -19,12 +19,12 @@ export default function CervicalCancerTreatment() {
         <div className="relative bg-[#fff5f8] text-[#4b1e30] rounded-xl shadow-sm px-6 py-8 mt-4 overflow-hidden border border-[#f5c2d2]">
 
           {/* Left Border Decoration */}
-          <div className="absolute top-0 left-0 h-full w-[6px] bg-[#b03b66] rounded-bl-2xl"></div>
+          <div className="absolute top-0 left-0 h-full w-[6px] bg-[#FF4B8B] rounded-bl-2xl"></div>
 
           {/* Header */}
           <div data-aos="fade-left">
-            <div className="flex items-center gap-2 text-xl font-semibold text-[#b03b66] mb-4">
-              <LuScissors className="w-6 h-6 text-[#b03b66]" />
+            <div className="flex items-center gap-2 text-xl font-semibold text-[#FF4B8B] mb-4">
+              <LuScissors className="w-6 h-6 text-[#FF4B8B]" />
               How is Cervical Cancer Treated?
             </div>
           </div>
@@ -41,12 +41,12 @@ export default function CervicalCancerTreatment() {
                   "Your overall health and personal needs",
                 ].map((text, i) => (
                   <div key={i} className="flex items-center gap-2 ">
-                    <div className="w-1.5 h-1.5 bg-[#b03b66] rounded-full"></div>
+                    <div className="w-1.5 h-1.5 bg-[#FF4B8B] rounded-full"></div>
                     <span>{text}</span>
                   </div>
                 ))}
               </div>
-              <p className="text-sm font-medium mt-3 text-[#b03b66]">
+              <p className="text-sm font-medium mt-3 text-[#FF4B8B]">
                 Our goal is to treat the cancer while tailoring care to you.
               </p>
             </div>
@@ -54,8 +54,8 @@ export default function CervicalCancerTreatment() {
 
           {/* Surgery Section */}
           <div className="mt-10" data-aos="fade-up">
-            <h3 className="font-semibold text-lg mb-4 flex items-center gap-2 text-[#b03b66]">
-              <LuScissors className="w-5 h-5 text-[#b03b66]" />
+            <h3 className="font-semibold text-lg mb-4 flex items-center gap-2 text-[#FF4B8B]">
+              <LuScissors className="w-5 h-5 text-[#FF4B8B]" />
               1. Surgery (Often the First Step)
             </h3>
             <div className="grid gap-4">
@@ -85,9 +85,9 @@ export default function CervicalCancerTreatment() {
                   key={idx}
                   className="flex gap-3 p-4 bg-white rounded-lg border border-[#f5c2d2] transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]"
                 >
-                  <div className="w-2 h-2 bg-[#b03b66] rounded-full mt-2 flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-[#FF4B8B] rounded-full mt-2 flex-shrink-0"></div>
                   <div>
-                    <h4 className="font-medium text-[#b03b66]">{item.title}</h4>
+                    <h4 className="font-medium text-[#FF4B8B]">{item.title}</h4>
                     <p className="text-sm text-[#7a2f4f] mt-1">– {item.desc}</p>
                   </div>
                 </div>
@@ -97,8 +97,8 @@ export default function CervicalCancerTreatment() {
 
           {/* Combination Treatments */}
           <div className="mt-10" data-aos="fade-up">
-            <h3 className="font-semibold text-lg mb-4 flex items-center gap-2 text-[#b03b66]">
-              <LuZap className="w-5 h-5 text-[#b03b66]" />
+            <h3 className="font-semibold text-lg mb-4 flex items-center gap-2 text-[#FF4B8B]">
+              <LuZap className="w-5 h-5 text-[#FF4B8B]" />
               2. Combination Treatments
             </h3>
             <p className="text-[#7a2f4f] mb-4">
@@ -123,9 +123,9 @@ export default function CervicalCancerTreatment() {
                   key={idx}
                   className="flex gap-3 p-4 bg-white rounded-lg border border-[#f5c2d2] transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]"
                 >
-                  <div className="w-2 h-2 bg-[#b03b66] rounded-full mt-2 flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-[#FF4B8B] rounded-full mt-2 flex-shrink-0"></div>
                   <div>
-                    <h4 className="font-medium text-[#b03b66]">{item.title}</h4>
+                    <h4 className="font-medium text-[#FF4B8B]">{item.title}</h4>
                     <p className="text-sm text-[#7a2f4f] mt-1">– {item.desc}</p>
                   </div>
                 </div>
@@ -135,13 +135,13 @@ export default function CervicalCancerTreatment() {
 
           {/* Recovery and Support */}
           <div className="mt-10" data-aos="fade-up">
-            <h3 className="font-semibold text-lg mb-4 flex items-center gap-2 text-[#b03b66]">
-              <LuShield className="w-5 h-5 text-[#b03b66]" />
+            <h3 className="font-semibold text-lg mb-4 flex items-center gap-2 text-[#FF4B8B]">
+              <LuShield className="w-5 h-5 text-[#FF4B8B]" />
               3. Recovery & Support
             </h3>
             <div className="space-y-4">
               <div className="p-4 bg-white rounded-lg border border-[#f5c2d2] transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]">
-                <h4 className="font-medium text-[#b03b66] mb-2">
+                <h4 className="font-medium text-[#FF4B8B] mb-2">
                   Enhanced Recovery Programs
                 </h4>
                 <p className="text-sm text-[#7a2f4f]">
@@ -149,7 +149,7 @@ export default function CervicalCancerTreatment() {
                 </p>
               </div>
               <div className="p-4 bg-white rounded-lg border border-[#f5c2d2] transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]">
-                <h4 className="font-medium text-[#b03b66] mb-2">
+                <h4 className="font-medium text-[#FF4B8B] mb-2">
                   Multi-specialty Approach
                 </h4>
                 <p className="text-sm text-[#7a2f4f]">

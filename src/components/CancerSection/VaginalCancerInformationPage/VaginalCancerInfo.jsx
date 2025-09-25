@@ -7,7 +7,7 @@ import { FaStethoscope, FaMicroscope, FaPills, FaInfoCircle } from "react-icons/
 
 export default function VaginalCancerInfo() {
   const primaryPink = "#FFC5D3";
-  const deepPink = "#b03b66";
+  const deepPink = "#FF4B8B";
   const textSecondary = "#7a2f4f";
 
   useEffect(() => {
@@ -22,7 +22,7 @@ export default function VaginalCancerInfo() {
       <div className="max-w-4xl mx-auto px-4 py-12">
         {/* Header */}
         <div className="text-center mb-10" data-aos="fade-up">
-          <h1 className="text-4xl font-bold mb-4 text-[#b03b66]">Vaginal Cancer Information</h1>
+          <h1 className="text-4xl font-bold mb-4 text-[#FF4B8B]">Vaginal Cancer Information</h1>
           <p className="text-lg text-[#7a2f4f] max-w-2xl mx-auto">
             Comprehensive guide covering symptoms, diagnosis, and treatment options for vaginal cancer
           </p>
@@ -92,7 +92,7 @@ export default function VaginalCancerInfo() {
             <p className="text-[#7a2f4f] mb-4">
               Vaginal cancer may be detected during a routine pelvic exam before symptoms appear.
             </p>
-            <p className="text-[#b03b66] font-semibold mb-4">Diagnostic steps may include:</p>
+            <p className="text-[#FF4B8B] font-semibold mb-4">Diagnostic steps may include:</p>
             <div className="space-y-3">
               {[
                 {
@@ -118,7 +118,7 @@ export default function VaginalCancerInfo() {
                   style={{ borderColor: primaryPink }}
                   data-aos="fade-left"
                 >
-                  <strong className="text-[#b03b66]">{step.title}</strong>
+                  <strong className="text-[#FF4B8B]">{step.title}</strong>
                   <span className="text-[#7a2f4f]"> – {step.desc}</span>
                 </div>
               ))}
@@ -149,7 +149,7 @@ export default function VaginalCancerInfo() {
               Treatment depends on the type, stage, spread, and your overall health.
             </p>
 
-            <h3 className="text-lg font-semibold text-[#b03b66] mb-3">
+            <h3 className="text-lg font-semibold text-[#FF4B8B] mb-3">
               1. Surgery (Often the Primary Treatment)
             </h3>
             <div className="space-y-3 mb-4">
@@ -157,14 +157,14 @@ export default function VaginalCancerInfo() {
                 className="border rounded-md px-4 py-3 shadow-sm bg-white transition duration-300 hover:shadow-md"
                 style={{ borderColor: primaryPink }}
               >
-                <strong className="text-[#b03b66]">Vaginectomy</strong>
+                <strong className="text-[#FF4B8B]">Vaginectomy</strong>
                 <span> – Removal of part or all of the vagina; may include nearby lymph nodes. Reconstruction with tissue grafts can restore vaginal function.</span>
               </div>
               <div
                 className="border rounded-md px-4 py-3 shadow-sm bg-white transition duration-300 hover:shadow-md"
                 style={{ borderColor: primaryPink }}
               >
-                <strong className="text-[#b03b66]">Hysterectomy</strong>
+                <strong className="text-[#FF4B8B]">Hysterectomy</strong>
                 <span> – Removal of the uterus and sometimes ovaries, fallopian tubes, and lymph nodes; often combined with vaginectomy for advanced cases.</span>
               </div>
             </div>
@@ -178,7 +178,7 @@ export default function VaginalCancerInfo() {
               </p>
             </div>
 
-            <h3 className="text-lg font-semibold text-[#b03b66] mb-3">
+            <h3 className="text-lg font-semibold text-[#FF4B8B] mb-3">
               2. Combination Treatments
             </h3>
             <p className="mb-3">In some cases, surgery may be combined with:</p>
@@ -187,14 +187,14 @@ export default function VaginalCancerInfo() {
                 className="border rounded-md px-4 py-3 shadow-sm bg-white transition duration-300 hover:shadow-md"
                 style={{ borderColor: primaryPink }}
               >
-                <strong className="text-[#b03b66]">Radiation therapy</strong>
+                <strong className="text-[#FF4B8B]">Radiation therapy</strong>
                 <span> – Targeted energy to destroy cancer cells</span>
               </div>
               <div
                 className="border rounded-md px-4 py-3 shadow-sm bg-white transition duration-300 hover:shadow-md"
                 style={{ borderColor: primaryPink }}
               >
-                <strong className="text-[#b03b66]">Chemotherapy</strong>
+                <strong className="text-[#FF4B8B]">Chemotherapy</strong>
                 <span> – Drugs to kill or slow cancer growth</span>
               </div>
             </div>

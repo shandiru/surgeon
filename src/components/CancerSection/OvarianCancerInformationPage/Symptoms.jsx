@@ -21,7 +21,7 @@ const symptoms = [
 
 export default function OvarianCancerSymptoms() {
   const pink = '#FFC5D3'
-  const deepPink = '#b03b66'
+  const deepPink = '#FF4B8B'
 
   useEffect(() => {
     AOS.init({
@@ -38,7 +38,7 @@ export default function OvarianCancerSymptoms() {
         <div className="text-center mb-10" data-aos="fade-up">
           <div className="flex items-center justify-center gap-2 mb-4">
             <FaExclamationTriangle className="h-8 w-8" style={{ color: deepPink }} />
-            <h3 className="text-3xl font-bold text-[#b03b66]">Symptoms of Ovarian Cancer</h3>
+            <h3 className="text-3xl font-bold text-[#FF4B8B]">Symptoms of Ovarian Cancer</h3>
           </div>
           <p className="text-[#7a2f4f] text-lg">
             Ovarian cancer can cause a variety of symptoms. Some of the most common include:
@@ -50,7 +50,7 @@ export default function OvarianCancerSymptoms() {
           {symptoms.map((symptom, index) => (
             <div
               key={index}
-              className="bg-white text-[#b03b66] rounded-xl p-5 shadow-md cursor-pointer 
+              className="bg-white text-[#FF4B8B] rounded-xl p-5 shadow-md cursor-pointer 
                          transition duration-300 ease-in-out 
                          hover:shadow-xl hover:-translate-y-2 active:scale-[0.98]"
               data-aos="fade-up"

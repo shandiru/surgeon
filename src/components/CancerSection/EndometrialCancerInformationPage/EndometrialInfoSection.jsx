@@ -7,7 +7,7 @@ import { FiPhone } from 'react-icons/fi'
 
 export default function EndometrialInfoSection() {
   const pink = '#FFC5D3'      // main pink
-  const deepPink = '#b03b66'  // brand text color
+  const deepPink = '#FF4B8B'  // brand text color
   const pinkHover = '#f5a9bd' // hover shade
   const pinkActive = '#e191af' // active shade
 

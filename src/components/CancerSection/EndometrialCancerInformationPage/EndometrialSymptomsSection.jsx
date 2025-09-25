@@ -8,7 +8,7 @@ import { LuTriangleAlert } from 'react-icons/lu'
 
 export default function EndometrialSymptomsSection() {
   const pink = '#FFC5D3'
-  const deepPink = '#b03b66' // stronger deep pink for headings and important text
+  const deepPink = '#FF4B8B' // stronger deep pink for headings and important text
 
   useEffect(() => {
     AOS.init({

@@ -4,7 +4,7 @@ import { BookOpen, Users } from 'lucide-react'
 
 export default function UnderstandingFibroidsSection() {
   const pink = '#FFC5D3'
-  const deepPink = '#b03b66'
+  const deepPink = '#FF4B8B'
 
   return (
     <section

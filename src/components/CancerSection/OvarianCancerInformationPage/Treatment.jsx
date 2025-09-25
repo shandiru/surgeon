@@ -34,7 +34,7 @@ const treatments = [
 
 export default function OvarianCancerTreatment() {
   const pink = '#FFC5D3'
-  const deepPink = '#b03b66'
+  const deepPink = '#FF4B8B'
 
   useEffect(() => {
     AOS.init({
@@ -58,7 +58,7 @@ export default function OvarianCancerTreatment() {
           <p className="text-[#7a2f4f] text-lg">
             Treatment depends on the type of ovarian cancer, your overall health, and fertility considerations.
           </p>
-          <p className="text-[#b03b66] font-semibold text-lg mt-4">
+          <p className="text-[#FF4B8B] font-semibold text-lg mt-4">
             The main goal is to remove the cancer whenever possible.
           </p>
         </div>

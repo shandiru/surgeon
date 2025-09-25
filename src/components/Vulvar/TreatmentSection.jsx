@@ -13,7 +13,7 @@ const cards = [
       "Imaging scans (transvaginal or abdominal ultrasound)",
       "Biopsy (small tissue sample) if needed to rule out cancer",
     ],
-    icon: <Stethoscope className="w-6 h-6" style={{ color: "#b03b66" }} />,
+    icon: <Stethoscope className="w-6 h-6" style={{ color: "#FF4B8B" }} />,
     tag: "Professional Care",
   },
   {
@@ -25,7 +25,7 @@ const cards = [
       "Drainage of cysts when necessary",
       "Removal of warts or polyps if problematic",
     ],
-    icon: <Pill className="w-6 h-6" style={{ color: "#b03b66" }} />,
+    icon: <Pill className="w-6 h-6" style={{ color: "#FF4B8B" }} />,
     tag: "As Needed",
   },
   {
@@ -37,7 +37,7 @@ const cards = [
       "Avoid shaving or friction on the affected area",
       "Avoid sexual contact if lump is painful or infected",
     ],
-    icon: <House className="w-6 h-6" style={{ color: "#b03b66" }} />,
+    icon: <House className="w-6 h-6" style={{ color: "#FF4B8B" }} />,
     tag: "Home Care",
   },
   {
@@ -49,14 +49,14 @@ const cards = [
       "You can request a chaperone during appointments",
       "Early STI treatment prevents complications",
     ],
-    icon: <Users className="w-6 h-6" style={{ color: "#b03b66" }} />,
+    icon: <Users className="w-6 h-6" style={{ color: "#FF4B8B" }} />,
     tag: "Ongoing Support",
   },
 ]
 
 const TreatmentAndHomeCare = () => {
   const pink = '#FFC5D3'
-  const deepPink = '#b03b66'
+  const deepPink = '#FF4B8B'
 
   return (
     <section id="treatment" className="py-16 bg-white">

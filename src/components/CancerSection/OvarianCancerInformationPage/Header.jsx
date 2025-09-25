@@ -21,7 +21,7 @@ export default function OvarianCancerHeader() {
           className="flex-1 text-center md:text-left space-y-6"
           data-aos="fade-up"
         >
-          <h2 className="text-4xl md:text-5xl font-bold leading-snug text-[#b03b66]">
+          <h2 className="text-4xl md:text-5xl font-bold leading-snug text-[#FF4B8B]">
             Ovarian Cancer Information
           </h2>
           <p className="text-lg md:text-xl leading-relaxed text-[#7a2f4f]">

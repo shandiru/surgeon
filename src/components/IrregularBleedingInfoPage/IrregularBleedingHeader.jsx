@@ -6,7 +6,7 @@ export default function IrregularBleedingHeader() {
         
         {/* Left Content */}
         <div className="text-center md:text-left flex-1">
-          <h1 className="text-3xl md:text-4xl font-bold mb-4 [text-wrap:balance] leading-snug text-[#b03b66]">
+          <h1 className="text-3xl md:text-4xl font-bold mb-4 [text-wrap:balance] leading-snug text-[#FF4B8B]">
             Understanding Irregular Vaginal Bleeding
           </h1>
           <p className="text-lg md:text-xl [text-wrap:pretty] text-[#7a2f4f]">

@@ -4,25 +4,25 @@ import { TrendingUp, ShieldAlert, Clock, Phone, AlertCircle } from 'lucide-react
 const cardData = [
   {
     id: 1,
-    icon: <TrendingUp className="w-6 h-6" style={{ color: '#b03b66' }} />,
+    icon: <TrendingUp className="w-6 h-6" style={{ color: '#FF4B8B' }} />,
     title: 'Rapidly growing lump',
     description: 'Any lump that increases in size quickly over days or weeks',
   },
   {
     id: 2,
-    icon: <ShieldAlert className="w-6 h-6" style={{ color: '#b03b66' }} />,
+    icon: <ShieldAlert className="w-6 h-6" style={{ color: '#FF4B8B' }} />,
     title: 'Severe pain, fever or spreading redness',
     description: 'Signs of serious infection that need immediate treatment',
   },
   {
     id: 3,
-    icon: <ShieldAlert className="w-6 h-6" style={{ color: '#b03b66' }} />,
+    icon: <ShieldAlert className="w-6 h-6" style={{ color: '#FF4B8B' }} />,
     title: "Bleeding that won't stop",
     description: 'Persistent or heavy bleeding from the affected area',
   },
   {
     id: 4,
-    icon: <Clock className="w-6 h-6" style={{ color: '#b03b66' }} />,
+    icon: <Clock className="w-6 h-6" style={{ color: '#FF4B8B' }} />,
     title: 'Lumps appearing after menopause',
     description: 'New lumps in post-menopausal women require prompt evaluation',
   },
@@ -30,7 +30,7 @@ const cardData = [
 
 const UrgentHelp = () => {
   const pink = '#FFC5D3'
-  const deepPink = '#b03b66'
+  const deepPink = '#FF4B8B'
 
   return (
     <section id="urgent-help" className="py-16 bg-white">

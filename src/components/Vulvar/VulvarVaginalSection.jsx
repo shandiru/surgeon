@@ -4,7 +4,7 @@ import { ChevronRight, Circle, CircleDashed, AlertCircle } from 'lucide-react'
 const VulvarVaginalSection = () => {
   const [openSections, setOpenSections] = useState({})
   const pink = '#FFC5D3'
-  const deepPink = '#b03b66'
+  const deepPink = '#FF4B8B'
 
   const handleToggle = (section) => {
     setOpenSections((prevState) => ({

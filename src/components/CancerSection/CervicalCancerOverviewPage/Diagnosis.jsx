@@ -45,11 +45,11 @@ export default function CervicalCancerDiagnosis() {
   return (
     <section className="py-12" data-aos="fade-up">
       <div className="max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
-        <div className="bg-[#fff5f8] text-[#4b1e30] flex flex-col gap-6 rounded-xl border border-[#f5a9bd] border-l-4 border-l-[#b03b66] shadow-sm py-6">
+        <div className="bg-[#fff5f8] text-[#4b1e30] flex flex-col gap-6 rounded-xl border border-[#f5a9bd] border-l-4 border-l-[#FF4B8B] shadow-sm py-6">
           
           {/* Header */}
           <div className="px-6 grid gap-1.5" data-aos="fade-left">
-            <div className="flex items-center gap-2 text-xl font-semibold text-[#b03b66]">
+            <div className="flex items-center gap-2 text-xl font-semibold text-[#FF4B8B]">
               <LuMicroscope className="w-6 h-6" />
               How is Cervical Cancer Diagnosed?
             </div>
@@ -71,7 +71,7 @@ export default function CervicalCancerDiagnosis() {
                     className="flex gap-4 p-4 bg-white border border-[#f5c2d2] rounded-lg transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]"
                     data-aos="fade-left"
                   >
-                    <div className="w-8 h-8 flex items-center justify-center rounded-full bg-[#FFC5D3] text-[#b03b66] text-sm font-bold flex-shrink-0">
+                    <div className="w-8 h-8 flex items-center justify-center rounded-full bg-[#FFC5D3] text-[#FF4B8B] text-sm font-bold flex-shrink-0">
                       {index + 1}
                     </div>
                     <div>

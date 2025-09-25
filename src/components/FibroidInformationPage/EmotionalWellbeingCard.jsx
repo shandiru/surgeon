@@ -2,7 +2,7 @@
 
 export default function EmotionalWellbeingCard() {
   const pink = "#FFC5D3"
-  const deepPink = "#b03b66"
+  const deepPink = "#FF4B8B"
 
   return (
     <section className="py-12 px-4 md:px-6 bg-white">

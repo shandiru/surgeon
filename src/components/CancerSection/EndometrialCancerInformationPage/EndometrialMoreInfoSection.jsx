@@ -7,7 +7,7 @@ import { LuPhone } from 'react-icons/lu';
 
 export default function MoreInfoSection() {
   const pink = '#FFC5D3';
-  const deepPink = '#b03b66';
+  const deepPink = '#FF4B8B';
 
   useEffect(() => {
     AOS.init({

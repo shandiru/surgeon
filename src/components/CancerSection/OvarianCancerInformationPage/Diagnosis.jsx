@@ -31,7 +31,7 @@ const tests = [
 
 export default function OvarianCancerDiagnosis() {
   const pink = '#FFC5D3'
-  const deepPink = '#b03b66'
+  const deepPink = '#FF4B8B'
 
   useEffect(() => {
     AOS.init({
@@ -48,7 +48,7 @@ export default function OvarianCancerDiagnosis() {
         <div className="text-center mb-12" data-aos="fade-up">
           <div className="flex items-center justify-center gap-2 mb-4">
             <FaStethoscope className="h-8 w-8" style={{ color: deepPink }} />
-            <h3 className="text-3xl font-bold text-[#b03b66]">
+            <h3 className="text-3xl font-bold text-[#FF4B8B]">
               Diagnosis of Ovarian Cancer
             </h3>
           </div>
@@ -67,7 +67,7 @@ export default function OvarianCancerDiagnosis() {
                          hover:shadow-xl hover:-translate-y-2 active:scale-[0.98] cursor-pointer"
               data-aos="fade-up"
             >
-              <div className="flex items-center gap-3 font-semibold text-[#b03b66]">
+              <div className="flex items-center gap-3 font-semibold text-[#FF4B8B]">
                 <span
                   className="w-8 h-8 flex items-center justify-center rounded-full border text-sm font-bold"
                   style={{ borderColor: pink, color: deepPink }}

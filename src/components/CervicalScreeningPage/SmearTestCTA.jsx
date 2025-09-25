@@ -5,7 +5,7 @@ export default function SmearTestCTA() {
       <div className="max-w-3xl mx-auto bg-white flex flex-col gap-6 rounded-2xl border border-[#ff97b3]/40 py-12 px-6 sm:px-12 shadow-md hover:shadow-xl transition">
         {/* Header */}
         <div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-4 leading-snug text-[#b03b66]">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-4 leading-snug text-[#FF4B8B]">
             Ready to Book Your Test?
           </h2>
           <p className="text-[#7a2f4f] text-base sm:text-lg">
@@ -17,7 +17,7 @@ export default function SmearTestCTA() {
         <div>
           <button
             type="button"
-            className="mt-4 inline-flex items-center justify-center gap-2 font-semibold transition-all h-12 rounded-full text-lg px-8 bg-[#ff97b3] text-white hover:bg-[#b03b66] hover:scale-105 active:scale-95 shadow-md"
+            className="mt-4 inline-flex items-center justify-center gap-2 font-semibold transition-all h-12 rounded-full text-lg px-8 bg-[#ff97b3] text-white hover:bg-[#FF4B8B] hover:scale-105 active:scale-95 shadow-md"
           >
             Schedule Your Screening Today
           </button>

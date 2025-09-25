@@ -4,7 +4,7 @@ import React from 'react'
 
 const Footer = () => {
   const pink = '#FFC5D3'
-  const deepPink = '#b03b66'
+  const deepPink = '#FF4B8B'
 
   return (
     <footer className="bg-white border-t" style={{ borderColor: pink }}>

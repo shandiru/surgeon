@@ -8,7 +8,7 @@ export default function SmearTestInfoCard() {
           {/* Left Content Card */}
           <div
             data-slot="card"
-            className="bg-white text-[#b03b66] flex flex-col gap-6 rounded-xl py-8 px-6 shadow-md 
+            className="bg-white text-[#FF4B8B] flex flex-col gap-6 rounded-xl py-8 px-6 shadow-md 
               transition duration-300 transform
               hover:scale-105 hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(176,59,102,0.25)]
               active:scale-105 active:-translate-y-2 active:shadow-[0_10px_30px_rgba(176,59,102,0.25)]"

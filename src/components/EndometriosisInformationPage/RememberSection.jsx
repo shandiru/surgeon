@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function RememberSection() {
   const pink = '#FFC5D3'
-  const deepPink = '#b03b66'
+  const deepPink = '#FF4B8B'
 
   return (
     <section className="py-16 bg-white">

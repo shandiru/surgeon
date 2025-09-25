@@ -15,7 +15,7 @@ const SymptomsSection = () => {
   })
 
   const pink = '#FFC5D3'
-  const deepPink = '#b03b66'
+  const deepPink = '#FF4B8B'
 
   const handleCheckboxChange = (e) => {
     const { id } = e.currentTarget
@@ -80,7 +80,7 @@ const SymptomsSection = () => {
                       onClick={handleCheckboxChange}
                       id={id}
                       className={`w-4 h-4 border rounded-sm mt-1 flex items-center justify-center ${
-                        symptoms[id] ? 'bg-[#b03b66] text-white' : 'bg-white border-gray-400'
+                        symptoms[id] ? 'bg-[#FF4B8B] text-white' : 'bg-white border-gray-400'
                       }`}
                     >
                       {symptoms[id] && (

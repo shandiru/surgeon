@@ -26,7 +26,7 @@ const DiagnosisSection = () => {
         <div className="max-w-4xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#b03b66] mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#FF4B8B] mb-4">
               How It&apos;s Diagnosed
             </h2>
             <p className="text-lg text-gray-700">
@@ -45,13 +45,13 @@ const DiagnosisSection = () => {
               >
                 <div className="flex items-start gap-6">
                   {/* Step Number */}
-                  <div className="w-12 h-12 bg-[#b03b66] text-white rounded-full flex items-center justify-center font-bold text-lg shadow-md">
+                  <div className="w-12 h-12 bg-[#FF4B8B] text-white rounded-full flex items-center justify-center font-bold text-lg shadow-md">
                     {index + 1}
                   </div>
 
                   {/* Content */}
                   <div>
-                    <h3 className="font-semibold text-xl text-[#b03b66] mb-2">
+                    <h3 className="font-semibold text-xl text-[#FF4B8B] mb-2">
                       {step.title}
                     </h3>
                     <p className="text-gray-600 leading-relaxed">

@@ -2,7 +2,7 @@ import { LuShield } from "react-icons/lu";
 
 export default function TreatmentSection() {
   const pink = "#FFC5D3";
-  const deepPink = "#b03b66";
+  const deepPink = "#FF4B8B";
 
   return (
     <section className="mb-16 px-4 md:px-6 lg:px-8">

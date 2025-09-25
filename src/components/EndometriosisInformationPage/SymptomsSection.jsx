@@ -2,7 +2,7 @@ import React from "react";
 import { Calendar, TriangleAlert, Heart, Users } from "lucide-react";
 
 const pink = "#FFC5D3";
-const deepPink = "#b03b66";
+const deepPink = "#FF4B8B";
 
 const symptoms = [
   {
