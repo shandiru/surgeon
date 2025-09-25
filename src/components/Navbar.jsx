@@ -221,14 +221,19 @@ const Navbar = () => {
               )}
             </div>
 
-            <Link to="#contact" className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">Contact</Link>
+           <a href="#contact" className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">Contact</a>
+
           </div>
 
           {/* Right: CTA Button */}
           <div className="hidden md:block">
-            <button className="ml-4 inline-flex items-center justify-center rounded-md text-xs font-bold transition-all shadow-xs h-9 px-4 py-3 bg-[#FFC5D3] hover:bg-[#FFC5D3] text-[#FF4B8B]">
-              Book Consultation
-            </button>
+            <a
+  href="#contact"
+  className="w-full mt-2 inline-flex items-center justify-center rounded-md text-sm font-medium transition-all shadow-xs h-9 px-4 py-2 bg-[#FFC5D3] hover:bg-[#FFC5D3] text-[#FF4B8B] mb-3"
+>
+  Book Consultation
+</a>
+
           </div>
         </div>
 
@@ -407,10 +412,15 @@ const Navbar = () => {
               </div>
             )}
 
-            <Link to="#contact" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900">Contact</Link>
-            <button className="w-full mt-2 inline-flex items-center justify-center rounded-md text-sm font-medium transition-all shadow-xs h-9 px-4 py-2 bg-[#FFC5D3] hover:bg-[#FFC5D3] text-[#FF4B8B] mb-3">
-              Book Consultation
-            </button>
+            <a href="#contact" className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">Contact</a>
+
+            <a
+  href="#contact"
+  className="w-full mt-2 inline-flex items-center justify-center rounded-md text-sm font-medium transition-all shadow-xs h-9 px-4 py-2 bg-[#FFC5D3] hover:bg-[#FFC5D3] text-[#FF4B8B] mb-3"
+>
+  Book Consultation
+</a>
+
           </div>
         )}
       </div>
