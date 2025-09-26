@@ -11,21 +11,22 @@ export default function ExperienceImage() {
 
   return (
     <div
-      className="w-full flex justify-center py-10 bg-white"
+      className="w-full flex justify-center py-6 sm:py-10 bg-white px-4"
       data-aos="fade-up"
       data-aos-anchor-placement="top-bottom"
     >
-      <div className="relative max-w-5xl w-full rounded-lg shadow-md overflow-hidden group">
+      <div className="relative w-full max-w-md sm:max-w-2xl md:max-w-4xl lg:max-w-5xl rounded-lg shadow-md overflow-hidden group">
         {/* Doctor Image */}
         <img
-          src="/experice.png" // 
+          src="/experice.png"
           alt="Doctor Professional"
-          className="w-full h-auto object-cover rounded-lg transition-transform duration-500 group-hover:scale-105"
+          className="w-full h-64 sm:h-80 md:h-auto object-cover rounded-lg transition-transform duration-500 group-hover:scale-105"
         />
 
-        {/* Pink Hover Overlay */}
+        {/* Pink Overlay */}
         <div
-          className="absolute inset-0 bg-[#FF4B8B]/40 opacity-0 group-hover:opacity-100 
+          className="absolute inset-0 bg-[#FF4B8B]/40 
+                     opacity-0 group-hover:opacity-100 sm:opacity-0
                      transition-opacity duration-500 rounded-lg"
         ></div>
       </div>
