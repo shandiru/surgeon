@@ -71,28 +71,27 @@ const Navbar = () => {
               </button>
               {isServicesOpen && (
                 <div className="absolute left-0 bg-white shadow-lg rounded-md mt-2 w-56 z-50">
-                  {/* your existing Links */}
-                  <Link to="/Cancer/Vulvar" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900" onClick={closeDropdowns}>Vulvar Cancer</Link>
-                  <Link to="/Cancer/VaginalCancer" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900" onClick={closeDropdowns}>Vaginal Cancer</Link>
-                  <Link to="/Cancer/OvarianCancer" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900" onClick={closeDropdowns}>Ovarian Cancer</Link>
-                  <Link to="/Cancer/EndometrialCancer" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900" onClick={closeDropdowns}>Endometrial Cancer</Link>
-                  <Link to="/Cancer/CervicalCancer" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900" onClick={closeDropdowns}>Cervical Cancer</Link>
-                  <Link to="/RoboticSurgery" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900" onClick={closeDropdowns}>Robotic Surgery</Link>
-                  <Link to="/CervicalScreening" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdowns}>Cervical Screening</Link>
-                  <Link to="/IrregularBleedingInfo" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdowns}>Irregular Bleeding</Link>
-                  <Link to="/EndometriosisInformation" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdowns}>Endometriosis</Link>
-                  <Link to="/FibroidInformation" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdowns}>Fibroids</Link>
-                  <Link to="/MenstrualDisordersInformation" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdowns}>Menstrual Disorders</Link>
-                  <Link to="/OvarianCystsPage" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdowns}>Ovarian Cysts</Link>
-                  <Link to="/PostcoitalBleeding" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdowns}>Postcoital Bleeding</Link>
-                  <Link to="/postmenopausal-bleeding" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdowns}>Postmenopausal Bleeding</Link>
-                  <Link to="/pelvic-pain-information" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdowns}>Pelvic Pain</Link>
-                  <Link to="/vulvar-vaginal-lumps" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdowns}>Vulvar Vaginal Lumps</Link>
+                  <Link to="/Cancer/Vulvar" className="block px-3 py-2 text-sm text-gray-600 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Vulvar Cancer</Link>
+                  <Link to="/Cancer/VaginalCancer" className="block px-3 py-2 text-sm text-gray-600 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Vaginal Cancer</Link>
+                  <Link to="/Cancer/OvarianCancer" className="block px-3 py-2 text-sm text-gray-600 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Ovarian Cancer</Link>
+                  <Link to="/Cancer/EndometrialCancer" className="block px-3 py-2 text-sm text-gray-600 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Endometrial Cancer</Link>
+                  <Link to="/Cancer/CervicalCancer" className="block px-3 py-2 text-sm text-gray-600 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Cervical Cancer</Link>
+                  <Link to="/RoboticSurgery" className="block px-3 py-2 text-sm text-gray-600 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Robotic Surgery</Link>
+                  <Link to="/CervicalScreening" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Cervical Screening</Link>
+                  <Link to="/IrregularBleedingInfo" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Irregular Bleeding</Link>
+                  <Link to="/EndometriosisInformation" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Endometriosis</Link>
+                  <Link to="/FibroidInformation" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Fibroids</Link>
+                  <Link to="/MenstrualDisordersInformation" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Menstrual Disorders</Link>
+                  <Link to="/OvarianCystsPage" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Ovarian Cysts</Link>
+                  <Link to="/PostcoitalBleeding" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Postcoital Bleeding</Link>
+                  <Link to="/postmenopausal-bleeding" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Postmenopausal Bleeding</Link>
+                  <Link to="/pelvic-pain-information" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Pelvic Pain</Link>
+                  <Link to="/vulvar-vaginal-lumps" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Vulvar Vaginal Lumps</Link>
                 </div>
               )}
             </div>
 
-            {/* New Additional Services Dropdown */}
+            {/* Additional Services Dropdown */}
             <div className="relative">
               <button
                 onClick={() => setIsAdditionalServicesOpen(!isAdditionalServicesOpen)}
@@ -102,9 +101,9 @@ const Navbar = () => {
               </button>
               {isAdditionalServicesOpen && (
                 <div className="absolute left-0 bg-white shadow-lg rounded-md mt-2 w-56 z-50">
-                  <Link to="/colposcopy" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdowns}>Colposcopy</Link>
-                  <Link to="/ultrasound" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdowns}>Ultrasound</Link>
-                  <Link to="/Hysteroscopy" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdowns}>Hysteroscopy</Link>
+                  <Link to="/colposcopy" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Colposcopy</Link>
+                  <Link to="/ultrasound" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Ultrasound</Link>
+                  <Link to="/Hysteroscopy" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Hysteroscopy</Link>
                 </div>
               )}
             </div>
@@ -134,9 +133,7 @@ const Navbar = () => {
             <HashLink smooth to="/#specialties" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900">Specialties</HashLink>
             <HashLink smooth to="/#education" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900">Education</HashLink>
 
-            {/* Services collapsible (keep as is) */}
-            {/* ... existing code ... */}
-             {/* Services Dropdown */}
+            {/* Mobile Services */}
             <div className="relative">
               <button
                 onClick={() => setIsServicesOpen(!isServicesOpen)}
@@ -145,29 +142,28 @@ const Navbar = () => {
                 Treatments {isServicesOpen ? <FiChevronUp className="ml-1" /> : <FiChevronDown className="ml-1" />}
               </button>
               {isServicesOpen && (
-                <div className="absolute left-0 bg-white shadow-lg rounded-md mt-2 w-56 z-50">
-                  {/* your existing Links */}
-                  <Link to="/Cancer/Vulvar" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900" onClick={closeDropdowns}>Vulvar Cancer</Link>
-                  <Link to="/Cancer/VaginalCancer" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900" onClick={closeDropdowns}>Vaginal Cancer</Link>
-                  <Link to="/Cancer/OvarianCancer" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900" onClick={closeDropdowns}>Ovarian Cancer</Link>
-                  <Link to="/Cancer/EndometrialCancer" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900" onClick={closeDropdowns}>Endometrial Cancer</Link>
-                  <Link to="/Cancer/CervicalCancer" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900" onClick={closeDropdowns}>Cervical Cancer</Link>
-                  <Link to="/RoboticSurgery" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900" onClick={closeDropdowns}>Robotic Surgery</Link>
-                  <Link to="/CervicalScreening" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdowns}>Cervical Screening</Link>
-                  <Link to="/IrregularBleedingInfo" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdowns}>Irregular Bleeding</Link>
-                  <Link to="/EndometriosisInformation" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdowns}>Endometriosis</Link>
-                  <Link to="/FibroidInformation" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdowns}>Fibroids</Link>
-                  <Link to="/MenstrualDisordersInformation" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdowns}>Menstrual Disorders</Link>
-                  <Link to="/OvarianCystsPage" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdowns}>Ovarian Cysts</Link>
-                  <Link to="/PostcoitalBleeding" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdowns}>Postcoital Bleeding</Link>
-                  <Link to="/postmenopausal-bleeding" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdowns}>Postmenopausal Bleeding</Link>
-                  <Link to="/pelvic-pain-information" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdowns}>Pelvic Pain</Link>
-                  <Link to="/vulvar-vaginal-lumps" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdowns}>Vulvar Vaginal Lumps</Link>
+                <div className="ml-4 mt-1 space-y-1">
+                  <Link to="/Cancer/Vulvar" className="block px-3 py-2 text-sm text-gray-600 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Vulvar Cancer</Link>
+                  <Link to="/Cancer/VaginalCancer" className="block px-3 py-2 text-sm text-gray-600 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Vaginal Cancer</Link>
+                  <Link to="/Cancer/OvarianCancer" className="block px-3 py-2 text-sm text-gray-600 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Ovarian Cancer</Link>
+                  <Link to="/Cancer/EndometrialCancer" className="block px-3 py-2 text-sm text-gray-600 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Endometrial Cancer</Link>
+                  <Link to="/Cancer/CervicalCancer" className="block px-3 py-2 text-sm text-gray-600 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Cervical Cancer</Link>
+                  <Link to="/RoboticSurgery" className="block px-3 py-2 text-sm text-gray-600 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Robotic Surgery</Link>
+                  <Link to="/CervicalScreening" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Cervical Screening</Link>
+                  <Link to="/IrregularBleedingInfo" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Irregular Bleeding</Link>
+                  <Link to="/EndometriosisInformation" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Endometriosis</Link>
+                  <Link to="/FibroidInformation" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Fibroids</Link>
+                  <Link to="/MenstrualDisordersInformation" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Menstrual Disorders</Link>
+                  <Link to="/OvarianCystsPage" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Ovarian Cysts</Link>
+                  <Link to="/PostcoitalBleeding" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Postcoital Bleeding</Link>
+                  <Link to="/postmenopausal-bleeding" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Postmenopausal Bleeding</Link>
+                  <Link to="/pelvic-pain-information" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Pelvic Pain</Link>
+                  <Link to="/vulvar-vaginal-lumps" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Vulvar Vaginal Lumps</Link>
                 </div>
               )}
             </div>
 
-            {/* New Additional Services Dropdown */}
+            {/* Mobile Additional Services */}
             <div className="relative">
               <button
                 onClick={() => setIsAdditionalServicesOpen(!isAdditionalServicesOpen)}
@@ -176,14 +172,13 @@ const Navbar = () => {
                 Treatment guide {isAdditionalServicesOpen ? <FiChevronUp className="ml-1" /> : <FiChevronDown className="ml-1" />}
               </button>
               {isAdditionalServicesOpen && (
-                <div className="absolute left-0 bg-white shadow-lg rounded-md mt-2 w-56 z-50">
-                  <Link to="/colposcopy" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdowns}>Colposcopy</Link>
-                  <Link to="/ultrasound" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdowns}>Ultrasound</Link>
-                  <Link to="/Hysteroscopy" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdowns}>Hysteroscopy</Link>
+                <div className="ml-4 mt-1 space-y-1">
+                  <Link to="/colposcopy" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Colposcopy</Link>
+                  <Link to="/ultrasound" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Ultrasound</Link>
+                  <Link to="/Hysteroscopy" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Hysteroscopy</Link>
                 </div>
               )}
             </div>
-
 
             <HashLink smooth to="/#contact" className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">
               Contact
