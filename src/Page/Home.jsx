@@ -8,6 +8,8 @@ import Expertise from "../components/HomePage/Expertise";
 import EducationLanguagesSection from "../components/HomePage/EducationLanguagesSection";
 import GetInTouchSection from "../components/HomePage/GetInTouchSection";
 import ExperienceImage from "../components/HomePage/ExperienceImage"
+import WhyChooseUs from "../components/HomePage/WhyChooseUs"
+import Orbit from "../components/HomePage/Orbit"
 export default function Home() {
   return (
     <div>
@@ -33,16 +35,22 @@ export default function Home() {
       <section>
         <ExperienceImage />
       </section>
+       <section>
+        <WhyChooseUs />
+      </section>
+
 
       {/* Specialties / Expertise */}
       <section id="specialties" className=" bg-white">
         <Expertise />
       </section>
-
+       
+<Orbit />
       {/* Contact */}
       <section id="contact" className=" ">
         <GetInTouchSection />
       </section>
+      
     </div>
   );
 }
