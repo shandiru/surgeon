@@ -3,83 +3,122 @@ import { Users, Heart, Star, PlusCircle } from 'lucide-react';
 
 const Vaginalcard7 = ({ setShowCard, setActiveButton }) => {
   return (
-    <div className="space-y-6">
-      {/* Card Container */}
-      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl text-[#BB125B] mx-auto mb-10 flex flex-col gap-6 rounded-xl border py-6 shadow-sm animate-in slide-in-from-right-5 duration-300">
-
-        {/* Card Header */}
-        <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 border-b pb-6">
-          <div className="leading-none font-semibold flex items-center gap-2">
-            <Users className="w-6 h-6 text-primary" />
+    <div className="space-y-6 pb-10">
+      {/* Outer Card */}
+      <div
+        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto rounded-2xl p-8 border shadow-sm animate-in slide-in-from-right-5 duration-300"
+        style={{
+          backgroundColor: "#FFFFFF",
+          borderColor: "rgb(255,197,211)",
+        }}
+      >
+        {/* Header */}
+        <div className="mb-6">
+          <span
+            className="font-semibold text-sm uppercase tracking-wide flex items-center gap-2"
+            style={{ color: "#FF4B8B" }}
+          >
+            <Users className="w-6 h-6 text-[#FF4B8B]" />
             Prevention & Early Detection
-          </div>
-          <div className="text-muted-foreground text-sm">
-            Steps to reduce risk and catch problems early
-          </div>
+          </span>
+
+          <p className="text-sm mt-1" style={{ color: "#7a2f4f" }}>
+            Steps to reduce the risk of vaginal cancer and detect problems early.
+          </p>
         </div>
 
-        {/* Card Content */}
-        <div className="px-6 space-y-4">
+        {/* Prevention Section */}
+        <div className="grid md:grid-cols-2 gap-6">
 
-          {/* Prevention Tips */}
-          <div className="grid md:grid-cols-2 gap-4">
+          {/* Left Column */}
+          <div>
+            <h4
+              className="font-semibold mb-3"
+              style={{ color: "#FF4B8B" }}
+            >
+              Ways to Reduce Risk:
+            </h4>
 
             <div className="space-y-3">
-              <h4 className="font-semibold">Ways to Reduce Risk</h4>
-              <div className="space-y-2 text-sm">
-                {[
-                  'HPV vaccination',
-                  'Avoiding smoking',
-                  'Regular gynaecological check-ups',
-                  'Early treatment of VAIN or cervical pre-cancers',
-                  'Practising safer sex to reduce HPV risk',
-                  'Monitoring any abnormal bleeding or discharge'
-                ].map((item, index) => (
-                  <div key={index} className="flex items-start gap-2">
-                    <PlusCircle className="w-4 h-4 text-accent mt-0.5 flex-shrink-0" />
-                    <span>{item}</span>
-                  </div>
-                ))}
-              </div>
+              {[
+                "HPV vaccination",
+                "Avoiding smoking",
+                "Regular gynecological check-ups",
+                "Early treatment of VAIN or cervical pre-cancers",
+                "Practising safer sex to reduce HPV risk",
+                "Monitoring abnormal bleeding or discharge",
+              ].map((item, index) => (
+                <div
+                  key={index}
+                  className="flex items-start gap-2 text-sm"
+                  style={{ color: "#7a2f4f" }}
+                >
+                  <PlusCircle className="w-4 h-4 text-[#FF4B8B] mt-1 flex-shrink-0" />
+                  <span>{item}</span>
+                </div>
+              ))}
             </div>
-
-            <div className="bg-accent/10 p-4 rounded-lg">
-              <h4 className="leading-none font-semibold flex items-center gap-2">
-                <Heart className="w-5 h-5 inline-block" />
-                Why It Matters
-              </h4>
-              <p className="text-sm leading-relaxed">
-                Early detection of vaginal cancer improves treatment success and overall outcomes. Regular check-ups and awareness of changes in your body are key to prevention.
-              </p>
-            </div>
-
           </div>
 
-          {/* Final Thoughts */}
-          <div className="bg-card p-4 rounded-lg border">
-            <h4 className="leading-none font-semibold flex items-center gap-2">
-              <Star className="w-5 h-5 inline-block" />
-              Take Action
+          {/* Right Column */}
+          <div
+            className="p-4 rounded-xl border"
+            style={{
+              backgroundColor: "#FFF5F8",
+              borderColor: "rgb(255,197,211)",
+            }}
+          >
+            <h4
+              className="font-semibold flex items-center gap-2 mb-2"
+              style={{ color: "#FF4B8B" }}
+            >
+              <Heart className="w-5 h-5 text-[#FF4B8B]" />
+              Why It Matters
             </h4>
-            <p className="text-sm leading-relaxed">
-              Protect your health by getting vaccinated, attending regular check-ups, and addressing any unusual symptoms early. Your proactive care can make a real difference in prevention and early treatment of vaginal cancer.
+
+            <p className="text-sm leading-relaxed" style={{ color: "#7a2f4f" }}>
+              Early detection improves treatment success and outcomes. 
+              Regular check-ups and awareness of body changes help identify problems early.
             </p>
           </div>
 
-          {/* Complete Guide Button */}
-          <div className="pt-4">
-            <button
-              onClick={() => {
-                setShowCard(8);       // move to next card
-                setActiveButton(7);   // index for this card
-              }}
-              className="inline-flex items-center justify-center hover:bg-[#FF4B8B]/80 bg-[#FF4B8B] gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 h-9 px-4 py-2 w-full">
-              <Star className="w-4 h-4" />
-              Learn More
-            </button>
-          </div>
-
         </div>
+
+        {/* Final Thoughts */}
+        <div
+          className="p-4 rounded-xl border mt-6"
+          style={{
+            backgroundColor: "#FFFFFF",
+            borderColor: "rgb(255,197,211)",
+          }}
+        >
+          <h4
+            className="font-semibold flex items-center gap-2 mb-2"
+            style={{ color: "#FF4B8B" }}
+          >
+            <Star className="w-5 h-5 text-[#FF4B8B]" />
+            Take Action
+          </h4>
+
+          <p className="text-sm leading-relaxed" style={{ color: "#7a2f4f" }}>
+            Protect your health by staying proactive—get vaccinated, attend regular check-ups, 
+            and report unusual symptoms early. These steps significantly lower vaginal cancer risk.
+          </p>
+        </div>
+
+        {/* Next Button */}
+        <div className="pt-8 flex justify-center">
+          <button
+            onClick={() => {
+              setShowCard(8);
+              setActiveButton(7);
+            }}
+            className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all"
+          >
+            Learn More
+          </button>
+        </div>
+
       </div>
     </div>
   );

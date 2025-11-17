@@ -1,7 +1,7 @@
 'use client';
-import { Users, Heart, Star, PlusCircle } from 'lucide-react';
+import { ShieldCheck, Heart, Star, PlusCircle } from 'lucide-react';
 
-const Vaginalcard7 = ({ setShowCard, setActiveButton }) => {
+const VulvarGuidecard7 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6 pb-10">
       {/* Outer Card */}
@@ -18,35 +18,55 @@ const Vaginalcard7 = ({ setShowCard, setActiveButton }) => {
             className="font-semibold text-sm uppercase tracking-wide flex items-center gap-2"
             style={{ color: "#FF4B8B" }}
           >
-            <Users className="w-6 h-6 text-[#FF4B8B]" />
+            <ShieldCheck className="w-6 h-6 text-[#FF4B8B]" />
             Prevention & Early Detection
           </span>
 
           <p className="text-sm mt-1" style={{ color: "#7a2f4f" }}>
-            Steps to reduce the risk of vaginal cancer and detect problems early.
+            Simple steps that can greatly reduce your risk.
           </p>
         </div>
 
-        {/* Prevention Section */}
-        <div className="grid md:grid-cols-2 gap-6">
+        {/* Why Prevention Matters */}
+        <div
+          className="p-4 rounded-xl border mb-6"
+          style={{
+            borderColor: "rgb(255,197,211)",
+            backgroundColor: "#FFF5F8",
+          }}
+        >
+          <h4
+            className="font-semibold flex items-center gap-2 mb-2"
+            style={{ color: "#FF4B8B" }}
+          >
+            <Heart className="w-5 h-5 text-[#FF4B8B]" />
+            Why Prevention Matters
+          </h4>
+          <p style={{ color: "#7a2f4f" }} className="text-sm leading-relaxed">
+            While vulvar cancer is uncommon, early awareness and simple preventive steps can significantly
+            reduce risk and help detect changes before they become serious.
+          </p>
+        </div>
 
-          {/* Left Column */}
+        {/* Prevention Steps + Reminder */}
+        <div className="grid md:grid-cols-2 gap-6">
+          {/* ---- Left Column ---- */}
           <div>
             <h4
               className="font-semibold mb-3"
               style={{ color: "#FF4B8B" }}
             >
-              Ways to Reduce Risk:
+              You Can Reduce Risk By:
             </h4>
 
             <div className="space-y-3">
               {[
-                "HPV vaccination",
-                "Avoiding smoking",
+                "Getting the HPV vaccine",
+                "Not smoking",
                 "Regular gynecological check-ups",
-                "Early treatment of VAIN or cervical pre-cancers",
-                "Practising safer sex to reduce HPV risk",
-                "Monitoring abnormal bleeding or discharge",
+                "Early treatment of vulvar skin conditions",
+                "Being aware of any changes to vulvar skin",
+                "Practicing safer sex",
               ].map((item, index) => (
                 <div
                   key={index}
@@ -60,7 +80,7 @@ const Vaginalcard7 = ({ setShowCard, setActiveButton }) => {
             </div>
           </div>
 
-          {/* Right Column */}
+          {/* ---- Right Column Reminder ---- */}
           <div
             className="p-4 rounded-xl border"
             style={{
@@ -73,18 +93,19 @@ const Vaginalcard7 = ({ setShowCard, setActiveButton }) => {
               style={{ color: "#FF4B8B" }}
             >
               <Heart className="w-5 h-5 text-[#FF4B8B]" />
-              Why It Matters
+              Remember
             </h4>
 
-            <p className="text-sm leading-relaxed" style={{ color: "#7a2f4f" }}>
-              Early detection improves treatment success and outcomes. 
-              Regular check-ups and awareness of body changes help identify problems early.
-            </p>
+            <ul className="text-sm space-y-2" style={{ color: "#7a2f4f" }}>
+              <li>• Early detection makes treatment more effective</li>
+              <li>• Regular check-ups help catch changes early</li>
+              <li>• HPV protection greatly reduces risk</li>
+              <li>• Any long-lasting vulvar change should be reviewed</li>
+            </ul>
           </div>
-
         </div>
 
-        {/* Final Thoughts */}
+        {/* Key Takeaway */}
         <div
           className="p-4 rounded-xl border mt-6"
           style={{
@@ -97,12 +118,12 @@ const Vaginalcard7 = ({ setShowCard, setActiveButton }) => {
             style={{ color: "#FF4B8B" }}
           >
             <Star className="w-5 h-5 text-[#FF4B8B]" />
-            Take Action
+            Key Takeaway
           </h4>
 
           <p className="text-sm leading-relaxed" style={{ color: "#7a2f4f" }}>
-            Protect your health by staying proactive—get vaccinated, attend regular check-ups, 
-            and report unusual symptoms early. These steps significantly lower vaginal cancer risk.
+            Prevention is powerful. By staying aware of changes, attending check-ups, and protecting yourself
+            from HPV, you take strong steps toward maintaining vulvar health and detecting issues early.
           </p>
         </div>
 
@@ -115,13 +136,12 @@ const Vaginalcard7 = ({ setShowCard, setActiveButton }) => {
             }}
             className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all"
           >
-            Learn More
+            Continue to Next Section
           </button>
         </div>
-
       </div>
     </div>
   );
 };
 
-export default Vaginalcard7;
+export default VulvarGuidecard7;
