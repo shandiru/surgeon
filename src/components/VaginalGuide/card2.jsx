@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 
 const VaginalCard2 = ({ setShowCard, setActiveButton }) => {
@@ -25,14 +26,26 @@ const VaginalCard2 = ({ setShowCard, setActiveButton }) => {
               <line x1="12" x2="12" y1="8" y2="12"></line>
               <line x1="12" x2="12.01" y1="16" y2="16"></line>
             </svg>
-            Types of Vaginal Cancer
+            How Vaginal Cancer Develops
           </div>
         </div>
 
         {/* Card Content */}
         <div className="px-6 space-y-4">
+
+          {/* Intro Section */}
+          <div className="p-4 rounded-lg border bg-[#FFF1F6] hover:bg-[#FF4B8B]/10 transition-all duration-300 hover:shadow-md">
+            <p className="text-base leading-relaxed">
+              Vaginal cancer usually begins in the cells that line the surface of the vagina.
+              Most cases develop slowly over time and may first appear as 
+              <strong> pre-cancerous changes called VAIN (Vaginal Intraepithelial Neoplasia)</strong>.
+              Understanding how it starts helps with early detection and better treatment outcomes.
+            </p>
+          </div>
+
+          {/* Types Section Grid */}
           <div className="grid md:grid-cols-2 gap-6">
-            
+
             {/* Main Types Section */}
             <div>
               <h4 className="font-semibold mb-3 text-primary">Main Types</h4>
@@ -42,20 +55,20 @@ const VaginalCard2 = ({ setShowCard, setActiveButton }) => {
                   {
                     title: 'Squamous Cell Carcinoma (Most Common — 85–90%)',
                     desc:
-                      'Starts in the thin, flat cells lining the vagina. Often develops from a pre-cancer called VAIN (Vaginal Intraepithelial Neoplasia).',
+                      'Forms in the thin, flat cells lining the vagina. Often begins as VAIN, which can be detected before turning into cancer.'
                   },
                   {
                     title: 'Adenocarcinoma',
                     desc:
-                      'Begins in gland-like cells that produce mucus inside the vagina. Less common but more likely to spread.',
+                      'Develops in gland-like cells inside the vagina. Less common but may spread more easily than other types.'
                   }
                 ].map((item, index) => (
                   <div
                     key={index}
-                    className="p-3 bg-card rounded-lg border transition-all duration-300 hover:bg-[#FF4B8B]/20 hover:shadow-md hover:border-[#FF4B8B]"
+                    className="p-3 bg-white rounded-lg border transition-all duration-300 hover:bg-[#FF4B8B]/10 hover:shadow-md hover:border-[#FF4B8B]"
                   >
                     <div className="font-semibold mb-1 text-primary">{item.title}</div>
-                    <p className="text-sm">{item.desc}</p>
+                    <p className="text-sm leading-relaxed">{item.desc}</p>
                   </div>
                 ))}
               </div>
@@ -67,12 +80,12 @@ const VaginalCard2 = ({ setShowCard, setActiveButton }) => {
 
               <div className="space-y-2">
                 {[
-                  { label: 'Melanoma', badge: 'Very rare' },
-                  { label: 'Sarcoma', badge: 'Rare soft-tissue cancer' },
+                  { label: 'Melanoma of the Vagina', badge: 'Very rare' },
+                  { label: 'Sarcoma of the Vagina', badge: 'Soft-tissue cancer' },
                 ].map((item, index) => (
                   <div
                     key={index}
-                    className="flex items-center justify-between p-3 bg-muted rounded transition-all duration-300 hover:bg-[#FF4B8B]/20 hover:shadow-md"
+                    className="flex items-center justify-between p-3 bg-[#FFF6FA] rounded-lg border transition-all duration-300 hover:bg-[#FF4B8B]/10 hover:shadow-md"
                   >
                     <span className="text-sm">{item.label}</span>
                     <span
@@ -83,18 +96,13 @@ const VaginalCard2 = ({ setShowCard, setActiveButton }) => {
                     </span>
                   </div>
                 ))}
-
-                {/* <p className="text-xs mt-3 text-gray-600">
-                  These cancers account for only a small percentage of vaginal cancer cases.
-                </p> */}
               </div>
             </div>
-
           </div>
 
-          {/* When to Contact Your Doctor Section */}
-          <div className="bg-destructive/10 border border-destructive/20 p-4 rounded-lg">
-            <h4 className="font-semibold text-destructive mb-2 flex items-center gap-2">
+          {/* Warning / Doctor Section */}
+          <div className="bg-red-50 border border-red-200 p-4 rounded-lg">
+            <h4 className="font-semibold text-red-600 mb-2 flex items-center gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -113,9 +121,11 @@ const VaginalCard2 = ({ setShowCard, setActiveButton }) => {
               </svg>
               When to Contact Your Doctor
             </h4>
-            <p className="text-sm">
-              If you notice unusual vaginal bleeding, persistent discharge, pelvic pain, or a lump inside the vagina,
-              contact your doctor. Early diagnosis greatly improves treatment outcomes.
+
+            <p className="text-sm leading-relaxed">
+              Seek medical advice if you experience unusual bleeding, persistent discharge,
+              pelvic pain, pain during sex, or feel a lump inside the vagina.  
+              Early detection significantly improves recovery.
             </p>
           </div>
 
@@ -126,7 +136,7 @@ const VaginalCard2 = ({ setShowCard, setActiveButton }) => {
                 setShowCard(3);
                 setActiveButton(2);
               }}
-              className="inline-flex items-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-9 px-4 py-2 w-full"
+              className="inline-flex items-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-9 px-4 py-2 w-full text-white"
             >
               Learn About the Procedure
             </button>

@@ -1,8 +1,12 @@
-'use client'; 
+'use client';
 import React from 'react';
-import { Bed, Wrench, Droplet, Search, Sparkles } from 'lucide-react';
+import { Sparkles } from 'lucide-react';
 
 const Vaginalcard3 = ({ setShowCard, setActiveButton }) => {
+  const primaryPink = "#FF4B8B";
+  const lightPink = "rgb(255,197,211)";
+  const softPinkBG = "#FFF5F8";
+
   const riskFactors = [
     "HPV infection, especially high-risk strains",
     "History of cervical cancer or cervical pre-cancer",
@@ -10,16 +14,25 @@ const Vaginalcard3 = ({ setShowCard, setActiveButton }) => {
     "Smoking",
     "Weakened immune system",
     "Previous pelvic radiation therapy",
-    "VAIN (pre-cancerous vaginal changes)"
+    "VAIN (pre-cancerous vaginal changes)",
   ];
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 pb-10">
       {/* Card Container */}
-      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl text-[#BB125B] mx-auto mb-10 flex flex-col gap-6 rounded-xl border py-6 shadow-sm animate-in slide-in-from-right-5 duration-300">
+      <div
+        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-2xl border p-8 shadow-sm animate-in slide-in-from-right-5 duration-300"
+        style={{
+          backgroundColor: "#FFFFFF",
+          borderColor: lightPink,
+        }}
+      >
         {/* Card Header */}
-        <div className="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6">
-          <div className="leading-none font-semibold flex items-center gap-2">
+        <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5">
+          <div
+            className="leading-none font-semibold flex items-center gap-2"
+            style={{ color: primaryPink }}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -30,7 +43,7 @@ const Vaginalcard3 = ({ setShowCard, setActiveButton }) => {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="lucide lucide-file-text w-6 h-6 text-primary"
+              className="lucide lucide-file-text w-6 h-6 text-[#FF4B8B]"
             >
               <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
               <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
@@ -40,46 +53,80 @@ const Vaginalcard3 = ({ setShowCard, setActiveButton }) => {
             </svg>
             Vaginal Cancer Risk Factors
           </div>
-          <div className="text-muted-foreground text-sm">Common factors that may increase the risk</div>
+          <p className="text-sm" style={{ color: "#7a2f4f" }}>
+            Common factors that may increase the risk.
+          </p>
         </div>
 
         {/* Card Content */}
-        <div className="px-6 space-y-4">
-          {/* Risk Factors List */}
+        <div className="space-y-4 mt-4">
+          {/* Risk Factors Section */}
           <div className="space-y-4">
             {riskFactors.map((factor, index) => (
-              <div key={index} className="flex gap-4 p-4 bg-card rounded-lg border hover:z-50 transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:scale-105 active:scale-100">
+              <div
+                key={index}
+                className="flex gap-4 p-4 rounded-xl border transition-all duration-300 hover:shadow-lg hover:scale-[1.03]"
+                style={{
+                  backgroundColor: "#FFFFFF",
+                  borderColor: lightPink,
+                }}
+              >
+                {/* Number Circle */}
                 <div className="flex-shrink-0">
-                  <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold">
+                  <div
+                    className="w-10 h-10 rounded-full flex items-center justify-center font-bold"
+                    style={{
+                      backgroundColor: primaryPink,
+                      color: "#FFFFFF",
+                    }}
+                  >
                     {index + 1}
                   </div>
                 </div>
+
+                {/* Text */}
                 <div className="flex-1">
-                  <h4 className="font-semibold mb-1">{factor}</h4>
+                  <h4
+                    className="font-semibold mb-1"
+                    style={{ color: primaryPink }}
+                  >
+                    {factor}
+                  </h4>
                 </div>
               </div>
             ))}
           </div>
 
-          {/* Additional Information */}
-          <div className="bg-accent/10 p-4 rounded-lg border border-accent/20">
-            <h4 className="font-semibold text-accent-foreground mb-2 flex items-center gap-2">
+          {/* Extra Info */}
+          <div
+            className="p-4 rounded-xl border mt-4"
+            style={{
+              backgroundColor: softPinkBG,
+              borderColor: lightPink,
+            }}
+          >
+            <h4
+              className="font-semibold mb-2 flex items-center gap-2"
+              style={{ color: primaryPink }}
+            >
               <Sparkles className="w-5 h-5 text-[#FF4B8B]" />
               Good to Know
             </h4>
-            <p className="text-sm">
-              While these factors can increase the likelihood of developing vaginal cancer, having one or more does <strong>not mean</strong> you will definitely get it. Regular check-ups and HPV vaccination are effective preventive measures.
+            <p className="text-sm" style={{ color: "#7a2f4f" }}>
+              These factors can increase the risk of vaginal cancer, but having
+              one or more does <strong>not guarantee</strong> you will get it.
+              Regular screenings and HPV vaccination help reduce risk.
             </p>
           </div>
 
-          {/* Learn More Button */}
-          <div className="pt-4">
+          {/* Button */}
+          <div className="pt-6 flex justify-center">
             <button
               onClick={() => {
-                setShowCard(4);       // move to Card 4
-                setActiveButton(3);   // index for Card 4
+                setShowCard(4);
+                setActiveButton(3);
               }}
-              className="inline-flex items-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all hover:bg-primary/90 h-9 px-4 py-2 w-full"
+              className="inline-flex items-center justify-center gap-2 bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 rounded-md text-sm font-medium h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
             >
               Learn About Screening
             </button>
