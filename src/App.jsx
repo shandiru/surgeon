@@ -35,6 +35,7 @@ function App() {
         <Route path="/Cancer/VaginalCancer" element={<  VaginalCancerInformationPage />} />
         <Route path="/VulvarGuidePage" element={<VulvarGuidePage />} />
         <Route path="/VaginalGuidePage" element={<VaginalGuidePage />} />
+        
         <Route path="/Cancer/OvarianCancer" element={<  OvarianCancerInformationPage />} />
         <Route path="/OvarianCancerGuide" element={<OvarianCancerGuide />} />
         <Route path="/Cancer/EndometrialCancer" element={<   EndometrialCancerInformationPage />} />

@@ -9,7 +9,7 @@ import VaginalCard4 from '../components/VaginalGuide/card4';
 import VaginalCard5 from '../components/VaginalGuide/card5';
 import VaginalCard6 from '../components/VaginalGuide/card6';
 import VaginalCard7 from '../components/VaginalGuide/card7';
-import Vulvarcard8 from '../components/VaginalGuide/card8';
+import Vaginalcard8 from '../components/VaginalGuide/card8';
 
 const VaginalGuidePage = () => {
   const [showCard, setShowCard] = useState(1);
@@ -46,7 +46,7 @@ const VaginalGuidePage = () => {
         <VaginalCard7 setShowCard={setShowCard} setActiveButton={setActiveButton} />
       )}
       {showCard === 8 && (
-        <Vulvarcard8 setShowCard={setShowCard} setActiveButton={setActiveButton} />
+        <Vaginalcard8 setShowCard={setShowCard} setActiveButton={setActiveButton} />
       )}
     </div>
   );
