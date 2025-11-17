@@ -2,15 +2,25 @@
 import React from 'react';
 import { Biohazard, Cigarette, CloudFog, Sparkles, ShieldOff } from 'lucide-react';
 
-const VulvarGuidecard3 = ({ setShowCard, setActiveButton }) => {
+const CervicalCancerGuidecard3 = ({ setShowCard, setActiveButton }) => {
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 pb-10">
+      
       {/* Card Container */}
-      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl text-[#BB125B] mx-auto mb-10 flex flex-col gap-6 rounded-xl border py-6 shadow-sm animate-in slide-in-from-right-5 duration-300">
-
+      <div
+        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-2xl border p-8 shadow-sm animate-in slide-in-from-right-5 duration-300"
+        style={{
+          backgroundColor: '#FFFFFF',
+          borderColor: 'rgb(255,197,211)',
+        }}
+      >
+        
         {/* Card Header */}
-        <div className="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6">
-          <div className="leading-none font-semibold flex items-center gap-2">
+        <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5">
+          <div
+            className="leading-none font-semibold flex items-center gap-2"
+            style={{ color: '#FF4B8B' }}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -21,7 +31,7 @@ const VulvarGuidecard3 = ({ setShowCard, setActiveButton }) => {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="lucide lucide-file-text w-6 h-6 text-primary"
+              className="lucide lucide-file-text w-6 h-6 text-[#FF4B8B]"
             >
               <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
               <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
@@ -31,91 +41,139 @@ const VulvarGuidecard3 = ({ setShowCard, setActiveButton }) => {
             </svg>
             Key Risk Factors
           </div>
-          <div className="text-muted-foreground text-sm">
-            Not everyone with these risk factors will develop vulvar cancer, but they increase likelihood.
-          </div>
+
+          <p className="text-sm" style={{ color: '#7a2f4f' }}>
+            Major factors that increase the risk of cervical cancer.
+          </p>
         </div>
 
         {/* Card Content */}
-        <div className="px-6 space-y-4">
+        <div className="space-y-4 mt-4">
 
-          {/* Risk Factors Section */}
+          {/* Risk Factors List */}
           <div className="space-y-4">
             {[
               {
-                step: 'HPV Infection (High-Risk Strains)',
-                icon: <Biohazard className="w-5 h-5 text-[#BB125B]" />,
-                description: 'High-risk HPV types, particularly HPV 16, significantly increase vulvar cancer risk.',
-              },
-              {
-                step: 'Older Age (Most Common After 60)',
-                icon: <CloudFog className="w-5 h-5 text-[#BB125B]" />,
-                description: 'Vulvar cancer is more common in women over 60.',
+                step: 'Persistent High-Risk HPV Infection',
+                icon: <Biohazard className="w-5 h-5 text-[#FF4B8B]" />,
+                description:
+                  'The strongest risk factor. Nearly all cervical cancers are linked to high-risk HPV types.',
               },
               {
                 step: 'Smoking',
-                icon: <Cigarette className="w-5 h-5 text-[#BB125B]" />,
-                description: 'Smoking weakens the immune system and increases HPV persistence.',
-              },
-              {
-                step: 'Long-Term Skin Conditions (e.g., Lichen Sclerosus)',
-                icon: <Sparkles className="w-5 h-5 text-[#BB125B]" />,
-                description: 'Chronic inflammatory vulvar skin disorders increase risk.',
+                icon: <Cigarette className="w-5 h-5 text-[#FF4B8B]" />,
+                description:
+                  'Smoking reduces the body’s ability to clear HPV infections, increasing cancer risk.',
               },
               {
                 step: 'Weakened Immune System',
-                icon: <ShieldOff className="w-5 h-5 text-[#BB125B]" />,
-                description: 'A weak immune system reduces the body’s ability to repair abnormal cells.',
+                icon: <ShieldOff className="w-5 h-5 text-[#FF4B8B]" />,
+                description:
+                  'Conditions like HIV or long-term steroid use weaken immunity and raise risk.',
               },
               {
-                step: 'History of Cervical or Vaginal Pre-cancers',
-                icon: <Biohazard className="w-5 h-5 text-[#BB125B]" />,
-                description: 'Conditions like CIN or VAIN raise the risk of similar changes on the vulva.',
-              }
+                step: 'Sexual Activity at a Young Age',
+                icon: <Sparkles className="w-5 h-5 text-[#FF4B8B]" />,
+                description:
+                  'Early sexual activity increases the chance of HPV exposure.',
+              },
+              {
+                step: 'Multiple Sexual Partners',
+                icon: <CloudFog className="w-5 h-5 text-[#FF4B8B]" />,
+                description:
+                  'More partners increase the likelihood of high-risk HPV infection.',
+              },
+              {
+                step: 'Long-Term Oral Contraceptive Use',
+                icon: <Sparkles className="w-5 h-5 text-[#FF4B8B]" />,
+                description:
+                  'Using the contraceptive pill for more than 5 years slightly increases risk.',
+              },
+              {
+                step: 'Lack of Cervical Screening',
+                icon: <Biohazard className="w-5 h-5 text-[#FF4B8B]" />,
+                description:
+                  'Skipping Pap smears or HPV tests means abnormalities can go undetected.',
+              },
+              {
+                step: 'Other STIs (e.g., Chlamydia)',
+                icon: <CloudFog className="w-5 h-5 text-[#FF4B8B]" />,
+                description:
+                  'Certain infections make HPV more persistent, raising risk.',
+              },
+              {
+                step: 'Family History of Cervical Cancer',
+                icon: <Sparkles className="w-5 h-5 text-[#FF4B8B]" />,
+                description:
+                  'Risk is slightly higher if a close relative has had cervical cancer.',
+              },
             ].map((item, index) => (
-              <div 
-                key={index} 
-                className="flex gap-4 p-4 bg-card rounded-lg border hover:z-50 transition-all duration-300 
-                hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] 
-                active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] 
-                hover:scale-105 active:scale-100"
+              <div
+                key={index}
+                className="flex gap-4 p-4 rounded-xl border transition-all duration-300 hover:shadow-lg active:shadow-lg"
+                style={{
+                  backgroundColor: '#FFFFFF',
+                  borderColor: 'rgb(255,197,211)',
+                }}
               >
+                {/* Number */}
                 <div className="flex-shrink-0">
-                  <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold">
+                  <div
+                    className="w-10 h-10 rounded-full flex items-center justify-center font-bold"
+                    style={{
+                      backgroundColor: '#FF4B8B',
+                      color: '#FFFFFF',
+                    }}
+                  >
                     {index + 1}
                   </div>
                 </div>
 
+                {/* Text */}
                 <div className="flex-1">
-                  <h4 className="font-semibold mb-1 flex items-center gap-2">
+                  <h4
+                    className="font-semibold mb-1 flex items-center gap-2"
+                    style={{ color: '#FF4B8B' }}
+                  >
                     {item.icon}
                     {item.step}
                   </h4>
-                  <p className="text-muted-foreground text-sm">{item.description}</p>
+                  <p className="text-sm" style={{ color: '#7a2f4f' }}>
+                    {item.description}
+                  </p>
                 </div>
               </div>
             ))}
           </div>
 
-          {/* Extra Info */}
-          <div className="bg-accent/10 p-4 rounded-lg border border-accent/20">
-            <h4 className="font-semibold text-accent-foreground mb-2 flex items-center gap-2">
+          {/* HPV Note */}
+          <div
+            className="p-4 rounded-xl border mt-4"
+            style={{
+              backgroundColor: '#FFF5F8',
+              borderColor: 'rgb(255,197,211)',
+            }}
+          >
+            <h4
+              className="font-semibold mb-2 flex items-center gap-2"
+              style={{ color: '#FF4B8B' }}
+            >
               <Sparkles className="w-5 h-5 text-[#FF4B8B]" />
-              Good to Know
+              Most Important Risk Factor
             </h4>
-            <p className="text-sm">
-              Having one or more risk factors does not mean you will get vulvar cancer — but understanding them helps with early detection and prevention.
+            <p className="text-sm" style={{ color: '#7a2f4f' }}>
+              HPV is the most important risk factor — nearly all cervical cancers are HPV-related.
             </p>
           </div>
 
           {/* Button */}
-          <div className="pt-4">
+          <div className="pt-6 flex justify-center">
             <button
               onClick={() => {
                 setShowCard(4);
                 setActiveButton(3);
               }}
-              className="inline-flex items-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-9 px-4 py-2 w-full"
+              className="inline-flex items-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
             >
               Continue to Next Section
             </button>
@@ -127,4 +185,4 @@ const VulvarGuidecard3 = ({ setShowCard, setActiveButton }) => {
   );
 };
 
-export default VulvarGuidecard3;
+export default CervicalCancerGuidecard3;
