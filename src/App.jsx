@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./Page/Home";
-import VulvarCancerPage from "../src/Page/VulvarCancePage"; // <-- EXACT match
+import VulvarCancerPage from "../src/Page/VulvarGuide"; // <-- EXACT match
 import VaginalCancerInformationPage from "../src/Page/VaginalCancerInformationPage"; // <-- EXACT match
 import OvarianCancerInformationPage from "../src/Page/OvarianCancerInformationPage";
 import EndometrialCancerInformationPage from "../src/Page/EndometrialCancerInformationPage";
