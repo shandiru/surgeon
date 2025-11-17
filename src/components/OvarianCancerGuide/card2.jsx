@@ -2,18 +2,25 @@ import React from 'react';
 
 const OvarianCancerGuideCard2 = ({ setShowCard, setActiveButton }) => {
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 pb-10">
 
       {/* Card Container */}
-      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl text-[#BB125B] 
-        mx-auto mb-10 flex flex-col gap-6 rounded-xl border py-6 
-        shadow-sm animate-in slide-in-from-right-5 duration-300">
+      <div
+        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 
+        flex flex-col gap-6 rounded-2xl border shadow-sm 
+        animate-in slide-in-from-right-5 duration-300 p-8"
+        style={{
+          backgroundColor: "#FFFFFF",
+          borderColor: "rgb(255,197,211)",
+        }}
+      >
 
         {/* Card Header */}
-        <div className="@container/card-header grid auto-rows-min grid-rows-[auto_auto] 
-          items-start gap-1.5 px-6">
-          
-          <div className="leading-none font-semibold flex items-center gap-2">
+        <div className="grid auto-rows-min items-start gap-1.5">
+          <div
+            className="leading-none font-semibold flex items-center gap-2"
+            style={{ color: "#FF4B8B" }}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -24,7 +31,7 @@ const OvarianCancerGuideCard2 = ({ setShowCard, setActiveButton }) => {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="lucide lucide-activity w-6 h-6 text-primary"
+              className="w-6 h-6 text-[#FF4B8B]"
             >
               <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
             </svg>
@@ -33,71 +40,94 @@ const OvarianCancerGuideCard2 = ({ setShowCard, setActiveButton }) => {
         </div>
 
         {/* Card Content */}
-        <div className="px-6 space-y-6">
+        <div className="space-y-6">
 
           {/* Intro Box */}
-          <div className="bg-primary/5 p-4 rounded-lg border 
-            hover:bg-[#fce3e8] transition-all hover:shadow-md 
-            hover:border-[#f5a9bd] hover:scale-105 active:scale-100 duration-300">
-
-            <p className="text-lg leading-relaxed">
-              Ovarian cancer can develop in different types of cells inside the ovary. 
-              Understanding where it starts helps doctors diagnose the type and plan the 
-              most effective treatment.
+          <div
+            className="p-4 rounded-xl border transition-all duration-300 
+            hover:shadow-lg hover:scale-105 active:scale-100"
+            style={{
+              backgroundColor: "#FFF5F8",
+              borderColor: "rgb(255,197,211)",
+            }}
+          >
+            <p className="text-lg leading-relaxed" style={{ color: "#7a2f4f" }}>
+              Ovarian cancer can develop in different types of cells inside the 
+              ovary. Understanding where it starts helps doctors diagnose the 
+              type and plan the most effective treatment.
             </p>
           </div>
 
           {/* Types of Ovarian Cancer */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-            {/* Type 1 - Epithelial Ovarian Cancer */}
-            <div className="p-4 rounded-xl border bg-white 
-              hover:bg-[#FF4B8B]/10 transition-all duration-300 hover:shadow-md">
-              
-              <h4 className="font-semibold text-primary mb-2">
+            {/* Type 1 */}
+            <div
+              className="p-4 rounded-xl border bg-white transition-all duration-300 hover:shadow-md"
+              style={{
+                borderColor: "rgb(255,197,211)",
+                backgroundColor: "#FFFFFF",
+              }}
+            >
+              <h4 className="font-semibold mb-2" style={{ color: "#FF4B8B" }}>
                 Epithelial Ovarian Cancer
               </h4>
-
-              <p className="text-sm">
-                The most common type — <strong>around 90%</strong> of all ovarian cancers.  
-                It begins in the cells covering the surface of the ovary or fallopian tubes.
+              <p className="text-sm" style={{ color: "#7a2f4f" }}>
+                The most common type — <strong>around 90%</strong> of all ovarian 
+                cancers. It begins in the cells covering the surface of the ovary 
+                or fallopian tubes.
               </p>
             </div>
 
-            {/* Type 2 - Germ Cell Tumours */}
-            <div className="p-4 rounded-xl border bg-white 
-              hover:bg-[#FF4B8B]/10 transition-all duration-300 hover:shadow-md">
-              
-              <h4 className="font-semibold text-primary mb-2">
+            {/* Type 2 */}
+            <div
+              className="p-4 rounded-xl border bg-white transition-all duration-300 hover:shadow-md"
+              style={{
+                borderColor: "rgb(255,197,211)",
+                backgroundColor: "#FFFFFF",
+              }}
+            >
+              <h4 className="font-semibold mb-2" style={{ color: "#FF4B8B" }}>
                 Germ Cell Tumours
               </h4>
-
-              <p className="text-sm">
-                Start in the cells that produce eggs.  
-                These are less common and tend to affect younger women.
+              <p className="text-sm" style={{ color: "#7a2f4f" }}>
+                Start in the cells that produce eggs. These are less common and 
+                tend to affect younger women.
               </p>
             </div>
 
-            {/* Type 3 - Stromal Tumours */}
-            <div className="p-4 rounded-xl border bg-white 
-              hover:bg-[#FF4B8B]/10 transition-all duration-300 hover:shadow-md">
-              
-              <h4 className="font-semibold text-primary mb-2">
+            {/* Type 3 */}
+            <div
+              className="p-4 rounded-xl border bg-white transition-all duration-300 hover:shadow-md"
+              style={{
+                borderColor: "rgb(255,197,211)",
+                backgroundColor: "#FFFFFF",
+              }}
+            >
+              <h4 className="font-semibold mb-2" style={{ color: "#FF4B8B" }}>
                 Stromal Tumours
               </h4>
-
-              <p className="text-sm">
-                Begin in the hormone-producing cells of the ovary.  
-                They are rare and often detected earlier because they can cause 
-                hormone-related symptoms.
+              <p className="text-sm" style={{ color: "#7a2f4f" }}>
+                Begin in the hormone-producing cells of the ovary. They are rare 
+                and often detected earlier because they can cause hormone-related 
+                symptoms.
               </p>
             </div>
 
           </div>
 
           {/* Extra Info Box */}
-          <div className="bg-accent/10 p-4 rounded-lg border">
-            <h4 className="font-semibold text-accent-foreground mb-2 flex items-center gap-2">
+          <div
+            className="p-4 rounded-xl border"
+            style={{
+              backgroundColor: "#FFF5F8",
+              borderColor: "rgb(255,197,211)",
+            }}
+          >
+            <h4
+              className="font-semibold flex items-center gap-2 mb-2"
+              style={{ color: "#FF4B8B" }}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -108,31 +138,31 @@ const OvarianCancerGuideCard2 = ({ setShowCard, setActiveButton }) => {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="lucide lucide-lightbulb w-5 h-5 text-[#d63384]"
+                className="w-5 h-5 text-[#FF4B8B]"
               >
                 <path d="M9 18h6"></path>
                 <path d="M10 22h4"></path>
-                <path d="M2 10a10 10 0 0 1 20 0c0 3.46-1.8 6.5-4.53 8.12a1 1 0 0 0-.47.85V20a1 1 0 0 1-1 1h-7a1 1 0 0 1-1-1v-.97a1 1 0 0 0-.47-.85A9.99 9.99 0 0 1 2 10Z"></path>
+                <path d="M2 10a10 10 0 1 1 20 0c0 3.46-1.8 6.5-4.53 8.12a1 1 0 0 0-.47.85V20a1 1 0 0 1-1 1h-7a1 1 0 0 1-1-1v-.97a1 1 0 0 0-.47-.85A9.99 9.99 0 0 1 2 10Z"></path>
               </svg>
               Did You Know?
             </h4>
 
-            <p className="text-sm">
-              Some ovarian cancers begin in the fallopian tubes and spread to the ovary — 
-              but they are still grouped as ovarian cancer.  
+            <p className="text-sm" style={{ color: "#7a2f4f" }}>
+              Some ovarian cancers begin in the fallopian tubes and spread to 
+              the ovary — but they are still grouped as ovarian cancer.
             </p>
           </div>
 
           {/* Continue Button */}
-          <div className="pt-4">
+          <div className="pt-6 flex justify-center">
             <button
               onClick={() => {
                 setShowCard(3);
                 setActiveButton(2);
               }}
-              className="inline-flex items-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 
-                justify-center gap-2 whitespace-nowrap rounded-md 
-                text-sm font-medium transition-all h-9 px-4 py-2 w-full"
+              className="inline-flex items-center justify-center bg-[#FF4B8B] 
+              hover:bg-[#FF4B8B]/80 text-white rounded-md text-sm font-medium 
+              transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%]"
             >
               Continue to Next Section
             </button>
