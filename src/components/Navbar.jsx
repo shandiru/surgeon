@@ -104,6 +104,9 @@ const Navbar = () => {
                   <Link to="/colposcopy" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Colposcopy</Link>
                   <Link to="/ultrasound" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Ultrasound</Link>
                   <Link to="/Hysteroscopy" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Hysteroscopy</Link>
+                    <Link to="/VulvarGuidePage" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>VulvarGuidePage</Link>
+
+
                 </div>
               )}
             </div>
