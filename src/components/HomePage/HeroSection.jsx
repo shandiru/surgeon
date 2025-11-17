@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { ArrowUpRight } from "lucide-react";
 
 const HeroSectionView = () => {
   useEffect(() => {
@@ -43,7 +44,6 @@ const HeroSectionView = () => {
                 </svg>
                 Schedule Consultation
               </a>
-
               <a
                 href="#about"
                 className="inline-flex items-center justify-center gap-2 text-sm font-semibold px-6 h-10 rounded-md border border-[#FF4B8B] text-[#FF4B8B] hover:bg-[#FFD6E1] hover:shadow-[0_0_15px_2px_rgba(255,75,139,0.4)] hover:-translate-y-0.5 transition-all"

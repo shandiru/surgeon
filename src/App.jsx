@@ -23,6 +23,8 @@ import Hysteroscopy from "./Page/Hysteroscopy";
 import Pelvic from "./Page/Pelvic";
 import Vulvar from "./Page/Vulvar";
 import PostmenopausalBleedingPage from "./Page/PostmenopausalBleedingPage";
+import VaginalGuidePage from "./Page/VaginalGuidePage";
+
 function App() {
   return (
     <Router>
@@ -31,7 +33,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/Cancer/Vulvar" element={<VulvarCancerPage />} />
         <Route path="/Cancer/VaginalCancer" element={<  VaginalCancerInformationPage />} />
-         <Route path="/VulvarGuidePage" element={<VulvarGuidePage  />} />
+        <Route path="/VulvarGuidePage" element={<VulvarGuidePage />} />
+        <Route path="/VaginalGuidePage" element={<VaginalGuidePage />} />
         <Route path="/Cancer/OvarianCancer" element={<  OvarianCancerInformationPage />} />
         <Route path="/Cancer/EndometrialCancer" element={<   EndometrialCancerInformationPage />} />
         <Route path="/Cancer/CervicalCancer" element={<  CervicalCancerOverviewPage />} />
