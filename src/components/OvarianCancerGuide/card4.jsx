@@ -1,6 +1,14 @@
 "use client";
 import { useState } from "react";
-import { AlertTriangle, Eye, Flame, Droplet, Scan, Sparkles } from "lucide-react";
+import {
+  AlertTriangle,
+  Eye,
+  Flame,
+  Droplet,
+  Scan,
+  Sparkles,
+  Activity
+} from "lucide-react";
 
 const OvarianCancerGuideCard4 = ({ setShowCard, setActiveButton }) => {
   const [openAccordion, setOpenAccordion] = useState(null);
@@ -17,10 +25,10 @@ const OvarianCancerGuideCard4 = ({ setShowCard, setActiveButton }) => {
         <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6">
           <div className="leading-none font-semibold flex items-center gap-2">
             <AlertTriangle className="w-6 h-6 text-primary" />
-            Step 1 — Recognizing Symptoms
+            Recognising Symptoms
           </div>
           <p className="text-muted-foreground text-sm">
-            Early symptoms are often subtle—knowing them can help detect vulvar cancer sooner.
+            Ovarian cancer symptoms can be vague—recognising them early is important.
           </p>
         </div>
 
@@ -28,8 +36,9 @@ const OvarianCancerGuideCard4 = ({ setShowCard, setActiveButton }) => {
         <div className="px-6 space-y-4">
           <div className="bg-primary/5 p-4 rounded-lg border border-primary/20">
             <p className="leading-relaxed">
-              Vulvar cancer most often affects the labia, but it can occur anywhere on the vulva. 
-              If you notice any of these symptoms, it's important to see your doctor promptly.
+              Ovarian cancer often causes subtle symptoms that can easily be mistaken
+              for digestive or menstrual issues. If these symptoms are new, persistent,
+              or unusual for you, it’s important to speak to your GP.
             </p>
           </div>
 
@@ -67,48 +76,49 @@ const OvarianCancerGuideCard4 = ({ setShowCard, setActiveButton }) => {
               {openAccordion === 1 && (
                 <div id="accordion-item-1" className="overflow-hidden text-sm pb-4 space-y-3">
 
-                  {/* Symptom 1 */}
                   <div className="flex items-start gap-3">
                     <Flame className="w-5 h-5 text-accent mt-0.5" />
-                    <span>Persistent vulvar itching (lasting more than a few weeks)</span>
+                    <span>Persistent bloating</span>
                   </div>
 
-                  {/* Symptom 2 */}
                   <div className="flex items-start gap-3">
-                    <Droplet className="w-5 h-5 text-accent mt-0.5" />
-                    <span>A cut or sore on the vulva that will not heal</span>
+                    <Activity className="w-5 h-5 text-accent mt-0.5" />
+                    <span>Swollen or bloated tummy</span>
                   </div>
 
-                  {/* Symptom 3 */}
                   <div className="flex items-start gap-3">
                     <AlertTriangle className="w-5 h-5 text-accent mt-0.5" />
-                    <span>A lump or mass on the vulva</span>
+                    <span>Pelvic or abdominal pain/discomfort</span>
                   </div>
 
-                  {/* Symptom 4 */}
-                  <div className="flex items-start gap-3">
-                    <Scan className="w-5 h-5 text-accent mt-0.5" />
-                    <span>Burning or pain in the vulvar area</span>
-                  </div>
-
-                  {/* Symptom 5 */}
                   <div className="flex items-start gap-3">
                     <Droplet className="w-5 h-5 text-accent mt-0.5" />
-                    <span>Unusual bleeding from the vulva (not menstrual)</span>
+                    <span>Loss of appetite or feeling full quickly</span>
                   </div>
 
-                  {/* Symptom 6 */}
+                  <div className="flex items-start gap-3">
+                    <Scan className="w-5 h-5 text-accent mt-0.5" />
+                    <span>Frequent or urgent need to urinate</span>
+                  </div>
+
                   <div className="flex items-start gap-3">
                     <Flame className="w-5 h-5 text-accent mt-0.5" />
-                    <span>Burning that continues despite treatment</span>
+                    <span>Indigestion, nausea, or changes in bowel habits</span>
                   </div>
 
-                  {/* Symptom 7 */}
                   <div className="flex items-start gap-3">
                     <Eye className="w-5 h-5 text-accent mt-0.5" />
-                    <span>
-                      Changes in a mole or birthmark on the vulva (size, colour, or texture)
-                    </span>
+                    <span>Pain during sexual intercourse</span>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <AlertTriangle className="w-5 h-5 text-accent mt-0.5" />
+                    <span>Unexplained back pain or tiredness</span>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <Droplet className="w-5 h-5 text-accent mt-0.5" />
+                    <span>Unexplained weight loss</span>
                   </div>
                 </div>
               )}
@@ -145,10 +155,9 @@ const OvarianCancerGuideCard4 = ({ setShowCard, setActiveButton }) => {
               {openAccordion === 2 && (
                 <div id="accordion-item-2" className="overflow-hidden text-sm pb-4">
                   <p>
-                    These symptoms do NOT always mean cancer — infections, skin conditions,
-                    or irritation can cause similar issues.  
-                    But early vulvar cancer often begins with subtle skin changes, so checking early
-                    helps ensure the best outcomes.
+                    These symptoms can be caused by many conditions—not just ovarian cancer.
+                    However, persistent or worsening symptoms should always be checked by a GP. 
+                    Early diagnosis greatly improves treatment outcomes.
                   </p>
                 </div>
               )}
@@ -163,7 +172,7 @@ const OvarianCancerGuideCard4 = ({ setShowCard, setActiveButton }) => {
               setShowCard(5);
               setActiveButton(4);
             }}
-            className="items-center w-[90%] mx-5 md:mx-10 lg:mx-12 bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 justify-center gap-2 rounded-md text-sm font-medium transition-all h-9 px-4 py-2 text-primary-foreground"
+            className="items-center w-[90%] mx-5 md:mx-10 lg:mx-12 bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 justify-center gap-2 rounded-md text-sm font-medium transition-all h-9 px-4 py-2 text-white"
           >
             Continue to Next Step
           </button>

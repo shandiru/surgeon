@@ -28,7 +28,7 @@ const OvarianCancerGuideAbout = ({ activeButton }) => {
 
       {/* Main Title */}
       <h1 className="text-3xl sm:text-4xl font-bold text-balance mb-4 text-[#FF4B8B]">
-        Understanding Vulvar Cancer
+        Understanding Ovarian Cancer
       </h1>
       <p className="text-lg sm:text-xl text-muted-foreground text-balance text-[#BB125B]">
         What it is, why it's done, and what to expect

@@ -1,7 +1,7 @@
-'use client';
+"use client";
 import { ShieldCheck, Heart, Star, PlusCircle } from 'lucide-react';
 
-const OvarianCancerGuidecard7 = () => {
+const OvarianCancerGuidecard7 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6">
       {/* Card Container */}
@@ -14,7 +14,7 @@ const OvarianCancerGuidecard7 = () => {
             Prevention & Early Detection
           </div>
           <div className="text-muted-foreground text-sm">
-            Simple steps that can greatly reduce your risk
+            While there is no screening test for ovarian cancer, several steps can lower risk.
           </div>
         </div>
 
@@ -28,23 +28,23 @@ const OvarianCancerGuidecard7 = () => {
               Why Prevention Matters
             </h4>
             <p className="text-sm leading-relaxed">
-              While vulvar cancer is uncommon, early awareness and simple preventive steps can 
-              significantly reduce risk and help detect changes before they become serious.
+              Ovarian cancer often develops silently. While there is no reliable screening test,
+              knowing your risks and making informed choices can significantly reduce the likelihood.
             </p>
           </div>
 
           {/* Prevention Steps */}
           <div className="grid md:grid-cols-2 gap-4">
             <div className="space-y-3">
-              <h4 className="font-semibold">You Can Reduce Risk By:</h4>
+              <h4 className="font-semibold">Ways to Reduce Your Risk:</h4>
               <div className="space-y-2">
                 {[
-                  'Getting the HPV vaccine',
-                  'Not smoking',
-                  'Regular gynecological check-ups',
-                  'Early treatment of vulvar skin conditions',
-                  'Being aware of any changes to vulvar skin',
-                  'Practicing safer sex',
+                  'Genetic testing if you have a strong family history',
+                  'Using oral contraceptives (long-term use lowers risk)',
+                  'Maintaining a healthy body weight',
+                  'Treating endometriosis early',
+                  'Considering risk-reducing surgery (BRCA1/BRCA2 carriers)',
+                  'Being aware of symptoms and seeking prompt evaluation'
                 ].map((item, index) => (
                   <div 
                     key={index} 
@@ -64,10 +64,10 @@ const OvarianCancerGuidecard7 = () => {
                 Remember
               </h4>
               <ul className="text-sm space-y-2">
-                <li>• Early detection makes treatment more effective</li>
-                <li>• Regular check-ups help catch changes early</li>
-                <li>• HPV protection greatly reduces risk</li>
-                <li>• Any long-lasting vulvar change should be reviewed</li>
+                <li>• There is *no routine screening test* for ovarian cancer.</li>
+                <li>• Genetic testing can guide personalised prevention.</li>
+                <li>• Paying attention to persistent bloating or pelvic pain is essential.</li>
+                <li>• Early medical evaluation improves outcomes.</li>
               </ul>
             </div>
           </div>
@@ -79,30 +79,28 @@ const OvarianCancerGuidecard7 = () => {
               Key Takeaway
             </h4>
             <p className="text-sm leading-relaxed">
-              Prevention is powerful. By staying aware of changes, attending check-ups, 
-              and protecting yourself from HPV, you take strong steps toward maintaining 
-              vulvar health and detecting issues early.
+              Although ovarian cancer cannot always be prevented, knowing your risk, staying
+              alert to symptoms, and seeking medical advice early can make a meaningful difference.
             </p>
           </div>
-           
-            <div className="pt-4">
+
+          {/* Continue Button */}
+          <div className="pt-3">
             <button
               onClick={() => {
-                setShowCard(7);
-                setActiveButton(6);
+                setShowCard(8);
+                setActiveButton(7);
               }}
-              className="inline-flex items-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-9 px-4 py-2 w-full"
+              className="inline-flex items-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 
+                         justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium 
+                         transition-all h-9 px-4 py-2 w-full text-white"
             >
-              Continue to Next Section
+              Continue to Final Summary
             </button>
           </div>
-          {/* Complete Guide Button */}
-          <div className="pt-4">
-            <button className="inline-flex items-center justify-center hover:bg-[#FF4B8B]/80 bg-[#FF4B8B] gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80 h-9 px-4 py-2 w-full">
-              <Star className="w-4 h-4" />
-              Complete Guide
-            </button>
-          </div>
+
+         
+
         </div>
       </div>
     </div>

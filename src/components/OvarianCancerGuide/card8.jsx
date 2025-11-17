@@ -30,8 +30,9 @@ const OvarianCancerGuidecard8 = ({ setShowCard, setActiveButton }) => {
             </h3>
 
             <p className="text-sm leading-relaxed">
-              Vulvar cancer is rare but serious. Early diagnosis leads to the best outcomes,
-              which is why understanding symptoms and staying aware of changes is so important.
+              Ovarian cancer is often called a “silent” cancer because symptoms can be subtle 
+              and mistaken for common digestive issues. Early detection dramatically improves 
+              treatment success, which is why awareness of symptoms is so essential.
             </p>
           </div>
 
@@ -40,11 +41,11 @@ const OvarianCancerGuidecard8 = ({ setShowCard, setActiveButton }) => {
             <h4 className="font-semibold text-primary">Key Points to Remember</h4>
             <ul className="space-y-2 text-sm">
               {[
-                "Early detection greatly improves treatment success",
-                "Persistent itching, lumps, or skin changes should never be ignored",
-                "Regular check-ups help spot changes early",
-                "HPV protection reduces risk",
-                "Awareness of your vulvar skin is the first step in prevention"
+                "Persistent bloating, pelvic pain, or feeling full quickly should not be ignored",
+                "Ovarian cancer symptoms are often vague—tracking changes over time is important",
+                "Family history and genetic factors (BRCA1/BRCA2) significantly increase risk",
+                "There is no reliable screening test, so symptom awareness is essential",
+                "Early medical evaluation leads to better outcomes"
               ].map((item, index) => (
                 <li key={index} className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
@@ -61,15 +62,18 @@ const OvarianCancerGuidecard8 = ({ setShowCard, setActiveButton }) => {
               Final Message
             </h4>
             <p className="text-sm leading-relaxed mt-1">
-              Staying aware, getting regular check-ups, and seeking help early if something
-              feels unusual can make a powerful difference in protecting your health.
+              Ovarian cancer can be difficult to detect early, but knowing the symptoms, understanding 
+              your risk factors, and seeking medical advice if something feels unusual are powerful 
+              steps in protecting your health.
             </p>
           </div>
 
           {/* ⭐ COMPLETE GUIDE BUTTON ONLY */}
           <div className="pt-4">
             <button
-              className="inline-flex items-center justify-center hover:bg-[#FF4B8B]/80 bg-[#FF4B8B] gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-9 px-4 py-2 w-full text-white"
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              className="inline-flex items-center justify-center hover:bg-[#FF4B8B]/80 bg-[#FF4B8B] 
+              gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-9 px-4 py-2 w-full text-white"
             >
               <Star className="w-4 h-4" />
               Complete Guide
