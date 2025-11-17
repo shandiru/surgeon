@@ -1,7 +1,7 @@
 'use client';
 import { Lightbulb, Star, CheckCircle2 } from 'lucide-react';
 
-const Vaginalcard8 = () => {
+const VulvarGuidecard8 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6">
 
@@ -15,7 +15,7 @@ const Vaginalcard8 = () => {
             Key Takeaway
           </div>
           <p className="text-muted-foreground text-sm">
-            Important points to remember about Vaginal Cancer
+            The most important points to remember
           </p>
         </div>
 
@@ -28,8 +28,10 @@ const Vaginalcard8 = () => {
               <Star className="w-5 h-5" />
               What You Should Know
             </h3>
+
             <p className="text-sm leading-relaxed">
-              Vaginal cancer is rare but can be serious. Early detection through regular gynecological exams and awareness of symptoms—such as abnormal bleeding, unusual discharge, or pelvic pain—greatly improves treatment outcomes.
+              Vulvar cancer is rare but serious. Early diagnosis leads to the best outcomes,
+              which is why understanding symptoms and staying aware of changes is so important.
             </p>
           </div>
 
@@ -38,11 +40,11 @@ const Vaginalcard8 = () => {
             <h4 className="font-semibold text-primary">Key Points to Remember</h4>
             <ul className="space-y-2 text-sm">
               {[
-                "Early detection significantly improves treatment success",
-                "Report unusual bleeding, discharge, or pelvic pain promptly",
-                "Regular gynecological check-ups help detect changes early",
-                "HPV vaccination can reduce the risk of vaginal cancer",
-                "Being aware of vaginal health is crucial for prevention"
+                "Early detection greatly improves treatment success",
+                "Persistent itching, lumps, or skin changes should never be ignored",
+                "Regular check-ups help spot changes early",
+                "HPV protection reduces risk",
+                "Awareness of your vulvar skin is the first step in prevention"
               ].map((item, index) => (
                 <li key={index} className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
@@ -59,14 +61,17 @@ const Vaginalcard8 = () => {
               Final Message
             </h4>
             <p className="text-sm leading-relaxed mt-1">
-              Staying alert to changes, attending regular check-ups, and seeking medical help early if symptoms appear are key steps to protect your vaginal health and improve outcomes in case of vaginal cancer.
+              Staying aware, getting regular check-ups, and seeking help early if something
+              feels unusual can make a powerful difference in protecting your health.
             </p>
           </div>
 
-          {/* Finish Button */}
+          {/* ⭐ COMPLETE GUIDE BUTTON ONLY */}
           <div className="pt-4">
-            <button className="inline-flex items-center justify-center hover:bg-[#FF4B8B]/80 bg-[#FF4B8B] gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80 h-9 px-4 py-2 w-full">
-              <Star className="w-4 h-4" /> {/* Added the Star icon */}
+            <button
+              className="inline-flex items-center justify-center hover:bg-[#FF4B8B]/80 bg-[#FF4B8B] gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-9 px-4 py-2 w-full text-white"
+            >
+              <Star className="w-4 h-4" />
               Complete Guide
             </button>
           </div>
@@ -77,4 +82,4 @@ const Vaginalcard8 = () => {
   );
 };
 
-export default Vaginalcard8;
+export default VulvarGuidecard8;
