@@ -4,13 +4,20 @@ import { Biohazard, CloudFog, Sparkles, ShieldOff, Heart } from 'lucide-react';
 
 const EndometrialCard3 = ({ setShowCard, setActiveButton }) => {
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 pb-10">
+
       {/* Card Container */}
-      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl text-[#BB125B] mx-auto mb-10 flex flex-col gap-6 rounded-xl border py-6 shadow-sm animate-in slide-in-from-right-5 duration-300">
+      <div
+        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-2xl border p-8 shadow-sm animate-in slide-in-from-right-5 duration-300"
+        style={{
+          backgroundColor: '#FFFFFF',
+          borderColor: 'rgb(255,197,211)',
+        }}
+      >
 
         {/* Card Header */}
-        <div className="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6">
-          <div className="leading-none font-semibold flex items-center gap-2">
+        <div className="grid auto-rows-min items-start gap-1.5">
+          <div className="leading-none font-semibold flex items-center gap-2" style={{ color: '#FF4B8B' }}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -21,7 +28,7 @@ const EndometrialCard3 = ({ setShowCard, setActiveButton }) => {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="lucide lucide-file-text w-6 h-6 text-primary"
+              className="w-6 h-6 text-[#FF4B8B]"
             >
               <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
               <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
@@ -31,106 +38,79 @@ const EndometrialCard3 = ({ setShowCard, setActiveButton }) => {
             </svg>
             Key Risk Factors
           </div>
-          <div className="text-muted-foreground text-sm">
+          <p className="text-sm mt-1" style={{ color: '#7a2f4f' }}>
             These factors increase the likelihood of developing endometrial cancer.
-          </div>
+          </p>
         </div>
 
         {/* Card Content */}
-        <div className="px-6 space-y-4">
+        <div className="space-y-4 mt-4">
 
           {/* Risk Factors Section */}
           <div className="space-y-4">
             {[
-              {
-                step: 'Postmenopausal Age',
-                icon: <CloudFog className="w-5 h-5 text-[#BB125B]" />,
-                description: 'Endometrial cancer is more common after menopause.',
-              },
-              {
-                step: 'Excess Oestrogen Exposure',
-                icon: <Sparkles className="w-5 h-5 text-[#BB125B]" />,
-                description: 'High levels of oestrogen without progesterone increase risk.',
-              },
-              {
-                step: 'Obesity',
-                icon: <Heart className="w-5 h-5 text-[#BB125B]" />,
-                description: 'One of the strongest risk factors for endometrial cancer.',
-              },
-              {
-                step: 'Polycystic Ovary Syndrome (PCOS)',
-                icon: <Biohazard className="w-5 h-5 text-[#BB125B]" />,
-                description: 'PCOS can lead to hormonal imbalances that increase risk.',
-              },
-              {
-                step: 'Early Menarche or Late Menopause',
-                icon: <CloudFog className="w-5 h-5 text-[#BB125B]" />,
-                description: 'Longer exposure to estrogen over a lifetime raises risk.',
-              },
-              {
-                step: 'Never Having Been Pregnant',
-                icon: <ShieldOff className="w-5 h-5 text-[#BB125B]" />,
-                description: 'Pregnancy provides protective hormonal effects.',
-              },
-              {
-                step: 'Hormone Replacement Therapy (Oestrogen-Only)',
-                icon: <Sparkles className="w-5 h-5 text-[#BB125B]" />,
-                description: 'Using oestrogen alone without progesterone increases risk.',
-              },
-              {
-                step: 'Tamoxifen Use',
-                icon: <Biohazard className="w-5 h-5 text-[#BB125B]" />,
-                description: 'Tamoxifen, used for breast cancer, can slightly raise risk.',
-              },
-              {
-                step: 'Family History (e.g., Lynch Syndrome)',
-                icon: <ShieldOff className="w-5 h-5 text-[#BB125B]" />,
-                description: 'Genetic predisposition increases lifetime risk of endometrial cancer.',
-              }
+              { step: 'Postmenopausal Age', icon: <CloudFog className="w-5 h-5 text-[#FF4B8B]" />, description: 'Endometrial cancer is more common after menopause.' },
+              { step: 'Excess Oestrogen Exposure', icon: <Sparkles className="w-5 h-5 text-[#FF4B8B]" />, description: 'High levels of oestrogen without progesterone increase risk.' },
+              { step: 'Obesity', icon: <Heart className="w-5 h-5 text-[#FF4B8B]" />, description: 'One of the strongest risk factors for endometrial cancer.' },
+              { step: 'Polycystic Ovary Syndrome (PCOS)', icon: <Biohazard className="w-5 h-5 text-[#FF4B8B]" />, description: 'PCOS can lead to hormonal imbalances that increase risk.' },
+              { step: 'Early Menarche or Late Menopause', icon: <CloudFog className="w-5 h-5 text-[#FF4B8B]" />, description: 'Longer lifetime exposure to estrogen raises risk.' },
+              { step: 'Never Having Been Pregnant', icon: <ShieldOff className="w-5 h-5 text-[#FF4B8B]" />, description: 'Pregnancy provides protective hormonal effects.' },
+              { step: 'Hormone Replacement Therapy (Oestrogen-Only)', icon: <Sparkles className="w-5 h-5 text-[#FF4B8B]" />, description: 'Using oestrogen alone without progesterone increases risk.' },
+              { step: 'Tamoxifen Use', icon: <Biohazard className="w-5 h-5 text-[#FF4B8B]" />, description: 'Tamoxifen, used for breast cancer, can slightly raise risk.' },
+              { step: 'Family History (e.g., Lynch Syndrome)', icon: <ShieldOff className="w-5 h-5 text-[#FF4B8B]" />, description: 'Genetic predisposition increases lifetime risk.' }
             ].map((item, index) => (
               <div
                 key={index}
-                className="flex gap-4 p-4 bg-card rounded-lg border hover:z-50 transition-all duration-300 
-                hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] 
-                active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] 
-                hover:scale-105 active:scale-100"
+                className="flex gap-4 p-4 rounded-xl border transition-all duration-300 hover:shadow-lg active:shadow-lg"
+                style={{
+                  backgroundColor: '#FFFFFF',
+                  borderColor: 'rgb(255,197,211)',
+                }}
               >
+                {/* Number Circle */}
                 <div className="flex-shrink-0">
-                  <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold">
+                  <div
+                    className="w-10 h-10 rounded-full flex items-center justify-center font-bold"
+                    style={{ backgroundColor: '#FF4B8B', color: '#FFFFFF' }}
+                  >
                     {index + 1}
                   </div>
                 </div>
 
+                {/* Text */}
                 <div className="flex-1">
-                  <h4 className="font-semibold mb-1 flex items-center gap-2">
+                  <h4 className="font-semibold mb-1 flex items-center gap-2" style={{ color: '#FF4B8B' }}>
                     {item.icon}
                     {item.step}
                   </h4>
-                  <p className="text-muted-foreground text-sm">{item.description}</p>
+                  <p className="text-sm" style={{ color: '#7a2f4f' }}>{item.description}</p>
                 </div>
               </div>
             ))}
           </div>
 
           {/* Protective Factors */}
-          <div className="bg-accent/10 p-4 rounded-lg border border-accent/20">
-            <h4 className="font-semibold text-accent-foreground mb-2 flex items-center gap-2">
+          <div
+            className="p-4 rounded-xl border mt-4"
+            style={{ backgroundColor: '#FFF5F8', borderColor: 'rgb(255,197,211)' }}
+          >
+            <h4 className="font-semibold mb-2 flex items-center gap-2" style={{ color: '#FF4B8B' }}>
               <Sparkles className="w-5 h-5 text-[#FF4B8B]" />
               Protective Factors
             </h4>
-            <p className="text-sm">
+            <p className="text-sm" style={{ color: '#7a2f4f' }}>
               Pregnancy, use of combined hormonal contraceptives, and maintaining a healthy weight can lower the risk of endometrial cancer.
             </p>
           </div>
 
-          {/* Button */}
-          <div className="pt-4">
+          {/* Continue Button */}
+          <div className="pt-6 flex justify-center">
             <button
               onClick={() => {
                 setShowCard(4);
                 setActiveButton(3);
               }}
-              className="inline-flex items-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-9 px-4 py-2 w-full"
+              className="inline-flex items-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
             >
               Continue to Next Section
             </button>

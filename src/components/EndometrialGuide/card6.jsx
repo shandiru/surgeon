@@ -1,88 +1,130 @@
 'use client';
 import React from 'react';
 import { Heart, Flame, Droplet, Shield, Sparkles } from 'lucide-react';
+import { LuShield } from 'react-icons/lu';
 
 const EndometrialCard6 = ({ setShowCard, setActiveButton }) => {
-  return (
-    <div className="space-y-6">
-      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl text-[#BB125B] mx-auto mb-10 flex flex-col gap-6 rounded-xl border py-6 shadow-sm animate-in slide-in-from-right-5 duration-300">
+  const pink = '#FFC5D3'
+  const deepPink = '#FF4B8B' // stronger deep pink for headings and important text
 
-        {/* Header */}
-        <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 border-b pb-6">
-          <div className="leading-none font-semibold flex items-center gap-2">
-            <Heart className="w-6 h-6 text-primary" />
-            Step 4 — Treatment Options for Endometrial Cancer
-          </div>
-          <p className="text-muted-foreground text-sm">
-            Treatment depends on cancer stage, tumor size, and type. Your oncologist will recommend a personalized plan.
-          </p>
+  return (
+    <div className="">
+      <div className="max-w-5xl mx-auto">
+        {/* Section Header */}
+        <div className="flex items-center gap-3 mb-8">
+          <LuShield className="h-8 w-8" style={{ color: deepPink }} />
+          <h2 className="text-3xl font-bold" style={{ color: deepPink }}>
+            Treatment for Endometrial Cancer
+          </h2>
         </div>
 
-        {/* Card Content */}
-        <div className="px-6 space-y-6">
+        {/* Treatment Options Card */}
+        <div
+          className="bg-white text-gray-900 flex flex-col gap-6 rounded-xl mb-5 shadow-sm"
 
-          {/* Surgery Section */}
-          <div>
-            <h4 className="font-semibold mb-3 text-primary flex items-center gap-2">
-              1. Surgery (Primary Treatment)
-            </h4>
-
-            <div className="space-y-4">
-              <div className="p-4 bg-primary/10 rounded-lg border border-primary/20 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] hover:scale-105 transition-all duration-300">
-                <p className="font-semibold text-primary mb-1">Hysterectomy</p>
-                <p className="text-sm">
-                  Surgical removal of the uterus is the main treatment for most cases. Ovaries and fallopian tubes may also be removed depending on risk factors.
-                </p>
-              </div>
-
-              <div className="p-4 bg-primary/10 rounded-lg border border-primary/20 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] hover:scale-105 transition-all duration-300">
-                <p className="font-semibold text-primary mb-1">Lymph Node Assessment</p>
-                <p className="text-sm">
-                  Nearby lymph nodes may be removed to check if cancer has spread, helping determine staging and prognosis.
-                </p>
-              </div>
-            </div>
+        >
+          {/* Card Header */}
+          <div className="px-6 grid gap-1.5">
+            <h3 className="font-semibold text-xl" style={{ color: deepPink }}>
+              Treatment Options
+            </h3>
+            <p className="text-sm text-gray-600">
+              Treatment depends on factors such as stage, tumor size, and cancer
+              type.
+            </p>
           </div>
 
-          {/* Other Treatments */}
-          <div>
-            <h4 className="font-semibold mb-3 text-accent flex items-center gap-2">
-              2. Additional or Adjuvant Treatments
-            </h4>
+          {/* Card Content */}
+          <div className="px-6">
+            <p className="mb-6 text-sm text-gray-600">
+              A gynaecological oncologist may recommend:
+            </p>
 
-            <div className="space-y-4">
-              <div className="p-4 bg-accent/10 rounded-lg border hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] hover:scale-105 transition-all duration-300">
-                <p className="font-semibold text-accent-foreground mb-1">Radiation Therapy</p>
-                <p className="text-sm">
-                  Uses high-energy rays to destroy remaining cancer cells after surgery or to treat advanced disease.
-                </p>
+            <div className="grid md:grid-cols-2 gap-6">
+              {/* Left Column */}
+              <div className="space-y-4">
+                <div
+                  className="p-4 border rounded-lg bg-white"
+                  style={{ borderColor: pink }}
+                >
+                  <h4 className="font-semibold mb-2" style={{ color: deepPink }}>
+                    Surgery
+                  </h4>
+                  <p className="text-sm text-gray-700">
+                    Often the first-line treatment to remove the uterus
+                    (hysterectomy), sometimes including ovaries and fallopian
+                    tubes.
+                  </p>
+                </div>
+
+                <div
+                  className="p-4 border rounded-lg bg-white"
+                  style={{ borderColor: pink }}
+                >
+                  <h4 className="font-semibold mb-2" style={{ color: deepPink }}>
+                    Radiation Therapy
+                  </h4>
+                  <p className="text-sm text-gray-700">
+                    High-energy rays used to target and destroy cancer cells.
+                  </p>
+                </div>
+
+                <div
+                  className="p-4 border rounded-lg bg-white"
+                  style={{ borderColor: pink }}
+                >
+                  <h4 className="font-semibold mb-2" style={{ color: deepPink }}>
+                    Chemotherapy
+                  </h4>
+                  <p className="text-sm text-gray-700">
+                    Anti-cancer drugs that destroy or slow cancer cell growth.
+                  </p>
+                </div>
               </div>
 
-              <div className="p-4 bg-accent/10 rounded-lg border hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] hover:scale-105 transition-all duration-300">
-                <p className="font-semibold text-accent-foreground mb-1">Chemotherapy</p>
-                <p className="text-sm">
-                  Anti-cancer drugs may be used for advanced, recurrent, or aggressive endometrial cancer.
-                </p>
-              </div>
+              {/* Right Column */}
+              <div className="space-y-4">
+                <div
+                  className="p-4 border rounded-lg bg-white"
+                  style={{ borderColor: pink }}
+                >
+                  <h4 className="font-semibold mb-2" style={{ color: deepPink }}>
+                    Hormone Therapy
+                  </h4>
+                  <p className="text-sm text-gray-700">
+                    Medicines that block or lower hormones fueling cancer
+                    growth.
+                  </p>
+                </div>
 
-              <div className="p-4 bg-accent/10 rounded-lg border hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] hover:scale-105 transition-all duration-300">
-                <p className="font-semibold text-accent-foreground mb-1">Hormone Therapy</p>
-                <p className="text-sm">
-                  Medications that block or reduce estrogen may be used in certain cases, especially hormone-sensitive tumors.
-                </p>
-              </div>
+                <div
+                  className="p-4 border rounded-lg bg-white"
+                  style={{ borderColor: pink }}
+                >
+                  <h4 className="font-semibold mb-2" style={{ color: deepPink }}>
+                    Combination Therapy
+                  </h4>
+                  <p className="text-sm text-gray-700">
+                    A tailored mix of treatments for the best results.
+                  </p>
+                </div>
 
-              <div className="p-4 bg-accent/10 rounded-lg border hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] hover:scale-105 transition-all duration-300">
-                <p className="font-semibold text-accent-foreground mb-1">Combination Therapy</p>
-                <p className="text-sm">
-                  A tailored mix of surgery, radiation, chemotherapy, and hormone therapy may be used to optimize outcomes.
-                </p>
+                <div
+                  className="p-4 rounded-lg border"
+                  style={{ backgroundColor: pink, borderColor: pink }}
+                >
+                  <p className="text-sm font-medium " style={{ color: deepPink }}>
+                    <strong>Personalized Care:</strong> Every treatment plan is
+                    customized to provide the best outcome for your health and
+                    recovery.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
 
           {/* Key Point Box */}
-          <div className="bg-primary/5 p-4 rounded-lg border border-primary/20">
+          <div className="bg-primary/5 p-4 rounded-lg border border-primary/20 mx-6">
             <h4 className="font-semibold text-primary mb-2 flex items-center gap-2">
               <Sparkles className="w-5 h-5 text-[#FF4B8B]" />
               Key Point
@@ -93,7 +135,7 @@ const EndometrialCard6 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           {/* Continue Button */}
-          <div className="pt-4">
+          <div className="p-6">
             <button
               onClick={() => {
                 setShowCard(7);
@@ -104,8 +146,8 @@ const EndometrialCard6 = ({ setShowCard, setActiveButton }) => {
               Continue to Next Section
             </button>
           </div>
-
         </div>
+
       </div>
     </div>
   );

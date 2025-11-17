@@ -6,7 +6,7 @@ export default function TreatmentSection() {
 
   return (
     <section className="mb-16 px-4 md:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="flex items-center gap-3 mb-8">
           <LuShield className="h-8 w-8" style={{ color: deepPink }} />

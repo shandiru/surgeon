@@ -1,121 +1,122 @@
 'use client';
 import { Target, Stethoscope, Microscope, Scan, Camera, Activity } from "lucide-react";
 import React, { useState } from "react";
+import { LuStethoscope } from "react-icons/lu";
 
 const EndometrialGuideCard5 = ({ setShowCard, setActiveButton }) => {
   const [activeAccordion, setActiveAccordion] = useState(null);
 
-  const handleAccordionToggle = (index) => {
-    setActiveAccordion(activeAccordion === index ? null : index);
-  };
+  const pink = '#FFC5D3'
+  const deepPink = '#FF4B8B'
 
   return (
-    <div className="space-y-6">
-      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl text-[#BB125B] mx-auto mb-10 flex flex-col gap-6 rounded-xl border py-6 shadow-sm animate-in slide-in-from-right-5 duration-300">
-
-        {/* Header */}
-        <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 border-b pb-6">
-          <div className="leading-none font-semibold flex items-center gap-2">
-            <Target className="w-6 h-6 text-primary" />
-            Step 3 — Diagnosis of Endometrial Cancer
-          </div>
-          <p className="text-muted-foreground text-sm">
-            Early diagnosis is crucial. A thorough evaluation helps confirm the presence and stage of endometrial cancer.
-          </p>
+    <div className="">
+      <div className="max-w-5xl mx-auto">
+        {/* Section Heading */}
+        <div className="flex items-center gap-3 mb-6" data-aos="fade-left">
+          <LuStethoscope className="h-8 w-8" style={{ color: deepPink }} />
+          <h2 className="text-3xl font-bold" style={{ color: deepPink }}>
+            Diagnosis of Endometrial Cancer
+          </h2>
         </div>
 
-        {/* Content */}
-        <div className="px-6 space-y-4">
+        {/* Card Box */}
+        <div
+          className="bg-white text-gray-900 flex flex-col gap-6 rounded-2xl shadow-sm mb-6 
+                           transition-all duration-300 hover:shadow-md hover:scale-[1.01] active:scale-[0.99]"
 
-          {/* Intro Box */}
-          <div className="bg-primary/10 p-4 rounded-lg border border-primary/20 hover:bg-[#fce3e8] transition-all duration-300 hover:shadow-lg hover:border-[#f5a9bd] hover:scale-105 active:scale-100">
-            <p className="leading-relaxed">
-              Because symptoms may resemble other conditions, your doctor will perform several tests to determine if endometrial cancer is present.
-            </p>
-          </div>
-
-          {/* Two-column Layout */}
-          <div className="grid md:grid-cols-2 gap-4">
-
-            {/* Medical & Physical Exam */}
-            <div className="p-4 bg-primary/10 rounded-lg border border-primary/20 hover:bg-[#fce3e8] transition-all duration-300 hover:shadow-lg hover:border-[#f5a9bd] hover:scale-105 active:scale-100">
-              <h4 className="font-semibold text-primary mb-2 flex items-center gap-2">
-                <Stethoscope className="w-4 h-4" />
-                Medical & Physical Exam
-              </h4>
-              <p className="text-sm">
-                Review of your medical and family history, followed by a physical exam to check for lumps or tenderness in the abdomen.
-              </p>
+          data-aos="fade-up"
+        >
+          {/* Card Header */}
+          <div className="px-6 grid gap-1.5">
+            <div className="font-semibold text-xl" style={{ color: deepPink }}>
+              Diagnostic Process
             </div>
-
-            {/* Endometrial Biopsy */}
-            <div className="p-4 bg-accent/10 rounded-lg border hover:bg-[#fce3e8] transition-all duration-300 hover:shadow-lg hover:border-[#f5a9bd] hover:scale-105 active:scale-100">
-              <h4 className="font-semibold text-accent-foreground mb-2 flex items-center gap-2">
-                <Microscope className="w-4 h-4" />
-                Endometrial Biopsy
-              </h4>
-              <p className="text-sm">
-                A small tissue sample is taken from the uterus lining and examined for abnormal or cancerous cells.
-              </p>
+            <div className="text-sm text-gray-600">
+              Because symptoms may be similar to other conditions, a thorough evaluation is essential.
             </div>
           </div>
 
-          {/* Accordion Section */}
-          <div className="space-y-3">
-            <h4 className="font-semibold">Diagnostic Tests Explained</h4>
+          {/* Card Content */}
+          <div className="px-6">
+            <div className="space-y-4">
+              <h4 className="font-semibold text-lg mb-3" style={{ color: deepPink }}>
+                Diagnostic steps may include:
+              </h4>
 
-            {[
-              { title: "Transvaginal Ultrasound", icon: <Scan className="w-5 h-5 text-accent" />, content: "Uses sound waves to create images of the uterus and endometrium, helping detect thickened lining or abnormalities." },
-              { title: "Dilation & Curettage (D&C)", icon: <Microscope className="w-5 h-5 text-accent" />, content: "Removes a portion of the uterine lining for detailed examination." },
-              { title: "Pap Smear", icon: <Camera className="w-5 h-5 text-accent" />, content: "Helps screen for abnormal cells in the cervix, which can sometimes indicate endometrial changes." },
-              { title: "CT or MRI Scan", icon: <Scan className="w-5 h-5 text-accent" />, content: "Advanced imaging to evaluate tumor size and detect possible spread to lymph nodes or nearby organs." },
-              { title: "Genetic/Familial Testing", icon: <Activity className="w-5 h-5 text-accent" />, content: "Used if there's a family history of Lynch syndrome or other hereditary cancer syndromes." },
-            ].map((item, index) => (
-              <div key={index} className="border-b last:border-b-0">
-                <h3 className="flex">
-                  <button
-                    type="button"
-                    onClick={() => handleAccordionToggle(index)}
-                    aria-expanded={activeAccordion === index}
-                    className="flex flex-1 items-start justify-between gap-4 py-4 text-sm font-medium hover:underline outline-none"
-                  >
-                    <span className="flex items-center gap-2">{item.icon} {item.title}</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      className={`transition-transform ${activeAccordion === index ? "rotate-180" : ""}`}
-                    >
-                      <path d="m6 9 6 6 6-6"></path>
-                    </svg>
-                  </button>
-                </h3>
+              <div className="grid md:grid-cols-2 gap-4">
+                {/* Left Column */}
+                <div className="space-y-3" data-aos="fade-left">
+                  {[
+                    'Medical & family history review',
+                    'Physical exam – checking for lumps or masses in the abdomen',
+                    'Pelvic exam & Pap smear',
+                  ].map((item, i) => (
+                    <div key={i} className="flex items-start gap-3">
+                      <span
+                        className="inline-flex items-center justify-center rounded-md border px-2 py-0.5 text-xs font-semibold bg-white"
+                        style={{ color: deepPink }}
+                      >
+                        {i + 1}
+                      </span>
+                      <p className="text-sm text-gray-700">{item}</p>
+                    </div>
+                  ))}
+                </div>
 
-                {activeAccordion === index && (
-                  <div className="overflow-hidden text-sm">
-                    <p className="p-4">{item.content}</p>
-                  </div>
-                )}
+                {/* Right Column */}
+                <div className="space-y-3" data-aos="fade-left">
+                  {[
+                    'Transvaginal ultrasound – imaging of the uterus and reproductive organs',
+                    'Endometrial biopsy – taking a tissue sample from the uterus for examination',
+                    'Dilation & Curettage (D&C) – removing part of the uterine lining for analysis',
+                  ].map((item, i) => (
+                    <div key={i + 3} className="flex items-start gap-3">
+                      <span
+                        className="inline-flex items-center justify-center rounded-md border px-2 py-0.5 text-xs font-semibold bg-white"
+                        style={{ borderColor: pink, color: deepPink }}
+                      >
+                        {i + 4}
+                      </span>
+                      <p className="text-sm text-gray-700">{item}</p>
+                    </div>
+                  ))}
+                </div>
               </div>
-            ))}
+            </div>
+          </div>
+
+          {/* Stage Info Box */}
+          <div
+            className="mt-4 mx-6 p-4 rounded-lg transition-all duration-300 hover:shadow-md hover:scale-[1.01]"
+            style={{ border: `1px solid ${pink}`, backgroundColor: '#fff' }}
+            data-aos="fade-up"
+          >
+            <h4 className="font-semibold mb-2" style={{ color: deepPink }}>
+              If cancer is confirmed:
+            </h4>
+            <p className="text-sm text-gray-600 mb-2">
+              Your doctor will assign a cancer stage, which describes:
+            </p>
+            <ul className="text-sm space-y-1 list-disc ml-6 text-gray-700">
+              <li>How far the cancer has spread (metastasis)</li>
+              <li>Tumor size and aggressiveness</li>
+              <li>Grading system (letters and numbers) to classify severity</li>
+            </ul>
           </div>
 
           {/* Key Point Box */}
-          <div className="bg-primary/5 p-4 rounded-lg border border-primary/20">
-            <h4 className="font-semibold text-primary mb-2 flex items-center gap-2">
-              <Target className="w-5 h-5 text-[#FF4B8B]" />
-              Key Point
-            </h4>
-            <p className="text-sm">
-              Once diagnosed, your doctor will determine the cancer stage, tumor size, and grade. Early detection significantly improves treatment success.
+          <div
+            className="mt-4 mx-6 p-4 rounded-lg"
+            style={{ backgroundColor: pink, border: `1px solid ${pink}` }}
+            data-aos="fade-up"
+          >
+            <p className="text-sm font-medium" style={{ color: deepPink }}>
+              <strong>Key Point:</strong> Early detection significantly improves treatment success.
             </p>
           </div>
-
           {/* Button */}
-          <div className="pt-4">
+          <div className="p-6">
             <button
               onClick={() => {
                 setShowCard(6);
@@ -126,9 +127,10 @@ const EndometrialGuideCard5 = ({ setShowCard, setActiveButton }) => {
               Continue to Treatment Options
             </button>
           </div>
-
         </div>
       </div>
+
+
     </div>
   );
 };
