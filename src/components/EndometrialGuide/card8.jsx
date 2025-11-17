@@ -1,7 +1,8 @@
 'use client';
 import { Lightbulb, Star, CheckCircle2 } from 'lucide-react';
+import React from 'react';
 
-const VulvarGuidecard8 = ({ setShowCard, setActiveButton }) => {
+const EndometrialCard8 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6">
 
@@ -15,7 +16,7 @@ const VulvarGuidecard8 = ({ setShowCard, setActiveButton }) => {
             Key Takeaway
           </div>
           <p className="text-muted-foreground text-sm">
-            The most important points to remember
+            The most important points to remember about endometrial cancer
           </p>
         </div>
 
@@ -30,8 +31,9 @@ const VulvarGuidecard8 = ({ setShowCard, setActiveButton }) => {
             </h3>
 
             <p className="text-sm leading-relaxed">
-              Vulvar cancer is rare but serious. Early diagnosis leads to the best outcomes,
-              which is why understanding symptoms and staying aware of changes is so important.
+              Endometrial cancer is often detected early because it causes clear warning signs, 
+              especially postmenopausal bleeding. Early diagnosis usually leads to excellent outcomes, 
+              and lifestyle factors like weight management play a significant role in reducing risk.
             </p>
           </div>
 
@@ -40,11 +42,11 @@ const VulvarGuidecard8 = ({ setShowCard, setActiveButton }) => {
             <h4 className="font-semibold text-primary">Key Points to Remember</h4>
             <ul className="space-y-2 text-sm">
               {[
-                "Early detection greatly improves treatment success",
-                "Persistent itching, lumps, or skin changes should never be ignored",
-                "Regular check-ups help spot changes early",
-                "HPV protection reduces risk",
-                "Awareness of your vulvar skin is the first step in prevention"
+                "Postmenopausal bleeding should never be ignored",
+                "Early detection significantly improves treatment success",
+                "Maintaining a healthy weight reduces risk",
+                "Managing PCOS and hormonal balance is important",
+                "Regular gynecological check-ups help catch changes early"
               ].map((item, index) => (
                 <li key={index} className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
@@ -61,15 +63,18 @@ const VulvarGuidecard8 = ({ setShowCard, setActiveButton }) => {
               Final Message
             </h4>
             <p className="text-sm leading-relaxed mt-1">
-              Staying aware, getting regular check-ups, and seeking help early if something
-              feels unusual can make a powerful difference in protecting your health.
+              Staying aware of warning signs, attending regular check-ups, and seeking medical evaluation promptly if anything feels unusual can make a significant difference in protecting your health.
             </p>
           </div>
 
-          {/* ⭐ COMPLETE GUIDE BUTTON ONLY */}
+          {/* Complete Guide Button */}
           <div className="pt-4">
             <button
               className="inline-flex items-center justify-center hover:bg-[#FF4B8B]/80 bg-[#FF4B8B] gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-9 px-4 py-2 w-full text-white"
+              onClick={() => {
+                setShowCard(1); // Or wherever the guide starts
+                setActiveButton(0);
+              }}
             >
               <Star className="w-4 h-4" />
               Complete Guide
@@ -82,4 +87,4 @@ const VulvarGuidecard8 = ({ setShowCard, setActiveButton }) => {
   );
 };
 
-export default VulvarGuidecard8;
+export default EndometrialCard8;

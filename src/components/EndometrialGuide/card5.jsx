@@ -1,8 +1,8 @@
-"use client";
+'use client';
 import { Target, Stethoscope, Microscope, Scan, Camera, Activity } from "lucide-react";
 import React, { useState } from "react";
 
-const VulvarGuidecard5 = ({ setShowCard, setActiveButton }) => {
+const EndometrialGuideCard5 = ({ setShowCard, setActiveButton }) => {
   const [activeAccordion, setActiveAccordion] = useState(null);
 
   const handleAccordionToggle = (index) => {
@@ -12,15 +12,15 @@ const VulvarGuidecard5 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6">
       <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl text-[#BB125B] mx-auto mb-10 flex flex-col gap-6 rounded-xl border py-6 shadow-sm animate-in slide-in-from-right-5 duration-300">
-        
+
         {/* Header */}
         <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 border-b pb-6">
           <div className="leading-none font-semibold flex items-center gap-2">
             <Target className="w-6 h-6 text-primary" />
-            Step 2 — Getting Diagnosed
+            Step 3 — Diagnosis of Endometrial Cancer
           </div>
           <p className="text-muted-foreground text-sm">
-            Diagnosis usually begins with an exam, followed by tests that help confirm what’s happening.
+            Early diagnosis is crucial. A thorough evaluation helps confirm the presence and stage of endometrial cancer.
           </p>
         </div>
 
@@ -30,35 +30,32 @@ const VulvarGuidecard5 = ({ setShowCard, setActiveButton }) => {
           {/* Intro Box */}
           <div className="bg-primary/10 p-4 rounded-lg border border-primary/20 hover:bg-[#fce3e8] transition-all duration-300 hover:shadow-lg hover:border-[#f5a9bd] hover:scale-105 active:scale-100">
             <p className="leading-relaxed">
-              Your doctor may use several methods to check the vulva and surrounding organs. 
-              These steps help identify any abnormal areas and confirm the cause.
+              Because symptoms may resemble other conditions, your doctor will perform several tests to determine if endometrial cancer is present.
             </p>
           </div>
 
           {/* Two-column Layout */}
           <div className="grid md:grid-cols-2 gap-4">
 
-            {/* Pelvic Exam */}
+            {/* Medical & Physical Exam */}
             <div className="p-4 bg-primary/10 rounded-lg border border-primary/20 hover:bg-[#fce3e8] transition-all duration-300 hover:shadow-lg hover:border-[#f5a9bd] hover:scale-105 active:scale-100">
               <h4 className="font-semibold text-primary mb-2 flex items-center gap-2">
                 <Stethoscope className="w-4 h-4" />
-                Pelvic Exam
+                Medical & Physical Exam
               </h4>
               <p className="text-sm">
-                Your doctor checks the vulva, vagina, uterus, ovaries, bladder, and rectum for any
-                lumps, skin changes, or abnormalities.
+                Review of your medical and family history, followed by a physical exam to check for lumps or tenderness in the abdomen.
               </p>
             </div>
 
-            {/* Biopsy */}
+            {/* Endometrial Biopsy */}
             <div className="p-4 bg-accent/10 rounded-lg border hover:bg-[#fce3e8] transition-all duration-300 hover:shadow-lg hover:border-[#f5a9bd] hover:scale-105 active:scale-100">
               <h4 className="font-semibold text-accent-foreground mb-2 flex items-center gap-2">
                 <Microscope className="w-4 h-4" />
-                Biopsy
+                Endometrial Biopsy
               </h4>
               <p className="text-sm">
-                A small piece of tissue is removed from the vulva and tested for cancerous or
-                precancerous cells.
+                A small tissue sample is taken from the uterus lining and examined for abnormal or cancerous cells.
               </p>
             </div>
           </div>
@@ -68,11 +65,11 @@ const VulvarGuidecard5 = ({ setShowCard, setActiveButton }) => {
             <h4 className="font-semibold">Diagnostic Tests Explained</h4>
 
             {[
-              { title: "Colposcopy", icon: <Camera className="w-5 h-5 text-accent" />, content: "A magnifying device is used to closely examine the vulva. It does not go inside your body." },
-              { title: "Chest X-ray", icon: <Activity className="w-5 h-5 text-accent" />, content: "Checks if cancer has spread to the lungs (rare in early stages)." },
-              { title: "CT or PET-CT Scan", icon: <Scan className="w-5 h-5 text-accent" />, content: "Detailed images help detect spread to lymph nodes or organs." },
-              { title: "MRI", icon: <Scan className="w-5 h-5 text-accent" />, content: "Provides detailed images of soft tissue for accurate mapping of tumour extent." },
-              { title: "Endoscopy (if needed)", icon: <Scan className="w-5 h-5 text-accent" />, content: "Used when symptoms suggest involvement of lower bowel or bladder." },
+              { title: "Transvaginal Ultrasound", icon: <Scan className="w-5 h-5 text-accent" />, content: "Uses sound waves to create images of the uterus and endometrium, helping detect thickened lining or abnormalities." },
+              { title: "Dilation & Curettage (D&C)", icon: <Microscope className="w-5 h-5 text-accent" />, content: "Removes a portion of the uterine lining for detailed examination." },
+              { title: "Pap Smear", icon: <Camera className="w-5 h-5 text-accent" />, content: "Helps screen for abnormal cells in the cervix, which can sometimes indicate endometrial changes." },
+              { title: "CT or MRI Scan", icon: <Scan className="w-5 h-5 text-accent" />, content: "Advanced imaging to evaluate tumor size and detect possible spread to lymph nodes or nearby organs." },
+              { title: "Genetic/Familial Testing", icon: <Activity className="w-5 h-5 text-accent" />, content: "Used if there's a family history of Lynch syndrome or other hereditary cancer syndromes." },
             ].map((item, index) => (
               <div key={index} className="border-b last:border-b-0">
                 <h3 className="flex">
@@ -113,7 +110,7 @@ const VulvarGuidecard5 = ({ setShowCard, setActiveButton }) => {
               Key Point
             </h4>
             <p className="text-sm">
-              Early diagnosis helps determine the most effective treatment and improves outcomes.
+              Once diagnosed, your doctor will determine the cancer stage, tumor size, and grade. Early detection significantly improves treatment success.
             </p>
           </div>
 
@@ -126,13 +123,14 @@ const VulvarGuidecard5 = ({ setShowCard, setActiveButton }) => {
               }}
               className="inline-flex items-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 justify-center gap-2 rounded-md text-sm font-medium transition-all h-9 px-4 py-2 w-full"
             >
-              Learn About Aftercare
+              Continue to Treatment Options
             </button>
           </div>
+
         </div>
       </div>
     </div>
   );
 };
 
-export default VulvarGuidecard5;
+export default EndometrialGuideCard5;

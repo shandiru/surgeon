@@ -1,7 +1,8 @@
 'use client';
 import { ShieldCheck, Heart, Star, PlusCircle } from 'lucide-react';
+import React from 'react';
 
-const VulvarGuidecard7 = ({ setShowCard, setActiveButton }) => {
+const EndometrialCard7 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6">
       {/* Card Container */}
@@ -14,7 +15,7 @@ const VulvarGuidecard7 = ({ setShowCard, setActiveButton }) => {
             Prevention & Early Detection
           </div>
           <div className="text-muted-foreground text-sm">
-            Simple steps that can greatly reduce your risk
+            Simple steps to reduce risk and catch endometrial cancer early
           </div>
         </div>
 
@@ -28,23 +29,24 @@ const VulvarGuidecard7 = ({ setShowCard, setActiveButton }) => {
               Why Prevention Matters
             </h4>
             <p className="text-sm leading-relaxed">
-              While vulvar cancer is uncommon, early awareness and simple preventive steps can 
-              significantly reduce risk and help detect changes before they become serious.
+              Early detection of endometrial cancer greatly improves treatment success. 
+              Maintaining a healthy lifestyle and being aware of warning signs can lower risk.
             </p>
           </div>
 
           {/* Prevention Steps */}
           <div className="grid md:grid-cols-2 gap-4">
             <div className="space-y-3">
-              <h4 className="font-semibold">You Can Reduce Risk By:</h4>
+              <h4 className="font-semibold">Ways to Reduce Risk</h4>
               <div className="space-y-2">
                 {[
-                  'Getting the HPV vaccine',
-                  'Not smoking',
-                  'Regular gynecological check-ups',
-                  'Early treatment of vulvar skin conditions',
-                  'Being aware of any changes to vulvar skin',
-                  'Practicing safer sex',
+                  'Maintain a healthy weight',
+                  'Use combined hormonal contraceptives when appropriate',
+                  'Manage PCOS and insulin resistance',
+                  'Seek prompt evaluation for abnormal bleeding',
+                  'Consider genetic testing if there is a strong family history or Lynch syndrome',
+                  'Balanced hormone therapy (estrogen + progesterone) for HRT users',
+                  'Be aware of postmenopausal bleeding'
                 ].map((item, index) => (
                   <div 
                     key={index} 
@@ -64,10 +66,10 @@ const VulvarGuidecard7 = ({ setShowCard, setActiveButton }) => {
                 Remember
               </h4>
               <ul className="text-sm space-y-2">
-                <li>• Early detection makes treatment more effective</li>
-                <li>• Regular check-ups help catch changes early</li>
-                <li>• HPV protection greatly reduces risk</li>
-                <li>• Any long-lasting vulvar change should be reviewed</li>
+                <li>• Early detection improves treatment outcomes</li>
+                <li>• Regular gynecological check-ups help catch changes early</li>
+                <li>• Awareness of abnormal uterine bleeding is crucial</li>
+                <li>• Maintaining a healthy lifestyle reduces risk factors</li>
               </ul>
             </div>
           </div>
@@ -79,13 +81,11 @@ const VulvarGuidecard7 = ({ setShowCard, setActiveButton }) => {
               Key Takeaway
             </h4>
             <p className="text-sm leading-relaxed">
-              Prevention is powerful. By staying aware of changes, attending check-ups, 
-              and protecting yourself from HPV, you take strong steps toward maintaining 
-              vulvar health and detecting issues early.
+              Prevention and vigilance are powerful tools. Monitoring changes, attending regular check-ups, and managing risk factors significantly improve early detection and long-term health outcomes.
             </p>
           </div>
 
-          {/* ⭐ NEW BUTTON — replaces Complete Guide */}
+          {/* Continue Button */}
           <div className="pt-4">
             <button
               onClick={() => {
@@ -104,4 +104,4 @@ const VulvarGuidecard7 = ({ setShowCard, setActiveButton }) => {
   );
 };
 
-export default VulvarGuidecard7;
+export default EndometrialCard7;

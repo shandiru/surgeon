@@ -1,8 +1,8 @@
 'use client';
 import React from 'react';
-import { Biohazard, Cigarette, CloudFog, Sparkles, ShieldOff } from 'lucide-react';
+import { Biohazard, CloudFog, Sparkles, ShieldOff, Heart } from 'lucide-react';
 
-const VulvarGuidecard3 = ({ setShowCard, setActiveButton }) => {
+const EndometrialCard3 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6">
       {/* Card Container */}
@@ -32,7 +32,7 @@ const VulvarGuidecard3 = ({ setShowCard, setActiveButton }) => {
             Key Risk Factors
           </div>
           <div className="text-muted-foreground text-sm">
-            Not everyone with these risk factors will develop vulvar cancer, but they increase likelihood.
+            These factors increase the likelihood of developing endometrial cancer.
           </div>
         </div>
 
@@ -43,38 +43,53 @@ const VulvarGuidecard3 = ({ setShowCard, setActiveButton }) => {
           <div className="space-y-4">
             {[
               {
-                step: 'HPV Infection (High-Risk Strains)',
-                icon: <Biohazard className="w-5 h-5 text-[#BB125B]" />,
-                description: 'High-risk HPV types, particularly HPV 16, significantly increase vulvar cancer risk.',
-              },
-              {
-                step: 'Older Age (Most Common After 60)',
+                step: 'Postmenopausal Age',
                 icon: <CloudFog className="w-5 h-5 text-[#BB125B]" />,
-                description: 'Vulvar cancer is more common in women over 60.',
+                description: 'Endometrial cancer is more common after menopause.',
               },
               {
-                step: 'Smoking',
-                icon: <Cigarette className="w-5 h-5 text-[#BB125B]" />,
-                description: 'Smoking weakens the immune system and increases HPV persistence.',
-              },
-              {
-                step: 'Long-Term Skin Conditions (e.g., Lichen Sclerosus)',
+                step: 'Excess Oestrogen Exposure',
                 icon: <Sparkles className="w-5 h-5 text-[#BB125B]" />,
-                description: 'Chronic inflammatory vulvar skin disorders increase risk.',
+                description: 'High levels of oestrogen without progesterone increase risk.',
               },
               {
-                step: 'Weakened Immune System',
-                icon: <ShieldOff className="w-5 h-5 text-[#BB125B]" />,
-                description: 'A weak immune system reduces the body’s ability to repair abnormal cells.',
+                step: 'Obesity',
+                icon: <Heart className="w-5 h-5 text-[#BB125B]" />,
+                description: 'One of the strongest risk factors for endometrial cancer.',
               },
               {
-                step: 'History of Cervical or Vaginal Pre-cancers',
+                step: 'Polycystic Ovary Syndrome (PCOS)',
                 icon: <Biohazard className="w-5 h-5 text-[#BB125B]" />,
-                description: 'Conditions like CIN or VAIN raise the risk of similar changes on the vulva.',
+                description: 'PCOS can lead to hormonal imbalances that increase risk.',
+              },
+              {
+                step: 'Early Menarche or Late Menopause',
+                icon: <CloudFog className="w-5 h-5 text-[#BB125B]" />,
+                description: 'Longer exposure to estrogen over a lifetime raises risk.',
+              },
+              {
+                step: 'Never Having Been Pregnant',
+                icon: <ShieldOff className="w-5 h-5 text-[#BB125B]" />,
+                description: 'Pregnancy provides protective hormonal effects.',
+              },
+              {
+                step: 'Hormone Replacement Therapy (Oestrogen-Only)',
+                icon: <Sparkles className="w-5 h-5 text-[#BB125B]" />,
+                description: 'Using oestrogen alone without progesterone increases risk.',
+              },
+              {
+                step: 'Tamoxifen Use',
+                icon: <Biohazard className="w-5 h-5 text-[#BB125B]" />,
+                description: 'Tamoxifen, used for breast cancer, can slightly raise risk.',
+              },
+              {
+                step: 'Family History (e.g., Lynch Syndrome)',
+                icon: <ShieldOff className="w-5 h-5 text-[#BB125B]" />,
+                description: 'Genetic predisposition increases lifetime risk of endometrial cancer.',
               }
             ].map((item, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="flex gap-4 p-4 bg-card rounded-lg border hover:z-50 transition-all duration-300 
                 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] 
                 active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] 
@@ -97,14 +112,14 @@ const VulvarGuidecard3 = ({ setShowCard, setActiveButton }) => {
             ))}
           </div>
 
-          {/* Extra Info */}
+          {/* Protective Factors */}
           <div className="bg-accent/10 p-4 rounded-lg border border-accent/20">
             <h4 className="font-semibold text-accent-foreground mb-2 flex items-center gap-2">
               <Sparkles className="w-5 h-5 text-[#FF4B8B]" />
-              Good to Know
+              Protective Factors
             </h4>
             <p className="text-sm">
-              Having one or more risk factors does not mean you will get vulvar cancer — but understanding them helps with early detection and prevention.
+              Pregnancy, use of combined hormonal contraceptives, and maintaining a healthy weight can lower the risk of endometrial cancer.
             </p>
           </div>
 
@@ -127,4 +142,4 @@ const VulvarGuidecard3 = ({ setShowCard, setActiveButton }) => {
   );
 };
 
-export default VulvarGuidecard3;
+export default EndometrialCard3;

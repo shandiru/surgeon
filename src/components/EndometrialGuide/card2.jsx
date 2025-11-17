@@ -1,6 +1,7 @@
+'use client';
 import React from 'react';
 
-const VulvarGuideCard2 = ({ setShowCard, setActiveButton }) => {
+const EndometrialCard2 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6">
       {/* Card Container */}
@@ -23,8 +24,11 @@ const VulvarGuideCard2 = ({ setShowCard, setActiveButton }) => {
             >
               <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
             </svg>
-            How Vulvar Cancer Starts
+            How Endometrial Cancer Develops
           </div>
+          <p className="text-muted-foreground text-sm">
+            Understanding the types and early changes in the uterine lining
+          </p>
         </div>
 
         {/* Card Content */}
@@ -33,38 +37,34 @@ const VulvarGuideCard2 = ({ setShowCard, setActiveButton }) => {
           {/* Intro Box */}
           <div className="bg-primary/5 p-4 rounded-lg border hover:bg-[#fce3e8] transition-all hover:shadow-md hover:border-[#f5a9bd] hover:scale-105 active:scale-100 duration-300">
             <p className="text-lg leading-relaxed">
-              Vulvar cancer usually begins in the skin cells of the vulva. Understanding where it starts 
-              helps doctors determine the best treatment and predict how the disease may behave.
+              Endometrial cancer develops when cells in the endometrial lining grow abnormally and uncontrollably. Recognizing how it develops can help with early detection and treatment.
             </p>
           </div>
 
           {/* Two Main Types */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-            {/* Type 1 - Squamous Cell Carcinoma */}
+            {/* Type 1 */}
             <div className="p-4 rounded-xl border bg-white hover:bg-[#FF4B8B]/10 transition-all duration-300 hover:shadow-md">
-              <h4 className="font-semibold text-primary mb-2">Squamous Cell Carcinoma</h4>
+              <h4 className="font-semibold text-primary mb-2">Type 1 Endometrial Cancer</h4>
               <p className="text-sm">
-                The most common type — <strong>85–90%</strong> of vulvar cancers.
-                It begins in the thin, flat cells on the surface of the vulva.
+                The most common type. Linked to excess oestrogen exposure. Usually grows slowly and is often detected early.
               </p>
             </div>
 
-            {/* Type 2 - Melanoma */}
+            {/* Type 2 */}
             <div className="p-4 rounded-xl border bg-white hover:bg-[#FF4B8B]/10 transition-all duration-300 hover:shadow-md">
-              <h4 className="font-semibold text-primary mb-2">Melanoma of the Vulva</h4>
+              <h4 className="font-semibold text-primary mb-2">Type 2 Endometrial Cancer</h4>
               <p className="text-sm">
-                A less common but more aggressive type that begins in the 
-                pigment-producing cells of the vulva.
+                Less common but more aggressive. Not related to oestrogen and more likely to spread beyond the uterus.
               </p>
             </div>
 
-            {/* Pre-cancerous VIN */}
+            {/* Pre-cancerous Hyperplasia */}
             <div className="p-4 rounded-xl border bg-white hover:bg-[#FF4B8B]/10 transition-all duration-300 hover:shadow-md">
-              <h4 className="font-semibold text-primary mb-2">Pre-Cancerous Changes (VIN)</h4>
+              <h4 className="font-semibold text-primary mb-2">Endometrial Hyperplasia</h4>
               <p className="text-sm">
-                Some cases begin as <strong>VIN – Vulvar Intraepithelial Neoplasia</strong>,
-                where abnormal cells appear on the vulvar surface before developing into cancer.
+                Some women first develop a pre-cancerous condition where the uterine lining becomes too thick. Early treatment can prevent progression to cancer.
               </p>
             </div>
           </div>
@@ -91,8 +91,7 @@ const VulvarGuideCard2 = ({ setShowCard, setActiveButton }) => {
               Did You Know?
             </h4>
             <p className="text-sm">
-              Detecting VIN early and treating it promptly can prevent it from developing 
-              into vulvar cancer.
+              Early detection of endometrial hyperplasia and timely treatment can prevent it from progressing to endometrial cancer.
             </p>
           </div>
 
@@ -115,4 +114,4 @@ const VulvarGuideCard2 = ({ setShowCard, setActiveButton }) => {
   );
 };
 
-export default VulvarGuideCard2;
+export default EndometrialCard2;

@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 
 
-const VulvarGuideButtons = ({ setShowCard, activeButton, setActiveButton }) => {
+const EndometrialGuideButtons = ({ setShowCard, activeButton, setActiveButton }) => {
 const buttons = [
   { label: 'Overview', icon: <Info className="w-4 h-4" />, card: 1 },
   { label: 'How It Starts', icon: <Activity className="w-4 h-4" />, card: 2 },
@@ -50,4 +50,4 @@ const buttons = [
   );
 };
 
-export default VulvarGuideButtons;
+export default EndometrialGuideButtons;

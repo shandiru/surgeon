@@ -1,8 +1,8 @@
-"use client";
+'use client';
 import { useState } from "react";
-import { AlertTriangle, Eye, Flame, Droplet, Scan, Sparkles } from "lucide-react";
+import { AlertTriangle, Droplet, Scan, Eye, Flame } from "lucide-react";
 
-const VulvarGuideCard4 = ({ setShowCard, setActiveButton }) => {
+const EndometrialCard4 = ({ setShowCard, setActiveButton }) => {
   const [openAccordion, setOpenAccordion] = useState(null);
 
   const toggleAccordion = (index) => {
@@ -17,10 +17,10 @@ const VulvarGuideCard4 = ({ setShowCard, setActiveButton }) => {
         <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6">
           <div className="leading-none font-semibold flex items-center gap-2">
             <AlertTriangle className="w-6 h-6 text-primary" />
-            Step 1 — Recognizing Symptoms
+            Step 2 — Recognizing Symptoms
           </div>
           <p className="text-muted-foreground text-sm">
-            Early symptoms are often subtle—knowing them can help detect vulvar cancer sooner.
+            Early warning signs of endometrial cancer can help with timely detection.
           </p>
         </div>
 
@@ -28,8 +28,7 @@ const VulvarGuideCard4 = ({ setShowCard, setActiveButton }) => {
         <div className="px-6 space-y-4">
           <div className="bg-primary/5 p-4 rounded-lg border border-primary/20">
             <p className="leading-relaxed">
-              Vulvar cancer most often affects the labia, but it can occur anywhere on the vulva. 
-              If you notice any of these symptoms, it's important to see your doctor promptly.
+              Endometrial cancer often presents early with abnormal uterine bleeding. Being aware of these symptoms can help you seek medical attention promptly.
             </p>
           </div>
 
@@ -50,9 +49,7 @@ const VulvarGuideCard4 = ({ setShowCard, setActiveButton }) => {
                   <svg
                     width="20"
                     height="20"
-                    className={`transition-transform ${
-                      openAccordion === 1 ? "rotate-180" : ""
-                    }`}
+                    className={`transition-transform ${openAccordion === 1 ? "rotate-180" : ""}`}
                     stroke="currentColor"
                     fill="none"
                     strokeWidth="2"
@@ -66,50 +63,21 @@ const VulvarGuideCard4 = ({ setShowCard, setActiveButton }) => {
 
               {openAccordion === 1 && (
                 <div id="accordion-item-1" className="overflow-hidden text-sm pb-4 space-y-3">
-
-                  {/* Symptom 1 */}
-                  <div className="flex items-start gap-3">
-                    <Flame className="w-5 h-5 text-accent mt-0.5" />
-                    <span>Persistent vulvar itching (lasting more than a few weeks)</span>
-                  </div>
-
-                  {/* Symptom 2 */}
-                  <div className="flex items-start gap-3">
-                    <Droplet className="w-5 h-5 text-accent mt-0.5" />
-                    <span>A cut or sore on the vulva that will not heal</span>
-                  </div>
-
-                  {/* Symptom 3 */}
-                  <div className="flex items-start gap-3">
-                    <AlertTriangle className="w-5 h-5 text-accent mt-0.5" />
-                    <span>A lump or mass on the vulva</span>
-                  </div>
-
-                  {/* Symptom 4 */}
-                  <div className="flex items-start gap-3">
-                    <Scan className="w-5 h-5 text-accent mt-0.5" />
-                    <span>Burning or pain in the vulvar area</span>
-                  </div>
-
-                  {/* Symptom 5 */}
-                  <div className="flex items-start gap-3">
-                    <Droplet className="w-5 h-5 text-accent mt-0.5" />
-                    <span>Unusual bleeding from the vulva (not menstrual)</span>
-                  </div>
-
-                  {/* Symptom 6 */}
-                  <div className="flex items-start gap-3">
-                    <Flame className="w-5 h-5 text-accent mt-0.5" />
-                    <span>Burning that continues despite treatment</span>
-                  </div>
-
-                  {/* Symptom 7 */}
-                  <div className="flex items-start gap-3">
-                    <Eye className="w-5 h-5 text-accent mt-0.5" />
-                    <span>
-                      Changes in a mole or birthmark on the vulva (size, colour, or texture)
-                    </span>
-                  </div>
+                  {[
+                    "Unusual bleeding or spotting between periods or after menopause",
+                    "Long, heavy, or frequent periods (especially in women over 40)",
+                    "Thin white or clear vaginal discharge (postmenopausal women)",
+                    "Lower abdominal or pelvic pain",
+                    "A lump or mass in the lower abdomen",
+                    "Difficulty or pain while urinating",
+                    "Pain during sexual intercourse",
+                    "Unexplained weight loss"
+                  ].map((symptom, idx) => (
+                    <div key={idx} className="flex items-start gap-3">
+                      <Droplet className="w-5 h-5 text-accent mt-0.5" />
+                      <span>{symptom}</span>
+                    </div>
+                  ))}
                 </div>
               )}
             </div>
@@ -128,9 +96,7 @@ const VulvarGuideCard4 = ({ setShowCard, setActiveButton }) => {
                   <svg
                     width="20"
                     height="20"
-                    className={`transition-transform ${
-                      openAccordion === 2 ? "rotate-180" : ""
-                    }`}
+                    className={`transition-transform ${openAccordion === 2 ? "rotate-180" : ""}`}
                     stroke="currentColor"
                     fill="none"
                     strokeWidth="2"
@@ -145,14 +111,13 @@ const VulvarGuideCard4 = ({ setShowCard, setActiveButton }) => {
               {openAccordion === 2 && (
                 <div id="accordion-item-2" className="overflow-hidden text-sm pb-4">
                   <p>
-                    These symptoms do NOT always mean cancer — infections, skin conditions,
-                    or irritation can cause similar issues.  
-                    But early vulvar cancer often begins with subtle skin changes, so checking early
-                    helps ensure the best outcomes.
+                    These symptoms do NOT always indicate cancer, as infections or hormonal changes can cause similar signs.  
+                    However, persistent abnormal bleeding or other listed symptoms should be evaluated promptly, as early detection greatly improves treatment outcomes.
                   </p>
                 </div>
               )}
             </div>
+
           </div>
         </div>
 
@@ -173,4 +138,4 @@ const VulvarGuideCard4 = ({ setShowCard, setActiveButton }) => {
   );
 };
 
-export default VulvarGuideCard4;
+export default EndometrialCard4;

@@ -1,7 +1,8 @@
+'use client';
 import { Lightbulb } from 'lucide-react';
 import React from 'react';
 
-const VulvarGuideCard1 = ({ setShowCard, setActiveButton }) => {
+const EndometrialCard1 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6">
       {/* Card Container */}
@@ -10,24 +11,12 @@ const VulvarGuideCard1 = ({ setShowCard, setActiveButton }) => {
         {/* Card Header */}
         <div className="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6">
           <div className="leading-none font-semibold flex items-center gap-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="lucide lucide-info w-6 h-6 text-primary"
-            >
-              <circle cx="12" cy="12" r="10"></circle>
-              <path d="M12 16v-4"></path>
-              <path d="M12 8h.01"></path>
-            </svg>
-            What Is Vulvar Cancer?
+            <Lightbulb className="w-6 h-6 text-primary" />
+            What Is Endometrial Cancer?
           </div>
+          <p className="text-muted-foreground text-sm">
+            Understanding the most common type of uterine cancer
+          </p>
         </div>
 
         {/* Card Content */}
@@ -36,10 +25,8 @@ const VulvarGuideCard1 = ({ setShowCard, setActiveButton }) => {
           {/* Overview Box */}
           <div className="bg-primary/5 p-4 rounded-lg border hover:bg-[#fce3e8] transition-all duration-300 hover:shadow-lg hover:border-[#f5a9bd] hover:scale-105 active:scale-100">
             <p className="text-lg leading-relaxed">
-              Vulvar cancer is a type of cancer that develops on the external female genital area,
-              known as the vulva. This includes the labia majora, labia minora, clitoris, and the skin
-              around the vaginal opening. Although vulvar cancer is relatively rare, understanding it
-              helps with early detection and prevention.
+              Endometrial cancer is a type of cancer that begins in the lining of the uterus, called the endometrium.
+              It is the most common gynaecological cancer in many countries and is often detected early because it typically causes abnormal uterine bleeding, especially after menopause.
             </p>
           </div>
 
@@ -68,10 +55,10 @@ const VulvarGuideCard1 = ({ setShowCard, setActiveButton }) => {
 
               <ul className="space-y-2">
                 {[
-                  'Most common in women over 60',
-                  'Often linked to HPV or chronic skin conditions',
+                  'Most common in postmenopausal women',
+                  'Often detected early due to abnormal bleeding',
                   'Early diagnosis greatly improves outcomes',
-                  'Can appear as itching, lumps, or skin changes',
+                  'Risk factors include obesity, hormone therapy, and age',
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-2">
                     <svg
@@ -102,9 +89,7 @@ const VulvarGuideCard1 = ({ setShowCard, setActiveButton }) => {
                 Remember
               </h4>
               <p className="text-sm">
-                Vulvar cancer often begins with subtle skin changes. Paying attention to persistent
-                itching, lumps, sores, or colour changes can help detect the condition early when it
-                is most treatable.
+                Endometrial cancer often presents early with abnormal bleeding. Paying attention to any unusual uterine bleeding, spotting after menopause, or changes in menstrual patterns can help detect the cancer early, when treatment is most effective.
               </p>
             </div>
           </div>
@@ -128,4 +113,4 @@ const VulvarGuideCard1 = ({ setShowCard, setActiveButton }) => {
   );
 };
 
-export default VulvarGuideCard1;
+export default EndometrialCard1;

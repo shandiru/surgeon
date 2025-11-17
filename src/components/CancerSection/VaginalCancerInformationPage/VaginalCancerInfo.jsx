@@ -8,7 +8,6 @@ import { FaStethoscope, FaMicroscope, FaPills, FaInfoCircle } from "react-icons/
 export default function VaginalCancerInfo() {
   const primaryPink = "#FFC5D3";
   const deepPink = "#FF4B8B";
-  const textSecondary = "#7a2f4f";
 
   useEffect(() => {
     AOS.init({
