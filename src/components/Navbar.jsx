@@ -106,6 +106,7 @@ const Navbar = () => {
                   <Link to="/Hysteroscopy" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Hysteroscopy</Link>
                   <Link to="/VulvarGuidePage" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>VulvarGuidePage</Link>
                   <Link to="/VaginalGuidePage" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>VaginalGuidePage</Link>
+                   <Link to="/OvarianCancerGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>OvarianCancerGuidePage</Link>
 
                 </div>
               )}
@@ -181,7 +182,7 @@ const Navbar = () => {
                   <Link to="/Hysteroscopy" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Hysteroscopy</Link>
                   <Link to="/VulvarGuidePage" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>VulvarGuidePage</Link>
                   <Link to="/VaginalGuidePage" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>VaginalGuidePage</Link>
-
+                       <Link to="/OvarianCancerGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>OvarianCancerGuidePage</Link>
 
                 </div>
               )}

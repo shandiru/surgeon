@@ -88,15 +88,21 @@ const OvarianCancerGuidecard7 = () => {
             <div className="pt-4">
             <button
               onClick={() => {
-                setShowCard(8);
-                setActiveButton(7);
+                setShowCard(7);
+                setActiveButton(6);
               }}
               className="inline-flex items-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-9 px-4 py-2 w-full"
             >
               Continue to Next Section
             </button>
           </div>
-          
+          {/* Complete Guide Button */}
+          <div className="pt-4">
+            <button className="inline-flex items-center justify-center hover:bg-[#FF4B8B]/80 bg-[#FF4B8B] gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80 h-9 px-4 py-2 w-full">
+              <Star className="w-4 h-4" />
+              Complete Guide
+            </button>
+          </div>
         </div>
       </div>
     </div>
