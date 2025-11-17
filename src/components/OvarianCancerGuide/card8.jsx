@@ -1,15 +1,15 @@
 'use client';
 import { Lightbulb, Star, CheckCircle2 } from 'lucide-react';
 
-const VulvarGuidecard8 = ({ setShowCard, setActiveButton }) => {
+const OvarianCancerGuidecard8 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6">
 
       {/* Card Container */}
-      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl text-[#BB125B] mx-auto mb-10 flex flex-col gap-6 rounded-xl py-6 shadow-md animate-in slide-in-from-right-5 duration-300">
+      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl text-[#BB125B] mx-auto mb-10 flex flex-col gap-6 rounded-xl border py-6 shadow-sm animate-in slide-in-from-right-5 duration-300">
 
         {/* Card Header */}
-        <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6">
+        <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 border-b pb-6">
           <div className="leading-none font-semibold flex items-center gap-2">
             <Lightbulb className="w-6 h-6 text-primary" />
             Key Takeaway
@@ -23,7 +23,7 @@ const VulvarGuidecard8 = ({ setShowCard, setActiveButton }) => {
         <div className="px-6 space-y-5">
 
           {/* Highlight Section */}
-          <div className="bg-primary/5 p-5 rounded-lg">
+          <div className="bg-primary/5 border border-primary/20 p-5 rounded-lg">
             <h3 className="font-semibold text-primary flex items-center gap-2 mb-2">
               <Star className="w-5 h-5" />
               What You Should Know
@@ -31,8 +31,7 @@ const VulvarGuidecard8 = ({ setShowCard, setActiveButton }) => {
 
             <p className="text-sm leading-relaxed">
               Vulvar cancer is rare but serious. Early diagnosis leads to the best outcomes,
-              which is why understanding symptoms and staying aware of changes is so
-              important.
+              which is why understanding symptoms and staying aware of changes is so important.
             </p>
           </div>
 
@@ -56,7 +55,7 @@ const VulvarGuidecard8 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           {/* Final Section */}
-          <div className="bg-card p-4 rounded-lg">
+          <div className="bg-card border p-4 rounded-lg">
             <h4 className="font-semibold flex items-center gap-2">
               <Star className="w-5 h-5 text-primary" />
               Final Message
@@ -67,10 +66,10 @@ const VulvarGuidecard8 = ({ setShowCard, setActiveButton }) => {
             </p>
           </div>
 
-          {/* Complete Guide Button */}
+          {/* ⭐ COMPLETE GUIDE BUTTON ONLY */}
           <div className="pt-4">
             <button
-              className="inline-flex items-center justify-center hover:bg-[#FF4B8B]/80 bg-[#FF4B8B] gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all text-white h-9 px-4 py-2 w-full"
+              className="inline-flex items-center justify-center hover:bg-[#FF4B8B]/80 bg-[#FF4B8B] gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-9 px-4 py-2 w-full text-white"
             >
               <Star className="w-4 h-4" />
               Complete Guide
@@ -83,4 +82,4 @@ const VulvarGuidecard8 = ({ setShowCard, setActiveButton }) => {
   );
 };
 
-export default VulvarGuidecard8;
+export default OvarianCancerGuidecard8;

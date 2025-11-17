@@ -24,7 +24,7 @@ import Pelvic from "./Page/Pelvic";
 import Vulvar from "./Page/Vulvar";
 import PostmenopausalBleedingPage from "./Page/PostmenopausalBleedingPage";
 import VaginalGuidePage from "./Page/VaginalGuidePage";
-
+import OvarianCancerGuide from "./Page/OvarianCancerGuide"
 function App() {
   return (
     <Router>
@@ -37,6 +37,7 @@ function App() {
         <Route path="/VaginalGuidePage" element={<VaginalGuidePage />} />
         
         <Route path="/Cancer/OvarianCancer" element={<  OvarianCancerInformationPage />} />
+        <Route path="/OvarianCancerGuide" element={<OvarianCancerGuide />} />
         <Route path="/Cancer/EndometrialCancer" element={<   EndometrialCancerInformationPage />} />
         <Route path="/Cancer/CervicalCancer" element={<  CervicalCancerOverviewPage />} />
         <Route path="/RoboticSurgery" element={<   RoboticSurgeryPage />} />
