@@ -1,7 +1,7 @@
 'use client';
 import { ShieldCheck, Heart, Star, PlusCircle } from 'lucide-react';
 
-const VulvarGuidecard7 = ({ setShowCard, setActiveButton }) => {
+const OvarianCancerGuidecard7 = () => {
   return (
     <div className="space-y-6">
       {/* Card Container */}
@@ -84,24 +84,23 @@ const VulvarGuidecard7 = ({ setShowCard, setActiveButton }) => {
               vulvar health and detecting issues early.
             </p>
           </div>
-
-          {/* ⭐ NEW BUTTON — replaces Complete Guide */}
-          <div className="pt-4">
+           
+            <div className="pt-4">
             <button
               onClick={() => {
                 setShowCard(8);
                 setActiveButton(7);
               }}
-              className="inline-flex items-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-9 px-4 py-2 w-full text-white"
+              className="inline-flex items-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-9 px-4 py-2 w-full"
             >
               Continue to Next Section
             </button>
           </div>
-
+          
         </div>
       </div>
     </div>
   );
 };
 
-export default VulvarGuidecard7;
+export default OvarianCancerGuidecard7;
