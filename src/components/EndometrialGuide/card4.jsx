@@ -79,7 +79,7 @@ const EndometrialCard4 = ({ setShowCard, setActiveButton }) => {
             style={{ backgroundColor: Pink, border: `1px solid ${Pink}` }}
             data-aos="fade-up"
           >
-            <p className="text-sm font-medium" style={{ color: Pink }}>
+            <p className="text-sm font-medium text-white text-center" >
               <strong>Important:</strong> If you experience any of these symptoms, it's important to seek medical evaluation.
             </p>
           </div>

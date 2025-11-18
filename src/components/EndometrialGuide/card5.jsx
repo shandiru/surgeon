@@ -116,7 +116,7 @@ const EndometrialGuideCard5 = ({ setShowCard, setActiveButton }) => {
             </p>
           </div>
           {/* Button */}
-          <div className="p-6">
+          <div className="p-6 mx-2">
             <button
               onClick={() => {
                 setShowCard(6);
