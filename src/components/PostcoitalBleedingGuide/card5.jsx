@@ -1,159 +1,78 @@
 "use client";
-import {
-  Target,
-  Stethoscope,
-  Microscope,
-  Camera,
-  Scan,
-  Activity,
-} from "lucide-react";
 import React from "react";
 
-const VaginalLumpsGuidecard5 = ({ setShowCard, setActiveButton }) => {
+const PostcoitalBleedingGuidecard5 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6 pb-10">
-      {/* MAIN WRAPPER */}
-      <div
-        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto rounded-2xl p-8 border shadow-sm animate-in slide-in-from-right-5 duration-300"
-        style={{
-          backgroundColor: "#FFFFFF",
-          borderColor: "rgb(255,197,211)",
-        }}
-      >
-        {/* HEADER */}
-        <div className="mb-6">
-          <span
-            className="font-semibold text-sm uppercase tracking-wide"
-            style={{ color: "#FF4B8B" }}
-          >
-            Step 2
-          </span>
-
-          <h2
-            className="text-3xl font-bold mt-2"
-            style={{ color: "#FF4B8B" }}
-          >
-            Getting Diagnosed
-          </h2>
-
-          <p className="text-lg mt-2" style={{ color: "#7a2f4f" }}>
-            Diagnosis usually begins with a physical and pelvic exam, followed by
-            specialized tests.
-          </p>
-        </div>
-
-        {/* TITLE */}
-        <h3 className="text-xl font-semibold" style={{ color: "#FF4B8B" }}>
-          Examination Steps:
-        </h3>
-
-        {/* ================ STEPS GRID ================= */}
-        <div className="space-y-4 mt-6">
-          {/* Pelvic Exam */}
-          <div
-            className="flex items-start gap-6 p-6 rounded-xl border transition-all duration-300 hover:bg-[#FFF5F8] hover:shadow-lg active:bg-[#FFF5F8]"
-            style={{ borderColor: "rgb(255,197,211)" }}
-          >
-            <div
-              className="flex items-center justify-center w-12 h-12 rounded-lg flex-shrink-0"
-              style={{ backgroundColor: "#FF4B8B", color: "#FFFFFF" }}
+      <div className="max-w-5xl text-[#BB125B] mx-auto mb-10 flex flex-col gap-6 rounded-xl bg-white py-6 shadow-md hover:shadow-lg transition-shadow">
+        {/* Header */}
+        <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-2 px-6 border-b border-[#FEE6EA] pb-6">
+          <div className="font-semibold flex items-center gap-2 text-2xl text-[#FF4B8B]">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#FF4B8B"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="h-6 w-6"
             >
-              <Stethoscope className="w-6 h-6" />
-            </div>
-
-            <div>
-              <h4 className="text-lg font-semibold mb-2" style={{ color: "#FF4B8B" }}>
-                Pelvic Exam
-              </h4>
-              <p style={{ color: "#7a2f4f" }}>
-                Checking the vulva, vagina, uterus, ovaries, bladder, and rectum
-                for abnormalities.
-              </p>
-            </div>
+              <path d="M8 2v4"></path>
+              <path d="M16 2v4"></path>
+              <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+              <path d="M3 10h18"></path>
+            </svg>
+            What to Track Before Your Appointment
           </div>
-
-          {/* Biopsy */}
-          <div
-            className="flex items-start gap-6 p-6 rounded-xl border transition-all duration-300 hover:bg-[#FFF5F8] hover:shadow-lg active:bg-[#FFF5F8]"
-            style={{ borderColor: "rgb(255,197,211)" }}
-          >
-            <div
-              className="flex items-center justify-center w-12 h-12 rounded-lg flex-shrink-0"
-              style={{ backgroundColor: "#FF4B8B", color: "#FFFFFF" }}
-            >
-              <Microscope className="w-6 h-6" />
-            </div>
-
-            <div>
-              <h4 className="text-lg font-semibold mb-2" style={{ color: "#FF4B8B" }}>
-                Biopsy
-              </h4>
-              <p style={{ color: "#7a2f4f" }}>
-                Removing a small piece of tissue from the vulva to test for
-                cancer cells.
-              </p>
-            </div>
-          </div>
-
-          {/* Colposcopy */}
-          <div
-            className="flex items-start gap-6 p-6 rounded-xl border transition-all duration-300 hover:bg-[#FFF5F8] hover:shadow-lg active:bg-[#FFF5F8]"
-            style={{ borderColor: "rgb(255,197,211)" }}
-          >
-            <div
-              className="flex items-center justify-center w-12 h-12 rounded-lg flex-shrink-0"
-              style={{ backgroundColor: "#FF4B8B", color: "#FFFFFF" }}
-            >
-              <Camera className="w-6 h-6" />
-            </div>
-
-            <div>
-              <h4 className="text-lg font-semibold mb-2" style={{ color: "#FF4B8B" }}>
-                Colposcopy
-              </h4>
-              <p style={{ color: "#7a2f4f" }}>
-                Using a magnifying instrument to closely examine the vulva.
-              </p>
-            </div>
+          <div className="text-sm text-[#6B7280]">
+            Bring this info with you — it can help your doctor find the cause quickly
           </div>
         </div>
 
-        {/* ================= TAG LIST (Pink Pills) ================== */}
-        <div className="mt-8 flex flex-wrap gap-3">
-          {[
-            "Chest X-ray",
-            "CT or PET-CT scan",
-            "MRI",
-            "Endoscopy (if needed)",
-          ].map((tag, i) => (
-            <span
-              key={i}
-              className="px-4 py-2 rounded-md text-sm font-medium"
-              style={{
-                backgroundColor: "#FF4B8B",
-                color: "#FFFFFF",
-              }}
-            >
-              {tag}
-            </span>
-          ))}
-        </div>
-
-        {/* ================= NEXT BUTTON ================= */}
-        <div className="pt-6 flex justify-center">
-          <button
-            onClick={() => {
-              setShowCard(6);
-              setActiveButton(5);
-            }}
-            className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md text-sm font-medium transition-all h-10 px-4"
-          >
-            Learn About Aftercare
-          </button>
+        {/* Content */}
+        <div className="px-6">
+          <div className="grid md:grid-cols-2 gap-6">
+            <ul className="space-y-3 text-sm">
+              <li className="flex items-start gap-2">
+                <span className="w-2 h-2 bg-[#FF4B8B] rounded-full mt-2"></span>
+                When the bleeding happens (timing and cycle day)
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="w-2 h-2 bg-[#FF4B8B] rounded-full mt-2"></span>
+                How much blood (light spots or heavier flow)
+              </li>
+            </ul>
+            <ul className="space-y-3 text-sm">
+              <li className="flex items-start gap-2">
+                <span className="w-2 h-2 bg-[#FF4B8B] rounded-full mt-2"></span>
+                If there's pain during or after sex
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="w-2 h-2 bg-[#FF4B8B] rounded-full mt-2"></span>
+                Any other symptoms (discharge, odour, pelvic pain, fever)
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
+      {/* ================= NEXT BUTTON ================= */}
+      <div className=" flex justify-center">
+        <button
+          onClick={() => {
+            setShowCard(6);
+            setActiveButton(5);
+          }}
+          className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md text-sm font-medium transition-all h-10 px-4"
+        >
+          Learn About Aftercare
+        </button>
+      </div>
+
     </div>
   );
 };
 
-export default VaginalLumpsGuidecard5;
+export default PostcoitalBleedingGuidecard5;

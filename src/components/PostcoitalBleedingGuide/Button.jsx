@@ -11,16 +11,14 @@ import {
 } from "lucide-react";
 
 
-const VaginalLumpsGuideButtons = ({ setShowCard, activeButton, setActiveButton }) => {
+const PostcoitalBleedingGuideButtons = ({ setShowCard, activeButton, setActiveButton }) => {
 const buttons = [
-  { label: 'Overview', icon: <Info className="w-4 h-4" />, card: 1 },
-  { label: 'How It Starts', icon: <Activity className="w-4 h-4" />, card: 2 },
-  { label: 'Key Risk Factors', icon: <AlertTriangle className="w-4 h-4" />, card: 3 },
-  { label: 'Recognising Symptoms', icon: <Eye className="w-4 h-4" />, card: 4 },
-  { label: 'Getting Diagnosed', icon: <ScanSearch className="w-4 h-4" />, card: 5 },
-  { label: 'Treatment Options', icon: <Syringe className="w-4 h-4" />, card: 6 },
-  { label: 'Prevention & Early Detection', icon: <ShieldCheck className="w-4 h-4" />, card: 7 },
-  { label: 'Key Takeaway', icon: <BookmarkCheck className="w-4 h-4" />, card: 8 }
+  { label: 'What Is Postcoital Bleeding', icon: <Info className="w-4 h-4" />, card: 1 },
+  { label: 'Is It Painful?', icon: <Activity className="w-4 h-4" />, card: 2 },
+  { label: 'Where Does the Bleeding Come From?', icon: <AlertTriangle className="w-4 h-4" />, card: 3 },
+  { label: 'When to Seek Urgent Help', icon: <Eye className="w-4 h-4" />, card: 4 },
+  { label: 'What to Track Before Your Appointment', icon: <ScanSearch className="w-4 h-4" />, card: 5 },
+  { label: 'Self-Care Tips', icon: <Syringe className="w-4 h-4" />, card: 6 },
 ];
 
   const handleButtonClick = (card, index) => {
@@ -29,7 +27,7 @@ const buttons = [
   };
 
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-3 sm:gap-4 md:gap-2 px-4 sm:px-6 max-w-6xl mx-auto mb-8">
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-4 md:gap-2 px-4 sm:px-6 max-w-6xl mx-auto mb-8">
       {buttons.map((button, index) => (
         <button
           key={index}
@@ -50,4 +48,4 @@ const buttons = [
   );
 };
 
-export default VaginalLumpsGuideButtons;
+export default PostcoitalBleedingGuideButtons;

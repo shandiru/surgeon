@@ -122,7 +122,7 @@ const Navbar = () => {
                   <Link to="/OvarianCystsGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>OvarianCystsGuide</Link>
                   <Link to="/PostmenopausalBleedingGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>PostmenopausalBleedingGuide</Link>
                   <Link to="/MenstrualDisordersGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>MenstrualDisordersGuide</Link>
-
+                  <Link to="/PostcoitalBleedingGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>PostcoitalBleedingGuide</Link>
                 </div>
               )}
             </div>
@@ -212,8 +212,8 @@ const Navbar = () => {
                   <Link to="/IrregularBleedingGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>IrregularBleedingGuide</Link>
                   <Link to="/OvarianCystsGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>OvarianCystsGuide</Link>
                   <Link to="/PostmenopausalBleedingGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>PostmenopausalBleedingGuide</Link>
-                   <Link to="/MenstrualDisordersGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>MenstrualDisordersGuide</Link>
-               
+                  <Link to="/MenstrualDisordersGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>MenstrualDisordersGuide</Link>
+                  <Link to="/PostcoitalBleedingGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>PostcoitalBleedingGuide</Link>
                 </div>
               )}
             </div>

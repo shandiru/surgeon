@@ -38,6 +38,7 @@ import FibroidGuide from "./Page/FibroidGuidePage";
 import VaginalLumpsGuide from "./Page/VaginalLumpsGuide"
 import MenstrualDisordersGuide from "./Page/MenstrualDisordersGuide";
 import PelvicPainGuide from "./Page/PelvicPainGuide"
+import PostcoitalBleedingGuide from "./Page/PostcoitalBleedingGuide";
 function App() {
   return (
     <Router>
@@ -69,6 +70,7 @@ function App() {
         <Route path="/OvarianCystsPage" element={<OvarianCystsPage />} />
         <Route path="/OvarianCystsGuide" element={<OvarianCystsGuide />} />
         <Route path="/PostcoitalBleeding" element={< PostcoitalBleeding />} />
+        <Route path="/PostcoitalBleedingGuide" element={< PostcoitalBleedingGuide />} />
         <Route path="/postmenopausal-bleeding" element={< PostmenopausalBleedingPage />} />
         <Route path="/PostmenopausalBleedingGuide" element={<PostmenopausalBleedingGuide />} />
         <Route path="/colposcopy" element={< Colposcopy />} />
