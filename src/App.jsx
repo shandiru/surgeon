@@ -37,7 +37,7 @@ import PublicationsPage from "./Page/PublicationsPage"
 import FibroidGuide from "./Page/FibroidGuidePage";
 import VaginalLumpsGuide from "./Page/VaginalLumpsGuide"
 import MenstrualDisordersGuide from "./Page/MenstrualDisordersGuide";
-
+import PelvicPainGuide from "./Page/PelvicPainGuide"
 function App() {
   return (
     <Router>
@@ -79,8 +79,9 @@ function App() {
 
         <Route path="/PublicationsPage" element={<PublicationsPage />} />
         <Route path="/VaginalLumpsGuide" element={<VaginalLumpsGuide />} />
+         <Route path="/PelvicPainGuide" element={<PelvicPainGuide />} />
 
-
+        
       </Routes>
       <Footer />
     </Router>
