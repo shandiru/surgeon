@@ -61,7 +61,7 @@ const Navbar = () => {
               Education
             </HashLink>
             <HashLink smooth to="/PublicationsPage" className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">
-            Publications
+              Publications
             </HashLink>
 
             {/* Services Dropdown */}
@@ -114,10 +114,11 @@ const Navbar = () => {
                   <Link to="/CervicalCancerGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>CervicalCancerGuide</Link>
                   <Link to="/RoboticSurgeryGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>RoboticSurgeryGuide</Link>
                   <Link to="/CervicalScreeningGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>CervicalScreeningGuide</Link>
-                  <Link to="/EndometriosisGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>EndometriosisGuide</Link>
+                  <Link to="/FibroidGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>FibroidGuide</Link>
+                  <Link to="/CervicalScreeningGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>CervicalScreeningGuide</Link>
                    <Link to="/CervicalScreeningGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>CervicalScreeningGuide</Link>
-                   <Link to="/IrregularBleedingGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>IrregularBleedingGuide</Link>
-                    <Link to="/OvarianCystsGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>OvarianCystsGuide</Link>
+                  <Link to="/IrregularBleedingGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>IrregularBleedingGuide</Link>
+                  <Link to="/OvarianCystsGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>OvarianCystsGuide</Link>
                   <Link to="/PostmenopausalBleedingGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>PostmenopausalBleedingGuide</Link>
                 </div>
               )}
@@ -147,8 +148,8 @@ const Navbar = () => {
             <HashLink smooth to="/#experience" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900">Experience</HashLink>
             <HashLink smooth to="/#specialties" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900">Specialties</HashLink>
             <HashLink smooth to="/#education" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900">Education</HashLink>
-              <HashLink smooth to="/PublicationsPage" className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">
-            Publications
+            <HashLink smooth to="/PublicationsPage" className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">
+              Publications
             </HashLink>
 
 
@@ -178,7 +179,7 @@ const Navbar = () => {
                   <Link to="/postmenopausal-bleeding" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Postmenopausal Bleeding</Link>
                   <Link to="/pelvic-pain-information" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Pelvic Pain</Link>
                   <Link to="/vulvar-vaginal-lumps" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Vulvar Vaginal Lumps</Link>
-                
+
                 </div>
               )}
             </div>
@@ -203,9 +204,11 @@ const Navbar = () => {
                   <Link to="/CervicalCancerGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>CervicalCancerGuide</Link>
                   <Link to="/RoboticSurgeryGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>RoboticSurgeryGuide</Link>
                   <Link to="/EndometriosisGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>EndometriosisGuide</Link>
-                   <Link to="/CervicalScreeningGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>CervicalScreeningGuide</Link>
-                   <Link to="/IrregularBleedingGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>IrregularBleedingGuide</Link>
-                    <Link to="/OvarianCystsGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>OvarianCystsGuide</Link>
+                   <Link to="/FibroidGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>FibroidGuide</Link>
+
+                  <Link to="/CervicalScreeningGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>CervicalScreeningGuide</Link>
+                  <Link to="/IrregularBleedingGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>IrregularBleedingGuide</Link>
+                  <Link to="/OvarianCystsGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>OvarianCystsGuide</Link>
                   <Link to="/PostmenopausalBleedingGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>PostmenopausalBleedingGuide</Link>
                 </div>
               )}

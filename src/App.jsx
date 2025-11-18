@@ -34,6 +34,8 @@ import RoboticGuide from "./Page/RoboticGuidePage";
 import EndometriosisGuide from "./Page/EndometriosisGuidePage";
 import PostmenopausalBleedingGuide from "./Page/PostmenopausalBleedingGuide"
 import PublicationsPage from "./Page/PublicationsPage"
+import FibroidGuide from "./Page/FibroidGuidePage";
+
 function App() {
   return (
     <Router>
@@ -59,6 +61,7 @@ function App() {
         <Route path="/EndometriosisInformation" element={<   EndometriosisInformation />} />
         <Route path="/EndometriosisGuide" element={<   EndometriosisGuide />} />
         <Route path="/FibroidInformation" element={< FibroidInformationPage />} />
+        <Route path="/FibroidGuide" element={< FibroidGuide />} />
         <Route path="/MenstrualDisordersInformation" element={< MenstrualDisordersInformationPage />} />
         <Route path="/OvarianCystsPage" element={<OvarianCystsPage />} />
         <Route path="/OvarianCystsGuide" element={<OvarianCystsGuide />} />
