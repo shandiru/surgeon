@@ -1,119 +1,90 @@
-'use client';
-import { Lightbulb, Star, CheckCircle2 } from 'lucide-react';
+"use client";
+import React from "react";
 
-const OvarianCystsGuidecard8 = ({ setShowCard, setActiveButton }) => {
+const OvarianCystsGuideCard8 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6 pb-10">
-      
-      {/* MAIN CARD */}
-      <div
-        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto rounded-2xl p-8 border shadow-sm animate-in slide-in-from-right-5 duration-300"
-        style={{
-          backgroundColor: "#FFFFFF",
-          borderColor: "rgb(255,197,211)",
-        }}
-      >
-        {/* HEADER */}
-        <div className="mb-6">
-          <span
-            className="font-semibold text-sm uppercase tracking-wide flex items-center gap-2"
-            style={{ color: "#FF4B8B" }}
-          >
-            <Lightbulb className="w-6 h-6 text-[#FF4B8B]" />
-            Key Takeaway
-          </span>
+      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto animate-in slide-in-from-right-5 duration-300">
 
-          <p className="text-sm mt-1" style={{ color: "#7a2f4f" }}>
-            The most important points to remember
-          </p>
-        </div>
-
-        {/* HIGHLIGHT BOX */}
+        {/* ================= MAIN CARD ================= */}
         <div
-          className="p-5 rounded-xl border mb-6"
-          style={{
-            backgroundColor: "#FFF5F8",
-            borderColor: "rgb(255,197,211)",
-          }}
+          className="flex flex-col gap-6 rounded-xl bg-white text-[#BB125B] shadow-lg hover:shadow-xl transition-all duration-300 py-6 px-6 sm:px-8"
+          style={{ border: "1px solid rgb(255,197,211)" }}
         >
-          <h3
-            className="font-semibold flex items-center gap-2 mb-2"
-            style={{ color: "#FF4B8B" }}
-          >
-            <Star className="w-5 h-5 text-[#FF4B8B]" />
-            What You Should Know
-          </h3>
+          {/* HEADER */}
+          <div className="flex items-center gap-3 text-xl font-semibold text-[#FF4B8B]">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              stroke="#FF4B8B"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="w-6 h-6"
+              viewBox="0 0 24 24"
+            >
+              <path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path>
+            </svg>
+            Surgery to Remove Ovarian Cysts
+          </div>
 
-          <p className="text-sm leading-relaxed" style={{ color: "#7a2f4f" }}>
-            Vulvar cancer is rare but serious. Early diagnosis leads to the best outcomes,
-            which is why understanding symptoms and staying aware of changes is so important.
-          </p>
+          {/* TOP HIGHLIGHT BOX */}
+          <div className="mb-6 p-4 rounded-lg bg-[#FEE6EA] shadow-sm">
+            <p className="font-medium">
+              Surgery is only needed if the cyst is large, painful, persistent, or possibly cancerous.
+            </p>
+          </div>
+
+          {/* ================= TWO SURGERY CARDS ================= */}
+          <div className="grid md:grid-cols-2 gap-6">
+
+            {/* Laparoscopy */}
+            <div
+              className="bg-white rounded-lg p-5 shadow-md hover:shadow-lg transition-all duration-300"
+              style={{ border: "1px solid rgb(255,197,211)" }}
+            >
+              <h4 className="font-semibold mb-2 text-[#BB125B]">Laparoscopy</h4>
+              <p className="text-sm mb-3 text-[#555]">Keyhole surgery using small cuts</p>
+              <span className="inline-flex items-center justify-center rounded-full px-3 py-1 text-xs font-medium bg-[#FF4B8B1A] text-[#FF4B8B]">
+                Often used for smaller, benign cysts
+              </span>
+            </div>
+
+            {/* Laparotomy */}
+            <div
+              className="bg-white rounded-lg p-5 shadow-md hover:shadow-lg transition-all duration-300"
+              style={{ border: "1px solid rgb(255,197,211)" }}
+            >
+              <h4 className="font-semibold mb-2 text-[#BB125B]">Laparotomy</h4>
+              <p className="text-sm mb-3 text-[#555]">
+                Open surgery through a larger cut in the abdomen
+              </p>
+              <span className="inline-flex items-center justify-center rounded-full px-3 py-1 text-xs font-medium bg-[#FEE6EA] text-[#BB125B]">
+                Used for larger or possibly cancerous cysts
+              </span>
+            </div>
+
+          </div>
+
+          {/* ================= NEXT BUTTON ================= */}
+          <div className="pt-6 flex justify-center">
+            <button
+              onClick={() => {
+                setShowCard(9);
+                setActiveButton(8);
+              }}
+              className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all"
+            >
+              Complete Guide
+            </button>
+          </div>
+
         </div>
-
-        {/* KEY POINTS LIST */}
-        <div className="space-y-4">
-          <h4
-            className="font-semibold"
-            style={{ color: "#FF4B8B" }}
-          >
-            Key Points to Remember
-          </h4>
-
-          <ul className="space-y-2 text-sm">
-            {[
-              "Early detection greatly improves treatment success",
-              "Persistent itching, lumps, or skin changes should never be ignored",
-              "Regular check-ups help spot changes early",
-              "HPV protection reduces risk",
-              "Awareness of your vulvar skin is the first step in prevention",
-            ].map((item, index) => (
-              <li
-                key={index}
-                className="flex items-start gap-2"
-                style={{ color: "#7a2f4f" }}
-              >
-                <CheckCircle2 className="w-4 h-4 text-[#FF4B8B] mt-0.5 flex-shrink-0" />
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        {/* FINAL MESSAGE BOX */}
-        <div
-          className="p-4 rounded-xl border mt-6"
-          style={{
-            backgroundColor: "#FFFFFF",
-            borderColor: "rgb(255,197,211)",
-          }}
-        >
-          <h4
-            className="font-semibold flex items-center gap-2"
-            style={{ color: "#FF4B8B" }}
-          >
-            <Star className="w-5 h-5 text-[#FF4B8B]" />
-            Final Message
-          </h4>
-
-          <p className="text-sm leading-relaxed mt-1" style={{ color: "#7a2f4f" }}>
-            Staying aware, getting regular check-ups, and seeking help early if something feels
-            unusual can make a powerful difference in protecting your health.
-          </p>
-        </div>
-
-        {/* COMPLETE GUIDE BUTTON */}
-        <div className="pt-8 flex justify-center">
-          <button
-            className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all flex items-center justify-center gap-2"
-          >
-            <Star className="w-4 h-4" />
-            Complete Guide
-          </button>
-        </div>
-
       </div>
     </div>
   );
 };
 
-export default OvarianCystsGuidecard8;
+export default OvarianCystsGuideCard8;

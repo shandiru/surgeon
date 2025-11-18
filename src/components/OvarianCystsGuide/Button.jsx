@@ -10,18 +10,18 @@ import {
   BookmarkCheck
 } from "lucide-react";
 
-
 const OvarianCystsGuideButtons = ({ setShowCard, activeButton, setActiveButton }) => {
-const buttons = [
-  { label: 'Overview', icon: <Info className="w-4 h-4" />, card: 1 },
-  { label: 'How It Starts', icon: <Activity className="w-4 h-4" />, card: 2 },
-  { label: 'Key Risk Factors', icon: <AlertTriangle className="w-4 h-4" />, card: 3 },
-  { label: 'Recognising Symptoms', icon: <Eye className="w-4 h-4" />, card: 4 },
-  { label: 'Getting Diagnosed', icon: <ScanSearch className="w-4 h-4" />, card: 5 },
-  { label: 'Treatment Options', icon: <Syringe className="w-4 h-4" />, card: 6 },
-  { label: 'Prevention & Early Detection', icon: <ShieldCheck className="w-4 h-4" />, card: 7 },
-  { label: 'Key Takeaway', icon: <BookmarkCheck className="w-4 h-4" />, card: 8 }
-];
+
+  const buttons = [
+    { label: 'What Are Ovarian Cysts?', icon: <Info className="w-4 h-4" />, card: 1 },
+    { label: 'See Your Doctor If You Have', icon: <Activity className="w-4 h-4" />, card: 2 },
+    { label: 'Types of Ovarian Cysts', icon: <AlertTriangle className="w-4 h-4" />, card: 3 },
+    { label: 'Symptoms of Ovarian Cysts', icon: <Eye className="w-4 h-4" />, card: 4 },
+    { label: 'Risk Factors', icon: <ScanSearch className="w-4 h-4" />, card: 5 },
+    { label: 'Fertility & Pregnancy', icon: <Syringe className="w-4 h-4" />, card: 6 },
+    { label: 'How Cysts Are Diagnosed', icon: <ShieldCheck className="w-4 h-4" />, card: 7 },
+    { label: 'Surgery to Remove Cysts', icon: <BookmarkCheck className="w-4 h-4" />, card: 8 }
+  ];
 
   const handleButtonClick = (card, index) => {
     setShowCard(card);
@@ -38,12 +38,12 @@ const buttons = [
             w-full py-2 px-3
             font-semibold rounded-md 
             text-[#BB125B] bg-[#FF4B8B]/10 hover:bg-[#FF4B8B]/30 
-            text-sm
+            text-sm leading-tight
             transition-all 
             ${activeButton === index ? 'bg-[#FF4B8B]/50 text-black' : ''}`}
         >
           {button.icon}
-          <span className="leading-tight">{button.label}</span>
+          <span>{button.label}</span>
         </button>
       ))}
     </div>

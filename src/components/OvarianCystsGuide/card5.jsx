@@ -1,159 +1,70 @@
 "use client";
-import {
-  Target,
-  Stethoscope,
-  Microscope,
-  Camera,
-  Scan,
-  Activity,
-} from "lucide-react";
 import React from "react";
 
-const OvarianCystsGuidecard5 = ({ setShowCard, setActiveButton }) => {
+const OvarianCystsGuideCard5 = ({ setShowCard, setActiveButton }) => {
   return (
-    <div className="space-y-6 pb-10">
-      {/* MAIN WRAPPER */}
-      <div
-        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto rounded-2xl p-8 border shadow-sm animate-in slide-in-from-right-5 duration-300"
-        style={{
-          backgroundColor: "#FFFFFF",
-          borderColor: "rgb(255,197,211)",
-        }}
-      >
-        {/* HEADER */}
-        <div className="mb-6">
-          <span
-            className="font-semibold text-sm uppercase tracking-wide"
-            style={{ color: "#FF4B8B" }}
-          >
-            Step 2
-          </span>
+    <div className="pb-10">
+      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto animate-in slide-in-from-right-5 duration-300">
 
-          <h2
-            className="text-3xl font-bold mt-2"
-            style={{ color: "#FF4B8B" }}
-          >
-            Getting Diagnosed
-          </h2>
+        {/* FULL WRAPPER BOX */}
+        <div
+          className="rounded-2xl p-8 border shadow-lg transition-all duration-300 bg-[#FEE6EA]"
+          style={{ borderColor: "rgb(255,197,211)" }}
+        >
 
-          <p className="text-lg mt-2" style={{ color: "#7a2f4f" }}>
-            Diagnosis usually begins with a physical and pelvic exam, followed by
-            specialized tests.
-          </p>
-        </div>
-
-        {/* TITLE */}
-        <h3 className="text-xl font-semibold" style={{ color: "#FF4B8B" }}>
-          Examination Steps:
-        </h3>
-
-        {/* ================ STEPS GRID ================= */}
-        <div className="space-y-4 mt-6">
-          {/* Pelvic Exam */}
-          <div
-            className="flex items-start gap-6 p-6 rounded-xl border transition-all duration-300 hover:bg-[#FFF5F8] hover:shadow-lg active:bg-[#FFF5F8]"
-            style={{ borderColor: "rgb(255,197,211)" }}
-          >
-            <div
-              className="flex items-center justify-center w-12 h-12 rounded-lg flex-shrink-0"
-              style={{ backgroundColor: "#FF4B8B", color: "#FFFFFF" }}
+          {/* HEADER */}
+          <div className="flex items-center gap-3 font-semibold text-[#FF4B8B] text-lg mb-6">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="22"
+              fill="none"
+              stroke="#FF4B8B"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="w-5 h-5"
             >
-              <Stethoscope className="w-6 h-6" />
-            </div>
-
-            <div>
-              <h4 className="text-lg font-semibold mb-2" style={{ color: "#FF4B8B" }}>
-                Pelvic Exam
-              </h4>
-              <p style={{ color: "#7a2f4f" }}>
-                Checking the vulva, vagina, uterus, ovaries, bladder, and rectum
-                for abnormalities.
-              </p>
-            </div>
+              <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+            </svg>
+            Risk Factors
           </div>
 
-          {/* Biopsy */}
-          <div
-            className="flex items-start gap-6 p-6 rounded-xl border transition-all duration-300 hover:bg-[#FFF5F8] hover:shadow-lg active:bg-[#FFF5F8]"
-            style={{ borderColor: "rgb(255,197,211)" }}
-          >
-            <div
-              className="flex items-center justify-center w-12 h-12 rounded-lg flex-shrink-0"
-              style={{ backgroundColor: "#FF4B8B", color: "#FFFFFF" }}
-            >
-              <Microscope className="w-6 h-6" />
-            </div>
-
-            <div>
-              <h4 className="text-lg font-semibold mb-2" style={{ color: "#FF4B8B" }}>
-                Biopsy
-              </h4>
-              <p style={{ color: "#7a2f4f" }}>
-                Removing a small piece of tissue from the vulva to test for
-                cancer cells.
-              </p>
-            </div>
-          </div>
-
-          {/* Colposcopy */}
-          <div
-            className="flex items-start gap-6 p-6 rounded-xl border transition-all duration-300 hover:bg-[#FFF5F8] hover:shadow-lg active:bg-[#FFF5F8]"
-            style={{ borderColor: "rgb(255,197,211)" }}
-          >
-            <div
-              className="flex items-center justify-center w-12 h-12 rounded-lg flex-shrink-0"
-              style={{ backgroundColor: "#FF4B8B", color: "#FFFFFF" }}
-            >
-              <Camera className="w-6 h-6" />
-            </div>
-
-            <div>
-              <h4 className="text-lg font-semibold mb-2" style={{ color: "#FF4B8B" }}>
-                Colposcopy
-              </h4>
-              <p style={{ color: "#7a2f4f" }}>
-                Using a magnifying instrument to closely examine the vulva.
-              </p>
-            </div>
+          {/* CONTENT */}
+          <div className="space-y-3 text-[#BB125B]">
+            {[
+              "Hormonal treatments that trigger ovulation",
+              "Endometriosis",
+              "Polycystic ovary syndrome (PCOS)",
+              "Family history of ovarian cysts",
+              "Being of reproductive age",
+            ].map((item, index) => (
+              <div key={index} className="flex items-start gap-3">
+                <div className="w-2.5 h-2.5 bg-[#FF4B8B] rounded-full mt-2 flex-shrink-0"></div>
+                <span className="text-sm">{item}</span>
+              </div>
+            ))}
           </div>
         </div>
 
-        {/* ================= TAG LIST (Pink Pills) ================== */}
-        <div className="mt-8 flex flex-wrap gap-3">
-          {[
-            "Chest X-ray",
-            "CT or PET-CT scan",
-            "MRI",
-            "Endoscopy (if needed)",
-          ].map((tag, i) => (
-            <span
-              key={i}
-              className="px-4 py-2 rounded-md text-sm font-medium"
-              style={{
-                backgroundColor: "#FF4B8B",
-                color: "#FFFFFF",
-              }}
-            >
-              {tag}
-            </span>
-          ))}
-        </div>
-
-        {/* ================= NEXT BUTTON ================= */}
+        {/* NEXT BUTTON */}
         <div className="pt-6 flex justify-center">
           <button
             onClick={() => {
               setShowCard(6);
               setActiveButton(5);
             }}
-            className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md text-sm font-medium transition-all h-10 px-4"
+            className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white 
+                       w-[90%] md:w-[60%] lg:w-[40%] rounded-md 
+                       text-sm font-medium transition-all h-10 px-4"
           >
-            Learn About Aftercare
+            Continue to Next Section
           </button>
         </div>
+
       </div>
     </div>
   );
 };
 
-export default OvarianCystsGuidecard5;
+export default OvarianCystsGuideCard5;

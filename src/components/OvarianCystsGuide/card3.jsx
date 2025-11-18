@@ -1,163 +1,174 @@
 'use client';
-import React from 'react';
-import { Biohazard, Cigarette, CloudFog, Sparkles, ShieldOff } from 'lucide-react';
+import React, { useState } from "react";
 
-const OvarianCystsGuidecard3 = ({ setShowCard, setActiveButton }) => {
+const OvarianCystsGuideCard3 = ({ setShowCard, setActiveButton }) => {
+
+  // Accordion State
+  const [openIndex, setOpenIndex] = useState(0);
+
+  const toggle = (index) => {
+    setOpenIndex(openIndex === index ? -1 : index);
+  };
+
   return (
-    <div className="space-y-6 pb-10">
-      {/* Card Container */}
-      <div
-        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-2xl border p-8 shadow-sm animate-in slide-in-from-right-5 duration-300"
-        style={{
-          backgroundColor: '#FFFFFF',
-          borderColor: 'rgb(255,197,211)',
-        }}
-      >
-        {/* Card Header */}
-        <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5">
-          <div
-            className="leading-none font-semibold flex items-center gap-2"
-            style={{ color: '#FF4B8B' }}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="lucide lucide-file-text w-6 h-6 text-[#FF4B8B]"
-            >
-              <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
-              <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
-              <path d="M10 9H8"></path>
-              <path d="M16 13H8"></path>
-              <path d="M16 17H8"></path>
+    <div className="pb-10">
+
+      {/* FULL WRAPPER */}
+      <div className="max-w-4xl mx-auto px-6 py-10 
+                      rounded-2xl border border-[#FF4B8B]/20 
+                      shadow-md bg-[#FEE6EA] text-[#FF4B8B]">
+
+        {/* HEADER */}
+        <div className="pb-4 border-b border-[#FF4B8B]/30">
+          <div className="font-semibold flex items-center gap-3 text-2xl">
+            <svg xmlns="http://www.w3.org/2000/svg"
+              width="24" height="24"
+              fill="none" stroke="currentColor"
+              strokeWidth="2" className="w-6 h-6 text-[#FF4B8B]">
+              <path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"/>
             </svg>
-            Key Risk Factors
+            Types of Ovarian Cysts
           </div>
-          <p className="text-sm" style={{ color: '#7a2f4f' }}>
-            Not everyone with these risk factors will develop vulvar cancer, but they increase likelihood.
-          </p>
         </div>
 
-        {/* Card Content */}
-        <div className="space-y-4 mt-4">
-          {/* Risk Factors Section */}
-          <div className="space-y-4">
-            {[
-              {
-                step: 'HPV Infection (High-Risk Strains)',
-                icon: <Biohazard className="w-5 h-5 text-[#FF4B8B]" />,
-                description:
-                  'High-risk HPV types, particularly HPV 16, significantly increase vulvar cancer risk.',
-              },
-              {
-                step: 'Older Age (Most Common After 60)',
-                icon: <CloudFog className="w-5 h-5 text-[#FF4B8B]" />,
-                description: 'Vulvar cancer is more common in women over 60.',
-              },
-              {
-                step: 'Smoking',
-                icon: <Cigarette className="w-5 h-5 text-[#FF4B8B]" />,
-                description: 'Smoking weakens the immune system and increases HPV persistence.',
-              },
-              {
-                step: 'Long-Term Skin Conditions (e.g., Lichen Sclerosus)',
-                icon: <Sparkles className="w-5 h-5 text-[#FF4B8B]" />,
-                description: 'Chronic inflammatory vulvar skin disorders increase risk.',
-              },
-              {
-                step: 'Weakened Immune System',
-                icon: <ShieldOff className="w-5 h-5 text-[#FF4B8B]" />,
-                description:
-                  'A weak immune system reduces the body’s ability to repair abnormal cells.',
-              },
-              {
-                step: 'History of Cervical or Vaginal Pre-cancers',
-                icon: <Biohazard className="w-5 h-5 text-[#FF4B8B]" />,
-                description:
-                  'Conditions like CIN or VAIN raise the risk of similar changes on the vulva.',
-              },
-            ].map((item, index) => (
-              <div
-                key={index}
-                className="flex gap-4 p-4 rounded-xl border transition-all duration-300 hover:shadow-lg active:shadow-lg"
-                style={{
-                  backgroundColor: '#FFFFFF',
-                  borderColor: 'rgb(255,197,211)',
-                }}
-              >
-                {/* Number Circle */}
-                <div className="flex-shrink-0">
-                  <div
-                    className="w-10 h-10 rounded-full flex items-center justify-center font-bold"
-                    style={{
-                      backgroundColor: '#FF4B8B',
-                      color: '#FFFFFF',
-                    }}
-                  >
-                    {index + 1}
+        {/* ACCORDIONS */}
+        <div className="space-y-4 mt-6">
+
+          {/* 1 - Functional Cysts */}
+          <div className="rounded-lg bg-white shadow-md hover:shadow-lg transition-all">
+            <button
+              onClick={() => toggle(0)}
+              className="flex w-full items-center justify-between gap-4 px-4 py-4 text-left text-sm font-medium"
+            >
+              <div className="flex items-center gap-3">
+                <span className="rounded-full bg-[#FF4B8B]/10 text-[#FF4B8B] px-3 py-1 text-xs font-medium">
+                  Most Common
+                </span>
+                <span className="font-semibold text-[#BB125B]">
+                  Functional Cysts (Harmless)
+                </span>
+              </div>
+
+              <svg xmlns="http://www.w3.org/2000/svg"
+                width="24" height="24" fill="none"
+                stroke="currentColor" strokeWidth="2"
+                className={`w-5 h-5 text-[#FF4B8B] transition-transform duration-300 
+                ${openIndex === 0 ? "rotate-180" : ""}`}>
+                <path d="m6 9 6 6 6-6"/>
+              </svg>
+            </button>
+
+            {openIndex === 0 && (
+              <div className="px-5 pb-5 text-sm text-[#444] leading-relaxed">
+                <div className="mt-3 grid md:grid-cols-2 gap-4">
+                  <div className="bg-[#fff7f9] p-4 rounded-lg shadow-sm">
+                    <span className="font-bold text-[#BB125B]">Follicle Cysts</span>
+                    <p className="text-sm text-[#555] mt-1">
+                      Form when a follicle does not release an egg and keeps growing.
+                      Usually disappear within 1–3 months.
+                    </p>
+                  </div>
+
+                  <div className="bg-[#fff7f9] p-4 rounded-lg shadow-sm">
+                    <span className="font-bold text-[#BB125B]">Corpus Luteum Cysts</span>
+                    <p className="text-sm text-[#555] mt-1">
+                      Form when the follicle reseals after releasing an egg and fills with fluid.
+                      Usually resolve in a few weeks.
+                    </p>
                   </div>
                 </div>
+              </div>
+            )}
+          </div>
 
-                {/* Text */}
-                <div className="flex-1">
-                  <h4
-                    className="font-semibold mb-1 flex items-center gap-2"
-                    style={{ color: '#FF4B8B' }}
-                  >
-                    {item.icon}
-                    {item.step}
-                  </h4>
-                  <p className="text-sm" style={{ color: '#7a2f4f' }}>
-                    {item.description}
-                  </p>
+          {/* 2 - Other Benign Cysts */}
+          <div className="rounded-lg bg-white shadow-md hover:shadow-lg transition-all">
+            <button
+              onClick={() => toggle(1)}
+              className="flex w-full items-center justify-between gap-4 px-4 py-4 text-left text-sm font-medium"
+            >
+              <div className="flex items-center gap-3">
+                <span className="rounded-full bg-[#FF4B8B]/10 text-[#FF4B8B] px-3 py-1 text-xs font-medium">
+                  Benign
+                </span>
+                <span className="font-semibold text-[#BB125B]">
+                  Other Benign Cysts
+                </span>
+              </div>
+
+              <svg xmlns="http://www.w3.org/2000/svg"
+                width="24" height="24" fill="none"
+                stroke="currentColor" strokeWidth="2"
+                className={`w-5 h-5 text-[#FF4B8B] transition-transform duration-300 
+                ${openIndex === 1 ? "rotate-180" : ""}`}>
+                <path d="m6 9 6 6 6-6"/>
+              </svg>
+            </button>
+
+            {openIndex === 1 && (
+              <div className="px-5 pb-5 text-sm text-[#444] leading-relaxed">
+                <ul className="list-disc pl-5 space-y-2 text-[#555] mt-3">
+                  <li><strong className="text-[#BB125B]">Endometriomas</strong> — caused by endometriosis</li>
+                  <li><strong className="text-[#BB125B]">Dermoid cysts</strong> — formed from cells present from birth</li>
+                  <li><strong className="text-[#BB125B]">Cystadenomas</strong> — fluid-filled and can grow large</li>
+                  <li><strong className="text-[#BB125B]">PCOS cysts</strong> — multiple tiny cysts from hormone imbalance</li>
+                </ul>
+              </div>
+            )}
+          </div>
+
+          {/* 3 - Malignant Cysts */}
+          <div className="rounded-lg bg-white shadow-md hover:shadow-lg transition-all">
+            <button
+              onClick={() => toggle(2)}
+              className="flex w-full items-center justify-between gap-4 px-4 py-4 text-left text-sm font-medium"
+            >
+              <div className="flex items-center gap-3">
+                <span className="rounded-full bg-[#FF4B8B]/10 text-[#FF4B8B] px-3 py-1 text-xs font-medium">
+                  Rare
+                </span>
+                <span className="font-semibold text-[#BB125B]">
+                  Malignant (Cancerous) Cysts
+                </span>
+              </div>
+
+              <svg xmlns="http://www.w3.org/2000/svg"
+                width="24" height="24" fill="none"
+                stroke="currentColor" strokeWidth="2"
+                className={`w-5 h-5 text-[#FF4B8B] transition-transform duration-300 
+                ${openIndex === 2 ? "rotate-180" : ""}`}>
+                <path d="m6 9 6 6 6-6"/>
+              </svg>
+            </button>
+
+            {openIndex === 2 && (
+              <div className="px-5 pb-5 text-sm text-[#444] leading-relaxed">
+                <div className="bg-[#FFF0F5] p-4 rounded-lg text-[#BB125B] shadow-sm mt-3">
+                  Rare, but more common after menopause. Must be assessed to rule out ovarian cancer.
                 </div>
               </div>
-            ))}
-          </div>
-
-          {/* Extra Info */}
-          <div
-            className="p-4 rounded-xl border mt-4"
-            style={{
-              backgroundColor: '#FFF5F8',
-              borderColor: 'rgb(255,197,211)',
-            }}
-          >
-            <h4
-              className="font-semibold mb-2 flex items-center gap-2"
-              style={{ color: '#FF4B8B' }}
-            >
-              <Sparkles className="w-5 h-5 text-[#FF4B8B]" />
-              Good to Know
-            </h4>
-            <p className="text-sm" style={{ color: '#7a2f4f' }}>
-              Having one or more risk factors does not mean you will get vulvar cancer — but
-              understanding them helps with early detection and prevention.
-            </p>
-          </div>
-
-          {/* Button */}
-          <div className="pt-6 flex justify-center">
-            <button
-              onClick={() => {
-                setShowCard(4);
-                setActiveButton(3);
-              }}
-              className="inline-flex items-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
-            >
-              Continue to Next Section
-            </button>
+            )}
           </div>
         </div>
+
+        {/* BUTTON */}
+        <div className="pt-8 flex justify-center">
+          <button
+            onClick={() => {
+              setShowCard(4);
+              setActiveButton(3);
+            }}
+            className="inline-flex items-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 
+                       rounded-md text-sm font-medium transition-all h-10 px-4 
+                       w-[90%] md:w-[60%] lg:w-[40%] text-white"
+          >
+            Continue to Next Section
+          </button>
+        </div>
+
       </div>
     </div>
   );
 };
 
-export default OvarianCystsGuidecard3;
+export default OvarianCystsGuideCard3;

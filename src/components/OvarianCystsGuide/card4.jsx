@@ -1,94 +1,111 @@
 "use client";
-import { AlertTriangle } from "lucide-react";
+import React from "react";
 
 const OvarianCystsGuideCard4 = ({ setShowCard, setActiveButton }) => {
   return (
-    <div className="space-y-6 pb-10">  {/* ⭐ ADDED PADDING BOTTOM */}
+    <div className="pb-10">
       <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto animate-in slide-in-from-right-5 duration-300">
 
-        {/* MAIN WRAPPER BOX */}
+        {/* FULL WRAPPER SECTION */}
         <div
-          className="rounded-2xl p-8 border transition-all duration-300 shadow-sm"
-          style={{
-            backgroundColor: "#FFFFFF",
-            borderColor: "rgb(255,197,211)",
-          }}
+          className="rounded-2xl p-8 border shadow-lg transition-all duration-300 bg-white"
+          style={{ borderColor: "rgb(255,197,211)" }}
         >
           {/* HEADER */}
-          <div className="mb-6">
-            <span
-              className="font-semibold text-sm uppercase tracking-wide"
-              style={{ color: "#FF4B8B" }}
+          <div className="flex items-center gap-3 text-2xl font-semibold text-[#FF4B8B] mb-6">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="26"
+              height="26"
+              fill="none"
+              stroke="#FF4B8B"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="w-6 h-6"
             >
-              Step 1
-            </span>
-            <h2 className="text-3xl font-bold mt-2" style={{ color: "#FF4B8B" }}>
-              Recognizing Symptoms
-            </h2>
+              <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+            </svg>
+            Symptoms of Ovarian Cysts
           </div>
 
-          {/* DESCRIPTION */}
-          <p className="text-lg mb-8" style={{ color: "#7a2f4f" }}>
-            Vulvar cancer most often affects the labia (skin folds around the vagina),
-            but it can occur anywhere on the vulva.
-          </p>
+          {/* INTRO BOX */}
+          <div className="mb-6 p-4 rounded-lg text-center font-medium bg-[#FEE6EA] text-[#BB125B]">
+            Most cysts cause no symptoms, but larger or problematic cysts may cause:
+          </div>
 
-          {/* GRID OF SYMPTOMS */}
-          <div className="grid md:grid-cols-2 gap-4">
-            {[
-              "Persistent vulvar itching (lasting more than a few weeks)",
-              "A cut or sore that won't heal",
-              "A lump or mass on the vulva",
-              "Vulvar pain or tenderness",
-              "Unusual bleeding from the vulva (not menstrual)",
-              "Burning in the genital area that continues despite treatment",
-              "Changes in a mole or birthmark on the vulva (size, colour, or texture)",
-            ].map((text, index) => (
-              <div
-                key={index}
-                className="flex items-start gap-3 p-4 bg-white rounded-lg border transition-all duration-300 hover:bg-[#FFF5F8] hover:shadow-lg active:bg-[#FFF5F8] active:shadow-lg"
-                style={{ borderColor: "rgb(255,197,211)" }}
-              >
-                <svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  strokeWidth="0"
-                  viewBox="0 0 512 512"
-                  className="h-5 w-5 mt-0.5 flex-shrink-0"
-                  style={{ color: "#FF4B8B" }}
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path>
-                </svg>
+          {/* GRID */}
+          <div className="grid md:grid-cols-2 gap-8">
+            
+            {/* COMMON SYMPTOMS */}
+            <div>
+              <h4 className="font-semibold mb-4 text-lg text-[#FF4B8B]">
+                Common Symptoms
+              </h4>
 
-                <span className="text-[#7a2f4f]">{text}</span>
+              <div className="space-y-3">
+                {[
+                  "Bloating, swelling or pressure in the lower abdomen",
+                  "Pelvic pain (dull or sharp, may come and go)",
+                  "Pain during periods or sex",
+                  "Pain with nausea/vomiting if the ovary twists",
+                  "Sudden severe pain if a cyst ruptures",
+                ].map((symptom, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <div className="w-2 h-2 rounded-full mt-2 bg-[#FF4B8B] flex-shrink-0"></div>
+                    <span className="text-sm text-gray-700">{symptom}</span>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
+
+            {/* LESS COMMON SYMPTOMS */}
+            <div>
+              <h4 className="font-semibold mb-4 text-lg text-[#FF4B8B]">
+                Less Common Symptoms
+              </h4>
+
+              <div className="space-y-3">
+                {[
+                  "Lower back or thigh ache",
+                  "Trouble fully emptying bladder or bowel",
+                  "Breast tenderness",
+                  "Unexplained weight gain",
+                  "Needing to urinate more often",
+                  "Unusual vaginal bleeding",
+                ].map((symptom, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <div className="w-2 h-2 rounded-full mt-2 bg-[#FEB6C5] flex-shrink-0"></div>
+                    <span className="text-sm text-gray-700">{symptom}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
 
           {/* WARNING BOX */}
-          <div
-            className="mt-8 p-6 rounded-xl"
-            style={{ backgroundColor: "#FF4B8B" }}
-          >
+          <div className="mt-8 p-6 rounded-xl bg-[#FF4B8B]">
             <p className="text-white font-semibold text-lg">
-              If you notice any of these symptoms, it's important to see your doctor promptly.
+              If you notice any of these symptoms, it’s important to see your doctor promptly.
             </p>
           </div>
         </div>
 
         {/* NEXT BUTTON */}
-        <div className="pt-4 pb-6 flex justify-center"> {/* ⭐ EXTRA SPACE BELOW BUTTON */}
+        <div className="pt-4 pb-6 flex justify-center">
           <button
             onClick={() => {
               setShowCard(5);
               setActiveButton(4);
             }}
-            className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md text-sm font-medium transition-all h-10 px-4"
+            className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white 
+                       w-[90%] md:w-[60%] lg:w-[40%] h-10 rounded-md 
+                       text-sm font-medium transition-all px-4"
           >
-            Continue to Next Step
+            Continue to Next Section
           </button>
         </div>
+
       </div>
     </div>
   );

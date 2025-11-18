@@ -1,195 +1,119 @@
 "use client";
 import React from "react";
-import { Heart, Radiation, Pill, Scissors } from "lucide-react";
 
-const OvarianCystsGuidecard6 = ({ setShowCard, setActiveButton }) => {
+const OvarianCystsGuideCard6 = ({ setShowCard, setActiveButton }) => {
   return (
-    <div className="space-y-6 pb-10">
-      <div
-        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto rounded-2xl p-8 border shadow-sm animate-in slide-in-from-right-5 duration-300"
-        style={{
-          backgroundColor: "#FFFFFF",
-          borderColor: "rgb(255,197,211)",
-        }}
-      >
-        {/* Header */}
-        <div className="mb-6">
-          <span
-            className="font-semibold text-sm uppercase tracking-wide flex items-center gap-2"
-            style={{ color: "#FF4B8B" }}
-          >
-            <Heart className="w-6 h-6 text-[#FF4B8B]" />
-            Step 3
-          </span>
+    <div className="pb-10">
+      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto animate-in slide-in-from-right-5 duration-300">
 
-          <h2 className="text-3xl font-bold mt-2" style={{ color: "#FF4B8B" }}>
-            Treatment Options
-          </h2>
-
-          <p className="text-lg mt-4" style={{ color: "#7a2f4f" }}>
-            Treatment depends on the stage, size, and spread of the cancer.
-            Surgery is the most common approach.
-          </p>
-        </div>
-
-        {/* SURGERY SECTION */}
-        <div className="space-y-10 mt-8">
-          <div>
-            {/* Title Row */}
-            <div className="flex items-center gap-3 mb-6">
-              <div
-                className="w-8 h-8 flex items-center justify-center rounded-full text-white text-sm font-bold"
-                style={{ backgroundColor: "#FF4B8B" }}
-              >
-                1
-              </div>
-
-              <h3 className="text-xl font-semibold" style={{ color: "#FF4B8B" }}>
-                Surgery (Primary Treatment)
-              </h3>
-            </div>
-
-            {/* Surgery Cards */}
-            <div className="grid gap-4">
-              {/* Radical Wide Local Excision */}
-              <div
-                className="p-6 rounded-xl border transition-all duration-300 hover:bg-[#FFF5F8] active:bg-[#FFF5F8] hover:shadow-lg"
-                style={{ borderColor: "rgb(255,197,211)" }}
-              >
-                <h4
-                  className="text-lg font-semibold mb-2"
-                  style={{ color: "#FF4B8B" }}
-                >
-                  Radical Wide Local Excision
-                </h4>
-                <p style={{ color: "#7a2f4f" }}>
-                  Removing the cancerous tissue plus a margin of healthy tissue
-                  (usually at least 1 cm).
-                </p>
-              </div>
-
-              {/* Radical Partial Vulvectomy */}
-              <div
-                className="p-6 rounded-xl border transition-all duration-300 hover:bg-[#FFF5F8] active:bg-[#FFF5F8] hover:shadow-lg"
-                style={{ borderColor: "rgb(255,197,211)" }}
-              >
-                <h4
-                  className="text-lg font-semibold mb-2"
-                  style={{ color: "#FF4B8B" }}
-                >
-                  Radical Partial Vulvectomy
-                </h4>
-                <p style={{ color: "#7a2f4f" }}>
-                  Removing a larger section of the vulva — one or both labia,
-                  and sometimes the clitoris.
-                </p>
-              </div>
-
-              {/* Radical Vulvectomy */}
-              <div
-                className="p-6 rounded-xl border transition-all duration-300 hover:bg-[#FFF5F8] active:bg-[#FFF5F8] hover:shadow-lg"
-                style={{ borderColor: "rgb(255,197,211)" }}
-              >
-                <h4
-                  className="text-lg font-semibold mb-2"
-                  style={{ color: "#FF4B8B" }}
-                >
-                  Radical Vulvectomy
-                </h4>
-                <p style={{ color: "#7a2f4f" }}>
-                  Removing the entire vulva, including inner and outer labia,
-                  and possibly the clitoris.
-                </p>
-              </div>
-            </div>
+        {/* MAIN WRAPPER */}
+        <div
+          className="flex flex-col gap-6 rounded-xl py-6 px-5 sm:px-6 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all"
+          style={{
+            backgroundColor: "#FEE6EA",
+            color: "#BB125B",
+            border: "1px solid rgb(255,197,211)",
+          }}
+        >
+          {/* HEADER */}
+          <div className="flex items-center gap-3 font-semibold text-[#FF4B8B] text-lg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="22"
+              fill="none"
+              stroke="#FF4B8B"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+            </svg>
+            Fertility & Pregnancy
           </div>
 
-          {/* ADDITIONAL TREATMENTS */}
-          <div>
-            {/* Title Row */}
-            <div className="flex items-center gap-3 mb-6">
-              <div
-                className="w-8 h-8 flex items-center justify-center rounded-full text-white text-sm font-bold"
-                style={{ backgroundColor: "#FF4B8B" }}
+          {/* CONTENT */}
+          <div className="space-y-4">
+            {/* 1 */}
+            <div className="flex items-start gap-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-5 h-5 text-[#FF4B8B] mt-0.5 flex-shrink-0"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth="2"
               >
-                2
-              </div>
-
-              <h3 className="text-xl font-semibold" style={{ color: "#FF4B8B" }}>
-                Additional Treatments
-              </h3>
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="m9 12 2 2 4-4"></path>
+              </svg>
+              <span className="text-sm">
+                Most ovarian cysts do not affect fertility
+              </span>
             </div>
 
-            {/* Additional Treatments Grid */}
-            <div className="grid md:grid-cols-2 gap-4">
-              {/* Radiation Therapy */}
-              <div
-                className="flex items-start gap-4 p-6 rounded-xl border transition-all duration-300 hover:bg-[#FFF5F8] active:bg-[#FFF5F8] hover:shadow-lg"
-                style={{ borderColor: "rgb(255,197,211)" }}
+            {/* 2 */}
+            <div className="flex items-start gap-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-5 h-5 text-[#FF4B8B] mt-0.5 flex-shrink-0"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth="2"
               >
-                <div
-                  className="w-12 h-12 flex items-center justify-center rounded-lg text-white flex-shrink-0"
-                  style={{ backgroundColor: "#FF4B8B" }}
-                >
-                  <Radiation className="w-6 h-6" />
-                </div>
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 16v-4"></path>
+                <path d="M12 8h.01"></path>
+              </svg>
+              <span className="text-sm">
+                Some conditions (like PCOS or endometriosis) can affect fertility
+              </span>
+            </div>
 
-                <div>
-                  <h4
-                    className="text-lg font-semibold mb-2"
-                    style={{ color: "#FF4B8B" }}
-                  >
-                    Radiation Therapy
-                  </h4>
-                  <p style={{ color: "#7a2f4f" }}>
-                    Often used with surgery to destroy remaining cancer cells.
-                  </p>
-                </div>
-              </div>
-
-              {/* Chemotherapy */}
-              <div
-                className="flex items-start gap-4 p-6 rounded-xl border transition-all duration-300 hover:bg-[#FFF5F8] active:bg-[#FFF5F8] hover:shadow-lg"
-                style={{ borderColor: "rgb(255,197,211)" }}
+            {/* 3 */}
+            <div className="flex items-start gap-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-5 h-5 text-[#FF4B8B] mt-0.5 flex-shrink-0"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth="2"
               >
-                <div
-                  className="w-12 h-12 flex items-center justify-center rounded-lg text-white flex-shrink-0"
-                  style={{ backgroundColor: "#FF4B8B" }}
-                >
-                  <Pill className="w-6 h-6" />
-                </div>
-
-                <div>
-                  <h4
-                    className="text-lg font-semibold mb-2"
-                    style={{ color: "#FF4B8B" }}
-                  >
-                    Chemotherapy
-                  </h4>
-                  <p style={{ color: "#7a2f4f" }}>
-                    May be combined with radiation or used for advanced cases.
-                  </p>
-                </div>
-              </div>
+                <path d="M8 2v4"></path>
+                <path d="M16 2v4"></path>
+                <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                <path d="M3 10h18"></path>
+              </svg>
+              <span className="text-sm">
+                Large cysts during pregnancy may need monitoring or removal
+              </span>
             </div>
           </div>
         </div>
 
-        {/* BUTTON */}
-        <div className="pt-8 flex justify-center">
+        {/* NEXT BUTTON */}
+        <div className="pt-6 flex justify-center">
           <button
             onClick={() => {
               setShowCard(7);
               setActiveButton(6);
             }}
-            className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all"
+            className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white 
+                       w-[90%] md:w-[60%] lg:w-[40%] 
+                       rounded-md text-sm font-medium 
+                       transition-all h-10 px-4"
           >
             Continue to Next Section
           </button>
         </div>
+        
       </div>
     </div>
   );
 };
 
-export default OvarianCystsGuidecard6;
+export default OvarianCystsGuideCard6;
