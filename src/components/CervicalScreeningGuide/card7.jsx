@@ -115,9 +115,9 @@ const CervicalScreeningGuidecard7 = ({ setShowCard, setActiveButton }) => {
             setShowCard(8);
             setActiveButton(7);
           }}
-          className="inline-flex items-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 
-          justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium 
-          transition-all h-10 px-4 w-full text-white"
+         className="inline-flex items-center justify-center bg-[#FF4B8B] 
+                hover:bg-[#FF4B8B]/80 text-white rounded-md text-sm font-medium 
+                transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%]"
         >
           Continue to Final Summary
         </button>
