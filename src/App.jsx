@@ -76,7 +76,8 @@ function App() {
         <Route path="/vulvar-vaginal-lumps" element={< Vulvar />} />
 
         <Route path="/PublicationsPage" element={<PublicationsPage />} />
-        <Route path="/VaginalLumpsGuide " element={< VaginalLumpsGuide />} />
+         <Route path="/VaginalLumpsGuide" element={<VaginalLumpsGuide />} />
+
 
       </Routes>
       <Footer />
