@@ -13,14 +13,14 @@ import {
 
 const PelvicPainGuideButtons = ({ setShowCard, activeButton, setActiveButton }) => {
 const buttons = [
-  { label: 'Overview', icon: <Info className="w-4 h-4" />, card: 1 },
-  { label: 'How It Starts', icon: <Activity className="w-4 h-4" />, card: 2 },
-  { label: 'Key Risk Factors', icon: <AlertTriangle className="w-4 h-4" />, card: 3 },
-  { label: 'Recognising Symptoms', icon: <Eye className="w-4 h-4" />, card: 4 },
-  { label: 'Getting Diagnosed', icon: <ScanSearch className="w-4 h-4" />, card: 5 },
-  { label: 'Treatment Options', icon: <Syringe className="w-4 h-4" />, card: 6 },
-  { label: 'Prevention & Early Detection', icon: <ShieldCheck className="w-4 h-4" />, card: 7 },
-  { label: 'Key Takeaway', icon: <BookmarkCheck className="w-4 h-4" />, card: 8 }
+  { label: 'What Is Pelvic Pain', icon: <Info className="w-4 h-4" />, card: 1 },
+  { label: 'Types of Pelvic Pain', icon: <Activity className="w-4 h-4" />, card: 2 },
+  { label: 'Common Causes of Pelvic Pain', icon: <AlertTriangle className="w-4 h-4" />, card: 3 },
+  { label: 'When to See a Doctor', icon: <Eye className="w-4 h-4" />, card: 4 },
+  { label: 'How Pelvic Pain Is Investigated', icon: <ScanSearch className="w-4 h-4" />, card: 5 },
+  { label: 'Emotional Wellbeing', icon: <Syringe className="w-4 h-4" />, card: 6 },
+  { label: 'Self-Care Tips', icon: <ShieldCheck className="w-4 h-4" />, card: 7 },
+  { label: 'Remember', icon: <BookmarkCheck className="w-4 h-4" />, card: 8 }
 ];
 
   const handleButtonClick = (card, index) => {

@@ -1,113 +1,62 @@
-'use client';
-import { Lightbulb, Star, CheckCircle2 } from 'lucide-react';
+"use client";
+import React from "react";
+import { Heart } from "lucide-react";
 
 const PelvicPainGuidecard8 = ({ setShowCard, setActiveButton }) => {
   return (
-    <div className="space-y-6 pb-10">
-      
-      {/* MAIN CARD */}
-      <div
-        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto rounded-2xl p-8 border shadow-sm animate-in slide-in-from-right-5 duration-300"
-        style={{
-          backgroundColor: "#FFFFFF",
-          borderColor: "rgb(255,197,211)",
-        }}
-      >
-        {/* HEADER */}
-        <div className="mb-6">
-          <span
-            className="font-semibold text-sm uppercase tracking-wide flex items-center gap-2"
-            style={{ color: "#FF4B8B" }}
-          >
-            <Lightbulb className="w-6 h-6 text-[#FF4B8B]" />
-            Key Takeaway
-          </span>
+    <div className="pb-10">
+      <div className="max-w-5xl mx-auto animate-in slide-in-from-right-5 duration-300">
 
-          <p className="text-sm mt-1" style={{ color: "#7a2f4f" }}>
-            The most important points to remember
-          </p>
-        </div>
-
-        {/* HIGHLIGHT BOX */}
+        {/* MAIN CARD */}
         <div
-          className="p-5 rounded-xl border mb-6"
-          style={{
-            backgroundColor: "#FFF5F8",
-            borderColor: "rgb(255,197,211)",
-          }}
+          className="
+            text-[#FF4B8B] bg-[#FF4B8B]/10
+            max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-xl py-6 shadow-sm
+            transition-all duration-300
+            hover:z-50 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd]
+            active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]
+            hover:scale-105 active:scale-100
+          "
+          style={{ borderColor: "rgb(255,197,211)" }}
         >
-          <h3
-            className="font-semibold flex items-center gap-2 mb-2"
-            style={{ color: "#FF4B8B" }}
-          >
-            <Star className="w-5 h-5 text-[#FF4B8B]" />
-            What You Should Know
-          </h3>
+          {/* HEADER */}
+          <div className="px-6 pt-6">
+            <div className="text-center space-y-4">
+              <div className="flex justify-center">
+                <Heart className="h-8 w-8 text-[#FF4B8B]" />
+              </div>
+              <h3 className="text-xl font-semibold text-[#FF4B8B]">
+                Remember
+              </h3>
 
-          <p className="text-sm leading-relaxed" style={{ color: "#7a2f4f" }}>
-            Vulvar cancer is rare but serious. Early diagnosis leads to the best outcomes,
-            which is why understanding symptoms and staying aware of changes is so important.
-          </p>
+              {/* POINTS */}
+              <div className="space-y-2 text-[#7a2f4f] max-w-2xl mx-auto text-sm">
+                <p>• Pelvic pain is common and usually treatable</p>
+                <p>• Many causes are not serious, but some need prompt attention</p>
+                <p>• Early assessment can bring relief and peace of mind</p>
+
+                <p className="font-medium">
+                  If pelvic pain is affecting your life, book an appointment — we're here to help.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
-        {/* KEY POINTS LIST */}
-        <div className="space-y-4">
-          <h4
-            className="font-semibold"
-            style={{ color: "#FF4B8B" }}
-          >
-            Key Points to Remember
-          </h4>
-
-          <ul className="space-y-2 text-sm">
-            {[
-              "Early detection greatly improves treatment success",
-              "Persistent itching, lumps, or skin changes should never be ignored",
-              "Regular check-ups help spot changes early",
-              "HPV protection reduces risk",
-              "Awareness of your vulvar skin is the first step in prevention",
-            ].map((item, index) => (
-              <li
-                key={index}
-                className="flex items-start gap-2"
-                style={{ color: "#7a2f4f" }}
-              >
-                <CheckCircle2 className="w-4 h-4 text-[#FF4B8B] mt-0.5 flex-shrink-0" />
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        {/* FINAL MESSAGE BOX */}
-        <div
-          className="p-4 rounded-xl border mt-6"
-          style={{
-            backgroundColor: "#FFFFFF",
-            borderColor: "rgb(255,197,211)",
-          }}
-        >
-          <h4
-            className="font-semibold flex items-center gap-2"
-            style={{ color: "#FF4B8B" }}
-          >
-            <Star className="w-5 h-5 text-[#FF4B8B]" />
-            Final Message
-          </h4>
-
-          <p className="text-sm leading-relaxed mt-1" style={{ color: "#7a2f4f" }}>
-            Staying aware, getting regular check-ups, and seeking help early if something feels
-            unusual can make a powerful difference in protecting your health.
-          </p>
-        </div>
-
-        {/* COMPLETE GUIDE BUTTON */}
-        <div className="pt-8 flex justify-center">
+        {/* DONE BUTTON */}
+        <div className="flex justify-center">
           <button
-            className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all flex items-center justify-center gap-2"
+            onClick={() => {
+              setShowCard(9);
+              setActiveButton(8);
+            }}
+            className="
+              bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white
+              w-[90%] md:w-[60%] lg:w-[40%]
+              rounded-md h-10 text-sm font-medium transition-all shadow-md hover:shadow-lg
+            "
           >
-            <Star className="w-4 h-4" />
-            Complete Guide
+            Finish Guide
           </button>
         </div>
 

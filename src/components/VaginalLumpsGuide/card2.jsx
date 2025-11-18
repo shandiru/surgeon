@@ -1,166 +1,150 @@
 'use client';
-import React from 'react';
+import React, { useState } from 'react';
+import {
+  CircleAlert,
+  CircleDashed,
+  Circle,
+  ChevronRight,
+} from 'lucide-react';
 
 const VaginalLumpsGuideCard2 = ({ setShowCard, setActiveButton }) => {
+  // Accordion state
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggle = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  // Data for items
+  const causes = [
+    {
+      icon: <CircleAlert className="w-6 h-6" style={{ color: '#FF4B8B' }} />,
+      title: 'Vaginal Cysts',
+      desc: 'Pouch-like sacs that can contain pus, air, or scar tissue',
+      bullets: [
+        'Usually small and painless',
+        "Bartholin\'s cysts – near the vaginal opening",
+        'Endometriosis cysts – caused by endometriosis tissue',
+        "Gartner\'s duct cysts – often during pregnancy",
+        'Inclusion cysts – from vaginal trauma, e.g., after childbirth',
+      ],
+    },
+
+    {
+      icon: <CircleDashed className="w-6 h-6" style={{ color: '#FF4B8B' }} />,
+      title: 'Vaginal Polyps (Skin Tags)',
+      desc: 'Small, soft outgrowths of skin',
+      bullets: [
+        'Usually harmless and painless',
+        'Treated only if they bleed or cause discomfort',
+        'Can appear as small, flesh-colored bumps',
+        'May develop due to hormonal changes or irritation',
+      ],
+    },
+
+    {
+      icon: <CircleAlert className="w-6 h-6" style={{ color: '#FF4B8B' }} />,
+      title: 'Vaginal Warts or Herpes Blisters',
+      desc: 'Caused by viral infections (HPV or herpes)',
+      bullets: [
+        'Warts are caused by HPV (a common STI)',
+        'May appear as small, irregular growths around the vaginal opening',
+        'Herpes can cause blisters or sores that may look like pimples',
+        'Both conditions are treatable with proper medical care',
+      ],
+    },
+
+    {
+      icon: <Circle className="w-6 h-6" style={{ color: '#FF4B8B' }} />,
+      title: 'Vaginal Cancer (Rare)',
+      desc: 'Uncommon but requires immediate medical attention',
+      bullets: [
+        'Can cause persistent lumps',
+        'May also cause unusual bleeding or discharge',
+        'Advanced symptoms can include pelvic pain, back pain, constipation or leg swelling',
+        'These symptoms are more commonly caused by infections or benign lumps',
+      ],
+    },
+  ];
+
   return (
     <div className="space-y-6 pb-10">
-      {/* Card Container */}
       <div
-        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-2xl border p-8 shadow-sm animate-in slide-in-from-right-5 duration-300"
-        style={{
-          backgroundColor: '#FFFFFF',
-          borderColor: 'rgb(255,197,211)',
-        }}
+        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 rounded-2xl p-8 border shadow-sm animate-in slide-in-from-right-5 duration-300"
+        style={{ backgroundColor: '#FFFFFF', borderColor: 'rgb(255,197,211)' }}
       >
-        {/* Card Header */}
-        <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5">
-          <div
-            className="leading-none font-semibold flex items-center gap-2"
-            style={{ color: '#FF4B8B' }}
+        {/* Title */}
+        <div className="text-center mb-10">
+          <h2
+            className="text-3xl font-bold mb-3"
+            style={{ color: 'rgb(255,75,139)' }}
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="lucide lucide-activity w-6 h-6 text-[#FF4B8B]"
-            >
-              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
-            </svg>
-            What Causes Vaginal Lumps?
-          </div>
+            Common Causes of Vulvar & Vaginal Lumps
+          </h2>
+          <p className="text-lg text-gray-700">
+            Understanding the different types of lumps can help you know what to expect
+          </p>
         </div>
 
-        {/* Card Content */}
-        <div className="space-y-6">
-
-          {/* Intro Box */}
-          <div
-            className="p-4 rounded-xl border transition-all duration-300"
-            style={{
-              backgroundColor: '#FFF5F8',
-              borderColor: 'rgb(255,197,211)',
-            }}
-          >
-            <p className="text-lg leading-relaxed" style={{ color: '#7a2f4f' }}>
-              Vaginal lumps can develop for many reasons. Most are harmless and linked to blocked 
-              glands, infections, or normal anatomical variations. Understanding common causes 
-              helps determine when a lump needs medical attention.
-            </p>
-          </div>
-
-          {/* Types / Causes */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-            {/* Type 1 – Bartholin Cyst */}
+        {/* Accordion */}
+        <div className="space-y-4">
+          {causes.map((item, index) => (
             <div
-              className="p-4 rounded-xl border transition-all duration-300 hover:shadow-md"
-              style={{
-                backgroundColor: '#FFFFFF',
-                borderColor: 'rgb(255,197,211)',
-              }}
+              key={index}
+              className="flex flex-col rounded-xl bg-white py-6 shadow-sm overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01] active:scale-[0.99]"
             >
-              <h4 className="font-semibold mb-2" style={{ color: '#FF4B8B' }}>
-                Bartholin’s Cyst
-              </h4>
-              <p className="text-sm" style={{ color: '#7a2f4f' }}>
-                Forms when the Bartholin gland duct becomes blocked.  
-                Can be painless or swollen, and may become infected (abscess).
-              </p>
-            </div>
-
-            {/* Type 2 – Infections */}
-            <div
-              className="p-4 rounded-xl border transition-all duration-300 hover:shadow-md"
-              style={{
-                backgroundColor: '#FFFFFF',
-                borderColor: 'rgb(255,197,211)',
-              }}
-            >
-              <h4 className="font-semibold mb-2" style={{ color: '#FF4B8B' }}>
-                Infections & Abscesses
-              </h4>
-              <p className="text-sm" style={{ color: '#7a2f4f' }}>
-                Bacterial, fungal, or sexually transmitted infections can cause 
-                painful lumps, redness, or discharge.
-              </p>
-            </div>
-
-            {/* Type 3 – Normal Anatomy */}
-            <div
-              className="p-4 rounded-xl border transition-all duration-300 hover:shadow-md"
-              style={{
-                backgroundColor: '#FFFFFF',
-                borderColor: 'rgb(255,197,211)',
-              }}
-            >
-              <h4 className="font-semibold mb-2" style={{ color: '#FF4B8B' }}>
-                Normal Anatomical Variations
-              </h4>
-              <p className="text-sm" style={{ color: '#7a2f4f' }}>
-                Some bumps are simply normal structures—skin tags, vestibular papillae, 
-                or harmless glandular tissue.
-              </p>
-            </div>
-
-          </div>
-
-          {/* Extra Info Box */}
-          <div
-            className="p-4 rounded-xl border"
-            style={{
-              backgroundColor: '#FFF5F8',
-              borderColor: 'rgb(255,197,211)',
-            }}
-          >
-            <h4
-              className="font-semibold mb-2 flex items-center gap-2"
-              style={{ color: '#FF4B8B' }}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="lucide lucide-lightbulb w-5 h-5 text-[#FF4B8B]"
+              {/* Header */}
+              <div
+                className="cursor-pointer px-6 pb-2"
+                onClick={() => toggle(index)}
               >
-                <path d="M9 18h6"></path>
-                <path d="M10 22h4"></path>
-                <path d="M2 10a10 10 0 0 1 20 0c0 3.46-1.8 6.5-4.53 8.12a1 1 0 0 0-.47.85V20a1 1 0 0 1-1 1h-7a1 1 0 0 1-1-1v-.97a1 1 0 0 0-.47-.85A9.99 9.99 0 0 1 2 10Z"></path>
-              </svg>
-              Did You Know?
-            </h4>
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center space-x-3">
+                    {item.icon}
+                    <div>
+                      <div
+                        className="font-semibold text-left"
+                        style={{ color: '#FF4B8B' }}
+                      >
+                        {item.title}
+                      </div>
+                      <p className="text-sm text-gray-600">{item.desc}</p>
+                    </div>
+                  </div>
 
-            <p className="text-sm" style={{ color: '#7a2f4f' }}>
-              Most vaginal lumps improve with simple treatment, but a lump that 
-              becomes painful, grows, or does not resolve should always be checked 
-              by a doctor.
-            </p>
-          </div>
+                  {/* Rotate chevron on open */}
+                  <ChevronRight
+                    className={`w-6 h-6 transition-transform ${
+                      openIndex === index ? 'rotate-90' : ''
+                    }`}
+                    style={{ color: '#FF4B8B' }}
+                  />
+                </div>
+              </div>
 
-          {/* Continue Button */}
-          <div className="pt-6 flex justify-center">
-            <button
-              onClick={() => {
-                setShowCard(3);
-                setActiveButton(2);
-              }}
-              className="inline-flex items-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
-            >
-              Continue to Next Section
-            </button>
-          </div>
+              {/* Dropdown Content */}
+              {openIndex === index && (
+                <ul className="px-14 space-y-1 list-disc text-sm text-gray-700 transition-all duration-300">
+                  {item.bullets.map((b, i) => (
+                    <li key={i}>{b}</li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          ))}
+        </div>
 
+        {/* Continue Button */}
+        <div className="pt-10 flex justify-center">
+          <button
+            onClick={() => {
+              setShowCard(3);
+              setActiveButton(2);
+            }}
+            className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all"
+          >
+            Continue to Next Section
+          </button>
         </div>
       </div>
     </div>

@@ -1,163 +1,205 @@
 'use client';
-import React from 'react';
-import { Biohazard, Cigarette, CloudFog, Sparkles, ShieldOff } from 'lucide-react';
+import React, { useState } from 'react';
+import {
+  Heart,
+  Activity,
+  CircleCheck,
+  AlertTriangle,
+  ChevronDown,
+  Target,
+  Stethoscope
+} from 'lucide-react';
 
-const PelvicPainGuidecard3 = ({ setShowCard, setActiveButton }) => {
+const PelvicPainAccordion = () => {
+  const [openSection, setOpenSection] = useState('gynaecological'); // Default open
+
+  const handleToggle = (section) => {
+    setOpenSection((prev) => (prev === section ? null : section));
+  };
+
   return (
-    <div className="space-y-6 pb-10">
-      {/* Card Container */}
+    <div className="space-y-6 bg-gradient-to-b from-primary/5 to-background py-8 px-4">
       <div
-        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-2xl border p-8 shadow-sm animate-in slide-in-from-right-5 duration-300"
-        style={{
-          backgroundColor: '#FFFFFF',
-          borderColor: 'rgb(255,197,211)',
-        }}
+        className="text-[#FF4B8B] bg-[#FF4B8B]/10 max-w-5xl mx-auto mb-10 
+        rounded-xl p-6 transition-all duration-300 border
+        hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] hover:scale-105"
+        style={{ borderColor: 'rgb(255,197,211)' }}
       >
-        {/* Card Header */}
-        <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5">
-          <div
-            className="leading-none font-semibold flex items-center gap-2"
-            style={{ color: '#FF4B8B' }}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="lucide lucide-file-text w-6 h-6 text-[#FF4B8B]"
-            >
-              <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
-              <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
-              <path d="M10 9H8"></path>
-              <path d="M16 13H8"></path>
-              <path d="M16 17H8"></path>
-            </svg>
-            Key Risk Factors
-          </div>
-          <p className="text-sm" style={{ color: '#7a2f4f' }}>
-            Not everyone with these risk factors will develop vulvar cancer, but they increase likelihood.
-          </p>
-        </div>
-
-        {/* Card Content */}
-        <div className="space-y-4 mt-4">
-          {/* Risk Factors Section */}
-          <div className="space-y-4">
-            {[
-              {
-                step: 'HPV Infection (High-Risk Strains)',
-                icon: <Biohazard className="w-5 h-5 text-[#FF4B8B]" />,
-                description:
-                  'High-risk HPV types, particularly HPV 16, significantly increase vulvar cancer risk.',
-              },
-              {
-                step: 'Older Age (Most Common After 60)',
-                icon: <CloudFog className="w-5 h-5 text-[#FF4B8B]" />,
-                description: 'Vulvar cancer is more common in women over 60.',
-              },
-              {
-                step: 'Smoking',
-                icon: <Cigarette className="w-5 h-5 text-[#FF4B8B]" />,
-                description: 'Smoking weakens the immune system and increases HPV persistence.',
-              },
-              {
-                step: 'Long-Term Skin Conditions (e.g., Lichen Sclerosus)',
-                icon: <Sparkles className="w-5 h-5 text-[#FF4B8B]" />,
-                description: 'Chronic inflammatory vulvar skin disorders increase risk.',
-              },
-              {
-                step: 'Weakened Immune System',
-                icon: <ShieldOff className="w-5 h-5 text-[#FF4B8B]" />,
-                description:
-                  'A weak immune system reduces the body’s ability to repair abnormal cells.',
-              },
-              {
-                step: 'History of Cervical or Vaginal Pre-cancers',
-                icon: <Biohazard className="w-5 h-5 text-[#FF4B8B]" />,
-                description:
-                  'Conditions like CIN or VAIN raise the risk of similar changes on the vulva.',
-              },
-            ].map((item, index) => (
-              <div
-                key={index}
-                className="flex gap-4 p-4 rounded-xl border transition-all duration-300 hover:shadow-lg active:shadow-lg"
-                style={{
-                  backgroundColor: '#FFFFFF',
-                  borderColor: 'rgb(255,197,211)',
-                }}
-              >
-                {/* Number Circle */}
-                <div className="flex-shrink-0">
-                  <div
-                    className="w-10 h-10 rounded-full flex items-center justify-center font-bold"
-                    style={{
-                      backgroundColor: '#FF4B8B',
-                      color: '#FFFFFF',
-                    }}
-                  >
-                    {index + 1}
-                  </div>
-                </div>
-
-                {/* Text */}
-                <div className="flex-1">
-                  <h4
-                    className="font-semibold mb-1 flex items-center gap-2"
-                    style={{ color: '#FF4B8B' }}
-                  >
-                    {item.icon}
-                    {item.step}
-                  </h4>
-                  <p className="text-sm" style={{ color: '#7a2f4f' }}>
-                    {item.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Extra Info */}
-          <div
-            className="p-4 rounded-xl border mt-4"
-            style={{
-              backgroundColor: '#FFF5F8',
-              borderColor: 'rgb(255,197,211)',
-            }}
-          >
-            <h4
-              className="font-semibold mb-2 flex items-center gap-2"
-              style={{ color: '#FF4B8B' }}
-            >
-              <Sparkles className="w-5 h-5 text-[#FF4B8B]" />
-              Good to Know
-            </h4>
-            <p className="text-sm" style={{ color: '#7a2f4f' }}>
-              Having one or more risk factors does not mean you will get vulvar cancer — but
-              understanding them helps with early detection and prevention.
-            </p>
-          </div>
-
-          {/* Button */}
-          <div className="pt-6 flex justify-center">
-            <button
-              onClick={() => {
-                setShowCard(4);
-                setActiveButton(3);
-              }}
-              className="inline-flex items-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
-            >
-              Continue to Next Section
-            </button>
+        {/* HEADER */}
+        <div className="text-center mb-6">
+          <div className="text-3xl font-semibold flex gap-3 items-center text-left">
+            <Stethoscope className="h-8 w-8 mt-1 text-[#FF4B8B]" />
+            Common Causes of Pelvic Pain
           </div>
         </div>
+
+        {/* -------------------------------------- */}
+        {/* 🩷 1. Gynaecological Causes */}
+        {/* -------------------------------------- */}
+        <div
+          className="cursor-pointer p-4 bg-[#FF4B8B]/10 rounded-md flex justify-between items-center"
+          onClick={() => handleToggle('gynaecological')}
+        >
+          <div className="flex items-center gap-3">
+            <Heart className="h-5 w-5 text-[#FF4B8B]" />
+            <span>Gynaecological Causes</span>
+          </div>
+
+          <ChevronDown
+            className={`h-5 w-5 text-[#FF4B8B] transform transition-all ml-auto ${
+              openSection === 'gynaecological' ? 'rotate-180' : ''
+            }`}
+          />
+        </div>
+
+        {openSection === 'gynaecological' && (
+          <div className="space-y-4 mt-4 px-6 text-sm text-[#7a2f4f]">
+            <ul className="space-y-4">
+
+              <li className="flex items-start gap-2">
+                <CircleCheck className="h-4 w-4 text-[#FF4B8B] mt-1" />
+                <span>
+                  <strong>Menstrual cramps</strong> <br />
+                  Common before or during periods
+                </span>
+              </li>
+
+              <li className="flex items-start gap-2">
+                <Activity className="h-4 w-4 text-[#FF4B8B] mt-1" />
+                <span>
+                  <strong>Ovulation pain (mittelschmerz)</strong> <br />
+                  Sharp pain mid-cycle on one side
+                </span>
+              </li>
+
+              <li className="flex items-start gap-2">
+                <CircleCheck className="h-4 w-4 text-[#FF4B8B] mt-1" />
+                <span>
+                  <strong>Endometriosis</strong> <br />
+                  Womb lining tissue grows outside the uterus
+                </span>
+              </li>
+
+              <li className="flex items-start gap-2">
+                <CircleCheck className="h-4 w-4 text-[#FF4B8B] mt-1" />
+                <span>
+                  <strong>Pelvic inflammatory disease (PID)</strong> <br />
+                  Infection of womb and surrounding tissues
+                </span>
+              </li>
+
+              <li className="flex items-start gap-2 text-red-500">
+                <AlertTriangle className="h-4 w-4 text-red-500 mt-1" />
+                <span>
+                  <strong>Ectopic pregnancy</strong> <br />
+                  Pregnancy outside the womb (medical emergency)
+                </span>
+              </li>
+
+            </ul>
+          </div>
+        )}
+
+        <hr className="text-gray-300 mt-4" />
+
+        {/* -------------------------------------- */}
+        {/* 💧 2. Urinary Causes */}
+        {/* -------------------------------------- */}
+        <div
+          className="cursor-pointer p-4 rounded-md flex justify-between items-center mt-4"
+          onClick={() => handleToggle('urinary')}
+        >
+          <div className="flex items-center gap-3">
+            <Activity className="h-5 w-5 text-[#FF4B8B]" />
+            <span>Urinary Causes</span>
+          </div>
+
+          <ChevronDown
+            className={`h-5 w-5 text-[#FF4B8B] transform transition-all ml-auto ${
+              openSection === 'urinary' ? 'rotate-180' : ''
+            }`}
+          />
+        </div>
+
+        {openSection === 'urinary' && (
+          <div className="space-y-4 mt-4 px-6 text-sm text-[#7a2f4f]">
+            <ul className="space-y-4">
+
+              <li className="flex items-start gap-2">
+                <CircleCheck className="h-4 w-4 text-[#FF4B8B] mt-1" />
+                <span>
+                  <strong>Cystitis / UTI</strong> <br />
+                  Bladder infection or urinary tract infection
+                </span>
+              </li>
+
+              <li className="flex items-start gap-2">
+                <Activity className="h-4 w-4 text-[#FF4B8B] mt-1" />
+                <span>
+                  <strong>Interstitial cystitis</strong> <br />
+                  Long-term bladder inflammation without clear cause
+                </span>
+              </li>
+
+              <li className="flex items-start gap-2">
+                <Activity className="h-4 w-4 text-[#FF4B8B] mt-1" />
+                <span>
+                  <strong>Urinary stones</strong> <br />
+                  Crystals forming in kidneys or bladder
+                </span>
+              </li>
+
+            </ul>
+          </div>
+        )}
+
+        <hr className="text-gray-300 mt-4" />
+
+        {/* -------------------------------------- */}
+        {/* 🥗 3. Digestive Causes */}
+        {/* -------------------------------------- */}
+        <div
+          className="cursor-pointer p-4 bg-[#FF4B8B]/10 rounded-md flex justify-between items-center mt-4"
+          onClick={() => handleToggle('digestive')}
+        >
+          <div className="flex items-center gap-3">
+            <Target className="h-5 w-5 text-[#FF4B8B]" />
+            <span>Digestive Causes</span>
+          </div>
+
+          <ChevronDown
+            className={`h-5 w-5 text-[#FF4B8B] transform transition-all ml-auto ${
+              openSection === 'digestive' ? 'rotate-180' : ''
+            }`}
+          />
+        </div>
+
+        {openSection === 'digestive' && (
+          <div className="space-y-4 mt-4 px-6 text-sm text-[#7a2f4f]">
+            <ul className="space-y-4">
+
+              <li className="flex items-start gap-2">
+                <CircleCheck className="h-4 w-4 text-[#FF4B8B] mt-1" />
+                <span>
+                  <strong>Irritable bowel syndrome (IBS)</strong> <br />
+                  Pain, bloating, constipation or diarrhoea
+                </span>
+              </li>
+
+              <li className="flex items-start gap-2">
+                <Activity className="h-4 w-4 text-[#FF4B8B] mt-1" />
+                <span>
+                  <strong>Appendicitis</strong> <br />
+                  Sudden pain in the lower right abdomen
+                </span>
+              </li>
+
+            </ul>
+          </div>
+        )}
       </div>
     </div>
   );
 };
 
-export default PelvicPainGuidecard3;
+export default PelvicPainAccordion;
