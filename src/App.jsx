@@ -45,7 +45,8 @@ function App() {
         <Route path="/EndometrialCancerGuide" element={<EndometrialGuidePage />} />
         <Route path="/Cancer/CervicalCancer" element={<  CervicalCancerOverviewPage />} />
         <Route path="/CervicalCancerGuide" element={<CervicalCancerGuide />} />
-        <Route path="/RoboticSurgery" element={<   RoboticSurgeryPage />} />
+        {/* <Route path="/RoboticSurgery" element={<   RoboticSurgeryPage />} /> */}
+        <Route path="/RoboticSurgeryGuide" element={<   RoboticGuide />} />
         <Route path="/CervicalScreening" element={<   CervicalScreeningPage />} />
         <Route path="/CervicalScreeningGuide" element={<CervicalScreeningGuide />} />
         <Route path="/IrregularBleedingInfo" element={<   IrregularBleedingInfoPage />} />
