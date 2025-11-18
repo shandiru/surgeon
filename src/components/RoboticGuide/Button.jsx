@@ -11,12 +11,12 @@ import {
 
 const RoboticGuideButtons = ({ setShowCard, activeButton, setActiveButton }) => {
   const buttons = [
-    { label: 'Overview', icon: <Stethoscope className="w-4 h-4" />, card: 1 },
-    { label: 'How It Starts', icon: <AlertCircle className="w-4 h-4" />, card: 2 },
-    { label: "Key Risk Factors", icon: <FileText className="w-4 h-4" />, card: 3 },
-    { label: 'Symptoms of Robotic Cancer', icon: <Shield className="w-4 h-4" />, card: 4 },
-    { label: 'Diagnosis of Robotic Cancer', icon: <CheckCircle className="w-4 h-4" />, card: 5 },
-    { label: 'Treatment of Robotic Cancer', icon: <Heart className="w-4 h-4" />, card: 6 },
+    { label: 'Robotic Surgery', icon: <Stethoscope className="w-4 h-4" />, card: 1 },
+    { label: 'Overview', icon: <AlertCircle className="w-4 h-4" />, card: 2 },
+    { label: "The da Vinci Surgical System", icon: <FileText className="w-4 h-4" />, card: 3 },
+    { label: 'Applications in Gynecology', icon: <Shield className="w-4 h-4" />, card: 4 },
+    { label: 'advantages and benefits', icon: <CheckCircle className="w-4 h-4" />, card: 5 },
+    { label: 'Future of Gynecologic Surgery', icon: <Heart className="w-4 h-4" />, card: 6 },
   ];
 
   const handleButtonClick = (card, index) => {
@@ -25,7 +25,7 @@ const RoboticGuideButtons = ({ setShowCard, activeButton, setActiveButton }) => 
   };
 
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-3 sm:gap-4 md:gap-2 px-4 sm:px-6 max-w-6xl mx-auto mb-8">
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-4 md:gap-2 px-4 sm:px-6 max-w-6xl mx-auto mb-8">
       {buttons.map((button, index) => (
         <button
           key={index}

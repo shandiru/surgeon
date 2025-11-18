@@ -2,10 +2,11 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
+import { Star } from 'lucide-react';
 
 
 
-const Vaginalcard6 = ({ setShowCard, setActiveButton }) => {
+const RoboticGuide6 = () => {
 
   useEffect(() => {
     AOS.init({
@@ -17,7 +18,7 @@ const Vaginalcard6 = ({ setShowCard, setActiveButton }) => {
   return (
     <div >
       <div className="max-w-5xl mx-auto ">
-        <div className="container mx-auto px-6 md:px-16">
+        <div className="container mx-auto p-6 px-6 md:px-16">
           <div className="grid md:grid-cols-2 gap-12 items-center">
 
             {/* Left Image with Hover/Active */}
@@ -76,4 +77,4 @@ const Vaginalcard6 = ({ setShowCard, setActiveButton }) => {
   );
 };
 
-export default Vaginalcard6;
+export default RoboticGuide6;

@@ -30,6 +30,9 @@ import CervicalCancerGuide from "./Page/CervicalCancerGuide"
 import CervicalScreeningGuide from "./Page/CervicalScreeningGuide"
 import IrregularBleedingGuide from "./Page/IrregularBleedingGuide";
 import OvarianCystsGuide from "./Page/OvarianCystsGuide";
+import RoboticGuide from "./Page/RoboticGuidePage";
+import EndometriosisGuide from "./Page/EndometriosisGuidePage";
+
 function App() {
   return (
     <Router>
@@ -53,6 +56,7 @@ function App() {
         <Route path="/IrregularBleedingInfo" element={<   IrregularBleedingInfoPage />} />
         <Route path="/IrregularBleedingGuide" element={< IrregularBleedingGuide />} />
         <Route path="/EndometriosisInformation" element={<   EndometriosisInformation />} />
+        <Route path="/EndometriosisGuide" element={<   EndometriosisGuide />} />
         <Route path="/FibroidInformation" element={< FibroidInformationPage />} />
         <Route path="/MenstrualDisordersInformation" element={< MenstrualDisordersInformationPage />} />
         <Route path="/OvarianCystsPage" element={<OvarianCystsPage />} />
