@@ -14,13 +14,13 @@ const CervicalScreeningGuideButtons = ({ setShowCard, activeButton, setActiveBut
 
   const buttons = [
     { label: 'Overview', icon: <Info className="w-4 h-4" />, card: 1 },
-    { label: 'How It Starts', icon: <Activity className="w-4 h-4" />, card: 2 },
-    { label: 'Key Risk Factors', icon: <AlertTriangle className="w-4 h-4" />, card: 3 },
-    { label: 'Recognising Symptoms', icon: <Eye className="w-4 h-4" />, card: 4 },
-    { label: 'Getting Diagnosed', icon: <ScanSearch className="w-4 h-4" />, card: 5 },
-    { label: 'Treatment Options', icon: <Syringe className="w-4 h-4" />, card: 6 },
-    { label: 'Prevention & Early Detection', icon: <ShieldCheck className="w-4 h-4" />, card: 7 },
-    { label: 'Key Takeaway', icon: <BookmarkCheck className="w-4 h-4" />, card: 8 }
+    { label: 'Smear Test Guidelines', icon: <Activity className="w-4 h-4" />, card: 2 },
+    { label: 'Who Doesn’t Need a Smear Test?', icon: <AlertTriangle className="w-4 h-4" />, card: 3 },
+    { label: 'Preparing for Your Smear Test', icon: <Eye className="w-4 h-4" />, card: 4 },
+    { label: 'Test Preparation', icon: <ScanSearch className="w-4 h-4" />, card: 5 },
+    { label: 'After Your Test', icon: <Syringe className="w-4 h-4" />, card: 6 },
+    { label: 'Remember', icon: <ShieldCheck className="w-4 h-4" />, card: 7 },
+    { label: 'Ready to Book Your Test?', icon: <BookmarkCheck className="w-4 h-4" />, card: 8 }
   ];
 
   const handleButtonClick = (card, index) => {
