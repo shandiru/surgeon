@@ -1,108 +1,118 @@
 'use client';
-import React from 'react';
-import { FaPills } from 'react-icons/fa';
+import React, { useState } from 'react';
 
-const Vaginalcard6 = ({ setShowCard, setActiveButton }) => {
+const MenstrualDisordersGuidecard6 = ({ setShowCard, setActiveButton }) => {
 
-  const primaryPink = "#FFC5D3";
-  const deepPink = "#FF4B8B";
+  const treatmentOptions = [
+    {
+      title: 'Lifestyle Changes',
+      content: (
+        <>
+          <p className="mb-2">Simple changes that can help manage symptoms:</p>
+          <ul className="list-disc pl-5 space-y-1">
+            <li>Reduce salt, caffeine, sugar and alcohol before your period</li>
+            <li>Stay active with regular exercise</li>
+            <li>Manage stress through relaxation techniques</li>
+            <li>Get enough rest and maintain good sleep hygiene</li>
+          </ul>
+        </>
+      )
+    },
+    {
+      title: 'Medical Treatment',
+      content: (
+        <>
+          <p className="mb-2">Medical options your healthcare provider might recommend:</p>
+          <ul className="list-disc pl-5 space-y-1">
+            <li>Pain relievers for cramps and discomfort</li>
+            <li>Hormonal contraceptives to regulate or reduce bleeding</li>
+            <li>Hormone therapy to balance hormone levels</li>
+            <li>Iron supplements if you have anaemia from heavy bleeding</li>
+          </ul>
+        </>
+      )
+    },
+    {
+      title: 'Surgical Treatment',
+      content: (
+        <>
+          <p className="mb-2">For severe cases that don't respond to other treatments:</p>
+          <ul className="list-disc pl-5 space-y-1">
+            <li>Hysteroscopy or laparoscopy to treat specific areas of concern</li>
+            <li>Endometrial ablation to destroy the womb lining and stop periods</li>
+            <li>
+              Hysterectomy (removal of the womb) – only if other treatments haven't worked and you don’t plan more pregnancies
+            </li>
+          </ul>
+        </>
+      )
+    }
+  ];
+
+    const [openIndex, setOpenIndex] = useState(null);
+  
+    const toggleAccordion = (index) => {
+      setOpenIndex(openIndex === index ? null : index);
+    };
+
 
   return (
     <div >
       <div className="max-w-5xl mx-auto ">
-        <div
-          className="bg-white  rounded-xl shadow-md mb-10 transition duration-300 hover:shadow-lg hover:-translate-y-1 w-full"
-        >
-          <div
-            className="px-4 sm:px-6 py-4 flex items-center gap-2 rounded-t-xl"
-            style={{ backgroundColor: deepPink }}
-          >
-            <FaPills className="text-white h-6 w-6" />
-            <h2 className="text-xl sm:text-2xl font-semibold text-white">
-              Treatment of Vaginal Cancer
-            </h2>
-          </div>
+        <h2 className="text-2xl font-bold mb-6 text-[#FF4B8B]">Treatment Options</h2>
 
-          <div className="px-4 sm:px-6 pt-4 text-[#7a2f4f] text-sm sm:text-base leading-relaxed">
-            <p className="mb-6">
-              Treatment depends on the type, stage, spread, and your overall health.
-            </p>
-
-            <h3 className="text-lg sm:text-xl font-semibold text-[#FF4B8B] mb-3">
-              1. Surgery (Often the Primary Treatment)
-            </h3>
-
-            <div className="space-y-3 mb-4">
-              <div
-                className="border rounded-md px-4 py-3 shadow-sm bg-white hover:shadow-md"
-                style={{ borderColor: primaryPink }}
-              >
-                <strong className="text-[#FF4B8B]">Vaginectomy</strong>
-                <span>
-                  {" "}– Removal of part or all of the vagina; may include nearby lymph nodes. Reconstruction can restore vaginal function.
-                </span>
-              </div>
-
-              <div
-                className="border rounded-md px-4 py-3 shadow-sm bg-white hover:shadow-md"
-                style={{ borderColor: primaryPink }}
-              >
-                <strong className="text-[#FF4B8B]">Hysterectomy</strong>
-                <span>
-                  {" "}– Removal of the uterus and sometimes ovaries, tubes, and lymph nodes.
-                </span>
-              </div>
-            </div>
-
+        <div className="space-y-4">
+          {treatmentOptions.map((option, index) => (
             <div
-              className="p-3 rounded-md shadow-sm mb-6"
-              style={{ backgroundColor: primaryPink }}
+              key={index}
+              className="bg-[#FEE6EA] rounded-xl shadow-md hover:shadow-lg transition-shadow"
             >
-              <p className="text-white text-sm sm:text-base">
-                After surgery, patients receive enhanced recovery support to aid healing.
-              </p>
-            </div>
-
-            <h3 className="text-lg sm:text-xl font-semibold text-[#FF4B8B] mb-3">
-              2. Combination Treatments
-            </h3>
-            <p className="mb-3">In some cases, surgery may be combined with:</p>
-
-            <div className="space-y-3">
-              <div
-                className="border rounded-md px-4 py-3 shadow-sm bg-white hover:shadow-md"
-                style={{ borderColor: primaryPink }}
+              {/* Accordion Header */}
+              <button
+                onClick={() => toggleAccordion(index)}
+                className="w-full flex items-center justify-between text-left font-medium py-4 px-6 text-lg text-[#BB125B] focus:outline-none"
               >
-                <strong className="text-[#FF4B8B]">Radiation therapy</strong>
-                <span> – Targeted energy to destroy cancer cells.</span>
-              </div>
+                <span>{option.title}</span>
+                <svg
+                  className={`transition-transform duration-200 ${openIndex === index ? 'rotate-180' : ''}`}
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#BB125B"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </button>
 
-              <div
-                className="border rounded-md px-4 py-3 shadow-sm bg-white hover:shadow-md"
-                style={{ borderColor: primaryPink }}
-              >
-                <strong className="text-[#FF4B8B]">Chemotherapy</strong>
-                <span> – Drugs to kill or slow cancer growth.</span>
-              </div>
+              {/* Accordion Content */}
+              {openIndex === index && (
+                <div className="px-6 pb-6 text-sm text-[#5C2A3B] animate-fadeIn">
+                  {option.content}
+                </div>
+              )}
             </div>
-
-          </div>
-          <div className='p-6'>
-            <button
-              onClick={() => {
-                setShowCard(7);
-                setActiveButton(6);
-              }}
-              className="inline-flex items-center justify-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 gap-2 rounded-md text-sm sm:text-base font-medium transition h-10 w-full px-4"
-            >
-              Next
-            </button>
-          </div>
+          ))}
         </div>
 
+      <div className='p-6'>
+        <button
+          onClick={() => {
+            setShowCard(7);
+            setActiveButton(6);
+          }}
+          className="inline-flex items-center justify-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 gap-2 rounded-md text-sm sm:text-base font-medium transition h-10 w-full px-4"
+        >
+          Next
+        </button>
+      </div>
       </div>
     </div>
   );
 };
 
-export default Vaginalcard6;
+export default MenstrualDisordersGuidecard6;

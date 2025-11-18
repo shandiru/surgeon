@@ -2,10 +2,10 @@
 import { Lightbulb } from 'lucide-react';
 import React from 'react';
 
-const MenstrualDisordersGuideCard1 = ({ setShowCard, setActiveButton }) => {
+const VaginalLumpsGuideCard1 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6 pb-10">
-
+      
       {/* Card Container */}
       <div
         className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-2xl border shadow-sm animate-in slide-in-from-right-5 duration-300 p-8"
@@ -33,13 +33,11 @@ const MenstrualDisordersGuideCard1 = ({ setShowCard, setActiveButton }) => {
               strokeLinejoin="round"
               className="w-6 h-6 text-[#FF4B8B]"
             >
-              <path d="M11 2v2"></path>
-              <path d="M5 2v2"></path>
-              <path d="M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1"></path>
-              <path d="M8 15a6 6 0 0 0 12 0v-3"></path>
-              <circle cx="20" cy="10" r="2"></circle>
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M12 16v-4"></path>
+              <path d="M12 8h.01"></path>
             </svg>
-            What Are Menstrual Disorders?
+            What Is Vulvar Cancer?
           </div>
         </div>
 
@@ -55,11 +53,10 @@ const MenstrualDisordersGuideCard1 = ({ setShowCard, setActiveButton }) => {
             }}
           >
             <p className="text-lg leading-relaxed" style={{ color: '#7a2f4f' }}>
-              Menstrual disorders refer to any changes or problems with a person’s menstrual cycle,
-              including irregular timing, unusually heavy or light bleeding, severe pain, or the
-              absence of periods. These disorders are common and may be temporary or linked to
-              underlying health conditions. Understanding them helps with early recognition and
-              proper treatment.
+              Vulvar cancer is a type of cancer that develops on the external female genital area,
+              known as the vulva. This includes the labia majora, labia minora, clitoris, and the
+              skin around the vaginal opening. Although vulvar cancer is relatively rare,
+              understanding it helps with early detection and prevention.
             </p>
           </div>
 
@@ -68,10 +65,7 @@ const MenstrualDisordersGuideCard1 = ({ setShowCard, setActiveButton }) => {
 
             {/* Quick Facts */}
             <div className="space-y-3">
-              <h4
-                className="font-semibold flex items-center gap-2"
-                style={{ color: '#FF4B8B' }}
-              >
+              <h4 className="font-semibold flex items-center gap-2" style={{ color: '#FF4B8B' }}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -84,18 +78,17 @@ const MenstrualDisordersGuideCard1 = ({ setShowCard, setActiveButton }) => {
                   strokeLinejoin="round"
                   className="w-4 h-4 text-[#FF4B8B]"
                 >
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <polyline points="12 6 12 12 16 14"></polyline>
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
                 </svg>
                 Quick Facts
               </h4>
 
               <ul className="space-y-2">
                 {[
-                  'Can include irregular, heavy, painful, or absent periods',
-                  'Often caused by hormonal imbalance, stress, or medical conditions',
-                  'Common during puberty and perimenopause',
-                  'May signal underlying issues such as thyroid problems or PCOS',
+                  'Most common in women over 60',
+                  'Often linked to HPV or chronic skin conditions',
+                  'Early diagnosis greatly improves outcomes',
+                  'Can appear as itching, lumps, or skin changes',
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-2">
                     <svg
@@ -135,9 +128,9 @@ const MenstrualDisordersGuideCard1 = ({ setShowCard, setActiveButton }) => {
                 Remember
               </h4>
               <p className="text-sm" style={{ color: '#7a2f4f' }}>
-                Menstrual disorders are common, but they shouldn’t be ignored. Seek medical advice if
-                you experience very heavy bleeding, severe pain, missed periods, or sudden cycle
-                changes. Early evaluation helps identify the cause and ensures proper treatment.
+                Vulvar cancer often begins with subtle skin changes. Paying attention to persistent
+                itching, lumps, sores, or colour changes can help detect the condition early when it
+                is most treatable.
               </p>
             </div>
           </div>
@@ -161,4 +154,4 @@ const MenstrualDisordersGuideCard1 = ({ setShowCard, setActiveButton }) => {
   );
 };
 
-export default MenstrualDisordersGuideCard1;
+export default VaginalLumpsGuideCard1;

@@ -1,9 +1,7 @@
 import { useState } from "react";
-import { FaInfoCircle, FaStethoscope } from "react-icons/fa";
 
-const VaginalCard4 = ({ setShowCard, setActiveButton }) => {
-  const primaryPink = "bg-[#FFC5D3]";
-  const deepPink = "bg-[#FF4B8B]";
+const MenstrualDisordersGuideCard4 = ({ setShowCard, setActiveButton }) => {
+
   const [openAccordion, setOpenAccordion] = useState(null);
 
   const toggleAccordion = (index) => {
@@ -11,77 +9,98 @@ const VaginalCard4 = ({ setShowCard, setActiveButton }) => {
   };
 
   return (
-    <div className="space-y-6 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-5xl p-6 mx-auto flex flex-col gap-6">
-        {/* Card Container */}
-        <div className="rounded-xl shadow-sm flex flex-col overflow-hidden animate-in slide-in-from-right-5 duration-300">
-          {/* Card Header */}
-          <div className={`px-6 py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 ${deepPink} text-white`}>
-            <div className="flex items-center gap-2">
-              <FaStethoscope className="w-6 h-6" />
-              <h2 className="text-xl sm:text-2xl font-semibold">Symptoms of Vaginal Cancer</h2>
-            </div>
+    <div className="space-y-6 px-4  sm:px-6 lg:px-8">
+      <div className="max-w-5xl mx-auto ">
+        <div className="flex items-center gap-3 mb-10">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="h-7 w-7 text-[#FF4B8B]"
+          >
+            <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" />
+            <path d="M12 9v4" />
+            <path d="M12 17h.01" />
+          </svg>
+          <h2 className="text-3xl font-bold text-[#FF4B8B]">Symptoms to Watch For</h2>
+        </div>
+
+        {/* Cards Grid */}
+        <div className="grid md:grid-cols-2 gap-8">
+          {/* Common Symptoms Card */}
+          <div className="bg-white text-[#333] flex flex-col gap-6 rounded-2xl py-8 px-8 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+            <h3 className="font-semibold text-xl text-[#c2185b]">Common Symptoms</h3>
+            <ul className="space-y-3 text-base">
+              {[
+                'Abnormal or heavy bleeding',
+                'Painful cramps',
+                'Periods fewer than 21 days apart or more than 3 months apart',
+                'Bloating or fullness in the abdomen',
+                'Headaches, low mood, or emotional distress',
+              ].map((symptom, idx) => (
+                <li key={idx} className="flex items-start gap-3">
+                  <div className="w-2.5 h-2.5 bg-[#FF4B8B] rounded-full mt-2 flex-shrink-0" />
+                  <span>{symptom}</span>
+                </li>
+              ))}
+            </ul>
           </div>
 
-          {/* Content Section */}
-          <div className="grid md:grid-cols-2 gap-6 px-6 py-6 items-start">
-            {/* Left Column: Symptoms List */}
-            <div>
-              <p className="text-[#7a2f4f] mb-4 text-sm sm:text-base">
-                Early vaginal cancer often has no symptoms. As it progresses, signs may include:
-              </p>
-              <ul className="space-y-2 text-sm sm:text-base text-[#7a2f4f]">
-                {[
-                  "Unusual vaginal bleeding (after intercourse or after menopause)",
-                  "Watery vaginal discharge",
-                  "A lump or mass in the vagina",
-                  "Painful urination",
-                  "Frequent urination",
-                  "Constipation",
-                  "Pelvic pain",
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-2">
-                    <span className="text-[#FF4B8B] mt-0.5">•</span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Right Column: Image */}
-            <div className="flex justify-center md:justify-end">
-              <img
-                src="/vaginal.png"
-                alt="Vaginal Cancer Awareness"
-                className="w-full max-w-xs sm:max-w-sm md:max-w-md rounded-xl h-95 shadow-md object-cover"
-              />
-            </div>
+          {/* Urgent Symptoms Card */}
+          <div className="bg-[#FEE6EA] text-[#333] flex flex-col gap-6 rounded-2xl py-8 px-8 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+            <h3 className="font-semibold text-xl text-[#FF4B8B]">When to Seek Urgent Help</h3>
+            <ul className="space-y-3 text-base">
+              {[
+                'Bleeding so heavy you soak through pads/tampons every hour',
+                'Severe pain not eased by painkillers',
+                'Fainting, dizziness, or signs of severe anaemia',
+                'Any bleeding after menopause',
+              ].map((urgent, idx) => (
+                <li key={idx} className="flex items-start gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="mt-1 flex-shrink-0 text-[#FF4B8B]"
+                  >
+                    <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" />
+                    <path d="M12 9v4" />
+                    <path d="M12 17h.01" />
+                  </svg>
+                  <span>{urgent}</span>
+                </li>
+              ))}
+            </ul>
           </div>
+        </div>
 
-          {/* Info Box */}
-          <div className={`${primaryPink} m-6 p-4 rounded-lg flex items-center gap-2 shadow-sm`}>
-            <FaInfoCircle className="w-5 h-5 text-black" />
-            <p className="font-medium text-black text-sm sm:text-base">
-              Routine pelvic exams are important for early detection.
-            </p>
-          </div>
-
-          {/* Navigate Button */}
-          <div className="px-6 pb-6 flex justify-center">
-            <button
-              onClick={() => {
-                setShowCard(5);
-                setActiveButton(4);
-              }}
-              className="w-full sm:w-[70%] md:w-[50%] bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white font-medium rounded-md h-10 px-4 transition-all flex items-center justify-center gap-2 whitespace-nowrap"
-            >
-              Learn More
-            </button>
-          </div>
+        {/* Navigate Button */}
+        <div className="px-6 pb-6 mt-5 flex justify-center">
+          <button
+            onClick={() => {
+              setShowCard(5);
+              setActiveButton(4);
+            }}
+            className="w-full sm:w-[70%] md:w-[50%] bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white font-medium rounded-md h-10 px-4 transition-all flex items-center justify-center gap-2 whitespace-nowrap"
+          >
+            Learn More
+          </button>
         </div>
       </div>
     </div>
   );
 };
 
-export default VaginalCard4;
+export default MenstrualDisordersGuideCard4;

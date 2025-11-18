@@ -1,209 +1,96 @@
 'use client';
 import React from 'react';
+import { FaRegClock, FaHeartbeat } from 'react-icons/fa';
+import { PiDropFill } from 'react-icons/pi';
+import { BsCheckCircle } from 'react-icons/bs';
+import { FiCalendar } from 'react-icons/fi';
 
-const VaginalCard2 = ({ setShowCard, setActiveButton }) => {
+const MenstrualDisordersGuideCard2 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6">
 
-      {/* Card Container */}
-      <div
-        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-2xl border py-8 px-6 shadow-sm animate-in slide-in-from-right-5 duration-300"
-        style={{
-          backgroundColor: '#FFFFFF',
-          borderColor: 'rgb(255,197,211)',
-        }}
-      >
+      <div className="max-w-5xl mx-auto p-6">
+        {/* Title */}
+        <h2 className="text-2xl sm:text-3xl font-bold mb-10 flex items-center gap-2 text-[#FF4B8B]">
+          <FiCalendar className="text-[#FF4B8B] text-2xl" />
+          What's a Normal Menstrual Cycle?
+        </h2>
 
-        {/* Card Header */}
-        <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5">
+        {/* Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+          {/* Card 1 */}
           <div
-            className="leading-none font-semibold flex items-center gap-2"
-            style={{ color: '#FF4B8B' }}
+            className="rounded-xl p-6 bg-gradient-to-br from-[#fdecef] to-[#fff5f9] 
+                             shadow-md hover:shadow-xl hover:-translate-y-1 active:scale-95 
+                             transition-all duration-300"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="lucide lucide-circle-alert w-6 h-6 text-[#FF4B8B]"
-            >
-              <circle cx="12" cy="12" r="10"></circle>
-              <line x1="12" x2="12" y1="8" y2="12"></line>
-              <line x1="12" x2="12.01" y1="16" y2="16"></line>
-            </svg>
-            How Vaginal Cancer Develops
+            <div className="flex items-center gap-2 mb-3">
+              <FaRegClock className="text-[#e91e63] text-xl" />
+              <h3 className="text-lg font-semibold text-[#3c0c0c]">Cycle Length</h3>
+            </div>
+            <p className="text-3xl font-bold mb-1 text-[#e91e63]">21–35</p>
+            <p className="text-sm text-[#3c0c0c]">days between periods</p>
+          </div>
+
+          {/* Card 2 */}
+          <div
+            className="rounded-xl p-6 bg-gradient-to-br from-[#fdecef] to-[#fff5f9] 
+                             shadow-md hover:shadow-xl hover:-translate-y-1 active:scale-95 
+                             transition-all duration-300"
+          >
+            <div className="flex items-center gap-2 mb-3">
+              <FaHeartbeat className="text-[#e91e63] text-xl" />
+              <h3 className="text-lg font-semibold text-[#3c0c0c]">Period Duration</h3>
+            </div>
+            <p className="text-3xl font-bold mb-1 text-[#e91e63]">2–7</p>
+            <p className="text-sm text-[#3c0c0c]">days of bleeding</p>
+          </div>
+
+          {/* Card 3 */}
+          <div
+            className="rounded-xl p-6 bg-gradient-to-br from-[#fdecef] to-[#fff5f9] 
+                             shadow-md hover:shadow-xl hover:-translate-y-1 active:scale-95 
+                             transition-all duration-300"
+          >
+            <div className="flex items-center gap-2 mb-3">
+              <PiDropFill className="text-[#e91e63] text-xl" />
+              <h3 className="text-lg font-semibold text-[#3c0c0c]">Blood Loss</h3>
+            </div>
+            <p className="text-3xl font-bold mb-1 text-[#e91e63]">30–80ml</p>
+            <p className="text-sm text-[#3c0c0c]">3–8 soaked pads/tampons per day</p>
           </div>
         </div>
 
-        {/* Card Content */}
-        <div className="space-y-6">
-
-          {/* Intro Section */}
-          <div
-            className="p-4 rounded-xl border transition-all duration-300"
-            style={{
-              backgroundColor: '#FFF5F8',
-              borderColor: 'rgb(255,197,211)',
-            }}
-          >
-            <p className="text-base leading-relaxed" style={{ color: '#7a2f4f' }}>
-              Vaginal cancer usually begins in the cells that line the surface of the vagina.
-              Most cases develop slowly over time and may first appear as
-              <strong> pre-cancerous changes called VAIN (Vaginal Intraepithelial Neoplasia)</strong>.
-              Understanding how it starts helps with early detection and better treatment outcomes.
-            </p>
-          </div>
-
-          {/* Types Section Grid */}
-          <div className="grid md:grid-cols-2 gap-6">
-
-            {/* Main Types Section */}
-            <div>
-              <h4
-                className="font-semibold mb-3"
-                style={{ color: '#FF4B8B' }}
-              >
-                Main Types
-              </h4>
-
-              <div className="space-y-3">
-                {[
-                  {
-                    title: 'Squamous Cell Carcinoma (Most Common — 85–90%)',
-                    desc:
-                      'Forms in the thin, flat cells lining the vagina. Often begins as VAIN, which can be detected before turning into cancer.',
-                  },
-                  {
-                    title: 'Adenocarcinoma',
-                    desc:
-                      'Develops in gland-like cells inside the vagina. Less common but may spread more easily than other types.',
-                  },
-                ].map((item, index) => (
-                  <div
-                    key={index}
-                    className="p-4 rounded-xl border transition-all duration-300 hover:shadow-md"
-                    style={{
-                      backgroundColor: '#FFFFFF',
-                      borderColor: 'rgb(255,197,211)',
-                    }}
-                  >
-                    <div
-                      className="font-semibold mb-1"
-                      style={{ color: '#FF4B8B' }}
-                    >
-                      {item.title}
-                    </div>
-                    <p className="text-sm leading-relaxed" style={{ color: '#7a2f4f' }}>
-                      {item.desc}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Rare Types Section */}
-            <div>
-              <h4
-                className="font-semibold mb-3"
-                style={{ color: '#FF4B8B' }}
-              >
-                Other Rare Types
-              </h4>
-
-              <div className="space-y-3">
-                {[
-                  { label: 'Melanoma of the Vagina', badge: 'Very rare' },
-                  { label: 'Sarcoma of the Vagina', badge: 'Soft-tissue cancer' },
-                ].map((item, index) => (
-                  <div
-                    key={index}
-                    className="flex items-center justify-between p-4 rounded-xl border transition-all duration-300 hover:shadow-md"
-                    style={{
-                      backgroundColor: '#FFF5F8',
-                      borderColor: 'rgb(255,197,211)',
-                    }}
-                  >
-                    <span className="text-sm" style={{ color: '#7a2f4f' }}>
-                      {item.label}
-                    </span>
-
-                    <span
-                      className="inline-flex items-center justify-center rounded-md border px-2 py-0.5 text-xs font-medium"
-                      style={{
-                        backgroundColor: '#FFFFFF',
-                        borderColor: 'rgb(255,197,211)',
-                        color: '#7a2f4f',
-                      }}
-                    >
-                      {item.badge}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-          </div>
-
-          {/* Warning Section */}
-          <div
-            className="p-4 rounded-xl border"
-            style={{
-              backgroundColor: '#FFF5F8',
-              borderColor: 'rgb(255,197,211)',
-            }}
-          >
-            <h4
-              className="font-semibold mb-2 flex items-center gap-2"
-              style={{ color: '#FF4B8B' }}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="lucide lucide-circle-alert w-5 h-5 text-[#FF4B8B]"
-              >
-                <circle cx="12" cy="12" r="10"></circle>
-                <line x1="12" x2="12" y1="8" y2="12"></line>
-                <line x1="12" x2="12.01" y1="16" y2="16"></line>
-              </svg>
-              When to Contact Your Doctor
-            </h4>
-
-            <p className="text-sm leading-relaxed" style={{ color: '#7a2f4f' }}>
-              Seek medical advice if you experience unusual bleeding, persistent discharge,
-              pelvic pain, pain during sex, or feel a lump inside the vagina.
-              Early detection significantly improves recovery.
-            </p>
-          </div>
-
-          {/* Next Button */}
-          <div className="pt-6 flex justify-center">
-            <button
-              onClick={() => {
-                setShowCard(3);
-                setActiveButton(2);
-              }}
-              className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all"
-            >
-              Learn About the Procedure
-            </button>
-          </div>
-
+        {/* Bottom Note */}
+        <div
+          className="rounded-xl p-5 flex items-start gap-3 text-sm 
+                           bg-gradient-to-r from-[#fdecef] to-[#fff5f9] 
+                           shadow-md hover:shadow-lg hover:-translate-y-0.5 active:scale-95
+                           transition-all duration-300"
+        >
+          <BsCheckCircle className="mt-0.5 text-[#e91e63] text-lg" />
+          <p className="text-[#900c3f]">
+            What’s “normal” is what’s normal for you — sudden changes are worth
+            checking with your healthcare provider.
+          </p>
         </div>
+      {/* Next Button */}
+      <div className="pt-6 flex justify-center">
+        <button
+          onClick={() => {
+            setShowCard(3);
+            setActiveButton(2);
+          }}
+          className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all"
+        >
+          Learn About the Procedure
+        </button>
       </div>
+      </div>
+
+
     </div>
   );
 };
 
-export default VaginalCard2;
+export default MenstrualDisordersGuideCard2;

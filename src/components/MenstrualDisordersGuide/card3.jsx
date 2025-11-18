@@ -1,140 +1,95 @@
 'use client';
 import React from 'react';
-import { Sparkles } from 'lucide-react';
+import { LuStethoscope } from "react-icons/lu";
 
-const Vaginalcard3 = ({ setShowCard, setActiveButton }) => {
-  const primaryPink = "#FF4B8B";
-  const lightPink = "rgb(255,197,211)";
-  const softPinkBG = "#FFF5F8";
 
-  const riskFactors = [
-    "HPV infection, especially high-risk strains",
-    "History of cervical cancer or cervical pre-cancer",
-    "Older age (most cases occur after 60)",
-    "Smoking",
-    "Weakened immune system",
-    "Previous pelvic radiation therapy",
-    "VAIN (pre-cancerous vaginal changes)",
+
+const MenstrualDisordersGuidecard3 = ({ setShowCard, setActiveButton }) => {
+  const disorders = [
+    {
+      title: "Abnormal Uterine Bleeding",
+      description: "Heavy or prolonged bleeding",
+    },
+    {
+      title: "Amenorrhoea",
+      description: "No menstrual bleeding",
+    },
+    {
+      title: "Oligomenorrhoea",
+      description: "Infrequent or light periods",
+    },
+    {
+      title: "Fibroids",
+      description: "Noncancerous growths in the womb",
+    },
+    {
+      title: "PMS",
+      description: "Physical and emotional symptoms before your period",
+    },
+    {
+      title: "PMDD",
+      description: "Severe physical and emotional symptoms before your period",
+    },
   ];
 
   return (
-    <div className="space-y-6 pb-10">
+    <div className="space-y-6 pb-10 max-w-5xl mx-auto">
       {/* Card Container */}
-      <div
-        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-2xl border p-8 shadow-sm animate-in slide-in-from-right-5 duration-300"
-        style={{
-          backgroundColor: "#FFFFFF",
-          borderColor: lightPink,
-        }}
-      >
-        {/* Card Header */}
-        <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5">
+      <div className="flex items-center gap-3 mb-12 text-center sm:text-left">
+        <LuStethoscope className="h-8 w-8 text-[#FF4B8B]" />
+        <h2 className="text-3xl md:text-4xl font-bold text-[#FF4B8B]">
+          Types of Menstrual Disorders
+        </h2>
+      </div>
+
+      {/* Grid */}
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+        {disorders.map((disorder, index) => (
           <div
-            className="leading-none font-semibold flex items-center gap-2"
-            style={{ color: primaryPink }}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="lucide lucide-file-text w-6 h-6 text-[#FF4B8B]"
-            >
-              <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
-              <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
-              <path d="M10 9H8"></path>
-              <path d="M16 13H8"></path>
-              <path d="M16 17H8"></path>
-            </svg>
-            Vaginal Cancer Risk Factors
-          </div>
-          <p className="text-sm" style={{ color: "#7a2f4f" }}>
-            Common factors that may increase the risk.
-          </p>
-        </div>
-
-        {/* Card Content */}
-        <div className="space-y-4 mt-4">
-          {/* Risk Factors Section */}
-          <div className="space-y-4">
-            {riskFactors.map((factor, index) => (
-              <div
-                key={index}
-                className="flex gap-4 p-4 rounded-xl border transition-all duration-300 hover:shadow-lg hover:scale-[1.03]"
-                style={{
-                  backgroundColor: "#FFFFFF",
-                  borderColor: lightPink,
-                }}
-              >
-                {/* Number Circle */}
-                <div className="flex-shrink-0">
-                  <div
-                    className="w-10 h-10 rounded-full flex items-center justify-center font-bold"
-                    style={{
-                      backgroundColor: primaryPink,
-                      color: "#FFFFFF",
-                    }}
-                  >
-                    {index + 1}
-                  </div>
-                </div>
-
-                {/* Text */}
-                <div className="flex-1">
-                  <h4
-                    className="font-semibold mb-1"
-                    style={{ color: primaryPink }}
-                  >
-                    {factor}
-                  </h4>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Extra Info */}
-          <div
-            className="p-4 rounded-xl border mt-4"
+            key={index}
+            className="flex flex-col gap-4 rounded-2xl p-8 shadow-md hover:shadow-xl 
+                             hover:-translate-y-1 active:scale-95 transition-all duration-300"
             style={{
-              backgroundColor: softPinkBG,
-              borderColor: lightPink,
+              background: "linear-gradient(135deg, #fdecef 0%, #fff5f9 100%)",
+              color: "#3c0c0c",
             }}
           >
-            <h4
-              className="font-semibold mb-2 flex items-center gap-2"
-              style={{ color: primaryPink }}
-            >
-              <Sparkles className="w-5 h-5 text-[#FF4B8B]" />
-              Good to Know
-            </h4>
-            <p className="text-sm" style={{ color: "#7a2f4f" }}>
-              These factors can increase the risk of vaginal cancer, but having
-              one or more does <strong>not guarantee</strong> you will get it.
-              Regular screenings and HPV vaccination help reduce risk.
+            {/* Badge */}
+            <div>
+              <span
+                className="inline-block rounded-full px-4 py-1 text-xs font-semibold tracking-wide"
+                style={{
+                  backgroundColor: "#fff",
+                  color: "#c2185b",
+                  boxShadow: "0 2px 6px rgba(233, 30, 99, 0.15)",
+                }}
+              >
+                {disorder.title}
+              </span>
+            </div>
+
+            {/* Description */}
+            <p className="text-sm md:text-base leading-relaxed text-[#3c0c0c]">
+              {disorder.description}
             </p>
           </div>
+        ))}
+      </div>
 
-          {/* Button */}
-          <div className="pt-6 flex justify-center">
-            <button
-              onClick={() => {
-                setShowCard(4);
-                setActiveButton(3);
-              }}
-              className="inline-flex items-center justify-center gap-2 bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 rounded-md text-sm font-medium h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
-            >
-              Learn About Screening
-            </button>
-          </div>
-        </div>
+      {/* Button */}
+      <div className="pt-6 flex justify-center">
+        <button
+          onClick={() => {
+            setShowCard(4);
+            setActiveButton(3);
+          }}
+          className="inline-flex items-center justify-center gap-2 bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 rounded-md text-sm font-medium h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
+        >
+          Learn About Screening
+        </button>
       </div>
     </div>
   );
 };
 
-export default Vaginalcard3;
+export default MenstrualDisordersGuidecard3;

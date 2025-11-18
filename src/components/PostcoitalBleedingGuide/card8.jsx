@@ -1,10 +1,10 @@
-'use client'; 
+'use client';
 import { Lightbulb, Star, CheckCircle2 } from 'lucide-react';
 
-const MenstrualDisordersCard8 = () => {
+const VaginalLumpsGuidecard8 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6 pb-10">
-
+      
       {/* MAIN CARD */}
       <div
         className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto rounded-2xl p-8 border shadow-sm animate-in slide-in-from-right-5 duration-300"
@@ -24,7 +24,7 @@ const MenstrualDisordersCard8 = () => {
           </span>
 
           <p className="text-sm mt-1" style={{ color: "#7a2f4f" }}>
-            Important points to remember about menstrual disorders.
+            The most important points to remember
           </p>
         </div>
 
@@ -45,10 +45,8 @@ const MenstrualDisordersCard8 = () => {
           </h3>
 
           <p className="text-sm leading-relaxed" style={{ color: "#7a2f4f" }}>
-            Menstrual disorders are common and often manageable.  
-            They can include heavy bleeding, severe pain, irregular cycles, 
-            or missed periods. Identifying symptoms early and seeking medical 
-            support helps prevent complications and ensures proper treatment.
+            Vulvar cancer is rare but serious. Early diagnosis leads to the best outcomes,
+            which is why understanding symptoms and staying aware of changes is so important.
           </p>
         </div>
 
@@ -63,11 +61,11 @@ const MenstrualDisordersCard8 = () => {
 
           <ul className="space-y-2 text-sm">
             {[
-              "Menstrual disorders vary widely from heavy bleeding to absent periods",
-              "Early identification of symptoms ensures more effective treatment",
-              "Tracking your cycle helps detect changes sooner",
-              "Seek medical help if your period suddenly becomes irregular or painful",
-              "Most menstrual disorders are manageable with proper care",
+              "Early detection greatly improves treatment success",
+              "Persistent itching, lumps, or skin changes should never be ignored",
+              "Regular check-ups help spot changes early",
+              "HPV protection reduces risk",
+              "Awareness of your vulvar skin is the first step in prevention",
             ].map((item, index) => (
               <li
                 key={index}
@@ -81,7 +79,7 @@ const MenstrualDisordersCard8 = () => {
           </ul>
         </div>
 
-        {/* FINAL MESSAGE */}
+        {/* FINAL MESSAGE BOX */}
         <div
           className="p-4 rounded-xl border mt-6"
           style={{
@@ -98,10 +96,8 @@ const MenstrualDisordersCard8 = () => {
           </h4>
 
           <p className="text-sm leading-relaxed mt-1" style={{ color: "#7a2f4f" }}>
-            Staying aware of your menstrual cycle and seeking medical advice when 
-            something feels unusual is key to early intervention.  
-            Most menstrual issues are treatable—early support leads to better 
-            long-term health and comfort.
+            Staying aware, getting regular check-ups, and seeking help early if something feels
+            unusual can make a powerful difference in protecting your health.
           </p>
         </div>
 
@@ -120,4 +116,4 @@ const MenstrualDisordersCard8 = () => {
   );
 };
 
-export default MenstrualDisordersCard8;
+export default VaginalLumpsGuidecard8;

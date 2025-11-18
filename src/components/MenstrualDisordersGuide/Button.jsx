@@ -9,15 +9,15 @@ import {
   Users,
 } from 'lucide-react';
 
-const VaginalGuideButtons = ({ setShowCard, activeButton, setActiveButton }) => {
+const MenstrualDisordersGuideButtons = ({ setShowCard, activeButton, setActiveButton }) => {
   const buttons = [
     { label: 'Overview', icon: <Stethoscope className="w-4 h-4" />, card: 1 },
-    { label: 'How It Starts', icon: <AlertCircle className="w-4 h-4" />, card: 2 },
-    { label: "Key Risk Factors", icon: <FileText className="w-4 h-4" />, card: 3 },
-    { label: 'Symptoms of Vaginal Cancer', icon: <Shield className="w-4 h-4" />, card: 4 },
-    { label: 'Diagnosis of Vaginal Cancer', icon: <CheckCircle className="w-4 h-4" />, card: 5 },
-    { label: 'Treatment of Vaginal Cancer', icon: <Heart className="w-4 h-4" />, card: 6 },
-    { label: 'Prevention and Early Detection', icon: <Users className="w-4 h-4" />, card: 7 },
+    { label: `What's a Normal Menstrual Cycle?`, icon: <AlertCircle className="w-4 h-4" />, card: 2 },
+    { label: "Types of Menstrual Disorders", icon: <FileText className="w-4 h-4" />, card: 3 },
+    { label: 'Symptoms to Watch For', icon: <Shield className="w-4 h-4" />, card: 4 },
+    { label: 'Causes & Risk Factors', icon: <CheckCircle className="w-4 h-4" />, card: 5 },
+    { label: 'Treatment Options', icon: <Heart className="w-4 h-4" />, card: 6 },
+    { label: 'Prevention and Early Management', icon: <Users className="w-4 h-4" />, card: 7 },
     { label: 'Key Takeaway', icon: <AlertCircle className="w-4 h-4" />, card: 8 },
   ];
 
@@ -48,4 +48,4 @@ const VaginalGuideButtons = ({ setShowCard, activeButton, setActiveButton }) => 
   );
 };
 
-export default VaginalGuideButtons;
+export default MenstrualDisordersGuideButtons;

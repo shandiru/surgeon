@@ -1,6 +1,6 @@
 import React from 'react';
 
-const MenstrualDisordersGuide = ({ activeButton }) => {
+const VaginalLumpsGuideAbout = ({ activeButton }) => {
   const totalSteps = 8;
   const completed = activeButton + 1;
   const progressPercentage = Math.round((completed / totalSteps) * 100);
@@ -8,7 +8,7 @@ const MenstrualDisordersGuide = ({ activeButton }) => {
   return (
     <div className="text-center mb-8 px-4 sm:px-6 md:px-8 lg:px-16">
       {/* Tag and Title */}
-      <div className="inline-flex mt-10 bg-[#FF4B8B]/10 text-[#BB125B] items-center gap-2 px-4 py-2 rounded-full mb-4">
+      <div className="inline-flex bg-[#FF4B8B]/10 text-[#BB125B] items-center gap-2 px-4 py-2 rounded-full mb-4">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -28,7 +28,7 @@ const MenstrualDisordersGuide = ({ activeButton }) => {
 
       {/* Main Title */}
       <h1 className="text-3xl sm:text-4xl font-bold text-balance mb-4 text-[#FF4B8B]">
-       Understanding Menstrual Disorders
+        Understanding Vulvar Cancer
       </h1>
       <p className="text-lg sm:text-xl text-muted-foreground text-balance text-[#BB125B]">
         What it is, why it's done, and what to expect
@@ -62,4 +62,4 @@ const MenstrualDisordersGuide = ({ activeButton }) => {
   );
 };
 
-export default MenstrualDisordersGuide;
+export default VaginalLumpsGuideAbout;
