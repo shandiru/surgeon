@@ -1,7 +1,7 @@
 import React from 'react';
 
-const VaginalGuide = ({ activeButton }) => {
-  const totalSteps = 8;
+const EndometriosisGuide = ({ activeButton }) => {
+  const totalSteps = 7;
   const completed = activeButton + 1;
   const progressPercentage = Math.round((completed / totalSteps) * 100);
 
@@ -28,7 +28,7 @@ const VaginalGuide = ({ activeButton }) => {
 
       {/* Main Title */}
       <h1 className="text-3xl sm:text-4xl font-bold text-balance mb-4 text-[#FF4B8B]">
-       Vaginal Cancer
+      Endometriosis
       </h1>
       <p className="text-lg sm:text-xl text-muted-foreground text-balance text-[#BB125B]">
         What it is, why it's done, and what to expect
@@ -62,4 +62,4 @@ const VaginalGuide = ({ activeButton }) => {
   );
 };
 
-export default VaginalGuide;
+export default EndometriosisGuide;

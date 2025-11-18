@@ -1,84 +1,69 @@
 import { useState } from "react";
-import { FaInfoCircle, FaMicroscope } from "react-icons/fa";
 
-const Vaginalcard5 = ({ setShowCard, setActiveButton }) => {
-  const primaryPink = "#FFC5D3";
-  const deepPink = "#FF4B8B";
+const Endometriosiscard5 = ({ setShowCard, setActiveButton }) => {
+
+  const steps = [
+    {
+      title: 'Pelvic Examination',
+      description:
+        'Your doctor will perform a physical examination to check for abnormalities.',
+    },
+    {
+      title: 'Imaging Tests',
+      description:
+        'Ultrasound or MRI scans to look for signs of endometriosis and cysts.',
+    },
+    {
+      title: 'Laparoscopy',
+      description:
+        'A minor keyhole surgery using a thin camera to confirm diagnosis and sometimes take tissue samples.',
+    },
+  ];
 
   return (
     <div className="w-full px-4 sm:px-6 lg:px-8">
-      <div className="max-w-5xl mx-auto space-y-6 p-6">
-
-        {/* CARD CONTAINER */}
-        <div 
-          className="bg-white rounded-xl shadow-md transition duration-300 hover:shadow-lg hover:-translate-y-1 overflow-hidden"
-        >
-
-          {/* HEADER */}
-          <div
-            className="px-6 py-4 flex items-center gap-2"
-            style={{ backgroundColor: deepPink }}
-          >
-            <FaMicroscope className="text-white h-6 w-6" />
-            <h2 className="text-xl sm:text-2xl font-semibold text-white">
-              Diagnosis of Vaginal Cancer
+      <div className="container mx-auto px-6 p-6 md:px-12">
+        <div className="max-w-4xl mx-auto">
+          {/* Header */}
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#FF4B8B] mb-4">
+              How It&apos;s Diagnosed
             </h2>
+            <p className="text-lg text-gray-700">
+              Understanding the diagnostic process
+            </p>
           </div>
 
-          {/* DESCRIPTION SECTION */}
-          <div className="px-6 pt-4 pb-6">
-            <p className="text-[#7a2f4f] mb-4 text-sm sm:text-base">
-              Vaginal cancer may be detected during a routine pelvic exam before symptoms appear.
-            </p>
+          {/* Steps */}
+          <div className="space-y-8">
+            {steps.map((step, index) => (
+              <div
+                key={index}
+                className="bg-white text-[#333] rounded-2xl shadow-md p-6 md:p-8 
+                transition duration-300 hover:shadow-[0_0_25px_rgba(176,59,102,0.35)] 
+                hover:-translate-y-2 active:scale-[0.98]"
+              >
+                <div className="flex items-start gap-6">
+                  {/* Step Number */}
+                  <div className="w-12 h-12 bg-[#FF4B8B] text-white rounded-full flex items-center justify-center font-bold text-lg shadow-md">
+                    {index + 1}
+                  </div>
 
-            <p className="text-[#FF4B8B] font-semibold mb-4 text-sm sm:text-base">
-              Diagnostic steps may include:
-            </p>
-
-            {/* DIAGNOSTIC STEPS */}
-            <div className="space-y-3">
-              {[
-                {
-                  title: "Pelvic exam",
-                  desc: "Inspection of the vagina, cervix, uterus, and ovaries using a speculum and manual examination",
-                },
-                {
-                  title: "Pap test",
-                  desc: "Primarily for cervical cancer, but may also reveal vaginal cancer cells",
-                },
-                {
-                  title: "Colposcopy",
-                  desc: "Magnified examination of the vaginal tissue using a colposcope",
-                },
-                {
-                  title: "Biopsy",
-                  desc: "Removal of a small tissue sample during colposcopy to test for cancer cells",
-                },
-              ].map((step, i) => (
-                <div
-                  key={i}
-                  className="border rounded-md px-4 py-3 shadow-sm bg-white hover:shadow-md transition"
-                  style={{ borderColor: primaryPink }}
-                >
-                  <strong className="text-[#FF4B8B]">{step.title}</strong>
-                  <span className="text-[#7a2f4f]"> – {step.desc}</span>
+                  {/* Content */}
+                  <div>
+                    <h3 className="font-semibold text-xl text-[#FF4B8B] mb-2">
+                      {step.title}
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      {step.description}
+                    </p>
+                  </div>
                 </div>
-              ))}
-            </div>
-
-            {/* INFO BOX */}
-            <div
-              className="mt-6 p-4 rounded-lg flex items-center gap-3 shadow-sm"
-              style={{ backgroundColor: primaryPink }}
-            >
-              <FaInfoCircle className="h-5 w-5 text-black" />
-              <p className="font-medium text-black text-sm sm:text-base">
-                These tests help confirm diagnosis and guide treatment planning.
-              </p>
-            </div>
+              </div>
+            ))}
           </div>
           {/* NEXT BUTTON */}
-          <div className="pt-2 p-6">
+          <div className="pt-2 p-6 mt-2">
             <button
               onClick={() => {
                 setShowCard(6);
@@ -90,11 +75,9 @@ const Vaginalcard5 = ({ setShowCard, setActiveButton }) => {
             </button>
           </div>
         </div>
-
-
       </div>
     </div>
   );
 };
 
-export default Vaginalcard5;
+export default Endometriosiscard5;

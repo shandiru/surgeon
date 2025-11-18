@@ -1,140 +1,97 @@
 'use client';
 import React from 'react';
-import { Sparkles } from 'lucide-react';
 
-const Vaginalcard3 = ({ setShowCard, setActiveButton }) => {
-  const primaryPink = "#FF4B8B";
-  const lightPink = "rgb(255,197,211)";
-  const softPinkBG = "#FFF5F8";
+const Endometriosiscard3 = ({ setShowCard, setActiveButton }) => {
 
-  const riskFactors = [
-    "HPV infection, especially high-risk strains",
-    "History of cervical cancer or cervical pre-cancer",
-    "Older age (most cases occur after 60)",
-    "Smoking",
-    "Weakened immune system",
-    "Previous pelvic radiation therapy",
-    "VAIN (pre-cancerous vaginal changes)",
-  ];
 
   return (
     <div className="space-y-6 pb-10">
-      {/* Card Container */}
-      <div
-        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-2xl border p-8 shadow-sm animate-in slide-in-from-right-5 duration-300"
-        style={{
-          backgroundColor: "#FFFFFF",
-          borderColor: lightPink,
-        }}
-      >
-        {/* Card Header */}
-        <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5">
-          <div
-            className="leading-none font-semibold flex items-center gap-2"
-            style={{ color: primaryPink }}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="lucide lucide-file-text w-6 h-6 text-[#FF4B8B]"
-            >
-              <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
-              <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
-              <path d="M10 9H8"></path>
-              <path d="M16 13H8"></path>
-              <path d="M16 17H8"></path>
-            </svg>
-            Vaginal Cancer Risk Factors
-          </div>
-          <p className="text-sm" style={{ color: "#7a2f4f" }}>
-            Common factors that may increase the risk.
+      <div className="container mx-auto px-6 md:px-12">
+        <div className="max-w-5xl mx-auto text-center mb-14">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#FF4B8B]">
+            Impact on Fertility and Wellbeing
+          </h2>
+          <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
+            Endometriosis can affect different aspects of life. Understanding its
+            impact helps in finding the right treatment and support.
           </p>
         </div>
 
-        {/* Card Content */}
-        <div className="space-y-4 mt-4">
-          {/* Risk Factors Section */}
-          <div className="space-y-4">
-            {riskFactors.map((factor, index) => (
-              <div
-                key={index}
-                className="flex gap-4 p-4 rounded-xl border transition-all duration-300 hover:shadow-lg hover:scale-[1.03]"
-                style={{
-                  backgroundColor: "#FFFFFF",
-                  borderColor: lightPink,
-                }}
-              >
-                {/* Number Circle */}
-                <div className="flex-shrink-0">
-                  <div
-                    className="w-10 h-10 rounded-full flex items-center justify-center font-bold"
-                    style={{
-                      backgroundColor: primaryPink,
-                      color: "#FFFFFF",
-                    }}
-                  >
-                    {index + 1}
-                  </div>
-                </div>
-
-                {/* Text */}
-                <div className="flex-1">
-                  <h4
-                    className="font-semibold mb-1"
-                    style={{ color: primaryPink }}
-                  >
-                    {factor}
-                  </h4>
-                </div>
+        {/* Cards */}
+        <div className="grid md:grid-cols-2 gap-10">
+          {/* Fertility Impact */}
+          <div className="bg-white text-gray-800 rounded-2xl p-8 shadow-lg transition duration-300 
+          hover:shadow-[0_0_25px_rgba(176,59,102,0.4)] hover:-translate-y-2 active:scale-[0.98]">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#FF4B8B]/10">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6 text-[#FF4B8B]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                >
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
               </div>
-            ))}
-          </div>
-
-          {/* Extra Info */}
-          <div
-            className="p-4 rounded-xl border mt-4"
-            style={{
-              backgroundColor: softPinkBG,
-              borderColor: lightPink,
-            }}
-          >
-            <h4
-              className="font-semibold mb-2 flex items-center gap-2"
-              style={{ color: primaryPink }}
-            >
-              <Sparkles className="w-5 h-5 text-[#FF4B8B]" />
-              Good to Know
-            </h4>
-            <p className="text-sm" style={{ color: "#7a2f4f" }}>
-              These factors can increase the risk of vaginal cancer, but having
-              one or more does <strong>not guarantee</strong> you will get it.
-              Regular screenings and HPV vaccination help reduce risk.
+              <h3 className="text-xl font-semibold text-[#FF4B8B]">
+                Fertility Impact
+              </h3>
+            </div>
+            <p className="text-gray-700 leading-relaxed">
+              Endometriosis can make it harder to get pregnant, but many women
+              still conceive naturally. Early diagnosis and treatment can help
+              protect your fertility options.
             </p>
           </div>
 
-          {/* Button */}
-          <div className="pt-6 flex justify-center">
-            <button
-              onClick={() => {
-                setShowCard(4);
-                setActiveButton(3);
-              }}
-              className="inline-flex items-center justify-center gap-2 bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 rounded-md text-sm font-medium h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
-            >
-              Learn About Screening
-            </button>
+          {/* Emotional Wellbeing */}
+          <div className="bg-white text-gray-800 rounded-2xl p-8 shadow-lg transition duration-300 
+          hover:shadow-[0_0_25px_rgba(176,59,102,0.4)] hover:-translate-y-2 active:scale-[0.98]">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#FF4B8B]/10">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6 text-[#FF4B8B]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                >
+                  <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold text-[#FF4B8B]">
+                Emotional Wellbeing
+              </h3>
+            </div>
+            <p className="text-gray-700 leading-relaxed">
+              Symptoms can affect your emotional health and quality of life.
+              It&apos;s important to seek support and early treatment for both
+              physical and mental wellbeing.
+            </p>
           </div>
         </div>
+      </div>
+
+      {/* Button */}
+      <div className="pt-6 flex justify-center">
+        <button
+          onClick={() => {
+            setShowCard(4);
+            setActiveButton(3);
+          }}
+          className="inline-flex items-center justify-center gap-2 bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 rounded-md text-sm font-medium h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
+        >
+          Learn About Screening
+        </button>
       </div>
     </div>
   );
 };
 
-export default Vaginalcard3;
+export default Endometriosiscard3;

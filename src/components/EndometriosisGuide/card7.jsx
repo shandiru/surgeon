@@ -1,127 +1,91 @@
 'use client';
-import { Users, Heart, Star, PlusCircle } from 'lucide-react';
+import { Calendar, Heart, Pill, Star, Stethoscope } from 'lucide-react';
 
-const Vaginalcard7 = ({ setShowCard, setActiveButton }) => {
+const Endometriosiscard7 = () => {
+
+  const treatments = [
+    {
+      icon: <Pill className="h-6 w-6 text-[#FF4B8B]" />,
+      title: 'Pain Relief Medication',
+      description: 'Over-the-counter or prescription pain medications to manage symptoms.',
+    },
+    {
+      icon: <Calendar className="h-6 w-6 text-[#FF4B8B]" />,
+      title: 'Hormone Therapy',
+      description: 'Treatments to slow or stop endometrial tissue growth.',
+    },
+    {
+      icon: <Stethoscope className="h-6 w-6 text-[#FF4B8B]" />,
+      title: 'Conservative Surgery',
+      description: 'Removal of endometriosis tissue while preserving reproductive organs.',
+    },
+    {
+      icon: <Heart className="h-6 w-6 text-[#FF4B8B]" />,
+      title: 'Hysterectomy',
+      description:
+        "Considered only if other treatments haven't helped and you're not planning future pregnancies.",
+    },
+  ];
+
   return (
     <div className="space-y-6 pb-10">
       {/* Outer Card */}
-      <div
-        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto rounded-2xl p-8 border shadow-sm animate-in slide-in-from-right-5 duration-300"
-        style={{
-          backgroundColor: "#FFFFFF",
-          borderColor: "rgb(255,197,211)",
-        }}
-      >
-        {/* Header */}
-        <div className="mb-6">
-          <span
-            className="font-semibold text-sm uppercase tracking-wide flex items-center gap-2"
-            style={{ color: "#FF4B8B" }}
-          >
-            <Users className="w-6 h-6 text-[#FF4B8B]" />
-            Prevention & Early Detection
-          </span>
-
-          <p className="text-sm mt-1" style={{ color: "#7a2f4f" }}>
-            Steps to reduce the risk of vaginal cancer and detect problems early.
-          </p>
-        </div>
-
-        {/* Prevention Section */}
-        <div className="grid md:grid-cols-2 gap-6">
-
-          {/* Left Column */}
-          <div>
-            <h4
-              className="font-semibold mb-3"
-              style={{ color: "#FF4B8B" }}
-            >
-              Ways to Reduce Risk:
-            </h4>
-
-            <div className="space-y-3">
-              {[
-                "HPV vaccination",
-                "Avoiding smoking",
-                "Regular gynecological check-ups",
-                "Early treatment of VAIN or cervical pre-cancers",
-                "Practising safer sex to reduce HPV risk",
-                "Monitoring abnormal bleeding or discharge",
-              ].map((item, index) => (
-                <div
-                  key={index}
-                  className="flex items-start gap-2 text-sm"
-                  style={{ color: "#7a2f4f" }}
-                >
-                  <PlusCircle className="w-4 h-4 text-[#FF4B8B] mt-1 flex-shrink-0" />
-                  <span>{item}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Right Column */}
-          <div
-            className="p-4 rounded-xl border"
-            style={{
-              backgroundColor: "#FFF5F8",
-              borderColor: "rgb(255,197,211)",
-            }}
-          >
-            <h4
-              className="font-semibold flex items-center gap-2 mb-2"
-              style={{ color: "#FF4B8B" }}
-            >
-              <Heart className="w-5 h-5 text-[#FF4B8B]" />
-              Why It Matters
-            </h4>
-
-            <p className="text-sm leading-relaxed" style={{ color: "#7a2f4f" }}>
-              Early detection improves treatment success and outcomes. 
-              Regular check-ups and awareness of body changes help identify problems early.
+      <div className="container mx-auto px-6 md:px-12">
+        <div className="max-w-4xl mx-auto">
+          {/* Header */}
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#FF4B8B]">
+              Treatment Options
+            </h2>
+            <p className="text-lg text-gray-700">
+              Personalized treatment plans tailored to your needs
             </p>
           </div>
 
-        </div>
+          {/* Treatment Cards */}
+          <div className="grid md:grid-cols-2 gap-8">
+            {treatments.map((item, index) => (
+              <div
+                key={index}
+                className="bg-white text-[#333] flex flex-col gap-4 rounded-2xl shadow-md p-6 
+                transition duration-300 hover:shadow-[0_0_25px_rgba(176,59,102,0.35)] 
+                hover:-translate-y-2 active:scale-[0.98]"
+              >
+                <div className="flex items-center gap-3 font-semibold text-lg text-[#FF4B8B]">
+                  {item.icon}
+                  {item.title}
+                </div>
+                <p className="text-gray-600 leading-relaxed">{item.description}</p>
+              </div>
+            ))}
+          </div>
 
-        {/* Final Thoughts */}
-        <div
-          className="p-4 rounded-xl border mt-6"
-          style={{
-            backgroundColor: "#FFFFFF",
-            borderColor: "rgb(255,197,211)",
-          }}
-        >
-          <h4
-            className="font-semibold flex items-center gap-2 mb-2"
-            style={{ color: "#FF4B8B" }}
+          {/* Closing Note */}
+          <div
+            className="mt-10 rounded-2xl p-8 text-center text-white shadow-md transition duration-300 
+            hover:shadow-xl hover:-translate-y-1 active:scale-[0.98]"
+            style={{ backgroundColor: '#FF4B8B' }}
           >
-            <Star className="w-5 h-5 text-[#FF4B8B]" />
-            Take Action
-          </h4>
-
-          <p className="text-sm leading-relaxed" style={{ color: "#7a2f4f" }}>
-            Protect your health by staying proactive—get vaccinated, attend regular check-ups, 
-            and report unusual symptoms early. These steps significantly lower vaginal cancer risk.
-          </p>
+            <p className="text-lg font-medium">
+              We&apos;ll work closely with you to find the right balance of treatment
+              based on your symptoms and goals.
+            </p>
+          </div>
         </div>
-
-        {/* Next Button */}
-        <div className="pt-8 flex justify-center">
-          <button
-            onClick={() => {
-              setShowCard(8);
-              setActiveButton(7);
-            }}
-            className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all"
-          >
-            Learn More
-          </button>
-        </div>
-
       </div>
+      {/* Next Button */}
+      {/* COMPLETE GUIDE BUTTON */}
+      <div className="pt-8 flex justify-center">
+        <button
+          className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all flex items-center justify-center gap-2"
+        >
+          <Star className="w-4 h-4" />
+          Complete Guide
+        </button>
+      </div>
+
     </div>
   );
 };
 
-export default Vaginalcard7;
+export default Endometriosiscard7;
