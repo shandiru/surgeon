@@ -35,7 +35,7 @@ import EndometriosisGuide from "./Page/EndometriosisGuidePage";
 import PostmenopausalBleedingGuide from "./Page/PostmenopausalBleedingGuide"
 import PublicationsPage from "./Page/PublicationsPage"
 import FibroidGuide from "./Page/FibroidGuidePage";
-
+import VaginalLumpsGuide from "./Page/VaginalLumpsGuide"
 function App() {
   return (
     <Router>
@@ -73,8 +73,10 @@ function App() {
         <Route path="/hysteroscopy" element={< Hysteroscopy />} />
         <Route path="/pelvic-pain-information" element={< Pelvic />} />
         <Route path="/vulvar-vaginal-lumps" element={< Vulvar />} />
-
+        
         <Route path="/PublicationsPage" element={<PublicationsPage />} />
+         <Route path="/VaginalLumpsGuide " element={< VaginalLumpsGuide/>} />
+
       </Routes>
       <Footer />
     </Router>
