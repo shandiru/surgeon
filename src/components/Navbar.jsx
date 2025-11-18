@@ -108,7 +108,9 @@ const Navbar = () => {
                   <Link to="/VaginalGuidePage" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>VaginalGuidePage</Link>
                   <Link to="/OvarianCancerGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>OvarianCancerGuidePage</Link>
                   <Link to="/EndometrialCancerGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>EndometrialGuidePage</Link>
-                   <Link to="/CervicalCancerGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>CervicalCancerGuide</Link>
+                  <Link to="/CervicalCancerGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>CervicalCancerGuide</Link>
+                   <Link to="/RoboticSurgeryGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>RoboticSurgeryGuide</Link>
+                  
                 </div>
               )}
             </div>
@@ -185,7 +187,8 @@ const Navbar = () => {
                   <Link to="/VaginalGuidePage" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>VaginalGuidePage</Link>
                   <Link to="/OvarianCancerGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>OvarianCancerGuidePage</Link>
                   <Link to="/EndometrialCancerGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>EndometrialGuidePage</Link>
-                   <Link to="/CervicalCancerGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>CervicalCancerGuide</Link>
+                  <Link to="/CervicalCancerGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>CervicalCancerGuide</Link>
+                   <Link to="/RoboticSurgeryGuide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>RoboticSurgeryGuide</Link>
 
                 </div>
               )}
