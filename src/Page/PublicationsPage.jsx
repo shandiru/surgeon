@@ -41,8 +41,8 @@ const publications = [
     date: "APRIL 2014",
     type: "ARTICLE",
     title:
-      "Vibrational biospectroscopy coupled with multivariate analysis extracts potentially diagnostic features in blood plasma/serum of ovarian cancer patients",
-    link: "https://www.researchgate.net/publication/258824980_Vibrational_biospectroscopy_coupled_with_multivariate_analysis_extracts_potentially_diagnostic_features_in_blood_plasmaserum_of_ovarian_cancer_patients",
+      "Measuring similarity and improving stability in biomarker identification methods applied to Fourier-transform infrared (FTIR) spectroscopy",
+    link: "https://www.researchgate.net/publication/260607390_Measuring_similarity_and_improving_stability_in_biomarker_identification_methods_applied_to_Fourier-transform_infrared_FTIR_spectroscopy",
   },
    {
     id: 6,
