@@ -60,6 +60,9 @@ const Navbar = () => {
             <HashLink smooth to="/#education" className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">
               Education
             </HashLink>
+            <HashLink smooth to="/PublicationsPage" className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">
+            Publications
+            </HashLink>
 
             {/* Services Dropdown */}
             <div className="relative">
@@ -144,6 +147,10 @@ const Navbar = () => {
             <HashLink smooth to="/#experience" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900">Experience</HashLink>
             <HashLink smooth to="/#specialties" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900">Specialties</HashLink>
             <HashLink smooth to="/#education" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900">Education</HashLink>
+              <HashLink smooth to="/PublicationsPage" className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">
+            Publications
+            </HashLink>
+
 
             {/* Mobile Services */}
             <div className="relative">
