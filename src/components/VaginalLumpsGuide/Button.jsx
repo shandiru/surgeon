@@ -17,9 +17,9 @@ const buttons = [
   { label: 'How It Starts', icon: <Activity className="w-4 h-4" />, card: 2 },
   { label: 'Key Risk Factors', icon: <AlertTriangle className="w-4 h-4" />, card: 3 },
   { label: 'Recognising Symptoms', icon: <Eye className="w-4 h-4" />, card: 4 },
-  { label: 'Getting Diagnosed', icon: <ScanSearch className="w-4 h-4" />, card: 5 },
-  { label: 'Treatment Options', icon: <Syringe className="w-4 h-4" />, card: 6 },
-  { label: 'Prevention & Early Detection', icon: <ShieldCheck className="w-4 h-4" />, card: 7 },
+  { label: 'Treatment', icon: <ScanSearch className="w-4 h-4" />, card: 5 },
+  { label: 'When to seek help', icon: <Syringe className="w-4 h-4" />, card: 6 },
+  { label: 'Prevention and Early Management', icon: <ShieldCheck className="w-4 h-4" />, card: 7 },
   { label: 'Key Takeaway', icon: <BookmarkCheck className="w-4 h-4" />, card: 8 }
 ];
 

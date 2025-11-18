@@ -32,7 +32,7 @@ const VaginalLumpsGuideCard2 = ({ setShowCard, setActiveButton }) => {
             >
               <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
             </svg>
-            How Vulvar Cancer Starts
+            What Causes Vaginal Lumps?
           </div>
         </div>
 
@@ -48,16 +48,16 @@ const VaginalLumpsGuideCard2 = ({ setShowCard, setActiveButton }) => {
             }}
           >
             <p className="text-lg leading-relaxed" style={{ color: '#7a2f4f' }}>
-              Vulvar cancer usually begins in the skin cells of the vulva. Understanding where
-              it starts helps doctors determine the best treatment and predict how the disease
-              may behave.
+              Vaginal lumps can develop for many reasons. Most are harmless and linked to blocked 
+              glands, infections, or normal anatomical variations. Understanding common causes 
+              helps determine when a lump needs medical attention.
             </p>
           </div>
 
-          {/* Two Main Types */}
+          {/* Types / Causes */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-            {/* Type 1 */}
+            {/* Type 1 – Bartholin Cyst */}
             <div
               className="p-4 rounded-xl border transition-all duration-300 hover:shadow-md"
               style={{
@@ -66,15 +66,15 @@ const VaginalLumpsGuideCard2 = ({ setShowCard, setActiveButton }) => {
               }}
             >
               <h4 className="font-semibold mb-2" style={{ color: '#FF4B8B' }}>
-                Squamous Cell Carcinoma
+                Bartholin’s Cyst
               </h4>
               <p className="text-sm" style={{ color: '#7a2f4f' }}>
-                The most common type — <strong>85–90%</strong> of vulvar cancers.  
-                It begins in the thin, flat cells on the surface of the vulva.
+                Forms when the Bartholin gland duct becomes blocked.  
+                Can be painless or swollen, and may become infected (abscess).
               </p>
             </div>
 
-            {/* Type 2 */}
+            {/* Type 2 – Infections */}
             <div
               className="p-4 rounded-xl border transition-all duration-300 hover:shadow-md"
               style={{
@@ -83,15 +83,15 @@ const VaginalLumpsGuideCard2 = ({ setShowCard, setActiveButton }) => {
               }}
             >
               <h4 className="font-semibold mb-2" style={{ color: '#FF4B8B' }}>
-                Melanoma of the Vulva
+                Infections & Abscesses
               </h4>
               <p className="text-sm" style={{ color: '#7a2f4f' }}>
-                A less common but more aggressive type that begins in the pigment-producing
-                cells of the vulva.
+                Bacterial, fungal, or sexually transmitted infections can cause 
+                painful lumps, redness, or discharge.
               </p>
             </div>
 
-            {/* Pre-cancerous VIN */}
+            {/* Type 3 – Normal Anatomy */}
             <div
               className="p-4 rounded-xl border transition-all duration-300 hover:shadow-md"
               style={{
@@ -100,11 +100,11 @@ const VaginalLumpsGuideCard2 = ({ setShowCard, setActiveButton }) => {
               }}
             >
               <h4 className="font-semibold mb-2" style={{ color: '#FF4B8B' }}>
-                Pre-Cancerous Changes (VIN)
+                Normal Anatomical Variations
               </h4>
               <p className="text-sm" style={{ color: '#7a2f4f' }}>
-                Some cases begin as <strong>VIN – Vulvar Intraepithelial Neoplasia</strong>,  
-                where abnormal cells appear before developing into cancer.
+                Some bumps are simply normal structures—skin tags, vestibular papillae, 
+                or harmless glandular tissue.
               </p>
             </div>
 
@@ -142,8 +142,9 @@ const VaginalLumpsGuideCard2 = ({ setShowCard, setActiveButton }) => {
             </h4>
 
             <p className="text-sm" style={{ color: '#7a2f4f' }}>
-              Detecting VIN early and treating it promptly can prevent it from developing
-              into vulvar cancer.
+              Most vaginal lumps improve with simple treatment, but a lump that 
+              becomes painful, grows, or does not resolve should always be checked 
+              by a doctor.
             </p>
           </div>
 

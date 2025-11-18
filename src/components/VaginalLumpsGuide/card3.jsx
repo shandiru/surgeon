@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import { Biohazard, Cigarette, CloudFog, Sparkles, ShieldOff } from 'lucide-react';
+import { Biohazard, Droplet, Scissors, Sparkles, ShieldOff, Flame } from 'lucide-react';
 
 const VaginalLumpsGuidecard3 = ({ setShowCard, setActiveButton }) => {
   return (
@@ -37,50 +37,72 @@ const VaginalLumpsGuidecard3 = ({ setShowCard, setActiveButton }) => {
               <path d="M16 13H8"></path>
               <path d="M16 17H8"></path>
             </svg>
-            Key Risk Factors
+            Key Causes & Risk Factors
           </div>
+
           <p className="text-sm" style={{ color: '#7a2f4f' }}>
-            Not everyone with these risk factors will develop vulvar cancer, but they increase likelihood.
+            Most vaginal lumps are harmless, treatable, and not serious — but knowing the causes helps.
           </p>
         </div>
 
         {/* Card Content */}
         <div className="space-y-4 mt-4">
-          {/* Risk Factors Section */}
+          {/* Causes Section */}
           <div className="space-y-4">
             {[
               {
-                step: 'HPV Infection (High-Risk Strains)',
+                step: 'Blocked Glands (Bartholin or Skene glands)',
+                icon: <Droplet className="w-5 h-5 text-[#FF4B8B]" />,
+                description:
+                  'A blocked duct can fill with fluid and form a cyst, sometimes becoming painful.',
+              },
+              {
+                step: 'HPV Infection',
                 icon: <Biohazard className="w-5 h-5 text-[#FF4B8B]" />,
                 description:
-                  'High-risk HPV types, particularly HPV 16, significantly increase vulvar cancer risk.',
+                  'Certain HPV strains can cause lumps or warts on the vaginal or vulvar area.',
               },
               {
-                step: 'Older Age (Most Common After 60)',
-                icon: <CloudFog className="w-5 h-5 text-[#FF4B8B]" />,
-                description: 'Vulvar cancer is more common in women over 60.',
+                step: 'Bacterial or Yeast Infections',
+                icon: <Flame className="w-5 h-5 text-[#FF4B8B]" />,
+                description:
+                  'These infections can cause swelling, irritation, or small painful bumps.',
               },
               {
-                step: 'Smoking',
-                icon: <Cigarette className="w-5 h-5 text-[#FF4B8B]" />,
-                description: 'Smoking weakens the immune system and increases HPV persistence.',
+                step: 'Skin Irritation (Shaving or Waxing)',
+                icon: <Scissors className="w-5 h-5 text-[#FF4B8B]" />,
+                description:
+                  'Ingrown hairs or irritation from hair removal can create tender lumps.',
               },
               {
-                step: 'Long-Term Skin Conditions (e.g., Lichen Sclerosus)',
+                step: 'Sexually Transmitted Infections (STIs)',
+                icon: <Biohazard className="w-5 h-5 text-[#FF4B8B]" />,
+                description:
+                  'Conditions like herpes, syphilis, or molluscum can cause lumps or sores.',
+              },
+              {
+                step: 'Hormonal Changes (Pregnancy or Menopause)',
                 icon: <Sparkles className="w-5 h-5 text-[#FF4B8B]" />,
-                description: 'Chronic inflammatory vulvar skin disorders increase risk.',
+                description:
+                  'Hormonal shifts can change gland activity and increase lump formation.',
+              },
+              {
+                step: 'Trauma or Childbirth',
+                icon: <ShieldOff className="w-5 h-5 text-[#FF4B8B]" />,
+                description:
+                  'Pressure, tearing, or swelling after childbirth can cause temporary lumps.',
+              },
+              {
+                step: 'Poor Hygiene or Tight Clothing',
+                icon: <Flame className="w-5 h-5 text-[#FF4B8B]" />,
+                description:
+                  'Sweat and friction can trap bacteria and cause irritation or infection.',
               },
               {
                 step: 'Weakened Immune System',
                 icon: <ShieldOff className="w-5 h-5 text-[#FF4B8B]" />,
                 description:
-                  'A weak immune system reduces the body’s ability to repair abnormal cells.',
-              },
-              {
-                step: 'History of Cervical or Vaginal Pre-cancers',
-                icon: <Biohazard className="w-5 h-5 text-[#FF4B8B]" />,
-                description:
-                  'Conditions like CIN or VAIN raise the risk of similar changes on the vulva.',
+                  'A weak immune system makes infections and cysts more likely to occur.',
               },
             ].map((item, index) => (
               <div
@@ -137,12 +159,12 @@ const VaginalLumpsGuidecard3 = ({ setShowCard, setActiveButton }) => {
               Good to Know
             </h4>
             <p className="text-sm" style={{ color: '#7a2f4f' }}>
-              Having one or more risk factors does not mean you will get vulvar cancer — but
-              understanding them helps with early detection and prevention.
+              Most causes of vaginal lumps are treatable and not serious.  
+              See a doctor if a lump becomes painful, grows, or does not go away.
             </p>
           </div>
 
-          {/* Button */}
+          {/* Continue Button */}
           <div className="pt-6 flex justify-center">
             <button
               onClick={() => {

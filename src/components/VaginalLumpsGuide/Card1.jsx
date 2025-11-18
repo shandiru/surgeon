@@ -37,7 +37,7 @@ const VaginalLumpsGuideCard1 = ({ setShowCard, setActiveButton }) => {
               <path d="M12 16v-4"></path>
               <path d="M12 8h.01"></path>
             </svg>
-            What Is Vulvar Cancer?
+            Overview — Vaginal Lumps
           </div>
         </div>
 
@@ -53,10 +53,10 @@ const VaginalLumpsGuideCard1 = ({ setShowCard, setActiveButton }) => {
             }}
           >
             <p className="text-lg leading-relaxed" style={{ color: '#7a2f4f' }}>
-              Vulvar cancer is a type of cancer that develops on the external female genital area,
-              known as the vulva. This includes the labia majora, labia minora, clitoris, and the
-              skin around the vaginal opening. Although vulvar cancer is relatively rare,
-              understanding it helps with early detection and prevention.
+              Vaginal lumps refer to any swelling, bump, or raised area found on or inside the vagina. 
+              Most lumps are benign (non-cancerous) and caused by infections, blocked glands, or normal 
+              anatomical variations. However, persistent, painful, or growing lumps should always be 
+              checked by a doctor to rule out infection or, in rare cases, cancer.
             </p>
           </div>
 
@@ -85,10 +85,10 @@ const VaginalLumpsGuideCard1 = ({ setShowCard, setActiveButton }) => {
 
               <ul className="space-y-2">
                 {[
-                  'Most common in women over 60',
-                  'Often linked to HPV or chronic skin conditions',
-                  'Early diagnosis greatly improves outcomes',
-                  'Can appear as itching, lumps, or skin changes',
+                  'Most lumps are harmless and treatable',
+                  'Bartholin cysts are a common cause',
+                  'Infections can cause painful swelling',
+                  'Any lump lasting over 2–3 weeks should be checked',
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-2">
                     <svg
@@ -128,9 +128,9 @@ const VaginalLumpsGuideCard1 = ({ setShowCard, setActiveButton }) => {
                 Remember
               </h4>
               <p className="text-sm" style={{ color: '#7a2f4f' }}>
-                Vulvar cancer often begins with subtle skin changes. Paying attention to persistent
-                itching, lumps, sores, or colour changes can help detect the condition early when it
-                is most treatable.
+                Not every vaginal lump is serious, but ignoring symptoms can delay important 
+                treatment. If a lump becomes painful, grows, or does not disappear on its own, 
+                schedule a medical review.
               </p>
             </div>
           </div>

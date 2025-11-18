@@ -1,5 +1,5 @@
-'use client';
-import { Lightbulb, Star, CheckCircle2 } from 'lucide-react';
+"use client";
+import { Lightbulb, Star, CheckCircle2 } from "lucide-react";
 
 const VaginalLumpsGuidecard8 = ({ setShowCard, setActiveButton }) => {
   return (
@@ -45,8 +45,10 @@ const VaginalLumpsGuidecard8 = ({ setShowCard, setActiveButton }) => {
           </h3>
 
           <p className="text-sm leading-relaxed" style={{ color: "#7a2f4f" }}>
-            Vulvar cancer is rare but serious. Early diagnosis leads to the best outcomes,
-            which is why understanding symptoms and staying aware of changes is so important.
+            Most vaginal lumps are benign and treatable, often caused by cysts,
+            blocked glands, or infections. Persistent, painful, or unusual lumps
+            should be checked by a clinician to make sure you get the correct
+            diagnosis and treatment.
           </p>
         </div>
 
@@ -61,11 +63,11 @@ const VaginalLumpsGuidecard8 = ({ setShowCard, setActiveButton }) => {
 
           <ul className="space-y-2 text-sm">
             {[
-              "Early detection greatly improves treatment success",
-              "Persistent itching, lumps, or skin changes should never be ignored",
-              "Regular check-ups help spot changes early",
-              "HPV protection reduces risk",
-              "Awareness of your vulvar skin is the first step in prevention",
+              "Most lumps are harmless and resolve with simple care",
+              "Seek medical advice if a lump is painful, growing, or persistent",
+              "Infections or cysts can worsen without treatment",
+              "Good hygiene and avoiding irritation help reduce risk",
+              "Monitoring changes helps catch problems early",
             ].map((item, index) => (
               <li
                 key={index}
@@ -96,8 +98,10 @@ const VaginalLumpsGuidecard8 = ({ setShowCard, setActiveButton }) => {
           </h4>
 
           <p className="text-sm leading-relaxed mt-1" style={{ color: "#7a2f4f" }}>
-            Staying aware, getting regular check-ups, and seeking help early if something feels
-            unusual can make a powerful difference in protecting your health.
+            Listen to your body. If something feels unusual or doesn’t improve,
+            a quick check with a clinician provides clarity, reassurance, and
+            the right care. Early advice can prevent discomfort and avoid
+            unnecessary complications.
           </p>
         </div>
 
