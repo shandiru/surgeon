@@ -36,6 +36,7 @@ import PostmenopausalBleedingGuide from "./Page/PostmenopausalBleedingGuide"
 import PublicationsPage from "./Page/PublicationsPage"
 import FibroidGuide from "./Page/FibroidGuidePage";
 import VaginalLumpsGuide from "./Page/VaginalLumpsGuide"
+
 function App() {
   return (
     <Router>
@@ -67,15 +68,15 @@ function App() {
         <Route path="/OvarianCystsGuide" element={<OvarianCystsGuide />} />
         <Route path="/PostcoitalBleeding" element={< PostcoitalBleeding />} />
         <Route path="/postmenopausal-bleeding" element={< PostmenopausalBleedingPage />} />
-         <Route path="/PostmenopausalBleedingGuide" element={<PostmenopausalBleedingGuide />} />
+        <Route path="/PostmenopausalBleedingGuide" element={<PostmenopausalBleedingGuide />} />
         <Route path="/colposcopy" element={< Colposcopy />} />
         <Route path="/ultrasound" element={< Ultrasound />} />
         <Route path="/hysteroscopy" element={< Hysteroscopy />} />
         <Route path="/pelvic-pain-information" element={< Pelvic />} />
         <Route path="/vulvar-vaginal-lumps" element={< Vulvar />} />
-        
+
         <Route path="/PublicationsPage" element={<PublicationsPage />} />
-         <Route path="/VaginalLumpsGuide " element={< VaginalLumpsGuide/>} />
+        <Route path="/VaginalLumpsGuide " element={< VaginalLumpsGuide />} />
 
       </Routes>
       <Footer />

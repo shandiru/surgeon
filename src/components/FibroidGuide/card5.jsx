@@ -1,159 +1,71 @@
 "use client";
-import {
-  Target,
-  Stethoscope,
-  Microscope,
-  Camera,
-  Scan,
-  Activity,
-} from "lucide-react";
+import { Heart } from "lucide-react";
 import React from "react";
 
-const VulvarGuidecard5 = ({ setShowCard, setActiveButton }) => {
+const FibroidGuidecard5 = ({ setShowCard, setActiveButton }) => {
+
+    const pink = "#FFC5D3"
+  const deepPink = "#FF4B8B"
+
   return (
     <div className="space-y-6 pb-10">
-      {/* MAIN WRAPPER */}
-      <div
-        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto rounded-2xl p-8 border shadow-sm animate-in slide-in-from-right-5 duration-300"
-        style={{
-          backgroundColor: "#FFFFFF",
-          borderColor: "rgb(255,197,211)",
-        }}
-      >
-        {/* HEADER */}
-        <div className="mb-6">
-          <span
-            className="font-semibold text-sm uppercase tracking-wide"
-            style={{ color: "#FF4B8B" }}
-          >
-            Step 2
-          </span>
+      <div className="max-w-5xl mx-auto bg-white text-[#212529] flex flex-col gap-6 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 p-8">
 
-          <h2
-            className="text-3xl font-bold mt-2"
-            style={{ color: "#FF4B8B" }}
-          >
-            Getting Diagnosed
+        {/* Header */}
+        <div className="flex items-center gap-3 mb-4">
+          <Heart className="text-3xl" style={{ color: deepPink }} />
+          <h2 className="font-bold text-2xl md:text-3xl" style={{ color: deepPink }}>
+            Fertility & Pregnancy
           </h2>
-
-          <p className="text-lg mt-2" style={{ color: "#7a2f4f" }}>
-            Diagnosis usually begins with a physical and pelvic exam, followed by
-            specialized tests.
-          </p>
         </div>
 
-        {/* TITLE */}
-        <h3 className="text-xl font-semibold" style={{ color: "#FF4B8B" }}>
-          Examination Steps:
-        </h3>
-
-        {/* ================ STEPS GRID ================= */}
-        <div className="space-y-4 mt-6">
-          {/* Pelvic Exam */}
+        {/* Content */}
+        <div className="grid md:grid-cols-2 gap-8">
+          {/* Challenges */}
           <div
-            className="flex items-start gap-6 p-6 rounded-xl border transition-all duration-300 hover:bg-[#FFF5F8] hover:shadow-lg active:bg-[#FFF5F8]"
-            style={{ borderColor: "rgb(255,197,211)" }}
+            className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 active:scale-[0.98] transition-all duration-200"
+            style={{ backgroundColor: pink }}
           >
-            <div
-              className="flex items-center justify-center w-12 h-12 rounded-lg flex-shrink-0"
-              style={{ backgroundColor: "#FF4B8B", color: "#FFFFFF" }}
-            >
-              <Stethoscope className="w-6 h-6" />
-            </div>
-
-            <div>
-              <h4 className="text-lg font-semibold mb-2" style={{ color: "#FF4B8B" }}>
-                Pelvic Exam
-              </h4>
-              <p style={{ color: "#7a2f4f" }}>
-                Checking the vulva, vagina, uterus, ovaries, bladder, and rectum
-                for abnormalities.
-              </p>
-            </div>
+            <h4 className="font-semibold mb-3 text-lg" style={{ color: deepPink }}>
+              Potential Challenges
+            </h4>
+            <ul className="space-y-2 text-sm text-gray-700 leading-relaxed">
+              <li>• Can sometimes make it harder to get pregnant</li>
+              <li>• May slightly increase risk of miscarriage</li>
+              <li>• May increase risk of preterm birth</li>
+            </ul>
           </div>
 
-          {/* Biopsy */}
+          {/* Positive Outlook */}
           <div
-            className="flex items-start gap-6 p-6 rounded-xl border transition-all duration-300 hover:bg-[#FFF5F8] hover:shadow-lg active:bg-[#FFF5F8]"
-            style={{ borderColor: "rgb(255,197,211)" }}
+            className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 active:scale-[0.98] transition-all duration-200"
+            style={{ backgroundColor: pink }}
           >
-            <div
-              className="flex items-center justify-center w-12 h-12 rounded-lg flex-shrink-0"
-              style={{ backgroundColor: "#FF4B8B", color: "#FFFFFF" }}
-            >
-              <Microscope className="w-6 h-6" />
-            </div>
-
-            <div>
-              <h4 className="text-lg font-semibold mb-2" style={{ color: "#FF4B8B" }}>
-                Biopsy
-              </h4>
-              <p style={{ color: "#7a2f4f" }}>
-                Removing a small piece of tissue from the vulva to test for
-                cancer cells.
-              </p>
-            </div>
-          </div>
-
-          {/* Colposcopy */}
-          <div
-            className="flex items-start gap-6 p-6 rounded-xl border transition-all duration-300 hover:bg-[#FFF5F8] hover:shadow-lg active:bg-[#FFF5F8]"
-            style={{ borderColor: "rgb(255,197,211)" }}
-          >
-            <div
-              className="flex items-center justify-center w-12 h-12 rounded-lg flex-shrink-0"
-              style={{ backgroundColor: "#FF4B8B", color: "#FFFFFF" }}
-            >
-              <Camera className="w-6 h-6" />
-            </div>
-
-            <div>
-              <h4 className="text-lg font-semibold mb-2" style={{ color: "#FF4B8B" }}>
-                Colposcopy
-              </h4>
-              <p style={{ color: "#7a2f4f" }}>
-                Using a magnifying instrument to closely examine the vulva.
-              </p>
-            </div>
+            <h4 className="font-semibold mb-3 text-lg" style={{ color: deepPink }}>
+              Positive Outlook
+            </h4>
+            <ul className="space-y-2 text-sm text-gray-700 leading-relaxed">
+              <li>• Most women with fibroids can still have healthy pregnancies</li>
+              <li>• Extra monitoring during pregnancy available</li>
+            </ul>
           </div>
         </div>
+      </div>
 
-        {/* ================= TAG LIST (Pink Pills) ================== */}
-        <div className="mt-8 flex flex-wrap gap-3">
-          {[
-            "Chest X-ray",
-            "CT or PET-CT scan",
-            "MRI",
-            "Endoscopy (if needed)",
-          ].map((tag, i) => (
-            <span
-              key={i}
-              className="px-4 py-2 rounded-md text-sm font-medium"
-              style={{
-                backgroundColor: "#FF4B8B",
-                color: "#FFFFFF",
-              }}
-            >
-              {tag}
-            </span>
-          ))}
-        </div>
-
-        {/* ================= NEXT BUTTON ================= */}
-        <div className="pt-6 flex justify-center">
-          <button
-            onClick={() => {
-              setShowCard(6);
-              setActiveButton(5);
-            }}
-            className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md text-sm font-medium transition-all h-10 px-4"
-          >
-            Learn About Aftercare
-          </button>
-        </div>
+      {/* ================= NEXT BUTTON ================= */}
+      <div className="pt-6 flex justify-center">
+        <button
+          onClick={() => {
+            setShowCard(6);
+            setActiveButton(5);
+          }}
+          className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md text-sm font-medium transition-all h-10 px-4"
+        >
+          Learn About Aftercare
+        </button>
       </div>
     </div>
   );
 };
 
-export default VulvarGuidecard5;
+export default FibroidGuidecard5;

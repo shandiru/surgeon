@@ -3,6 +3,9 @@ import { Lightbulb, Pin } from 'lucide-react';
 import React from 'react';
 
 const FibroidGuideCard1 = ({ setShowCard, setActiveButton }) => {
+  const pink = "#FFC5D3"
+  const deepPink = "#FF4B8B"
+  
   return (
     <div className="space-y-6 pb-10">
 
@@ -46,6 +49,17 @@ const FibroidGuideCard1 = ({ setShowCard, setActiveButton }) => {
             <p className="font-semibold text-base" style={{ color: deepPink }}>
               ✓ Fibroids are not cancer and rarely become cancerous.
             </p>
+          </div>
+         <div className="pt-6 flex justify-center">
+            <button
+              onClick={() => {
+                setShowCard(2);
+                setActiveButton(1);
+              }}
+              className="inline-flex items-center justify-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 rounded-md text-sm font-medium transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
+            >
+              Continue to Next Section
+            </button>
           </div>
         </div>
       </div>

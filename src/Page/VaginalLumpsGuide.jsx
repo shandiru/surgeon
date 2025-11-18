@@ -10,7 +10,9 @@ import VaginalLumpsGuideCard5 from '../components/VaginalLumpsGuide/card5';
 import VaginalLumpsGuideCard6 from '../components/VaginalLumpsGuide/card6';
 import VaginalLumpsGuideCard7 from '../components/VaginalLumpsGuide/card7';
 import VaginalLumpsGuideCard8 from '../components/VaginalLumpsGuide/card8';
+
 const VaginalLumpsGuide = () => {
+  
   const [showCard, setShowCard] = useState(1);
   const [activeButton, setActiveButton] = useState(0);
 

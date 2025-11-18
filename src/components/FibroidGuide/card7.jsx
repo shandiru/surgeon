@@ -1,147 +1,114 @@
 'use client';
-import { ShieldCheck, Heart, Star, PlusCircle } from 'lucide-react';
 
-const VulvarGuidecard7 = ({ setShowCard, setActiveButton }) => {
+import { Pill, User } from "lucide-react";
+
+const FibroidGuidecard7 = ({ setShowCard, setActiveButton }) => {
+
+    const pink = "#FFC5D3"
+  const deepPink = "#FF4B8B"
+
+
   return (
     <div className="space-y-6 pb-10">
       {/* Outer Card */}
-      <div
-        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto rounded-2xl p-8 border shadow-sm animate-in slide-in-from-right-5 duration-300"
-        style={{
-          backgroundColor: "#FFFFFF",
-          borderColor: "rgb(255,197,211)",
-        }}
-      >
-        {/* Header */}
-        <div className="mb-6">
-          <span
-            className="font-semibold text-sm uppercase tracking-wide flex items-center gap-2"
-            style={{ color: "#FF4B8B" }}
-          >
-            <ShieldCheck className="w-6 h-6 text-[#FF4B8B]" />
-            Prevention & Early Detection
-          </span>
+      <div className="bg-white max-w-5xl mx-auto text-[#212529] flex flex-col gap-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 p-8">
 
-          <p className="text-sm mt-1" style={{ color: "#7a2f4f" }}>
-            Simple steps that can greatly reduce your risk.
+        {/* Card Header */}
+        <div className="text-center">
+          <div className="flex items-center justify-center gap-2 mb-3">
+            <Pill className="text-3xl" style={{ color: deepPink }} />
+            <h2 className="font-bold text-2xl md:text-3xl" style={{ color: deepPink }}>
+              Treatment Options
+            </h2>
+          </div>
+          <p className="text-base text-gray-600">
+            Treatment depends on your symptoms and their severity:
           </p>
         </div>
 
-        {/* Why Prevention Matters */}
-        <div
-          className="p-4 rounded-xl border mb-6"
-          style={{
-            borderColor: "rgb(255,197,211)",
-            backgroundColor: "#FFF5F8",
-          }}
-        >
-          <h4
-            className="font-semibold flex items-center gap-2 mb-2"
-            style={{ color: "#FF4B8B" }}
-          >
-            <Heart className="w-5 h-5 text-[#FF4B8B]" />
-            Why Prevention Matters
-          </h4>
-          <p style={{ color: "#7a2f4f" }} className="text-sm leading-relaxed">
-            While vulvar cancer is uncommon, early awareness and simple preventive steps can significantly
-            reduce risk and help detect changes before they become serious.
-          </p>
-        </div>
-
-        {/* Prevention Steps + Reminder */}
-        <div className="grid md:grid-cols-2 gap-6">
-          {/* ---- Left Column ---- */}
+        {/* Card Content */}
+        <div className="space-y-10">
+          {/* Medication Section */}
           <div>
-            <h4
-              className="font-semibold mb-3"
-              style={{ color: "#FF4B8B" }}
-            >
-              You Can Reduce Risk By:
-            </h4>
-
-            <div className="space-y-3">
+            <h3 className="text-xl font-semibold mb-6" style={{ color: deepPink }}>
+              Medication
+            </h3>
+            <div className="grid md:grid-cols-2 gap-6">
               {[
-                "Getting the HPV vaccine",
-                "Not smoking",
-                "Regular gynecological check-ups",
-                "Early treatment of vulvar skin conditions",
-                "Being aware of any changes to vulvar skin",
-                "Practicing safer sex",
-              ].map((item, index) => (
+                { title: "Anti-inflammatory medicines", desc: "Relieve pain" },
+                { title: "Tranexamic acid", desc: "Reduces bleeding" },
+                { title: "Hormonal treatments", desc: "Pill, coil, progesterone tablets – regulate periods" },
+                { title: "GnRH analogues", desc: "Shrink fibroids (often used before surgery)" },
+              ].map((item, i) => (
                 <div
-                  key={index}
-                  className="flex items-start gap-2 text-sm"
-                  style={{ color: "#7a2f4f" }}
+                  key={i}
+                  className="rounded-xl p-5 bg-white shadow-md hover:shadow-lg hover:-translate-y-1 transition-all"
                 >
-                  <PlusCircle className="w-4 h-4 text-[#FF4B8B] mt-1 flex-shrink-0" />
-                  <span>{item}</span>
+                  <h4 className="font-semibold mb-2" style={{ color: deepPink }}>
+                    {item.title}
+                  </h4>
+                  <p className="text-sm text-gray-600">{item.desc}</p>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* ---- Right Column Reminder ---- */}
-          <div
-            className="p-4 rounded-xl border"
-            style={{
-              backgroundColor: "#FFF5F8",
-              borderColor: "rgb(255,197,211)",
-            }}
-          >
-            <h4
-              className="font-semibold flex items-center gap-2 mb-2"
-              style={{ color: "#FF4B8B" }}
-            >
-              <Heart className="w-5 h-5 text-[#FF4B8B]" />
-              Remember
-            </h4>
+          {/* Divider */}
+          <div className="h-px w-full" style={{ backgroundColor: pink }} />
 
-            <ul className="text-sm space-y-2" style={{ color: "#7a2f4f" }}>
-              <li>• Early detection makes treatment more effective</li>
-              <li>• Regular check-ups help catch changes early</li>
-              <li>• HPV protection greatly reduces risk</li>
-              <li>• Any long-lasting vulvar change should be reviewed</li>
-            </ul>
+          {/* Procedures Section */}
+          <div>
+            <h3 className="text-xl font-semibold mb-6" style={{ color: deepPink }}>
+              Procedures & Surgery
+            </h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              {[
+                { title: "Myomectomy", desc: "Removes fibroids while keeping the womb" },
+                { title: "Hysterectomy", desc: "Removes the womb (only if symptoms are severe & no further pregnancies planned)" },
+                { title: "Transcervical resection", desc: "Removes submucosal fibroids through the cervix" },
+                { title: "Uterine artery embolisation (UAE)", desc: "Blocks blood supply to fibroids to shrink them" },
+              ].map((item, i) => (
+                <div
+                  key={i}
+                  className="rounded-xl p-5 bg-white shadow-md hover:shadow-lg hover:-translate-y-1 transition-all"
+                >
+                  <h4 className="font-semibold mb-2" style={{ color: deepPink }}>
+                    {item.title}
+                  </h4>
+                  <p className="text-sm text-gray-600">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Doctor Advice Note */}
+          <div
+            className="rounded-xl p-5 text-center shadow-md"
+            style={{ backgroundColor: pink }}
+          >
+            <p className="font-medium flex items-center gap-2 justify-center" style={{ color: deepPink }}>
+              <User className="text-2xl" />
+              Your doctor will help you choose the safest and most effective option
+              based on your symptoms and fertility plans.
+            </p>
           </div>
         </div>
+      </div>
 
-        {/* Key Takeaway */}
-        <div
-          className="p-4 rounded-xl border mt-6"
-          style={{
-            backgroundColor: "#FFFFFF",
-            borderColor: "rgb(255,197,211)",
+      {/* Next Button */}
+      <div className="pt-8 flex justify-center">
+        <button
+          onClick={() => {
+            setShowCard(8);
+            setActiveButton(7);
           }}
+          className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all"
         >
-          <h4
-            className="font-semibold flex items-center gap-2 mb-2"
-            style={{ color: "#FF4B8B" }}
-          >
-            <Star className="w-5 h-5 text-[#FF4B8B]" />
-            Key Takeaway
-          </h4>
-
-          <p className="text-sm leading-relaxed" style={{ color: "#7a2f4f" }}>
-            Prevention is powerful. By staying aware of changes, attending check-ups, and protecting yourself
-            from HPV, you take strong steps toward maintaining vulvar health and detecting issues early.
-          </p>
-        </div>
-
-        {/* Next Button */}
-        <div className="pt-8 flex justify-center">
-          <button
-            onClick={() => {
-              setShowCard(8);
-              setActiveButton(7);
-            }}
-            className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all"
-          >
-            Continue to Next Section
-          </button>
-        </div>
+          Continue to Next Section
+        </button>
       </div>
     </div>
   );
 };
 
-export default VulvarGuidecard7;
+export default FibroidGuidecard7;
