@@ -32,7 +32,7 @@ import IrregularBleedingGuide from "./Page/IrregularBleedingGuide";
 import OvarianCystsGuide from "./Page/OvarianCystsGuide";
 import RoboticGuide from "./Page/RoboticGuidePage";
 import EndometriosisGuide from "./Page/EndometriosisGuidePage";
-
+import PostmenopausalBleedingGuide from "./Page/PostmenopausalBleedingGuide"
 function App() {
   return (
     <Router>
@@ -63,6 +63,7 @@ function App() {
         <Route path="/OvarianCystsGuide" element={<OvarianCystsGuide />} />
         <Route path="/PostcoitalBleeding" element={< PostcoitalBleeding />} />
         <Route path="/postmenopausal-bleeding" element={< PostmenopausalBleedingPage />} />
+         <Route path="/PostmenopausalBleedingGuide" element={<PostmenopausalBleedingGuide />} />
         <Route path="/colposcopy" element={< Colposcopy />} />
         <Route path="/ultrasound" element={< Ultrasound />} />
         <Route path="/hysteroscopy" element={< Hysteroscopy />} />
