@@ -14,7 +14,7 @@ import {
 const VaginalLumpsGuideButtons = ({ setShowCard, activeButton, setActiveButton }) => {
 const buttons = [
   { label: 'Overview', icon: <Info className="w-4 h-4" />, card: 1 },
-  { label: 'How It Starts', icon: <Activity className="w-4 h-4" />, card: 2 },
+  { label: 'Common Causes', icon: <Activity className="w-4 h-4" />, card: 2 },
   { label: 'Key Risk Factors', icon: <AlertTriangle className="w-4 h-4" />, card: 3 },
   { label: 'Recognising Symptoms', icon: <Eye className="w-4 h-4" />, card: 4 },
   { label: 'Treatment', icon: <ScanSearch className="w-4 h-4" />, card: 5 },

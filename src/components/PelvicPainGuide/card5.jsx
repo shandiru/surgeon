@@ -1,154 +1,112 @@
 "use client";
-import {
-  Target,
-  Stethoscope,
-  Microscope,
-  Camera,
-  Scan,
-  Activity,
-} from "lucide-react";
+import { Stethoscope, CircleCheck } from "lucide-react";
 import React from "react";
 
 const PelvicPainGuidecard5 = ({ setShowCard, setActiveButton }) => {
   return (
-    <div className="space-y-6 pb-10">
-      {/* MAIN WRAPPER */}
-      <div
-        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto rounded-2xl p-8 border shadow-sm animate-in slide-in-from-right-5 duration-300"
-        style={{
-          backgroundColor: "#FFFFFF",
-          borderColor: "rgb(255,197,211)",
-        }}
-      >
-        {/* HEADER */}
-        <div className="mb-6">
-          <span
-            className="font-semibold text-sm uppercase tracking-wide"
-            style={{ color: "#FF4B8B" }}
-          >
-            Step 2
-          </span>
+    <div className="pb-12">
+      <div className="max-w-5xl mx-auto px-4 animate-in slide-in-from-right-5 duration-300">
 
-          <h2
-            className="text-3xl font-bold mt-2"
-            style={{ color: "#FF4B8B" }}
-          >
-            Getting Diagnosed
-          </h2>
-
-          <p className="text-lg mt-2" style={{ color: "#7a2f4f" }}>
-            Diagnosis usually begins with a physical and pelvic exam, followed by
-            specialized tests.
-          </p>
-        </div>
-
-        {/* TITLE */}
-        <h3 className="text-xl font-semibold" style={{ color: "#FF4B8B" }}>
-          Examination Steps:
-        </h3>
-
-        {/* ================ STEPS GRID ================= */}
-        <div className="space-y-4 mt-6">
-          {/* Pelvic Exam */}
-          <div
-            className="flex items-start gap-6 p-6 rounded-xl border transition-all duration-300 hover:bg-[#FFF5F8] hover:shadow-lg active:bg-[#FFF5F8]"
-            style={{ borderColor: "rgb(255,197,211)" }}
-          >
-            <div
-              className="flex items-center justify-center w-12 h-12 rounded-lg flex-shrink-0"
-              style={{ backgroundColor: "#FF4B8B", color: "#FFFFFF" }}
-            >
-              <Stethoscope className="w-6 h-6" />
+        {/* MAIN CARD */}
+        <div
+          className="rounded-2xl shadow-md border overflow-hidden 
+          bg-gradient-to-b from-[#FFF5F8] to-white
+          transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+          style={{ borderColor: "rgb(255,197,211)" }}
+        >
+          {/* HEADER */}
+          <div className="px-8 py-6 border-b" style={{ borderColor: "rgb(255,197,211)" }}>
+            <div className="flex items-center gap-3 text-[#FF4B8B]">
+              <Stethoscope className="w-7 h-7" />
+              <h2 className="text-2xl font-bold tracking-tight">
+                How Pelvic Pain Is Investigated
+              </h2>
             </div>
-
-            <div>
-              <h4 className="text-lg font-semibold mb-2" style={{ color: "#FF4B8B" }}>
-                Pelvic Exam
-              </h4>
-              <p style={{ color: "#7a2f4f" }}>
-                Checking the vulva, vagina, uterus, ovaries, bladder, and rectum
-                for abnormalities.
-              </p>
-            </div>
+            <p className="text-[#7a2f4f] mt-2 leading-relaxed">
+              Your doctor will assess your symptoms carefully using a combination of
+              history-taking, examinations, and tests.
+            </p>
           </div>
 
-          {/* Biopsy */}
-          <div
-            className="flex items-start gap-6 p-6 rounded-xl border transition-all duration-300 hover:bg-[#FFF5F8] hover:shadow-lg active:bg-[#FFF5F8]"
-            style={{ borderColor: "rgb(255,197,211)" }}
-          >
+          {/* CONTENT AREA */}
+          <div className="px-8 py-6 space-y-6">
+
+            {/* SECTION TITLE */}
+            <h3 className="text-lg font-semibold text-[#7a2f4f]">
+              Your doctor may:
+            </h3>
+
+            {/* TWO COLUMN GRID */}
+            <div className="grid md:grid-cols-2 gap-6">
+
+              {/* LEFT COLUMN */}
+              <div className="space-y-4">
+
+                {/* ITEM 1 */}
+                <div
+                  className="flex items-center gap-4 p-4 rounded-xl border bg-white 
+                  shadow-sm hover:bg-[#FFF1F6] transition-all"
+                  style={{ borderColor: "rgb(255,197,211)" }}
+                >
+                  <CircleCheck className="text-[#FF4B8B] w-5 h-5" />
+                  <span className="text-sm text-[#7a2f4f]">
+                    Take a full medical history
+                  </span>
+                </div>
+
+                {/* ITEM 2 */}
+                <div
+                  className="flex items-center gap-4 p-4 rounded-xl border bg-white 
+                  shadow-sm hover:bg-[#FFF1F6] transition-all"
+                  style={{ borderColor: "rgb(255,197,211)" }}
+                >
+                  <CircleCheck className="text-[#FF4B8B] w-5 h-5" />
+                  <span className="text-sm text-[#7a2f4f]">
+                    Perform a pelvic examination
+                  </span>
+                </div>
+              </div>
+
+              {/* RIGHT COLUMN */}
+              <div className="space-y-4">
+                <h4 className="font-semibold text-[#7a2f4f]">
+                  Possible Tests:
+                </h4>
+
+                <ul className="space-y-2 text-sm text-[#7a2f4f] leading-relaxed">
+                  <li>• Blood or urine tests</li>
+                  <li>• Swabs for infections (STIs)</li>
+                  <li>• Ultrasound or MRI scan</li>
+                  <li>• Laparoscopy (keyhole surgery)</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* INFO BOX */}
             <div
-              className="flex items-center justify-center w-12 h-12 rounded-lg flex-shrink-0"
-              style={{ backgroundColor: "#FF4B8B", color: "#FFFFFF" }}
+              className="mt-2 p-4 rounded-xl bg-[#FFF1F6] border shadow-sm"
+              style={{ borderColor: "rgb(255,197,211)" }}
             >
-              <Microscope className="w-6 h-6" />
-            </div>
-
-            <div>
-              <h4 className="text-lg font-semibold mb-2" style={{ color: "#FF4B8B" }}>
-                Biopsy
-              </h4>
-              <p style={{ color: "#7a2f4f" }}>
-                Removing a small piece of tissue from the vulva to test for
-                cancer cells.
-              </p>
-            </div>
-          </div>
-
-          {/* Colposcopy */}
-          <div
-            className="flex items-start gap-6 p-6 rounded-xl border transition-all duration-300 hover:bg-[#FFF5F8] hover:shadow-lg active:bg-[#FFF5F8]"
-            style={{ borderColor: "rgb(255,197,211)" }}
-          >
-            <div
-              className="flex items-center justify-center w-12 h-12 rounded-lg flex-shrink-0"
-              style={{ backgroundColor: "#FF4B8B", color: "#FFFFFF" }}
-            >
-              <Camera className="w-6 h-6" />
-            </div>
-
-            <div>
-              <h4 className="text-lg font-semibold mb-2" style={{ color: "#FF4B8B" }}>
-                Colposcopy
-              </h4>
-              <p style={{ color: "#7a2f4f" }}>
-                Using a magnifying instrument to closely examine the vulva.
+              <p className="text-sm text-[#7a2f4f] italic">
+                Identifying the cause early helps your healthcare provider create
+                the most effective treatment plan for you.
               </p>
             </div>
           </div>
         </div>
 
-        {/* ================= TAG LIST (Pink Pills) ================== */}
-        <div className="mt-8 flex flex-wrap gap-3">
-          {[
-            "Chest X-ray",
-            "CT or PET-CT scan",
-            "MRI",
-            "Endoscopy (if needed)",
-          ].map((tag, i) => (
-            <span
-              key={i}
-              className="px-4 py-2 rounded-md text-sm font-medium"
-              style={{
-                backgroundColor: "#FF4B8B",
-                color: "#FFFFFF",
-              }}
-            >
-              {tag}
-            </span>
-          ))}
-        </div>
-
-        {/* ================= NEXT BUTTON ================= */}
-        <div className="pt-6 flex justify-center">
+        {/* BUTTON */}
+        <div className="flex justify-center mt-8">
           <button
             onClick={() => {
               setShowCard(6);
               setActiveButton(5);
             }}
-            className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md text-sm font-medium transition-all h-10 px-4"
+            className="bg-[#FF4B8B] hover:bg-[#e93d78] text-white 
+            w-[90%] md:w-[60%] lg:w-[40%] rounded-md text-sm font-medium 
+            transition-all h-11 shadow-md hover:shadow-lg"
           >
-            Learn About Aftercare
+            Continue to Next Step
           </button>
         </div>
       </div>
