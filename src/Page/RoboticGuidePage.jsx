@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import RoboticGuideAbout from '../components/RoboticGuide/About';
-import RoboticGuideButtons from '../components/RoboticGuide/Button';
+import RoboticGuideButtons from "../components/RoboticGuide/Button"
 import RoboticGuide1 from '../components/RoboticGuide/Card1';
 import RoboticGuide2 from '../components/RoboticGuide/card2';
 import RoboticGuide3 from '../components/RoboticGuide/card3';
@@ -41,12 +41,6 @@ const RoboticGuide = () => {
       )}
       {showCard === 6 && (
         <RoboticGuide6 setShowCard={setShowCard} setActiveButton={setActiveButton} />
-      )}
-      {showCard === 7 && (
-        <RoboticGuide7 setShowCard={setShowCard} setActiveButton={setActiveButton} />
-      )}
-      {showCard === 8 && (
-        <RoboticGuide8 setShowCard={setShowCard} setActiveButton={setActiveButton} />
       )}
     </div>
   );

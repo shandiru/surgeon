@@ -1,87 +1,113 @@
-import { useState } from "react";
-import { FaInfoCircle, FaStethoscope } from "react-icons/fa";
+import { useEffect, useState } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
+import { LuStethoscope, LuHeart, LuEye, LuActivity, LuCircleCheckBig } from "react-icons/lu";
 
-const VaginalCard4 = ({ setShowCard, setActiveButton }) => {
-  const primaryPink = "bg-[#FFC5D3]";
-  const deepPink = "bg-[#FF4B8B]";
-  const [openAccordion, setOpenAccordion] = useState(null);
+const RoboticGuide4 = ({ setShowCard, setActiveButton }) => {
 
-  const toggleAccordion = (index) => {
-    setOpenAccordion(openAccordion === index ? null : index);
-  };
+    const cards = [
+      {
+        title: "Hysterectomy",
+        icon: <LuStethoscope className="w-5 h-5 text-[#B51252]" />,
+        badge: "Uterus Removal",
+        description:
+          "Preferred for complex cases including large fibroids and endometriosis.",
+        points: ["Less blood loss", "Fewer complications", "Quicker recovery"],
+      },
+      {
+        title: "Myomectomy",
+        icon: <LuHeart className="w-5 h-5 text-[#B51252]" />,
+        badge: "Fibroid Removal",
+        description:
+          "Precise removal of fibroids while preserving healthy uterine tissue.",
+        points: ["Fertility preservation", "Tissue conservation"],
+      },
+      {
+        title: "Endometriosis Excision",
+        icon: <LuEye className="w-5 h-5 text-[#B51252]" />,
+        badge: "Tissue Removal",
+        description:
+          "Enhanced visualization of endometrial implants for precise treatment.",
+        points: ["Meticulous dissection", "Delicate area precision"],
+      },
+      {
+        title: "Gynecologic Cancer Surgery",
+        icon: <LuActivity className="w-5 h-5 text-[#B51252]" />,
+        badge: "Oncologic Procedures",
+        description:
+          "Used in early-stage cervical or endometrial cancer for lymph node dissection and staging.",
+        points: [
+          "Minimally invasive option",
+          "Oncologic safety comparable to open surgery",
+        ],
+      },
+    ];
+  
+    useEffect(() => {
+      AOS.init({
+        duration: 1000, // Animation duration
+        once: true, // Animation happens only once when scrolled
+      });
+    }, []);
 
   return (
     <div className="space-y-6 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-5xl p-6 mx-auto flex flex-col gap-6">
-        {/* Card Container */}
-        <div className="rounded-xl shadow-sm flex flex-col overflow-hidden animate-in slide-in-from-right-5 duration-300">
-          {/* Card Header */}
-          <div className={`px-6 py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 ${deepPink} text-white`}>
-            <div className="flex items-center gap-2">
-              <FaStethoscope className="w-6 h-6" />
-              <h2 className="text-xl sm:text-2xl font-semibold">Symptoms of Vaginal Cancer</h2>
-            </div>
-          </div>
+      <div className="container max-w-5xl mx-auto px-4">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-12 text-[#B51252]" data-aos="fade-down">
+            Applications in Gynecology
+          </h2>
 
-          {/* Content Section */}
-          <div className="grid md:grid-cols-2 gap-6 px-6 py-6 items-start">
-            {/* Left Column: Symptoms List */}
-            <div>
-              <p className="text-[#7a2f4f] mb-4 text-sm sm:text-base">
-                Early vaginal cancer often has no symptoms. As it progresses, signs may include:
-              </p>
-              <ul className="space-y-2 text-sm sm:text-base text-[#7a2f4f]">
-                {[
-                  "Unusual vaginal bleeding (after intercourse or after menopause)",
-                  "Watery vaginal discharge",
-                  "A lump or mass in the vagina",
-                  "Painful urination",
-                  "Frequent urination",
-                  "Constipation",
-                  "Pelvic pain",
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-2">
-                    <span className="text-[#FF4B8B] mt-0.5">•</span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Right Column: Image */}
-            <div className="flex justify-center md:justify-end">
-              <img
-                src="/vaginal.png"
-                alt="Vaginal Cancer Awareness"
-                className="w-full max-w-xs sm:max-w-sm md:max-w-md rounded-xl h-95 shadow-md object-cover"
-              />
-            </div>
-          </div>
-
-          {/* Info Box */}
-          <div className={`${primaryPink} m-6 p-4 rounded-lg flex items-center gap-2 shadow-sm`}>
-            <FaInfoCircle className="w-5 h-5 text-black" />
-            <p className="font-medium text-black text-sm sm:text-base">
-              Routine pelvic exams are important for early detection.
-            </p>
-          </div>
-
-          {/* Navigate Button */}
-          <div className="px-6 pb-6 flex justify-center">
-            <button
-              onClick={() => {
-                setShowCard(5);
-                setActiveButton(4);
-              }}
-              className="w-full sm:w-[70%] md:w-[50%] bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white font-medium rounded-md h-10 px-4 transition-all flex items-center justify-center gap-2 whitespace-nowrap"
-            >
-              Learn More
-            </button>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {cards.map((card, index) => (
+              <div
+                key={index}
+                className="bg-white flex flex-col gap-6 rounded-xl border-l-4 py-6 px-6 text-center shadow-sm 
+                   transition duration-300 transform
+                   hover:scale-105 hover:-translate-y-2 hover:shadow-[0_8px_30px_rgba(185,18,82,0.3)]
+                   active:scale-105 active:-translate-y-2 text-[#B51252] active:shadow-[0_8px_30px_rgba(185,18,82,0.3)]"
+                data-aos="zoom-in"
+              >
+                <div>
+                  <div className="flex items-center justify-center gap-2  font-semibold mb-1 text-[#B51252]" data-aos="fade-right">
+                    {card.icon}
+                    {card.title}
+                  </div>
+                  <span className="inline-flex rounded-md px-2 py-0.5 text-xs font-medium bg-[#FDEBED] text-[#B51252]">
+                    {card.badge}
+                  </span>
+                </div>
+                <div>
+                  <p className="text-gray-700 mb-3">{card.description}</p>
+                  <ul className="text-sm text-gray-600 space-y-1">
+                    {card.points.map((point, i) => (
+                      <li key={i} className="flex items-center gap-2">
+                        <LuCircleCheckBig className="w-4 h-4 text-[#F93981]" />
+                        {point}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
+      </div>
+
+      {/* Navigate Button */}
+      <div className="px-6 pb-6 flex justify-center">
+        <button
+          onClick={() => {
+            setShowCard(5);
+            setActiveButton(4);
+          }}
+          className="w-full sm:w-[70%] md:w-[50%] bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white font-medium rounded-md h-10 px-4 transition-all flex items-center justify-center gap-2 whitespace-nowrap"
+        >
+          Learn More
+        </button>
       </div>
     </div>
   );
 };
 
-export default VaginalCard4;
+export default RoboticGuide4;

@@ -1,101 +1,72 @@
 'use client';
-import React from 'react';
-import { FaPills } from 'react-icons/fa';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
+
+
 
 const Vaginalcard6 = ({ setShowCard, setActiveButton }) => {
 
-  const primaryPink = "#FFC5D3";
-  const deepPink = "#FF4B8B";
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+      once: true, // Animation happens only once when scrolled
+    });
+  }, []);
 
   return (
     <div >
       <div className="max-w-5xl mx-auto ">
-        <div
-          className="bg-white  rounded-xl shadow-md mb-10 transition duration-300 hover:shadow-lg hover:-translate-y-1 w-full"
-        >
-          <div
-            className="px-4 sm:px-6 py-4 flex items-center gap-2 rounded-t-xl"
-            style={{ backgroundColor: deepPink }}
-          >
-            <FaPills className="text-white h-6 w-6" />
-            <h2 className="text-xl sm:text-2xl font-semibold text-white">
-              Treatment of Vaginal Cancer
-            </h2>
-          </div>
+        <div className="container mx-auto px-6 md:px-16">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
 
-          <div className="px-4 sm:px-6 pt-4 text-[#7a2f4f] text-sm sm:text-base leading-relaxed">
-            <p className="mb-6">
-              Treatment depends on the type, stage, spread, and your overall health.
-            </p>
-
-            <h3 className="text-lg sm:text-xl font-semibold text-[#FF4B8B] mb-3">
-              1. Surgery (Often the Primary Treatment)
-            </h3>
-
-            <div className="space-y-3 mb-4">
-              <div
-                className="border rounded-md px-4 py-3 shadow-sm bg-white hover:shadow-md"
-                style={{ borderColor: primaryPink }}
-              >
-                <strong className="text-[#FF4B8B]">Vaginectomy</strong>
-                <span>
-                  {" "}– Removal of part or all of the vagina; may include nearby lymph nodes. Reconstruction can restore vaginal function.
-                </span>
-              </div>
-
-              <div
-                className="border rounded-md px-4 py-3 shadow-sm bg-white hover:shadow-md"
-                style={{ borderColor: primaryPink }}
-              >
-                <strong className="text-[#FF4B8B]">Hysterectomy</strong>
-                <span>
-                  {" "}– Removal of the uterus and sometimes ovaries, tubes, and lymph nodes.
-                </span>
-              </div>
+            {/* Left Image with Hover/Active */}
+            <div className="flex justify-center" data-aos="zoom-in">
+              <img
+                src="/gynecology-future.png" // <-- put your image in /public
+                alt="Future of gynecologic robotic surgery"
+                className="w-full max-w-lg rounded-2xl border-4 border-white shadow-xl 
+              transition duration-300 transform
+              hover:scale-105 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(176,59,102,0.3)]
+              active:scale-105 active:-translate-y-2 active:shadow-[0_10px_40px_rgba(176,59,102,0.3)]"
+                loading="lazy"
+              />
             </div>
 
-            <div
-              className="p-3 rounded-md shadow-sm mb-6"
-              style={{ backgroundColor: primaryPink }}
-            >
-              <p className="text-white text-sm sm:text-base">
-                After surgery, patients receive enhanced recovery support to aid healing.
+            {/* Right Text */}
+            <div className="text-center md:text-left text-[#FF4B8B] space-y-6" data-aos="fade-right">
+              <h2 className="text-3xl font-bold">
+                The Future of Gynecologic Surgery
+              </h2>
+              <p className="text-lg text-[#7a2f4f]">
+                The da Vinci Surgical System represents a significant advancement in gynecologic surgery,
+                offering a safer and more effective alternative to traditional methods in many cases.
               </p>
-            </div>
+              <p className="text-lg text-[#7a2f4f]">
+                As the technology continues to evolve and become more accessible, robotic surgery is expected
+                to play an increasingly central role in women's health care.
+              </p>
 
-            <h3 className="text-lg sm:text-xl font-semibold text-[#FF4B8B] mb-3">
-              2. Combination Treatments
-            </h3>
-            <p className="mb-3">In some cases, surgery may be combined with:</p>
-
-            <div className="space-y-3">
-              <div
-                className="border rounded-md px-4 py-3 shadow-sm bg-white hover:shadow-md"
-                style={{ borderColor: primaryPink }}
-              >
-                <strong className="text-[#FF4B8B]">Radiation therapy</strong>
-                <span> – Targeted energy to destroy cancer cells.</span>
-              </div>
-
-              <div
-                className="border rounded-md px-4 py-3 shadow-sm bg-white hover:shadow-md"
-                style={{ borderColor: primaryPink }}
-              >
-                <strong className="text-[#FF4B8B]">Chemotherapy</strong>
-                <span> – Drugs to kill or slow cancer growth.</span>
+              {/* Highlight Box */}
+              <div className="bg-[#FFF5F8] p-6 rounded-lg shadow-md transition duration-300 
+              hover:shadow-[0_8px_30px_rgba(176,59,102,0.25)]
+              active:shadow-[0_8px_30px_rgba(176,59,102,0.25)]" data-aos="fade-left">
+                <p className="text-xl font-semibold mb-2 text-[#FF4B8B]">
+                  Expert Care, Advanced Technology
+                </p>
+                <p className="text-[#7a2f4f]">
+                  Gynecologists who specialize in robotic surgery are uniquely positioned to offer their
+                  patients cutting-edge care with excellent outcomes, especially for complex and delicate procedures.
+                </p>
               </div>
             </div>
-
           </div>
-          <div className='p-6'>
+          <div className="pt-8 flex justify-center">
             <button
-              onClick={() => {
-                setShowCard(7);
-                setActiveButton(6);
-              }}
-              className="inline-flex items-center justify-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 gap-2 rounded-md text-sm sm:text-base font-medium transition h-10 w-full px-4"
+              className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all flex items-center justify-center gap-2"
             >
-              Next
+              <Star className="w-4 h-4" />
+              Complete Guide
             </button>
           </div>
         </div>
