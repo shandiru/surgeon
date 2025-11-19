@@ -8,13 +8,13 @@ const FibroidGuideCard2 = ({ setShowCard, setActiveButton }) => {
   const deepPink = "#FF4B8B"
 
   return (
-    <div className="space-y-6 pb-10">
+    <div className="space-y-6 pb-10 px-3">
       {/* Card Container */}
       <div className="max-w-5xl mx-auto bg-white text-[#212529] flex flex-col gap-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-8">
 
         {/* Header */}
         <div>
-          <div className="flex items-center gap-3 mb-3">
+          <div className="flex items-center justify-center gap-3 mb-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="28"

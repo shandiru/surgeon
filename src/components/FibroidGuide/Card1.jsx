@@ -15,7 +15,7 @@ const FibroidGuideCard1 = ({ setShowCard, setActiveButton }) => {
       >
         {/* Header */}
         <div className="px-8 pt-8">
-          <div className="flex items-center gap-3 mb-4">
+          <div className="flex items-center justify-center gap-3 mb-4">
             <Pin className="h-8 w-8" style={{ color: deepPink }} />
             <h2 className="font-bold text-3xl" style={{ color: deepPink }}>
               What Are Fibroids?
