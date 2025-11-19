@@ -11,7 +11,7 @@ const MenstrualDisordersGuideCard4 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6 px-4  sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto ">
-        <div className="flex items-center gap-3 mb-10">
+        <div className="flex items-center justify-center gap-3 mb-10">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="28"

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const PostcoitalBleedingGuideAbout = ({ activeButton }) => {
-  const totalSteps = 5;
+  const totalSteps = 6;
   const completed = activeButton + 1;
   const progressPercentage = Math.round((completed / totalSteps) * 100);
 

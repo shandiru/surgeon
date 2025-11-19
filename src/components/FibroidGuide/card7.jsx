@@ -9,7 +9,7 @@ const FibroidGuidecard7 = ({ setShowCard, setActiveButton }) => {
 
 
   return (
-    <div className="space-y-6 pb-10">
+    <div className="space-y-6 pb-10 px-3">
       {/* Outer Card */}
       <div className="bg-white max-w-5xl mx-auto text-[#212529] flex flex-col gap-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 p-8">
 

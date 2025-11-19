@@ -22,7 +22,7 @@ const MenstrualDisordersGuidecard5 = ({ setShowCard, setActiveButton }) => {
     <div className="w-full px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto space-y-6 p-6">
 
-        <h2 className="text-3xl font-bold mb-8 text-[#FF4B8B]">
+        <h2 className="text-3xl text-center font-bold mb-8 text-[#FF4B8B]">
           Causes &amp; Risk Factors
         </h2>
 

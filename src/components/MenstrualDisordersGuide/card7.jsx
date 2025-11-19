@@ -3,7 +3,7 @@ import { Users, Heart, Star, PlusCircle } from 'lucide-react';
 
 const MenstrualDisordersCard7 = ({ setShowCard, setActiveButton }) => {
   return (
-    <div className="space-y-6 pb-10">
+    <div className="space-y-6 pb-10 px-3">
       {/* Outer Card */}
       <div
         className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto rounded-2xl p-8 border shadow-sm animate-in slide-in-from-right-5 duration-300"

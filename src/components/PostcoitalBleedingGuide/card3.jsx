@@ -11,7 +11,7 @@ const PostcoitalBleedingGuidecard3 = ({ setShowCard, setActiveButton }) => {
     };
 
   return (
-    <div className="space-y-6 pb-10">
+    <div className="space-y-6 pb-10 px-3">
       <div className="max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-xl bg-white py-6 shadow-md hover:shadow-xl hover:scale-[1.01] transition-all duration-300 text-[#BB125B]">
         {/* Header */}
         <div className="grid auto-rows-min gap-1.5 px-6 border-b border-[#FEE6EA] pb-6">

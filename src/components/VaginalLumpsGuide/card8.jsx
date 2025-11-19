@@ -3,7 +3,7 @@ import { Lightbulb, Star, CheckCircle2 } from "lucide-react";
 
 const VaginalLumpsGuidecard8 = ({ setShowCard, setActiveButton }) => {
   return (
-    <div className="space-y-6 pb-10">
+    <div className="space-y-6 pb-10 px-3">
       
       {/* MAIN CARD */}
       <div

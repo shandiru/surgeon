@@ -33,9 +33,9 @@ const MenstrualDisordersGuidecard3 = ({ setShowCard, setActiveButton }) => {
   ];
 
   return (
-    <div className="space-y-6 pb-10 max-w-5xl mx-auto">
+    <div className="space-y-6 pb-10 max-w-5xl mx-aut px-3">
       {/* Card Container */}
-      <div className="flex items-center gap-3 mb-12 text-center sm:text-left">
+      <div className="flex items-center justify-center gap-3 mb-12 text-center sm:text-left">
         <LuStethoscope className="h-8 w-8 text-[#FF4B8B]" />
         <h2 className="text-3xl md:text-4xl font-bold text-[#FF4B8B]">
           Types of Menstrual Disorders

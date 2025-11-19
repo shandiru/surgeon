@@ -3,7 +3,7 @@ import { AlertTriangle } from "lucide-react";
 
 const PostcoitalBleedingGuideCard4 = ({ setShowCard, setActiveButton }) => {
   return (
-    <div className="space-y-6 pb-10">  {/* ⭐ ADDED PADDING BOTTOM */}
+    <div className="space-y-6 pb-10 px-3">  {/* ⭐ ADDED PADDING BOTTOM */}
       <div
         role="alert"
         className="w-full max-w-5xl mx-auto mb-10 rounded-xl bg-[#FFF5F7] p-6 shadow-md"

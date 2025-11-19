@@ -68,7 +68,7 @@ const VaginalLumpsGuideCard2 = ({ setShowCard, setActiveButton }) => {
   ];
 
   return (
-    <div className="space-y-6 pb-10">
+    <div className="space-y-6 pb-10 px-3">
       <div
         className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 rounded-2xl p-8 border shadow-sm animate-in slide-in-from-right-5 duration-300"
         style={{ backgroundColor: '#FFFFFF', borderColor: 'rgb(255,197,211)' }}

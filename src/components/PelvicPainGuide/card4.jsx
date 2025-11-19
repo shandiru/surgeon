@@ -6,7 +6,7 @@ import {
 
 const PelvicPainGuideCard4 = ({ setShowCard, setActiveButton }) => {
   return (
-    <div className="space-y-6 pb-10">
+    <div className="space-y-6 pb-10 px-3">
       <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto animate-in slide-in-from-right-5 duration-300">
 
         {/* MAIN WRAPPER */}

@@ -3,7 +3,7 @@ import React from 'react';
 
 const PostcoitalBleedingGuideCard2 = ({ setShowCard, setActiveButton }) => {
   return (
-    <div className="space-y-6 pb-10">
+    <div className="space-y-6 pb-10 px-3">
         <div className="max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-xl bg-white py-6 px-6 shadow-md hover:shadow-xl hover:scale-[1.02] transition-all duration-300 text-[#BB125B]">
 
           {/* Header */}

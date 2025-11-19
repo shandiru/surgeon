@@ -4,7 +4,7 @@ import { Heart } from "lucide-react";
 
 const PelvicPainGuidecard8 = ({ setShowCard, setActiveButton }) => {
   return (
-    <div className="pb-10">
+    <div className="pb-10 px-3">
       <div className="max-w-5xl mx-auto animate-in slide-in-from-right-5 duration-300">
 
         {/* MAIN CARD */}

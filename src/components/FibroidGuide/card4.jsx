@@ -6,7 +6,7 @@ const FibroidGuideCard4 = ({ setShowCard, setActiveButton }) => {
   const deepPink = "#FF4B8B"
 
   return (
-    <div className="space-y-6 pb-10">  {/* ⭐ ADDED PADDING BOTTOM */}
+    <div className="space-y-6 pb-10 px-3">  {/* ⭐ ADDED PADDING BOTTOM */}
       <div className="max-w-5xl mx-auto bg-white text-[#212529] flex flex-col gap-6 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 p-8">
 
         {/* Header */}

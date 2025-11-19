@@ -5,7 +5,7 @@ const FibroidGuidecard8 = () => {
     const deepPink = "#FF4B8B"
 
   return (
-    <div className="space-y-6 pb-10">
+    <div className="space-y-6 pb-10 px-3">
 
       <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
 

@@ -3,7 +3,7 @@ import { ShieldCheck, Heart, Star, PlusCircle } from "lucide-react";
 
 const VaginalLumpsGuidecard7 = ({ setShowCard, setActiveButton }) => {
   return (
-    <div className="space-y-6 pb-10">
+    <div className="space-y-6 pb-10 px-3">
       
       {/* OUTER WRAPPER */}
       <div
