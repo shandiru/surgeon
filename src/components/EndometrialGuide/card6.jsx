@@ -8,10 +8,10 @@ const EndometrialCard6 = ({ setShowCard, setActiveButton }) => {
   const deepPink = '#FF4B8B' // stronger deep pink for headings and important text
 
   return (
-    <div className="">
+    <div className="px-3">
       <div className="max-w-5xl mx-auto">
         {/* Section Header */}
-        <div className="flex items-center gap-3 mb-8">
+        <div className="flex items-center justify-center gap-3 mb-8">
           <LuShield className="h-8 w-8" style={{ color: deepPink }} />
           <h2 className="text-3xl font-bold" style={{ color: deepPink }}>
             Treatment for Endometrial Cancer

@@ -10,10 +10,10 @@ const EndometrialGuideCard5 = ({ setShowCard, setActiveButton }) => {
   const deepPink = '#FF4B8B'
 
   return (
-    <div className="">
+    <div className="px-3">
       <div className="max-w-5xl mx-auto">
         {/* Section Heading */}
-        <div className="flex items-center gap-3 mb-6" data-aos="fade-left">
+        <div className="flex items-center justify-center gap-3 mb-6" data-aos="fade-left">
           <LuStethoscope className="h-8 w-8" style={{ color: deepPink }} />
           <h2 className="text-3xl font-bold" style={{ color: deepPink }}>
             Diagnosis of Endometrial Cancer

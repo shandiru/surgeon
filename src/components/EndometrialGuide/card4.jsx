@@ -5,7 +5,7 @@ import AOS from "aos";
 import 'aos/dist/aos.css';
 
 const EndometrialCard4 = ({ setShowCard, setActiveButton }) => {
-  const [openAccordion, setOpenAccordion] = useState(null);
+ 
   const Pink = '#FF4B8B';
 
   useEffect(() => {
@@ -13,12 +13,12 @@ const EndometrialCard4 = ({ setShowCard, setActiveButton }) => {
   }, []);
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 px-3">
       <div className="max-w-5xl mx-auto">
         {/* Section Heading */}
-        <div className="flex items-center gap-3 mb-8" data-aos="fade-left">
+        <div className="flex items-center justify-center gap-3 mb-8" data-aos="fade-left">
           <FaExclamation className="h-8 w-8" style={{ color: Pink }} />
-          <h2 className="text-3xl font-bold" style={{ color: Pink }}>
+          <h2 className="text-3xl font-bold text-center" style={{ color: Pink }}>
             Symptoms of Endometrial Cancer
           </h2>
         </div>

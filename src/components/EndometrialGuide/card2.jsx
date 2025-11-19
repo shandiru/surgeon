@@ -3,7 +3,7 @@ import React from 'react';
 
 const EndometrialCard2 = ({ setShowCard, setActiveButton }) => {
   return (
-    <div className="space-y-6 pb-10">
+    <div className="space-y-6 pb-10 px-3">
       
       {/* Card Container */}
       <div
