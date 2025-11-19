@@ -2,28 +2,34 @@
 import React, { useEffect } from 'react';
 import { LuEye, LuHand, LuScissors, LuZap } from 'react-icons/lu';
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // Import AOS CSS
+import 'aos/dist/aos.css';
 
 const RoboticGuide2 = ({ setShowCard, setActiveButton }) => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Set the animation duration
-      once: true,     // Only animate once
+      duration: 1000,
+      once: true,
     });
   }, []);
 
   return (
     <>
       <div className="space-y-6 pb-6">
+
         {/* Card Container */}
-        <div className="max-w-5xl mx-auto container">
-          <h2 className="text-3xl font-bold text-center mb-12 text-[#FF4B8B]" data-aos="fade-down">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2
+            className="text-2xl sm:text-3xl font-bold text-center mb-12 text-[#FF4B8B]"
+            data-aos="fade-down"
+          >
             Overview of Robotic Surgery
           </h2>
+
           <div className="grid md:grid-cols-2 gap-8 items-center">
+
             {/* Text Content */}
             <div data-aos="fade-right">
-              <p className="text-lg text-gray-700 mb-6">
+              <p className="text-base sm:text-lg text-gray-700 mb-6">
                 Robotic surgery represents a revolutionary form of minimally
                 invasive surgery that uses advanced technology to enhance
                 surgical precision, control, and vision. Unlike traditional
@@ -31,7 +37,8 @@ const RoboticGuide2 = ({ setShowCard, setActiveButton }) => {
                 incisions with robotic arms controlled by the surgeon from a
                 specialized console.
               </p>
-              <p className="text-lg text-gray-700">
+
+              <p className="text-base sm:text-lg text-gray-700">
                 The da Vinci Surgical System, developed by Intuitive Surgical,
                 has transformed gynecologic surgery by significantly improving
                 patient outcomes and surgical experiences.
@@ -40,62 +47,91 @@ const RoboticGuide2 = ({ setShowCard, setActiveButton }) => {
 
             {/* Features Box */}
             <div
-              className="bg-[#FFE6EE] p-8 rounded-lg border border-[#FFC5D3] 
-              transition transform duration-300 
-              hover:scale-105 hover:shadow-[0_0_30px_6px_rgba(176,59,102,0.3)]
-              active:scale-105 active:shadow-[0_0_30px_6px_rgba(176,59,102,0.3)]"
+              className="
+                bg-[#FFE6EE] 
+                p-5 sm:p-8 
+                rounded-lg border border-[#FFC5D3]
+                transition transform duration-300 
+                hover:scale-105 hover:shadow-[0_0_30px_6px_rgba(176,59,102,0.3)]
+                active:scale-105 active:shadow-[0_0_30px_6px_rgba(176,59,102,0.3)]
+              "
               data-aos="fade-left"
             >
-              <div className="grid grid-cols-2 gap-4">
-                
-                {/* Feature Card */}
+              <div
+                className="
+                  grid 
+                  grid-cols-1 sm:grid-cols-2 
+                  gap-4 sm:gap-6
+                "
+              >
+                {/* Feature */}
                 <div
-                  className="text-center transition-shadow duration-300 
-                  hover:shadow-[0_0_15px_2px_rgba(255,197,211,0.6)] 
-                  active:shadow-[0_0_15px_2px_rgba(255,197,211,0.6)]
-                  rounded-lg p-6 bg-white cursor-pointer"
+                  className="
+                    text-center transition-shadow duration-300 
+                    hover:shadow-[0_0_15px_2px_rgba(255,197,211,0.6)] 
+                    active:shadow-[0_0_15px_2px_rgba(255,197,211,0.6)]
+                    rounded-lg 
+                    p-4 sm:p-6 
+                    bg-white 
+                    cursor-pointer
+                  "
                   data-aos="zoom-in"
                 >
-                  <LuScissors className="w-14 h-14 text-[#FF4B8B] mx-auto mb-3" />
+                  <LuScissors className="w-10 h-10 sm:w-14 sm:h-14 text-[#FF4B8B] mx-auto mb-3" />
                   <p className="font-semibold text-[#FF4B8B]">
                     Minimally Invasive
                   </p>
                 </div>
 
                 <div
-                  className="text-center transition-shadow duration-300 
-                  hover:shadow-[0_0_15px_2px_rgba(255,197,211,0.6)] 
-                  active:shadow-[0_0_15px_2px_rgba(255,197,211,0.6)]
-                  rounded-lg p-6 bg-white cursor-pointer"
+                  className="
+                    text-center transition-shadow duration-300
+                    hover:shadow-[0_0_15px_2px_rgba(255,197,211,0.6)]
+                    active:shadow-[0_0_15px_2px_rgba(255,197,211,0.6)]
+                    rounded-lg 
+                    p-4 sm:p-6 
+                    bg-white 
+                    cursor-pointer
+                  "
                   data-aos="zoom-in"
                 >
-                  <LuEye className="w-14 h-14 text-[#FF4B8B] mx-auto mb-3" />
+                  <LuEye className="w-10 h-10 sm:w-14 sm:h-14 text-[#FF4B8B] mx-auto mb-3" />
                   <p className="font-semibold text-[#FF4B8B]">
                     Enhanced Vision
                   </p>
                 </div>
 
                 <div
-                  className="text-center transition-shadow duration-300 
-                  hover:shadow-[0_0_15px_2px_rgba(255,197,211,0.6)] 
-                  active:shadow-[0_0_15px_2px_rgba(255,197,211,0.6)]
-                  rounded-lg p-6 bg-white cursor-pointer"
+                  className="
+                    text-center transition-shadow duration-300
+                    hover:shadow-[0_0_15px_2px_rgba(255,197,211,0.6)]
+                    active:shadow-[0_0_15px_2px_rgba(255,197,211,0.6)]
+                    rounded-lg 
+                    p-4 sm:p-6 
+                    bg-white 
+                    cursor-pointer
+                  "
                   data-aos="zoom-in"
                 >
-                  <LuHand className="w-14 h-14 text-[#FF4B8B] mx-auto mb-3" />
+                  <LuHand className="w-10 h-10 sm:w-14 sm:h-14 text-[#FF4B8B] mx-auto mb-3" />
                   <p className="font-semibold text-[#FF4B8B]">
                     Precise Control
                   </p>
                 </div>
 
                 <div
-                  className="text-center transition-shadow duration-300 
-                  hover:shadow-[0_0_15px_2px_rgba(255,197,211,0.6)] 
-                  active:shadow-[0_0_15px_2px_rgba(255,197,211,0.6)]
-                  rounded-lg p-6 bg-white cursor-pointer"
+                  className="
+                    text-center transition-shadow duration-300
+                    hover:shadow-[0_0_15px_2px_rgba(255,197,211,0.6)]
+                    active:shadow-[0_0_15px_2px_rgba(255,197,211,0.6)]
+                    rounded-lg 
+                    p-4 sm:p-6 
+                    bg-white 
+                    cursor-pointer
+                  "
                   data-aos="zoom-in"
                 >
-                  <LuZap className="w-14 h-14 text-[#FF4B8B] mx-auto mb-3" />
+                  <LuZap className="w-10 h-10 sm:w-14 sm:h-14 text-[#FF4B8B] mx-auto mb-3" />
                   <p className="font-semibold text-[#FF4B8B]">
                     Advanced Technology
                   </p>
@@ -113,12 +149,20 @@ const RoboticGuide2 = ({ setShowCard, setActiveButton }) => {
               setShowCard(3);
               setActiveButton(2);
             }}
-            className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all"
-            data-aos="fade-up" // Example fade-up animation for the button
+            className="
+              bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 
+              text-white 
+              w-[90%] md:w-[60%] lg:w-[40%] 
+              rounded-md h-10 
+              text-sm font-medium 
+              transition-all
+            "
+            data-aos="fade-up"
           >
             Learn About the Procedure
           </button>
         </div>
+
       </div>
     </>
   );
