@@ -80,6 +80,7 @@ const Navbar = () => {
                   <Link to="/Cancer/EndometrialCancer" className="block px-3 py-2 text-sm text-gray-600 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Endometrial Cancer</Link>
                   <Link to="/Cancer/CervicalCancer" className="block px-3 py-2 text-sm text-gray-600 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Cervical Cancer</Link>
                   <Link to="/RoboticSurgery" className="block px-3 py-2 text-sm text-gray-600 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Robotic Surgery</Link>
+                   <Link to="/EndometriosisGuide" className="block px-3 py-2 text-sm text-gray-600 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>EndometriosisGuide</Link>
                   <Link to="/CervicalScreening" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Cervical Screening</Link>
                   <Link to="/IrregularBleedingInfo" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Irregular Bleeding</Link>
                   <Link to="/EndometriosisInformation" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Endometriosis</Link>
