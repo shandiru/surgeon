@@ -14,11 +14,14 @@ const CervicalScreeningGuideCard4 = ({ setShowCard, setActiveButton }) => {
           borderColor: "rgb(255,197,211)",
         }}
       >
-        {/* NEW CONTENT YOU PROVIDED */}
-        <section className="py-16 bg-white rounded-xl">
-          <div className="container mx-auto px-6 md:px-12">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              
+        {/* ⭐ Layout Updated:
+            - Mobile = 1 column
+            - Tablet = 1 column
+            - Desktop (lg) = 2 columns */}
+        <section className="py-10 bg-white rounded-xl">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-12">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+
               {/* LEFT BOX */}
               <div
                 className="bg-white text-[#FF4B8B] rounded-2xl shadow-md p-8 
@@ -26,7 +29,7 @@ const CervicalScreeningGuideCard4 = ({ setShowCard, setActiveButton }) => {
                 hover:scale-105 hover:-translate-y-2 hover:shadow-[0_8px_30px_rgba(176,59,102,0.25)]
                 active:scale-[0.98] active:shadow-lg cursor-pointer"
               >
-                <div className="flex items-center gap-3 mb-6">
+                <div className="flex items-center gap-3 mb-6 justify-center lg:justify-start">
                   <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#ff97b3] shadow">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -97,17 +100,18 @@ const CervicalScreeningGuideCard4 = ({ setShowCard, setActiveButton }) => {
               </div>
 
               {/* RIGHT IMAGE */}
-              <div className="flex justify-center md:justify-end transition duration-300 ease-in-out 
-                       hover:scale-105 active:scale-[0.97] cursor-pointer">
+              <div className="flex justify-center lg:justify-end transition duration-300 ease-in-out 
+                            hover:scale-105 active:scale-[0.97] cursor-pointer">
                 <img
                   alt="Smear test preparation illustration"
                   className="w-full max-w-md rounded-2xl shadow-xl border-4 border-white
-                         transition duration-300 transform
-                         hover:shadow-[0_10px_30px_rgba(255,75,139,0.5)]"
+                           transition duration-300 transform
+                           hover:shadow-[0_10px_30px_rgba(255,75,139,0.5)]"
                   loading="lazy"
                   src="/smear-test-prep.png"
                 />
               </div>
+
             </div>
           </div>
         </section>
@@ -119,14 +123,13 @@ const CervicalScreeningGuideCard4 = ({ setShowCard, setActiveButton }) => {
               setShowCard(5);
               setActiveButton(4);
             }}
-           className="inline-flex items-center justify-center bg-[#FF4B8B] 
-                hover:bg-[#FF4B8B]/80 text-white rounded-md text-sm font-medium 
-                transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%]"
+            className="inline-flex items-center justify-center bg-[#FF4B8B] 
+            hover:bg-[#FF4B8B]/80 text-white rounded-md text-sm font-medium 
+            transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%]"
           >
             Continue to Next Step
           </button>
         </div>
-
       </div>
     </div>
   );
