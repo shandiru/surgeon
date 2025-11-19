@@ -6,8 +6,8 @@ const Vaginalcard5 = ({ setShowCard, setActiveButton }) => {
   const deepPink = "#FF4B8B";
 
   return (
-    <div className="w-full px-4 sm:px-6 lg:px-8">
-      <div className="max-w-5xl mx-auto space-y-6 p-6">
+    <div className="w-full sm:px-6 lg:px-8">
+      <div className="max-w-5xl mx-auto space-y-6 p-5">
 
         {/* CARD CONTAINER */}
         <div 

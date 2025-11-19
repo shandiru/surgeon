@@ -11,10 +11,11 @@ const VaginalCard4 = ({ setShowCard, setActiveButton }) => {
   };
 
   return (
-    <div className="space-y-6 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-5xl p-6 mx-auto flex flex-col gap-6">
+    <div className="space-y-6 px-0 sm:px-6 lg:px-8">
+      <div className="max-w-5xl p-3 mx-auto flex flex-col gap-6">
         {/* Card Container */}
         <div className="rounded-xl shadow-sm flex flex-col overflow-hidden animate-in slide-in-from-right-5 duration-300">
+
           {/* Card Header */}
           <div className={`px-6 py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 ${deepPink} text-white`}>
             <div className="flex items-center gap-2">
@@ -25,11 +26,13 @@ const VaginalCard4 = ({ setShowCard, setActiveButton }) => {
 
           {/* Content Section */}
           <div className="grid md:grid-cols-2 gap-6 px-6 py-6 items-start">
-            {/* Left Column: Symptoms List */}
+
+            {/* Left Column */}
             <div>
               <p className="text-[#7a2f4f] mb-4 text-sm sm:text-base">
                 Early vaginal cancer often has no symptoms. As it progresses, signs may include:
               </p>
+
               <ul className="space-y-2 text-sm sm:text-base text-[#7a2f4f]">
                 {[
                   "Unusual vaginal bleeding (after intercourse or after menopause)",
@@ -48,12 +51,21 @@ const VaginalCard4 = ({ setShowCard, setActiveButton }) => {
               </ul>
             </div>
 
-            {/* Right Column: Image */}
+            {/* Right Column: FIXED RESPONSIVE IMAGE */}
             <div className="flex justify-center md:justify-end">
               <img
                 src="/vaginal.png"
                 alt="Vaginal Cancer Awareness"
-                className="w-full max-w-xs sm:max-w-sm md:max-w-md rounded-xl h-95 shadow-md object-cover"
+                className="
+                  w-full
+                  max-w-[220px]     /* very small screens */
+                  sm:max-w-[280px]  /* small screens */
+                  md:max-w-[350px]  /* medium screens */
+                  lg:max-w-[420px]  /* large screens */
+                  rounded-xl 
+                  shadow-md 
+                  object-contain    /* prevent zooming/cropping */
+                "
               />
             </div>
           </div>
@@ -78,6 +90,7 @@ const VaginalCard4 = ({ setShowCard, setActiveButton }) => {
               Learn More
             </button>
           </div>
+
         </div>
       </div>
     </div>

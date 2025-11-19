@@ -9,7 +9,7 @@ const Vaginalcard6 = ({ setShowCard, setActiveButton }) => {
 
   return (
     <div >
-      <div className="max-w-5xl mx-auto ">
+      <div className="max-w-5xl px-3 mx-auto ">
         <div
           className="bg-white  rounded-xl shadow-md mb-10 transition duration-300 hover:shadow-lg hover:-translate-y-1 w-full"
         >
