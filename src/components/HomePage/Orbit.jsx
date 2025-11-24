@@ -13,7 +13,7 @@ import { ArrowUpRight } from "lucide-react";
 export default function HeroSection() {
   return (
     <section className="relative h-110 md:h-155 lg:h-175 text-center bg-gradient-to-b from-[#FFF1F5] via-[#FFD9E7] to-[#FF4B8B] px-4 sm:px-6 pb-12 sm:pb-16">
-      
+
       {/* Top Button */}
       <div className="pt-16 sm:pt-20 md:pt-24 lg:pt-32 xl:pt-36 flex justify-center">
         <button className="text-xs sm:text-sm border border-[#FF4B8B]/40 text-[#FF4B8B] px-3 sm:px-4 py-1 rounded-full hover:bg-[#FF4B8B]/10 transition">
@@ -33,11 +33,13 @@ export default function HeroSection() {
         {/* Pink Button */}
         <div className="flex items-center justify-center py-4 sm:py-6 md:py-7 lg:py-9 xl:py-10 group transition-all duration-300">
           {/* Text Button */}
-          <button className="relative flex items-center bg-[#FF4B8B] hover:bg-[#E03E7C] text-white font-medium rounded-lg shadow-[0_0_20px_rgba(255,75,139,0.3)]">
-            <span className="px-3 sm:px-4 md:px-5 py-2 sm:py-2.5 md:py-3 text-xs sm:text-sm md:text-base whitespace-nowrap">
-              Book an Appointment
-            </span>
-          </button>
+          <a href="https://www.circlehealthgroup.co.uk/consultants/ketankumar-gajjar" target="_blank">
+            <button className="relative flex items-center bg-[#FF4B8B] hover:bg-[#E03E7C] text-white font-medium rounded-lg shadow-[0_0_20px_rgba(255,75,139,0.3)]">
+              <span className="px-3 sm:px-4 md:px-5 py-2 sm:py-2.5 md:py-3 text-xs sm:text-sm md:text-base whitespace-nowrap">
+                Book an Appointment
+              </span>
+            </button>
+          </a>
 
           {/* Icon Box */}
           <span className="relative w-9 h-9 sm:w-10 sm:h-10 md:w-12 md:h-12 flex items-center justify-center overflow-hidden rounded-lg bg-[#E03E7C] ml-0.5">
