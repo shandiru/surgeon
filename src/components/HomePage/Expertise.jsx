@@ -80,7 +80,7 @@ export default function SpecialtiesSection() {
   ];
 
   return (
-    <section id="specialties" className="py-20 bg-[#FFF1F5]">
+    <section id="specialties" className="bg-[#FFF1F5]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">

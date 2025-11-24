@@ -70,7 +70,7 @@ export default function HeroSection() {
           "
         >
           <img
-            src="https://framerusercontent.com/images/GJuFJCEqO2tySecQl8nfQQlVDk.png?scale-down-to=1024&width=2332&height=2332"
+            src="/orbit.png"
             alt="Doctors performing surgery"
             className="w-full h-30 object-cover"
           />
