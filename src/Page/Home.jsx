@@ -35,7 +35,7 @@ export default function Home() {
       <section>
         <ExperienceImage />
       </section>
-       <section>
+      <section>
         <WhyChooseUs />
       </section>
 
@@ -44,13 +44,12 @@ export default function Home() {
       <section id="specialties" className=" bg-white">
         <Expertise />
       </section>
-       
-<Orbit />
+      <Orbit />
       {/* Contact */}
       <section id="contact" className=" ">
         <GetInTouchSection />
       </section>
-      
+
     </div>
   );
 }

@@ -12,45 +12,44 @@ import { ArrowUpRight } from "lucide-react";
 
 export default function HeroSection() {
   return (
-    <section className="relative h-178 text-center bg-gradient-to-b from-[#FFF1F5] via-[#FFD9E7] to-[#FF4B8B] px-6">
+    <section className="relative h-110 md:h-155 lg:h-175 text-center bg-gradient-to-b from-[#FFF1F5] via-[#FFD9E7] to-[#FF4B8B] px-4 sm:px-6 pb-12 sm:pb-16">
+      
       {/* Top Button */}
-      <div className="pt-36 flex justify-center">
-        <button className="text-sm border border-[#FF4B8B]/40 text-[#FF4B8B] px-4 py-1 rounded-full hover:bg-[#FF4B8B]/10 transition">
+      <div className="pt-16 sm:pt-20 md:pt-24 lg:pt-32 xl:pt-36 flex justify-center">
+        <button className="text-xs sm:text-sm border border-[#FF4B8B]/40 text-[#FF4B8B] px-3 sm:px-4 py-1 rounded-full hover:bg-[#FF4B8B]/10 transition">
           Get in touch
         </button>
       </div>
 
       {/* Headings */}
-      <div className="mt-8">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-900">
+      <div className="mt-4 sm:mt-6 md:mt-8">
+        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-gray-900">
           Health Support from
         </h1>
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-900 mt-1">
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-gray-900 mt-1">
           Expert Doctors
         </h2>
 
         {/* Pink Button */}
-        <div className="flex items-center justify-center py-10 group transition-all duration-300">
+        <div className="flex items-center justify-center py-4 sm:py-6 md:py-7 lg:py-9 xl:py-10 group transition-all duration-300">
           {/* Text Button */}
           <button className="relative flex items-center bg-[#FF4B8B] hover:bg-[#E03E7C] text-white font-medium rounded-lg shadow-[0_0_20px_rgba(255,75,139,0.3)]">
-            <span className="px-5 py-3 text-sm sm:text-base whitespace-nowrap">
+            <span className="px-3 sm:px-4 md:px-5 py-2 sm:py-2.5 md:py-3 text-xs sm:text-sm md:text-base whitespace-nowrap">
               Book an Appointment
             </span>
           </button>
 
           {/* Icon Box */}
-          <span className="relative w-12 h-12 flex items-center justify-center overflow-hidden rounded-lg bg-[#E03E7C] ml-0.5">
-            {/* Old arrow — moves up and fades out */}
-            <ArrowUpRight className="absolute w-5 h-5 transform transition-all duration-300 group-hover:-translate-y-8 group-hover:translate-x-6 opacity-100" />
-
-            {/* New arrow — comes from bottom-left corner */}
-            <ArrowUpRight className="absolute w-5 h-5 transform translate-y-8 -translate-x-8 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:translate-x-0 group-hover:opacity-100" />
+          <span className="relative w-9 h-9 sm:w-10 sm:h-10 md:w-12 md:h-12 flex items-center justify-center overflow-hidden rounded-lg bg-[#E03E7C] ml-0.5">
+            <ArrowUpRight className="absolute w-4 h-4 sm:w-5 sm:h-5 transform transition-all duration-300 group-hover:-translate-y-8 group-hover:translate-x-6 opacity-100" />
+            <ArrowUpRight className="absolute w-4 h-4 sm:w-5 sm:h-5 transform translate-y-8 -translate-x-8 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:translate-x-0 group-hover:opacity-100" />
           </span>
         </div>
       </div>
 
       {/* Main Section */}
-      <div className="relative mx-auto mt-16 sm:mt-20 md:mt-24 w-[340px] sm:w-[420px] md:w-[520px] aspect-square flex items-center justify-center">
+      <div className="relative mx-auto mt-2 sm:mt-4 md:mt-6 lg:mt-8 xl:mt-10 w-[260px] xs:w-[300px] sm:w-[360px] md:w-[420px] lg:w-[480px] xl:w-[520px] aspect-square flex items-center justify-center">
+
         {/* --- Half Circle Arcs (Top Only) --- */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-3/4">
           <div className="absolute inset-0 border-t border-dashed border-white rounded-t-full"></div>
@@ -58,34 +57,42 @@ export default function HeroSection() {
           <div className="absolute inset-[30%] border-t border-dashed border-white rounded-t-full"></div>
         </div>
 
-        {/* --- Center Image --- */}
-        <div className="w-[39%] h-20 rounded-full overflow-hidden z-10 border-4 border-white shadow-lg">
+        {/* --- Center Image (Responsive & Closer to Orbit) --- */}
+        <div
+          className="
+            w-[48%] sm:w-[45%] md:w-[42%] lg:w-[40%]
+            aspect-square 
+            -mt-5 sm:-mt-12 md:-mt-16 lg:-mt-25
+            rounded-full overflow-hidden z-10 
+         
+          "
+        >
           <img
             src="https://framerusercontent.com/images/GJuFJCEqO2tySecQl8nfQQlVDk.png?scale-down-to=1024&width=2332&height=2332"
             alt="Doctors performing surgery"
-            className="w-full h-full object-cover"
+            className="w-full h-30 object-cover"
           />
         </div>
 
-        {/* --- Orbit Icons (Positioned on top half) --- */}
-        <div className="absolute top-[7%] left-1/2 -translate-x-1/2 bg-white p-3 rounded-full shadow-md border border-[#FFD6E2]">
-          <FiActivity className="text-[#FF4B8B] text-lg" />
+        {/* --- Orbit Icons (Responsive) --- */}
+        <div className="absolute top-[7%] left-1/2 -translate-x-1/2 bg-white p-2 sm:p-2.5 md:p-3 rounded-full shadow-md border border-[#FFD6E2]">
+          <FiActivity className="text-[#FF4B8B] text-base sm:text-lg" />
         </div>
 
-        <div className="absolute top-[35%] left-[12%] bg-white p-3 rounded-full shadow-md border border-[#FFD6E2]">
-          <FiUser className="text-[#FF4B8B] text-lg" />
+        <div className="absolute top-[35%] left-[8%] sm:left-[10%] md:left-[12%] bg-white p-2 sm:p-2.5 md:p-3 rounded-full shadow-md border border-[#FFD6E2]">
+          <FiUser className="text-[#FF4B8B] text-base sm:text-lg" />
         </div>
 
-        <div className="absolute top-[35%] right-[12%] bg-white p-3 rounded-full shadow-md border border-[#FFD6E2]">
-          <FiEye className="text-[#FF4B8B] text-lg" />
+        <div className="absolute top-[35%] right-[8%] sm:right-[10%] md:right-[12%] bg-white p-2 sm:p-2.5 md:p-3 rounded-full shadow-md border border-[#FFD6E2]">
+          <FiEye className="text-[#FF4B8B] text-base sm:text-lg" />
         </div>
 
-        <div className="absolute top-[18%] left-[20%] bg-white p-3 rounded-full shadow-md border border-[#FFD6E2]">
-          <FiHeart className="text-[#FF4B8B] text-lg" />
+        <div className="absolute top-[18%] left-[16%] sm:left-[18%] md:left-[20%] bg-white p-2 sm:p-2.5 md:p-3 rounded-full shadow-md border border-[#FFD6E2]">
+          <FiHeart className="text-[#FF4B8B] text-base sm:text-lg" />
         </div>
 
-        <div className="absolute top-[18%] right-[20%] bg-white p-3 rounded-full shadow-md border border-[#FFD6E2]">
-          <FiScissors className="text-[#FF4B8B] text-lg" />
+        <div className="absolute top-[18%] right-[16%] sm:right-[18%] md:right-[20%] bg-white p-2 sm:p-2.5 md:p-3 rounded-full shadow-md border border-[#FFD6E2]">
+          <FiScissors className="text-[#FF4B8B] text-base sm:text-lg" />
         </div>
       </div>
     </section>
