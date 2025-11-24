@@ -73,34 +73,14 @@ export default function WhyChooseUs() {
         </div>
       </div>
 
-      {/* Main Content */}
+      {/* Main Content Wrapper */}
       <div className="relative flex flex-col lg:flex-row items-center justify-center w-full">
 
-        {/* MOBILE + TABLET IMAGE — FULL WIDTH WITH ROUNDED CORNERS */}
-        <div
-          className="block lg:hidden w-full px-4 mb-12"
-          data-aos="zoom-in"
-          data-aos-delay="300"
-        >
-          <div className="w-full h-[380px] sm:h-[450px] md:h-[520px] overflow-hidden rounded-3xl shadow-[0_0_35px_rgba(255,75,139,0.25)] border-[4px] border-white">
-            <img
-              src="/Ketan_Gajjar-117.jpg"
-              alt="Doctor consulting patient"
-              className="w-full h-full object-cover object-center"
-            />
-          </div>
-        </div>
+        {/* MOBILE STRUCTURE: TEXT → IMAGE → ACCORDION */}
+        <div className="flex flex-col lg:hidden w-full px-6 space-y-10">
 
-        {/* WHITE CONTENT BOX */}
-        <div
-          className="relative bg-white rounded-[32px] shadow-[0_8px_40px_rgba(0,0,0,0.08)] flex flex-col lg:flex-row items-center justify-between 
-          w-full max-w-[1200px] px-8 md:px-16 py-20 z-10 gap-x-72"
-          data-aos="fade-up"
-          data-aos-delay="300"
-        >
-
-          {/* LEFT SECTION */}
-          <div className="flex-1 space-y-6" data-aos="fade-right">
+          {/* TEXT FIRST */}
+          <div data-aos="fade-up">
             <div className="inline-flex items-center space-x-2 bg-[#FFF1F5] px-3 py-1 rounded-full">
               <div className="w-5 h-5 bg-[#FF4B8B] rounded-full flex items-center justify-center">
                 <FaStethoscope className="text-white text-sm" />
@@ -110,11 +90,11 @@ export default function WhyChooseUs() {
               </span>
             </div>
 
-            <h3 className="text-3xl md:text-4xl font-extrabold text-[#1B123D] leading-tight">
+            <h3 className="text-3xl font-extrabold text-[#1B123D] mt-4">
               Expert Surgical Care for Every Woman
             </h3>
 
-            <p className="text-[#636977] text-base leading-relaxed max-w-md">
+            <p className="text-[#636977] mt-3 leading-relaxed">
               Experience compassionate, specialised gynaecological treatment tailored
               to your well-being. With advanced surgical expertise and a patient-first
               approach, we ensure you feel supported, informed, and confident every
@@ -122,18 +102,26 @@ export default function WhyChooseUs() {
             </p>
           </div>
 
-          {/* ACCORDION */}
-          <div
-            className="flex-1 flex flex-col space-y-6 lg:pl-28 mt-10 lg:mt-0"
-            data-aos="fade-left"
-          >
+          {/* IMAGE SECOND */}
+          <div data-aos="zoom-in">
+            <div className="w-full h-[360px] sm:h-[420px] overflow-hidden rounded-3xl shadow-[0_0_35px_rgba(255,75,139,0.25)] border-[4px] border-white">
+              <img
+                src="/Ketan_Gajjar-117.jpg"
+                alt="Doctor consulting patient"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
+          {/* ACCORDION THIRD */}
+          <div className="space-y-6">
             {features.map((item, i) => (
               <div
                 key={i}
                 className="border-b border-[#FFD6E2] pb-6 cursor-pointer"
                 onClick={() => toggleAccordion(i)}
                 data-aos="fade-up"
-                data-aos-delay={`${400 + i * 100}`}
+                data-aos-delay={`${300 + i * 100}`}
               >
                 <div className="flex items-start justify-between">
                   <div className="flex items-start space-x-4">
@@ -148,7 +136,7 @@ export default function WhyChooseUs() {
                   <svg
                     viewBox="0 0 20 20"
                     fill="none"
-                    className={`w-5 h-5 text-[#1B123D] mt-2 transform transition-transform duration-300 ${
+                    className={`w-5 h-5 mt-2 transition-transform ${
                       openIndex === i ? "rotate-180" : ""
                     }`}
                   >
@@ -163,7 +151,86 @@ export default function WhyChooseUs() {
                 </div>
 
                 <div
-                  className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                  className={`overflow-hidden transition-all duration-500 ${
+                    openIndex === i ? "max-h-28 mt-2 opacity-100" : "max-h-0 opacity-0"
+                  }`}
+                >
+                  <p className="text-[#636977] text-sm leading-relaxed pl-16">
+                    {item.desc}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* DESKTOP VERSION (unchanged) */}
+        <div
+          className="relative bg-white rounded-[32px] shadow-[0_8px_40px_rgba(0,0,0,0.08)] 
+          hidden lg:flex flex-row items-center justify-between 
+          w-full max-w-[1200px] px-16 py-20 z-10 gap-x-72"
+          data-aos="fade-up"
+        >
+          {/* LEFT */}
+          <div className="flex-1 space-y-6">
+            <div className="inline-flex items-center space-x-2 bg-[#FFF1F5] px-3 py-1 rounded-full">
+              <div className="w-5 h-5 bg-[#FF4B8B] rounded-full flex items-center justify-center">
+                <FaStethoscope className="text-white text-sm" />
+              </div>
+              <span className="text-[#FF4B8B] text-sm font-semibold">
+                KetanKumar GynCare
+              </span>
+            </div>
+
+            <h3 className="text-4xl font-extrabold text-[#1B123D] leading-tight">
+              Expert Surgical Care for Every Woman
+            </h3>
+
+            <p className="text-[#636977] text-base leading-relaxed max-w-md">
+              Experience compassionate, specialised gynaecological treatment tailored
+              to your well-being. With advanced surgical expertise and a patient-first
+              approach, we ensure you feel supported, informed, and confident every
+              step of the way.
+            </p>
+          </div>
+
+          {/* ACCORDION */}
+          <div className="flex-1 flex flex-col space-y-6 lg:pl-28">
+            {features.map((item, i) => (
+              <div
+                key={i}
+                className="border-b border-[#FFD6E2] pb-6 cursor-pointer"
+                onClick={() => toggleAccordion(i)}
+              >
+                <div className="flex items-start justify-between">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 rounded-full bg-[#FF4B8B] flex items-center justify-center shadow-[0_0_10px_rgba(255,75,139,0.3)]">
+                      {item.icon}
+                    </div>
+                    <h4 className="text-lg font-semibold text-[#1B123D] pt-2">
+                      {item.title}
+                    </h4>
+                  </div>
+
+                  <svg
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    className={`w-5 h-5 mt-2 transition-transform ${
+                      openIndex === i ? "rotate-180" : ""
+                    }`}
+                  >
+                    <path
+                      d="M5 7L10 12L15 7"
+                      stroke="#1B123D"
+                      strokeWidth="1.8"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </div>
+
+                <div
+                  className={`overflow-hidden transition-all duration-500 ${
                     openIndex === i ? "max-h-28 mt-2 opacity-100" : "max-h-0 opacity-0"
                   }`}
                 >
@@ -180,7 +247,6 @@ export default function WhyChooseUs() {
         <div
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 hidden lg:block"
           data-aos="zoom-in"
-          data-aos-delay="500"
         >
           <div className="w-[340px] h-[580px] rounded-full border-[6px] border-white overflow-hidden shadow-[0_0_60px_rgba(255,75,139,0.5)]">
             <img
