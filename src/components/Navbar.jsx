@@ -27,27 +27,8 @@ const Navbar = () => {
             />
           </Link>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-800 focus:outline-none"
-              aria-label="Toggle Menu"
-            >
-              {isOpen ? (
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              ) : (
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-              )}
-            </button>
-          </div>
-
           {/* Desktop navigation */}
-          <div className="hidden md:flex ml-10 space-x-3 items-center relative">
+          <div className="hidden lg:flex ml-10 space-x-3 items-center relative">
             <HashLink smooth to="/#about" className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">
               About
             </HashLink>
@@ -136,7 +117,7 @@ const Navbar = () => {
           </div>
 
           {/* Right: CTA Button */}
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <HashLink
               smooth
               to="/#contact"
@@ -145,11 +126,32 @@ const Navbar = () => {
               Book Consultation
             </HashLink>
           </div>
+
+          {/* Mobile menu button */}
+          <div className="lg:hidden">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-gray-800 focus:outline-none"
+              aria-label="Toggle Menu"
+            >
+              {isOpen ? (
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              ) : (
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              )}
+            </button>
+          </div>
         </div>
+
+
 
         {/* Mobile Dropdown */}
         {isOpen && (
-          <div className="md:hidden mt-2 space-y-1">
+          <div className="lg:hidden mt-2 space-y-1">
             <HashLink smooth to="/#about" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900">About</HashLink>
             <HashLink smooth to="/#experience" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900">Experience</HashLink>
             <HashLink smooth to="/#specialties" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900">Specialties</HashLink>
