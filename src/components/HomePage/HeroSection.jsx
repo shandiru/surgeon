@@ -78,7 +78,7 @@ const HeroSectionView = () => {
           <div className="relative hero-right" data-aos="fade-left">
             <div className="bg-white rounded-2xl shadow-xl p-6 relative transition-all duration-300 hover:shadow-[0_0_30px_4px_rgba(255,75,139,0.4)] hover:-translate-y-1">
               <img
-                src="/doctor.png"
+                src="/new.jpeg"
                 alt="Mr Ketankumar Gajjar"
                 className="w-full h-96 object-cover rounded-xl"
               />
