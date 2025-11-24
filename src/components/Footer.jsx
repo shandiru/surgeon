@@ -163,7 +163,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="underline hover:text-white"
             >
-              Anlsey
+              Ansely
             </a>
           </p>
         </div>
