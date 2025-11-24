@@ -13,39 +13,33 @@ export default function WhyChooseUs() {
     AOS.init({ once: true, duration: 1000, offset: 100 });
   }, []);
 
-const features = [
-  {
-    title: "Personalised Care",
-    desc: "Every treatment plan is tailored to each woman’s unique needs with compassion and clarity.",
-    icon: <FaUserMd className="text-white text-xl" />,
-  },
-  {
-    title: "Advanced Surgical Expertise",
-    desc: "Ketan delivers modern, minimally invasive gynaecological surgery with precision and safety.",
-    icon: <FaHeartbeat className="text-white text-xl" />,
-  },
-  {
-    title: "Exceptional Patient Support",
-    desc: "From consultation to recovery, patients receive continuous guidance, comfort, and reassurance.",
-    icon: <FaHeadset className="text-white text-xl" />,
-  },
-];
-
+  const features = [
+    {
+      title: "Personalised Care",
+      desc: "Every treatment plan is tailored to each woman’s unique needs with compassion and clarity.",
+      icon: <FaUserMd className="text-white text-xl" />,
+    },
+    {
+      title: "Advanced Surgical Expertise",
+      desc: "Ketan delivers modern, minimally invasive gynaecological surgery with precision and safety.",
+      icon: <FaHeartbeat className="text-white text-xl" />,
+    },
+    {
+      title: "Exceptional Patient Support",
+      desc: "From consultation to recovery, patients receive continuous guidance, comfort, and reassurance.",
+      icon: <FaHeadset className="text-white text-xl" />,
+    },
+  ];
 
   return (
-    <section
-      id="why-choose-us"
-      className="relative bg-[#FFF1F5] pb-32 overflow-hidden"
-      
-    >
+    <section id="why-choose-us" className="relative bg-[#FFF1F5] pb-32 overflow-hidden">
+
       {/* Header */}
       <div className="text-center mt-16 mb-24 px-4">
-        <p
-          className="text-sm text-[#1B123D]/60 mb-3"
-          data-aos="fade-up"
-        >
+        <p className="text-sm text-[#1B123D]/60 mb-3" data-aos="fade-up">
           Why Choose Us?
         </p>
+
         <h2
           className="text-4xl md:text-5xl font-extrabold text-[#1B123D] mb-8"
           data-aos="fade-up"
@@ -60,17 +54,17 @@ const features = [
           data-aos="fade-up"
           data-aos-delay="200"
         >
-                  <a 
-          href="https://www.circlehealthgroup.co.uk/consultants/ketankumar-gajjar"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <button className="relative flex items-center bg-[#FF4B8B] hover:bg-[#E03E7C] text-white font-medium rounded-lg shadow-[0_0_20px_rgba(255,75,139,0.3)] transition-all duration-300">
-            <span className="px-5 py-3 text-sm sm:text-base">
-              Book Appointment
-            </span>
-          </button>
-        </a>
+          <a
+            href="https://www.circlehealthgroup.co.uk/consultants/ketankumar-gajjar"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="relative flex items-center bg-[#FF4B8B] hover:bg-[#E03E7C] text-white font-medium rounded-lg shadow-[0_0_20px_rgba(255,75,139,0.3)] transition-all duration-300">
+              <span className="px-5 py-3 text-sm sm:text-base">
+                Book Appointment
+              </span>
+            </button>
+          </a>
 
           <span className="relative w-12 h-12 flex items-center justify-center overflow-hidden rounded-lg bg-[#E03E7C] ml-0.5">
             <ArrowUpRight className="absolute w-5 h-5 transform transition-all duration-300 group-hover:-translate-y-8 group-hover:translate-x-6 opacity-100" />
@@ -80,41 +74,55 @@ const features = [
       </div>
 
       {/* Main Content */}
-      <div className="relative flex justify-center">
+      <div className="relative flex flex-col lg:flex-row items-center justify-center w-full">
+
+        {/* MOBILE + TABLET IMAGE — FULL WIDTH WITH ROUNDED CORNERS */}
         <div
-          className="relative bg-white rounded-[32px] shadow-[0_8px_40px_rgba(0,0,0,0.08)] flex flex-col lg:flex-row items-center justify-between w-full max-w-[1200px] px-8 md:px-16 py-20 z-10 gap-x-72"
+          className="block lg:hidden w-full px-4 mb-12"
+          data-aos="zoom-in"
+          data-aos-delay="300"
+        >
+          <div className="w-full h-[380px] sm:h-[450px] md:h-[520px] overflow-hidden rounded-3xl shadow-[0_0_35px_rgba(255,75,139,0.25)] border-[4px] border-white">
+            <img
+              src="/Ketan_Gajjar-117.jpg"
+              alt="Doctor consulting patient"
+              className="w-full h-full object-cover object-center"
+            />
+          </div>
+        </div>
+
+        {/* WHITE CONTENT BOX */}
+        <div
+          className="relative bg-white rounded-[32px] shadow-[0_8px_40px_rgba(0,0,0,0.08)] flex flex-col lg:flex-row items-center justify-between 
+          w-full max-w-[1200px] px-8 md:px-16 py-20 z-10 gap-x-72"
           data-aos="fade-up"
           data-aos-delay="300"
         >
-         {/* Left Section */}
-<div className="flex-1 space-y-6" data-aos="fade-right">
 
-  {/* Tag */}
-  <div className="inline-flex items-center space-x-2 bg-[#FFF1F5] px-3 py-1 rounded-full">
-    <div className="w-5 h-5 bg-[#FF4B8B] rounded-full flex items-center justify-center">
-      <FaStethoscope className="text-white text-sm" />
-    </div>
-    <span className="text-[#FF4B8B] text-sm font-semibold">
-      KetanKumar GynCare
-    </span>
-  </div>
+          {/* LEFT SECTION */}
+          <div className="flex-1 space-y-6" data-aos="fade-right">
+            <div className="inline-flex items-center space-x-2 bg-[#FFF1F5] px-3 py-1 rounded-full">
+              <div className="w-5 h-5 bg-[#FF4B8B] rounded-full flex items-center justify-center">
+                <FaStethoscope className="text-white text-sm" />
+              </div>
+              <span className="text-[#FF4B8B] text-sm font-semibold">
+                KetanKumar GynCare
+              </span>
+            </div>
 
-  {/* Heading */}
-  <h3 className="text-3xl md:text-4xl font-extrabold text-[#1B123D] leading-tight">
-    Expert Surgical Care for Every Woman
-  </h3>
+            <h3 className="text-3xl md:text-4xl font-extrabold text-[#1B123D] leading-tight">
+              Expert Surgical Care for Every Woman
+            </h3>
 
-  {/* Description */}
-  <p className="text-[#636977] text-base leading-relaxed max-w-md">
-    Experience compassionate, specialised gynaecological treatment tailored to 
-    your well-being. With advanced surgical expertise and a patient-first 
-    approach, we ensure you feel supported, informed, and confident every 
-    step of the way.
-  </p>
+            <p className="text-[#636977] text-base leading-relaxed max-w-md">
+              Experience compassionate, specialised gynaecological treatment tailored
+              to your well-being. With advanced surgical expertise and a patient-first
+              approach, we ensure you feel supported, informed, and confident every
+              step of the way.
+            </p>
+          </div>
 
-</div>
-
-          {/* Right Section (Accordion) */}
+          {/* ACCORDION */}
           <div
             className="flex-1 flex flex-col space-y-6 lg:pl-28 mt-10 lg:mt-0"
             data-aos="fade-left"
@@ -136,6 +144,7 @@ const features = [
                       {item.title}
                     </h4>
                   </div>
+
                   <svg
                     viewBox="0 0 20 20"
                     fill="none"
@@ -152,9 +161,10 @@ const features = [
                     />
                   </svg>
                 </div>
+
                 <div
                   className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                    openIndex === i ? "max-h-24 mt-2 opacity-100" : "max-h-0 opacity-0"
+                    openIndex === i ? "max-h-28 mt-2 opacity-100" : "max-h-0 opacity-0"
                   }`}
                 >
                   <p className="text-[#636977] text-sm leading-relaxed pl-16">
@@ -166,7 +176,7 @@ const features = [
           </div>
         </div>
 
-        {/* Center Image */}
+        {/* DESKTOP FLOATING IMAGE */}
         <div
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 hidden lg:block"
           data-aos="zoom-in"
@@ -180,6 +190,7 @@ const features = [
             />
           </div>
         </div>
+
       </div>
     </section>
   );
