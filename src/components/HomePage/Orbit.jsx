@@ -12,7 +12,7 @@ import { ArrowUpRight } from "lucide-react";
 
 export default function HeroSection() {
   return (
-    <section className="relative h-110 md:h-155 lg:h-175 text-center bg-gradient-to-b from-[#FFF1F5] via-[#FFD9E7] to-[#FF4B8B] px-4 sm:px-6 pb-12 sm:pb-16">
+    <section className="relative h-132 md:h-155 lg:h-175 text-center bg-gradient-to-b from-[#FFF1F5] via-[#FFD9E7] to-[#FF4B8B] px-4 sm:px-6 pb-12 sm:pb-16">
 
       {/* Top Button */}
       <div className="pt-16 sm:pt-20 md:pt-24 lg:pt-32 xl:pt-36 flex justify-center">
@@ -50,19 +50,19 @@ export default function HeroSection() {
       </div>
 
       {/* Main Section */}
-      <div className="relative mx-auto mt-2 sm:mt-4 md:mt-6 lg:mt-8 xl:mt-10 w-[260px] xs:w-[300px] sm:w-[360px] md:w-[420px] lg:w-[480px] xl:w-[520px] aspect-square flex items-center justify-center">
+      <div className="relative mx-auto mt-2 sm:mt-4 md:mt-6 lg:mt-8 xl:-mt-4 w-[320px] xs:w-[380px] sm:w-[460px] md:w-[540px] lg:w-[620px] xl:w-[700px] aspect-square flex items-center justify-center">
 
         {/* --- Half Circle Arcs (Top Only) --- */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-3/4">
           <div className="absolute inset-0 border-t border-dashed border-white rounded-t-full"></div>
-          <div className="absolute inset-[15%] border-t border-dashed border-white rounded-t-full"></div>
-          <div className="absolute inset-[30%] border-t border-dashed border-white rounded-t-full"></div>
+          <div className="absolute inset-[13%] border-t border-dashed border-white rounded-t-full"></div>
+          
         </div>
 
         {/* --- Center Image (Responsive & Closer to Orbit) --- */}
         <div
           className="
-            w-[48%] sm:w-[45%] md:w-[42%] lg:w-[40%]
+            w-[48%] sm:w-[50%] md:w-[42%] lg:w-[50%]
             aspect-square 
             -mt-5 sm:-mt-12 md:-mt-16 lg:-mt-25
             rounded-full overflow-hidden z-10 
@@ -72,7 +72,7 @@ export default function HeroSection() {
           <img
             src="/orbit.png"
             alt="Doctors performing surgery"
-            className="w-full h-30 object-cover"
+            className="w-full lg:h-39 sm:h-30 object-cover"
           />
         </div>
 
