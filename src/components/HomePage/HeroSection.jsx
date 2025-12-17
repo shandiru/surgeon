@@ -17,9 +17,15 @@ const HeroSectionView = () => {
           {/* Left Section */}
           <div className="hero-left" data-aos="fade-up">
             <div className="mb-4 hero-badge" data-aos="fade-down">
-              <span className="inline-block border border-[#FF4B8B] text-[#FF4B8B] text-xs font-semibold px-3 py-1 rounded-full">
+              {/* <span className="inline-block border border-[#FF4B8B] text-[#FF4B8B] text-xs font-semibold px-3 py-1 rounded-full">
                 Consultant Gynaecological Oncologist
+              </span> */}
+               <span className="inline-block border border-[#FF4B8B] text-[#FF4B8B] text-xs font-semibold px-3 py-1 rounded-full">
+                 Gynocolisgist 
               </span>
+
+
+             
             </div>
 
             <h1 className="hero-title text-5xl font-bold text-gray-900 mb-6 leading-tight" data-aos="fade-up">

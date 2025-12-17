@@ -32,24 +32,25 @@ export default function ProfessionalExperience() {
         {/* Hospital Cards */}
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {[
-            {
-              hospital: 'Nottingham University Hospital',
-              role: 'Consultant Gynaecological Oncologist',
-              place: 'Nottingham University Hospitals NHS Trust',
-              desc: 'Leading specialist cancer care services',
-            },
-            {
-              hospital: 'Park Hospital',
-              role: 'Consultant Gynaecologist',
-              place: 'Private Practice',
-              desc: "Comprehensive women's health services",
-            },
-            {
-              hospital: 'Spire Nottingham Hospital',
-              role: 'Consultant Gynaecologist',
-              place: 'Private Practice',
-              desc: 'Advanced surgical procedures',
-            },
+           {
+  hospital: 'Nottingham University Hospital',
+  role: 'Consultant Gynaecological Oncologist',
+  place: 'Nottingham University Hospitals NHS Trust',
+  desc: 'Leading specialist cancer care services',
+},
+{
+  hospital: 'The Park Hospital (Circle Health Group)',
+  role: 'Consultant Gynaecologist',
+  place: 'Private Practice',
+  desc: "Comprehensive women's health services",
+},
+{
+  hospital: 'The Park Hospital (Circle Health Group)',
+  role: 'Consultant Gynaecologist',
+  place: 'Private Practice',
+  desc: 'Advanced surgical procedures',
+},
+
           ].map((item, idx) => (
             <div
               key={idx}
@@ -73,7 +74,7 @@ export default function ProfessionalExperience() {
                   </svg>
                 </div>
                 <div>
-                  <p className="font-semibold text-lg text-gray-900">
+                  <p className="font-semibold text-sm text-gray-900">
                     {item.hospital}
                   </p>
                   <p className="text-[#FF4B8B] font-medium text-sm">{item.role}</p>
