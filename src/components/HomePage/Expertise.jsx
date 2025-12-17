@@ -62,22 +62,32 @@ export default function SpecialtiesSection() {
   ];
 
   const cancerCare = [
-    {
-      title: 'Ovarian Cancer',
-      description:
-        'Specialized oncological treatment and multidisciplinary care',
-    },
-    {
-      title: 'Endometrial Cancer',
-      description:
-        'Comprehensive diagnosis and treatment of uterine cancers',
-    },
-    {
-      title: 'Colposcopy',
-      description:
-        'Advanced cervical screening and early detection procedures',
-    },
-  ];
+  {
+    title: 'Ovarian Cancer',
+    description:
+      'Specialized oncological treatment and multidisciplinary care',
+  },
+  {
+    title: 'Endometrial Cancer',
+    description:
+      'Comprehensive diagnosis and treatment of uterine cancers',
+  },
+  {
+    title: 'Colposcopy',
+    description:
+      'Advanced cervical screening and early detection procedures',
+  },
+  {
+    title: 'Vulvar Cancer',
+    description:
+      'Expert diagnosis and treatment of vulvar malignancies',
+  },
+  {
+    title: 'Cervical Cancer',
+    description:
+      'Comprehensive cervical cancer care including prevention and treatment',
+  },
+];
 
   return (
     <section id="specialties" className="bg-[#FFF1F5]">

@@ -136,41 +136,59 @@ export default function ProfessionalExperience() {
               </div>
             </div>
 
-            {/* Leadership */}
-            <div>
-              <h3 className="text-lg font-semibold mb-4 text-gray-900">
-                Leadership Positions
-              </h3>
-              <div className="space-y-4">
-                <div
-                  className="bg-[#FFF1F5] p-4 rounded-lg transition-all duration-300 
-                             hover:shadow-[0_0_20px_2px_rgba(255,75,139,0.2)]"
-                  data-aos="fade-up"
-                  data-aos-delay="300"
-                >
-                  <h4 className="font-semibold text-gray-900">
-                    Honorary Secretary
-                  </h4>
-                  <p className="text-gray-600 text-sm">
-                    British Gynaecological Cancer Society
-                  </p>
-                </div>
-                <div
-                  className="bg-[#FFF1F5] p-4 rounded-lg transition-all duration-300 
-                             hover:shadow-[0_0_20px_2px_rgba(255,75,139,0.2)]"
-                  data-aos="fade-up"
-                  data-aos-delay="400"
-                >
-                  <h4 className="font-semibold text-gray-900">
-                    IT and Social Media Subgroup Chair
-                  </h4>
-                  <p className="text-gray-600 text-sm">
-                    British Gynaecological Cancer Society
-                  </p>
-                  <p className="text-gray-500 text-xs">July 2020 - July 2023</p>
-                </div>
-              </div>
-            </div>
+           {/* Leadership */}
+<div>
+  <h3 className="text-lg font-semibold mb-4 text-gray-900">
+    Leadership Positions
+  </h3>
+  <div className="space-y-4">
+    <div
+      className="bg-[#FFF1F5] p-4 rounded-lg transition-all duration-300 
+                 hover:shadow-[0_0_20px_2px_rgba(255,75,139,0.2)]"
+      data-aos="fade-up"
+      data-aos-delay="300"
+    >
+      <h4 className="font-semibold text-gray-900">
+        Honorary Secretary
+      </h4>
+      <p className="text-gray-600 text-sm">
+        British Gynaecological Cancer Society
+      </p>
+      <p className="text-gray-500 text-xs">July 2022 - July 2025</p>
+    </div>
+
+    <div
+      className="bg-[#FFF1F5] p-4 rounded-lg transition-all duration-300 
+                 hover:shadow-[0_0_20px_2px_rgba(255,75,139,0.2)]"
+      data-aos="fade-up"
+      data-aos-delay="400"
+    >
+      <h4 className="font-semibold text-gray-900">
+        IT and Social Media Subgroup Chair
+      </h4>
+      <p className="text-gray-600 text-sm">
+        British Gynaecological Cancer Society
+      </p>
+      <p className="text-gray-500 text-xs">July 2020 - July 2023</p>
+    </div>
+
+    <div
+      className="bg-[#FFF1F5] p-4 rounded-lg transition-all duration-300 
+                 hover:shadow-[0_0_20px_2px_rgba(255,75,139,0.2)]"
+      data-aos="fade-up"
+      data-aos-delay="500"
+    >
+      <h4 className="font-semibold text-gray-900">
+        Gyn Oncology Lead
+      </h4>
+      <p className="text-gray-600 text-sm">
+        Nottingham NHS
+      </p>
+      {/* <p className="text-gray-500 text-xs">[Add start date] - Present</p> */}
+    </div>
+  </div>
+</div>
+
           </div>
         </div>
       </div>
