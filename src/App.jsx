@@ -40,6 +40,7 @@ import MenstrualDisordersGuide from "./Page/MenstrualDisordersGuide";
 import PelvicPainGuide from "./Page/PelvicPainGuide"
 import PostcoitalBleedingGuide from "./Page/PostcoitalBleedingGuide";
 import EventListPage from "./Page/EventListPage";
+import EventPage from "./Page/EventPage";
 function App() {
   return (
     <Router>
@@ -85,7 +86,7 @@ function App() {
         <Route path="/PelvicPainGuide" element={<PelvicPainGuide />} />
 
         <Route path="event-list" element={<EventListPage />} />
-
+        <Route path="event" element={<EventPage /> } />
 
 
       </Routes>

@@ -24,7 +24,7 @@ export default function ListingEvents() {
     <section className="relative bg-gray-50 py-20 px-4 sm:px-6 lg:px-16">
       {/* Heading */}
       <div className="text-center mb-14">
-        <p className="text-orange-500 font-semibold mb-2">
+        <p className="text-[#FF4B8B] font-semibold mb-2">
           Restaurants Event
         </p>
         <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
@@ -33,11 +33,11 @@ export default function ListingEvents() {
       </div>
 
       {/* Navigation Arrows */}
-      <button className="hidden lg:flex absolute left-6 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white shadow items-center justify-center hover:bg-orange-500 hover:text-white transition">
+      <button className="hidden lg:flex absolute left-6 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white shadow items-center justify-center hover:bg-[#FF4B8B] hover:text-white transition">
         <ChevronLeft />
       </button>
 
-      <button className="hidden lg:flex absolute right-6 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white shadow items-center justify-center hover:bg-orange-500 hover:text-white transition">
+      <button className="hidden lg:flex absolute right-6 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white shadow items-center justify-center hover:bg-[#FF4B8B] hover:text-white transition">
         <ChevronRight />
       </button>
 
@@ -71,7 +71,7 @@ export default function ListingEvents() {
             {/* Content */}
             <div className="p-5">
               {/* Rating */}
-              <div className="flex items-center gap-1 text-orange-500 text-sm mb-2">
+              <div className="flex items-center gap-1 text-[#FF4B8B] text-sm mb-2">
                 ★★★★★ <span className="text-gray-700 ml-2">4.5</span>
               </div>
 
@@ -97,7 +97,7 @@ export default function ListingEvents() {
             </div>
 
             {/* Footer */}
-            <div className="bg-orange-600 text-white px-5 py-4 flex items-center gap-2">
+            <div className="bg-[#FF4B8B] text-white px-5 py-4 flex items-center gap-2">
               <Building2 size={18} />
               <span className="text-sm font-medium">Restaurant</span>
             </div>

@@ -45,7 +45,7 @@ const EventListHero = () => {
             <option>Concert Event</option>
             <option>Restaurant Event</option>
           </select>
-          <button className="bg-orange-500 py-5 hover:bg-orange-600 px-6 rounded-r-md font-bold uppercase transition">
+          <button className="bg-[#FF4B8B] py-5 hover:bg-[#FF4B8B]/20 px-6 rounded-r-md font-bold uppercase transition">
             <FaSearch className="inline mr-2" /> Discover Now
           </button>
         </div>
@@ -57,7 +57,7 @@ const EventListHero = () => {
               key={index}
               className="flex flex-col items-center text-center cursor-pointer transition transform hover:scale-105"
             >
-              <div className="bg-white text-orange-500 rounded-full p-4 shadow-lg mb-2">
+              <div className="bg-white text-[#FF4B8B] rounded-full p-4 shadow-lg mb-2">
                 {cat.icon}
               </div>
               <p className="text-sm">{cat.label}</p>
