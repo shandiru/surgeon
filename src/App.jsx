@@ -39,6 +39,7 @@ import VaginalLumpsGuide from "./Page/VaginalLumpsGuide"
 import MenstrualDisordersGuide from "./Page/MenstrualDisordersGuide";
 import PelvicPainGuide from "./Page/PelvicPainGuide"
 import PostcoitalBleedingGuide from "./Page/PostcoitalBleedingGuide";
+import EventListPage from "./Page/EventListPage";
 function App() {
   return (
     <Router>
@@ -66,7 +67,7 @@ function App() {
         <Route path="/FibroidInformation" element={< FibroidInformationPage />} />
         <Route path="/FibroidGuide" element={< FibroidGuide />} />
         <Route path="/MenstrualDisordersInformation" element={< MenstrualDisordersInformationPage />} />
-        <Route path="/MenstrualDisordersGuide" element={< MenstrualDisordersGuide/>} />
+        <Route path="/MenstrualDisordersGuide" element={< MenstrualDisordersGuide />} />
         <Route path="/OvarianCystsPage" element={<OvarianCystsPage />} />
         <Route path="/OvarianCystsGuide" element={<OvarianCystsGuide />} />
         <Route path="/PostcoitalBleeding" element={< PostcoitalBleeding />} />
@@ -81,9 +82,12 @@ function App() {
 
         <Route path="/PublicationsPage" element={<PublicationsPage />} />
         <Route path="/VaginalLumpsGuide" element={<VaginalLumpsGuide />} />
-         <Route path="/PelvicPainGuide" element={<PelvicPainGuide />} />
+        <Route path="/PelvicPainGuide" element={<PelvicPainGuide />} />
 
-        
+        <Route path="event-list" element={<EventListPage />} />
+
+
+
       </Routes>
       <Footer />
     </Router>
