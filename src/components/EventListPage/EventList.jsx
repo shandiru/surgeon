@@ -1,105 +1,116 @@
 import React from "react";
-import { MapPin, Phone, Building2, ChevronLeft, ChevronRight } from "lucide-react";
+import { MapPin, Building2, Calendar } from "lucide-react";
+import { Link } from "react-router-dom"; // <-- import Link
 
 export default function ListingEvents() {
   const events = [
     {
-      image:
-        "https://images.unsplash.com/photo-1521737604893-d14cc237f11d",
+      id: 1,
+      image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d",
       status: "Now Closed",
+      rating: 4.5,
+      title: "British Gynaecological Cancer Society Annual Meeting 2024",
+      description: "Invited Speaker / Panel Chair",
+      talk: "Advances in Minimally Invasive Surgery for Gynaecological Cancers",
+      Date: "12–14 September 2024",
+      address: "London, UK / Virtual",
+      organiser: "British Gynaecological Cancer Society",
+      link: "/event/1", // <-- event page link
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1519681393784-d120267933ba",
+      id: 2,
+      image: "https://images.unsplash.com/photo-1519681393784-d120267933ba",
       status: "Open",
+      rating: 4.8,
+      title: "International Oncology Conference 2024",
+      description: "Keynote Speaker",
+      talk: "Innovations in Cancer Treatment",
+      Date: "5–7 October 2024",
+      address: "New York, USA / Virtual",
+      organiser: "Global Oncology Association",
+      link: "/event/2",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1528605248644-14dd04022da1",
+      id: 3,
+      image: "https://images.unsplash.com/photo-1528605248644-14dd04022da1",
       status: "Now Closed",
+      rating: 4.3,
+      title: "European Gynaecological Surgery Forum",
+      description: "Invited Speaker",
+      talk: "Robotic Surgery Techniques",
+      Date: "20–22 November 2024",
+      address: "Berlin, Germany",
+      organiser: "European Surgical Society",
+      link: "/event/3",
     },
   ];
 
   return (
-    <section className="relative bg-gray-50 py-20 px-4 sm:px-6 lg:px-16">
+    <section id="list" className="relative bg-gray-50 py-20 px-4 sm:px-6 lg:px-16">
       {/* Heading */}
       <div className="text-center mb-14">
-        <p className="text-[#FF4B8B] font-semibold mb-2">
-          Restaurants Event
-        </p>
-        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
-          Top Listing Events
-        </h2>
+        <p className="text-[#FF4B8B] font-semibold mb-2">Speaking Engagements</p>
+        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">Top Listing Events</h2>
       </div>
 
-      {/* Navigation Arrows */}
-      <button className="hidden lg:flex absolute left-6 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white shadow items-center justify-center hover:bg-[#FF4B8B] hover:text-white transition">
-        <ChevronLeft />
-      </button>
-
-      <button className="hidden lg:flex absolute right-6 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white shadow items-center justify-center hover:bg-[#FF4B8B] hover:text-white transition">
-        <ChevronRight />
-      </button>
-
-      {/* Cards */}
+      {/* Event Cards */}
       <div className="grid gap-8 max-w-7xl mx-auto sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        {events.map((item, index) => (
+        {events.map((event) => (
           <div
-            key={index}
-            className="bg-white rounded-2xl shadow-lg overflow-hidden hover:-translate-y-1 transition-transform duration-300"
+            key={event.id}
+            className="bg-white rounded-2xl shadow-lg overflow-hidden hover:-translate-y-1 transition-transform duration-300 flex flex-col"
           >
             {/* Image */}
             <div className="relative">
-              <img
-                src={item.image}
-                alt="Event"
-                className="w-full h-56 object-cover"
-              />
-
-              {/* Status */}
+              <img src={event.image} alt={event.title} className="w-full h-56 object-cover" />
               <span
                 className={`absolute top-4 right-4 px-3 py-1 text-xs font-semibold rounded-full bg-white ${
-                  item.status === "Open"
-                    ? "text-green-600"
-                    : "text-gray-600"
+                  event.status === "Open" ? "text-green-600" : "text-gray-600"
                 }`}
               >
-                {item.status}
+                {event.status}
               </span>
             </div>
 
             {/* Content */}
-            <div className="p-5">
-              {/* Rating */}
-              <div className="flex items-center gap-1 text-[#FF4B8B] text-sm mb-2">
-                ★★★★★ <span className="text-gray-700 ml-2">4.5</span>
-              </div>
-
-              <h3 className="text-lg font-semibold text-gray-900">
-                Private Hotel-Spa
-              </h3>
-
-              <p className="text-sm text-gray-500 mt-1 mb-4">
-                Luxury hotel in the heart of Bloomsbury.
-              </p>
-
-              <div className="space-y-2 text-sm text-gray-600">
-                <div className="flex items-center gap-2">
-                  <MapPin size={16} />
-                  <span>95 South Park Avenue</span>
+            <div className="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                {/* Rating */}
+                <div className="flex items-center gap-1 text-[#FF4B8B] text-sm mb-2">
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <span key={i} className={i < Math.round(event.rating) ? "text-[#FF4B8B]" : "text-gray-300"}>
+                      ★
+                    </span>
+                  ))}
+                  <span className="text-gray-700 ml-2">{event.rating}</span>
                 </div>
 
-                <div className="flex items-center gap-2">
-                  <Phone size={16} />
-                  <span>+61 2 8236 9200</span>
+                <h3 className="text-lg font-semibold text-gray-900">{event.title}</h3>
+                <p className="text-sm text-gray-500 mt-1">{event.description}</p>
+                <p className="text-sm text-gray-700 mt-1 italic">{event.talk}</p>
+
+                <div className="space-y-2 text-sm text-gray-600 mt-2">
+                  <div className="flex items-center gap-2">
+                    <Calendar size={16} />
+                    <span>{event.Date}</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <MapPin size={16} />
+                    <span>{event.address}</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Building2 size={16} />
+                    <span>{event.organiser}</span>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            {/* Footer */}
-            <div className="bg-[#FF4B8B] text-white px-5 py-4 flex items-center gap-2">
-              <Building2 size={18} />
-              <span className="text-sm font-medium">Restaurant</span>
+              {/* Footer / Action */}
+              <div className="bg-[#FF4B8B] rounded-xl text-white px-5 py-4 mt-4 flex items-center justify-center">
+                <Link to={event.link} className="font-medium text-sm uppercase w-full text-center">
+                  View Programme
+                </Link>
+              </div>
             </div>
           </div>
         ))}

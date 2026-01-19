@@ -36,9 +36,9 @@ const EventDetail = () => {
   ];
 
   const speakers = [
-    { name: "David Miller", role: "Marketing Envato Pty Ltd.", image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=300&h=300&fit=crop" },
-    { name: "Sarah Johnson", role: "Marketing Envato Pty Ltd.", image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop" },
-    { name: "Michael Chen", role: "Marketing Envato Pty Ltd.", image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&h=300&fit=crop" }
+    { name: "Annemijn Aarts", role: "The Netherlands", image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=300&h=300&fit=crop" },
+    { name: "Nadeem Abu-Rustum", role: "USA", image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop" },
+    { name: "Frederic Amant,", role: "The Netherlands", image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&h=300&fit=crop" }
   ];
 
   const sponsors = [
@@ -94,14 +94,14 @@ const EventDetail = () => {
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all hover:shadow-2xl">
               <div className="p-6 lg:p-8">
                 <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-3">
-                  The Paradise Beach Hotel
+                  ESGO 2026 Congress
                 </h1>
                 <div className="flex flex-wrap items-center gap-4 mb-6">
                   <span className="inline-flex items-center px-4 py-2 bg-[#FF4B8B]/20 text-[#FF4B8B] rounded-full font-semibold text-sm">
                     <Calendar className="w-4 h-4 mr-2" />
-                    02-05 July 2020
+                    February 26 - 28, 2026
                   </span>
-                  <span className="text-gray-600 font-medium">California</span>
+                  <span className="text-gray-600 font-medium">Denmark</span>
                 </div>
 
                 {/* Event Info Grid */}
@@ -110,7 +110,7 @@ const EventDetail = () => {
                     <MapPin className="w-5 h-5 text-[#FF4B8B] flex-shrink-0 mt-1" />
                     <div>
                       <p className="font-semibold text-gray-700">Location</p>
-                      <p className="text-gray-600">2495 Tident St, NY</p>
+                      <p className="text-gray-600">Copenhagen, Denmark</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
@@ -133,7 +133,7 @@ const EventDetail = () => {
                     <Globe className="w-5 h-5 text-[#FF4B8B] flex-shrink-0 mt-1" />
                     <div>
                       <p className="font-semibold text-gray-700">Website</p>
-                      <p className="text-gray-600">www.jthemes.com</p>
+                      <p className="text-gray-600">esgo.org</p>
                     </div>
                   </div>
                 </div>
@@ -144,9 +144,12 @@ const EventDetail = () => {
                     <Share2 className="w-5 h-5 mr-2" />
                     Share
                   </button>
-                  <button className="flex-1 md:flex-none px-8 py-3 bg-gradient-to-r from-[#FF4B8B] to-[#FF4B8B] hover:bg-[#FF4B8B]/20 text-white rounded-xl font-semibold transition-all transform hover:scale-105 shadow-lg">
+                  <a 
+                    href='https://congress.esgo.org/congress-info/contact-us/'
+                    target='_blank'
+                    className="flex-1 md:flex-none px-8 py-3 bg-gradient-to-r from-[#FF4B8B] to-[#FF4B8B] hover:bg-[#FF4B8B]/20 text-white rounded-xl font-semibold transition-all transform hover:scale-105 shadow-lg">
                     Join Event
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -158,10 +161,10 @@ const EventDetail = () => {
               </h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
-                  <span className="font-semibold">Quisque non dictum eros, Praesent porta vehicula arcu eu ornare.</span> Donec id egestas arcu. Suspendisse auctor ali condimentum ligula ultricies cursus. Vestibulum vel orci vel lacus rhoncus sagittis sed vitae mi. Pellentesque suil molestie elit bibendum tincidunt semper.
+                  The 27th Congress of the European Society of Gynaecological Oncology will bring together over 3,000 attendees from around the world for gathering of learning, networking, and sharing the latest developments in the field of Gynaecological Cancers —all with the goal of enhancing your knowledge, accelerating your skills and advancing the field.
                 </p>
                 <p>
-                  <span className="font-semibold">Duis autem vel eum iriure dolor in hendrerit</span> in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                  ESGO 2026 will be a celebration of discovery and late-breaking research, new guidelines, practical demonstrations, and exclusive live surgery transmissions you don't want to miss.
                 </p>
               </div>
             </div>
@@ -211,7 +214,7 @@ const EventDetail = () => {
                   { icon: MapPin, text: "484 Ellis St, San Francisco, CA 94102, United States" },
                   { icon: Phone, text: "+61 2 8236 9200" },
                   { icon: Mail, text: "youremail@mail.com" },
-                  { icon: Globe, text: "www.website.com" }
+                  { icon: Globe, text: "esgo.org" }
                 ].map((item, index) => (
                   <div key={index} className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
                     <item.icon className="w-5 h-5 text-[#FF4B8B] flex-shrink-0" />

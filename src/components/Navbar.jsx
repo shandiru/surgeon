@@ -21,14 +21,14 @@ const Navbar = () => {
           {/* Left: Logo / Name */}
           <Link to="/" className="flex items-center">
             <img
-              src="/logo.png" // உங்கள் logo path
+              src="/logo.png"
               alt="Mr Ketankumar Gajjar Logo"
               className="h-30 w-auto md:h-28 lg:h-32 object-contain"
             />
           </Link>
 
           {/* Desktop navigation */}
-          <div className="hidden lg:flex ml-10 space-x-3 items-center relative">
+          <div className="hidden lg:flex ml-10 space-x-1 items-center relative">
             <HashLink smooth to="/#about" className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">
               About
             </HashLink>
@@ -43,6 +43,10 @@ const Navbar = () => {
             </HashLink>
             <HashLink smooth to="/PublicationsPage" className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">
               Publications
+            </HashLink>
+
+            <HashLink smooth to="/event-list" className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">
+              Event
             </HashLink>
 
             {/* Services Dropdown */}
@@ -158,6 +162,9 @@ const Navbar = () => {
             <HashLink smooth to="/#education" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900">Education</HashLink>
             <HashLink smooth to="/PublicationsPage" className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">
               Publications
+            </HashLink>
+            <HashLink smooth to="/event-list" className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">
+              Event
             </HashLink>
 
 
