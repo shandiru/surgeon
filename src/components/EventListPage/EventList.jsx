@@ -15,7 +15,7 @@ export default function ListingEvents() {
       Date: "12–14 September 2024",
       address: "London, UK / Virtual",
       organiser: "British Gynaecological Cancer Society",
-      link: "/event/1", // <-- event page link
+      link: "/event/event1"
     },
     {
       id: 2,
@@ -28,7 +28,7 @@ export default function ListingEvents() {
       Date: "5–7 October 2024",
       address: "New York, USA / Virtual",
       organiser: "Global Oncology Association",
-      link: "/event/2",
+      link: "/event/event2"
     },
     {
       id: 3,
@@ -41,7 +41,7 @@ export default function ListingEvents() {
       Date: "20–22 November 2024",
       address: "Berlin, Germany",
       organiser: "European Surgical Society",
-      link: "/event/3",
+      link: "/event/event1",
     },
   ];
 

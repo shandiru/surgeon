@@ -87,9 +87,7 @@ function App() {
         <Route path="/PelvicPainGuide" element={<PelvicPainGuide />} />
 
         <Route path="/event-list" element={<EventListPage />} />
-        <Route path="/event1" element={<EventPage /> } />
-        <Route path="/event2" element={<EventPage2 /> } />
-
+        <Route path="/event/:id" element={<EventPage />} />
 
       </Routes>
       <Footer />
