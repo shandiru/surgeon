@@ -33,6 +33,7 @@ const cards = [
 ]
 
 const EmotionalWellbeingSupport = () => {
+  const deepPink = "#FF4B8B";
 
   return (
     <section className="py-16 bg-white">
