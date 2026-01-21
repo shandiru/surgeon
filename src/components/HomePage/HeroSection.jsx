@@ -20,7 +20,7 @@ const HeroSectionView = () => {
               {/* <span className="inline-block border border-[#FF4B8B] text-[#FF4B8B] text-xs font-semibold px-3 py-1 rounded-full">
                 Consultant Gynaecological Oncologist
               </span> */}
-               <span className="inline-block border border-[#FF4B8B] text-[#FF4B8B] text-xs font-semibold px-3 py-1 rounded-full">
+               <span className="inline-block border border-[#FF4B8B] text-[#FF4B8B] text-caption px-3 py-1 rounded-full">
                  Gynocolisgist 
               </span>
 
@@ -28,11 +28,11 @@ const HeroSectionView = () => {
              
             </div>
 
-            <h1 className="hero-title text-5xl font-bold text-gray-900 mb-6 leading-tight" data-aos="fade-up">
+            <h1 className="hero-title text-hero text-gray-900 mb-6 leading-tight" data-aos="fade-up">
               Expert Care in <span className="text-[#FF4B8B]">Women's Health</span>
             </h1>
 
-            <p className="hero-desc text-lg text-gray-700 mb-8 leading-relaxed" data-aos="fade-up">
+            <p className="hero-desc text-body-large text-gray-700 mb-8 leading-relaxed" data-aos="fade-up">
               With 26 years of dedicated experience in gynaecological oncology,
               providing compassionate, evidence-based care for women across Nottingham and beyond.
             </p>
@@ -40,7 +40,7 @@ const HeroSectionView = () => {
             <div className="hero-ctas flex flex-col sm:flex-row gap-4 mb-8" data-aos="fade-up">
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center gap-2 text-sm font-semibold px-6 h-10 rounded-md bg-[#FF4B8B] text-white shadow-sm hover:shadow-[0_0_15px_2px_rgba(255,75,139,0.5)] hover:-translate-y-0.5 transition-all"
+                className="inline-flex items-center justify-center gap-2 text-button px-6 h-10 rounded-md bg-[#FF4B8B] text-white shadow-sm hover:shadow-[0_0_15px_2px_rgba(255,75,139,0.5)] hover:-translate-y-0.5 transition-all"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                   <path d="M8 2v4" />
@@ -52,7 +52,7 @@ const HeroSectionView = () => {
               </a>
               <a
                 href="#about"
-                className="inline-flex items-center justify-center gap-2 text-sm font-semibold px-6 h-10 rounded-md border border-[#FF4B8B] text-[#FF4B8B] hover:bg-[#FFD6E1] hover:shadow-[0_0_15px_2px_rgba(255,75,139,0.4)] hover:-translate-y-0.5 transition-all"
+                className="inline-flex items-center justify-center gap-2 text-button px-6 h-10 rounded-md border border-[#FF4B8B] text-[#FF4B8B] hover:bg-[#FFD6E1] hover:shadow-[0_0_15px_2px_rgba(255,75,139,0.4)] hover:-translate-y-0.5 transition-all"
               >
                 Learn More
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
@@ -62,7 +62,7 @@ const HeroSectionView = () => {
               </a>
             </div>
 
-            <div className="hero-icons flex items-center gap-6 text-sm text-gray-600" data-aos="fade-up">
+            <div className="hero-icons flex items-center gap-6 text-body-small text-gray-600" data-aos="fade-up">
               <div className="flex items-center gap-2">
                 <svg className="w-5 h-5 text-[#FF4B8B]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                   <path d="M21.801 10A10 10 0 1 1 17 3.335" />
@@ -90,8 +90,8 @@ const HeroSectionView = () => {
               />
               <div className="hero-bubble absolute -bottom-4 -right-4 bg-[#FF4B8B] text-white px-4 py-3 rounded-xl shadow-md" data-aos="fade-up">
                 <div className="text-center">
-                  <div className="text-xl font-bold leading-none">26</div>
-                  <div className="text-xs mt-1">Years Experience</div>
+                  <div className="text-card-title leading-none">26</div>
+                  <div className="text-caption mt-1">Years Experience</div>
                 </div>
               </div>
             </div>

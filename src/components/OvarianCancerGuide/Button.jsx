@@ -41,7 +41,7 @@ const OvarianCancerGuideButtons = ({ setShowCard, activeButton, setActiveButton 
             w-full py-2 px-3
             font-semibold rounded-md 
             text-[#BB125B] bg-[#FF4B8B]/10 hover:bg-[#FF4B8B]/30 
-            text-sm transition-all
+            text-button transition-all
             ${activeButton === index ? 'bg-[#FF4B8B]/50 text-black' : ''}
           `}
         >

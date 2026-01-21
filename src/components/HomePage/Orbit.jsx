@@ -16,17 +16,17 @@ export default function HeroSection() {
 
       {/* Top Button */}
       <div className="pt-16 sm:pt-20 md:pt-24 lg:pt-32 xl:pt-36 flex justify-center">
-        <button className="text-xs sm:text-sm border border-[#FF4B8B]/40 text-[#FF4B8B] px-3 sm:px-4 py-1 rounded-full hover:bg-[#FF4B8B]/10 transition">
+        <button className="text-caption border border-[#FF4B8B]/40 text-[#FF4B8B] px-3 sm:px-4 py-1 rounded-full hover:bg-[#FF4B8B]/10 transition">
           Get in touch
         </button>
       </div>
 
       {/* Headings */}
       <div className="mt-4 sm:mt-6 md:mt-8">
-        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-gray-900">
+        <h1 className="text-hero font-semibold text-gray-900">
           Health Support from
         </h1>
-        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-gray-900 mt-1">
+        <h2 className="text-hero font-semibold text-gray-900 mt-1">
           Expert Doctors
         </h2>
 
@@ -35,7 +35,7 @@ export default function HeroSection() {
           {/* Text Button */}
           <a href="https://www.circlehealthgroup.co.uk/consultants/ketankumar-gajjar" target="_blank">
             <button className="relative flex items-center bg-[#FF4B8B] hover:bg-[#E03E7C] text-white font-medium rounded-lg shadow-[0_0_20px_rgba(255,75,139,0.3)]">
-              <span className="px-3 sm:px-4 md:px-5 py-2 sm:py-2.5 md:py-3 text-xs sm:text-sm md:text-base whitespace-nowrap">
+              <span className="px-3 sm:px-4 md:px-5 py-2 sm:py-2.5 md:py-3 text-button whitespace-nowrap">
                 Book an Appointment
               </span>
             </button>

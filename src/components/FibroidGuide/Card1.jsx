@@ -3,9 +3,6 @@ import { Lightbulb, Pin } from 'lucide-react';
 import React from 'react';
 
 const FibroidGuideCard1 = ({ setShowCard, setActiveButton }) => {
-  const pink = "#FFC5D3"
-  const deepPink = "#FF4B8B"
-  
   return (
     <div className="space-y-6 pb-10 px-3">
 
@@ -16,8 +13,8 @@ const FibroidGuideCard1 = ({ setShowCard, setActiveButton }) => {
         {/* Header */}
         <div className="px-8 pt-8">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <Pin className="h-8 w-8" style={{ color: deepPink }} />
-            <h2 className="font-bold text-3xl" style={{ color: deepPink }}>
+            <Pin className="h-8 w-8 text-[#FF4B8B]" />
+            <h2 className="font-bold text-3xl text-[#FF4B8B]">
               What Are Fibroids?
             </h2>
           </div>
@@ -42,11 +39,8 @@ const FibroidGuideCard1 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           {/* Highlight Box */}
-          <div
-            className="rounded-lg p-5"
-            style={{ backgroundColor: pink }}
-          >
-            <p className="font-semibold text-base" style={{ color: deepPink }}>
+          <div className="rounded-lg p-5 bg-[#FF4B8B]/10">
+            <p className="font-semibold text-base text-[#BB125B]">
               ✓ Fibroids are not cancer and rarely become cancerous.
             </p>
           </div>

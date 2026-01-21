@@ -6,8 +6,6 @@ import 'aos/dist/aos.css';
 
 const EndometrialCard4 = ({ setShowCard, setActiveButton }) => {
  
-  const Pink = '#FF4B8B';
-
   useEffect(() => {
     AOS.init({ duration: 800, once: true });
   }, []);
@@ -17,8 +15,8 @@ const EndometrialCard4 = ({ setShowCard, setActiveButton }) => {
       <div className="max-w-5xl mx-auto">
         {/* Section Heading */}
         <div className="flex items-center justify-center gap-3 mb-8" data-aos="fade-left">
-          <FaExclamation className="h-8 w-8" style={{ color: Pink }} />
-          <h2 className="text-3xl font-bold text-center" style={{ color: Pink }}>
+          <FaExclamation className="h-8 w-8 text-[#FF4B8B]" />
+          <h2 className="text-3xl font-bold text-center text-[#FF4B8B]">
             Symptoms of Endometrial Cancer
           </h2>
         </div>
@@ -31,7 +29,7 @@ const EndometrialCard4 = ({ setShowCard, setActiveButton }) => {
         >
           {/* Card Header */}
           <div className="px-6">
-            <div className="font-semibold text-xl mb-1" style={{ color: Pink }}>
+            <div className="font-semibold text-xl mb-1 text-[#FF4B8B]">
               Early Warning Signs
             </div>
             <div className="text-sm text-gray-600">

@@ -3,10 +3,6 @@ import { Microscope } from 'lucide-react';
 import React from 'react';
 
 const FibroidGuidecard3 = ({ setShowCard, setActiveButton }) => {
-
-  const pink = "#FFC5D3"
-  const deepPink = "#FF4B8B"
-
   return (
     <div className="space-y-6 pb-10 px-3">
       <div className="max-w-5xl mx-auto bg-white text-[#212529] flex flex-col gap-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 p-8">
@@ -14,8 +10,8 @@ const FibroidGuidecard3 = ({ setShowCard, setActiveButton }) => {
         {/* Header */}
         <div>
           <div className="flex items-center gap-3 mb-3">
-            <Microscope className="h-7 w-7" style={{ color: deepPink }} />
-            <h2 className="font-bold text-3xl" style={{ color: deepPink }}>
+            <Microscope className="h-7 w-7 text-[#FF4B8B]" />
+            <h2 className="font-bold text-3xl text-[#FF4B8B]">
               Types of Fibroids
             </h2>
           </div>
@@ -27,11 +23,8 @@ const FibroidGuidecard3 = ({ setShowCard, setActiveButton }) => {
         {/* Grid of Types */}
         <div className="grid md:grid-cols-2 gap-6">
           {/* Submucosal */}
-          <div
-            className="rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300"
-            style={{ backgroundColor: pink }}
-          >
-            <h4 className="font-semibold mb-2 text-lg" style={{ color: deepPink }}>
+          <div className="rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 bg-[#FF4B8B]/10">
+            <h4 className="font-semibold mb-2 text-lg text-[#FF4B8B]">
               Submucosal fibroids
             </h4>
             <p className="text-gray-800 text-sm leading-relaxed">
@@ -40,11 +33,8 @@ const FibroidGuidecard3 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           {/* Intramural */}
-          <div
-            className="rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300"
-            style={{ backgroundColor: pink }}
-          >
-            <h4 className="font-semibold mb-2 text-lg" style={{ color: deepPink }}>
+          <div className="rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 bg-[#FF4B8B]/10">
+            <h4 className="font-semibold mb-2 text-lg text-[#FF4B8B]">
               Intramural fibroids
             </h4>
             <p className="text-gray-800 text-sm leading-relaxed">
@@ -53,11 +43,8 @@ const FibroidGuidecard3 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           {/* Subserosal */}
-          <div
-            className="rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300"
-            style={{ backgroundColor: pink }}
-          >
-            <h4 className="font-semibold mb-2 text-lg" style={{ color: deepPink }}>
+          <div className="rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 bg-[#FF4B8B]/10">
+            <h4 className="font-semibold mb-2 text-lg text-[#FF4B8B]">
               Subserosal fibroids
             </h4>
             <p className="text-gray-800 text-sm leading-relaxed">
@@ -66,11 +53,8 @@ const FibroidGuidecard3 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           {/* Pedunculated */}
-          <div
-            className="rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300"
-            style={{ backgroundColor: pink }}
-          >
-            <h4 className="font-semibold mb-2 text-lg" style={{ color: deepPink }}>
+          <div className="rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 bg-[#FF4B8B]/10">
+            <h4 className="font-semibold mb-2 text-lg text-[#FF4B8B]">
               Pedunculated fibroids
             </h4>
             <p className="text-gray-800 text-sm leading-relaxed">

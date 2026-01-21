@@ -14,22 +14,13 @@ const OvarianCancerGuidecard3 = ({ setShowCard, setActiveButton }) => {
     <div className="space-y-6 pb-10">
 
       {/* Card Container */}
-      <div
-        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 
-        flex flex-col gap-6 rounded-2xl border shadow-sm 
-        animate-in slide-in-from-right-5 duration-300 p-8"
-        style={{
-          backgroundColor: "#FFFFFF",
-          borderColor: "rgb(255,197,211)",
-        }}
-      >
+      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 
+        flex flex-col gap-6 rounded-2xl border border-[#FF4B8B]/10 shadow-sm 
+        animate-in slide-in-from-right-5 duration-300 p-8 bg-white">
 
         {/* Card Header */}
         <div className="grid auto-rows-min items-start gap-1.5">
-          <div
-            className="leading-none font-semibold flex items-center gap-2"
-            style={{ color: "#FF4B8B" }}
-          >
+          <div className="leading-none font-semibold flex items-center gap-2 text-[#FF4B8B]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -49,7 +40,7 @@ const OvarianCancerGuidecard3 = ({ setShowCard, setActiveButton }) => {
             Key Risk Factors
           </div>
 
-          <div className="text-sm" style={{ color: "#7a2f4f" }}>
+          <div className="text-sm text-[#BB125B]">
             Not everyone with risk factors will develop ovarian cancer, but they increase likelihood.
           </div>
         </div>
@@ -97,14 +88,7 @@ const OvarianCancerGuidecard3 = ({ setShowCard, setActiveButton }) => {
                 description: 'Higher body fat can influence hormone levels that affect risk.',
               },
             ].map((item, index) => (
-              <div
-                key={index}
-                className="flex gap-4 p-4 rounded-xl border transition-all duration-300"
-                style={{
-                  backgroundColor: "#FFF5F8",
-                  borderColor: "rgb(255,197,211)",
-                }}
-              >
+              <div className="flex gap-4 p-4 rounded-xl border border-[#FF4B8B]/10 transition-all duration-300 bg-[#FF4B8B]/10">
                 {/* Number Circle */}
                 <div className="flex-shrink-0">
                   <div
@@ -120,11 +104,11 @@ const OvarianCancerGuidecard3 = ({ setShowCard, setActiveButton }) => {
 
                 {/* Text */}
                 <div className="flex-1">
-                  <h4 className="font-semibold mb-1 flex items-center gap-2" style={{ color: "#FF4B8B" }}>
+                  <h4 className="font-semibold mb-1 flex items-center gap-2 text-[#FF4B8B]">
                     {item.icon}
                     {item.step}
                   </h4>
-                  <p className="text-sm" style={{ color: "#7a2f4f" }}>
+                  <p className="text-sm text-[#BB125B]">
                     {item.description}
                   </p>
                 </div>
@@ -134,22 +118,13 @@ const OvarianCancerGuidecard3 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           {/* Extra Info */}
-          <div
-            className="p-4 rounded-xl border"
-            style={{
-              backgroundColor: "#FFF5F8",
-              borderColor: "rgb(255,197,211)",
-            }}
-          >
-            <h4
-              className="font-semibold flex items-center gap-2 mb-2"
-              style={{ color: "#FF4B8B" }}
-            >
+          <div className="p-4 rounded-xl border border-[#FF4B8B]/10 bg-[#FF4B8B]/10">
+            <h4 className="font-semibold flex items-center gap-2 mb-2 text-[#FF4B8B]">
               <Sparkles className="w-5 h-5 text-[#FF4B8B]" />
               Good to Know
             </h4>
 
-            <p className="text-sm" style={{ color: "#7a2f4f" }}>
+            <p className="text-sm text-[#BB125B]">
               Having one or more risk factors does not mean you will get ovarian cancer — 
               but understanding them helps with early detection and prevention.
             </p>

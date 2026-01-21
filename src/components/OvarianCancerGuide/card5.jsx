@@ -30,15 +30,9 @@ const OvarianCancerGuidecard5 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6 pb-10">
       {/* CARD CONTAINER */}
-      <div
-        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 
-        flex flex-col gap-8 rounded-2xl border shadow-sm p-8 
-        animate-in slide-in-from-right-5 duration-300"
-        style={{
-          borderColor: "rgb(255,197,211)",
-          backgroundColor: "#FFFFFF"
-        }}
-      >
+      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 
+        flex flex-col gap-8 rounded-2xl border border-[#FF4B8B]/10 shadow-sm p-8 
+        animate-in slide-in-from-right-5 duration-300 bg-white">
         {/* HEADER */}
         <div className="text-center space-y-2">
           <div className="flex items-center justify-center gap-2 mb-2">
@@ -63,13 +57,7 @@ const OvarianCancerGuidecard5 = ({ setShowCard, setActiveButton }) => {
               hover:shadow-xl hover:-translate-y-2 active:scale-[0.98] cursor-pointer"
             >
               <div className="flex items-center gap-3 font-semibold text-[#FF4B8B]">
-                <span
-                  className="w-8 h-8 flex items-center justify-center rounded-full border text-sm font-bold"
-                  style={{
-                    borderColor: "rgb(255,197,211)",
-                    color: "rgb(255,75,139)"
-                  }}
-                >
+                <span className="w-8 h-8 flex items-center justify-center rounded-full border border-[#FF4B8B]/10 text-sm font-bold text-[#FF4B8B]">
                   {item.number}
                 </span>
                 {item.title}
@@ -80,18 +68,12 @@ const OvarianCancerGuidecard5 = ({ setShowCard, setActiveButton }) => {
         </div>
 
         {/* WARNING BOX */}
-        <div
-          className="rounded-xl px-6 py-6 shadow-md"
-          style={{ backgroundColor: "rgb(255,197,211)" }}
-        >
+        <div className="rounded-xl px-6 py-6 shadow-md bg-[#FF4B8B]/10">
           <div className="flex items-start gap-3">
-            <div
-              className="w-6 h-6 rounded-full flex items-center justify-center font-bold"
-              style={{ backgroundColor: "#FFFFFF", color: "#FF4B8B" }}
-            >
+            <div className="w-6 h-6 rounded-full flex items-center justify-center font-bold bg-white text-[#FF4B8B]">
               →
             </div>
-            <p className="font-medium" style={{ color: "#FF4B8B" }}>
+            <p className="font-medium text-[#FF4B8B]">
               If ovarian cancer is suspected, these tests also help determine
               how far the cancer has spread.
             </p>

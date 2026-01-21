@@ -6,12 +6,9 @@ const OvarianCancerGuidecard8 = ({ setShowCard, setActiveButton }) => {
     <div className="space-y-6 pb-14">
 
       {/* Card Container */}
-      <div
-        className="max-w-sm sm:max-w-2xl lg:max-w-5xl text-[#BB125B] mx-auto 
-        mb-10 flex flex-col gap-6 rounded-xl border py-6 shadow-sm 
-        animate-in slide-in-from-right-5 duration-300"
-        style={{ borderColor: "#FFC5D3" }}
-      >
+      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl text-[#BB125B] mx-auto 
+        mb-10 flex flex-col gap-6 rounded-xl border border-[#FF4B8B]/10 py-6 shadow-sm 
+        animate-in slide-in-from-right-5 duration-300">
 
         {/* Card Header */}
         <div
@@ -32,19 +29,13 @@ const OvarianCancerGuidecard8 = ({ setShowCard, setActiveButton }) => {
         <div className="px-6 space-y-5">
 
           {/* Highlight Section */}
-          <div
-            className="p-5 rounded-lg"
-            style={{
-              backgroundColor: "#FFE6EE",
-              border: "1px solid #FFC5D3"
-            }}
-          >
-            <h3 className="font-semibold flex items-center gap-2 mb-2" style={{ color: "#FF4B8B" }}>
-              <Star className="w-5 h-5" />
+          <div className="p-5 rounded-lg bg-[#FF4B8B]/10 border border-[#FF4B8B]/10">
+            <h3 className="font-semibold flex items-center gap-2 mb-2 text-[#FF4B8B]">
+              <Star className="w-5 h-5 text-[#FF4B8B]" />
               What You Should Know
             </h3>
 
-            <p className="text-sm leading-relaxed text-[#7a2f4f]">
+            <p className="text-sm leading-relaxed text-[#BB125B]">
               Ovarian cancer is often called a “silent” cancer because symptoms can be subtle 
               and mistaken for common digestive issues. Early detection dramatically improves 
               treatment success, which is why awareness of symptoms is so essential.
@@ -53,8 +44,8 @@ const OvarianCancerGuidecard8 = ({ setShowCard, setActiveButton }) => {
 
           {/* Bullet Points */}
           <div className="space-y-3">
-            <h4 className="font-semibold" style={{ color: "#FF4B8B" }}>Key Points to Remember</h4>
-            <ul className="space-y-2 text-sm text-[#7a2f4f]">
+            <h4 className="font-semibold text-[#FF4B8B]">Key Points to Remember</h4>
+            <ul className="space-y-2 text-sm text-[#BB125B]">
               {[
                 "Persistent bloating, pelvic pain, or feeling full quickly should not be ignored",
                 "Ovarian cancer symptoms are often vague—tracking changes over time is important",
@@ -63,10 +54,7 @@ const OvarianCancerGuidecard8 = ({ setShowCard, setActiveButton }) => {
                 "Early medical evaluation leads to better outcomes"
               ].map((item, index) => (
                 <li key={index} className="flex items-start gap-2">
-                  <CheckCircle2
-                    className="w-4 h-4 flex-shrink-0 mt-0.5"
-                    style={{ color: "#FF4B8B" }}
-                  />
+                  <CheckCircle2 className="w-4 h-4 flex-shrink-0 mt-0.5 text-[#FF4B8B]" />
                   <span>{item}</span>
                 </li>
               ))}
@@ -74,18 +62,12 @@ const OvarianCancerGuidecard8 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           {/* Final Section */}
-          <div
-            className="p-4 rounded-lg"
-            style={{
-              backgroundColor: "#FFFFFF",
-              border: "1px solid #FFC5D3"
-            }}
-          >
-            <h4 className="font-semibold flex items-center gap-2" style={{ color: "#FF4B8B" }}>
-              <Star className="w-5 h-5" />
+          <div className="p-4 rounded-lg bg-white border border-[#FF4B8B]/10">
+            <h4 className="font-semibold flex items-center gap-2 text-[#FF4B8B]">
+              <Star className="w-5 h-5 text-[#FF4B8B]" />
               Final Message
             </h4>
-            <p className="text-sm leading-relaxed mt-1 text-[#7a2f4f]">
+            <p className="text-sm leading-relaxed mt-1 text-[#BB125B]">
               Ovarian cancer can be difficult to detect early, but knowing the symptoms, understanding 
               your risk factors, and seeking medical advice if something feels unusual are powerful 
               steps in protecting your health.

@@ -8,15 +8,12 @@ const EndometrialCard2 = ({ setShowCard, setActiveButton }) => {
       {/* Card Container */}
       <div
         className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-2xl border p-8 shadow-sm animate-in slide-in-from-right-5 duration-300"
-        style={{
-          backgroundColor: '#FFFFFF',
-          borderColor: 'rgb(255,197,211)',
-        }}
+        className="border border-[#FF4B8B]/10 bg-white"
       >
 
         {/* Card Header */}
         <div className="grid auto-rows-min items-start gap-1.5">
-          <div className="leading-none font-semibold flex items-center gap-2" style={{ color: '#FF4B8B' }}>
+          <div className="leading-none font-semibold flex items-center gap-2 text-[#FF4B8B]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -33,7 +30,7 @@ const EndometrialCard2 = ({ setShowCard, setActiveButton }) => {
             </svg>
             How Endometrial Cancer Develops
           </div>
-          <p className="text-sm mt-1" style={{ color: '#7a2f4f' }}>
+          <p className="text-sm mt-1 text-[#BB125B]">
             Understanding the types and early changes in the uterine lining
           </p>
         </div>
@@ -42,14 +39,8 @@ const EndometrialCard2 = ({ setShowCard, setActiveButton }) => {
         <div className="space-y-6">
 
           {/* Intro Box */}
-          <div
-            className="p-4 rounded-xl border transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-100"
-            style={{
-              backgroundColor: '#FFF5F8',
-              borderColor: 'rgb(255,197,211)',
-            }}
-          >
-            <p className="text-lg leading-relaxed" style={{ color: '#7a2f4f' }}>
+          <div className="p-4 rounded-xl border border-[#FF4B8B]/10 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-100 bg-[#FF4B8B]/10">
+            <p className="text-lg leading-relaxed text-[#BB125B]">
               Endometrial cancer develops when cells in the endometrial lining grow abnormally and uncontrollably.
               Recognizing how it develops can help with early detection and treatment.
             </p>
@@ -58,32 +49,23 @@ const EndometrialCard2 = ({ setShowCard, setActiveButton }) => {
           {/* Types / Early Changes */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-            <div
-              className="p-4 rounded-xl border transition-all duration-300 hover:shadow-md"
-              style={{ backgroundColor: '#FFFFFF', borderColor: 'rgb(255,197,211)' }}
-            >
-              <h4 className="font-semibold mb-2" style={{ color: '#FF4B8B' }}>Type 1 Endometrial Cancer</h4>
-              <p className="text-sm" style={{ color: '#7a2f4f' }}>
+            <div className="p-4 rounded-xl border border-[#FF4B8B]/10 transition-all duration-300 hover:shadow-md bg-white">
+              <h4 className="font-semibold mb-2 text-[#FF4B8B]">Type 1 Endometrial Cancer</h4>
+              <p className="text-sm text-[#BB125B]">
                 Most common type. Linked to excess estrogen exposure. Usually grows slowly and is often detected early.
               </p>
             </div>
 
-            <div
-              className="p-4 rounded-xl border transition-all duration-300 hover:shadow-md"
-              style={{ backgroundColor: '#FFFFFF', borderColor: 'rgb(255,197,211)' }}
-            >
-              <h4 className="font-semibold mb-2" style={{ color: '#FF4B8B' }}>Type 2 Endometrial Cancer</h4>
-              <p className="text-sm" style={{ color: '#7a2f4f' }}>
+            <div className="p-4 rounded-xl border border-[#FF4B8B]/10 transition-all duration-300 hover:shadow-md bg-white">
+              <h4 className="font-semibold mb-2 text-[#FF4B8B]">Type 2 Endometrial Cancer</h4>
+              <p className="text-sm text-[#BB125B]">
                 Less common but more aggressive. Not related to estrogen and more likely to spread beyond the uterus.
               </p>
             </div>
 
-            <div
-              className="p-4 rounded-xl border transition-all duration-300 hover:shadow-md"
-              style={{ backgroundColor: '#FFFFFF', borderColor: 'rgb(255,197,211)' }}
-            >
-              <h4 className="font-semibold mb-2" style={{ color: '#FF4B8B' }}>Endometrial Hyperplasia</h4>
-              <p className="text-sm" style={{ color: '#7a2f4f' }}>
+            <div className="p-4 rounded-xl border border-[#FF4B8B]/10 transition-all duration-300 hover:shadow-md bg-white">
+              <h4 className="font-semibold mb-2 text-[#FF4B8B]">Endometrial Hyperplasia</h4>
+              <p className="text-sm text-[#BB125B]">
                 Some women first develop a pre-cancerous condition where the uterine lining becomes too thick. Early treatment can prevent progression to cancer.
               </p>
             </div>
@@ -91,11 +73,8 @@ const EndometrialCard2 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           {/* Extra Info Box */}
-          <div
-            className="p-4 rounded-xl border"
-            style={{ backgroundColor: '#FFF5F8', borderColor: 'rgb(255,197,211)' }}
-          >
-            <h4 className="font-semibold mb-2 flex items-center gap-2" style={{ color: '#FF4B8B' }}>
+          <div className="p-4 rounded-xl border border-[#FF4B8B]/10 bg-[#FF4B8B]/10">
+            <h4 className="font-semibold mb-2 flex items-center gap-2 text-[#FF4B8B]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -114,7 +93,7 @@ const EndometrialCard2 = ({ setShowCard, setActiveButton }) => {
               </svg>
               Did You Know?
             </h4>
-            <p className="text-sm" style={{ color: '#7a2f4f' }}>
+            <p className="text-sm text-[#BB125B]">
               Early detection of endometrial hyperplasia and timely treatment can prevent it from progressing to endometrial cancer.
             </p>
           </div>

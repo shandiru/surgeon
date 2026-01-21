@@ -8,16 +8,12 @@ const EndometrialCard3 = ({ setShowCard, setActiveButton }) => {
 
       {/* Card Container */}
       <div
-        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-2xl border p-8 shadow-sm animate-in slide-in-from-right-5 duration-300"
-        style={{
-          backgroundColor: '#FFFFFF',
-          borderColor: 'rgb(255,197,211)',
-        }}
+        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-2xl border border-[#FF4B8B]/10 p-8 shadow-sm animate-in slide-in-from-right-5 duration-300 bg-white"
       >
 
         {/* Card Header */}
         <div className="grid auto-rows-min items-start gap-1.5">
-          <div className="leading-none font-semibold flex items-center gap-2" style={{ color: '#FF4B8B' }}>
+          <div className="leading-none font-semibold flex items-center gap-2 text-[#FF4B8B]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -38,7 +34,7 @@ const EndometrialCard3 = ({ setShowCard, setActiveButton }) => {
             </svg>
             Key Risk Factors
           </div>
-          <p className="text-sm mt-1" style={{ color: '#7a2f4f' }}>
+          <p className="text-sm mt-1 text-[#BB125B]">
             These factors increase the likelihood of developing endometrial cancer.
           </p>
         </div>
@@ -61,44 +57,34 @@ const EndometrialCard3 = ({ setShowCard, setActiveButton }) => {
             ].map((item, index) => (
               <div
                 key={index}
-                className="flex gap-4 p-4 rounded-xl border transition-all duration-300 hover:shadow-lg active:shadow-lg"
-                style={{
-                  backgroundColor: '#FFFFFF',
-                  borderColor: 'rgb(255,197,211)',
-                }}
+                className="flex gap-4 p-4 rounded-xl border border-[#FF4B8B]/10 transition-all duration-300 hover:shadow-lg active:shadow-lg bg-white"
               >
                 {/* Number Circle */}
                 <div className="flex-shrink-0">
-                  <div
-                    className="w-10 h-10 rounded-full flex items-center justify-center font-bold"
-                    style={{ backgroundColor: '#FF4B8B', color: '#FFFFFF' }}
-                  >
+                  <div className="w-10 h-10 rounded-full flex items-center justify-center font-bold bg-[#FF4B8B] text-white">
                     {index + 1}
                   </div>
                 </div>
 
                 {/* Text */}
                 <div className="flex-1">
-                  <h4 className="font-semibold mb-1 flex items-center gap-2" style={{ color: '#FF4B8B' }}>
+                  <h4 className="font-semibold mb-1 flex items-center gap-2 text-[#FF4B8B]">
                     {item.icon}
                     {item.step}
                   </h4>
-                  <p className="text-sm" style={{ color: '#7a2f4f' }}>{item.description}</p>
+                  <p className="text-sm text-[#BB125B]">{item.description}</p>
                 </div>
               </div>
             ))}
           </div>
 
           {/* Protective Factors */}
-          <div
-            className="p-4 rounded-xl border mt-4"
-            style={{ backgroundColor: '#FFF5F8', borderColor: 'rgb(255,197,211)' }}
-          >
-            <h4 className="font-semibold mb-2 flex items-center gap-2" style={{ color: '#FF4B8B' }}>
+          <div className="p-4 rounded-xl border border-[#FF4B8B]/10 mt-4 bg-[#FF4B8B]/10">
+            <h4 className="font-semibold mb-2 flex items-center gap-2 text-[#FF4B8B]">
               <Sparkles className="w-5 h-5 text-[#FF4B8B]" />
               Protective Factors
             </h4>
-            <p className="text-sm" style={{ color: '#7a2f4f' }}>
+            <p className="text-sm text-[#BB125B]">
               Pregnancy, use of combined hormonal contraceptives, and maintaining a healthy weight can lower the risk of endometrial cancer.
             </p>
           </div>

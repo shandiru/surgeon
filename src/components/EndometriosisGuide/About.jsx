@@ -23,22 +23,22 @@ const EndometriosisGuide = ({ activeButton }) => {
         >
           <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
         </svg>
-        <span className="text-primary font-medium">Medical Education</span>
+        <span className="text-primary font-medium text-caption">Medical Education</span>
       </div>
 
       {/* Main Title */}
-      <h1 className="text-3xl sm:text-4xl font-bold text-balance mb-4 text-[#FF4B8B]">
+      <h1 className="text-hero text-balance mb-4 text-[#FF4B8B]">
       Endometriosis
       </h1>
-      <p className="text-lg sm:text-xl text-muted-foreground text-balance text-[#BB125B]">
+      <p className="text-body-large text-muted-foreground text-balance text-[#BB125B]">
         What it is, why it's done, and what to expect
       </p>
 
       {/* Progress Bar */}
       <div className="mt-6 max-w-md mx-auto">
         <div className="flex justify-between items-center mb-2">
-          <span className="text-sm text-muted-foreground text-[#BB125B]">Your Progress</span>
-          <span className="text-sm font-medium text-[#BB125B]">
+          <span className="text-body-small text-muted-foreground text-[#BB125B]">Your Progress</span>
+          <span className="text-body-small font-medium text-[#BB125B]">
             {completed}/{totalSteps} sections
           </span>
         </div>

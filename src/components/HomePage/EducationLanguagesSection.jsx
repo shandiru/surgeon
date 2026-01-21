@@ -38,7 +38,7 @@ export default function EducationLanguagesSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-stretch">
           {/* Education & Qualifications */}
           <div className="flex flex-col" data-aos="fade-right">
-            <h2 className="text-4xl font-bold text-[#FF4B8B] mb-10 text-center lg:text-left">
+            <h2 className="text-section text-[#FF4B8B] mb-10 text-center lg:text-left">
               Education & Qualifications
             </h2>
 
@@ -52,11 +52,11 @@ export default function EducationLanguagesSection() {
                   data-aos="fade-up"
                   data-aos-delay={i * 120}
                 >
-                  <h3 className="text-lg font-semibold text-gray-900">
+                  <h3 className="text-card-title font-semibold text-gray-900">
                     {item.title}
                   </h3>
-                  <p className="text-[#FF4B8B] font-medium">{item.place}</p>
-                  <p className="text-gray-500 text-sm">{item.years}</p>
+                  <p className="text-[#FF4B8B] font-medium text-body">{item.place}</p>
+                  <p className="text-gray-500 text-body-small">{item.years}</p>
                 </div>
               ))}
             </div>
@@ -92,7 +92,7 @@ export default function EducationLanguagesSection() {
                 <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
                 <path d="M2 12h20" />
               </svg>
-              <div className="font-semibold text-2xl text-gray-900">
+              <div className="font-semibold text-subsection text-gray-900">
                 Languages Spoken
               </div>
             </div>
@@ -102,7 +102,7 @@ export default function EducationLanguagesSection() {
                 {['English', 'Hindi'].map((lang, idx) => (
                   <span
                     key={idx}
-                    className="inline-flex items-center justify-center rounded-md font-medium text-lg px-6 py-2 
+                    className="inline-flex items-center justify-center rounded-md font-medium text-body-large px-6 py-2 
                                bg-[#FFF1F5] text-gray-800 border border-[#FF4B8B]/20 
                                transition-all duration-300 hover:bg-[#FF4B8B] hover:text-white 
                                hover:shadow-[0_0_15px_1px_rgba(255,75,139,0.3)] hover:scale-105 
@@ -116,7 +116,7 @@ export default function EducationLanguagesSection() {
               </div>
 
               <p
-                className="text-gray-600 mt-6 text-center text-sm"
+                className="text-gray-600 mt-6 text-center text-body-small"
                 data-aos="fade-up"
                 data-aos-delay="500"
               >

@@ -26,7 +26,7 @@ const UltraSoundButtons = ({ setShowCard, activeButton, setActiveButton }) => {
             w-full py-2 sm:py-3 px-3 sm:px-4 
             font-semibold rounded-md 
             text-[#BB125B] bg-[#FF4B8B]/10 hover:bg-[#FF4B8B]/30 
-            text-xs sm:text-sm md:text-base 
+            text-xs sm:text-button md:text-base 
             transition-all 
             ${activeButton === index ? 'bg-[#FF4B8B]/50 text-black' : ''}`}
         >
