@@ -4,28 +4,28 @@ import { Heart, Shield, MessageCircle, Users } from 'lucide-react'
 const cards = [
   {
     id: 1,
-    icon: <Heart className="w-10 h-10 mx-auto mb-4" style={{ color: '#FF4B8B' }} />,
+    icon: <Heart className="w-10 h-10 mx-auto mb-4 text-[#FF4B8B]" />,
     title: "It's Normal to Feel Worried",
     description:
       'Lumps on intimate areas can feel worrying or embarrassing - these feelings are completely normal and valid.',
   },
   {
     id: 2,
-    icon: <Shield className="w-10 h-10 mx-auto mb-4" style={{ color: '#FF4B8B' }} />,
+    icon: <Shield className="w-10 h-10 mx-auto mb-4 text-[#FF4B8B]" />,
     title: 'Most Are Harmless',
     description:
       'The vast majority of lumps are not cancer and are easily treatable or resolve on their own.',
   },
   {
     id: 3,
-    icon: <MessageCircle className="w-10 h-10 mx-auto mb-4" style={{ color: '#FF4B8B' }} />,
+    icon: <MessageCircle className="w-10 h-10 mx-auto mb-4 text-[#FF4B8B]" />,
     title: 'Ask Questions',
     description:
       "It's okay to ask questions and get reassurance from your healthcare provider - we are here to help.",
   },
   {
     id: 4,
-    icon: <Users className="w-10 h-10 mx-auto mb-4" style={{ color: '#FF4B8B' }} />,
+    icon: <Users className="w-10 h-10 mx-auto mb-4 text-[#FF4B8B]" />,
     title: "You're Not Alone",
     description:
       'Many people experience similar concerns. Support groups and resources are available.',
@@ -33,8 +33,6 @@ const cards = [
 ]
 
 const EmotionalWellbeingSupport = () => {
-  const pink = '#FFC5D3'
-  const deepPink = '#FF4B8B'
 
   return (
     <section className="py-16 bg-white">
@@ -42,7 +40,7 @@ const EmotionalWellbeingSupport = () => {
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4" style={{ color: deepPink }}>
+            <h2 className="text-3xl font-bold mb-4 text-[#FF4B8B]">
               Emotional Wellbeing &amp; Support
             </h2>
             <p className="text-lg text-gray-700">
@@ -69,13 +67,10 @@ const EmotionalWellbeingSupport = () => {
           </div>
 
           {/* Remember Section */}
-          <div
-            className="rounded-lg p-6 shadow-sm"
-            style={{ backgroundColor: pink }}
-          >
+          <div className="rounded-lg p-6 shadow-sm bg-[#FF4B8B]/10">
             <div className="text-center">
-              <h3 className="text-xl font-semibold mb-3" style={{ color: deepPink }}>
-                <Heart className="inline-block mr-2" style={{ color: deepPink }} />
+              <h3 className="text-xl font-semibold mb-3 text-[#BB125B]">
+                <Heart className="inline-block mr-2 text-[#FF4B8B]" />
                 Remember
               </h3>
               <div className="space-y-2 mb-6 text-gray-800">
@@ -88,14 +83,12 @@ const EmotionalWellbeingSupport = () => {
               </div>
               <div className="flex justify-center space-x-4">
                 <button
-                  className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all shadow-sm h-9 px-4 py-2"
-                  style={{ backgroundColor: deepPink, color: 'white' }}
+                  className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all shadow-sm h-9 px-4 py-2 bg-[#FF4B8B] text-white"
                 >
                   Book Appointment
                 </button>
                 <button
-                  className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all shadow-sm h-9 px-4 py-2 border"
-                  style={{ borderColor: deepPink, color: deepPink }}
+                  className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all shadow-sm h-9 px-4 py-2 border border-[#FF4B8B] text-[#FF4B8B]"
                 >
                   Find Support Groups
                 </button>

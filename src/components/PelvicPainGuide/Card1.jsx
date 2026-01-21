@@ -10,22 +10,21 @@ const PelvicPainGuideCard1 = ({ setShowCard, setActiveButton }) => {
       <div
         className="text-[#FF4B8B] bg-[#FF4B8B]/10 max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 
         flex flex-col gap-6 rounded-xl py-6 shadow-sm 
-        hover:z-50 transition-all duration-300 hover:bg-[#fce3e8] 
-        hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] 
-        active:shadow-lg active:border-[#f5a9bd] hover:scale-105 active:scale-100 border p-6"
-        style={{ borderColor: 'rgb(255,197,211)', backgroundColor: '#FFF5F8' }}
+        hover:z-50 transition-all duration-300 hover:bg-[#FF4B8B]/20 
+        hover:shadow-lg hover:border-[#FF4B8B]/20 active:bg-[#FF4B8B]/20 
+        active:shadow-lg active:border-[#FF4B8B]/20 hover:scale-105 active:scale-100 border border-[#FF4B8B]/10 p-6"
       >
 
         {/* HEADER */}
         <div className="grid auto-rows-min items-start gap-1.5 px-2">
-          <div className="font-semibold flex items-center gap-3 text-2xl" style={{ color: '#FF4B8B' }}>
+          <div className="font-semibold flex items-center gap-3 text-2xl text-[#FF4B8B]">
             <Info className="h-6 w-6" />
             What Is Pelvic Pain?
           </div>
         </div>
 
         {/* CONTENT */}
-        <div className="px-2 space-y-4 text-[#7a2f4f]">
+        <div className="px-2 space-y-4 text-[#BB125B]">
 
           <div className="grid md:grid-cols-2 gap-6">
 
@@ -42,12 +41,12 @@ const PelvicPainGuideCard1 = ({ setShowCard, setActiveButton }) => {
             </div>
 
             {/* KEY FACTS BOX */}
-            <div className="bg-[#FFF5F8] p-4 rounded-lg border" style={{ borderColor: 'rgb(255,197,211)' }}>
-              <h4 className="font-semibold mb-2" style={{ color: '#FF4B8B' }}>
+            <div className="bg-[#FF4B8B]/10 p-4 rounded-lg border border-[#FF4B8B]/10">
+              <h4 className="font-semibold mb-2 text-[#FF4B8B]">
                 Key Facts
               </h4>
 
-              <ul className="space-y-2 text-sm text-[#7a2f4f]">
+              <ul className="space-y-2 text-sm text-[#BB125B]">
                 {[
                   'Very common condition',
                   'Most causes are treatable',

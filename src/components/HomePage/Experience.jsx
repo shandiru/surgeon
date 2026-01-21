@@ -15,13 +15,13 @@ export default function ProfessionalExperience() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2
-            className="text-4xl font-bold text-[#FF4B8B] mb-4"
+            className="text-section text-[#FF4B8B] mb-4"
             data-aos="fade-up"
           >
             Professional Experience
           </h2>
           <p
-            className="text-lg text-gray-600"
+            className="text-body-large text-gray-600"
             data-aos="fade-up"
             data-aos-delay="100"
           >
@@ -74,15 +74,15 @@ export default function ProfessionalExperience() {
                   </svg>
                 </div>
                 <div>
-                  <p className="font-semibold text-sm text-gray-900">
+                  <p className="font-semibold text-body-small text-gray-900">
                     {item.hospital}
                   </p>
-                  <p className="text-[#FF4B8B] font-medium text-sm">{item.role}</p>
+                  <p className="text-[#FF4B8B] font-medium text-body-small">{item.role}</p>
                 </div>
               </div>
               <div>
-                <p className="text-gray-600 text-sm">{item.place}</p>
-                <p className="text-gray-500 text-sm mt-1">{item.desc}</p>
+                <p className="text-gray-600 text-body-small">{item.place}</p>
+                <p className="text-gray-500 text-body-small mt-1">{item.desc}</p>
               </div>
             </div>
           ))}
@@ -96,14 +96,14 @@ export default function ProfessionalExperience() {
           data-aos-delay="200"
         >
           <div className="text-center">
-            <h2 className="font-semibold text-2xl text-[#FF4B8B]">
+            <h2 className="font-semibold text-subsection text-[#FF4B8B]">
               Professional Memberships & Leadership
             </h2>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             {/* Memberships */}
             <div>
-              <h3 className="text-lg font-semibold mb-4 text-gray-900">
+              <h3 className="text-body-large font-semibold mb-4 text-gray-900">
                 Professional Memberships
               </h3>
               <div className="space-y-3">
@@ -115,7 +115,7 @@ export default function ProfessionalExperience() {
                 ].map((item, idx) => (
                   <div
                     key={idx}
-                    className="flex items-start gap-2 text-sm"
+                    className="flex items-start gap-2 text-body-small"
                     data-aos="fade-up"
                     data-aos-delay={`${200 + idx * 100}`}
                   >
@@ -138,7 +138,7 @@ export default function ProfessionalExperience() {
 
            {/* Leadership */}
 <div>
-  <h3 className="text-lg font-semibold mb-4 text-gray-900">
+  <h3 className="text-body-large font-semibold mb-4 text-gray-900">
     Leadership Positions
   </h3>
   <div className="space-y-4">
@@ -148,13 +148,13 @@ export default function ProfessionalExperience() {
       data-aos="fade-up"
       data-aos-delay="300"
     >
-      <h4 className="font-semibold text-gray-900">
+      <h4 className="font-semibold text-body text-gray-900">
         Honorary Secretary
       </h4>
-      <p className="text-gray-600 text-sm">
+      <p className="text-gray-600 text-body-small">
         British Gynaecological Cancer Society
       </p>
-      <p className="text-gray-500 text-xs">July 2022 - July 2025</p>
+      <p className="text-gray-500 text-caption">July 2022 - July 2025</p>
     </div>
 
     <div
@@ -163,13 +163,13 @@ export default function ProfessionalExperience() {
       data-aos="fade-up"
       data-aos-delay="400"
     >
-      <h4 className="font-semibold text-gray-900">
+      <h4 className="font-semibold text-body text-gray-900">
         IT and Social Media Subgroup Chair
       </h4>
-      <p className="text-gray-600 text-sm">
+      <p className="text-gray-600 text-body-small">
         British Gynaecological Cancer Society
       </p>
-      <p className="text-gray-500 text-xs">July 2020 - July 2023</p>
+      <p className="text-gray-500 text-caption">July 2020 - July 2023</p>
     </div>
 
     <div
@@ -178,10 +178,10 @@ export default function ProfessionalExperience() {
       data-aos="fade-up"
       data-aos-delay="500"
     >
-      <h4 className="font-semibold text-gray-900">
+      <h4 className="font-semibold text-body text-gray-900">
         Gyn Oncology Lead
       </h4>
-      <p className="text-gray-600 text-sm">
+      <p className="text-gray-600 text-body-small">
         Nottingham NHS
       </p>
       {/* <p className="text-gray-500 text-xs">[Add start date] - Present</p> */}

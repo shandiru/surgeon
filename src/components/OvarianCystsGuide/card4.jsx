@@ -7,10 +7,7 @@ const OvarianCystsGuideCard4 = ({ setShowCard, setActiveButton }) => {
       <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto animate-in slide-in-from-right-5 duration-300">
 
         {/* FULL WRAPPER SECTION */}
-        <div
-          className="rounded-2xl p-8 border shadow-lg transition-all duration-300 bg-white"
-          style={{ borderColor: "rgb(255,197,211)" }}
-        >
+        <div className="rounded-2xl p-8 border border-[#FF4B8B]/10 shadow-lg transition-all duration-300 bg-white">
           {/* HEADER */}
           <div className="flex items-center gap-3 text-2xl font-semibold text-[#FF4B8B] mb-6">
             <svg

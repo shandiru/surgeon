@@ -3,10 +3,6 @@ import React from 'react';
 import { AlertCircle } from "lucide-react"
 
 const FibroidGuideCard2 = ({ setShowCard, setActiveButton }) => {
-  
-   const pink = "#FFC5D3"
-  const deepPink = "#FF4B8B"
-
   return (
     <div className="space-y-6 pb-10 px-3">
       {/* Card Container */}
@@ -21,7 +17,7 @@ const FibroidGuideCard2 = ({ setShowCard, setActiveButton }) => {
               height="28"
               viewBox="0 0 24 24"
               fill="none"
-              stroke={deepPink}
+              stroke="#FF4B8B"
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -31,7 +27,7 @@ const FibroidGuideCard2 = ({ setShowCard, setActiveButton }) => {
               <path d="M12 9v4" />
               <path d="M12 17h.01" />
             </svg>
-            <h2 className="font-bold text-3xl" style={{ color: deepPink }}>
+            <h2 className="font-bold text-3xl text-[#FF4B8B]">
               Symptoms of Fibroids
             </h2>
           </div>
@@ -44,7 +40,7 @@ const FibroidGuideCard2 = ({ setShowCard, setActiveButton }) => {
         <div className="grid md:grid-cols-2 gap-10">
           {/* Left - Physical Symptoms */}
           <div className="space-y-4">
-            <h4 className="font-semibold text-lg" style={{ color: deepPink }}>
+            <h4 className="font-semibold text-lg text-[#FF4B8B]">
               Physical Symptoms
             </h4>
             <ul className="space-y-2 text-gray-700">
@@ -59,7 +55,7 @@ const FibroidGuideCard2 = ({ setShowCard, setActiveButton }) => {
 
           {/* Right - Other Effects */}
           <div className="space-y-4">
-            <h4 className="font-semibold text-lg" style={{ color: deepPink }}>
+            <h4 className="font-semibold text-lg text-[#FF4B8B]">
               Other Effects
             </h4>
             <ul className="space-y-2 text-gray-700">
@@ -74,12 +70,9 @@ const FibroidGuideCard2 = ({ setShowCard, setActiveButton }) => {
         </div>
 
         {/* Highlight Box */}
-        <div
-          className="rounded-lg p-5 shadow-sm"
-          style={{ backgroundColor: pink }}
-        >
-          <p className="font-medium text-base flex items-center gap-2" style={{ color: deepPink }}>
-            <AlertCircle className="h-5 w-5" style={{ color: deepPink }} />
+        <div className="rounded-lg p-5 shadow-sm bg-[#FF4B8B]/10">
+          <p className="font-medium text-base flex items-center gap-2 text-[#BB125B]">
+            <AlertCircle className="h-5 w-5 text-[#FF4B8B]" />
             If left untreated, fibroids can grow and may cause complications.
           </p>
         </div>

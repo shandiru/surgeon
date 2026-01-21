@@ -14,9 +14,6 @@ const SymptomsSection = () => {
     stiSymptoms: false,
   })
 
-  const pink = '#FFC5D3'
-  const deepPink = '#FF4B8B'
-
   const handleCheckboxChange = (e) => {
     const { id } = e.currentTarget
     setSymptoms((prev) => ({
@@ -31,8 +28,8 @@ const SymptomsSection = () => {
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4" style={{ color: deepPink }}>
-              <Stethoscope className="inline-block mr-2" style={{ color: deepPink }} />
+            <h2 className="text-3xl font-bold mb-4 text-[#FF4B8B]">
+              <Stethoscope className="inline-block mr-2 text-[#FF4B8B]" />
               When to See Your Doctor
             </h2>
             <p className="text-lg text-gray-700">
@@ -44,7 +41,7 @@ const SymptomsSection = () => {
             {/* Symptom Checker Card */}
             <div className="bg-white text-gray-900 flex flex-col gap-6 rounded-xl py-6 shadow-sm transition-all duration-300 hover:shadow-md hover:scale-[1.02] active:scale-[0.98]">
               <div className="px-6">
-                <div className="font-semibold flex items-center space-x-2 text-lg" style={{ color: deepPink }}>
+                <div className="font-semibold flex items-center space-x-2 text-lg text-[#FF4B8B]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="w-5 h-5"
@@ -99,10 +96,7 @@ const SymptomsSection = () => {
                     <label htmlFor={id} className="text-sm cursor-pointer leading-relaxed">
                       {label}
                       {urgent && (
-                        <span
-                          className="ml-2 text-xs px-2 py-0.5 rounded"
-                          style={{ backgroundColor: pink, color: deepPink }}
-                        >
+                        <span className="ml-2 text-xs px-2 py-0.5 rounded bg-[#FF4B8B]/10 text-[#BB125B]">
                           Urgent
                         </span>
                       )}
@@ -115,7 +109,7 @@ const SymptomsSection = () => {
             {/* Assessment Card */}
             <div className="bg-white text-gray-900 flex flex-col gap-6 rounded-xl py-6 px-6 shadow-sm transition-all duration-300 hover:shadow-md hover:scale-[1.02] active:scale-[0.98]">
               <div>
-                <div className="font-semibold flex items-center space-x-2 text-lg" style={{ color: deepPink }}>
+                <div className="font-semibold flex items-center space-x-2 text-lg text-[#FF4B8B]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="w-5 h-5"
@@ -132,12 +126,11 @@ const SymptomsSection = () => {
               <div className="text-center py-8">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-12 h-12 mx-auto mb-4"
+                  className="w-12 h-12 mx-auto mb-4 text-[#FF4B8B]"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                   strokeWidth="2"
-                  style={{ color: deepPink }}
                 >
                   <path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"></path>
                   <path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"></path>

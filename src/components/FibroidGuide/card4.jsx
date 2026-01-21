@@ -2,9 +2,6 @@
 import { AlertTriangle, Lightbulb } from "lucide-react";
 
 const FibroidGuideCard4 = ({ setShowCard, setActiveButton }) => {
-  const pink = "#FFC5D3"
-  const deepPink = "#FF4B8B"
-
   return (
     <div className="space-y-6 pb-10 px-3">  {/* ⭐ ADDED PADDING BOTTOM */}
       <div className="max-w-5xl mx-auto bg-white text-[#212529] flex flex-col gap-6 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 p-8">
@@ -12,8 +9,8 @@ const FibroidGuideCard4 = ({ setShowCard, setActiveButton }) => {
         {/* Header */}
         <div className="flex flex-col gap-2 mb-4">
           <div className="flex items-center gap-3">
-            <Lightbulb className="h-7 w-7" style={{ color: deepPink }} />
-            <h2 className="font-bold text-2xl md:text-3xl" style={{ color: deepPink }}>
+            <Lightbulb className="h-7 w-7 text-[#FF4B8B]" />
+            <h2 className="font-bold text-2xl md:text-3xl text-[#FF4B8B]">
               Causes & Risk Factors
             </h2>
           </div>
@@ -32,11 +29,7 @@ const FibroidGuideCard4 = ({ setShowCard, setActiveButton }) => {
             ].map((item, i) => (
               <span
                 key={i}
-                className="block rounded-lg px-4 py-2 text-sm font-medium transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-1 active:scale-[0.98]"
-                style={{
-                  backgroundColor: pink,
-                  color: deepPink,
-                }}
+                className="block rounded-lg px-4 py-2 text-sm font-medium transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-1 active:scale-[0.98] bg-[#FF4B8B]/10 text-[#BB125B]"
               >
                 {item}
               </span>
@@ -50,11 +43,7 @@ const FibroidGuideCard4 = ({ setShowCard, setActiveButton }) => {
             ].map((item, i) => (
               <span
                 key={i}
-                className="block rounded-lg px-4 py-2 text-sm font-medium transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-1 active:scale-[0.98]"
-                style={{
-                  backgroundColor: pink,
-                  color: deepPink,
-                }}
+                className="block rounded-lg px-4 py-2 text-sm font-medium transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-1 active:scale-[0.98] bg-[#FF4B8B]/10 text-[#BB125B]"
               >
                 {item}
               </span>

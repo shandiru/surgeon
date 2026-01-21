@@ -31,14 +31,14 @@ const UltraSoundGuide = ({ activeButton }) => {
         </div>
 
         {/* Heading and Subheading */}
-        <h1 className="text-3xl sm:text-4xl font-bold text-[#FF4B8B] mb-4">Understanding Gynaecological Ultrasound</h1>
-        <p className="text-lg sm:text-xl text-muted-foreground mb-6">What it is, why it's done, and what to expect</p>
+        <h1 className="text-hero text-[#FF4B8B] mb-4">Understanding Gynaecological Ultrasound</h1>
+        <p className="text-body-large text-muted-foreground mb-6">What it is, why it's done, and what to expect</p>
 
         {/* Progress Bar */}
         <div className="mt-6 max-w-md mx-auto">
           <div className="flex justify-between items-center mb-2">
-            <span className="text-sm text-muted-foreground text-[#d60d64]">Your Progress</span>
-            <span className="text-sm font-medium text-[#BB125B]">
+            <span className="text-body-small text-muted-foreground text-[#d60d64]">Your Progress</span>
+            <span className="text-body-small font-medium text-[#BB125B]">
               {completed}/{totalSteps} sections
             </span>
           </div>

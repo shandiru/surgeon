@@ -33,27 +33,24 @@ const OvarianCancerGuidecard6 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6 pb-14">
       {/* CARD CONTAINER */}
-      <div
-        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 
-        flex flex-col gap-10 rounded-2xl border p-8 shadow-sm
-        animate-in slide-in-from-right-5 duration-300"
-        style={{ borderColor: "rgb(255,197,211)", backgroundColor: "#FFFFFF" }}
-      >
+      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 
+        flex flex-col gap-10 rounded-2xl border border-[#FF4B8B]/10 p-8 shadow-sm
+        animate-in slide-in-from-right-5 duration-300 bg-white">
         {/* HEADER */}
         <div className="text-center space-y-3">
           <div className="flex items-center justify-center gap-2 mb-1">
-            <HeartPulse className="h-8 w-8" style={{ color: "#FF4B8B" }} />
-            <h3 className="text-3xl font-bold" style={{ color: "#FF4B8B" }}>
+            <HeartPulse className="h-8 w-8 text-[#FF4B8B]" />
+            <h3 className="text-3xl font-bold text-[#FF4B8B]">
               Treatment of Ovarian Cancer
             </h3>
           </div>
 
-          <p className="text-lg" style={{ color: "#7a2f4f" }}>
+          <p className="text-lg text-[#BB125B]">
             Treatment depends on the type of ovarian cancer, your overall health,
             and fertility considerations.
           </p>
 
-          <p className="font-semibold text-lg" style={{ color: "#FF4B8B" }}>
+          <p className="font-semibold text-lg text-[#FF4B8B]">
             The main goal is to remove the cancer whenever possible.
           </p>
         </div>

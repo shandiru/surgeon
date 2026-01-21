@@ -3,8 +3,6 @@ import { ChevronRight, Circle, CircleDashed, AlertCircle } from 'lucide-react'
 
 const VulvarVaginalSection = () => {
   const [openSections, setOpenSections] = useState({})
-  const pink = '#FFC5D3'
-  const deepPink = '#FF4B8B'
 
   const handleToggle = (section) => {
     setOpenSections((prevState) => ({
@@ -16,7 +14,7 @@ const VulvarVaginalSection = () => {
   const sections = [
     {
       id: 'vaginalCysts',
-      icon: <AlertCircle className="w-6 h-6" style={{ color: deepPink }} />,
+      icon: <AlertCircle className="w-6 h-6 text-[#FF4B8B]" />,
       title: 'Vaginal Cysts',
       description: 'Pouch-like sacs that can contain pus, air, or scar tissue',
       details: [
@@ -29,7 +27,7 @@ const VulvarVaginalSection = () => {
     },
     {
       id: 'vaginalPolyps',
-      icon: <CircleDashed className="w-6 h-6" style={{ color: deepPink }} />,
+      icon: <CircleDashed className="w-6 h-6 text-[#FF4B8B]" />,
       title: 'Vaginal Polyps (Skin Tags)',
       description: 'Small, soft outgrowths of skin',
       details: [
@@ -41,7 +39,7 @@ const VulvarVaginalSection = () => {
     },
     {
       id: 'vaginalWarts',
-      icon: <AlertCircle className="w-6 h-6" style={{ color: deepPink }} />,
+      icon: <AlertCircle className="w-6 h-6 text-[#FF4B8B]" />,
       title: 'Vaginal Warts or Herpes Blisters',
       description: 'Caused by viral infections (HPV or herpes)',
       details: [
@@ -53,7 +51,7 @@ const VulvarVaginalSection = () => {
     },
     {
       id: 'vaginalCancer',
-      icon: <Circle className="w-6 h-6" style={{ color: deepPink }} />,
+      icon: <Circle className="w-6 h-6 text-[#FF4B8B]" />,
       title: 'Vaginal Cancer (Rare)',
       description: 'Uncommon but requires immediate medical attention',
       details: [
@@ -71,7 +69,7 @@ const VulvarVaginalSection = () => {
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4" style={{ color: deepPink }}>
+            <h2 className="text-3xl font-bold mb-4 text-[#FF4B8B]">
               Common Causes of Vulvar &amp; Vaginal Lumps
             </h2>
             <p className="text-lg text-gray-700">
@@ -95,20 +93,16 @@ const VulvarVaginalSection = () => {
                     <div className="flex items-center space-x-3">
                       <span>{section.icon}</span>
                       <div>
-                        <div
-                          className="font-semibold text-left"
-                          style={{ color: deepPink }}
-                        >
+                        <div className="font-semibold text-left text-[#FF4B8B]">
                           {section.title}
                         </div>
                         <p className="text-sm text-gray-600">{section.description}</p>
                       </div>
                     </div>
                     <ChevronRight
-                      className={`transition-transform ${
+                      className={`transition-transform text-[#FF4B8B] ${
                         openSections[section.id] ? 'rotate-90' : ''
                       }`}
-                      style={{ color: deepPink }}
                     />
                   </div>
                 </div>

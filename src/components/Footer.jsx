@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { HashLink } from "react-router-hash-link";
 
 export default function Footer() {
   return (
@@ -106,17 +107,18 @@ export default function Footer() {
 
           {/* Middle Column */}
           <div>
-            <h2 className="text-lg font-bold mb-3">Quick Links</h2>
+            <h2 className="text-subsection mb-3">Quick Links</h2>
             <ul className="text-white/90 space-y-1">
               {['About', 'Experience', 'Specialties', 'Education', 'Contact'].map(
                 (link, i) => (
                   <li key={i}>
-                    <a
-                      href={`#${link.toLowerCase()}`}
+                    <HashLink
+                      smooth
+                      to={`/#${link.toLowerCase()}`}
                       className="hover:underline"
                     >
                       {link}
-                    </a>
+                    </HashLink>
                   </li>
                 )
               )}
@@ -149,7 +151,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Line */}
-        <div className="border-t border-white/40 mt-10 pt-6 text-center text-sm text-white/80">
+        <div className="border-t border-white/40 mt-10 pt-6 text-center text-body-small text-white/80">
           <p>
             © 2025 Mr Ketankumar Gajjar – aecological Oncologist.
             All rights reserved.

@@ -3,11 +3,6 @@
 import { Pill, User } from "lucide-react";
 
 const FibroidGuidecard7 = ({ setShowCard, setActiveButton }) => {
-
-    const pink = "#FFC5D3"
-  const deepPink = "#FF4B8B"
-
-
   return (
     <div className="space-y-6 pb-10 px-3">
       {/* Outer Card */}
@@ -16,8 +11,8 @@ const FibroidGuidecard7 = ({ setShowCard, setActiveButton }) => {
         {/* Card Header */}
         <div className="text-center">
           <div className="flex items-center justify-center gap-2 mb-3">
-            <Pill className="text-3xl" style={{ color: deepPink }} />
-            <h2 className="font-bold text-2xl md:text-3xl" style={{ color: deepPink }}>
+            <Pill className="text-3xl text-[#FF4B8B]" />
+            <h2 className="font-bold text-2xl md:text-3xl text-[#FF4B8B]">
               Treatment Options
             </h2>
           </div>
@@ -30,7 +25,7 @@ const FibroidGuidecard7 = ({ setShowCard, setActiveButton }) => {
         <div className="space-y-10">
           {/* Medication Section */}
           <div>
-            <h3 className="text-xl font-semibold mb-6" style={{ color: deepPink }}>
+            <h3 className="text-xl font-semibold mb-6 text-[#FF4B8B]">
               Medication
             </h3>
             <div className="grid md:grid-cols-2 gap-6">
@@ -44,7 +39,7 @@ const FibroidGuidecard7 = ({ setShowCard, setActiveButton }) => {
                   key={i}
                   className="rounded-xl p-5 bg-white shadow-md hover:shadow-lg hover:-translate-y-1 transition-all"
                 >
-                  <h4 className="font-semibold mb-2" style={{ color: deepPink }}>
+                  <h4 className="font-semibold mb-2 text-[#FF4B8B]">
                     {item.title}
                   </h4>
                   <p className="text-sm text-gray-600">{item.desc}</p>
@@ -54,11 +49,11 @@ const FibroidGuidecard7 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           {/* Divider */}
-          <div className="h-px w-full" style={{ backgroundColor: pink }} />
+          <div className="h-px w-full bg-[#FF4B8B]/10" />
 
           {/* Procedures Section */}
           <div>
-            <h3 className="text-xl font-semibold mb-6" style={{ color: deepPink }}>
+            <h3 className="text-xl font-semibold mb-6 text-[#FF4B8B]">
               Procedures & Surgery
             </h3>
             <div className="grid md:grid-cols-2 gap-6">
@@ -72,7 +67,7 @@ const FibroidGuidecard7 = ({ setShowCard, setActiveButton }) => {
                   key={i}
                   className="rounded-xl p-5 bg-white shadow-md hover:shadow-lg hover:-translate-y-1 transition-all"
                 >
-                  <h4 className="font-semibold mb-2" style={{ color: deepPink }}>
+                  <h4 className="font-semibold mb-2 text-[#FF4B8B]">
                     {item.title}
                   </h4>
                   <p className="text-sm text-gray-600">{item.desc}</p>
@@ -82,12 +77,9 @@ const FibroidGuidecard7 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           {/* Doctor Advice Note */}
-          <div
-            className="rounded-xl p-5 text-center shadow-md"
-            style={{ backgroundColor: pink }}
-          >
-            <p className="font-medium flex items-center gap-2 justify-center" style={{ color: deepPink }}>
-              <User className="text-2xl" />
+          <div className="rounded-xl p-5 text-center shadow-md bg-[#FF4B8B]/10">
+            <p className="font-medium flex items-center gap-2 justify-center text-[#BB125B]">
+              <User className="text-2xl text-[#FF4B8B]" />
               Your doctor will help you choose the safest and most effective option
               based on your symptoms and fertility plans.
             </p>

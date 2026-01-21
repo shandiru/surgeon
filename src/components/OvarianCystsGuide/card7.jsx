@@ -10,11 +10,7 @@ const OvarianCystsGuideCard7 = ({ setShowCard, setActiveButton }) => {
         <div className="grid md:grid-cols-2 gap-6">
 
           {/* ===================== CARD 1 ===================== */}
-          <div
-            className="bg-white text-[#BB125B] flex flex-col gap-6 rounded-xl py-6 px-5 sm:px-6 
-                       shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all"
-            style={{ border: "1px solid rgb(255,197,211)" }}
-          >
+          <div className="bg-white text-[#BB125B] flex flex-col gap-6 rounded-xl py-6 px-5 sm:px-6 border border-[#FF4B8B]/10 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all">
             {/* Header */}
             <div className="flex items-center gap-3 font-semibold text-[#FF4B8B] text-lg">
               <svg
@@ -64,11 +60,7 @@ const OvarianCystsGuideCard7 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           {/* ===================== CARD 2 ===================== */}
-          <div
-            className="bg-white text-[#BB125B] flex flex-col gap-6 rounded-xl py-6 px-5 sm:px-6 
-                       shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all"
-            style={{ border: "1px solid rgb(255,197,211)" }}
-          >
+          <div className="bg-white text-[#BB125B] flex flex-col gap-6 rounded-xl py-6 px-5 sm:px-6 border border-[#FF4B8B]/10 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all">
             {/* Header */}
             <div className="flex items-center gap-3 font-semibold text-[#FF4B8B] text-lg">
               <svg

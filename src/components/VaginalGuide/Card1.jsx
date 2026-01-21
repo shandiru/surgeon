@@ -8,19 +8,12 @@ const VaginalCard1 = ({ setShowCard, setActiveButton }) => {
 
       {/* Card Container */}
       <div
-        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-2xl border shadow-sm animate-in slide-in-from-right-5 duration-300 p-8"
-        style={{
-          backgroundColor: '#FFFFFF',
-          borderColor: 'rgb(255,197,211)',
-        }}
+        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-2xl border border-[#FF4B8B]/10 shadow-sm animate-in slide-in-from-right-5 duration-300 p-8 bg-white"
       >
 
         {/* Card Header */}
         <div className="grid auto-rows-min items-start gap-1.5">
-          <div
-            className="leading-none font-semibold flex items-center gap-2"
-            style={{ color: '#FF4B8B' }}
-          >
+          <div className="leading-none font-semibold flex items-center gap-2 text-[#FF4B8B]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -47,14 +40,8 @@ const VaginalCard1 = ({ setShowCard, setActiveButton }) => {
         <div className="space-y-6">
 
           {/* Overview Box */}
-          <div
-            className="p-4 rounded-xl border transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-100"
-            style={{
-              backgroundColor: '#FFF5F8',
-              borderColor: 'rgb(255,197,211)',
-            }}
-          >
-            <p className="text-lg leading-relaxed" style={{ color: '#7a2f4f' }}>
+          <div className="p-4 rounded-xl border border-[#FF4B8B]/10 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-100 bg-[#FF4B8B]/10">
+            <p className="text-lg leading-relaxed text-[#BB125B]">
               Vaginal cancer is a rare cancer that begins in the tissues of the vagina—the muscular
               canal that connects the cervix to the outside of the body. It often first appears as
               <strong> pre-cancerous changes (VAIN)</strong>, making early detection essential for
@@ -67,10 +54,7 @@ const VaginalCard1 = ({ setShowCard, setActiveButton }) => {
 
             {/* Quick Facts */}
             <div className="space-y-3">
-              <h4
-                className="font-semibold flex items-center gap-2"
-                style={{ color: '#FF4B8B' }}
-              >
+              <h4 className="font-semibold flex items-center gap-2 text-[#FF4B8B]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -112,28 +96,19 @@ const VaginalCard1 = ({ setShowCard, setActiveButton }) => {
                       <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
                       <path d="m9 11 3 3L22 4"></path>
                     </svg>
-                    <span style={{ color: '#7a2f4f' }}>{item}</span>
+                    <span className="text-[#BB125B]">{item}</span>
                   </li>
                 ))}
               </ul>
             </div>
 
             {/* Reminder Section */}
-            <div
-              className="p-4 rounded-xl border"
-              style={{
-                backgroundColor: '#FFF5F8',
-                borderColor: 'rgb(255,197,211)',
-              }}
-            >
-              <h4
-                className="font-semibold mb-2 flex items-center gap-2"
-                style={{ color: '#FF4B8B' }}
-              >
+            <div className="p-4 rounded-xl border border-[#FF4B8B]/10 bg-[#FF4B8B]/10">
+              <h4 className="font-semibold mb-2 flex items-center gap-2 text-[#FF4B8B]">
                 <Lightbulb className="text-xl text-[#FF4B8B]" />
                 Remember
               </h4>
-              <p className="text-sm" style={{ color: '#7a2f4f' }}>
+              <p className="text-sm text-[#BB125B]">
                 Vaginal cancer is rare, but early detection is crucial. Watch for symptoms such as
                 unusual bleeding, persistent pelvic pain, or a lump inside the vagina. Small changes
                 can be important—early evaluation leads to better outcomes.

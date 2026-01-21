@@ -2,10 +2,6 @@
 import React from "react";
 
 const FibroidGuidecard6 = ({ setShowCard, setActiveButton }) => {
-
-  const pink = "#FFC5D3"
-  const deepPink = "#FF4B8B"
-  
   return (
     <div className="space-y-6 pb-10 px-3">
       <div className="max-w-5xl mx-auto bg-white text-[#212529] flex flex-col gap-6 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 p-8">
@@ -18,7 +14,7 @@ const FibroidGuidecard6 = ({ setShowCard, setActiveButton }) => {
             height="28"
             viewBox="0 0 24 24"
             fill="none"
-            stroke={deepPink}
+            stroke="#FF4B8B"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -26,7 +22,7 @@ const FibroidGuidecard6 = ({ setShowCard, setActiveButton }) => {
           >
             <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
           </svg>
-          <h2 className="font-bold text-2xl md:text-3xl" style={{ color: deepPink }}>
+          <h2 className="font-bold text-2xl md:text-3xl text-[#FF4B8B]">
             Emotional Wellbeing
           </h2>
         </div>
@@ -42,11 +38,8 @@ const FibroidGuidecard6 = ({ setShowCard, setActiveButton }) => {
         </div>
 
         {/* Highlight Box */}
-        <div
-          className="rounded-xl p-5 shadow-md hover:shadow-lg transition-all duration-200"
-          style={{ backgroundColor: pink }}
-        >
-          <p className="font-medium text-center md:text-left" style={{ color: deepPink }}>
+        <div className="rounded-xl p-5 shadow-md hover:shadow-lg transition-all duration-200 bg-[#FF4B8B]/10">
+          <p className="font-medium text-center md:text-left text-[#BB125B]">
             It's okay to ask for emotional support or counselling — you're not alone.
           </p>
         </div>

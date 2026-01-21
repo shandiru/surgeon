@@ -55,16 +55,13 @@ const cards = [
 ]
 
 const TreatmentAndHomeCare = () => {
-  const pink = '#FFC5D3'
-  const deepPink = '#FF4B8B'
-
   return (
     <section id="treatment" className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4" style={{ color: deepPink }}>
+            <h2 className="text-3xl font-bold mb-4 text-[#FF4B8B]">
               Treatment &amp; Home Care
             </h2>
             <p className="text-lg text-gray-700">
@@ -84,16 +81,10 @@ const TreatmentAndHomeCare = () => {
                   <div className="rounded-full flex items-center justify-center mx-auto">
                     {card.icon}
                   </div>
-                  <div className="mt-3 font-semibold text-lg" style={{ color: deepPink }}>
+                  <div className="mt-3 font-semibold text-lg text-[#FF4B8B]">
                     {card.title}
                   </div>
-                  <span
-                    className="inline-flex items-center justify-center rounded-md px-2 py-1 mt-2 text-xs font-medium whitespace-nowrap shrink-0 w-fit mx-auto"
-                    style={{
-                      backgroundColor: pink,
-                      color: deepPink,
-                    }}
-                  >
+                  <span className="inline-flex items-center justify-center rounded-md px-2 py-1 mt-2 text-xs font-medium whitespace-nowrap shrink-0 w-fit mx-auto bg-[#FF4B8B]/10 text-[#BB125B]">
                     {card.tag}
                   </span>
                 </div>
@@ -101,7 +92,7 @@ const TreatmentAndHomeCare = () => {
                   <ul className="space-y-3">
                     {card.description.map((text, index) => (
                       <li key={index} className="flex items-start space-x-2">
-                        <span className="mt-1.5 text-xs" style={{ color: deepPink }}>
+                        <span className="mt-1.5 text-xs text-[#FF4B8B]">
                           •
                         </span>
                         <span className="text-sm text-gray-700 leading-relaxed">{text}</span>
@@ -114,19 +105,13 @@ const TreatmentAndHomeCare = () => {
           </div>
 
           {/* Important Note */}
-          <div
-            className="mt-12 p-6 rounded-lg transition-all duration-300 hover:shadow-md hover:scale-[1.01]"
-            style={{ backgroundColor: pink }}
-          >
+          <div className="mt-12 p-6 rounded-lg transition-all duration-300 hover:shadow-md hover:scale-[1.01] bg-[#FF4B8B]/10">
             <div className="flex items-start space-x-3">
-              <div
-                className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"
-                style={{ backgroundColor: deepPink, color: '#fff' }}
-              >
+              <div className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 bg-[#FF4B8B] text-white">
                 !
               </div>
               <div>
-                <h3 className="font-semibold mb-2" style={{ color: deepPink }}>
+                <h3 className="font-semibold mb-2 text-[#BB125B]">
                   Important Note
                 </h3>
                 <p className="text-sm text-gray-800 leading-relaxed">

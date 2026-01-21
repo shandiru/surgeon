@@ -36,12 +36,12 @@ export default function WhyChooseUs() {
 
       {/* Header */}
       <div className="text-center mt-16 mb-24 px-4">
-        <p className="text-sm text-[#1B123D]/60 mb-3" data-aos="fade-up">
+        <p className="text-body-small text-[#1B123D]/60 mb-3" data-aos="fade-up">
           Why Choose Us?
         </p>
 
         <h2
-          className="text-4xl md:text-5xl font-extrabold text-[#1B123D] mb-8"
+          className="text-hero font-extrabold text-[#1B123D] mb-8"
           data-aos="fade-up"
           data-aos-delay="100"
         >
@@ -60,7 +60,7 @@ export default function WhyChooseUs() {
             rel="noopener noreferrer"
           >
             <button className="relative flex items-center bg-[#FF4B8B] hover:bg-[#E03E7C] text-white font-medium rounded-lg shadow-[0_0_20px_rgba(255,75,139,0.3)] transition-all duration-300">
-              <span className="px-5 py-3 text-sm sm:text-base">
+              <span className="px-5 py-3 text-button">
                 Book Appointment
               </span>
             </button>
@@ -85,16 +85,16 @@ export default function WhyChooseUs() {
               <div className="w-5 h-5 bg-[#FF4B8B] rounded-full flex items-center justify-center">
                 <FaStethoscope className="text-white text-sm" />
               </div>
-              <span className="text-[#FF4B8B] text-sm font-semibold">
+              <span className="text-[#FF4B8B] text-body-small font-semibold">
                 KetanKumar GynCare
               </span>
             </div>
 
-            <h3 className="text-3xl font-extrabold text-[#1B123D] mt-4">
+            <h3 className="text-section font-extrabold text-[#1B123D] mt-4">
               Expert Surgical Care for Every Woman
             </h3>
 
-            <p className="text-[#636977] mt-3 leading-relaxed">
+            <p className="text-[#636977] text-body mt-3 leading-relaxed">
               Experience compassionate, specialised gynaecological treatment tailored
               to your well-being. With advanced surgical expertise and a patient-first
               approach, we ensure you feel supported, informed, and confident every
@@ -128,7 +128,7 @@ export default function WhyChooseUs() {
                     <div className="w-12 h-12 rounded-full bg-[#FF4B8B] flex items-center justify-center shadow-[0_0_10px_rgba(255,75,139,0.3)]">
                       {item.icon}
                     </div>
-                    <h4 className="text-lg font-semibold text-[#1B123D] pt-2">
+                    <h4 className="text-card-title font-semibold text-[#1B123D] pt-2">
                       {item.title}
                     </h4>
                   </div>
@@ -155,7 +155,7 @@ export default function WhyChooseUs() {
                     openIndex === i ? "max-h-28 mt-2 opacity-100" : "max-h-0 opacity-0"
                   }`}
                 >
-                  <p className="text-[#636977] text-sm leading-relaxed pl-16">
+                  <p className="text-[#636977] text-body-small leading-relaxed pl-16">
                     {item.desc}
                   </p>
                 </div>
@@ -177,16 +177,16 @@ export default function WhyChooseUs() {
               <div className="w-5 h-5 bg-[#FF4B8B] rounded-full flex items-center justify-center">
                 <FaStethoscope className="text-white text-sm" />
               </div>
-              <span className="text-[#FF4B8B] text-sm font-semibold">
+              <span className="text-[#FF4B8B] text-body-small font-semibold">
                 KetanKumar GynCare
               </span>
             </div>
 
-            <h3 className="text-4xl font-extrabold text-[#1B123D] leading-tight">
+            <h3 className="text-section font-extrabold text-[#1B123D] leading-tight">
               Expert Surgical Care for Every Woman
             </h3>
 
-            <p className="text-[#636977] text-base leading-relaxed max-w-md">
+            <p className="text-[#636977] text-body leading-relaxed max-w-md">
               Experience compassionate, specialised gynaecological treatment tailored
               to your well-being. With advanced surgical expertise and a patient-first
               approach, we ensure you feel supported, informed, and confident every
@@ -207,7 +207,7 @@ export default function WhyChooseUs() {
                     <div className="w-12 h-12 rounded-full bg-[#FF4B8B] flex items-center justify-center shadow-[0_0_10px_rgba(255,75,139,0.3)]">
                       {item.icon}
                     </div>
-                    <h4 className="text-lg font-semibold text-[#1B123D] pt-2">
+                    <h4 className="text-card-title font-semibold text-[#1B123D] pt-2">
                       {item.title}
                     </h4>
                   </div>
@@ -234,7 +234,7 @@ export default function WhyChooseUs() {
                     openIndex === i ? "max-h-28 mt-2 opacity-100" : "max-h-0 opacity-0"
                   }`}
                 >
-                  <p className="text-[#636977] text-sm leading-relaxed pl-16">
+                  <p className="text-[#636977] text-body-small leading-relaxed pl-16">
                     {item.desc}
                   </p>
                 </div>

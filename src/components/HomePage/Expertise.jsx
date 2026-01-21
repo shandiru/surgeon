@@ -95,13 +95,13 @@ export default function SpecialtiesSection() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2
-            className="text-4xl font-bold text-[#FF4B8B] mb-4"
+            className="text-section text-[#FF4B8B] mb-4"
             data-aos="fade-up"
           >
             Areas of Expertise
           </h2>
           <p
-            className="text-lg text-gray-700"
+            className="text-body-large text-gray-700"
             data-aos="fade-up"
             data-aos-delay="100"
           >
@@ -116,7 +116,7 @@ export default function SpecialtiesSection() {
           data-aos-delay="150"
         >
           <div className="text-center mb-8">
-            <span className="inline-flex items-center justify-center mx-auto rounded-md font-medium bg-[#FF4B8B] text-white px-4 py-2 text-sm sm:text-base shadow-sm">
+            <span className="inline-flex items-center justify-center mx-auto rounded-md font-medium bg-[#FF4B8B] text-white px-4 py-2 text-button shadow-sm">
               Primary Specialty: Obstetrics & Gynaecology
             </span>
           </div>
@@ -132,10 +132,10 @@ export default function SpecialtiesSection() {
                 <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-sm bg-white">
                   {item.icon}
                 </div>
-                <h3 className="font-semibold mb-1 text-sm text-gray-900">
+                <h3 className="font-semibold mb-1 text-body-small text-gray-900">
                   {item.title}
                 </h3>
-                <p className="text-gray-600 text-xs">{item.description}</p>
+                <p className="text-gray-600 text-caption">{item.description}</p>
               </div>
             ))}
           </div>
@@ -148,7 +148,7 @@ export default function SpecialtiesSection() {
             className="bg-white rounded-xl border border-[#FF4B8B]/10 shadow-sm p-6 flex flex-col gap-6 transition-all duration-300 hover:shadow-[0_0_25px_2px_rgba(255,75,139,0.25)]"
             data-aos="fade-up"
           >
-            <div className="text-xl font-semibold text-[#FF4B8B]">
+            <div className="text-card-title font-semibold text-[#FF4B8B]">
               Surgical Expertise
             </div>
             <ul className="space-y-4">
@@ -156,10 +156,10 @@ export default function SpecialtiesSection() {
                 <li key={idx} className="flex items-start gap-3">
                   <FaCheckCircle className="text-[#FF4B8B] mt-1" />
                   <div>
-                    <div className="font-semibold text-gray-900">
+                    <div className="font-semibold text-body text-gray-900">
                       {item.title}
                     </div>
-                    <p className="text-sm text-gray-600">{item.description}</p>
+                    <p className="text-body-small text-gray-600">{item.description}</p>
                   </div>
                 </li>
               ))}
@@ -171,7 +171,7 @@ export default function SpecialtiesSection() {
             className="bg-white rounded-xl border border-[#FF4B8B]/10 shadow-sm p-6 flex flex-col gap-6 transition-all duration-300 hover:shadow-[0_0_25px_2px_rgba(255,75,139,0.25)]"
             data-aos="fade-down"
           >
-            <div className="text-xl font-semibold text-[#FF4B8B]">
+            <div className="text-card-title font-semibold text-[#FF4B8B]">
               Cancer Care
             </div>
             <ul className="space-y-4">
@@ -179,10 +179,10 @@ export default function SpecialtiesSection() {
                 <li key={idx} className="flex items-start gap-3">
                   <FaCheckCircle className="text-[#FF4B8B] mt-1" />
                   <div>
-                    <div className="font-semibold text-gray-900">
+                    <div className="font-semibold text-body text-gray-900">
                       {item.title}
                     </div>
-                    <p className="text-sm text-gray-600">{item.description}</p>
+                    <p className="text-body-small text-gray-600">{item.description}</p>
                   </div>
                 </li>
               ))}

@@ -2,8 +2,6 @@
 import { Lightbulb, Star, CheckCircle2, Leaf, MessageCircle } from 'lucide-react';
 
 const FibroidGuidecard8 = () => {
-    const deepPink = "#FF4B8B"
-
   return (
     <div className="space-y-6 pb-10 px-3">
 
@@ -12,8 +10,8 @@ const FibroidGuidecard8 = () => {
         {/* Self-Care Tips Card */}
         <div className="bg-white text-[#212529] flex flex-col gap-6 rounded-2xl py-8 px-6 shadow-md hover:shadow-lg hover:-translate-y-2 transition-all duration-300 active:scale-[0.98]">
           <div className="flex items-center gap-3">
-            <Leaf className="text-3xl" style={{ color: deepPink }} />
-            <h3 className="font-bold text-xl md:text-2xl" style={{ color: deepPink }}>
+            <Leaf className="text-3xl text-[#FF4B8B]" />
+            <h3 className="font-bold text-xl md:text-2xl text-[#FF4B8B]">
               Self-Care Tips
             </h3>
           </div>
@@ -29,8 +27,8 @@ const FibroidGuidecard8 = () => {
         {/* Support & Follow-Up Card */}
         <div className="bg-white text-[#212529] flex flex-col gap-6 rounded-2xl py-8 px-6 shadow-md hover:shadow-lg hover:-translate-y-2 transition-all duration-300 active:scale-[0.98]">
           <div className="flex items-center gap-3">
-            <MessageCircle className="text-3xl" style={{ color: deepPink }} />
-            <h3 className="font-bold text-xl md:text-2xl" style={{ color: deepPink }}>
+            <MessageCircle className="text-3xl text-[#FF4B8B]" />
+            <h3 className="font-bold text-xl md:text-2xl text-[#FF4B8B]">
               Support & Follow-Up
             </h3>
           </div>

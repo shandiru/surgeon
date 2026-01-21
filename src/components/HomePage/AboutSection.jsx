@@ -55,13 +55,13 @@ export default function AboutSectionView() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2
-            className="text-4xl font-bold text-[#FF4B8B] mb-4"
+            className="text-section text-[#FF4B8B] mb-4"
             data-aos="fade-up"
           >
             About Mr Ketankumar Gajjar
           </h2>
           <p
-            className="text-xl text-gray-600 max-w-3xl mx-auto"
+            className="text-body-large text-gray-600 max-w-3xl mx-auto"
             data-aos="fade-up"
             data-aos-delay="200"
           >
@@ -94,10 +94,10 @@ export default function AboutSectionView() {
                   {card.icon}
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-[#1F2937]">
+              <h3 className="text-card-title mb-2 text-[#1F2937]">
                 {card.title}
               </h3>
-              <p className="text-gray-600">{card.desc}</p>
+              <p className="text-body text-gray-600">{card.desc}</p>
             </div>
           ))}
         </div>

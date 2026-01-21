@@ -7,14 +7,7 @@ const OvarianCystsGuideCard6 = ({ setShowCard, setActiveButton }) => {
       <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto animate-in slide-in-from-right-5 duration-300">
 
         {/* MAIN WRAPPER */}
-        <div
-          className="flex flex-col gap-6 rounded-xl py-6 px-5 sm:px-6 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all"
-          style={{
-            backgroundColor: "#FEE6EA",
-            color: "#BB125B",
-            border: "1px solid rgb(255,197,211)",
-          }}
-        >
+        <div className="flex flex-col gap-6 rounded-xl py-6 px-5 sm:px-6 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all bg-[#FF4B8B]/10 text-[#BB125B] border border-[#FF4B8B]/10">
           {/* HEADER */}
           <div className="flex items-center gap-3 font-semibold text-[#FF4B8B] text-lg">
             <svg

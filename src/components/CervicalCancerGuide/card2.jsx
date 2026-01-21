@@ -7,17 +7,11 @@ const CervicalCancerGuideCard2 = ({ setShowCard, setActiveButton }) => {
       {/* Card Container */}
       <div
         className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-2xl border p-8 shadow-sm animate-in slide-in-from-right-5 duration-300"
-        style={{
-          backgroundColor: '#FFFFFF',
-          borderColor: 'rgb(255,197,211)',
-        }}
+        className="border border-[#FF4B8B]/10 bg-white"
       >
         {/* Card Header */}
         <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5">
-          <div
-            className="leading-none font-semibold flex items-center gap-2"
-            style={{ color: '#FF4B8B' }}
-          >
+          <div className="leading-none font-semibold flex items-center gap-2 text-[#FF4B8B]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -40,14 +34,8 @@ const CervicalCancerGuideCard2 = ({ setShowCard, setActiveButton }) => {
         <div className="space-y-6">
 
           {/* Intro Box */}
-          <div
-            className="p-4 rounded-xl border transition-all duration-300"
-            style={{
-              backgroundColor: '#FFF5F8',
-              borderColor: 'rgb(255,197,211)',
-            }}
-          >
-            <p className="text-lg leading-relaxed" style={{ color: '#7a2f4f' }}>
+          <div className="p-4 rounded-xl border border-[#FF4B8B]/10 transition-all duration-300 bg-[#FF4B8B]/10">
+            <p className="text-lg leading-relaxed text-[#BB125B]">
               Cervical cancer usually begins with pre-cancerous changes in the cells of the cervix
               called <strong>CIN (Cervical Intraepithelial Neoplasia)</strong>. If untreated,
               some CIN lesions may slowly progress to cancer over many years.
@@ -58,51 +46,33 @@ const CervicalCancerGuideCard2 = ({ setShowCard, setActiveButton }) => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
             {/* Squamous Cell Carcinoma */}
-            <div
-              className="p-4 rounded-xl border transition-all duration-300 hover:shadow-md"
-              style={{
-                backgroundColor: '#FFFFFF',
-                borderColor: 'rgb(255,197,211)',
-              }}
-            >
-              <h4 className="font-semibold mb-2" style={{ color: '#FF4B8B' }}>
+            <div className="p-4 rounded-xl border border-[#FF4B8B]/10 transition-all duration-300 hover:shadow-md bg-white">
+              <h4 className="font-semibold mb-2 text-[#FF4B8B]">
                 Squamous Cell Carcinoma
               </h4>
-              <p className="text-sm" style={{ color: '#7a2f4f' }}>
+              <p className="text-sm text-[#BB125B]">
                 The most common type — <strong>70–80%</strong> of cervical cancers.  
                 Starts in the thin, flat cells on the outer surface of the cervix.
               </p>
             </div>
 
             {/* Adenocarcinoma */}
-            <div
-              className="p-4 rounded-xl border transition-all duration-300 hover:shadow-md"
-              style={{
-                backgroundColor: '#FFFFFF',
-                borderColor: 'rgb(255,197,211)',
-              }}
-            >
-              <h4 className="font-semibold mb-2" style={{ color: '#FF4B8B' }}>
+            <div className="p-4 rounded-xl border border-[#FF4B8B]/10 transition-all duration-300 hover:shadow-md bg-white">
+              <h4 className="font-semibold mb-2 text-[#FF4B8B]">
                 Adenocarcinoma
               </h4>
-              <p className="text-sm" style={{ color: '#7a2f4f' }}>
+              <p className="text-sm text-[#BB125B]">
                 Begins in the glandular cells inside the cervical canal.  
                 Less common but often harder to detect through routine screening.
               </p>
             </div>
 
             {/* Rare Types */}
-            <div
-              className="p-4 rounded-xl border transition-all duration-300 hover:shadow-md"
-              style={{
-                backgroundColor: '#FFFFFF',
-                borderColor: 'rgb(255,197,211)',
-              }}
-            >
-              <h4 className="font-semibold mb-2" style={{ color: '#FF4B8B' }}>
+            <div className="p-4 rounded-xl border border-[#FF4B8B]/10 transition-all duration-300 hover:shadow-md bg-white">
+              <h4 className="font-semibold mb-2 text-[#FF4B8B]">
                 Rare Types
               </h4>
-              <p className="text-sm" style={{ color: '#7a2f4f' }}>
+              <p className="text-sm text-[#BB125B]">
                 Includes <strong>small cell neuroendocrine carcinoma</strong> and other mixed
                 tumours. These are uncommon but tend to behave more aggressively.
               </p>
@@ -111,17 +81,8 @@ const CervicalCancerGuideCard2 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           {/* Extra Info Box */}
-          <div
-            className="p-4 rounded-xl border"
-            style={{
-              backgroundColor: '#FFF5F8',
-              borderColor: 'rgb(255,197,211)',
-            }}
-          >
-            <h4
-              className="font-semibold mb-2 flex items-center gap-2"
-              style={{ color: '#FF4B8B' }}
-            >
+          <div className="p-4 rounded-xl border border-[#FF4B8B]/10 bg-[#FF4B8B]/10">
+            <h4 className="font-semibold mb-2 flex items-center gap-2 text-[#FF4B8B]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -141,7 +102,7 @@ const CervicalCancerGuideCard2 = ({ setShowCard, setActiveButton }) => {
               Did You Know?
             </h4>
 
-            <p className="text-sm" style={{ color: '#7a2f4f' }}>
+            <p className="text-sm text-[#BB125B]">
               CIN does not always turn into cancer. Regular screening and early treatment of
               abnormal cells can stop cervical cancer before it starts.
             </p>
