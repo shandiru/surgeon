@@ -10,6 +10,7 @@ import OvarianCancerInformationPage from "../src/Page/OvarianCancerInformationPa
 import EndometrialCancerInformationPage from "../src/Page/EndometrialCancerInformationPage";
 import CervicalCancerOverviewPage from "../src/Page/CervicalCancerOverviewPage";
 import RoboticSurgeryPage from "../src/Page/RoboticSurgeryPage";
+import RoboticSurgeryExperiencePage from "./Page/RoboticSurgeryExperiencePage";
 import CervicalScreeningPage from "./Page/CervicalScreeningPage";
 import IrregularBleedingInfoPage from "./Page/IrregularBleedingInfoPage";
 import EndometriosisInformation from "./Page/EndometriosisInformation";
@@ -59,6 +60,7 @@ function App() {
         <Route path="/Cancer/CervicalCancer" element={<  CervicalCancerOverviewPage />} />
         <Route path="/CervicalCancerGuide" element={<CervicalCancerGuide />} />
         <Route path="/RoboticSurgery" element={<   RoboticSurgeryPage />} />
+        <Route path="/robotic-surgery-experience" element={<RoboticSurgeryExperiencePage />} />
         <Route path="/RoboticSurgeryGuide" element={<   RoboticGuide />} />
         <Route path="/CervicalScreening" element={<   CervicalScreeningPage />} />
         <Route path="/CervicalScreeningGuide" element={<CervicalScreeningGuide />} />
