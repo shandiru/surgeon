@@ -66,25 +66,6 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Quick Links Section */}
-            <div>
-              <h4 className="font-semibold text-foreground mb-4">Quick Links</h4>
-              <ul className="space-y-2">
-                <li>
-                  <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Emergency Contacts</a>
-                </li>
-                <li>
-                  <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Find a Doctor</a>
-                </li>
-                <li>
-                  <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Health Insurance Info</a>
-                </li>
-                <li>
-                  <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Privacy Policy</a>
-                </li>
-              </ul>
-            </div>
-
             {/* Get Support Section */}
             <div>
               <h4 className="font-semibold text-foreground mb-4">Get Support</h4>

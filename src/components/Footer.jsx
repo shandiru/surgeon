@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { HashLink } from "react-router-hash-link";
 
 export default function Footer() {
   return (
@@ -111,12 +112,13 @@ export default function Footer() {
               {['About', 'Experience', 'Specialties', 'Education', 'Contact'].map(
                 (link, i) => (
                   <li key={i}>
-                    <a
-                      href={`#${link.toLowerCase()}`}
+                    <HashLink
+                      smooth
+                      to={`/#${link.toLowerCase()}`}
                       className="hover:underline"
                     >
                       {link}
-                    </a>
+                    </HashLink>
                   </li>
                 )
               )}
