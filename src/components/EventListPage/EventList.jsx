@@ -69,9 +69,20 @@ export default function ListingEvents({ events = [], selectedCategory = "All Eve
 
         {/* Footer / Action */}
         <div className="bg-[#FF4B8B] rounded-xl text-white px-5 py-4 mt-4 flex items-center justify-center">
-          <Link to={event.link} className="font-medium text-sm uppercase w-full text-center">
-            View Programme
-          </Link>
+          {event.link.startsWith('http') ? (
+            <a 
+              href={event.link} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="font-medium text-sm uppercase w-full text-center"
+            >
+              View Programme
+            </a>
+          ) : (
+            <Link to={event.link} className="font-medium text-sm uppercase w-full text-center">
+              View Programme
+            </Link>
+          )}
         </div>
       </div>
     </div>

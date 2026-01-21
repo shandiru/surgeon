@@ -5,17 +5,29 @@ import ListingEvents from '../components/EventListPage/EventList'
 // Utility function to parse date string and determine if event is upcoming or closed
 const parseEventDate = (dateString) => {
   try {
-    // Handle formats like "12–14 September 2024" or "5–7 October 2024"
-    const dateMatch = dateString.match(/(\d+)–(\d+)\s+(\w+)\s+(\d+)/)
-    if (dateMatch) {
-      const [, startDay, endDay, month, year] = dateMatch
-      const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 
-                          'July', 'August', 'September', 'October', 'November', 'December']
+    const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 
+                        'July', 'August', 'September', 'October', 'November', 'December']
+    
+    // Handle formats spanning multiple months like "29 April – 1 May 2026"
+    const multiMonthMatch = dateString.match(/(\d+)\s+(\w+)\s+–\s+(\d+)\s+(\w+)\s+(\d+)/)
+    if (multiMonthMatch) {
+      const [, startDay, startMonth, endDay, endMonth, year] = multiMonthMatch
+      const endMonthIndex = monthNames.findIndex(m => m.toLowerCase() === endMonth.toLowerCase())
+      if (endMonthIndex !== -1) {
+        return new Date(parseInt(year), endMonthIndex, parseInt(endDay))
+      }
+    }
+    
+    // Handle formats like "12–14 September 2024" or "5–7 October 2024" (single month)
+    const singleMonthMatch = dateString.match(/(\d+)–(\d+)\s+(\w+)\s+(\d+)/)
+    if (singleMonthMatch) {
+      const [, startDay, endDay, month, year] = singleMonthMatch
       const monthIndex = monthNames.findIndex(m => m.toLowerCase() === month.toLowerCase())
       if (monthIndex !== -1) {
         return new Date(parseInt(year), monthIndex, parseInt(endDay))
       }
     }
+    
     // Fallback: try to parse as single date
     return new Date(dateString)
   } catch (error) {
@@ -79,6 +91,34 @@ const EventListPage = () => {
       address: "Berlin, Germany",
       organiser: "European Surgical Society",
       link: "/event/event1",
+    },
+    {
+      id: 4,
+      image: "https://images.unsplash.com/photo-1511578314322-379afb476865",
+      status: "Open",
+      eventType: "Conference",
+      rating: 4.7,
+      title: "British Gynaecological Cancer Society Annual Scientific Meeting 2026",
+      description: "Invited Speaker",
+      talk: "Delivering Excellence in an Imperfect World",
+      Date: "24–26 June 2026",
+      address: "Bristol, UK",
+      organiser: "British Gynaecological Cancer Society",
+      link: "https://www.bgcs.org.uk/event/asm-bristol-2026/",
+    },
+    {
+      id: 5,
+      image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d",
+      status: "Open",
+      eventType: "Conference",
+      rating: 4.8,
+      title: "British Society for Gynaecological Endoscopy Annual Scientific Meeting 2026",
+      description: "Invited Speaker",
+      talk: "One World, One Vision – Breaking Surgical Ground in Endoscopy",
+      Date: "29 April – 1 May 2026",
+      address: "London, UK",
+      organiser: "British Society for Gynaecological Endoscopy",
+      link: "https://www.bsge.org.uk/asm26/",
     },
   ]
 
