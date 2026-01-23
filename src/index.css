@@ -4,10 +4,16 @@
 /* make `dark:` respond to .dark on <html> */
 @custom-variant dark (&:where(.dark, .dark *));  /* <-- add this line */
 
+/* Configure Poppins as the default font family using Tailwind v4 @theme */
+@theme {
+  --font-family-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 html, body {
   width: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif;
 }
 
 /* Typography Utility Classes */
@@ -48,5 +54,5 @@ html, body {
 }
 
 .text-nav {
-  @apply text-sm font-medium;
+  @apply text-base font-normal;
 }
