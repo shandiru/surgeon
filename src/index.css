@@ -4,6 +4,15 @@
 /* make `dark:` respond to .dark on <html> */
 @custom-variant dark (&:where(.dark, .dark *));  /* <-- add this line */
 
+/* Approved Color Palette - STRICT: Only these 4 exact colors allowed */
+@theme {
+  --color-primary-pink: #FF4B8B;
+  --color-light-pink-1: #FDE7EB;
+  --color-light-pink-2: #FFD6E1;
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+}
+
 html, body {
   width: 100%;
   overflow-x: hidden;
