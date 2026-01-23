@@ -18,7 +18,7 @@ const IrregularBleedingGuidecard6 = () => {
             className="font-semibold text-sm uppercase tracking-wide flex items-center gap-2"
             style={{ color: "#FF4B8B" }}
           >
-            <Heart className="w-6 h-6 text-[#FF4B8B]" />
+            <Heart className="w-6 h-6 text-primary-pink" />
             Step 3
           </span>
 
@@ -153,7 +153,7 @@ const IrregularBleedingGuidecard6 = () => {
         {/* FINAL BUTTON (NO FUNCTION) */}
         <div className="pt-8 flex justify-center">
           <button
-            className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all"
+            className="bg-primary-pink hover:bg-primary-pink/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all"
           >
             Complete Guide
           </button>

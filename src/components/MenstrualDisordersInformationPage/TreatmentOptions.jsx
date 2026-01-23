@@ -56,7 +56,7 @@ export default function TreatmentOptions() {
 
   return (
     <section className="mb-16 px-6 md:px-12">
-      <h2 className="text-2xl font-bold mb-6 text-[#FF4B8B]">Treatment Options</h2>
+      <h2 className="text-2xl font-bold mb-6 text-primary-pink">Treatment Options</h2>
       
       <div className="space-y-4">
         {treatmentOptions.map((option, index) => (

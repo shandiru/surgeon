@@ -10,8 +10,8 @@ const IrregularBleedingContent = ({ activeTab }) => {
     <div className="bg-white flex flex-col gap-6 rounded-xl border border-[#ff97b3]/30 py-6 shadow-md hover:shadow-lg transition-all duration-300">
       {/* Header */}
       <div className="grid grid-rows-[auto_auto] items-start gap-1.5 px-6 pb-4 border-b border-[#ff97b3]/20">
-        <div className="leading-none font-semibold flex items-center gap-2 text-[#FF4B8B] text-lg">
-          <Info className="w-5 h-5 text-[#FF4B8B]" />
+        <div className="leading-none font-semibold flex items-center gap-2 text-primary-pink text-lg">
+          <Info className="w-5 h-5 text-primary-pink" />
           What Is Irregular Bleeding?
         </div>
       </div>
@@ -57,17 +57,17 @@ const IrregularBleedingContent = ({ activeTab }) => {
   {activeTab === "Causes" && (
   <div
     data-slot="card"
-    className="bg-[#FFF1F5] text-[#4B0D26] flex flex-col gap-6 rounded-xl py-8 shadow-md hover:shadow-lg transition-all duration-300"
+    className="bg-light-pink-1 text-[#4B0D26] flex flex-col gap-6 rounded-xl py-8 shadow-md hover:shadow-lg transition-all duration-300"
   >
     {/* Header */}
     <div
       data-slot="card-header"
       className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-2 px-6 pb-6 border-b border-[#FFB3C9]/40"
     >
-      <div className="leading-none font-semibold flex items-center gap-2 text-[#FF4B8B] text-lg">
+      <div className="leading-none font-semibold flex items-center gap-2 text-primary-pink text-lg">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="w-5 h-5 text-[#FF4B8B]"
+          className="w-5 h-5 text-primary-pink"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -106,11 +106,11 @@ const IrregularBleedingContent = ({ activeTab }) => {
             className="flex items-start gap-3 p-4 rounded-lg bg-white shadow-sm hover:shadow-md transition-all duration-200"
           >
             {/* Label Badge */}
-            <span className="inline-flex items-center justify-center rounded-md px-2 py-0.5 text-xs font-medium text-[#FF4B8B] bg-[#FFE0EB] w-fit whitespace-nowrap shrink-0">
+            <span className="inline-flex items-center justify-center rounded-md px-2 py-0.5 text-xs font-medium text-primary-pink bg-[#FFE0EB] w-fit whitespace-nowrap shrink-0">
               {item.label}
             </span>
             <div className="flex-1">
-              <h4 className="font-semibold text-[#FF4B8B]">{item.title}</h4>
+              <h4 className="font-semibold text-primary-pink">{item.title}</h4>
               <p className="text-sm text-[#804659] mt-1">{item.desc}</p>
             </div>
           </div>
@@ -129,10 +129,10 @@ const IrregularBleedingContent = ({ activeTab }) => {
       data-slot="card-header"
       className="grid auto-rows-min items-start gap-2 border-b border-[#ff97b3]/30 pb-4"
     >
-      <div className="leading-snug font-semibold flex items-center gap-2 text-[#FF4B8B] text-lg sm:text-xl">
+      <div className="leading-snug font-semibold flex items-center gap-2 text-primary-pink text-lg sm:text-xl">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="w-5 h-5 text-[#FF4B8B] flex-shrink-0"
+          className="w-5 h-5 text-primary-pink flex-shrink-0"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -215,10 +215,10 @@ const IrregularBleedingContent = ({ activeTab }) => {
       data-slot="card-header"
       className="grid auto-rows-min items-start gap-2 border-b border-[#ff97b3]/30 pb-4"
     >
-      <div className="leading-snug font-semibold flex items-center gap-2 text-[#FF4B8B] text-lg sm:text-xl">
+      <div className="leading-snug font-semibold flex items-center gap-2 text-primary-pink text-lg sm:text-xl">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="w-5 h-5 text-[#FF4B8B] flex-shrink-0"
+          className="w-5 h-5 text-primary-pink flex-shrink-0"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -309,10 +309,10 @@ const IrregularBleedingContent = ({ activeTab }) => {
       data-slot="card-header"
       className="grid auto-rows-min items-start gap-2 border-b border-[#ff97b3]/30 pb-4"
     >
-      <div className="leading-snug font-semibold flex items-center gap-2 text-[#FF4B8B] text-lg sm:text-xl">
+      <div className="leading-snug font-semibold flex items-center gap-2 text-primary-pink text-lg sm:text-xl">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="lucide lucide-test-tube w-5 h-5 text-[#FF4B8B] flex-shrink-0"
+          className="lucide lucide-test-tube w-5 h-5 text-primary-pink flex-shrink-0"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -353,11 +353,11 @@ const IrregularBleedingContent = ({ activeTab }) => {
           key={idx}
           className="group bg-[#fff7f9] rounded-lg shadow-sm hover:shadow-md transition-all duration-200"
         >
-          <summary className="flex justify-between items-center py-4 px-4 cursor-pointer text-sm sm:text-base font-medium text-[#ff4b8b] hover:bg-white/60 rounded-lg">
+          <summary className="flex justify-between items-center py-4 px-4 cursor-pointer text-sm sm:text-base font-medium text-primary-pink hover:bg-white/60 rounded-lg">
             {item.title}
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="lucide lucide-chevron-down w-4 h-4 text-[#ff4b8b] transition-transform duration-200 group-open:rotate-180"
+              className="lucide lucide-chevron-down w-4 h-4 text-primary-pink transition-transform duration-200 group-open:rotate-180"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -387,10 +387,10 @@ const IrregularBleedingContent = ({ activeTab }) => {
         data-slot="card-header"
         className="grid auto-rows-min items-start gap-2 border-b border-[#ff97b3]/30 pb-4"
       >
-        <div className="leading-snug font-semibold flex items-center gap-2 text-[#FF4B8B] text-lg sm:text-xl">
+        <div className="leading-snug font-semibold flex items-center gap-2 text-primary-pink text-lg sm:text-xl">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="w-5 h-5 text-[#FF4B8B] flex-shrink-0"
+            className="w-5 h-5 text-primary-pink flex-shrink-0"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -431,10 +431,10 @@ const IrregularBleedingContent = ({ activeTab }) => {
               key={idx}
               className="flex items-start gap-4 p-4 rounded-lg bg-[#fff7f9] shadow-sm hover:shadow-md transition-all duration-200"
             >
-              <div className="p-2 rounded-full bg-[#ff4b8b]/10 flex-shrink-0">
+              <div className="p-2 rounded-full bg-primary-pink flex-shrink-0">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-5 h-5 text-[#ff4b8b]"
+                  className="w-5 h-5 text-primary-pink"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -445,7 +445,7 @@ const IrregularBleedingContent = ({ activeTab }) => {
                 </svg>
               </div>
               <div>
-                <h4 className="font-semibold text-[#ff4b8b] text-sm sm:text-base">
+                <h4 className="font-semibold text-primary-pink text-sm sm:text-base">
                   {item.title}
                 </h4>
                 <p className="text-xs sm:text-sm text-[#555] mt-1">{item.desc}</p>
@@ -463,11 +463,11 @@ const IrregularBleedingContent = ({ activeTab }) => {
     >
       <div
         data-slot="card-header"
-        className="font-semibold flex items-center gap-2 text-[#ff4b8b] text-lg sm:text-xl"
+        className="font-semibold flex items-center gap-2 text-primary-pink text-lg sm:text-xl"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="lucide lucide-heart w-5 h-5 text-[#ff4b8b]"
+          className="lucide lucide-heart w-5 h-5 text-primary-pink"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -490,7 +490,7 @@ const IrregularBleedingContent = ({ activeTab }) => {
           <div key={idx} className="flex items-center gap-2 text-[#555]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-4 h-4 text-[#ff4b8b] flex-shrink-0"
+              className="w-4 h-4 text-primary-pink flex-shrink-0"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"

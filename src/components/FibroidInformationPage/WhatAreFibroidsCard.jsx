@@ -24,19 +24,19 @@ export default function WhatAreFibroidsCard() {
 
         {/* Content */}
         <div className="px-8 pb-8 space-y-6">
-          <p className="text-lg leading-relaxed text-gray-700">
+          <p className="text-lg leading-relaxed text-black">
             Fibroids are benign (non-cancerous) growths that develop in the walls of the womb (uterus).
           </p>
 
           {/* Two-column grid */}
           <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-2">
-              <p className="text-gray-700">• Made of muscle and fibrous tissue</p>
-              <p className="text-gray-700">• Can be single or multiple</p>
+              <p className="text-black">• Made of muscle and fibrous tissue</p>
+              <p className="text-black">• Can be single or multiple</p>
             </div>
             <div className="space-y-2">
-              <p className="text-gray-700">• Can vary greatly in size</p>
-              <p className="text-gray-700">• Common and treatable</p>
+              <p className="text-black">• Can vary greatly in size</p>
+              <p className="text-black">• Common and treatable</p>
             </div>
           </div>
 

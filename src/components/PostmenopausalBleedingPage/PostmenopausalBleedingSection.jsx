@@ -7,7 +7,7 @@ export default function PostmenopausalHealthSection() {
         {/* Left Content */}
         <div className="text-left">
           {/* Heading */}
-          <h1 className="text-3xl sm:text-4xl font-bold mb-4 text-[#FF4B8B]">
+          <h1 className="text-3xl sm:text-4xl font-bold mb-4 text-primary-pink">
             Understanding Postmenopausal Bleeding
           </h1>
           <p className="text-lg sm:text-xl max-w-xl mb-8 text-[#6B7280]">
@@ -17,13 +17,13 @@ export default function PostmenopausalHealthSection() {
           {/* Alert Box */}
           <div
             role="alert"
-            className="w-full rounded-xl px-5 py-5 text-sm flex items-start gap-4 bg-white shadow-md text-[#1F2937]"
+            className="w-full rounded-xl px-5 py-5 text-sm flex items-start gap-4 bg-white shadow-md text-black"
           >
             {/* Icon */}
             <div className="flex-shrink-0">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 text-[#FF4B8B]"
+                className="h-6 w-6 text-primary-pink"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -39,7 +39,7 @@ export default function PostmenopausalHealthSection() {
 
             {/* Text */}
             <div className="text-sm leading-relaxed text-[#374151]">
-              <strong className="text-[#FF4B8B]">Important:</strong> Any bleeding after menopause should always be
+              <strong className="text-primary-pink">Important:</strong> Any bleeding after menopause should always be
               checked by a healthcare professional. Early diagnosis saves lives.
             </div>
           </div>

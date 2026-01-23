@@ -6,12 +6,12 @@ const OvarianCancerGuideCard2 = ({ setShowCard, setActiveButton }) => {
 
       {/* Card Container */}
       <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 
-        flex flex-col gap-6 rounded-2xl border border-[#FF4B8B]/10 shadow-sm 
+        flex flex-col gap-6 rounded-2xl border border-primary-pink shadow-sm 
         animate-in slide-in-from-right-5 duration-300 p-8 bg-white">
 
         {/* Card Header */}
         <div className="grid auto-rows-min items-start gap-1.5">
-          <div className="leading-none font-semibold flex items-center gap-2 text-[#FF4B8B]">
+          <div className="leading-none font-semibold flex items-center gap-2 text-primary-pink">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -22,7 +22,7 @@ const OvarianCancerGuideCard2 = ({ setShowCard, setActiveButton }) => {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="w-6 h-6 text-[#FF4B8B]"
+              className="w-6 h-6 text-primary-pink"
             >
               <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
             </svg>
@@ -53,8 +53,8 @@ const OvarianCancerGuideCard2 = ({ setShowCard, setActiveButton }) => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
             {/* Type 1 */}
-            <div className="p-4 rounded-xl border border-[#FF4B8B]/10 bg-white transition-all duration-300 hover:shadow-md">
-              <h4 className="font-semibold mb-2 text-[#FF4B8B]">
+            <div className="p-4 rounded-xl border border-primary-pink bg-white transition-all duration-300 hover:shadow-md">
+              <h4 className="font-semibold mb-2 text-primary-pink">
                 Epithelial Ovarian Cancer
               </h4>
               <p className="text-sm text-[#BB125B]">
@@ -82,8 +82,8 @@ const OvarianCancerGuideCard2 = ({ setShowCard, setActiveButton }) => {
             </div>
 
             {/* Type 3 */}
-            <div className="p-4 rounded-xl border border-[#FF4B8B]/10 bg-white transition-all duration-300 hover:shadow-md">
-              <h4 className="font-semibold mb-2 text-[#FF4B8B]">
+            <div className="p-4 rounded-xl border border-primary-pink bg-white transition-all duration-300 hover:shadow-md">
+              <h4 className="font-semibold mb-2 text-primary-pink">
                 Stromal Tumours
               </h4>
               <p className="text-sm text-[#BB125B]">
@@ -96,8 +96,8 @@ const OvarianCancerGuideCard2 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           {/* Extra Info Box */}
-          <div className="p-4 rounded-xl border border-[#FF4B8B]/10 bg-[#FF4B8B]/10">
-            <h4 className="font-semibold flex items-center gap-2 mb-2 text-[#FF4B8B]">
+          <div className="p-4 rounded-xl border border-primary-pink bg-primary-pink">
+            <h4 className="font-semibold flex items-center gap-2 mb-2 text-primary-pink">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -108,7 +108,7 @@ const OvarianCancerGuideCard2 = ({ setShowCard, setActiveButton }) => {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="w-5 h-5 text-[#FF4B8B]"
+                className="w-5 h-5 text-primary-pink"
               >
                 <path d="M9 18h6"></path>
                 <path d="M10 22h4"></path>
@@ -130,8 +130,8 @@ const OvarianCancerGuideCard2 = ({ setShowCard, setActiveButton }) => {
                 setShowCard(3);
                 setActiveButton(2);
               }}
-              className="inline-flex items-center justify-center bg-[#FF4B8B] 
-              hover:bg-[#FF4B8B]/80 text-white rounded-md text-sm font-medium 
+              className="inline-flex items-center justify-center bg-primary-pink 
+              hover:bg-primary-pink/80 text-white rounded-md text-sm font-medium 
               transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%]"
             >
               Continue to Next Section

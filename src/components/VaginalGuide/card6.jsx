@@ -28,7 +28,7 @@ const Vaginalcard6 = ({ setShowCard, setActiveButton }) => {
               Treatment depends on the type, stage, spread, and your overall health.
             </p>
 
-            <h3 className="text-lg sm:text-xl font-semibold text-[#FF4B8B] mb-3">
+            <h3 className="text-lg sm:text-xl font-semibold text-primary-pink mb-3">
               1. Surgery (Often the Primary Treatment)
             </h3>
 
@@ -37,7 +37,7 @@ const Vaginalcard6 = ({ setShowCard, setActiveButton }) => {
                 className="border rounded-md px-4 py-3 shadow-sm bg-white hover:shadow-md"
                 style={{ borderColor: primaryPink }}
               >
-                <strong className="text-[#FF4B8B]">Vaginectomy</strong>
+                <strong className="text-primary-pink">Vaginectomy</strong>
                 <span>
                   {" "}– Removal of part or all of the vagina; may include nearby lymph nodes. Reconstruction can restore vaginal function.
                 </span>
@@ -47,7 +47,7 @@ const Vaginalcard6 = ({ setShowCard, setActiveButton }) => {
                 className="border rounded-md px-4 py-3 shadow-sm bg-white hover:shadow-md"
                 style={{ borderColor: primaryPink }}
               >
-                <strong className="text-[#FF4B8B]">Hysterectomy</strong>
+                <strong className="text-primary-pink">Hysterectomy</strong>
                 <span>
                   {" "}– Removal of the uterus and sometimes ovaries, tubes, and lymph nodes.
                 </span>
@@ -63,7 +63,7 @@ const Vaginalcard6 = ({ setShowCard, setActiveButton }) => {
               </p>
             </div>
 
-            <h3 className="text-lg sm:text-xl font-semibold text-[#FF4B8B] mb-3">
+            <h3 className="text-lg sm:text-xl font-semibold text-primary-pink mb-3">
               2. Combination Treatments
             </h3>
             <p className="mb-3">In some cases, surgery may be combined with:</p>
@@ -73,7 +73,7 @@ const Vaginalcard6 = ({ setShowCard, setActiveButton }) => {
                 className="border rounded-md px-4 py-3 shadow-sm bg-white hover:shadow-md"
                 style={{ borderColor: primaryPink }}
               >
-                <strong className="text-[#FF4B8B]">Radiation therapy</strong>
+                <strong className="text-primary-pink">Radiation therapy</strong>
                 <span> – Targeted energy to destroy cancer cells.</span>
               </div>
 
@@ -81,7 +81,7 @@ const Vaginalcard6 = ({ setShowCard, setActiveButton }) => {
                 className="border rounded-md px-4 py-3 shadow-sm bg-white hover:shadow-md"
                 style={{ borderColor: primaryPink }}
               >
-                <strong className="text-[#FF4B8B]">Chemotherapy</strong>
+                <strong className="text-primary-pink">Chemotherapy</strong>
                 <span> – Drugs to kill or slow cancer growth.</span>
               </div>
             </div>
@@ -93,7 +93,7 @@ const Vaginalcard6 = ({ setShowCard, setActiveButton }) => {
                 setShowCard(7);
                 setActiveButton(6);
               }}
-              className="inline-flex items-center justify-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 gap-2 rounded-md text-sm sm:text-base font-medium transition h-10 w-full px-4"
+              className="inline-flex items-center justify-center bg-primary-pink hover:bg-primary-pink/80 gap-2 rounded-md text-sm sm:text-base font-medium transition h-10 w-full px-4"
             >
               Next
             </button>

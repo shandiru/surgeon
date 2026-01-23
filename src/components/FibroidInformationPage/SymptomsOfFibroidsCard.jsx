@@ -33,7 +33,7 @@ export default function SymptomsOfFibroidsCard() {
               Symptoms of Fibroids
             </h2>
           </div>
-          <p className="text-gray-600 text-base">
+          <p className="text-black text-base">
             Some people have no symptoms, but others may experience:
           </p>
         </div>
@@ -45,7 +45,7 @@ export default function SymptomsOfFibroidsCard() {
             <h4 className="font-semibold text-lg" style={{ color: deepPink }}>
               Physical Symptoms
             </h4>
-            <ul className="space-y-2 text-gray-700">
+            <ul className="space-y-2 text-black">
               <li>• Painful or heavy periods</li>
               <li>• Anaemia (from heavy bleeding)</li>
               <li>• Bleeding between periods or after sex</li>
@@ -60,7 +60,7 @@ export default function SymptomsOfFibroidsCard() {
             <h4 className="font-semibold text-lg" style={{ color: deepPink }}>
               Other Effects
             </h4>
-            <ul className="space-y-2 text-gray-700">
+            <ul className="space-y-2 text-black">
               <li>• Constant urge to pass urine</li>
               <li>• Constipation or bloating</li>
               <li>• Low mood or depression</li>

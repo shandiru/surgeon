@@ -24,7 +24,7 @@ export default function SymptomsCard() {
       className="flex flex-col gap-6 rounded-xl bg-white shadow-lg hover:shadow-xl transition-all duration-300 py-6 px-6"
     >
       {/* Card Header */}
-      <div className="flex items-center gap-3 text-2xl font-semibold text-[#FF4B8B]">
+      <div className="flex items-center gap-3 text-2xl font-semibold text-primary-pink">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="26"
@@ -53,14 +53,14 @@ export default function SymptomsCard() {
         <div className="grid md:grid-cols-2 gap-8">
           {/* Common Symptoms */}
           <div>
-            <h4 className="font-semibold mb-4 text-lg text-[#FF4B8B]">
+            <h4 className="font-semibold mb-4 text-lg text-primary-pink">
               Common Symptoms
             </h4>
             <div className="space-y-3">
               {commonSymptoms.map((symptom, index) => (
                 <div key={index} className="flex items-start gap-3">
-                  <div className="w-2 h-2 rounded-full mt-2 bg-[#FF4B8B] flex-shrink-0" />
-                  <span className="text-sm text-gray-700">{symptom}</span>
+                  <div className="w-2 h-2 rounded-full mt-2 bg-primary-pink flex-shrink-0" />
+                  <span className="text-sm text-black">{symptom}</span>
                 </div>
               ))}
             </div>
@@ -68,14 +68,14 @@ export default function SymptomsCard() {
 
           {/* Less Common Symptoms */}
           <div>
-            <h4 className="font-semibold mb-4 text-lg text-[#FF4B8B]">
+            <h4 className="font-semibold mb-4 text-lg text-primary-pink">
               Less Common Symptoms
             </h4>
             <div className="space-y-3">
               {lessCommonSymptoms.map((symptom, index) => (
                 <div key={index} className="flex items-start gap-3">
                   <div className="w-2 h-2 rounded-full mt-2 bg-[#FEB6C5] flex-shrink-0" />
-                  <span className="text-sm text-gray-700">{symptom}</span>
+                  <span className="text-sm text-black">{symptom}</span>
                 </div>
               ))}
             </div>

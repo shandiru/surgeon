@@ -5,22 +5,22 @@ const Endometriosiscard7 = () => {
 
   const treatments = [
     {
-      icon: <Pill className="h-6 w-6 text-[#FF4B8B]" />,
+      icon: <Pill className="h-6 w-6 text-primary-pink" />,
       title: 'Pain Relief Medication',
       description: 'Over-the-counter or prescription pain medications to manage symptoms.',
     },
     {
-      icon: <Calendar className="h-6 w-6 text-[#FF4B8B]" />,
+      icon: <Calendar className="h-6 w-6 text-primary-pink" />,
       title: 'Hormone Therapy',
       description: 'Treatments to slow or stop endometrial tissue growth.',
     },
     {
-      icon: <Stethoscope className="h-6 w-6 text-[#FF4B8B]" />,
+      icon: <Stethoscope className="h-6 w-6 text-primary-pink" />,
       title: 'Conservative Surgery',
       description: 'Removal of endometriosis tissue while preserving reproductive organs.',
     },
     {
-      icon: <Heart className="h-6 w-6 text-[#FF4B8B]" />,
+      icon: <Heart className="h-6 w-6 text-primary-pink" />,
       title: 'Hysterectomy',
       description:
         "Considered only if other treatments haven't helped and you're not planning future pregnancies.",
@@ -34,10 +34,10 @@ const Endometriosiscard7 = () => {
         <div className="max-w-4xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#FF4B8B]">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary-pink">
               Treatment Options
             </h2>
-            <p className="text-lg text-gray-700">
+            <p className="text-lg text-black">
               Personalized treatment plans tailored to your needs
             </p>
           </div>
@@ -51,11 +51,11 @@ const Endometriosiscard7 = () => {
                 transition duration-300 hover:shadow-[0_0_25px_rgba(176,59,102,0.35)] 
                 hover:-translate-y-2 active:scale-[0.98]"
               >
-                <div className="flex items-center gap-3 font-semibold text-lg text-[#FF4B8B]">
+                <div className="flex items-center gap-3 font-semibold text-lg text-primary-pink">
                   {item.icon}
                   {item.title}
                 </div>
-                <p className="text-gray-600 leading-relaxed">{item.description}</p>
+                <p className="text-black leading-relaxed">{item.description}</p>
               </div>
             ))}
           </div>
@@ -77,7 +77,7 @@ const Endometriosiscard7 = () => {
       {/* COMPLETE GUIDE BUTTON */}
       <div className="pt-8 flex justify-center">
         <button
-          className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all flex items-center justify-center gap-2"
+          className="bg-primary-pink hover:bg-primary-pink/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all flex items-center justify-center gap-2"
         >
           <Star className="w-4 h-4" />
           Complete Guide

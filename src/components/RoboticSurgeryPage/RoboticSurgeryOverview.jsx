@@ -17,14 +17,14 @@ export default function RoboticSurgeryOverview() {
     <section className="py-16 bg-white" data-aos="fade-up">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12 text-[#FF4B8B]" data-aos="fade-down">
+          <h2 className="text-3xl font-bold text-center mb-12 text-primary-pink" data-aos="fade-down">
             Overview of Robotic Surgery
           </h2>
           <div className="grid md:grid-cols-2 gap-8 items-center">
             
             {/* Text Content */}
             <div data-aos="fade-right">
-              <p className="text-lg text-gray-700 mb-6">
+              <p className="text-lg text-black mb-6">
                 Robotic surgery represents a revolutionary form of minimally
                 invasive surgery that uses advanced technology to enhance
                 surgical precision, control, and vision. Unlike traditional
@@ -32,7 +32,7 @@ export default function RoboticSurgeryOverview() {
                 incisions with robotic arms controlled by the surgeon from a
                 specialized console.
               </p>
-              <p className="text-lg text-gray-700">
+              <p className="text-lg text-black">
                 The da Vinci Surgical System, developed by Intuitive Surgical,
                 has transformed gynecologic surgery by significantly improving
                 patient outcomes and surgical experiences.
@@ -56,8 +56,8 @@ export default function RoboticSurgeryOverview() {
                   rounded-lg p-6 bg-white cursor-pointer"
                   data-aos="zoom-in"
                 >
-                  <LuScissors className="w-14 h-14 text-[#FF4B8B] mx-auto mb-3" />
-                  <p className="font-semibold text-[#FF4B8B]">
+                  <LuScissors className="w-14 h-14 text-primary-pink mx-auto mb-3" />
+                  <p className="font-semibold text-primary-pink">
                     Minimally Invasive
                   </p>
                 </div>
@@ -68,8 +68,8 @@ export default function RoboticSurgeryOverview() {
                   rounded-lg p-6 bg-white cursor-pointer"
                   data-aos="zoom-in"
                 >
-                  <LuEye className="w-14 h-14 text-[#FF4B8B] mx-auto mb-3" />
-                  <p className="font-semibold text-[#FF4B8B]">
+                  <LuEye className="w-14 h-14 text-primary-pink mx-auto mb-3" />
+                  <p className="font-semibold text-primary-pink">
                     Enhanced Vision
                   </p>
                 </div>
@@ -80,8 +80,8 @@ export default function RoboticSurgeryOverview() {
                   rounded-lg p-6 bg-white cursor-pointer"
                   data-aos="zoom-in"
                 >
-                  <LuHand className="w-14 h-14 text-[#FF4B8B] mx-auto mb-3" />
-                  <p className="font-semibold text-[#FF4B8B]">
+                  <LuHand className="w-14 h-14 text-primary-pink mx-auto mb-3" />
+                  <p className="font-semibold text-primary-pink">
                     Precise Control
                   </p>
                 </div>
@@ -92,8 +92,8 @@ export default function RoboticSurgeryOverview() {
                   rounded-lg p-6 bg-white cursor-pointer"
                   data-aos="zoom-in"
                 >
-                  <LuZap className="w-14 h-14 text-[#FF4B8B] mx-auto mb-3" />
-                  <p className="font-semibold text-[#FF4B8B]">
+                  <LuZap className="w-14 h-14 text-primary-pink mx-auto mb-3" />
+                  <p className="font-semibold text-primary-pink">
                     Advanced Technology
                   </p>
                 </div>

@@ -48,7 +48,7 @@ const CervicalCancerGuideCard4 = ({ setShowCard, setActiveButton }) => {
                 style={{ borderColor: "rgb(255,197,211)" }}
               >
                 <div
-                  className="w-2 h-2 bg-[#FF4B8B] rounded-full mt-2 flex-shrink-0"
+                  className="w-2 h-2 bg-primary-pink rounded-full mt-2 flex-shrink-0"
                 ></div>
 
                 <span className="text-[#7a2f4f] text-sm font-medium">{text}</span>
@@ -74,7 +74,7 @@ const CervicalCancerGuideCard4 = ({ setShowCard, setActiveButton }) => {
               setShowCard(5);
               setActiveButton(4);
             }}
-            className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md text-sm font-medium transition-all h-10 px-4"
+            className="bg-primary-pink hover:bg-primary-pink/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md text-sm font-medium transition-all h-10 px-4"
           >
             Continue to Next Step
           </button>

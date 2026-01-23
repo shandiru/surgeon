@@ -59,7 +59,7 @@ const MenstrualDisordersGuidecard6 = ({ setShowCard, setActiveButton }) => {
   return (
     <div >
       <div className="max-w-5xl mx-6">
-        <h2 className="text-2xl font-bold mb-6 text-[#FF4B8B] text-center">Treatment Options</h2>
+        <h2 className="text-2xl font-bold mb-6 text-primary-pink text-center">Treatment Options</h2>
 
         <div className="space-y-4">
           {treatmentOptions.map((option, index) => (
@@ -105,7 +105,7 @@ const MenstrualDisordersGuidecard6 = ({ setShowCard, setActiveButton }) => {
             setShowCard(7);
             setActiveButton(6);
           }}
-          className="inline-flex items-center justify-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 gap-2 rounded-md text-sm sm:text-base font-medium transition h-10 w-full px-4"
+          className="inline-flex items-center justify-center bg-primary-pink hover:bg-primary-pink/80 gap-2 rounded-md text-sm sm:text-base font-medium transition h-10 w-full px-4"
         >
           Next
         </button>

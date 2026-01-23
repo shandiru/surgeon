@@ -21,7 +21,7 @@ const PelvicPainGuideCard4 = ({ setShowCard, setActiveButton }) => {
 
           {/* 🔥 WHEN TO SEE A DOCTOR */}
           <div className=" space-y-4">
-            <h3 className="font-semibold text-lg text-[#FF4B8B]">
+            <h3 className="font-semibold text-lg text-primary-pink">
               When to See a Doctor
             </h3>
 
@@ -61,7 +61,7 @@ const PelvicPainGuideCard4 = ({ setShowCard, setActiveButton }) => {
               setShowCard(5);
               setActiveButton(4);
             }}
-            className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white 
+            className="bg-primary-pink hover:bg-primary-pink/80 text-white 
               w-[90%] md:w-[60%] lg:w-[40%] rounded-md text-sm font-medium 
               transition-all h-10 px-4"
           >

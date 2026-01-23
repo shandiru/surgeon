@@ -24,12 +24,12 @@ export default function Home() {
       </section>
 
       {/* Education + Languages */}
-      <section id="education" className=" bg-gray-50">
+      <section id="education" className=" bg-white">
         <EducationLanguagesSection />
       </section>
 
       {/* Experience */}
-      <section id="experience" className=" bg-gray-50">
+      <section id="experience" className=" bg-white">
         <Experience />
       </section>
       <section>

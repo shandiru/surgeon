@@ -7,9 +7,9 @@ const OvarianCystsGuideCard6 = ({ setShowCard, setActiveButton }) => {
       <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto animate-in slide-in-from-right-5 duration-300">
 
         {/* MAIN WRAPPER */}
-        <div className="flex flex-col gap-6 rounded-xl py-6 px-5 sm:px-6 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all bg-[#FF4B8B]/10 text-[#BB125B] border border-[#FF4B8B]/10">
+        <div className="flex flex-col gap-6 rounded-xl py-6 px-5 sm:px-6 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all bg-primary-pink text-[#BB125B] border border-primary-pink">
           {/* HEADER */}
-          <div className="flex items-center gap-3 font-semibold text-[#FF4B8B] text-lg">
+          <div className="flex items-center gap-3 font-semibold text-primary-pink text-lg">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="22"
@@ -33,7 +33,7 @@ const OvarianCystsGuideCard6 = ({ setShowCard, setActiveButton }) => {
             <div className="flex items-start gap-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-5 h-5 text-[#FF4B8B] mt-0.5 flex-shrink-0"
+                className="w-5 h-5 text-primary-pink mt-0.5 flex-shrink-0"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -51,7 +51,7 @@ const OvarianCystsGuideCard6 = ({ setShowCard, setActiveButton }) => {
             <div className="flex items-start gap-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-5 h-5 text-[#FF4B8B] mt-0.5 flex-shrink-0"
+                className="w-5 h-5 text-primary-pink mt-0.5 flex-shrink-0"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -70,7 +70,7 @@ const OvarianCystsGuideCard6 = ({ setShowCard, setActiveButton }) => {
             <div className="flex items-start gap-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-5 h-5 text-[#FF4B8B] mt-0.5 flex-shrink-0"
+                className="w-5 h-5 text-primary-pink mt-0.5 flex-shrink-0"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -95,7 +95,7 @@ const OvarianCystsGuideCard6 = ({ setShowCard, setActiveButton }) => {
               setShowCard(7);
               setActiveButton(6);
             }}
-            className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white 
+            className="bg-primary-pink hover:bg-primary-pink/80 text-white 
                        w-[90%] md:w-[60%] lg:w-[40%] 
                        rounded-md text-sm font-medium 
                        transition-all h-10 px-4"

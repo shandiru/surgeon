@@ -7,10 +7,10 @@ const OvarianCystsGuideCard5 = ({ setShowCard, setActiveButton }) => {
       <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto animate-in slide-in-from-right-5 duration-300">
 
         {/* FULL WRAPPER BOX */}
-        <div className="rounded-2xl p-8 border border-[#FF4B8B]/10 shadow-lg transition-all duration-300 bg-[#FF4B8B]/10">
+        <div className="rounded-2xl p-8 border border-primary-pink shadow-lg transition-all duration-300 bg-primary-pink">
 
           {/* HEADER */}
-          <div className="flex items-center gap-3 font-semibold text-[#FF4B8B] text-lg mb-6">
+          <div className="flex items-center gap-3 font-semibold text-primary-pink text-lg mb-6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="22"
@@ -37,7 +37,7 @@ const OvarianCystsGuideCard5 = ({ setShowCard, setActiveButton }) => {
               "Being of reproductive age",
             ].map((item, index) => (
               <div key={index} className="flex items-start gap-3">
-                <div className="w-2.5 h-2.5 bg-[#FF4B8B] rounded-full mt-2 flex-shrink-0"></div>
+                <div className="w-2.5 h-2.5 bg-primary-pink rounded-full mt-2 flex-shrink-0"></div>
                 <span className="text-sm">{item}</span>
               </div>
             ))}
@@ -51,7 +51,7 @@ const OvarianCystsGuideCard5 = ({ setShowCard, setActiveButton }) => {
               setShowCard(6);
               setActiveButton(5);
             }}
-            className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white 
+            className="bg-primary-pink hover:bg-primary-pink/80 text-white 
                        w-[90%] md:w-[60%] lg:w-[40%] rounded-md 
                        text-sm font-medium transition-all h-10 px-4"
           >

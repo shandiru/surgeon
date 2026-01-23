@@ -9,11 +9,11 @@ const PostmenopausalBleedingGuideCard1 = ({ setShowCard, setActiveButton }) => {
           WHAT IS POSTMENOPAUSAL BLEEDING?
       --------------------------------------------------- */}
       <section className="max-w-4xl mx-auto px-6 py-6 mt-10">
-        <div className="bg-white rounded-2xl shadow-xl max-w-3xl mx-auto border border-[#FF4B8B]/20">
+        <div className="bg-white rounded-2xl shadow-xl max-w-3xl mx-auto border border-primary-pink">
 
           {/* HEADER */}
-          <div className="border-b border-[#FF4B8B]/20 rounded-t-2xl px-6 py-6">
-            <div className="flex items-center gap-2 text-2xl font-bold text-[#FF4B8B]">
+          <div className="border-b border-primary-pink rounded-t-2xl px-6 py-6">
+            <div className="flex items-center gap-2 text-2xl font-bold text-primary-pink">
               What Is Postmenopausal Bleeding?
             </div>
           </div>
@@ -25,8 +25,8 @@ const PostmenopausalBleedingGuideCard1 = ({ setShowCard, setActiveButton }) => {
               Postmenopausal bleeding is any bleeding from the vagina after menopause.
             </p>
 
-            <div className="bg-[#FEE6EA] p-5 rounded-xl shadow-sm border border-[#FF4B8B]/10">
-              <p className="font-semibold mb-3 text-[#FF4B8B] text-lg">Key Facts:</p>
+            <div className="bg-[#FEE6EA] p-5 rounded-xl shadow-sm border border-primary-pink">
+              <p className="font-semibold mb-3 text-primary-pink text-lg">Key Facts:</p>
 
               <ul className="space-y-2 text-sm sm:text-base text-[#374151] list-disc list-inside">
                 <li>Menopause is confirmed once you have had no period for 12 months</li>

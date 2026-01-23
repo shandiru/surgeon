@@ -96,7 +96,7 @@ const Hysteroscopycard6 = () => {
           <div className="pt-4">
             <button
               onClick={() => {/* Add functionality here */ }}
-              className="inline-flex items-center justify-center gap-2 bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 h-9 px-4 py-2 w-full"
+              className="inline-flex items-center justify-center gap-2 bg-primary-pink hover:bg-primary-pink/80 text-white rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 h-9 px-4 py-2 w-full"
             >
               <span>Complete Guide</span>
               <Star className="text-xl" /> {/* Using the lucide-react icon here */}

@@ -10,7 +10,7 @@ const UltraSoundGuide = ({ activeButton }) => {
     <div className="UltraSoundGuide">
       <div className="text-center mb-8 px-4 sm:px-6 lg:px-8">
         {/* Title with Icon */}
-        <div className="inline-flex items-center gap-2 text-[#d60d64] bg-[#FF4B8B]/10 px-4 py-2 rounded-full mb-4">
+        <div className="inline-flex items-center gap-2 text-[#d60d64] bg-primary-pink px-4 py-2 rounded-full mb-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -31,7 +31,7 @@ const UltraSoundGuide = ({ activeButton }) => {
         </div>
 
         {/* Heading and Subheading */}
-        <h1 className="text-hero text-[#FF4B8B] mb-4">Understanding Gynaecological Ultrasound</h1>
+        <h1 className="text-hero text-primary-pink mb-4">Understanding Gynaecological Ultrasound</h1>
         <p className="text-body-large text-muted-foreground mb-6">What it is, why it's done, and what to expect</p>
 
         {/* Progress Bar */}
@@ -49,11 +49,11 @@ const UltraSoundGuide = ({ activeButton }) => {
             aria-valuemin="0"
             aria-valuemax="100"
             aria-valuenow={progressPercentage}
-            className="bg-[#FF4B8B]/10 relative w-full overflow-hidden rounded-full h-2"
+            className="bg-primary-pink relative w-full overflow-hidden rounded-full h-2"
           >
             {/* Progress Fill */}
             <div
-              className="bg-[#FF4B8B]/80 h-full transition-all duration-300"
+              className="bg-primary-pink/80 h-full transition-all duration-300"
               style={{ width: `${progressPercentage}%` }}
             ></div>
           </div>

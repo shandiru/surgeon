@@ -7,49 +7,49 @@ export default function ExperienceGrid() {
       icon: <Award className="w-6 h-6" />,
       title: 'Years of Experience',
       description: 'Extensive experience in robotic-assisted gynecological surgery with a focus on minimally invasive techniques.',
-      background: 'bg-[#FDE7EB]',
-      iconBg: 'bg-[#FF4B8B]',
-      hoverColor: 'hover:bg-[#FDE7EB]',
+      background: 'bg-light-pink-1',
+      iconBg: 'bg-primary-pink',
+      hoverColor: 'hover:bg-light-pink-1',
     },
     {
       icon: <Target className="w-6 h-6" />,
       title: 'Surgical Expertise',
       description: 'Specialized in robotic surgery for endometrial cancer, cervical cancer, and complex benign conditions.',
       background: 'bg-white',
-      iconBg: 'bg-[#FF4B8B]',
-      hoverColor: 'hover:bg-[#FF4B8B]',
+      iconBg: 'bg-primary-pink',
+      hoverColor: 'hover:bg-primary-pink',
     },
     {
       icon: <GraduationCap className="w-6 h-6" />,
       title: 'Specialized Training',
       description: 'Certified in da Vinci Surgical System with advanced training in complex gynecological procedures.',
-      background: 'bg-[#FDE7EB]',
-      iconBg: 'bg-[#FF4B8B]',
-      hoverColor: 'hover:bg-[#FDE7EB]',
+      background: 'bg-light-pink-1',
+      iconBg: 'bg-primary-pink',
+      hoverColor: 'hover:bg-light-pink-1',
     },
     {
       icon: <Heart className="w-6 h-6" />,
       title: 'Patient Care',
       description: 'Compassionate care ensuring each patient receives personalized treatment tailored to their unique needs.',
       background: 'bg-white',
-      iconBg: 'bg-[#FF4B8B]',
-      hoverColor: 'hover:bg-[#FF4B8B]',
+      iconBg: 'bg-primary-pink',
+      hoverColor: 'hover:bg-primary-pink',
     },
     {
       icon: <Calendar className="w-6 h-6" />,
       title: 'Continuous Learning',
       description: 'Regularly attends international conferences and workshops to stay at the forefront of robotic surgery advancements.',
-      background: 'bg-[#FDE7EB]',
-      iconBg: 'bg-[#FF4B8B]',
-      hoverColor: 'hover:bg-[#FDE7EB]',
+      background: 'bg-light-pink-1',
+      iconBg: 'bg-primary-pink',
+      hoverColor: 'hover:bg-light-pink-1',
     },
     {
       icon: <Users className="w-6 h-6" />,
       title: 'Teaching & Mentorship',
       description: 'Actively teaching robotic surgery techniques to surgeons across Europe, sharing expertise and advancing surgical education.',
       background: 'bg-white',
-      iconBg: 'bg-[#FF4B8B]',
-      hoverColor: 'hover:bg-[#FF4B8B]',
+      iconBg: 'bg-primary-pink',
+      hoverColor: 'hover:bg-primary-pink',
     },
   ];
 
@@ -71,19 +71,19 @@ export default function ExperienceGrid() {
                 </div>
 
                 {/* Title */}
-                <h3 className="text-subsection text-gray-900 font-bold mb-3">
+                <h3 className="text-subsection text-black font-bold mb-3">
                   {card.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-body text-gray-700 leading-relaxed mb-4 flex-1">
+                <p className="text-body text-black leading-relaxed mb-4 flex-1">
                   {card.description}
                 </p>
 
                 {/* Button at Bottom Right */}
                 <div className="flex justify-end mt-auto">
                   <button
-                    className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white text-[#FF4B8B] font-bold text-sm transition-all duration-300 ${card.hoverColor} hover:text-white`}
+                    className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white text-primary-pink font-bold text-sm transition-all duration-300 ${card.hoverColor} hover:text-white`}
                   >
                     Know more
                     <ArrowRight className="w-4 h-4" />

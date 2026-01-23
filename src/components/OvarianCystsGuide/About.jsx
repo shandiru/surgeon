@@ -8,7 +8,7 @@ const OvarianCystsGuideAbout = ({ activeButton }) => {
   return (
     <div className="text-center mb-8 px-4 sm:px-6 md:px-8 lg:px-16">
       {/* Tag and Title */}
-      <div className="inline-flex bg-[#FF4B8B]/10 text-[#BB125B] items-center gap-2 px-4 py-2 rounded-full mb-4">
+      <div className="inline-flex bg-primary-pink text-[#BB125B] items-center gap-2 px-4 py-2 rounded-full mb-4">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -27,7 +27,7 @@ const OvarianCystsGuideAbout = ({ activeButton }) => {
       </div>
 
       {/* Main Title */}
-      <h1 className="text-hero text-balance mb-4 text-[#FF4B8B]">
+      <h1 className="text-hero text-balance mb-4 text-primary-pink">
         Understanding Ovarian Cysts
       </h1>
       <p className="text-body-large text-muted-foreground text-balance text-[#BB125B]">
@@ -49,11 +49,11 @@ const OvarianCystsGuideAbout = ({ activeButton }) => {
           aria-valuemin="0"
           aria-valuemax="100"
           aria-valuenow={progressPercentage}
-          className="bg-[#FF4B8B]/10 relative w-full overflow-hidden rounded-full h-2"
+          className="bg-primary-pink relative w-full overflow-hidden rounded-full h-2"
         >
           {/* Progress Fill */}
           <div
-            className="bg-[#FF4B8B]/80 h-full transition-all duration-300"
+            className="bg-primary-pink/80 h-full transition-all duration-300"
             style={{ width: `${progressPercentage}%` }}
           ></div>
         </div>

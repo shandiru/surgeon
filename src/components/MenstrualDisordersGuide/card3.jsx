@@ -36,8 +36,8 @@ const MenstrualDisordersGuidecard3 = ({ setShowCard, setActiveButton }) => {
     <div className="space-y-6 pb-10 max-w-5xl mx-aut px-3">
       {/* Card Container */}
       <div className="flex items-center justify-center gap-3 mb-12 text-center sm:text-left">
-        <LuStethoscope className="h-8 w-8 text-[#FF4B8B]" />
-        <h2 className="text-3xl md:text-4xl font-bold text-[#FF4B8B]">
+        <LuStethoscope className="h-8 w-8 text-primary-pink" />
+        <h2 className="text-3xl md:text-4xl font-bold text-primary-pink">
           Types of Menstrual Disorders
         </h2>
       </div>
@@ -83,7 +83,7 @@ const MenstrualDisordersGuidecard3 = ({ setShowCard, setActiveButton }) => {
             setShowCard(4);
             setActiveButton(3);
           }}
-          className="inline-flex items-center justify-center gap-2 bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 rounded-md text-sm font-medium h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
+          className="inline-flex items-center justify-center gap-2 bg-primary-pink hover:bg-primary-pink/80 rounded-md text-sm font-medium h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
         >
           Learn About Screening
         </button>

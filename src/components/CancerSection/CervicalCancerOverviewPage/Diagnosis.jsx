@@ -49,7 +49,7 @@ export default function CervicalCancerDiagnosis() {
           
           {/* Header */}
           <div className="px-6 grid gap-1.5" data-aos="fade-left">
-            <div className="flex items-center gap-2 text-xl font-semibold text-[#FF4B8B]">
+            <div className="flex items-center gap-2 text-xl font-semibold text-primary-pink">
               <LuMicroscope className="w-6 h-6" />
               How is Cervical Cancer Diagnosed?
             </div>
@@ -71,7 +71,7 @@ export default function CervicalCancerDiagnosis() {
                     className="flex gap-4 p-4 bg-white border border-[#f5c2d2] rounded-lg transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]"
                     data-aos="fade-left"
                   >
-                    <div className="w-8 h-8 flex items-center justify-center rounded-full bg-[#FFC5D3] text-[#FF4B8B] text-sm font-bold flex-shrink-0">
+                    <div className="w-8 h-8 flex items-center justify-center rounded-full bg-primary-pint text-primary-pink text-sm font-bold flex-shrink-0">
                       {index + 1}
                     </div>
                     <div>
@@ -100,7 +100,7 @@ export default function CervicalCancerDiagnosis() {
                 {imagingTests.map((test, idx) => (
                   <span
                     key={idx}
-                    className="text-sm border border-[#f5a9bd] bg-[#FFC5D3] text-[#4b1e30] px-3 py-1 rounded-md font-medium"
+                    className="text-sm border border-[#f5a9bd] bg-primary-pint text-[#4b1e30] px-3 py-1 rounded-md font-medium"
                   >
                     {test}
                   </span>

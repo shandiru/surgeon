@@ -31,7 +31,7 @@ const CervicalCancerGuidecard3 = ({ setShowCard, setActiveButton }) => {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="lucide lucide-file-text w-6 h-6 text-[#FF4B8B]"
+              className="lucide lucide-file-text w-6 h-6 text-primary-pink"
             >
               <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
               <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
@@ -55,55 +55,55 @@ const CervicalCancerGuidecard3 = ({ setShowCard, setActiveButton }) => {
             {[
               {
                 step: 'Persistent High-Risk HPV Infection',
-                icon: <Biohazard className="w-5 h-5 text-[#FF4B8B]" />,
+                icon: <Biohazard className="w-5 h-5 text-primary-pink" />,
                 description:
                   'The strongest risk factor. Nearly all cervical cancers are linked to high-risk HPV types.',
               },
               {
                 step: 'Smoking',
-                icon: <Cigarette className="w-5 h-5 text-[#FF4B8B]" />,
+                icon: <Cigarette className="w-5 h-5 text-primary-pink" />,
                 description:
                   'Smoking reduces the body’s ability to clear HPV infections, increasing cancer risk.',
               },
               {
                 step: 'Weakened Immune System',
-                icon: <ShieldOff className="w-5 h-5 text-[#FF4B8B]" />,
+                icon: <ShieldOff className="w-5 h-5 text-primary-pink" />,
                 description:
                   'Conditions like HIV or long-term steroid use weaken immunity and raise risk.',
               },
               {
                 step: 'Sexual Activity at a Young Age',
-                icon: <Sparkles className="w-5 h-5 text-[#FF4B8B]" />,
+                icon: <Sparkles className="w-5 h-5 text-primary-pink" />,
                 description:
                   'Early sexual activity increases the chance of HPV exposure.',
               },
               {
                 step: 'Multiple Sexual Partners',
-                icon: <CloudFog className="w-5 h-5 text-[#FF4B8B]" />,
+                icon: <CloudFog className="w-5 h-5 text-primary-pink" />,
                 description:
                   'More partners increase the likelihood of high-risk HPV infection.',
               },
               {
                 step: 'Long-Term Oral Contraceptive Use',
-                icon: <Sparkles className="w-5 h-5 text-[#FF4B8B]" />,
+                icon: <Sparkles className="w-5 h-5 text-primary-pink" />,
                 description:
                   'Using the contraceptive pill for more than 5 years slightly increases risk.',
               },
               {
                 step: 'Lack of Cervical Screening',
-                icon: <Biohazard className="w-5 h-5 text-[#FF4B8B]" />,
+                icon: <Biohazard className="w-5 h-5 text-primary-pink" />,
                 description:
                   'Skipping Pap smears or HPV tests means abnormalities can go undetected.',
               },
               {
                 step: 'Other STIs (e.g., Chlamydia)',
-                icon: <CloudFog className="w-5 h-5 text-[#FF4B8B]" />,
+                icon: <CloudFog className="w-5 h-5 text-primary-pink" />,
                 description:
                   'Certain infections make HPV more persistent, raising risk.',
               },
               {
                 step: 'Family History of Cervical Cancer',
-                icon: <Sparkles className="w-5 h-5 text-[#FF4B8B]" />,
+                icon: <Sparkles className="w-5 h-5 text-primary-pink" />,
                 description:
                   'Risk is slightly higher if a close relative has had cervical cancer.',
               },
@@ -158,7 +158,7 @@ const CervicalCancerGuidecard3 = ({ setShowCard, setActiveButton }) => {
               className="font-semibold mb-2 flex items-center gap-2"
               style={{ color: '#FF4B8B' }}
             >
-              <Sparkles className="w-5 h-5 text-[#FF4B8B]" />
+              <Sparkles className="w-5 h-5 text-primary-pink" />
               Most Important Risk Factor
             </h4>
             <p className="text-sm" style={{ color: '#7a2f4f' }}>
@@ -173,7 +173,7 @@ const CervicalCancerGuidecard3 = ({ setShowCard, setActiveButton }) => {
                 setShowCard(4);
                 setActiveButton(3);
               }}
-              className="inline-flex items-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
+              className="inline-flex items-center bg-primary-pink hover:bg-primary-pink/80 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
             >
               Continue to Next Section
             </button>

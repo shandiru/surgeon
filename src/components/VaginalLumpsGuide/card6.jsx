@@ -20,7 +20,7 @@ const VaginalLumpsGuidecard6 = ({ setShowCard, setActiveButton }) => {
           <h2 className="text-3xl font-bold mb-2 flex items-center justify-center gap-2"
             style={{ color: "#FF4B8B" }}
           >
-            <CircleAlert className="w-7 h-7 text-[#FF4B8B]" />
+            <CircleAlert className="w-7 h-7 text-primary-pink" />
             When to Seek Urgent Help
           </h2>
           <p className="text-lg" style={{ color: "#7a2f4f" }}>
@@ -50,7 +50,7 @@ const VaginalLumpsGuidecard6 = ({ setShowCard, setActiveButton }) => {
             </div>
 
             <div className="px-6">
-              <p className="text-sm text-gray-700 leading-relaxed">
+              <p className="text-sm text-black leading-relaxed">
                 Any lump that increases in size quickly over days or weeks.
               </p>
             </div>
@@ -75,7 +75,7 @@ const VaginalLumpsGuidecard6 = ({ setShowCard, setActiveButton }) => {
             </div>
 
             <div className="px-6">
-              <p className="text-sm text-gray-700 leading-relaxed">
+              <p className="text-sm text-black leading-relaxed">
                 Signs of serious infection that need immediate treatment.
               </p>
             </div>
@@ -100,7 +100,7 @@ const VaginalLumpsGuidecard6 = ({ setShowCard, setActiveButton }) => {
             </div>
 
             <div className="px-6">
-              <p className="text-sm text-gray-700 leading-relaxed">
+              <p className="text-sm text-black leading-relaxed">
                 Persistent or heavy bleeding from the affected area.
               </p>
             </div>
@@ -125,7 +125,7 @@ const VaginalLumpsGuidecard6 = ({ setShowCard, setActiveButton }) => {
             </div>
 
             <div className="px-6">
-              <p className="text-sm text-gray-700 leading-relaxed">
+              <p className="text-sm text-black leading-relaxed">
                 New lumps in post-menopausal women require prompt evaluation.
               </p>
             </div>
@@ -146,7 +146,7 @@ const VaginalLumpsGuidecard6 = ({ setShowCard, setActiveButton }) => {
                 <h3 className="font-semibold" style={{ color: "#FF4B8B" }}>
                   Need Immediate Help?
                 </h3>
-                <p className="text-sm text-gray-800">
+                <p className="text-sm text-black">
                   Don’t wait if you're experiencing urgent symptoms.
                 </p>
               </div>
@@ -182,7 +182,7 @@ const VaginalLumpsGuidecard6 = ({ setShowCard, setActiveButton }) => {
               setShowCard(7);
               setActiveButton(6);
             }}
-            className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all"
+            className="bg-primary-pink hover:bg-primary-pink/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all"
           >
             Continue to Final Section
           </button>

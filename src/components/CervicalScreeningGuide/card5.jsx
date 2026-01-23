@@ -19,13 +19,13 @@ const CervicalScreeningGuidecard5 = ({ setShowCard, setActiveButton }) => {
           <div className="container mx-auto px-6 md:px-12">
             <div
               data-slot="card"
-              className="bg-white text-[#FF4B8B] flex flex-col gap-8 rounded-2xl p-8 shadow-md border border-gray-200
+              className="bg-white text-primary-pink flex flex-col gap-8 rounded-2xl p-8 shadow-md border border-gray-200
                      transition duration-300 hover:shadow-[0_10px_30px_rgba(255,197,211,0.45)] hover:-translate-y-2 
                      active:scale-[0.98]"
             >
               {/* HEADER */}
               <div className="flex items-center gap-3">
-                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#FFC5D3] shadow-md">
+                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary-pint shadow-md">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-6 w-6 text-white"
@@ -47,11 +47,11 @@ const CervicalScreeningGuidecard5 = ({ setShowCard, setActiveButton }) => {
               </div>
 
               {/* BOX 1 */}
-              <div className="bg-[#FFF5F8] border border-gray-200 text-[#FF4B8B] p-4 rounded-lg shadow-sm">
+              <div className="bg-[#FFF5F8] border border-gray-200 text-primary-pink p-4 rounded-lg shadow-sm">
                 <p className="font-semibold text-[#ff97b3] mb-1">
                   Takes just 5 minutes
                 </p>
-                <p className="text-gray-700 text-sm">
+                <p className="text-black text-sm">
                   The entire procedure is quick and straightforward
                 </p>
               </div>
@@ -59,39 +59,39 @@ const CervicalScreeningGuidecard5 = ({ setShowCard, setActiveButton }) => {
               {/* STEPS */}
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <div className="bg-[#FFC5D3] text-white rounded-full w-7 h-7 flex items-center justify-center text-sm font-bold shadow">
+                  <div className="bg-primary-pint text-white rounded-full w-7 h-7 flex items-center justify-center text-sm font-bold shadow">
                     1
                   </div>
-                  <p className="text-gray-700">
+                  <p className="text-black">
                     A small speculum gently opens the vagina
                   </p>
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="bg-[#FFC5D3] text-white rounded-full w-7 h-7 flex items-center justify-center text-sm font-bold shadow">
+                  <div className="bg-primary-pint text-white rounded-full w-7 h-7 flex items-center justify-center text-sm font-bold shadow">
                     2
                   </div>
-                  <p className="text-gray-700">
+                  <p className="text-black">
                     A soft brush collects cells from your cervix
                   </p>
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="bg-[#FFC5D3] text-white rounded-full w-7 h-7 flex items-center justify-center text-sm font-bold shadow">
+                  <div className="bg-primary-pint text-white rounded-full w-7 h-7 flex items-center justify-center text-sm font-bold shadow">
                     3
                   </div>
-                  <p className="text-gray-700">
+                  <p className="text-black">
                     Your sample is sent to a lab for testing
                   </p>
                 </div>
               </div>
 
               {/* BOX 2 */}
-              <div className="bg-[#FFF5F8] border border-gray-200 text-[#FF4B8B] p-4 rounded-lg shadow-sm">
+              <div className="bg-[#FFF5F8] border border-gray-200 text-primary-pink p-4 rounded-lg shadow-sm">
                 <p className="font-semibold text-[#ff97b3] mb-1">
                   We use Dual Testing:
                 </p>
-                <p className="text-gray-700 text-sm">
+                <p className="text-black text-sm">
                   Checking for high-risk HPV and abnormal cells (for women over
                   25)
                 </p>
@@ -107,8 +107,8 @@ const CervicalScreeningGuidecard5 = ({ setShowCard, setActiveButton }) => {
               setShowCard(6);
               setActiveButton(5);
             }}
-           className="inline-flex items-center justify-center bg-[#FF4B8B] 
-                hover:bg-[#FF4B8B]/80 text-white rounded-md text-sm font-medium 
+           className="inline-flex items-center justify-center bg-primary-pink 
+                hover:bg-primary-pink/80 text-white rounded-md text-sm font-medium 
                 transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%]"
           >
             Continue to Treatment Options

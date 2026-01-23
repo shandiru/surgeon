@@ -16,7 +16,7 @@ const VaginalLumpsGuideCard4 = ({ setShowCard, setActiveButton }) => {
         >
           {/* HEADER */}
           <h2 className="text-3xl font-bold flex items-center gap-2 mb-4" style={{ color: "#FF4B8B" }}>
-            <AlertTriangle className="w-7 h-7 text-[#FF4B8B]" />
+            <AlertTriangle className="w-7 h-7 text-primary-pink" />
             When to See Your Doctor
           </h2>
 
@@ -73,7 +73,7 @@ const VaginalLumpsGuideCard4 = ({ setShowCard, setActiveButton }) => {
               setShowCard(5);
               setActiveButton(4);
             }}
-            className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md text-sm font-medium h-10 px-4 transition-all"
+            className="bg-primary-pink hover:bg-primary-pink/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md text-sm font-medium h-10 px-4 transition-all"
           >
             Continue to Next Step
           </button>

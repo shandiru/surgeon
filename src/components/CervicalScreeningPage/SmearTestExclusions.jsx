@@ -21,7 +21,7 @@ export default function SmearTestExclusions() {
                 <line x1="12" y1="16" x2="12.01" y2="16" />
               </svg>
             </div>
-            <h2 className="text-2xl md:text-3xl font-bold text-[#FF4B8B]">
+            <h2 className="text-2xl md:text-3xl font-bold text-primary-pink">
               Who Doesn&apos;t Usually Need One?
             </h2>
           </div>
@@ -32,14 +32,14 @@ export default function SmearTestExclusions() {
             <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm 
                             transition duration-300 hover:shadow-[0_8px_30px_rgba(255,151,179,0.35)] 
                             hover:border-[#ff97b3] hover:-translate-y-2 active:scale-[0.98]">
-              <h3 className="text-xl font-semibold text-[#FF4B8B] mb-4">
+              <h3 className="text-xl font-semibold text-primary-pink mb-4">
                 Under 25
               </h3>
-              <ul className="space-y-2 text-gray-700 leading-relaxed">
+              <ul className="space-y-2 text-black leading-relaxed">
                 <li>• Cervical changes are common and usually harmless</li>
                 <li>• Early treatment can affect future fertility</li>
               </ul>
-              <p className="text-sm text-gray-600 mt-4">
+              <p className="text-sm text-black mt-4">
                 <strong className="text-[#ff97b3]">Note:</strong> See a doctor if you have unusual bleeding or bleeding after sex
               </p>
             </div>
@@ -48,10 +48,10 @@ export default function SmearTestExclusions() {
             <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm 
                             transition duration-300 hover:shadow-[0_8px_30px_rgba(255,151,179,0.35)] 
                             hover:border-[#ff97b3] hover:-translate-y-2 active:scale-[0.98]">
-              <h3 className="text-xl font-semibold text-[#FF4B8B] mb-4">
+              <h3 className="text-xl font-semibold text-primary-pink mb-4">
                 Over 65
               </h3>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-black leading-relaxed">
                 If you&apos;ve had 3 normal tests in a row, no further smears are usually needed
               </p>
             </div>

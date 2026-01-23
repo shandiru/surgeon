@@ -10,8 +10,8 @@ const FibroidGuidecard8 = () => {
         {/* Self-Care Tips Card */}
         <div className="bg-white text-[#212529] flex flex-col gap-6 rounded-2xl py-8 px-6 shadow-md hover:shadow-lg hover:-translate-y-2 transition-all duration-300 active:scale-[0.98]">
           <div className="flex items-center gap-3">
-            <Leaf className="text-3xl text-[#FF4B8B]" />
-            <h3 className="font-bold text-xl md:text-2xl text-[#FF4B8B]">
+            <Leaf className="text-3xl text-primary-pink" />
+            <h3 className="font-bold text-xl md:text-2xl text-primary-pink">
               Self-Care Tips
             </h3>
           </div>
@@ -27,8 +27,8 @@ const FibroidGuidecard8 = () => {
         {/* Support & Follow-Up Card */}
         <div className="bg-white text-[#212529] flex flex-col gap-6 rounded-2xl py-8 px-6 shadow-md hover:shadow-lg hover:-translate-y-2 transition-all duration-300 active:scale-[0.98]">
           <div className="flex items-center gap-3">
-            <MessageCircle className="text-3xl text-[#FF4B8B]" />
-            <h3 className="font-bold text-xl md:text-2xl text-[#FF4B8B]">
+            <MessageCircle className="text-3xl text-primary-pink" />
+            <h3 className="font-bold text-xl md:text-2xl text-primary-pink">
               Support & Follow-Up
             </h3>
           </div>
@@ -45,7 +45,7 @@ const FibroidGuidecard8 = () => {
       {/* COMPLETE GUIDE BUTTON */}
       <div className="pt-8 flex justify-center">
         <button
-          className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all flex items-center justify-center gap-2"
+          className="bg-primary-pink hover:bg-primary-pink/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all flex items-center justify-center gap-2"
         >
           <Star className="w-4 h-4" />
           Complete Guide

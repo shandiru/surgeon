@@ -34,13 +34,13 @@ const OvarianCancerGuidecard6 = ({ setShowCard, setActiveButton }) => {
     <div className="space-y-6 pb-14">
       {/* CARD CONTAINER */}
       <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 
-        flex flex-col gap-10 rounded-2xl border border-[#FF4B8B]/10 p-8 shadow-sm
+        flex flex-col gap-10 rounded-2xl border border-primary-pink p-8 shadow-sm
         animate-in slide-in-from-right-5 duration-300 bg-white">
         {/* HEADER */}
         <div className="text-center space-y-3">
           <div className="flex items-center justify-center gap-2 mb-1">
-            <HeartPulse className="h-8 w-8 text-[#FF4B8B]" />
-            <h3 className="text-3xl font-bold text-[#FF4B8B]">
+            <HeartPulse className="h-8 w-8 text-primary-pink" />
+            <h3 className="text-3xl font-bold text-primary-pink">
               Treatment of Ovarian Cancer
             </h3>
           </div>
@@ -50,7 +50,7 @@ const OvarianCancerGuidecard6 = ({ setShowCard, setActiveButton }) => {
             and fertility considerations.
           </p>
 
-          <p className="font-semibold text-lg text-[#FF4B8B]">
+          <p className="font-semibold text-lg text-primary-pink">
             The main goal is to remove the cancer whenever possible.
           </p>
         </div>
@@ -69,7 +69,7 @@ const OvarianCancerGuidecard6 = ({ setShowCard, setActiveButton }) => {
               >
                 {item.title}
               </h4>
-              <p className="text-gray-700">{item.description}</p>
+              <p className="text-black">{item.description}</p>
             </div>
           ))}
         </div>
@@ -81,7 +81,7 @@ const OvarianCancerGuidecard6 = ({ setShowCard, setActiveButton }) => {
               setShowCard(7);
               setActiveButton(6);
             }}
-            className="inline-flex items-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 
+            className="inline-flex items-center bg-primary-pink hover:bg-primary-pink/80 
             text-white rounded-md text-sm font-medium transition-all 
             h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%]"
           >

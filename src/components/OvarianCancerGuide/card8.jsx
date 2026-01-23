@@ -7,7 +7,7 @@ const OvarianCancerGuidecard8 = ({ setShowCard, setActiveButton }) => {
 
       {/* Card Container */}
       <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl text-[#BB125B] mx-auto 
-        mb-10 flex flex-col gap-6 rounded-xl border border-[#FF4B8B]/10 py-6 shadow-sm 
+        mb-10 flex flex-col gap-6 rounded-xl border border-primary-pink py-6 shadow-sm 
         animate-in slide-in-from-right-5 duration-300">
 
         {/* Card Header */}
@@ -29,9 +29,9 @@ const OvarianCancerGuidecard8 = ({ setShowCard, setActiveButton }) => {
         <div className="px-6 space-y-5">
 
           {/* Highlight Section */}
-          <div className="p-5 rounded-lg bg-[#FF4B8B]/10 border border-[#FF4B8B]/10">
-            <h3 className="font-semibold flex items-center gap-2 mb-2 text-[#FF4B8B]">
-              <Star className="w-5 h-5 text-[#FF4B8B]" />
+          <div className="p-5 rounded-lg bg-primary-pink border border-primary-pink">
+            <h3 className="font-semibold flex items-center gap-2 mb-2 text-primary-pink">
+              <Star className="w-5 h-5 text-primary-pink" />
               What You Should Know
             </h3>
 
@@ -44,7 +44,7 @@ const OvarianCancerGuidecard8 = ({ setShowCard, setActiveButton }) => {
 
           {/* Bullet Points */}
           <div className="space-y-3">
-            <h4 className="font-semibold text-[#FF4B8B]">Key Points to Remember</h4>
+            <h4 className="font-semibold text-primary-pink">Key Points to Remember</h4>
             <ul className="space-y-2 text-sm text-[#BB125B]">
               {[
                 "Persistent bloating, pelvic pain, or feeling full quickly should not be ignored",
@@ -54,7 +54,7 @@ const OvarianCancerGuidecard8 = ({ setShowCard, setActiveButton }) => {
                 "Early medical evaluation leads to better outcomes"
               ].map((item, index) => (
                 <li key={index} className="flex items-start gap-2">
-                  <CheckCircle2 className="w-4 h-4 flex-shrink-0 mt-0.5 text-[#FF4B8B]" />
+                  <CheckCircle2 className="w-4 h-4 flex-shrink-0 mt-0.5 text-primary-pink" />
                   <span>{item}</span>
                 </li>
               ))}
@@ -62,9 +62,9 @@ const OvarianCancerGuidecard8 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           {/* Final Section */}
-          <div className="p-4 rounded-lg bg-white border border-[#FF4B8B]/10">
-            <h4 className="font-semibold flex items-center gap-2 text-[#FF4B8B]">
-              <Star className="w-5 h-5 text-[#FF4B8B]" />
+          <div className="p-4 rounded-lg bg-white border border-primary-pink">
+            <h4 className="font-semibold flex items-center gap-2 text-primary-pink">
+              <Star className="w-5 h-5 text-primary-pink" />
               Final Message
             </h4>
             <p className="text-sm leading-relaxed mt-1 text-[#BB125B]">
@@ -78,8 +78,8 @@ const OvarianCancerGuidecard8 = ({ setShowCard, setActiveButton }) => {
           <div className="pt-4">
             <button
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-              className="inline-flex items-center justify-center bg-[#FF4B8B] 
-              hover:bg-[#FF4B8B]/80 gap-2 whitespace-nowrap rounded-md text-sm 
+              className="inline-flex items-center justify-center bg-primary-pink 
+              hover:bg-primary-pink/80 gap-2 whitespace-nowrap rounded-md text-sm 
               font-medium transition-all h-9 px-4 py-2 w-full text-white"
             >
               <Star className="w-4 h-4" />

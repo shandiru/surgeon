@@ -46,26 +46,26 @@ export default function CurrentWork() {
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-12">
-            <h2 className="text-section text-[#FF4B8B] mb-4">
+            <h2 className="text-section text-primary-pink mb-4">
               Current Work and Involvement
             </h2>
-            <p className="text-body-large text-gray-700 max-w-2xl mx-auto">
+            <p className="text-body-large text-black max-w-2xl mx-auto">
               Balancing clinical excellence with educational leadership in robotic surgery
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 md:gap-12">
             {/* MD Role Section */}
-            <div className="bg-[#FF4B8B]/10 rounded-xl p-6 md:p-8 border border-[#FF4B8B]/20">
+            <div className="bg-primary-pink rounded-xl p-6 md:p-8 border border-primary-pink">
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 rounded-lg bg-[#FF4B8B] flex items-center justify-center text-white">
+                <div className="w-12 h-12 rounded-lg bg-primary-pink flex items-center justify-center text-white">
                   <Building2 className="w-6 h-6" />
                 </div>
-                <h3 className="text-subsection text-[#FF4B8B] font-semibold">
+                <h3 className="text-subsection text-primary-pink font-semibold">
                   Medical Director Role
                 </h3>
               </div>
-              <p className="text-body text-gray-700 mb-6 leading-relaxed">
+              <p className="text-body text-black mb-6 leading-relaxed">
                 As Medical Director, Ketan plays a crucial role in the day-to-day operations of the 
                 hospital, ensuring the highest standards of surgical care and patient safety. His 
                 leadership extends beyond the operating room to include strategic planning, team 
@@ -74,26 +74,26 @@ export default function CurrentWork() {
               <div className="space-y-3">
                 {mdRoleItems.map((item, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <div className="flex-shrink-0 w-6 h-6 text-[#FF4B8B] mt-0.5">
+                    <div className="flex-shrink-0 w-6 h-6 text-primary-pink mt-0.5">
                       {item.icon}
                     </div>
-                    <span className="text-body text-gray-700">{item.text}</span>
+                    <span className="text-body text-black">{item.text}</span>
                   </div>
                 ))}
               </div>
             </div>
 
             {/* Teaching Section */}
-            <div className="bg-gray-50 rounded-xl p-6 md:p-8 border border-gray-200">
+            <div className="bg-white rounded-xl p-6 md:p-8 border border-gray-200">
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 rounded-lg bg-[#FF4B8B] flex items-center justify-center text-white">
+                <div className="w-12 h-12 rounded-lg bg-primary-pink flex items-center justify-center text-white">
                   <GraduationCap className="w-6 h-6" />
                 </div>
-                <h3 className="text-subsection text-gray-800 font-semibold">
+                <h3 className="text-subsection text-black font-semibold">
                   Teaching Robotic Surgery in Europe
                 </h3>
               </div>
-              <p className="text-body text-gray-700 mb-6 leading-relaxed">
+              <p className="text-body text-black mb-6 leading-relaxed">
                 Ketan is actively involved in teaching and training surgeons across Europe, sharing 
                 his expertise in robotic-assisted surgery. Through workshops, mentorship programs, 
                 and educational initiatives, he contributes to advancing surgical techniques and 
@@ -102,10 +102,10 @@ export default function CurrentWork() {
               <div className="space-y-3">
                 {teachingItems.map((item, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <div className="flex-shrink-0 w-6 h-6 text-[#FF4B8B] mt-0.5">
+                    <div className="flex-shrink-0 w-6 h-6 text-primary-pink mt-0.5">
                       {item.icon}
                     </div>
-                    <span className="text-body text-gray-700">{item.text}</span>
+                    <span className="text-body text-black">{item.text}</span>
                   </div>
                 ))}
               </div>
@@ -113,12 +113,12 @@ export default function CurrentWork() {
           </div>
 
           {/* Combined Impact Section */}
-          <div className="mt-12 bg-gradient-to-r from-[#FF4B8B]/10 to-[#FF4B8B]/5 rounded-xl p-6 md:p-8 border border-[#FF4B8B]/20">
+          <div className="mt-12 bg-gradient-to-r from-[#FF4B8B]/10 to-[#FF4B8B]/5 rounded-xl p-6 md:p-8 border border-primary-pink">
             <div className="text-center">
-              <h3 className="text-subsection text-[#FF4B8B] font-bold mb-4">
+              <h3 className="text-subsection text-primary-pink font-bold mb-4">
                 A Dual Commitment
               </h3>
-              <p className="text-body-large text-gray-700 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-body-large text-black max-w-3xl mx-auto leading-relaxed">
                 By combining hands-on clinical practice as Medical Director with active teaching 
                 and mentorship across Europe, Ketan ensures that the latest advances in robotic 
                 surgery reach both patients and the next generation of surgeons. This dual role 

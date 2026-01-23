@@ -19,7 +19,7 @@ const CervicalScreeningGuideCard2 = ({ setShowCard, setActiveButton }) => {
 
           {/* LEFT SIDE – PINK CARD */}
           <div
-            className="bg-white text-[#FF4B8B] flex flex-col gap-6 rounded-xl py-8 px-6 shadow-md
+            className="bg-white text-primary-pink flex flex-col gap-6 rounded-xl py-8 px-6 shadow-md
               transition duration-300 transform
               hover:scale-105 hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(176,59,102,0.25)]
               active:scale-105 active:-translate-y-2 active:shadow-[0_10px_30px_rgba(176,59,102,0.25)]"
@@ -53,7 +53,7 @@ const CervicalScreeningGuideCard2 = ({ setShowCard, setActiveButton }) => {
             </span>
 
             {/* List */}
-            <ul className="space-y-4 text-base text-gray-700">
+            <ul className="space-y-4 text-base text-black">
               <li className="flex items-start gap-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -125,8 +125,8 @@ const CervicalScreeningGuideCard2 = ({ setShowCard, setActiveButton }) => {
               setShowCard(3);
               setActiveButton(2);
             }}
-            className="inline-flex items-center justify-center bg-[#FF4B8B] 
-              hover:bg-[#FF4B8B]/80 text-white rounded-md text-sm font-medium 
+            className="inline-flex items-center justify-center bg-primary-pink 
+              hover:bg-primary-pink/80 text-white rounded-md text-sm font-medium 
               transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%]"
           >
             Continue to Next Section

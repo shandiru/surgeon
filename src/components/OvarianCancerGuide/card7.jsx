@@ -6,7 +6,7 @@ const OvarianCancerGuidecard7 = ({ setShowCard, setActiveButton }) => {
     <div className="space-y-6 pb-14">
       {/* Card Container */}
       <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl text-[#BB125B] mx-auto mb-10
-        flex flex-col gap-6 rounded-xl border border-[#FF4B8B]/10 py-6 shadow-sm animate-in slide-in-from-right-5 duration-300">
+        flex flex-col gap-6 rounded-xl border border-primary-pink py-6 shadow-sm animate-in slide-in-from-right-5 duration-300">
 
         {/* Card Header */}
         <div
@@ -14,8 +14,8 @@ const OvarianCancerGuidecard7 = ({ setShowCard, setActiveButton }) => {
           gap-1.5 px-6 border-b pb-6"
           style={{ borderColor: "#FFC5D3" }}
         >
-          <div className="leading-none font-semibold flex items-center gap-2 text-[#FF4B8B]">
-            <ShieldCheck className="w-6 h-6 text-[#FF4B8B]" />
+          <div className="leading-none font-semibold flex items-center gap-2 text-primary-pink">
+            <ShieldCheck className="w-6 h-6 text-primary-pink" />
             Prevention & Early Detection
           </div>
           <div className="text-muted-foreground text-sm">
@@ -27,9 +27,9 @@ const OvarianCancerGuidecard7 = ({ setShowCard, setActiveButton }) => {
         <div className="px-6 space-y-4">
 
           {/* Prevention Overview */}
-          <div className="p-4 rounded-lg bg-[#FF4B8B]/10 border border-[#FF4B8B]/10">
-            <h4 className="leading-none font-semibold flex items-center gap-2 text-[#FF4B8B]">
-              <Heart className="w-5 h-5 inline-block text-[#FF4B8B]" />
+          <div className="p-4 rounded-lg bg-primary-pink border border-primary-pink">
+            <h4 className="leading-none font-semibold flex items-center gap-2 text-primary-pink">
+              <Heart className="w-5 h-5 inline-block text-primary-pink" />
               Why Prevention Matters
             </h4>
             <p className="text-sm leading-relaxed text-[#BB125B]">
@@ -41,7 +41,7 @@ const OvarianCancerGuidecard7 = ({ setShowCard, setActiveButton }) => {
           {/* Prevention Steps */}
           <div className="grid md:grid-cols-2 gap-4">
             <div className="space-y-3">
-              <h4 className="font-semibold text-[#FF4B8B]">
+              <h4 className="font-semibold text-primary-pink">
                 Ways to Reduce Your Risk:
               </h4>
               <div className="space-y-2">
@@ -57,7 +57,7 @@ const OvarianCancerGuidecard7 = ({ setShowCard, setActiveButton }) => {
                     key={index}
                     className="flex items-start gap-2 text-sm"
                   >
-                    <PlusCircle className="w-4 h-4 mt-0.5 flex-shrink-0 text-[#FF4B8B]" />
+                    <PlusCircle className="w-4 h-4 mt-0.5 flex-shrink-0 text-primary-pink" />
                     <span className="text-[#BB125B]">{item}</span>
                   </div>
                 ))}
@@ -86,9 +86,9 @@ const OvarianCancerGuidecard7 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           {/* Final Thoughts */}
-          <div className="p-4 rounded-lg bg-white border border-[#FF4B8B]/10">
-            <h4 className="leading-none font-semibold flex items-center gap-2 text-[#FF4B8B]">
-              <Star className="w-5 h-5 inline-block text-[#FF4B8B]" />
+          <div className="p-4 rounded-lg bg-white border border-primary-pink">
+            <h4 className="leading-none font-semibold flex items-center gap-2 text-primary-pink">
+              <Star className="w-5 h-5 inline-block text-primary-pink" />
               Key Takeaway
             </h4>
             <p className="text-sm leading-relaxed text-[#BB125B]">
@@ -104,7 +104,7 @@ const OvarianCancerGuidecard7 = ({ setShowCard, setActiveButton }) => {
                 setShowCard(8);
                 setActiveButton(7);
               }}
-              className="inline-flex items-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 
+              className="inline-flex items-center bg-primary-pink hover:bg-primary-pink/80 
                          justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium 
                          transition-all h-9 px-4 py-2 w-full text-white"
             >

@@ -30,15 +30,15 @@ export default function FeaturesSection() {
           {/* Header Section */}
           <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6 mb-12">
             <div className="flex-1">
-              <h2 className="text-hero md:text-5xl font-bold text-gray-900 mb-4">
+              <h2 className="text-hero md:text-5xl font-bold text-black mb-4">
                 Robotic Surgery Excellence
               </h2>
-              <p className="text-body-large text-gray-600 max-w-2xl">
+              <p className="text-body-large text-black max-w-2xl">
                 Comprehensive insights into robotic surgery, from understanding the benefits and considerations to exploring expert experience and current practice.
               </p>
             </div>
             <div className="flex-shrink-0 md:mt-0 mt-4">
-              <button className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-[#FF4B8B] text-white font-semibold text-button hover:bg-[#E03E7C] transition-all duration-300 shadow-md hover:shadow-lg whitespace-nowrap">
+              <button className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-primary-pink text-white font-semibold text-button hover:bg-[#E03E7C] transition-all duration-300 shadow-md hover:shadow-lg whitespace-nowrap">
                 All Topics
               </button>
             </div>
@@ -51,23 +51,23 @@ export default function FeaturesSection() {
                 <div
                   className={`flex items-start gap-4 p-6 rounded-lg transition-all duration-300 ${
                     feature.highlighted
-                      ? 'bg-[#FDE7EB]'
+                      ? 'bg-light-pink-1'
                       : 'bg-white'
                   }`}
                 >
                   {/* Icon */}
-                  <div className="flex-shrink-0 text-[#FF4B8B]">
+                  <div className="flex-shrink-0 text-primary-pink">
                     {feature.icon}
                   </div>
 
                   {/* Content */}
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-2">
-                      <h3 className="text-subsection text-[#FF4B8B] font-semibold">
+                      <h3 className="text-subsection text-primary-pink font-semibold">
                         {feature.title}
                       </h3>
                     </div>
-                    <p className="text-body text-gray-600 leading-relaxed">
+                    <p className="text-body text-black leading-relaxed">
                       {feature.description}
                     </p>
                   </div>

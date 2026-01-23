@@ -9,7 +9,7 @@ const Footer = () => {
             {/* HealthInfo Section */}
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
-                <div className="w-8 h-8 bg-primary rounded-full bg-[#FF4B8B]/10 flex items-center justify-center">
+                <div className="w-8 h-8 bg-primary rounded-full bg-primary-pink flex items-center justify-center">
                   <span className="font-bold text-sm ">H</span>
                 </div>
                 <h3 className="text-lg font-bold text-foreground">HealthInfo</h3>

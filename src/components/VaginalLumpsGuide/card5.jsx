@@ -66,7 +66,7 @@ const VaginalLumpsGuidecard5 = ({ setShowCard, setActiveButton }) => {
                       <span className="mt-1.5 text-xs" style={{ color: "#FF4B8B" }}>
                         •
                       </span>
-                      <span className="text-sm text-gray-700 leading-relaxed">
+                      <span className="text-sm text-black leading-relaxed">
                         {item}
                       </span>
                     </li>
@@ -110,7 +110,7 @@ const VaginalLumpsGuidecard5 = ({ setShowCard, setActiveButton }) => {
                       <span className="mt-1.5 text-xs" style={{ color: "#FF4B8B" }}>
                         •
                       </span>
-                      <span className="text-sm text-gray-700 leading-relaxed">
+                      <span className="text-sm text-black leading-relaxed">
                         {item}
                       </span>
                     </li>
@@ -154,7 +154,7 @@ const VaginalLumpsGuidecard5 = ({ setShowCard, setActiveButton }) => {
                       <span className="mt-1.5 text-xs" style={{ color: "#FF4B8B" }}>
                         •
                       </span>
-                      <span className="text-sm text-gray-700 leading-relaxed">
+                      <span className="text-sm text-black leading-relaxed">
                         {item}
                       </span>
                     </li>
@@ -198,7 +198,7 @@ const VaginalLumpsGuidecard5 = ({ setShowCard, setActiveButton }) => {
                       <span className="mt-1.5 text-xs" style={{ color: "#FF4B8B" }}>
                         •
                       </span>
-                      <span className="text-sm text-gray-700 leading-relaxed">
+                      <span className="text-sm text-black leading-relaxed">
                         {item}
                       </span>
                     </li>
@@ -228,7 +228,7 @@ const VaginalLumpsGuidecard5 = ({ setShowCard, setActiveButton }) => {
                 <h3 className="font-semibold mb-2" style={{ color: "#FF4B8B" }}>
                   Important Note
                 </h3>
-                <p className="text-sm text-gray-800 leading-relaxed">
+                <p className="text-sm text-black leading-relaxed">
                   If an STI is diagnosed, early treatment protects you and your
                   partner. Most conditions are easily treated or monitored with
                   proper care.
@@ -244,7 +244,7 @@ const VaginalLumpsGuidecard5 = ({ setShowCard, setActiveButton }) => {
                 setShowCard(6);
                 setActiveButton(5);
               }}
-              className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md text-sm font-medium h-10 px-4 transition"
+              className="bg-primary-pink hover:bg-primary-pink/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md text-sm font-medium h-10 px-4 transition"
             >
               Continue to Final Section
             </button>

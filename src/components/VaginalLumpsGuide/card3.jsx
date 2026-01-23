@@ -29,7 +29,7 @@ const VaginalLumpsGuidecard3 = ({ setShowCard, setActiveButton }) => {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="lucide lucide-file-text w-6 h-6 text-[#FF4B8B]"
+              className="lucide lucide-file-text w-6 h-6 text-primary-pink"
             >
               <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
               <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
@@ -52,55 +52,55 @@ const VaginalLumpsGuidecard3 = ({ setShowCard, setActiveButton }) => {
             {[
               {
                 step: 'Blocked Glands (Bartholin or Skene glands)',
-                icon: <Droplet className="w-5 h-5 text-[#FF4B8B]" />,
+                icon: <Droplet className="w-5 h-5 text-primary-pink" />,
                 description:
                   'A blocked duct can fill with fluid and form a cyst, sometimes becoming painful.',
               },
               {
                 step: 'HPV Infection',
-                icon: <Biohazard className="w-5 h-5 text-[#FF4B8B]" />,
+                icon: <Biohazard className="w-5 h-5 text-primary-pink" />,
                 description:
                   'Certain HPV strains can cause lumps or warts on the vaginal or vulvar area.',
               },
               {
                 step: 'Bacterial or Yeast Infections',
-                icon: <Flame className="w-5 h-5 text-[#FF4B8B]" />,
+                icon: <Flame className="w-5 h-5 text-primary-pink" />,
                 description:
                   'These infections can cause swelling, irritation, or small painful bumps.',
               },
               {
                 step: 'Skin Irritation (Shaving or Waxing)',
-                icon: <Scissors className="w-5 h-5 text-[#FF4B8B]" />,
+                icon: <Scissors className="w-5 h-5 text-primary-pink" />,
                 description:
                   'Ingrown hairs or irritation from hair removal can create tender lumps.',
               },
               {
                 step: 'Sexually Transmitted Infections (STIs)',
-                icon: <Biohazard className="w-5 h-5 text-[#FF4B8B]" />,
+                icon: <Biohazard className="w-5 h-5 text-primary-pink" />,
                 description:
                   'Conditions like herpes, syphilis, or molluscum can cause lumps or sores.',
               },
               {
                 step: 'Hormonal Changes (Pregnancy or Menopause)',
-                icon: <Sparkles className="w-5 h-5 text-[#FF4B8B]" />,
+                icon: <Sparkles className="w-5 h-5 text-primary-pink" />,
                 description:
                   'Hormonal shifts can change gland activity and increase lump formation.',
               },
               {
                 step: 'Trauma or Childbirth',
-                icon: <ShieldOff className="w-5 h-5 text-[#FF4B8B]" />,
+                icon: <ShieldOff className="w-5 h-5 text-primary-pink" />,
                 description:
                   'Pressure, tearing, or swelling after childbirth can cause temporary lumps.',
               },
               {
                 step: 'Poor Hygiene or Tight Clothing',
-                icon: <Flame className="w-5 h-5 text-[#FF4B8B]" />,
+                icon: <Flame className="w-5 h-5 text-primary-pink" />,
                 description:
                   'Sweat and friction can trap bacteria and cause irritation or infection.',
               },
               {
                 step: 'Weakened Immune System',
-                icon: <ShieldOff className="w-5 h-5 text-[#FF4B8B]" />,
+                icon: <ShieldOff className="w-5 h-5 text-primary-pink" />,
                 description:
                   'A weak immune system makes infections and cysts more likely to occur.',
               },
@@ -155,7 +155,7 @@ const VaginalLumpsGuidecard3 = ({ setShowCard, setActiveButton }) => {
               className="font-semibold mb-2 flex items-center gap-2"
               style={{ color: '#FF4B8B' }}
             >
-              <Sparkles className="w-5 h-5 text-[#FF4B8B]" />
+              <Sparkles className="w-5 h-5 text-primary-pink" />
               Good to Know
             </h4>
             <p className="text-sm" style={{ color: '#7a2f4f' }}>
@@ -171,7 +171,7 @@ const VaginalLumpsGuidecard3 = ({ setShowCard, setActiveButton }) => {
                 setShowCard(4);
                 setActiveButton(3);
               }}
-              className="inline-flex items-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
+              className="inline-flex items-center bg-primary-pink hover:bg-primary-pink/80 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
             >
               Continue to Next Section
             </button>

@@ -3,7 +3,7 @@ import { Info, CheckCircle } from 'lucide-react'; // Import Lucide icons
 
 const PelvicPainCard = () => {
   return (
-    <div className="text-[#FF4B8B] bg-[#FF4B8B]/10 max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-xl  py-6 shadow-sm hover:z-50 transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:scale-105 active:scale-100">
+    <div className="text-primary-pink bg-primary-pink max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-xl  py-6 shadow-sm hover:z-50 transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:scale-105 active:scale-100">
       {/* Card Header */}
       <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 pb-6">
         <div className="font-semibold flex items-center gap-3 text-2xl">

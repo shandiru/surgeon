@@ -16,7 +16,7 @@ const PelvicPainGuidecard5 = ({ setShowCard, setActiveButton }) => {
         >
           {/* HEADER */}
           <div className="px-8 py-6 border-b" style={{ borderColor: "rgb(255,197,211)" }}>
-            <div className="flex items-center gap-3 text-[#FF4B8B]">
+            <div className="flex items-center gap-3 text-primary-pink">
               <Stethoscope className="w-7 h-7" />
               <h2 className="text-2xl font-bold tracking-tight">
                 How Pelvic Pain Is Investigated
@@ -48,7 +48,7 @@ const PelvicPainGuidecard5 = ({ setShowCard, setActiveButton }) => {
                   shadow-sm hover:bg-[#FFF1F6] transition-all"
                   style={{ borderColor: "rgb(255,197,211)" }}
                 >
-                  <CircleCheck className="text-[#FF4B8B] w-5 h-5" />
+                  <CircleCheck className="text-primary-pink w-5 h-5" />
                   <span className="text-sm text-[#7a2f4f]">
                     Take a full medical history
                   </span>
@@ -60,7 +60,7 @@ const PelvicPainGuidecard5 = ({ setShowCard, setActiveButton }) => {
                   shadow-sm hover:bg-[#FFF1F6] transition-all"
                   style={{ borderColor: "rgb(255,197,211)" }}
                 >
-                  <CircleCheck className="text-[#FF4B8B] w-5 h-5" />
+                  <CircleCheck className="text-primary-pink w-5 h-5" />
                   <span className="text-sm text-[#7a2f4f]">
                     Perform a pelvic examination
                   </span>
@@ -102,7 +102,7 @@ const PelvicPainGuidecard5 = ({ setShowCard, setActiveButton }) => {
               setShowCard(6);
               setActiveButton(5);
             }}
-            className="bg-[#FF4B8B] hover:bg-[#e93d78] text-white 
+            className="bg-primary-pink hover:bg-[#e93d78] text-white 
             w-[90%] md:w-[60%] lg:w-[40%] rounded-md text-sm font-medium 
             transition-all h-11 shadow-md hover:shadow-lg"
           >

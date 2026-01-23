@@ -3,11 +3,11 @@ import React from 'react';
 export default function CausesOfBleedingSection() {
   return (
     <section className="mb-12 px-4">
-      <div className="bg-white text-[#1F2937] flex flex-col gap-6 rounded-2xl shadow-md py-8 max-w-4xl mx-auto transition hover:shadow-lg">
+      <div className="bg-white text-black flex flex-col gap-6 rounded-2xl shadow-md py-8 max-w-4xl mx-auto transition hover:shadow-lg">
         
         {/* Card Header */}
         <div className="px-6 text-center md:text-left">
-          <h2 className="font-bold flex items-center justify-center md:justify-start gap-2 text-2xl text-[#FF4B8B]">
+          <h2 className="font-bold flex items-center justify-center md:justify-start gap-2 text-2xl text-primary-pink">
             Causes of Postmenopausal Bleeding
           </h2>
           <p className="text-sm text-[#6B7280] mt-2">
@@ -21,7 +21,7 @@ export default function CausesOfBleedingSection() {
             
             {/* Serious Causes */}
             <div className="space-y-3 rounded-xl bg-gradient-to-br from-[#fff0f5] to-[#ffe6ed] p-5 shadow-sm">
-              <div className="inline-flex items-center gap-2 text-sm font-semibold text-[#FF4B8B] mb-2">
+              <div className="inline-flex items-center gap-2 text-sm font-semibold text-primary-pink mb-2">
                  Serious Causes
               </div>
               <ul className="space-y-2 text-sm text-[#374151] list-disc list-inside">
@@ -32,7 +32,7 @@ export default function CausesOfBleedingSection() {
 
             {/* Common Benign Causes */}
             <div className="space-y-3 rounded-xl bg-gradient-to-br from-[#fef6f9] to-[#fff] p-5 shadow-sm">
-              <div className="inline-flex items-center gap-2 text-sm font-semibold text-[#FF4B8B] mb-2">
+              <div className="inline-flex items-center gap-2 text-sm font-semibold text-primary-pink mb-2">
                  Common Benign Causes
               </div>
               <ul className="space-y-2 text-sm text-[#374151] list-disc list-inside">

@@ -8,7 +8,7 @@ const PostcoitalBleedingGuideCard2 = ({ setShowCard, setActiveButton }) => {
 
           {/* Header */}
           <div className="border-b pb-6">
-            <h2 className="font-semibold text-2xl text-[#FF4B8B]">Is It Painful?</h2>
+            <h2 className="font-semibold text-2xl text-primary-pink">Is It Painful?</h2>
           </div>
 
           {/* Content */}
@@ -17,7 +17,7 @@ const PostcoitalBleedingGuideCard2 = ({ setShowCard, setActiveButton }) => {
 
               {/* Left Column */}
               <div>
-                <span className="inline-flex items-center rounded-full bg-[#FEE6EA] text-[#FF4B8B] px-3 py-1 text-xs font-medium mb-2 shadow-sm">
+                <span className="inline-flex items-center rounded-full bg-[#FEE6EA] text-primary-pink px-3 py-1 text-xs font-medium mb-2 shadow-sm">
                   Usually Painless
                 </span>
                 <p className="leading-relaxed">Postcoital bleeding is usually painless</p>
@@ -25,7 +25,7 @@ const PostcoitalBleedingGuideCard2 = ({ setShowCard, setActiveButton }) => {
 
               {/* Right Column */}
               <div>
-                <span className="inline-flex items-center rounded-full bg-[#FF4B8B] text-white px-3 py-1 text-xs font-medium mb-2 shadow-sm">
+                <span className="inline-flex items-center rounded-full bg-primary-pink text-white px-3 py-1 text-xs font-medium mb-2 shadow-sm">
                   Statistics
                 </span>
                 <p className="leading-relaxed">
@@ -48,7 +48,7 @@ const PostcoitalBleedingGuideCard2 = ({ setShowCard, setActiveButton }) => {
               setShowCard(3);
               setActiveButton(2);
             }}
-            className="inline-flex items-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
+            className="inline-flex items-center bg-primary-pink hover:bg-primary-pink/80 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
           >
             Continue to Next Section
           </button>

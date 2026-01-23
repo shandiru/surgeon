@@ -27,11 +27,11 @@ const FibroidGuideCard2 = ({ setShowCard, setActiveButton }) => {
               <path d="M12 9v4" />
               <path d="M12 17h.01" />
             </svg>
-            <h2 className="font-bold text-3xl text-[#FF4B8B]">
+            <h2 className="font-bold text-3xl text-primary-pink">
               Symptoms of Fibroids
             </h2>
           </div>
-          <p className="text-gray-600 text-base">
+          <p className="text-black text-base">
             Some people have no symptoms, but others may experience:
           </p>
         </div>
@@ -40,10 +40,10 @@ const FibroidGuideCard2 = ({ setShowCard, setActiveButton }) => {
         <div className="grid md:grid-cols-2 gap-10">
           {/* Left - Physical Symptoms */}
           <div className="space-y-4">
-            <h4 className="font-semibold text-lg text-[#FF4B8B]">
+            <h4 className="font-semibold text-lg text-primary-pink">
               Physical Symptoms
             </h4>
-            <ul className="space-y-2 text-gray-700">
+            <ul className="space-y-2 text-black">
               <li>• Painful or heavy periods</li>
               <li>• Anaemia (from heavy bleeding)</li>
               <li>• Bleeding between periods or after sex</li>
@@ -55,10 +55,10 @@ const FibroidGuideCard2 = ({ setShowCard, setActiveButton }) => {
 
           {/* Right - Other Effects */}
           <div className="space-y-4">
-            <h4 className="font-semibold text-lg text-[#FF4B8B]">
+            <h4 className="font-semibold text-lg text-primary-pink">
               Other Effects
             </h4>
-            <ul className="space-y-2 text-gray-700">
+            <ul className="space-y-2 text-black">
               <li>• Constant urge to pass urine</li>
               <li>• Constipation or bloating</li>
               <li>• Low mood or depression</li>
@@ -70,9 +70,9 @@ const FibroidGuideCard2 = ({ setShowCard, setActiveButton }) => {
         </div>
 
         {/* Highlight Box */}
-        <div className="rounded-lg p-5 shadow-sm bg-[#FF4B8B]/10">
+        <div className="rounded-lg p-5 shadow-sm bg-primary-pink">
           <p className="font-medium text-base flex items-center gap-2 text-[#BB125B]">
-            <AlertCircle className="h-5 w-5 text-[#FF4B8B]" />
+            <AlertCircle className="h-5 w-5 text-primary-pink" />
             If left untreated, fibroids can grow and may cause complications.
           </p>
         </div>
@@ -85,7 +85,7 @@ const FibroidGuideCard2 = ({ setShowCard, setActiveButton }) => {
             setShowCard(3);
             setActiveButton(2);
           }}
-          className="inline-flex items-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
+          className="inline-flex items-center bg-primary-pink hover:bg-primary-pink/80 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
         >
           Continue to Next Section
         </button>

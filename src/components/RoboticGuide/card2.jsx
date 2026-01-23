@@ -19,7 +19,7 @@ const RoboticGuide2 = ({ setShowCard, setActiveButton }) => {
         {/* Card Container */}
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
-            className="text-2xl sm:text-3xl font-bold text-center mb-12 text-[#FF4B8B]"
+            className="text-2xl sm:text-3xl font-bold text-center mb-12 text-primary-pink"
             data-aos="fade-down"
           >
             Overview of Robotic Surgery
@@ -29,7 +29,7 @@ const RoboticGuide2 = ({ setShowCard, setActiveButton }) => {
 
             {/* Text Content */}
             <div data-aos="fade-right">
-              <p className="text-base sm:text-lg text-gray-700 mb-6">
+              <p className="text-base sm:text-lg text-black mb-6">
                 Robotic surgery represents a revolutionary form of minimally
                 invasive surgery that uses advanced technology to enhance
                 surgical precision, control, and vision. Unlike traditional
@@ -38,7 +38,7 @@ const RoboticGuide2 = ({ setShowCard, setActiveButton }) => {
                 specialized console.
               </p>
 
-              <p className="text-base sm:text-lg text-gray-700">
+              <p className="text-base sm:text-lg text-black">
                 The da Vinci Surgical System, developed by Intuitive Surgical,
                 has transformed gynecologic surgery by significantly improving
                 patient outcomes and surgical experiences.
@@ -77,8 +77,8 @@ const RoboticGuide2 = ({ setShowCard, setActiveButton }) => {
                   "
                   data-aos="zoom-in"
                 >
-                  <LuScissors className="w-10 h-10 sm:w-14 sm:h-14 text-[#FF4B8B] mx-auto mb-3" />
-                  <p className="font-semibold text-[#FF4B8B]">
+                  <LuScissors className="w-10 h-10 sm:w-14 sm:h-14 text-primary-pink mx-auto mb-3" />
+                  <p className="font-semibold text-primary-pink">
                     Minimally Invasive
                   </p>
                 </div>
@@ -95,8 +95,8 @@ const RoboticGuide2 = ({ setShowCard, setActiveButton }) => {
                   "
                   data-aos="zoom-in"
                 >
-                  <LuEye className="w-10 h-10 sm:w-14 sm:h-14 text-[#FF4B8B] mx-auto mb-3" />
-                  <p className="font-semibold text-[#FF4B8B]">
+                  <LuEye className="w-10 h-10 sm:w-14 sm:h-14 text-primary-pink mx-auto mb-3" />
+                  <p className="font-semibold text-primary-pink">
                     Enhanced Vision
                   </p>
                 </div>
@@ -113,8 +113,8 @@ const RoboticGuide2 = ({ setShowCard, setActiveButton }) => {
                   "
                   data-aos="zoom-in"
                 >
-                  <LuHand className="w-10 h-10 sm:w-14 sm:h-14 text-[#FF4B8B] mx-auto mb-3" />
-                  <p className="font-semibold text-[#FF4B8B]">
+                  <LuHand className="w-10 h-10 sm:w-14 sm:h-14 text-primary-pink mx-auto mb-3" />
+                  <p className="font-semibold text-primary-pink">
                     Precise Control
                   </p>
                 </div>
@@ -131,8 +131,8 @@ const RoboticGuide2 = ({ setShowCard, setActiveButton }) => {
                   "
                   data-aos="zoom-in"
                 >
-                  <LuZap className="w-10 h-10 sm:w-14 sm:h-14 text-[#FF4B8B] mx-auto mb-3" />
-                  <p className="font-semibold text-[#FF4B8B]">
+                  <LuZap className="w-10 h-10 sm:w-14 sm:h-14 text-primary-pink mx-auto mb-3" />
+                  <p className="font-semibold text-primary-pink">
                     Advanced Technology
                   </p>
                 </div>
@@ -150,7 +150,7 @@ const RoboticGuide2 = ({ setShowCard, setActiveButton }) => {
               setActiveButton(2);
             }}
             className="
-              bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 
+              bg-primary-pink hover:bg-primary-pink/80 
               text-white 
               w-[90%] md:w-[60%] lg:w-[40%] 
               rounded-md h-10 

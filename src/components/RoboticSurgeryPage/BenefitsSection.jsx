@@ -41,15 +41,15 @@ export default function BenefitsSection() {
               hover:scale-105 hover:-translate-y-2 hover:shadow-[0_8px_25px_rgba(176,59,102,0.25)]"
               data-aos="zoom-in"
             >
-              <h3 className="text-2xl font-bold mb-8 text-[#FF4B8B] flex items-center gap-2">
-                <LuUsers className="w-6 h-6 text-[#FF4B8B]" />
+              <h3 className="text-2xl font-bold mb-8 text-primary-pink flex items-center gap-2">
+                <LuUsers className="w-6 h-6 text-primary-pink" />
                 Benefits for Patients
               </h3>
               <div className="space-y-4">
                 {patientBenefits.map((item, idx) => (
                   <div key={idx} className="flex items-start gap-3">
-                    <LuCircleCheckBig className="w-5 h-5 text-[#FF4B8B] mt-0.5 flex-shrink-0" />
-                    <p className="text-gray-700">{item}</p>
+                    <LuCircleCheckBig className="w-5 h-5 text-primary-pink mt-0.5 flex-shrink-0" />
+                    <p className="text-black">{item}</p>
                   </div>
                 ))}
               </div>
@@ -62,15 +62,15 @@ export default function BenefitsSection() {
               hover:scale-105 hover:-translate-y-2 hover:shadow-[0_8px_25px_rgba(176,59,102,0.25)]"
               data-aos="zoom-in"
             >
-              <h3 className="text-2xl font-bold mb-8 text-[#FF4B8B] flex items-center gap-2">
-                <LuStethoscope className="w-6 h-6 text-[#FF4B8B]" />
+              <h3 className="text-2xl font-bold mb-8 text-primary-pink flex items-center gap-2">
+                <LuStethoscope className="w-6 h-6 text-primary-pink" />
                 Advantages for Surgeons
               </h3>
               <div className="space-y-4">
                 {surgeonBenefits.map((item, idx) => (
                   <div key={idx} className="flex items-start gap-3">
-                    <LuCircleCheckBig className="w-5 h-5 text-[#FF4B8B] mt-0.5 flex-shrink-0" />
-                    <p className="text-gray-700">{item}</p>
+                    <LuCircleCheckBig className="w-5 h-5 text-primary-pink mt-0.5 flex-shrink-0" />
+                    <p className="text-black">{item}</p>
                   </div>
                 ))}
               </div>

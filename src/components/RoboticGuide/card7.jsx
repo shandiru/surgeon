@@ -18,7 +18,7 @@ const Vaginalcard7 = ({ setShowCard, setActiveButton }) => {
             className="font-semibold text-sm uppercase tracking-wide flex items-center gap-2"
             style={{ color: "#FF4B8B" }}
           >
-            <Users className="w-6 h-6 text-[#FF4B8B]" />
+            <Users className="w-6 h-6 text-primary-pink" />
             Prevention & Early Detection
           </span>
 
@@ -53,7 +53,7 @@ const Vaginalcard7 = ({ setShowCard, setActiveButton }) => {
                   className="flex items-start gap-2 text-sm"
                   style={{ color: "#7a2f4f" }}
                 >
-                  <PlusCircle className="w-4 h-4 text-[#FF4B8B] mt-1 flex-shrink-0" />
+                  <PlusCircle className="w-4 h-4 text-primary-pink mt-1 flex-shrink-0" />
                   <span>{item}</span>
                 </div>
               ))}
@@ -72,7 +72,7 @@ const Vaginalcard7 = ({ setShowCard, setActiveButton }) => {
               className="font-semibold flex items-center gap-2 mb-2"
               style={{ color: "#FF4B8B" }}
             >
-              <Heart className="w-5 h-5 text-[#FF4B8B]" />
+              <Heart className="w-5 h-5 text-primary-pink" />
               Why It Matters
             </h4>
 
@@ -96,7 +96,7 @@ const Vaginalcard7 = ({ setShowCard, setActiveButton }) => {
             className="font-semibold flex items-center gap-2 mb-2"
             style={{ color: "#FF4B8B" }}
           >
-            <Star className="w-5 h-5 text-[#FF4B8B]" />
+            <Star className="w-5 h-5 text-primary-pink" />
             Take Action
           </h4>
 
@@ -113,7 +113,7 @@ const Vaginalcard7 = ({ setShowCard, setActiveButton }) => {
               setShowCard(8);
               setActiveButton(7);
             }}
-            className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all"
+            className="bg-primary-pink hover:bg-primary-pink/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all"
           >
             Learn More
           </button>

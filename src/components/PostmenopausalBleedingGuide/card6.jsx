@@ -19,7 +19,7 @@ const PostmenopausalBleedingGuideCard6 = ({ setShowCard, setActiveButton }) => {
         >
           {/* HEADER */}
           <div className="pb-6 border-b border-[#FEE6EA] px-2">
-            <div className="font-bold flex items-center gap-3 text-2xl text-[#FF4B8B]">
+            <div className="font-bold flex items-center gap-3 text-2xl text-primary-pink">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="26"
@@ -199,7 +199,7 @@ const PostmenopausalBleedingGuideCard6 = ({ setShowCard, setActiveButton }) => {
               setShowCard(7);
               setActiveButton(6);
             }}
-            className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white 
+            className="bg-primary-pink hover:bg-primary-pink/80 text-white 
                        w-[90%] md:w-[60%] lg:w-[40%] h-10 rounded-md 
                        text-sm font-medium transition px-4 shadow"
           >

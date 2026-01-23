@@ -74,7 +74,7 @@ const Colposcopycard3 = ({ setShowCard, setActiveButton }) => {
           {/* Additional Information */}
           <div className="bg-accent/10 p-4 rounded-lg border border-accent/20">
             <h4 className="font-semibold text-accent-foreground mb-2 flex items-center gap-2">
-              <Sparkles className="w-5 h-5 text-[#FF4B8B]" />
+              <Sparkles className="w-5 h-5 text-primary-pink" />
               Good to Know
             </h4>
             <p className="text-sm">
@@ -89,7 +89,7 @@ const Colposcopycard3 = ({ setShowCard, setActiveButton }) => {
                 setShowCard(4);       // move to Card 4
                 setActiveButton(3);   // index for Card 4
               }}
-              className="inline-flex items-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all hover:bg-primary/90 h-9 px-4 py-2 w-full"
+              className="inline-flex items-center bg-primary-pink hover:bg-primary-pink/80 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all hover:bg-primary/90 h-9 px-4 py-2 w-full"
             >
               Learn About Biopsies
             </button>

@@ -58,7 +58,7 @@ export default function OvarianCancerTreatment() {
           <p className="text-[#7a2f4f] text-lg">
             Treatment depends on the type of ovarian cancer, your overall health, and fertility considerations.
           </p>
-          <p className="text-[#FF4B8B] font-semibold text-lg mt-4">
+          <p className="text-primary-pink font-semibold text-lg mt-4">
             The main goal is to remove the cancer whenever possible.
           </p>
         </div>
@@ -75,7 +75,7 @@ export default function OvarianCancerTreatment() {
               <h4 className="font-semibold text-lg mb-2" style={{ color: deepPink }}>
                 {item.title}
               </h4>
-              <p className="text-gray-700">{item.description}</p>
+              <p className="text-black">{item.description}</p>
             </div>
           ))}
         </div>

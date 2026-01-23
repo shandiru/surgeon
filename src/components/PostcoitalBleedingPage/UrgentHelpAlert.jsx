@@ -24,7 +24,7 @@ const UrgentHelpAlert = () => {
           <path d="M12 9v4" />
           <path d="M12 17h.01" />
         </svg>
-        <h3 className="font-bold text-lg text-[#FF4B8B]">
+        <h3 className="font-bold text-lg text-primary-pink">
          When to Seek Urgent Help
         </h3>
       </div>
@@ -38,7 +38,7 @@ const UrgentHelpAlert = () => {
             'Any bleeding after menopause',
           ].map((item, idx) => (
             <li key={idx} className="flex items-start gap-2">
-              <span className="w-2 h-2 rounded-full bg-[#FF4B8B] mt-2 flex-shrink-0" />
+              <span className="w-2 h-2 rounded-full bg-primary-pink mt-2 flex-shrink-0" />
               <span>{item}</span>
             </li>
           ))}

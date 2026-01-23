@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto">
         {/* Container with rounded corners - prominent on left, slight on right */}
         <div 
-          className="rounded-[3rem] overflow-hidden bg-[#FDE7EB]"
+          className="rounded-[3rem] overflow-hidden bg-light-pink-1"
         >
           <div className="px-6 md:px-12 lg:px-16 py-12 md:py-16">
             {/* Horizontal Layout: Text Left, Images Right - Mobile: Images First */}
@@ -48,10 +48,10 @@ export default function Hero() {
 
               {/* Text Content - Appears Second on Mobile */}
               <div className="space-y-6 text-center md:text-left order-2 md:order-1">
-                <h1 className="text-hero md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                  Robotic Surgery: <span className="text-[#FF4B8B]">Expertise, Experience & Innovation</span>
+                <h1 className="text-hero md:text-5xl lg:text-6xl font-bold text-black leading-tight">
+                  Robotic Surgery: <span className="text-primary-pink">Expertise, Experience & Innovation</span>
                 </h1>
-                <p className="text-body-large md:text-lg text-gray-700 leading-relaxed">
+                <p className="text-body-large md:text-lg text-black leading-relaxed">
                   Explore the pros and cons of robotic surgery, discover Ketan's extensive experience as a robotic surgeon, 
                   and learn about his current work as Medical Director in the hospital and his teaching of robotic surgery 
                   techniques across Europe.
@@ -60,12 +60,12 @@ export default function Hero() {
                 {/* CTA Buttons */}
                 <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-2">
                   <button
-                    className="cursor-pointer inline-flex items-center justify-center px-6 py-3 rounded-lg bg-[#FF4B8B] text-white font-semibold text-button hover:bg-[#E03E7C] transition-all duration-300 shadow-md hover:shadow-lg"
+                    className="cursor-pointer inline-flex items-center justify-center px-6 py-3 rounded-lg bg-primary-pink text-white font-semibold text-button hover:bg-[#E03E7C] transition-all duration-300 shadow-md hover:shadow-lg"
                   >
                     Let's Start
                   </button>
                   <button
-                    className="cursor-pointer inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg border-2 border-[#FF4B8B] text-[#FF4B8B] font-semibold text-button hover:bg-[#FF4B8B]/10 transition-all duration-300"
+                    className="cursor-pointer inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg border-2 border-primary-pink text-primary-pink font-semibold text-button hover:bg-primary-pink transition-all duration-300"
                   >
                     About Us
                     <ArrowRight className="w-4 h-4" />

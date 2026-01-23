@@ -6,11 +6,11 @@ const PostmenopausalBleedingGuideCard2 = ({ setShowCard, setActiveButton }) => {
     <div className="pb-10">
 
       {/* FULL OUTER WRAPPER */}
-      <div className="max-w-4xl mx-auto px-6 py-10 rounded-2xl border border-[#FF4B8B]/20 shadow-md bg-white">
+      <div className="max-w-4xl mx-auto px-6 py-10 rounded-2xl border border-primary-pink shadow-md bg-white">
 
         {/* HEADER */}
         <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold text-[#FF4B8B]">
+          <h2 className="text-3xl font-bold text-primary-pink">
             How Common Is It?
           </h2>
         </div>
@@ -23,7 +23,7 @@ const PostmenopausalBleedingGuideCard2 = ({ setShowCard, setActiveButton }) => {
             
             {/* LEFT BOX */}
             <div className="text-center p-6 rounded-xl bg-gradient-to-br from-[#FEE6EA] to-[#fff0f5] shadow-sm">
-              <div className="text-4xl font-extrabold text-[#FF4B8B] mb-2">
+              <div className="text-4xl font-extrabold text-primary-pink mb-2">
                 10%
               </div>
               <p className="text-sm text-[#6B7280]">
@@ -33,7 +33,7 @@ const PostmenopausalBleedingGuideCard2 = ({ setShowCard, setActiveButton }) => {
 
             {/* RIGHT BOX */}
             <div className="text-center p-6 rounded-xl bg-gradient-to-br from-[#FFE3EC] to-[#fff5f8] shadow-sm">
-              <div className="text-4xl font-extrabold text-[#FF4B8B] mb-2">
+              <div className="text-4xl font-extrabold text-primary-pink mb-2">
                 1 in 10
               </div>
               <p className="text-sm text-[#6B7280]">
@@ -59,7 +59,7 @@ const PostmenopausalBleedingGuideCard2 = ({ setShowCard, setActiveButton }) => {
               setShowCard(3);
               setActiveButton(2);
             }}
-            className="inline-flex items-center justify-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 rounded-md 
+            className="inline-flex items-center justify-center bg-primary-pink hover:bg-primary-pink/80 rounded-md 
                        text-sm font-medium transition-all h-10 px-4 
                        text-white w-[90%] md:w-[60%] lg:w-[40%] shadow"
           >

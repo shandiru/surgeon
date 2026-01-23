@@ -21,7 +21,7 @@ const EndometrialCard8 = ({ setShowCard, setActiveButton }) => {
             className="font-semibold text-sm uppercase tracking-wide flex items-center gap-2"
             style={{ color: "#FF4B8B" }}
           >
-            <Lightbulb className="w-6 h-6 text-[#FF4B8B]" />
+            <Lightbulb className="w-6 h-6 text-primary-pink" />
             Key Takeaway
           </span>
           <p className="text-sm mt-1" style={{ color: "#7a2f4f" }}>
@@ -41,7 +41,7 @@ const EndometrialCard8 = ({ setShowCard, setActiveButton }) => {
             className="font-semibold flex items-center gap-2 mb-2"
             style={{ color: "#FF4B8B" }}
           >
-            <Star className="w-5 h-5 text-[#FF4B8B]" />
+            <Star className="w-5 h-5 text-primary-pink" />
             What You Should Know
           </h3>
           <p className="text-sm leading-relaxed" style={{ color: "#7a2f4f" }}>
@@ -67,7 +67,7 @@ const EndometrialCard8 = ({ setShowCard, setActiveButton }) => {
                 className="flex items-start gap-2"
                 style={{ color: "#7a2f4f" }}
               >
-                <CheckCircle2 className="w-4 h-4 text-[#FF4B8B] mt-0.5 flex-shrink-0" />
+                <CheckCircle2 className="w-4 h-4 text-primary-pink mt-0.5 flex-shrink-0" />
                 <span>{item}</span>
               </li>
             ))}
@@ -83,7 +83,7 @@ const EndometrialCard8 = ({ setShowCard, setActiveButton }) => {
           }}
         >
           <h4 className="font-semibold flex items-center gap-2" style={{ color: "#FF4B8B" }}>
-            <Star className="w-5 h-5 text-[#FF4B8B]" />
+            <Star className="w-5 h-5 text-primary-pink" />
             Final Message
           </h4>
           <p className="text-sm leading-relaxed mt-1" style={{ color: "#7a2f4f" }}>
@@ -94,7 +94,7 @@ const EndometrialCard8 = ({ setShowCard, setActiveButton }) => {
         {/* Complete Guide Button */}
         <div className="pt-8 flex justify-center">
           <button
-            className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all flex items-center justify-center gap-2"
+            className="bg-primary-pink hover:bg-primary-pink/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all flex items-center justify-center gap-2"
             onClick={() => {
               setShowCard(1); // or wherever the guide starts
               setActiveButton(0);

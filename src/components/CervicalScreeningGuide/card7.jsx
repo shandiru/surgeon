@@ -13,10 +13,10 @@ const CervicalScreeningGuidecard7 = ({ setShowCard, setActiveButton }) => {
       >
         {/* HEADER */}
         <div className="text-center">
-          <h2 className="font-extrabold text-3xl mb-2 text-[#FF4B8B]">
+          <h2 className="font-extrabold text-3xl mb-2 text-primary-pink">
             Remember
           </h2>
-          <p className="text-lg text-gray-700">
+          <p className="text-lg text-black">
             Smear tests are simple steps that protect your future.
           </p>
         </div>
@@ -45,7 +45,7 @@ const CervicalScreeningGuidecard7 = ({ setShowCard, setActiveButton }) => {
                 <polyline points="12 6 12 12 16 14"></polyline>
               </svg>
             </div>
-            <p className="font-semibold text-lg text-[#FF4B8B]">Quick</p>
+            <p className="font-semibold text-lg text-primary-pink">Quick</p>
           </div>
 
           {/* BOX 2 */}
@@ -70,7 +70,7 @@ const CervicalScreeningGuidecard7 = ({ setShowCard, setActiveButton }) => {
                 <path d="m9 11 3 3L22 4"></path>
               </svg>
             </div>
-            <p className="font-semibold text-lg text-[#FF4B8B]">Simple</p>
+            <p className="font-semibold text-lg text-primary-pink">Simple</p>
           </div>
 
           {/* BOX 3 */}
@@ -98,13 +98,13 @@ const CervicalScreeningGuidecard7 = ({ setShowCard, setActiveButton }) => {
                 <circle cx="20" cy="10" r="2"></circle>
               </svg>
             </div>
-            <p className="font-semibold text-lg text-[#FF4B8B]">Life-saving</p>
+            <p className="font-semibold text-lg text-primary-pink">Life-saving</p>
           </div>
         </div>
 
         {/* FINAL STATEMENT */}
         <div className="text-center">
-          <p className="text-2xl font-bold text-[#FF4B8B]">
+          <p className="text-2xl font-bold text-primary-pink">
             Don't miss your screening — it could save your life.
           </p>
         </div>
@@ -115,8 +115,8 @@ const CervicalScreeningGuidecard7 = ({ setShowCard, setActiveButton }) => {
             setShowCard(8);
             setActiveButton(7);
           }}
-         className="inline-flex items-center justify-center bg-[#FF4B8B] 
-                hover:bg-[#FF4B8B]/80 text-white rounded-md text-sm font-medium 
+         className="inline-flex items-center justify-center bg-primary-pink 
+                hover:bg-primary-pink/80 text-white rounded-md text-sm font-medium 
                 transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%]"
         >
           Continue to Final Summary

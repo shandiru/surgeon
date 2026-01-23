@@ -12,7 +12,7 @@ function EndometriosisInfo() {
           <h2 className="text-3xl font-bold mb-4" style={{ color: deepPink }}>
             What Is Endometriosis?
           </h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-black">
             Understanding the condition and how it affects your body
           </p>
         </div>

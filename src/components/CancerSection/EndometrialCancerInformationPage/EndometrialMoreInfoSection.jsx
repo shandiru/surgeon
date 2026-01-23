@@ -29,7 +29,7 @@ export default function MoreInfoSection() {
         </h3>
 
         {/* Paragraph */}
-        <p className="text-gray-700 mb-6 max-w-2xl mx-auto" data-aos="fade-left">
+        <p className="text-black mb-6 max-w-2xl mx-auto" data-aos="fade-left">
           If you have concerns about any symptoms or need personalized medical advice,
           please consult with a healthcare professional.
         </p>

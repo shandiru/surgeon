@@ -84,7 +84,7 @@ const VulvarGuideCard4 = ({ setShowCard, setActiveButton }) => {
               setShowCard(5);
               setActiveButton(4);
             }}
-            className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md text-sm font-medium transition-all h-10 px-4"
+            className="bg-primary-pink hover:bg-primary-pink/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md text-sm font-medium transition-all h-10 px-4"
           >
             Continue to Next Step
           </button>

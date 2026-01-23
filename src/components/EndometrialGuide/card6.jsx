@@ -20,7 +20,7 @@ const EndometrialCard6 = ({ setShowCard, setActiveButton }) => {
 
         {/* Treatment Options Card */}
         <div
-          className="bg-white text-gray-900 flex flex-col gap-6 rounded-xl mb-5 shadow-sm"
+          className="bg-white text-black flex flex-col gap-6 rounded-xl mb-5 shadow-sm"
 
         >
           {/* Card Header */}
@@ -28,7 +28,7 @@ const EndometrialCard6 = ({ setShowCard, setActiveButton }) => {
             <h3 className="font-semibold text-xl" style={{ color: deepPink }}>
               Treatment Options
             </h3>
-            <p className="text-sm text-gray-600">
+            <p className="text-sm text-black">
               Treatment depends on factors such as stage, tumor size, and cancer
               type.
             </p>
@@ -36,7 +36,7 @@ const EndometrialCard6 = ({ setShowCard, setActiveButton }) => {
 
           {/* Card Content */}
           <div className="px-6">
-            <p className="mb-6 text-sm text-gray-600">
+            <p className="mb-6 text-sm text-black">
               A gynaecological oncologist may recommend:
             </p>
 
@@ -50,7 +50,7 @@ const EndometrialCard6 = ({ setShowCard, setActiveButton }) => {
                   <h4 className="font-semibold mb-2" style={{ color: deepPink }}>
                     Surgery
                   </h4>
-                  <p className="text-sm text-gray-700">
+                  <p className="text-sm text-black">
                     Often the first-line treatment to remove the uterus
                     (hysterectomy), sometimes including ovaries and fallopian
                     tubes.
@@ -64,7 +64,7 @@ const EndometrialCard6 = ({ setShowCard, setActiveButton }) => {
                   <h4 className="font-semibold mb-2" style={{ color: deepPink }}>
                     Radiation Therapy
                   </h4>
-                  <p className="text-sm text-gray-700">
+                  <p className="text-sm text-black">
                     High-energy rays used to target and destroy cancer cells.
                   </p>
                 </div>
@@ -76,7 +76,7 @@ const EndometrialCard6 = ({ setShowCard, setActiveButton }) => {
                   <h4 className="font-semibold mb-2" style={{ color: deepPink }}>
                     Chemotherapy
                   </h4>
-                  <p className="text-sm text-gray-700">
+                  <p className="text-sm text-black">
                     Anti-cancer drugs that destroy or slow cancer cell growth.
                   </p>
                 </div>
@@ -91,7 +91,7 @@ const EndometrialCard6 = ({ setShowCard, setActiveButton }) => {
                   <h4 className="font-semibold mb-2" style={{ color: deepPink }}>
                     Hormone Therapy
                   </h4>
-                  <p className="text-sm text-gray-700">
+                  <p className="text-sm text-black">
                     Medicines that block or lower hormones fueling cancer
                     growth.
                   </p>
@@ -104,7 +104,7 @@ const EndometrialCard6 = ({ setShowCard, setActiveButton }) => {
                   <h4 className="font-semibold mb-2" style={{ color: deepPink }}>
                     Combination Therapy
                   </h4>
-                  <p className="text-sm text-gray-700">
+                  <p className="text-sm text-black">
                     A tailored mix of treatments for the best results.
                   </p>
                 </div>
@@ -126,7 +126,7 @@ const EndometrialCard6 = ({ setShowCard, setActiveButton }) => {
           {/* Key Point Box */}
           <div className="bg-primary/5 p-4 rounded-lg border border-primary/20 mx-6">
             <h4 className="font-semibold text-primary mb-2 flex items-center gap-2">
-              <Sparkles className="w-5 h-5 text-[#FF4B8B]" />
+              <Sparkles className="w-5 h-5 text-primary-pink" />
               Key Point
             </h4>
             <p className="text-sm">
@@ -141,7 +141,7 @@ const EndometrialCard6 = ({ setShowCard, setActiveButton }) => {
                 setShowCard(7);
                 setActiveButton(6);
               }}
-              className="inline-flex items-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-9 px-4 py-2 w-full"
+              className="inline-flex items-center bg-primary-pink hover:bg-primary-pink/80 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-9 px-4 py-2 w-full"
             >
               Continue to Next Section
             </button>

@@ -15,13 +15,13 @@ export default function ProfessionalExperience() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2
-            className="text-section text-[#FF4B8B] mb-4"
+            className="text-section text-primary-pink mb-4"
             data-aos="fade-up"
           >
             Professional Experience
           </h2>
           <p
-            className="text-body-large text-gray-600"
+            className="text-body-large text-black"
             data-aos="fade-up"
             data-aos-delay="100"
           >
@@ -54,13 +54,13 @@ export default function ProfessionalExperience() {
           ].map((item, idx) => (
             <div
               key={idx}
-              className="bg-white flex flex-col gap-4 rounded-xl border border-[#FF4B8B]/10 shadow-sm p-6 transition-all duration-300 
+              className="bg-white flex flex-col gap-4 rounded-xl border border-primary-pink shadow-sm p-6 transition-all duration-300 
                          hover:shadow-[0_0_30px_4px_rgba(255,75,139,0.15)] hover:scale-[1.02] active:scale-[0.99]"
               data-aos="fade-up"
               data-aos-delay={`${idx * 150}`}
             >
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-[#FF4B8B] rounded-lg flex items-center justify-center">
+                <div className="w-12 h-12 bg-primary-pink rounded-lg flex items-center justify-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-6 w-6 text-white"
@@ -74,15 +74,15 @@ export default function ProfessionalExperience() {
                   </svg>
                 </div>
                 <div>
-                  <p className="font-semibold text-body-small text-gray-900">
+                  <p className="font-semibold text-body-small text-black">
                     {item.hospital}
                   </p>
-                  <p className="text-[#FF4B8B] font-medium text-body-small">{item.role}</p>
+                  <p className="text-primary-pink font-medium text-body-small">{item.role}</p>
                 </div>
               </div>
               <div>
-                <p className="text-gray-600 text-body-small">{item.place}</p>
-                <p className="text-gray-500 text-body-small mt-1">{item.desc}</p>
+                <p className="text-black text-body-small">{item.place}</p>
+                <p className="text-black text-body-small mt-1">{item.desc}</p>
               </div>
             </div>
           ))}
@@ -90,20 +90,20 @@ export default function ProfessionalExperience() {
 
         {/* Membership & Leadership Section */}
         <div
-          className="bg-white flex flex-col gap-8 rounded-xl border border-[#FF4B8B]/10 shadow-sm p-8 transition-all duration-300 
+          className="bg-white flex flex-col gap-8 rounded-xl border border-primary-pink shadow-sm p-8 transition-all duration-300 
                      hover:shadow-[0_0_30px_4px_rgba(255,75,139,0.2)]"
           data-aos="fade-up"
           data-aos-delay="200"
         >
           <div className="text-center">
-            <h2 className="font-semibold text-subsection text-[#FF4B8B]">
+            <h2 className="font-semibold text-subsection text-primary-pink">
               Professional Memberships & Leadership
             </h2>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             {/* Memberships */}
             <div>
-              <h3 className="text-body-large font-semibold mb-4 text-gray-900">
+              <h3 className="text-body-large font-semibold mb-4 text-black">
                 Professional Memberships
               </h3>
               <div className="space-y-3">
@@ -121,7 +121,7 @@ export default function ProfessionalExperience() {
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 text-[#FF4B8B] mt-0.5"
+                      className="h-5 w-5 text-primary-pink mt-0.5"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -130,7 +130,7 @@ export default function ProfessionalExperience() {
                       <path d="M21.801 10A10 10 0 1 1 17 3.335" />
                       <path d="m9 11 3 3L22 4" />
                     </svg>
-                    <span className="text-gray-700">{item}</span>
+                    <span className="text-black">{item}</span>
                   </div>
                 ))}
               </div>
@@ -138,53 +138,53 @@ export default function ProfessionalExperience() {
 
            {/* Leadership */}
 <div>
-  <h3 className="text-body-large font-semibold mb-4 text-gray-900">
+  <h3 className="text-body-large font-semibold mb-4 text-black">
     Leadership Positions
   </h3>
   <div className="space-y-4">
     <div
-      className="bg-[#FFF1F5] p-4 rounded-lg transition-all duration-300 
+      className="bg-light-pink-1 p-4 rounded-lg transition-all duration-300 
                  hover:shadow-[0_0_20px_2px_rgba(255,75,139,0.2)]"
       data-aos="fade-up"
       data-aos-delay="300"
     >
-      <h4 className="font-semibold text-body text-gray-900">
+      <h4 className="font-semibold text-body text-black">
         Honorary Secretary
       </h4>
-      <p className="text-gray-600 text-body-small">
+      <p className="text-black text-body-small">
         British Gynaecological Cancer Society
       </p>
-      <p className="text-gray-500 text-caption">July 2022 - July 2025</p>
+      <p className="text-black text-caption">July 2022 - July 2025</p>
     </div>
 
     <div
-      className="bg-[#FFF1F5] p-4 rounded-lg transition-all duration-300 
+      className="bg-light-pink-1 p-4 rounded-lg transition-all duration-300 
                  hover:shadow-[0_0_20px_2px_rgba(255,75,139,0.2)]"
       data-aos="fade-up"
       data-aos-delay="400"
     >
-      <h4 className="font-semibold text-body text-gray-900">
+      <h4 className="font-semibold text-body text-black">
         IT and Social Media Subgroup Chair
       </h4>
-      <p className="text-gray-600 text-body-small">
+      <p className="text-black text-body-small">
         British Gynaecological Cancer Society
       </p>
-      <p className="text-gray-500 text-caption">July 2020 - July 2023</p>
+      <p className="text-black text-caption">July 2020 - July 2023</p>
     </div>
 
     <div
-      className="bg-[#FFF1F5] p-4 rounded-lg transition-all duration-300 
+      className="bg-light-pink-1 p-4 rounded-lg transition-all duration-300 
                  hover:shadow-[0_0_20px_2px_rgba(255,75,139,0.2)]"
       data-aos="fade-up"
       data-aos-delay="500"
     >
-      <h4 className="font-semibold text-body text-gray-900">
+      <h4 className="font-semibold text-body text-black">
         Gyn Oncology Lead
       </h4>
-      <p className="text-gray-600 text-body-small">
+      <p className="text-black text-body-small">
         Nottingham NHS
       </p>
-      {/* <p className="text-gray-500 text-xs">[Add start date] - Present</p> */}
+      {/* <p className="text-black text-xs">[Add start date] - Present</p> */}
     </div>
   </div>
 </div>

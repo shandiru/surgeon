@@ -18,7 +18,7 @@ export default function TypesOfFibroidsCard() {
               Types of Fibroids
             </h2>
           </div>
-          <p className="text-gray-600 text-base">
+          <p className="text-black text-base">
             It's possible to have more than one type at the same time:
           </p>
         </div>
@@ -33,7 +33,7 @@ export default function TypesOfFibroidsCard() {
             <h4 className="font-semibold mb-2 text-lg" style={{ color: deepPink }}>
               Submucosal fibroids
             </h4>
-            <p className="text-gray-800 text-sm leading-relaxed">
+            <p className="text-black text-sm leading-relaxed">
               Grow under the lining of the womb (may grow on a stalk)
             </p>
           </div>
@@ -46,7 +46,7 @@ export default function TypesOfFibroidsCard() {
             <h4 className="font-semibold mb-2 text-lg" style={{ color: deepPink }}>
               Intramural fibroids
             </h4>
-            <p className="text-gray-800 text-sm leading-relaxed">
+            <p className="text-black text-sm leading-relaxed">
               Grow within the wall of the womb (most common)
             </p>
           </div>
@@ -59,7 +59,7 @@ export default function TypesOfFibroidsCard() {
             <h4 className="font-semibold mb-2 text-lg" style={{ color: deepPink }}>
               Subserosal fibroids
             </h4>
-            <p className="text-gray-800 text-sm leading-relaxed">
+            <p className="text-black text-sm leading-relaxed">
               Grow on the outside wall of the womb (can press on nearby organs if large)
             </p>
           </div>
@@ -72,7 +72,7 @@ export default function TypesOfFibroidsCard() {
             <h4 className="font-semibold mb-2 text-lg" style={{ color: deepPink }}>
               Pedunculated fibroids
             </h4>
-            <p className="text-gray-800 text-sm leading-relaxed">
+            <p className="text-black text-sm leading-relaxed">
               Grow on a stalk, either inside or outside the womb
             </p>
           </div>

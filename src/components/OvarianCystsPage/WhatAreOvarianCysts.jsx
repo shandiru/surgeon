@@ -6,8 +6,8 @@ export default function WhatAreOvarianCysts() {
   return (
     <div className="bg-[#FEE6EA] rounded-2xl shadow-xl mb-16 max-w-6xl mx-auto">
       {/* Header */}
-      <div className="bg-[#FEE6EA] border-b border-[#FF4B8B]/20 rounded-t-2xl px-8 py-6">
-        <div className="text-[#FF4B8B] font-bold text-3xl flex items-center gap-3">
+      <div className="bg-[#FEE6EA] border-b border-primary-pink rounded-t-2xl px-8 py-6">
+        <div className="text-primary-pink font-bold text-3xl flex items-center gap-3">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="28"
@@ -66,8 +66,8 @@ export default function WhatAreOvarianCysts() {
           </div>
 
           {/* Right Column - Note Box */}
-          <div className="bg-white rounded-xl p-8 border border-[#FF4B8B]/10 shadow-md">
-            <h4 className="font-semibold mb-4 flex items-center gap-2 text-[#FF4B8B] text-lg">
+          <div className="bg-white rounded-xl p-8 border border-primary-pink shadow-md">
+            <h4 className="font-semibold mb-4 flex items-center gap-2 text-primary-pink text-lg">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="22"

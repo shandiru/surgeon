@@ -22,7 +22,7 @@ const CervicalScreeningGuidecard6 = ({ setShowCard, setActiveButton }) => {
       >
         {/* HEADER */}
         <div className="text-center md:text-left">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#FF4B8B]">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary-pink">
             After Your Test
           </h2>
           <p className="text-base text-[#7a2f4f]">Results usually within 1–2 weeks</p>
@@ -36,7 +36,7 @@ const CervicalScreeningGuidecard6 = ({ setShowCard, setActiveButton }) => {
                 type="button"
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
                 className="flex w-full items-center justify-between gap-6 py-3 
-                text-left font-medium text-[#FF4B8B] hover:text-[#7a2f4f] transition"
+                text-left font-medium text-primary-pink hover:text-[#7a2f4f] transition"
               >
                 <span className="flex items-center gap-3 text-lg">
                   <svg
@@ -70,7 +70,7 @@ const CervicalScreeningGuidecard6 = ({ setShowCard, setActiveButton }) => {
 
               {/* CONTENT (only show if open) */}
               {openIndex === index && (
-                <div className="mt-3 ml-10 text-gray-700 text-sm">
+                <div className="mt-3 ml-10 text-black text-sm">
                   <p>More information about: {item.title}</p>
                 </div>
               )}
@@ -85,8 +85,8 @@ const CervicalScreeningGuidecard6 = ({ setShowCard, setActiveButton }) => {
               setShowCard(7);
               setActiveButton(6);
             }}
-            className="inline-flex items-center justify-center bg-[#FF4B8B] 
-                hover:bg-[#FF4B8B]/80 text-white rounded-md text-sm font-medium 
+            className="inline-flex items-center justify-center bg-primary-pink 
+                hover:bg-primary-pink/80 text-white rounded-md text-sm font-medium 
                 transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%]"
           >
             Continue to Prevention & Early Detection

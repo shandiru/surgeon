@@ -9,7 +9,7 @@ export default function HeroSection() {
 
       <div className="relative max-w-4xl mx-auto px-6 py-16 text-center">
         {/* Tagline */}
-        <div className="inline-flex items-center gap-2 bg-[#FF4B8B]/10 text-[#FF4B8B] px-4 py-2 rounded-full text-caption mb-6">
+        <div className="inline-flex items-center gap-2 bg-primary-pink text-primary-pink px-4 py-2 rounded-full text-caption mb-6">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="w-4 h-4"
@@ -26,7 +26,7 @@ export default function HeroSection() {
         </div>
 
         {/* Heading */}
-        <h1 className="text-hero text-[#FF4B8B] mb-6">
+        <h1 className="text-hero text-primary-pink mb-6">
           Understanding Ovarian Cysts
         </h1>
 
@@ -36,7 +36,7 @@ export default function HeroSection() {
         </p>
 
         {/* CTA Button */}
-        <button className="inline-flex items-center justify-center gap-2 px-6 h-10 rounded-md font-medium text-button text-white bg-[#FF4B8B] hover:bg-[#e93a7d] transition-all shadow-sm">
+        <button className="inline-flex items-center justify-center gap-2 px-6 h-10 rounded-md font-medium text-button text-white bg-primary-pink hover:bg-[#e93a7d] transition-all shadow-sm">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="w-5 h-5"

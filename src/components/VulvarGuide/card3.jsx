@@ -29,7 +29,7 @@ const VulvarGuidecard3 = ({ setShowCard, setActiveButton }) => {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="lucide lucide-file-text w-6 h-6 text-[#FF4B8B]"
+              className="lucide lucide-file-text w-6 h-6 text-primary-pink"
             >
               <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
               <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
@@ -51,34 +51,34 @@ const VulvarGuidecard3 = ({ setShowCard, setActiveButton }) => {
             {[
               {
                 step: 'HPV Infection (High-Risk Strains)',
-                icon: <Biohazard className="w-5 h-5 text-[#FF4B8B]" />,
+                icon: <Biohazard className="w-5 h-5 text-primary-pink" />,
                 description:
                   'High-risk HPV types, particularly HPV 16, significantly increase vulvar cancer risk.',
               },
               {
                 step: 'Older Age (Most Common After 60)',
-                icon: <CloudFog className="w-5 h-5 text-[#FF4B8B]" />,
+                icon: <CloudFog className="w-5 h-5 text-primary-pink" />,
                 description: 'Vulvar cancer is more common in women over 60.',
               },
               {
                 step: 'Smoking',
-                icon: <Cigarette className="w-5 h-5 text-[#FF4B8B]" />,
+                icon: <Cigarette className="w-5 h-5 text-primary-pink" />,
                 description: 'Smoking weakens the immune system and increases HPV persistence.',
               },
               {
                 step: 'Long-Term Skin Conditions (e.g., Lichen Sclerosus)',
-                icon: <Sparkles className="w-5 h-5 text-[#FF4B8B]" />,
+                icon: <Sparkles className="w-5 h-5 text-primary-pink" />,
                 description: 'Chronic inflammatory vulvar skin disorders increase risk.',
               },
               {
                 step: 'Weakened Immune System',
-                icon: <ShieldOff className="w-5 h-5 text-[#FF4B8B]" />,
+                icon: <ShieldOff className="w-5 h-5 text-primary-pink" />,
                 description:
                   'A weak immune system reduces the body’s ability to repair abnormal cells.',
               },
               {
                 step: 'History of Cervical or Vaginal Pre-cancers',
-                icon: <Biohazard className="w-5 h-5 text-[#FF4B8B]" />,
+                icon: <Biohazard className="w-5 h-5 text-primary-pink" />,
                 description:
                   'Conditions like CIN or VAIN raise the risk of similar changes on the vulva.',
               },
@@ -133,7 +133,7 @@ const VulvarGuidecard3 = ({ setShowCard, setActiveButton }) => {
               className="font-semibold mb-2 flex items-center gap-2"
               style={{ color: '#FF4B8B' }}
             >
-              <Sparkles className="w-5 h-5 text-[#FF4B8B]" />
+              <Sparkles className="w-5 h-5 text-primary-pink" />
               Good to Know
             </h4>
             <p className="text-sm" style={{ color: '#7a2f4f' }}>
@@ -149,7 +149,7 @@ const VulvarGuidecard3 = ({ setShowCard, setActiveButton }) => {
                 setShowCard(4);
                 setActiveButton(3);
               }}
-              className="inline-flex items-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
+              className="inline-flex items-center bg-primary-pink hover:bg-primary-pink/80 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
             >
               Continue to Next Section
             </button>

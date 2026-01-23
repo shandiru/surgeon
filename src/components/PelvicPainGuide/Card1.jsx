@@ -8,16 +8,16 @@ const PelvicPainGuideCard1 = ({ setShowCard, setActiveButton }) => {
 
       {/* MAIN CARD WRAPPER */}
       <div
-        className="text-[#FF4B8B] bg-[#FF4B8B]/10 max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 
+        className="text-primary-pink bg-primary-pink max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 
         flex flex-col gap-6 rounded-xl py-6 shadow-sm 
-        hover:z-50 transition-all duration-300 hover:bg-[#FF4B8B]/20 
-        hover:shadow-lg hover:border-[#FF4B8B]/20 active:bg-[#FF4B8B]/20 
-        active:shadow-lg active:border-[#FF4B8B]/20 hover:scale-105 active:scale-100 border border-[#FF4B8B]/10 p-6"
+        hover:z-50 transition-all duration-300 hover:bg-primary-pink/20 
+        hover:shadow-lg hover:border-primary-pink active:bg-primary-pink/20 
+        active:shadow-lg active:border-primary-pink hover:scale-105 active:scale-100 border border-primary-pink p-6"
       >
 
         {/* HEADER */}
         <div className="grid auto-rows-min items-start gap-1.5 px-2">
-          <div className="font-semibold flex items-center gap-3 text-2xl text-[#FF4B8B]">
+          <div className="font-semibold flex items-center gap-3 text-2xl text-primary-pink">
             <Info className="h-6 w-6" />
             What Is Pelvic Pain?
           </div>
@@ -41,8 +41,8 @@ const PelvicPainGuideCard1 = ({ setShowCard, setActiveButton }) => {
             </div>
 
             {/* KEY FACTS BOX */}
-            <div className="bg-[#FF4B8B]/10 p-4 rounded-lg border border-[#FF4B8B]/10">
-              <h4 className="font-semibold mb-2 text-[#FF4B8B]">
+            <div className="bg-primary-pink p-4 rounded-lg border border-primary-pink">
+              <h4 className="font-semibold mb-2 text-primary-pink">
                 Key Facts
               </h4>
 
@@ -53,7 +53,7 @@ const PelvicPainGuideCard1 = ({ setShowCard, setActiveButton }) => {
                   'Can be acute or chronic',
                 ].map((item, index) => (
                   <li key={index} className="flex items-center gap-2">
-                    <CircleCheckBig className="h-4 w-4 text-[#FF4B8B]" />
+                    <CircleCheckBig className="h-4 w-4 text-primary-pink" />
                     {item}
                   </li>
                 ))}
@@ -70,8 +70,8 @@ const PelvicPainGuideCard1 = ({ setShowCard, setActiveButton }) => {
               setShowCard(2);
               setActiveButton(1);
             }}
-            className="inline-flex items-center justify-center bg-[#FF4B8B] 
-            hover:bg-[#FF4B8B]/80 rounded-md text-sm font-medium transition-all 
+            className="inline-flex items-center justify-center bg-primary-pink 
+            hover:bg-primary-pink/80 rounded-md text-sm font-medium transition-all 
             h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
           >
             Continue to Next Section

@@ -28,12 +28,12 @@ export default function EmotionalWellbeingCard() {
             Emotional Wellbeing
           </h2>
         </div>
-        <p className="text-gray-700 text-base">
+        <p className="text-black text-base">
           Fibroids can affect more than just your body:
         </p>
 
         {/* Symptoms */}
-        <div className="space-y-3 text-sm md:text-base text-gray-700 leading-relaxed">
+        <div className="space-y-3 text-sm md:text-base text-black leading-relaxed">
           <p>• Tiredness or anaemia can lower energy</p>
           <p>• Pain and heavy bleeding can affect mood</p>
           <p>• Tummy swelling can impact confidence and body image</p>

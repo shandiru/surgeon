@@ -6,7 +6,7 @@ export default function OvarianCystSurgery() {
   return (
     <div className="flex flex-col gap-6 rounded-xl bg-white text-[#BB125B] shadow-lg hover:shadow-xl transition-all duration-300 py-6 px-6 sm:px-8">
       {/* Card Header */}
-      <div className="flex items-center gap-3 text-xl font-semibold text-[#FF4B8B]">
+      <div className="flex items-center gap-3 text-xl font-semibold text-primary-pink">
         {/* Activity Icon */}
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +40,7 @@ export default function OvarianCystSurgery() {
           <div className="bg-white rounded-lg p-5 shadow-md hover:shadow-lg transition-all duration-300">
             <h4 className="font-semibold mb-2 text-[#BB125B]">Laparoscopy</h4>
             <p className="text-sm mb-3 text-[#555]">Keyhole surgery using small cuts</p>
-            <span className="inline-flex items-center justify-center rounded-full px-3 py-1 text-xs font-medium bg-[#FF4B8B1A] text-[#FF4B8B]">
+            <span className="inline-flex items-center justify-center rounded-full px-3 py-1 text-xs font-medium bg-[#FF4B8B1A] text-primary-pink">
               Often used for smaller, benign cysts
             </span>
           </div>

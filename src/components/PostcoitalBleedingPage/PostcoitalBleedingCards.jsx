@@ -46,7 +46,7 @@ export default function PostcoitalBleedingCards() {
               {/* Icon */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-10 w-10 text-[#FF4B8B] mx-auto mb-2"
+                className="h-10 w-10 text-primary-pink mx-auto mb-2"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -58,7 +58,7 @@ export default function PostcoitalBleedingCards() {
               </svg>
 
               {/* Title */}
-              <div className="font-semibold text-lg text-[#FF4B8B]">
+              <div className="font-semibold text-lg text-primary-pink">
                 {card.title}
               </div>
 

@@ -29,7 +29,7 @@ export default function EndometrialDiagnosisSection() {
 
         {/* Card Box */}
         <div
-          className="bg-white text-gray-900 flex flex-col gap-6 rounded-2xl py-6 shadow-sm mb-6 
+          className="bg-white text-black flex flex-col gap-6 rounded-2xl py-6 shadow-sm mb-6 
                      transition-all duration-300 hover:shadow-md hover:scale-[1.01] active:scale-[0.99]"
          
           data-aos="fade-up"
@@ -39,7 +39,7 @@ export default function EndometrialDiagnosisSection() {
             <div className="font-semibold text-xl" style={{ color: deepPink }}>
               Diagnostic Process
             </div>
-            <div className="text-sm text-gray-600">
+            <div className="text-sm text-black">
               Because symptoms may be similar to other conditions, a thorough evaluation is essential.
             </div>
           </div>
@@ -66,7 +66,7 @@ export default function EndometrialDiagnosisSection() {
                       >
                         {i + 1}
                       </span>
-                      <p className="text-sm text-gray-700">{item}</p>
+                      <p className="text-sm text-black">{item}</p>
                     </div>
                   ))}
                 </div>
@@ -85,7 +85,7 @@ export default function EndometrialDiagnosisSection() {
                       >
                         {i + 4}
                       </span>
-                      <p className="text-sm text-gray-700">{item}</p>
+                      <p className="text-sm text-black">{item}</p>
                     </div>
                   ))}
                 </div>
@@ -102,10 +102,10 @@ export default function EndometrialDiagnosisSection() {
             <h4 className="font-semibold mb-2" style={{ color: deepPink }}>
               If cancer is confirmed:
             </h4>
-            <p className="text-sm text-gray-600 mb-2">
+            <p className="text-sm text-black mb-2">
               Your doctor will assign a cancer stage, which describes:
             </p>
-            <ul className="text-sm space-y-1 list-disc ml-6 text-gray-700">
+            <ul className="text-sm space-y-1 list-disc ml-6 text-black">
               <li>How far the cancer has spread (metastasis)</li>
               <li>Tumor size and aggressiveness</li>
               <li>Grading system (letters and numbers) to classify severity</li>

@@ -74,7 +74,7 @@ const Colposcopycard7 = () => {
 
           {/* Complete Guide Button */}
           <div className="pt-4">
-            <button className="inline-flex items-center justify-center hover:bg-[#FF4B8B]/80 bg-[#FF4B8B] gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80 h-9 px-4 py-2 w-full">
+            <button className="inline-flex items-center justify-center hover:bg-primary-pink/80 bg-primary-pink gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80 h-9 px-4 py-2 w-full">
               <Star className="w-4 h-4" /> {/* Added the Star icon */}
               Complete Guide
             </button>

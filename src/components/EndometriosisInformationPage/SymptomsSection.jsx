@@ -46,7 +46,7 @@ export default function SymptomsSection() {
           <h2 className="text-3xl font-bold mb-4" style={{ color: deepPink }}>
             Symptoms of Endometriosis
           </h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-black">
             Recognizing the signs and when to seek help
           </p>
         </div>
@@ -56,21 +56,21 @@ export default function SymptomsSection() {
           {symptoms.map((symptom, index) => (
             <div
               key={index}
-              className="flex flex-col gap-4 bg-white text-gray-800 rounded-2xl  shadow-md p-6 
+              className="flex flex-col gap-4 bg-white text-black rounded-2xl  shadow-md p-6 
               transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl active:scale-[0.98]"
             >
               <div className="flex items-center gap-3 text-lg font-semibold" style={{ color: deepPink }}>
                 {symptom.icon}
                 {symptom.title}
               </div>
-              <p className="text-gray-600 leading-relaxed">{symptom.description}</p>
+              <p className="text-black leading-relaxed">{symptom.description}</p>
             </div>
           ))}
         </div>
 
         {/* Important Reminder */}
         <div
-          className="rounded-2xl p-8 shadow-lg bg-[#FFC5D3]"
+          className="rounded-2xl p-8 shadow-lg bg-primary-pint"
         >
           <div className="flex items-start gap-4">
             <TriangleAlert className="w-8 h-8 mt-1 flex-shrink-0" style={{ color: deepPink }} />
@@ -78,7 +78,7 @@ export default function SymptomsSection() {
               <p className="font-bold text-xl mb-3" style={{ color: deepPink }}>
                 Important Reminder
               </p>
-              <p className="text-base leading-relaxed text-gray-800">
+              <p className="text-base leading-relaxed text-black">
                 Many women believe severe period pain is "normal" — it isn&apos;t.  
                 You don&apos;t have to live with it.  
                 If you experience these symptoms, please consult with a healthcare provider.

@@ -31,7 +31,7 @@ const Vaginalcard5 = ({ setShowCard, setActiveButton }) => {
               Vaginal cancer may be detected during a routine pelvic exam before symptoms appear.
             </p>
 
-            <p className="text-[#FF4B8B] font-semibold mb-4 text-sm sm:text-base">
+            <p className="text-primary-pink font-semibold mb-4 text-sm sm:text-base">
               Diagnostic steps may include:
             </p>
 
@@ -60,7 +60,7 @@ const Vaginalcard5 = ({ setShowCard, setActiveButton }) => {
                   className="border rounded-md px-4 py-3 shadow-sm bg-white hover:shadow-md transition"
                   style={{ borderColor: primaryPink }}
                 >
-                  <strong className="text-[#FF4B8B]">{step.title}</strong>
+                  <strong className="text-primary-pink">{step.title}</strong>
                   <span className="text-[#7a2f4f]"> – {step.desc}</span>
                 </div>
               ))}
@@ -84,7 +84,7 @@ const Vaginalcard5 = ({ setShowCard, setActiveButton }) => {
                 setShowCard(6);
                 setActiveButton(5);
               }}
-              className="w-full bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white rounded-md h-10 px-4 flex items-center justify-center text-sm font-medium transition"
+              className="w-full bg-primary-pink hover:bg-primary-pink/80 text-white rounded-md h-10 px-4 flex items-center justify-center text-sm font-medium transition"
             >
               Learn About Treatment
             </button>

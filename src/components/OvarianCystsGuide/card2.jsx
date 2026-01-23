@@ -8,11 +8,11 @@ const OvarianCystsGuideCard2 = ({ setShowCard, setActiveButton }) => {
       {/* ---------------------------------------------------
           FULL WRAPPER WITH BORDER (ALL CONTENT INCLUDED)
       --------------------------------------------------- */}
-      <div className="max-w-4xl mx-auto px-6 py-10 rounded-2xl border border-[#FF4B8B]/20 shadow-md bg-[#FFF7F9]">
+      <div className="max-w-4xl mx-auto px-6 py-10 rounded-2xl border border-primary-pink shadow-md bg-[#FFF7F9]">
 
         {/* HEADER */}
         <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold text-[#FF4B8B] flex items-center justify-center gap-3">
+          <h2 className="text-3xl font-bold text-primary-pink flex items-center justify-center gap-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="30"
@@ -32,11 +32,11 @@ const OvarianCystsGuideCard2 = ({ setShowCard, setActiveButton }) => {
         </div>
 
         {/* MAIN CONTENT - ALERT BOX */}
-        <div className="rounded-xl p-6 bg-white border border-[#FF4B8B]/10 shadow-sm">
+        <div className="rounded-xl p-6 bg-white border border-primary-pink shadow-sm">
 
           {/* Icon + Title */}
           <div className="flex items-start gap-3 mb-4">
-            <div className="p-2 rounded-full bg-[#FF4B8B]/10 flex items-center justify-center">
+            <div className="p-2 rounded-full bg-primary-pink flex items-center justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -55,7 +55,7 @@ const OvarianCystsGuideCard2 = ({ setShowCard, setActiveButton }) => {
               </svg>
             </div>
 
-            <strong className="text-[#FF4B8B] font-semibold text-lg">
+            <strong className="text-primary-pink font-semibold text-lg">
               See your doctor if you have:
             </strong>
           </div>
@@ -80,7 +80,7 @@ const OvarianCystsGuideCard2 = ({ setShowCard, setActiveButton }) => {
               setShowCard(3);
               setActiveButton(2);
             }}
-            className="inline-flex items-center justify-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 rounded-md 
+            className="inline-flex items-center justify-center bg-primary-pink hover:bg-primary-pink/80 rounded-md 
                        text-sm font-medium transition-all h-10 px-4 
                        text-white w-[90%] md:w-[60%] lg:w-[40%] shadow"
           >

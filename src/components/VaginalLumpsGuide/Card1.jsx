@@ -31,7 +31,7 @@ const VaginalLumpsGuideCard1 = ({ setShowCard, setActiveButton }) => {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="w-6 h-6 text-[#FF4B8B]"
+              className="w-6 h-6 text-primary-pink"
             >
               <circle cx="12" cy="12" r="10"></circle>
               <path d="M12 16v-4"></path>
@@ -76,7 +76,7 @@ const VaginalLumpsGuideCard1 = ({ setShowCard, setActiveButton }) => {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="w-4 h-4 text-[#FF4B8B]"
+                  className="w-4 h-4 text-primary-pink"
                 >
                   <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
                 </svg>
@@ -101,7 +101,7 @@ const VaginalLumpsGuideCard1 = ({ setShowCard, setActiveButton }) => {
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      className="w-4 h-4 text-[#FF4B8B] mt-0.5 flex-shrink-0"
+                      className="w-4 h-4 text-primary-pink mt-0.5 flex-shrink-0"
                     >
                       <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
                       <path d="m9 11 3 3L22 4"></path>
@@ -124,7 +124,7 @@ const VaginalLumpsGuideCard1 = ({ setShowCard, setActiveButton }) => {
                 className="font-semibold mb-2 flex items-center gap-2"
                 style={{ color: '#FF4B8B' }}
               >
-                <Lightbulb className="text-xl text-[#FF4B8B]" />
+                <Lightbulb className="text-xl text-primary-pink" />
                 Remember
               </h4>
               <p className="text-sm" style={{ color: '#7a2f4f' }}>
@@ -142,7 +142,7 @@ const VaginalLumpsGuideCard1 = ({ setShowCard, setActiveButton }) => {
                 setShowCard(2);
                 setActiveButton(1);
               }}
-              className="inline-flex items-center justify-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 rounded-md text-sm font-medium transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
+              className="inline-flex items-center justify-center bg-primary-pink hover:bg-primary-pink/80 rounded-md text-sm font-medium transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
             >
               Continue to Next Section
             </button>

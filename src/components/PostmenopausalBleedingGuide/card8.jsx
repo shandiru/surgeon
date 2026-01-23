@@ -14,13 +14,13 @@ const PostmenopausalBleedingGuideCard8 = ({ setShowCard, setActiveButton }) => {
           {/* ---------------- CARD 1 ---------------- */}
           <div
             className="bg-gradient-to-br from-[#FFF7FA] to-[#FEE6EA] 
-                       text-[#1F2937] flex flex-col gap-6 rounded-2xl 
+                       text-black flex flex-col gap-6 rounded-2xl 
                        py-8 shadow-md hover:shadow-lg transition border"
             style={{ borderColor: "rgb(255,197,211)" }}
           >
             {/* Header */}
             <div className="px-8 pb-5 border-b border-[#FFD6E5]">
-              <div className="flex items-center gap-3 text-2xl font-bold text-[#FF4B8B]">
+              <div className="flex items-center gap-3 text-2xl font-bold text-primary-pink">
                 Emotional Wellbeing
               </div>
             </div>
@@ -37,13 +37,13 @@ const PostmenopausalBleedingGuideCard8 = ({ setShowCard, setActiveButton }) => {
           {/* ---------------- CARD 2 ---------------- */}
           <div
             className="bg-gradient-to-br from-[#FFF7FA] to-[#FEE6EA] 
-                       text-[#1F2937] flex flex-col gap-6 rounded-2xl 
+                       text-black flex flex-col gap-6 rounded-2xl 
                        py-8 shadow-md hover:shadow-lg transition border"
             style={{ borderColor: "rgb(255,197,211)" }}
           >
             {/* Header */}
             <div className="px-8 pb-5 border-b border-[#FFD6E5]">
-              <div className="flex items-center gap-3 text-2xl font-bold text-[#FF4B8B]">
+              <div className="flex items-center gap-3 text-2xl font-bold text-primary-pink">
                 Follow-Up & Support
               </div>
             </div>
@@ -63,7 +63,7 @@ const PostmenopausalBleedingGuideCard8 = ({ setShowCard, setActiveButton }) => {
         ===================================================== */}
         <div className="pt-8 flex justify-center">
   <button
-    className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white 
+    className="bg-primary-pink hover:bg-primary-pink/80 text-white 
                w-[90%] md:w-[60%] lg:w-[40%] rounded-md 
                h-10 text-sm font-medium transition-all shadow"
   >

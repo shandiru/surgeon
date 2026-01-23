@@ -10,7 +10,7 @@ const PelvicPainGuidecard8 = ({ setShowCard, setActiveButton }) => {
         {/* MAIN CARD */}
         <div
           className="
-            text-[#FF4B8B] bg-[#FF4B8B]/10
+            text-primary-pink bg-primary-pink
             max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-xl py-6 shadow-sm
             transition-all duration-300
             hover:z-50 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd]
@@ -23,9 +23,9 @@ const PelvicPainGuidecard8 = ({ setShowCard, setActiveButton }) => {
           <div className="px-6 pt-6">
             <div className="text-center space-y-4">
               <div className="flex justify-center">
-                <Heart className="h-8 w-8 text-[#FF4B8B]" />
+                <Heart className="h-8 w-8 text-primary-pink" />
               </div>
-              <h3 className="text-xl font-semibold text-[#FF4B8B]">
+              <h3 className="text-xl font-semibold text-primary-pink">
                 Remember
               </h3>
 
@@ -51,7 +51,7 @@ const PelvicPainGuidecard8 = ({ setShowCard, setActiveButton }) => {
               setActiveButton(8);
             }}
             className="
-              bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white
+              bg-primary-pink hover:bg-primary-pink/80 text-white
               w-[90%] md:w-[60%] lg:w-[40%]
               rounded-md h-10 text-sm font-medium transition-all shadow-md hover:shadow-lg
             "

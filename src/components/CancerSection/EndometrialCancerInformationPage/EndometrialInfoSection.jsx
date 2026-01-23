@@ -27,7 +27,7 @@ export default function EndometrialInfoSection() {
           <h2 className="text-4xl font-bold mb-4" style={{ color: deepPink }}>
             Endometrial Cancer Information
           </h2>
-          <p className="text-lg text-gray-700 max-w-2xl mx-auto md:mx-0 mb-8">
+          <p className="text-lg text-black max-w-2xl mx-auto md:mx-0 mb-8">
             Early detection and understanding are key to successful treatment. Learn about
             symptoms, diagnosis, and treatment options for endometrial cancer.
           </p>

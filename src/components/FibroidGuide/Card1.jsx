@@ -13,8 +13,8 @@ const FibroidGuideCard1 = ({ setShowCard, setActiveButton }) => {
         {/* Header */}
         <div className="px-8 pt-8">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <Pin className="h-8 w-8 text-[#FF4B8B]" />
-            <h2 className="font-bold text-3xl text-[#FF4B8B]">
+            <Pin className="h-8 w-8 text-primary-pink" />
+            <h2 className="font-bold text-3xl text-primary-pink">
               What Are Fibroids?
             </h2>
           </div>
@@ -22,24 +22,24 @@ const FibroidGuideCard1 = ({ setShowCard, setActiveButton }) => {
 
         {/* Content */}
         <div className="px-8 pb-8 space-y-6">
-          <p className="text-lg leading-relaxed text-gray-700">
+          <p className="text-lg leading-relaxed text-black">
             Fibroids are benign (non-cancerous) growths that develop in the walls of the womb (uterus).
           </p>
 
           {/* Two-column grid */}
           <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-2">
-              <p className="text-gray-700">• Made of muscle and fibrous tissue</p>
-              <p className="text-gray-700">• Can be single or multiple</p>
+              <p className="text-black">• Made of muscle and fibrous tissue</p>
+              <p className="text-black">• Can be single or multiple</p>
             </div>
             <div className="space-y-2">
-              <p className="text-gray-700">• Can vary greatly in size</p>
-              <p className="text-gray-700">• Common and treatable</p>
+              <p className="text-black">• Can vary greatly in size</p>
+              <p className="text-black">• Common and treatable</p>
             </div>
           </div>
 
           {/* Highlight Box */}
-          <div className="rounded-lg p-5 bg-[#FF4B8B]/10">
+          <div className="rounded-lg p-5 bg-primary-pink">
             <p className="font-semibold text-base text-[#BB125B]">
               ✓ Fibroids are not cancer and rarely become cancerous.
             </p>
@@ -50,7 +50,7 @@ const FibroidGuideCard1 = ({ setShowCard, setActiveButton }) => {
                 setShowCard(2);
                 setActiveButton(1);
               }}
-              className="inline-flex items-center justify-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 rounded-md text-sm font-medium transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
+              className="inline-flex items-center justify-center bg-primary-pink hover:bg-primary-pink/80 rounded-md text-sm font-medium transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
             >
               Continue to Next Section
             </button>

@@ -11,7 +11,7 @@ const RoboticGuide1 = ({ setShowCard, setActiveButton }) => {
 
           {/* Left Text Content */}
           <div className="text-center md:text-left space-y-6">
-            <h1 className="text-hero text-[#FF4B8B] leading-tight">
+            <h1 className="text-hero text-primary-pink leading-tight">
               Robotic Surgery in Gynecology
             </h1>
 
@@ -66,7 +66,7 @@ const RoboticGuide1 = ({ setShowCard, setActiveButton }) => {
             setShowCard(2);
             setActiveButton(1);
           }}
-          className="inline-flex items-center justify-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 rounded-md text-button transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
+          className="inline-flex items-center justify-center bg-primary-pink hover:bg-primary-pink/80 rounded-md text-button transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
         >
           Continue to Next Section
         </button>

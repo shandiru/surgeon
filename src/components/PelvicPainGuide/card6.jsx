@@ -10,7 +10,7 @@ const PelvicPainGuidecard6 = ({ setShowCard, setActiveButton }) => {
         {/* MAIN CARD */}
         <div
           className="
-            text-[#FF4B8B] bg-[#FF4B8B]/10 
+            text-primary-pink bg-primary-pink 
             rounded-xl py-6 shadow-sm mb-10 flex flex-col gap-6
             transition-all duration-300
             hover:z-50 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd]
@@ -22,7 +22,7 @@ const PelvicPainGuidecard6 = ({ setShowCard, setActiveButton }) => {
           {/* HEADER */}
           <div className="px-6 pb-4 grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5">
             <div className="font-semibold flex items-center gap-3 text-2xl">
-              <Brain className="h-6 w-6 text-[#FF4B8B]" />
+              <Brain className="h-6 w-6 text-primary-pink" />
               Emotional Wellbeing
             </div>
           </div>
@@ -38,7 +38,7 @@ const PelvicPainGuidecard6 = ({ setShowCard, setActiveButton }) => {
             <div className="bg-white/60 p-4 rounded-lg border shadow-sm" style={{ borderColor: "rgb(255,197,211)" }}>
               <p className="text-sm leading-relaxed">
                 Talking to your doctor or asking for emotional support or counselling can help.
-                <strong className="text-[#FF4B8B]">
+                <strong className="text-primary-pink">
                   {" "}
                   You don't have to “just live with it” — help is available.
                 </strong>
@@ -55,7 +55,7 @@ const PelvicPainGuidecard6 = ({ setShowCard, setActiveButton }) => {
               setActiveButton(6);
             }}
             className="
-              bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white 
+              bg-primary-pink hover:bg-primary-pink/80 text-white 
               w-[90%] md:w-[60%] lg:w-[40%] 
               rounded-md h-10 text-sm font-medium 
               transition-all shadow-md hover:shadow-lg

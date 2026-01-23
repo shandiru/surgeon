@@ -42,7 +42,7 @@ const UrgentHelp = () => {
               <AlertCircle className="inline-block mr-2" style={{ color: deepPink }} />
               When to Seek Urgent Help
             </h2>
-            <p className="text-lg text-gray-700">
+            <p className="text-lg text-black">
               Get medical advice quickly if you notice any of these warning signs
             </p>
           </div>
@@ -66,7 +66,7 @@ const UrgentHelp = () => {
                   </div>
                 </div>
                 <div className="px-6">
-                  <p className="text-sm text-gray-700 leading-relaxed">{card.description}</p>
+                  <p className="text-sm text-black leading-relaxed">{card.description}</p>
                 </div>
               </div>
             ))}
@@ -84,7 +84,7 @@ const UrgentHelp = () => {
                   <h3 className="font-semibold" style={{ color: deepPink }}>
                     Need Immediate Help?
                   </h3>
-                  <p className="text-sm text-gray-800">
+                  <p className="text-sm text-black">
                     Don't wait if you're experiencing urgent symptoms
                   </p>
                 </div>

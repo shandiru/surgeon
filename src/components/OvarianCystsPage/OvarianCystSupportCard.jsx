@@ -23,7 +23,7 @@ export default function OvarianCystSupportCard() {
         </svg>
 
         {/* Heading */}
-        <h3 className="text-3xl font-bold mb-4 text-[#FF4B8B]">Remember</h3>
+        <h3 className="text-3xl font-bold mb-4 text-primary-pink">Remember</h3>
 
         {/* Paragraphs */}
         <div className="space-y-3 max-w-2xl mx-auto text-base leading-relaxed">
@@ -34,7 +34,7 @@ export default function OvarianCystSupportCard() {
 
         {/* CTA Button */}
         <button
-          className="inline-flex items-center justify-center gap-2 text-sm font-medium text-white bg-[#FF4B8B] hover:bg-[#e43d7a] rounded-md h-11 px-8 mt-6 shadow-md hover:shadow-lg transition-all"
+          className="inline-flex items-center justify-center gap-2 text-sm font-medium text-white bg-primary-pink hover:bg-[#e43d7a] rounded-md h-11 px-8 mt-6 shadow-md hover:shadow-lg transition-all"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

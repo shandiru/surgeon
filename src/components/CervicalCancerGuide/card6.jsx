@@ -18,7 +18,7 @@ const CervicalCancerGuidecard6 = ({ setShowCard, setActiveButton }) => {
             className="font-semibold text-sm uppercase tracking-wide flex items-center gap-2"
             style={{ color: "#FF4B8B" }}
           >
-            <Heart className="w-6 h-6 text-[#FF4B8B]" />
+            <Heart className="w-6 h-6 text-primary-pink" />
             Step 3
           </span>
 
@@ -50,7 +50,7 @@ const CervicalCancerGuidecard6 = ({ setShowCard, setActiveButton }) => {
               "Your overall health and personal needs",
             ].map((item, index) => (
               <div className="flex items-center gap-2" key={index}>
-                <div className="w-1.5 h-1.5 bg-[#FF4B8B] rounded-full" />
+                <div className="w-1.5 h-1.5 bg-primary-pink rounded-full" />
                 <span>{item}</span>
               </div>
             ))}
@@ -64,7 +64,7 @@ const CervicalCancerGuidecard6 = ({ setShowCard, setActiveButton }) => {
         {/* ================= SECTION 1: SURGERY ================= */}
         <div className="mt-10">
           <h3 className="font-semibold text-lg mb-4 flex items-center gap-2" style={{ color: "#FF4B8B" }}>
-            <Scissors className="w-5 h-5 text-[#FF4B8B]" />
+            <Scissors className="w-5 h-5 text-primary-pink" />
             1. Surgery (Often the First Step)
           </h3>
 
@@ -81,9 +81,9 @@ const CervicalCancerGuidecard6 = ({ setShowCard, setActiveButton }) => {
                 className="flex gap-3 p-4 bg-white rounded-lg border transition-all duration-300 hover:bg-[#fce3e8] hover:border-[#f5a9bd] hover:shadow-lg"
                 style={{ borderColor: "#f5c2d2" }}
               >
-                <div className="w-2 h-2 bg-[#FF4B8B] rounded-full mt-2 flex-shrink-0" />
+                <div className="w-2 h-2 bg-primary-pink rounded-full mt-2 flex-shrink-0" />
                 <div>
-                  <h4 className="font-medium text-[#FF4B8B]">{item.title}</h4>
+                  <h4 className="font-medium text-primary-pink">{item.title}</h4>
                   <p className="text-sm text-[#7a2f4f] mt-1">{item.desc}</p>
                 </div>
               </div>
@@ -94,7 +94,7 @@ const CervicalCancerGuidecard6 = ({ setShowCard, setActiveButton }) => {
         {/* ================= SECTION 2: COMBINATION TREATMENTS ================= */}
         <div className="mt-10">
           <h3 className="font-semibold text-lg mb-4 flex items-center gap-2" style={{ color: "#FF4B8B" }}>
-            <Radiation className="w-5 h-5 text-[#FF4B8B]" />
+            <Radiation className="w-5 h-5 text-primary-pink" />
             2. Combination Treatments
           </h3>
 
@@ -108,9 +108,9 @@ const CervicalCancerGuidecard6 = ({ setShowCard, setActiveButton }) => {
               className="flex gap-3 p-4 bg-white rounded-lg border transition-all duration-300 hover:bg-[#fce3e8] hover:border-[#f5a9bd] hover:shadow-lg"
               style={{ borderColor: "#f5c2d2" }}
             >
-              <div className="w-2 h-2 bg-[#FF4B8B] rounded-full mt-2" />
+              <div className="w-2 h-2 bg-primary-pink rounded-full mt-2" />
               <div>
-                <h4 className="font-medium text-[#FF4B8B]">Radiation therapy</h4>
+                <h4 className="font-medium text-primary-pink">Radiation therapy</h4>
                 <p className="text-sm text-[#7a2f4f] mt-1">
                   – high-energy rays to destroy cancer cells
                 </p>
@@ -122,9 +122,9 @@ const CervicalCancerGuidecard6 = ({ setShowCard, setActiveButton }) => {
               className="flex gap-3 p-4 bg-white rounded-lg border transition-all duration-300 hover:bg-[#fce3e8] hover:border-[#f5a9bd] hover:shadow-lg"
               style={{ borderColor: "#f5c2d2" }}
             >
-              <div className="w-2 h-2 bg-[#FF4B8B] rounded-full mt-2" />
+              <div className="w-2 h-2 bg-primary-pink rounded-full mt-2" />
               <div>
-                <h4 className="font-medium text-[#FF4B8B]">Chemotherapy</h4>
+                <h4 className="font-medium text-primary-pink">Chemotherapy</h4>
                 <p className="text-sm text-[#7a2f4f] mt-1">
                   – drugs that kill or slow the growth of cancer cells
                 </p>
@@ -136,9 +136,9 @@ const CervicalCancerGuidecard6 = ({ setShowCard, setActiveButton }) => {
               className="flex gap-3 p-4 bg-white rounded-lg border transition-all duration-300 hover:bg-[#fce3e8] hover:border-[#f5a9bd] hover:shadow-lg"
               style={{ borderColor: "#f5c2d2" }}
             >
-              <div className="w-2 h-2 bg-[#FF4B8B] rounded-full mt-2" />
+              <div className="w-2 h-2 bg-primary-pink rounded-full mt-2" />
               <div>
-                <h4 className="font-medium text-[#FF4B8B]">Targeted or Immunotherapy</h4>
+                <h4 className="font-medium text-primary-pink">Targeted or Immunotherapy</h4>
                 <p className="text-sm text-[#7a2f4f] mt-1">
                   – used in select cases to boost treatment effectiveness
                 </p>
@@ -150,7 +150,7 @@ const CervicalCancerGuidecard6 = ({ setShowCard, setActiveButton }) => {
         {/* ================= SECTION 3: RECOVERY ================= */}
         <div className="mt-10">
           <h3 className="font-semibold text-lg mb-4 flex items-center gap-2" style={{ color: "#FF4B8B" }}>
-            <Heart className="w-5 h-5 text-[#FF4B8B]" />
+            <Heart className="w-5 h-5 text-primary-pink" />
             3. Recovery & Support
           </h3>
 
@@ -159,7 +159,7 @@ const CervicalCancerGuidecard6 = ({ setShowCard, setActiveButton }) => {
               className="p-4 bg-white rounded-lg border transition-all duration-300 hover:bg-[#fce3e8] hover:border-[#f5a9bd] hover:shadow-lg"
               style={{ borderColor: "#f5c2d2" }}
             >
-              <h4 className="font-medium text-[#FF4B8B] mb-2">Enhanced Recovery Programs</h4>
+              <h4 className="font-medium text-primary-pink mb-2">Enhanced Recovery Programs</h4>
               <p className="text-sm text-[#7a2f4f]">
                 Special recovery plans help patients heal faster after surgery.
               </p>
@@ -169,7 +169,7 @@ const CervicalCancerGuidecard6 = ({ setShowCard, setActiveButton }) => {
               className="p-4 bg-white rounded-lg border transition-all duration-300 hover:bg-[#fce3e8] hover:border-[#f5a9bd] hover:shadow-lg"
               style={{ borderColor: "#f5c2d2" }}
             >
-              <h4 className="font-medium text-[#FF4B8B] mb-2">Multi-specialty Approach</h4>
+              <h4 className="font-medium text-primary-pink mb-2">Multi-specialty Approach</h4>
               <p className="text-sm text-[#7a2f4f]">
                 Oncologists, surgeons, and other specialists work together to design the best care plan.
               </p>
@@ -184,7 +184,7 @@ const CervicalCancerGuidecard6 = ({ setShowCard, setActiveButton }) => {
               setShowCard(7);
               setActiveButton(6);
             }}
-            className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all"
+            className="bg-primary-pink hover:bg-primary-pink/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all"
           >
             Continue to Next Section
           </button>

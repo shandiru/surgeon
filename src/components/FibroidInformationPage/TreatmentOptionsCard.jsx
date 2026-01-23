@@ -18,7 +18,7 @@ export default function TreatmentOptionsCard() {
               Treatment Options
             </h2>
           </div>
-          <p className="text-base text-gray-600">
+          <p className="text-base text-black">
             Treatment depends on your symptoms and their severity:
           </p>
         </div>
@@ -44,7 +44,7 @@ export default function TreatmentOptionsCard() {
                   <h4 className="font-semibold mb-2" style={{ color: deepPink }}>
                     {item.title}
                   </h4>
-                  <p className="text-sm text-gray-600">{item.desc}</p>
+                  <p className="text-sm text-black">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -72,7 +72,7 @@ export default function TreatmentOptionsCard() {
                   <h4 className="font-semibold mb-2" style={{ color: deepPink }}>
                     {item.title}
                   </h4>
-                  <p className="text-sm text-gray-600">{item.desc}</p>
+                  <p className="text-sm text-black">{item.desc}</p>
                 </div>
               ))}
             </div>

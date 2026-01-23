@@ -10,7 +10,7 @@ const Footer = () => {
     <footer className="bg-white border-t" style={{ borderColor: pink }}>
       <div className="container mx-auto px-4 py-8">
         <div className="text-center">
-          <p className="mb-2 text-gray-700">
+          <p className="mb-2 text-black">
             This information is provided for educational purposes only.
           </p>
           <p className="text-sm font-medium" style={{ color: deepPink }}>

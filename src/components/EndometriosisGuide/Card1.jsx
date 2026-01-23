@@ -37,7 +37,7 @@ const EndometriosisCard1 = ({ setShowCard, setActiveButton }) => {
             <h2 className="text-3xl font-bold mb-4" style={{ color: deepPink }}>
               What Is Endometriosis?
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-black">
               Understanding the condition and how it affects your body
             </p>
           </div>
@@ -137,7 +137,7 @@ const EndometriosisCard1 = ({ setShowCard, setActiveButton }) => {
               setShowCard(2);
               setActiveButton(1);
             }}
-            className="inline-flex items-center justify-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 rounded-md text-sm font-medium transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
+            className="inline-flex items-center justify-center bg-primary-pink hover:bg-primary-pink/80 rounded-md text-sm font-medium transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
           >
             Continue to Next Section
           </button>

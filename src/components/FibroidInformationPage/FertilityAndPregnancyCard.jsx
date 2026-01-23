@@ -28,7 +28,7 @@ export default function FertilityAndPregnancyCard() {
             <h4 className="font-semibold mb-3 text-lg" style={{ color: deepPink }}>
               Potential Challenges
             </h4>
-            <ul className="space-y-2 text-sm text-gray-700 leading-relaxed">
+            <ul className="space-y-2 text-sm text-black leading-relaxed">
               <li>• Can sometimes make it harder to get pregnant</li>
               <li>• May slightly increase risk of miscarriage</li>
               <li>• May increase risk of preterm birth</li>
@@ -43,7 +43,7 @@ export default function FertilityAndPregnancyCard() {
             <h4 className="font-semibold mb-3 text-lg" style={{ color: deepPink }}>
               Positive Outlook
             </h4>
-            <ul className="space-y-2 text-sm text-gray-700 leading-relaxed">
+            <ul className="space-y-2 text-sm text-black leading-relaxed">
               <li>• Most women with fibroids can still have healthy pregnancies</li>
               <li>• Extra monitoring during pregnancy available</li>
             </ul>

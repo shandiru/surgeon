@@ -43,7 +43,7 @@ const Vaginalcard3 = ({ setShowCard, setActiveButton }) => {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="lucide lucide-file-text w-6 h-6 text-[#FF4B8B]"
+              className="lucide lucide-file-text w-6 h-6 text-primary-pink"
             >
               <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
               <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
@@ -109,7 +109,7 @@ const Vaginalcard3 = ({ setShowCard, setActiveButton }) => {
               className="font-semibold mb-2 flex items-center gap-2"
               style={{ color: primaryPink }}
             >
-              <Sparkles className="w-5 h-5 text-[#FF4B8B]" />
+              <Sparkles className="w-5 h-5 text-primary-pink" />
               Good to Know
             </h4>
             <p className="text-sm" style={{ color: "#7a2f4f" }}>
@@ -126,7 +126,7 @@ const Vaginalcard3 = ({ setShowCard, setActiveButton }) => {
                 setShowCard(4);
                 setActiveButton(3);
               }}
-              className="inline-flex items-center justify-center gap-2 bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 rounded-md text-sm font-medium h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
+              className="inline-flex items-center justify-center gap-2 bg-primary-pink hover:bg-primary-pink/80 rounded-md text-sm font-medium h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
             >
               Learn About Screening
             </button>

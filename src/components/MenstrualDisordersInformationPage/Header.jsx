@@ -28,10 +28,10 @@ const Header = () => {
 
             {/* Title + Subtitle */}
             <div>
-              <h1 className="text-2xl md:text-3xl font-bold text-[#FF4B8B] leading-snug">
+              <h1 className="text-2xl md:text-3xl font-bold text-primary-pink leading-snug">
                 Understanding Menstrual Disorders
               </h1>
-              <p className="text-[#FF4B8B] mt-1 text-sm md:text-base">
+              <p className="text-primary-pink mt-1 text-sm md:text-base">
                 What they are, causes & treatment options
               </p>
             </div>

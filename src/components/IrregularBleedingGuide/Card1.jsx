@@ -12,14 +12,14 @@ const IrregularBleedingGuideCard1 = ({ setShowCard, setActiveButton }) => {
 
             {/* Header */}
             <div className="grid grid-rows-[auto_auto] items-start gap-1.5 px-6 pb-4 border-b border-[#ff97b3]/20">
-              <div className="leading-none font-semibold flex items-center gap-2 text-[#FF4B8B] text-lg">
+              <div className="leading-none font-semibold flex items-center gap-2 text-primary-pink text-lg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24" height="24"
                   viewBox="0 0 24 24"
                   fill="none" stroke="currentColor"
                   strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
-                  className="w-5 h-5 text-[#FF4B8B]"
+                  className="w-5 h-5 text-primary-pink"
                 >
                   <circle cx="12" cy="12" r="10"></circle>
                   <path d="M12 16v-4"></path>
@@ -107,7 +107,7 @@ const IrregularBleedingGuideCard1 = ({ setShowCard, setActiveButton }) => {
                   setShowCard(2);
                   setActiveButton(1);
                 }}
-                className="inline-flex items-center justify-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 
+                className="inline-flex items-center justify-center bg-primary-pink hover:bg-primary-pink/80 
                 rounded-md text-sm font-medium transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] 
                 text-white"
               >

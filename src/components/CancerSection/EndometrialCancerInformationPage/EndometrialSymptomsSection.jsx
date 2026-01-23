@@ -30,7 +30,7 @@ export default function EndometrialSymptomsSection() {
 
         {/* Card */}
         <div
-          className="bg-white text-gray-900 flex flex-col gap-6 rounded-xl py-6 shadow-sm mb-6 
+          className="bg-white text-black flex flex-col gap-6 rounded-xl py-6 shadow-sm mb-6 
                      transition-all duration-300 hover:shadow-md hover:scale-[1.01] active:scale-[0.99]"
         
           data-aos="fade-up"
@@ -40,7 +40,7 @@ export default function EndometrialSymptomsSection() {
             <div className="font-semibold text-xl mb-1" style={{ color: deepPink }}>
               Early Warning Signs
             </div>
-            <div className="text-sm text-gray-600">
+            <div className="text-sm text-black">
               Endometrial cancer often shows early warning signs. The most common is abnormal vaginal bleeding.
             </div>
           </div>

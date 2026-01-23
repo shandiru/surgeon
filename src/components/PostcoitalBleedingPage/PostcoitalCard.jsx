@@ -8,7 +8,7 @@ const PostcoitalCard = () => {
     >
       {/* Header */}
       <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 border-b pb-6">
-        <div className="font-semibold flex items-center gap-2 text-2xl text-[#FF4B8B]">
+        <div className="font-semibold flex items-center gap-2 text-2xl text-primary-pink">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"

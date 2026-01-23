@@ -8,12 +8,12 @@ const EndometrialCard2 = ({ setShowCard, setActiveButton }) => {
       {/* Card Container */}
       <div
         className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-2xl border p-8 shadow-sm animate-in slide-in-from-right-5 duration-300"
-        className="border border-[#FF4B8B]/10 bg-white"
+        className="border border-primary-pink bg-white"
       >
 
         {/* Card Header */}
         <div className="grid auto-rows-min items-start gap-1.5">
-          <div className="leading-none font-semibold flex items-center gap-2 text-[#FF4B8B]">
+          <div className="leading-none font-semibold flex items-center gap-2 text-primary-pink">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -24,7 +24,7 @@ const EndometrialCard2 = ({ setShowCard, setActiveButton }) => {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="w-6 h-6 text-[#FF4B8B]"
+              className="w-6 h-6 text-primary-pink"
             >
               <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
             </svg>
@@ -39,7 +39,7 @@ const EndometrialCard2 = ({ setShowCard, setActiveButton }) => {
         <div className="space-y-6">
 
           {/* Intro Box */}
-          <div className="p-4 rounded-xl border border-[#FF4B8B]/10 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-100 bg-[#FF4B8B]/10">
+          <div className="p-4 rounded-xl border border-primary-pink transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-100 bg-primary-pink">
             <p className="text-lg leading-relaxed text-[#BB125B]">
               Endometrial cancer develops when cells in the endometrial lining grow abnormally and uncontrollably.
               Recognizing how it develops can help with early detection and treatment.
@@ -49,22 +49,22 @@ const EndometrialCard2 = ({ setShowCard, setActiveButton }) => {
           {/* Types / Early Changes */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-            <div className="p-4 rounded-xl border border-[#FF4B8B]/10 transition-all duration-300 hover:shadow-md bg-white">
-              <h4 className="font-semibold mb-2 text-[#FF4B8B]">Type 1 Endometrial Cancer</h4>
+            <div className="p-4 rounded-xl border border-primary-pink transition-all duration-300 hover:shadow-md bg-white">
+              <h4 className="font-semibold mb-2 text-primary-pink">Type 1 Endometrial Cancer</h4>
               <p className="text-sm text-[#BB125B]">
                 Most common type. Linked to excess estrogen exposure. Usually grows slowly and is often detected early.
               </p>
             </div>
 
-            <div className="p-4 rounded-xl border border-[#FF4B8B]/10 transition-all duration-300 hover:shadow-md bg-white">
-              <h4 className="font-semibold mb-2 text-[#FF4B8B]">Type 2 Endometrial Cancer</h4>
+            <div className="p-4 rounded-xl border border-primary-pink transition-all duration-300 hover:shadow-md bg-white">
+              <h4 className="font-semibold mb-2 text-primary-pink">Type 2 Endometrial Cancer</h4>
               <p className="text-sm text-[#BB125B]">
                 Less common but more aggressive. Not related to estrogen and more likely to spread beyond the uterus.
               </p>
             </div>
 
-            <div className="p-4 rounded-xl border border-[#FF4B8B]/10 transition-all duration-300 hover:shadow-md bg-white">
-              <h4 className="font-semibold mb-2 text-[#FF4B8B]">Endometrial Hyperplasia</h4>
+            <div className="p-4 rounded-xl border border-primary-pink transition-all duration-300 hover:shadow-md bg-white">
+              <h4 className="font-semibold mb-2 text-primary-pink">Endometrial Hyperplasia</h4>
               <p className="text-sm text-[#BB125B]">
                 Some women first develop a pre-cancerous condition where the uterine lining becomes too thick. Early treatment can prevent progression to cancer.
               </p>
@@ -73,8 +73,8 @@ const EndometrialCard2 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           {/* Extra Info Box */}
-          <div className="p-4 rounded-xl border border-[#FF4B8B]/10 bg-[#FF4B8B]/10">
-            <h4 className="font-semibold mb-2 flex items-center gap-2 text-[#FF4B8B]">
+          <div className="p-4 rounded-xl border border-primary-pink bg-primary-pink">
+            <h4 className="font-semibold mb-2 flex items-center gap-2 text-primary-pink">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -85,7 +85,7 @@ const EndometrialCard2 = ({ setShowCard, setActiveButton }) => {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="w-5 h-5 text-[#FF4B8B]"
+                className="w-5 h-5 text-primary-pink"
               >
                 <path d="M9 18h6"></path>
                 <path d="M10 22h4"></path>
@@ -105,7 +105,7 @@ const EndometrialCard2 = ({ setShowCard, setActiveButton }) => {
                 setShowCard(3);
                 setActiveButton(2);
               }}
-              className="inline-flex items-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
+              className="inline-flex items-center bg-primary-pink hover:bg-primary-pink/80 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
             >
               Continue to Next Section
             </button>

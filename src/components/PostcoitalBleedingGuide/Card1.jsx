@@ -12,7 +12,7 @@ const PostcoitalBleedingGuideCard1 = ({ setShowCard, setActiveButton }) => {
         >
           {/* Header */}
           <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 border-b pb-6">
-            <div className="font-semibold flex items-center gap-2 text-2xl text-[#FF4B8B]">
+            <div className="font-semibold flex items-center gap-2 text-2xl text-primary-pink">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -55,7 +55,7 @@ const PostcoitalBleedingGuideCard1 = ({ setShowCard, setActiveButton }) => {
             setShowCard(2);
             setActiveButton(1);
           }}
-          className="inline-flex items-center justify-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 rounded-md text-sm font-medium transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
+          className="inline-flex items-center justify-center bg-primary-pink hover:bg-primary-pink/80 rounded-md text-sm font-medium transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
         >
           Continue to Next Section
         </button>

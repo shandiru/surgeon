@@ -11,10 +11,10 @@ const IrregularBleedingGuideCard4 = ({ setShowCard, setActiveButton }) => {
 
           {/* HEADER */}
           <div className="grid auto-rows-min items-start gap-2 border-b border-[#ff97b3]/30 pb-4">
-            <div className="leading-snug font-semibold flex items-center gap-2 text-[#FF4B8B] text-lg sm:text-xl">
+            <div className="leading-snug font-semibold flex items-center gap-2 text-primary-pink text-lg sm:text-xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-5 h-5 text-[#FF4B8B] flex-shrink-0"
+                className="w-5 h-5 text-primary-pink flex-shrink-0"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -109,7 +109,7 @@ const IrregularBleedingGuideCard4 = ({ setShowCard, setActiveButton }) => {
                 setShowCard(5);
                 setActiveButton(4);
               }}
-              className="inline-flex items-center justify-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 rounded-md text-sm font-medium transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
+              className="inline-flex items-center justify-center bg-primary-pink hover:bg-primary-pink/80 rounded-md text-sm font-medium transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
             >
               Continue to Next Step
             </button>

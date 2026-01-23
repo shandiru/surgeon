@@ -37,11 +37,11 @@ export default function HowItsDiagnosed() {
 
   return (
     <section className="mb-12 px-4">
-      <div className="bg-white text-[#1F2937] flex flex-col gap-6 rounded-2xl shadow-lg py-8 max-w-4xl mx-auto">
+      <div className="bg-white text-black flex flex-col gap-6 rounded-2xl shadow-lg py-8 max-w-4xl mx-auto">
         
         {/* Header */}
         <div className="px-8 pb-6 border-b border-[#FEE6EA]">
-          <div className="font-bold flex items-center gap-3 text-2xl text-[#FF4B8B]">
+          <div className="font-bold flex items-center gap-3 text-2xl text-primary-pink">
             <Stethoscope className="h-7 w-7" />
             How It’s Diagnosed
           </div>
@@ -61,13 +61,13 @@ export default function HowItsDiagnosed() {
                 type="button"
                 onClick={() => toggleItem(index)}
                 className={`flex w-full items-center justify-between py-4 text-left text-base font-medium transition-colors ${
-                  openIndex === index ? 'text-[#FF4B8B]' : 'text-[#374151]'
+                  openIndex === index ? 'text-primary-pink' : 'text-[#374151]'
                 }`}
               >
                 {item.title}
                 <ChevronDown
                   className={`h-5 w-5 text-[#6B7280] transition-transform duration-300 ${
-                    openIndex === index ? 'rotate-180 text-[#FF4B8B]' : ''
+                    openIndex === index ? 'rotate-180 text-primary-pink' : ''
                   }`}
                 />
               </button>

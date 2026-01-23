@@ -32,7 +32,7 @@ export default function WhyChooseUs() {
   ];
 
   return (
-    <section id="why-choose-us" className="relative bg-[#FFF1F5] pb-32 overflow-hidden">
+    <section id="why-choose-us" className="relative bg-light-pink-1 pb-32 overflow-hidden">
 
       {/* Header */}
       <div className="text-center mt-16 mb-24 px-4">
@@ -59,7 +59,7 @@ export default function WhyChooseUs() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="relative flex items-center bg-[#FF4B8B] hover:bg-[#E03E7C] text-white font-medium rounded-lg shadow-[0_0_20px_rgba(255,75,139,0.3)] transition-all duration-300">
+            <button className="relative flex items-center bg-primary-pink hover:bg-[#E03E7C] text-white font-medium rounded-lg shadow-[0_0_20px_rgba(255,75,139,0.3)] transition-all duration-300">
               <span className="px-5 py-3 text-button">
                 Book Appointment
               </span>
@@ -81,11 +81,11 @@ export default function WhyChooseUs() {
 
           {/* TEXT FIRST */}
           <div data-aos="fade-up">
-            <div className="inline-flex items-center space-x-2 bg-[#FFF1F5] px-3 py-1 rounded-full">
-              <div className="w-5 h-5 bg-[#FF4B8B] rounded-full flex items-center justify-center">
+            <div className="inline-flex items-center space-x-2 bg-light-pink-1 px-3 py-1 rounded-full">
+              <div className="w-5 h-5 bg-primary-pink rounded-full flex items-center justify-center">
                 <FaStethoscope className="text-white text-sm" />
               </div>
-              <span className="text-[#FF4B8B] text-body-small font-semibold">
+              <span className="text-primary-pink text-body-small font-semibold">
                 KetanKumar GynCare
               </span>
             </div>
@@ -125,7 +125,7 @@ export default function WhyChooseUs() {
               >
                 <div className="flex items-start justify-between">
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 rounded-full bg-[#FF4B8B] flex items-center justify-center shadow-[0_0_10px_rgba(255,75,139,0.3)]">
+                    <div className="w-12 h-12 rounded-full bg-primary-pink flex items-center justify-center shadow-[0_0_10px_rgba(255,75,139,0.3)]">
                       {item.icon}
                     </div>
                     <h4 className="text-card-title font-semibold text-[#1B123D] pt-2">
@@ -173,11 +173,11 @@ export default function WhyChooseUs() {
         >
           {/* LEFT */}
           <div className="flex-1 space-y-6">
-            <div className="inline-flex items-center space-x-2 bg-[#FFF1F5] px-3 py-1 rounded-full">
-              <div className="w-5 h-5 bg-[#FF4B8B] rounded-full flex items-center justify-center">
+            <div className="inline-flex items-center space-x-2 bg-light-pink-1 px-3 py-1 rounded-full">
+              <div className="w-5 h-5 bg-primary-pink rounded-full flex items-center justify-center">
                 <FaStethoscope className="text-white text-sm" />
               </div>
-              <span className="text-[#FF4B8B] text-body-small font-semibold">
+              <span className="text-primary-pink text-body-small font-semibold">
                 KetanKumar GynCare
               </span>
             </div>
@@ -204,7 +204,7 @@ export default function WhyChooseUs() {
               >
                 <div className="flex items-start justify-between">
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 rounded-full bg-[#FF4B8B] flex items-center justify-center shadow-[0_0_10px_rgba(255,75,139,0.3)]">
+                    <div className="w-12 h-12 rounded-full bg-primary-pink flex items-center justify-center shadow-[0_0_10px_rgba(255,75,139,0.3)]">
                       {item.icon}
                     </div>
                     <h4 className="text-card-title font-semibold text-[#1B123D] pt-2">

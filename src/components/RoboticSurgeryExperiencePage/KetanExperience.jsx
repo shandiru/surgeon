@@ -30,15 +30,15 @@ export default function KetanExperience() {
   ];
 
   return (
-    <section className="py-16 md:py-20 bg-[#FDE7EB]">
+    <section className="py-16 md:py-20 bg-light-pink-1">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-12">
-            <h2 className="text-section text-[#FF4B8B] mb-4">
+            <h2 className="text-section text-primary-pink mb-4">
               Ketan's Experience as a Robotic Surgeon
             </h2>
-            <p className="text-body-large text-gray-700 max-w-2xl mx-auto">
+            <p className="text-body-large text-black max-w-2xl mx-auto">
               A dedicated commitment to excellence in robotic-assisted gynecological surgery
             </p>
           </div>
@@ -48,22 +48,22 @@ export default function KetanExperience() {
             {experienceItems.map((item, index) => (
               <div
                 key={index}
-                className="bg-white rounded-xl p-6 md:p-8 shadow-md hover:shadow-lg transition-all duration-300 border border-[#FF4B8B]/10"
+                className="bg-white rounded-xl p-6 md:p-8 shadow-md hover:shadow-lg transition-all duration-300 border border-primary-pink"
               >
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#FF4B8B]/10 flex items-center justify-center text-[#FF4B8B]">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-primary-pink flex items-center justify-center text-primary-pink">
                     {item.icon}
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center justify-between mb-2">
-                      <h3 className="text-card-title text-[#FF4B8B] font-semibold">
+                      <h3 className="text-card-title text-primary-pink font-semibold">
                         {item.title}
                       </h3>
-                      <span className="text-caption text-[#BB125B] bg-[#FF4B8B]/10 px-2 py-1 rounded">
+                      <span className="text-caption text-[#BB125B] bg-primary-pink px-2 py-1 rounded">
                         {item.detail}
                       </span>
                     </div>
-                    <p className="text-body text-gray-700 leading-relaxed">
+                    <p className="text-body text-black leading-relaxed">
                       {item.description}
                     </p>
                   </div>
@@ -73,12 +73,12 @@ export default function KetanExperience() {
           </div>
 
           {/* Highlight Section */}
-          <div className="bg-white rounded-xl p-6 md:p-8 border-2 border-[#FF4B8B] shadow-lg">
+          <div className="bg-white rounded-xl p-6 md:p-8 border-2 border-primary-pink shadow-lg">
             <div className="text-center">
-              <h3 className="text-subsection text-[#FF4B8B] font-bold mb-4">
+              <h3 className="text-subsection text-primary-pink font-bold mb-4">
                 Commitment to Patient Care
               </h3>
-              <p className="text-body-large text-gray-700 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-body-large text-black max-w-3xl mx-auto leading-relaxed">
                 With years of dedicated practice in robotic surgery, Ketan combines technical expertise 
                 with compassionate care, ensuring each patient receives personalized treatment tailored 
                 to their unique needs. His experience spans a wide range of gynecological conditions, 

@@ -8,8 +8,8 @@ const NormalCycleInfo = () => {
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         {/* Title */}
-        <h2 className="text-2xl sm:text-3xl font-bold mb-10 flex items-center gap-2 text-[#FF4B8B]">
-          <FiCalendar className="text-[#FF4B8B] text-2xl" />
+        <h2 className="text-2xl sm:text-3xl font-bold mb-10 flex items-center gap-2 text-primary-pink">
+          <FiCalendar className="text-primary-pink text-2xl" />
           What's a Normal Menstrual Cycle?
         </h2>
 

@@ -40,9 +40,9 @@ const CervicalScreeningGuideButtons = ({ setShowCard, activeButton, setActiveBut
             flex flex-col items-center justify-center text-center 
             w-full py-2 px-3
             font-semibold rounded-md 
-            text-[#BB125B] bg-[#FF4B8B]/10 hover:bg-[#FF4B8B]/30 
+            text-[#BB125B] bg-primary-pink hover:bg-primary-pink/30 
             text-button transition-all
-            ${activeButton === index ? 'bg-[#FF4B8B]/50 text-black' : ''}
+            ${activeButton === index ? 'bg-primary-pink/50 text-black' : ''}
           `}
         >
           {button.icon}

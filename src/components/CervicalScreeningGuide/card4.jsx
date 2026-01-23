@@ -24,7 +24,7 @@ const CervicalScreeningGuideCard4 = ({ setShowCard, setActiveButton }) => {
 
               {/* LEFT BOX */}
               <div
-                className="bg-white text-[#FF4B8B] rounded-2xl shadow-md p-8 
+                className="bg-white text-primary-pink rounded-2xl shadow-md p-8 
                 transition duration-300 ease-in-out 
                 hover:scale-105 hover:-translate-y-2 hover:shadow-[0_8px_30px_rgba(176,59,102,0.25)]
                 active:scale-[0.98] active:shadow-lg cursor-pointer"
@@ -50,7 +50,7 @@ const CervicalScreeningGuideCard4 = ({ setShowCard, setActiveButton }) => {
                   </h2>
                 </div>
 
-                <ul className="space-y-4 text-gray-700 leading-relaxed">
+                <ul className="space-y-4 text-black leading-relaxed">
                   <li className="flex items-start gap-3">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -123,8 +123,8 @@ const CervicalScreeningGuideCard4 = ({ setShowCard, setActiveButton }) => {
               setShowCard(5);
               setActiveButton(4);
             }}
-            className="inline-flex items-center justify-center bg-[#FF4B8B] 
-            hover:bg-[#FF4B8B]/80 text-white rounded-md text-sm font-medium 
+            className="inline-flex items-center justify-center bg-primary-pink 
+            hover:bg-primary-pink/80 text-white rounded-md text-sm font-medium 
             transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%]"
           >
             Continue to Next Step

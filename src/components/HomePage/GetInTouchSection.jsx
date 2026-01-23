@@ -56,13 +56,13 @@ export default function GetInTouchSection() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2
-            className="text-section text-[#FF4B8B] mb-4"
+            className="text-section text-primary-pink mb-4"
             data-aos="fade-up"
           >
             Get in Touch
           </h2>
           <p
-            className="text-body-large text-gray-700"
+            className="text-body-large text-black"
             data-aos="fade-up"
             data-aos-delay="200"
           >
@@ -79,9 +79,9 @@ export default function GetInTouchSection() {
               data-aos="fade-up"
               data-aos-delay={index * 200}
             >
-              <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 bg-[#FFF1F5]">
+              <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 bg-light-pink-1">
                 <svg
-                  className="h-8 w-8 text-[#FF4B8B]"
+                  className="h-8 w-8 text-primary-pink"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -91,10 +91,10 @@ export default function GetInTouchSection() {
                   {card.icon}
                 </svg>
               </div>
-              <h3 className="text-card-title mb-2 text-gray-900">
+              <h3 className="text-card-title mb-2 text-black">
                 {card.title}
               </h3>
-              <p className="text-gray-600 text-body-small mb-4">{card.subtitle}</p>
+              <p className="text-black text-body-small mb-4">{card.subtitle}</p>
 
               {/* Button / Link */}
               {card.link ? (
@@ -102,16 +102,16 @@ export default function GetInTouchSection() {
                   href={card.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center rounded-md text-button transition-all w-full px-4 py-2 bg-[#FF4B8B] hover:bg-[#ff5d96] text-white"
+                  className="inline-flex items-center justify-center rounded-md text-button transition-all w-full px-4 py-2 bg-primary-pink hover:bg-[#ff5d96] text-white"
                 >
                   {card.btn}
                 </a>
               ) : card.variant === 'outline' ? (
-                <button className="inline-flex items-center justify-center rounded-md border text-button transition-all w-full px-4 py-2 bg-transparent text-[#FF4B8B] border-[#FF4B8B] hover:bg-[#FFE3EC]">
+                <button className="inline-flex items-center justify-center rounded-md border text-button transition-all w-full px-4 py-2 bg-transparent text-primary-pink border-primary-pink hover:bg-[#FFE3EC]">
                   {card.btn}
                 </button>
               ) : (
-                <button className="inline-flex items-center justify-center rounded-md text-button transition-all w-full px-4 py-2 bg-[#FF4B8B] hover:bg-[#ff5d96] text-white">
+                <button className="inline-flex items-center justify-center rounded-md text-button transition-all w-full px-4 py-2 bg-primary-pink hover:bg-[#ff5d96] text-white">
                   {card.btn}
                 </button>
               )}

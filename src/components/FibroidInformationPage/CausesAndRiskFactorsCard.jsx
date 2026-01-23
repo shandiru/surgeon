@@ -18,7 +18,7 @@ export default function CausesAndRiskFactorsCard() {
               Causes & Risk Factors
             </h2>
           </div>
-          <p className="text-sm md:text-base text-gray-600">
+          <p className="text-sm md:text-base text-black">
             The exact cause is unknown, but your risk may be higher if you:
           </p>
         </div>

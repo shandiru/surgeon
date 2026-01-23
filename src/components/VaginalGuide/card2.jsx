@@ -30,7 +30,7 @@ const VaginalCard2 = ({ setShowCard, setActiveButton }) => {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="lucide lucide-circle-alert w-6 h-6 text-[#FF4B8B]"
+              className="lucide lucide-circle-alert w-6 h-6 text-primary-pink"
             >
               <circle cx="12" cy="12" r="10"></circle>
               <line x1="12" x2="12" y1="8" y2="12"></line>
@@ -171,7 +171,7 @@ const VaginalCard2 = ({ setShowCard, setActiveButton }) => {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="lucide lucide-circle-alert w-5 h-5 text-[#FF4B8B]"
+                className="lucide lucide-circle-alert w-5 h-5 text-primary-pink"
               >
                 <circle cx="12" cy="12" r="10"></circle>
                 <line x1="12" x2="12" y1="8" y2="12"></line>
@@ -194,7 +194,7 @@ const VaginalCard2 = ({ setShowCard, setActiveButton }) => {
                 setShowCard(3);
                 setActiveButton(2);
               }}
-              className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all"
+              className="bg-primary-pink hover:bg-primary-pink/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all"
             >
               Learn About the Procedure
             </button>

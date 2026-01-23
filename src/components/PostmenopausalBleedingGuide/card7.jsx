@@ -25,14 +25,14 @@ const PostmenopausalBleedingGuideCard7 = ({ setShowCard, setActiveButton }) => {
               viewBox="0 0 24 24"
               stroke="currentColor"
               strokeWidth="2"
-              className="h-6 w-6 text-[#FF4B8B]"
+              className="h-6 w-6 text-primary-pink"
             >
               <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"></path>
               <path d="M12 9v4"></path>
               <path d="M12 17h.01"></path>
             </svg>
 
-            <h3 className="font-bold text-[#FF4B8B] text-lg sm:text-xl flex items-center gap-2">
+            <h3 className="font-bold text-primary-pink text-lg sm:text-xl flex items-center gap-2">
               When to Seek Urgent Help
             </h3>
           </div>
@@ -61,7 +61,7 @@ const PostmenopausalBleedingGuideCard7 = ({ setShowCard, setActiveButton }) => {
               setShowCard(8);
               setActiveButton(7);
             }}
-            className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white 
+            className="bg-primary-pink hover:bg-primary-pink/80 text-white 
                        w-[90%] md:w-[60%] lg:w-[40%] rounded-md 
                        h-10 text-sm font-medium transition-all shadow"
           >

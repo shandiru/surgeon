@@ -21,7 +21,7 @@ export default function UnderstandingFibroidsSection() {
         </h1>
 
         {/* Subtitle */}
-        <p className="text-lg md:text-xl mb-10 max-w-2xl mx-auto text-gray-700">
+        <p className="text-lg md:text-xl mb-10 max-w-2xl mx-auto text-black">
           What they are, symptoms &amp; treatment options
         </p>
 

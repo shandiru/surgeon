@@ -23,7 +23,7 @@ const CervicalScreeningGuideCard1 = ({ setShowCard, setActiveButton }) => {
           {/* LEFT SIDE */}
           <div className="text-center lg:text-left space-y-6 px-2 sm:px-4 lg:px-8">
 
-            <h2 className="text-3xl md:text-4xl font-bold text-[#FF4B8B] [text-wrap:balance]">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary-pink [text-wrap:balance]">
               Cervical Screening Overview
             </h2>
 
@@ -44,8 +44,8 @@ const CervicalScreeningGuideCard1 = ({ setShowCard, setActiveButton }) => {
                 borderColor: "rgb(255,197,211)",
               }}
             >
-              <div className="text-4xl font-extrabold mb-2 text-[#FF4B8B]">90%</div>
-              <p className="text-base text-[#FF4B8B]/90 leading-relaxed">
+              <div className="text-4xl font-extrabold mb-2 text-primary-pink">90%</div>
+              <p className="text-base text-primary-pink/90 leading-relaxed">
                 Cervical screening can detect up to 90% of early cell changes.
               </p>
             </div>
@@ -74,8 +74,8 @@ const CervicalScreeningGuideCard1 = ({ setShowCard, setActiveButton }) => {
               setShowCard(2);
               setActiveButton(1);
             }}
-            className="inline-flex items-center justify-center bg-[#FF4B8B] 
-            hover:bg-[#FF4B8B]/80 text-white rounded-md text-sm font-medium 
+            className="inline-flex items-center justify-center bg-primary-pink 
+            hover:bg-primary-pink/80 text-white rounded-md text-sm font-medium 
             transition-all h-10 px-4 w-[90%] md:w-[70%] lg:w-[40%]"
           >
             Continue to Next Section

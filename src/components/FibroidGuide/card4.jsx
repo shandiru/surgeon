@@ -9,12 +9,12 @@ const FibroidGuideCard4 = ({ setShowCard, setActiveButton }) => {
         {/* Header */}
         <div className="flex flex-col gap-2 mb-4">
           <div className="flex items-center gap-3">
-            <Lightbulb className="h-7 w-7 text-[#FF4B8B]" />
-            <h2 className="font-bold text-2xl md:text-3xl text-[#FF4B8B]">
+            <Lightbulb className="h-7 w-7 text-primary-pink" />
+            <h2 className="font-bold text-2xl md:text-3xl text-primary-pink">
               Causes & Risk Factors
             </h2>
           </div>
-          <p className="text-sm md:text-base text-gray-600">
+          <p className="text-sm md:text-base text-black">
             The exact cause is unknown, but your risk may be higher if you:
           </p>
         </div>
@@ -29,7 +29,7 @@ const FibroidGuideCard4 = ({ setShowCard, setActiveButton }) => {
             ].map((item, i) => (
               <span
                 key={i}
-                className="block rounded-lg px-4 py-2 text-sm font-medium transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-1 active:scale-[0.98] bg-[#FF4B8B]/10 text-[#BB125B]"
+                className="block rounded-lg px-4 py-2 text-sm font-medium transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-1 active:scale-[0.98] bg-primary-pink text-[#BB125B]"
               >
                 {item}
               </span>
@@ -43,7 +43,7 @@ const FibroidGuideCard4 = ({ setShowCard, setActiveButton }) => {
             ].map((item, i) => (
               <span
                 key={i}
-                className="block rounded-lg px-4 py-2 text-sm font-medium transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-1 active:scale-[0.98] bg-[#FF4B8B]/10 text-[#BB125B]"
+                className="block rounded-lg px-4 py-2 text-sm font-medium transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-1 active:scale-[0.98] bg-primary-pink text-[#BB125B]"
               >
                 {item}
               </span>
@@ -59,7 +59,7 @@ const FibroidGuideCard4 = ({ setShowCard, setActiveButton }) => {
                 setShowCard(5);
                 setActiveButton(4);
               }}
-              className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md text-sm font-medium transition-all h-10 px-4"
+              className="bg-primary-pink hover:bg-primary-pink/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md text-sm font-medium transition-all h-10 px-4"
             >
               Continue to Next Step
             </button>

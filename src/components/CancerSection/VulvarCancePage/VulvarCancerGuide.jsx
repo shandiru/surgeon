@@ -35,7 +35,7 @@ const VulvarCancerPage = () => {
             >
               <FaHeartbeat className="h-4 w-4" /> Medical Information Guide
             </div>
-            <h1 className="text-3xl lg:text-5xl font-bold text-[#FF4B8B] mb-6">
+            <h1 className="text-3xl lg:text-5xl font-bold text-primary-pink mb-6">
               Vulvar Cancer
             </h1>
             <p className="text-lg lg:text-xl text-[#7a2f4f] leading-relaxed">
@@ -203,7 +203,7 @@ const StepCard = ({
               >
                 {step}
               </span>
-              <h2 className="text-3xl font-bold text-[#FF4B8B] mt-2">{title}</h2>
+              <h2 className="text-3xl font-bold text-primary-pink mt-2">{title}</h2>
             </div>
 
             {description && (
@@ -243,7 +243,7 @@ const StepCard = ({
             {subsections &&
               subsections.map((section, i) => (
                 <div key={i} className="space-y-6 mt-8">
-                  <h3 className="text-xl font-semibold text-[#FF4B8B]">
+                  <h3 className="text-xl font-semibold text-primary-pink">
                     {section.title}
                   </h3>
                   <div className="space-y-4">
@@ -260,7 +260,7 @@ const StepCard = ({
                           {item.icon}
                         </div>
                         <div>
-                          <h4 className="text-lg font-semibold text-[#FF4B8B] mb-2">
+                          <h4 className="text-lg font-semibold text-primary-pink mb-2">
                             {item.heading}
                           </h4>
                           <p className="text-[#7a2f4f]">{item.text}</p>
@@ -297,7 +297,7 @@ const StepCard = ({
                     >
                       1
                     </div>
-                    <h3 className="text-xl font-semibold text-[#FF4B8B]">
+                    <h3 className="text-xl font-semibold text-primary-pink">
                       Surgery (Primary Treatment)
                     </h3>
                   </div>
@@ -308,7 +308,7 @@ const StepCard = ({
                         className="p-6 bg-white rounded-xl border transition-all duration-300 active:bg-[#FFF5F8] active:shadow-lg hover:bg-[#FFF5F8] hover:shadow-lg"
                         style={{ borderColor: primaryPink }}
                       >
-                        <h4 className="text-lg font-semibold text-[#FF4B8B] mb-2">
+                        <h4 className="text-lg font-semibold text-primary-pink mb-2">
                           {s.heading}
                         </h4>
                         <p className="text-[#7a2f4f]">{s.text}</p>
@@ -325,7 +325,7 @@ const StepCard = ({
                     >
                       2
                     </div>
-                    <h3 className="text-xl font-semibold text-[#FF4B8B]">
+                    <h3 className="text-xl font-semibold text-primary-pink">
                       Additional Treatments
                     </h3>
                   </div>
@@ -343,7 +343,7 @@ const StepCard = ({
                           {a.icon}
                         </div>
                         <div>
-                          <h4 className="text-lg font-semibold text-[#FF4B8B] mb-2">
+                          <h4 className="text-lg font-semibold text-primary-pink mb-2">
                             {a.heading}
                           </h4>
                           <p className="text-[#7a2f4f]">{a.text}</p>

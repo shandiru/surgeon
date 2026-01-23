@@ -25,7 +25,7 @@ export default function RememberCard() {
         </div>
 
         {/* Divider */}
-        <div className="h-px bg-[#FFC5D3] my-2" />
+        <div className="h-px bg-primary-pint my-2" />
 
         {/* Call-to-action */}
         <div className="text-center">

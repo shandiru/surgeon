@@ -11,8 +11,8 @@ const MenstrualDisordersGuideCard2 = ({ setShowCard, setActiveButton }) => {
 
       <div className="max-w-5xl mx-auto p-6">
         {/* Title */}
-        <h2 className="text-2xl sm:text-3xl font-bold mb-10 flex items-center gap-2 text-[#FF4B8B]">
-          <FiCalendar className="text-[#FF4B8B] text-2xl" />
+        <h2 className="text-2xl sm:text-3xl font-bold mb-10 flex items-center gap-2 text-primary-pink">
+          <FiCalendar className="text-primary-pink text-2xl" />
           What's a Normal Menstrual Cycle?
         </h2>
 
@@ -81,7 +81,7 @@ const MenstrualDisordersGuideCard2 = ({ setShowCard, setActiveButton }) => {
             setShowCard(3);
             setActiveButton(2);
           }}
-          className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all"
+          className="bg-primary-pink hover:bg-primary-pink/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all"
         >
           Learn About the Procedure
         </button>

@@ -8,7 +8,7 @@ const PelvicPainGuideCard2 = ({ setShowCard, setActiveButton }) => {
       
       {/* Main Card */}
       <div
-        className="text-[#FF4B8B] bg-[#FF4B8B]/10 max-w-sm sm:max-w-2xl lg:max-w-5xl 
+        className="text-primary-pink bg-primary-pink max-w-sm sm:max-w-2xl lg:max-w-5xl 
         mx-auto mb-10 flex flex-col gap-6 rounded-xl py-6 shadow-sm border
         hover:z-50 transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg 
         hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] 
@@ -32,18 +32,18 @@ const PelvicPainGuideCard2 = ({ setShowCard, setActiveButton }) => {
 
             {/* Cyclic Pain */}
             <div className="flex items-center gap-3 p-3 bg-[#FFE4EE] rounded-lg">
-              <Calendar className="h-5 w-5 text-[#FF4B8B]" />
+              <Calendar className="h-5 w-5 text-primary-pink" />
               <div>
-                <h4 className="font-semibold text-[#FF4B8B]">Cyclic Pain</h4>
+                <h4 className="font-semibold text-primary-pink">Cyclic Pain</h4>
                 <p className="text-sm text-[#7a2f4f]">Related to menstrual cycle</p>
               </div>
             </div>
 
             {/* Non-cyclic Pain */}
             <div className="flex items-center gap-3 p-3 bg-[#FFE4EE] rounded-lg">
-              <Activity className="h-5 w-5 text-[#FF4B8B]" />
+              <Activity className="h-5 w-5 text-primary-pink" />
               <div>
-                <h4 className="font-semibold text-[#FF4B8B]">Non-cyclic Pain</h4>
+                <h4 className="font-semibold text-primary-pink">Non-cyclic Pain</h4>
                 <p className="text-sm text-[#7a2f4f]">Unrelated to periods</p>
               </div>
             </div>
@@ -55,18 +55,18 @@ const PelvicPainGuideCard2 = ({ setShowCard, setActiveButton }) => {
 
             {/* Sudden Acute Pain */}
             <div className="flex items-center gap-3 p-3 bg-[#FFE4EE] rounded-lg">
-              <Zap className="h-5 w-5 text-[#FF4B8B]" />
+              <Zap className="h-5 w-5 text-primary-pink" />
               <div>
-                <h4 className="font-semibold text-[#FF4B8B]">Sudden (Acute)</h4>
+                <h4 className="font-semibold text-primary-pink">Sudden (Acute)</h4>
                 <p className="text-sm text-[#7a2f4f]">Appears quickly, often severe</p>
               </div>
             </div>
 
             {/* Persistent Chronic Pain */}
             <div className="flex items-center gap-3 p-3 bg-[#FFE4EE] rounded-lg">
-              <Clock className="h-5 w-5 text-[#FF4B8B]" />
+              <Clock className="h-5 w-5 text-primary-pink" />
               <div>
-                <h4 className="font-semibold text-[#FF4B8B]">Persistent (Chronic)</h4>
+                <h4 className="font-semibold text-primary-pink">Persistent (Chronic)</h4>
                 <p className="text-sm text-[#7a2f4f]">Lasts 3–6 months or more</p>
               </div>
             </div>
@@ -82,7 +82,7 @@ const PelvicPainGuideCard2 = ({ setShowCard, setActiveButton }) => {
               setShowCard(3);
               setActiveButton(2);
             }}
-            className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white 
+            className="bg-primary-pink hover:bg-primary-pink/80 text-white 
             w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium 
             transition-all"
           >

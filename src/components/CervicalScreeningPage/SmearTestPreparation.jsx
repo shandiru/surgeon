@@ -7,7 +7,7 @@ export default function SmearTestPreparation() {
           
           {/* Left Card */}
           <div
-            className="bg-white text-[#FF4B8B] rounded-2xl shadow-md p-8 
+            className="bg-white text-primary-pink rounded-2xl shadow-md p-8 
                        transition duration-300 ease-in-out 
                        hover:scale-105 hover:-translate-y-2 hover:shadow-[0_8px_30px_rgba(176,59,102,0.25)]
                        active:scale-[0.98] active:shadow-lg cursor-pointer"
@@ -33,7 +33,7 @@ export default function SmearTestPreparation() {
             </div>
 
             {/* Tips */}
-            <ul className="space-y-4 text-gray-700 leading-relaxed">
+            <ul className="space-y-4 text-black leading-relaxed">
               <li className="flex items-start gap-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

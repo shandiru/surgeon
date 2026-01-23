@@ -7,12 +7,12 @@ const PostmenopausalBleedingGuideCard3 = ({ setShowCard, setActiveButton }) => {
 
       {/* OUTER CARD WRAPPER */}
       <div className="max-w-4xl mx-auto px-6 py-10 
-                      rounded-2xl border border-[#FF4B8B]/20 
+                      rounded-2xl border border-primary-pink 
                       shadow-md bg-white">
 
         {/* HEADER */}
         <div className="px-6 text-center md:text-left mb-6">
-          <h2 className="font-bold flex items-center justify-center md:justify-start gap-2 text-2xl text-[#FF4B8B]">
+          <h2 className="font-bold flex items-center justify-center md:justify-start gap-2 text-2xl text-primary-pink">
             Causes of Postmenopausal Bleeding
           </h2>
 
@@ -29,7 +29,7 @@ const PostmenopausalBleedingGuideCard3 = ({ setShowCard, setActiveButton }) => {
             <div className="space-y-3 rounded-xl 
                             bg-gradient-to-br from-[#fff0f5] to-[#ffe6ed] 
                             p-5 shadow-sm">
-              <div className="inline-flex items-center gap-2 text-sm font-semibold text-[#FF4B8B] mb-2">
+              <div className="inline-flex items-center gap-2 text-sm font-semibold text-primary-pink mb-2">
                 Serious Causes
               </div>
 
@@ -43,7 +43,7 @@ const PostmenopausalBleedingGuideCard3 = ({ setShowCard, setActiveButton }) => {
             <div className="space-y-3 rounded-xl 
                             bg-gradient-to-br from-[#fef6f9] to-[#ffffff] 
                             p-5 shadow-sm">
-              <div className="inline-flex items-center gap-2 text-sm font-semibold text-[#FF4B8B] mb-2">
+              <div className="inline-flex items-center gap-2 text-sm font-semibold text-primary-pink mb-2">
                 Common Benign Causes
               </div>
 
@@ -68,7 +68,7 @@ const PostmenopausalBleedingGuideCard3 = ({ setShowCard, setActiveButton }) => {
               setShowCard(4);
               setActiveButton(3);
             }}
-            className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white 
+            className="bg-primary-pink hover:bg-primary-pink/80 text-white 
                        w-[90%] md:w-[60%] lg:w-[40%] 
                        rounded-md h-10 text-sm font-medium shadow transition-all"
           >

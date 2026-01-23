@@ -22,7 +22,7 @@ const EndometrialGuideCard5 = ({ setShowCard, setActiveButton }) => {
 
         {/* Card Box */}
         <div
-          className="bg-white text-gray-900 flex flex-col gap-6 rounded-2xl shadow-sm mb-6 
+          className="bg-white text-black flex flex-col gap-6 rounded-2xl shadow-sm mb-6 
                            transition-all duration-300 hover:shadow-md hover:scale-[1.01] active:scale-[0.99]"
 
           data-aos="fade-up"
@@ -32,7 +32,7 @@ const EndometrialGuideCard5 = ({ setShowCard, setActiveButton }) => {
             <div className="font-semibold text-xl" style={{ color: deepPink }}>
               Diagnostic Process
             </div>
-            <div className="text-sm text-gray-600">
+            <div className="text-sm text-black">
               Because symptoms may be similar to other conditions, a thorough evaluation is essential.
             </div>
           </div>
@@ -59,7 +59,7 @@ const EndometrialGuideCard5 = ({ setShowCard, setActiveButton }) => {
                       >
                         {i + 1}
                       </span>
-                      <p className="text-sm text-gray-700">{item}</p>
+                      <p className="text-sm text-black">{item}</p>
                     </div>
                   ))}
                 </div>
@@ -78,7 +78,7 @@ const EndometrialGuideCard5 = ({ setShowCard, setActiveButton }) => {
                       >
                         {i + 4}
                       </span>
-                      <p className="text-sm text-gray-700">{item}</p>
+                      <p className="text-sm text-black">{item}</p>
                     </div>
                   ))}
                 </div>
@@ -95,10 +95,10 @@ const EndometrialGuideCard5 = ({ setShowCard, setActiveButton }) => {
             <h4 className="font-semibold mb-2" style={{ color: deepPink }}>
               If cancer is confirmed:
             </h4>
-            <p className="text-sm text-gray-600 mb-2">
+            <p className="text-sm text-black mb-2">
               Your doctor will assign a cancer stage, which describes:
             </p>
-            <ul className="text-sm space-y-1 list-disc ml-6 text-gray-700">
+            <ul className="text-sm space-y-1 list-disc ml-6 text-black">
               <li>How far the cancer has spread (metastasis)</li>
               <li>Tumor size and aggressiveness</li>
               <li>Grading system (letters and numbers) to classify severity</li>
@@ -122,7 +122,7 @@ const EndometrialGuideCard5 = ({ setShowCard, setActiveButton }) => {
                 setShowCard(6);
                 setActiveButton(5);
               }}
-              className="inline-flex items-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 justify-center gap-2 rounded-md text-sm font-medium transition-all h-9 px-4 py-2 w-full"
+              className="inline-flex items-center bg-primary-pink hover:bg-primary-pink/80 justify-center gap-2 rounded-md text-sm font-medium transition-all h-9 px-4 py-2 w-full"
             >
               Continue to Treatment Options
             </button>

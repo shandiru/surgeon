@@ -26,10 +26,10 @@ const Endometriosiscard5 = ({ setShowCard, setActiveButton }) => {
 
         {/* Header */}
         <div className="text-center mb-10">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#FF4B8B] mb-3">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary-pink mb-3">
             How It&apos;s Diagnosed
           </h2>
-          <p className="text-base sm:text-lg text-gray-700">
+          <p className="text-base sm:text-lg text-black">
             Understanding the diagnostic process
           </p>
         </div>
@@ -50,7 +50,7 @@ const Endometriosiscard5 = ({ setShowCard, setActiveButton }) => {
 
                 {/* Number */}
                 <div className="min-w-[48px] min-h-[48px] sm:min-w-[56px] sm:min-h-[56px] 
-                                bg-[#FF4B8B] text-white 
+                                bg-primary-pink text-white 
                                 rounded-full flex items-center justify-center 
                                 font-bold text-lg sm:text-xl shadow-md">
                   {index + 1}
@@ -58,11 +58,11 @@ const Endometriosiscard5 = ({ setShowCard, setActiveButton }) => {
 
                 {/* Content */}
                 <div>
-                  <h3 className="font-semibold text-lg sm:text-xl md:text-2xl text-[#FF4B8B] mb-2">
+                  <h3 className="font-semibold text-lg sm:text-xl md:text-2xl text-primary-pink mb-2">
                     {step.title}
                   </h3>
 
-                  <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
+                  <p className="text-black text-sm sm:text-base leading-relaxed">
                     {step.description}
                   </p>
                 </div>
@@ -78,7 +78,7 @@ const Endometriosiscard5 = ({ setShowCard, setActiveButton }) => {
               setShowCard(6);
               setActiveButton(5);
             }}
-            className="w-full bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 
+            className="w-full bg-primary-pink hover:bg-primary-pink/80 
                        text-white rounded-md 
                        h-10 sm:h-12 
                        text-sm sm:text-base font-medium 

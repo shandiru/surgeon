@@ -38,10 +38,10 @@ export default function FAQSection() {
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
             {/* Left Column - Heading and Introduction */}
             <div className="space-y-6">
-              <h2 className="text-hero md:text-5xl font-bold text-gray-900 leading-tight">
+              <h2 className="text-hero md:text-5xl font-bold text-black leading-tight">
                 Frequently asked questions
               </h2>
-              <p className="text-body-large text-gray-700 leading-relaxed">
+              <p className="text-body-large text-black leading-relaxed">
                 Our experienced team is committed to ensuring that you feel comfortable and confident in our care. Whether you need routine consultations, robotic surgery procedures, or follow-up care, we're here to answer all your questions and provide the support you need throughout your healthcare journey.
               </p>
             </div>
@@ -51,26 +51,26 @@ export default function FAQSection() {
               {faqs.map((faq, index) => (
                 <div
                   key={index}
-                  className="bg-gray-50 rounded-lg p-5 md:p-6 transition-all duration-300"
+                  className="bg-white rounded-lg p-5 md:p-6 transition-all duration-300"
                 >
                   <button
                     onClick={() => toggleFAQ(index)}
                     className="w-full flex items-center justify-between text-left"
                   >
-                    <h3 className="text-body-large text-gray-900 font-bold pr-4 flex-1">
+                    <h3 className="text-body-large text-black font-bold pr-4 flex-1">
                       {faq.question}
                     </h3>
                     <div className="flex-shrink-0">
                       {openIndex === index ? (
-                        <X className="w-5 h-5 text-gray-700" />
+                        <X className="w-5 h-5 text-black" />
                       ) : (
-                        <Plus className="w-5 h-5 text-gray-700" />
+                        <Plus className="w-5 h-5 text-black" />
                       )}
                     </div>
                   </button>
                   {openIndex === index && (
                     <div className="mt-4 pt-4 border-t border-gray-200">
-                      <p className="text-body text-gray-700 leading-relaxed">
+                      <p className="text-body text-black leading-relaxed">
                         {faq.answer}
                       </p>
                     </div>
