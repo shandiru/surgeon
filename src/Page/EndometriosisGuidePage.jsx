@@ -45,9 +45,9 @@ const EndometriosisGuide = () => {
       {showCard === 7 && (
         <EndometriosisGuideCard7 setShowCard={setShowCard} setActiveButton={setActiveButton} />
       )}
-      {showCard === 8 && (
+      {/* {showCard === 8 && (
         <EndometriosisGuideCard8 setShowCard={setShowCard} setActiveButton={setActiveButton} />
-      )}
+      )} */}
     </div>
   );
 };
