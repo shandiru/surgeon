@@ -29,23 +29,23 @@ const Navbar = () => {
 
           {/* Desktop navigation */}
           <div className="hidden lg:flex ml-10 space-x-1 items-center relative">
-            <HashLink smooth to="/#about" className="text-gray-600 hover:text-gray-900 px-3 py-2 text-nav">
+            <HashLink smooth to="/#about" className="text-gray-600 hover:text-gray-900 px-1 py-2 text-nav">
               About
             </HashLink>
-            <HashLink smooth to="/#experience" className="text-gray-600 hover:text-gray-900 px-3 py-2 text-nav">
+            <HashLink smooth to="/#experience" className="text-gray-600 hover:text-gray-900 px-1 py-2 text-nav">
               Experience
             </HashLink>
-            <HashLink smooth to="/#specialties" className="text-gray-600 hover:text-gray-900 px-3 py-2 text-nav">
+            <HashLink smooth to="/#specialties" className="text-gray-600 hover:text-gray-900 px-1 py-2 text-nav">
               Specialties
             </HashLink>
-            <HashLink smooth to="/#education" className="text-gray-600 hover:text-gray-900 px-3 py-2 text-nav">
+            <HashLink smooth to="/#education" className="text-gray-600 hover:text-gray-900 px-1 py-2 text-nav">
               Education
             </HashLink>
-            <HashLink smooth to="/PublicationsPage" className="text-gray-600 hover:text-gray-900 px-3 py-2 text-nav">
+            <HashLink smooth to="/PublicationsPage" className="text-gray-600 hover:text-gray-900 px-1 py-2 text-nav">
               Publications
             </HashLink>
 
-            <HashLink smooth to="/event-list" className="text-gray-600 hover:text-gray-900 px-3 py-2 text-nav">
+            <HashLink smooth to="/event-list" className="text-gray-600 hover:text-gray-900 px-1 py-2 text-nav">
               Event
             </HashLink>
 
@@ -53,12 +53,12 @@ const Navbar = () => {
             <div className="relative">
               <button
                 onClick={() => setIsServicesOpen(!isServicesOpen)}
-                className="flex items-center text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium"
+                className="flex items-center text-gray-600 hover:text-gray-900 px-1 py-2 text-sm font-medium"
               >
                 Treatments {isServicesOpen ? <FiChevronUp className="ml-1" /> : <FiChevronDown className="ml-1" />}
               </button>
               {isServicesOpen && (
-                <div className="absolute left-0 bg-white shadow-lg rounded-md mt-2 w-56 z-50">
+                <div className="absolute left-0 bg-white shadow-lg rounded-md mt-2 w-64 z-50">
                   <Link to="/Cancer/Vulvar" className="block px-3 py-2 text-body-small text-gray-600 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Vulvar Cancer</Link>
                   <Link to="/Cancer/VaginalCancer" className="block px-3 py-2 text-body-small text-gray-600 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Vaginal Cancer</Link>
                   <Link to="/Cancer/OvarianCancer" className="block px-3 py-2 text-body-small text-gray-600 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Ovarian Cancer</Link>
@@ -85,12 +85,12 @@ const Navbar = () => {
             <div className="relative">
               <button
                 onClick={() => setIsAdditionalServicesOpen(!isAdditionalServicesOpen)}
-                className="flex items-center text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium"
+                className="flex items-center text-gray-600 hover:text-gray-900 px-1 py-2 text-sm font-medium"
               >
                 Treatment guide {isAdditionalServicesOpen ? <FiChevronUp className="ml-1" /> : <FiChevronDown className="ml-1" />}
               </button>
               {isAdditionalServicesOpen && (
-                <div className="absolute left-0 bg-white shadow-lg rounded-md mt-2 w-56 z-50">
+                <div className="absolute left-0 bg-white shadow-lg rounded-md mt-2 w-64 z-50">
                   <Link to="/colposcopy" className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Colposcopy</Link>
                   <Link to="/ultrasound" className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Ultrasound</Link>
                   <Link to="/Hysteroscopy" className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]" onClick={closeDropdowns}>Hysteroscopy</Link>
@@ -116,7 +116,7 @@ const Navbar = () => {
               )}
             </div>
 
-            <HashLink smooth to="/#contact" className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">
+            <HashLink smooth to="/#contact" className="text-gray-600 hover:text-gray-900 px-1 py-2 text-sm font-medium">
               Contact
             </HashLink>
           </div>
@@ -161,10 +161,10 @@ const Navbar = () => {
             <HashLink smooth to="/#experience" className="block px-3 py-2 text-body-small text-gray-600 hover:text-gray-900">Experience</HashLink>
             <HashLink smooth to="/#specialties" className="block px-3 py-2 text-body-small text-gray-600 hover:text-gray-900">Specialties</HashLink>
             <HashLink smooth to="/#education" className="block px-3 py-2 text-body-small text-gray-600 hover:text-gray-900">Education</HashLink>
-            <HashLink smooth to="/PublicationsPage" className="text-gray-600 hover:text-gray-900 px-3 py-2 text-nav">
+            <HashLink smooth to="/PublicationsPage" className="text-gray-600 hover:text-gray-900 px-1 py-2 text-nav">
               Publications
             </HashLink>
-            <HashLink smooth to="/event-list" className="text-gray-600 hover:text-gray-900 px-3 py-2 text-nav">
+            <HashLink smooth to="/event-list" className="text-gray-600 hover:text-gray-900 px-1 py-2 text-nav">
               Event
             </HashLink>
 
@@ -173,7 +173,7 @@ const Navbar = () => {
             <div className="relative">
               <button
                 onClick={() => setIsServicesOpen(!isServicesOpen)}
-                className="flex items-center text-gray-600 hover:text-gray-900 px-3 py-2 text-nav"
+                className="flex items-center text-gray-600 hover:text-gray-900 px-1 py-2 text-nav"
               >
                 Treatments {isServicesOpen ? <FiChevronUp className="ml-1" /> : <FiChevronDown className="ml-1" />}
               </button>
@@ -205,7 +205,7 @@ const Navbar = () => {
             <div className="relative">
               <button
                 onClick={() => setIsAdditionalServicesOpen(!isAdditionalServicesOpen)}
-                className="flex items-center text-gray-600 hover:text-gray-900 px-3 py-2 text-nav"
+                className="flex items-center text-gray-600 hover:text-gray-900 px-1 py-2 text-nav"
               >
                 Treatment guide {isAdditionalServicesOpen ? <FiChevronUp className="ml-1" /> : <FiChevronDown className="ml-1" />}
               </button>
@@ -234,7 +234,7 @@ const Navbar = () => {
               )}
             </div>
 
-            <HashLink smooth to="/#contact" className="text-gray-600 hover:text-gray-900 px-3 py-2 text-nav">
+            <HashLink smooth to="/#contact" className="text-gray-600 hover:text-gray-900 px-1 py-2 text-nav">
               Contact
             </HashLink>
 
