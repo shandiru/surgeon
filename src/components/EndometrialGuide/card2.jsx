@@ -7,8 +7,7 @@ const EndometrialCard2 = ({ setShowCard, setActiveButton }) => {
       
       {/* Card Container */}
       <div
-        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-2xl border p-8 shadow-sm animate-in slide-in-from-right-5 duration-300"
-        className="border border-[#FF4B8B]/10 bg-white"
+        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-2xl border border-[#FF4B8B]/10 bg-white p-8 shadow-sm animate-in slide-in-from-right-5 duration-300"
       >
 
         {/* Card Header */}
