@@ -1,16 +1,15 @@
-import React from 'react';
-import { Link } from 'react-router-dom'; // If using react-router for navigation
+import React from "react";
+import { Link } from "react-router-dom"; // If using react-router for navigation
 
 const GuideButtons = () => {
   return (
     <div className="flex justify-center mb-6">
       {/* Wrapper div with responsive layout */}
       <div className="flex flex-wrap gap-2 p-1 justify-center rounded-lg mt-10 w-full max-w-4xl">
-        
         {/* Colposcopy Guide Button */}
         <button
           data-slot="button"
-          className="inline-flex text-primary-pink bg-light-pink-2 items-center justify-center whitespace-nowrap text-button transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-8 rounded-md gap-1.5 px-3 w-full sm:w-auto"
+          className="inline-flex text-primary-pink hover:bg-light-pink-2 bg-light-pink-1 items-center justify-center whitespace-nowrap text-button transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-8 rounded-md gap-1.5 px-3 w-full sm:w-auto"
         >
           Colposcopy Guide
         </button>

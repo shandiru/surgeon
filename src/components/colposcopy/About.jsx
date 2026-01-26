@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const ColposcopyGuide = ({ activeButton }) => {
   const totalSteps = 7;
@@ -8,7 +8,7 @@ const ColposcopyGuide = ({ activeButton }) => {
   return (
     <div className="text-center mb-8 px-4 sm:px-6 md:px-8 lg:px-16">
       {/* Tag and Title */}
-      <div className="inline-flex bg-light-pink-1 text-primary-pink items-center gap-2 px-4 py-2 rounded-full mb-4">
+      <div className="inline-flex bg-light-pink-2 text-primary-pink items-center gap-2 px-4 py-2 rounded-full mb-4">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -27,9 +27,7 @@ const ColposcopyGuide = ({ activeButton }) => {
       </div>
 
       {/* Main Title */}
-      <h1 className="text-hero text-balance mb-4 text-primary-pink">
-        Understanding Colposcopy
-      </h1>
+      <h1 className="text-hero text-balance mb-4 text-primary-pink">Understanding Colposcopy</h1>
       <p className="text-body-large text-muted-foreground text-balance text-black">
         What it is, why it's done, and what to expect
       </p>

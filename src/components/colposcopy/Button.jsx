@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Stethoscope,
   AlertCircle,
@@ -7,17 +7,17 @@ import {
   CheckCircle,
   Heart,
   Users,
-} from 'lucide-react';
+} from "lucide-react";
 
 const ColposcopyGuideButtons = ({ setShowCard, activeButton, setActiveButton }) => {
   const buttons = [
-    { label: 'What is Colposcopy?', icon: <Stethoscope className="w-4 h-4" />, card: 1 },
-    { label: 'Why You Might Need One', icon: <AlertCircle className="w-4 h-4" />, card: 2 },
+    { label: "What is Colposcopy?", icon: <Stethoscope className="w-4 h-4" />, card: 1 },
+    { label: "Why You Might Need One", icon: <AlertCircle className="w-4 h-4" />, card: 2 },
     { label: "How It's Done", icon: <FileText className="w-4 h-4" />, card: 3 },
-    { label: 'About Biopsies', icon: <Shield className="w-4 h-4" />, card: 4 },
-    { label: 'Understanding Results', icon: <CheckCircle className="w-4 h-4" />, card: 5 },
-    { label: 'After Your Procedure', icon: <Heart className="w-4 h-4" />, card: 6 },
-    { label: 'Emotional Support', icon: <Users className="w-4 h-4" />, card: 7 },
+    { label: "About Biopsies", icon: <Shield className="w-4 h-4" />, card: 4 },
+    { label: "Understanding Results", icon: <CheckCircle className="w-4 h-4" />, card: 5 },
+    { label: "After Your Procedure", icon: <Heart className="w-4 h-4" />, card: 6 },
+    { label: "Emotional Support", icon: <Users className="w-4 h-4" />, card: 7 },
   ];
 
   const handleButtonClick = (card, index) => {
@@ -34,10 +34,10 @@ const ColposcopyGuideButtons = ({ setShowCard, activeButton, setActiveButton }) 
           className={`flex flex-col items-center justify-center text-center
             w-full py-2 px-3
             font-semibold rounded-md
-            text-primary-pink bg-light-pink-1 hover:bg-light-pink-2
+            text-black bg-light-pink-1 hover:bg-light-pink-2
             text-button
-            transition-all
-            ${activeButton === index ? 'bg-light-pink-2 text-black' : ''}`}
+            transition-all cursor-pointer
+            ${activeButton === index ? "bg-light-pink-2 text-black" : ""}`}
         >
           {button.icon}
           <span className="leading-tight">{button.label}</span>

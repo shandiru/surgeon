@@ -1,16 +1,12 @@
-'use client';
-import { Lightbulb } from 'lucide-react';
-import React from 'react';
+"use client";
+import { Lightbulb } from "lucide-react";
+import React from "react";
 
 const CervicalCancerGuideCard1 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6 pb-10">
-      
       {/* Card Container */}
-      <div
-        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-2xl border border-primary-pink/10 shadow-sm animate-in slide-in-from-right-5 duration-300 p-8 bg-white"
-      >
-
+      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-2xl border border-primary-pink/10 shadow-sm animate-in slide-in-from-right-5 duration-300 p-8 bg-white">
         {/* Card Header */}
         <div className="grid auto-rows-min items-start gap-1.5">
           <div className="leading-none font-semibold flex items-center gap-2 text-primary-pink">
@@ -36,7 +32,6 @@ const CervicalCancerGuideCard1 = ({ setShowCard, setActiveButton }) => {
 
         {/* Card Content */}
         <div className="space-y-6">
-
           {/* Overview Box */}
           <div className="p-4 rounded-xl border border-primary-pink/10 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-100 bg-primary-pink/10">
             <p className="text-lg leading-relaxed text-black">
@@ -53,7 +48,6 @@ const CervicalCancerGuideCard1 = ({ setShowCard, setActiveButton }) => {
 
           {/* Quick Facts + Reminder */}
           <div className="grid md:grid-cols-2 gap-6">
-
             {/* Quick Facts */}
             <div className="space-y-3">
               <h4 className="font-semibold flex items-center gap-2 text-primary-pink">
@@ -76,10 +70,10 @@ const CervicalCancerGuideCard1 = ({ setShowCard, setActiveButton }) => {
 
               <ul className="space-y-2">
                 {[
-                  'Starts in the cervix — the lower part of the uterus',
-                  'Most cases are linked to high-risk HPV infection',
-                  'Screening can detect changes before cancer develops',
-                  'HPV vaccination greatly reduces risk',
+                  "Starts in the cervix — the lower part of the uterus",
+                  "Most cases are linked to high-risk HPV infection",
+                  "Screening can detect changes before cancer develops",
+                  "HPV vaccination greatly reduces risk",
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-2">
                     <svg
@@ -110,9 +104,9 @@ const CervicalCancerGuideCard1 = ({ setShowCard, setActiveButton }) => {
                 Remember
               </h4>
               <p className="text-sm text-black">
-                Regular cervical screening and HPV vaccination are the most effective ways to prevent
-                cervical cancer. Paying attention to early symptoms and attending routine screenings
-                can save lives.
+                Regular cervical screening and HPV vaccination are the most effective ways to
+                prevent cervical cancer. Paying attention to early symptoms and attending routine
+                screenings can save lives.
               </p>
             </div>
           </div>
@@ -124,12 +118,11 @@ const CervicalCancerGuideCard1 = ({ setShowCard, setActiveButton }) => {
                 setShowCard(2);
                 setActiveButton(1);
               }}
-              className="inline-flex items-center justify-center bg-primary-pink hover:bg-primary-pink/80 rounded-md text-sm font-medium transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
+              className="inline-flex items-center bg-primary-pink hover:bg-primary-pink/80 text-white justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-9 px-4 py-2 w-full cursor-pointer"
             >
               Continue to Next Section
             </button>
           </div>
-
         </div>
       </div>
     </div>

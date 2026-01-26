@@ -236,126 +236,112 @@ const Navbar = () => {
                     className="block px-4 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
-                    VulvarGuidePage
+                    Vulvar Guide
                   </Link>
                   <Link
                     to="/VaginalGuidePage"
                     className="block px-4 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
-                    VaginalGuidePage
+                    Vaginal Guide
                   </Link>
                   <Link
                     to="/OvarianCancerGuide"
                     className="block px-4 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
-                    OvarianCancerGuidePage
+                    Ovarian Cancer Guide
                   </Link>
                   <Link
                     to="/EndometrialCancerGuide"
                     className="block px-4 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
-                    EndometrialGuidePage
+                    Endometrial Cancer Guide
                   </Link>
                   <Link
                     to="/CervicalCancerGuide"
                     className="block px-4 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
-                    CervicalCancerGuide
+                    Cervical Cancer Guide
                   </Link>
                   <Link
                     to="/RoboticSurgeryGuide"
                     className="block px-4 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
-                    RoboticSurgeryGuide
+                    Robotic Surgery Guide
                   </Link>
                   <Link
                     to="/EndometriosisGuide"
-                    className="block px-3 py-2 text-body-small text-black hover:bg-light-pink-2"
+                    className="block px-4 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
-                    EndometriosisGuide
+                    Endometriosis Guide
                   </Link>
                   <Link
                     to="/CervicalScreeningGuide"
                     className="block px-4 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
-                    CervicalScreeningGuide
+                    Cervical Screening Guide
                   </Link>
                   <Link
                     to="/FibroidGuide"
                     className="block px-4 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
-                    FibroidGuide
-                  </Link>
-                  <Link
-                    to="/CervicalScreeningGuide"
-                    className="block px-4 py-2 text-body-small text-black hover:bg-light-pink-2"
-                    onClick={closeDropdowns}
-                  >
-                    CervicalScreeningGuide
-                  </Link>
-                  <Link
-                    to="/CervicalScreeningGuide"
-                    className="block px-4 py-2 text-body-small text-black hover:bg-light-pink-2"
-                    onClick={closeDropdowns}
-                  >
-                    CervicalScreeningGuide
+                    Fibroid Guide
                   </Link>
                   <Link
                     to="/IrregularBleedingGuide"
                     className="block px-4 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
-                    IrregularBleedingGuide
+                    Irregular Bleeding Guide
                   </Link>
                   <Link
                     to="/OvarianCystsGuide"
                     className="block px-4 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
-                    OvarianCystsGuide
+                    Ovarian Cysts Guide
                   </Link>
                   <Link
                     to="/PostmenopausalBleedingGuide"
                     className="block px-4 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
-                    PostmenopausalBleedingGuide
+                    Postmenopausal Bleeding Guide
                   </Link>
                   <Link
                     to="/MenstrualDisordersGuide"
                     className="block px-4 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
-                    MenstrualDisordersGuide
+                    Menstrual Disorders Guide
                   </Link>
                   <Link
                     to="/PostcoitalBleedingGuide"
                     className="block px-4 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
-                    PostcoitalBleedingGuide
+                    Postcoital Bleeding Guide
                   </Link>
                   <Link
                     to="/VaginalLumpsGuide"
                     className="block px-4 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
-                    VaginalLumpsGuide
+                    Vaginal Lumps Guide
                   </Link>
                   <Link
                     to="/PelvicPainGuide"
                     className="block px-4 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
-                    PelvicPainGuide
+                    Pelvic Pain Guide
                   </Link>
                 </div>
               )}
@@ -624,112 +610,112 @@ const Navbar = () => {
                     className="block px-4 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
-                    VulvarGuidePage
+                    Vulvar Guide
                   </Link>
                   <Link
                     to="/VaginalGuidePage"
                     className="block px-4 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
-                    VaginalGuidePage
+                    Vaginal Guide
                   </Link>
                   <Link
                     to="/OvarianCancerGuide"
                     className="block px-4 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
-                    OvarianCancerGuidePage
+                    Ovarian Cancer Guide
                   </Link>
                   <Link
                     to="/EndometrialCancerGuide"
                     className="block px-4 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
-                    EndometrialGuidePage
+                    Endometrial Cancer Guide
                   </Link>
                   <Link
                     to="/CervicalCancerGuide"
                     className="block px-4 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
-                    CervicalCancerGuide
+                    Cervical Cancer Guide
                   </Link>
                   <Link
                     to="/RoboticSurgeryGuide"
                     className="block px-4 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
-                    RoboticSurgeryGuide
+                    Robotic Surgery Guide
                   </Link>
                   <Link
                     to="/EndometriosisGuide"
                     className="block px-4 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
-                    EndometriosisGuide
-                  </Link>
-                  <Link
-                    to="/FibroidGuide"
-                    className="block px-4 py-2 text-body-small text-black hover:bg-light-pink-2"
-                    onClick={closeDropdowns}
-                  >
-                    FibroidGuide
+                    Endometriosis Guide
                   </Link>
                   <Link
                     to="/CervicalScreeningGuide"
                     className="block px-4 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
-                    CervicalScreeningGuide
+                    Cervical Screening Guide
+                  </Link>
+                  <Link
+                    to="/FibroidGuide"
+                    className="block px-4 py-2 text-body-small text-black hover:bg-light-pink-2"
+                    onClick={closeDropdowns}
+                  >
+                    Fibroid Guide
                   </Link>
                   <Link
                     to="/IrregularBleedingGuide"
                     className="block px-4 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
-                    IrregularBleedingGuide
+                    Irregular Bleeding Guide
                   </Link>
                   <Link
                     to="/OvarianCystsGuide"
                     className="block px-4 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
-                    OvarianCystsGuide
+                    Ovarian Cysts Guide
                   </Link>
                   <Link
                     to="/PostmenopausalBleedingGuide"
                     className="block px-4 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
-                    PostmenopausalBleedingGuide
+                    Postmenopausal Bleeding Guide
                   </Link>
                   <Link
                     to="/MenstrualDisordersGuide"
                     className="block px-4 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
-                    MenstrualDisordersGuide
+                    Menstrual Disorders Guide
                   </Link>
                   <Link
                     to="/PostcoitalBleedingGuide"
                     className="block px-4 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
-                    PostcoitalBleedingGuide
+                    Postcoital Bleeding Guide
                   </Link>
                   <Link
                     to="/VaginalLumpsGuide"
                     className="block px-4 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
-                    VaginalLumpsGuide
+                    Vaginal Lumps Guide
                   </Link>
                   <Link
                     to="/PelvicPainGuide"
                     className="block px-4 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
-                    PelvicPainGuide
+                    Pelvic Pain Guide
                   </Link>
                 </div>
               )}

@@ -124,9 +124,7 @@ const OvarianCancerGuideCard1 = ({ setShowCard, setActiveButton }) => {
                 setShowCard(2);
                 setActiveButton(1);
               }}
-              className="inline-flex items-center justify-center bg-[#FF4B8B] 
-              hover:bg-[#FF4B8B]/80 text-white rounded-md text-sm font-medium 
-              transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%]"
+              className="inline-flex items-center bg-primary-pink hover:bg-primary-pink/80 text-white justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-9 px-4 py-2 w-full cursor-pointer"
             >
               Continue to Next Section
             </button>

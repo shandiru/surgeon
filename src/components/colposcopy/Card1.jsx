@@ -1,5 +1,5 @@
-import { Lightbulb } from 'lucide-react';
-import React from 'react';
+import { Lightbulb } from "lucide-react";
+import React from "react";
 
 const ColposcopyCard1 = ({ setShowCard, setActiveButton }) => {
   return (
@@ -8,7 +8,7 @@ const ColposcopyCard1 = ({ setShowCard, setActiveButton }) => {
       <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl text-black mx-auto mb-10 flex flex-col gap-6 rounded-xl border border-light-pink-2 py-6 shadow-md animate-in slide-in-from-right-5 duration-300 px-4 sm:px-6 md:px-8">
         {/* Card Header */}
         <div className="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6">
-          <div className="leading-none font-semibold flex items-center gap-2">
+          <div className="leading-none font-semibold flex items-center gap-2 text-primary-pink">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -34,16 +34,17 @@ const ColposcopyCard1 = ({ setShowCard, setActiveButton }) => {
         {/* Card Content */}
         <div className="px-6 space-y-4">
           {/* Quick Facts */}
-          <div className="bg-light-pink-1 p-4 rounded-lg border hover:z-50 transition-all duration-300 hover:bg-light-pink-2 hover:shadow-lg hover:border-primary-pink active:bg-light-pink-2 active:shadow-lg active:border-primary-pink hover:scale-105 active:scale-100">
+          <div className="bg-light-pink-1 p-4 rounded-lg border-primary-pink border hover:z-50 transition-all duration-300 hover:bg-light-pink-2 hover:shadow-lg hover:border-primary-pink active:bg-light-pink-2 active:shadow-lg active:border-primary-pink hover:scale-105 active:scale-100">
             <p className="text-lg leading-relaxed">
-              A colposcopy is a <strong>simple procedure</strong> to look for abnormal cells on the cervix or vagina.
+              A colposcopy is a <strong>simple procedure</strong> to look for abnormal cells on the
+              cervix or vagina.
             </p>
           </div>
 
           {/* Quick Facts List */}
           <div className="grid md:grid-cols-2 gap-4">
             <div className="space-y-3">
-              <h4 className="font-semibold flex items-center gap-2">
+              <h4 className="font-semibold flex items-center gap-2 text-primary-pink">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -54,7 +55,7 @@ const ColposcopyCard1 = ({ setShowCard, setActiveButton }) => {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="lucide lucide-clock w-4 h-4 text-accent"
+                  className="lucide lucide-clock w-4 h-4 text-accent text-primary-pink"
                 >
                   <circle cx="12" cy="12" r="10"></circle>
                   <polyline points="12 6 12 12 16 14"></polyline>
@@ -63,10 +64,10 @@ const ColposcopyCard1 = ({ setShowCard, setActiveButton }) => {
               </h4>
               <ul className="space-y-2">
                 {[
-                  'Takes only 5–10 minutes',
-                  'Feels similar to a smear test',
-                  'Uses a special magnifying instrument',
-                  'Helps detect early cell changes',
+                  "Takes only 5–10 minutes",
+                  "Feels similar to a smear test",
+                  "Uses a special magnifying instrument",
+                  "Helps detect early cell changes",
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-2">
                     <svg
@@ -79,7 +80,7 @@ const ColposcopyCard1 = ({ setShowCard, setActiveButton }) => {
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      className="lucide lucide-circle-check-big w-4 h-4 text-primary mt-0.5 flex-shrink-0"
+                      className="lucide lucide-circle-check-big w-4 h-4 text-primary mt-0.5 flex-shrink-0 text-primary-pink"
                     >
                       <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
                       <path d="m9 11 3 3L22 4"></path>
@@ -92,13 +93,13 @@ const ColposcopyCard1 = ({ setShowCard, setActiveButton }) => {
 
             {/* Reminder Section */}
             <div className="bg-accent/10 p-4 rounded-lg">
-              <h4 className="font-semibold text-accent-foreground mb-2 flex items-center gap-2">
-                <Lightbulb className="text-xl text-primary-pink" />
+              <h4 className="font-semibold text-accent-foreground mb-2 flex items-center gap-2 text-primary-pink">
+                <Lightbulb className="text-xl " />
                 Remember
               </h4>
               <p className="text-sm">
-                A colposcopy helps detect early cell changes <strong>before</strong> they develop into cancer. It's a
-                preventive measure that can protect your health.
+                A colposcopy helps detect early cell changes <strong>before</strong> they develop
+                into cancer. It's a preventive measure that can protect your health.
               </p>
             </div>
           </div>
@@ -110,7 +111,7 @@ const ColposcopyCard1 = ({ setShowCard, setActiveButton }) => {
                 setShowCard(2);
                 setActiveButton(1);
               }}
-              className="inline-flex items-center bg-primary-pink hover:bg-primary-pink/80 text-white justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-9 px-4 py-2 w-full"
+              className="inline-flex items-center bg-primary-pink hover:bg-primary-pink/80 text-white justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-9 px-4 py-2 w-full cursor-pointer"
             >
               Continue to Next Section
             </button>

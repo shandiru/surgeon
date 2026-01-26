@@ -1,17 +1,15 @@
-'use client';
-import React from 'react';
-import { Biohazard, Cigarette, CloudFog, Sparkles, ShieldOff } from 'lucide-react';
+"use client";
+import React from "react";
+import { Biohazard, Cigarette, CloudFog, Sparkles, ShieldOff } from "lucide-react";
 
 const CervicalCancerGuidecard3 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6 pb-10">
-      
       {/* Card Container */}
       <div
         className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-2xl border p-8 shadow-sm animate-in slide-in-from-right-5 duration-300"
         className="bg-white border-light-pink-2"
       >
-        
         {/* Card Header */}
         <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5">
           <div
@@ -46,63 +44,58 @@ const CervicalCancerGuidecard3 = ({ setShowCard, setActiveButton }) => {
 
         {/* Card Content */}
         <div className="space-y-4 mt-4">
-
           {/* Risk Factors List */}
           <div className="space-y-4">
             {[
               {
-                step: 'Persistent High-Risk HPV Infection',
+                step: "Persistent High-Risk HPV Infection",
                 icon: <Biohazard className="w-5 h-5 text-primary-pink" />,
                 description:
-                  'The strongest risk factor. Nearly all cervical cancers are linked to high-risk HPV types.',
+                  "The strongest risk factor. Nearly all cervical cancers are linked to high-risk HPV types.",
               },
               {
-                step: 'Smoking',
+                step: "Smoking",
                 icon: <Cigarette className="w-5 h-5 text-primary-pink" />,
                 description:
-                  'Smoking reduces the body’s ability to clear HPV infections, increasing cancer risk.',
+                  "Smoking reduces the body’s ability to clear HPV infections, increasing cancer risk.",
               },
               {
-                step: 'Weakened Immune System',
+                step: "Weakened Immune System",
                 icon: <ShieldOff className="w-5 h-5 text-primary-pink" />,
                 description:
-                  'Conditions like HIV or long-term steroid use weaken immunity and raise risk.',
+                  "Conditions like HIV or long-term steroid use weaken immunity and raise risk.",
               },
               {
-                step: 'Sexual Activity at a Young Age',
+                step: "Sexual Activity at a Young Age",
                 icon: <Sparkles className="w-5 h-5 text-primary-pink" />,
-                description:
-                  'Early sexual activity increases the chance of HPV exposure.',
+                description: "Early sexual activity increases the chance of HPV exposure.",
               },
               {
-                step: 'Multiple Sexual Partners',
+                step: "Multiple Sexual Partners",
                 icon: <CloudFog className="w-5 h-5 text-primary-pink" />,
-                description:
-                  'More partners increase the likelihood of high-risk HPV infection.',
+                description: "More partners increase the likelihood of high-risk HPV infection.",
               },
               {
-                step: 'Long-Term Oral Contraceptive Use',
+                step: "Long-Term Oral Contraceptive Use",
                 icon: <Sparkles className="w-5 h-5 text-primary-pink" />,
                 description:
-                  'Using the contraceptive pill for more than 5 years slightly increases risk.',
+                  "Using the contraceptive pill for more than 5 years slightly increases risk.",
               },
               {
-                step: 'Lack of Cervical Screening',
+                step: "Lack of Cervical Screening",
                 icon: <Biohazard className="w-5 h-5 text-primary-pink" />,
                 description:
-                  'Skipping Pap smears or HPV tests means abnormalities can go undetected.',
+                  "Skipping Pap smears or HPV tests means abnormalities can go undetected.",
               },
               {
-                step: 'Other STIs (e.g., Chlamydia)',
+                step: "Other STIs (e.g., Chlamydia)",
                 icon: <CloudFog className="w-5 h-5 text-primary-pink" />,
-                description:
-                  'Certain infections make HPV more persistent, raising risk.',
+                description: "Certain infections make HPV more persistent, raising risk.",
               },
               {
-                step: 'Family History of Cervical Cancer',
+                step: "Family History of Cervical Cancer",
                 icon: <Sparkles className="w-5 h-5 text-primary-pink" />,
-                description:
-                  'Risk is slightly higher if a close relative has had cervical cancer.',
+                description: "Risk is slightly higher if a close relative has had cervical cancer.",
               },
             ].map((item, index) => (
               <div
@@ -161,12 +154,11 @@ const CervicalCancerGuidecard3 = ({ setShowCard, setActiveButton }) => {
                 setShowCard(4);
                 setActiveButton(3);
               }}
-              className="inline-flex items-center bg-primary-pink hover:bg-primary-pink/80 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
+              className="inline-flex items-center bg-primary-pink hover:bg-primary-pink/80 text-white justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-9 px-4 py-2 w-full cursor-pointer"
             >
               Continue to Next Section
             </button>
           </div>
-
         </div>
       </div>
     </div>

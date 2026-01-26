@@ -1,18 +1,16 @@
-'use client';
+"use client";
 import React from "react";
 
 const CervicalScreeningGuideCard3 = ({ setShowCard, setActiveButton }) => {
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-6 md:px-12">
-
         {/* Outer Container with Your Old Border */}
         <div
           className="max-w-5xl mx-auto rounded-2xl p-10 shadow-md border mb-10
           transition duration-300 hover:shadow-xl
           hover:-translate-y-1 border-light-pink-2 bg-white"
         >
-
           {/* Header */}
           <div className="flex items-center gap-4 mb-10">
             <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary-pink shadow-md">
@@ -36,7 +34,6 @@ const CervicalScreeningGuideCard3 = ({ setShowCard, setActiveButton }) => {
 
           {/* Two Column Cards */}
           <div className="grid md:grid-cols-2 gap-8">
-
             {/* Under 25 */}
             <div
               className="bg-white rounded-2xl border p-6 shadow-sm
@@ -51,7 +48,7 @@ const CervicalScreeningGuideCard3 = ({ setShowCard, setActiveButton }) => {
               </ul>
 
               <p className="text-sm text-black mt-4">
-                <strong className="text-primary-pink">Note:</strong>  
+                <strong className="text-primary-pink">Note:</strong>
                 See a doctor if you have unusual bleeding or bleeding after sex.
               </p>
             </div>
@@ -68,7 +65,6 @@ const CervicalScreeningGuideCard3 = ({ setShowCard, setActiveButton }) => {
                 If you've had 3 normal tests in a row, no further smears are usually needed.
               </p>
             </div>
-
           </div>
 
           {/* Continue Button (your exact button style) */}
@@ -78,14 +74,11 @@ const CervicalScreeningGuideCard3 = ({ setShowCard, setActiveButton }) => {
                 setShowCard(4);
                 setActiveButton(3);
               }}
-              className="inline-flex items-center justify-center bg-primary-pink
-                hover:bg-primary-pink/80 text-white rounded-md text-sm font-medium
-                transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%]"
+              className="inline-flex items-center bg-primary-pink hover:bg-primary-pink/80 text-white justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-9 px-4 py-2 w-full cursor-pointer"
             >
               Continue to Next Section
             </button>
           </div>
-
         </div>
       </div>
     </section>

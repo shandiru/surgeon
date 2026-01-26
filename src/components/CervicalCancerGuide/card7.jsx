@@ -1,18 +1,14 @@
-'use client';
-import { ShieldCheck, Heart, Star, PlusCircle } from 'lucide-react';
+"use client";
+import { ShieldCheck, Heart, Star, PlusCircle } from "lucide-react";
 
 const CervicalCancerGuidecard7 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6 pb-10">
       {/* Outer Card */}
-      <div
-        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto rounded-2xl p-8 border shadow-sm animate-in slide-in-from-right-5 duration-300 bg-white border-light-pink-2"
-      >
+      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto rounded-2xl p-8 border shadow-sm animate-in slide-in-from-right-5 duration-300 bg-white border-light-pink-2">
         {/* Header */}
         <div className="mb-6">
-          <span
-            className="font-semibold text-sm uppercase tracking-wide flex items-center gap-2 text-primary-pink"
-          >
+          <span className="font-semibold text-sm uppercase tracking-wide flex items-center gap-2 text-primary-pink">
             <ShieldCheck className="w-6 h-6 text-primary-pink" />
             Prevention & Early Detection
           </span>
@@ -23,18 +19,14 @@ const CervicalCancerGuidecard7 = ({ setShowCard, setActiveButton }) => {
         </div>
 
         {/* Why Prevention Matters */}
-        <div
-          className="p-4 rounded-xl border mb-6 border-light-pink-2 bg-light-pink-1"
-        >
-          <h4
-            className="font-semibold flex items-center gap-2 mb-2 text-primary-pink"
-          >
+        <div className="p-4 rounded-xl border mb-6 border-light-pink-2 bg-light-pink-1">
+          <h4 className="font-semibold flex items-center gap-2 mb-2 text-primary-pink">
             <Heart className="w-5 h-5 text-primary-pink" />
             Why Prevention Matters
           </h4>
           <p className="text-black text-sm leading-relaxed">
-            Cervical cancer is highly preventable and often detected early through screening.
-            Simple steps like vaccination and regular smear tests can dramatically reduce risk.
+            Cervical cancer is highly preventable and often detected early through screening. Simple
+            steps like vaccination and regular smear tests can dramatically reduce risk.
           </p>
         </div>
 
@@ -42,11 +34,7 @@ const CervicalCancerGuidecard7 = ({ setShowCard, setActiveButton }) => {
         <div className="grid md:grid-cols-2 gap-6">
           {/* ---- Left Column ---- */}
           <div>
-            <h4
-              className="font-semibold mb-3 text-primary-pink"
-            >
-              Key Prevention Strategies:
-            </h4>
+            <h4 className="font-semibold mb-3 text-primary-pink">Key Prevention Strategies:</h4>
 
             <div className="space-y-3">
               {[
@@ -56,10 +44,7 @@ const CervicalCancerGuidecard7 = ({ setShowCard, setActiveButton }) => {
                 "Not smoking",
                 "Prompt treatment of CIN or HPV-related changes",
               ].map((item, index) => (
-                <div
-                  key={index}
-                  className="flex items-start gap-2 text-sm text-black"
-                >
+                <div key={index} className="flex items-start gap-2 text-sm text-black">
                   <PlusCircle className="w-4 h-4 text-primary-pink mt-1 flex-shrink-0" />
                   <span>{item}</span>
                 </div>
@@ -68,12 +53,8 @@ const CervicalCancerGuidecard7 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           {/* ---- Right Column Reminder ---- */}
-          <div
-            className="p-4 rounded-xl border bg-light-pink-1 border-light-pink-2"
-          >
-            <h4
-              className="font-semibold flex items-center gap-2 mb-2 text-primary-pink"
-            >
+          <div className="p-4 rounded-xl border bg-light-pink-1 border-light-pink-2">
+            <h4 className="font-semibold flex items-center gap-2 mb-2 text-primary-pink">
               <Heart className="w-5 h-5 text-primary-pink" />
               Remember
             </h4>
@@ -89,19 +70,15 @@ const CervicalCancerGuidecard7 = ({ setShowCard, setActiveButton }) => {
         </div>
 
         {/* Key Takeaway */}
-        <div
-          className="p-4 rounded-xl border mt-6 bg-white border-light-pink-2"
-        >
-          <h4
-            className="font-semibold flex items-center gap-2 mb-2 text-primary-pink"
-          >
+        <div className="p-4 rounded-xl border mt-6 bg-white border-light-pink-2">
+          <h4 className="font-semibold flex items-center gap-2 mb-2 text-primary-pink">
             <Star className="w-5 h-5 text-primary-pink" />
             Key Takeaway
           </h4>
 
           <p className="text-sm leading-relaxed text-black">
-            Cervical cancer is preventable. Vaccination, screening, not smoking,
-            and prompt treatment of abnormalities are the strongest ways to protect your health.
+            Cervical cancer is preventable. Vaccination, screening, not smoking, and prompt
+            treatment of abnormalities are the strongest ways to protect your health.
           </p>
         </div>
 
@@ -112,7 +89,7 @@ const CervicalCancerGuidecard7 = ({ setShowCard, setActiveButton }) => {
               setShowCard(8);
               setActiveButton(7);
             }}
-            className="bg-primary-pink hover:bg-primary-pink/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all"
+            className="inline-flex items-center bg-primary-pink hover:bg-primary-pink/80 text-white justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-9 px-4 py-2 w-full cursor-pointer"
           >
             Continue to Next Section
           </button>
