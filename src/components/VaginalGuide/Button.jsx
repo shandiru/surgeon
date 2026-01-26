@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Stethoscope,
   AlertCircle,
@@ -7,18 +7,18 @@ import {
   CheckCircle,
   Heart,
   Users,
-} from 'lucide-react';
+} from "lucide-react";
 
 const VaginalGuideButtons = ({ setShowCard, activeButton, setActiveButton }) => {
   const buttons = [
-    { label: 'Overview', icon: <Stethoscope className="w-4 h-4" />, card: 1 },
-    { label: 'How It Starts', icon: <AlertCircle className="w-4 h-4" />, card: 2 },
+    { label: "Overview", icon: <Stethoscope className="w-4 h-4" />, card: 1 },
+    { label: "How It Starts", icon: <AlertCircle className="w-4 h-4" />, card: 2 },
     { label: "Key Risk Factors", icon: <FileText className="w-4 h-4" />, card: 3 },
-    { label: 'Symptoms of Vaginal Cancer', icon: <Shield className="w-4 h-4" />, card: 4 },
-    { label: 'Diagnosis of Vaginal Cancer', icon: <CheckCircle className="w-4 h-4" />, card: 5 },
-    { label: 'Treatment of Vaginal Cancer', icon: <Heart className="w-4 h-4" />, card: 6 },
-    { label: 'Prevention and Early Detection', icon: <Users className="w-4 h-4" />, card: 7 },
-    { label: 'Key Takeaway', icon: <AlertCircle className="w-4 h-4" />, card: 8 },
+    { label: "Symptoms of Vaginal Cancer", icon: <Shield className="w-4 h-4" />, card: 4 },
+    { label: "Diagnosis of Vaginal Cancer", icon: <CheckCircle className="w-4 h-4" />, card: 5 },
+    { label: "Treatment of Vaginal Cancer", icon: <Heart className="w-4 h-4" />, card: 6 },
+    { label: "Prevention and Early Detection", icon: <Users className="w-4 h-4" />, card: 7 },
+    { label: "Key Takeaway", icon: <AlertCircle className="w-4 h-4" />, card: 8 },
   ];
 
   const handleButtonClick = (card, index) => {
@@ -35,10 +35,10 @@ const VaginalGuideButtons = ({ setShowCard, activeButton, setActiveButton }) => 
           className={`flex flex-col items-center justify-center text-center 
             w-full py-2 px-3
             font-semibold rounded-md 
-            text-[#BB125B] bg-[#FF4B8B]/10 hover:bg-[#FF4B8B]/30 
+            text-black bg-[#FF4B8B]/10 hover:bg-[#FF4B8B]/30 
             text-button
             transition-all 
-            ${activeButton === index ? 'bg-[#FF4B8B]/50 text-black' : ''}`}
+            ${activeButton === index ? "bg-light-pink-2 text-black" : ""}`}
         >
           {button.icon}
           <span className="leading-tight">{button.label}</span>

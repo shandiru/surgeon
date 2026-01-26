@@ -3,7 +3,9 @@ import { AlertTriangle } from "lucide-react";
 
 const PostcoitalBleedingGuideCard4 = ({ setShowCard, setActiveButton }) => {
   return (
-    <div className="space-y-6 pb-10 px-3">  {/* ⭐ ADDED PADDING BOTTOM */}
+    <div className="space-y-6 pb-10 px-3">
+      {" "}
+      {/* ⭐ ADDED PADDING BOTTOM */}
       <div
         role="alert"
         className="w-full max-w-5xl mx-auto mb-10 rounded-xl bg-[#FFF5F7] p-6 shadow-md"
@@ -26,18 +28,16 @@ const PostcoitalBleedingGuideCard4 = ({ setShowCard, setActiveButton }) => {
             <path d="M12 9v4" />
             <path d="M12 17h.01" />
           </svg>
-          <h3 className="font-bold text-lg text-[#FF4B8B]">
-            When to Seek Urgent Help
-          </h3>
+          <h3 className="font-bold text-lg text-[#FF4B8B]">When to Seek Urgent Help</h3>
         </div>
 
         {/* Content */}
         <div className="space-y-4 text-sm text-[#444]">
           <ul className="space-y-2">
             {[
-              'Heavy bleeding (soaking pads/tampons or causing dizziness)',
-              'Bleeding after sex with pelvic pain, fever, or foul-smelling discharge',
-              'Any bleeding after menopause',
+              "Heavy bleeding (soaking pads/tampons or causing dizziness)",
+              "Bleeding after sex with pelvic pain, fever, or foul-smelling discharge",
+              "Any bleeding after menopause",
             ].map((item, idx) => (
               <li key={idx} className="flex items-start gap-2">
                 <span className="w-2 h-2 rounded-full bg-[#FF4B8B] mt-2 flex-shrink-0" />
@@ -46,14 +46,15 @@ const PostcoitalBleedingGuideCard4 = ({ setShowCard, setActiveButton }) => {
             ))}
           </ul>
 
-          <p className="font-medium text-[#BB125B] bg-[#FFEAF0] p-3 rounded-md">
+          <p className="font-medium text-black bg-[#FFEAF0] p-3 rounded-md">
             Get medical help straight away if you notice these symptoms.
           </p>
         </div>
       </div>
-
       {/* NEXT BUTTON */}
-      <div className="pt-4 pb-6 flex justify-center"> {/* ⭐ EXTRA SPACE BELOW BUTTON */}
+      <div className="pt-4 pb-6 flex justify-center">
+        {" "}
+        {/* ⭐ EXTRA SPACE BELOW BUTTON */}
         <button
           onClick={() => {
             setShowCard(5);

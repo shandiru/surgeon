@@ -28,7 +28,7 @@ const FibroidGuideCard4 = ({ setShowCard, setActiveButton }) => {
             ].map((item, i) => (
               <span
                 key={i}
-                className="block rounded-lg px-4 py-2 text-sm font-medium transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-1 active:scale-[0.98] bg-[#FF4B8B]/10 text-[#BB125B]"
+                className="block rounded-lg px-4 py-2 text-sm font-medium transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-1 active:scale-[0.98] bg-[#FF4B8B]/10 text-black"
               >
                 {item}
               </span>
@@ -39,7 +39,7 @@ const FibroidGuideCard4 = ({ setShowCard, setActiveButton }) => {
             {["Started your periods early", "Have hormonal imbalances"].map((item, i) => (
               <span
                 key={i}
-                className="block rounded-lg px-4 py-2 text-sm font-medium transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-1 active:scale-[0.98] bg-[#FF4B8B]/10 text-[#BB125B]"
+                className="block rounded-lg px-4 py-2 text-sm font-medium transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-1 active:scale-[0.98] bg-[#FF4B8B]/10 text-black"
               >
                 {item}
               </span>

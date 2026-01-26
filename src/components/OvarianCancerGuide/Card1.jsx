@@ -1,17 +1,15 @@
-import { Lightbulb } from 'lucide-react';
-import React from 'react';
+import { Lightbulb } from "lucide-react";
+import React from "react";
 
 const OvarianCancerGuideCard1 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6 pb-10">
-
       {/* Card Container */}
       <div
         className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 
         flex flex-col gap-6 rounded-2xl border border-[#FF4B8B]/10 shadow-sm 
         animate-in slide-in-from-right-5 duration-300 p-8 bg-white"
       >
-
         {/* Card Header */}
         <div className="grid auto-rows-min items-start gap-1.5">
           <div className="leading-none font-semibold flex items-center gap-2 text-[#FF4B8B]">
@@ -37,19 +35,18 @@ const OvarianCancerGuideCard1 = ({ setShowCard, setActiveButton }) => {
 
         {/* Card Content */}
         <div className="space-y-6">
-
           {/* Overview Box */}
-          <div className="p-4 rounded-xl border border-[#FF4B8B]/10 transition-all duration-300 
-            hover:shadow-lg hover:scale-105 active:scale-100 bg-[#FF4B8B]/10">
-            <p className="text-lg leading-relaxed text-[#BB125B]">
-              Ovarian cancer is a cancer that begins in the ovaries — the two
-              small organs responsible for producing eggs and hormones such as
-              oestrogen and progesterone.
+          <div
+            className="p-4 rounded-xl border border-[#FF4B8B]/10 transition-all duration-300 
+            hover:shadow-lg hover:scale-105 active:scale-100 bg-light-pink-1"
+          >
+            <p className="text-lg leading-relaxed text-black">
+              Ovarian cancer is a cancer that begins in the ovaries — the two small organs
+              responsible for producing eggs and hormones such as oestrogen and progesterone.
               <br />
               <br />
-              It is often called a <strong>“silent” cancer</strong> because early
-              symptoms can be vague and easily mistaken for digestive or menstrual
-              issues.
+              It is often called a <strong>“silent” cancer</strong> because early symptoms can be
+              vague and easily mistaken for digestive or menstrual issues.
               <br />
               <br />
               <strong>Early detection greatly improves outcomes.</strong>
@@ -58,7 +55,6 @@ const OvarianCancerGuideCard1 = ({ setShowCard, setActiveButton }) => {
 
           {/* Quick Facts + Reminder */}
           <div className="grid md:grid-cols-2 gap-6">
-
             {/* Quick Facts */}
             <div className="space-y-3">
               <h4 className="font-semibold flex items-center gap-2 text-[#FF4B8B]">
@@ -102,22 +98,21 @@ const OvarianCancerGuideCard1 = ({ setShowCard, setActiveButton }) => {
                       <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
                       <path d="m9 11 3 3L22 4"></path>
                     </svg>
-                    <span className="text-[#BB125B]">{item}</span>
+                    <span className="text-black">{item}</span>
                   </li>
                 ))}
               </ul>
             </div>
 
             {/* Reminder Box */}
-            <div className="p-4 rounded-xl border border-[#FF4B8B]/10 bg-[#FF4B8B]/10">
+            <div className="p-4 rounded-xl border border-[#FF4B8B]/10 bg-light-pink-1">
               <h4 className="font-semibold flex items-center gap-2 mb-2 text-[#FF4B8B]">
                 <Lightbulb className="text-xl text-[#FF4B8B]" />
                 Remember
               </h4>
-              <p className="text-sm text-[#BB125B]">
-                Ovarian cancer symptoms can be subtle. Persistent bloating, pelvic
-                pain, and feeling full quickly should never be ignored. Awareness
-                supports earlier detection.
+              <p className="text-sm text-black">
+                Ovarian cancer symptoms can be subtle. Persistent bloating, pelvic pain, and feeling
+                full quickly should never be ignored. Awareness supports earlier detection.
               </p>
             </div>
           </div>
@@ -136,7 +131,6 @@ const OvarianCancerGuideCard1 = ({ setShowCard, setActiveButton }) => {
               Continue to Next Section
             </button>
           </div>
-
         </div>
       </div>
     </div>

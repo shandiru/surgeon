@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const EndometriosisGuide = ({ activeButton }) => {
   const totalSteps = 7;
@@ -8,7 +8,7 @@ const EndometriosisGuide = ({ activeButton }) => {
   return (
     <div className="text-center mb-8 px-4 sm:px-6 md:px-8 lg:px-16">
       {/* Tag and Title */}
-      <div className="inline-flex mt-10 bg-[#FF4B8B]/10 text-[#BB125B] items-center gap-2 px-4 py-2 rounded-full mb-4">
+      <div className="inline-flex mt-10 bg-[#FF4B8B]/10 text-black items-center gap-2 px-4 py-2 rounded-full mb-4">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -27,18 +27,16 @@ const EndometriosisGuide = ({ activeButton }) => {
       </div>
 
       {/* Main Title */}
-      <h1 className="text-hero text-balance mb-4 text-[#FF4B8B]">
-      Endometriosis
-      </h1>
-      <p className="text-body-large text-muted-foreground text-balance text-[#BB125B]">
+      <h1 className="text-hero text-balance mb-4 text-[#FF4B8B]">Endometriosis</h1>
+      <p className="text-body-large text-muted-foreground text-balance text-black">
         What it is, why it's done, and what to expect
       </p>
 
       {/* Progress Bar */}
       <div className="mt-6 max-w-md mx-auto">
         <div className="flex justify-between items-center mb-2">
-          <span className="text-body-small text-muted-foreground text-[#BB125B]">Your Progress</span>
-          <span className="text-body-small font-medium text-[#BB125B]">
+          <span className="text-body-small text-muted-foreground text-black">Your Progress</span>
+          <span className="text-body-small font-medium text-black">
             {completed}/{totalSteps} sections
           </span>
         </div>

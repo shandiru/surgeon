@@ -1,12 +1,6 @@
 "use client";
 import React from "react";
-import {
-  TrendingUp,
-  ShieldAlert,
-  Clock,
-  Phone,
-  CircleAlert,
-} from "lucide-react";
+import { TrendingUp, ShieldAlert, Clock, Phone, CircleAlert } from "lucide-react";
 
 const VaginalLumpsGuidecard6 = ({ setShowCard, setActiveButton }) => {
   return (
@@ -17,7 +11,8 @@ const VaginalLumpsGuidecard6 = ({ setShowCard, setActiveButton }) => {
       >
         {/* HEADER */}
         <div className="text-center mb-10">
-          <h2 className="text-3xl font-bold mb-2 flex items-center justify-center gap-2"
+          <h2
+            className="text-3xl font-bold mb-2 flex items-center justify-center gap-2"
             style={{ color: "#FF4B8B" }}
           >
             <CircleAlert className="w-7 h-7 text-[#FF4B8B]" />
@@ -30,7 +25,6 @@ const VaginalLumpsGuidecard6 = ({ setShowCard, setActiveButton }) => {
 
         {/* URGENT HELP GRID */}
         <div className="grid md:grid-cols-2 gap-6 mb-8">
-
           {/* 1. Rapidly growing lump */}
           <div
             className="bg-white flex flex-col gap-4 rounded-xl py-6 shadow-sm transition-all duration-300 hover:shadow-md hover:scale-[1.02]"
@@ -50,7 +44,7 @@ const VaginalLumpsGuidecard6 = ({ setShowCard, setActiveButton }) => {
             </div>
 
             <div className="px-6">
-              <p className="text-sm text-gray-700 leading-relaxed">
+              <p className="text-sm text-black leading-relaxed">
                 Any lump that increases in size quickly over days or weeks.
               </p>
             </div>
@@ -75,7 +69,7 @@ const VaginalLumpsGuidecard6 = ({ setShowCard, setActiveButton }) => {
             </div>
 
             <div className="px-6">
-              <p className="text-sm text-gray-700 leading-relaxed">
+              <p className="text-sm text-black leading-relaxed">
                 Signs of serious infection that need immediate treatment.
               </p>
             </div>
@@ -100,7 +94,7 @@ const VaginalLumpsGuidecard6 = ({ setShowCard, setActiveButton }) => {
             </div>
 
             <div className="px-6">
-              <p className="text-sm text-gray-700 leading-relaxed">
+              <p className="text-sm text-black leading-relaxed">
                 Persistent or heavy bleeding from the affected area.
               </p>
             </div>
@@ -125,21 +119,16 @@ const VaginalLumpsGuidecard6 = ({ setShowCard, setActiveButton }) => {
             </div>
 
             <div className="px-6">
-              <p className="text-sm text-gray-700 leading-relaxed">
+              <p className="text-sm text-black leading-relaxed">
                 New lumps in post-menopausal women require prompt evaluation.
               </p>
             </div>
           </div>
-
         </div>
 
         {/* EMERGENCY BOX */}
-        <div
-          className="rounded-lg p-6 shadow-sm"
-          style={{ backgroundColor: "rgb(255,197,211)" }}
-        >
+        <div className="rounded-lg p-6 shadow-sm" style={{ backgroundColor: "rgb(255,197,211)" }}>
           <div className="flex items-center justify-between flex-wrap gap-4">
-
             <div className="flex items-center gap-3">
               <Phone className="w-6 h-6" style={{ color: "#FF4B8B" }} />
               <div>
@@ -171,7 +160,6 @@ const VaginalLumpsGuidecard6 = ({ setShowCard, setActiveButton }) => {
                 Find Urgent Care
               </button>
             </div>
-
           </div>
         </div>
 
@@ -187,7 +175,6 @@ const VaginalLumpsGuidecard6 = ({ setShowCard, setActiveButton }) => {
             Continue to Final Section
           </button>
         </div>
-
       </div>
     </div>
   );

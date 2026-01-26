@@ -1,25 +1,25 @@
-'use client'
+"use client";
 
-import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // Import AOS styles
-import { LuUsers, LuStethoscope, LuCircleCheckBig } from 'react-icons/lu';
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
+import { LuUsers, LuStethoscope, LuCircleCheckBig } from "react-icons/lu";
 
 export default function BenefitsSection() {
   const patientBenefits = [
-    'Smaller incisions, resulting in reduced scarring',
-    'Less postoperative pain',
-    'Lower risk of infection',
-    'Shorter hospital stays',
-    'Faster return to normal activities',
-    'Reduced blood loss and need for transfusion',
+    "Smaller incisions, resulting in reduced scarring",
+    "Less postoperative pain",
+    "Lower risk of infection",
+    "Shorter hospital stays",
+    "Faster return to normal activities",
+    "Reduced blood loss and need for transfusion",
   ];
 
   const surgeonBenefits = [
-    'Enhanced visualization with 3D magnified views',
-    'Superior dexterity and precision',
-    'Ergonomic comfort during long procedures',
-    'Ability to perform complex procedures with greater control',
+    "Enhanced visualization with 3D magnified views",
+    "Superior dexterity and precision",
+    "Ergonomic comfort during long procedures",
+    "Ability to perform complex procedures with greater control",
   ];
 
   useEffect(() => {
@@ -49,7 +49,7 @@ export default function BenefitsSection() {
                 {patientBenefits.map((item, idx) => (
                   <div key={idx} className="flex items-start gap-3">
                     <LuCircleCheckBig className="w-5 h-5 text-[#FF4B8B] mt-0.5 flex-shrink-0" />
-                    <p className="text-gray-700">{item}</p>
+                    <p className="text-black">{item}</p>
                   </div>
                 ))}
               </div>
@@ -70,7 +70,7 @@ export default function BenefitsSection() {
                 {surgeonBenefits.map((item, idx) => (
                   <div key={idx} className="flex items-start gap-3">
                     <LuCircleCheckBig className="w-5 h-5 text-[#FF4B8B] mt-0.5 flex-shrink-0" />
-                    <p className="text-gray-700">{item}</p>
+                    <p className="text-black">{item}</p>
                   </div>
                 ))}
               </div>

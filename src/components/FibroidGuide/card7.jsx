@@ -79,7 +79,7 @@ const FibroidGuidecard7 = ({ setShowCard, setActiveButton }) => {
 
           {/* Doctor Advice Note */}
           <div className="rounded-xl p-5 text-center shadow-md bg-[#FF4B8B]/10">
-            <p className="font-medium flex items-center gap-2 justify-center text-[#BB125B]">
+            <p className="font-medium flex items-center gap-2 justify-center text-black">
               <User className="text-2xl text-[#FF4B8B]" />
               Your doctor will help you choose the safest and most effective option based on your
               symptoms and fertility plans.

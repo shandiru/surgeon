@@ -1,14 +1,14 @@
-import React from 'react';
+import React from "react";
 
 const OvarianCancerGuideCard2 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6 pb-10">
-
       {/* Card Container */}
-      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 
+      <div
+        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 
         flex flex-col gap-6 rounded-2xl border border-[#FF4B8B]/10 shadow-sm 
-        animate-in slide-in-from-right-5 duration-300 p-8 bg-white">
-
+        animate-in slide-in-from-right-5 duration-300 p-8 bg-white"
+      >
         {/* Card Header */}
         <div className="grid auto-rows-min items-start gap-1.5">
           <div className="leading-none font-semibold flex items-center gap-2 text-[#FF4B8B]">
@@ -32,7 +32,6 @@ const OvarianCancerGuideCard2 = ({ setShowCard, setActiveButton }) => {
 
         {/* Card Content */}
         <div className="space-y-6">
-
           {/* Intro Box */}
           <div
             className="p-4 rounded-xl border transition-all duration-300 
@@ -43,24 +42,19 @@ const OvarianCancerGuideCard2 = ({ setShowCard, setActiveButton }) => {
             }}
           >
             <p className="text-lg leading-relaxed" style={{ color: "#7a2f4f" }}>
-              Ovarian cancer can develop in different types of cells inside the 
-              ovary. Understanding where it starts helps doctors diagnose the 
-              type and plan the most effective treatment.
+              Ovarian cancer can develop in different types of cells inside the ovary. Understanding
+              where it starts helps doctors diagnose the type and plan the most effective treatment.
             </p>
           </div>
 
           {/* Types of Ovarian Cancer */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-
             {/* Type 1 */}
             <div className="p-4 rounded-xl border border-[#FF4B8B]/10 bg-white transition-all duration-300 hover:shadow-md">
-              <h4 className="font-semibold mb-2 text-[#FF4B8B]">
-                Epithelial Ovarian Cancer
-              </h4>
-              <p className="text-sm text-[#BB125B]">
-                The most common type — <strong>around 90%</strong> of all ovarian 
-                cancers. It begins in the cells covering the surface of the ovary 
-                or fallopian tubes.
+              <h4 className="font-semibold mb-2 text-[#FF4B8B]">Epithelial Ovarian Cancer</h4>
+              <p className="text-sm text-black">
+                The most common type — <strong>around 90%</strong> of all ovarian cancers. It begins
+                in the cells covering the surface of the ovary or fallopian tubes.
               </p>
             </div>
 
@@ -76,27 +70,23 @@ const OvarianCancerGuideCard2 = ({ setShowCard, setActiveButton }) => {
                 Germ Cell Tumours
               </h4>
               <p className="text-sm" style={{ color: "#7a2f4f" }}>
-                Start in the cells that produce eggs. These are less common and 
-                tend to affect younger women.
+                Start in the cells that produce eggs. These are less common and tend to affect
+                younger women.
               </p>
             </div>
 
             {/* Type 3 */}
             <div className="p-4 rounded-xl border border-[#FF4B8B]/10 bg-white transition-all duration-300 hover:shadow-md">
-              <h4 className="font-semibold mb-2 text-[#FF4B8B]">
-                Stromal Tumours
-              </h4>
-              <p className="text-sm text-[#BB125B]">
-                Begin in the hormone-producing cells of the ovary. They are rare 
-                and often detected earlier because they can cause hormone-related 
-                symptoms.
+              <h4 className="font-semibold mb-2 text-[#FF4B8B]">Stromal Tumours</h4>
+              <p className="text-sm text-black">
+                Begin in the hormone-producing cells of the ovary. They are rare and often detected
+                earlier because they can cause hormone-related symptoms.
               </p>
             </div>
-
           </div>
 
           {/* Extra Info Box */}
-          <div className="p-4 rounded-xl border border-[#FF4B8B]/10 bg-[#FF4B8B]/10">
+          <div className="p-4 rounded-xl border border-[#FF4B8B]/10 bg-light-pink-1">
             <h4 className="font-semibold flex items-center gap-2 mb-2 text-[#FF4B8B]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -117,9 +107,9 @@ const OvarianCancerGuideCard2 = ({ setShowCard, setActiveButton }) => {
               Did You Know?
             </h4>
 
-            <p className="text-sm text-[#BB125B]">
-              Some ovarian cancers begin in the fallopian tubes and spread to 
-              the ovary — but they are still grouped as ovarian cancer.
+            <p className="text-sm text-black">
+              Some ovarian cancers begin in the fallopian tubes and spread to the ovary — but they
+              are still grouped as ovarian cancer.
             </p>
           </div>
 
@@ -137,7 +127,6 @@ const OvarianCancerGuideCard2 = ({ setShowCard, setActiveButton }) => {
               Continue to Next Section
             </button>
           </div>
-
         </div>
       </div>
     </div>

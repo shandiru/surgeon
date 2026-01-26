@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { ChevronDown, CircleCheck, Shield, FileText } from 'lucide-react';
+import React, { useState } from "react";
+import { ChevronDown, CircleCheck, Shield, FileText } from "lucide-react";
 
 const UltrasoundCard5 = ({ setShowCard, setActiveButton }) => {
   const [accordionOpen, setAccordionOpen] = useState(false);
@@ -10,8 +10,7 @@ const UltrasoundCard5 = ({ setShowCard, setActiveButton }) => {
 
   return (
     <div className="space-y-6">
-      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl text-[#BB125B] mx-auto mb-10 flex flex-col gap-6 rounded-xl border py-6 shadow-sm animate-in slide-in-from-right-5 duration-300">
-
+      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl text-black mx-auto mb-10 flex flex-col gap-6 rounded-xl border py-6 shadow-sm animate-in slide-in-from-right-5 duration-300">
         {/* Card Header */}
         <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 border-b pb-6">
           <div className="leading-none font-semibold flex items-center gap-2">
@@ -59,7 +58,9 @@ const UltrasoundCard5 = ({ setShowCard, setActiveButton }) => {
               Safety Assurance
             </h4>
             <p className="text-sm leading-relaxed">
-              There are <strong>no known risks or side effects</strong> from diagnostic ultrasound at the levels used. The procedure is completely safe and can be repeated as often as medically necessary.
+              There are <strong>no known risks or side effects</strong> from diagnostic ultrasound
+              at the levels used. The procedure is completely safe and can be repeated as often as
+              medically necessary.
             </p>
           </div>
 
@@ -85,7 +86,10 @@ const UltrasoundCard5 = ({ setShowCard, setActiveButton }) => {
                 aria-labelledby="accordion-trigger"
               >
                 {/* Accordion content can go here */}
-                <p className="p-4">If anything unusual is found, your doctor will discuss treatment options or any follow-up procedures with you. Additional tests may be required based on findings.</p>
+                <p className="p-4">
+                  If anything unusual is found, your doctor will discuss treatment options or any
+                  follow-up procedures with you. Additional tests may be required based on findings.
+                </p>
               </div>
             </div>
           </div>

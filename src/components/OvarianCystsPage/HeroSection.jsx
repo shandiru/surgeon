@@ -1,12 +1,13 @@
-'use client';
-import React from 'react';
+"use client";
+import React from "react";
 
 export default function HeroSection() {
   return (
-    <div className="relative overflow-hidden bg-[#FEE6EA]"> {/* removed border-b */}
+    <div className="relative overflow-hidden bg-[#FEE6EA]">
+      {" "}
+      {/* removed border-b */}
       {/* Subtle grid effect mask */}
       <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))]" />
-
       <div className="relative max-w-4xl mx-auto px-6 py-16 text-center">
         {/* Tagline */}
         <div className="inline-flex items-center gap-2 bg-[#FF4B8B]/10 text-[#FF4B8B] px-4 py-2 rounded-full text-caption mb-6">
@@ -26,12 +27,10 @@ export default function HeroSection() {
         </div>
 
         {/* Heading */}
-        <h1 className="text-hero text-[#FF4B8B] mb-6">
-          Understanding Ovarian Cysts
-        </h1>
+        <h1 className="text-hero text-[#FF4B8B] mb-6">Understanding Ovarian Cysts</h1>
 
         {/* Subtext */}
-        <p className="text-body-large text-[#BB125B] max-w-2xl mx-auto mb-8 leading-relaxed">
+        <p className="text-body-large text-black max-w-2xl mx-auto mb-8 leading-relaxed">
           Your comprehensive guide to symptoms, types, and treatment options
         </p>
 

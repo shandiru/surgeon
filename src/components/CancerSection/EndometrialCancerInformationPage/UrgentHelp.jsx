@@ -1,36 +1,36 @@
-import React from 'react'
-import { TrendingUp, ShieldAlert, Clock, Phone, AlertCircle } from 'lucide-react'
+import React from "react";
+import { TrendingUp, ShieldAlert, Clock, Phone, AlertCircle } from "lucide-react";
 
 const cardData = [
   {
     id: 1,
-    icon: <TrendingUp className="w-6 h-6" style={{ color: '#FF4B8B' }} />,
-    title: 'Rapidly growing lump',
-    description: 'Any lump that increases in size quickly over days or weeks',
+    icon: <TrendingUp className="w-6 h-6" style={{ color: "#FF4B8B" }} />,
+    title: "Rapidly growing lump",
+    description: "Any lump that increases in size quickly over days or weeks",
   },
   {
     id: 2,
-    icon: <ShieldAlert className="w-6 h-6" style={{ color: '#FF4B8B' }} />,
-    title: 'Severe pain, fever or spreading redness',
-    description: 'Signs of serious infection that need immediate treatment',
+    icon: <ShieldAlert className="w-6 h-6" style={{ color: "#FF4B8B" }} />,
+    title: "Severe pain, fever or spreading redness",
+    description: "Signs of serious infection that need immediate treatment",
   },
   {
     id: 3,
-    icon: <ShieldAlert className="w-6 h-6" style={{ color: '#FF4B8B' }} />,
+    icon: <ShieldAlert className="w-6 h-6" style={{ color: "#FF4B8B" }} />,
     title: "Bleeding that won't stop",
-    description: 'Persistent or heavy bleeding from the affected area',
+    description: "Persistent or heavy bleeding from the affected area",
   },
   {
     id: 4,
-    icon: <Clock className="w-6 h-6" style={{ color: '#FF4B8B' }} />,
-    title: 'Lumps appearing after menopause',
-    description: 'New lumps in post-menopausal women require prompt evaluation',
+    icon: <Clock className="w-6 h-6" style={{ color: "#FF4B8B" }} />,
+    title: "Lumps appearing after menopause",
+    description: "New lumps in post-menopausal women require prompt evaluation",
   },
-]
+];
 
 const UrgentHelp = () => {
-  const pink = '#FFC5D3'
-  const deepPink = '#FF4B8B'
+  const pink = "#FFC5D3";
+  const deepPink = "#FF4B8B";
 
   return (
     <section id="urgent-help" className="py-16 bg-white">
@@ -42,7 +42,7 @@ const UrgentHelp = () => {
               <AlertCircle className="inline-block mr-2" style={{ color: deepPink }} />
               When to Seek Urgent Help
             </h2>
-            <p className="text-lg text-gray-700">
+            <p className="text-lg text-black">
               Get medical advice quickly if you notice any of these warning signs
             </p>
           </div>
@@ -66,17 +66,14 @@ const UrgentHelp = () => {
                   </div>
                 </div>
                 <div className="px-6">
-                  <p className="text-sm text-gray-700 leading-relaxed">{card.description}</p>
+                  <p className="text-sm text-black leading-relaxed">{card.description}</p>
                 </div>
               </div>
             ))}
           </div>
 
           {/* Urgent Help Call To Action */}
-          <div
-            className="rounded-lg p-6 shadow-sm"
-            style={{ backgroundColor: pink }}
-          >
+          <div className="rounded-lg p-6 shadow-sm" style={{ backgroundColor: pink }}>
             <div className="flex items-center justify-between flex-wrap gap-4">
               <div className="flex items-center space-x-3">
                 <Phone className="w-6 h-6" style={{ color: deepPink }} />
@@ -94,7 +91,7 @@ const UrgentHelp = () => {
                   className="inline-flex items-center justify-center gap-2 rounded-md text-sm font-medium transition-all shadow-sm h-9 px-4 py-2"
                   style={{
                     backgroundColor: deepPink,
-                    color: 'white',
+                    color: "white",
                   }}
                 >
                   Call Emergency Services
@@ -114,7 +111,7 @@ const UrgentHelp = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default UrgentHelp
+export default UrgentHelp;

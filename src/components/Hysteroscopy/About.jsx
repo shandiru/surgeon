@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
-import { Heart } from 'lucide-react';
+import React, { useState } from "react";
+import { Heart } from "lucide-react";
 
 const HysteroscopyGuide = ({ activeButton }) => {
   const totalSteps = 6;
   const completed = activeButton + 1;
   const progressPercentage = Math.round((completed / totalSteps) * 100);
-
 
   return (
     <div className="text-center mb-8 px-4 sm:px-6 lg:px-8">
@@ -15,13 +14,15 @@ const HysteroscopyGuide = ({ activeButton }) => {
         <span className="text-primary font-medium">Medical Education</span>
       </div>
       <h1 className="text-hero text-[#FF4B8B] mb-4">Understanding Hysteroscopy</h1>
-      <p className="text-body-large text-muted-foreground text-[#d60d64] mb-6">What it is, why it's done, and what to expect</p>
+      <p className="text-body-large text-muted-foreground text-[#d60d64] mb-6">
+        What it is, why it's done, and what to expect
+      </p>
 
       {/* Progress Section */}
       <div className="mt-6 max-w-md mx-auto">
         <div className="flex justify-between items-center mb-2">
           <span className="text-body-small text-[#d60d64]">Your Progress</span>
-          <span className="text-body-small font-medium text-[#BB125B]">
+          <span className="text-body-small font-medium text-black">
             {completed}/{totalSteps} sections
           </span>
         </div>

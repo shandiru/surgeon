@@ -5,12 +5,10 @@ const OvarianCystsGuideCard7 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6 pb-10">
       <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto animate-in slide-in-from-right-5 duration-300">
-
         {/* ===================== GRID WRAPPER ===================== */}
         <div className="grid md:grid-cols-2 gap-6">
-
           {/* ===================== CARD 1 ===================== */}
-          <div className="bg-white text-[#BB125B] flex flex-col gap-6 rounded-xl py-6 px-5 sm:px-6 border border-[#FF4B8B]/10 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all">
+          <div className="bg-white text-black flex flex-col gap-6 rounded-xl py-6 px-5 sm:px-6 border border-[#FF4B8B]/10 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all">
             {/* Header */}
             <div className="flex items-center gap-3 font-semibold text-[#FF4B8B] text-lg">
               <svg
@@ -43,16 +41,14 @@ const OvarianCystsGuideCard7 = ({ setShowCard, setActiveButton }) => {
                 "MRI (if needed for detailed images)",
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3">
-                  <div
-                    className="w-2 h-2 bg-[#FF4B8B] rounded-full mt-2 flex-shrink-0"
-                  ></div>
+                  <div className="w-2 h-2 bg-[#FF4B8B] rounded-full mt-2 flex-shrink-0"></div>
                   <span className="text-sm">{item}</span>
                 </div>
               ))}
 
               {/* Highlight Box */}
               <div className="mt-4 p-4 rounded-lg bg-[#FEE6EA] shadow-sm">
-                <p className="text-sm font-medium text-[#BB125B]">
+                <p className="text-sm font-medium text-black">
                   Most cysts are monitored over time to see if they shrink on their own.
                 </p>
               </div>
@@ -60,7 +56,7 @@ const OvarianCystsGuideCard7 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           {/* ===================== CARD 2 ===================== */}
-          <div className="bg-white text-[#BB125B] flex flex-col gap-6 rounded-xl py-6 px-5 sm:px-6 border border-[#FF4B8B]/10 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all">
+          <div className="bg-white text-black flex flex-col gap-6 rounded-xl py-6 px-5 sm:px-6 border border-[#FF4B8B]/10 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all">
             {/* Header */}
             <div className="flex items-center gap-3 font-semibold text-[#FF4B8B] text-lg">
               <svg
@@ -124,7 +120,6 @@ const OvarianCystsGuideCard7 = ({ setShowCard, setActiveButton }) => {
             Continue to Next Section
           </button>
         </div>
-
       </div>
     </div>
   );

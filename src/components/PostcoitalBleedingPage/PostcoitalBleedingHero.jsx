@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 
 export default function PostcoitalBleedingHero() {
   return (
     <section
       className="py-20 px-6 shadow-inner text-center"
-      style={{ backgroundColor: '#FEE6EA', color: '#BB125B' }} // ✅ soft pink bg + magenta text
+      style={{ backgroundColor: "#FEE6EA", color: "#BB125B" }} // ✅ soft pink bg + magenta text
     >
       <div className="max-w-3xl mx-auto">
         {/* Heading */}
@@ -13,7 +13,7 @@ export default function PostcoitalBleedingHero() {
         </h1>
 
         {/* Subtext */}
-        <p className="text-lg md:text-xl mb-8 opacity-90 text-[#BB125B]">
+        <p className="text-lg md:text-xl mb-8 opacity-90 text-black">
           What it is, causes, and when to seek help
         </p>
 

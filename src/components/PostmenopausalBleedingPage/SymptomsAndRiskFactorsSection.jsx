@@ -1,20 +1,20 @@
-import React from 'react';
+import React from "react";
 
 export default function SymptomsAndRiskFactorsSection() {
   return (
     <section className="mb-12 px-4">
       <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
-        
         {/* Symptoms You Might Notice */}
         <div className="bg-white text-[#1F2937] flex flex-col gap-6 rounded-2xl shadow-md py-6 hover:shadow-lg transition">
           <div className="px-6 border-b border-[#FEE6EA] pb-5">
             <h2 className="font-bold flex items-center gap-2 text-xl sm:text-2xl text-[#FF4B8B]">
-               Symptoms You Might Notice
+              Symptoms You Might Notice
             </h2>
           </div>
           <div className="px-6">
             <p className="mb-4 text-sm text-[#6B7280]">
-              Many women with postmenopausal bleeding have no other symptoms, but other symptoms may include:
+              Many women with postmenopausal bleeding have no other symptoms, but other symptoms may
+              include:
             </p>
             <ul className="space-y-2 text-sm list-disc pl-5 text-[#374151]">
               <li>Vaginal dryness</li>
@@ -28,9 +28,10 @@ export default function SymptomsAndRiskFactorsSection() {
             {/* Alert */}
             <div
               role="alert"
-              className="mt-6 rounded-lg bg-[#FFF0F5] px-4 py-3 text-xs text-[#BB125B] font-medium shadow-sm"
+              className="mt-6 rounded-lg bg-[#FFF0F5] px-4 py-3 text-xs text-black font-medium shadow-sm"
             >
-               Hot flushes and other menopause symptoms often ease over time — but bleeding should never return.
+              Hot flushes and other menopause symptoms often ease over time — but bleeding should
+              never return.
             </div>
           </div>
         </div>
@@ -39,7 +40,7 @@ export default function SymptomsAndRiskFactorsSection() {
         <div className="bg-white text-[#1F2937] flex flex-col gap-6 rounded-2xl shadow-md py-6 hover:shadow-lg transition">
           <div className="px-6 border-b border-[#FEE6EA] pb-5">
             <h2 className="font-bold flex items-center gap-2 text-xl sm:text-2xl text-[#FF4B8B]">
-               Risk Factors
+              Risk Factors
             </h2>
           </div>
           <div className="px-6">
@@ -56,7 +57,6 @@ export default function SymptomsAndRiskFactorsSection() {
             </ul>
           </div>
         </div>
-
       </div>
     </section>
   );

@@ -1,16 +1,12 @@
-'use client';
-import { Lightbulb } from 'lucide-react';
-import React from 'react';
+"use client";
+import { Lightbulb } from "lucide-react";
+import React from "react";
 
 const VulvarGuideCard1 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6 pb-10">
-      
       {/* Card Container */}
-      <div
-        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-2xl border border-[#FF4B8B]/10 shadow-sm animate-in slide-in-from-right-5 duration-300 p-8 bg-white"
-      >
-
+      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-2xl border border-[#FF4B8B]/10 shadow-sm animate-in slide-in-from-right-5 duration-300 p-8 bg-white">
         {/* Card Header */}
         <div className="grid auto-rows-min items-start gap-1.5">
           <div className="leading-none font-semibold flex items-center gap-2 text-[#FF4B8B]">
@@ -36,10 +32,9 @@ const VulvarGuideCard1 = ({ setShowCard, setActiveButton }) => {
 
         {/* Card Content */}
         <div className="space-y-6">
-
           {/* Overview Box */}
           <div className="p-4 rounded-xl border border-[#FF4B8B]/10 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-100 bg-[#FF4B8B]/10">
-            <p className="text-lg leading-relaxed text-[#BB125B]">
+            <p className="text-lg leading-relaxed text-black">
               Vulvar cancer is a type of cancer that develops on the external female genital area,
               known as the vulva. This includes the labia majora, labia minora, clitoris, and the
               skin around the vaginal opening. Although vulvar cancer is relatively rare,
@@ -49,7 +44,6 @@ const VulvarGuideCard1 = ({ setShowCard, setActiveButton }) => {
 
           {/* Quick Facts + Reminder */}
           <div className="grid md:grid-cols-2 gap-6">
-
             {/* Quick Facts */}
             <div className="space-y-3">
               <h4 className="font-semibold flex items-center gap-2 text-[#FF4B8B]">
@@ -72,10 +66,10 @@ const VulvarGuideCard1 = ({ setShowCard, setActiveButton }) => {
 
               <ul className="space-y-2">
                 {[
-                  'Most common in women over 60',
-                  'Often linked to HPV or chronic skin conditions',
-                  'Early diagnosis greatly improves outcomes',
-                  'Can appear as itching, lumps, or skin changes',
+                  "Most common in women over 60",
+                  "Often linked to HPV or chronic skin conditions",
+                  "Early diagnosis greatly improves outcomes",
+                  "Can appear as itching, lumps, or skin changes",
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-2">
                     <svg
@@ -93,7 +87,7 @@ const VulvarGuideCard1 = ({ setShowCard, setActiveButton }) => {
                       <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
                       <path d="m9 11 3 3L22 4"></path>
                     </svg>
-                    <span className="text-[#BB125B]">{item}</span>
+                    <span className="text-black">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -105,7 +99,7 @@ const VulvarGuideCard1 = ({ setShowCard, setActiveButton }) => {
                 <Lightbulb className="text-xl text-[#FF4B8B]" />
                 Remember
               </h4>
-              <p className="text-sm text-[#BB125B]">
+              <p className="text-sm text-black">
                 Vulvar cancer often begins with subtle skin changes. Paying attention to persistent
                 itching, lumps, sores, or colour changes can help detect the condition early when it
                 is most treatable.
@@ -125,7 +119,6 @@ const VulvarGuideCard1 = ({ setShowCard, setActiveButton }) => {
               Continue to Next Section
             </button>
           </div>
-
         </div>
       </div>
     </div>

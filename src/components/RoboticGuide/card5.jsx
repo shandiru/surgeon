@@ -1,26 +1,23 @@
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // Import AOS styles
-import { useEffect } from 'react';
-import { LuUsers, LuStethoscope, LuCircleCheckBig } from 'react-icons/lu';
-
-
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
+import { useEffect } from "react";
+import { LuUsers, LuStethoscope, LuCircleCheckBig } from "react-icons/lu";
 
 const RoboticGuide5 = ({ setShowCard, setActiveButton }) => {
-
   const patientBenefits = [
-    'Smaller incisions, resulting in reduced scarring',
-    'Less postoperative pain',
-    'Lower risk of infection',
-    'Shorter hospital stays',
-    'Faster return to normal activities',
-    'Reduced blood loss and need for transfusion',
+    "Smaller incisions, resulting in reduced scarring",
+    "Less postoperative pain",
+    "Lower risk of infection",
+    "Shorter hospital stays",
+    "Faster return to normal activities",
+    "Reduced blood loss and need for transfusion",
   ];
 
   const surgeonBenefits = [
-    'Enhanced visualization with 3D magnified views',
-    'Superior dexterity and precision',
-    'Ergonomic comfort during long procedures',
-    'Ability to perform complex procedures with greater control',
+    "Enhanced visualization with 3D magnified views",
+    "Superior dexterity and precision",
+    "Ergonomic comfort during long procedures",
+    "Ability to perform complex procedures with greater control",
   ];
 
   useEffect(() => {
@@ -50,7 +47,7 @@ const RoboticGuide5 = ({ setShowCard, setActiveButton }) => {
                 {patientBenefits.map((item, idx) => (
                   <div key={idx} className="flex items-start gap-3">
                     <LuCircleCheckBig className="w-5 h-5 text-[#FF4B8B] mt-0.5 flex-shrink-0" />
-                    <p className="text-gray-700">{item}</p>
+                    <p className="text-black">{item}</p>
                   </div>
                 ))}
               </div>
@@ -71,24 +68,24 @@ const RoboticGuide5 = ({ setShowCard, setActiveButton }) => {
                 {surgeonBenefits.map((item, idx) => (
                   <div key={idx} className="flex items-start gap-3">
                     <LuCircleCheckBig className="w-5 h-5 text-[#FF4B8B] mt-0.5 flex-shrink-0" />
-                    <p className="text-gray-700">{item}</p>
+                    <p className="text-black">{item}</p>
                   </div>
                 ))}
               </div>
             </div>
           </div>
-      {/* NEXT BUTTON */}
-      <div className="pt-2 p-6 mt-2">
-        <button
-          onClick={() => {
-            setShowCard(6);
-            setActiveButton(5);
-          }}
-          className="w-full bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white rounded-md h-10 px-4 flex items-center justify-center text-sm font-medium transition"
-        >
-          Learn About Treatment
-        </button>
-      </div>
+          {/* NEXT BUTTON */}
+          <div className="pt-2 p-6 mt-2">
+            <button
+              onClick={() => {
+                setShowCard(6);
+                setActiveButton(5);
+              }}
+              className="w-full bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white rounded-md h-10 px-4 flex items-center justify-center text-sm font-medium transition"
+            >
+              Learn About Treatment
+            </button>
+          </div>
         </div>
       </div>
     </div>

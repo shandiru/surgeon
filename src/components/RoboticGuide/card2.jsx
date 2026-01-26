@@ -1,8 +1,8 @@
-'use client';
-import React, { useEffect } from 'react';
-import { LuEye, LuHand, LuScissors, LuZap } from 'react-icons/lu';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+"use client";
+import React, { useEffect } from "react";
+import { LuEye, LuHand, LuScissors, LuZap } from "react-icons/lu";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const RoboticGuide2 = ({ setShowCard, setActiveButton }) => {
   useEffect(() => {
@@ -15,7 +15,6 @@ const RoboticGuide2 = ({ setShowCard, setActiveButton }) => {
   return (
     <>
       <div className="space-y-6 pb-6">
-
         {/* Card Container */}
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
@@ -26,22 +25,19 @@ const RoboticGuide2 = ({ setShowCard, setActiveButton }) => {
           </h2>
 
           <div className="grid md:grid-cols-2 gap-8 items-center">
-
             {/* Text Content */}
             <div data-aos="fade-right">
-              <p className="text-base sm:text-lg text-gray-700 mb-6">
-                Robotic surgery represents a revolutionary form of minimally
-                invasive surgery that uses advanced technology to enhance
-                surgical precision, control, and vision. Unlike traditional
-                open surgery, robotic systems enable procedures through small
-                incisions with robotic arms controlled by the surgeon from a
-                specialized console.
+              <p className="text-base sm:text-lg text-black mb-6">
+                Robotic surgery represents a revolutionary form of minimally invasive surgery that
+                uses advanced technology to enhance surgical precision, control, and vision. Unlike
+                traditional open surgery, robotic systems enable procedures through small incisions
+                with robotic arms controlled by the surgeon from a specialized console.
               </p>
 
-              <p className="text-base sm:text-lg text-gray-700">
-                The da Vinci Surgical System, developed by Intuitive Surgical,
-                has transformed gynecologic surgery by significantly improving
-                patient outcomes and surgical experiences.
+              <p className="text-base sm:text-lg text-black">
+                The da Vinci Surgical System, developed by Intuitive Surgical, has transformed
+                gynecologic surgery by significantly improving patient outcomes and surgical
+                experiences.
               </p>
             </div>
 
@@ -78,9 +74,7 @@ const RoboticGuide2 = ({ setShowCard, setActiveButton }) => {
                   data-aos="zoom-in"
                 >
                   <LuScissors className="w-10 h-10 sm:w-14 sm:h-14 text-[#FF4B8B] mx-auto mb-3" />
-                  <p className="font-semibold text-[#FF4B8B]">
-                    Minimally Invasive
-                  </p>
+                  <p className="font-semibold text-[#FF4B8B]">Minimally Invasive</p>
                 </div>
 
                 <div
@@ -96,9 +90,7 @@ const RoboticGuide2 = ({ setShowCard, setActiveButton }) => {
                   data-aos="zoom-in"
                 >
                   <LuEye className="w-10 h-10 sm:w-14 sm:h-14 text-[#FF4B8B] mx-auto mb-3" />
-                  <p className="font-semibold text-[#FF4B8B]">
-                    Enhanced Vision
-                  </p>
+                  <p className="font-semibold text-[#FF4B8B]">Enhanced Vision</p>
                 </div>
 
                 <div
@@ -114,9 +106,7 @@ const RoboticGuide2 = ({ setShowCard, setActiveButton }) => {
                   data-aos="zoom-in"
                 >
                   <LuHand className="w-10 h-10 sm:w-14 sm:h-14 text-[#FF4B8B] mx-auto mb-3" />
-                  <p className="font-semibold text-[#FF4B8B]">
-                    Precise Control
-                  </p>
+                  <p className="font-semibold text-[#FF4B8B]">Precise Control</p>
                 </div>
 
                 <div
@@ -132,13 +122,10 @@ const RoboticGuide2 = ({ setShowCard, setActiveButton }) => {
                   data-aos="zoom-in"
                 >
                   <LuZap className="w-10 h-10 sm:w-14 sm:h-14 text-[#FF4B8B] mx-auto mb-3" />
-                  <p className="font-semibold text-[#FF4B8B]">
-                    Advanced Technology
-                  </p>
+                  <p className="font-semibold text-[#FF4B8B]">Advanced Technology</p>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
 
@@ -162,7 +149,6 @@ const RoboticGuide2 = ({ setShowCard, setActiveButton }) => {
             Learn About the Procedure
           </button>
         </div>
-
       </div>
     </>
   );

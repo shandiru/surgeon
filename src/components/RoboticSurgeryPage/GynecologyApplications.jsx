@@ -80,7 +80,7 @@ export default function GynecologyApplications() {
                   </span>
                 </div>
                 <div>
-                  <p className="text-gray-700 mb-3">{card.description}</p>
+                  <p className="text-black mb-3">{card.description}</p>
                   <ul className="text-sm text-black space-y-1">
                     {card.points.map((point, i) => (
                       <li key={i} className="flex items-center gap-2">

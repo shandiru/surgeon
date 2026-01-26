@@ -1,36 +1,35 @@
-import React, { useState } from 'react';
-import { Monitor, AlertCircle, FileText, Camera, Heart, Shield } from 'lucide-react';
+import React, { useState } from "react";
+import { Monitor, AlertCircle, FileText, Camera, Heart, Shield } from "lucide-react";
 
 const HysterosButtons = ({ setShowCard, activeButton, setActiveButton }) => {
-
   const buttons = [
     {
-      label: 'What is Hysteroscopy?',
+      label: "What is Hysteroscopy?",
       icon: <Monitor className="w-4 h-4" />,
       card: 1,
     },
     {
-      label: 'Why You Might Need One',
+      label: "Why You Might Need One",
       icon: <AlertCircle className="w-4 h-4" />,
       card: 2,
     },
     {
-      label: 'Preparing for the Procedure',
+      label: "Preparing for the Procedure",
       icon: <FileText className="w-4 h-4" />,
       card: 3,
     },
     {
-      label: 'During the Procedure',
+      label: "During the Procedure",
       icon: <Camera className="w-4 h-4" />,
       card: 4,
     },
     {
-      label: 'Recovery & Aftercare',
+      label: "Recovery & Aftercare",
       icon: <Heart className="w-4 h-4" />,
       card: 5,
     },
     {
-      label: 'When to Seek Help',
+      label: "When to Seek Help",
       icon: <Shield className="w-4 h-4" />,
       card: 6,
     },
@@ -50,10 +49,10 @@ const HysterosButtons = ({ setShowCard, activeButton, setActiveButton }) => {
           className={`flex flex-col items-center justify-center text-center 
             w-full py-2 sm:py-3 px-3 sm:px-4 
             font-semibold rounded-md 
-            text-[#BB125B] bg-[#FF4B8B]/10 hover:bg-[#FF4B8B]/30 
+            text-black bg-[#FF4B8B]/10 hover:bg-[#FF4B8B]/30 
             text-xs sm:text-button md:text-base 
             transition-all 
-            ${activeButton === index ? 'bg-[#FF4B8B]/50 text-black' : ''}`}
+            ${activeButton === index ? "bg-light-pink-2 text-black" : ""}`}
         >
           {button.icon}
           <span className="leading-tight">{button.label}</span>

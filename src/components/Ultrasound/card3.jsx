@@ -1,10 +1,10 @@
-import React from 'react';
-import { Zap, Monitor, Stethoscope, Shield, CircleCheck } from 'lucide-react';
+import React from "react";
+import { Zap, Monitor, Stethoscope, Shield, CircleCheck } from "lucide-react";
 
 const UltrasoundCard3 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="UltrasoundCard3">
-      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl text-[#BB125B] mx-auto mb-10 flex flex-col gap-6 rounded-xl border py-6 shadow-sm animate-in slide-in-from-right-5 duration-300">
+      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl text-black mx-auto mb-10 flex flex-col gap-6 rounded-xl border py-6 shadow-sm animate-in slide-in-from-right-5 duration-300">
         {/* Card Header */}
         <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 border-b pb-6">
           <div className="leading-none font-semibold flex items-center gap-2">
@@ -23,12 +23,14 @@ const UltrasoundCard3 = ({ setShowCard, setActiveButton }) => {
                 Transabdominal Ultrasound
               </h4>
               <div className="space-y-3">
-                <p className="text-sm text-muted-foreground">The probe (transducer) is placed on your lower tummy</p>
+                <p className="text-sm text-muted-foreground">
+                  The probe (transducer) is placed on your lower tummy
+                </p>
                 <div className="space-y-2">
                   {[
                     "Gives a broad view of pelvic organs",
                     "Non-invasive external scan",
-                    "May require full bladder"
+                    "May require full bladder",
                   ].map((item, index) => (
                     <div key={index} className="flex items-center gap-2">
                       <CircleCheck className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
@@ -46,12 +48,14 @@ const UltrasoundCard3 = ({ setShowCard, setActiveButton }) => {
                 Transvaginal Ultrasound
               </h4>
               <div className="space-y-3">
-                <p className="text-sm text-muted-foreground">The probe is gently inserted into the vagina</p>
+                <p className="text-sm text-muted-foreground">
+                  The probe is gently inserted into the vagina
+                </p>
                 <div className="space-y-2">
                   {[
                     "Gives closer, more detailed images",
                     "Often used for fertility assessment",
-                    "Better for early pregnancy monitoring"
+                    "Better for early pregnancy monitoring",
                   ].map((item, index) => (
                     <div key={index} className="flex items-center gap-2">
                       <CircleCheck className="w-4 h-4 text-accent mt-0.5 flex-shrink-0" />
@@ -70,7 +74,8 @@ const UltrasoundCard3 = ({ setShowCard, setActiveButton }) => {
               Safety Information
             </h4>
             <p className="text-sm leading-relaxed">
-              Both types are <strong>safe and usually painless</strong>. There are no known risks or side effects from diagnostic ultrasound at the levels used in medical imaging.
+              Both types are <strong>safe and usually painless</strong>. There are no known risks or
+              side effects from diagnostic ultrasound at the levels used in medical imaging.
             </p>
           </div>
 

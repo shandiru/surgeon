@@ -25,7 +25,7 @@ const Endometriosiscard5 = ({ setShowCard, setActiveButton }) => {
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#FF4B8B] mb-3">
             How It&apos;s Diagnosed
           </h2>
-          <p className="text-base sm:text-lg text-gray-700">Understanding the diagnostic process</p>
+          <p className="text-base sm:text-lg text-black">Understanding the diagnostic process</p>
         </div>
 
         {/* Steps */}

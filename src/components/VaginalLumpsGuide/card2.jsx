@@ -73,7 +73,7 @@ const VaginalLumpsGuideCard2 = ({ setShowCard, setActiveButton }) => {
           <h2 className="text-3xl font-bold mb-3" style={{ color: "rgb(255,75,139)" }}>
             Common Causes of Vulvar & Vaginal Lumps
           </h2>
-          <p className="text-lg text-gray-700">
+          <p className="text-lg text-black">
             Understanding the different types of lumps can help you know what to expect
           </p>
         </div>
@@ -110,7 +110,7 @@ const VaginalLumpsGuideCard2 = ({ setShowCard, setActiveButton }) => {
 
               {/* Dropdown Content */}
               {openIndex === index && (
-                <ul className="px-14 space-y-1 list-disc text-sm text-gray-700 transition-all duration-300">
+                <ul className="px-14 space-y-1 list-disc text-sm text-black transition-all duration-300">
                   {item.bullets.map((b, i) => (
                     <li key={i}>{b}</li>
                   ))}

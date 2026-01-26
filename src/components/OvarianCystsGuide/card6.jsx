@@ -5,9 +5,8 @@ const OvarianCystsGuideCard6 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="pb-10">
       <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto animate-in slide-in-from-right-5 duration-300">
-
         {/* MAIN WRAPPER */}
-        <div className="flex flex-col gap-6 rounded-xl py-6 px-5 sm:px-6 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all bg-[#FF4B8B]/10 text-[#BB125B] border border-[#FF4B8B]/10">
+        <div className="flex flex-col gap-6 rounded-xl py-6 px-5 sm:px-6 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all bg-light-pink-1 text-black border border-[#FF4B8B]/10">
           {/* HEADER */}
           <div className="flex items-center gap-3 font-semibold text-[#FF4B8B] text-lg">
             <svg
@@ -42,9 +41,7 @@ const OvarianCystsGuideCard6 = ({ setShowCard, setActiveButton }) => {
                 <circle cx="12" cy="12" r="10"></circle>
                 <path d="m9 12 2 2 4-4"></path>
               </svg>
-              <span className="text-sm">
-                Most ovarian cysts do not affect fertility
-              </span>
+              <span className="text-sm">Most ovarian cysts do not affect fertility</span>
             </div>
 
             {/* 2 */}
@@ -103,7 +100,6 @@ const OvarianCystsGuideCard6 = ({ setShowCard, setActiveButton }) => {
             Continue to Next Section
           </button>
         </div>
-        
       </div>
     </div>
   );

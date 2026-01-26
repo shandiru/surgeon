@@ -1,10 +1,10 @@
-import React from 'react';
-import { Stethoscope, Zap, FileText, CircleCheck, Lightbulb } from 'lucide-react';
+import React from "react";
+import { Stethoscope, Zap, FileText, CircleCheck, Lightbulb } from "lucide-react";
 
 const UltrasoundCard2 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="UltrasoundCard2">
-      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl text-[#BB125B] mx-auto mb-10 flex flex-col gap-6 rounded-xl border py-6 shadow-sm animate-in slide-in-from-right-5 duration-300">
+      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl text-black mx-auto mb-10 flex flex-col gap-6 rounded-xl border py-6 shadow-sm animate-in slide-in-from-right-5 duration-300">
         {/* Card Header */}
         <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 border-b pb-6">
           <div className="leading-none font-semibold flex items-center gap-2">
@@ -24,9 +24,12 @@ const UltrasoundCard2 = ({ setShowCard, setActiveButton }) => {
                   "Pelvic pain",
                   "Abnormal vaginal bleeding",
                   "Fertility issues",
-                  "Menstrual problems"
+                  "Menstrual problems",
                 ].map((item, index) => (
-                  <div key={index} className="flex items-start gap-3 p-3 bg-card rounded-lg border hover:z-50 transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-[0_0_25px_rgba(255,151,179,0.5)]  hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:scale-105 active:scale-100">
+                  <div
+                    key={index}
+                    className="flex items-start gap-3 p-3 bg-card rounded-lg border hover:z-50 transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-[0_0_25px_rgba(255,151,179,0.5)]  hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:scale-105 active:scale-100"
+                  >
                     <div className="w-6 h-6 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                       <span className="text-xs font-bold text-primary">{index + 1}</span>
                     </div>
@@ -46,18 +49,15 @@ const UltrasoundCard2 = ({ setShowCard, setActiveButton }) => {
                   "Assess fertility issues",
                   "Monitor early pregnancy",
                   "Measure endometrium",
-                  "Detect miscarriage causes"
+                  "Detect miscarriage causes",
                 ].map((item, index) => (
-                  <div key={index} className="flex items-center justify-between p-2 bg-muted rounded">
+                  <div
+                    key={index}
+                    className="flex items-center justify-between p-2 bg-muted rounded"
+                  >
                     <span className="text-sm">{item}</span>
-                    <span
-                      className="inline-flex items-center justify-center rounded-md border px-2 py-0.5 font-medium w-fit whitespace-nowrap shrink-0 text-xs bg-secondary text-secondary-foreground"
-                    >
-                      {index % 3 === 0
-                        ? "Screening"
-                        : index % 3 === 1
-                          ? "Diagnosis"
-                          : "Treatment"}
+                    <span className="inline-flex items-center justify-center rounded-md border px-2 py-0.5 font-medium w-fit whitespace-nowrap shrink-0 text-xs bg-secondary text-secondary-foreground">
+                      {index % 3 === 0 ? "Screening" : index % 3 === 1 ? "Diagnosis" : "Treatment"}
                     </span>
                   </div>
                 ))}
@@ -71,7 +71,8 @@ const UltrasoundCard2 = ({ setShowCard, setActiveButton }) => {
               <Lightbulb className="w-5 h-5 inline-block" /> Important Note
             </h4>
             <p className="text-sm">
-              If the womb lining is thicker than expected, you may be offered a hysteroscopy and biopsy to investigate further. This is a precautionary measure to ensure your health.
+              If the womb lining is thicker than expected, you may be offered a hysteroscopy and
+              biopsy to investigate further. This is a precautionary measure to ensure your health.
             </p>
           </div>
 

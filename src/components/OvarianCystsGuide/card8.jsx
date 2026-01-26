@@ -5,9 +5,8 @@ const OvarianCystsGuideCard8 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6 pb-10">
       <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto animate-in slide-in-from-right-5 duration-300">
-
         {/* ================= MAIN CARD ================= */}
-        <div className="flex flex-col gap-6 rounded-xl bg-white text-[#BB125B] border border-[#FF4B8B]/10 shadow-lg hover:shadow-xl transition-all duration-300 py-6 px-6 sm:px-8">
+        <div className="flex flex-col gap-6 rounded-xl bg-white text-black border border-[#FF4B8B]/10 shadow-lg hover:shadow-xl transition-all duration-300 py-6 px-6 sm:px-8">
           {/* HEADER */}
           <div className="flex items-center gap-3 text-xl font-semibold text-[#FF4B8B]">
             <svg
@@ -30,19 +29,19 @@ const OvarianCystsGuideCard8 = ({ setShowCard, setActiveButton }) => {
           {/* TOP HIGHLIGHT BOX */}
           <div className="mb-6 p-4 rounded-lg bg-[#FEE6EA] shadow-sm">
             <p className="font-medium">
-              Surgery is only needed if the cyst is large, painful, persistent, or possibly cancerous.
+              Surgery is only needed if the cyst is large, painful, persistent, or possibly
+              cancerous.
             </p>
           </div>
 
           {/* ================= TWO SURGERY CARDS ================= */}
           <div className="grid md:grid-cols-2 gap-6">
-
             {/* Laparoscopy */}
             <div
               className="bg-white rounded-lg p-5 shadow-md hover:shadow-lg transition-all duration-300"
               style={{ border: "1px solid rgb(255,197,211)" }}
             >
-              <h4 className="font-semibold mb-2 text-[#BB125B]">Laparoscopy</h4>
+              <h4 className="font-semibold mb-2 text-black">Laparoscopy</h4>
               <p className="text-sm mb-3 text-[#555]">Keyhole surgery using small cuts</p>
               <span className="inline-flex items-center justify-center rounded-full px-3 py-1 text-xs font-medium bg-[#FF4B8B1A] text-[#FF4B8B]">
                 Often used for smaller, benign cysts
@@ -51,15 +50,14 @@ const OvarianCystsGuideCard8 = ({ setShowCard, setActiveButton }) => {
 
             {/* Laparotomy */}
             <div className="bg-white rounded-lg p-5 border border-[#FF4B8B]/10 shadow-md hover:shadow-lg transition-all duration-300">
-              <h4 className="font-semibold mb-2 text-[#BB125B]">Laparotomy</h4>
+              <h4 className="font-semibold mb-2 text-black">Laparotomy</h4>
               <p className="text-sm mb-3 text-[#555]">
                 Open surgery through a larger cut in the abdomen
               </p>
-              <span className="inline-flex items-center justify-center rounded-full px-3 py-1 text-xs font-medium bg-[#FEE6EA] text-[#BB125B]">
+              <span className="inline-flex items-center justify-center rounded-full px-3 py-1 text-xs font-medium bg-[#FEE6EA] text-black">
                 Used for larger or possibly cancerous cysts
               </span>
             </div>
-
           </div>
 
           {/* ================= NEXT BUTTON ================= */}
@@ -74,7 +72,6 @@ const OvarianCystsGuideCard8 = ({ setShowCard, setActiveButton }) => {
               Complete Guide
             </button>
           </div>
-
         </div>
       </div>
     </div>

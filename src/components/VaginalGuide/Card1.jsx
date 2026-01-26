@@ -1,16 +1,12 @@
-'use client';
-import { Lightbulb } from 'lucide-react';
-import React from 'react';
+"use client";
+import { Lightbulb } from "lucide-react";
+import React from "react";
 
 const VaginalCard1 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6 pb-10 px-4">
-
       {/* Card Container */}
-      <div
-        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-2xl border border-[#FF4B8B]/10 shadow-sm animate-in slide-in-from-right-5 duration-300 p-8 bg-white"
-      >
-
+      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-2xl border border-[#FF4B8B]/10 shadow-sm animate-in slide-in-from-right-5 duration-300 p-8 bg-white">
         {/* Card Header */}
         <div className="grid auto-rows-min items-start gap-1.5">
           <div className="leading-none font-semibold flex items-center gap-2 text-[#FF4B8B]">
@@ -38,10 +34,9 @@ const VaginalCard1 = ({ setShowCard, setActiveButton }) => {
 
         {/* Card Content */}
         <div className="space-y-6">
-
           {/* Overview Box */}
           <div className="p-4 rounded-xl border border-[#FF4B8B]/10 transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-100 bg-[#FF4B8B]/10">
-            <p className="text-lg leading-relaxed text-[#BB125B]">
+            <p className="text-lg leading-relaxed text-black">
               Vaginal cancer is a rare cancer that begins in the tissues of the vagina—the muscular
               canal that connects the cervix to the outside of the body. It often first appears as
               <strong> pre-cancerous changes (VAIN)</strong>, making early detection essential for
@@ -51,7 +46,6 @@ const VaginalCard1 = ({ setShowCard, setActiveButton }) => {
 
           {/* Quick Facts + Reminder */}
           <div className="grid md:grid-cols-2 gap-6">
-
             {/* Quick Facts */}
             <div className="space-y-3">
               <h4 className="font-semibold flex items-center gap-2 text-[#FF4B8B]">
@@ -75,10 +69,10 @@ const VaginalCard1 = ({ setShowCard, setActiveButton }) => {
 
               <ul className="space-y-2">
                 {[
-                  'Most common in women over 60',
-                  'Often linked to HPV infection (high-risk strains)',
-                  'Usually starts as pre-cancerous changes (VAIN)',
-                  'Early stages may show few or no symptoms',
+                  "Most common in women over 60",
+                  "Often linked to HPV infection (high-risk strains)",
+                  "Usually starts as pre-cancerous changes (VAIN)",
+                  "Early stages may show few or no symptoms",
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-2">
                     <svg
@@ -96,7 +90,7 @@ const VaginalCard1 = ({ setShowCard, setActiveButton }) => {
                       <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
                       <path d="m9 11 3 3L22 4"></path>
                     </svg>
-                    <span className="text-[#BB125B]">{item}</span>
+                    <span className="text-black">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -108,7 +102,7 @@ const VaginalCard1 = ({ setShowCard, setActiveButton }) => {
                 <Lightbulb className="text-xl text-[#FF4B8B]" />
                 Remember
               </h4>
-              <p className="text-sm text-[#BB125B]">
+              <p className="text-sm text-black">
                 Vaginal cancer is rare, but early detection is crucial. Watch for symptoms such as
                 unusual bleeding, persistent pelvic pain, or a lump inside the vagina. Small changes
                 can be important—early evaluation leads to better outcomes.
@@ -128,7 +122,6 @@ const VaginalCard1 = ({ setShowCard, setActiveButton }) => {
               Continue to Next Section
             </button>
           </div>
-
         </div>
       </div>
     </div>

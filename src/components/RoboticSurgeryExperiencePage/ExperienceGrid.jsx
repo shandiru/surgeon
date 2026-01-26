@@ -1,55 +1,61 @@
-import React from 'react';
-import { Award, GraduationCap, Target, Calendar, Heart, Users, ArrowRight } from 'lucide-react';
+import React from "react";
+import { Award, GraduationCap, Target, Calendar, Heart, Users, ArrowRight } from "lucide-react";
 
 export default function ExperienceGrid() {
   const experienceCards = [
     {
       icon: <Award className="w-6 h-6" />,
-      title: 'Years of Experience',
-      description: 'Extensive experience in robotic-assisted gynecological surgery with a focus on minimally invasive techniques.',
-      background: 'bg-[#FDE7EB]',
-      iconBg: 'bg-[#FF4B8B]',
-      hoverColor: 'hover:bg-[#FDE7EB]',
+      title: "Years of Experience",
+      description:
+        "Extensive experience in robotic-assisted gynecological surgery with a focus on minimally invasive techniques.",
+      background: "bg-[#FDE7EB]",
+      iconBg: "bg-[#FF4B8B]",
+      hoverColor: "hover:bg-[#FDE7EB]",
     },
     {
       icon: <Target className="w-6 h-6" />,
-      title: 'Surgical Expertise',
-      description: 'Specialized in robotic surgery for endometrial cancer, cervical cancer, and complex benign conditions.',
-      background: 'bg-white',
-      iconBg: 'bg-[#FF4B8B]',
-      hoverColor: 'hover:bg-[#FF4B8B]',
+      title: "Surgical Expertise",
+      description:
+        "Specialized in robotic surgery for endometrial cancer, cervical cancer, and complex benign conditions.",
+      background: "bg-white",
+      iconBg: "bg-[#FF4B8B]",
+      hoverColor: "hover:bg-[#FF4B8B]",
     },
     {
       icon: <GraduationCap className="w-6 h-6" />,
-      title: 'Specialized Training',
-      description: 'Certified in da Vinci Surgical System with advanced training in complex gynecological procedures.',
-      background: 'bg-[#FDE7EB]',
-      iconBg: 'bg-[#FF4B8B]',
-      hoverColor: 'hover:bg-[#FDE7EB]',
+      title: "Specialized Training",
+      description:
+        "Certified in da Vinci Surgical System with advanced training in complex gynecological procedures.",
+      background: "bg-[#FDE7EB]",
+      iconBg: "bg-[#FF4B8B]",
+      hoverColor: "hover:bg-[#FDE7EB]",
     },
     {
       icon: <Heart className="w-6 h-6" />,
-      title: 'Patient Care',
-      description: 'Compassionate care ensuring each patient receives personalized treatment tailored to their unique needs.',
-      background: 'bg-white',
-      iconBg: 'bg-[#FF4B8B]',
-      hoverColor: 'hover:bg-[#FF4B8B]',
+      title: "Patient Care",
+      description:
+        "Compassionate care ensuring each patient receives personalized treatment tailored to their unique needs.",
+      background: "bg-white",
+      iconBg: "bg-[#FF4B8B]",
+      hoverColor: "hover:bg-[#FF4B8B]",
     },
     {
       icon: <Calendar className="w-6 h-6" />,
-      title: 'Continuous Learning',
-      description: 'Regularly attends international conferences and workshops to stay at the forefront of robotic surgery advancements.',
-      background: 'bg-[#FDE7EB]',
-      iconBg: 'bg-[#FF4B8B]',
-      hoverColor: 'hover:bg-[#FDE7EB]',
+      title: "Continuous Learning",
+      description:
+        "Regularly attends international conferences and workshops to stay at the forefront of robotic surgery advancements.",
+      background: "bg-[#FDE7EB]",
+      iconBg: "bg-[#FF4B8B]",
+      hoverColor: "hover:bg-[#FDE7EB]",
     },
     {
       icon: <Users className="w-6 h-6" />,
-      title: 'Teaching & Mentorship',
-      description: 'Actively teaching robotic surgery techniques to surgeons across Europe, sharing expertise and advancing surgical education.',
-      background: 'bg-white',
-      iconBg: 'bg-[#FF4B8B]',
-      hoverColor: 'hover:bg-[#FF4B8B]',
+      title: "Teaching & Mentorship",
+      description:
+        "Actively teaching robotic surgery techniques to surgeons across Europe, sharing expertise and advancing surgical education.",
+      background: "bg-white",
+      iconBg: "bg-[#FF4B8B]",
+      hoverColor: "hover:bg-[#FF4B8B]",
     },
   ];
 
@@ -64,19 +70,17 @@ export default function ExperienceGrid() {
                 className={`${card.background} rounded-xl p-6 md:p-8 shadow-md hover:shadow-lg transition-all duration-300 flex flex-col`}
               >
                 {/* Icon in Circular Background */}
-                <div className={`w-14 h-14 ${card.iconBg} rounded-full flex items-center justify-center mb-4`}>
-                  <div className="text-white">
-                    {card.icon}
-                  </div>
+                <div
+                  className={`w-14 h-14 ${card.iconBg} rounded-full flex items-center justify-center mb-4`}
+                >
+                  <div className="text-white">{card.icon}</div>
                 </div>
 
                 {/* Title */}
-                <h3 className="text-subsection text-gray-900 font-bold mb-3">
-                  {card.title}
-                </h3>
+                <h3 className="text-subsection text-gray-900 font-bold mb-3">{card.title}</h3>
 
                 {/* Description */}
-                <p className="text-body text-gray-700 leading-relaxed mb-4 flex-1">
+                <p className="text-body text-black leading-relaxed mb-4 flex-1">
                   {card.description}
                 </p>
 

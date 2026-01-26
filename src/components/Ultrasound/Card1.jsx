@@ -1,10 +1,10 @@
-import React from 'react';
-import { Monitor, Zap, FileText, CircleCheck } from 'lucide-react';
+import React from "react";
+import { Monitor, Zap, FileText, CircleCheck } from "lucide-react";
 
 const UltrasoundCard1 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="UltrasoundCard1">
-      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl text-[#BB125B] mx-auto mb-10 flex flex-col gap-6 rounded-xl border py-6 shadow-sm animate-in slide-in-from-right-5 duration-300">
+      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl text-black mx-auto mb-10 flex flex-col gap-6 rounded-xl border py-6 shadow-sm animate-in slide-in-from-right-5 duration-300">
         {/* Card Header */}
         <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 border-b pb-6">
           <div className="leading-none font-semibold flex items-center gap-2">
@@ -18,7 +18,8 @@ const UltrasoundCard1 = ({ setShowCard, setActiveButton }) => {
           {/* How it works */}
           <div className="bg-primary/5 p-4 rounded-lg border border-primary/20">
             <p className="text-lg leading-relaxed">
-              A gynaecological (pelvic) ultrasound is a <strong>safe and painless</strong> way to examine the uterus, ovaries, fallopian tubes and other pelvic organs.
+              A gynaecological (pelvic) ultrasound is a <strong>safe and painless</strong> way to
+              examine the uterus, ovaries, fallopian tubes and other pelvic organs.
             </p>
           </div>
 
@@ -34,7 +35,7 @@ const UltrasoundCard1 = ({ setShowCard, setActiveButton }) => {
                   "Uses sound waves to create real-time images",
                   "No radiation involved - completely safe",
                   "Shows organs in real-time motion",
-                  "One of the most effective diagnostic tools"
+                  "One of the most effective diagnostic tools",
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-2">
                     <CircleCheck className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
@@ -56,7 +57,7 @@ const UltrasoundCard1 = ({ setShowCard, setActiveButton }) => {
                   "Ovaries and follicles",
                   "Fallopian tubes",
                   "Endometrial lining thickness",
-                  "Any abnormalities or cysts"
+                  "Any abnormalities or cysts",
                 ].map((item, index) => (
                   <li key={index}>• {item}</li>
                 ))}

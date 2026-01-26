@@ -66,7 +66,7 @@ export default function EndometrialDiagnosisSection() {
                       >
                         {i + 1}
                       </span>
-                      <p className="text-sm text-gray-700">{item}</p>
+                      <p className="text-sm text-black">{item}</p>
                     </div>
                   ))}
                 </div>
@@ -85,7 +85,7 @@ export default function EndometrialDiagnosisSection() {
                       >
                         {i + 4}
                       </span>
-                      <p className="text-sm text-gray-700">{item}</p>
+                      <p className="text-sm text-black">{item}</p>
                     </div>
                   ))}
                 </div>
@@ -105,7 +105,7 @@ export default function EndometrialDiagnosisSection() {
             <p className="text-sm text-black mb-2">
               Your doctor will assign a cancer stage, which describes:
             </p>
-            <ul className="text-sm space-y-1 list-disc ml-6 text-gray-700">
+            <ul className="text-sm space-y-1 list-disc ml-6 text-black">
               <li>How far the cancer has spread (metastasis)</li>
               <li>Tumor size and aggressiveness</li>
               <li>Grading system (letters and numbers) to classify severity</li>

@@ -1,13 +1,14 @@
 "use client";
-import { ShieldCheck, Heart, Star, PlusCircle } from 'lucide-react';
+import { ShieldCheck, Heart, Star, PlusCircle } from "lucide-react";
 
 const OvarianCancerGuidecard7 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6 pb-14">
       {/* Card Container */}
-      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl text-[#BB125B] mx-auto mb-10
-        flex flex-col gap-6 rounded-xl border border-[#FF4B8B]/10 py-6 shadow-sm animate-in slide-in-from-right-5 duration-300">
-
+      <div
+        className="max-w-sm sm:max-w-2xl lg:max-w-5xl text-black mx-auto mb-10
+        flex flex-col gap-6 rounded-xl border border-[#FF4B8B]/10 py-6 shadow-sm animate-in slide-in-from-right-5 duration-300"
+      >
         {/* Card Header */}
         <div
           className="grid auto-rows-min grid-rows-[auto_auto] items-start
@@ -25,40 +26,35 @@ const OvarianCancerGuidecard7 = ({ setShowCard, setActiveButton }) => {
 
         {/* Card Content */}
         <div className="px-6 space-y-4">
-
           {/* Prevention Overview */}
-          <div className="p-4 rounded-lg bg-[#FF4B8B]/10 border border-[#FF4B8B]/10">
+          <div className="p-4 rounded-lg bg-light-pink-1 border border-[#FF4B8B]/10">
             <h4 className="leading-none font-semibold flex items-center gap-2 text-[#FF4B8B]">
               <Heart className="w-5 h-5 inline-block text-[#FF4B8B]" />
               Why Prevention Matters
             </h4>
-            <p className="text-sm leading-relaxed text-[#BB125B]">
+            <p className="text-sm leading-relaxed text-black">
               Ovarian cancer often develops silently. While there is no reliable screening test,
-              knowing your risks and making informed choices can significantly reduce the likelihood.
+              knowing your risks and making informed choices can significantly reduce the
+              likelihood.
             </p>
           </div>
 
           {/* Prevention Steps */}
           <div className="grid md:grid-cols-2 gap-4">
             <div className="space-y-3">
-              <h4 className="font-semibold text-[#FF4B8B]">
-                Ways to Reduce Your Risk:
-              </h4>
+              <h4 className="font-semibold text-[#FF4B8B]">Ways to Reduce Your Risk:</h4>
               <div className="space-y-2">
                 {[
-                  'Genetic testing if you have a strong family history',
-                  'Using oral contraceptives (long-term use lowers risk)',
-                  'Maintaining a healthy body weight',
-                  'Treating endometriosis early',
-                  'Considering risk-reducing surgery (BRCA1/BRCA2 carriers)',
-                  'Being aware of symptoms and seeking prompt evaluation'
+                  "Genetic testing if you have a strong family history",
+                  "Using oral contraceptives (long-term use lowers risk)",
+                  "Maintaining a healthy body weight",
+                  "Treating endometriosis early",
+                  "Considering risk-reducing surgery (BRCA1/BRCA2 carriers)",
+                  "Being aware of symptoms and seeking prompt evaluation",
                 ].map((item, index) => (
-                  <div
-                    key={index}
-                    className="flex items-start gap-2 text-sm"
-                  >
+                  <div key={index} className="flex items-start gap-2 text-sm">
                     <PlusCircle className="w-4 h-4 mt-0.5 flex-shrink-0 text-[#FF4B8B]" />
-                    <span className="text-[#BB125B]">{item}</span>
+                    <span className="text-black">{item}</span>
                   </div>
                 ))}
               </div>
@@ -69,10 +65,13 @@ const OvarianCancerGuidecard7 = ({ setShowCard, setActiveButton }) => {
               className="p-4 rounded-lg"
               style={{
                 backgroundColor: "#FFE6EE",
-                border: "1px solid #FFC5D3"
+                border: "1px solid #FFC5D3",
               }}
             >
-              <h4 className="leading-none font-semibold flex items-center gap-2" style={{ color: "#FF4B8B" }}>
+              <h4
+                className="leading-none font-semibold flex items-center gap-2"
+                style={{ color: "#FF4B8B" }}
+              >
                 <Heart className="w-5 h-5 inline-block" />
                 Remember
               </h4>
@@ -91,9 +90,9 @@ const OvarianCancerGuidecard7 = ({ setShowCard, setActiveButton }) => {
               <Star className="w-5 h-5 inline-block text-[#FF4B8B]" />
               Key Takeaway
             </h4>
-            <p className="text-sm leading-relaxed text-[#BB125B]">
-              Although ovarian cancer cannot always be prevented, knowing your risk, staying
-              alert to symptoms, and seeking medical advice early can make a meaningful difference.
+            <p className="text-sm leading-relaxed text-black">
+              Although ovarian cancer cannot always be prevented, knowing your risk, staying alert
+              to symptoms, and seeking medical advice early can make a meaningful difference.
             </p>
           </div>
 
@@ -111,7 +110,6 @@ const OvarianCancerGuidecard7 = ({ setShowCard, setActiveButton }) => {
               Continue to Final Summary
             </button>
           </div>
-
         </div>
       </div>
     </div>

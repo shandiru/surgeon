@@ -36,7 +36,7 @@ const Endometriosiscard7 = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#FF4B8B]">
               Treatment Options
             </h2>
-            <p className="text-lg text-gray-700">
+            <p className="text-lg text-black">
               Personalized treatment plans tailored to your needs
             </p>
           </div>

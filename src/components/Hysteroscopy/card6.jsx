@@ -1,10 +1,10 @@
-import React from 'react';
-import { CircleAlert, Shield, Phone, Thermometer, Bolt, Trash2, Star } from 'lucide-react';
+import React from "react";
+import { CircleAlert, Shield, Phone, Thermometer, Bolt, Trash2, Star } from "lucide-react";
 
 const Hysteroscopycard6 = () => {
   return (
     <div className="space-y-6">
-      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl text-[#BB125B] mx-auto mb-10 flex flex-col gap-6 rounded-xl border py-6 shadow-sm animate-in slide-in-from-right-5 duration-300">
+      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl text-black mx-auto mb-10 flex flex-col gap-6 rounded-xl border py-6 shadow-sm animate-in slide-in-from-right-5 duration-300">
         {/* Header Section */}
         <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6">
           <div className="leading-none font-semibold flex items-center gap-2">
@@ -61,7 +61,8 @@ const Hysteroscopycard6 = () => {
               Emergency Contact
             </h4>
             <p className="text-sm">
-              These symptoms may be signs of infection or complications (which are rare). Don't hesitate to contact your healthcare provider if you're concerned about any symptoms.
+              These symptoms may be signs of infection or complications (which are rare). Don't
+              hesitate to contact your healthcare provider if you're concerned about any symptoms.
             </p>
           </div>
 
@@ -95,7 +96,9 @@ const Hysteroscopycard6 = () => {
           {/* Complete Guide Button */}
           <div className="pt-4">
             <button
-              onClick={() => {/* Add functionality here */ }}
+              onClick={() => {
+                /* Add functionality here */
+              }}
               className="inline-flex items-center justify-center gap-2 bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 h-9 px-4 py-2 w-full"
             >
               <span>Complete Guide</span>

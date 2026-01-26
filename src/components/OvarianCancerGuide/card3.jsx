@@ -1,23 +1,16 @@
-'use client';
-import React from 'react';
-import {
-  Biohazard,
-  Cigarette,
-  CloudFog,
-  Sparkles,
-  ShieldOff,
-  UserMinus,
-} from 'lucide-react';
+"use client";
+import React from "react";
+import { Biohazard, Cigarette, CloudFog, Sparkles, ShieldOff, UserMinus } from "lucide-react";
 
 const OvarianCancerGuidecard3 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6 pb-10">
-
       {/* Card Container */}
-      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 
+      <div
+        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 
         flex flex-col gap-6 rounded-2xl border border-[#FF4B8B]/10 shadow-sm 
-        animate-in slide-in-from-right-5 duration-300 p-8 bg-white">
-
+        animate-in slide-in-from-right-5 duration-300 p-8 bg-white"
+      >
         {/* Card Header */}
         <div className="grid auto-rows-min items-start gap-1.5">
           <div className="leading-none font-semibold flex items-center gap-2 text-[#FF4B8B]">
@@ -40,55 +33,55 @@ const OvarianCancerGuidecard3 = ({ setShowCard, setActiveButton }) => {
             Key Risk Factors
           </div>
 
-          <div className="text-sm text-[#BB125B]">
-            Not everyone with risk factors will develop ovarian cancer, but they increase likelihood.
+          <div className="text-sm text-black">
+            Not everyone with risk factors will develop ovarian cancer, but they increase
+            likelihood.
           </div>
         </div>
 
         {/* Card Content */}
         <div className="space-y-4">
-
           {/* Risk Factors Section */}
           <div className="space-y-4">
-
             {[
               {
-                step: 'Age (Especially After 50)',
+                step: "Age (Especially After 50)",
                 icon: <CloudFog className="w-5 h-5 text-[#FF4B8B]" />,
-                description: 'Most ovarian cancers occur after menopause.',
+                description: "Most ovarian cancers occur after menopause.",
               },
               {
-                step: 'Family History of Ovarian, Breast, or Colorectal Cancer',
+                step: "Family History of Ovarian, Breast, or Colorectal Cancer",
                 icon: <Biohazard className="w-5 h-5 text-[#FF4B8B]" />,
-                description: 'Close relatives with these cancers increase your genetic risk.',
+                description: "Close relatives with these cancers increase your genetic risk.",
               },
               {
-                step: 'Inherited Mutations (BRCA1, BRCA2, Lynch Syndrome)',
+                step: "Inherited Mutations (BRCA1, BRCA2, Lynch Syndrome)",
                 icon: <ShieldOff className="w-5 h-5 text-[#FF4B8B]" />,
-                description: 'These mutations significantly increase ovarian cancer risk.',
+                description: "These mutations significantly increase ovarian cancer risk.",
               },
               {
-                step: 'Endometriosis',
+                step: "Endometriosis",
                 icon: <Sparkles className="w-5 h-5 text-[#FF4B8B]" />,
-                description: 'Long-term endometriosis is linked to certain ovarian cancer types.',
+                description: "Long-term endometriosis is linked to certain ovarian cancer types.",
               },
               {
-                step: 'Never Having Been Pregnant',
+                step: "Never Having Been Pregnant",
                 icon: <UserMinus className="w-5 h-5 text-[#FF4B8B]" />,
-                description: 'Women who have never carried a pregnancy have a slightly higher risk.',
+                description:
+                  "Women who have never carried a pregnancy have a slightly higher risk.",
               },
               {
-                step: 'Long-Term Hormone Replacement Therapy (HRT)',
+                step: "Long-Term Hormone Replacement Therapy (HRT)",
                 icon: <Cigarette className="w-5 h-5 text-[#FF4B8B]" />,
-                description: 'Extended use of estrogen-only HRT may increase risk.',
+                description: "Extended use of estrogen-only HRT may increase risk.",
               },
               {
-                step: 'Obesity',
+                step: "Obesity",
                 icon: <CloudFog className="w-5 h-5 text-[#FF4B8B]" />,
-                description: 'Higher body fat can influence hormone levels that affect risk.',
+                description: "Higher body fat can influence hormone levels that affect risk.",
               },
             ].map((item, index) => (
-              <div className="flex gap-4 p-4 rounded-xl border border-[#FF4B8B]/10 transition-all duration-300 bg-[#FF4B8B]/10">
+              <div className="flex gap-4 p-4 rounded-xl border border-[#FF4B8B]/10 transition-all duration-300 bg-light-pink-1">
                 {/* Number Circle */}
                 <div className="flex-shrink-0">
                   <div
@@ -108,25 +101,22 @@ const OvarianCancerGuidecard3 = ({ setShowCard, setActiveButton }) => {
                     {item.icon}
                     {item.step}
                   </h4>
-                  <p className="text-sm text-[#BB125B]">
-                    {item.description}
-                  </p>
+                  <p className="text-sm text-black">{item.description}</p>
                 </div>
               </div>
             ))}
-
           </div>
 
           {/* Extra Info */}
-          <div className="p-4 rounded-xl border border-[#FF4B8B]/10 bg-[#FF4B8B]/10">
+          <div className="p-4 rounded-xl border border-[#FF4B8B]/10 bg-light-pink-1">
             <h4 className="font-semibold flex items-center gap-2 mb-2 text-[#FF4B8B]">
               <Sparkles className="w-5 h-5 text-[#FF4B8B]" />
               Good to Know
             </h4>
 
-            <p className="text-sm text-[#BB125B]">
-              Having one or more risk factors does not mean you will get ovarian cancer — 
-              but understanding them helps with early detection and prevention.
+            <p className="text-sm text-black">
+              Having one or more risk factors does not mean you will get ovarian cancer — but
+              understanding them helps with early detection and prevention.
             </p>
           </div>
 
@@ -144,7 +134,6 @@ const OvarianCancerGuidecard3 = ({ setShowCard, setActiveButton }) => {
               Continue to Next Section
             </button>
           </div>
-
         </div>
       </div>
     </div>

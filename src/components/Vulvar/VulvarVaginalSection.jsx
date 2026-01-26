@@ -72,7 +72,7 @@ const VulvarVaginalSection = () => {
             <h2 className="text-3xl font-bold mb-4 text-[#FF4B8B]">
               Common Causes of Vulvar &amp; Vaginal Lumps
             </h2>
-            <p className="text-lg text-gray-700">
+            <p className="text-lg text-black">
               Understanding the different types of lumps can help you know what to expect
             </p>
           </div>
@@ -106,7 +106,7 @@ const VulvarVaginalSection = () => {
 
                 {/* Card Details */}
                 {openSections[section.id] && (
-                  <ul className="px-14 space-y-1 list-disc text-sm text-gray-700">
+                  <ul className="px-14 space-y-1 list-disc text-sm text-black">
                     {section.details.map((detail, index) => (
                       <li key={index}>{detail}</li>
                     ))}

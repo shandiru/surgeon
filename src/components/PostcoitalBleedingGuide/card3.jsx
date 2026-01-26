@@ -1,18 +1,17 @@
-'use client';
-import React, { useState } from 'react';
-import { Heart, TriangleAlert, ChevronDown } from 'lucide-react';
+"use client";
+import React, { useState } from "react";
+import { Heart, TriangleAlert, ChevronDown } from "lucide-react";
 
 const PostcoitalBleedingGuidecard3 = ({ setShowCard, setActiveButton }) => {
+  const [openAccordion, setOpenAccordion] = useState(null);
 
-    const [openAccordion, setOpenAccordion] = useState(null);
-  
-    const toggleAccordion = (index) => {
-      setOpenAccordion(openAccordion === index ? null : index);
-    };
+  const toggleAccordion = (index) => {
+    setOpenAccordion(openAccordion === index ? null : index);
+  };
 
   return (
     <div className="space-y-6 pb-10 px-3">
-      <div className="max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-xl bg-white py-6 shadow-md hover:shadow-xl hover:scale-[1.01] transition-all duration-300 text-[#BB125B]">
+      <div className="max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-xl bg-white py-6 shadow-md hover:shadow-xl hover:scale-[1.01] transition-all duration-300 text-black">
         {/* Header */}
         <div className="grid auto-rows-min gap-1.5 px-6 border-b border-[#FEE6EA] pb-6">
           <h2 className="font-semibold text-2xl text-[#FF4B8B]">
@@ -50,8 +49,9 @@ const PostcoitalBleedingGuidecard3 = ({ setShowCard, setActiveButton }) => {
                 </ul>
               </div>
 
-              <div className="p-4 rounded-lg bg-[#FEE6EA] text-sm text-[#BB125B] shadow-sm">
-                Minor tears usually heal on their own in a few days to weeks. Larger tears may need stitches but heal within six weeks.
+              <div className="p-4 rounded-lg bg-[#FEE6EA] text-sm text-black shadow-sm">
+                Minor tears usually heal on their own in a few days to weeks. Larger tears may need
+                stitches but heal within six weeks.
               </div>
             </div>
 
@@ -69,16 +69,21 @@ const PostcoitalBleedingGuidecard3 = ({ setShowCard, setActiveButton }) => {
               <div className="w-full rounded-lg border border-[#FEE6EA] divide-y divide-[#FEE6EA]">
                 {[
                   {
-                    title: 'Cervical Ectropion',
+                    title: "Cervical Ectropion",
                     content: (
                       <>
-                        <p className="mb-2">Inner cervical cells turn outward and are more fragile</p>
-                        <p className="mb-2">Common during pregnancy or when using the pill. These cells bleed easily with contact.</p>
+                        <p className="mb-2">
+                          Inner cervical cells turn outward and are more fragile
+                        </p>
+                        <p className="mb-2">
+                          Common during pregnancy or when using the pill. These cells bleed easily
+                          with contact.
+                        </p>
                       </>
                     ),
                   },
                   {
-                    title: 'Cervical Polyps',
+                    title: "Cervical Polyps",
                     content: (
                       <>
                         <p className="mb-2">Small benign growths in the cervical canal</p>
@@ -87,22 +92,26 @@ const PostcoitalBleedingGuidecard3 = ({ setShowCard, setActiveButton }) => {
                     ),
                   },
                   {
-                    title: 'Cervicitis',
+                    title: "Cervicitis",
                     content: (
                       <>
                         <p className="mb-2">Inflammation of the cervix</p>
                         <p className="mb-2">
-                          Often caused by STIs like chlamydia. May have no symptoms early on but can affect fertility. Can be treated with antibiotics.
+                          Often caused by STIs like chlamydia. May have no symptoms early on but can
+                          affect fertility. Can be treated with antibiotics.
                         </p>
                       </>
                     ),
                   },
                   {
-                    title: 'Cervical Cancer',
+                    title: "Cervical Cancer",
                     content: (
                       <>
                         <p className="mb-2">The least common but most serious cause</p>
-                        <p className="mb-2">Very unlikely if you have regular cervical smear tests. Needs urgent assessment and treatment.</p>
+                        <p className="mb-2">
+                          Very unlikely if you have regular cervical smear tests. Needs urgent
+                          assessment and treatment.
+                        </p>
                       </>
                     ),
                   },
@@ -111,16 +120,19 @@ const PostcoitalBleedingGuidecard3 = ({ setShowCard, setActiveButton }) => {
                     <button
                       type="button"
                       onClick={() => toggleAccordion(index)}
-                      className="w-full flex justify-between items-center py-4 px-4 text-sm font-medium text-[#BB125B] hover:bg-[#FFF1F5] transition-colors"
+                      className="w-full flex justify-between items-center py-4 px-4 text-sm font-medium text-black hover:bg-[#FFF1F5] transition-colors"
                     >
                       {item.title}
                       <ChevronDown
-                        className={`h-5 w-5 text-[#FF4B8B] transition-transform duration-200 ${openAccordion === index ? 'rotate-180' : ''
-                          }`}
+                        className={`h-5 w-5 text-[#FF4B8B] transition-transform duration-200 ${
+                          openAccordion === index ? "rotate-180" : ""
+                        }`}
                       />
                     </button>
                     {openAccordion === index && (
-                      <div className="px-4 pb-4 text-sm text-[#6B7280] bg-[#FFF9FB]">{item.content}</div>
+                      <div className="px-4 pb-4 text-sm text-[#6B7280] bg-[#FFF9FB]">
+                        {item.content}
+                      </div>
                     )}
                   </div>
                 ))}

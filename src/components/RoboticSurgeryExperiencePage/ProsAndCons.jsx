@@ -27,7 +27,7 @@ export default function ProsAndCons() {
           {/* Section Header */}
           <div className="text-center mb-12">
             <h2 className="text-section text-[#FF4B8B] mb-4">Pros and Cons of Robotic Surgery</h2>
-            <p className="text-body-large text-gray-700 max-w-2xl mx-auto">
+            <p className="text-body-large text-black max-w-2xl mx-auto">
               Understanding the advantages and considerations of robotic-assisted surgery
             </p>
           </div>
@@ -44,7 +44,7 @@ export default function ProsAndCons() {
                 {pros.map((item, index) => (
                   <li key={index} className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-[#FF4B8B] mt-0.5 flex-shrink-0" />
-                    <span className="text-body text-gray-700">{item}</span>
+                    <span className="text-body text-black">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -60,7 +60,7 @@ export default function ProsAndCons() {
                 {cons.map((item, index) => (
                   <li key={index} className="flex items-start gap-3">
                     <XCircle className="w-5 h-5 text-black mt-0.5 flex-shrink-0" />
-                    <span className="text-body text-gray-700">{item}</span>
+                    <span className="text-body text-black">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -69,7 +69,7 @@ export default function ProsAndCons() {
 
           {/* Note Section */}
           <div className="mt-12 p-6 rounded-lg bg-[#FF4B8B]/10 border border-[#FF4B8B]/20">
-            <p className="text-body text-[#BB125B] text-center">
+            <p className="text-body text-black text-center">
               <strong>Note:</strong> The decision to use robotic surgery depends on individual
               patient circumstances, the specific procedure, and consultation with your healthcare
               provider. This information is provided as a general guide.

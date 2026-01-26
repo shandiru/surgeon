@@ -135,14 +135,14 @@ const EventDetail = () => {
                   <div className="flex items-start space-x-3">
                     <MapPin className="w-5 h-5 text-[#FF4B8B] flex-shrink-0 mt-1" />
                     <div>
-                      <p className="font-semibold text-gray-700">Location</p>
+                      <p className="font-semibold text-black">Location</p>
                       <p className="text-black">London and Birmingham</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
                     <Phone className="w-5 h-5 text-[#FF4B8B] flex-shrink-0 mt-1" />
                     <div>
-                      <p className="font-semibold text-gray-700">Phone</p>
+                      <p className="font-semibold text-black">Phone</p>
                       <p className="text-black">(+0064) 725 4143 68</p>
                     </div>
                   </div>
@@ -158,7 +158,7 @@ const EventDetail = () => {
                   <div className="flex items-start space-x-3">
                     <Globe className="w-5 h-5 text-[#FF4B8B] flex-shrink-0 mt-1" />
                     <div>
-                      <p className="font-semibold text-gray-700">Website</p>
+                      <p className="font-semibold text-black">Website</p>
                       <p className="text-black">bgcs.org.uk</p>
                     </div>
                   </div>
@@ -166,7 +166,7 @@ const EventDetail = () => {
 
                 {/* Action Buttons */}
                 <div className="flex flex-wrap gap-4">
-                  <button className="flex items-center px-6 py-3 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-xl font-semibold transition-all transform hover:scale-105">
+                  <button className="flex items-center px-6 py-3 bg-gray-100 hover:bg-gray-200 text-black rounded-xl font-semibold transition-all transform hover:scale-105">
                     <Share2 className="w-5 h-5 mr-2" />
                     Share
                   </button>
@@ -186,7 +186,7 @@ const EventDetail = () => {
               <h2 className="text-2xl font-bold text-gray-900 mb-4 border-b-2 border-[#FF4B8B] pb-2 inline-block">
                 About Event
               </h2>
-              <div className="space-y-4 text-gray-700 leading-relaxed">
+              <div className="space-y-4 text-black leading-relaxed">
                 <p>
                   The British Gynaecological Cancer Society (BGCS) is the professional home of
                   health providers working and researching the area of gynaecological cancers.
@@ -254,7 +254,7 @@ const EventDetail = () => {
                     className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg"
                   >
                     <item.icon className="w-5 h-5 text-[#FF4B8B] flex-shrink-0" />
-                    <span className="text-gray-700 text-sm">{item.text}</span>
+                    <span className="text-black text-sm">{item.text}</span>
                   </div>
                 ))}
               </div>
@@ -301,7 +301,7 @@ const EventDetail = () => {
                     </button>
                     {openFaq === index && (
                       <div className="p-4 bg-white">
-                        <p className="text-gray-700">{faq.answer}</p>
+                        <p className="text-black">{faq.answer}</p>
                       </div>
                     )}
                   </div>
@@ -343,7 +343,7 @@ const EventDetail = () => {
                     ].map((item, index) => (
                       <div key={index} className="flex items-start space-x-3">
                         <item.icon className="w-5 h-5 text-[#FF4B8B] flex-shrink-0 mt-0.5" />
-                        <span className="text-sm text-gray-700">{item.text}</span>
+                        <span className="text-sm text-black">{item.text}</span>
                       </div>
                     ))}
                   </div>

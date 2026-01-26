@@ -1,13 +1,13 @@
-'use client'
+"use client";
 
-import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // Import AOS styles
-import { LuPhone } from 'react-icons/lu';
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
+import { LuPhone } from "react-icons/lu";
 
 export default function MoreInfoSection() {
-  const pink = '#FFC5D3';
-  const deepPink = '#FF4B8B';
+  const pink = "#FFC5D3";
+  const deepPink = "#FF4B8B";
 
   useEffect(() => {
     AOS.init({
@@ -20,18 +20,14 @@ export default function MoreInfoSection() {
     <section className="bg-white" data-aos="fade-up">
       <div className="max-w-6xl mx-auto text-center py-12 px-4 rounded-lg shadow-sm">
         {/* Heading */}
-        <h3
-          className="text-2xl font-bold mb-4"
-          style={{ color: deepPink }}
-          data-aos="fade-left"
-        >
+        <h3 className="text-2xl font-bold mb-4" style={{ color: deepPink }} data-aos="fade-left">
           Need More Information?
         </h3>
 
         {/* Paragraph */}
-        <p className="text-gray-700 mb-6 max-w-2xl mx-auto" data-aos="fade-left">
-          If you have concerns about any symptoms or need personalized medical advice,
-          please consult with a healthcare professional.
+        <p className="text-black mb-6 max-w-2xl mx-auto" data-aos="fade-left">
+          If you have concerns about any symptoms or need personalized medical advice, please
+          consult with a healthcare professional.
         </p>
 
         {/* Button */}
@@ -39,7 +35,7 @@ export default function MoreInfoSection() {
           className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-semibold transition-all h-10 rounded-md px-6 shadow-md hover:scale-105 active:scale-95"
           style={{
             backgroundColor: pink,
-            color: '#fff',
+            color: "#fff",
           }}
           data-aos="fade-up"
         >

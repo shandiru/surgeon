@@ -6,7 +6,6 @@ const VaginalLumpsGuidecard5 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6 pb-10 px-3">
       <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto animate-in slide-in-from-right-5 duration-300">
-
         {/* MAIN WRAPPER */}
         <div
           className="rounded-2xl p-8 border shadow-sm"
@@ -27,7 +26,6 @@ const VaginalLumpsGuidecard5 = ({ setShowCard, setActiveButton }) => {
 
           {/* GRID 4 CARDS */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-
             {/* ================= 1. DIAGNOSIS PROCESS ================= */}
             <div
               className="flex flex-col gap-6 rounded-xl bg-white py-6 shadow-sm transition-all duration-300 hover:shadow-md hover:scale-[1.02] active:scale-[0.98]"
@@ -35,10 +33,7 @@ const VaginalLumpsGuidecard5 = ({ setShowCard, setActiveButton }) => {
             >
               <div className="px-6 text-center">
                 <div className="rounded-full mx-auto flex items-center justify-center">
-                  <Stethoscope
-                    className="w-6 h-6"
-                    style={{ color: "#FF4B8B" }}
-                  />
+                  <Stethoscope className="w-6 h-6" style={{ color: "#FF4B8B" }} />
                 </div>
                 <div className="mt-3 font-semibold text-lg" style={{ color: "#FF4B8B" }}>
                   Diagnosis Process
@@ -66,9 +61,7 @@ const VaginalLumpsGuidecard5 = ({ setShowCard, setActiveButton }) => {
                       <span className="mt-1.5 text-xs" style={{ color: "#FF4B8B" }}>
                         •
                       </span>
-                      <span className="text-sm text-gray-700 leading-relaxed">
-                        {item}
-                      </span>
+                      <span className="text-sm text-black leading-relaxed">{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -110,9 +103,7 @@ const VaginalLumpsGuidecard5 = ({ setShowCard, setActiveButton }) => {
                       <span className="mt-1.5 text-xs" style={{ color: "#FF4B8B" }}>
                         •
                       </span>
-                      <span className="text-sm text-gray-700 leading-relaxed">
-                        {item}
-                      </span>
+                      <span className="text-sm text-black leading-relaxed">{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -154,9 +145,7 @@ const VaginalLumpsGuidecard5 = ({ setShowCard, setActiveButton }) => {
                       <span className="mt-1.5 text-xs" style={{ color: "#FF4B8B" }}>
                         •
                       </span>
-                      <span className="text-sm text-gray-700 leading-relaxed">
-                        {item}
-                      </span>
+                      <span className="text-sm text-black leading-relaxed">{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -198,15 +187,12 @@ const VaginalLumpsGuidecard5 = ({ setShowCard, setActiveButton }) => {
                       <span className="mt-1.5 text-xs" style={{ color: "#FF4B8B" }}>
                         •
                       </span>
-                      <span className="text-sm text-gray-700 leading-relaxed">
-                        {item}
-                      </span>
+                      <span className="text-sm text-black leading-relaxed">{item}</span>
                     </li>
                   ))}
                 </ul>
               </div>
             </div>
-
           </div>
 
           {/* IMPORTANT NOTE BOX */}
@@ -229,9 +215,8 @@ const VaginalLumpsGuidecard5 = ({ setShowCard, setActiveButton }) => {
                   Important Note
                 </h3>
                 <p className="text-sm text-gray-800 leading-relaxed">
-                  If an STI is diagnosed, early treatment protects you and your
-                  partner. Most conditions are easily treated or monitored with
-                  proper care.
+                  If an STI is diagnosed, early treatment protects you and your partner. Most
+                  conditions are easily treated or monitored with proper care.
                 </p>
               </div>
             </div>
@@ -249,7 +234,6 @@ const VaginalLumpsGuidecard5 = ({ setShowCard, setActiveButton }) => {
               Continue to Final Section
             </button>
           </div>
-
         </div>
       </div>
     </div>

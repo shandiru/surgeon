@@ -56,28 +56,28 @@ const EventDetail = () => {
                   <div className="flex items-start space-x-3">
                     <MapPin className="w-5 h-5 text-[#FF4B8B] flex-shrink-0 mt-1" />
                     <div>
-                      <p className="font-semibold text-gray-700">Location</p>
+                      <p className="font-semibold text-black">Location</p>
                       <p className="text-black">{event.locationName}</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
                     <Phone className="w-5 h-5 text-[#FF4B8B] flex-shrink-0 mt-1" />
                     <div>
-                      <p className="font-semibold text-gray-700">Phone</p>
+                      <p className="font-semibold text-black">Phone</p>
                       <p className="text-black">{event.phone}</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
                     <Globe className="w-5 h-5 text-[#FF4B8B] flex-shrink-0 mt-1" />
                     <div>
-                      <p className="font-semibold text-gray-700">Website</p>
+                      <p className="font-semibold text-black">Website</p>
                       <p className="text-black">{event.website}</p>
                     </div>
                   </div>
                 </div>
 
                 <div className="flex flex-wrap gap-4">
-                  <button className="flex items-center px-6 py-3 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-xl font-semibold transition-all">
+                  <button className="flex items-center px-6 py-3 bg-gray-100 hover:bg-gray-200 text-black rounded-xl font-semibold transition-all">
                     <Share2 className="w-5 h-5 mr-2" /> Share
                   </button>
                   <a
@@ -97,7 +97,7 @@ const EventDetail = () => {
               <h2 className="text-2xl font-bold text-gray-900 mb-4 border-b-2 border-[#FF4B8B] pb-2 inline-block">
                 About Event
               </h2>
-              <p className="text-gray-700 leading-relaxed">{event.about}</p>
+              <p className="text-black leading-relaxed">{event.about}</p>
             </div>
 
             {/* Speakers */}
@@ -146,7 +146,7 @@ const EventDetail = () => {
                     </button>
                     {openFaq === index && (
                       <div className="p-4 bg-white">
-                        <p className="text-gray-700">{faq.answer}</p>
+                        <p className="text-black">{faq.answer}</p>
                       </div>
                     )}
                   </div>
@@ -178,11 +178,11 @@ const EventDetail = () => {
                   </div>
                 </div>
                 <div className="space-y-3 mb-6">
-                  <div className="flex items-center gap-2 text-sm text-gray-700">
+                  <div className="flex items-center gap-2 text-sm text-black">
                     <MapPin size={16} color="#FF4B8B" />{" "}
                     {event.organizers[activeOrganizer].location}
                   </div>
-                  <div className="flex items-center gap-2 text-sm text-gray-700">
+                  <div className="flex items-center gap-2 text-sm text-black">
                     <Mail size={16} color="#FF4B8B" /> {event.organizers[activeOrganizer].email}
                   </div>
                 </div>

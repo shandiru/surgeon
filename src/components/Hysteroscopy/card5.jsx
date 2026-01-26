@@ -1,10 +1,10 @@
-import React from 'react';
-import { Heart, CircleCheck, Clipboard, Clock } from 'lucide-react';
+import React from "react";
+import { Heart, CircleCheck, Clipboard, Clock } from "lucide-react";
 
 const Hysteroscopycard5 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6">
-      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl text-[#BB125B] mx-auto mb-10 flex flex-col gap-6 rounded-xl border py-6 shadow-sm animate-in slide-in-from-right-5 duration-300">
+      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl text-black mx-auto mb-10 flex flex-col gap-6 rounded-xl border py-6 shadow-sm animate-in slide-in-from-right-5 duration-300">
         {/* Header Section */}
         <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6">
           <div className="leading-none font-semibold flex items-center gap-2">
@@ -74,7 +74,8 @@ const Hysteroscopycard5 = ({ setShowCard, setActiveButton }) => {
               Results Discussion
             </h4>
             <p className="text-sm">
-              Your doctor will discuss your results and next steps before you leave. Make sure to ask any questions you have about your findings or follow-up care.
+              Your doctor will discuss your results and next steps before you leave. Make sure to
+              ask any questions you have about your findings or follow-up care.
             </p>
           </div>
 
@@ -85,9 +86,15 @@ const Hysteroscopycard5 = ({ setShowCard, setActiveButton }) => {
               Recovery Timeline
             </h4>
             <ul className="text-sm space-y-1">
-              <li>• <strong>Day 1:</strong> Most people return to normal activities</li>
-              <li>• <strong>2-3 days:</strong> If you had general anaesthetic, you may want extra rest</li>
-              <li>• <strong>1 week:</strong> Avoid sex until bleeding stops to lower infection risk</li>
+              <li>
+                • <strong>Day 1:</strong> Most people return to normal activities
+              </li>
+              <li>
+                • <strong>2-3 days:</strong> If you had general anaesthetic, you may want extra rest
+              </li>
+              <li>
+                • <strong>1 week:</strong> Avoid sex until bleeding stops to lower infection risk
+              </li>
             </ul>
           </div>
 
@@ -95,8 +102,8 @@ const Hysteroscopycard5 = ({ setShowCard, setActiveButton }) => {
           <div className="pt-4">
             <button
               onClick={() => {
-                setShowCard(6);       // move to Card 4
-                setActiveButton(5);   // index for Card 4
+                setShowCard(6); // move to Card 4
+                setActiveButton(5); // index for Card 4
               }}
               className="inline-flex items-center bg-[#FF4B8B] justify-center gap-2 hover:bg-[#FF4B8B]/80 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-9 px-4 py-2 has-[&_svg]:px-3 w-full"
             >

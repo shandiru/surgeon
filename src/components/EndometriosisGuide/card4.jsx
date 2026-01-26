@@ -5,11 +5,11 @@ const EndometriosisCard4 = ({ setShowCard, setActiveButton }) => {
   const [openAccordion, setOpenAccordion] = useState(null);
 
   const causes = [
-  'Retrograde (backward) menstruation',
-  'Genetics (family history)',
-  'Immune system disorders',
-  'Hormonal imbalances',
-];
+    "Retrograde (backward) menstruation",
+    "Genetics (family history)",
+    "Immune system disorders",
+    "Hormonal imbalances",
+  ];
 
   return (
     <div className="space-y-6 px-4 sm:px-6 lg:px-8">
@@ -18,7 +18,7 @@ const EndometriosisCard4 = ({ setShowCard, setActiveButton }) => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#FF4B8B]">
             What Causes Endometriosis?
           </h2>
-          <p className="text-lg text-gray-700">
+          <p className="text-lg text-black">
             The exact cause is unknown, but research suggests several possible factors:
           </p>
         </div>

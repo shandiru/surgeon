@@ -1,50 +1,45 @@
-'use client';
-import { Lightbulb, Pin } from 'lucide-react';
-import React from 'react';
+"use client";
+import { Lightbulb, Pin } from "lucide-react";
+import React from "react";
 
 const FibroidGuideCard1 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6 pb-10 px-3">
-
-      <div
-        className="max-w-5xl mx-auto bg-white text-[#212529] flex flex-col gap-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300"
-
-      >
+      <div className="max-w-5xl mx-auto bg-white text-[#212529] flex flex-col gap-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
         {/* Header */}
         <div className="px-8 pt-8">
           <div className="flex items-center justify-center gap-3 mb-4">
             <Pin className="h-8 w-8 text-[#FF4B8B]" />
-            <h2 className="font-bold text-3xl text-[#FF4B8B]">
-              What Are Fibroids?
-            </h2>
+            <h2 className="font-bold text-3xl text-[#FF4B8B]">What Are Fibroids?</h2>
           </div>
         </div>
 
         {/* Content */}
         <div className="px-8 pb-8 space-y-6">
-          <p className="text-lg leading-relaxed text-gray-700">
-            Fibroids are benign (non-cancerous) growths that develop in the walls of the womb (uterus).
+          <p className="text-lg leading-relaxed text-black">
+            Fibroids are benign (non-cancerous) growths that develop in the walls of the womb
+            (uterus).
           </p>
 
           {/* Two-column grid */}
           <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-2">
-              <p className="text-gray-700">• Made of muscle and fibrous tissue</p>
-              <p className="text-gray-700">• Can be single or multiple</p>
+              <p className="text-black">• Made of muscle and fibrous tissue</p>
+              <p className="text-black">• Can be single or multiple</p>
             </div>
             <div className="space-y-2">
-              <p className="text-gray-700">• Can vary greatly in size</p>
-              <p className="text-gray-700">• Common and treatable</p>
+              <p className="text-black">• Can vary greatly in size</p>
+              <p className="text-black">• Common and treatable</p>
             </div>
           </div>
 
           {/* Highlight Box */}
           <div className="rounded-lg p-5 bg-[#FF4B8B]/10">
-            <p className="font-semibold text-base text-[#BB125B]">
+            <p className="font-semibold text-base text-black">
               ✓ Fibroids are not cancer and rarely become cancerous.
             </p>
           </div>
-         <div className="pt-6 flex justify-center">
+          <div className="pt-6 flex justify-center">
             <button
               onClick={() => {
                 setShowCard(2);

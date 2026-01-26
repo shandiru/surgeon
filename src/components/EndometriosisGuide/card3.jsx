@@ -40,7 +40,7 @@ const Endometriosiscard3 = ({ setShowCard, setActiveButton }) => {
               </div>
               <h3 className="text-xl font-semibold text-[#FF4B8B]">Fertility Impact</h3>
             </div>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-black leading-relaxed">
               Endometriosis can make it harder to get pregnant, but many women still conceive
               naturally. Early diagnosis and treatment can help protect your fertility options.
             </p>
@@ -66,7 +66,7 @@ const Endometriosiscard3 = ({ setShowCard, setActiveButton }) => {
               </div>
               <h3 className="text-xl font-semibold text-[#FF4B8B]">Emotional Wellbeing</h3>
             </div>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-black leading-relaxed">
               Symptoms can affect your emotional health and quality of life. It&apos;s important to
               seek support and early treatment for both physical and mental wellbeing.
             </p>

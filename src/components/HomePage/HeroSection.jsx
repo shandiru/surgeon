@@ -32,7 +32,7 @@ const HeroSectionView = () => {
             </h1>
 
             <p
-              className="hero-desc text-body-large text-gray-700 mb-8 leading-relaxed"
+              className="hero-desc text-body-large text-black mb-8 leading-relaxed"
               data-aos="fade-up"
             >
               With 26 years of dedicated experience in gynaecological oncology, providing

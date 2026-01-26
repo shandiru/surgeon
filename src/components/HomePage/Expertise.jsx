@@ -83,7 +83,7 @@ export default function SpecialtiesSection() {
           <h2 className="text-section text-primary-pink mb-4" data-aos="fade-up">
             Areas of Expertise
           </h2>
-          <p className="text-body-large text-gray-700" data-aos="fade-up" data-aos-delay="100">
+          <p className="text-body-large text-black" data-aos="fade-up" data-aos-delay="100">
             Specialized procedures and treatments in women's health
           </p>
         </div>

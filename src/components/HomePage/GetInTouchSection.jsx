@@ -58,7 +58,7 @@ export default function GetInTouchSection() {
           <h2 className="text-section text-primary-pink mb-4" data-aos="fade-up">
             Get in Touch
           </h2>
-          <p className="text-body-large text-gray-700" data-aos="fade-up" data-aos-delay="200">
+          <p className="text-body-large text-black" data-aos="fade-up" data-aos-delay="200">
             Schedule your consultation today
           </p>
         </div>

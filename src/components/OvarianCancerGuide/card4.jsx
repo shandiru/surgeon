@@ -20,21 +20,20 @@ const OvarianCancerGuideCard4 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6 pb-10">
       {/* CARD CONTAINER */}
-      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 
+      <div
+        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 
         flex flex-col gap-8 rounded-2xl border border-[#FF4B8B]/10 shadow-sm p-8 
-        animate-in slide-in-from-right-5 duration-300 bg-white">
+        animate-in slide-in-from-right-5 duration-300 bg-white"
+      >
         {/* HEADER */}
         <div className="text-center space-y-2">
           <div className="flex items-center justify-center gap-2 mb-2">
             <AlertTriangle className="h-8 w-8 text-[#FF4B8B]" />
-            <h3 className="text-3xl font-bold text-[#FF4B8B]">
-              Symptoms of Ovarian Cancer
-            </h3>
+            <h3 className="text-3xl font-bold text-[#FF4B8B]">Symptoms of Ovarian Cancer</h3>
           </div>
 
-          <p className="text-lg text-[#BB125B]">
-            Ovarian cancer can cause a variety of symptoms.  
-            Some of the most common include:
+          <p className="text-lg text-black">
+            Ovarian cancer can cause a variety of symptoms. Some of the most common include:
           </p>
         </div>
 
@@ -56,14 +55,13 @@ const OvarianCancerGuideCard4 = ({ setShowCard, setActiveButton }) => {
         </div>
 
         {/* WARNING BOX */}
-        <div className="rounded-xl px-6 py-5 shadow-md bg-[#FF4B8B]/10">
+        <div className="rounded-xl px-6 py-5 shadow-md bg-light-pink-1">
           <div className="flex items-start gap-3">
             <div className="w-6 h-6 rounded-full flex items-center justify-center mt-0.5 font-bold bg-white text-[#FF4B8B]">
               !
             </div>
             <p className="font-medium text-[#FF4B8B]">
-              If you experience these symptoms, it's important to see your GP
-              for further tests.
+              If you experience these symptoms, it's important to see your GP for further tests.
             </p>
           </div>
         </div>

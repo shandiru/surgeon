@@ -1,8 +1,8 @@
-'use client';
-import React, { useEffect } from 'react';
-import { LuActivity, LuEye, LuHand, LuMonitor } from 'react-icons/lu';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+"use client";
+import React, { useEffect } from "react";
+import { LuActivity, LuEye, LuHand, LuMonitor } from "react-icons/lu";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const RoboticGuide3 = ({ setShowCard, setActiveButton }) => {
   useEffect(() => {
@@ -14,7 +14,6 @@ const RoboticGuide3 = ({ setShowCard, setActiveButton }) => {
       {/* CONTAINER */}
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-
           {/* TITLE */}
           <h2
             className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-10 text-[#FF4B8B]"
@@ -34,7 +33,6 @@ const RoboticGuide3 = ({ setShowCard, setActiveButton }) => {
             "
             data-aos="fade-up"
           >
-
             {/* CARD COMPONENT */}
             {[
               {
@@ -75,18 +73,13 @@ const RoboticGuide3 = ({ setShowCard, setActiveButton }) => {
                 <div className="text-[#FF4B8B]">
                   {React.cloneElement(item.icon, {
                     className:
-                      "mx-auto text-[#FF4B8B] " +
-                      "w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16",
+                      "mx-auto text-[#FF4B8B] " + "w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16",
                   })}
                 </div>
 
-                <h3 className="font-semibold text-lg sm:text-xl">
-                  {item.title}
-                </h3>
+                <h3 className="font-semibold text-lg sm:text-xl">{item.title}</h3>
 
-                <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
-                  {item.desc}
-                </p>
+                <p className="text-black text-sm sm:text-base leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>

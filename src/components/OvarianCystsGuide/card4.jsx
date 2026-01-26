@@ -5,7 +5,6 @@ const OvarianCystsGuideCard4 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="pb-10">
       <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto animate-in slide-in-from-right-5 duration-300">
-
         {/* FULL WRAPPER SECTION */}
         <div className="rounded-2xl p-8 border border-[#FF4B8B]/10 shadow-lg transition-all duration-300 bg-white">
           {/* HEADER */}
@@ -27,18 +26,15 @@ const OvarianCystsGuideCard4 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           {/* INTRO BOX */}
-          <div className="mb-6 p-4 rounded-lg text-center font-medium bg-[#FEE6EA] text-[#BB125B]">
+          <div className="mb-6 p-4 rounded-lg text-center font-medium bg-[#FEE6EA] text-black">
             Most cysts cause no symptoms, but larger or problematic cysts may cause:
           </div>
 
           {/* GRID */}
           <div className="grid md:grid-cols-2 gap-8">
-            
             {/* COMMON SYMPTOMS */}
             <div>
-              <h4 className="font-semibold mb-4 text-lg text-[#FF4B8B]">
-                Common Symptoms
-              </h4>
+              <h4 className="font-semibold mb-4 text-lg text-[#FF4B8B]">Common Symptoms</h4>
 
               <div className="space-y-3">
                 {[
@@ -50,7 +46,7 @@ const OvarianCystsGuideCard4 = ({ setShowCard, setActiveButton }) => {
                 ].map((symptom, index) => (
                   <div key={index} className="flex items-start gap-3">
                     <div className="w-2 h-2 rounded-full mt-2 bg-[#FF4B8B] flex-shrink-0"></div>
-                    <span className="text-sm text-gray-700">{symptom}</span>
+                    <span className="text-sm text-black">{symptom}</span>
                   </div>
                 ))}
               </div>
@@ -58,9 +54,7 @@ const OvarianCystsGuideCard4 = ({ setShowCard, setActiveButton }) => {
 
             {/* LESS COMMON SYMPTOMS */}
             <div>
-              <h4 className="font-semibold mb-4 text-lg text-[#FF4B8B]">
-                Less Common Symptoms
-              </h4>
+              <h4 className="font-semibold mb-4 text-lg text-[#FF4B8B]">Less Common Symptoms</h4>
 
               <div className="space-y-3">
                 {[
@@ -73,7 +67,7 @@ const OvarianCystsGuideCard4 = ({ setShowCard, setActiveButton }) => {
                 ].map((symptom, index) => (
                   <div key={index} className="flex items-start gap-3">
                     <div className="w-2 h-2 rounded-full mt-2 bg-[#FEB6C5] flex-shrink-0"></div>
-                    <span className="text-sm text-gray-700">{symptom}</span>
+                    <span className="text-sm text-black">{symptom}</span>
                   </div>
                 ))}
               </div>
@@ -102,7 +96,6 @@ const OvarianCystsGuideCard4 = ({ setShowCard, setActiveButton }) => {
             Continue to Next Section
           </button>
         </div>
-
       </div>
     </div>
   );

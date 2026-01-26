@@ -41,7 +41,7 @@ const EndometrialCard6 = ({ setShowCard, setActiveButton }) => {
                   <h4 className="font-semibold mb-2" style={{ color: deepPink }}>
                     Surgery
                   </h4>
-                  <p className="text-sm text-gray-700">
+                  <p className="text-sm text-black">
                     Often the first-line treatment to remove the uterus (hysterectomy), sometimes
                     including ovaries and fallopian tubes.
                   </p>
@@ -51,7 +51,7 @@ const EndometrialCard6 = ({ setShowCard, setActiveButton }) => {
                   <h4 className="font-semibold mb-2" style={{ color: deepPink }}>
                     Radiation Therapy
                   </h4>
-                  <p className="text-sm text-gray-700">
+                  <p className="text-sm text-black">
                     High-energy rays used to target and destroy cancer cells.
                   </p>
                 </div>
@@ -60,7 +60,7 @@ const EndometrialCard6 = ({ setShowCard, setActiveButton }) => {
                   <h4 className="font-semibold mb-2" style={{ color: deepPink }}>
                     Chemotherapy
                   </h4>
-                  <p className="text-sm text-gray-700">
+                  <p className="text-sm text-black">
                     Anti-cancer drugs that destroy or slow cancer cell growth.
                   </p>
                 </div>
@@ -72,7 +72,7 @@ const EndometrialCard6 = ({ setShowCard, setActiveButton }) => {
                   <h4 className="font-semibold mb-2" style={{ color: deepPink }}>
                     Hormone Therapy
                   </h4>
-                  <p className="text-sm text-gray-700">
+                  <p className="text-sm text-black">
                     Medicines that block or lower hormones fueling cancer growth.
                   </p>
                 </div>
@@ -81,7 +81,7 @@ const EndometrialCard6 = ({ setShowCard, setActiveButton }) => {
                   <h4 className="font-semibold mb-2" style={{ color: deepPink }}>
                     Combination Therapy
                   </h4>
-                  <p className="text-sm text-gray-700">
+                  <p className="text-sm text-black">
                     A tailored mix of treatments for the best results.
                   </p>
                 </div>

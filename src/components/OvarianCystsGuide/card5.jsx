@@ -5,10 +5,8 @@ const OvarianCystsGuideCard5 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="pb-10">
       <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto animate-in slide-in-from-right-5 duration-300">
-
         {/* FULL WRAPPER BOX */}
-        <div className="rounded-2xl p-8 border border-[#FF4B8B]/10 shadow-lg transition-all duration-300 bg-[#FF4B8B]/10">
-
+        <div className="rounded-2xl p-8 border border-[#FF4B8B]/10 shadow-lg transition-all duration-300 bg-light-pink-1">
           {/* HEADER */}
           <div className="flex items-center gap-3 font-semibold text-[#FF4B8B] text-lg mb-6">
             <svg
@@ -28,7 +26,7 @@ const OvarianCystsGuideCard5 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           {/* CONTENT */}
-          <div className="space-y-3 text-[#BB125B]">
+          <div className="space-y-3 text-black">
             {[
               "Hormonal treatments that trigger ovulation",
               "Endometriosis",
@@ -58,7 +56,6 @@ const OvarianCystsGuideCard5 = ({ setShowCard, setActiveButton }) => {
             Continue to Next Section
           </button>
         </div>
-
       </div>
     </div>
   );

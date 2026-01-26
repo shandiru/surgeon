@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Info,
   Activity,
@@ -7,21 +7,20 @@ import {
   ScanSearch,
   Syringe,
   ShieldCheck,
-  BookmarkCheck
+  BookmarkCheck,
 } from "lucide-react";
 
-
 const PelvicPainGuideButtons = ({ setShowCard, activeButton, setActiveButton }) => {
-const buttons = [
-  { label: 'What Is Pelvic Pain', icon: <Info className="w-4 h-4" />, card: 1 },
-  { label: 'Types of Pelvic Pain', icon: <Activity className="w-4 h-4" />, card: 2 },
-  { label: 'Common Causes of Pelvic Pain', icon: <AlertTriangle className="w-4 h-4" />, card: 3 },
-  { label: 'When to See a Doctor', icon: <Eye className="w-4 h-4" />, card: 4 },
-  { label: 'How Pelvic Pain Is Investigated', icon: <ScanSearch className="w-4 h-4" />, card: 5 },
-  { label: 'Emotional Wellbeing', icon: <Syringe className="w-4 h-4" />, card: 6 },
-  { label: 'Self-Care Tips', icon: <ShieldCheck className="w-4 h-4" />, card: 7 },
-  { label: 'Remember', icon: <BookmarkCheck className="w-4 h-4" />, card: 8 }
-];
+  const buttons = [
+    { label: "What Is Pelvic Pain", icon: <Info className="w-4 h-4" />, card: 1 },
+    { label: "Types of Pelvic Pain", icon: <Activity className="w-4 h-4" />, card: 2 },
+    { label: "Common Causes of Pelvic Pain", icon: <AlertTriangle className="w-4 h-4" />, card: 3 },
+    { label: "When to See a Doctor", icon: <Eye className="w-4 h-4" />, card: 4 },
+    { label: "How Pelvic Pain Is Investigated", icon: <ScanSearch className="w-4 h-4" />, card: 5 },
+    { label: "Emotional Wellbeing", icon: <Syringe className="w-4 h-4" />, card: 6 },
+    { label: "Self-Care Tips", icon: <ShieldCheck className="w-4 h-4" />, card: 7 },
+    { label: "Remember", icon: <BookmarkCheck className="w-4 h-4" />, card: 8 },
+  ];
 
   const handleButtonClick = (card, index) => {
     setShowCard(card);
@@ -37,10 +36,10 @@ const buttons = [
           className={`flex flex-col items-center justify-center text-center 
             w-full py-2 px-3
             font-semibold rounded-md 
-            text-[#BB125B] bg-[#FF4B8B]/10 hover:bg-[#FF4B8B]/30 
+            text-black bg-[#FF4B8B]/10 hover:bg-[#FF4B8B]/30 
             text-button
             transition-all 
-            ${activeButton === index ? 'bg-[#FF4B8B]/50 text-black' : ''}`}
+            ${activeButton === index ? "bg-light-pink-2 text-black" : ""}`}
         >
           {button.icon}
           <span className="leading-tight">{button.label}</span>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Info,
   Activity,
@@ -7,20 +7,19 @@ import {
   ScanSearch,
   Syringe,
   ShieldCheck,
-  BookmarkCheck
+  BookmarkCheck,
 } from "lucide-react";
 
 const OvarianCystsGuideButtons = ({ setShowCard, activeButton, setActiveButton }) => {
-
   const buttons = [
-    { label: 'What Are Ovarian Cysts?', icon: <Info className="w-4 h-4" />, card: 1 },
-    { label: 'See Your Doctor If You Have', icon: <Activity className="w-4 h-4" />, card: 2 },
-    { label: 'Types of Ovarian Cysts', icon: <AlertTriangle className="w-4 h-4" />, card: 3 },
-    { label: 'Symptoms of Ovarian Cysts', icon: <Eye className="w-4 h-4" />, card: 4 },
-    { label: 'Risk Factors', icon: <ScanSearch className="w-4 h-4" />, card: 5 },
-    { label: 'Fertility & Pregnancy', icon: <Syringe className="w-4 h-4" />, card: 6 },
-    { label: 'How Cysts Are Diagnosed', icon: <ShieldCheck className="w-4 h-4" />, card: 7 },
-    { label: 'Surgery to Remove Cysts', icon: <BookmarkCheck className="w-4 h-4" />, card: 8 }
+    { label: "What Are Ovarian Cysts?", icon: <Info className="w-4 h-4" />, card: 1 },
+    { label: "See Your Doctor If You Have", icon: <Activity className="w-4 h-4" />, card: 2 },
+    { label: "Types of Ovarian Cysts", icon: <AlertTriangle className="w-4 h-4" />, card: 3 },
+    { label: "Symptoms of Ovarian Cysts", icon: <Eye className="w-4 h-4" />, card: 4 },
+    { label: "Risk Factors", icon: <ScanSearch className="w-4 h-4" />, card: 5 },
+    { label: "Fertility & Pregnancy", icon: <Syringe className="w-4 h-4" />, card: 6 },
+    { label: "How Cysts Are Diagnosed", icon: <ShieldCheck className="w-4 h-4" />, card: 7 },
+    { label: "Surgery to Remove Cysts", icon: <BookmarkCheck className="w-4 h-4" />, card: 8 },
   ];
 
   const handleButtonClick = (card, index) => {
@@ -37,10 +36,10 @@ const OvarianCystsGuideButtons = ({ setShowCard, activeButton, setActiveButton }
           className={`flex flex-col items-center justify-center text-center 
             w-full py-2 px-3
             font-semibold rounded-md 
-            text-[#BB125B] bg-[#FF4B8B]/10 hover:bg-[#FF4B8B]/30 
+            text-black bg-light-pink-1 hover:bg-[#FF4B8B]/30 
             text-button leading-tight
             transition-all 
-            ${activeButton === index ? 'bg-[#FF4B8B]/50 text-black' : ''}`}
+            ${activeButton === index ? "bg-light-pink-2 text-black" : ""}`}
         >
           {button.icon}
           <span>{button.label}</span>

@@ -51,12 +51,12 @@ export default function ListingEvents({ events = [], selectedCategory = "All Eve
                 ★
               </span>
             ))}
-            <span className="text-gray-700 ml-2">{event.rating}</span>
+            <span className="text-black ml-2">{event.rating}</span>
           </div>
 
           <h3 className="text-lg font-semibold text-gray-900">{event.title}</h3>
           <p className="text-sm text-gray-500 mt-1">{event.description}</p>
-          <p className="text-sm text-gray-700 mt-1 italic">{event.talk}</p>
+          <p className="text-sm text-black mt-1 italic">{event.talk}</p>
 
           <div className="space-y-2 text-sm text-black mt-2">
             <div className="flex items-center gap-2">

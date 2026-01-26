@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import React from 'react';
+import React from "react";
 
 export default function WhatAreOvarianCysts() {
   return (
@@ -29,19 +29,19 @@ export default function WhatAreOvarianCysts() {
       </div>
 
       {/* Content */}
-      <div className="p-10 space-y-8 text-[#BB125B]">
+      <div className="p-10 space-y-8 text-black">
         <div className="grid md:grid-cols-2 gap-10">
           {/* Left Column */}
           <div className="space-y-5">
             <p className="text-lg leading-relaxed">
-              Ovarian cysts are fluid-filled sacs that form in or on the ovaries.
-              They are very common and usually form during ovulation.
+              Ovarian cysts are fluid-filled sacs that form in or on the ovaries. They are very
+              common and usually form during ovulation.
             </p>
             <div className="space-y-4">
               {[
-                'Most are harmless, painless, and go away on their own',
-                'Many women get at least one cyst every month without knowing',
-                'About 8% of premenopausal women develop larger cysts that may need treatment',
+                "Most are harmless, painless, and go away on their own",
+                "Many women get at least one cyst every month without knowing",
+                "About 8% of premenopausal women develop larger cysts that may need treatment",
               ].map((point, i) => (
                 <div key={i} className="flex items-start gap-3">
                   <svg
@@ -85,10 +85,9 @@ export default function WhatAreOvarianCysts() {
               </svg>
               Important Note
             </h4>
-            <p className="text-base leading-relaxed text-[#BB125B]">
-              Ovarian cysts are less common after menopause — but are more
-              likely to be cancerous if they occur. Regular check-ups are
-              important.
+            <p className="text-base leading-relaxed text-black">
+              Ovarian cysts are less common after menopause — but are more likely to be cancerous if
+              they occur. Regular check-ups are important.
             </p>
           </div>
         </div>

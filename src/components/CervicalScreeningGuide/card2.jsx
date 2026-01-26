@@ -3,16 +3,13 @@ import React from "react";
 const CervicalScreeningGuideCard2 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-10 pb-10">
-
       {/* CARD CONTAINER – old border kept */}
       <div
         className="max-w-5xl mx-auto rounded-2xl p-10 shadow-md border
         transition duration-300 transform
         hover:scale-105 hover:-translate-y-2 hover:shadow-xl bg-white border-light-pink-2"
       >
-
         <div className="grid md:grid-cols-2 gap-12 items-center">
-
           {/* LEFT SIDE – PINK CARD */}
           <div
             className="bg-white text-primary-pink flex flex-col gap-6 rounded-xl py-8 px-6 shadow-md border border-light-pink-2
@@ -48,7 +45,7 @@ const CervicalScreeningGuideCard2 = ({ setShowCard, setActiveButton }) => {
             </span>
 
             {/* List */}
-            <ul className="space-y-4 text-base text-gray-700">
+            <ul className="space-y-4 text-base text-black">
               <li className="flex items-start gap-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -96,7 +93,6 @@ const CervicalScreeningGuideCard2 = ({ setShowCard, setActiveButton }) => {
                 Quick, simple, and painless — done right at our clinic
               </li>
             </ul>
-
           </div>
 
           {/* RIGHT SIDE — IMAGE */}
@@ -127,7 +123,6 @@ const CervicalScreeningGuideCard2 = ({ setShowCard, setActiveButton }) => {
             Continue to Next Section
           </button>
         </div>
-
       </div>
     </div>
   );

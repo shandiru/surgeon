@@ -1,15 +1,13 @@
-'use client';
+"use client";
 import React from "react";
 
 const OvarianCystsGuideCard2 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="pb-10">
-
       {/* ---------------------------------------------------
           FULL WRAPPER WITH BORDER (ALL CONTENT INCLUDED)
       --------------------------------------------------- */}
       <div className="max-w-4xl mx-auto px-6 py-10 rounded-2xl border border-[#FF4B8B]/20 shadow-md bg-[#FFF7F9]">
-
         {/* HEADER */}
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold text-[#FF4B8B] flex items-center justify-center gap-3">
@@ -33,10 +31,9 @@ const OvarianCystsGuideCard2 = ({ setShowCard, setActiveButton }) => {
 
         {/* MAIN CONTENT - ALERT BOX */}
         <div className="rounded-xl p-6 bg-white border border-[#FF4B8B]/10 shadow-sm">
-
           {/* Icon + Title */}
           <div className="flex items-start gap-3 mb-4">
-            <div className="p-2 rounded-full bg-[#FF4B8B]/10 flex items-center justify-center">
+            <div className="p-2 rounded-full bg-light-pink-1 flex items-center justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -61,7 +58,7 @@ const OvarianCystsGuideCard2 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           {/* List */}
-          <ul className="list-disc ml-8 space-y-2 text-[#BB125B]">
+          <ul className="list-disc ml-8 space-y-2 text-black">
             <li>Persistent bloating or pelvic pressure</li>
             <li>Needing to urinate more often</li>
             <li>Pelvic pain or unusual vaginal bleeding</li>

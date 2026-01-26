@@ -1,13 +1,11 @@
-'use client';
-import React from 'react';
+"use client";
+import React from "react";
 
 const VulvarGuideCard2 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6 pb-10">
       {/* Card Container */}
-      <div
-        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-2xl border border-[#FF4B8B]/10 bg-white p-8 shadow-sm animate-in slide-in-from-right-5 duration-300"
-      >
+      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-2xl border border-[#FF4B8B]/10 bg-white p-8 shadow-sm animate-in slide-in-from-right-5 duration-300">
         {/* Card Header */}
         <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5">
           <div className="leading-none font-semibold flex items-center gap-2 text-[#FF4B8B]">
@@ -31,52 +29,43 @@ const VulvarGuideCard2 = ({ setShowCard, setActiveButton }) => {
 
         {/* Card Content */}
         <div className="space-y-6">
-
           {/* Intro Box */}
           <div className="p-4 rounded-xl border border-[#FF4B8B]/10 transition-all duration-300 bg-[#FF4B8B]/10">
-            <p className="text-lg leading-relaxed text-[#BB125B]">
-              Vulvar cancer usually begins in the skin cells of the vulva. Understanding where
-              it starts helps doctors determine the best treatment and predict how the disease
-              may behave.
+            <p className="text-lg leading-relaxed text-black">
+              Vulvar cancer usually begins in the skin cells of the vulva. Understanding where it
+              starts helps doctors determine the best treatment and predict how the disease may
+              behave.
             </p>
           </div>
 
           {/* Two Main Types */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-
             {/* Type 1 */}
             <div className="p-4 rounded-xl border border-[#FF4B8B]/10 transition-all duration-300 hover:shadow-md bg-white">
-              <h4 className="font-semibold mb-2 text-[#FF4B8B]">
-                Squamous Cell Carcinoma
-              </h4>
-              <p className="text-sm text-[#BB125B]">
-                The most common type — <strong>85–90%</strong> of vulvar cancers.  
-                It begins in the thin, flat cells on the surface of the vulva.
+              <h4 className="font-semibold mb-2 text-[#FF4B8B]">Squamous Cell Carcinoma</h4>
+              <p className="text-sm text-black">
+                The most common type — <strong>85–90%</strong> of vulvar cancers. It begins in the
+                thin, flat cells on the surface of the vulva.
               </p>
             </div>
 
             {/* Type 2 */}
             <div className="p-4 rounded-xl border border-[#FF4B8B]/10 transition-all duration-300 hover:shadow-md bg-white">
-              <h4 className="font-semibold mb-2 text-[#FF4B8B]">
-                Melanoma of the Vulva
-              </h4>
-              <p className="text-sm text-[#BB125B]">
-                A less common but more aggressive type that begins in the pigment-producing
-                cells of the vulva.
+              <h4 className="font-semibold mb-2 text-[#FF4B8B]">Melanoma of the Vulva</h4>
+              <p className="text-sm text-black">
+                A less common but more aggressive type that begins in the pigment-producing cells of
+                the vulva.
               </p>
             </div>
 
             {/* Pre-cancerous VIN */}
             <div className="p-4 rounded-xl border border-[#FF4B8B]/10 transition-all duration-300 hover:shadow-md bg-white">
-              <h4 className="font-semibold mb-2 text-[#FF4B8B]">
-                Pre-Cancerous Changes (VIN)
-              </h4>
-              <p className="text-sm text-[#BB125B]">
-                Some cases begin as <strong>VIN – Vulvar Intraepithelial Neoplasia</strong>,  
-                where abnormal cells appear before developing into cancer.
+              <h4 className="font-semibold mb-2 text-[#FF4B8B]">Pre-Cancerous Changes (VIN)</h4>
+              <p className="text-sm text-black">
+                Some cases begin as <strong>VIN – Vulvar Intraepithelial Neoplasia</strong>, where
+                abnormal cells appear before developing into cancer.
               </p>
             </div>
-
           </div>
 
           {/* Extra Info Box */}
@@ -101,9 +90,9 @@ const VulvarGuideCard2 = ({ setShowCard, setActiveButton }) => {
               Did You Know?
             </h4>
 
-            <p className="text-sm text-[#BB125B]">
-              Detecting VIN early and treating it promptly can prevent it from developing
-              into vulvar cancer.
+            <p className="text-sm text-black">
+              Detecting VIN early and treating it promptly can prevent it from developing into
+              vulvar cancer.
             </p>
           </div>
 
@@ -119,7 +108,6 @@ const VulvarGuideCard2 = ({ setShowCard, setActiveButton }) => {
               Continue to Next Section
             </button>
           </div>
-
         </div>
       </div>
     </div>

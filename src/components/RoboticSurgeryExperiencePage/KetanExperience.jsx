@@ -1,31 +1,35 @@
-import React from 'react';
-import { Award, GraduationCap, Calendar, Target } from 'lucide-react';
+import React from "react";
+import { Award, GraduationCap, Calendar, Target } from "lucide-react";
 
 export default function KetanExperience() {
   const experienceItems = [
     {
       icon: <Award className="w-6 h-6" />,
-      title: 'Years of Experience',
-      description: 'Extensive experience in robotic-assisted gynecological surgery with a focus on minimally invasive techniques.',
-      detail: 'Over 15+ years',
+      title: "Years of Experience",
+      description:
+        "Extensive experience in robotic-assisted gynecological surgery with a focus on minimally invasive techniques.",
+      detail: "Over 15+ years",
     },
     {
       icon: <GraduationCap className="w-6 h-6" />,
-      title: 'Specialized Training',
-      description: 'Certified in da Vinci Surgical System with advanced training in complex gynecological procedures.',
-      detail: 'Certified Surgeon',
+      title: "Specialized Training",
+      description:
+        "Certified in da Vinci Surgical System with advanced training in complex gynecological procedures.",
+      detail: "Certified Surgeon",
     },
     {
       icon: <Target className="w-6 h-6" />,
-      title: 'Surgical Expertise',
-      description: 'Specialized in robotic surgery for endometrial cancer, cervical cancer, and complex benign conditions.',
-      detail: 'Multiple Specializations',
+      title: "Surgical Expertise",
+      description:
+        "Specialized in robotic surgery for endometrial cancer, cervical cancer, and complex benign conditions.",
+      detail: "Multiple Specializations",
     },
     {
       icon: <Calendar className="w-6 h-6" />,
-      title: 'Continuous Learning',
-      description: 'Regularly attends international conferences and workshops to stay at the forefront of robotic surgery advancements.',
-      detail: 'Ongoing Education',
+      title: "Continuous Learning",
+      description:
+        "Regularly attends international conferences and workshops to stay at the forefront of robotic surgery advancements.",
+      detail: "Ongoing Education",
     },
   ];
 
@@ -38,7 +42,7 @@ export default function KetanExperience() {
             <h2 className="text-section text-[#FF4B8B] mb-4">
               Ketan's Experience as a Robotic Surgeon
             </h2>
-            <p className="text-body-large text-gray-700 max-w-2xl mx-auto">
+            <p className="text-body-large text-black max-w-2xl mx-auto">
               A dedicated commitment to excellence in robotic-assisted gynecological surgery
             </p>
           </div>
@@ -56,16 +60,12 @@ export default function KetanExperience() {
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center justify-between mb-2">
-                      <h3 className="text-card-title text-[#FF4B8B] font-semibold">
-                        {item.title}
-                      </h3>
-                      <span className="text-caption text-[#BB125B] bg-[#FF4B8B]/10 px-2 py-1 rounded">
+                      <h3 className="text-card-title text-[#FF4B8B] font-semibold">{item.title}</h3>
+                      <span className="text-caption text-black bg-[#FF4B8B]/10 px-2 py-1 rounded">
                         {item.detail}
                       </span>
                     </div>
-                    <p className="text-body text-gray-700 leading-relaxed">
-                      {item.description}
-                    </p>
+                    <p className="text-body text-black leading-relaxed">{item.description}</p>
                   </div>
                 </div>
               </div>
@@ -78,11 +78,11 @@ export default function KetanExperience() {
               <h3 className="text-subsection text-[#FF4B8B] font-bold mb-4">
                 Commitment to Patient Care
               </h3>
-              <p className="text-body-large text-gray-700 max-w-3xl mx-auto leading-relaxed">
-                With years of dedicated practice in robotic surgery, Ketan combines technical expertise 
-                with compassionate care, ensuring each patient receives personalized treatment tailored 
-                to their unique needs. His experience spans a wide range of gynecological conditions, 
-                from routine procedures to complex cancer surgeries.
+              <p className="text-body-large text-black max-w-3xl mx-auto leading-relaxed">
+                With years of dedicated practice in robotic surgery, Ketan combines technical
+                expertise with compassionate care, ensuring each patient receives personalized
+                treatment tailored to their unique needs. His experience spans a wide range of
+                gynecological conditions, from routine procedures to complex cancer surgeries.
               </p>
             </div>
           </div>

@@ -1,8 +1,7 @@
-'use client';
+"use client";
 import React, { useState } from "react";
 
 const OvarianCystsGuideCard3 = ({ setShowCard, setActiveButton }) => {
-
   // Accordion State
   const [openIndex, setOpenIndex] = useState(0);
 
@@ -12,20 +11,25 @@ const OvarianCystsGuideCard3 = ({ setShowCard, setActiveButton }) => {
 
   return (
     <div className="pb-10">
-
       {/* FULL WRAPPER */}
-      <div className="max-w-4xl mx-auto px-6 py-10 
+      <div
+        className="max-w-4xl mx-auto px-6 py-10 
                       rounded-2xl border border-[#FF4B8B]/20 
-                      shadow-md bg-[#FEE6EA] text-[#FF4B8B]">
-
+                      shadow-md bg-[#FEE6EA] text-[#FF4B8B]"
+      >
         {/* HEADER */}
         <div className="pb-4 border-b border-[#FF4B8B]/30">
           <div className="font-semibold flex items-center gap-3 text-2xl">
-            <svg xmlns="http://www.w3.org/2000/svg"
-              width="24" height="24"
-              fill="none" stroke="currentColor"
-              strokeWidth="2" className="w-6 h-6 text-[#FF4B8B]">
-              <path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"/>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              className="w-6 h-6 text-[#FF4B8B]"
+            >
+              <path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2" />
             </svg>
             Types of Ovarian Cysts
           </div>
@@ -33,7 +37,6 @@ const OvarianCystsGuideCard3 = ({ setShowCard, setActiveButton }) => {
 
         {/* ACCORDIONS */}
         <div className="space-y-4 mt-6">
-
           {/* 1 - Functional Cysts */}
           <div className="rounded-lg bg-white shadow-md hover:shadow-lg transition-all">
             <button
@@ -41,20 +44,23 @@ const OvarianCystsGuideCard3 = ({ setShowCard, setActiveButton }) => {
               className="flex w-full items-center justify-between gap-4 px-4 py-4 text-left text-sm font-medium"
             >
               <div className="flex items-center gap-3">
-                <span className="rounded-full bg-[#FF4B8B]/10 text-[#FF4B8B] px-3 py-1 text-xs font-medium">
+                <span className="rounded-full bg-light-pink-1 text-[#FF4B8B] px-3 py-1 text-xs font-medium">
                   Most Common
                 </span>
-                <span className="font-semibold text-[#BB125B]">
-                  Functional Cysts (Harmless)
-                </span>
+                <span className="font-semibold text-black">Functional Cysts (Harmless)</span>
               </div>
 
-              <svg xmlns="http://www.w3.org/2000/svg"
-                width="24" height="24" fill="none"
-                stroke="currentColor" strokeWidth="2"
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
                 className={`w-5 h-5 text-[#FF4B8B] transition-transform duration-300 
-                ${openIndex === 0 ? "rotate-180" : ""}`}>
-                <path d="m6 9 6 6 6-6"/>
+                ${openIndex === 0 ? "rotate-180" : ""}`}
+              >
+                <path d="m6 9 6 6 6-6" />
               </svg>
             </button>
 
@@ -62,15 +68,15 @@ const OvarianCystsGuideCard3 = ({ setShowCard, setActiveButton }) => {
               <div className="px-5 pb-5 text-sm text-[#444] leading-relaxed">
                 <div className="mt-3 grid md:grid-cols-2 gap-4">
                   <div className="bg-[#fff7f9] p-4 rounded-lg shadow-sm">
-                    <span className="font-bold text-[#BB125B]">Follicle Cysts</span>
+                    <span className="font-bold text-black">Follicle Cysts</span>
                     <p className="text-sm text-[#555] mt-1">
-                      Form when a follicle does not release an egg and keeps growing.
-                      Usually disappear within 1–3 months.
+                      Form when a follicle does not release an egg and keeps growing. Usually
+                      disappear within 1–3 months.
                     </p>
                   </div>
 
                   <div className="bg-[#fff7f9] p-4 rounded-lg shadow-sm">
-                    <span className="font-bold text-[#BB125B]">Corpus Luteum Cysts</span>
+                    <span className="font-bold text-black">Corpus Luteum Cysts</span>
                     <p className="text-sm text-[#555] mt-1">
                       Form when the follicle reseals after releasing an egg and fills with fluid.
                       Usually resolve in a few weeks.
@@ -88,30 +94,44 @@ const OvarianCystsGuideCard3 = ({ setShowCard, setActiveButton }) => {
               className="flex w-full items-center justify-between gap-4 px-4 py-4 text-left text-sm font-medium"
             >
               <div className="flex items-center gap-3">
-                <span className="rounded-full bg-[#FF4B8B]/10 text-[#FF4B8B] px-3 py-1 text-xs font-medium">
+                <span className="rounded-full bg-light-pink-1 text-[#FF4B8B] px-3 py-1 text-xs font-medium">
                   Benign
                 </span>
-                <span className="font-semibold text-[#BB125B]">
-                  Other Benign Cysts
-                </span>
+                <span className="font-semibold text-black">Other Benign Cysts</span>
               </div>
 
-              <svg xmlns="http://www.w3.org/2000/svg"
-                width="24" height="24" fill="none"
-                stroke="currentColor" strokeWidth="2"
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
                 className={`w-5 h-5 text-[#FF4B8B] transition-transform duration-300 
-                ${openIndex === 1 ? "rotate-180" : ""}`}>
-                <path d="m6 9 6 6 6-6"/>
+                ${openIndex === 1 ? "rotate-180" : ""}`}
+              >
+                <path d="m6 9 6 6 6-6" />
               </svg>
             </button>
 
             {openIndex === 1 && (
               <div className="px-5 pb-5 text-sm text-[#444] leading-relaxed">
                 <ul className="list-disc pl-5 space-y-2 text-[#555] mt-3">
-                  <li><strong className="text-[#BB125B]">Endometriomas</strong> — caused by endometriosis</li>
-                  <li><strong className="text-[#BB125B]">Dermoid cysts</strong> — formed from cells present from birth</li>
-                  <li><strong className="text-[#BB125B]">Cystadenomas</strong> — fluid-filled and can grow large</li>
-                  <li><strong className="text-[#BB125B]">PCOS cysts</strong> — multiple tiny cysts from hormone imbalance</li>
+                  <li>
+                    <strong className="text-black">Endometriomas</strong> — caused by endometriosis
+                  </li>
+                  <li>
+                    <strong className="text-black">Dermoid cysts</strong> — formed from cells
+                    present from birth
+                  </li>
+                  <li>
+                    <strong className="text-black">Cystadenomas</strong> — fluid-filled and can grow
+                    large
+                  </li>
+                  <li>
+                    <strong className="text-black">PCOS cysts</strong> — multiple tiny cysts from
+                    hormone imbalance
+                  </li>
                 </ul>
               </div>
             )}
@@ -124,27 +144,31 @@ const OvarianCystsGuideCard3 = ({ setShowCard, setActiveButton }) => {
               className="flex w-full items-center justify-between gap-4 px-4 py-4 text-left text-sm font-medium"
             >
               <div className="flex items-center gap-3">
-                <span className="rounded-full bg-[#FF4B8B]/10 text-[#FF4B8B] px-3 py-1 text-xs font-medium">
+                <span className="rounded-full bg-light-pink-1 text-[#FF4B8B] px-3 py-1 text-xs font-medium">
                   Rare
                 </span>
-                <span className="font-semibold text-[#BB125B]">
-                  Malignant (Cancerous) Cysts
-                </span>
+                <span className="font-semibold text-black">Malignant (Cancerous) Cysts</span>
               </div>
 
-              <svg xmlns="http://www.w3.org/2000/svg"
-                width="24" height="24" fill="none"
-                stroke="currentColor" strokeWidth="2"
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
                 className={`w-5 h-5 text-[#FF4B8B] transition-transform duration-300 
-                ${openIndex === 2 ? "rotate-180" : ""}`}>
-                <path d="m6 9 6 6 6-6"/>
+                ${openIndex === 2 ? "rotate-180" : ""}`}
+              >
+                <path d="m6 9 6 6 6-6" />
               </svg>
             </button>
 
             {openIndex === 2 && (
               <div className="px-5 pb-5 text-sm text-[#444] leading-relaxed">
-                <div className="bg-[#FFF0F5] p-4 rounded-lg text-[#BB125B] shadow-sm mt-3">
-                  Rare, but more common after menopause. Must be assessed to rule out ovarian cancer.
+                <div className="bg-[#FFF0F5] p-4 rounded-lg text-black shadow-sm mt-3">
+                  Rare, but more common after menopause. Must be assessed to rule out ovarian
+                  cancer.
                 </div>
               </div>
             )}
@@ -165,7 +189,6 @@ const OvarianCystsGuideCard3 = ({ setShowCard, setActiveButton }) => {
             Continue to Next Section
           </button>
         </div>
-
       </div>
     </div>
   );

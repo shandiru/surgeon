@@ -38,7 +38,7 @@ const FibroidGuideCard2 = ({ setShowCard, setActiveButton }) => {
           {/* Left - Physical Symptoms */}
           <div className="space-y-4">
             <h4 className="font-semibold text-lg text-[#FF4B8B]">Physical Symptoms</h4>
-            <ul className="space-y-2 text-gray-700">
+            <ul className="space-y-2 text-black">
               <li>• Painful or heavy periods</li>
               <li>• Anaemia (from heavy bleeding)</li>
               <li>• Bleeding between periods or after sex</li>
@@ -51,7 +51,7 @@ const FibroidGuideCard2 = ({ setShowCard, setActiveButton }) => {
           {/* Right - Other Effects */}
           <div className="space-y-4">
             <h4 className="font-semibold text-lg text-[#FF4B8B]">Other Effects</h4>
-            <ul className="space-y-2 text-gray-700">
+            <ul className="space-y-2 text-black">
               <li>• Constant urge to pass urine</li>
               <li>• Constipation or bloating</li>
               <li>• Low mood or depression</li>
@@ -64,7 +64,7 @@ const FibroidGuideCard2 = ({ setShowCard, setActiveButton }) => {
 
         {/* Highlight Box */}
         <div className="rounded-lg p-5 shadow-sm bg-[#FF4B8B]/10">
-          <p className="font-medium text-base flex items-center gap-2 text-[#BB125B]">
+          <p className="font-medium text-base flex items-center gap-2 text-black">
             <AlertCircle className="h-5 w-5 text-[#FF4B8B]" />
             If left untreated, fibroids can grow and may cause complications.
           </p>

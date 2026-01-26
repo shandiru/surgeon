@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Stethoscope,
   AlertCircle,
@@ -7,18 +7,22 @@ import {
   CheckCircle,
   Heart,
   Users,
-} from 'lucide-react';
+} from "lucide-react";
 
 const MenstrualDisordersGuideButtons = ({ setShowCard, activeButton, setActiveButton }) => {
   const buttons = [
-    { label: 'Overview', icon: <Stethoscope className="w-4 h-4" />, card: 1 },
-    { label: `What's a Normal Menstrual Cycle?`, icon: <AlertCircle className="w-4 h-4" />, card: 2 },
+    { label: "Overview", icon: <Stethoscope className="w-4 h-4" />, card: 1 },
+    {
+      label: `What's a Normal Menstrual Cycle?`,
+      icon: <AlertCircle className="w-4 h-4" />,
+      card: 2,
+    },
     { label: "Types of Menstrual Disorders", icon: <FileText className="w-4 h-4" />, card: 3 },
-    { label: 'Symptoms to Watch For', icon: <Shield className="w-4 h-4" />, card: 4 },
-    { label: 'Causes & Risk Factors', icon: <CheckCircle className="w-4 h-4" />, card: 5 },
-    { label: 'Treatment Options', icon: <Heart className="w-4 h-4" />, card: 6 },
-    { label: 'Prevention and Early Management', icon: <Users className="w-4 h-4" />, card: 7 },
-    { label: 'Key Takeaway', icon: <AlertCircle className="w-4 h-4" />, card: 8 },
+    { label: "Symptoms to Watch For", icon: <Shield className="w-4 h-4" />, card: 4 },
+    { label: "Causes & Risk Factors", icon: <CheckCircle className="w-4 h-4" />, card: 5 },
+    { label: "Treatment Options", icon: <Heart className="w-4 h-4" />, card: 6 },
+    { label: "Prevention and Early Management", icon: <Users className="w-4 h-4" />, card: 7 },
+    { label: "Key Takeaway", icon: <AlertCircle className="w-4 h-4" />, card: 8 },
   ];
 
   const handleButtonClick = (card, index) => {
@@ -35,10 +39,10 @@ const MenstrualDisordersGuideButtons = ({ setShowCard, activeButton, setActiveBu
           className={`flex flex-col items-center justify-center text-center 
             w-full py-2 px-3
             font-semibold rounded-md 
-            text-[#BB125B] bg-[#FF4B8B]/10 hover:bg-[#FF4B8B]/30 
+            text-black bg-light-pink-1 hover:bg-[#FF4B8B]/30 
             text-button
             transition-all 
-            ${activeButton === index ? 'bg-[#FF4B8B]/50 text-black' : ''}`}
+            ${activeButton === index ? "bg-light-pink-2 text-black" : ""}`}
         >
           {button.icon}
           <span className="leading-tight">{button.label}</span>

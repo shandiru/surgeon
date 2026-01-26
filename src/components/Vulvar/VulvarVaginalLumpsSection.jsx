@@ -1,32 +1,28 @@
-import React from 'react'
-import { Heart, Shield, Users } from 'lucide-react'
+import React from "react";
+import { Heart, Shield, Users } from "lucide-react";
 
 const cards = [
   {
     id: 1,
     icon: <Heart className="w-12 h-12 mx-auto mb-4 text-[#FF4B8B]" />,
-    title: 'Common & Normal',
-    description:
-      'Lumps are very common at all ages and most are completely harmless',
+    title: "Common & Normal",
+    description: "Lumps are very common at all ages and most are completely harmless",
   },
   {
     id: 2,
     icon: <Shield className="w-12 h-12 mx-auto mb-4 text-[#FF4B8B]" />,
-    title: 'Professional Care',
-    description:
-      'Getting checked by a healthcare provider gives peace of mind',
+    title: "Professional Care",
+    description: "Getting checked by a healthcare provider gives peace of mind",
   },
   {
     id: 3,
     icon: <Users className="w-12 h-12 mx-auto mb-4 text-[#FF4B8B]" />,
     title: "You're Not Alone",
-    description:
-      'Many people experience this - support and information are available',
+    description: "Many people experience this - support and information are available",
   },
-]
+];
 
 const VulvarVaginalLumpsSection = () => {
-
   return (
     <div className="container mx-auto px-4">
       <div className="max-w-4xl mx-auto text-center">
@@ -35,10 +31,9 @@ const VulvarVaginalLumpsSection = () => {
           Understanding Vulvar &amp; Vaginal Lumps
         </h1>
         <p className="text-xl mb-8 text-pretty leading-relaxed text-[#FF4B8B]">
-          Lumps or bumps can appear on the external area (vulva) or the internal
-          vaginal walls. They are common at all ages and often harmless. Most
-          lumps are not serious, but it's always best to get them checked by
-          your doctor.
+          Lumps or bumps can appear on the external area (vulva) or the internal vaginal walls. They
+          are common at all ages and often harmless. Most lumps are not serious, but it's always
+          best to get them checked by your doctor.
         </p>
 
         {/* Cards */}
@@ -51,14 +46,14 @@ const VulvarVaginalLumpsSection = () => {
               <div className="p-6 text-center">
                 {card.icon}
                 <h3 className="text-lg font-semibold mb-2">{card.title}</h3>
-                <p className="text-sm text-gray-700">{card.description}</p>
+                <p className="text-sm text-black">{card.description}</p>
               </div>
             </div>
           ))}
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default VulvarVaginalLumpsSection
+export default VulvarVaginalLumpsSection;
