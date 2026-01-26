@@ -25,7 +25,7 @@ export default function ExperienceImage() {
 
         {/* Pink Overlay */}
         <div
-          className="absolute inset-0 bg-[#FF4B8B]/40 
+          className="absolute inset-0 bg-primary-pink/40 
                      opacity-0 group-hover:opacity-100 sm:opacity-0
                      transition-opacity duration-500 rounded-lg"
         ></div>

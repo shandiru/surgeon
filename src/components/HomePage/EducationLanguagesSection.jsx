@@ -33,12 +33,12 @@ export default function EducationLanguagesSection() {
   ];
 
   return (
-    <section id="education" className="py-20 bg-[#fff7f9]">
+    <section id="education" className="py-20 bg-light-pink-1">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-stretch">
           {/* Education & Qualifications */}
           <div className="flex flex-col" data-aos="fade-right">
-            <h2 className="text-section text-[#FF4B8B] mb-10 text-center lg:text-left">
+            <h2 className="text-section text-primary-pink mb-10 text-center lg:text-left">
               Education & Qualifications
             </h2>
 
@@ -46,16 +46,16 @@ export default function EducationLanguagesSection() {
               {education.map((item, i) => (
                 <div
                   key={i}
-                  className="bg-white p-6 rounded-lg shadow-sm text-center lg:text-left border border-[#FF4B8B]/10 
+                  className="bg-white p-6 rounded-lg shadow-sm text-center lg:text-left border border-primary-pink/10 
                              transition-all duration-300 hover:scale-[1.02] 
-                             hover:shadow-[0_0_25px_3px_rgba(255,75,139,0.2)] active:scale-[0.98]"
+                             hover:shadow-xl active:scale-[0.98]"
                   data-aos="fade-up"
                   data-aos-delay={i * 120}
                 >
                   <h3 className="text-card-title font-semibold text-gray-900">
                     {item.title}
                   </h3>
-                  <p className="text-[#FF4B8B] font-medium text-body">{item.place}</p>
+                  <p className="text-primary-pink font-medium text-body">{item.place}</p>
                   <p className="text-gray-500 text-body-small">{item.years}</p>
                 </div>
               ))}
@@ -64,8 +64,8 @@ export default function EducationLanguagesSection() {
 
           {/* Languages Spoken */}
           <div
-            className="bg-white rounded-xl shadow-sm p-8 flex flex-col h-full border border-[#FF4B8B]/10
-                       transition-all duration-300 hover:shadow-[0_0_30px_3px_rgba(255,75,139,0.25)]"
+            className="bg-white rounded-xl shadow-sm p-8 flex flex-col h-full border border-primary-pink/10
+                       transition-all duration-300 hover:shadow-xl"
             data-aos="fade-left"
             data-aos-delay="300"
           >
@@ -74,7 +74,7 @@ export default function EducationLanguagesSection() {
               <img
                 src="/new-doctor.png" // <-- உங்கள் doctor image path
                 alt="Doctor"
-                className="w-32 h-32 object-cover rounded-full border-4 border-[#FF4B8B]/30 shadow-md"
+                className="w-32 h-32 object-cover rounded-full border-4 border-primary-pink/30 shadow-md"
                 data-aos="zoom-in"
               />
             </div>
@@ -82,7 +82,7 @@ export default function EducationLanguagesSection() {
             <div className="text-center pb-6">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-12 w-12 text-[#FF4B8B] mx-auto mb-4"
+                className="h-12 w-12 text-primary-pink mx-auto mb-4"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -103,9 +103,9 @@ export default function EducationLanguagesSection() {
                   <span
                     key={idx}
                     className="inline-flex items-center justify-center rounded-md font-medium text-body-large px-6 py-2 
-                               bg-[#FFF1F5] text-gray-800 border border-[#FF4B8B]/20 
-                               transition-all duration-300 hover:bg-[#FF4B8B] hover:text-white 
-                               hover:shadow-[0_0_15px_1px_rgba(255,75,139,0.3)] hover:scale-105 
+                               bg-light-pink-1 text-gray-800 border border-primary-pink/20 
+                               transition-all duration-300 hover:bg-primary-pink hover:text-white 
+                               hover:shadow-lg hover:scale-105 
                                active:scale-95"
                     data-aos="zoom-in"
                     data-aos-delay={idx * 200}

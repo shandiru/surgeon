@@ -1,19 +1,19 @@
-'use client';
+"use client";
 
-import React from 'react';
+import React from "react";
 import { HashLink } from "react-router-hash-link";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#FF94B8] text-white pt-16" id="footer">
+    <footer className="bg-light-pink-2 text-black pt-16" id="footer">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
         <div className="grid md:grid-cols-3 gap-8 text-sm md:text-base">
           {/* Left Column */}
           <div>
             <h2 className="text-lg font-bold mb-3">Mr Ketankumar Gajjar</h2>
-            <p className="text-white/90">
-              Consultant Gynaecological Oncologist with 26 years of experience
-              providing exceptional care in women's health and cancer treatment.
+            <p className="text-black">
+              Consultant Gynaecological Oncologist with 26 years of experience providing exceptional
+              care in women's health and cancer treatment.
             </p>
 
             {/* Contact Icons */}
@@ -21,12 +21,12 @@ export default function Footer() {
               {/* Email */}
               <a
                 href="mailto:info@example.com"
-                className="bg-white p-2 rounded-md hover:bg-pink-50 hover:shadow-[0_0_10px_rgba(255,75,139,0.5)] transition"
+                className="bg-primary-pink p-2 rounded-md hover:bg-light-pink-1 hover:shadow-lg transition"
                 aria-label="Email"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 text-[#FF4B8B]"
+                  className="h-5 w-5 text-black"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -40,18 +40,19 @@ export default function Footer() {
               {/* Phone */}
               <a
                 href="tel:+441234567890"
-                className="bg-white p-2 rounded-md hover:bg-pink-50 hover:shadow-[0_0_10px_rgba(255,75,139,0.5)] transition"
+                className="bg-primary-pink p-2 rounded-md hover:bg-light-pink-1 hover:shadow-lg transition"
                 aria-label="Phone"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 text-[#FF4B8B]"
+                  className="h-5 w-5 text-black"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                   strokeWidth="2"
                 >
-                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 
                       19.79 19.79 0 0 1-8.63-3.07
                       19.5 19.5 0 0 1-6-6 
                       19.79 19.79 0 0 1-3.07-8.63 
@@ -60,7 +61,8 @@ export default function Footer() {
                       a2 2 0 0 1-.45 2.11L8.09 9.91
                       a16 16 0 0 0 6 6l1.27-1.27
                       a2 2 0 0 1 2.11-.45c.94.25 1.86.53 2.81.7
-                      A2 2 0 0 1 22 16.92z" />
+                      A2 2 0 0 1 22 16.92z"
+                  />
                 </svg>
               </a>
 
@@ -69,12 +71,12 @@ export default function Footer() {
                 href="https://www.google.com/maps?q=Nottingham+University+Hospital"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white p-2 rounded-md hover:bg-pink-50 hover:shadow-[0_0_10px_rgba(255,75,139,0.5)] transition"
+                className="bg-primary-pink p-2 rounded-md hover:bg-light-pink-1 hover:shadow-lg transition"
                 aria-label="Location"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 text-[#FF4B8B]"
+                  className="h-5 w-5 text-black"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -90,12 +92,12 @@ export default function Footer() {
                 href="https://x.com/ketan_gajjar20?lang=en"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white p-2 rounded-md hover:bg-pink-50 hover:shadow-[0_0_10px_rgba(255,75,139,0.5)] transition"
+                className="bg-primary-pink p-2 rounded-md hover:bg-light-pink-1 hover:shadow-lg transition"
                 aria-label="Twitter"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 text-[#FF4B8B]"
+                  className="h-5 w-5 text-black"
                   viewBox="0 0 24 24"
                   fill="currentColor"
                 >
@@ -108,34 +110,28 @@ export default function Footer() {
           {/* Middle Column */}
           <div>
             <h2 className="text-subsection mb-3">Quick Links</h2>
-            <ul className="text-white/90 space-y-1">
-              {['About', 'Experience', 'Specialties', 'Education', 'Contact'].map(
-                (link, i) => (
-                  <li key={i}>
-                    <HashLink
-                      smooth
-                      to={`/#${link.toLowerCase()}`}
-                      className="hover:underline"
-                    >
-                      {link}
-                    </HashLink>
-                  </li>
-                )
-              )}
+            <ul className="text-black space-y-1">
+              {["About", "Experience", "Specialties", "Education", "Contact"].map((link, i) => (
+                <li key={i}>
+                  <HashLink smooth to={`/#${link.toLowerCase()}`} className="hover:underline">
+                    {link}
+                  </HashLink>
+                </li>
+              ))}
             </ul>
           </div>
 
           {/* Right Column */}
           <div>
             <h2 className="text-lg font-bold mb-3">Locations</h2>
-            <ul className="text-white/90 space-y-1">
+            <ul className="text-black space-y-1">
               <li>Nottingham University Hospital</li>
               <li>Park Hospital</li>
               <li>Spire Nottingham Hospital</li>
               <li className="flex items-center gap-1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4 text-white"
+                  className="h-4 w-4 text-black"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -151,19 +147,16 @@ export default function Footer() {
         </div>
 
         {/* Bottom Line */}
-        <div className="border-t border-white/40 mt-10 pt-6 text-center text-body-small text-white/80">
-          <p>
-            © 2025 Mr Ketankumar Gajjar – aecological Oncologist.
-            All rights reserved.
-          </p>
+        <div className="border-t border-black mt-10 pt-6 text-center text-body-small text-black/80">
+          <p>© 2025 Mr Ketankumar Gajjar – aecological Oncologist. All rights reserved.</p>
           <p className="mt-2">Professional medical services | GMC Registered</p>
-          <p className="mt-3 text-white/70">
-            Powered by{' '}
+          <p className="mt-3 text-black/70">
+            Powered by{" "}
             <a
               href="https://www.ansely.co.uk/"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline hover:text-white"
+              className="underline hover:text-black"
             >
               Ansely
             </a>

@@ -6,13 +6,9 @@ const CervicalScreeningGuideCard1 = ({ setShowCard, setActiveButton }) => {
 
       {/* Card Container */}
       <div
-        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 
-        flex flex-col gap-6 rounded-2xl border shadow-sm 
-        animate-in slide-in-from-right-5 duration-300 p-8"
-        style={{
-          backgroundColor: "#FFFFFF",
-          borderColor: "rgb(255,197,211)",
-        }}
+        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10
+        flex flex-col gap-6 rounded-2xl border shadow-sm
+        animate-in slide-in-from-right-5 duration-300 p-8 bg-white border-light-pink-2"
       >
         {/* ⭐ Layout updated: 
             - Mobile = 1 column
@@ -23,11 +19,11 @@ const CervicalScreeningGuideCard1 = ({ setShowCard, setActiveButton }) => {
           {/* LEFT SIDE */}
           <div className="text-center lg:text-left space-y-6 px-2 sm:px-4 lg:px-8">
 
-            <h2 className="text-3xl md:text-4xl font-bold text-[#FF4B8B] [text-wrap:balance]">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary-pink [text-wrap:balance]">
               Cervical Screening Overview
             </h2>
 
-            <p className="text-lg leading-relaxed text-[#7a2f4f] [text-wrap:pretty]">
+            <p className="text-lg leading-relaxed text-black [text-wrap:pretty]">
               Cervical screening — also called the <strong>smear test</strong> — checks 
               the health of cells in your cervix. It is designed to 
               <strong> prevent cervical cancer</strong> by identifying abnormal changes 
@@ -39,13 +35,10 @@ const CervicalScreeningGuideCard1 = ({ setShowCard, setActiveButton }) => {
 
             {/* Stat Box */}
             <div
-              className="rounded-xl border p-6 shadow-md bg-[#FFF5F8] bg-white/70 backdrop-blur-sm max-w-md mx-auto lg:mx-0"
-              style={{
-                borderColor: "rgb(255,197,211)",
-              }}
+              className="rounded-xl border p-6 shadow-md bg-light-pink-1 backdrop-blur-sm max-w-md mx-auto lg:mx-0 border-light-pink-2"
             >
-              <div className="text-4xl font-extrabold mb-2 text-[#FF4B8B]">90%</div>
-              <p className="text-base text-[#FF4B8B]/90 leading-relaxed">
+              <div className="text-4xl font-extrabold mb-2 text-primary-pink">90%</div>
+              <p className="text-base text-primary-pink leading-relaxed">
                 Cervical screening can detect up to 90% of early cell changes.
               </p>
             </div>
@@ -60,8 +53,8 @@ const CervicalScreeningGuideCard1 = ({ setShowCard, setActiveButton }) => {
               loading="lazy"
               className="w-full max-w-lg rounded-2xl shadow-xl
                 transition duration-300 transform
-                hover:scale-105 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(255,75,139,0.5)]
-                active:scale-105 active:-translate-y-2 active:shadow-[0_10px_40px_rgba(255,75,139,0.5)]"
+                hover:scale-105 hover:-translate-y-2 hover:shadow-2xl
+                active:scale-105 active:-translate-y-2 active:shadow-2xl"
             />
           </div>
 
@@ -74,8 +67,8 @@ const CervicalScreeningGuideCard1 = ({ setShowCard, setActiveButton }) => {
               setShowCard(2);
               setActiveButton(1);
             }}
-            className="inline-flex items-center justify-center bg-[#FF4B8B] 
-            hover:bg-[#FF4B8B]/80 text-white rounded-md text-sm font-medium 
+            className="inline-flex items-center justify-center bg-primary-pink
+            hover:bg-primary-pink/80 text-white rounded-md text-sm font-medium
             transition-all h-10 px-4 w-[90%] md:w-[70%] lg:w-[40%]"
           >
             Continue to Next Section

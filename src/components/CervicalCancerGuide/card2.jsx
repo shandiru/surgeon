@@ -6,11 +6,11 @@ const CervicalCancerGuideCard2 = ({ setShowCard, setActiveButton }) => {
     <div className="space-y-6 pb-10">
       {/* Card Container */}
       <div
-        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-2xl border border-[#FF4B8B]/10 bg-white p-8 shadow-sm animate-in slide-in-from-right-5 duration-300"
+        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-2xl border border-primary-pink/10 bg-white p-8 shadow-sm animate-in slide-in-from-right-5 duration-300"
       >
         {/* Card Header */}
         <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5">
-          <div className="leading-none font-semibold flex items-center gap-2 text-[#FF4B8B]">
+          <div className="leading-none font-semibold flex items-center gap-2 text-primary-pink">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -21,7 +21,7 @@ const CervicalCancerGuideCard2 = ({ setShowCard, setActiveButton }) => {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="lucide lucide-activity w-6 h-6 text-[#FF4B8B]"
+              className="lucide lucide-activity w-6 h-6 text-primary-pink"
             >
               <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
             </svg>
@@ -33,8 +33,8 @@ const CervicalCancerGuideCard2 = ({ setShowCard, setActiveButton }) => {
         <div className="space-y-6">
 
           {/* Intro Box */}
-          <div className="p-4 rounded-xl border border-[#FF4B8B]/10 transition-all duration-300 bg-[#FF4B8B]/10">
-            <p className="text-lg leading-relaxed text-[#BB125B]">
+          <div className="p-4 rounded-xl border border-primary-pink/10 transition-all duration-300 bg-primary-pink/10">
+            <p className="text-lg leading-relaxed text-black">
               Cervical cancer usually begins with pre-cancerous changes in the cells of the cervix
               called <strong>CIN (Cervical Intraepithelial Neoplasia)</strong>. If untreated,
               some CIN lesions may slowly progress to cancer over many years.
@@ -45,33 +45,33 @@ const CervicalCancerGuideCard2 = ({ setShowCard, setActiveButton }) => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
             {/* Squamous Cell Carcinoma */}
-            <div className="p-4 rounded-xl border border-[#FF4B8B]/10 transition-all duration-300 hover:shadow-md bg-white">
-              <h4 className="font-semibold mb-2 text-[#FF4B8B]">
+            <div className="p-4 rounded-xl border border-primary-pink/10 transition-all duration-300 hover:shadow-md bg-white">
+              <h4 className="font-semibold mb-2 text-primary-pink">
                 Squamous Cell Carcinoma
               </h4>
-              <p className="text-sm text-[#BB125B]">
+              <p className="text-sm text-black">
                 The most common type — <strong>70–80%</strong> of cervical cancers.  
                 Starts in the thin, flat cells on the outer surface of the cervix.
               </p>
             </div>
 
             {/* Adenocarcinoma */}
-            <div className="p-4 rounded-xl border border-[#FF4B8B]/10 transition-all duration-300 hover:shadow-md bg-white">
-              <h4 className="font-semibold mb-2 text-[#FF4B8B]">
+            <div className="p-4 rounded-xl border border-primary-pink/10 transition-all duration-300 hover:shadow-md bg-white">
+              <h4 className="font-semibold mb-2 text-primary-pink">
                 Adenocarcinoma
               </h4>
-              <p className="text-sm text-[#BB125B]">
+              <p className="text-sm text-black">
                 Begins in the glandular cells inside the cervical canal.  
                 Less common but often harder to detect through routine screening.
               </p>
             </div>
 
             {/* Rare Types */}
-            <div className="p-4 rounded-xl border border-[#FF4B8B]/10 transition-all duration-300 hover:shadow-md bg-white">
-              <h4 className="font-semibold mb-2 text-[#FF4B8B]">
+            <div className="p-4 rounded-xl border border-primary-pink/10 transition-all duration-300 hover:shadow-md bg-white">
+              <h4 className="font-semibold mb-2 text-primary-pink">
                 Rare Types
               </h4>
-              <p className="text-sm text-[#BB125B]">
+              <p className="text-sm text-black">
                 Includes <strong>small cell neuroendocrine carcinoma</strong> and other mixed
                 tumours. These are uncommon but tend to behave more aggressively.
               </p>
@@ -80,8 +80,8 @@ const CervicalCancerGuideCard2 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           {/* Extra Info Box */}
-          <div className="p-4 rounded-xl border border-[#FF4B8B]/10 bg-[#FF4B8B]/10">
-            <h4 className="font-semibold mb-2 flex items-center gap-2 text-[#FF4B8B]">
+          <div className="p-4 rounded-xl border border-primary-pink/10 bg-primary-pink/10">
+            <h4 className="font-semibold mb-2 flex items-center gap-2 text-primary-pink">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -92,7 +92,7 @@ const CervicalCancerGuideCard2 = ({ setShowCard, setActiveButton }) => {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="lucide lucide-lightbulb w-5 h-5 text-[#FF4B8B]"
+                className="lucide lucide-lightbulb w-5 h-5 text-primary-pink"
               >
                 <path d="M9 18h6"></path>
                 <path d="M10 22h4"></path>
@@ -101,7 +101,7 @@ const CervicalCancerGuideCard2 = ({ setShowCard, setActiveButton }) => {
               Did You Know?
             </h4>
 
-            <p className="text-sm text-[#BB125B]">
+            <p className="text-sm text-black">
               CIN does not always turn into cancer. Regular screening and early treatment of
               abnormal cells can stop cervical cancer before it starts.
             </p>
@@ -114,7 +114,7 @@ const CervicalCancerGuideCard2 = ({ setShowCard, setActiveButton }) => {
                 setShowCard(3);
                 setActiveButton(2);
               }}
-              className="inline-flex items-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
+              className="inline-flex items-center bg-primary-pink hover:bg-primary-pink/80 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
             >
               Continue to Next Section
             </button>

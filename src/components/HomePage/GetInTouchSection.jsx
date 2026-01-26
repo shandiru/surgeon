@@ -56,7 +56,7 @@ export default function GetInTouchSection() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2
-            className="text-section text-[#FF4B8B] mb-4"
+            className="text-section text-primary-pink mb-4"
             data-aos="fade-up"
           >
             Get in Touch
@@ -75,13 +75,13 @@ export default function GetInTouchSection() {
           {cards.map((card, index) => (
             <div
               key={index}
-              className="bg-white flex flex-col gap-6 rounded-xl shadow-sm p-6 text-center transition-all duration-300 hover:shadow-[0_0_25px_2px_rgba(255,75,139,0.2)] hover:-translate-y-1"
+              className="bg-white flex flex-col gap-6 rounded-xl shadow-sm p-6 text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
               data-aos="fade-up"
               data-aos-delay={index * 200}
             >
-              <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 bg-[#FFF1F5]">
+              <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 bg-light-pink-1">
                 <svg
-                  className="h-8 w-8 text-[#FF4B8B]"
+                  className="h-8 w-8 text-primary-pink"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -102,16 +102,16 @@ export default function GetInTouchSection() {
                   href={card.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center rounded-md text-button transition-all w-full px-4 py-2 bg-[#FF4B8B] hover:bg-[#ff5d96] text-white"
+                  className="inline-flex items-center justify-center rounded-md text-button transition-all w-full px-4 py-2 bg-primary-pink hover:bg-primary-pink/80 text-white"
                 >
                   {card.btn}
                 </a>
               ) : card.variant === 'outline' ? (
-                <button className="inline-flex items-center justify-center rounded-md border text-button transition-all w-full px-4 py-2 bg-transparent text-[#FF4B8B] border-[#FF4B8B] hover:bg-[#FFE3EC]">
+                <button className="inline-flex items-center justify-center rounded-md border text-button transition-all w-full px-4 py-2 bg-transparent text-primary-pink border-primary-pink hover:bg-light-pink-1">
                   {card.btn}
                 </button>
               ) : (
-                <button className="inline-flex items-center justify-center rounded-md text-button transition-all w-full px-4 py-2 bg-[#FF4B8B] hover:bg-[#ff5d96] text-white">
+                <button className="inline-flex items-center justify-center rounded-md text-button transition-all w-full px-4 py-2 bg-primary-pink hover:bg-primary-pink/80 text-white">
                   {card.btn}
                 </button>
               )}

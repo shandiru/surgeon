@@ -8,27 +8,22 @@ const CervicalCancerGuideCard4 = ({ setShowCard, setActiveButton }) => {
 
         {/* MAIN WRAPPER BOX */}
         <div
-          className="rounded-2xl p-8 border transition-all duration-300 shadow-sm"
-          style={{
-            backgroundColor: "#FFFFFF",
-            borderColor: "rgb(255,197,211)",
-          }}
+          className="rounded-2xl p-8 border transition-all duration-300 shadow-sm bg-white border-light-pink-2"
         >
           {/* HEADER */}
           <div className="mb-6">
             <span
-              className="font-semibold text-sm uppercase tracking-wide"
-              style={{ color: "#FF4B8B" }}
+              className="font-semibold text-sm uppercase tracking-wide text-primary-pink"
             >
               Step 1
             </span>
-            <h2 className="text-3xl font-bold mt-2" style={{ color: "#FF4B8B" }}>
+            <h2 className="text-3xl font-bold mt-2 text-primary-pink">
               Symptoms of Cervical Cancer
             </h2>
           </div>
 
           {/* DESCRIPTION */}
-          <p className="text-lg mb-8" style={{ color: "#7a2f4f" }}>
+          <p className="text-lg mb-8 text-black">
             Cervical cancer often develops without early warning signs.  
             That’s why regular screenings are essential.
           </p>
@@ -44,22 +39,20 @@ const CervicalCancerGuideCard4 = ({ setShowCard, setActiveButton }) => {
             ].map((text, index) => (
               <div
                 key={index}
-                className="flex items-start gap-3 p-4 bg-white rounded-lg border transition-all duration-300 hover:bg-[#FFF5F8] hover:shadow-lg active:bg-[#FFF5F8] active:shadow-lg"
-                style={{ borderColor: "rgb(255,197,211)" }}
+                className="flex items-start gap-3 p-4 bg-white rounded-lg border transition-all duration-300 hover:bg-light-pink-1 hover:shadow-lg active:bg-light-pink-1 active:shadow-lg border-light-pink-2"
               >
                 <div
-                  className="w-2 h-2 bg-[#FF4B8B] rounded-full mt-2 flex-shrink-0"
+                  className="w-2 h-2 bg-primary-pink rounded-full mt-2 flex-shrink-0"
                 ></div>
 
-                <span className="text-[#7a2f4f] text-sm font-medium">{text}</span>
+                <span className="text-black text-sm font-medium">{text}</span>
               </div>
             ))}
           </div>
 
           {/* WARNING BOX */}
           <div
-            className="mt-8 p-6 rounded-xl"
-            style={{ backgroundColor: "#FF4B8B" }}
+            className="mt-8 p-6 rounded-xl bg-primary-pink"
           >
             <p className="text-white font-semibold text-lg">
               If you notice any of these symptoms, contact your doctor promptly.
@@ -74,7 +67,7 @@ const CervicalCancerGuideCard4 = ({ setShowCard, setActiveButton }) => {
               setShowCard(5);
               setActiveButton(4);
             }}
-            className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md text-sm font-medium transition-all h-10 px-4"
+            className="bg-primary-pink hover:bg-primary-pink/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md text-sm font-medium transition-all h-10 px-4"
           >
             Continue to Next Step
           </button>

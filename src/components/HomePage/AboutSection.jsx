@@ -55,7 +55,7 @@ export default function AboutSectionView() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2
-            className="text-section text-[#FF4B8B] mb-4"
+            className="text-section text-primary-pink mb-4"
             data-aos="fade-up"
           >
             About Mr Ketankumar Gajjar
@@ -76,16 +76,16 @@ export default function AboutSectionView() {
           {cards.map((card, i) => (
             <div
               key={i}
-              className="group bg-white text-gray-900 flex flex-col gap-6 rounded-xl border border-[#FF4B8B]/20 shadow-sm text-center p-6 transition-all duration-300 
-                         md:hover:scale-105 md:hover:shadow-[0_0_25px_3px_rgba(255,75,139,0.3)]
-                         active:scale-95 active:shadow-[0_0_15px_2px_rgba(255,75,139,0.25)]"
+              className="group bg-white text-gray-900 flex flex-col gap-6 rounded-xl border border-primary-pink/20 shadow-sm text-center p-6 transition-all duration-300 
+                         md:hover:scale-105 md:hover:shadow-xl
+                         active:scale-95 active:shadow-lg"
               data-aos="fade-up"
               data-aos-delay={i * 200}
             >
-              <div className="bg-[#FF4B8B]/10 group-hover:bg-[#FF4B8B]/20 transition-colors duration-300 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-primary-pink/10 group-hover:bg-primary-pink/20 transition-colors duration-300 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-8 w-8 text-[#FF4B8B]"
+                  className="h-8 w-8 text-primary-pink"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -94,7 +94,7 @@ export default function AboutSectionView() {
                   {card.icon}
                 </svg>
               </div>
-              <h3 className="text-card-title mb-2 text-[#1F2937]">
+              <h3 className="text-card-title mb-2 text-black">
                 {card.title}
               </h3>
               <p className="text-body text-gray-600">{card.desc}</p>

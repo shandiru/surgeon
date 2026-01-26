@@ -15,7 +15,7 @@ export default function ProfessionalExperience() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2
-            className="text-section text-[#FF4B8B] mb-4"
+            className="text-section text-primary-pink mb-4"
             data-aos="fade-up"
           >
             Professional Experience
@@ -54,13 +54,13 @@ export default function ProfessionalExperience() {
           ].map((item, idx) => (
             <div
               key={idx}
-              className="bg-white flex flex-col gap-4 rounded-xl border border-[#FF4B8B]/10 shadow-sm p-6 transition-all duration-300 
-                         hover:shadow-[0_0_30px_4px_rgba(255,75,139,0.15)] hover:scale-[1.02] active:scale-[0.99]"
+              className="bg-white flex flex-col gap-4 rounded-xl border border-primary-pink/10 shadow-sm p-6 transition-all duration-300 
+                         hover:shadow-xl hover:scale-[1.02] active:scale-[0.99]"
               data-aos="fade-up"
               data-aos-delay={`${idx * 150}`}
             >
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-[#FF4B8B] rounded-lg flex items-center justify-center">
+                <div className="w-12 h-12 bg-primary-pink rounded-lg flex items-center justify-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-6 w-6 text-white"
@@ -77,7 +77,7 @@ export default function ProfessionalExperience() {
                   <p className="font-semibold text-body-small text-gray-900">
                     {item.hospital}
                   </p>
-                  <p className="text-[#FF4B8B] font-medium text-body-small">{item.role}</p>
+                  <p className="text-primary-pink font-medium text-body-small">{item.role}</p>
                 </div>
               </div>
               <div>
@@ -90,13 +90,13 @@ export default function ProfessionalExperience() {
 
         {/* Membership & Leadership Section */}
         <div
-          className="bg-white flex flex-col gap-8 rounded-xl border border-[#FF4B8B]/10 shadow-sm p-8 transition-all duration-300 
-                     hover:shadow-[0_0_30px_4px_rgba(255,75,139,0.2)]"
+          className="bg-white flex flex-col gap-8 rounded-xl border border-primary-pink/10 shadow-sm p-8 transition-all duration-300 
+                     hover:shadow-xl"
           data-aos="fade-up"
           data-aos-delay="200"
         >
           <div className="text-center">
-            <h2 className="font-semibold text-subsection text-[#FF4B8B]">
+            <h2 className="font-semibold text-subsection text-primary-pink">
               Professional Memberships & Leadership
             </h2>
           </div>
@@ -121,7 +121,7 @@ export default function ProfessionalExperience() {
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 text-[#FF4B8B] mt-0.5"
+                      className="h-5 w-5 text-primary-pink mt-0.5"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -143,8 +143,8 @@ export default function ProfessionalExperience() {
   </h3>
   <div className="space-y-4">
     <div
-      className="bg-[#FFF1F5] p-4 rounded-lg transition-all duration-300 
-                 hover:shadow-[0_0_20px_2px_rgba(255,75,139,0.2)]"
+      className="bg-light-pink-1 p-4 rounded-lg transition-all duration-300 
+                 hover:shadow-lg"
       data-aos="fade-up"
       data-aos-delay="300"
     >
@@ -158,8 +158,8 @@ export default function ProfessionalExperience() {
     </div>
 
     <div
-      className="bg-[#FFF1F5] p-4 rounded-lg transition-all duration-300 
-                 hover:shadow-[0_0_20px_2px_rgba(255,75,139,0.2)]"
+      className="bg-light-pink-1 p-4 rounded-lg transition-all duration-300 
+                 hover:shadow-lg"
       data-aos="fade-up"
       data-aos-delay="400"
     >
@@ -173,8 +173,8 @@ export default function ProfessionalExperience() {
     </div>
 
     <div
-      className="bg-[#FFF1F5] p-4 rounded-lg transition-all duration-300 
-                 hover:shadow-[0_0_20px_2px_rgba(255,75,139,0.2)]"
+      className="bg-light-pink-1 p-4 rounded-lg transition-all duration-300 
+                 hover:shadow-lg"
       data-aos="fade-up"
       data-aos-delay="500"
     >
