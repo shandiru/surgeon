@@ -2,13 +2,13 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="bg-white border-b border-[#f9d2db] shadow-sm">
+    <header className="bg-white border-b border-primary-pink shadow-sm">
       <div className="container mx-auto px-6 md:px-12 py-10">
         <div className="flex flex-col md:flex-row items-center justify-center gap-4">
           {/* Left Content */}
           <div className="flex items-center gap-3 text-center md:text-left">
             {/* Heart Icon */}
-            <div className="flex items-center justify-center w-10 h-10 rounded-full bg-[#fff0f6] flex-shrink-0">
+            <div className="flex items-center justify-center w-10 h-10 rounded-full bg-light-pink-1 flex-shrink-0">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"

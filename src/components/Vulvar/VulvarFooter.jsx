@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="bg-muted py-12 border-t border-border">
-      <div className="container mx-auto px-4 text-[#d60d64]">
+      <div className="container mx-auto px-4 text-primary-pink">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-4 gap-8">
             {/* HealthInfo Section */}

@@ -28,7 +28,7 @@ export default function OvarianCystSurgery() {
       {/* Card Content */}
       <div>
         {/* Description Box */}
-        <div className="mb-6 p-4 rounded-lg bg-[#FEE6EA] shadow-sm">
+        <div className="mb-6 p-4 rounded-lg bg-light-pink-1 shadow-sm">
           <p className="font-medium">
             Surgery is only needed if the cyst is large, painful, persistent, or possibly cancerous.
           </p>
@@ -39,8 +39,8 @@ export default function OvarianCystSurgery() {
           {/* Laparoscopy */}
           <div className="bg-white rounded-lg p-5 shadow-md hover:shadow-lg transition-all duration-300">
             <h4 className="font-semibold mb-2 text-black">Laparoscopy</h4>
-            <p className="text-sm mb-3 text-[#555]">Keyhole surgery using small cuts</p>
-            <span className="inline-flex items-center justify-center rounded-full px-3 py-1 text-xs font-medium bg-[#FF4B8B1A] text-primary-pink">
+            <p className="text-sm mb-3 text-black">Keyhole surgery using small cuts</p>
+            <span className="inline-flex items-center justify-center rounded-full px-3 py-1 text-xs font-medium bg-light-pink-1 text-primary-pink">
               Often used for smaller, benign cysts
             </span>
           </div>
@@ -48,10 +48,10 @@ export default function OvarianCystSurgery() {
           {/* Laparotomy */}
           <div className="bg-white rounded-lg p-5 shadow-md hover:shadow-lg transition-all duration-300">
             <h4 className="font-semibold mb-2 text-black">Laparotomy</h4>
-            <p className="text-sm mb-3 text-[#555]">
+            <p className="text-sm mb-3 text-black">
               Open surgery through a larger cut in the abdomen
             </p>
-            <span className="inline-flex items-center justify-center rounded-full px-3 py-1 text-xs font-medium bg-[#FEE6EA] text-black">
+            <span className="inline-flex items-center justify-center rounded-full px-3 py-1 text-xs font-medium bg-light-pink-1 text-black">
               Used for larger or possibly cancerous cysts
             </span>
           </div>

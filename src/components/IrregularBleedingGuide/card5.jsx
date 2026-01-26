@@ -6,9 +6,9 @@ const IrregularBleedingGuidecard5 = ({ setShowCard, setActiveButton }) => {
     <section className="my-12 px-4">
       <main className="max-w-4xl mx-auto px-4 py-8 bg-white">
         {/* MAIN CARD */}
-        <div className="bg-white text-black flex flex-col gap-6 rounded-xl py-6 px-4 sm:px-6 shadow-md hover:shadow-lg transition-all duration-300 border border-[#ff97b3]/30">
+        <div className="bg-white text-black flex flex-col gap-6 rounded-xl py-6 px-4 sm:px-6 shadow-md hover:shadow-lg transition-all duration-300 border border-primary-pink/30">
           {/* HEADER */}
-          <div className="grid auto-rows-min items-start gap-2 border-b border-[#ff97b3]/30 pb-4">
+          <div className="grid auto-rows-min items-start gap-2 border-b border-primary-pink/30 pb-4">
             <div className="leading-snug font-semibold flex items-center gap-2 text-primary-pink text-lg sm:text-xl">
               {/* ICON */}
               <svg
@@ -26,7 +26,7 @@ const IrregularBleedingGuidecard5 = ({ setShowCard, setActiveButton }) => {
               What to Expect at Your Appointment
             </div>
 
-            <p className="text-sm sm:text-base text-[#666]">
+            <p className="text-sm sm:text-base text-black">
               These tests help find the cause so you can get the most suitable treatment.
             </p>
           </div>
@@ -35,7 +35,7 @@ const IrregularBleedingGuidecard5 = ({ setShowCard, setActiveButton }) => {
           <div className="space-y-3">
             {/* 1 — Pelvic Examination */}
             <details
-              className="group bg-[#fff7f9] rounded-lg shadow-sm hover:shadow-md transition-all duration-200"
+              className="group bg-light-pink-1 rounded-lg shadow-sm hover:shadow-md transition-all duration-200"
               open
             >
               <summary className="flex justify-between items-center py-4 px-4 cursor-pointer text-sm sm:text-base font-medium text-primary-pink hover:bg-white/60 rounded-lg">
@@ -52,7 +52,7 @@ const IrregularBleedingGuidecard5 = ({ setShowCard, setActiveButton }) => {
                 </svg>
               </summary>
 
-              <div className="px-4 pb-4 text-xs sm:text-sm text-[#555]">
+              <div className="px-4 pb-4 text-xs sm:text-sm text-black">
                 A physical examination to check for any abnormalities in your reproductive organs.
                 This is routine and helps identify possible causes of irregular bleeding.
               </div>
@@ -60,7 +60,7 @@ const IrregularBleedingGuidecard5 = ({ setShowCard, setActiveButton }) => {
 
             {/* 2 — Ultrasound Scan */}
             <details
-              className="group bg-[#fff7f9] rounded-lg shadow-sm hover:shadow-md transition-all duration-200"
+              className="group bg-light-pink-1 rounded-lg shadow-sm hover:shadow-md transition-all duration-200"
               open
             >
               <summary className="flex justify-between items-center py-4 px-4 cursor-pointer text-sm sm:text-base font-medium text-primary-pink hover:bg-white/60 rounded-lg">
@@ -77,7 +77,7 @@ const IrregularBleedingGuidecard5 = ({ setShowCard, setActiveButton }) => {
                 </svg>
               </summary>
 
-              <div className="px-4 pb-4 text-xs sm:text-sm text-[#555]">
+              <div className="px-4 pb-4 text-xs sm:text-sm text-black">
                 A non-invasive scan that uses sound waves to create internal images. Helps detect
                 fibroids, cysts, or structural issues.
               </div>
@@ -85,7 +85,7 @@ const IrregularBleedingGuidecard5 = ({ setShowCard, setActiveButton }) => {
 
             {/* 3 — Blood Tests */}
             <details
-              className="group bg-[#fff7f9] rounded-lg shadow-sm hover:shadow-md transition-all duration-200"
+              className="group bg-light-pink-1 rounded-lg shadow-sm hover:shadow-md transition-all duration-200"
               open
             >
               <summary className="flex justify-between items-center py-4 px-4 cursor-pointer text-sm sm:text-base font-medium text-primary-pink hover:bg-white/60 rounded-lg">
@@ -102,7 +102,7 @@ const IrregularBleedingGuidecard5 = ({ setShowCard, setActiveButton }) => {
                 </svg>
               </summary>
 
-              <div className="px-4 pb-4 text-xs sm:text-sm text-[#555]">
+              <div className="px-4 pb-4 text-xs sm:text-sm text-black">
                 Hormone checks, blood count, and other markers that help determine the cause of
                 irregular bleeding.
               </div>
@@ -110,7 +110,7 @@ const IrregularBleedingGuidecard5 = ({ setShowCard, setActiveButton }) => {
 
             {/* 4 — Cervical Smear */}
             <details
-              className="group bg-[#fff7f9] rounded-lg shadow-sm hover:shadow-md transition-all duration-200"
+              className="group bg-light-pink-1 rounded-lg shadow-sm hover:shadow-md transition-all duration-200"
               open
             >
               <summary className="flex justify-between items-center py-4 px-4 cursor-pointer text-sm sm:text-base font-medium text-primary-pink hover:bg-white/60 rounded-lg">
@@ -127,7 +127,7 @@ const IrregularBleedingGuidecard5 = ({ setShowCard, setActiveButton }) => {
                 </svg>
               </summary>
 
-              <div className="px-4 pb-4 text-xs sm:text-sm text-[#555]">
+              <div className="px-4 pb-4 text-xs sm:text-sm text-black">
                 A screening test to check for abnormal cells on the cervix. Typically part of
                 routine preventive care.
               </div>

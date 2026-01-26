@@ -11,7 +11,7 @@ const PostmenopausalBleedingGuideCard7 = ({ setShowCard, setActiveButton }) => {
         <div
           role="alert"
           className="relative w-full rounded-2xl bg-gradient-to-r 
-                     from-[#FEE6EA] to-[#FFF0F5] px-6 py-6 text-sm 
+                     from-light-pink-1 to-light-pink-2 px-6 py-6 text-sm 
                      shadow-md hover:shadow-lg transition max-w-4xl mx-auto border"
           style={{ borderColor: "rgb(255,197,211)" }}
         >
@@ -36,8 +36,8 @@ const PostmenopausalBleedingGuideCard7 = ({ setShowCard, setActiveButton }) => {
             </h3>
           </div>
 
-          <div className="space-y-3 text-sm text-[#374151] leading-relaxed">
-            <p className="text-[#4B5563]">
+          <div className="space-y-3 text-sm text-black leading-relaxed">
+            <p className="text-black">
               <strong>Don’t wait and see —</strong> it’s important to get checked straight away if
               you experience:
             </p>

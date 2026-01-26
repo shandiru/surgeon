@@ -4,7 +4,7 @@ const TrackBeforeAppointmentCard = () => {
   return (
     <div className="max-w-6xl text-black mx-auto mb-10 flex flex-col gap-6 rounded-xl bg-white py-6 shadow-md hover:shadow-lg transition-shadow">
       {/* Header */}
-      <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-2 px-6 border-b border-[#FEE6EA] pb-6">
+      <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-2 px-6 border-b border-light-pink-1 pb-6">
         <div className="font-semibold flex items-center gap-2 text-2xl text-primary-pink">
           <svg
             xmlns="http://www.w3.org/2000/svg"

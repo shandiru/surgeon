@@ -6,7 +6,7 @@ export default function CystAlert() {
   return (
     <div
       role="alert"
-      className="w-full rounded-xl px-6 py-5 bg-[#FFF7F9] text-black text-base leading-relaxed shadow-md hover:shadow-lg transition-all"
+      className="w-full rounded-xl px-6 py-5 bg-light-pink-1 text-black text-base leading-relaxed shadow-md hover:shadow-lg transition-all"
     >
       {/* Header */}
       <div className="flex items-start gap-3 mb-4">

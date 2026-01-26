@@ -38,7 +38,7 @@ export default function TrustSection() {
                 {features.map((feature, index) => (
                   <div key={index} className="flex items-start gap-4">
                     {/* Icon in Circular Background */}
-                    <div className="flex-shrink-0 w-14 h-14 rounded-full bg-[#FDE7EB] border-2 border-primary-pink flex items-center justify-center">
+                    <div className="flex-shrink-0 w-14 h-14 rounded-full bg-light-pink-1 border-2 border-primary-pink flex items-center justify-center">
                       <div className="text-primary-pink">{feature.icon}</div>
                     </div>
 

@@ -13,11 +13,11 @@ const RoboticGuide1 = ({ setShowCard, setActiveButton }) => {
               Robotic Surgery in Gynecology
             </h1>
 
-            <p className="text-body-large md:text-subsection text-[#B51252]/80">
+            <p className="text-body-large md:text-subsection text-primary-pink/80">
               Advanced da Vinci Surgical System
             </p>
 
-            <p className="text-body md:text-body-large leading-relaxed text-[#B51252]/70 max-w-xl mx-auto md:mx-0">
+            <p className="text-body md:text-body-large leading-relaxed text-primary-pink/70 max-w-xl mx-auto md:mx-0">
               Experience the future of minimally invasive gynecologic surgery with enhanced
               precision, control, and superior patient outcomes through cutting-edge robotic
               technology.

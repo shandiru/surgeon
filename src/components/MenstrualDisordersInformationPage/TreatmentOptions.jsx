@@ -63,7 +63,7 @@ export default function TreatmentOptions() {
         {treatmentOptions.map((option, index) => (
           <div
             key={index}
-            className="bg-[#FEE6EA] rounded-xl shadow-md hover:shadow-lg transition-shadow"
+            className="bg-light-pink-1 rounded-xl shadow-md hover:shadow-lg transition-shadow"
           >
             {/* Accordion Header */}
             <button
@@ -89,7 +89,7 @@ export default function TreatmentOptions() {
 
             {/* Accordion Content */}
             {openIndex === index && (
-              <div className="px-6 pb-6 text-sm text-[#5C2A3B] animate-fadeIn">
+              <div className="px-6 pb-6 text-sm text-primary-pink animate-fadeIn">
                 {option.content}
               </div>
             )}

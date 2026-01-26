@@ -44,7 +44,7 @@ const publications = [
       "Measuring similarity and improving stability in biomarker identification methods applied to Fourier-transform infrared (FTIR) spectroscopy",
     link: "https://www.researchgate.net/publication/260607390_Measuring_similarity_and_improving_stability_in_biomarker_identification_methods_applied_to_Fourier-transform_infrared_FTIR_spectroscopy",
   },
-   {
+  {
     id: 6,
     date: "JANUARY 2014",
     type: "ARTICLE",
@@ -52,7 +52,7 @@ const publications = [
       "Histology Verification Demonstrates That Biospectroscopy Analysis of Cervical Cytology Identifies Underlying Disease More Accurately than Conventional Screening: Removing the Confounder of Discordance",
     link: "https://www.researchgate.net/publication/259631837_Histology_Verification_Demonstrates_That_Biospectroscopy_Analysis_of_Cervical_Cytology_Identifies_Underlying_Disease_More_Accurately_than_Conventional_Screening_Removing_the_Confounder_of_Discordance",
   },
-   {
+  {
     id: 7,
     date: "NOVEMBER 2013",
     type: "ARTICLE",
@@ -68,7 +68,7 @@ const publications = [
       "BIOSPECTROSCOPY OF CERVICAL CYTOLOGY VS. CONVENTIONAL SCREENING IN IDENTIFICATION OF HISTOLOGY VERIFIED CERVICAL INTRA-EPITHELIAL LESIONS",
     link: "https://www.researchgate.net/publication/293476927_BIOSPECTROSCOPY_OF_CERVICAL_CYTOLOGY_VS_CONVENTIONAL_SCREENING_IN_IDENTIFICATION_OF_HISTOLOGY_VERIFIED_CERVICAL_INTRA-EPITHELIAL_LESIONS",
   },
-   {
+  {
     id: 9,
     date: "JULY 2013",
     type: "ARTICLE",
@@ -84,7 +84,7 @@ const publications = [
       "Fourier-transform infrared spectroscopy coupled with a classification machine for the analysis of blood plasma or serum: A novel diagnostic approach for ovarian cancer",
     link: "https://www.researchgate.net/publication/234157919_Fourier-transform_infrared_spectroscopy_coupled_with_a_classification_machine_for_the_analysis_of_blood_plasma_or_serum_A_novel_diagnostic_approach_for_ovarian_cancer",
   },
-   {
+  {
     id: 11,
     date: "JANUARY 2013",
     type: "ARTICLE",
@@ -96,11 +96,10 @@ const publications = [
     id: 12,
     date: "NOVEMBER 2012",
     type: "ARTICLE",
-    title:
-      "Treatment of breast cancer during pregnancy",
+    title: "Treatment of breast cancer during pregnancy",
     link: "https://www.researchgate.net/publication/232764927_Treatment_of_breast_cancer_during_pregnancy",
   },
-   {
+  {
     id: 13,
     date: "OCTOBER 2012",
     type: "ARTICLE",
@@ -112,16 +111,14 @@ const publications = [
     id: 14,
     date: "OCTOBER 2012",
     type: "ARTICLE",
-    title:
-      "Persistent severe dysplasia of colonic neovagina: A case report",
+    title: "Persistent severe dysplasia of colonic neovagina: A case report",
     link: "https://www.researchgate.net/publication/232277329_Persistent_severe_dysplasia_of_colonic_neovagina_A_case_report",
   },
   {
     id: 15,
     date: "SEPTEMBER 2012",
     type: "ARTICLE",
-    title:
-      "Cytochrome P1B1 (CYP1B1) polymorphisms and ovarian cancer risk: A meta-analysis",
+    title: "Cytochrome P1B1 (CYP1B1) polymorphisms and ovarian cancer risk: A meta-analysis",
     link: "https://www.researchgate.net/publication/231862627_Cytochrome_P1B1_CYP1B1_polymorphisms_and_ovarian_cancer_risk_A_meta-analysis",
   },
   {
@@ -136,19 +133,17 @@ const publications = [
     id: 17,
     date: "AUGUST 2012",
     type: "ARTICLE",
-    title:
-      "Symptoms and Risk Factors of Ovarian Cancer: A Survey in Primary Care",
+    title: "Symptoms and Risk Factors of Ovarian Cancer: A Survey in Primary Care",
     link: "https://www.researchgate.net/publication/230812442_Symptoms_and_Risk_Factors_of_Ovarian_Cancer_A_Survey_in_Primary_Care?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InByb2ZpbGUiLCJwYWdlIjoicHJvZmlsZSJ9fQ",
   },
   {
     id: 18,
     date: "MAY 2012",
     type: "ARTICLE",
-    title:
-      "CYP1B1 and hormone-induced cancer",
+    title: "CYP1B1 and hormone-induced cancer",
     link: "https://www.researchgate.net/publication/224914095_CYP1B1_and_hormone-induced_cancer",
   },
-   {
+  {
     id: 19,
     date: "APRIL 2012",
     type: "ARTICLE",
@@ -160,35 +155,31 @@ const publications = [
     id: 20,
     date: "JANUARY 2011",
     type: "ARTICLE",
-    title:
-      "Diagnosis and management of non‐anti‐D red cell antibodies in pregnancy",
+    title: "Diagnosis and management of non‐anti‐D red cell antibodies in pregnancy",
     link: "https://www.researchgate.net/publication/229507904_Diagnosis_and_management_of_non-anti-D_red_cell_antibodies_in_pregnancy",
   },
   {
     id: 21,
     date: "JANUARY 2011",
     type: "ARTICLE",
-    title:
-      "Thyroid disease in pregnancy",
+    title: "Thyroid disease in pregnancy",
     link: "https://www.researchgate.net/publication/229973060_Thyroid_disease_in_pregnancy",
   },
-   {
+  {
     id: 22,
     date: "JANUARY 2011",
     type: "ARTICLE",
-    title:
-      "Diagnosis and management of tuberculosis in pregnancy",
+    title: "Diagnosis and management of tuberculosis in pregnancy",
     link: "https://www.researchgate.net/publication/229794963_Diagnosis_and_management_of_tuberculosis_in_pregnancy",
   },
   {
     id: 23,
     date: "JANUARY 2011",
     type: "ARTICLE",
-    title:
-      "Management of breast cancer during pregnancy",
+    title: "Management of breast cancer during pregnancy",
     link: "https://www.researchgate.net/publication/229806695_Management_of_breast_cancer_during_pregnancy?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InByb2ZpbGUiLCJwYWdlIjoicHJvZmlsZSJ9fQ",
   },
-   {
+  {
     id: 24,
     date: "OCTOBER 2009",
     type: "ARTICLE",
@@ -196,7 +187,7 @@ const publications = [
       "P935 Study of prevalence of intra-operative adhesions and its association with risk factors",
     link: "https://www.researchgate.net/publication/239991586_P935_Study_of_prevalence_of_intra-operative_adhesions_and_its_association_with_risk_factors",
   },
-   {
+  {
     id: 25,
     date: "OCTOBER 2009",
     type: "ARTICLE",
@@ -204,7 +195,7 @@ const publications = [
       "O561 Opportunistic cervical cancer screening in a University Hospital in India in the absence of a national programme – Our experience",
     link: "https://www.researchgate.net/publication/246180192_O561_Opportunistic_cervical_cancer_screening_in_a_University_Hospital_in_India_in_the_absence_of_a_national_programme_-_Our_experience",
   },
-   {
+  {
     id: 26,
     date: "OCTOBER 2009",
     type: "ARTICLE",
@@ -212,7 +203,7 @@ const publications = [
       "Fetal laceration injury during cesarean section and its long-term sequelae: a case report",
     link: "https://www.researchgate.net/publication/26855802_Fetal_laceration_injury_during_cesarean_section_and_its_long-term_sequelae_a_case_report?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InByb2ZpbGUiLCJwYWdlIjoicHJvZmlsZSJ9fQ",
   },
-   {
+  {
     id: 27,
     date: "JUNE 2008",
     type: "ARTICLE",
@@ -224,8 +215,7 @@ const publications = [
     id: 28,
     date: "MAY 2008",
     type: "ARTICLE",
-    title:
-      "Complete unilateral absence of fallopian tube",
+    title: "Complete unilateral absence of fallopian tube",
     link: "https://www.researchgate.net/publication/5799985_Complete_unilateral_absence_of_fallopian_tube",
   },
   {
@@ -236,7 +226,7 @@ const publications = [
       "Caesarean scar endometriosis presenting as an acute abdomen: A case report and review of literature",
     link: "https://www.researchgate.net/publication/6138904_Caesarean_scar_endometriosis_presenting_as_an_acute_abdomen_A_case_report_and_review_of_literature",
   },
-   {
+  {
     id: 30,
     date: "FEBRUARY 2008",
     type: "ARTICLE",
@@ -248,8 +238,7 @@ const publications = [
     id: 31,
     date: "DECEMBER 2007",
     type: "ARTICLE",
-    title:
-      "Idiopathic chronic fetomaternal haemorrhage presenting with reduced fetal movements",
+    title: "Idiopathic chronic fetomaternal haemorrhage presenting with reduced fetal movements",
     link: "https://www.researchgate.net/publication/5751046_Idiopathic_chronic_fetomaternal_haemorrhage_presenting_with_reduced_fetal_movements",
   },
 ];
@@ -260,24 +249,17 @@ export default function PublicationsSection() {
 
   const totalPages = Math.ceil(publications.length / itemsPerPage);
 
-  const currentItems = publications.slice(
-    (page - 1) * itemsPerPage,
-    page * itemsPerPage
-  );
+  const currentItems = publications.slice((page - 1) * itemsPerPage, page * itemsPerPage);
 
   return (
     <section className="w-full py-16" style={{ backgroundColor: "#FFF7F9" }}>
       <div className="max-w-5xl mx-auto px-6">
-        
         {/* Heading */}
         <h2 className="text-center text-4xl font-bold" style={{ color: "#FF4B8B" }}>
           Publications & Updates
         </h2>
 
-        <p
-          className="text-center text-lg mt-2 mb-10"
-          style={{ color: "#804659" }}
-        >
+        <p className="text-center text-lg mt-2 mb-10" style={{ color: "#804659" }}>
           Academic papers and research contributions in obstetrics and gynecology
         </p>
 
@@ -290,20 +272,15 @@ export default function PublicationsSection() {
               style={{ borderBottom: "1px solid rgb(255,197,211)" }}
             >
               <div className="flex flex-col md:flex-row md:items-start gap-4">
-                
                 {/* Date */}
                 <div className="w-full md:w-1/4">
-                  <p
-                    className="font-medium tracking-wide"
-                    style={{ color: "#804659" }}
-                  >
+                  <p className="font-medium tracking-wide" style={{ color: "#804659" }}>
                     {item.date}
                   </p>
                 </div>
 
                 {/* Article Content */}
                 <div className="w-full md:w-3/4 space-y-2">
-                  
                   {/* Type */}
                   <div
                     className="flex items-center gap-2 text-sm font-semibold"
@@ -325,7 +302,6 @@ export default function PublicationsSection() {
                   >
                     {item.title}
                   </a>
-
                 </div>
               </div>
             </div>
@@ -337,9 +313,7 @@ export default function PublicationsSection() {
               disabled={page === 1}
               onClick={() => setPage((p) => p - 1)}
               className={`px-4 py-2 rounded-lg font-medium transition ${
-                page === 1
-                  ? "opacity-40 cursor-not-allowed"
-                  : "hover:bg-[#FFD3E3]"
+                page === 1 ? "opacity-40 cursor-not-allowed" : "hover:bg-light-pink-1"
               }`}
               style={{ backgroundColor: "#FFC3D6", color: "#804659" }}
             >
@@ -354,9 +328,7 @@ export default function PublicationsSection() {
               disabled={page === totalPages}
               onClick={() => setPage((p) => p + 1)}
               className={`px-4 py-2 rounded-lg font-medium transition ${
-                page === totalPages
-                  ? "opacity-40 cursor-not-allowed"
-                  : "hover:bg-[#FFD3E3]"
+                page === totalPages ? "opacity-40 cursor-not-allowed" : "hover:bg-light-pink-1"
               }`}
               style={{ backgroundColor: "#FFC3D6", color: "#804659" }}
             >

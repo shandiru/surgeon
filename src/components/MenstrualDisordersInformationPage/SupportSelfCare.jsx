@@ -14,7 +14,7 @@ export default function SupportSelfCare() {
       {/* Grid Section */}
       <div className="grid md:grid-cols-2 gap-6">
         {/* Self-Care Tips Card */}
-        <div className="bg-[#FEE6EA] text-black flex flex-col gap-4 rounded-xl p-6 shadow-md hover:shadow-lg hover:-translate-y-1 transition-all active:scale-[0.98]">
+        <div className="bg-light-pink-1 text-black flex flex-col gap-4 rounded-xl p-6 shadow-md hover:shadow-lg hover:-translate-y-1 transition-all active:scale-[0.98]">
           <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
             <Leaf className="h-5 w-5 text-black" />
             Self-Care Tips
@@ -40,7 +40,7 @@ export default function SupportSelfCare() {
         </div>
 
         {/* Emotional Support Card */}
-        <div className="bg-[#FEE6EA] text-black flex flex-col gap-4 rounded-xl p-6 shadow-md hover:shadow-lg hover:-translate-y-1 transition-all active:scale-[0.98]">
+        <div className="bg-light-pink-1 text-black flex flex-col gap-4 rounded-xl p-6 shadow-md hover:shadow-lg hover:-translate-y-1 transition-all active:scale-[0.98]">
           <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
             <Heart className="h-5 w-5 text-black" />
             Emotional Support

@@ -3,7 +3,7 @@ import React from "react";
 export default function PostmenopausalBleedingCard() {
   return (
     <section className="mb-12 px-4">
-      <div className="bg-white text-[#1F2937] flex flex-col gap-6 rounded-2xl shadow-md py-8 max-w-3xl mx-auto transition hover:shadow-lg">
+      <div className="bg-white text-black flex flex-col gap-6 rounded-2xl shadow-md py-8 max-w-3xl mx-auto transition hover:shadow-lg">
         {/* Card Header */}
         <div className="px-6 pb-4">
           <div className="flex items-center gap-2 text-2xl font-bold text-primary-pink">
@@ -13,14 +13,14 @@ export default function PostmenopausalBleedingCard() {
 
         {/* Card Content */}
         <div className="px-6 space-y-6">
-          <p className="text-base sm:text-lg leading-relaxed text-[#374151]">
+          <p className="text-base sm:text-lg leading-relaxed text-black">
             Postmenopausal bleeding is any bleeding from the vagina after menopause.
           </p>
 
           {/* Highlight Box */}
-          <div className="bg-[#FEE6EA] p-5 rounded-xl shadow-sm">
+          <div className="bg-light-pink-1 p-5 rounded-xl shadow-sm">
             <p className="font-semibold mb-3 text-primary-pink text-lg">Key Facts:</p>
-            <ul className="space-y-2 text-sm sm:text-base text-[#374151] list-disc list-inside">
+            <ul className="space-y-2 text-sm sm:text-base text-black list-disc list-inside">
               <li>Menopause is confirmed once you have had no period for 12 months</li>
               <li>
                 Any vaginal bleeding after this time is not normal and should always be checked

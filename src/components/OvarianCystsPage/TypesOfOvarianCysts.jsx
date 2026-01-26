@@ -35,7 +35,7 @@ const AccordionItem = ({ title, badge, content, imageContent }) => {
           id="accordion-content"
           role="region"
           aria-labelledby="accordion-trigger"
-          className="px-5 pb-5 text-sm text-[#444] leading-relaxed"
+          className="px-5 pb-5 text-sm text-black leading-relaxed"
         >
           {content}
           {imageContent && <div className="mt-3">{imageContent}</div>}
@@ -48,16 +48,16 @@ const AccordionItem = ({ title, badge, content, imageContent }) => {
 const OvarianCystsCard = () => {
   const functionalCystsContent = (
     <div className="grid md:grid-cols-2 gap-4">
-      <div className="bg-[#fff7f9] p-4 rounded-lg shadow-sm">
+      <div className="bg-light-pink-1 p-4 rounded-lg shadow-sm">
         <span className="font-bold text-black">Follicle Cysts</span>
-        <p className="text-sm text-[#555] mt-1">
+        <p className="text-sm text-black mt-1">
           Form when a follicle does not release an egg and keeps growing. Usually disappear within
           1–3 months.
         </p>
       </div>
-      <div className="bg-[#fff7f9] p-4 rounded-lg shadow-sm">
+      <div className="bg-light-pink-1 p-4 rounded-lg shadow-sm">
         <span className="font-bold text-black">Corpus Luteum Cysts</span>
-        <p className="text-sm text-[#555] mt-1">
+        <p className="text-sm text-black mt-1">
           Form when the follicle reseals after releasing an egg and fills with fluid. Usually
           resolve in a few weeks.
         </p>
@@ -66,7 +66,7 @@ const OvarianCystsCard = () => {
   );
 
   const benignCystsContent = (
-    <ul className="list-disc pl-5 space-y-2 text-[#555]">
+    <ul className="list-disc pl-5 space-y-2 text-black">
       <li>
         <strong className="text-black">Endometriomas</strong> — caused by endometriosis
       </li>
@@ -84,13 +84,13 @@ const OvarianCystsCard = () => {
   );
 
   const malignantCystsContent = (
-    <div className="bg-[#FFF0F5] p-4 rounded-lg text-black shadow-sm">
+    <div className="bg-light-pink-2 p-4 rounded-lg text-black shadow-sm">
       Rare, but more common after menopause. Must be checked by a doctor to rule out ovarian cancer.
     </div>
   );
 
   return (
-    <div className="bg-[#FEE6EA] text-primary-pink flex flex-col gap-6 rounded-xl p-6 shadow-lg">
+    <div className="bg-light-pink-1 text-primary-pink flex flex-col gap-6 rounded-xl p-6 shadow-lg">
       {/* Header */}
       <div className="pb-4 border-b border-primary-pink/30">
         <div className="font-semibold flex items-center gap-3 text-2xl">

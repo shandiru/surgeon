@@ -11,7 +11,7 @@ const WhereDoesTheBleedingComeFromCard = () => {
   return (
     <div className="max-w-6xl mx-auto mb-10 flex flex-col gap-6 rounded-xl bg-white py-6 shadow-md hover:shadow-xl hover:scale-[1.01] transition-all duration-300 text-black">
       {/* Header */}
-      <div className="grid auto-rows-min gap-1.5 px-6 border-b border-[#FEE6EA] pb-6">
+      <div className="grid auto-rows-min gap-1.5 px-6 border-b border-light-pink-1 pb-6">
         <h2 className="font-semibold text-2xl text-primary-pink">
           Where Does the Bleeding Come From?
         </h2>
@@ -33,7 +33,7 @@ const WhereDoesTheBleedingComeFromCard = () => {
               Usually from direct friction or trauma during sex — known as a vaginal laceration.
             </p>
 
-            <span className="inline-flex items-center justify-center rounded-full bg-[#FEE6EA] text-primary-pink px-3 py-1 text-xs font-medium w-fit shadow-sm">
+            <span className="inline-flex items-center justify-center rounded-full bg-light-pink-1 text-primary-pink px-3 py-1 text-xs font-medium w-fit shadow-sm">
               May be heavier and bright red
             </span>
 
@@ -47,7 +47,7 @@ const WhereDoesTheBleedingComeFromCard = () => {
               </ul>
             </div>
 
-            <div className="p-4 rounded-lg bg-[#FEE6EA] text-sm text-black shadow-sm">
+            <div className="p-4 rounded-lg bg-light-pink-1 text-sm text-black shadow-sm">
               Minor tears usually heal on their own in a few days to weeks. Larger tears may need
               stitches but heal within six weeks.
             </div>
@@ -64,7 +64,7 @@ const WhereDoesTheBleedingComeFromCard = () => {
             </p>
 
             {/* Accordion */}
-            <div className="w-full rounded-lg border border-[#FEE6EA] divide-y divide-[#FEE6EA]">
+            <div className="w-full rounded-lg border border-light-pink-1 divide-y divide-light-pink-1">
               {[
                 {
                   title: "Cervical Ectropion",
@@ -116,7 +116,7 @@ const WhereDoesTheBleedingComeFromCard = () => {
                   <button
                     type="button"
                     onClick={() => toggleAccordion(index)}
-                    className="w-full flex justify-between items-center py-4 px-4 text-sm font-medium text-black hover:bg-[#FFF1F5] transition-colors"
+                    className="w-full flex justify-between items-center py-4 px-4 text-sm font-medium text-black hover:bg-light-pink-1 transition-colors"
                   >
                     {item.title}
                     <ChevronDown
@@ -126,7 +126,9 @@ const WhereDoesTheBleedingComeFromCard = () => {
                     />
                   </button>
                   {openAccordion === index && (
-                    <div className="px-4 pb-4 text-sm text-black bg-[#FFF9FB]">{item.content}</div>
+                    <div className="px-4 pb-4 text-sm text-black bg-light-pink-1">
+                      {item.content}
+                    </div>
                   )}
                 </div>
               ))}

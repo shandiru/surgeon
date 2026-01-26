@@ -28,7 +28,7 @@ const MenstrualDisordersGuidecard5 = ({ setShowCard, setActiveButton }) => {
           {riskFactors.map((factor, index) => (
             <div
               key={index}
-              className="px-5 py-3 rounded-xl bg-[#FEE6EA] text-black text-sm font-medium border border-primary-pink/20 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all"
+              className="px-5 py-3 rounded-xl bg-light-pink-1 text-black text-sm font-medium border border-primary-pink shadow-sm hover:shadow-md hover:-translate-y-1 transition-all"
             >
               {factor}
             </div>
@@ -41,7 +41,7 @@ const MenstrualDisordersGuidecard5 = ({ setShowCard, setActiveButton }) => {
               setShowCard(6);
               setActiveButton(5);
             }}
-            className="w-full bg-primary-pink hover:bg-primary-pink/80 text-white rounded-md h-10 px-4 flex items-center justify-center text-sm font-medium transition"
+            className="w-full bg-primary-pink hover:bg-primary-pink text-white rounded-md h-10 px-4 flex items-center justify-center text-sm font-medium transition"
           >
             Learn About Treatment
           </button>

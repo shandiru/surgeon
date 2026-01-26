@@ -65,7 +65,7 @@ const MenstrualDisordersSection = () => {
             </div>
 
             {/* Description */}
-            <p className="text-sm md:text-base leading-relaxed text-[#3c0c0c]">
+            <p className="text-sm md:text-base leading-relaxed text-black">
               {disorder.description}
             </p>
           </div>

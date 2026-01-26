@@ -8,7 +8,7 @@ const IrregularBleedingGuidecard3 = ({ setShowCard, setActiveButton }) => {
         {/* CARD WRAPPER */}
         <div className="bg-white text-black flex flex-col gap-6 rounded-xl py-6 px-4 sm:px-6 shadow-md hover:shadow-lg transition-all duration-300">
           {/* HEADER */}
-          <div className="grid auto-rows-min items-start gap-2 border-b border-[#ff97b3]/30 pb-4">
+          <div className="grid auto-rows-min items-start gap-2 border-b border-primary-pink/30 pb-4">
             <div className="leading-snug font-semibold flex items-center gap-2 text-primary-pink text-lg sm:text-xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +27,7 @@ const IrregularBleedingGuidecard3 = ({ setShowCard, setActiveButton }) => {
               When to Seek Medical Advice
             </div>
 
-            <p className="text-sm sm:text-base text-[#666]">
+            <p className="text-sm sm:text-base text-black">
               Early assessment can rule out serious problems and help you get the right care.
             </p>
           </div>
@@ -44,7 +44,7 @@ const IrregularBleedingGuidecard3 = ({ setShowCard, setActiveButton }) => {
               <div
                 key={i}
                 role="alert"
-                className="flex items-start gap-3 p-4 rounded-lg bg-[#fff7f9] shadow-sm hover:shadow-md transition-all duration-200"
+                className="flex items-start gap-3 p-4 rounded-lg bg-light-pink-1 shadow-sm hover:shadow-md transition-all duration-200"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -59,12 +59,12 @@ const IrregularBleedingGuidecard3 = ({ setShowCard, setActiveButton }) => {
                   <path d="M12 17h.01" />
                 </svg>
 
-                <p className="text-sm sm:text-base text-[#444] font-medium">{text}</p>
+                <p className="text-sm sm:text-base text-black font-medium">{text}</p>
               </div>
             ))}
 
             {/* IMMEDIATE HELP BOX */}
-            <div className="mt-2 p-4 bg-[#fff7f9] rounded-lg shadow-sm">
+            <div className="mt-2 p-4 bg-light-pink-1 rounded-lg shadow-sm">
               <div className="flex items-center gap-2 mb-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -81,7 +81,7 @@ const IrregularBleedingGuidecard3 = ({ setShowCard, setActiveButton }) => {
                 </h4>
               </div>
 
-              <p className="text-xs sm:text-sm text-[#555]">
+              <p className="text-xs sm:text-sm text-black">
                 Contact your healthcare provider or call your local emergency number if you
                 experience severe bleeding or pain.
               </p>

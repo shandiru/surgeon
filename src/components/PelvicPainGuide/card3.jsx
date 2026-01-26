@@ -22,7 +22,7 @@ const PelvicPainAccordion = () => {
       <div
         className="text-primary-pink bg-light-pink max-w-5xl mx-auto mb-10 
         rounded-xl p-6 transition-all duration-300 border
-        hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] hover:scale-105"
+        hover:bg-light-pink-1 hover:shadow-lg hover:border-light-pink-2 hover:scale-105"
         style={{ borderColor: "rgb(255,197,211)" }}
       >
         {/* HEADER */}

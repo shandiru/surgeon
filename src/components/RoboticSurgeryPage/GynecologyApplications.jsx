@@ -12,28 +12,28 @@ export default function GynecologyApplications() {
   const cards = [
     {
       title: "Hysterectomy",
-      icon: <LuStethoscope className="w-5 h-5 text-[#B51252]" />,
+      icon: <LuStethoscope className="w-5 h-5 text-primary-pink" />,
       badge: "Uterus Removal",
       description: "Preferred for complex cases including large fibroids and endometriosis.",
       points: ["Less blood loss", "Fewer complications", "Quicker recovery"],
     },
     {
       title: "Myomectomy",
-      icon: <LuHeart className="w-5 h-5 text-[#B51252]" />,
+      icon: <LuHeart className="w-5 h-5 text-primary-pink" />,
       badge: "Fibroid Removal",
       description: "Precise removal of fibroids while preserving healthy uterine tissue.",
       points: ["Fertility preservation", "Tissue conservation"],
     },
     {
       title: "Endometriosis Excision",
-      icon: <LuEye className="w-5 h-5 text-[#B51252]" />,
+      icon: <LuEye className="w-5 h-5 text-primary-pink" />,
       badge: "Tissue Removal",
       description: "Enhanced visualization of endometrial implants for precise treatment.",
       points: ["Meticulous dissection", "Delicate area precision"],
     },
     {
       title: "Gynecologic Cancer Surgery",
-      icon: <LuActivity className="w-5 h-5 text-[#B51252]" />,
+      icon: <LuActivity className="w-5 h-5 text-primary-pink" />,
       badge: "Oncologic Procedures",
       description:
         "Used in early-stage cervical or endometrial cancer for lymph node dissection and staging.",
@@ -52,7 +52,10 @@ export default function GynecologyApplications() {
     <section className="py-16 bg-white" data-aos="fade-up">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12 text-[#B51252]" data-aos="fade-down">
+          <h2
+            className="text-3xl font-bold text-center mb-12 text-primary-pink"
+            data-aos="fade-down"
+          >
             Applications in Gynecology
           </h2>
 
@@ -69,13 +72,13 @@ export default function GynecologyApplications() {
               >
                 <div>
                   <div
-                    className="flex items-center justify-center gap-2  font-semibold mb-1 text-[#B51252]"
+                    className="flex items-center justify-center gap-2  font-semibold mb-1 text-primary-pink"
                     data-aos="fade-right"
                   >
                     {card.icon}
                     {card.title}
                   </div>
-                  <span className="inline-flex rounded-md px-2 py-0.5 text-xs font-medium bg-light-pink text-[#B51252]">
+                  <span className="inline-flex rounded-md px-2 py-0.5 text-xs font-medium bg-light-pink text-primary-pink">
                     {card.badge}
                   </span>
                 </div>

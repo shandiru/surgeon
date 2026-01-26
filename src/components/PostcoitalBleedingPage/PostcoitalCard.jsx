@@ -2,10 +2,7 @@ import React from "react";
 
 const PostcoitalCard = () => {
   return (
-    <div
-      className="max-w-6xl mx-auto mb-10 flex flex-col gap-6 rounded-xl bg-white py-6 px-6 shadow-md hover:shadow-xl hover:scale-[1.02] transition-all duration-300"
-      style={{ color: "#BB125B" }}
-    >
+    <div className="max-w-6xl mx-auto mb-10 flex flex-col gap-6 rounded-xl bg-white py-6 px-6 shadow-md hover:shadow-xl hover:scale-[1.02] transition-all duration-300 text-black">
       {/* Header */}
       <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 border-b pb-6">
         <div className="font-semibold flex items-center gap-2 text-2xl text-primary-pink">

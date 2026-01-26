@@ -9,7 +9,7 @@ const PelvicPainGuidecard5 = ({ setShowCard, setActiveButton }) => {
         {/* MAIN CARD */}
         <div
           className="rounded-2xl shadow-md border overflow-hidden 
-          bg-gradient-to-b from-[#FFF5F8] to-white
+          bg-gradient-to-b from-light-pink-2 to-white
           transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
           style={{ borderColor: "rgb(255,197,211)" }}
         >
@@ -37,7 +37,7 @@ const PelvicPainGuidecard5 = ({ setShowCard, setActiveButton }) => {
                 {/* ITEM 1 */}
                 <div
                   className="flex items-center gap-4 p-4 rounded-xl border bg-white 
-                  shadow-sm hover:bg-[#FFF1F6] transition-all"
+                  shadow-sm hover:bg-light-pink-1 transition-all"
                   style={{ borderColor: "rgb(255,197,211)" }}
                 >
                   <CircleCheck className="text-primary-pink w-5 h-5" />
@@ -47,7 +47,7 @@ const PelvicPainGuidecard5 = ({ setShowCard, setActiveButton }) => {
                 {/* ITEM 2 */}
                 <div
                   className="flex items-center gap-4 p-4 rounded-xl border bg-white 
-                  shadow-sm hover:bg-[#FFF1F6] transition-all"
+                  shadow-sm hover:bg-light-pink-1 transition-all"
                   style={{ borderColor: "rgb(255,197,211)" }}
                 >
                   <CircleCheck className="text-primary-pink w-5 h-5" />
@@ -70,7 +70,7 @@ const PelvicPainGuidecard5 = ({ setShowCard, setActiveButton }) => {
 
             {/* INFO BOX */}
             <div
-              className="mt-2 p-4 rounded-xl bg-[#FFF1F6] border shadow-sm"
+              className="mt-2 p-4 rounded-xl bg-light-pink-1 border shadow-sm"
               style={{ borderColor: "rgb(255,197,211)" }}
             >
               <p className="text-sm text-black italic">
@@ -88,7 +88,7 @@ const PelvicPainGuidecard5 = ({ setShowCard, setActiveButton }) => {
               setShowCard(6);
               setActiveButton(5);
             }}
-            className="bg-primary-pink hover:bg-[#e93d78] text-white 
+            className="bg-primary-pink text-white 
             w-[90%] md:w-[60%] lg:w-[40%] rounded-md text-sm font-medium 
             transition-all h-11 shadow-md hover:shadow-lg"
           >

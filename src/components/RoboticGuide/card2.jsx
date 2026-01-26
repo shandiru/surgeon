@@ -44,7 +44,7 @@ const RoboticGuide2 = ({ setShowCard, setActiveButton }) => {
             {/* Features Box */}
             <div
               className="
-                bg-[#FFE6EE] 
+                bg-light-pink-1
                 p-5 sm:p-8 
                 rounded-lg border border-light-pink-2
                 transition transform duration-300 

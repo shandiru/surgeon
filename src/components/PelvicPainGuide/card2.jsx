@@ -9,8 +9,8 @@ const PelvicPainGuideCard2 = ({ setShowCard, setActiveButton }) => {
       <div
         className="text-primary-pink bg-light-pink max-w-sm sm:max-w-2xl lg:max-w-5xl 
         mx-auto mb-10 flex flex-col gap-6 rounded-xl py-6 shadow-sm border
-        hover:z-50 transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg 
-        hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] 
+        hover:z-50 transition-all duration-300 hover:bg-light-pink-1 hover:shadow-lg 
+        hover:border-light-pink-2 active:bg-light-pink-1 active:shadow-lg active:border-light-pink-2 
         hover:scale-105 active:scale-100 px-6"
         style={{ borderColor: "rgb(255,197,211)" }}
       >
@@ -30,7 +30,7 @@ const PelvicPainGuideCard2 = ({ setShowCard, setActiveButton }) => {
           {/* LEFT COLUMN */}
           <div className="space-y-3">
             {/* Cyclic Pain */}
-            <div className="flex items-center gap-3 p-3 bg-[#FFE4EE] rounded-lg">
+            <div className="flex items-center gap-3 p-3 bg-light-pink-1 rounded-lg">
               <Calendar className="h-5 w-5 text-primary-pink" />
               <div>
                 <h4 className="font-semibold text-primary-pink">Cyclic Pain</h4>
@@ -39,7 +39,7 @@ const PelvicPainGuideCard2 = ({ setShowCard, setActiveButton }) => {
             </div>
 
             {/* Non-cyclic Pain */}
-            <div className="flex items-center gap-3 p-3 bg-[#FFE4EE] rounded-lg">
+            <div className="flex items-center gap-3 p-3 bg-light-pink-1 rounded-lg">
               <Activity className="h-5 w-5 text-primary-pink" />
               <div>
                 <h4 className="font-semibold text-primary-pink">Non-cyclic Pain</h4>
@@ -51,7 +51,7 @@ const PelvicPainGuideCard2 = ({ setShowCard, setActiveButton }) => {
           {/* RIGHT COLUMN */}
           <div className="space-y-3">
             {/* Sudden Acute Pain */}
-            <div className="flex items-center gap-3 p-3 bg-[#FFE4EE] rounded-lg">
+            <div className="flex items-center gap-3 p-3 bg-light-pink-1 rounded-lg">
               <Zap className="h-5 w-5 text-primary-pink" />
               <div>
                 <h4 className="font-semibold text-primary-pink">Sudden (Acute)</h4>
@@ -60,7 +60,7 @@ const PelvicPainGuideCard2 = ({ setShowCard, setActiveButton }) => {
             </div>
 
             {/* Persistent Chronic Pain */}
-            <div className="flex items-center gap-3 p-3 bg-[#FFE4EE] rounded-lg">
+            <div className="flex items-center gap-3 p-3 bg-light-pink-1 rounded-lg">
               <Clock className="h-5 w-5 text-primary-pink" />
               <div>
                 <h4 className="font-semibold text-primary-pink">Persistent (Chronic)</h4>

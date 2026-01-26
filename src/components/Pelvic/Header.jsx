@@ -8,7 +8,7 @@ const PelvicHeader = () => {
         {/* Icon */}
         <div className="flex justify-center mb-6">
           <div className="p-4 bg-light-pink rounded-full">
-            <Heart className="h-12 w-12 text-[#d60d64] " />
+            <Heart className="h-12 w-12 text-primary-pink " />
           </div>
         </div>
 
@@ -18,7 +18,7 @@ const PelvicHeader = () => {
         </h1>
 
         {/* Description */}
-        <p className="text-body-large text-[#d60d64] text-pretty max-w-2xl mx-auto">
+        <p className="text-body-large text-primary-pink text-pretty max-w-2xl mx-auto">
           What it is, common causes, and when to get help
         </p>
       </div>

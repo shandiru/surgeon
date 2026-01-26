@@ -4,7 +4,7 @@ import React from "react";
 
 export default function EmotionalWellbeingCard() {
   return (
-    <div className="text-black flex flex-col gap-6 rounded-xl bg-[#FEE6EA] py-6 px-5 sm:px-6 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all">
+    <div className="text-black flex flex-col gap-6 rounded-xl bg-light-pink-1 py-6 px-5 sm:px-6 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all">
       {/* Card Header */}
       <div className="flex items-center gap-3 font-semibold text-primary-pink text-lg">
         {/* Brain Icon */}
@@ -55,7 +55,7 @@ export default function EmotionalWellbeingCard() {
             <p className="font-medium text-black">
               It's okay to ask for emotional support or counselling
             </p>
-            <p className="text-sm text-[#7A3E59]">You don't have to cope with it alone</p>
+            <p className="text-sm text-black">You don't have to cope with it alone</p>
           </div>
         </div>
       </div>

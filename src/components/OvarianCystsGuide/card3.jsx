@@ -15,7 +15,7 @@ const OvarianCystsGuideCard3 = ({ setShowCard, setActiveButton }) => {
       <div
         className="max-w-4xl mx-auto px-6 py-10 
                       rounded-2xl border border-primary-pink/20 
-                      shadow-md bg-[#FEE6EA] text-primary-pink"
+                      shadow-md bg-light-pink-1 text-primary-pink"
       >
         {/* HEADER */}
         <div className="pb-4 border-b border-primary-pink/30">
@@ -65,19 +65,19 @@ const OvarianCystsGuideCard3 = ({ setShowCard, setActiveButton }) => {
             </button>
 
             {openIndex === 0 && (
-              <div className="px-5 pb-5 text-sm text-[#444] leading-relaxed">
+              <div className="px-5 pb-5 text-sm text-black leading-relaxed">
                 <div className="mt-3 grid md:grid-cols-2 gap-4">
-                  <div className="bg-[#fff7f9] p-4 rounded-lg shadow-sm">
+                  <div className="bg-light-pink-1 p-4 rounded-lg shadow-sm">
                     <span className="font-bold text-black">Follicle Cysts</span>
-                    <p className="text-sm text-[#555] mt-1">
+                    <p className="text-sm text-black mt-1">
                       Form when a follicle does not release an egg and keeps growing. Usually
                       disappear within 1–3 months.
                     </p>
                   </div>
 
-                  <div className="bg-[#fff7f9] p-4 rounded-lg shadow-sm">
+                  <div className="bg-light-pink-1 p-4 rounded-lg shadow-sm">
                     <span className="font-bold text-black">Corpus Luteum Cysts</span>
-                    <p className="text-sm text-[#555] mt-1">
+                    <p className="text-sm text-black mt-1">
                       Form when the follicle reseals after releasing an egg and fills with fluid.
                       Usually resolve in a few weeks.
                     </p>
@@ -115,8 +115,8 @@ const OvarianCystsGuideCard3 = ({ setShowCard, setActiveButton }) => {
             </button>
 
             {openIndex === 1 && (
-              <div className="px-5 pb-5 text-sm text-[#444] leading-relaxed">
-                <ul className="list-disc pl-5 space-y-2 text-[#555] mt-3">
+              <div className="px-5 pb-5 text-sm text-black leading-relaxed">
+                <ul className="list-disc pl-5 space-y-2 text-black mt-3">
                   <li>
                     <strong className="text-black">Endometriomas</strong> — caused by endometriosis
                   </li>
@@ -165,8 +165,8 @@ const OvarianCystsGuideCard3 = ({ setShowCard, setActiveButton }) => {
             </button>
 
             {openIndex === 2 && (
-              <div className="px-5 pb-5 text-sm text-[#444] leading-relaxed">
-                <div className="bg-[#FFF0F5] p-4 rounded-lg text-black shadow-sm mt-3">
+              <div className="px-5 pb-5 text-sm text-black leading-relaxed">
+                <div className="bg-light-pink-2 p-4 rounded-lg text-black shadow-sm mt-3">
                   Rare, but more common after menopause. Must be assessed to rule out ovarian
                   cancer.
                 </div>
