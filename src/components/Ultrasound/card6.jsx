@@ -4,23 +4,21 @@ import { Heart, CircleCheck, FileText, Clock, Star } from "lucide-react";
 const UltrasoundCard6 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6">
-      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl text-black mx-auto mb-10 flex flex-col gap-6 rounded-xl border py-6 shadow-sm animate-in slide-in-from-right-5 duration-300">
+      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl text-black mx-auto mb-10 flex flex-col gap-6 rounded-xl border border-light-pink-2 py-6 shadow-sm animate-in slide-in-from-right-5 duration-300">
         {/* Card Header */}
         <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 border-b pb-6">
           <div className="leading-none font-semibold flex items-center gap-2">
-            <Heart className="w-6 h-6 text-primary" />
+            <Heart className="w-6 h-6 text-primary-pink" />
             Emotional Wellbeing
           </div>
-          <div className="text-muted-foreground text-sm">
-            Step-by-step guidance to make you feel at ease
-          </div>
+          <div className="text-black text-sm">Step-by-step guidance to make you feel at ease</div>
         </div>
 
         {/* Card Content */}
         <div className="px-6 space-y-4">
           {/* Validating Feelings Section */}
-          <div className="bg-primary/5 p-4 rounded-lg border border-primary/20">
-            <h4 className="font-semibold text-primary mb-2">Your Feelings Are Valid</h4>
+          <div className="bg-light-pink-1 p-4 rounded-lg border border-primary-pink">
+            <h4 className="font-semibold text-primary-pink mb-2">Your Feelings Are Valid</h4>
             <p className="text-sm leading-relaxed">
               It's completely normal to feel nervous about an intimate scan. Many people experience
               anxiety about medical procedures, especially those involving reproductive health.
@@ -48,9 +46,9 @@ const UltrasoundCard6 = ({ setShowCard, setActiveButton }) => {
             </div>
 
             {/* Reminder Section */}
-            <div className="bg-accent/10 p-4 rounded-lg">
-              <h4 className="font-semibold text-accent-foreground mb-3">
-                <Clock className="w-4 h-4 inline mr-2 text-accent" />
+            <div className="bg-light-pink-1 p-4 rounded-lg">
+              <h4 className="font-semibold text-primary-pink mb-3">
+                <Clock className="w-4 h-4 inline mr-2 text-primary-pink" />
                 Remember
               </h4>
               <ul className="text-sm space-y-2">
@@ -64,7 +62,7 @@ const UltrasoundCard6 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           {/* Final Reassurance Section */}
-          <div className="bg-card p-4 rounded-lg border">
+          <div className="bg-white p-4 rounded-lg border border-light-pink-2">
             <h4 className="font-semibold mb-2">Final Reassurance</h4>
             <p className="text-sm leading-relaxed">
               A gynaecological ultrasound is <strong>safe, quick, and painless</strong>. If you've
@@ -75,7 +73,7 @@ const UltrasoundCard6 = ({ setShowCard, setActiveButton }) => {
 
           {/* Button Section */}
           <div className="pt-4">
-            <button className="inline-flex items-center justify-center gap-2 bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive shadow-xs h-9 px-4 py-2 w-full">
+            <button className="inline-flex items-center bg-primary-pink hover:bg-primary-pink/80 text-white justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-9 px-4 py-2 w-full cursor-pointer">
               <Star className="w-4 h-4" /> {/* Lucide Heart Icon */}
               Complete Guide
             </button>

@@ -52,7 +52,7 @@ const IrregularBleedingGuidecard6 = () => {
             {/* Surgery Cards */}
             <div className="grid gap-4">
               <div
-                className="p-6 rounded-xl border transition-all duration-300 hover:bg-[#FFF5F8] hover:shadow-lg"
+                className="p-6 rounded-xl border transition-all duration-300 hover:bg-light-pink-1 hover:shadow-lg"
                 style={{ borderColor: "rgb(255,197,211)" }}
               >
                 <h4 className="text-lg font-semibold mb-2" style={{ color: "#FF4B8B" }}>
@@ -64,7 +64,7 @@ const IrregularBleedingGuidecard6 = () => {
               </div>
 
               <div
-                className="p-6 rounded-xl border transition-all duration-300 hover:bg-[#FFF5F8] hover:shadow-lg"
+                className="p-6 rounded-xl border transition-all duration-300 hover:bg-light-pink-1 hover:shadow-lg"
                 style={{ borderColor: "rgb(255,197,211)" }}
               >
                 <h4 className="text-lg font-semibold mb-2" style={{ color: "#FF4B8B" }}>
@@ -76,7 +76,7 @@ const IrregularBleedingGuidecard6 = () => {
               </div>
 
               <div
-                className="p-6 rounded-xl border transition-all duration-300 hover:bg-[#FFF5F8] hover:shadow-lg"
+                className="p-6 rounded-xl border transition-all duration-300 hover:bg-light-pink-1 hover:shadow-lg"
                 style={{ borderColor: "rgb(255,197,211)" }}
               >
                 <h4 className="text-lg font-semibold mb-2" style={{ color: "#FF4B8B" }}>
@@ -106,7 +106,7 @@ const IrregularBleedingGuidecard6 = () => {
 
             <div className="grid md:grid-cols-2 gap-4">
               <div
-                className="flex items-start gap-4 p-6 rounded-xl border transition-all duration-300 hover:bg-[#FFF5F8] hover:shadow-lg"
+                className="flex items-start gap-4 p-6 rounded-xl border transition-all duration-300 hover:bg-light-pink-1 hover:shadow-lg"
                 style={{ borderColor: "rgb(255,197,211)" }}
               >
                 <div
@@ -127,7 +127,7 @@ const IrregularBleedingGuidecard6 = () => {
               </div>
 
               <div
-                className="flex items-start gap-4 p-6 rounded-xl border transition-all duration-300 hover:bg-[#FFF5F8] hover:shadow-lg"
+                className="flex items-start gap-4 p-6 rounded-xl border transition-all duration-300 hover:bg-light-pink-1 hover:shadow-lg"
                 style={{ borderColor: "rgb(255,197,211)" }}
               >
                 <div

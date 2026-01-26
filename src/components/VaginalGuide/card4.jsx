@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FaInfoCircle, FaStethoscope } from "react-icons/fa";
 
 const VaginalCard4 = ({ setShowCard, setActiveButton }) => {
-  const primaryPink = "bg-[#FFC5D3]";
+  const primaryPink = "bg-light-pink-2";
   const deepPink = "bg-[#FF4B8B]";
   const [openAccordion, setOpenAccordion] = useState(null);
 
@@ -29,11 +29,11 @@ const VaginalCard4 = ({ setShowCard, setActiveButton }) => {
           <div className="grid md:grid-cols-2 gap-6 px-6 py-6 items-start">
             {/* Left Column */}
             <div>
-              <p className="text-[#7a2f4f] mb-4 text-sm sm:text-base">
+              <p className="text-black mb-4 text-sm sm:text-base">
                 Early vaginal cancer often has no symptoms. As it progresses, signs may include:
               </p>
 
-              <ul className="space-y-2 text-sm sm:text-base text-[#7a2f4f]">
+              <ul className="space-y-2 text-sm sm:text-base text-black">
                 {[
                   "Unusual vaginal bleeding (after intercourse or after menopause)",
                   "Watery vaginal discharge",

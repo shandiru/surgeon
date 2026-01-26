@@ -42,7 +42,7 @@ const IrregularBleedingGuideCard4 = ({ setShowCard, setActiveButton }) => {
                 icon: (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-5 h-5 text-[#ff97b3]"
+                    className="w-5 h-5 text-primary-pink"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -58,7 +58,7 @@ const IrregularBleedingGuideCard4 = ({ setShowCard, setActiveButton }) => {
                 icon: (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-5 h-5 text-[#ff97b3]"
+                    className="w-5 h-5 text-primary-pink"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth="2"
@@ -74,7 +74,7 @@ const IrregularBleedingGuideCard4 = ({ setShowCard, setActiveButton }) => {
                 icon: (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-5 h-5 text-[#ff97b3]"
+                    className="w-5 h-5 text-primary-pink"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth="2"
@@ -92,7 +92,7 @@ const IrregularBleedingGuideCard4 = ({ setShowCard, setActiveButton }) => {
                 icon: (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-5 h-5 text-[#ff97b3]"
+                    className="w-5 h-5 text-primary-pink"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth="2"
@@ -111,7 +111,7 @@ const IrregularBleedingGuideCard4 = ({ setShowCard, setActiveButton }) => {
                 <div className="p-2 rounded-full bg-[#ff97b3]/10 flex-shrink-0">{item.icon}</div>
 
                 <div>
-                  <h4 className="font-semibold mb-1 text-[#ff97b3] text-sm sm:text-base">
+                  <h4 className="font-semibold mb-1 text-primary-pink text-sm sm:text-base">
                     {item.title}
                   </h4>
                   <p className="text-xs sm:text-sm text-[#666]">{item.desc}</p>

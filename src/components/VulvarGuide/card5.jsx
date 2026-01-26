@@ -1,12 +1,5 @@
 "use client";
-import {
-  Target,
-  Stethoscope,
-  Microscope,
-  Camera,
-  Scan,
-  Activity,
-} from "lucide-react";
+import { Target, Stethoscope, Microscope, Camera, Scan, Activity } from "lucide-react";
 import React from "react";
 
 const VulvarGuidecard5 = ({ setShowCard, setActiveButton }) => {
@@ -29,16 +22,12 @@ const VulvarGuidecard5 = ({ setShowCard, setActiveButton }) => {
             Step 2
           </span>
 
-          <h2
-            className="text-3xl font-bold mt-2"
-            style={{ color: "#FF4B8B" }}
-          >
+          <h2 className="text-3xl font-bold mt-2" style={{ color: "#FF4B8B" }}>
             Getting Diagnosed
           </h2>
 
           <p className="text-lg mt-2" style={{ color: "#7a2f4f" }}>
-            Diagnosis usually begins with a physical and pelvic exam, followed by
-            specialized tests.
+            Diagnosis usually begins with a physical and pelvic exam, followed by specialized tests.
           </p>
         </div>
 
@@ -51,7 +40,7 @@ const VulvarGuidecard5 = ({ setShowCard, setActiveButton }) => {
         <div className="space-y-4 mt-6">
           {/* Pelvic Exam */}
           <div
-            className="flex items-start gap-6 p-6 rounded-xl border transition-all duration-300 hover:bg-[#FFF5F8] hover:shadow-lg active:bg-[#FFF5F8]"
+            className="flex items-start gap-6 p-6 rounded-xl border transition-all duration-300 hover:bg-light-pink-1 hover:shadow-lg active:bg-light-pink-1"
             style={{ borderColor: "rgb(255,197,211)" }}
           >
             <div
@@ -66,15 +55,14 @@ const VulvarGuidecard5 = ({ setShowCard, setActiveButton }) => {
                 Pelvic Exam
               </h4>
               <p style={{ color: "#7a2f4f" }}>
-                Checking the vulva, vagina, uterus, ovaries, bladder, and rectum
-                for abnormalities.
+                Checking the vulva, vagina, uterus, ovaries, bladder, and rectum for abnormalities.
               </p>
             </div>
           </div>
 
           {/* Biopsy */}
           <div
-            className="flex items-start gap-6 p-6 rounded-xl border transition-all duration-300 hover:bg-[#FFF5F8] hover:shadow-lg active:bg-[#FFF5F8]"
+            className="flex items-start gap-6 p-6 rounded-xl border transition-all duration-300 hover:bg-light-pink-1 hover:shadow-lg active:bg-light-pink-1"
             style={{ borderColor: "rgb(255,197,211)" }}
           >
             <div
@@ -89,15 +77,14 @@ const VulvarGuidecard5 = ({ setShowCard, setActiveButton }) => {
                 Biopsy
               </h4>
               <p style={{ color: "#7a2f4f" }}>
-                Removing a small piece of tissue from the vulva to test for
-                cancer cells.
+                Removing a small piece of tissue from the vulva to test for cancer cells.
               </p>
             </div>
           </div>
 
           {/* Colposcopy */}
           <div
-            className="flex items-start gap-6 p-6 rounded-xl border transition-all duration-300 hover:bg-[#FFF5F8] hover:shadow-lg active:bg-[#FFF5F8]"
+            className="flex items-start gap-6 p-6 rounded-xl border transition-all duration-300 hover:bg-light-pink-1 hover:shadow-lg active:bg-light-pink-1"
             style={{ borderColor: "rgb(255,197,211)" }}
           >
             <div
@@ -120,12 +107,7 @@ const VulvarGuidecard5 = ({ setShowCard, setActiveButton }) => {
 
         {/* ================= TAG LIST (Pink Pills) ================== */}
         <div className="mt-8 flex flex-wrap gap-3">
-          {[
-            "Chest X-ray",
-            "CT or PET-CT scan",
-            "MRI",
-            "Endoscopy (if needed)",
-          ].map((tag, i) => (
+          {["Chest X-ray", "CT or PET-CT scan", "MRI", "Endoscopy (if needed)"].map((tag, i) => (
             <span
               key={i}
               className="px-4 py-2 rounded-md text-sm font-medium"

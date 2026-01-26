@@ -19,7 +19,7 @@ export default function EndometrialInfoSection() {
   }, []);
 
   return (
-    <section className="py-12 bg-[#FFE6EA]" data-aos="fade-up">
+    <section className="py-12 bg-light-pink-1" data-aos="fade-up">
       <div className="container px-4 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
         {/* Content Section */}
         <div className="flex-1 text-center md:text-left" data-aos="fade-left">

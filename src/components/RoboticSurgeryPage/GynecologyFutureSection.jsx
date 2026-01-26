@@ -35,19 +35,19 @@ export default function GynecologyFutureSection() {
             data-aos="fade-right"
           >
             <h2 className="text-3xl font-bold">The Future of Gynecologic Surgery</h2>
-            <p className="text-lg text-[#7a2f4f]">
+            <p className="text-lg text-black">
               The da Vinci Surgical System represents a significant advancement in gynecologic
               surgery, offering a safer and more effective alternative to traditional methods in
               many cases.
             </p>
-            <p className="text-lg text-[#7a2f4f]">
+            <p className="text-lg text-black">
               As the technology continues to evolve and become more accessible, robotic surgery is
               expected to play an increasingly central role in women's health care.
             </p>
 
             {/* Highlight Box */}
             <div
-              className="bg-[#FFF5F8] p-6 rounded-lg shadow-md transition duration-300 
+              className="bg-light-pink-1 p-6 rounded-lg shadow-md transition duration-300 
               hover:shadow-[0_8px_30px_rgba(176,59,102,0.25)]
               active:shadow-[0_8px_30px_rgba(176,59,102,0.25)]"
               data-aos="fade-left"
@@ -55,7 +55,7 @@ export default function GynecologyFutureSection() {
               <p className="text-xl font-semibold mb-2 text-primary-pink">
                 Expert Care, Advanced Technology
               </p>
-              <p className="text-[#7a2f4f]">
+              <p className="text-black">
                 Gynecologists who specialize in robotic surgery are uniquely positioned to offer
                 their patients cutting-edge care with excellent outcomes, especially for complex and
                 delicate procedures.

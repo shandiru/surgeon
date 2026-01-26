@@ -21,14 +21,14 @@ const IrregularBleedingContent = ({ activeTab }) => {
               <div className="grid md:grid-cols-2 gap-6">
                 {/* Typical Period */}
                 <div className="space-y-3">
-                  <h4 className="font-semibold text-[#ff97b3]">A typical period:</h4>
+                  <h4 className="font-semibold text-primary-pink">A typical period:</h4>
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-center gap-2">
-                      <CircleCheckBig className="w-4 h-4 text-[#ff97b3]" />
+                      <CircleCheckBig className="w-4 h-4 text-primary-pink" />
                       Occurs every 28 days
                     </li>
                     <li className="flex items-center gap-2">
-                      <CircleCheckBig className="w-4 h-4 text-[#ff97b3]" />
+                      <CircleCheckBig className="w-4 h-4 text-primary-pink" />
                       Lasts 5–7 days
                     </li>
                   </ul>
@@ -36,14 +36,14 @@ const IrregularBleedingContent = ({ activeTab }) => {
 
                 {/* Irregular Bleeding */}
                 <div className="space-y-3">
-                  <h4 className="font-semibold text-[#ff97b3]">Irregular bleeding includes:</h4>
+                  <h4 className="font-semibold text-primary-pink">Irregular bleeding includes:</h4>
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-center gap-2">
-                      <TriangleAlert className="w-4 h-4 text-[#ff97b3]" />
+                      <TriangleAlert className="w-4 h-4 text-primary-pink" />
                       Periods that come more or less often than usual
                     </li>
                     <li className="flex items-center gap-2">
-                      <TriangleAlert className="w-4 h-4 text-[#ff97b3]" />
+                      <TriangleAlert className="w-4 h-4 text-primary-pink" />
                       Spotting between periods
                     </li>
                   </ul>
@@ -198,7 +198,7 @@ const IrregularBleedingContent = ({ activeTab }) => {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-4 h-4 text-[#ff97b3] mt-1 flex-shrink-0"
+                  className="w-4 h-4 text-primary-pink mt-1 flex-shrink-0"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -217,7 +217,7 @@ const IrregularBleedingContent = ({ activeTab }) => {
               <div className="flex items-center gap-2 mb-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-5 h-5 text-[#ff97b3] flex-shrink-0"
+                  className="w-5 h-5 text-primary-pink flex-shrink-0"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -225,7 +225,7 @@ const IrregularBleedingContent = ({ activeTab }) => {
                 >
                   <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                 </svg>
-                <h4 className="font-semibold text-[#ff97b3] text-sm sm:text-base">
+                <h4 className="font-semibold text-primary-pink text-sm sm:text-base">
                   Need immediate help?
                 </h4>
               </div>
@@ -313,7 +313,7 @@ const IrregularBleedingContent = ({ activeTab }) => {
                 <div className="p-2 rounded-full bg-[#ff97b3]/10 flex-shrink-0">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-5 h-5 text-[#ff97b3]"
+                    className="w-5 h-5 text-primary-pink"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -323,7 +323,7 @@ const IrregularBleedingContent = ({ activeTab }) => {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-1 text-[#ff97b3] text-sm sm:text-base">
+                  <h4 className="font-semibold mb-1 text-primary-pink text-sm sm:text-base">
                     {item.title}
                   </h4>
                   <p className="text-xs sm:text-sm text-[#666]">{item.desc}</p>

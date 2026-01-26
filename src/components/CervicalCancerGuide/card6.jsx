@@ -48,10 +48,7 @@ const CervicalCancerGuidecard6 = ({ setShowCard, setActiveButton }) => {
 
         {/* ================= SECTION 1: SURGERY ================= */}
         <div className="mt-10">
-          <h3
-            className="font-semibold text-lg mb-4 flex items-center gap-2"
-            className="text-primary-pink"
-          >
+          <h3 className="font-semibold text-lg mb-4 flex items-center gap-2 text-primary-pink">
             <Scissors className="w-5 h-5 text-primary-pink" />
             1. Surgery (Often the First Step)
           </h3>

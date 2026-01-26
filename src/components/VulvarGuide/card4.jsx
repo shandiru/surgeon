@@ -3,9 +3,10 @@ import { AlertTriangle } from "lucide-react";
 
 const VulvarGuideCard4 = ({ setShowCard, setActiveButton }) => {
   return (
-    <div className="space-y-6 pb-10">  {/* ⭐ ADDED PADDING BOTTOM */}
+    <div className="space-y-6 pb-10">
+      {" "}
+      {/* ⭐ ADDED PADDING BOTTOM */}
       <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto animate-in slide-in-from-right-5 duration-300">
-
         {/* MAIN WRAPPER BOX */}
         <div
           className="rounded-2xl p-8 border transition-all duration-300 shadow-sm"
@@ -29,8 +30,8 @@ const VulvarGuideCard4 = ({ setShowCard, setActiveButton }) => {
 
           {/* DESCRIPTION */}
           <p className="text-lg mb-8" style={{ color: "#7a2f4f" }}>
-            Vulvar cancer most often affects the labia (skin folds around the vagina),
-            but it can occur anywhere on the vulva.
+            Vulvar cancer most often affects the labia (skin folds around the vagina), but it can
+            occur anywhere on the vulva.
           </p>
 
           {/* GRID OF SYMPTOMS */}
@@ -46,7 +47,7 @@ const VulvarGuideCard4 = ({ setShowCard, setActiveButton }) => {
             ].map((text, index) => (
               <div
                 key={index}
-                className="flex items-start gap-3 p-4 bg-white rounded-lg border transition-all duration-300 hover:bg-[#FFF5F8] hover:shadow-lg active:bg-[#FFF5F8] active:shadow-lg"
+                className="flex items-start gap-3 p-4 bg-white rounded-lg border transition-all duration-300 hover:bg-light-pink-1 hover:shadow-lg active:bg-light-pink-1 active:shadow-lg"
                 style={{ borderColor: "rgb(255,197,211)" }}
               >
                 <svg
@@ -61,16 +62,13 @@ const VulvarGuideCard4 = ({ setShowCard, setActiveButton }) => {
                   <path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path>
                 </svg>
 
-                <span className="text-[#7a2f4f]">{text}</span>
+                <span className="text-black">{text}</span>
               </div>
             ))}
           </div>
 
           {/* WARNING BOX */}
-          <div
-            className="mt-8 p-6 rounded-xl"
-            style={{ backgroundColor: "#FF4B8B" }}
-          >
+          <div className="mt-8 p-6 rounded-xl" style={{ backgroundColor: "#FF4B8B" }}>
             <p className="text-white font-semibold text-lg">
               If you notice any of these symptoms, it's important to see your doctor promptly.
             </p>
@@ -78,7 +76,9 @@ const VulvarGuideCard4 = ({ setShowCard, setActiveButton }) => {
         </div>
 
         {/* NEXT BUTTON */}
-        <div className="pt-4 pb-6 flex justify-center"> {/* ⭐ EXTRA SPACE BELOW BUTTON */}
+        <div className="pt-4 pb-6 flex justify-center">
+          {" "}
+          {/* ⭐ EXTRA SPACE BELOW BUTTON */}
           <button
             onClick={() => {
               setShowCard(5);

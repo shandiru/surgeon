@@ -27,7 +27,7 @@ const PelvicPainGuidecard6 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           {/* BODY CONTENT */}
-          <div className="px-6 space-y-4 text-[#7a2f4f]">
+          <div className="px-6 space-y-4 text-black">
             <p className="leading-relaxed">
               Chronic pelvic pain can affect mood, energy, and relationships. It’s common to feel
               frustrated, anxious, or low.

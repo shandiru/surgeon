@@ -27,7 +27,7 @@ const PelvicPainGuidecard8 = ({ setShowCard, setActiveButton }) => {
               <h3 className="text-xl font-semibold text-primary-pink">Remember</h3>
 
               {/* POINTS */}
-              <div className="space-y-2 text-[#7a2f4f] max-w-2xl mx-auto text-sm">
+              <div className="space-y-2 text-black max-w-2xl mx-auto text-sm">
                 <p>• Pelvic pain is common and usually treatable</p>
                 <p>• Many causes are not serious, but some need prompt attention</p>
                 <p>• Early assessment can bring relief and peace of mind</p>

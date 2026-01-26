@@ -142,7 +142,7 @@ const CervicalCancerGuidecard3 = ({ setShowCard, setActiveButton }) => {
               <Sparkles className="w-5 h-5 text-primary-pink" />
               Most Important Risk Factor
             </h4>
-            <p className="text-sm" className="text-black">
+            <p className="text-sm text-black">
               HPV is the most important risk factor — nearly all cervical cancers are HPV-related.
             </p>
           </div>

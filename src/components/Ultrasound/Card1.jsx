@@ -4,11 +4,11 @@ import { Monitor, Zap, FileText, CircleCheck } from "lucide-react";
 const UltrasoundCard1 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="UltrasoundCard1">
-      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl text-black mx-auto mb-10 flex flex-col gap-6 rounded-xl border py-6 shadow-sm animate-in slide-in-from-right-5 duration-300">
+      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl text-black mx-auto mb-10 flex flex-col gap-6 rounded-xl border border-light-pink-2 py-6 shadow-sm animate-in slide-in-from-right-5 duration-300">
         {/* Card Header */}
         <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 border-b pb-6">
           <div className="leading-none font-semibold flex items-center gap-2">
-            <Monitor className="w-6 h-6 text-primary" />
+            <Monitor className="w-6 h-6 text-primary-pink" />
             What Is a Gynaecological Ultrasound?
           </div>
         </div>
@@ -16,7 +16,7 @@ const UltrasoundCard1 = ({ setShowCard, setActiveButton }) => {
         {/* Card Content */}
         <div className="px-6 space-y-4">
           {/* How it works */}
-          <div className="bg-primary/5 p-4 rounded-lg border border-primary/20">
+          <div className="bg-light-pink-1 p-4 rounded-lg border border-primary-pink">
             <p className="text-lg leading-relaxed">
               A gynaecological (pelvic) ultrasound is a <strong>safe and painless</strong> way to
               examine the uterus, ovaries, fallopian tubes and other pelvic organs.
@@ -27,7 +27,7 @@ const UltrasoundCard1 = ({ setShowCard, setActiveButton }) => {
             {/* How It Works */}
             <div className="space-y-3">
               <h4 className="font-semibold flex items-center gap-2">
-                <Zap className="w-4 h-4 text-accent" />
+                <Zap className="w-4 h-4 text-primary-pink" />
                 How It Works
               </h4>
               <ul className="space-y-2">
@@ -46,8 +46,8 @@ const UltrasoundCard1 = ({ setShowCard, setActiveButton }) => {
             </div>
 
             {/* What We Can See */}
-            <div className="bg-accent/10 p-4 rounded-lg">
-              <h4 className="font-semibold text-accent-foreground mb-2 flex items-center gap-2">
+            <div className="bg-light-pink-1 p-4 rounded-lg">
+              <h4 className="font-semibold text-primary-pink mb-2 flex items-center gap-2">
                 <FileText className="w-4 h-4" />
                 What We Can See
               </h4>
@@ -72,7 +72,7 @@ const UltrasoundCard1 = ({ setShowCard, setActiveButton }) => {
                 setShowCard(2);
                 setActiveButton(1);
               }}
-              className="inline-flex items-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-black justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-9 px-4 py-2 has-[&_svg]:px-3 w-full"
+              className="inline-flex items-center bg-primary-pink hover:bg-primary-pink/80 text-white justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-9 px-4 py-2 w-full cursor-pointer"
             >
               Learn Why It's Done
             </button>

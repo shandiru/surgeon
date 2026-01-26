@@ -136,7 +136,6 @@ const Colposcopycard5 = ({ setShowCard, setActiveButton }) => {
                 ),
               )}
             </div>
-            s
           </div>
 
           <div className="bg-light-pink-1 p-4 rounded-lg border border-primary-pink">

@@ -53,7 +53,7 @@ const VulvarGuidecard6 = ({ setShowCard, setActiveButton }) => {
             <div className="grid gap-4">
               {/* Radical Wide Local Excision */}
               <div
-                className="p-6 rounded-xl border transition-all duration-300 hover:bg-[#FFF5F8] active:bg-[#FFF5F8] hover:shadow-lg"
+                className="p-6 rounded-xl border transition-all duration-300 hover:bg-light-pink-1 active:bg-light-pink-1 hover:shadow-lg"
                 style={{ borderColor: "rgb(255,197,211)" }}
               >
                 <h4 className="text-lg font-semibold mb-2" style={{ color: "#FF4B8B" }}>
@@ -67,7 +67,7 @@ const VulvarGuidecard6 = ({ setShowCard, setActiveButton }) => {
 
               {/* Radical Partial Vulvectomy */}
               <div
-                className="p-6 rounded-xl border transition-all duration-300 hover:bg-[#FFF5F8] active:bg-[#FFF5F8] hover:shadow-lg"
+                className="p-6 rounded-xl border transition-all duration-300 hover:bg-light-pink-1 active:bg-light-pink-1 hover:shadow-lg"
                 style={{ borderColor: "rgb(255,197,211)" }}
               >
                 <h4 className="text-lg font-semibold mb-2" style={{ color: "#FF4B8B" }}>
@@ -81,7 +81,7 @@ const VulvarGuidecard6 = ({ setShowCard, setActiveButton }) => {
 
               {/* Radical Vulvectomy */}
               <div
-                className="p-6 rounded-xl border transition-all duration-300 hover:bg-[#FFF5F8] active:bg-[#FFF5F8] hover:shadow-lg"
+                className="p-6 rounded-xl border transition-all duration-300 hover:bg-light-pink-1 active:bg-light-pink-1 hover:shadow-lg"
                 style={{ borderColor: "rgb(255,197,211)" }}
               >
                 <h4 className="text-lg font-semibold mb-2" style={{ color: "#FF4B8B" }}>
@@ -115,7 +115,7 @@ const VulvarGuidecard6 = ({ setShowCard, setActiveButton }) => {
             <div className="grid md:grid-cols-2 gap-4">
               {/* Radiation Therapy */}
               <div
-                className="flex items-start gap-4 p-6 rounded-xl border transition-all duration-300 hover:bg-[#FFF5F8] active:bg-[#FFF5F8] hover:shadow-lg"
+                className="flex items-start gap-4 p-6 rounded-xl border transition-all duration-300 hover:bg-light-pink-1 active:bg-light-pink-1 hover:shadow-lg"
                 style={{ borderColor: "rgb(255,197,211)" }}
               >
                 <div
@@ -137,7 +137,7 @@ const VulvarGuidecard6 = ({ setShowCard, setActiveButton }) => {
 
               {/* Chemotherapy */}
               <div
-                className="flex items-start gap-4 p-6 rounded-xl border transition-all duration-300 hover:bg-[#FFF5F8] active:bg-[#FFF5F8] hover:shadow-lg"
+                className="flex items-start gap-4 p-6 rounded-xl border transition-all duration-300 hover:bg-light-pink-1 active:bg-light-pink-1 hover:shadow-lg"
                 style={{ borderColor: "rgb(255,197,211)" }}
               >
                 <div

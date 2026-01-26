@@ -22,7 +22,7 @@ export default function VaginalCancerInfo() {
         {/* Header */}
         <div className="text-center mb-10" data-aos="fade-up">
           <h1 className="text-4xl font-bold mb-4 text-primary-pink">Vaginal Cancer Information</h1>
-          <p className="text-lg text-[#7a2f4f] max-w-2xl mx-auto">
+          <p className="text-lg text-black max-w-2xl mx-auto">
             Comprehensive guide covering symptoms, diagnosis, and treatment options for vaginal
             cancer
           </p>
@@ -42,10 +42,10 @@ export default function VaginalCancerInfo() {
           </div>
           <div className="px-6 pt-4 pb-6 grid md:grid-cols-2 gap-6 items-start">
             <div>
-              <p className="text-[#7a2f4f] mb-4">
+              <p className="text-black mb-4">
                 Early vaginal cancer often has no symptoms. As it progresses, signs may include:
               </p>
-              <ul className="space-y-2 mb-6 text-sm text-[#7a2f4f]">
+              <ul className="space-y-2 mb-6 text-sm text-black">
                 {[
                   "Unusual vaginal bleeding (after intercourse or after menopause)",
                   "Watery vaginal discharge",
@@ -95,7 +95,7 @@ export default function VaginalCancerInfo() {
             <h2 className="text-2xl font-semibold text-white">Diagnosis of Vaginal Cancer</h2>
           </div>
           <div className="px-6 pt-4 pb-6">
-            <p className="text-[#7a2f4f] mb-4">
+            <p className="text-black mb-4">
               Vaginal cancer may be detected during a routine pelvic exam before symptoms appear.
             </p>
             <p className="text-primary-pink font-semibold mb-4">Diagnostic steps may include:</p>
@@ -125,7 +125,7 @@ export default function VaginalCancerInfo() {
                   data-aos="fade-left"
                 >
                   <strong className="text-primary-pink">{step.title}</strong>
-                  <span className="text-[#7a2f4f]"> – {step.desc}</span>
+                  <span className="text-black"> – {step.desc}</span>
                 </div>
               ))}
             </div>
@@ -153,7 +153,7 @@ export default function VaginalCancerInfo() {
             <FaPills className="text-white h-6 w-6" />
             <h2 className="text-2xl font-semibold text-white">Treatment of Vaginal Cancer</h2>
           </div>
-          <div className="px-6 pt-4 pb-6 text-sm text-[#7a2f4f]">
+          <div className="px-6 pt-4 pb-6 text-sm text-black">
             <p className="mb-6">
               Treatment depends on the type, stage, spread, and your overall health.
             </p>

@@ -53,7 +53,7 @@ const PelvicPainAccordion = () => {
         </div>
 
         {openSection === "gynaecological" && (
-          <div className="space-y-4 mt-4 px-6 text-sm text-[#7a2f4f]">
+          <div className="space-y-4 mt-4 px-6 text-sm text-black">
             <ul className="space-y-4">
               <li className="flex items-start gap-2">
                 <CircleCheck className="h-4 w-4 text-primary-pink mt-1" />
@@ -120,7 +120,7 @@ const PelvicPainAccordion = () => {
         </div>
 
         {openSection === "urinary" && (
-          <div className="space-y-4 mt-4 px-6 text-sm text-[#7a2f4f]">
+          <div className="space-y-4 mt-4 px-6 text-sm text-black">
             <ul className="space-y-4">
               <li className="flex items-start gap-2">
                 <CircleCheck className="h-4 w-4 text-primary-pink mt-1" />
@@ -171,7 +171,7 @@ const PelvicPainAccordion = () => {
         </div>
 
         {openSection === "digestive" && (
-          <div className="space-y-4 mt-4 px-6 text-sm text-[#7a2f4f]">
+          <div className="space-y-4 mt-4 px-6 text-sm text-black">
             <ul className="space-y-4">
               <li className="flex items-start gap-2">
                 <CircleCheck className="h-4 w-4 text-primary-pink mt-1" />

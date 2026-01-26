@@ -20,7 +20,7 @@ const Vaginalcard5 = ({ setShowCard, setActiveButton }) => {
 
           {/* DESCRIPTION SECTION */}
           <div className="px-6 pt-4 pb-6">
-            <p className="text-[#7a2f4f] mb-4 text-sm sm:text-base">
+            <p className="text-black mb-4 text-sm sm:text-base">
               Vaginal cancer may be detected during a routine pelvic exam before symptoms appear.
             </p>
 
@@ -54,7 +54,7 @@ const Vaginalcard5 = ({ setShowCard, setActiveButton }) => {
                   style={{ borderColor: primaryPink }}
                 >
                   <strong className="text-primary-pink">{step.title}</strong>
-                  <span className="text-[#7a2f4f]"> – {step.desc}</span>
+                  <span className="text-black"> – {step.desc}</span>
                 </div>
               ))}
             </div>

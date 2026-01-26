@@ -17,17 +17,17 @@ const UltraSoundButtons = ({ setShowCard, activeButton, setActiveButton }) => {
   };
 
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-4 md:gap-6 px-4 sm:px-6 xl:px-12 max-w-6xl mx-auto mb-8">
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-3 sm:gap-4 md:gap-2 px-4 sm:px-6 max-w-6xl mx-auto mb-8">
       {buttons.map((button, index) => (
         <button
           key={index}
           onClick={() => handleButtonClick(button.card, index)}
-          className={`flex flex-col items-center justify-center text-center 
-            w-full py-2 sm:py-3 px-3 sm:px-4 
-            font-semibold rounded-md 
-            text-black bg-[#FF4B8B]/10 hover:bg-[#FF4B8B]/30 
-            text-xs sm:text-button md:text-base 
-            transition-all 
+          className={`flex flex-col items-center justify-center text-center
+            w-full py-2 px-3
+            font-semibold rounded-md
+            text-black bg-light-pink-1 hover:bg-light-pink-2
+            text-button
+            transition-all cursor-pointer
             ${activeButton === index ? "bg-light-pink-2 text-black" : ""}`}
         >
           {button.icon}

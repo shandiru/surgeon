@@ -34,7 +34,7 @@ const PelvicPainGuideCard2 = ({ setShowCard, setActiveButton }) => {
               <Calendar className="h-5 w-5 text-primary-pink" />
               <div>
                 <h4 className="font-semibold text-primary-pink">Cyclic Pain</h4>
-                <p className="text-sm text-[#7a2f4f]">Related to menstrual cycle</p>
+                <p className="text-sm text-black">Related to menstrual cycle</p>
               </div>
             </div>
 
@@ -43,7 +43,7 @@ const PelvicPainGuideCard2 = ({ setShowCard, setActiveButton }) => {
               <Activity className="h-5 w-5 text-primary-pink" />
               <div>
                 <h4 className="font-semibold text-primary-pink">Non-cyclic Pain</h4>
-                <p className="text-sm text-[#7a2f4f]">Unrelated to periods</p>
+                <p className="text-sm text-black">Unrelated to periods</p>
               </div>
             </div>
           </div>
@@ -55,7 +55,7 @@ const PelvicPainGuideCard2 = ({ setShowCard, setActiveButton }) => {
               <Zap className="h-5 w-5 text-primary-pink" />
               <div>
                 <h4 className="font-semibold text-primary-pink">Sudden (Acute)</h4>
-                <p className="text-sm text-[#7a2f4f]">Appears quickly, often severe</p>
+                <p className="text-sm text-black">Appears quickly, often severe</p>
               </div>
             </div>
 
@@ -64,7 +64,7 @@ const PelvicPainGuideCard2 = ({ setShowCard, setActiveButton }) => {
               <Clock className="h-5 w-5 text-primary-pink" />
               <div>
                 <h4 className="font-semibold text-primary-pink">Persistent (Chronic)</h4>
-                <p className="text-sm text-[#7a2f4f]">Lasts 3–6 months or more</p>
+                <p className="text-sm text-black">Lasts 3–6 months or more</p>
               </div>
             </div>
           </div>

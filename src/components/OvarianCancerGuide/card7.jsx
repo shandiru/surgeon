@@ -75,7 +75,7 @@ const OvarianCancerGuidecard7 = ({ setShowCard, setActiveButton }) => {
                 <Heart className="w-5 h-5 inline-block" />
                 Remember
               </h4>
-              <ul className="text-sm space-y-2 text-[#7a2f4f]">
+              <ul className="text-sm space-y-2 text-black">
                 <li>• There is *no routine screening test* for ovarian cancer.</li>
                 <li>• Genetic testing can guide personalised prevention.</li>
                 <li>• Paying attention to persistent bloating or pelvic pain is essential.</li>

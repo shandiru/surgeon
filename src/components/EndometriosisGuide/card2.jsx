@@ -71,7 +71,7 @@ const EndometriosisCard2 = ({ setShowCard, setActiveButton }) => {
         </div>
 
         {/* Important Reminder */}
-        <div className="rounded-2xl p-8 shadow-lg bg-[#FFC5D3]">
+        <div className="rounded-2xl p-8 shadow-lg bg-light-pink-2">
           <div className="flex items-start gap-4">
             <TriangleAlert className="w-8 h-8 mt-1 flex-shrink-0" style={{ color: deepPink }} />
             <div>

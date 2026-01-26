@@ -27,7 +27,7 @@ const PelvicPainGuidecard7 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           {/* CONTENT GRID */}
-          <div className="px-6 mt-6 grid md:grid-cols-2 gap-4 text-[#7a2f4f]">
+          <div className="px-6 mt-6 grid md:grid-cols-2 gap-4 text-black">
             {/* LEFT COLUMN */}
             <div className="space-y-3">
               {/* Track your pain */}

@@ -20,7 +20,7 @@ const Vaginalcard6 = ({ setShowCard, setActiveButton }) => {
             </h2>
           </div>
 
-          <div className="px-4 sm:px-6 pt-4 text-[#7a2f4f] text-sm sm:text-base leading-relaxed">
+          <div className="px-4 sm:px-6 pt-4 text-black text-sm sm:text-base leading-relaxed">
             <p className="mb-6">
               Treatment depends on the type, stage, spread, and your overall health.
             </p>

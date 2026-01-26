@@ -19,7 +19,7 @@ const PelvicPainGuidecard5 = ({ setShowCard, setActiveButton }) => {
               <Stethoscope className="w-7 h-7" />
               <h2 className="text-2xl font-bold tracking-tight">How Pelvic Pain Is Investigated</h2>
             </div>
-            <p className="text-[#7a2f4f] mt-2 leading-relaxed">
+            <p className="text-black mt-2 leading-relaxed">
               Your doctor will assess your symptoms carefully using a combination of history-taking,
               examinations, and tests.
             </p>
@@ -28,7 +28,7 @@ const PelvicPainGuidecard5 = ({ setShowCard, setActiveButton }) => {
           {/* CONTENT AREA */}
           <div className="px-8 py-6 space-y-6">
             {/* SECTION TITLE */}
-            <h3 className="text-lg font-semibold text-[#7a2f4f]">Your doctor may:</h3>
+            <h3 className="text-lg font-semibold text-black">Your doctor may:</h3>
 
             {/* TWO COLUMN GRID */}
             <div className="grid md:grid-cols-2 gap-6">
@@ -41,7 +41,7 @@ const PelvicPainGuidecard5 = ({ setShowCard, setActiveButton }) => {
                   style={{ borderColor: "rgb(255,197,211)" }}
                 >
                   <CircleCheck className="text-primary-pink w-5 h-5" />
-                  <span className="text-sm text-[#7a2f4f]">Take a full medical history</span>
+                  <span className="text-sm text-black">Take a full medical history</span>
                 </div>
 
                 {/* ITEM 2 */}
@@ -51,15 +51,15 @@ const PelvicPainGuidecard5 = ({ setShowCard, setActiveButton }) => {
                   style={{ borderColor: "rgb(255,197,211)" }}
                 >
                   <CircleCheck className="text-primary-pink w-5 h-5" />
-                  <span className="text-sm text-[#7a2f4f]">Perform a pelvic examination</span>
+                  <span className="text-sm text-black">Perform a pelvic examination</span>
                 </div>
               </div>
 
               {/* RIGHT COLUMN */}
               <div className="space-y-4">
-                <h4 className="font-semibold text-[#7a2f4f]">Possible Tests:</h4>
+                <h4 className="font-semibold text-black">Possible Tests:</h4>
 
-                <ul className="space-y-2 text-sm text-[#7a2f4f] leading-relaxed">
+                <ul className="space-y-2 text-sm text-black leading-relaxed">
                   <li>• Blood or urine tests</li>
                   <li>• Swabs for infections (STIs)</li>
                   <li>• Ultrasound or MRI scan</li>
@@ -73,7 +73,7 @@ const PelvicPainGuidecard5 = ({ setShowCard, setActiveButton }) => {
               className="mt-2 p-4 rounded-xl bg-[#FFF1F6] border shadow-sm"
               style={{ borderColor: "rgb(255,197,211)" }}
             >
-              <p className="text-sm text-[#7a2f4f] italic">
+              <p className="text-sm text-black italic">
                 Identifying the cause early helps your healthcare provider create the most effective
                 treatment plan for you.
               </p>

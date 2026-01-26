@@ -17,7 +17,7 @@ const PelvicPainGuideCard4 = ({ setShowCard, setActiveButton }) => {
           <div className=" space-y-4">
             <h3 className="font-semibold text-lg text-primary-pink">When to See a Doctor</h3>
 
-            <ul className="space-y-3 text-sm text-[#7a2f4f]">
+            <ul className="space-y-3 text-sm text-black">
               <p className="font-medium">Seek medical advice if you:</p>
 
               {[

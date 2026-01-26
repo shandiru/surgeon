@@ -46,7 +46,7 @@ const RoboticGuide2 = ({ setShowCard, setActiveButton }) => {
               className="
                 bg-[#FFE6EE] 
                 p-5 sm:p-8 
-                rounded-lg border border-[#FFC5D3]
+                rounded-lg border border-light-pink-2
                 transition transform duration-300 
                 hover:scale-105 hover:shadow-[0_0_30px_6px_rgba(176,59,102,0.3)]
                 active:scale-105 active:shadow-[0_0_30px_6px_rgba(176,59,102,0.3)]

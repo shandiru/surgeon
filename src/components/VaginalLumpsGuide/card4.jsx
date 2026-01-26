@@ -42,7 +42,7 @@ const VaginalLumpsGuideCard4 = ({ setShowCard, setActiveButton }) => {
             ].map((symptom, index) => (
               <div
                 key={index}
-                className="flex items-start gap-3 p-4 rounded-lg border bg-white hover:bg-[#FFF5F8] hover:shadow-md transition"
+                className="flex items-start gap-3 p-4 rounded-lg border bg-white hover:bg-light-pink-1 hover:shadow-md transition"
                 style={{ borderColor: "rgb(255,197,211)" }}
               >
                 <span
@@ -50,7 +50,7 @@ const VaginalLumpsGuideCard4 = ({ setShowCard, setActiveButton }) => {
                   style={{ backgroundColor: "#FF4B8B" }}
                 ></span>
 
-                <span className="text-[#7a2f4f] text-sm leading-relaxed">{symptom}</span>
+                <span className="text-black text-sm leading-relaxed">{symptom}</span>
               </div>
             ))}
           </div>

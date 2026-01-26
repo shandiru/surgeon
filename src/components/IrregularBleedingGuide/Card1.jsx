@@ -36,7 +36,7 @@ const IrregularBleedingGuideCard1 = ({ setShowCard, setActiveButton }) => {
               <div className="grid md:grid-cols-2 gap-6">
                 {/* Typical Period */}
                 <div className="space-y-3">
-                  <h4 className="font-semibold text-[#ff97b3]">A typical period:</h4>
+                  <h4 className="font-semibold text-primary-pink">A typical period:</h4>
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-center gap-2">
                       <svg
@@ -49,7 +49,7 @@ const IrregularBleedingGuideCard1 = ({ setShowCard, setActiveButton }) => {
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        className="w-4 h-4 text-[#ff97b3]"
+                        className="w-4 h-4 text-primary-pink"
                       >
                         <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
                         <path d="m9 11 3 3L22 4"></path>
@@ -68,7 +68,7 @@ const IrregularBleedingGuideCard1 = ({ setShowCard, setActiveButton }) => {
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        className="w-4 h-4 text-[#ff97b3]"
+                        className="w-4 h-4 text-primary-pink"
                       >
                         <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
                         <path d="m9 11 3 3L22 4"></path>
@@ -80,7 +80,7 @@ const IrregularBleedingGuideCard1 = ({ setShowCard, setActiveButton }) => {
 
                 {/* Irregular Bleeding */}
                 <div className="space-y-3">
-                  <h4 className="font-semibold text-[#ff97b3]">Irregular bleeding includes:</h4>
+                  <h4 className="font-semibold text-primary-pink">Irregular bleeding includes:</h4>
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-center gap-2">
                       <svg
@@ -93,7 +93,7 @@ const IrregularBleedingGuideCard1 = ({ setShowCard, setActiveButton }) => {
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        className="w-4 h-4 text-[#ff97b3]"
+                        className="w-4 h-4 text-primary-pink"
                       >
                         <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"></path>
                         <path d="M12 9v4"></path>
@@ -113,7 +113,7 @@ const IrregularBleedingGuideCard1 = ({ setShowCard, setActiveButton }) => {
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        className="w-4 h-4 text-[#ff97b3]"
+                        className="w-4 h-4 text-primary-pink"
                       >
                         <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"></path>
                         <path d="M12 9v4"></path>
