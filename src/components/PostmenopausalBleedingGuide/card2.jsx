@@ -16,13 +16,13 @@ const PostmenopausalBleedingGuideCard2 = ({ setShowCard, setActiveButton }) => {
           {/* STATS BOXES */}
           <div className="grid md:grid-cols-2 gap-6">
             {/* LEFT BOX */}
-            <div className="text-center p-6 rounded-xl bg-gradient-to-br from-[#FEE6EA] to-[#fff0f5] shadow-sm">
+            <div className="text-center p-6 rounded-xl bg-gradient-to-br from-light-pink-1 to-light-pink-2 shadow-sm">
               <div className="text-4xl font-extrabold text-primary-pink mb-2">10%</div>
               <p className="text-sm text-black">of postmenopausal women experience bleeding</p>
             </div>
 
             {/* RIGHT BOX */}
-            <div className="text-center p-6 rounded-xl bg-gradient-to-br from-[#FFE3EC] to-[#fff5f8] shadow-sm">
+            <div className="text-center p-6 rounded-xl bg-gradient-to-br from-light-pink-1 to-light-pink-2 shadow-sm">
               <div className="text-4xl font-extrabold text-primary-pink mb-2">1 in 10</div>
               <p className="text-sm text-black">cases may be linked to cancer</p>
             </div>

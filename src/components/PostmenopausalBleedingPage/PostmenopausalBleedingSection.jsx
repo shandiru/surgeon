@@ -2,7 +2,7 @@ import React from "react";
 
 export default function PostmenopausalHealthSection() {
   return (
-    <section className="bg-gradient-to-r from-[#FEE6EA] to-[#FDE8F3] py-16 px-6">
+    <section className="bg-gradient-to-r from-light-pink-1 to-light-pink-2 py-16 px-6">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-10">
         {/* Left Content */}
         <div className="text-left">
@@ -17,7 +17,7 @@ export default function PostmenopausalHealthSection() {
           {/* Alert Box */}
           <div
             role="alert"
-            className="w-full rounded-xl px-5 py-5 text-sm flex items-start gap-4 bg-white shadow-md text-[#1F2937]"
+            className="w-full rounded-xl px-5 py-5 text-sm flex items-start gap-4 bg-white shadow-md text-black"
           >
             {/* Icon */}
             <div className="flex-shrink-0">
@@ -38,7 +38,7 @@ export default function PostmenopausalHealthSection() {
             </div>
 
             {/* Text */}
-            <div className="text-sm leading-relaxed text-[#374151]">
+            <div className="text-sm leading-relaxed text-black">
               <strong className="text-primary-pink">Important:</strong> Any bleeding after menopause
               should always be checked by a healthcare professional. Early diagnosis saves lives.
             </div>

@@ -111,7 +111,7 @@ const EventDetail = () => {
                     <img
                       src={speaker.image}
                       alt={speaker.name}
-                      className="w-32 h-32 rounded-full mx-auto object-cover ring-4 ring-gray-100 group-hover:ring-[#FF4B8B] transition-all"
+                      className="w-32 h-32 rounded-full mx-auto object-cover ring-4 ring-gray-100 group-hover:ring-primary-pink transition-all"
                     />
                     <h3 className="text-lg font-bold text-black mt-4">{speaker.name}</h3>
                     <p className="text-sm text-black">{speaker.role}</p>
@@ -163,7 +163,7 @@ const EventDetail = () => {
                 <div className="flex items-center space-x-4 mb-4">
                   <img
                     src={event.organizers[activeOrganizer].image}
-                    className="w-20 h-20 rounded-full object-cover ring-4 ring-[#FF4B8B]/20"
+                    className="w-20 h-20 rounded-full object-cover ring-4 ring-primary-pink/20"
                     alt="Host"
                   />
                   <div>
@@ -189,7 +189,7 @@ const EventDetail = () => {
                     <button
                       key={index}
                       onClick={() => setActiveOrganizer(index)}
-                      className={`w-14 h-14 rounded-full overflow-hidden ring-2 transition-all ${activeOrganizer === index ? "ring-[#FF4B8B] scale-110" : "ring-gray-200"}`}
+                      className={`w-14 h-14 rounded-full overflow-hidden ring-2 transition-all ${activeOrganizer === index ? "ring-primary-pink scale-110" : "ring-gray-200"}`}
                     >
                       <img src={org.image} alt={org.name} className="w-full h-full object-cover" />
                     </button>

@@ -3,7 +3,7 @@ import { Brain } from "lucide-react"; // Import the Brain icon from lucide-react
 
 const EmotionalWellbeingCard = () => {
   return (
-    <div className="text-primary-pink bg-light-pink max-w-5xl mx-auto mb-10 d flex flex-col gap-6 rounded-xl  py-6 shadow-sm hover:z-50 transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:scale-105 active:scale-100">
+    <div className="text-primary-pink bg-light-pink max-w-5xl mx-auto mb-10 d flex flex-col gap-6 rounded-xl  py-6 shadow-sm hover:z-50 transition-all duration-300 hover:bg-light-pink-1 hover:shadow-lg hover:border-light-pink-2 active:bg-light-pink-1 active:shadow-lg active:border-light-pink-2 hover:scale-105 active:scale-100">
       <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 pb-6">
         <div className="font-semibold flex items-center gap-3 text-2xl">
           <Brain className="h-6 w-6 text-primary" />

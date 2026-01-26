@@ -8,9 +8,9 @@ export default function ExperienceGrid() {
       title: "Years of Experience",
       description:
         "Extensive experience in robotic-assisted gynecological surgery with a focus on minimally invasive techniques.",
-      background: "bg-[#FDE7EB]",
+      background: "bg-light-pink-1",
       iconBg: "bg-primary-pink",
-      hoverColor: "hover:bg-[#FDE7EB]",
+      hoverColor: "hover:bg-light-pink-1",
     },
     {
       icon: <Target className="w-6 h-6" />,
@@ -26,9 +26,9 @@ export default function ExperienceGrid() {
       title: "Specialized Training",
       description:
         "Certified in da Vinci Surgical System with advanced training in complex gynecological procedures.",
-      background: "bg-[#FDE7EB]",
+      background: "bg-light-pink-1",
       iconBg: "bg-primary-pink",
-      hoverColor: "hover:bg-[#FDE7EB]",
+      hoverColor: "hover:bg-light-pink-1",
     },
     {
       icon: <Heart className="w-6 h-6" />,
@@ -44,9 +44,9 @@ export default function ExperienceGrid() {
       title: "Continuous Learning",
       description:
         "Regularly attends international conferences and workshops to stay at the forefront of robotic surgery advancements.",
-      background: "bg-[#FDE7EB]",
+      background: "bg-light-pink-1",
       iconBg: "bg-primary-pink",
-      hoverColor: "hover:bg-[#FDE7EB]",
+      hoverColor: "hover:bg-light-pink-1",
     },
     {
       icon: <Users className="w-6 h-6" />,

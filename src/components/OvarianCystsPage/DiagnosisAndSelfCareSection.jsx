@@ -46,7 +46,7 @@ export default function DiagnosisAndSelfCareSection() {
           ))}
 
           {/* Note Box */}
-          <div className="mt-4 p-4 rounded-lg bg-[#FEE6EA] shadow-sm">
+          <div className="mt-4 p-4 rounded-lg bg-light-pink-1 shadow-sm">
             <p className="text-sm font-medium text-black">
               Most cysts are monitored over time to see if they shrink on their own.
             </p>

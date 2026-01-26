@@ -9,8 +9,8 @@ const OvarianCystsGuideCard1 = ({ setShowCard, setActiveButton }) => {
           WHAT ARE OVARIAN CYSTS? (SECTION 2)
       --------------------------------------------------- */}
       <section className="max-w-4xl mx-auto px-6 py-6 mt-10">
-        <div className="bg-[#FEE6EA] rounded-2xl shadow-xl max-w-6xl mx-auto">
-          <div className="bg-[#FEE6EA] border-b border-primary-pink/20 rounded-t-2xl px-8 py-6">
+        <div className="bg-light-pink-1 rounded-2xl shadow-xl max-w-6xl mx-auto">
+          <div className="bg-light-pink-1 border-b border-primary-pink/20 rounded-t-2xl px-8 py-6">
             <div className="text-primary-pink font-bold text-3xl flex items-center gap-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

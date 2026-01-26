@@ -3,7 +3,7 @@ import React from "react";
 export default function CausesOfBleedingSection() {
   return (
     <section className="mb-12 px-4">
-      <div className="bg-white text-[#1F2937] flex flex-col gap-6 rounded-2xl shadow-md py-8 max-w-4xl mx-auto transition hover:shadow-lg">
+      <div className="bg-white text-black flex flex-col gap-6 rounded-2xl shadow-md py-8 max-w-4xl mx-auto transition hover:shadow-lg">
         {/* Card Header */}
         <div className="px-6 text-center md:text-left">
           <h2 className="font-bold flex items-center justify-center md:justify-start gap-2 text-2xl text-primary-pink">
@@ -19,22 +19,22 @@ export default function CausesOfBleedingSection() {
         <div className="px-6">
           <div className="grid md:grid-cols-2 gap-6">
             {/* Serious Causes */}
-            <div className="space-y-3 rounded-xl bg-gradient-to-br from-[#fff0f5] to-[#ffe6ed] p-5 shadow-sm">
+            <div className="space-y-3 rounded-xl bg-gradient-to-br from-light-pink-2 to-light-pink-1 p-5 shadow-sm">
               <div className="inline-flex items-center gap-2 text-sm font-semibold text-primary-pink mb-2">
                 Serious Causes
               </div>
-              <ul className="space-y-2 text-sm text-[#374151] list-disc list-inside">
+              <ul className="space-y-2 text-sm text-black list-disc list-inside">
                 <li>Endometrial (womb) cancer or uterine sarcoma</li>
                 <li>Cervical or vaginal cancer</li>
               </ul>
             </div>
 
             {/* Common Benign Causes */}
-            <div className="space-y-3 rounded-xl bg-gradient-to-br from-[#fef6f9] to-[#fff] p-5 shadow-sm">
+            <div className="space-y-3 rounded-xl bg-gradient-to-br from-light-pink-1: to-white p-5 shadow-sm">
               <div className="inline-flex items-center gap-2 text-sm font-semibold text-primary-pink mb-2">
                 Common Benign Causes
               </div>
-              <ul className="space-y-2 text-sm text-[#374151] list-disc list-inside">
+              <ul className="space-y-2 text-sm text-black list-disc list-inside">
                 <li>Endometrial or vaginal atrophy</li>
                 <li>Uterine fibroids or polyps</li>
                 <li>Endometrial hyperplasia</li>

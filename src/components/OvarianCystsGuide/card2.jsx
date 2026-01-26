@@ -7,7 +7,7 @@ const OvarianCystsGuideCard2 = ({ setShowCard, setActiveButton }) => {
       {/* ---------------------------------------------------
           FULL WRAPPER WITH BORDER (ALL CONTENT INCLUDED)
       --------------------------------------------------- */}
-      <div className="max-w-4xl mx-auto px-6 py-10 rounded-2xl border border-primary-pink/20 shadow-md bg-[#FFF7F9]">
+      <div className="max-w-4xl mx-auto px-6 py-10 rounded-2xl border border-primary-pink/20 shadow-md bg-light-pink-1">
         {/* HEADER */}
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold text-primary-pink flex items-center justify-center gap-3">

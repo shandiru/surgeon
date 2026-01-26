@@ -13,7 +13,7 @@ const IsItPainfulCard = () => {
         <div className="grid md:grid-cols-2 gap-6">
           {/* Left Column */}
           <div>
-            <span className="inline-flex items-center rounded-full bg-[#FEE6EA] text-primary-pink px-3 py-1 text-xs font-medium mb-2 shadow-sm">
+            <span className="inline-flex items-center rounded-full bg-light-pink-1 text-primary-pink px-3 py-1 text-xs font-medium mb-2 shadow-sm">
               Usually Painless
             </span>
             <p className="leading-relaxed">Postcoital bleeding is usually painless</p>

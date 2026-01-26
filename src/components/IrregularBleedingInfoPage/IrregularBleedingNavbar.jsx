@@ -16,7 +16,7 @@ const IrregularBleedingNavbar = ({ activeTab, setActiveTab }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-20 bg-[#FFF1F5] shadow-sm rounded-full">
+    <nav className="sticky top-0 z-20 bg-light-pink-1 shadow-sm rounded-full">
       <div className="max-w-5xl mx-auto px-4">
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center justify-center gap-3 py-4">
@@ -33,7 +33,7 @@ const IrregularBleedingNavbar = ({ activeTab, setActiveTab }) => {
 
         {/* Mobile Toggle */}
         <div className="md:hidden flex justify-between items-center py-4">
-          <span className="text-base font-semibold text-[#1F2937]">Menu</span>
+          <span className="text-base font-semibold text-black">Menu</span>
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="text-primary-pink focus:outline-none"
@@ -69,7 +69,7 @@ const TabButton = ({ icon, label, fullWidth = false, active, onClick }) => {
   const base = "flex items-center gap-2 px-4 py-2 text-sm font-medium transition-all";
   const activeClasses = active
     ? "bg-primary-pink text-white"
-    : "bg-[#FFE5ED] text-[#1F2937] hover:bg-[#FFD2E1]";
+    : "bg-primary-pink text-black hover:bg-primary-pink";
   const layout = fullWidth
     ? "w-full justify-start rounded-md"
     : "justify-center whitespace-nowrap shrink-0 rounded-full";

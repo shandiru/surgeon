@@ -17,7 +17,7 @@ const PostmenopausalBleedingGuideCard6 = ({ setShowCard, setActiveButton }) => {
           style={{ borderColor: "rgb(255,197,211)" }}
         >
           {/* HEADER */}
-          <div className="pb-6 border-b border-[#FEE6EA] px-2">
+          <div className="pb-6 border-b border-light-pink-1 px-2">
             <div className="font-bold flex items-center gap-3 text-2xl text-primary-pink">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -46,11 +46,11 @@ const PostmenopausalBleedingGuideCard6 = ({ setShowCard, setActiveButton }) => {
           {/* DROPDOWNS */}
           <div className="space-y-1">
             {/* ITEM 1 */}
-            <div className="border-b border-[#FEE6EA]">
+            <div className="border-b border-light-pink-1">
               <button
                 onClick={() => toggle(0)}
                 className="flex w-full items-center justify-between py-4 text-left 
-                           text-base font-medium text-[#374151]"
+                           text-base font-medium text-black"
               >
                 Medical History and Pelvic Exam
                 <svg
@@ -74,7 +74,7 @@ const PostmenopausalBleedingGuideCard6 = ({ setShowCard, setActiveButton }) => {
                   openIndex === 0 ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
                 }`}
               >
-                <p className="pb-4 text-sm text-[#4B5563]">
+                <p className="pb-4 text-sm text-black">
                   Your doctor may ask about your medical history and perform a pelvic exam to assess
                   abnormalities.
                 </p>
@@ -82,11 +82,11 @@ const PostmenopausalBleedingGuideCard6 = ({ setShowCard, setActiveButton }) => {
             </div>
 
             {/* ITEM 2 */}
-            <div className="border-b border-[#FEE6EA]">
+            <div className="border-b border-light-pink-1">
               <button
                 onClick={() => toggle(1)}
                 className="flex w-full items-center justify-between py-4 text-left 
-                           text-base font-medium text-[#374151]"
+                           text-base font-medium text-black"
               >
                 Cervical Smear Test
                 <svg
@@ -110,7 +110,7 @@ const PostmenopausalBleedingGuideCard6 = ({ setShowCard, setActiveButton }) => {
                   openIndex === 1 ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
                 }`}
               >
-                <p className="pb-4 text-sm text-[#4B5563]">
+                <p className="pb-4 text-sm text-black">
                   If you're due for a cervical smear test, your doctor may perform this to check for
                   cervical abnormalities.
                 </p>
@@ -118,11 +118,11 @@ const PostmenopausalBleedingGuideCard6 = ({ setShowCard, setActiveButton }) => {
             </div>
 
             {/* ITEM 3 */}
-            <div className="border-b border-[#FEE6EA]">
+            <div className="border-b border-light-pink-1">
               <button
                 onClick={() => toggle(2)}
                 className="flex w-full items-center justify-between py-4 text-left 
-                           text-base font-medium text-[#374151]"
+                           text-base font-medium text-black"
               >
                 Transvaginal Ultrasound
                 <svg
@@ -146,7 +146,7 @@ const PostmenopausalBleedingGuideCard6 = ({ setShowCard, setActiveButton }) => {
                   openIndex === 2 ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
                 }`}
               >
-                <p className="pb-4 text-sm text-[#4B5563]">
+                <p className="pb-4 text-sm text-black">
                   Uses a small probe to view the ovaries, uterus and cervix. This helps assess the
                   thickness of the womb lining and identify abnormalities.
                 </p>
@@ -154,11 +154,11 @@ const PostmenopausalBleedingGuideCard6 = ({ setShowCard, setActiveButton }) => {
             </div>
 
             {/* ITEM 4 */}
-            <div className="border-b border-[#FEE6EA]">
+            <div className="border-b border-light-pink-1">
               <button
                 onClick={() => toggle(3)}
                 className="flex w-full items-center justify-between py-4 text-left 
-                           text-base font-medium text-[#374151]"
+                           text-base font-medium text-black"
               >
                 Hysteroscopy
                 <svg
@@ -182,7 +182,7 @@ const PostmenopausalBleedingGuideCard6 = ({ setShowCard, setActiveButton }) => {
                   openIndex === 3 ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
                 }`}
               >
-                <p className="pb-4 text-sm text-[#4B5563]">
+                <p className="pb-4 text-sm text-black">
                   A thin camera is inserted through the cervix to view the womb lining. This allows
                   direct visualisation and tissue sampling if needed.
                 </p>

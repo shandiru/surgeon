@@ -12,8 +12,8 @@ const PelvicPainGuidecard7 = ({ setShowCard, setActiveButton }) => {
             text-primary-pink bg-light-pink 
             rounded-xl py-6 shadow-sm mb-10 flex flex-col gap-6
             transition-all duration-300
-            hover:z-50 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd]
-            active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]
+            hover:z-50 hover:bg-light-pink-1 hover:shadow-lg hover:border-light-pink-2
+            active:bg-light-pink-1 active:shadow-lg active:border-light-pink-2
             hover:scale-105 active:scale-100
           "
           style={{ borderColor: "rgb(255,197,211)" }}

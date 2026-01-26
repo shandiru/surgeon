@@ -2,7 +2,7 @@ import React from "react";
 
 export default function SymptomsSection() {
   return (
-    <section className="py-16 px-6 md:px-12 bg-[#fff5f7]">
+    <section className="py-16 px-6 md:px-12 bg-light-pink-2">
       {/* Section Header */}
       <div className="flex items-center gap-3 mb-10">
         <svg
@@ -28,7 +28,7 @@ export default function SymptomsSection() {
       <div className="grid md:grid-cols-2 gap-8">
         {/* Common Symptoms Card */}
         <div className="bg-white text-black flex flex-col gap-6 rounded-2xl py-8 px-8 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
-          <h3 className="font-semibold text-xl text-[#c2185b]">Common Symptoms</h3>
+          <h3 className="font-semibold text-xl text-primary-pink">Common Symptoms</h3>
           <ul className="space-y-3 text-base">
             {[
               "Abnormal or heavy bleeding",
@@ -46,7 +46,7 @@ export default function SymptomsSection() {
         </div>
 
         {/* Urgent Symptoms Card */}
-        <div className="bg-[#FEE6EA] text-black flex flex-col gap-6 rounded-2xl py-8 px-8 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+        <div className="bg-light-pink-1 text-black flex flex-col gap-6 rounded-2xl py-8 px-8 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
           <h3 className="font-semibold text-xl text-primary-pink">When to Seek Urgent Help</h3>
           <ul className="space-y-3 text-base">
             {[

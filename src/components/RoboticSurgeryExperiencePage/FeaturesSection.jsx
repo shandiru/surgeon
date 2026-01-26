@@ -42,7 +42,7 @@ export default function FeaturesSection() {
               </p>
             </div>
             <div className="flex-shrink-0 md:mt-0 mt-4">
-              <button className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-primary-pink text-white font-semibold text-button hover:bg-[#E03E7C] transition-all duration-300 shadow-md hover:shadow-lg whitespace-nowrap">
+              <button className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-primary-pink text-white font-semibold text-button hover:bg-primary-pink transition-all duration-300 shadow-md hover:shadow-lg whitespace-nowrap">
                 All Topics
               </button>
             </div>
@@ -54,7 +54,7 @@ export default function FeaturesSection() {
               <React.Fragment key={index}>
                 <div
                   className={`flex items-start gap-4 p-6 rounded-lg transition-all duration-300 ${
-                    feature.highlighted ? "bg-[#FDE7EB]" : "bg-white"
+                    feature.highlighted ? "bg-light-pink-1" : "bg-white"
                   }`}
                 >
                   {/* Icon */}

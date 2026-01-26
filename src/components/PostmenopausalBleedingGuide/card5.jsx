@@ -11,7 +11,7 @@ const PostmenopausalBleedingGuideCard5 = ({ setShowCard, setActiveButton }) => {
           style={{ borderColor: "rgb(255,197,211)" }}
         >
           {/* HEADER */}
-          <div className="px-6 border-b border-[#FEE6EA] pb-5 mb-6">
+          <div className="px-6 border-b border-light-pink-1 pb-5 mb-6">
             <h2 className="font-bold flex items-center gap-2 text-xl sm:text-2xl text-primary-pink">
               Risk Factors
             </h2>
@@ -23,7 +23,7 @@ const PostmenopausalBleedingGuideCard5 = ({ setShowCard, setActiveButton }) => {
               Knowing your risk helps encourage early checks and peace of mind.
             </p>
 
-            <ul className="space-y-2 text-sm list-disc pl-5 text-[#374151]">
+            <ul className="space-y-2 text-sm list-disc pl-5 text-black">
               <li>Age over 55</li>
               <li>Family history of endometrial, ovarian or breast cancer</li>
               <li>Obesity</li>

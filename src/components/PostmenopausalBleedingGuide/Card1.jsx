@@ -18,14 +18,14 @@ const PostmenopausalBleedingGuideCard1 = ({ setShowCard, setActiveButton }) => {
 
           {/* CONTENT */}
           <div className="px-6 py-8 space-y-6">
-            <p className="text-base sm:text-lg leading-relaxed text-[#374151]">
+            <p className="text-base sm:text-lg leading-relaxed text-black">
               Postmenopausal bleeding is any bleeding from the vagina after menopause.
             </p>
 
-            <div className="bg-[#FEE6EA] p-5 rounded-xl shadow-sm border border-primary-pink">
+            <div className="bg-light-pink-1 p-5 rounded-xl shadow-sm border border-primary-pink">
               <p className="font-semibold mb-3 text-primary-pink text-lg">Key Facts:</p>
 
-              <ul className="space-y-2 text-sm sm:text-base text-[#374151] list-disc list-inside">
+              <ul className="space-y-2 text-sm sm:text-base text-black list-disc list-inside">
                 <li>Menopause is confirmed once you have had no period for 12 months</li>
                 <li>
                   Any vaginal bleeding after this time is not normal and should always be checked

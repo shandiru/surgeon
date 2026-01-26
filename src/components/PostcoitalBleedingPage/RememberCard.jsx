@@ -5,7 +5,7 @@ const RememberCard = () => {
   return (
     <div className="max-w-6xl text-black mx-auto mb-10 flex flex-col gap-6 rounded-xl bg-white py-6 shadow-md hover:shadow-lg transition-shadow">
       {/* Header */}
-      <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-2 px-6 border-b border-[#FEE6EA] pb-6">
+      <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-2 px-6 border-b border-light-pink-1 pb-6">
         <div className="font-semibold text-2xl text-primary-pink flex items-center gap-2">
           <Heart className="text-xl" />
           Remember
@@ -47,7 +47,7 @@ const RememberCard = () => {
 
         {/* CTA */}
         <div className="text-center pt-4">
-          <button className="inline-flex items-center justify-center gap-2 text-sm font-semibold rounded-md px-6 h-10 text-white bg-primary-pink hover:bg-[#e43d7a] transition-all shadow-md hover:shadow-lg">
+          <button className="inline-flex items-center justify-center gap-2 text-sm font-semibold rounded-md px-6 h-10 text-white bg-primary-pink hover:bg-bg-primary-pink transition-all shadow-md hover:shadow-lg">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"

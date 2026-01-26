@@ -173,7 +173,7 @@ const EventDetail = () => {
                   <a
                     href="https://www.bgcs.org.uk/about-us/join/"
                     target="_blank"
-                    className="flex-1 md:flex-none px-8 py-3 bg-gradient-to-r from-[#FF4B8B] to-[#FF4B8B] hover:bg-primary-pink/20 text-white rounded-xl font-semibold transition-all transform hover:scale-105 shadow-lg"
+                    className="flex-1 md:flex-none px-8 py-3 bg-gradient-to-r from-primary-pink to-primary-pink hover:bg-primary-pink/20 text-white rounded-xl font-semibold transition-all transform hover:scale-105 shadow-lg"
                   >
                     Join Event
                   </a>
@@ -214,7 +214,7 @@ const EventDetail = () => {
                       <img
                         src={speaker.image}
                         alt={speaker.name}
-                        className="w-32 h-32 rounded-full mx-auto object-cover ring-4 ring-gray-100 group-hover:ring-[#FF4B8B] transition-all"
+                        className="w-32 h-32 rounded-full mx-auto object-cover ring-4 ring-gray-100 group-hover:ring-primary-pink transition-all"
                       />
                       <div className="absolute inset-0 rounded-full bg-primary-pink opacity-0 group-hover:opacity-10 transition-opacity"></div>
                     </div>
@@ -314,7 +314,7 @@ const EventDetail = () => {
           <div className="lg:col-span-1 space-y-6">
             {/* Event Host */}
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden sticky top-6">
-              <div className="bg-gradient-to-r from-[#FF4B8B] to-[#FF4B8B] p-4">
+              <div className="bg-gradient-to-r from-primary-pink to-primary-pink p-4">
                 <h2 className="text-xl font-bold text-white">Who Host this Event</h2>
               </div>
               <div className="p-6">
@@ -323,7 +323,7 @@ const EventDetail = () => {
                     <img
                       src={organizers[activeOrganizer].image}
                       alt={organizers[activeOrganizer].name}
-                      className="w-20 h-20 rounded-full object-cover ring-4 ring-[#FF4B8B]/20"
+                      className="w-20 h-20 rounded-full object-cover ring-4 ring-primary-pink/20"
                     />
                     <div>
                       <h3 className="text-xl font-bold text-black">
@@ -355,8 +355,8 @@ const EventDetail = () => {
                       onClick={() => setActiveOrganizer(index)}
                       className={`w-14 h-14 rounded-full overflow-hidden ring-2 transition-all ${
                         activeOrganizer === index
-                          ? "ring-[#FF4B8B] scale-110"
-                          : "ring-gray-200 hover:ring-[#FF4B8B]/50"
+                          ? "ring-primary-pink scale-110"
+                          : "ring-gray-200 hover:ring-primary-pink/50"
                       }`}
                     >
                       <img src={org.image} alt={org.name} className="w-full h-full object-cover" />
@@ -368,7 +368,7 @@ const EventDetail = () => {
 
             {/* Event Schedule */}
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-              <div className="bg-gradient-to-r from-[#FF4B8B] to-[#FF4B8B] p-4">
+              <div className="bg-gradient-to-r from-primary-pink to-primary-pink p-4">
                 <h2 className="text-xl font-bold text-white">Event Schedule</h2>
               </div>
               <div className="p-6 space-y-6">
@@ -378,7 +378,7 @@ const EventDetail = () => {
                       <img
                         src={schedule.image}
                         alt={schedule.title}
-                        className="w-32 h-32 rounded-full mx-auto object-cover ring-4 ring-gray-100 group-hover:ring-[#FF4B8B] transition-all"
+                        className="w-32 h-32 rounded-full mx-auto object-cover ring-4 ring-gray-100 group-hover:ring-primary-pink transition-all"
                       />
                     </div>
                     <h3 className="text-lg font-bold text-black mb-1">{schedule.title}</h3>

@@ -6,9 +6,9 @@ const IrregularBleedingGuideCard4 = ({ setShowCard, setActiveButton }) => {
     <section className="my-12 px-4">
       <main className="max-w-4xl mx-auto px-4 py-8 bg-white">
         {/* CARD WRAPPER */}
-        <div className="bg-white text-black flex flex-col gap-6 rounded-xl py-6 px-4 sm:px-6 shadow-md hover:shadow-lg transition-all duration-300 border border-[#ff97b3]/30">
+        <div className="bg-white text-black flex flex-col gap-6 rounded-xl py-6 px-4 sm:px-6 shadow-md hover:shadow-lg transition-all duration-300 border border-primary-pink/30">
           {/* HEADER */}
-          <div className="grid auto-rows-min items-start gap-2 border-b border-[#ff97b3]/30 pb-4">
+          <div className="grid auto-rows-min items-start gap-2 border-b border-primary-pink/30 pb-4">
             <div className="leading-snug font-semibold flex items-center gap-2 text-primary-pink text-lg sm:text-xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +27,7 @@ const IrregularBleedingGuideCard4 = ({ setShowCard, setActiveButton }) => {
               What to Track Before Your Appointment
             </div>
 
-            <p className="text-sm sm:text-base text-[#666]">
+            <p className="text-sm sm:text-base text-black">
               Bringing a few notes can really help your doctor understand your situation better.
             </p>
           </div>
@@ -106,15 +106,15 @@ const IrregularBleedingGuideCard4 = ({ setShowCard, setActiveButton }) => {
             ].map((item, index) => (
               <div
                 key={index}
-                className="flex items-start gap-4 p-4 rounded-lg bg-[#fff7f9] shadow-sm hover:shadow-md transition-all duration-200"
+                className="flex items-start gap-4 p-4 rounded-lg bg-light-pink-1 shadow-sm hover:shadow-md transition-all duration-200"
               >
-                <div className="p-2 rounded-full bg-[#ff97b3]/10 flex-shrink-0">{item.icon}</div>
+                <div className="p-2 rounded-full bg-primary-pink/10 flex-shrink-0">{item.icon}</div>
 
                 <div>
                   <h4 className="font-semibold mb-1 text-primary-pink text-sm sm:text-base">
                     {item.title}
                   </h4>
-                  <p className="text-xs sm:text-sm text-[#666]">{item.desc}</p>
+                  <p className="text-xs sm:text-sm text-black">{item.desc}</p>
                 </div>
               </div>
             ))}

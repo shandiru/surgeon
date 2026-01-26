@@ -111,7 +111,7 @@ export default function CurrentWork() {
           </div>
 
           {/* Combined Impact Section */}
-          <div className="mt-12 bg-gradient-to-r from-[#FF4B8B]/10 to-[#FF4B8B]/5 rounded-xl p-6 md:p-8 border border-primary-pink/20">
+          <div className="mt-12 bg-gradient-to-r from-primary-pink/10 to-primary-pink/5 rounded-xl p-6 md:p-8 border border-primary-pink/20">
             <div className="text-center">
               <h3 className="text-subsection text-primary-pink font-bold mb-4">
                 A Dual Commitment

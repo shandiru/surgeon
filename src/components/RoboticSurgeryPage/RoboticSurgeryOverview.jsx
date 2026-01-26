@@ -41,7 +41,7 @@ export default function RoboticSurgeryOverview() {
 
             {/* Features Box */}
             <div
-              className="bg-[#FFE6EE] p-8 rounded-lg border border-light-pink-2 
+              className="bg-light-pink-1p-8 rounded-lg border border-light-pink-2 
               transition transform duration-300 
               hover:scale-105 hover:shadow-[0_0_30px_6px_rgba(176,59,102,0.3)]
               active:scale-105 active:shadow-[0_0_30px_6px_rgba(176,59,102,0.3)]"

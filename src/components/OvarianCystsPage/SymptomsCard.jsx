@@ -45,7 +45,7 @@ export default function SymptomsCard() {
       {/* Card Content */}
       <div data-slot="card-content">
         {/* Intro Box */}
-        <div className="mb-6 p-4 rounded-lg text-center font-medium bg-[#FEE6EA] text-black">
+        <div className="mb-6 p-4 rounded-lg text-center font-medium bg-light-pink-1 text-black">
           Most cysts cause no symptoms, but larger or problematic cysts may cause:
         </div>
 
@@ -70,7 +70,7 @@ export default function SymptomsCard() {
             <div className="space-y-3">
               {lessCommonSymptoms.map((symptom, index) => (
                 <div key={index} className="flex items-start gap-3">
-                  <div className="w-2 h-2 rounded-full mt-2 bg-[#FEB6C5] flex-shrink-0" />
+                  <div className="w-2 h-2 rounded-full mt-2 bg-light-pink-2 flex-shrink-0" />
                   <span className="text-sm text-black">{symptom}</span>
                 </div>
               ))}

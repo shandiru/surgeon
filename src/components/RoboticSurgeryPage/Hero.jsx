@@ -14,10 +14,10 @@ export default function RoboticSurgeryHero() {
             <h1 className="text-hero text-primary-pink leading-tight">
               Robotic Surgery in Gynecology
             </h1>
-            <p className="text-body-large md:text-subsection text-[#B51252]/80">
+            <p className="text-body-large md:text-subsection text-primary-pink/80">
               Advanced da Vinci Surgical System
             </p>
-            <p className="text-body-large leading-relaxed text-[#B51252]/70 max-w-xl mx-auto md:mx-0">
+            <p className="text-body-large leading-relaxed text-primary-pink/70 max-w-xl mx-auto md:mx-0">
               Experience the future of minimally invasive gynecologic surgery with enhanced
               precision, control, and superior patient outcomes through cutting-edge robotic
               technology.
@@ -25,7 +25,7 @@ export default function RoboticSurgeryHero() {
 
             {/* CTA Button */}
             <div className="pt-6">
-              <button className="inline-flex items-center gap-2 bg-[#F93981] hover:bg-[#e42e72] text-white font-semibold px-6 py-3 rounded-md shadow-md transition-all duration-300 text-button">
+              <button className="inline-flex items-center gap-2 bg-primary-pink text-white font-semibold px-6 py-3 rounded-md shadow-md transition-all duration-300 text-button">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-5 h-5"

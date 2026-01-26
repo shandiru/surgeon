@@ -3,7 +3,7 @@ import React from "react";
 
 export default function HeroSection() {
   return (
-    <div className="relative overflow-hidden bg-[#FEE6EA]">
+    <div className="relative overflow-hidden bg-light-pink-1">
       {" "}
       {/* removed border-b */}
       {/* Subtle grid effect mask */}
@@ -35,7 +35,7 @@ export default function HeroSection() {
         </p>
 
         {/* CTA Button */}
-        <button className="inline-flex items-center justify-center gap-2 px-6 h-10 rounded-md font-medium text-button text-white bg-primary-pink hover:bg-[#e93a7d] transition-all shadow-sm">
+        <button className="inline-flex items-center justify-center gap-2 px-6 h-10 rounded-md font-medium text-button text-white bg-primary-pink  transition-all shadow-sm">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="w-5 h-5"

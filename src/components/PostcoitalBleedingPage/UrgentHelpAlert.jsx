@@ -4,7 +4,7 @@ const UrgentHelpAlert = () => {
   return (
     <div
       role="alert"
-      className="w-full max-w-6xl mx-auto mb-10 rounded-xl bg-[#FFF5F7] p-6 shadow-md"
+      className="w-full max-w-6xl mx-auto mb-10 rounded-xl bg-light-pink-2 p-6 shadow-md"
     >
       {/* Header */}
       <div className="flex items-center gap-3 mb-4">
@@ -28,7 +28,7 @@ const UrgentHelpAlert = () => {
       </div>
 
       {/* Content */}
-      <div className="space-y-4 text-sm text-[#444]">
+      <div className="space-y-4 text-sm text-black">
         <ul className="space-y-2">
           {[
             "Heavy bleeding (soaking pads/tampons or causing dizziness)",
@@ -42,7 +42,7 @@ const UrgentHelpAlert = () => {
           ))}
         </ul>
 
-        <p className="font-medium text-black bg-[#FFEAF0] p-3 rounded-md">
+        <p className="font-medium text-black bg-light-pink-1 p-3 rounded-md">
           Get medical help straight away if you notice these symptoms.
         </p>
       </div>

@@ -8,7 +8,7 @@ const PostmenopausalBleedingGuideCard4 = ({ setShowCard, setActiveButton }) => {
         {/* FULL WRAPPER */}
         <div className="rounded-2xl p-8 border border-primary-pink shadow-md bg-white hover:shadow-lg transition">
           {/* HEADER */}
-          <div className="px-6 border-b border-[#FEE6EA] pb-5">
+          <div className="px-6 border-b border-light-pink-1 pb-5">
             <h2 className="font-bold flex items-center gap-2 text-xl sm:text-2xl text-primary-pink">
               Symptoms You Might Notice
             </h2>
@@ -21,7 +21,7 @@ const PostmenopausalBleedingGuideCard4 = ({ setShowCard, setActiveButton }) => {
               include:
             </p>
 
-            <ul className="space-y-2 text-sm list-disc pl-5 text-[#374151]">
+            <ul className="space-y-2 text-sm list-disc pl-5 text-black">
               <li>Vaginal dryness</li>
               <li>Decreased libido</li>
               <li>Insomnia</li>
@@ -32,7 +32,7 @@ const PostmenopausalBleedingGuideCard4 = ({ setShowCard, setActiveButton }) => {
 
             <div
               role="alert"
-              className="mt-6 rounded-lg bg-[#FFF0F5] px-4 py-3 text-xs text-black font-medium shadow-sm"
+              className="mt-6 rounded-lg bg-light-pink-2 px-4 py-3 text-xs text-black font-medium shadow-sm"
             >
               Hot flushes and other menopause symptoms often ease over time — but bleeding should
               never return.

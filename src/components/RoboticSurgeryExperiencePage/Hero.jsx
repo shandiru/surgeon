@@ -6,7 +6,7 @@ export default function Hero() {
     <section className="relative py-16 md:py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Container with rounded corners - prominent on left, slight on right */}
-        <div className="rounded-[3rem] overflow-hidden bg-[#FDE7EB]">
+        <div className="rounded-[3rem] overflow-hidden bg-light-pink-1">
           <div className="px-6 md:px-12 lg:px-16 py-12 md:py-16">
             {/* Horizontal Layout: Text Left, Images Right - Mobile: Images First */}
             <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
@@ -59,7 +59,7 @@ export default function Hero() {
 
                 {/* CTA Buttons */}
                 <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-2">
-                  <button className="cursor-pointer inline-flex items-center justify-center px-6 py-3 rounded-lg bg-primary-pink text-white font-semibold text-button hover:bg-[#E03E7C] transition-all duration-300 shadow-md hover:shadow-lg">
+                  <button className="cursor-pointer inline-flex items-center justify-center px-6 py-3 rounded-lg bg-primary-pink text-white font-semibold text-button hover:bg-primary-pink transition-all duration-300 shadow-md hover:shadow-lg">
                     Let's Start
                   </button>
                   <button className="cursor-pointer inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg border-2 border-primary-pink text-primary-pink font-semibold text-button hover:bg-light-pink transition-all duration-300">
