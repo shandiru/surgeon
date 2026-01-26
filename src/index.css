@@ -11,9 +11,9 @@
   --color-light-pink-1: #fde7eb;
   --color-light-pink-2: #ffd6e1;
   --color-black: #000000;
-  --color-white:
-    --font-family-sans: "Poppins", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji";
+  --color-white: #fff;
+  --font-family-sans:
+    "Poppins", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
 html,
