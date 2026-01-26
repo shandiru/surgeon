@@ -1,16 +1,11 @@
-'use client';
-import React from 'react';
+"use client";
+import React from "react";
 
 const EndometrialCard2 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6 pb-10 px-3">
-      
       {/* Card Container */}
-      <div
-        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-2xl border p-8 shadow-sm animate-in slide-in-from-right-5 duration-300"
-        className="border border-primary-pink bg-white"
-      >
-
+      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-2xl border border-primary-pink bg-white p-8 shadow-sm animate-in slide-in-from-right-5 duration-300">
         {/* Card Header */}
         <div className="grid auto-rows-min items-start gap-1.5">
           <div className="leading-none font-semibold flex items-center gap-2 text-primary-pink">
@@ -37,39 +32,40 @@ const EndometrialCard2 = ({ setShowCard, setActiveButton }) => {
 
         {/* Card Content */}
         <div className="space-y-6">
-
           {/* Intro Box */}
           <div className="p-4 rounded-xl border border-primary-pink transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-100 bg-primary-pink">
             <p className="text-lg leading-relaxed text-[#BB125B]">
-              Endometrial cancer develops when cells in the endometrial lining grow abnormally and uncontrollably.
-              Recognizing how it develops can help with early detection and treatment.
+              Endometrial cancer develops when cells in the endometrial lining grow abnormally and
+              uncontrollably. Recognizing how it develops can help with early detection and
+              treatment.
             </p>
           </div>
 
           {/* Types / Early Changes */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-
             <div className="p-4 rounded-xl border border-primary-pink transition-all duration-300 hover:shadow-md bg-white">
               <h4 className="font-semibold mb-2 text-primary-pink">Type 1 Endometrial Cancer</h4>
               <p className="text-sm text-[#BB125B]">
-                Most common type. Linked to excess estrogen exposure. Usually grows slowly and is often detected early.
+                Most common type. Linked to excess estrogen exposure. Usually grows slowly and is
+                often detected early.
               </p>
             </div>
 
             <div className="p-4 rounded-xl border border-primary-pink transition-all duration-300 hover:shadow-md bg-white">
               <h4 className="font-semibold mb-2 text-primary-pink">Type 2 Endometrial Cancer</h4>
               <p className="text-sm text-[#BB125B]">
-                Less common but more aggressive. Not related to estrogen and more likely to spread beyond the uterus.
+                Less common but more aggressive. Not related to estrogen and more likely to spread
+                beyond the uterus.
               </p>
             </div>
 
             <div className="p-4 rounded-xl border border-primary-pink transition-all duration-300 hover:shadow-md bg-white">
               <h4 className="font-semibold mb-2 text-primary-pink">Endometrial Hyperplasia</h4>
               <p className="text-sm text-[#BB125B]">
-                Some women first develop a pre-cancerous condition where the uterine lining becomes too thick. Early treatment can prevent progression to cancer.
+                Some women first develop a pre-cancerous condition where the uterine lining becomes
+                too thick. Early treatment can prevent progression to cancer.
               </p>
             </div>
-
           </div>
 
           {/* Extra Info Box */}
@@ -94,7 +90,8 @@ const EndometrialCard2 = ({ setShowCard, setActiveButton }) => {
               Did You Know?
             </h4>
             <p className="text-sm text-[#BB125B]">
-              Early detection of endometrial hyperplasia and timely treatment can prevent it from progressing to endometrial cancer.
+              Early detection of endometrial hyperplasia and timely treatment can prevent it from
+              progressing to endometrial cancer.
             </p>
           </div>
 
@@ -110,7 +107,6 @@ const EndometrialCard2 = ({ setShowCard, setActiveButton }) => {
               Continue to Next Section
             </button>
           </div>
-
         </div>
       </div>
     </div>
