@@ -1,20 +1,19 @@
-'use client';
-import { Lightbulb } from 'lucide-react';
-import React from 'react';
+"use client";
+import { Lightbulb } from "lucide-react";
+import React from "react";
 
 const EndometriosisCard1 = ({ setShowCard, setActiveButton }) => {
-  const pink = '#FFC5D3';
-  const deepPink = '#FF4B8B';
+  const pink = "#FFC5D3";
+  const deepPink = "#FF4B8B";
 
   return (
     <div className="space-y-6 pb-10">
-
       <div className="container mx-auto px-4 text-center">
         {/* Badge */}
         <span
           data-slot="badge"
           className="inline-flex items-center justify-center rounded-md px-2 py-0.5 text-xs font-medium mb-4"
-          style={{ backgroundColor: 'white', color: deepPink, border: `1px solid ${deepPink}` }}
+          style={{ backgroundColor: "white", color: deepPink, border: `1px solid ${deepPink}` }}
         >
           Medical Information Guide
         </span>
@@ -28,7 +27,7 @@ const EndometriosisCard1 = ({ setShowCard, setActiveButton }) => {
         </h1>
 
         {/* Subtext */}
-        <p className="text-xl mb-8 max-w-2xl mx-auto" style={{ color: '#7a2f4f' }}>
+        <p className="text-xl mb-8 max-w-2xl mx-auto" style={{ color: "#7a2f4f" }}>
           A comprehensive guide to symptoms, diagnosis & treatment options for endometriosis
         </p>
         <div className="max-w-4xl mx-auto">
@@ -37,7 +36,7 @@ const EndometriosisCard1 = ({ setShowCard, setActiveButton }) => {
             <h2 className="text-3xl font-bold mb-4" style={{ color: deepPink }}>
               What Is Endometriosis?
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-black">
               Understanding the condition and how it affects your body
             </p>
           </div>
@@ -76,17 +75,20 @@ const EndometriosisCard1 = ({ setShowCard, setActiveButton }) => {
                     This abnormal tissue can affect:
                   </h4>
                   <ul className="space-y-2">
-                    {['Ovaries', 'Fallopian tubes', 'The pelvic lining', '(In rare cases) other organs'].map(
-                      (item, i) => (
-                        <li key={i} className="flex items-center gap-2">
-                          <div
-                            className="w-2 h-2 rounded-full"
-                            style={{ backgroundColor: deepPink }}
-                          />
-                          {item}
-                        </li>
-                      )
-                    )}
+                    {[
+                      "Ovaries",
+                      "Fallopian tubes",
+                      "The pelvic lining",
+                      "(In rare cases) other organs",
+                    ].map((item, i) => (
+                      <li key={i} className="flex items-center gap-2">
+                        <div
+                          className="w-2 h-2 rounded-full"
+                          style={{ backgroundColor: deepPink }}
+                        />
+                        {item}
+                      </li>
+                    ))}
                   </ul>
                 </div>
 
@@ -96,7 +98,7 @@ const EndometriosisCard1 = ({ setShowCard, setActiveButton }) => {
                     This can lead to:
                   </h4>
                   <ul className="space-y-2">
-                    {['Inflammation', 'Pain', 'Scarring and adhesions'].map((item, i) => (
+                    {["Inflammation", "Pain", "Scarring and adhesions"].map((item, i) => (
                       <li key={i} className="flex items-center gap-2" style={{ color: deepPink }}>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -118,10 +120,7 @@ const EndometriosisCard1 = ({ setShowCard, setActiveButton }) => {
               </div>
 
               {/* Highlight Note */}
-              <div
-                className="p-4 rounded-lg mt-6 shadow-inner"
-                style={{ backgroundColor: pink }}
-              >
+              <div className="p-4 rounded-lg mt-6 shadow-inner" style={{ backgroundColor: pink }}>
                 <p className="text-sm" style={{ color: deepPink }}>
                   <strong>Important:</strong> Endometriosis is not dangerous, but it can cause
                   significant pain and affect fertility if untreated.
@@ -142,10 +141,7 @@ const EndometriosisCard1 = ({ setShowCard, setActiveButton }) => {
             Continue to Next Section
           </button>
         </div>
-
       </div>
-
-
     </div>
   );
 };

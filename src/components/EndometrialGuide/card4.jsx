@@ -1,11 +1,10 @@
-'use client';
+"use client";
 import { useState, useEffect } from "react";
 import { FaExclamation } from "react-icons/fa";
 import AOS from "aos";
-import 'aos/dist/aos.css';
+import "aos/dist/aos.css";
 
 const EndometrialCard4 = ({ setShowCard, setActiveButton }) => {
- 
   useEffect(() => {
     AOS.init({ duration: 800, once: true });
   }, []);
@@ -29,30 +28,29 @@ const EndometrialCard4 = ({ setShowCard, setActiveButton }) => {
         >
           {/* Card Header */}
           <div className="px-6">
-            <div className="font-semibold text-xl mb-1 text-[#FF4B8B]">
-              Early Warning Signs
-            </div>
-            <div className="text-sm text-gray-600">
-              Endometrial cancer often shows early warning signs. The most common is abnormal vaginal bleeding.
+            <div className="font-semibold text-xl mb-1 text-[#FF4B8B]">Early Warning Signs</div>
+            <div className="text-sm text-black">
+              Endometrial cancer often shows early warning signs. The most common is abnormal
+              vaginal bleeding.
             </div>
           </div>
 
           {/* Card Content */}
           <div className="px-6">
             <div className="grid md:grid-cols-2 gap-4">
-              {[ 
+              {[
                 [
-                  'Unusual bleeding or spotting between periods or after menopause',
-                  'Long, heavy, or frequent bleeding (especially in women over 40)',
-                  'Thin white or clear vaginal discharge (postmenopausal women)',
-                  'Lower abdominal or pelvic pain'
+                  "Unusual bleeding or spotting between periods or after menopause",
+                  "Long, heavy, or frequent bleeding (especially in women over 40)",
+                  "Thin white or clear vaginal discharge (postmenopausal women)",
+                  "Lower abdominal or pelvic pain",
                 ],
                 [
-                  'A lump or mass in the lower abdomen',
-                  'Difficulty or pain while urinating',
-                  'Pain during sexual intercourse',
-                  'Unexplained weight loss'
-                ]
+                  "A lump or mass in the lower abdomen",
+                  "Difficulty or pain while urinating",
+                  "Pain during sexual intercourse",
+                  "Unexplained weight loss",
+                ],
               ].map((column, colIndex) => (
                 <div key={colIndex} className="space-y-3" data-aos="fade-left">
                   {column.map((symptom, i) => (
@@ -77,24 +75,24 @@ const EndometrialCard4 = ({ setShowCard, setActiveButton }) => {
             style={{ backgroundColor: Pink, border: `1px solid ${Pink}` }}
             data-aos="fade-up"
           >
-            <p className="text-sm font-medium text-white text-center" >
-              <strong>Important:</strong> If you experience any of these symptoms, it's important to seek medical evaluation.
+            <p className="text-sm font-medium text-white text-center">
+              <strong>Important:</strong> If you experience any of these symptoms, it's important to
+              seek medical evaluation.
             </p>
           </div>
-        {/* NEXT BUTTON */}
-        <div className="pt-4 flex justify-center">
-          <button
-            onClick={() => {
-              setShowCard(5);
-              setActiveButton(4);
-            }}
-            className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all"
-          >
-            Continue to Next Step
-          </button>
+          {/* NEXT BUTTON */}
+          <div className="pt-4 flex justify-center">
+            <button
+              onClick={() => {
+                setShowCard(5);
+                setActiveButton(4);
+              }}
+              className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all"
+            >
+              Continue to Next Step
+            </button>
+          </div>
         </div>
-        </div>
-
       </div>
     </div>
   );

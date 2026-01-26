@@ -5,15 +5,15 @@ export default function RememberCard() {
     <section className="py-12 px-4 md:px-50 bg-white">
       <div
         data-slot="card"
-        className="bg-white text-[#212529] flex flex-col gap-6 rounded-2xl py-10 px-6 shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+        className="bg-white text-black flex flex-col gap-6 rounded-2xl py-10 px-6 shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
       >
         {/* Header */}
         <div className="flex items-center gap-3 mb-4">
-          <h2 className="font-bold text-3xl text-[#d63384]">Remember</h2>
+          <h2 className="font-bold text-3xl text-primary-pink">Remember</h2>
         </div>
 
         {/* Key points */}
-        <div className="grid md:grid-cols-2 gap-6 text-base text-[#495057] leading-relaxed">
+        <div className="grid md:grid-cols-2 gap-6 text-base text-black leading-relaxed">
           <div className="space-y-2">
             <p>✓ Fibroids are common and treatable</p>
             <p>✓ They are not cancerous</p>
@@ -25,16 +25,14 @@ export default function RememberCard() {
         </div>
 
         {/* Divider */}
-        <div className="h-px bg-[#FFC5D3] my-2" />
+        <div className="h-px bg-light-pink-2 my-2" />
 
         {/* Call-to-action */}
         <div className="text-center">
-          <p className="text-lg font-medium text-[#d63384] mb-6">
+          <p className="text-lg font-medium text-primary-pink mb-6">
             If you have symptoms of fibroids, book an appointment — we're here to help.
           </p>
-          <button
-            className="inline-flex items-center justify-center gap-2 text-sm font-medium text-white bg-[#d63384] hover:bg-[#c22573] transition-all h-12 rounded-md px-8 shadow-md hover:shadow-lg active:scale-[0.97]"
-          >
+          <button className="inline-flex items-center justify-center gap-2 text-sm font-medium text-white bg-primary-pink hover:bg-primary-pink/80 transition-all h-12 rounded-md px-8 shadow-md hover:shadow-lg active:scale-[0.97]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="22"

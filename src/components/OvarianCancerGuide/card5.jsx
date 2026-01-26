@@ -7,32 +7,33 @@ const OvarianCancerGuidecard5 = ({ setShowCard, setActiveButton }) => {
     {
       number: "1",
       title: "CT scan",
-      description: "Produces detailed images of the ovaries and shows abnormalities"
+      description: "Produces detailed images of the ovaries and shows abnormalities",
     },
     {
       number: "2",
       title: "X-ray",
-      description: "Checks if cancer has spread to other areas of the body"
+      description: "Checks if cancer has spread to other areas of the body",
     },
     {
       number: "3",
       title: "Biopsy",
-      description: "Tissue or cells are examined for cancer"
+      description: "Tissue or cells are examined for cancer",
     },
     {
       number: "4",
       title: "Laparoscopy",
-      description:
-        "A small camera is inserted into the abdomen to directly examine the ovaries"
-    }
+      description: "A small camera is inserted into the abdomen to directly examine the ovaries",
+    },
   ];
 
   return (
     <div className="space-y-6 pb-10">
       {/* CARD CONTAINER */}
-      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 
+      <div
+        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 
         flex flex-col gap-8 rounded-2xl border border-[#FF4B8B]/10 shadow-sm p-8 
-        animate-in slide-in-from-right-5 duration-300 bg-white">
+        animate-in slide-in-from-right-5 duration-300 bg-white"
+      >
         {/* HEADER */}
         <div className="text-center space-y-2">
           <div className="flex items-center justify-center gap-2 mb-2">
@@ -62,7 +63,7 @@ const OvarianCancerGuidecard5 = ({ setShowCard, setActiveButton }) => {
                 </span>
                 {item.title}
               </div>
-              <p className="text-gray-600">{item.description}</p>
+              <p className="text-black">{item.description}</p>
             </div>
           ))}
         </div>
@@ -74,8 +75,8 @@ const OvarianCancerGuidecard5 = ({ setShowCard, setActiveButton }) => {
               →
             </div>
             <p className="font-medium text-[#FF4B8B]">
-              If ovarian cancer is suspected, these tests also help determine
-              how far the cancer has spread.
+              If ovarian cancer is suspected, these tests also help determine how far the cancer has
+              spread.
             </p>
           </div>
         </div>

@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import { Target, Stethoscope, Microscope, Scan, Camera, Activity } from "lucide-react";
 import React, { useState } from "react";
 import { LuStethoscope } from "react-icons/lu";
@@ -6,8 +6,8 @@ import { LuStethoscope } from "react-icons/lu";
 const EndometrialGuideCard5 = ({ setShowCard, setActiveButton }) => {
   const [activeAccordion, setActiveAccordion] = useState(null);
 
-  const pink = '#FFC5D3'
-  const deepPink = '#FF4B8B'
+  const pink = "#FFC5D3";
+  const deepPink = "#FF4B8B";
 
   return (
     <div className="px-3">
@@ -24,7 +24,6 @@ const EndometrialGuideCard5 = ({ setShowCard, setActiveButton }) => {
         <div
           className="bg-white text-gray-900 flex flex-col gap-6 rounded-2xl shadow-sm mb-6 
                            transition-all duration-300 hover:shadow-md hover:scale-[1.01] active:scale-[0.99]"
-
           data-aos="fade-up"
         >
           {/* Card Header */}
@@ -32,8 +31,9 @@ const EndometrialGuideCard5 = ({ setShowCard, setActiveButton }) => {
             <div className="font-semibold text-xl" style={{ color: deepPink }}>
               Diagnostic Process
             </div>
-            <div className="text-sm text-gray-600">
-              Because symptoms may be similar to other conditions, a thorough evaluation is essential.
+            <div className="text-sm text-black">
+              Because symptoms may be similar to other conditions, a thorough evaluation is
+              essential.
             </div>
           </div>
 
@@ -48,9 +48,9 @@ const EndometrialGuideCard5 = ({ setShowCard, setActiveButton }) => {
                 {/* Left Column */}
                 <div className="space-y-3" data-aos="fade-left">
                   {[
-                    'Medical & family history review',
-                    'Physical exam – checking for lumps or masses in the abdomen',
-                    'Pelvic exam & Pap smear',
+                    "Medical & family history review",
+                    "Physical exam – checking for lumps or masses in the abdomen",
+                    "Pelvic exam & Pap smear",
                   ].map((item, i) => (
                     <div key={i} className="flex items-start gap-3">
                       <span
@@ -67,9 +67,9 @@ const EndometrialGuideCard5 = ({ setShowCard, setActiveButton }) => {
                 {/* Right Column */}
                 <div className="space-y-3" data-aos="fade-left">
                   {[
-                    'Transvaginal ultrasound – imaging of the uterus and reproductive organs',
-                    'Endometrial biopsy – taking a tissue sample from the uterus for examination',
-                    'Dilation & Curettage (D&C) – removing part of the uterine lining for analysis',
+                    "Transvaginal ultrasound – imaging of the uterus and reproductive organs",
+                    "Endometrial biopsy – taking a tissue sample from the uterus for examination",
+                    "Dilation & Curettage (D&C) – removing part of the uterine lining for analysis",
                   ].map((item, i) => (
                     <div key={i + 3} className="flex items-start gap-3">
                       <span
@@ -89,13 +89,13 @@ const EndometrialGuideCard5 = ({ setShowCard, setActiveButton }) => {
           {/* Stage Info Box */}
           <div
             className="mt-4 mx-6 p-4 rounded-lg transition-all duration-300 hover:shadow-md hover:scale-[1.01]"
-            style={{ border: `1px solid ${pink}`, backgroundColor: '#fff' }}
+            style={{ border: `1px solid ${pink}`, backgroundColor: "#fff" }}
             data-aos="fade-up"
           >
             <h4 className="font-semibold mb-2" style={{ color: deepPink }}>
               If cancer is confirmed:
             </h4>
-            <p className="text-sm text-gray-600 mb-2">
+            <p className="text-sm text-black mb-2">
               Your doctor will assign a cancer stage, which describes:
             </p>
             <ul className="text-sm space-y-1 list-disc ml-6 text-gray-700">
@@ -129,8 +129,6 @@ const EndometrialGuideCard5 = ({ setShowCard, setActiveButton }) => {
           </div>
         </div>
       </div>
-
-
     </div>
   );
 };

@@ -1,20 +1,20 @@
-'use client'
+"use client";
 
-import React, { useEffect } from 'react'
-import AOS from 'aos'
-import 'aos/dist/aos.css'  // Import AOS styles
-import { LuStethoscope } from 'react-icons/lu'
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
+import { LuStethoscope } from "react-icons/lu";
 
 export default function EndometrialDiagnosisSection() {
-  const pink = '#FFC5D3'
-  const deepPink = '#FF4B8B'
+  const pink = "#FFC5D3";
+  const deepPink = "#FF4B8B";
 
   useEffect(() => {
     AOS.init({
       duration: 1000, // Animation duration
       once: true, // Animation happens only once when scrolled
-    })
-  }, [])
+    });
+  }, []);
 
   return (
     <section className="px-4 md:px-6 lg:px-8 py-14 bg-white" data-aos="fade-up">
@@ -31,7 +31,6 @@ export default function EndometrialDiagnosisSection() {
         <div
           className="bg-white text-gray-900 flex flex-col gap-6 rounded-2xl py-6 shadow-sm mb-6 
                      transition-all duration-300 hover:shadow-md hover:scale-[1.01] active:scale-[0.99]"
-         
           data-aos="fade-up"
         >
           {/* Card Header */}
@@ -39,8 +38,9 @@ export default function EndometrialDiagnosisSection() {
             <div className="font-semibold text-xl" style={{ color: deepPink }}>
               Diagnostic Process
             </div>
-            <div className="text-sm text-gray-600">
-              Because symptoms may be similar to other conditions, a thorough evaluation is essential.
+            <div className="text-sm text-black">
+              Because symptoms may be similar to other conditions, a thorough evaluation is
+              essential.
             </div>
           </div>
 
@@ -55,9 +55,9 @@ export default function EndometrialDiagnosisSection() {
                 {/* Left Column */}
                 <div className="space-y-3" data-aos="fade-left">
                   {[
-                    'Medical & family history review',
-                    'Physical exam – checking for lumps or masses in the abdomen',
-                    'Pelvic exam & Pap smear',
+                    "Medical & family history review",
+                    "Physical exam – checking for lumps or masses in the abdomen",
+                    "Pelvic exam & Pap smear",
                   ].map((item, i) => (
                     <div key={i} className="flex items-start gap-3">
                       <span
@@ -74,9 +74,9 @@ export default function EndometrialDiagnosisSection() {
                 {/* Right Column */}
                 <div className="space-y-3" data-aos="fade-left">
                   {[
-                    'Transvaginal ultrasound – imaging of the uterus and reproductive organs',
-                    'Endometrial biopsy – taking a tissue sample from the uterus for examination',
-                    'Dilation & Curettage (D&C) – removing part of the uterine lining for analysis',
+                    "Transvaginal ultrasound – imaging of the uterus and reproductive organs",
+                    "Endometrial biopsy – taking a tissue sample from the uterus for examination",
+                    "Dilation & Curettage (D&C) – removing part of the uterine lining for analysis",
                   ].map((item, i) => (
                     <div key={i + 3} className="flex items-start gap-3">
                       <span
@@ -96,13 +96,13 @@ export default function EndometrialDiagnosisSection() {
           {/* Stage Info Box */}
           <div
             className="mt-4 mx-6 p-4 rounded-lg transition-all duration-300 hover:shadow-md hover:scale-[1.01]"
-            style={{ border: `1px solid ${pink}`, backgroundColor: '#fff' }}
+            style={{ border: `1px solid ${pink}`, backgroundColor: "#fff" }}
             data-aos="fade-up"
           >
             <h4 className="font-semibold mb-2" style={{ color: deepPink }}>
               If cancer is confirmed:
             </h4>
-            <p className="text-sm text-gray-600 mb-2">
+            <p className="text-sm text-black mb-2">
               Your doctor will assign a cancer stage, which describes:
             </p>
             <ul className="text-sm space-y-1 list-disc ml-6 text-gray-700">
@@ -125,5 +125,5 @@ export default function EndometrialDiagnosisSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

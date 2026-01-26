@@ -45,15 +45,15 @@ export default function CervicalCancerDiagnosis() {
   return (
     <section className="py-12" data-aos="fade-up">
       <div className="max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
-        <div className="bg-[#fff5f8] text-[#4b1e30] flex flex-col gap-6 rounded-xl border border-[#f5a9bd] border-l-4 border-l-[#FF4B8B] shadow-sm py-6">
-          
+        <div className="bg-light-pink-1 text-black flex flex-col gap-6 rounded-xl border border-light-pink-2 border-l-4 border-l-primary-pink shadow-sm py-6">
+
           {/* Header */}
           <div className="px-6 grid gap-1.5" data-aos="fade-left">
-            <div className="flex items-center gap-2 text-xl font-semibold text-[#FF4B8B]">
+            <div className="flex items-center gap-2 text-xl font-semibold text-primary-pink">
               <LuMicroscope className="w-6 h-6" />
               How is Cervical Cancer Diagnosed?
             </div>
-            <p className="text-[#7a2f4f]">
+            <p className="text-black">
               If a Pap test shows abnormal results, your doctor may recommend further tests.
             </p>
           </div>
@@ -61,22 +61,22 @@ export default function CervicalCancerDiagnosis() {
           {/* Common Diagnostic Methods */}
           <div className="px-6 space-y-6" data-aos="fade-up">
             <div>
-              <h3 className="font-semibold text-lg mb-4 text-[#4b1e30]">
+              <h3 className="font-semibold text-lg mb-4 text-black">
                 Common Diagnostic Methods
               </h3>
               <div className="grid gap-4">
                 {methods.map((method, index) => (
                   <div
                     key={index}
-                    className="flex gap-4 p-4 bg-white border border-[#f5c2d2] rounded-lg transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]"
+                    className="flex gap-4 p-4 bg-white border border-light-pink-2 rounded-lg transition-all duration-300 hover:bg-light-pink-1 hover:shadow-lg hover:border-light-pink-2 active:bg-light-pink-1 active:shadow-lg active:border-light-pink-2"
                     data-aos="fade-left"
                   >
-                    <div className="w-8 h-8 flex items-center justify-center rounded-full bg-[#FFC5D3] text-[#FF4B8B] text-sm font-bold flex-shrink-0">
+                    <div className="w-8 h-8 flex items-center justify-center rounded-full bg-light-pink-2 text-primary-pink text-sm font-bold flex-shrink-0">
                       {index + 1}
                     </div>
                     <div>
-                      <h4 className="font-medium text-[#4b1e30]">{method.title}</h4>
-                      <p className="text-sm text-[#7a2f4f] mt-1">
+                      <h4 className="font-medium text-black">{method.title}</h4>
+                      <p className="text-sm text-black mt-1">
                         – {method.description}
                       </p>
                     </div>
@@ -86,21 +86,21 @@ export default function CervicalCancerDiagnosis() {
             </div>
 
             {/* Divider */}
-            <hr className="border-t border-[#f5c2d2]" />
+            <hr className="border-t border-light-pink-2" />
 
             {/* Additional Imaging Tests */}
             <div data-aos="fade-up">
-              <h3 className="font-semibold text-lg mb-4 text-[#4b1e30]">
+              <h3 className="font-semibold text-lg mb-4 text-black">
                 Additional Imaging Tests
               </h3>
-              <p className="text-[#7a2f4f] mb-4">
+              <p className="text-black mb-4">
                 If doctors suspect the cancer has spread, additional imaging tests may be ordered:
               </p>
               <div className="flex flex-wrap gap-2">
                 {imagingTests.map((test, idx) => (
                   <span
                     key={idx}
-                    className="text-sm border border-[#f5a9bd] bg-[#FFC5D3] text-[#4b1e30] px-3 py-1 rounded-md font-medium"
+                    className="text-sm border border-light-pink-2 bg-light-pink-2 text-black px-3 py-1 rounded-md font-medium"
                   >
                     {test}
                   </span>

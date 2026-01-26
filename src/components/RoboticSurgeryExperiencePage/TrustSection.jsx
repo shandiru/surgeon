@@ -1,17 +1,17 @@
-import React from 'react';
-import { Users, Calendar } from 'lucide-react';
+import React from "react";
+import { Users, Calendar } from "lucide-react";
 
 export default function TrustSection() {
   const features = [
     {
       icon: <Users className="w-6 h-6" />,
-      title: 'Experienced team',
-      description: 'Skilled robotic surgeons, truly caring for your well-being.',
+      title: "Experienced team",
+      description: "Skilled robotic surgeons, truly caring for your well-being.",
     },
     {
       icon: <Calendar className="w-6 h-6" />,
-      title: 'Flexible scheduling',
-      description: 'We offer flexible scheduling to fit your lifestyle.',
+      title: "Flexible scheduling",
+      description: "We offer flexible scheduling to fit your lifestyle.",
     },
   ];
 
@@ -28,8 +28,9 @@ export default function TrustSection() {
               </h2>
 
               {/* Descriptive Paragraph */}
-              <p className="text-body-large text-gray-600 leading-relaxed">
-                We maintain the highest standards of care and safety, providing personalized attention throughout your healthcare journey.
+              <p className="text-body-large text-black leading-relaxed">
+                We maintain the highest standards of care and safety, providing personalized
+                attention throughout your healthcare journey.
               </p>
 
               {/* Feature List */}
@@ -38,9 +39,7 @@ export default function TrustSection() {
                   <div key={index} className="flex items-start gap-4">
                     {/* Icon in Circular Background */}
                     <div className="flex-shrink-0 w-14 h-14 rounded-full bg-[#FDE7EB] border-2 border-[#FF4B8B] flex items-center justify-center">
-                      <div className="text-[#FF4B8B]">
-                        {feature.icon}
-                      </div>
+                      <div className="text-[#FF4B8B]">{feature.icon}</div>
                     </div>
 
                     {/* Feature Content */}
@@ -48,9 +47,7 @@ export default function TrustSection() {
                       <h3 className="text-subsection text-gray-900 font-semibold mb-1">
                         {feature.title}
                       </h3>
-                      <p className="text-body text-gray-600 leading-relaxed">
-                        {feature.description}
-                      </p>
+                      <p className="text-body text-black leading-relaxed">{feature.description}</p>
                     </div>
                   </div>
                 ))}

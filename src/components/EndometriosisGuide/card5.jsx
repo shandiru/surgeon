@@ -1,37 +1,31 @@
 import { useState } from "react";
 
 const Endometriosiscard5 = ({ setShowCard, setActiveButton }) => {
-
   const steps = [
     {
-      title: 'Pelvic Examination',
-      description:
-        'Your doctor will perform a physical examination to check for abnormalities.',
+      title: "Pelvic Examination",
+      description: "Your doctor will perform a physical examination to check for abnormalities.",
     },
     {
-      title: 'Imaging Tests',
-      description:
-        'Ultrasound or MRI scans to look for signs of endometriosis and cysts.',
+      title: "Imaging Tests",
+      description: "Ultrasound or MRI scans to look for signs of endometriosis and cysts.",
     },
     {
-      title: 'Laparoscopy',
+      title: "Laparoscopy",
       description:
-        'A minor keyhole surgery using a thin camera to confirm diagnosis and sometimes take tissue samples.',
+        "A minor keyhole surgery using a thin camera to confirm diagnosis and sometimes take tissue samples.",
     },
   ];
 
   return (
     <div className="w-full px-4 sm:px-6 lg:px-10">
       <div className="max-w-4xl p-6 mx-auto">
-
         {/* Header */}
         <div className="text-center mb-10">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#FF4B8B] mb-3">
             How It&apos;s Diagnosed
           </h2>
-          <p className="text-base sm:text-lg text-gray-700">
-            Understanding the diagnostic process
-          </p>
+          <p className="text-base sm:text-lg text-gray-700">Understanding the diagnostic process</p>
         </div>
 
         {/* Steps */}
@@ -47,12 +41,13 @@ const Endometriosiscard5 = ({ setShowCard, setActiveButton }) => {
                          active:scale-[0.98]"
             >
               <div className="flex items-start gap-4 sm:gap-6">
-
                 {/* Number */}
-                <div className="min-w-[48px] min-h-[48px] sm:min-w-[56px] sm:min-h-[56px] 
+                <div
+                  className="min-w-[48px] min-h-[48px] sm:min-w-[56px] sm:min-h-[56px] 
                                 bg-[#FF4B8B] text-white 
                                 rounded-full flex items-center justify-center 
-                                font-bold text-lg sm:text-xl shadow-md">
+                                font-bold text-lg sm:text-xl shadow-md"
+                >
                   {index + 1}
                 </div>
 
@@ -62,7 +57,7 @@ const Endometriosiscard5 = ({ setShowCard, setActiveButton }) => {
                     {step.title}
                   </h3>
 
-                  <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
+                  <p className="text-black text-sm sm:text-base leading-relaxed">
                     {step.description}
                   </p>
                 </div>
@@ -87,7 +82,6 @@ const Endometriosiscard5 = ({ setShowCard, setActiveButton }) => {
             Learn About Treatment
           </button>
         </div>
-
       </div>
     </div>
   );

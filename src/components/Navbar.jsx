@@ -29,47 +29,31 @@ const Navbar = () => {
 
           {/* Desktop navigation */}
           <div className="hidden lg:flex ml-10 space-x-1 items-center relative">
-            <HashLink
-              smooth
-              to="/#about"
-              className="text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
-            >
+            <HashLink smooth to="/#about" className="text-black px-2 py-2 text-sm font-medium">
               About
             </HashLink>
-            <HashLink
-              smooth
-              to="/#experience"
-              className="text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
-            >
+            <HashLink smooth to="/#experience" className="text-black px-2 py-2 text-sm font-medium">
               Experience
             </HashLink>
             <HashLink
               smooth
               to="/#specialties"
-              className="text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
+              className="text-black px-2 py-2 text-sm font-medium"
             >
               Specialties
             </HashLink>
-            <HashLink
-              smooth
-              to="/#education"
-              className="text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
-            >
+            <HashLink smooth to="/#education" className="text-black px-2 py-2 text-sm font-medium">
               Education
             </HashLink>
             <HashLink
               smooth
               to="/PublicationsPage"
-              className="text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
+              className="text-black px-2 py-2 text-sm font-medium"
             >
               Publications
             </HashLink>
 
-            <HashLink
-              smooth
-              to="/event-list"
-              className="text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
-            >
+            <HashLink smooth to="/event-list" className="text-black px-2 py-2 text-sm font-medium">
               Event
             </HashLink>
 
@@ -77,7 +61,7 @@ const Navbar = () => {
             <div className="relative">
               <button
                 onClick={() => setIsServicesOpen(!isServicesOpen)}
-                className="flex items-center text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
+                className="flex items-center text-black px-2 py-2 text-sm font-medium"
               >
                 Treatments{" "}
                 {isServicesOpen ? (
@@ -90,49 +74,49 @@ const Navbar = () => {
                 <div className="absolute left-0 bg-white shadow-lg rounded-md mt-2 w-64 z-50">
                   <Link
                     to="/Cancer/Vulvar"
-                    className="block px-3 py-2 text-body-small text-gray-600 hover:bg-light-pink-2"
+                    className="block px-3 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
                     Vulvar Cancer
                   </Link>
                   <Link
                     to="/Cancer/VaginalCancer"
-                    className="block px-3 py-2 text-body-small text-gray-600 hover:bg-light-pink-2"
+                    className="block px-3 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
                     Vaginal Cancer
                   </Link>
                   <Link
                     to="/Cancer/OvarianCancer"
-                    className="block px-3 py-2 text-body-small text-gray-600 hover:bg-light-pink-2"
+                    className="block px-3 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
                     Ovarian Cancer
                   </Link>
                   <Link
                     to="/Cancer/EndometrialCancer"
-                    className="block px-3 py-2 text-body-small text-gray-600 hover:bg-light-pink-2"
+                    className="block px-3 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
                     Endometrial Cancer
                   </Link>
                   <Link
                     to="/Cancer/CervicalCancer"
-                    className="block px-3 py-2 text-body-small text-gray-600 hover:bg-light-pink-2"
+                    className="block px-3 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
                     Cervical Cancer
                   </Link>
                   <Link
                     to="/RoboticSurgery"
-                    className="block px-3 py-2 text-body-small text-gray-600 hover:bg-light-pink-2"
+                    className="block px-3 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
                     Robotic Surgery
                   </Link>
                   <Link
                     to="/robotic-surgery-experience"
-                    className="block px-3 py-2 text-body-small text-gray-600 hover:bg-light-pink-2"
+                    className="block px-3 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
                     Robotic Surgery Experience
@@ -215,7 +199,7 @@ const Navbar = () => {
             <div className="relative">
               <button
                 onClick={() => setIsAdditionalServicesOpen(!isAdditionalServicesOpen)}
-                className="flex items-center text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
+                className="flex items-center text-black px-2 py-2 text-sm font-medium"
               >
                 Treatment guide{" "}
                 {isAdditionalServicesOpen ? (
@@ -291,7 +275,7 @@ const Navbar = () => {
                   </Link>
                   <Link
                     to="/EndometriosisGuide"
-                    className="block px-3 py-2 text-body-small text-gray-600 hover:bg-light-pink-2"
+                    className="block px-3 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
                     EndometriosisGuide
@@ -377,11 +361,7 @@ const Navbar = () => {
               )}
             </div>
 
-            <HashLink
-              smooth
-              to="/#contact"
-              className="text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
-            >
+            <HashLink smooth to="/#contact" className="text-black px-2 py-2 text-sm font-medium">
               Contact
             </HashLink>
           </div>
@@ -430,46 +410,38 @@ const Navbar = () => {
         {/* Mobile Dropdown */}
         {isOpen && (
           <div className="lg:hidden mt-2 space-y-1">
-            <HashLink
-              smooth
-              to="/#about"
-              className="block px-3 py-2 text-body-small text-gray-600 hover:text-gray-900"
-            >
+            <HashLink smooth to="/#about" className="block px-3 py-2 text-body-small text-black">
               About
             </HashLink>
             <HashLink
               smooth
               to="/#experience"
-              className="block px-3 py-2 text-body-small text-gray-600 hover:text-gray-900"
+              className="block px-3 py-2 text-body-small text-black"
             >
               Experience
             </HashLink>
             <HashLink
               smooth
               to="/#specialties"
-              className="block px-3 py-2 text-body-small text-gray-600 hover:text-gray-900"
+              className="block px-3 py-2 text-body-small text-black"
             >
               Specialties
             </HashLink>
             <HashLink
               smooth
               to="/#education"
-              className="block px-3 py-2 text-body-small text-gray-600 hover:text-gray-900"
+              className="block px-3 py-2 text-body-small text-black"
             >
               Education
             </HashLink>
             <HashLink
               smooth
               to="/PublicationsPage"
-              className="text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
+              className="text-black px-2 py-2 text-sm font-medium"
             >
               Publications
             </HashLink>
-            <HashLink
-              smooth
-              to="/event-list"
-              className="text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
-            >
+            <HashLink smooth to="/event-list" className="text-black px-2 py-2 text-sm font-medium">
               Event
             </HashLink>
 
@@ -477,7 +449,7 @@ const Navbar = () => {
             <div className="relative">
               <button
                 onClick={() => setIsServicesOpen(!isServicesOpen)}
-                className="flex items-center text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
+                className="flex items-center text-black px-2 py-2 text-sm font-medium"
               >
                 Treatments{" "}
                 {isServicesOpen ? (
@@ -490,49 +462,49 @@ const Navbar = () => {
                 <div className="ml-4 mt-1 space-y-1">
                   <Link
                     to="/Cancer/Vulvar"
-                    className="block px-3 py-2 text-body-small text-gray-600 hover:bg-light-pink-2"
+                    className="block px-3 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
                     Vulvar Cancer
                   </Link>
                   <Link
                     to="/Cancer/VaginalCancer"
-                    className="block px-3 py-2 text-body-small text-gray-600 hover:bg-light-pink-2"
+                    className="block px-3 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
                     Vaginal Cancer
                   </Link>
                   <Link
                     to="/Cancer/OvarianCancer"
-                    className="block px-3 py-2 text-body-small text-gray-600 hover:bg-light-pink-2"
+                    className="block px-3 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
                     Ovarian Cancer
                   </Link>
                   <Link
                     to="/Cancer/EndometrialCancer"
-                    className="block px-3 py-2 text-body-small text-gray-600 hover:bg-light-pink-2"
+                    className="block px-3 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
                     Endometrial Cancer
                   </Link>
                   <Link
                     to="/Cancer/CervicalCancer"
-                    className="block px-3 py-2 text-body-small text-gray-600 hover:bg-light-pink-2"
+                    className="block px-3 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
                     Cervical Cancer
                   </Link>
                   <Link
                     to="/RoboticSurgery"
-                    className="block px-3 py-2 text-body-small text-gray-600 hover:bg-light-pink-2"
+                    className="block px-3 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
                     Robotic Surgery
                   </Link>
                   <Link
                     to="/robotic-surgery-experience"
-                    className="block px-3 py-2 text-body-small text-gray-600 hover:bg-light-pink-2"
+                    className="block px-3 py-2 text-body-small text-black hover:bg-light-pink-2"
                     onClick={closeDropdowns}
                   >
                     Robotic Surgery Experience
@@ -615,7 +587,7 @@ const Navbar = () => {
             <div className="relative">
               <button
                 onClick={() => setIsAdditionalServicesOpen(!isAdditionalServicesOpen)}
-                className="flex items-center text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
+                className="flex items-center text-black px-2 py-2 text-sm font-medium"
               >
                 Treatment guide{" "}
                 {isAdditionalServicesOpen ? (
@@ -763,11 +735,7 @@ const Navbar = () => {
               )}
             </div>
 
-            <HashLink
-              smooth
-              to="/#contact"
-              className="text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
-            >
+            <HashLink smooth to="/#contact" className="text-black px-2 py-2 text-sm font-medium">
               Contact
             </HashLink>
 

@@ -1,27 +1,26 @@
-'use client';
-import { Calendar, Heart, Pill, Star, Stethoscope } from 'lucide-react';
+"use client";
+import { Calendar, Heart, Pill, Star, Stethoscope } from "lucide-react";
 
 const Endometriosiscard7 = () => {
-
   const treatments = [
     {
       icon: <Pill className="h-6 w-6 text-[#FF4B8B]" />,
-      title: 'Pain Relief Medication',
-      description: 'Over-the-counter or prescription pain medications to manage symptoms.',
+      title: "Pain Relief Medication",
+      description: "Over-the-counter or prescription pain medications to manage symptoms.",
     },
     {
       icon: <Calendar className="h-6 w-6 text-[#FF4B8B]" />,
-      title: 'Hormone Therapy',
-      description: 'Treatments to slow or stop endometrial tissue growth.',
+      title: "Hormone Therapy",
+      description: "Treatments to slow or stop endometrial tissue growth.",
     },
     {
       icon: <Stethoscope className="h-6 w-6 text-[#FF4B8B]" />,
-      title: 'Conservative Surgery',
-      description: 'Removal of endometriosis tissue while preserving reproductive organs.',
+      title: "Conservative Surgery",
+      description: "Removal of endometriosis tissue while preserving reproductive organs.",
     },
     {
       icon: <Heart className="h-6 w-6 text-[#FF4B8B]" />,
-      title: 'Hysterectomy',
+      title: "Hysterectomy",
       description:
         "Considered only if other treatments haven't helped and you're not planning future pregnancies.",
     },
@@ -55,7 +54,7 @@ const Endometriosiscard7 = () => {
                   {item.icon}
                   {item.title}
                 </div>
-                <p className="text-gray-600 leading-relaxed">{item.description}</p>
+                <p className="text-black leading-relaxed">{item.description}</p>
               </div>
             ))}
           </div>
@@ -64,11 +63,11 @@ const Endometriosiscard7 = () => {
           <div
             className="mt-10 rounded-2xl p-8 text-center text-white shadow-md transition duration-300 
             hover:shadow-xl hover:-translate-y-1 active:scale-[0.98]"
-            style={{ backgroundColor: '#FF4B8B' }}
+            style={{ backgroundColor: "#FF4B8B" }}
           >
             <p className="text-lg font-medium">
-              We&apos;ll work closely with you to find the right balance of treatment
-              based on your symptoms and goals.
+              We&apos;ll work closely with you to find the right balance of treatment based on your
+              symptoms and goals.
             </p>
           </div>
         </div>
@@ -76,14 +75,11 @@ const Endometriosiscard7 = () => {
       {/* Next Button */}
       {/* COMPLETE GUIDE BUTTON */}
       <div className="pt-8 flex justify-center">
-        <button
-          className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all flex items-center justify-center gap-2"
-        >
+        <button className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all flex items-center justify-center gap-2">
           <Star className="w-4 h-4" />
           Complete Guide
         </button>
       </div>
-
     </div>
   );
 };

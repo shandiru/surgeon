@@ -3,22 +3,19 @@
 import { Pill, User } from "lucide-react"
 
 export default function TreatmentOptionsCard() {
-  const pink = "#FFC5D3"
-  const deepPink = "#FF4B8B"
-
   return (
     <section className="py-16 px-4 md:px-50 bg-white">
-      <div className="bg-white text-[#212529] flex flex-col gap-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 p-8">
+      <div className="bg-white text-black flex flex-col gap-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 p-8">
 
         {/* Card Header */}
         <div className="text-center">
           <div className="flex items-center justify-center gap-2 mb-3">
-            <Pill className="text-3xl" style={{ color: deepPink }} />
-            <h2 className="font-bold text-2xl md:text-3xl" style={{ color: deepPink }}>
+            <Pill className="text-3xl text-primary-pink" />
+            <h2 className="font-bold text-2xl md:text-3xl text-primary-pink">
               Treatment Options
             </h2>
           </div>
-          <p className="text-base text-gray-600">
+          <p className="text-base text-black">
             Treatment depends on your symptoms and their severity:
           </p>
         </div>
@@ -27,7 +24,7 @@ export default function TreatmentOptionsCard() {
         <div className="space-y-10">
           {/* Medication Section */}
           <div>
-            <h3 className="text-xl font-semibold mb-6" style={{ color: deepPink }}>
+            <h3 className="text-xl font-semibold mb-6 text-primary-pink">
               Medication
             </h3>
             <div className="grid md:grid-cols-2 gap-6">
@@ -41,21 +38,21 @@ export default function TreatmentOptionsCard() {
                   key={i}
                   className="rounded-xl p-5 bg-white shadow-md hover:shadow-lg hover:-translate-y-1 transition-all"
                 >
-                  <h4 className="font-semibold mb-2" style={{ color: deepPink }}>
+                  <h4 className="font-semibold mb-2 text-primary-pink">
                     {item.title}
                   </h4>
-                  <p className="text-sm text-gray-600">{item.desc}</p>
+                  <p className="text-sm text-black">{item.desc}</p>
                 </div>
               ))}
             </div>
           </div>
 
           {/* Divider */}
-          <div className="h-px w-full" style={{ backgroundColor: pink }} />
+          <div className="h-px w-full bg-light-pink-2" />
 
           {/* Procedures Section */}
           <div>
-            <h3 className="text-xl font-semibold mb-6" style={{ color: deepPink }}>
+            <h3 className="text-xl font-semibold mb-6 text-primary-pink">
               Procedures & Surgery
             </h3>
             <div className="grid md:grid-cols-2 gap-6">
@@ -69,21 +66,18 @@ export default function TreatmentOptionsCard() {
                   key={i}
                   className="rounded-xl p-5 bg-white shadow-md hover:shadow-lg hover:-translate-y-1 transition-all"
                 >
-                  <h4 className="font-semibold mb-2" style={{ color: deepPink }}>
+                  <h4 className="font-semibold mb-2 text-primary-pink">
                     {item.title}
                   </h4>
-                  <p className="text-sm text-gray-600">{item.desc}</p>
+                  <p className="text-sm text-black">{item.desc}</p>
                 </div>
               ))}
             </div>
           </div>
 
           {/* Doctor Advice Note */}
-          <div
-            className="rounded-xl p-5 text-center shadow-md"
-            style={{ backgroundColor: pink }}
-          >
-            <p className="font-medium flex items-center gap-2 justify-center" style={{ color: deepPink }}>
+          <div className="rounded-xl p-5 text-center shadow-md bg-light-pink-2">
+            <p className="font-medium flex items-center gap-2 justify-center text-primary-pink">
               <User className="text-2xl" />
               Your doctor will help you choose the safest and most effective option
               based on your symptoms and fertility plans.

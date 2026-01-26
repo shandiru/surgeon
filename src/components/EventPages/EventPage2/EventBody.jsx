@@ -1,5 +1,15 @@
-import React, { useState } from 'react';
-import { MapPin, Phone, Mail, Globe, Star, Share2, Calendar, ChevronDown, ChevronUp } from 'lucide-react';
+import React, { useState } from "react";
+import {
+  MapPin,
+  Phone,
+  Mail,
+  Globe,
+  Star,
+  Share2,
+  Calendar,
+  ChevronDown,
+  ChevronUp,
+} from "lucide-react";
 
 const EventDetail = () => {
   const [activeOrganizer, setActiveOrganizer] = useState(0);
@@ -13,7 +23,7 @@ const EventDetail = () => {
       location: "484 Ellis St, Francisco, CA 94102",
       email: "example@gmail.com",
       phone: "89+97872978129",
-      website: "www.yourwebsite.com"
+      website: "www.yourwebsite.com",
     },
     {
       name: "Mark Joe",
@@ -22,7 +32,7 @@ const EventDetail = () => {
       location: "484 Ellis St, Francisco, CA 94102",
       email: "example@gmail.com",
       phone: "89+97872978129",
-      website: "www.yourwebsite.com"
+      website: "www.yourwebsite.com",
     },
     {
       name: "Willma Mark",
@@ -31,14 +41,26 @@ const EventDetail = () => {
       location: "484 Ellis St, Francisco, CA 94102",
       email: "example@gmail.com",
       phone: "89+97872978129",
-      website: "www.yourwebsite.com"
-    }
+      website: "www.yourwebsite.com",
+    },
   ];
 
   const speakers = [
-    { name: "Annemijn Aarts", role: "The Netherlands", image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=300&h=300&fit=crop" },
-    { name: "Nadeem Abu-Rustum", role: "USA", image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop" },
-    { name: "Frederic Amant,", role: "The Netherlands", image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&h=300&fit=crop" }
+    {
+      name: "Annemijn Aarts",
+      role: "The Netherlands",
+      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=300&h=300&fit=crop",
+    },
+    {
+      name: "Nadeem Abu-Rustum",
+      role: "USA",
+      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop",
+    },
+    {
+      name: "Frederic Amant,",
+      role: "The Netherlands",
+      image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&h=300&fit=crop",
+    },
   ];
 
   const sponsors = [
@@ -47,7 +69,7 @@ const EventDetail = () => {
     "https://via.placeholder.com/200x80/EC4899/FFFFFF?text=Sponsor+3",
     "https://via.placeholder.com/200x80/10B981/FFFFFF?text=Sponsor+4",
     "https://via.placeholder.com/200x80/F59E0B/FFFFFF?text=Sponsor+5",
-    "https://via.placeholder.com/200x80/EF4444/FFFFFF?text=Sponsor+6"
+    "https://via.placeholder.com/200x80/EF4444/FFFFFF?text=Sponsor+6",
   ];
 
   const schedules = [
@@ -55,33 +77,37 @@ const EventDetail = () => {
       title: "Auditorium A",
       subtitle: "Introduction to WP",
       date: "Day 1 - 20 Nov 2020",
-      image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=300&h=300&fit=crop"
+      image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=300&h=300&fit=crop",
     },
     {
       title: "Auditorium B",
       subtitle: "Advanced Techniques",
       date: "Day 2 - 21 Nov 2020",
-      image: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=300&h=300&fit=crop"
-    }
+      image: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=300&h=300&fit=crop",
+    },
   ];
 
   const faqs = [
     {
       question: "Royal Park of America Produces",
-      answer: "Royal Park of America produces premium branded and private label lubricants for agriculture."
+      answer:
+        "Royal Park of America produces premium branded and private label lubricants for agriculture.",
     },
     {
       question: "Private label Lubricants",
-      answer: "Royal Park of America produces premium branded and private label lubricants for agriculture."
+      answer:
+        "Royal Park of America produces premium branded and private label lubricants for agriculture.",
     },
     {
       question: "Automotive, Fleet",
-      answer: "Royal Park of America produces premium branded and private label lubricants for agriculture."
+      answer:
+        "Royal Park of America produces premium branded and private label lubricants for agriculture.",
     },
     {
       question: "Industrial Applications",
-      answer: "Royal Park of America produces premium branded and private label lubricants for agriculture."
-    }
+      answer:
+        "Royal Park of America produces premium branded and private label lubricants for agriculture.",
+    },
   ];
 
   return (
@@ -99,9 +125,9 @@ const EventDetail = () => {
                 <div className="flex flex-wrap items-center gap-4 mb-6">
                   <span className="inline-flex items-center px-4 py-2 bg-[#FF4B8B]/20 text-[#FF4B8B] rounded-full font-semibold text-sm">
                     <Calendar className="w-4 h-4 mr-2" />
-                   24th and 26th June 2026.
+                    24th and 26th June 2026.
                   </span>
-                  <span className="text-gray-600 font-medium">British Gynaecology Cancer Society</span>
+                  <span className="text-black font-medium">British Gynaecology Cancer Society</span>
                 </div>
 
                 {/* Event Info Grid */}
@@ -110,14 +136,14 @@ const EventDetail = () => {
                     <MapPin className="w-5 h-5 text-[#FF4B8B] flex-shrink-0 mt-1" />
                     <div>
                       <p className="font-semibold text-gray-700">Location</p>
-                      <p className="text-gray-600">London and Birmingham</p>
+                      <p className="text-black">London and Birmingham</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
                     <Phone className="w-5 h-5 text-[#FF4B8B] flex-shrink-0 mt-1" />
                     <div>
                       <p className="font-semibold text-gray-700">Phone</p>
-                      <p className="text-gray-600">(+0064) 725 4143 68</p>
+                      <p className="text-black">(+0064) 725 4143 68</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
@@ -127,13 +153,13 @@ const EventDetail = () => {
                       ))}
                       <Star className="w-4 h-4 text-yellow-400" />
                     </div>
-                    <span className="text-gray-600">563 reviews</span>
+                    <span className="text-black">563 reviews</span>
                   </div>
                   <div className="flex items-start space-x-3">
                     <Globe className="w-5 h-5 text-[#FF4B8B] flex-shrink-0 mt-1" />
                     <div>
                       <p className="font-semibold text-gray-700">Website</p>
-                      <p className="text-gray-600">bgcs.org.uk</p>
+                      <p className="text-black">bgcs.org.uk</p>
                     </div>
                   </div>
                 </div>
@@ -145,9 +171,10 @@ const EventDetail = () => {
                     Share
                   </button>
                   <a
-                    href='https://www.bgcs.org.uk/about-us/join/'
-                    target='_blank'
-                    className="flex-1 md:flex-none px-8 py-3 bg-gradient-to-r from-[#FF4B8B] to-[#FF4B8B] hover:bg-[#FF4B8B]/20 text-white rounded-xl font-semibold transition-all transform hover:scale-105 shadow-lg">
+                    href="https://www.bgcs.org.uk/about-us/join/"
+                    target="_blank"
+                    className="flex-1 md:flex-none px-8 py-3 bg-gradient-to-r from-[#FF4B8B] to-[#FF4B8B] hover:bg-[#FF4B8B]/20 text-white rounded-xl font-semibold transition-all transform hover:scale-105 shadow-lg"
+                  >
                     Join Event
                   </a>
                 </div>
@@ -161,10 +188,16 @@ const EventDetail = () => {
               </h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
-                  The British Gynaecological Cancer Society (BGCS) is the professional home of health providers working and researching the area of gynaecological cancers.
+                  The British Gynaecological Cancer Society (BGCS) is the professional home of
+                  health providers working and researching the area of gynaecological cancers.
                 </p>
                 <p>
-                  Our members consist of medical practitioners, clinical nurse specialists and other allied professionals, including scientists who want to improve the outcome of all effected by gynaecological cancers. We represent trainees, nurses, unit leads, medical and clinical oncologists, gynaecological oncologists, pathologists and radiologists. Our membership is steadily increasing with at present 700 members and 220 members regularly attend our annual conference.
+                  Our members consist of medical practitioners, clinical nurse specialists and other
+                  allied professionals, including scientists who want to improve the outcome of all
+                  effected by gynaecological cancers. We represent trainees, nurses, unit leads,
+                  medical and clinical oncologists, gynaecological oncologists, pathologists and
+                  radiologists. Our membership is steadily increasing with at present 700 members
+                  and 220 members regularly attend our annual conference.
                 </p>
               </div>
             </div>
@@ -186,7 +219,7 @@ const EventDetail = () => {
                       <div className="absolute inset-0 rounded-full bg-[#FF4B8B] opacity-0 group-hover:opacity-10 transition-opacity"></div>
                     </div>
                     <h3 className="text-lg font-bold text-gray-900">{speaker.name}</h3>
-                    <p className="text-sm text-gray-600">{speaker.role}</p>
+                    <p className="text-sm text-black">{speaker.role}</p>
                   </div>
                 ))}
               </div>
@@ -214,9 +247,12 @@ const EventDetail = () => {
                   { icon: MapPin, text: "484 Ellis St, San Francisco, CA 94102, United States" },
                   { icon: Phone, text: "+61 2 8236 9200" },
                   { icon: Mail, text: "administrator@bgcs.org.uk" },
-                  { icon: Globe, text: "bgcs.org.uk" }
+                  { icon: Globe, text: "bgcs.org.uk" },
                 ].map((item, index) => (
-                  <div key={index} className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
+                  <div
+                    key={index}
+                    className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg"
+                  >
                     <item.icon className="w-5 h-5 text-[#FF4B8B] flex-shrink-0" />
                     <span className="text-gray-700 text-sm">{item.text}</span>
                   </div>
@@ -248,7 +284,10 @@ const EventDetail = () => {
               </h2>
               <div className="space-y-3">
                 {faqs.map((faq, index) => (
-                  <div key={index} className="border border-[#FF4B8B]/50 rounded-xl overflow-hidden">
+                  <div
+                    key={index}
+                    className="border border-[#FF4B8B]/50 rounded-xl overflow-hidden"
+                  >
                     <button
                       onClick={() => setOpenFaq(openFaq === index ? -1 : index)}
                       className="w-full flex items-center justify-between p-4 bg-[#FF4B8B]/20 hover:bg-[#FF4B8B] transition-all"
@@ -300,7 +339,7 @@ const EventDetail = () => {
                       { icon: MapPin, text: organizers[activeOrganizer].location },
                       { icon: Mail, text: organizers[activeOrganizer].email },
                       { icon: Phone, text: organizers[activeOrganizer].phone },
-                      { icon: Globe, text: organizers[activeOrganizer].website }
+                      { icon: Globe, text: organizers[activeOrganizer].website },
                     ].map((item, index) => (
                       <div key={index} className="flex items-start space-x-3">
                         <item.icon className="w-5 h-5 text-[#FF4B8B] flex-shrink-0 mt-0.5" />
@@ -316,8 +355,8 @@ const EventDetail = () => {
                       onClick={() => setActiveOrganizer(index)}
                       className={`w-14 h-14 rounded-full overflow-hidden ring-2 transition-all ${
                         activeOrganizer === index
-                          ? 'ring-[#FF4B8B] scale-110'
-                          : 'ring-gray-200 hover:ring-[#FF4B8B]/50'
+                          ? "ring-[#FF4B8B] scale-110"
+                          : "ring-gray-200 hover:ring-[#FF4B8B]/50"
                       }`}
                     >
                       <img src={org.image} alt={org.name} className="w-full h-full object-cover" />
@@ -343,7 +382,7 @@ const EventDetail = () => {
                       />
                     </div>
                     <h3 className="text-lg font-bold text-gray-900 mb-1">{schedule.title}</h3>
-                    <p className="text-sm text-gray-600 mb-2">{schedule.subtitle}</p>
+                    <p className="text-sm text-black mb-2">{schedule.subtitle}</p>
                     <span className="inline-block px-4 py-1 bg-[#FF4B8B]/20 text-[#FF4B8B] rounded-full text-sm font-semibold">
                       {schedule.date}
                     </span>

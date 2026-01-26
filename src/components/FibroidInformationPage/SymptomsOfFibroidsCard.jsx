@@ -3,13 +3,10 @@
 import { AlertCircle } from "lucide-react"
 
 export default function SymptomsOfFibroidsCard() {
-  const pink = "#FFC5D3"
-  const deepPink = "#FF4B8B"
-
   return (
     <section className="py-16 px-6 bg-white">
-      <div className="max-w-5xl mx-auto bg-white text-[#212529] flex flex-col gap-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-8">
-        
+      <div className="max-w-5xl mx-auto bg-white text-black flex flex-col gap-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-8">
+
         {/* Header */}
         <div>
           <div className="flex items-center gap-3 mb-3">
@@ -19,21 +16,21 @@ export default function SymptomsOfFibroidsCard() {
               height="28"
               viewBox="0 0 24 24"
               fill="none"
-              stroke={deepPink}
+              stroke="currentColor"
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="h-7 w-7"
+              className="h-7 w-7 text-primary-pink"
             >
               <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" />
               <path d="M12 9v4" />
               <path d="M12 17h.01" />
             </svg>
-            <h2 className="font-bold text-3xl" style={{ color: deepPink }}>
+            <h2 className="font-bold text-3xl text-primary-pink">
               Symptoms of Fibroids
             </h2>
           </div>
-          <p className="text-gray-600 text-base">
+          <p className="text-black text-base">
             Some people have no symptoms, but others may experience:
           </p>
         </div>
@@ -42,10 +39,10 @@ export default function SymptomsOfFibroidsCard() {
         <div className="grid md:grid-cols-2 gap-10">
           {/* Left - Physical Symptoms */}
           <div className="space-y-4">
-            <h4 className="font-semibold text-lg" style={{ color: deepPink }}>
+            <h4 className="font-semibold text-lg text-primary-pink">
               Physical Symptoms
             </h4>
-            <ul className="space-y-2 text-gray-700">
+            <ul className="space-y-2 text-black">
               <li>• Painful or heavy periods</li>
               <li>• Anaemia (from heavy bleeding)</li>
               <li>• Bleeding between periods or after sex</li>
@@ -57,10 +54,10 @@ export default function SymptomsOfFibroidsCard() {
 
           {/* Right - Other Effects */}
           <div className="space-y-4">
-            <h4 className="font-semibold text-lg" style={{ color: deepPink }}>
+            <h4 className="font-semibold text-lg text-primary-pink">
               Other Effects
             </h4>
-            <ul className="space-y-2 text-gray-700">
+            <ul className="space-y-2 text-black">
               <li>• Constant urge to pass urine</li>
               <li>• Constipation or bloating</li>
               <li>• Low mood or depression</li>
@@ -72,12 +69,9 @@ export default function SymptomsOfFibroidsCard() {
         </div>
 
         {/* Highlight Box */}
-        <div
-          className="rounded-lg p-5 shadow-sm"
-          style={{ backgroundColor: pink }}
-        >
-          <p className="font-medium text-base flex items-center gap-2" style={{ color: deepPink }}>
-            <AlertCircle className="h-5 w-5" style={{ color: deepPink }} />
+        <div className="rounded-lg p-5 shadow-sm bg-light-pink-2">
+          <p className="font-medium text-base flex items-center gap-2 text-primary-pink">
+            <AlertCircle className="h-5 w-5 text-primary-pink" />
             If left untreated, fibroids can grow and may cause complications.
           </p>
         </div>

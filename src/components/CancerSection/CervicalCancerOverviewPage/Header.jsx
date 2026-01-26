@@ -14,24 +14,23 @@ export default function CervicalCancerHeader() {
   }, []);
 
   return (
-    <header 
-      className="border-b" 
-      style={{ backgroundColor: "#FFC5D3", borderColor: "#f5a9bd" }} 
+    <header
+      className="border-b bg-light-pink-2 border-light-pink-2"
       data-aos="fade-up"
     >
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-8">
         <div className="flex items-center gap-4" data-aos="fade-left">
           {/* Icon with background */}
-          <div className="p-3 rounded-lg" style={{ backgroundColor: "#fbe1ea" }}>
-            <LuStethoscope className="h-8 w-8" style={{ color: "#FF4B8B" }} />
+          <div className="p-3 rounded-lg bg-light-pink-1">
+            <LuStethoscope className="h-8 w-8 text-primary-pink" />
           </div>
 
           {/* Heading and subtitle */}
           <div>
-            <h1 className="text-3xl font-bold" style={{ color: "#FF4B8B" }}>
+            <h1 className="text-3xl font-bold text-primary-pink">
               Cervical Cancer Overview
             </h1>
-            <p className="mt-1 text-sm" style={{ color: "#7a2f4f" }}>
+            <p className="mt-1 text-sm text-black">
               Clinical Information for Surgeons
             </p>
           </div>

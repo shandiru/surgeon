@@ -1,110 +1,89 @@
-'use client';
+"use client";
 
-import React from 'react';
-import {
-  FaStethoscope,
-  FaUserFriends,
-  FaAward,
-  FaMicroscope,
-  FaCheckCircle,
-} from 'react-icons/fa';
+import React from "react";
+import { FaStethoscope, FaUserFriends, FaAward, FaMicroscope, FaCheckCircle } from "react-icons/fa";
 
 export default function SpecialtiesSection() {
   const specialties = [
     {
-      title: 'Laparoscopic Hysterectomy',
-      description: 'Minimally invasive surgical removal of the uterus',
+      title: "Laparoscopic Hysterectomy",
+      description: "Minimally invasive surgical removal of the uterus",
       icon: <FaStethoscope size={28} className="text-primary-pink" />,
     },
     {
-      title: 'Fibroids',
-      description: 'Treatment of uterine fibroids and related symptoms',
+      title: "Fibroids",
+      description: "Treatment of uterine fibroids and related symptoms",
       icon: <FaUserFriends size={28} className="text-primary-pink" />,
     },
     {
-      title: 'Ovarian Cyst',
-      description: 'Diagnosis and treatment of ovarian cysts',
+      title: "Ovarian Cyst",
+      description: "Diagnosis and treatment of ovarian cysts",
       icon: <FaAward size={28} className="text-primary-pink" />,
     },
     {
-      title: 'Ovarian Cancer',
-      description: 'Specialized oncological care and treatment',
+      title: "Ovarian Cancer",
+      description: "Specialized oncological care and treatment",
       icon: <FaStethoscope size={28} className="text-primary-pink" />,
     },
     {
-      title: 'Colposcopy',
-      description: 'Cervical screening and diagnostic procedures',
+      title: "Colposcopy",
+      description: "Cervical screening and diagnostic procedures",
       icon: <FaMicroscope size={28} className="text-primary-pink" />,
     },
     {
-      title: 'Endometrial Cancer',
-      description: 'Comprehensive treatment of uterine cancer',
+      title: "Endometrial Cancer",
+      description: "Comprehensive treatment of uterine cancer",
       icon: <FaAward size={28} className="text-primary-pink" />,
     },
   ];
 
   const surgicalExpertise = [
     {
-      title: 'Laparoscopic Hysterectomy',
-      description:
-        'Advanced minimally invasive techniques for faster recovery',
+      title: "Laparoscopic Hysterectomy",
+      description: "Advanced minimally invasive techniques for faster recovery",
     },
     {
-      title: 'Fibroid Treatment',
-      description:
-        'Comprehensive management including surgical and non-surgical options',
+      title: "Fibroid Treatment",
+      description: "Comprehensive management including surgical and non-surgical options",
     },
     {
-      title: 'Ovarian Procedures',
-      description:
-        'Expert treatment of ovarian cysts and related conditions',
+      title: "Ovarian Procedures",
+      description: "Expert treatment of ovarian cysts and related conditions",
     },
   ];
 
   const cancerCare = [
-  {
-    title: 'Ovarian Cancer',
-    description:
-      'Specialized oncological treatment and multidisciplinary care',
-  },
-  {
-    title: 'Endometrial Cancer',
-    description:
-      'Comprehensive diagnosis and treatment of uterine cancers',
-  },
-  {
-    title: 'Colposcopy',
-    description:
-      'Advanced cervical screening and early detection procedures',
-  },
-  {
-    title: 'Vulvar Cancer',
-    description:
-      'Expert diagnosis and treatment of vulvar malignancies',
-  },
-  {
-    title: 'Cervical Cancer',
-    description:
-      'Comprehensive cervical cancer care including prevention and treatment',
-  },
-];
+    {
+      title: "Ovarian Cancer",
+      description: "Specialized oncological treatment and multidisciplinary care",
+    },
+    {
+      title: "Endometrial Cancer",
+      description: "Comprehensive diagnosis and treatment of uterine cancers",
+    },
+    {
+      title: "Colposcopy",
+      description: "Advanced cervical screening and early detection procedures",
+    },
+    {
+      title: "Vulvar Cancer",
+      description: "Expert diagnosis and treatment of vulvar malignancies",
+    },
+    {
+      title: "Cervical Cancer",
+      description: "Comprehensive cervical cancer care including prevention and treatment",
+    },
+  ];
 
   return (
     <section id="specialties" className="bg-light-pink-1">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2
-            className="text-section text-primary-pink mb-4"
-            data-aos="fade-up"
-          >
+          <h2 className="text-section text-primary-pink mb-4" data-aos="fade-up">
             Areas of Expertise
           </h2>
-          <p
-            className="text-body-large text-gray-700"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
+          <p className="text-body-large text-gray-700" data-aos="fade-up" data-aos-delay="100">
             Specialized procedures and treatments in women's health
           </p>
         </div>
@@ -132,10 +111,8 @@ export default function SpecialtiesSection() {
                 <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-sm bg-white">
                   {item.icon}
                 </div>
-                <h3 className="font-semibold mb-1 text-body-small text-gray-900">
-                  {item.title}
-                </h3>
-                <p className="text-gray-600 text-caption">{item.description}</p>
+                <h3 className="font-semibold mb-1 text-body-small text-gray-900">{item.title}</h3>
+                <p className="text-black text-caption">{item.description}</p>
               </div>
             ))}
           </div>
@@ -156,10 +133,8 @@ export default function SpecialtiesSection() {
                 <li key={idx} className="flex items-start gap-3">
                   <FaCheckCircle className="text-primary-pink mt-1" />
                   <div>
-                    <div className="font-semibold text-body text-gray-900">
-                      {item.title}
-                    </div>
-                    <p className="text-body-small text-gray-600">{item.description}</p>
+                    <div className="font-semibold text-body text-gray-900">{item.title}</div>
+                    <p className="text-body-small text-black">{item.description}</p>
                   </div>
                 </li>
               ))}
@@ -171,18 +146,14 @@ export default function SpecialtiesSection() {
             className="bg-white rounded-xl border border-primary-pink/10 shadow-sm p-6 flex flex-col gap-6 transition-all duration-300 hover:shadow-xl"
             data-aos="fade-down"
           >
-            <div className="text-card-title font-semibold text-primary-pink">
-              Cancer Care
-            </div>
+            <div className="text-card-title font-semibold text-primary-pink">Cancer Care</div>
             <ul className="space-y-4">
               {cancerCare.map((item, idx) => (
                 <li key={idx} className="flex items-start gap-3">
                   <FaCheckCircle className="text-primary-pink mt-1" />
                   <div>
-                    <div className="font-semibold text-body text-gray-900">
-                      {item.title}
-                    </div>
-                    <p className="text-body-small text-gray-600">{item.description}</p>
+                    <div className="font-semibold text-body text-gray-900">{item.title}</div>
+                    <p className="text-body-small text-black">{item.description}</p>
                   </div>
                 </li>
               ))}

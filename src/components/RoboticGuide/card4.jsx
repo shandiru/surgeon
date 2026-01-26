@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
-import AOS from 'aos';
-import 'aos/dist/aos.css'; 
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { LuStethoscope, LuHeart, LuEye, LuActivity, LuCircleCheckBig } from "react-icons/lu";
 
 const RoboticGuide4 = ({ setShowCard, setActiveButton }) => {
-
   const cards = [
     {
       title: "Hysterectomy",
@@ -48,10 +47,7 @@ const RoboticGuide4 = ({ setShowCard, setActiveButton }) => {
     <div className="space-y-6 px-4 sm:px-6 lg:px-8">
       <div className="container max-w-5xl mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <h2
-            className="text-3xl font-bold text-center mb-12 text-[#FF4B8B]"
-            data-aos="fade-down"
-          >
+          <h2 className="text-3xl font-bold text-center mb-12 text-[#FF4B8B]" data-aos="fade-down">
             Applications in Gynecology
           </h2>
 
@@ -81,7 +77,7 @@ const RoboticGuide4 = ({ setShowCard, setActiveButton }) => {
 
                 <div>
                   <p className="text-gray-700 mb-3">{card.description}</p>
-                  <ul className="text-sm text-gray-600 space-y-1">
+                  <ul className="text-sm text-black space-y-1">
                     {card.points.map((point, i) => (
                       <li key={i} className="flex items-center gap-2">
                         <LuCircleCheckBig className="w-4 h-4 text-[#F93981]" />

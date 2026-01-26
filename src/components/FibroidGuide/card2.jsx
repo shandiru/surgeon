@@ -1,13 +1,12 @@
-'use client';
-import React from 'react';
-import { AlertCircle } from "lucide-react"
+"use client";
+import React from "react";
+import { AlertCircle } from "lucide-react";
 
 const FibroidGuideCard2 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6 pb-10 px-3">
       {/* Card Container */}
       <div className="max-w-5xl mx-auto bg-white text-[#212529] flex flex-col gap-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-8">
-
         {/* Header */}
         <div>
           <div className="flex items-center justify-center gap-3 mb-3">
@@ -27,11 +26,9 @@ const FibroidGuideCard2 = ({ setShowCard, setActiveButton }) => {
               <path d="M12 9v4" />
               <path d="M12 17h.01" />
             </svg>
-            <h2 className="font-bold text-3xl text-[#FF4B8B]">
-              Symptoms of Fibroids
-            </h2>
+            <h2 className="font-bold text-3xl text-[#FF4B8B]">Symptoms of Fibroids</h2>
           </div>
-          <p className="text-gray-600 text-base">
+          <p className="text-black text-base">
             Some people have no symptoms, but others may experience:
           </p>
         </div>
@@ -40,9 +37,7 @@ const FibroidGuideCard2 = ({ setShowCard, setActiveButton }) => {
         <div className="grid md:grid-cols-2 gap-10">
           {/* Left - Physical Symptoms */}
           <div className="space-y-4">
-            <h4 className="font-semibold text-lg text-[#FF4B8B]">
-              Physical Symptoms
-            </h4>
+            <h4 className="font-semibold text-lg text-[#FF4B8B]">Physical Symptoms</h4>
             <ul className="space-y-2 text-gray-700">
               <li>• Painful or heavy periods</li>
               <li>• Anaemia (from heavy bleeding)</li>
@@ -55,9 +50,7 @@ const FibroidGuideCard2 = ({ setShowCard, setActiveButton }) => {
 
           {/* Right - Other Effects */}
           <div className="space-y-4">
-            <h4 className="font-semibold text-lg text-[#FF4B8B]">
-              Other Effects
-            </h4>
+            <h4 className="font-semibold text-lg text-[#FF4B8B]">Other Effects</h4>
             <ul className="space-y-2 text-gray-700">
               <li>• Constant urge to pass urine</li>
               <li>• Constipation or bloating</li>
@@ -90,7 +83,6 @@ const FibroidGuideCard2 = ({ setShowCard, setActiveButton }) => {
           Continue to Next Section
         </button>
       </div>
-
     </div>
   );
 };
