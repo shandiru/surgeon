@@ -4,7 +4,7 @@ const ColposcopyCard2 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6">
       {/* Card Container */}
-      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl text-[#BB125B] mx-auto mb-10 flex flex-col gap-6 rounded-xl border py-6 shadow-sm animate-in slide-in-from-right-5 duration-300">
+      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl text-black mx-auto mb-10 flex flex-col gap-6 rounded-xl border border-light-pink-2 py-6 shadow-sm animate-in slide-in-from-right-5 duration-300">
         {/* Card Header */}
         <div className="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6">
           <div className="leading-none font-semibold flex items-center gap-2">
@@ -43,7 +43,7 @@ const ColposcopyCard2 = ({ setShowCard, setActiveButton }) => {
                 ].map((item, index) => (
                   <div
                     key={index}
-                    className="flex items-start gap-3 p-3 bg-card rounded-lg border transition-all duration-300 hover:bg-[#FF4B8B]/20 hover:shadow-md hover:border-[#FF4B8B]"
+                    className="flex items-start gap-3 p-3 bg-card rounded-lg border transition-all duration-300 hover:bg-light-pink-1 hover:shadow-md hover:border-primary-pink"
                   >
                     <div className="w-6 h-6 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                       <span className="text-xs font-bold text-primary">{index + 1}</span>
@@ -66,7 +66,7 @@ const ColposcopyCard2 = ({ setShowCard, setActiveButton }) => {
                 ].map((item, index) => (
                   <div
                     key={index}
-                    className="flex items-center justify-between p-2 bg-muted rounded transition-all duration-300 hover:bg-[#FF4B8B]/20 hover:shadow-md"
+                    className="flex items-center justify-between p-2 bg-muted rounded transition-all duration-300 hover:bg-light-pink-1 hover:shadow-md"
                   >
                     <span className="text-sm">{item.label}</span>
                     <span
@@ -114,7 +114,7 @@ const ColposcopyCard2 = ({ setShowCard, setActiveButton }) => {
                 setShowCard(3);
                 setActiveButton(2);
               }}
-              className="inline-flex items-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all hover:bg-primary/90 h-9 px-4 py-2 w-full"
+              className="inline-flex items-center bg-primary-pink hover:bg-primary-pink/80 text-white justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-9 px-4 py-2 w-full"
             >
               Learn About the Procedure
             </button>

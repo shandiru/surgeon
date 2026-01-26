@@ -9,7 +9,7 @@ const ColposcopyCard4 = ({ setShowCard, setActiveButton }) => {
 
   return (
     <div className="space-y-6">
-      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl text-[#BB125B] mx-auto mb-10 flex flex-col gap-6 rounded-xl border py-6 shadow-sm animate-in slide-in-from-right-5 duration-300">
+      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl text-black mx-auto mb-10 flex flex-col gap-6 rounded-xl border border-light-pink-2 py-6 shadow-sm animate-in slide-in-from-right-5 duration-300">
         <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6">
           <div className="leading-none font-semibold flex items-center gap-2">
             <svg
@@ -197,7 +197,7 @@ const ColposcopyCard4 = ({ setShowCard, setActiveButton }) => {
               setShowCard(5);       // move to Card 4
               setActiveButton(4);   // index for Card 4
             }}
-            className="items-center w-[90%] mx-5 md:mx-10 hover:bg-[#FF4B8B]/80 lg:mx-12  bg-[#FF4B8B] justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-9 px-4 py-2 has-[&_svg]:px-3"
+            className="items-center w-[90%] mx-5 md:mx-10 hover:bg-primary-pink/80 lg:mx-12 bg-primary-pink text-white justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive shadow-xs h-9 px-4 py-2 has-[&_svg]:px-3"
           >
             Understand Your Results
           </button>

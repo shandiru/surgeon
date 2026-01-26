@@ -5,7 +5,7 @@ const ColposcopyCard1 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6">
       {/* Card Container */}
-      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl text-[#BB125B] mx-auto mb-10 flex flex-col gap-6 rounded-xl border py-6 shadow-md animate-in slide-in-from-right-5 duration-300 px-4 sm:px-6 md:px-8">
+      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl text-black mx-auto mb-10 flex flex-col gap-6 rounded-xl border border-light-pink-2 py-6 shadow-md animate-in slide-in-from-right-5 duration-300 px-4 sm:px-6 md:px-8">
         {/* Card Header */}
         <div className="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6">
           <div className="leading-none font-semibold flex items-center gap-2">
@@ -34,7 +34,7 @@ const ColposcopyCard1 = ({ setShowCard, setActiveButton }) => {
         {/* Card Content */}
         <div className="px-6 space-y-4">
           {/* Quick Facts */}
-          <div className="bg-primary/5 p-4 rounded-lg border hover:z-50 transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:scale-105 active:scale-100">
+          <div className="bg-light-pink-1 p-4 rounded-lg border hover:z-50 transition-all duration-300 hover:bg-light-pink-2 hover:shadow-lg hover:border-primary-pink active:bg-light-pink-2 active:shadow-lg active:border-primary-pink hover:scale-105 active:scale-100">
             <p className="text-lg leading-relaxed">
               A colposcopy is a <strong>simple procedure</strong> to look for abnormal cells on the cervix or vagina.
             </p>
@@ -93,7 +93,7 @@ const ColposcopyCard1 = ({ setShowCard, setActiveButton }) => {
             {/* Reminder Section */}
             <div className="bg-accent/10 p-4 rounded-lg">
               <h4 className="font-semibold text-accent-foreground mb-2 flex items-center gap-2">
-                <Lightbulb className="text-xl text-[#d63384]" />
+                <Lightbulb className="text-xl text-primary-pink" />
                 Remember
               </h4>
               <p className="text-sm">
@@ -110,7 +110,7 @@ const ColposcopyCard1 = ({ setShowCard, setActiveButton }) => {
                 setShowCard(2);
                 setActiveButton(1);
               }}
-              className="inline-flex items-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all hover:bg-primary/90 h-9 px-4 py-2 w-full"
+              className="inline-flex items-center bg-primary-pink hover:bg-primary-pink/80 text-white justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-9 px-4 py-2 w-full"
             >
               Continue to Next Section
             </button>

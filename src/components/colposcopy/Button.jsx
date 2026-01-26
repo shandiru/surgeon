@@ -31,13 +31,13 @@ const ColposcopyGuideButtons = ({ setShowCard, activeButton, setActiveButton }) 
         <button
           key={index}
           onClick={() => handleButtonClick(button.card, index)}
-          className={`flex flex-col items-center justify-center text-center 
+          className={`flex flex-col items-center justify-center text-center
             w-full py-2 px-3
-            font-semibold rounded-md 
-            text-[#BB125B] bg-[#FF4B8B]/10 hover:bg-[#FF4B8B]/30 
+            font-semibold rounded-md
+            text-primary-pink bg-light-pink-1 hover:bg-light-pink-2
             text-button
-            transition-all 
-            ${activeButton === index ? 'bg-[#FF4B8B]/50 text-black' : ''}`}
+            transition-all
+            ${activeButton === index ? 'bg-light-pink-2 text-black' : ''}`}
         >
           {button.icon}
           <span className="leading-tight">{button.label}</span>

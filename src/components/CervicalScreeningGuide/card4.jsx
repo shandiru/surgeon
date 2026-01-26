@@ -6,13 +6,9 @@ const CervicalScreeningGuideCard4 = ({ setShowCard, setActiveButton }) => {
     <div className="space-y-6 pb-10">
       {/* CARD CONTAINER */}
       <div
-        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 
-        flex flex-col gap-8 rounded-2xl border shadow-sm p-8 
-        animate-in slide-in-from-right-5 duration-300"
-        style={{
-          backgroundColor: "#FFFFFF",
-          borderColor: "rgb(255,197,211)",
-        }}
+        className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10
+        flex flex-col gap-8 rounded-2xl border shadow-sm p-8
+        animate-in slide-in-from-right-5 duration-300 bg-white border-light-pink-2"
       >
         {/* ⭐ Layout Updated:
             - Mobile = 1 column
@@ -24,13 +20,13 @@ const CervicalScreeningGuideCard4 = ({ setShowCard, setActiveButton }) => {
 
               {/* LEFT BOX */}
               <div
-                className="bg-white text-[#FF4B8B] rounded-2xl shadow-md p-8 
-                transition duration-300 ease-in-out 
-                hover:scale-105 hover:-translate-y-2 hover:shadow-[0_8px_30px_rgba(176,59,102,0.25)]
+                className="bg-white text-primary-pink rounded-2xl shadow-md p-8
+                transition duration-300 ease-in-out
+                hover:scale-105 hover:-translate-y-2 hover:shadow-xl
                 active:scale-[0.98] active:shadow-lg cursor-pointer"
               >
                 <div className="flex items-center gap-3 mb-6 justify-center lg:justify-start">
-                  <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#ff97b3] shadow">
+                  <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary-pink shadow">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-6 w-6 text-white"
@@ -50,11 +46,11 @@ const CervicalScreeningGuideCard4 = ({ setShowCard, setActiveButton }) => {
                   </h2>
                 </div>
 
-                <ul className="space-y-4 text-gray-700 leading-relaxed">
+                <ul className="space-y-4 text-black leading-relaxed">
                   <li className="flex items-start gap-3">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 text-[#ff97b3] mt-1 flex-shrink-0"
+                      className="h-5 w-5 text-primary-pink mt-1 flex-shrink-0"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -69,7 +65,7 @@ const CervicalScreeningGuideCard4 = ({ setShowCard, setActiveButton }) => {
                   <li className="flex items-start gap-3">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 text-[#ff97b3] mt-1 flex-shrink-0"
+                      className="h-5 w-5 text-primary-pink mt-1 flex-shrink-0"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -85,7 +81,7 @@ const CervicalScreeningGuideCard4 = ({ setShowCard, setActiveButton }) => {
                   <li className="flex items-start gap-3">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 text-[#ff97b3] mt-1 flex-shrink-0"
+                      className="h-5 w-5 text-primary-pink mt-1 flex-shrink-0"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -106,7 +102,7 @@ const CervicalScreeningGuideCard4 = ({ setShowCard, setActiveButton }) => {
                   alt="Smear test preparation illustration"
                   className="w-full max-w-md rounded-2xl shadow-xl border-4 border-white
                            transition duration-300 transform
-                           hover:shadow-[0_10px_30px_rgba(255,75,139,0.5)]"
+                           hover:shadow-2xl"
                   loading="lazy"
                   src="/smear-test-prep.png"
                 />
@@ -123,8 +119,8 @@ const CervicalScreeningGuideCard4 = ({ setShowCard, setActiveButton }) => {
               setShowCard(5);
               setActiveButton(4);
             }}
-            className="inline-flex items-center justify-center bg-[#FF4B8B] 
-            hover:bg-[#FF4B8B]/80 text-white rounded-md text-sm font-medium 
+            className="inline-flex items-center justify-center bg-primary-pink
+            hover:bg-primary-pink/80 text-white rounded-md text-sm font-medium
             transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%]"
           >
             Continue to Next Step

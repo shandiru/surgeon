@@ -6,24 +6,19 @@ const CervicalScreeningGuideCard2 = ({ setShowCard, setActiveButton }) => {
 
       {/* CARD CONTAINER – old border kept */}
       <div
-        className="max-w-5xl mx-auto rounded-2xl p-10 shadow-md border 
+        className="max-w-5xl mx-auto rounded-2xl p-10 shadow-md border
         transition duration-300 transform
-        hover:scale-105 hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(176,59,102,0.25)]"
-        style={{
-          backgroundColor: "#FFFFFF",
-          borderColor: "rgb(255,197,211)", // ⭐ OLD border exactly restored
-        }}
+        hover:scale-105 hover:-translate-y-2 hover:shadow-xl bg-white border-light-pink-2"
       >
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
 
           {/* LEFT SIDE – PINK CARD */}
           <div
-            className="bg-white text-[#FF4B8B] flex flex-col gap-6 rounded-xl py-8 px-6 shadow-md
+            className="bg-white text-primary-pink flex flex-col gap-6 rounded-xl py-8 px-6 shadow-md border border-light-pink-2
               transition duration-300 transform
-              hover:scale-105 hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(176,59,102,0.25)]
-              active:scale-105 active:-translate-y-2 active:shadow-[0_10px_30px_rgba(176,59,102,0.25)]"
-            style={{ borderColor: "rgb(255,197,211)" }}
+              hover:scale-105 hover:-translate-y-2 hover:shadow-xl
+              active:scale-105 active:-translate-y-2 active:shadow-xl"
           >
             {/* Header */}
             <div className="flex items-center gap-3 text-2xl font-bold">
@@ -37,7 +32,7 @@ const CervicalScreeningGuideCard2 = ({ setShowCard, setActiveButton }) => {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="h-7 w-7 text-[#ff97b3]"
+                className="h-7 w-7 text-primary-pink"
               >
                 <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
                 <circle cx="9" cy="7" r="4"></circle>
@@ -48,7 +43,7 @@ const CervicalScreeningGuideCard2 = ({ setShowCard, setActiveButton }) => {
             </div>
 
             {/* Badge */}
-            <span className="inline-flex items-center justify-center rounded-md bg-[#ff97b3] text-white px-3 py-1 font-medium text-sm w-fit">
+            <span className="inline-flex items-center justify-center rounded-md bg-primary-pink text-white px-3 py-1 font-medium text-sm w-fit">
               Recommended
             </span>
 
@@ -57,7 +52,7 @@ const CervicalScreeningGuideCard2 = ({ setShowCard, setActiveButton }) => {
               <li className="flex items-start gap-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 mt-0.5 flex-shrink-0 text-[#ff97b3]"
+                  className="h-5 w-5 mt-0.5 flex-shrink-0 text-primary-pink"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -71,7 +66,7 @@ const CervicalScreeningGuideCard2 = ({ setShowCard, setActiveButton }) => {
               <li className="flex items-start gap-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 mt-0.5 flex-shrink-0 text-[#ff97b3]"
+                  className="h-5 w-5 mt-0.5 flex-shrink-0 text-primary-pink"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -86,7 +81,7 @@ const CervicalScreeningGuideCard2 = ({ setShowCard, setActiveButton }) => {
               <li className="flex items-start gap-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 mt-0.5 flex-shrink-0 text-[#ff97b3]"
+                  className="h-5 w-5 mt-0.5 flex-shrink-0 text-primary-pink"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -110,8 +105,8 @@ const CervicalScreeningGuideCard2 = ({ setShowCard, setActiveButton }) => {
               alt="Smear test illustration"
               className="w-full max-w-md rounded-2xl shadow-xl
                 transition duration-300 transform
-                hover:scale-105 hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(255,75,139,0.5)]
-                active:scale-105 active:-translate-y-2 active:shadow-[0_10px_30px_rgba(255,75,139,0.5)]"
+                hover:scale-105 hover:-translate-y-2 hover:shadow-2xl
+                active:scale-105 active:-translate-y-2 active:shadow-2xl"
               loading="lazy"
               src="/smear-test-info.png"
             />
@@ -125,8 +120,8 @@ const CervicalScreeningGuideCard2 = ({ setShowCard, setActiveButton }) => {
               setShowCard(3);
               setActiveButton(2);
             }}
-            className="inline-flex items-center justify-center bg-[#FF4B8B] 
-              hover:bg-[#FF4B8B]/80 text-white rounded-md text-sm font-medium 
+            className="inline-flex items-center justify-center bg-primary-pink
+              hover:bg-primary-pink/80 text-white rounded-md text-sm font-medium
               transition-all h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%]"
           >
             Continue to Next Section

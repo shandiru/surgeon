@@ -10,7 +10,7 @@ const GuideButtons = () => {
         {/* Colposcopy Guide Button */}
         <button
           data-slot="button"
-          className="inline-flex text-[#BB125B] bg-[#FF4B8B]/50 items-center justify-center whitespace-nowrap text-button transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-8 rounded-md gap-1.5 px-3 w-full sm:w-auto"
+          className="inline-flex text-primary-pink bg-light-pink-2 items-center justify-center whitespace-nowrap text-button transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-8 rounded-md gap-1.5 px-3 w-full sm:w-auto"
         >
           Colposcopy Guide
         </button>
@@ -18,7 +18,7 @@ const GuideButtons = () => {
         {/* Ultrasound Guide Link */}
         <Link
           to="/ultrasound"
-          className="justify-center text-[#d60d64] hover:bg-[#FF4B8B]/80 bg-[#FF4B8B]/10 whitespace-nowrap text-button transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 h-8 rounded-md px-3 flex items-center gap-2 w-full sm:w-auto"
+          className="justify-center text-primary-pink hover:bg-light-pink-2 bg-light-pink-1 whitespace-nowrap text-button transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 h-8 rounded-md px-3 flex items-center gap-2 w-full sm:w-auto"
           data-slot="button"
         >
           Ultrasound Guide
@@ -42,7 +42,7 @@ const GuideButtons = () => {
         {/* Hysteroscopy Guide Link */}
         <Link
           to="/hysteroscopy"
-          className="justify-center text-[#BB125B] hover:bg-[#FF4B8B]/80 bg-[#FF4B8B]/10 whitespace-nowrap text-button transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 h-8 rounded-md px-3 flex items-center gap-2 w-full sm:w-auto"
+          className="justify-center text-primary-pink hover:bg-light-pink-2 bg-light-pink-1 whitespace-nowrap text-button transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 h-8 rounded-md px-3 flex items-center gap-2 w-full sm:w-auto"
           data-slot="button"
         >
           Hysteroscopy Guide
