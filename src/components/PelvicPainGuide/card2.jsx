@@ -7,7 +7,7 @@ const PelvicPainGuideCard2 = ({ setShowCard, setActiveButton }) => {
     <div className="space-y-6 pb-10 px-3">
       {/* Main Card */}
       <div
-        className="text-primary-pink bg-[#FF4B8B]/10 max-w-sm sm:max-w-2xl lg:max-w-5xl 
+        className="text-primary-pink bg-light-pink max-w-sm sm:max-w-2xl lg:max-w-5xl 
         mx-auto mb-10 flex flex-col gap-6 rounded-xl py-6 shadow-sm border
         hover:z-50 transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg 
         hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] 

@@ -27,7 +27,7 @@ export default function SymptomsSection() {
       {/* Cards Grid */}
       <div className="grid md:grid-cols-2 gap-8">
         {/* Common Symptoms Card */}
-        <div className="bg-white text-[#333] flex flex-col gap-6 rounded-2xl py-8 px-8 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+        <div className="bg-white text-black flex flex-col gap-6 rounded-2xl py-8 px-8 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
           <h3 className="font-semibold text-xl text-[#c2185b]">Common Symptoms</h3>
           <ul className="space-y-3 text-base">
             {[
@@ -38,7 +38,7 @@ export default function SymptomsSection() {
               "Headaches, low mood, or emotional distress",
             ].map((symptom, idx) => (
               <li key={idx} className="flex items-start gap-3">
-                <div className="w-2.5 h-2.5 bg-[#FF4B8B] rounded-full mt-2 flex-shrink-0" />
+                <div className="w-2.5 h-2.5 bg-primary-pink rounded-full mt-2 flex-shrink-0" />
                 <span>{symptom}</span>
               </li>
             ))}
@@ -46,7 +46,7 @@ export default function SymptomsSection() {
         </div>
 
         {/* Urgent Symptoms Card */}
-        <div className="bg-[#FEE6EA] text-[#333] flex flex-col gap-6 rounded-2xl py-8 px-8 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+        <div className="bg-[#FEE6EA] text-black flex flex-col gap-6 rounded-2xl py-8 px-8 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
           <h3 className="font-semibold text-xl text-primary-pink">When to Seek Urgent Help</h3>
           <ul className="space-y-3 text-base">
             {[

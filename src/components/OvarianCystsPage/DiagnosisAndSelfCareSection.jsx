@@ -40,7 +40,7 @@ export default function DiagnosisAndSelfCareSection() {
             "MRI (if needed for detailed images)",
           ].map((item, index) => (
             <div key={index} className="flex items-start gap-3">
-              <div className="w-2 h-2 bg-[#FF4B8B] rounded-full mt-2 flex-shrink-0" />
+              <div className="w-2 h-2 bg-primary-pink rounded-full mt-2 flex-shrink-0" />
               <span className="text-sm">{item}</span>
             </div>
           ))}

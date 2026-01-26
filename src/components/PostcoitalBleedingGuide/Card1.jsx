@@ -41,7 +41,7 @@ const PostcoitalBleedingGuideCard1 = ({ setShowCard, setActiveButton }) => {
               Postcoital bleeding is bleeding that happens after vaginal sex. It is not part of your
               period.
             </p>
-            <ul className="space-y-2 text-[#6B7280]">
+            <ul className="space-y-2 text-black">
               <li>• The amount of blood can range from light spotting to heavier flow</li>
               <li>• It can happen after penetration by a penis, sex toys, or fingers</li>
               <li>

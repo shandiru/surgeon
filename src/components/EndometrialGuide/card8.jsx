@@ -89,7 +89,7 @@ const EndometrialCard8 = ({ setShowCard, setActiveButton }) => {
         {/* Complete Guide Button */}
         <div className="pt-8 flex justify-center">
           <button
-            className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all flex items-center justify-center gap-2"
+            className="bg-primary-pink hover:bg-primary-pink/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all flex items-center justify-center gap-2"
             onClick={() => {
               setShowCard(1); // or wherever the guide starts
               setActiveButton(0);

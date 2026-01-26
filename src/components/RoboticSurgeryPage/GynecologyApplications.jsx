@@ -75,7 +75,7 @@ export default function GynecologyApplications() {
                     {card.icon}
                     {card.title}
                   </div>
-                  <span className="inline-flex rounded-md px-2 py-0.5 text-xs font-medium bg-[#FDEBED] text-[#B51252]">
+                  <span className="inline-flex rounded-md px-2 py-0.5 text-xs font-medium bg-light-pink text-[#B51252]">
                     {card.badge}
                   </span>
                 </div>
@@ -84,7 +84,7 @@ export default function GynecologyApplications() {
                   <ul className="text-sm text-black space-y-1">
                     {card.points.map((point, i) => (
                       <li key={i} className="flex items-center gap-2">
-                        <LuCircleCheckBig className="w-4 h-4 text-[#F93981]" />
+                        <LuCircleCheckBig className="w-4 h-4 text-primary-pink" />
                         {point}
                       </li>
                     ))}

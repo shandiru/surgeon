@@ -17,7 +17,7 @@ const AccordionItem = ({ title, badge, content, imageContent }) => {
         >
           <div className="flex items-center gap-3">
             {badge && (
-              <span className="inline-flex items-center justify-center rounded-full bg-[#FF4B8B]/10 text-primary-pink px-3 py-1 text-xs font-medium">
+              <span className="inline-flex items-center justify-center rounded-full bg-light-pink text-primary-pink px-3 py-1 text-xs font-medium">
                 {badge}
               </span>
             )}

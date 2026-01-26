@@ -46,13 +46,13 @@ export default function EducationLanguagesSection() {
               {education.map((item, i) => (
                 <div
                   key={i}
-                  className="bg-white p-6 rounded-lg shadow-sm text-center lg:text-left border border-primary-pink/10 
+                  className="bg-white p-6 rounded-lg shadow-sm text-center lg:text-left border border-primary-pink 
                              transition-all duration-300 hover:scale-[1.02] 
                              hover:shadow-xl active:scale-[0.98]"
                   data-aos="fade-up"
                   data-aos-delay={i * 120}
                 >
-                  <h3 className="text-card-title font-semibold text-gray-900">{item.title}</h3>
+                  <h3 className="text-card-title font-semibold text-black">{item.title}</h3>
                   <p className="text-primary-pink font-medium text-body">{item.place}</p>
                   <p className="text-gray-500 text-body-small">{item.years}</p>
                 </div>
@@ -62,7 +62,7 @@ export default function EducationLanguagesSection() {
 
           {/* Languages Spoken */}
           <div
-            className="bg-white rounded-xl shadow-sm p-8 flex flex-col h-full border border-primary-pink/10
+            className="bg-white rounded-xl shadow-sm p-8 flex flex-col h-full border border-primary-pink
                        transition-all duration-300 hover:shadow-xl"
             data-aos="fade-left"
             data-aos-delay="300"
@@ -90,7 +90,7 @@ export default function EducationLanguagesSection() {
                 <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
                 <path d="M2 12h20" />
               </svg>
-              <div className="font-semibold text-subsection text-gray-900">Languages Spoken</div>
+              <div className="font-semibold text-subsection text-black">Languages Spoken</div>
             </div>
 
             <div className="flex-1 flex flex-col items-center justify-center">

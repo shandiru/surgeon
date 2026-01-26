@@ -49,7 +49,7 @@ const HysterosButtons = ({ setShowCard, activeButton, setActiveButton }) => {
           className={`flex flex-col items-center justify-center text-center 
             w-full py-2 sm:py-3 px-3 sm:px-4 
             font-semibold rounded-md 
-            text-black bg-[#FF4B8B]/10 hover:bg-[#FF4B8B]/30 
+            text-black bg-light-pink hover:bg-primary-pink/30 
             text-xs sm:text-button md:text-base 
             transition-all 
             ${activeButton === index ? "bg-light-pink-2 text-black" : ""}`}

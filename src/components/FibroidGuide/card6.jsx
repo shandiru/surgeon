@@ -4,7 +4,7 @@ import React from "react";
 const FibroidGuidecard6 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6 pb-10 px-3">
-      <div className="max-w-5xl mx-auto bg-white text-[#212529] flex flex-col gap-6 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 p-8">
+      <div className="max-w-5xl mx-auto bg-white text-black flex flex-col gap-6 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 p-8">
         {/* Header */}
         <div className="flex items-center gap-3 mb-2">
           <svg
@@ -33,7 +33,7 @@ const FibroidGuidecard6 = ({ setShowCard, setActiveButton }) => {
         </div>
 
         {/* Highlight Box */}
-        <div className="rounded-xl p-5 shadow-md hover:shadow-lg transition-all duration-200 bg-[#FF4B8B]/10">
+        <div className="rounded-xl p-5 shadow-md hover:shadow-lg transition-all duration-200 bg-light-pink">
           <p className="font-medium text-center md:text-left text-black">
             It's okay to ask for emotional support or counselling — you're not alone.
           </p>

@@ -7,7 +7,7 @@ const OvarianCancerGuidecard8 = ({ setShowCard, setActiveButton }) => {
       {/* Card Container */}
       <div
         className="max-w-sm sm:max-w-2xl lg:max-w-5xl text-black mx-auto 
-        mb-10 flex flex-col gap-6 rounded-xl border border-primary-pink/10 py-6 shadow-sm 
+        mb-10 flex flex-col gap-6 rounded-xl border border-primary-pink py-6 shadow-sm 
         animate-in slide-in-from-right-5 duration-300"
       >
         {/* Card Header */}
@@ -26,7 +26,7 @@ const OvarianCancerGuidecard8 = ({ setShowCard, setActiveButton }) => {
         {/* Card Content */}
         <div className="px-6 space-y-5">
           {/* Highlight Section */}
-          <div className="p-5 rounded-lg bg-light-pink-1 border border-primary-pink/10">
+          <div className="p-5 rounded-lg bg-light-pink-1 border border-primary-pink">
             <h3 className="font-semibold flex items-center gap-2 mb-2 text-primary-pink">
               <Star className="w-5 h-5 text-primary-pink" />
               What You Should Know
@@ -59,7 +59,7 @@ const OvarianCancerGuidecard8 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           {/* Final Section */}
-          <div className="p-4 rounded-lg bg-white border border-primary-pink/10">
+          <div className="p-4 rounded-lg bg-white border border-primary-pink">
             <h4 className="font-semibold flex items-center gap-2 text-primary-pink">
               <Star className="w-5 h-5 text-primary-pink" />
               Final Message
@@ -75,8 +75,8 @@ const OvarianCancerGuidecard8 = ({ setShowCard, setActiveButton }) => {
           <div className="pt-4">
             <button
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-              className="inline-flex items-center justify-center bg-[#FF4B8B] 
-              hover:bg-[#FF4B8B]/80 gap-2 whitespace-nowrap rounded-md text-sm 
+              className="inline-flex items-center justify-center bg-primary-pink 
+              hover:bg-primary-pink/80 gap-2 whitespace-nowrap rounded-md text-sm 
               font-medium transition-all h-9 px-4 py-2 w-full text-white"
             >
               <Star className="w-4 h-4" />

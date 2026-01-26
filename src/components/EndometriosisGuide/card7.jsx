@@ -46,7 +46,7 @@ const Endometriosiscard7 = () => {
             {treatments.map((item, index) => (
               <div
                 key={index}
-                className="bg-white text-[#333] flex flex-col gap-4 rounded-2xl shadow-md p-6 
+                className="bg-white text-black flex flex-col gap-4 rounded-2xl shadow-md p-6 
                 transition duration-300 hover:shadow-[0_0_25px_rgba(176,59,102,0.35)] 
                 hover:-translate-y-2 active:scale-[0.98]"
               >
@@ -75,7 +75,7 @@ const Endometriosiscard7 = () => {
       {/* Next Button */}
       {/* COMPLETE GUIDE BUTTON */}
       <div className="pt-8 flex justify-center">
-        <button className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all flex items-center justify-center gap-2">
+        <button className="bg-primary-pink hover:bg-primary-pink/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all flex items-center justify-center gap-2">
           <Star className="w-4 h-4" />
           Complete Guide
         </button>

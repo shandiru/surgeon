@@ -37,7 +37,7 @@ export default function ProsAndCons() {
           {/* Two Column Layout */}
           <div className="grid md:grid-cols-2 gap-8 md:gap-12">
             {/* Pros Section */}
-            <div className="bg-[#FF4B8B]/10 rounded-xl p-6 md:p-8 border border-primary-pink/20">
+            <div className="bg-light-pink rounded-xl p-6 md:p-8 border border-primary-pink/20">
               <div className="flex items-center gap-3 mb-6">
                 <CheckCircle2 className="w-8 h-8 text-primary-pink" />
                 <h3 className="text-subsection text-primary-pink font-semibold">Advantages</h3>
@@ -70,7 +70,7 @@ export default function ProsAndCons() {
           </div>
 
           {/* Note Section */}
-          <div className="mt-12 p-6 rounded-lg bg-[#FF4B8B]/10 border border-primary-pink/20">
+          <div className="mt-12 p-6 rounded-lg bg-light-pink border border-primary-pink/20">
             <p className="text-body text-black text-center">
               <strong>Note:</strong> The decision to use robotic surgery depends on individual
               patient circumstances, the specific procedure, and consultation with your healthcare

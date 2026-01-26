@@ -44,7 +44,7 @@ export default function HowItsDiagnosed() {
             <Stethoscope className="h-7 w-7" />
             How It’s Diagnosed
           </div>
-          <p className="mt-2 text-sm text-[#6B7280]">
+          <p className="mt-2 text-sm text-black">
             These tests are usually quick and done as outpatient procedures.
           </p>
         </div>
@@ -62,7 +62,7 @@ export default function HowItsDiagnosed() {
               >
                 {item.title}
                 <ChevronDown
-                  className={`h-5 w-5 text-[#6B7280] transition-transform duration-300 ${
+                  className={`h-5 w-5 text-black transition-transform duration-300 ${
                     openIndex === index ? "rotate-180 text-primary-pink" : ""
                   }`}
                 />

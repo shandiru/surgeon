@@ -33,7 +33,7 @@ const Endometriosiscard5 = ({ setShowCard, setActiveButton }) => {
           {steps.map((step, index) => (
             <div
               key={index}
-              className="bg-white text-[#333] rounded-2xl shadow-md 
+              className="bg-white text-black rounded-2xl shadow-md 
                          p-5 sm:p-7 md:p-8 
                          transition duration-300 
                          hover:shadow-[0_0_25px_rgba(176,59,102,0.35)] 
@@ -44,7 +44,7 @@ const Endometriosiscard5 = ({ setShowCard, setActiveButton }) => {
                 {/* Number */}
                 <div
                   className="min-w-[48px] min-h-[48px] sm:min-w-[56px] sm:min-h-[56px] 
-                                bg-[#FF4B8B] text-white 
+                                bg-primary-pink text-white 
                                 rounded-full flex items-center justify-center 
                                 font-bold text-lg sm:text-xl shadow-md"
                 >
@@ -73,7 +73,7 @@ const Endometriosiscard5 = ({ setShowCard, setActiveButton }) => {
               setShowCard(6);
               setActiveButton(5);
             }}
-            className="w-full bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 
+            className="w-full bg-primary-pink hover:bg-primary-pink/80 
                        text-white rounded-md 
                        h-10 sm:h-12 
                        text-sm sm:text-base font-medium 

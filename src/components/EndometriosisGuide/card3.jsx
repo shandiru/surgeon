@@ -23,7 +23,7 @@ const Endometriosiscard3 = ({ setShowCard, setActiveButton }) => {
           hover:shadow-[0_0_25px_rgba(176,59,102,0.4)] hover:-translate-y-2 active:scale-[0.98]"
           >
             <div className="flex items-center gap-3 mb-4">
-              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#FF4B8B]/10">
+              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-light-pink">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6 text-primary-pink"
@@ -52,7 +52,7 @@ const Endometriosiscard3 = ({ setShowCard, setActiveButton }) => {
           hover:shadow-[0_0_25px_rgba(176,59,102,0.4)] hover:-translate-y-2 active:scale-[0.98]"
           >
             <div className="flex items-center gap-3 mb-4">
-              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#FF4B8B]/10">
+              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-light-pink">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6 text-primary-pink"
@@ -81,7 +81,7 @@ const Endometriosiscard3 = ({ setShowCard, setActiveButton }) => {
             setShowCard(4);
             setActiveButton(3);
           }}
-          className="inline-flex items-center justify-center gap-2 bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 rounded-md text-sm font-medium h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
+          className="inline-flex items-center justify-center gap-2 bg-primary-pink hover:bg-primary-pink/80 rounded-md text-sm font-medium h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%] text-white"
         >
           Learn About Screening
         </button>

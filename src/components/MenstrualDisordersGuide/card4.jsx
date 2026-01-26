@@ -33,7 +33,7 @@ const MenstrualDisordersGuideCard4 = ({ setShowCard, setActiveButton }) => {
         {/* Cards Grid */}
         <div className="grid md:grid-cols-2 gap-8">
           {/* Common Symptoms Card */}
-          <div className="bg-white text-[#333] flex flex-col gap-6 rounded-2xl py-8 px-8 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+          <div className="bg-white text-black flex flex-col gap-6 rounded-2xl py-8 px-8 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
             <h3 className="font-semibold text-xl text-[#c2185b]">Common Symptoms</h3>
             <ul className="space-y-3 text-base">
               {[
@@ -44,7 +44,7 @@ const MenstrualDisordersGuideCard4 = ({ setShowCard, setActiveButton }) => {
                 "Headaches, low mood, or emotional distress",
               ].map((symptom, idx) => (
                 <li key={idx} className="flex items-start gap-3">
-                  <div className="w-2.5 h-2.5 bg-[#FF4B8B] rounded-full mt-2 flex-shrink-0" />
+                  <div className="w-2.5 h-2.5 bg-primary-pink rounded-full mt-2 flex-shrink-0" />
                   <span>{symptom}</span>
                 </li>
               ))}
@@ -52,7 +52,7 @@ const MenstrualDisordersGuideCard4 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           {/* Urgent Symptoms Card */}
-          <div className="bg-[#FEE6EA] text-[#333] flex flex-col gap-6 rounded-2xl py-8 px-8 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+          <div className="bg-[#FEE6EA] text-black flex flex-col gap-6 rounded-2xl py-8 px-8 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
             <h3 className="font-semibold text-xl text-primary-pink">When to Seek Urgent Help</h3>
             <ul className="space-y-3 text-base">
               {[
@@ -92,7 +92,7 @@ const MenstrualDisordersGuideCard4 = ({ setShowCard, setActiveButton }) => {
               setShowCard(5);
               setActiveButton(4);
             }}
-            className="w-full sm:w-[70%] md:w-[50%] bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white font-medium rounded-md h-10 px-4 transition-all flex items-center justify-center gap-2 whitespace-nowrap"
+            className="w-full sm:w-[70%] md:w-[50%] bg-primary-pink hover:bg-primary-pink/80 text-white font-medium rounded-md h-10 px-4 transition-all flex items-center justify-center gap-2 whitespace-nowrap"
           >
             Learn More
           </button>

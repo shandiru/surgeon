@@ -6,7 +6,7 @@ const OvarianCystsGuideCard4 = ({ setShowCard, setActiveButton }) => {
     <div className="pb-10">
       <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto animate-in slide-in-from-right-5 duration-300">
         {/* FULL WRAPPER SECTION */}
-        <div className="rounded-2xl p-8 border border-primary-pink/10 shadow-lg transition-all duration-300 bg-white">
+        <div className="rounded-2xl p-8 border border-primary-pink shadow-lg transition-all duration-300 bg-white">
           {/* HEADER */}
           <div className="flex items-center gap-3 text-2xl font-semibold text-primary-pink mb-6">
             <svg
@@ -45,7 +45,7 @@ const OvarianCystsGuideCard4 = ({ setShowCard, setActiveButton }) => {
                   "Sudden severe pain if a cyst ruptures",
                 ].map((symptom, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <div className="w-2 h-2 rounded-full mt-2 bg-[#FF4B8B] flex-shrink-0"></div>
+                    <div className="w-2 h-2 rounded-full mt-2 bg-primary-pink flex-shrink-0"></div>
                     <span className="text-sm text-black">{symptom}</span>
                   </div>
                 ))}
@@ -75,7 +75,7 @@ const OvarianCystsGuideCard4 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           {/* WARNING BOX */}
-          <div className="mt-8 p-6 rounded-xl bg-[#FF4B8B]">
+          <div className="mt-8 p-6 rounded-xl bg-primary-pink">
             <p className="text-white font-semibold text-lg">
               If you notice any of these symptoms, it’s important to see your doctor promptly.
             </p>

@@ -39,7 +39,7 @@ const SymptomsSection = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
             {/* Symptom Checker Card */}
-            <div className="bg-white text-gray-900 flex flex-col gap-6 rounded-xl py-6 shadow-sm transition-all duration-300 hover:shadow-md hover:scale-[1.02] active:scale-[0.98]">
+            <div className="bg-white text-black flex flex-col gap-6 rounded-xl py-6 shadow-sm transition-all duration-300 hover:shadow-md hover:scale-[1.02] active:scale-[0.98]">
               <div className="px-6">
                 <div className="font-semibold flex items-center space-x-2 text-lg text-primary-pink">
                   <svg
@@ -85,7 +85,7 @@ const SymptomsSection = () => {
                       onClick={handleCheckboxChange}
                       id={id}
                       className={`w-4 h-4 border rounded-sm mt-1 flex items-center justify-center ${
-                        symptoms[id] ? "bg-[#FF4B8B] text-white" : "bg-white border-gray-400"
+                        symptoms[id] ? "bg-primary-pink text-white" : "bg-white border-gray-400"
                       }`}
                     >
                       {symptoms[id] && (
@@ -104,7 +104,7 @@ const SymptomsSection = () => {
                     <label htmlFor={id} className="text-sm cursor-pointer leading-relaxed">
                       {label}
                       {urgent && (
-                        <span className="ml-2 text-xs px-2 py-0.5 rounded bg-[#FF4B8B]/10 text-black">
+                        <span className="ml-2 text-xs px-2 py-0.5 rounded bg-light-pink text-black">
                           Urgent
                         </span>
                       )}
@@ -115,7 +115,7 @@ const SymptomsSection = () => {
             </div>
 
             {/* Assessment Card */}
-            <div className="bg-white text-gray-900 flex flex-col gap-6 rounded-xl py-6 px-6 shadow-sm transition-all duration-300 hover:shadow-md hover:scale-[1.02] active:scale-[0.98]">
+            <div className="bg-white text-black flex flex-col gap-6 rounded-xl py-6 px-6 shadow-sm transition-all duration-300 hover:shadow-md hover:scale-[1.02] active:scale-[0.98]">
               <div>
                 <div className="font-semibold flex items-center space-x-2 text-lg text-primary-pink">
                   <svg

@@ -6,7 +6,7 @@ const OvarianCystsGuideCard8 = ({ setShowCard, setActiveButton }) => {
     <div className="space-y-6 pb-10">
       <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto animate-in slide-in-from-right-5 duration-300">
         {/* ================= MAIN CARD ================= */}
-        <div className="flex flex-col gap-6 rounded-xl bg-white text-black border border-primary-pink/10 shadow-lg hover:shadow-xl transition-all duration-300 py-6 px-6 sm:px-8">
+        <div className="flex flex-col gap-6 rounded-xl bg-white text-black border border-primary-pink shadow-lg hover:shadow-xl transition-all duration-300 py-6 px-6 sm:px-8">
           {/* HEADER */}
           <div className="flex items-center gap-3 text-xl font-semibold text-primary-pink">
             <svg
@@ -49,7 +49,7 @@ const OvarianCystsGuideCard8 = ({ setShowCard, setActiveButton }) => {
             </div>
 
             {/* Laparotomy */}
-            <div className="bg-white rounded-lg p-5 border border-primary-pink/10 shadow-md hover:shadow-lg transition-all duration-300">
+            <div className="bg-white rounded-lg p-5 border border-primary-pink shadow-md hover:shadow-lg transition-all duration-300">
               <h4 className="font-semibold mb-2 text-black">Laparotomy</h4>
               <p className="text-sm mb-3 text-[#555]">
                 Open surgery through a larger cut in the abdomen
@@ -67,7 +67,7 @@ const OvarianCystsGuideCard8 = ({ setShowCard, setActiveButton }) => {
                 setShowCard(9);
                 setActiveButton(8);
               }}
-              className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all"
+              className="bg-primary-pink hover:bg-primary-pink/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all"
             >
               Complete Guide
             </button>

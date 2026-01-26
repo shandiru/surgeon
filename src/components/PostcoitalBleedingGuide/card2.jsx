@@ -23,7 +23,7 @@ const PostcoitalBleedingGuideCard2 = ({ setShowCard, setActiveButton }) => {
 
             {/* Right Column */}
             <div>
-              <span className="inline-flex items-center rounded-full bg-[#FF4B8B] text-white px-3 py-1 text-xs font-medium mb-2 shadow-sm">
+              <span className="inline-flex items-center rounded-full bg-primary-pink text-white px-3 py-1 text-xs font-medium mb-2 shadow-sm">
                 Statistics
               </span>
               <p className="leading-relaxed">
@@ -34,7 +34,7 @@ const PostcoitalBleedingGuideCard2 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           {/* Footer Note */}
-          <p className="text-sm text-[#6B7280]">
+          <p className="text-sm text-black">
             About <strong>30%</strong> of women who bleed during sex also have other abnormal
             bleeding outside their period.
           </p>

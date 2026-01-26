@@ -8,7 +8,7 @@ const EventListHero = ({
   onEventTypeChange,
 }) => {
   return (
-    <section className="relative w-full bg-[#FF4B8B] min-h-screen flex items-center">
+    <section className="relative w-full bg-primary-pink min-h-screen flex items-center">
       <div className="relative z-10 w-full flex flex-col items-center text-center text-white px-6 py-24 md:py-32 lg:py-40 space-y-12">
         {/* Headline */}
         <div className="space-y-5">
@@ -48,7 +48,7 @@ const EventListHero = ({
             <option value="Guest Lecture">Guest Lecture</option>
           </select>
 
-          <button className="bg-[#FF4B8B]/80 hover:bg-[#FF4B8B] text-white px-6 py-4 rounded-md md:rounded-r-md font-bold uppercase transition whitespace-nowrap">
+          <button className="bg-primary-pink/80 hover:bg-primary-pink text-white px-6 py-4 rounded-md md:rounded-r-md font-bold uppercase transition whitespace-nowrap">
             <FaSearch className="inline mr-2" />
             Discover Now
           </button>

@@ -58,7 +58,7 @@ const Hysteroscopycard4 = ({ setShowCard, setActiveButton }) => {
               </div>
               <div className="flex-1">
                 <h4 className="font-semibold mb-1 flex items-center gap-2">
-                  <Camera className="w-5 h-5 text-primary" /> Positioning
+                  <Camera className="w-5 h-5 text-primary-pink" /> Positioning
                 </h4>
                 <p className="text-muted-foreground text-sm">
                   You lie on a couch with your legs supported
@@ -73,7 +73,7 @@ const Hysteroscopycard4 = ({ setShowCard, setActiveButton }) => {
               </div>
               <div className="flex-1">
                 <h4 className="font-semibold mb-1 flex items-center gap-2">
-                  <Wrench className="w-5 h-5 text-primary" /> Speculum Use
+                  <Wrench className="w-5 h-5 text-primary-pink" /> Speculum Use
                 </h4>
                 <p className="text-muted-foreground text-sm">
                   A speculum may be used to gently hold the vagina open
@@ -88,7 +88,7 @@ const Hysteroscopycard4 = ({ setShowCard, setActiveButton }) => {
               </div>
               <div className="flex-1">
                 <h4 className="font-semibold mb-1 flex items-center gap-2">
-                  <Camera className="w-5 h-5 text-primary" /> Hysteroscope Insertion
+                  <Camera className="w-5 h-5 text-primary-pink" /> Hysteroscope Insertion
                 </h4>
                 <p className="text-muted-foreground text-sm">
                   The hysteroscope is passed into the womb through the vagina and cervix
@@ -103,7 +103,7 @@ const Hysteroscopycard4 = ({ setShowCard, setActiveButton }) => {
               </div>
               <div className="flex-1">
                 <h4 className="font-semibold mb-1 flex items-center gap-2">
-                  <Droplet className="w-5 h-5 text-primary" /> Fluid Expansion
+                  <Droplet className="w-5 h-5 text-primary-pink" /> Fluid Expansion
                 </h4>
                 <p className="text-muted-foreground text-sm">
                   Fluid is gently pumped in to expand the womb and improve visibility
@@ -118,7 +118,7 @@ const Hysteroscopycard4 = ({ setShowCard, setActiveButton }) => {
               </div>
               <div className="flex-1">
                 <h4 className="font-semibold mb-1 flex items-center gap-2">
-                  <Search className="w-5 h-5 text-primary" /> Examination & Treatment
+                  <Search className="w-5 h-5 text-primary-pink" /> Examination & Treatment
                 </h4>
                 <p className="text-muted-foreground text-sm">
                   A camera sends pictures to a monitor so your doctor can see and treat any
@@ -146,7 +146,7 @@ const Hysteroscopycard4 = ({ setShowCard, setActiveButton }) => {
                 setShowCard(5); // move to Card 4
                 setActiveButton(4); // index for Card 4
               }}
-              className="inline-flex items-center justify-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-9 px-4 py-2 has-[&_svg]:px-3 w-full"
+              className="inline-flex items-center justify-center bg-primary-pink hover:bg-primary-pink/80 gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-9 px-4 py-2 has-[&_svg]:px-3 w-full"
             >
               Learn About Recovery
             </button>

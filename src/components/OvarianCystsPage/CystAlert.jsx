@@ -10,7 +10,7 @@ export default function CystAlert() {
     >
       {/* Header */}
       <div className="flex items-start gap-3 mb-4">
-        <div className="p-2 rounded-full bg-[#FF4B8B]/10 flex items-center justify-center">
+        <div className="p-2 rounded-full bg-light-pink flex items-center justify-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="20"
@@ -41,7 +41,7 @@ export default function CystAlert() {
       </ul>
 
       {/* Footer note */}
-      <p className="mt-4 text-sm text-[#804659] italic">
+      <p className="mt-4 text-sm text-black italic">
         These can be signs of a cyst or other underlying conditions.
       </p>
     </div>

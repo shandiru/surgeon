@@ -81,7 +81,7 @@ const RoboticGuide5 = ({ setShowCard, setActiveButton }) => {
                 setShowCard(6);
                 setActiveButton(5);
               }}
-              className="w-full bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white rounded-md h-10 px-4 flex items-center justify-center text-sm font-medium transition"
+              className="w-full bg-primary-pink hover:bg-primary-pink/80 text-white rounded-md h-10 px-4 flex items-center justify-center text-sm font-medium transition"
             >
               Learn About Treatment
             </button>

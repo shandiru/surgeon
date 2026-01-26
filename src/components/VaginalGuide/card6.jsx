@@ -86,7 +86,7 @@ const Vaginalcard6 = ({ setShowCard, setActiveButton }) => {
                 setShowCard(7);
                 setActiveButton(6);
               }}
-              className="inline-flex items-center justify-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 gap-2 rounded-md text-sm sm:text-base font-medium transition h-10 w-full px-4"
+              className="inline-flex items-center justify-center bg-primary-pink hover:bg-primary-pink/80 gap-2 rounded-md text-sm sm:text-base font-medium transition h-10 w-full px-4"
             >
               Next
             </button>

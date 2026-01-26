@@ -22,7 +22,7 @@ const EndometrialCard4 = ({ setShowCard, setActiveButton }) => {
 
         {/* Card */}
         <div
-          className="bg-white text-gray-900 flex flex-col gap-6 rounded-xl py-6 shadow-sm mb-6 
+          className="bg-white text-black flex flex-col gap-6 rounded-xl py-6 shadow-sm mb-6 
                      transition-all duration-300 hover:shadow-md hover:scale-[1.01] active:scale-[0.99]"
           data-aos="fade-up"
         >
@@ -87,7 +87,7 @@ const EndometrialCard4 = ({ setShowCard, setActiveButton }) => {
                 setShowCard(5);
                 setActiveButton(4);
               }}
-              className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all"
+              className="bg-primary-pink hover:bg-primary-pink/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all"
             >
               Continue to Next Step
             </button>

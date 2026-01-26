@@ -10,7 +10,7 @@ export default function PostmenopausalHealthSection() {
           <h1 className="text-3xl sm:text-4xl font-bold mb-4 text-primary-pink">
             Understanding Postmenopausal Bleeding
           </h1>
-          <p className="text-lg sm:text-xl max-w-xl mb-8 text-[#6B7280]">
+          <p className="text-lg sm:text-xl max-w-xl mb-8 text-black">
             What it is, causes, and why it's important to get checked
           </p>
 

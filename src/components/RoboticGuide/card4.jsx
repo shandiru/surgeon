@@ -73,7 +73,7 @@ const RoboticGuide4 = ({ setShowCard, setActiveButton }) => {
                     {card.icon}
                     {card.title}
                   </div>
-                  <span className="inline-flex rounded-md px-2 py-0.5 text-xs font-medium bg-[#FDEBED] text-primary-pink">
+                  <span className="inline-flex rounded-md px-2 py-0.5 text-xs font-medium bg-light-pink-1 text-primary-pink">
                     {card.badge}
                   </span>
                 </div>
@@ -83,7 +83,7 @@ const RoboticGuide4 = ({ setShowCard, setActiveButton }) => {
                   <ul className="text-sm text-black space-y-1">
                     {card.points.map((point, i) => (
                       <li key={i} className="flex items-center gap-2">
-                        <LuCircleCheckBig className="w-4 h-4 text-[#F93981]" />
+                        <LuCircleCheckBig className="w-4 h-4 text-primary-pink" />
                         {point}
                       </li>
                     ))}
@@ -102,7 +102,7 @@ const RoboticGuide4 = ({ setShowCard, setActiveButton }) => {
             setShowCard(5);
             setActiveButton(4);
           }}
-          className="w-full sm:w-[70%] md:w-[50%] bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white font-medium rounded-md h-10 px-4 transition-all flex items-center justify-center gap-2 whitespace-nowrap"
+          className="w-full sm:w-[70%] md:w-[50%] bg-primary-pink hover:bg-primary-pink/80 text-white font-medium rounded-md h-10 px-4 transition-all flex items-center justify-center gap-2 whitespace-nowrap"
         >
           Learn More
         </button>

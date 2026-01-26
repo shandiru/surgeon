@@ -40,7 +40,7 @@ const PostcoitalBleedingGuideCard4 = ({ setShowCard, setActiveButton }) => {
               "Any bleeding after menopause",
             ].map((item, idx) => (
               <li key={idx} className="flex items-start gap-2">
-                <span className="w-2 h-2 rounded-full bg-[#FF4B8B] mt-2 flex-shrink-0" />
+                <span className="w-2 h-2 rounded-full bg-primary-pink mt-2 flex-shrink-0" />
                 <span>{item}</span>
               </li>
             ))}
@@ -60,7 +60,7 @@ const PostcoitalBleedingGuideCard4 = ({ setShowCard, setActiveButton }) => {
             setShowCard(5);
             setActiveButton(4);
           }}
-          className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md text-sm font-medium transition-all h-10 px-4"
+          className="bg-primary-pink hover:bg-primary-pink/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md text-sm font-medium transition-all h-10 px-4"
         >
           Continue to Next Step
         </button>

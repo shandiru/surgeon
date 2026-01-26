@@ -72,7 +72,7 @@ export default function AboutSectionView() {
           {cards.map((card, i) => (
             <div
               key={i}
-              className="group bg-white text-gray-900 flex flex-col gap-6 rounded-xl border border-primary-pink/20 shadow-sm text-center p-6 transition-all duration-300 
+              className="group bg-white text-black flex flex-col gap-6 rounded-xl border border-primary-pink/20 shadow-sm text-center p-6 transition-all duration-300 
                          md:hover:scale-105 md:hover:shadow-xl
                          active:scale-95 active:shadow-lg"
               data-aos="fade-up"

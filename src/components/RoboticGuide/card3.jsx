@@ -94,12 +94,12 @@ const RoboticGuide3 = ({ setShowCard, setActiveButton }) => {
             setActiveButton(3);
           }}
           className="
-            bg-[#FF4B8B] text-white font-medium 
+            bg-primary-pink text-white font-medium 
             rounded-md 
             h-11 text-sm sm:text-base
             w-[90%] sm:w-[70%] md:w-[55%] lg:w-[40%] 
             transition-all 
-            hover:bg-[#FF4B8B]/80 
+            hover:bg-primary-pink/80 
             active:scale-95
           "
           data-aos="fade-up"

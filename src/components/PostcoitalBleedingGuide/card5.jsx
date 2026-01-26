@@ -27,7 +27,7 @@ const PostcoitalBleedingGuidecard5 = ({ setShowCard, setActiveButton }) => {
             </svg>
             What to Track Before Your Appointment
           </div>
-          <div className="text-sm text-[#6B7280]">
+          <div className="text-sm text-black">
             Bring this info with you — it can help your doctor find the cause quickly
           </div>
         </div>
@@ -37,21 +37,21 @@ const PostcoitalBleedingGuidecard5 = ({ setShowCard, setActiveButton }) => {
           <div className="grid md:grid-cols-2 gap-6">
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2">
-                <span className="w-2 h-2 bg-[#FF4B8B] rounded-full mt-2"></span>
+                <span className="w-2 h-2 bg-primary-pink rounded-full mt-2"></span>
                 When the bleeding happens (timing and cycle day)
               </li>
               <li className="flex items-start gap-2">
-                <span className="w-2 h-2 bg-[#FF4B8B] rounded-full mt-2"></span>
+                <span className="w-2 h-2 bg-primary-pink rounded-full mt-2"></span>
                 How much blood (light spots or heavier flow)
               </li>
             </ul>
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2">
-                <span className="w-2 h-2 bg-[#FF4B8B] rounded-full mt-2"></span>
+                <span className="w-2 h-2 bg-primary-pink rounded-full mt-2"></span>
                 If there's pain during or after sex
               </li>
               <li className="flex items-start gap-2">
-                <span className="w-2 h-2 bg-[#FF4B8B] rounded-full mt-2"></span>
+                <span className="w-2 h-2 bg-primary-pink rounded-full mt-2"></span>
                 Any other symptoms (discharge, odour, pelvic pain, fever)
               </li>
             </ul>
@@ -65,7 +65,7 @@ const PostcoitalBleedingGuidecard5 = ({ setShowCard, setActiveButton }) => {
             setShowCard(6);
             setActiveButton(5);
           }}
-          className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md text-sm font-medium transition-all h-10 px-4"
+          className="bg-primary-pink hover:bg-primary-pink/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md text-sm font-medium transition-all h-10 px-4"
         >
           Learn About Aftercare
         </button>

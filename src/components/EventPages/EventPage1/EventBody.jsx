@@ -43,9 +43,9 @@ const EventDetail = () => {
           <div className="lg:col-span-2 space-y-6">
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all hover:shadow-2xl">
               <div className="p-6 lg:p-8">
-                <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-3">{event.title}</h1>
+                <h1 className="text-3xl lg:text-4xl font-bold text-black mb-3">{event.title}</h1>
                 <div className="flex flex-wrap items-center gap-4 mb-6">
-                  <span className="inline-flex items-center px-4 py-2 bg-[#FF4B8B]/20 text-primary-pink rounded-full font-semibold text-sm">
+                  <span className="inline-flex items-center px-4 py-2 bg-primary-pink/20 text-primary-pink rounded-full font-semibold text-sm">
                     <Calendar className="w-4 h-4 mr-2" />
                     {event.date}
                   </span>
@@ -84,7 +84,7 @@ const EventDetail = () => {
                     href={event.joinUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 md:flex-none px-8 py-3 bg-[#FF4B8B] text-white rounded-xl font-semibold transition-all shadow-lg text-center"
+                    className="flex-1 md:flex-none px-8 py-3 bg-primary-pink text-white rounded-xl font-semibold transition-all shadow-lg text-center"
                   >
                     Join Event
                   </a>
@@ -94,7 +94,7 @@ const EventDetail = () => {
 
             {/* About Section */}
             <div className="bg-white rounded-2xl shadow-lg p-6 lg:p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4 border-b-2 border-primary-pink pb-2 inline-block">
+              <h2 className="text-2xl font-bold text-black mb-4 border-b-2 border-primary-pink pb-2 inline-block">
                 About Event
               </h2>
               <p className="text-black leading-relaxed">{event.about}</p>
@@ -102,7 +102,7 @@ const EventDetail = () => {
 
             {/* Speakers */}
             <div className="bg-white rounded-2xl shadow-lg p-6 lg:p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-primary-pink pb-2 inline-block">
+              <h2 className="text-2xl font-bold text-black mb-6 border-b-2 border-primary-pink pb-2 inline-block">
                 Who's Speaking?
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -113,7 +113,7 @@ const EventDetail = () => {
                       alt={speaker.name}
                       className="w-32 h-32 rounded-full mx-auto object-cover ring-4 ring-gray-100 group-hover:ring-[#FF4B8B] transition-all"
                     />
-                    <h3 className="text-lg font-bold text-gray-900 mt-4">{speaker.name}</h3>
+                    <h3 className="text-lg font-bold text-black mt-4">{speaker.name}</h3>
                     <p className="text-sm text-black">{speaker.role}</p>
                   </div>
                 ))}
@@ -122,7 +122,7 @@ const EventDetail = () => {
 
             {/* FAQs */}
             <div className="bg-white rounded-2xl shadow-lg p-6 lg:p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-primary-pink pb-2 inline-block">
+              <h2 className="text-2xl font-bold text-black mb-6 border-b-2 border-primary-pink pb-2 inline-block">
                 FAQ's
               </h2>
               <div className="space-y-3">
@@ -133,11 +133,9 @@ const EventDetail = () => {
                   >
                     <button
                       onClick={() => setOpenFaq(openFaq === index ? -1 : index)}
-                      className="w-full flex items-center justify-between p-4 bg-[#FF4B8B]/20 hover:bg-[#FF4B8B]/30 transition-all"
+                      className="w-full flex items-center justify-between p-4 bg-primary-pink/20 hover:bg-primary-pink/30 transition-all"
                     >
-                      <h3 className="text-lg font-semibold text-gray-900 text-left">
-                        {faq.question}
-                      </h3>
+                      <h3 className="text-lg font-semibold text-black text-left">{faq.question}</h3>
                       {openFaq === index ? (
                         <ChevronUp className="w-5 h-5" />
                       ) : (
@@ -158,7 +156,7 @@ const EventDetail = () => {
           {/* Sidebar */}
           <div className="lg:col-span-1 space-y-6">
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden sticky top-6">
-              <div className="bg-[#FF4B8B] p-4 text-white text-xl font-bold">
+              <div className="bg-primary-pink p-4 text-white text-xl font-bold">
                 Who Host this Event
               </div>
               <div className="p-6">
@@ -169,7 +167,7 @@ const EventDetail = () => {
                     alt="Host"
                   />
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900">
+                    <h3 className="text-xl font-bold text-black">
                       {event.organizers[activeOrganizer].name}
                     </h3>
                     <p className="text-sm text-primary-pink">

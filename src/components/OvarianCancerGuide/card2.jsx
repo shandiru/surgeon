@@ -6,7 +6,7 @@ const OvarianCancerGuideCard2 = ({ setShowCard, setActiveButton }) => {
       {/* Card Container */}
       <div
         className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 
-        flex flex-col gap-6 rounded-2xl border border-primary-pink/10 shadow-sm 
+        flex flex-col gap-6 rounded-2xl border border-primary-pink shadow-sm 
         animate-in slide-in-from-right-5 duration-300 p-8 bg-white"
       >
         {/* Card Header */}
@@ -50,7 +50,7 @@ const OvarianCancerGuideCard2 = ({ setShowCard, setActiveButton }) => {
           {/* Types of Ovarian Cancer */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Type 1 */}
-            <div className="p-4 rounded-xl border border-primary-pink/10 bg-white transition-all duration-300 hover:shadow-md">
+            <div className="p-4 rounded-xl border border-primary-pink bg-white transition-all duration-300 hover:shadow-md">
               <h4 className="font-semibold mb-2 text-primary-pink">Epithelial Ovarian Cancer</h4>
               <p className="text-sm text-black">
                 The most common type — <strong>around 90%</strong> of all ovarian cancers. It begins
@@ -76,7 +76,7 @@ const OvarianCancerGuideCard2 = ({ setShowCard, setActiveButton }) => {
             </div>
 
             {/* Type 3 */}
-            <div className="p-4 rounded-xl border border-primary-pink/10 bg-white transition-all duration-300 hover:shadow-md">
+            <div className="p-4 rounded-xl border border-primary-pink bg-white transition-all duration-300 hover:shadow-md">
               <h4 className="font-semibold mb-2 text-primary-pink">Stromal Tumours</h4>
               <p className="text-sm text-black">
                 Begin in the hormone-producing cells of the ovary. They are rare and often detected
@@ -86,7 +86,7 @@ const OvarianCancerGuideCard2 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           {/* Extra Info Box */}
-          <div className="p-4 rounded-xl border border-primary-pink/10 bg-light-pink-1">
+          <div className="p-4 rounded-xl border border-primary-pink bg-light-pink-1">
             <h4 className="font-semibold flex items-center gap-2 mb-2 text-primary-pink">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

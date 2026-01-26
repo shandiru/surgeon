@@ -15,7 +15,7 @@ const WhereDoesTheBleedingComeFromCard = () => {
         <h2 className="font-semibold text-2xl text-primary-pink">
           Where Does the Bleeding Come From?
         </h2>
-        <p className="text-sm text-[#6B7280]">
+        <p className="text-sm text-black">
           Postcoital bleeding usually comes from the vagina or cervix
         </p>
       </div>
@@ -29,7 +29,7 @@ const WhereDoesTheBleedingComeFromCard = () => {
               <TriangleAlert className="h-5 w-5 text-primary-pink" />
               Vaginal Causes
             </h3>
-            <p className="text-sm text-[#6B7280]">
+            <p className="text-sm text-black">
               Usually from direct friction or trauma during sex — known as a vaginal laceration.
             </p>
 
@@ -39,7 +39,7 @@ const WhereDoesTheBleedingComeFromCard = () => {
 
             <div className="space-y-2 text-sm">
               <p className="font-medium">Common causes:</p>
-              <ul className="space-y-1 text-[#6B7280] ml-4">
+              <ul className="space-y-1 text-black ml-4">
                 <li>• The vagina is not well lubricated</li>
                 <li>• Estrogen levels are low (breastfeeding or menopause)</li>
                 <li>• Sex is unusually rough</li>
@@ -59,7 +59,7 @@ const WhereDoesTheBleedingComeFromCard = () => {
               <Heart className="h-5 w-5 text-primary-pink" />
               Cervical Causes
             </h3>
-            <p className="text-sm text-[#6B7280]">
+            <p className="text-sm text-black">
               Bleeding from the cervix is usually light — often just seen when wiping.
             </p>
 
@@ -126,9 +126,7 @@ const WhereDoesTheBleedingComeFromCard = () => {
                     />
                   </button>
                   {openAccordion === index && (
-                    <div className="px-4 pb-4 text-sm text-[#6B7280] bg-[#FFF9FB]">
-                      {item.content}
-                    </div>
+                    <div className="px-4 pb-4 text-sm text-black bg-[#FFF9FB]">{item.content}</div>
                   )}
                 </div>
               ))}

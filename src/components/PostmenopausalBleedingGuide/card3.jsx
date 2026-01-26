@@ -16,7 +16,7 @@ const PostmenopausalBleedingGuideCard3 = ({ setShowCard, setActiveButton }) => {
             Causes of Postmenopausal Bleeding
           </h2>
 
-          <p className="text-sm text-[#6B7280] mt-2">
+          <p className="text-sm text-black mt-2">
             Bleeding can range from light spotting or brown discharge to heavier, period-like
             bleeding.
           </p>

@@ -33,12 +33,12 @@ const EndometrialGuideButtons = ({ setShowCard, activeButton, setActiveButton })
         <button
           key={index}
           onClick={() => handleButtonClick(button.card, index)}
-          className={`flex flex-col items-center justify-center text-center 
+          className={`flex flex-col items-center justify-center text-center
             w-full py-2 px-3
-            font-semibold rounded-md 
-            text-black bg-[#FF4B8B]/10 hover:bg-[#FF4B8B]/30 
+            font-semibold rounded-md
+            text-black bg-light-pink-1 hover:bg-light-pink-2
             text-button
-            transition-all 
+            transition-all cursor-pointer
             ${activeButton === index ? "bg-light-pink-2 text-black" : ""}`}
         >
           {button.icon}

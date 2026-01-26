@@ -62,7 +62,7 @@ const OvarianCystsGuideCard1 = ({ setShowCard, setActiveButton }) => {
               </div>
 
               {/* Right Important Note */}
-              <div className="bg-white rounded-xl p-8 border border-primary-pink/10 shadow-md">
+              <div className="bg-white rounded-xl p-8 border border-primary-pink shadow-md">
                 <h4 className="font-semibold mb-4 flex items-center gap-2 text-primary-pink text-lg">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

@@ -9,7 +9,7 @@ const PelvicPainGuidecard8 = ({ setShowCard, setActiveButton }) => {
         {/* MAIN CARD */}
         <div
           className="
-            text-primary-pink bg-[#FF4B8B]/10
+            text-primary-pink bg-light-pink
             max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-xl py-6 shadow-sm
             transition-all duration-300
             hover:z-50 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd]
@@ -48,7 +48,7 @@ const PelvicPainGuidecard8 = ({ setShowCard, setActiveButton }) => {
               setActiveButton(8);
             }}
             className="
-              bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white
+              bg-primary-pink hover:bg-primary-pink/80 text-white
               w-[90%] md:w-[60%] lg:w-[40%]
               rounded-md h-10 text-sm font-medium transition-all shadow-md hover:shadow-lg
             "

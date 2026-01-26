@@ -137,7 +137,7 @@ const RoboticGuide2 = ({ setShowCard, setActiveButton }) => {
               setActiveButton(2);
             }}
             className="
-              bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 
+              bg-primary-pink hover:bg-primary-pink/80 
               text-white 
               w-[90%] md:w-[60%] lg:w-[40%] 
               rounded-md h-10 

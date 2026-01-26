@@ -17,17 +17,17 @@ export default function HowCommonSection() {
             {/* Stat 1 */}
             <div className="text-center p-6 rounded-xl bg-gradient-to-br from-[#FEE6EA] to-[#fff0f5] shadow-sm">
               <div className="text-4xl font-extrabold text-primary-pink mb-2">10%</div>
-              <p className="text-sm text-[#6B7280]">of postmenopausal women experience bleeding</p>
+              <p className="text-sm text-black">of postmenopausal women experience bleeding</p>
             </div>
 
             {/* Stat 2 */}
             <div className="text-center p-6 rounded-xl bg-gradient-to-br from-[#FFE3EC] to-[#fff5f8] shadow-sm">
               <div className="text-4xl font-extrabold text-primary-pink mb-2">1 in 10</div>
-              <p className="text-sm text-[#6B7280]">cases may be linked to cancer</p>
+              <p className="text-sm text-black">cases may be linked to cancer</p>
             </div>
           </div>
 
-          <p className="text-center mt-6 text-base text-[#6B7280] leading-relaxed">
+          <p className="text-center mt-6 text-base text-black leading-relaxed">
             Most women are diagnosed with{" "}
             <span className="font-semibold text-black">non-cancerous conditions</span>, which is why{" "}
             <span className="font-semibold">prompt assessment</span> is essential.

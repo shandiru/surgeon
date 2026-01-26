@@ -5,7 +5,7 @@ const CervicalCancerGuideCard2 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6 pb-10">
       {/* Card Container */}
-      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-2xl border border-primary-pink/10 bg-white p-8 shadow-sm animate-in slide-in-from-right-5 duration-300">
+      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-2xl border border-primary-pink bg-white p-8 shadow-sm animate-in slide-in-from-right-5 duration-300">
         {/* Card Header */}
         <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5">
           <div className="leading-none font-semibold flex items-center gap-2 text-primary-pink">
@@ -30,7 +30,7 @@ const CervicalCancerGuideCard2 = ({ setShowCard, setActiveButton }) => {
         {/* Card Content */}
         <div className="space-y-6">
           {/* Intro Box */}
-          <div className="p-4 rounded-xl border border-primary-pink/10 transition-all duration-300 bg-primary-pink/10">
+          <div className="p-4 rounded-xl border border-primary-pink transition-all duration-300 bg-primary-pink/10">
             <p className="text-lg leading-relaxed text-black">
               Cervical cancer usually begins with pre-cancerous changes in the cells of the cervix
               called <strong>CIN (Cervical Intraepithelial Neoplasia)</strong>. If untreated, some
@@ -41,7 +41,7 @@ const CervicalCancerGuideCard2 = ({ setShowCard, setActiveButton }) => {
           {/* Two Main Types */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Squamous Cell Carcinoma */}
-            <div className="p-4 rounded-xl border border-primary-pink/10 transition-all duration-300 hover:shadow-md bg-white">
+            <div className="p-4 rounded-xl border border-primary-pink transition-all duration-300 hover:shadow-md bg-white">
               <h4 className="font-semibold mb-2 text-primary-pink">Squamous Cell Carcinoma</h4>
               <p className="text-sm text-black">
                 The most common type — <strong>70–80%</strong> of cervical cancers. Starts in the
@@ -50,7 +50,7 @@ const CervicalCancerGuideCard2 = ({ setShowCard, setActiveButton }) => {
             </div>
 
             {/* Adenocarcinoma */}
-            <div className="p-4 rounded-xl border border-primary-pink/10 transition-all duration-300 hover:shadow-md bg-white">
+            <div className="p-4 rounded-xl border border-primary-pink transition-all duration-300 hover:shadow-md bg-white">
               <h4 className="font-semibold mb-2 text-primary-pink">Adenocarcinoma</h4>
               <p className="text-sm text-black">
                 Begins in the glandular cells inside the cervical canal. Less common but often
@@ -59,7 +59,7 @@ const CervicalCancerGuideCard2 = ({ setShowCard, setActiveButton }) => {
             </div>
 
             {/* Rare Types */}
-            <div className="p-4 rounded-xl border border-primary-pink/10 transition-all duration-300 hover:shadow-md bg-white">
+            <div className="p-4 rounded-xl border border-primary-pink transition-all duration-300 hover:shadow-md bg-white">
               <h4 className="font-semibold mb-2 text-primary-pink">Rare Types</h4>
               <p className="text-sm text-black">
                 Includes <strong>small cell neuroendocrine carcinoma</strong> and other mixed
@@ -69,7 +69,7 @@ const CervicalCancerGuideCard2 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           {/* Extra Info Box */}
-          <div className="p-4 rounded-xl border border-primary-pink/10 bg-primary-pink/10">
+          <div className="p-4 rounded-xl border border-primary-pink bg-primary-pink/10">
             <h4 className="font-semibold mb-2 flex items-center gap-2 text-primary-pink">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

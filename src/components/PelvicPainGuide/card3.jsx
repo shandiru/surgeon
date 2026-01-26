@@ -20,7 +20,7 @@ const PelvicPainAccordion = () => {
   return (
     <div className="space-y-6 bg-gradient-to-b from-primary/5 to-background py-8 px-4">
       <div
-        className="text-primary-pink bg-[#FF4B8B]/10 max-w-5xl mx-auto mb-10 
+        className="text-primary-pink bg-light-pink max-w-5xl mx-auto mb-10 
         rounded-xl p-6 transition-all duration-300 border
         hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] hover:scale-105"
         style={{ borderColor: "rgb(255,197,211)" }}
@@ -37,7 +37,7 @@ const PelvicPainAccordion = () => {
         {/* 🩷 1. Gynaecological Causes */}
         {/* -------------------------------------- */}
         <div
-          className="cursor-pointer p-4 bg-[#FF4B8B]/10 rounded-md flex justify-between items-center"
+          className="cursor-pointer p-4 bg-light-pink rounded-md flex justify-between items-center"
           onClick={() => handleToggle("gynaecological")}
         >
           <div className="flex items-center gap-3">
@@ -155,7 +155,7 @@ const PelvicPainAccordion = () => {
         {/* 🥗 3. Digestive Causes */}
         {/* -------------------------------------- */}
         <div
-          className="cursor-pointer p-4 bg-[#FF4B8B]/10 rounded-md flex justify-between items-center mt-4"
+          className="cursor-pointer p-4 bg-light-pink rounded-md flex justify-between items-center mt-4"
           onClick={() => handleToggle("digestive")}
         >
           <div className="flex items-center gap-3">

@@ -81,7 +81,7 @@ const IrregularBleedingContent = ({ activeTab }) => {
               </svg>
               Common Causes
             </div>
-            <p className="text-sm text-[#804659]">
+            <p className="text-sm text-black">
               Irregular vaginal bleeding can be linked to several conditions. In most cases, the
               cause is not serious, but it's important to get checked.
             </p>
@@ -138,12 +138,12 @@ const IrregularBleedingContent = ({ activeTab }) => {
                   className="flex items-start gap-3 p-4 rounded-lg bg-white shadow-sm hover:shadow-md transition-all duration-200"
                 >
                   {/* Label Badge */}
-                  <span className="inline-flex items-center justify-center rounded-md px-2 py-0.5 text-xs font-medium text-primary-pink bg-[#FFE0EB] w-fit whitespace-nowrap shrink-0">
+                  <span className="inline-flex items-center justify-center rounded-md px-2 py-0.5 text-xs font-medium text-primary-pink bg-light-pink-1 w-fit whitespace-nowrap shrink-0">
                     {item.label}
                   </span>
                   <div className="flex-1">
                     <h4 className="font-semibold text-primary-pink">{item.title}</h4>
-                    <p className="text-sm text-[#804659] mt-1">{item.desc}</p>
+                    <p className="text-sm text-black mt-1">{item.desc}</p>
                   </div>
                 </div>
               ))}
@@ -154,7 +154,7 @@ const IrregularBleedingContent = ({ activeTab }) => {
       {activeTab === "When to Seek Help" && (
         <div
           data-slot="card"
-          className="bg-white text-[#333] flex flex-col gap-6 rounded-xl py-6 px-4 sm:px-6 shadow-md hover:shadow-lg transition-all duration-300"
+          className="bg-white text-black flex flex-col gap-6 rounded-xl py-6 px-4 sm:px-6 shadow-md hover:shadow-lg transition-all duration-300"
         >
           {/* Header */}
           <div
@@ -240,7 +240,7 @@ const IrregularBleedingContent = ({ activeTab }) => {
       {activeTab === "What to Track" && (
         <div
           data-slot="card"
-          className="bg-white text-[#333] flex flex-col gap-6 rounded-xl py-6 px-4 sm:px-6 shadow-md hover:shadow-lg transition-all duration-300"
+          className="bg-white text-black flex flex-col gap-6 rounded-xl py-6 px-4 sm:px-6 shadow-md hover:shadow-lg transition-all duration-300"
         >
           {/* Header */}
           <div
@@ -336,7 +336,7 @@ const IrregularBleedingContent = ({ activeTab }) => {
       {activeTab === "Your Appointment" && (
         <div
           data-slot="card"
-          className="bg-white text-[#333] flex flex-col gap-6 rounded-xl py-6 px-4 sm:px-6 shadow-md hover:shadow-lg transition-all duration-300"
+          className="bg-white text-black flex flex-col gap-6 rounded-xl py-6 px-4 sm:px-6 shadow-md hover:shadow-lg transition-all duration-300"
         >
           {/* Header */}
           <div
@@ -412,7 +412,7 @@ const IrregularBleedingContent = ({ activeTab }) => {
           {/* Treatment Options Card */}
           <div
             data-slot="card"
-            className="bg-white text-[#804659] flex flex-col gap-4 sm:gap-6 rounded-xl py-6 px-4 sm:px-6 shadow-md hover:shadow-lg transition-all duration-300"
+            className="bg-white text-black flex flex-col gap-4 sm:gap-6 rounded-xl py-6 px-4 sm:px-6 shadow-md hover:shadow-lg transition-all duration-300"
           >
             {/* Header */}
             <div
@@ -464,7 +464,7 @@ const IrregularBleedingContent = ({ activeTab }) => {
                     key={idx}
                     className="flex items-start gap-4 p-4 rounded-lg bg-[#fff7f9] shadow-sm hover:shadow-md transition-all duration-200"
                   >
-                    <div className="p-2 rounded-full bg-[#ff4b8b]/10 flex-shrink-0">
+                    <div className="p-2 rounded-full bg-light-pink flex-shrink-0">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="w-5 h-5 text-primary-pink"
@@ -492,7 +492,7 @@ const IrregularBleedingContent = ({ activeTab }) => {
           {/* Remember Card */}
           <div
             data-slot="card"
-            className="text-[#804659] flex flex-col gap-4 sm:gap-6 rounded-xl py-6 px-4 sm:px-6 shadow-md hover:shadow-lg transition-all duration-300 bg-[#fff7f9]"
+            className="text-black flex flex-col gap-4 sm:gap-6 rounded-xl py-6 px-4 sm:px-6 shadow-md hover:shadow-lg transition-all duration-300 bg-[#fff7f9]"
           >
             <div
               data-slot="card-header"

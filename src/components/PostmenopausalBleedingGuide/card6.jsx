@@ -38,7 +38,7 @@ const PostmenopausalBleedingGuideCard6 = ({ setShowCard, setActiveButton }) => {
               How It’s Diagnosed
             </div>
 
-            <p className="mt-2 text-sm text-[#6B7280]">
+            <p className="mt-2 text-sm text-black">
               These tests are usually quick and done as outpatient procedures.
             </p>
           </div>
@@ -61,7 +61,7 @@ const PostmenopausalBleedingGuideCard6 = ({ setShowCard, setActiveButton }) => {
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                   strokeWidth="2"
-                  className={`h-5 w-5 text-[#6B7280] transition-transform duration-300 ${
+                  className={`h-5 w-5 text-black transition-transform duration-300 ${
                     openIndex === 0 ? "rotate-180" : ""
                   }`}
                 >
@@ -97,7 +97,7 @@ const PostmenopausalBleedingGuideCard6 = ({ setShowCard, setActiveButton }) => {
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                   strokeWidth="2"
-                  className={`h-5 w-5 text-[#6B7280] transition-transform duration-300 ${
+                  className={`h-5 w-5 text-black transition-transform duration-300 ${
                     openIndex === 1 ? "rotate-180" : ""
                   }`}
                 >
@@ -133,7 +133,7 @@ const PostmenopausalBleedingGuideCard6 = ({ setShowCard, setActiveButton }) => {
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                   strokeWidth="2"
-                  className={`h-5 w-5 text-[#6B7280] transition-transform duration-300 ${
+                  className={`h-5 w-5 text-black transition-transform duration-300 ${
                     openIndex === 2 ? "rotate-180" : ""
                   }`}
                 >
@@ -169,7 +169,7 @@ const PostmenopausalBleedingGuideCard6 = ({ setShowCard, setActiveButton }) => {
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                   strokeWidth="2"
-                  className={`h-5 w-5 text-[#6B7280] transition-transform duration-300 ${
+                  className={`h-5 w-5 text-black transition-transform duration-300 ${
                     openIndex === 3 ? "rotate-180" : ""
                   }`}
                 >

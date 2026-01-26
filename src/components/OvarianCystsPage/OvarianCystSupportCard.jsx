@@ -33,7 +33,7 @@ export default function OvarianCystSupportCard() {
         </div>
 
         {/* CTA Button */}
-        <button className="inline-flex items-center justify-center gap-2 text-sm font-medium text-white bg-[#FF4B8B] hover:bg-[#e43d7a] rounded-md h-11 px-8 mt-6 shadow-md hover:shadow-lg transition-all">
+        <button className="inline-flex items-center justify-center gap-2 text-sm font-medium text-white bg-primary-pink hover:bg-[#e43d7a] rounded-md h-11 px-8 mt-6 shadow-md hover:shadow-lg transition-all">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="20"

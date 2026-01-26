@@ -19,7 +19,7 @@ const PostmenopausalBleedingGuideCard5 = ({ setShowCard, setActiveButton }) => {
 
           {/* CONTENT */}
           <div className="px-6">
-            <p className="mb-4 text-sm text-[#6B7280]">
+            <p className="mb-4 text-sm text-black">
               Knowing your risk helps encourage early checks and peace of mind.
             </p>
 

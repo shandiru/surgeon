@@ -28,18 +28,18 @@ const CervicalCancerGuideButtons = ({ setShowCard, activeButton, setActiveButton
   };
 
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-3 sm:gap-4 md:gap-2 px-4 sm:px-6 max-w-6xl mx-auto mb-8">
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-3 sm:gap-4 md:gap-2 px-4 sm:px-6 max-w-6xl mx-auto mb-8">
       {buttons.map((button, index) => (
         <button
           key={index}
           onClick={() => handleButtonClick(button.card, index)}
-          className={`flex flex-col items-center justify-center text-center 
+          className={`flex flex-col items-center justify-center text-center
             w-full py-2 px-3
-            font-semibold rounded-md 
-            text-black bg-primary-pink hover:bg-primary-pink/30 
+            font-semibold rounded-md
+            text-black bg-light-pink-1 hover:bg-light-pink-2
             text-button
-            transition-all 
-            ${activeButton === index ? "bg-primary-pink/50 text-black" : ""}`}
+            transition-all cursor-pointer
+            ${activeButton === index ? "bg-light-pink-2 text-black" : ""}`}
         >
           {button.icon}
           <span className="leading-tight">{button.label}</span>

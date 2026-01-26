@@ -54,7 +54,7 @@ export default function ListingEvents({ events = [], selectedCategory = "All Eve
             <span className="text-black ml-2">{event.rating}</span>
           </div>
 
-          <h3 className="text-lg font-semibold text-gray-900">{event.title}</h3>
+          <h3 className="text-lg font-semibold text-black">{event.title}</h3>
           <p className="text-sm text-gray-500 mt-1">{event.description}</p>
           <p className="text-sm text-black mt-1 italic">{event.talk}</p>
 
@@ -75,7 +75,7 @@ export default function ListingEvents({ events = [], selectedCategory = "All Eve
         </div>
 
         {/* Footer / Action */}
-        <div className="bg-[#FF4B8B] rounded-xl text-white px-5 py-4 mt-4 flex items-center justify-center">
+        <div className="bg-primary-pink rounded-xl text-white px-5 py-4 mt-4 flex items-center justify-center">
           {event.link.startsWith("http") ? (
             <a
               href={event.link}
@@ -100,13 +100,13 @@ export default function ListingEvents({ events = [], selectedCategory = "All Eve
       {/* Heading */}
       <div className="text-center mb-14">
         <p className="text-primary-pink font-semibold mb-2">Speaking Engagements</p>
-        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">Top Listing Events</h2>
+        <h2 className="text-3xl sm:text-4xl font-bold text-black">Top Listing Events</h2>
       </div>
 
       {/* Upcoming Events Section */}
       {upcomingEvents.length > 0 && (
         <div className="mb-16 max-w-7xl mx-auto">
-          <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">Upcoming Events</h3>
+          <h3 className="text-2xl sm:text-3xl font-bold text-black mb-8">Upcoming Events</h3>
           <div className="flex flex-col gap-8">
             {upcomingEvents.map((event) => (
               <EventCard key={event.id} event={event} />
@@ -118,7 +118,7 @@ export default function ListingEvents({ events = [], selectedCategory = "All Eve
       {/* Closed Events Section */}
       {closedEvents.length > 0 && (
         <div className="max-w-7xl mx-auto">
-          <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">Closed Events</h3>
+          <h3 className="text-2xl sm:text-3xl font-bold text-black mb-8">Closed Events</h3>
           <div className="flex flex-col gap-8">
             {closedEvents.map((event) => (
               <EventCard key={event.id} event={event} />

@@ -33,7 +33,7 @@ export default function FeaturesSection() {
           {/* Header Section */}
           <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6 mb-12">
             <div className="flex-1">
-              <h2 className="text-hero md:text-5xl font-bold text-gray-900 mb-4">
+              <h2 className="text-hero md:text-5xl font-bold text-black mb-4">
                 Robotic Surgery Excellence
               </h2>
               <p className="text-body-large text-black max-w-2xl">
@@ -42,7 +42,7 @@ export default function FeaturesSection() {
               </p>
             </div>
             <div className="flex-shrink-0 md:mt-0 mt-4">
-              <button className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-[#FF4B8B] text-white font-semibold text-button hover:bg-[#E03E7C] transition-all duration-300 shadow-md hover:shadow-lg whitespace-nowrap">
+              <button className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-primary-pink text-white font-semibold text-button hover:bg-[#E03E7C] transition-all duration-300 shadow-md hover:shadow-lg whitespace-nowrap">
                 All Topics
               </button>
             </div>

@@ -9,7 +9,7 @@ export default function CausesOfBleedingSection() {
           <h2 className="font-bold flex items-center justify-center md:justify-start gap-2 text-2xl text-primary-pink">
             Causes of Postmenopausal Bleeding
           </h2>
-          <p className="text-sm text-[#6B7280] mt-2">
+          <p className="text-sm text-black mt-2">
             Bleeding can range from light spotting or brown discharge to heavier, period-like
             bleeding.
           </p>

@@ -12,7 +12,7 @@ export default function SymptomsAndRiskFactorsSection() {
             </h2>
           </div>
           <div className="px-6">
-            <p className="mb-4 text-sm text-[#6B7280]">
+            <p className="mb-4 text-sm text-black">
               Many women with postmenopausal bleeding have no other symptoms, but other symptoms may
               include:
             </p>
@@ -44,7 +44,7 @@ export default function SymptomsAndRiskFactorsSection() {
             </h2>
           </div>
           <div className="px-6">
-            <p className="mb-4 text-sm text-[#6B7280]">
+            <p className="mb-4 text-sm text-black">
               Knowing your risk helps encourage early checks and peace of mind.
             </p>
             <ul className="space-y-2 text-sm list-disc pl-5 text-[#374151]">

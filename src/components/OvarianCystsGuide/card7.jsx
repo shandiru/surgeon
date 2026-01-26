@@ -8,7 +8,7 @@ const OvarianCystsGuideCard7 = ({ setShowCard, setActiveButton }) => {
         {/* ===================== GRID WRAPPER ===================== */}
         <div className="grid md:grid-cols-2 gap-6">
           {/* ===================== CARD 1 ===================== */}
-          <div className="bg-white text-black flex flex-col gap-6 rounded-xl py-6 px-5 sm:px-6 border border-primary-pink/10 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all">
+          <div className="bg-white text-black flex flex-col gap-6 rounded-xl py-6 px-5 sm:px-6 border border-primary-pink shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all">
             {/* Header */}
             <div className="flex items-center gap-3 font-semibold text-primary-pink text-lg">
               <svg
@@ -41,7 +41,7 @@ const OvarianCystsGuideCard7 = ({ setShowCard, setActiveButton }) => {
                 "MRI (if needed for detailed images)",
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-[#FF4B8B] rounded-full mt-2 flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-primary-pink rounded-full mt-2 flex-shrink-0"></div>
                   <span className="text-sm">{item}</span>
                 </div>
               ))}
@@ -56,7 +56,7 @@ const OvarianCystsGuideCard7 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           {/* ===================== CARD 2 ===================== */}
-          <div className="bg-white text-black flex flex-col gap-6 rounded-xl py-6 px-5 sm:px-6 border border-primary-pink/10 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all">
+          <div className="bg-white text-black flex flex-col gap-6 rounded-xl py-6 px-5 sm:px-6 border border-primary-pink shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all">
             {/* Header */}
             <div className="flex items-center gap-3 font-semibold text-primary-pink text-lg">
               <svg

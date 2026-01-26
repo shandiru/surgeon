@@ -54,9 +54,9 @@ export default function CurrentWork() {
 
           <div className="grid md:grid-cols-2 gap-8 md:gap-12">
             {/* MD Role Section */}
-            <div className="bg-[#FF4B8B]/10 rounded-xl p-6 md:p-8 border border-primary-pink/20">
+            <div className="bg-light-pink rounded-xl p-6 md:p-8 border border-primary-pink/20">
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 rounded-lg bg-[#FF4B8B] flex items-center justify-center text-white">
+                <div className="w-12 h-12 rounded-lg bg-primary-pink flex items-center justify-center text-white">
                   <Building2 className="w-6 h-6" />
                 </div>
                 <h3 className="text-subsection text-primary-pink font-semibold">
@@ -84,7 +84,7 @@ export default function CurrentWork() {
             {/* Teaching Section */}
             <div className="bg-gray-50 rounded-xl p-6 md:p-8 border border-gray-200">
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 rounded-lg bg-[#FF4B8B] flex items-center justify-center text-white">
+                <div className="w-12 h-12 rounded-lg bg-primary-pink flex items-center justify-center text-white">
                   <GraduationCap className="w-6 h-6" />
                 </div>
                 <h3 className="text-subsection text-gray-800 font-semibold">

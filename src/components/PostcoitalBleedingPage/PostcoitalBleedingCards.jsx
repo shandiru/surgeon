@@ -61,7 +61,7 @@ export default function PostcoitalBleedingCards() {
               <div className="font-semibold text-lg text-primary-pink">{card.title}</div>
 
               {/* Text */}
-              <p className="text-sm text-[#6B7280]">{card.text}</p>
+              <p className="text-sm text-black">{card.text}</p>
             </div>
           ))}
         </div>

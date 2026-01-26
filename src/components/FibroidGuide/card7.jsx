@@ -6,7 +6,7 @@ const FibroidGuidecard7 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6 pb-10 px-3">
       {/* Outer Card */}
-      <div className="bg-white max-w-5xl mx-auto text-[#212529] flex flex-col gap-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 p-8">
+      <div className="bg-white max-w-5xl mx-auto text-black flex flex-col gap-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 p-8">
         {/* Card Header */}
         <div className="text-center">
           <div className="flex items-center justify-center gap-2 mb-3">
@@ -45,7 +45,7 @@ const FibroidGuidecard7 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           {/* Divider */}
-          <div className="h-px w-full bg-[#FF4B8B]/10" />
+          <div className="h-px w-full bg-light-pink" />
 
           {/* Procedures Section */}
           <div>
@@ -78,7 +78,7 @@ const FibroidGuidecard7 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           {/* Doctor Advice Note */}
-          <div className="rounded-xl p-5 text-center shadow-md bg-[#FF4B8B]/10">
+          <div className="rounded-xl p-5 text-center shadow-md bg-light-pink">
             <p className="font-medium flex items-center gap-2 justify-center text-black">
               <User className="text-2xl text-primary-pink" />
               Your doctor will help you choose the safest and most effective option based on your

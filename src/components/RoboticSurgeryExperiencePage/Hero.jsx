@@ -46,7 +46,7 @@ export default function Hero() {
 
               {/* Text Content - Appears Second on Mobile */}
               <div className="space-y-6 text-center md:text-left order-2 md:order-1">
-                <h1 className="text-hero md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                <h1 className="text-hero md:text-5xl lg:text-6xl font-bold text-black leading-tight">
                   Robotic Surgery:{" "}
                   <span className="text-primary-pink">Expertise, Experience & Innovation</span>
                 </h1>
@@ -59,10 +59,10 @@ export default function Hero() {
 
                 {/* CTA Buttons */}
                 <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-2">
-                  <button className="cursor-pointer inline-flex items-center justify-center px-6 py-3 rounded-lg bg-[#FF4B8B] text-white font-semibold text-button hover:bg-[#E03E7C] transition-all duration-300 shadow-md hover:shadow-lg">
+                  <button className="cursor-pointer inline-flex items-center justify-center px-6 py-3 rounded-lg bg-primary-pink text-white font-semibold text-button hover:bg-[#E03E7C] transition-all duration-300 shadow-md hover:shadow-lg">
                     Let's Start
                   </button>
-                  <button className="cursor-pointer inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg border-2 border-primary-pink text-primary-pink font-semibold text-button hover:bg-[#FF4B8B]/10 transition-all duration-300">
+                  <button className="cursor-pointer inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg border-2 border-primary-pink text-primary-pink font-semibold text-button hover:bg-light-pink transition-all duration-300">
                     About Us
                     <ArrowRight className="w-4 h-4" />
                   </button>

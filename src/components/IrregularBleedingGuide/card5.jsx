@@ -6,7 +6,7 @@ const IrregularBleedingGuidecard5 = ({ setShowCard, setActiveButton }) => {
     <section className="my-12 px-4">
       <main className="max-w-4xl mx-auto px-4 py-8 bg-white">
         {/* MAIN CARD */}
-        <div className="bg-white text-[#333] flex flex-col gap-6 rounded-xl py-6 px-4 sm:px-6 shadow-md hover:shadow-lg transition-all duration-300 border border-[#ff97b3]/30">
+        <div className="bg-white text-black flex flex-col gap-6 rounded-xl py-6 px-4 sm:px-6 shadow-md hover:shadow-lg transition-all duration-300 border border-[#ff97b3]/30">
           {/* HEADER */}
           <div className="grid auto-rows-min items-start gap-2 border-b border-[#ff97b3]/30 pb-4">
             <div className="leading-snug font-semibold flex items-center gap-2 text-primary-pink text-lg sm:text-xl">
@@ -141,7 +141,7 @@ const IrregularBleedingGuidecard5 = ({ setShowCard, setActiveButton }) => {
                 setShowCard(6);
                 setActiveButton(5);
               }}
-              className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md text-sm font-medium transition-all h-10 px-4"
+              className="bg-primary-pink hover:bg-primary-pink/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md text-sm font-medium transition-all h-10 px-4"
             >
               Learn About Aftercare
             </button>

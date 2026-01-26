@@ -8,7 +8,7 @@ const PostcoitalBleedingGuideAbout = ({ activeButton }) => {
   return (
     <div className="text-center mb-8 px-4 sm:px-6 md:px-8 lg:px-16">
       {/* Tag and Title */}
-      <div className="inline-flex bg-[#FF4B8B]/10 text-black items-center gap-2 px-4 py-2 rounded-full mb-4">
+      <div className="inline-flex bg-light-pink text-black items-center gap-2 px-4 py-2 rounded-full mb-4">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -19,11 +19,11 @@ const PostcoitalBleedingGuideAbout = ({ activeButton }) => {
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
-          className="lucide lucide-heart w-5 h-5 text-primary"
+          className="lucide lucide-heart w-5 h-5 text-primary-pink"
         >
           <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
         </svg>
-        <span className="text-primary font-medium text-caption">Medical Education</span>
+        <span className="text-primary-pink font-medium text-caption">Medical Education</span>
       </div>
 
       {/* Main Title */}
@@ -37,7 +37,7 @@ const PostcoitalBleedingGuideAbout = ({ activeButton }) => {
       {/* Progress Bar */}
       <div className="mt-6 max-w-md mx-auto">
         <div className="flex justify-between items-center mb-2">
-          <span className="text-body-small text-muted-foreground text-black">Your Progress</span>
+          <span className="text-body-small text-black">Your Progress</span>
           <span className="text-body-small font-medium text-black">
             {completed}/{totalSteps} sections
           </span>
@@ -49,11 +49,11 @@ const PostcoitalBleedingGuideAbout = ({ activeButton }) => {
           aria-valuemin="0"
           aria-valuemax="100"
           aria-valuenow={progressPercentage}
-          className="bg-[#FF4B8B]/10 relative w-full overflow-hidden rounded-full h-2"
+          className="bg-light-pink-1 relative w-full overflow-hidden rounded-full h-2"
         >
           {/* Progress Fill */}
           <div
-            className="bg-[#FF4B8B]/80 h-full transition-all duration-300"
+            className="bg-primary-pink h-full transition-all duration-300"
             style={{ width: `${progressPercentage}%` }}
           ></div>
         </div>

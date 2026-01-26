@@ -19,7 +19,7 @@ const EndometrialCard6 = ({ setShowCard, setActiveButton }) => {
         </div>
 
         {/* Treatment Options Card */}
-        <div className="bg-white text-gray-900 flex flex-col gap-6 rounded-xl mb-5 shadow-sm">
+        <div className="bg-white text-black flex flex-col gap-6 rounded-xl mb-5 shadow-sm">
           {/* Card Header */}
           <div className="px-6 grid gap-1.5">
             <h3 className="font-semibold text-xl" style={{ color: deepPink }}>

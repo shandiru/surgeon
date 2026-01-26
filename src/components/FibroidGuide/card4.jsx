@@ -6,7 +6,7 @@ const FibroidGuideCard4 = ({ setShowCard, setActiveButton }) => {
     <div className="space-y-6 pb-10 px-3">
       {" "}
       {/* ⭐ ADDED PADDING BOTTOM */}
-      <div className="max-w-5xl mx-auto bg-white text-[#212529] flex flex-col gap-6 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 p-8">
+      <div className="max-w-5xl mx-auto bg-white text-black flex flex-col gap-6 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 p-8">
         {/* Header */}
         <div className="flex flex-col gap-2 mb-4">
           <div className="flex items-center gap-3">
@@ -30,7 +30,7 @@ const FibroidGuideCard4 = ({ setShowCard, setActiveButton }) => {
             ].map((item, i) => (
               <span
                 key={i}
-                className="block rounded-lg px-4 py-2 text-sm font-medium transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-1 active:scale-[0.98] bg-[#FF4B8B]/10 text-black"
+                className="block rounded-lg px-4 py-2 text-sm font-medium transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-1 active:scale-[0.98] bg-light-pink text-black"
               >
                 {item}
               </span>
@@ -41,7 +41,7 @@ const FibroidGuideCard4 = ({ setShowCard, setActiveButton }) => {
             {["Started your periods early", "Have hormonal imbalances"].map((item, i) => (
               <span
                 key={i}
-                className="block rounded-lg px-4 py-2 text-sm font-medium transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-1 active:scale-[0.98] bg-[#FF4B8B]/10 text-black"
+                className="block rounded-lg px-4 py-2 text-sm font-medium transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-1 active:scale-[0.98] bg-light-pink text-black"
               >
                 {item}
               </span>
@@ -58,7 +58,7 @@ const FibroidGuideCard4 = ({ setShowCard, setActiveButton }) => {
             setShowCard(5);
             setActiveButton(4);
           }}
-          className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md text-sm font-medium transition-all h-10 px-4"
+          className="bg-primary-pink hover:bg-primary-pink/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md text-sm font-medium transition-all h-10 px-4"
         >
           Continue to Next Step
         </button>

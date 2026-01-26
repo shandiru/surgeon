@@ -5,7 +5,7 @@ import React from "react";
 const FibroidGuideCard1 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6 pb-10 px-3">
-      <div className="max-w-5xl mx-auto bg-white text-[#212529] flex flex-col gap-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
+      <div className="max-w-5xl mx-auto bg-white text-black flex flex-col gap-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
         {/* Header */}
         <div className="px-8 pt-8">
           <div className="flex items-center justify-center gap-3 mb-4">
@@ -34,7 +34,7 @@ const FibroidGuideCard1 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           {/* Highlight Box */}
-          <div className="rounded-lg p-5 bg-[#FF4B8B]/10">
+          <div className="rounded-lg p-5 bg-light-pink">
             <p className="font-semibold text-base text-black">
               ✓ Fibroids are not cancer and rarely become cancerous.
             </p>

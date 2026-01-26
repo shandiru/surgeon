@@ -22,7 +22,7 @@ const PostmenopausalBleedingGuideCard1 = ({ setShowCard, setActiveButton }) => {
               Postmenopausal bleeding is any bleeding from the vagina after menopause.
             </p>
 
-            <div className="bg-[#FEE6EA] p-5 rounded-xl shadow-sm border border-primary-pink/10">
+            <div className="bg-[#FEE6EA] p-5 rounded-xl shadow-sm border border-primary-pink">
               <p className="font-semibold mb-3 text-primary-pink text-lg">Key Facts:</p>
 
               <ul className="space-y-2 text-sm sm:text-base text-[#374151] list-disc list-inside">

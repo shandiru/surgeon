@@ -6,7 +6,7 @@ const IrregularBleedingGuidecard3 = ({ setShowCard, setActiveButton }) => {
     <section className="my-12 px-4">
       <main className="max-w-4xl mx-auto px-4 py-8 bg-white">
         {/* CARD WRAPPER */}
-        <div className="bg-white text-[#333] flex flex-col gap-6 rounded-xl py-6 px-4 sm:px-6 shadow-md hover:shadow-lg transition-all duration-300">
+        <div className="bg-white text-black flex flex-col gap-6 rounded-xl py-6 px-4 sm:px-6 shadow-md hover:shadow-lg transition-all duration-300">
           {/* HEADER */}
           <div className="grid auto-rows-min items-start gap-2 border-b border-[#ff97b3]/30 pb-4">
             <div className="leading-snug font-semibold flex items-center gap-2 text-primary-pink text-lg sm:text-xl">

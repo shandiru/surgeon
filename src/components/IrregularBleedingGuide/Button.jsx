@@ -28,7 +28,7 @@ const IrregularBleedingGuideButtons = ({ setShowCard, activeButton, setActiveBut
           onClick={() => handleButtonClick(button.card, index)}
           className={`flex flex-col items-center justify-center text-center 
             w-full py-2 px-3 rounded-md text-button font-semibold 
-            text-black bg-light-pink-1 hover:bg-[#FF4B8B]/30 transition-all
+            text-black bg-light-pink-1 hover:bg-primary-pink/30 transition-all
             ${activeButton === index ? "bg-light-pink-2 text-black shadow-md" : ""}`}
         >
           {button.icon}

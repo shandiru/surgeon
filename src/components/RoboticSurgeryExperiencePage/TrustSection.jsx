@@ -23,7 +23,7 @@ export default function TrustSection() {
             {/* Left Column - Text Content */}
             <div className="space-y-6">
               {/* Main Heading */}
-              <h2 className="text-hero md:text-5xl font-bold text-gray-900 leading-tight">
+              <h2 className="text-hero md:text-5xl font-bold text-black leading-tight">
                 Why trust our <span className="text-primary-pink">robotic surgery services?</span>
               </h2>
 
@@ -44,7 +44,7 @@ export default function TrustSection() {
 
                     {/* Feature Content */}
                     <div className="flex-1">
-                      <h3 className="text-subsection text-gray-900 font-semibold mb-1">
+                      <h3 className="text-subsection text-black font-semibold mb-1">
                         {feature.title}
                       </h3>
                       <p className="text-body text-black leading-relaxed">{feature.description}</p>

@@ -22,7 +22,7 @@ const EndometrialGuideCard5 = ({ setShowCard, setActiveButton }) => {
 
         {/* Card Box */}
         <div
-          className="bg-white text-gray-900 flex flex-col gap-6 rounded-2xl shadow-sm mb-6 
+          className="bg-white text-black flex flex-col gap-6 rounded-2xl shadow-sm mb-6 
                            transition-all duration-300 hover:shadow-md hover:scale-[1.01] active:scale-[0.99]"
           data-aos="fade-up"
         >
@@ -122,7 +122,7 @@ const EndometrialGuideCard5 = ({ setShowCard, setActiveButton }) => {
                 setShowCard(6);
                 setActiveButton(5);
               }}
-              className="inline-flex items-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 justify-center gap-2 rounded-md text-sm font-medium transition-all h-9 px-4 py-2 w-full"
+              className="inline-flex items-center bg-primary-pink hover:bg-primary-pink/80 justify-center gap-2 rounded-md text-sm font-medium transition-all h-9 px-4 py-2 w-full"
             >
               Continue to Treatment Options
             </button>

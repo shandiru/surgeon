@@ -27,7 +27,7 @@ const IrregularBleedingGuideCard2 = ({ setShowCard, setActiveButton }) => {
               Common Causes
             </div>
 
-            <p className="text-sm text-[#804659]">
+            <p className="text-sm text-black">
               Irregular vaginal bleeding can be linked to several conditions. In most cases, the
               cause is not serious, but it's important to get checked.
             </p>
@@ -84,13 +84,13 @@ const IrregularBleedingGuideCard2 = ({ setShowCard, setActiveButton }) => {
                   key={i}
                   className="flex items-start gap-3 p-4 rounded-lg bg-white shadow-sm hover:shadow-md transition-all duration-200"
                 >
-                  <span className="inline-flex items-center justify-center rounded-md px-2 py-0.5 text-xs font-medium text-primary-pink bg-[#FFE0EB] w-fit whitespace-nowrap shrink-0">
+                  <span className="inline-flex items-center justify-center rounded-md px-2 py-0.5 text-xs font-medium text-primary-pink bg-light-pink-1 w-fit whitespace-nowrap shrink-0">
                     {cause.tag}
                   </span>
 
                   <div className="flex-1">
                     <h4 className="font-semibold text-primary-pink">{cause.title}</h4>
-                    <p className="text-sm text-[#804659] mt-1">{cause.desc}</p>
+                    <p className="text-sm text-black mt-1">{cause.desc}</p>
                   </div>
                 </div>
               ))}

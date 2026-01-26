@@ -90,7 +90,7 @@ export default function SpecialtiesSection() {
 
         {/* Primary Specialties */}
         <div
-          className="bg-white rounded-2xl p-8 mb-12 shadow-sm border border-primary-pink/10"
+          className="bg-white rounded-2xl p-8 mb-12 shadow-sm border border-primary-pink"
           data-aos="fade-up"
           data-aos-delay="150"
         >
@@ -111,7 +111,7 @@ export default function SpecialtiesSection() {
                 <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-sm bg-white">
                   {item.icon}
                 </div>
-                <h3 className="font-semibold mb-1 text-body-small text-gray-900">{item.title}</h3>
+                <h3 className="font-semibold mb-1 text-body-small text-black">{item.title}</h3>
                 <p className="text-black text-caption">{item.description}</p>
               </div>
             ))}
@@ -122,7 +122,7 @@ export default function SpecialtiesSection() {
         <div className="grid md:grid-cols-2 gap-8">
           {/* Surgical */}
           <div
-            className="bg-white rounded-xl border border-primary-pink/10 shadow-sm p-6 flex flex-col gap-6 transition-all duration-300 hover:shadow-xl"
+            className="bg-white rounded-xl border border-primary-pink shadow-sm p-6 flex flex-col gap-6 transition-all duration-300 hover:shadow-xl"
             data-aos="fade-up"
           >
             <div className="text-card-title font-semibold text-primary-pink">
@@ -133,7 +133,7 @@ export default function SpecialtiesSection() {
                 <li key={idx} className="flex items-start gap-3">
                   <FaCheckCircle className="text-primary-pink mt-1" />
                   <div>
-                    <div className="font-semibold text-body text-gray-900">{item.title}</div>
+                    <div className="font-semibold text-body text-black">{item.title}</div>
                     <p className="text-body-small text-black">{item.description}</p>
                   </div>
                 </li>
@@ -143,7 +143,7 @@ export default function SpecialtiesSection() {
 
           {/* Cancer Care */}
           <div
-            className="bg-white rounded-xl border border-primary-pink/10 shadow-sm p-6 flex flex-col gap-6 transition-all duration-300 hover:shadow-xl"
+            className="bg-white rounded-xl border border-primary-pink shadow-sm p-6 flex flex-col gap-6 transition-all duration-300 hover:shadow-xl"
             data-aos="fade-down"
           >
             <div className="text-card-title font-semibold text-primary-pink">Cancer Care</div>
@@ -152,7 +152,7 @@ export default function SpecialtiesSection() {
                 <li key={idx} className="flex items-start gap-3">
                   <FaCheckCircle className="text-primary-pink mt-1" />
                   <div>
-                    <div className="font-semibold text-body text-gray-900">{item.title}</div>
+                    <div className="font-semibold text-body text-black">{item.title}</div>
                     <p className="text-body-small text-black">{item.description}</p>
                   </div>
                 </li>

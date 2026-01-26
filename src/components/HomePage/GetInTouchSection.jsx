@@ -84,7 +84,7 @@ export default function GetInTouchSection() {
                   {card.icon}
                 </svg>
               </div>
-              <h3 className="text-card-title mb-2 text-gray-900">{card.title}</h3>
+              <h3 className="text-card-title mb-2 text-black">{card.title}</h3>
               <p className="text-black text-body-small mb-4">{card.subtitle}</p>
 
               {/* Button / Link */}

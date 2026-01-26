@@ -6,7 +6,7 @@ const EndometrialCard3 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6 pb-10 px-3">
       {/* Card Container */}
-      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-2xl border border-primary-pink/10 p-8 shadow-sm animate-in slide-in-from-right-5 duration-300 bg-white">
+      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-2xl border border-primary-pink p-8 shadow-sm animate-in slide-in-from-right-5 duration-300 bg-white">
         {/* Card Header */}
         <div className="grid auto-rows-min items-start gap-1.5">
           <div className="leading-none font-semibold flex items-center gap-2 text-primary-pink">
@@ -88,11 +88,11 @@ const EndometrialCard3 = ({ setShowCard, setActiveButton }) => {
             ].map((item, index) => (
               <div
                 key={index}
-                className="flex gap-4 p-4 rounded-xl border border-primary-pink/10 transition-all duration-300 hover:shadow-lg active:shadow-lg bg-white"
+                className="flex gap-4 p-4 rounded-xl border border-primary-pink transition-all duration-300 hover:shadow-lg active:shadow-lg bg-white"
               >
                 {/* Number Circle */}
                 <div className="flex-shrink-0">
-                  <div className="w-10 h-10 rounded-full flex items-center justify-center font-bold bg-[#FF4B8B] text-white">
+                  <div className="w-10 h-10 rounded-full flex items-center justify-center font-bold bg-primary-pink text-white">
                     {index + 1}
                   </div>
                 </div>
@@ -110,7 +110,7 @@ const EndometrialCard3 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           {/* Protective Factors */}
-          <div className="p-4 rounded-xl border border-primary-pink/10 mt-4 bg-[#FF4B8B]/10">
+          <div className="p-4 rounded-xl border border-primary-pink mt-4 bg-light-pink">
             <h4 className="font-semibold mb-2 flex items-center gap-2 text-primary-pink">
               <Sparkles className="w-5 h-5 text-primary-pink" />
               Protective Factors

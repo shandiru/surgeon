@@ -7,11 +7,11 @@ const PelvicPainGuideCard1 = ({ setShowCard, setActiveButton }) => {
     <div className="space-y-6 pb-10 px-3">
       {/* MAIN CARD WRAPPER */}
       <div
-        className="text-primary-pink bg-[#FF4B8B]/10 max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 
+        className="text-primary-pink bg-light-pink max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 
         flex flex-col gap-6 rounded-xl py-6 shadow-sm 
-        hover:z-50 transition-all duration-300 hover:bg-[#FF4B8B]/20 
-        hover:shadow-lg hover:border-primary-pink/20 active:bg-[#FF4B8B]/20 
-        active:shadow-lg active:border-primary-pink/20 hover:scale-105 active:scale-100 border border-primary-pink/10 p-6"
+        hover:z-50 transition-all duration-300 hover:bg-primary-pink/20 
+        hover:shadow-lg hover:border-primary-pink/20 active:bg-primary-pink/20 
+        active:shadow-lg active:border-primary-pink/20 hover:scale-105 active:scale-100 border border-primary-pink p-6"
       >
         {/* HEADER */}
         <div className="grid auto-rows-min items-start gap-1.5 px-2">
@@ -38,7 +38,7 @@ const PelvicPainGuideCard1 = ({ setShowCard, setActiveButton }) => {
             </div>
 
             {/* KEY FACTS BOX */}
-            <div className="bg-[#FF4B8B]/10 p-4 rounded-lg border border-primary-pink/10">
+            <div className="bg-light-pink p-4 rounded-lg border border-primary-pink">
               <h4 className="font-semibold mb-2 text-primary-pink">Key Facts</h4>
 
               <ul className="space-y-2 text-sm text-black">

@@ -43,7 +43,7 @@ export default function FAQSection() {
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
             {/* Left Column - Heading and Introduction */}
             <div className="space-y-6">
-              <h2 className="text-hero md:text-5xl font-bold text-gray-900 leading-tight">
+              <h2 className="text-hero md:text-5xl font-bold text-black leading-tight">
                 Frequently asked questions
               </h2>
               <p className="text-body-large text-black leading-relaxed">
@@ -65,7 +65,7 @@ export default function FAQSection() {
                     onClick={() => toggleFAQ(index)}
                     className="w-full flex items-center justify-between text-left"
                   >
-                    <h3 className="text-body-large text-gray-900 font-bold pr-4 flex-1">
+                    <h3 className="text-body-large text-black font-bold pr-4 flex-1">
                       {faq.question}
                     </h3>
                     <div className="flex-shrink-0">

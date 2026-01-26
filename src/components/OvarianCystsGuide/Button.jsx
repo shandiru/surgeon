@@ -36,7 +36,7 @@ const OvarianCystsGuideButtons = ({ setShowCard, activeButton, setActiveButton }
           className={`flex flex-col items-center justify-center text-center 
             w-full py-2 px-3
             font-semibold rounded-md 
-            text-black bg-light-pink-1 hover:bg-[#FF4B8B]/30 
+            text-black bg-light-pink-1 hover:bg-primary-pink/30 
             text-button leading-tight
             transition-all 
             ${activeButton === index ? "bg-light-pink-2 text-black" : ""}`}

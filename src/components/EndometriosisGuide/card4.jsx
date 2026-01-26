@@ -27,12 +27,12 @@ const EndometriosisCard4 = ({ setShowCard, setActiveButton }) => {
           {causes.map((item, index) => (
             <div
               key={index}
-              className="bg-white text-[#333] flex flex-col items-center justify-center p-8 rounded-2xl shadow-md 
+              className="bg-white text-black flex flex-col items-center justify-center p-8 rounded-2xl shadow-md 
               transition duration-300 hover:shadow-[0_0_25px_rgba(176,59,102,0.4)] hover:-translate-y-2 active:scale-[0.98]"
             >
               {/* Icon */}
-              <div className="w-14 h-14 bg-[#FF4B8B]/20 rounded-full flex items-center justify-center mb-4">
-                <div className="w-6 h-6 bg-[#FF4B8B] rounded-full" />
+              <div className="w-14 h-14 bg-primary-pink/20 rounded-full flex items-center justify-center mb-4">
+                <div className="w-6 h-6 bg-primary-pink rounded-full" />
               </div>
 
               {/* Text */}
@@ -49,7 +49,7 @@ const EndometriosisCard4 = ({ setShowCard, setActiveButton }) => {
             setShowCard(5);
             setActiveButton(4);
           }}
-          className="w-full sm:w-[70%] md:w-[50%] bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white font-medium rounded-md h-10 px-4 transition-all flex items-center justify-center gap-2 whitespace-nowrap"
+          className="w-full sm:w-[70%] md:w-[50%] bg-primary-pink hover:bg-primary-pink/80 text-white font-medium rounded-md h-10 px-4 transition-all flex items-center justify-center gap-2 whitespace-nowrap"
         >
           Learn More
         </button>

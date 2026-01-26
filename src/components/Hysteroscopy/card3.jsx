@@ -28,7 +28,7 @@ const HysteroscopyCard3 = ({ setShowCard, setActiveButton }) => {
               </div>
               <div className="flex-1">
                 <h4 className="font-semibold mb-1 flex items-center gap-2">
-                  <TestTube className="w-5 h-5 text-primary" /> Pregnancy Test
+                  <TestTube className="w-5 h-5 text-primary-pink" /> Pregnancy Test
                   <span className="inline-flex items-center justify-center rounded-md border px-2 py-0.5 font-medium w-fit whitespace-nowrap shrink-0 bg-secondary text-secondary-foreground text-xs">
                     Important
                   </span>
@@ -48,7 +48,7 @@ const HysteroscopyCard3 = ({ setShowCard, setActiveButton }) => {
               </div>
               <div className="flex-1">
                 <h4 className="font-semibold mb-1 flex items-center gap-2">
-                  <Shield className="w-5 h-5 text-primary" /> Use Contraception
+                  <Shield className="w-5 h-5 text-primary-pink" /> Use Contraception
                   <span className="inline-flex items-center justify-center rounded-md border px-2 py-0.5 font-medium w-fit whitespace-nowrap shrink-0 bg-secondary text-secondary-foreground text-xs">
                     Important
                   </span>
@@ -69,7 +69,7 @@ const HysteroscopyCard3 = ({ setShowCard, setActiveButton }) => {
               </div>
               <div className="flex-1">
                 <h4 className="font-semibold mb-1 flex items-center gap-2">
-                  <Pill className="w-5 h-5 text-primary" /> Pre-treatment Medicine
+                  <Pill className="w-5 h-5 text-primary-pink" /> Pre-treatment Medicine
                 </h4>
                 <p className="text-muted-foreground text-sm">
                   If you're having fibroids removed, you may be given medicine beforehand to shrink
@@ -82,7 +82,7 @@ const HysteroscopyCard3 = ({ setShowCard, setActiveButton }) => {
           {/* What to Expect */}
           <div className="bg-accent/10 p-4 rounded-lg border border-accent/20">
             <h4 className="flex items-center gap-2">
-              <FileText className="w-5 h-5 text-primary" /> What to Expect
+              <FileText className="w-5 h-5 text-primary-pink" /> What to Expect
             </h4>
             <p className="text-sm">
               Your healthcare team will give you specific instructions based on your individual
@@ -97,7 +97,7 @@ const HysteroscopyCard3 = ({ setShowCard, setActiveButton }) => {
                 setShowCard(4); // move to Card 4
                 setActiveButton(3); // index for Card 4
               }}
-              className="inline-flex items-center justify-center hover:bg-[#FF4B8B]/80 bg-[#FF4B8B] gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-9 px-4 py-2 has-[&_svg]:px-3 w-full"
+              className="inline-flex items-center justify-center hover:bg-primary-pink/80 bg-primary-pink gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-9 px-4 py-2 has-[&_svg]:px-3 w-full"
             >
               Learn About the Procedure
             </button>

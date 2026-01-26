@@ -7,7 +7,7 @@ const OvarianCancerGuideCard1 = ({ setShowCard, setActiveButton }) => {
       {/* Card Container */}
       <div
         className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 
-        flex flex-col gap-6 rounded-2xl border border-primary-pink/10 shadow-sm 
+        flex flex-col gap-6 rounded-2xl border border-primary-pink shadow-sm 
         animate-in slide-in-from-right-5 duration-300 p-8 bg-white"
       >
         {/* Card Header */}
@@ -37,7 +37,7 @@ const OvarianCancerGuideCard1 = ({ setShowCard, setActiveButton }) => {
         <div className="space-y-6">
           {/* Overview Box */}
           <div
-            className="p-4 rounded-xl border border-primary-pink/10 transition-all duration-300 
+            className="p-4 rounded-xl border border-primary-pink transition-all duration-300 
             hover:shadow-lg hover:scale-105 active:scale-100 bg-light-pink-1"
           >
             <p className="text-lg leading-relaxed text-black">
@@ -105,7 +105,7 @@ const OvarianCancerGuideCard1 = ({ setShowCard, setActiveButton }) => {
             </div>
 
             {/* Reminder Box */}
-            <div className="p-4 rounded-xl border border-primary-pink/10 bg-light-pink-1">
+            <div className="p-4 rounded-xl border border-primary-pink bg-light-pink-1">
               <h4 className="font-semibold flex items-center gap-2 mb-2 text-primary-pink">
                 <Lightbulb className="text-xl text-primary-pink" />
                 Remember

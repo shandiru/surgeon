@@ -7,9 +7,9 @@ const UltraSoundGuide = ({ activeButton }) => {
 
   return (
     <div className="UltraSoundGuide">
-      <div className="text-center mb-8 px-4 sm:px-6 lg:px-8">
+      <div className="text-center mb-8 px-4 sm:px-6 md:px-8 lg:px-16">
         {/* Title with Icon */}
-        <div className="inline-flex items-center gap-2 text-primary-pink bg-light-pink-1 px-4 py-2 rounded-full mb-4">
+        <div className="inline-flex bg-light-pink-2 text-primary-pink items-center gap-2 px-4 py-2 rounded-full mb-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -26,11 +26,13 @@ const UltraSoundGuide = ({ activeButton }) => {
             <line x1="8" x2="16" y1="21" y2="21"></line>
             <line x1="12" x2="12" y1="17" y2="21"></line>
           </svg>
-          <span className="font-medium">Medical Education</span>
+          <span className="text-primary-pink font-medium text-caption">Medical Education</span>
         </div>
 
         {/* Heading and Subheading */}
-        <h1 className="text-hero text-black mb-4">Understanding Gynaecological Ultrasound</h1>
+        <h1 className="text-hero text-primary-pink mb-4">
+          Understanding Gynaecological Ultrasound
+        </h1>
         <p className="text-body-large text-black mb-6">
           What it is, why it's done, and what to expect
         </p>

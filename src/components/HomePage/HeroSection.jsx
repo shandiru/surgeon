@@ -24,10 +24,7 @@ const HeroSectionView = () => {
               </span>
             </div>
 
-            <h1
-              className="hero-title text-hero text-gray-900 mb-6 leading-tight"
-              data-aos="fade-up"
-            >
+            <h1 className="hero-title text-hero text-black mb-6 leading-tight" data-aos="fade-up">
               Expert Care in <span className="text-primary-pink">Women's Health</span>
             </h1>
 

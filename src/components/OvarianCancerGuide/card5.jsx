@@ -31,7 +31,7 @@ const OvarianCancerGuidecard5 = ({ setShowCard, setActiveButton }) => {
       {/* CARD CONTAINER */}
       <div
         className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 
-        flex flex-col gap-8 rounded-2xl border border-primary-pink/10 shadow-sm p-8 
+        flex flex-col gap-8 rounded-2xl border border-primary-pink shadow-sm p-8 
         animate-in slide-in-from-right-5 duration-300 bg-white"
       >
         {/* HEADER */}
@@ -53,12 +53,12 @@ const OvarianCancerGuidecard5 = ({ setShowCard, setActiveButton }) => {
           {tests.map((item, index) => (
             <div
               key={index}
-              className="bg-white text-[#333] flex flex-col gap-4 rounded-xl p-6 
+              className="bg-white text-black flex flex-col gap-4 rounded-xl p-6 
               shadow-md transition duration-300 ease-in-out 
               hover:shadow-xl hover:-translate-y-2 active:scale-[0.98] cursor-pointer"
             >
               <div className="flex items-center gap-3 font-semibold text-primary-pink">
-                <span className="w-8 h-8 flex items-center justify-center rounded-full border border-primary-pink/10 text-sm font-bold text-primary-pink">
+                <span className="w-8 h-8 flex items-center justify-center rounded-full border border-primary-pink text-sm font-bold text-primary-pink">
                   {item.number}
                 </span>
                 {item.title}
@@ -69,7 +69,7 @@ const OvarianCancerGuidecard5 = ({ setShowCard, setActiveButton }) => {
         </div>
 
         {/* WARNING BOX */}
-        <div className="rounded-xl px-6 py-6 shadow-md bg-[#FF4B8B]/10">
+        <div className="rounded-xl px-6 py-6 shadow-md bg-light-pink">
           <div className="flex items-start gap-3">
             <div className="w-6 h-6 rounded-full flex items-center justify-center font-bold bg-white text-primary-pink">
               →
@@ -88,7 +88,7 @@ const OvarianCancerGuidecard5 = ({ setShowCard, setActiveButton }) => {
               setShowCard(6);
               setActiveButton(5);
             }}
-            className="inline-flex items-center bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 
+            className="inline-flex items-center bg-primary-pink hover:bg-primary-pink/80 
             text-white rounded-md text-sm font-medium transition-all 
             h-10 px-4 w-[90%] md:w-[60%] lg:w-[40%]"
           >

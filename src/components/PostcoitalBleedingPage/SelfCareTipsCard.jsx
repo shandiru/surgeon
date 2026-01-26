@@ -17,21 +17,21 @@ const SelfCareTipsCard = () => {
         <div className="grid md:grid-cols-2 gap-6">
           <ul className="space-y-3 text-sm">
             <li className="flex items-start gap-2">
-              <span className="w-2 h-2 bg-[#FF4B8B] rounded-full mt-2"></span>
+              <span className="w-2 h-2 bg-primary-pink rounded-full mt-2"></span>
               Use lubrication if vaginal dryness is an issue
             </li>
             <li className="flex items-start gap-2">
-              <span className="w-2 h-2 bg-[#FF4B8B] rounded-full mt-2"></span>
+              <span className="w-2 h-2 bg-primary-pink rounded-full mt-2"></span>
               Try a vaginal moisturiser if post-menopausal
             </li>
           </ul>
           <ul className="space-y-3 text-sm">
             <li className="flex items-start gap-2">
-              <span className="w-2 h-2 bg-[#FF4B8B] rounded-full mt-2"></span>
+              <span className="w-2 h-2 bg-primary-pink rounded-full mt-2"></span>
               Avoid rough or prolonged intercourse until you've been checked
             </li>
             <li className="flex items-start gap-2">
-              <span className="w-2 h-2 bg-[#FF4B8B] rounded-full mt-2"></span>
+              <span className="w-2 h-2 bg-primary-pink rounded-full mt-2"></span>
               Keep up with regular cervical smear tests
             </li>
           </ul>

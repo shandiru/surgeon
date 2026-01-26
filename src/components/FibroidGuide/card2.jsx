@@ -6,7 +6,7 @@ const FibroidGuideCard2 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6 pb-10 px-3">
       {/* Card Container */}
-      <div className="max-w-5xl mx-auto bg-white text-[#212529] flex flex-col gap-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-8">
+      <div className="max-w-5xl mx-auto bg-white text-black flex flex-col gap-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-8">
         {/* Header */}
         <div>
           <div className="flex items-center justify-center gap-3 mb-3">
@@ -63,7 +63,7 @@ const FibroidGuideCard2 = ({ setShowCard, setActiveButton }) => {
         </div>
 
         {/* Highlight Box */}
-        <div className="rounded-lg p-5 shadow-sm bg-[#FF4B8B]/10">
+        <div className="rounded-lg p-5 shadow-sm bg-light-pink">
           <p className="font-medium text-base flex items-center gap-2 text-black">
             <AlertCircle className="h-5 w-5 text-primary-pink" />
             If left untreated, fibroids can grow and may cause complications.

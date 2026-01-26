@@ -46,7 +46,7 @@ export default function ProfessionalExperience() {
           ].map((item, idx) => (
             <div
               key={idx}
-              className="bg-white flex flex-col gap-4 rounded-xl border border-primary-pink/10 shadow-sm p-6 transition-all duration-300 
+              className="bg-white flex flex-col gap-4 rounded-xl border border-primary-pink shadow-sm p-6 transition-all duration-300 
                          hover:shadow-xl hover:scale-[1.02] active:scale-[0.99]"
               data-aos="fade-up"
               data-aos-delay={`${idx * 150}`}
@@ -66,7 +66,7 @@ export default function ProfessionalExperience() {
                   </svg>
                 </div>
                 <div>
-                  <p className="font-semibold text-body-small text-gray-900">{item.hospital}</p>
+                  <p className="font-semibold text-body-small text-black">{item.hospital}</p>
                   <p className="text-primary-pink font-medium text-body-small">{item.role}</p>
                 </div>
               </div>
@@ -80,7 +80,7 @@ export default function ProfessionalExperience() {
 
         {/* Membership & Leadership Section */}
         <div
-          className="bg-white flex flex-col gap-8 rounded-xl border border-primary-pink/10 shadow-sm p-8 transition-all duration-300 
+          className="bg-white flex flex-col gap-8 rounded-xl border border-primary-pink shadow-sm p-8 transition-all duration-300 
                      hover:shadow-xl"
           data-aos="fade-up"
           data-aos-delay="200"
@@ -93,7 +93,7 @@ export default function ProfessionalExperience() {
           <div className="grid md:grid-cols-2 gap-8">
             {/* Memberships */}
             <div>
-              <h3 className="text-body-large font-semibold mb-4 text-gray-900">
+              <h3 className="text-body-large font-semibold mb-4 text-black">
                 Professional Memberships
               </h3>
               <div className="space-y-3">
@@ -128,7 +128,7 @@ export default function ProfessionalExperience() {
 
             {/* Leadership */}
             <div>
-              <h3 className="text-body-large font-semibold mb-4 text-gray-900">
+              <h3 className="text-body-large font-semibold mb-4 text-black">
                 Leadership Positions
               </h3>
               <div className="space-y-4">
@@ -138,7 +138,7 @@ export default function ProfessionalExperience() {
                   data-aos="fade-up"
                   data-aos-delay="300"
                 >
-                  <h4 className="font-semibold text-body text-gray-900">Honorary Secretary</h4>
+                  <h4 className="font-semibold text-body text-black">Honorary Secretary</h4>
                   <p className="text-black text-body-small">
                     British Gynaecological Cancer Society
                   </p>
@@ -151,7 +151,7 @@ export default function ProfessionalExperience() {
                   data-aos="fade-up"
                   data-aos-delay="400"
                 >
-                  <h4 className="font-semibold text-body text-gray-900">
+                  <h4 className="font-semibold text-body text-black">
                     IT and Social Media Subgroup Chair
                   </h4>
                   <p className="text-black text-body-small">
@@ -166,7 +166,7 @@ export default function ProfessionalExperience() {
                   data-aos="fade-up"
                   data-aos-delay="500"
                 >
-                  <h4 className="font-semibold text-body text-gray-900">Gyn Oncology Lead</h4>
+                  <h4 className="font-semibold text-body text-black">Gyn Oncology Lead</h4>
                   <p className="text-black text-body-small">Nottingham NHS</p>
                   {/* <p className="text-gray-500 text-xs">[Add start date] - Present</p> */}
                 </div>

@@ -30,7 +30,7 @@ const OvarianCystsGuideCard2 = ({ setShowCard, setActiveButton }) => {
         </div>
 
         {/* MAIN CONTENT - ALERT BOX */}
-        <div className="rounded-xl p-6 bg-white border border-primary-pink/10 shadow-sm">
+        <div className="rounded-xl p-6 bg-white border border-primary-pink shadow-sm">
           {/* Icon + Title */}
           <div className="flex items-start gap-3 mb-4">
             <div className="p-2 rounded-full bg-light-pink-1 flex items-center justify-center">
@@ -65,7 +65,7 @@ const OvarianCystsGuideCard2 = ({ setShowCard, setActiveButton }) => {
           </ul>
 
           {/* Bottom note */}
-          <p className="mt-4 text-sm text-[#804659] italic">
+          <p className="mt-4 text-sm text-black italic">
             These can be signs of a cyst or other underlying conditions.
           </p>
         </div>

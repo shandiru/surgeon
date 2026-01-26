@@ -8,7 +8,7 @@ const OvarianCancerGuidecard3 = ({ setShowCard, setActiveButton }) => {
       {/* Card Container */}
       <div
         className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 
-        flex flex-col gap-6 rounded-2xl border border-primary-pink/10 shadow-sm 
+        flex flex-col gap-6 rounded-2xl border border-primary-pink shadow-sm 
         animate-in slide-in-from-right-5 duration-300 p-8 bg-white"
       >
         {/* Card Header */}
@@ -81,7 +81,7 @@ const OvarianCancerGuidecard3 = ({ setShowCard, setActiveButton }) => {
                 description: "Higher body fat can influence hormone levels that affect risk.",
               },
             ].map((item, index) => (
-              <div className="flex gap-4 p-4 rounded-xl border border-primary-pink/10 transition-all duration-300 bg-light-pink-1">
+              <div className="flex gap-4 p-4 rounded-xl border border-primary-pink transition-all duration-300 bg-light-pink-1">
                 {/* Number Circle */}
                 <div className="flex-shrink-0">
                   <div
@@ -108,7 +108,7 @@ const OvarianCancerGuidecard3 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           {/* Extra Info */}
-          <div className="p-4 rounded-xl border border-primary-pink/10 bg-light-pink-1">
+          <div className="p-4 rounded-xl border border-primary-pink bg-light-pink-1">
             <h4 className="font-semibold flex items-center gap-2 mb-2 text-primary-pink">
               <Sparkles className="w-5 h-5 text-primary-pink" />
               Good to Know
