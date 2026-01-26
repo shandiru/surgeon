@@ -42,11 +42,11 @@ export default function ListingEvents({ events = [], selectedCategory = "All Eve
       <div className="p-5 flex-1 flex flex-col justify-between">
         <div>
           {/* Rating */}
-          <div className="flex items-center gap-1 text-[#FF4B8B] text-sm mb-2">
+          <div className="flex items-center gap-1 text-primary-pink text-sm mb-2">
             {Array.from({ length: 5 }).map((_, i) => (
               <span
                 key={i}
-                className={i < Math.round(event.rating) ? "text-[#FF4B8B]" : "text-gray-300"}
+                className={i < Math.round(event.rating) ? "text-primary-pink" : "text-gray-300"}
               >
                 ★
               </span>
@@ -99,7 +99,7 @@ export default function ListingEvents({ events = [], selectedCategory = "All Eve
     <section id="list" className="relative bg-gray-50 py-20 px-4 sm:px-6 lg:px-16">
       {/* Heading */}
       <div className="text-center mb-14">
-        <p className="text-[#FF4B8B] font-semibold mb-2">Speaking Engagements</p>
+        <p className="text-primary-pink font-semibold mb-2">Speaking Engagements</p>
         <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">Top Listing Events</h2>
       </div>
 

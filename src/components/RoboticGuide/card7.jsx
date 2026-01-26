@@ -1,5 +1,5 @@
-'use client';
-import { Users, Heart, Star, PlusCircle } from 'lucide-react';
+"use client";
+import { Users, Heart, Star, PlusCircle } from "lucide-react";
 
 const Vaginalcard7 = ({ setShowCard, setActiveButton }) => {
   return (
@@ -18,7 +18,7 @@ const Vaginalcard7 = ({ setShowCard, setActiveButton }) => {
             className="font-semibold text-sm uppercase tracking-wide flex items-center gap-2"
             style={{ color: "#FF4B8B" }}
           >
-            <Users className="w-6 h-6 text-[#FF4B8B]" />
+            <Users className="w-6 h-6 text-primary-pink" />
             Prevention & Early Detection
           </span>
 
@@ -29,13 +29,9 @@ const Vaginalcard7 = ({ setShowCard, setActiveButton }) => {
 
         {/* Prevention Section */}
         <div className="grid md:grid-cols-2 gap-6">
-
           {/* Left Column */}
           <div>
-            <h4
-              className="font-semibold mb-3"
-              style={{ color: "#FF4B8B" }}
-            >
+            <h4 className="font-semibold mb-3" style={{ color: "#FF4B8B" }}>
               Ways to Reduce Risk:
             </h4>
 
@@ -53,7 +49,7 @@ const Vaginalcard7 = ({ setShowCard, setActiveButton }) => {
                   className="flex items-start gap-2 text-sm"
                   style={{ color: "#7a2f4f" }}
                 >
-                  <PlusCircle className="w-4 h-4 text-[#FF4B8B] mt-1 flex-shrink-0" />
+                  <PlusCircle className="w-4 h-4 text-primary-pink mt-1 flex-shrink-0" />
                   <span>{item}</span>
                 </div>
               ))}
@@ -68,20 +64,16 @@ const Vaginalcard7 = ({ setShowCard, setActiveButton }) => {
               borderColor: "rgb(255,197,211)",
             }}
           >
-            <h4
-              className="font-semibold flex items-center gap-2 mb-2"
-              style={{ color: "#FF4B8B" }}
-            >
-              <Heart className="w-5 h-5 text-[#FF4B8B]" />
+            <h4 className="font-semibold flex items-center gap-2 mb-2" style={{ color: "#FF4B8B" }}>
+              <Heart className="w-5 h-5 text-primary-pink" />
               Why It Matters
             </h4>
 
             <p className="text-sm leading-relaxed" style={{ color: "#7a2f4f" }}>
-              Early detection improves treatment success and outcomes. 
-              Regular check-ups and awareness of body changes help identify problems early.
+              Early detection improves treatment success and outcomes. Regular check-ups and
+              awareness of body changes help identify problems early.
             </p>
           </div>
-
         </div>
 
         {/* Final Thoughts */}
@@ -92,17 +84,14 @@ const Vaginalcard7 = ({ setShowCard, setActiveButton }) => {
             borderColor: "rgb(255,197,211)",
           }}
         >
-          <h4
-            className="font-semibold flex items-center gap-2 mb-2"
-            style={{ color: "#FF4B8B" }}
-          >
-            <Star className="w-5 h-5 text-[#FF4B8B]" />
+          <h4 className="font-semibold flex items-center gap-2 mb-2" style={{ color: "#FF4B8B" }}>
+            <Star className="w-5 h-5 text-primary-pink" />
             Take Action
           </h4>
 
           <p className="text-sm leading-relaxed" style={{ color: "#7a2f4f" }}>
-            Protect your health by staying proactive—get vaccinated, attend regular check-ups, 
-            and report unusual symptoms early. These steps significantly lower vaginal cancer risk.
+            Protect your health by staying proactive—get vaccinated, attend regular check-ups, and
+            report unusual symptoms early. These steps significantly lower vaginal cancer risk.
           </p>
         </div>
 
@@ -118,7 +107,6 @@ const Vaginalcard7 = ({ setShowCard, setActiveButton }) => {
             Learn More
           </button>
         </div>
-
       </div>
     </div>
   );

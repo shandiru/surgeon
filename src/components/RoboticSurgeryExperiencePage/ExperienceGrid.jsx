@@ -87,7 +87,7 @@ export default function ExperienceGrid() {
                 {/* Button at Bottom Right */}
                 <div className="flex justify-end mt-auto">
                   <button
-                    className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white text-[#FF4B8B] font-bold text-sm transition-all duration-300 ${card.hoverColor} hover:text-white`}
+                    className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white text-primary-pink font-bold text-sm transition-all duration-300 ${card.hoverColor} hover:text-white`}
                   >
                     Know more
                     <ArrowRight className="w-4 h-4" />

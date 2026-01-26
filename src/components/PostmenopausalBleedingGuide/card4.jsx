@@ -6,10 +6,10 @@ const PostmenopausalBleedingGuideCard4 = ({ setShowCard, setActiveButton }) => {
     <div className="pb-10">
       <div className="max-w-4xl mx-auto px-6 animate-in slide-in-from-right-5 duration-300">
         {/* FULL WRAPPER */}
-        <div className="rounded-2xl p-8 border border-[#FF4B8B]/10 shadow-md bg-white hover:shadow-lg transition">
+        <div className="rounded-2xl p-8 border border-primary-pink/10 shadow-md bg-white hover:shadow-lg transition">
           {/* HEADER */}
           <div className="px-6 border-b border-[#FEE6EA] pb-5">
-            <h2 className="font-bold flex items-center gap-2 text-xl sm:text-2xl text-[#FF4B8B]">
+            <h2 className="font-bold flex items-center gap-2 text-xl sm:text-2xl text-primary-pink">
               Symptoms You Might Notice
             </h2>
           </div>

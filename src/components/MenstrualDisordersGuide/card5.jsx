@@ -19,7 +19,7 @@ const MenstrualDisordersGuidecard5 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="w-full px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto space-y-6 p-6">
-        <h2 className="text-3xl text-center font-bold mb-8 text-[#FF4B8B]">
+        <h2 className="text-3xl text-center font-bold mb-8 text-primary-pink">
           Causes &amp; Risk Factors
         </h2>
 
@@ -28,7 +28,7 @@ const MenstrualDisordersGuidecard5 = ({ setShowCard, setActiveButton }) => {
           {riskFactors.map((factor, index) => (
             <div
               key={index}
-              className="px-5 py-3 rounded-xl bg-[#FEE6EA] text-black text-sm font-medium border border-[#FF4B8B]/20 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all"
+              className="px-5 py-3 rounded-xl bg-[#FEE6EA] text-black text-sm font-medium border border-primary-pink/20 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all"
             >
               {factor}
             </div>

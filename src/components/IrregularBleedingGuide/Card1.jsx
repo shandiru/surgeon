@@ -1,25 +1,27 @@
-'use client';
-import React from 'react';
+"use client";
+import React from "react";
 
 const IrregularBleedingGuideCard1 = ({ setShowCard, setActiveButton }) => {
   return (
     <section className="my-12 px-4">
       <main className="max-w-4xl mx-auto px-4 py-8 bg-white">
-        
         {/* Card Container */}
         <div className="space-y-6 px-4 md:px-6">
           <div className="bg-white flex flex-col gap-6 rounded-xl border border-[#ff97b3]/30 py-6 shadow-md hover:shadow-lg transition-all duration-300">
-
             {/* Header */}
             <div className="grid grid-rows-[auto_auto] items-start gap-1.5 px-6 pb-4 border-b border-[#ff97b3]/20">
-              <div className="leading-none font-semibold flex items-center gap-2 text-[#FF4B8B] text-lg">
+              <div className="leading-none font-semibold flex items-center gap-2 text-primary-pink text-lg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="24" height="24"
+                  width="24"
+                  height="24"
                   viewBox="0 0 24 24"
-                  fill="none" stroke="currentColor"
-                  strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
-                  className="w-5 h-5 text-[#FF4B8B]"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="w-5 h-5 text-primary-pink"
                 >
                   <circle cx="12" cy="12" r="10"></circle>
                   <path d="M12 16v-4"></path>
@@ -31,17 +33,22 @@ const IrregularBleedingGuideCard1 = ({ setShowCard, setActiveButton }) => {
 
             {/* Content */}
             <div className="px-6 space-y-4 text-[#444]">
-
               <div className="grid md:grid-cols-2 gap-6">
-                
                 {/* Typical Period */}
                 <div className="space-y-3">
                   <h4 className="font-semibold text-[#ff97b3]">A typical period:</h4>
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-center gap-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                         className="w-4 h-4 text-[#ff97b3]"
                       >
                         <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
@@ -51,9 +58,16 @@ const IrregularBleedingGuideCard1 = ({ setShowCard, setActiveButton }) => {
                     </li>
 
                     <li className="flex items-center gap-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                         className="w-4 h-4 text-[#ff97b3]"
                       >
                         <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
@@ -69,9 +83,16 @@ const IrregularBleedingGuideCard1 = ({ setShowCard, setActiveButton }) => {
                   <h4 className="font-semibold text-[#ff97b3]">Irregular bleeding includes:</h4>
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-center gap-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                         className="w-4 h-4 text-[#ff97b3]"
                       >
                         <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"></path>
@@ -82,9 +103,16 @@ const IrregularBleedingGuideCard1 = ({ setShowCard, setActiveButton }) => {
                     </li>
 
                     <li className="flex items-center gap-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                         className="w-4 h-4 text-[#ff97b3]"
                       >
                         <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"></path>
@@ -95,9 +123,7 @@ const IrregularBleedingGuideCard1 = ({ setShowCard, setActiveButton }) => {
                     </li>
                   </ul>
                 </div>
-
               </div>
-
             </div>
 
             {/* Continue Button */}
@@ -114,10 +140,8 @@ const IrregularBleedingGuideCard1 = ({ setShowCard, setActiveButton }) => {
                 Continue to Next Section
               </button>
             </div>
-
           </div>
         </div>
-
       </main>
     </section>
   );

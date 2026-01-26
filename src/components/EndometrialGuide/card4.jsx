@@ -14,8 +14,8 @@ const EndometrialCard4 = ({ setShowCard, setActiveButton }) => {
       <div className="max-w-5xl mx-auto">
         {/* Section Heading */}
         <div className="flex items-center justify-center gap-3 mb-8" data-aos="fade-left">
-          <FaExclamation className="h-8 w-8 text-[#FF4B8B]" />
-          <h2 className="text-3xl font-bold text-center text-[#FF4B8B]">
+          <FaExclamation className="h-8 w-8 text-primary-pink" />
+          <h2 className="text-3xl font-bold text-center text-primary-pink">
             Symptoms of Endometrial Cancer
           </h2>
         </div>
@@ -28,7 +28,7 @@ const EndometrialCard4 = ({ setShowCard, setActiveButton }) => {
         >
           {/* Card Header */}
           <div className="px-6">
-            <div className="font-semibold text-xl mb-1 text-[#FF4B8B]">Early Warning Signs</div>
+            <div className="font-semibold text-xl mb-1 text-primary-pink">Early Warning Signs</div>
             <div className="text-sm text-black">
               Endometrial cancer often shows early warning signs. The most common is abnormal
               vaginal bleeding.

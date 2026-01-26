@@ -35,14 +35,14 @@ const OvarianCancerGuidecard6 = ({ setShowCard, setActiveButton }) => {
       {/* CARD CONTAINER */}
       <div
         className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 
-        flex flex-col gap-10 rounded-2xl border border-[#FF4B8B]/10 p-8 shadow-sm
+        flex flex-col gap-10 rounded-2xl border border-primary-pink/10 p-8 shadow-sm
         animate-in slide-in-from-right-5 duration-300 bg-white"
       >
         {/* HEADER */}
         <div className="text-center space-y-3">
           <div className="flex items-center justify-center gap-2 mb-1">
-            <HeartPulse className="h-8 w-8 text-[#FF4B8B]" />
-            <h3 className="text-3xl font-bold text-[#FF4B8B]">Treatment of Ovarian Cancer</h3>
+            <HeartPulse className="h-8 w-8 text-primary-pink" />
+            <h3 className="text-3xl font-bold text-primary-pink">Treatment of Ovarian Cancer</h3>
           </div>
 
           <p className="text-lg text-black">
@@ -50,7 +50,7 @@ const OvarianCancerGuidecard6 = ({ setShowCard, setActiveButton }) => {
             considerations.
           </p>
 
-          <p className="font-semibold text-lg text-[#FF4B8B]">
+          <p className="font-semibold text-lg text-primary-pink">
             The main goal is to remove the cancer whenever possible.
           </p>
         </div>

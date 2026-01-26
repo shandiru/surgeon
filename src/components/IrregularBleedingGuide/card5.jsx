@@ -5,19 +5,15 @@ const IrregularBleedingGuidecard5 = ({ setShowCard, setActiveButton }) => {
   return (
     <section className="my-12 px-4">
       <main className="max-w-4xl mx-auto px-4 py-8 bg-white">
-
         {/* MAIN CARD */}
-        <div
-          className="bg-white text-[#333] flex flex-col gap-6 rounded-xl py-6 px-4 sm:px-6 shadow-md hover:shadow-lg transition-all duration-300 border border-[#ff97b3]/30"
-        >
+        <div className="bg-white text-[#333] flex flex-col gap-6 rounded-xl py-6 px-4 sm:px-6 shadow-md hover:shadow-lg transition-all duration-300 border border-[#ff97b3]/30">
           {/* HEADER */}
           <div className="grid auto-rows-min items-start gap-2 border-b border-[#ff97b3]/30 pb-4">
-            <div className="leading-snug font-semibold flex items-center gap-2 text-[#FF4B8B] text-lg sm:text-xl">
-
+            <div className="leading-snug font-semibold flex items-center gap-2 text-primary-pink text-lg sm:text-xl">
               {/* ICON */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="lucide lucide-test-tube w-5 h-5 text-[#FF4B8B] flex-shrink-0"
+                className="lucide lucide-test-tube w-5 h-5 text-primary-pink flex-shrink-0"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -27,7 +23,6 @@ const IrregularBleedingGuidecard5 = ({ setShowCard, setActiveButton }) => {
                 <path d="M8.5 2h7"></path>
                 <path d="M14.5 16h-5"></path>
               </svg>
-
               What to Expect at Your Appointment
             </div>
 
@@ -38,17 +33,16 @@ const IrregularBleedingGuidecard5 = ({ setShowCard, setActiveButton }) => {
 
           {/* DROPDOWNS */}
           <div className="space-y-3">
-
             {/* 1 — Pelvic Examination */}
             <details
               className="group bg-[#fff7f9] rounded-lg shadow-sm hover:shadow-md transition-all duration-200"
               open
             >
-              <summary className="flex justify-between items-center py-4 px-4 cursor-pointer text-sm sm:text-base font-medium text-[#ff4b8b] hover:bg-white/60 rounded-lg">
+              <summary className="flex justify-between items-center py-4 px-4 cursor-pointer text-sm sm:text-base font-medium text-primary-pink hover:bg-white/60 rounded-lg">
                 Pelvic Examination
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="lucide lucide-chevron-down w-4 h-4 text-[#ff4b8b] transition-transform duration-200 group-open:rotate-180"
+                  className="lucide lucide-chevron-down w-4 h-4 text-primary-pink transition-transform duration-200 group-open:rotate-180"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -59,8 +53,8 @@ const IrregularBleedingGuidecard5 = ({ setShowCard, setActiveButton }) => {
               </summary>
 
               <div className="px-4 pb-4 text-xs sm:text-sm text-[#555]">
-                A physical examination to check for any abnormalities in your reproductive
-                organs. This is routine and helps identify possible causes of irregular bleeding.
+                A physical examination to check for any abnormalities in your reproductive organs.
+                This is routine and helps identify possible causes of irregular bleeding.
               </div>
             </details>
 
@@ -69,11 +63,11 @@ const IrregularBleedingGuidecard5 = ({ setShowCard, setActiveButton }) => {
               className="group bg-[#fff7f9] rounded-lg shadow-sm hover:shadow-md transition-all duration-200"
               open
             >
-              <summary className="flex justify-between items-center py-4 px-4 cursor-pointer text-sm sm:text-base font-medium text-[#ff4b8b] hover:bg-white/60 rounded-lg">
+              <summary className="flex justify-between items-center py-4 px-4 cursor-pointer text-sm sm:text-base font-medium text-primary-pink hover:bg-white/60 rounded-lg">
                 Ultrasound Scan
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="lucide lucide-chevron-down w-4 h-4 text-[#ff4b8b] transition-transform duration-200 group-open:rotate-180"
+                  className="lucide lucide-chevron-down w-4 h-4 text-primary-pink transition-transform duration-200 group-open:rotate-180"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth="2"
@@ -94,11 +88,11 @@ const IrregularBleedingGuidecard5 = ({ setShowCard, setActiveButton }) => {
               className="group bg-[#fff7f9] rounded-lg shadow-sm hover:shadow-md transition-all duration-200"
               open
             >
-              <summary className="flex justify-between items-center py-4 px-4 cursor-pointer text-sm sm:text-base font-medium text-[#ff4b8b] hover:bg-white/60 rounded-lg">
+              <summary className="flex justify-between items-center py-4 px-4 cursor-pointer text-sm sm:text-base font-medium text-primary-pink hover:bg-white/60 rounded-lg">
                 Blood Tests
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="lucide lucide-chevron-down w-4 h-4 text-[#ff4b8b] transition-transform duration-200 group-open:rotate-180"
+                  className="lucide lucide-chevron-down w-4 h-4 text-primary-pink transition-transform duration-200 group-open:rotate-180"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth="2"
@@ -119,11 +113,11 @@ const IrregularBleedingGuidecard5 = ({ setShowCard, setActiveButton }) => {
               className="group bg-[#fff7f9] rounded-lg shadow-sm hover:shadow-md transition-all duration-200"
               open
             >
-              <summary className="flex justify-between items-center py-4 px-4 cursor-pointer text-sm sm:text-base font-medium text-[#ff4b8b] hover:bg-white/60 rounded-lg">
+              <summary className="flex justify-between items-center py-4 px-4 cursor-pointer text-sm sm:text-base font-medium text-primary-pink hover:bg-white/60 rounded-lg">
                 Cervical Smear (if due)
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="lucide lucide-chevron-down w-4 h-4 text-[#ff4b8b] transition-transform duration-200 group-open:rotate-180"
+                  className="lucide lucide-chevron-down w-4 h-4 text-primary-pink transition-transform duration-200 group-open:rotate-180"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth="2"

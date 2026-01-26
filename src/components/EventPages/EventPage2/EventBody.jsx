@@ -123,7 +123,7 @@ const EventDetail = () => {
                   Annual Scientific Meeting – Bristol 2026
                 </h1>
                 <div className="flex flex-wrap items-center gap-4 mb-6">
-                  <span className="inline-flex items-center px-4 py-2 bg-[#FF4B8B]/20 text-[#FF4B8B] rounded-full font-semibold text-sm">
+                  <span className="inline-flex items-center px-4 py-2 bg-[#FF4B8B]/20 text-primary-pink rounded-full font-semibold text-sm">
                     <Calendar className="w-4 h-4 mr-2" />
                     24th and 26th June 2026.
                   </span>
@@ -133,14 +133,14 @@ const EventDetail = () => {
                 {/* Event Info Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                   <div className="flex items-start space-x-3">
-                    <MapPin className="w-5 h-5 text-[#FF4B8B] flex-shrink-0 mt-1" />
+                    <MapPin className="w-5 h-5 text-primary-pink flex-shrink-0 mt-1" />
                     <div>
                       <p className="font-semibold text-black">Location</p>
                       <p className="text-black">London and Birmingham</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <Phone className="w-5 h-5 text-[#FF4B8B] flex-shrink-0 mt-1" />
+                    <Phone className="w-5 h-5 text-primary-pink flex-shrink-0 mt-1" />
                     <div>
                       <p className="font-semibold text-black">Phone</p>
                       <p className="text-black">(+0064) 725 4143 68</p>
@@ -156,7 +156,7 @@ const EventDetail = () => {
                     <span className="text-black">563 reviews</span>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <Globe className="w-5 h-5 text-[#FF4B8B] flex-shrink-0 mt-1" />
+                    <Globe className="w-5 h-5 text-primary-pink flex-shrink-0 mt-1" />
                     <div>
                       <p className="font-semibold text-black">Website</p>
                       <p className="text-black">bgcs.org.uk</p>
@@ -183,7 +183,7 @@ const EventDetail = () => {
 
             {/* About Event */}
             <div className="bg-white rounded-2xl shadow-lg p-6 lg:p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4 border-b-2 border-[#FF4B8B] pb-2 inline-block">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4 border-b-2 border-primary-pink pb-2 inline-block">
                 About Event
               </h2>
               <div className="space-y-4 text-black leading-relaxed">
@@ -204,7 +204,7 @@ const EventDetail = () => {
 
             {/* Speakers */}
             <div className="bg-white rounded-2xl shadow-lg p-6 lg:p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-[#FF4B8B] pb-2 inline-block">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-primary-pink pb-2 inline-block">
                 Who's Speaking?
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -227,7 +227,7 @@ const EventDetail = () => {
 
             {/* Location */}
             <div className="bg-white rounded-2xl shadow-lg p-6 lg:p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-[#FF4B8B] pb-2 inline-block">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-primary-pink pb-2 inline-block">
                 Location
               </h2>
               <div className="rounded-xl overflow-hidden mb-6 h-64 lg:h-96 bg-gray-200">
@@ -253,7 +253,7 @@ const EventDetail = () => {
                     key={index}
                     className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg"
                   >
-                    <item.icon className="w-5 h-5 text-[#FF4B8B] flex-shrink-0" />
+                    <item.icon className="w-5 h-5 text-primary-pink flex-shrink-0" />
                     <span className="text-black text-sm">{item.text}</span>
                   </div>
                 ))}
@@ -262,7 +262,7 @@ const EventDetail = () => {
 
             {/* Sponsors */}
             <div className="bg-white rounded-2xl shadow-lg p-6 lg:p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-[#FF4B8B] pb-2 inline-block">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-primary-pink pb-2 inline-block">
                 Our Sponsors
               </h2>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4 lg:gap-6">
@@ -279,14 +279,14 @@ const EventDetail = () => {
 
             {/* FAQs */}
             <div className="bg-white rounded-2xl shadow-lg p-6 lg:p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-[#FF4B8B] pb-2 inline-block">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-primary-pink pb-2 inline-block">
                 FAQ's
               </h2>
               <div className="space-y-3">
                 {faqs.map((faq, index) => (
                   <div
                     key={index}
-                    className="border border-[#FF4B8B]/50 rounded-xl overflow-hidden"
+                    className="border border-primary-pink/50 rounded-xl overflow-hidden"
                   >
                     <button
                       onClick={() => setOpenFaq(openFaq === index ? -1 : index)}
@@ -294,7 +294,7 @@ const EventDetail = () => {
                     >
                       <h3 className="text-lg font-semibold text-gray-900">{faq.question}</h3>
                       {openFaq === index ? (
-                        <ChevronUp className="w-5 h-5 text-[#FF4B8B]" />
+                        <ChevronUp className="w-5 h-5 text-primary-pink" />
                       ) : (
                         <ChevronDown className="w-5 h-5 text-black" />
                       )}
@@ -329,7 +329,7 @@ const EventDetail = () => {
                       <h3 className="text-xl font-bold text-gray-900">
                         {organizers[activeOrganizer].name}
                       </h3>
-                      <p className="text-sm text-[#FF4B8B]">
+                      <p className="text-sm text-primary-pink">
                         Posted {organizers[activeOrganizer].postedDays} days ago
                       </p>
                     </div>
@@ -342,7 +342,7 @@ const EventDetail = () => {
                       { icon: Globe, text: organizers[activeOrganizer].website },
                     ].map((item, index) => (
                       <div key={index} className="flex items-start space-x-3">
-                        <item.icon className="w-5 h-5 text-[#FF4B8B] flex-shrink-0 mt-0.5" />
+                        <item.icon className="w-5 h-5 text-primary-pink flex-shrink-0 mt-0.5" />
                         <span className="text-sm text-black">{item.text}</span>
                       </div>
                     ))}
@@ -383,7 +383,7 @@ const EventDetail = () => {
                     </div>
                     <h3 className="text-lg font-bold text-gray-900 mb-1">{schedule.title}</h3>
                     <p className="text-sm text-black mb-2">{schedule.subtitle}</p>
-                    <span className="inline-block px-4 py-1 bg-[#FF4B8B]/20 text-[#FF4B8B] rounded-full text-sm font-semibold">
+                    <span className="inline-block px-4 py-1 bg-[#FF4B8B]/20 text-primary-pink rounded-full text-sm font-semibold">
                       {schedule.date}
                     </span>
                   </div>

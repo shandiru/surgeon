@@ -58,7 +58,7 @@ export default function OvarianCancerTreatment() {
             Treatment depends on the type of ovarian cancer, your overall health, and fertility
             considerations.
           </p>
-          <p className="text-[#FF4B8B] font-semibold text-lg mt-4">
+          <p className="text-primary-pink font-semibold text-lg mt-4">
             The main goal is to remove the cancer whenever possible.
           </p>
         </div>

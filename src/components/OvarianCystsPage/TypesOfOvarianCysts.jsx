@@ -17,14 +17,14 @@ const AccordionItem = ({ title, badge, content, imageContent }) => {
         >
           <div className="flex items-center gap-3">
             {badge && (
-              <span className="inline-flex items-center justify-center rounded-full bg-[#FF4B8B]/10 text-[#FF4B8B] px-3 py-1 text-xs font-medium">
+              <span className="inline-flex items-center justify-center rounded-full bg-[#FF4B8B]/10 text-primary-pink px-3 py-1 text-xs font-medium">
                 {badge}
               </span>
             )}
             <span className="font-semibold text-black">{title}</span>
           </div>
           <ChevronDown
-            className={`w-5 h-5 text-[#FF4B8B] transition-transform duration-200 ${
+            className={`w-5 h-5 text-primary-pink transition-transform duration-200 ${
               isOpen ? "rotate-180" : ""
             }`}
           />
@@ -90,11 +90,11 @@ const OvarianCystsCard = () => {
   );
 
   return (
-    <div className="bg-[#FEE6EA] text-[#FF4B8B] flex flex-col gap-6 rounded-xl p-6 shadow-lg">
+    <div className="bg-[#FEE6EA] text-primary-pink flex flex-col gap-6 rounded-xl p-6 shadow-lg">
       {/* Header */}
-      <div className="pb-4 border-b border-[#FF4B8B]/30">
+      <div className="pb-4 border-b border-primary-pink/30">
         <div className="font-semibold flex items-center gap-3 text-2xl">
-          <Activity className="w-6 h-6 text-[#FF4B8B]" />
+          <Activity className="w-6 h-6 text-primary-pink" />
           Types of Ovarian Cysts
         </div>
       </div>

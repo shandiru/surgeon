@@ -6,9 +6,9 @@ const OvarianCystsGuideCard5 = ({ setShowCard, setActiveButton }) => {
     <div className="pb-10">
       <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto animate-in slide-in-from-right-5 duration-300">
         {/* FULL WRAPPER BOX */}
-        <div className="rounded-2xl p-8 border border-[#FF4B8B]/10 shadow-lg transition-all duration-300 bg-light-pink-1">
+        <div className="rounded-2xl p-8 border border-primary-pink/10 shadow-lg transition-all duration-300 bg-light-pink-1">
           {/* HEADER */}
-          <div className="flex items-center gap-3 font-semibold text-[#FF4B8B] text-lg mb-6">
+          <div className="flex items-center gap-3 font-semibold text-primary-pink text-lg mb-6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="22"

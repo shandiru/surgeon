@@ -24,7 +24,7 @@ const UrgentHelpAlert = () => {
           <path d="M12 9v4" />
           <path d="M12 17h.01" />
         </svg>
-        <h3 className="font-bold text-lg text-[#FF4B8B]">When to Seek Urgent Help</h3>
+        <h3 className="font-bold text-lg text-primary-pink">When to Seek Urgent Help</h3>
       </div>
 
       {/* Content */}

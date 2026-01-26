@@ -7,10 +7,10 @@ const OvarianCystsGuideCard2 = ({ setShowCard, setActiveButton }) => {
       {/* ---------------------------------------------------
           FULL WRAPPER WITH BORDER (ALL CONTENT INCLUDED)
       --------------------------------------------------- */}
-      <div className="max-w-4xl mx-auto px-6 py-10 rounded-2xl border border-[#FF4B8B]/20 shadow-md bg-[#FFF7F9]">
+      <div className="max-w-4xl mx-auto px-6 py-10 rounded-2xl border border-primary-pink/20 shadow-md bg-[#FFF7F9]">
         {/* HEADER */}
         <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold text-[#FF4B8B] flex items-center justify-center gap-3">
+          <h2 className="text-3xl font-bold text-primary-pink flex items-center justify-center gap-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="30"
@@ -30,7 +30,7 @@ const OvarianCystsGuideCard2 = ({ setShowCard, setActiveButton }) => {
         </div>
 
         {/* MAIN CONTENT - ALERT BOX */}
-        <div className="rounded-xl p-6 bg-white border border-[#FF4B8B]/10 shadow-sm">
+        <div className="rounded-xl p-6 bg-white border border-primary-pink/10 shadow-sm">
           {/* Icon + Title */}
           <div className="flex items-start gap-3 mb-4">
             <div className="p-2 rounded-full bg-light-pink-1 flex items-center justify-center">
@@ -52,7 +52,7 @@ const OvarianCystsGuideCard2 = ({ setShowCard, setActiveButton }) => {
               </svg>
             </div>
 
-            <strong className="text-[#FF4B8B] font-semibold text-lg">
+            <strong className="text-primary-pink font-semibold text-lg">
               See your doctor if you have:
             </strong>
           </div>

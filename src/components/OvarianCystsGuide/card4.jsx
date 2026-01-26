@@ -6,9 +6,9 @@ const OvarianCystsGuideCard4 = ({ setShowCard, setActiveButton }) => {
     <div className="pb-10">
       <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto animate-in slide-in-from-right-5 duration-300">
         {/* FULL WRAPPER SECTION */}
-        <div className="rounded-2xl p-8 border border-[#FF4B8B]/10 shadow-lg transition-all duration-300 bg-white">
+        <div className="rounded-2xl p-8 border border-primary-pink/10 shadow-lg transition-all duration-300 bg-white">
           {/* HEADER */}
-          <div className="flex items-center gap-3 text-2xl font-semibold text-[#FF4B8B] mb-6">
+          <div className="flex items-center gap-3 text-2xl font-semibold text-primary-pink mb-6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="26"
@@ -34,7 +34,7 @@ const OvarianCystsGuideCard4 = ({ setShowCard, setActiveButton }) => {
           <div className="grid md:grid-cols-2 gap-8">
             {/* COMMON SYMPTOMS */}
             <div>
-              <h4 className="font-semibold mb-4 text-lg text-[#FF4B8B]">Common Symptoms</h4>
+              <h4 className="font-semibold mb-4 text-lg text-primary-pink">Common Symptoms</h4>
 
               <div className="space-y-3">
                 {[
@@ -54,7 +54,7 @@ const OvarianCystsGuideCard4 = ({ setShowCard, setActiveButton }) => {
 
             {/* LESS COMMON SYMPTOMS */}
             <div>
-              <h4 className="font-semibold mb-4 text-lg text-[#FF4B8B]">Less Common Symptoms</h4>
+              <h4 className="font-semibold mb-4 text-lg text-primary-pink">Less Common Symptoms</h4>
 
               <div className="space-y-3">
                 {[

@@ -10,8 +10,8 @@ const FibroidGuidecard7 = ({ setShowCard, setActiveButton }) => {
         {/* Card Header */}
         <div className="text-center">
           <div className="flex items-center justify-center gap-2 mb-3">
-            <Pill className="text-3xl text-[#FF4B8B]" />
-            <h2 className="font-bold text-2xl md:text-3xl text-[#FF4B8B]">Treatment Options</h2>
+            <Pill className="text-3xl text-primary-pink" />
+            <h2 className="font-bold text-2xl md:text-3xl text-primary-pink">Treatment Options</h2>
           </div>
           <p className="text-base text-black">
             Treatment depends on your symptoms and their severity:
@@ -22,7 +22,7 @@ const FibroidGuidecard7 = ({ setShowCard, setActiveButton }) => {
         <div className="space-y-10">
           {/* Medication Section */}
           <div>
-            <h3 className="text-xl font-semibold mb-6 text-[#FF4B8B]">Medication</h3>
+            <h3 className="text-xl font-semibold mb-6 text-primary-pink">Medication</h3>
             <div className="grid md:grid-cols-2 gap-6">
               {[
                 { title: "Anti-inflammatory medicines", desc: "Relieve pain" },
@@ -37,7 +37,7 @@ const FibroidGuidecard7 = ({ setShowCard, setActiveButton }) => {
                   key={i}
                   className="rounded-xl p-5 bg-white shadow-md hover:shadow-lg hover:-translate-y-1 transition-all"
                 >
-                  <h4 className="font-semibold mb-2 text-[#FF4B8B]">{item.title}</h4>
+                  <h4 className="font-semibold mb-2 text-primary-pink">{item.title}</h4>
                   <p className="text-sm text-black">{item.desc}</p>
                 </div>
               ))}
@@ -49,7 +49,7 @@ const FibroidGuidecard7 = ({ setShowCard, setActiveButton }) => {
 
           {/* Procedures Section */}
           <div>
-            <h3 className="text-xl font-semibold mb-6 text-[#FF4B8B]">Procedures & Surgery</h3>
+            <h3 className="text-xl font-semibold mb-6 text-primary-pink">Procedures & Surgery</h3>
             <div className="grid md:grid-cols-2 gap-6">
               {[
                 { title: "Myomectomy", desc: "Removes fibroids while keeping the womb" },
@@ -70,7 +70,7 @@ const FibroidGuidecard7 = ({ setShowCard, setActiveButton }) => {
                   key={i}
                   className="rounded-xl p-5 bg-white shadow-md hover:shadow-lg hover:-translate-y-1 transition-all"
                 >
-                  <h4 className="font-semibold mb-2 text-[#FF4B8B]">{item.title}</h4>
+                  <h4 className="font-semibold mb-2 text-primary-pink">{item.title}</h4>
                   <p className="text-sm text-black">{item.desc}</p>
                 </div>
               ))}
@@ -80,7 +80,7 @@ const FibroidGuidecard7 = ({ setShowCard, setActiveButton }) => {
           {/* Doctor Advice Note */}
           <div className="rounded-xl p-5 text-center shadow-md bg-[#FF4B8B]/10">
             <p className="font-medium flex items-center gap-2 justify-center text-black">
-              <User className="text-2xl text-[#FF4B8B]" />
+              <User className="text-2xl text-primary-pink" />
               Your doctor will help you choose the safest and most effective option based on your
               symptoms and fertility plans.
             </p>

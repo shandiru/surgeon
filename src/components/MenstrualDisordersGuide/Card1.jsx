@@ -1,25 +1,23 @@
-'use client';
-import { Lightbulb } from 'lucide-react';
-import React from 'react';
+"use client";
+import { Lightbulb } from "lucide-react";
+import React from "react";
 
 const MenstrualDisordersGuideCard1 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6 pb-10 px-3">
-
       {/* Card Container */}
       <div
         className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-2xl border shadow-sm animate-in slide-in-from-right-5 duration-300 p-8"
         style={{
-          backgroundColor: '#FFFFFF',
-          borderColor: 'rgb(255,197,211)',
+          backgroundColor: "#FFFFFF",
+          borderColor: "rgb(255,197,211)",
         }}
       >
-
         {/* Card Header */}
         <div className="grid auto-rows-min items-start gap-1.5">
           <div
             className="leading-none font-semibold flex items-center gap-2"
-            style={{ color: '#FF4B8B' }}
+            style={{ color: "#FF4B8B" }}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -31,7 +29,7 @@ const MenstrualDisordersGuideCard1 = ({ setShowCard, setActiveButton }) => {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="w-6 h-6 text-[#FF4B8B]"
+              className="w-6 h-6 text-primary-pink"
             >
               <path d="M11 2v2"></path>
               <path d="M5 2v2"></path>
@@ -45,16 +43,15 @@ const MenstrualDisordersGuideCard1 = ({ setShowCard, setActiveButton }) => {
 
         {/* Card Content */}
         <div className="space-y-6">
-
           {/* Overview Box */}
           <div
             className="p-4 rounded-xl border transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-100"
             style={{
-              backgroundColor: '#FFF5F8',
-              borderColor: 'rgb(255,197,211)',
+              backgroundColor: "#FFF5F8",
+              borderColor: "rgb(255,197,211)",
             }}
           >
-            <p className="text-lg leading-relaxed" style={{ color: '#7a2f4f' }}>
+            <p className="text-lg leading-relaxed" style={{ color: "#7a2f4f" }}>
               Menstrual disorders refer to any changes or problems with a person’s menstrual cycle,
               including irregular timing, unusually heavy or light bleeding, severe pain, or the
               absence of periods. These disorders are common and may be temporary or linked to
@@ -65,13 +62,9 @@ const MenstrualDisordersGuideCard1 = ({ setShowCard, setActiveButton }) => {
 
           {/* Quick Facts + Reminder */}
           <div className="grid md:grid-cols-2 gap-6">
-
             {/* Quick Facts */}
             <div className="space-y-3">
-              <h4
-                className="font-semibold flex items-center gap-2"
-                style={{ color: '#FF4B8B' }}
-              >
+              <h4 className="font-semibold flex items-center gap-2" style={{ color: "#FF4B8B" }}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -82,7 +75,7 @@ const MenstrualDisordersGuideCard1 = ({ setShowCard, setActiveButton }) => {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="w-4 h-4 text-[#FF4B8B]"
+                  className="w-4 h-4 text-primary-pink"
                 >
                   <circle cx="12" cy="12" r="10"></circle>
                   <polyline points="12 6 12 12 16 14"></polyline>
@@ -92,10 +85,10 @@ const MenstrualDisordersGuideCard1 = ({ setShowCard, setActiveButton }) => {
 
               <ul className="space-y-2">
                 {[
-                  'Can include irregular, heavy, painful, or absent periods',
-                  'Often caused by hormonal imbalance, stress, or medical conditions',
-                  'Common during puberty and perimenopause',
-                  'May signal underlying issues such as thyroid problems or PCOS',
+                  "Can include irregular, heavy, painful, or absent periods",
+                  "Often caused by hormonal imbalance, stress, or medical conditions",
+                  "Common during puberty and perimenopause",
+                  "May signal underlying issues such as thyroid problems or PCOS",
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-2">
                     <svg
@@ -108,12 +101,12 @@ const MenstrualDisordersGuideCard1 = ({ setShowCard, setActiveButton }) => {
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      className="w-4 h-4 text-[#FF4B8B] mt-0.5 flex-shrink-0"
+                      className="w-4 h-4 text-primary-pink mt-0.5 flex-shrink-0"
                     >
                       <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
                       <path d="m9 11 3 3L22 4"></path>
                     </svg>
-                    <span style={{ color: '#7a2f4f' }}>{item}</span>
+                    <span style={{ color: "#7a2f4f" }}>{item}</span>
                   </li>
                 ))}
               </ul>
@@ -123,20 +116,20 @@ const MenstrualDisordersGuideCard1 = ({ setShowCard, setActiveButton }) => {
             <div
               className="p-4 rounded-xl border"
               style={{
-                backgroundColor: '#FFF5F8',
-                borderColor: 'rgb(255,197,211)',
+                backgroundColor: "#FFF5F8",
+                borderColor: "rgb(255,197,211)",
               }}
             >
               <h4
                 className="font-semibold mb-2 flex items-center gap-2"
-                style={{ color: '#FF4B8B' }}
+                style={{ color: "#FF4B8B" }}
               >
-                <Lightbulb className="text-xl text-[#FF4B8B]" />
+                <Lightbulb className="text-xl text-primary-pink" />
                 Remember
               </h4>
-              <p className="text-sm" style={{ color: '#7a2f4f' }}>
-                Menstrual disorders are common, but they shouldn’t be ignored. Seek medical advice if
-                you experience very heavy bleeding, severe pain, missed periods, or sudden cycle
+              <p className="text-sm" style={{ color: "#7a2f4f" }}>
+                Menstrual disorders are common, but they shouldn’t be ignored. Seek medical advice
+                if you experience very heavy bleeding, severe pain, missed periods, or sudden cycle
                 changes. Early evaluation helps identify the cause and ensures proper treatment.
               </p>
             </div>
@@ -154,7 +147,6 @@ const MenstrualDisordersGuideCard1 = ({ setShowCard, setActiveButton }) => {
               Continue to Next Section
             </button>
           </div>
-
         </div>
       </div>
     </div>

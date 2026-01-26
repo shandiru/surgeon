@@ -14,11 +14,11 @@ const OvarianCystsGuideCard3 = ({ setShowCard, setActiveButton }) => {
       {/* FULL WRAPPER */}
       <div
         className="max-w-4xl mx-auto px-6 py-10 
-                      rounded-2xl border border-[#FF4B8B]/20 
-                      shadow-md bg-[#FEE6EA] text-[#FF4B8B]"
+                      rounded-2xl border border-primary-pink/20 
+                      shadow-md bg-[#FEE6EA] text-primary-pink"
       >
         {/* HEADER */}
-        <div className="pb-4 border-b border-[#FF4B8B]/30">
+        <div className="pb-4 border-b border-primary-pink/30">
           <div className="font-semibold flex items-center gap-3 text-2xl">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +27,7 @@ const OvarianCystsGuideCard3 = ({ setShowCard, setActiveButton }) => {
               fill="none"
               stroke="currentColor"
               strokeWidth="2"
-              className="w-6 h-6 text-[#FF4B8B]"
+              className="w-6 h-6 text-primary-pink"
             >
               <path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2" />
             </svg>
@@ -44,7 +44,7 @@ const OvarianCystsGuideCard3 = ({ setShowCard, setActiveButton }) => {
               className="flex w-full items-center justify-between gap-4 px-4 py-4 text-left text-sm font-medium"
             >
               <div className="flex items-center gap-3">
-                <span className="rounded-full bg-light-pink-1 text-[#FF4B8B] px-3 py-1 text-xs font-medium">
+                <span className="rounded-full bg-light-pink-1 text-primary-pink px-3 py-1 text-xs font-medium">
                   Most Common
                 </span>
                 <span className="font-semibold text-black">Functional Cysts (Harmless)</span>
@@ -57,7 +57,7 @@ const OvarianCystsGuideCard3 = ({ setShowCard, setActiveButton }) => {
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="2"
-                className={`w-5 h-5 text-[#FF4B8B] transition-transform duration-300 
+                className={`w-5 h-5 text-primary-pink transition-transform duration-300 
                 ${openIndex === 0 ? "rotate-180" : ""}`}
               >
                 <path d="m6 9 6 6 6-6" />
@@ -94,7 +94,7 @@ const OvarianCystsGuideCard3 = ({ setShowCard, setActiveButton }) => {
               className="flex w-full items-center justify-between gap-4 px-4 py-4 text-left text-sm font-medium"
             >
               <div className="flex items-center gap-3">
-                <span className="rounded-full bg-light-pink-1 text-[#FF4B8B] px-3 py-1 text-xs font-medium">
+                <span className="rounded-full bg-light-pink-1 text-primary-pink px-3 py-1 text-xs font-medium">
                   Benign
                 </span>
                 <span className="font-semibold text-black">Other Benign Cysts</span>
@@ -107,7 +107,7 @@ const OvarianCystsGuideCard3 = ({ setShowCard, setActiveButton }) => {
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="2"
-                className={`w-5 h-5 text-[#FF4B8B] transition-transform duration-300 
+                className={`w-5 h-5 text-primary-pink transition-transform duration-300 
                 ${openIndex === 1 ? "rotate-180" : ""}`}
               >
                 <path d="m6 9 6 6 6-6" />
@@ -144,7 +144,7 @@ const OvarianCystsGuideCard3 = ({ setShowCard, setActiveButton }) => {
               className="flex w-full items-center justify-between gap-4 px-4 py-4 text-left text-sm font-medium"
             >
               <div className="flex items-center gap-3">
-                <span className="rounded-full bg-light-pink-1 text-[#FF4B8B] px-3 py-1 text-xs font-medium">
+                <span className="rounded-full bg-light-pink-1 text-primary-pink px-3 py-1 text-xs font-medium">
                   Rare
                 </span>
                 <span className="font-semibold text-black">Malignant (Cancerous) Cysts</span>
@@ -157,7 +157,7 @@ const OvarianCystsGuideCard3 = ({ setShowCard, setActiveButton }) => {
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="2"
-                className={`w-5 h-5 text-[#FF4B8B] transition-transform duration-300 
+                className={`w-5 h-5 text-primary-pink transition-transform duration-300 
                 ${openIndex === 2 ? "rotate-180" : ""}`}
               >
                 <path d="m6 9 6 6 6-6" />

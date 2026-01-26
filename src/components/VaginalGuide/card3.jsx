@@ -1,6 +1,6 @@
-'use client';
-import React from 'react';
-import { Sparkles } from 'lucide-react';
+"use client";
+import React from "react";
+import { Sparkles } from "lucide-react";
 
 const Vaginalcard3 = ({ setShowCard, setActiveButton }) => {
   const primaryPink = "#FF4B8B";
@@ -43,7 +43,7 @@ const Vaginalcard3 = ({ setShowCard, setActiveButton }) => {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="lucide lucide-file-text w-6 h-6 text-[#FF4B8B]"
+              className="lucide lucide-file-text w-6 h-6 text-primary-pink"
             >
               <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
               <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
@@ -86,10 +86,7 @@ const Vaginalcard3 = ({ setShowCard, setActiveButton }) => {
 
                 {/* Text */}
                 <div className="flex-1">
-                  <h4
-                    className="font-semibold mb-1"
-                    style={{ color: primaryPink }}
-                  >
+                  <h4 className="font-semibold mb-1" style={{ color: primaryPink }}>
                     {factor}
                   </h4>
                 </div>
@@ -109,13 +106,13 @@ const Vaginalcard3 = ({ setShowCard, setActiveButton }) => {
               className="font-semibold mb-2 flex items-center gap-2"
               style={{ color: primaryPink }}
             >
-              <Sparkles className="w-5 h-5 text-[#FF4B8B]" />
+              <Sparkles className="w-5 h-5 text-primary-pink" />
               Good to Know
             </h4>
             <p className="text-sm" style={{ color: "#7a2f4f" }}>
-              These factors can increase the risk of vaginal cancer, but having
-              one or more does <strong>not guarantee</strong> you will get it.
-              Regular screenings and HPV vaccination help reduce risk.
+              These factors can increase the risk of vaginal cancer, but having one or more does{" "}
+              <strong>not guarantee</strong> you will get it. Regular screenings and HPV vaccination
+              help reduce risk.
             </p>
           </div>
 

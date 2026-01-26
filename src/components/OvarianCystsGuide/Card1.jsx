@@ -10,8 +10,8 @@ const OvarianCystsGuideCard1 = ({ setShowCard, setActiveButton }) => {
       --------------------------------------------------- */}
       <section className="max-w-4xl mx-auto px-6 py-6 mt-10">
         <div className="bg-[#FEE6EA] rounded-2xl shadow-xl max-w-6xl mx-auto">
-          <div className="bg-[#FEE6EA] border-b border-[#FF4B8B]/20 rounded-t-2xl px-8 py-6">
-            <div className="text-[#FF4B8B] font-bold text-3xl flex items-center gap-3">
+          <div className="bg-[#FEE6EA] border-b border-primary-pink/20 rounded-t-2xl px-8 py-6">
+            <div className="text-primary-pink font-bold text-3xl flex items-center gap-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-7 h-7"
@@ -62,8 +62,8 @@ const OvarianCystsGuideCard1 = ({ setShowCard, setActiveButton }) => {
               </div>
 
               {/* Right Important Note */}
-              <div className="bg-white rounded-xl p-8 border border-[#FF4B8B]/10 shadow-md">
-                <h4 className="font-semibold mb-4 flex items-center gap-2 text-[#FF4B8B] text-lg">
+              <div className="bg-white rounded-xl p-8 border border-primary-pink/10 shadow-md">
+                <h4 className="font-semibold mb-4 flex items-center gap-2 text-primary-pink text-lg">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="w-6 h-6"

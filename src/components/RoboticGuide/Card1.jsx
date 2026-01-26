@@ -1,17 +1,15 @@
-'use client';
-import React from 'react';
+"use client";
+import React from "react";
 
 const RoboticGuide1 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6 pb-10">
-
       {/* Card Container */}
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-10 items-center">
-
           {/* Left Text Content */}
           <div className="text-center md:text-left space-y-6">
-            <h1 className="text-hero text-[#FF4B8B] leading-tight">
+            <h1 className="text-hero text-primary-pink leading-tight">
               Robotic Surgery in Gynecology
             </h1>
 
@@ -20,9 +18,9 @@ const RoboticGuide1 = ({ setShowCard, setActiveButton }) => {
             </p>
 
             <p className="text-body md:text-body-large leading-relaxed text-[#B51252]/70 max-w-xl mx-auto md:mx-0">
-              Experience the future of minimally invasive gynecologic surgery
-              with enhanced precision, control, and superior patient outcomes
-              through cutting-edge robotic technology.
+              Experience the future of minimally invasive gynecologic surgery with enhanced
+              precision, control, and superior patient outcomes through cutting-edge robotic
+              technology.
             </p>
           </div>
 
@@ -71,7 +69,6 @@ const RoboticGuide1 = ({ setShowCard, setActiveButton }) => {
           Continue to Next Section
         </button>
       </div>
-
     </div>
   );
 };

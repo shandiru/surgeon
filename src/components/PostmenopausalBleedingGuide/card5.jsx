@@ -5,7 +5,6 @@ const PostmenopausalBleedingGuideCard5 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="pb-10">
       <div className="max-w-4xl mx-auto px-6 animate-in slide-in-from-right-5 duration-300">
-
         {/* FULL WRAPPER BOX */}
         <div
           className="rounded-2xl p-8 border shadow-md bg-white hover:shadow-lg transition"
@@ -13,7 +12,7 @@ const PostmenopausalBleedingGuideCard5 = ({ setShowCard, setActiveButton }) => {
         >
           {/* HEADER */}
           <div className="px-6 border-b border-[#FEE6EA] pb-5 mb-6">
-            <h2 className="font-bold flex items-center gap-2 text-xl sm:text-2xl text-[#FF4B8B]">
+            <h2 className="font-bold flex items-center gap-2 text-xl sm:text-2xl text-primary-pink">
               Risk Factors
             </h2>
           </div>
@@ -49,7 +48,6 @@ const PostmenopausalBleedingGuideCard5 = ({ setShowCard, setActiveButton }) => {
             Continue to Next Section
           </button>
         </div>
-
       </div>
     </div>
   );

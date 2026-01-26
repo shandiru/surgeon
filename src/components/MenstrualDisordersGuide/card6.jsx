@@ -58,7 +58,7 @@ const MenstrualDisordersGuidecard6 = ({ setShowCard, setActiveButton }) => {
   return (
     <div>
       <div className="max-w-5xl mx-6">
-        <h2 className="text-2xl font-bold mb-6 text-[#FF4B8B] text-center">Treatment Options</h2>
+        <h2 className="text-2xl font-bold mb-6 text-primary-pink text-center">Treatment Options</h2>
 
         <div className="space-y-4">
           {treatmentOptions.map((option, index) => (

@@ -18,7 +18,7 @@ const IrregularBleedingGuidecard6 = () => {
             className="font-semibold text-sm uppercase tracking-wide flex items-center gap-2"
             style={{ color: "#FF4B8B" }}
           >
-            <Heart className="w-6 h-6 text-[#FF4B8B]" />
+            <Heart className="w-6 h-6 text-primary-pink" />
             Step 3
           </span>
 
@@ -27,8 +27,8 @@ const IrregularBleedingGuidecard6 = () => {
           </h2>
 
           <p className="text-lg mt-4" style={{ color: "#7a2f4f" }}>
-            Treatment depends on the stage, size, and spread of the cancer.
-            Surgery is the most common approach.
+            Treatment depends on the stage, size, and spread of the cancer. Surgery is the most
+            common approach.
           </p>
         </div>
 
@@ -152,9 +152,7 @@ const IrregularBleedingGuidecard6 = () => {
 
         {/* FINAL BUTTON (NO FUNCTION) */}
         <div className="pt-8 flex justify-center">
-          <button
-            className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all"
-          >
+          <button className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all">
             Complete Guide
           </button>
         </div>

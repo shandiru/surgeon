@@ -61,7 +61,7 @@ const TreatmentAndHomeCare = () => {
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4 text-[#FF4B8B]">Treatment &amp; Home Care</h2>
+            <h2 className="text-3xl font-bold mb-4 text-primary-pink">Treatment &amp; Home Care</h2>
             <p className="text-lg text-black">
               Most lumps are easy to diagnose and treat quickly with the right approach
             </p>
@@ -79,7 +79,7 @@ const TreatmentAndHomeCare = () => {
                   <div className="rounded-full flex items-center justify-center mx-auto">
                     {card.icon}
                   </div>
-                  <div className="mt-3 font-semibold text-lg text-[#FF4B8B]">{card.title}</div>
+                  <div className="mt-3 font-semibold text-lg text-primary-pink">{card.title}</div>
                   <span className="inline-flex items-center justify-center rounded-md px-2 py-1 mt-2 text-xs font-medium whitespace-nowrap shrink-0 w-fit mx-auto bg-[#FF4B8B]/10 text-black">
                     {card.tag}
                   </span>
@@ -88,7 +88,7 @@ const TreatmentAndHomeCare = () => {
                   <ul className="space-y-3">
                     {card.description.map((text, index) => (
                       <li key={index} className="flex items-start space-x-2">
-                        <span className="mt-1.5 text-xs text-[#FF4B8B]">•</span>
+                        <span className="mt-1.5 text-xs text-primary-pink">•</span>
                         <span className="text-sm text-black leading-relaxed">{text}</span>
                       </li>
                     ))}

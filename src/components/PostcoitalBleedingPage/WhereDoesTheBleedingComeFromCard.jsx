@@ -12,7 +12,7 @@ const WhereDoesTheBleedingComeFromCard = () => {
     <div className="max-w-6xl mx-auto mb-10 flex flex-col gap-6 rounded-xl bg-white py-6 shadow-md hover:shadow-xl hover:scale-[1.01] transition-all duration-300 text-black">
       {/* Header */}
       <div className="grid auto-rows-min gap-1.5 px-6 border-b border-[#FEE6EA] pb-6">
-        <h2 className="font-semibold text-2xl text-[#FF4B8B]">
+        <h2 className="font-semibold text-2xl text-primary-pink">
           Where Does the Bleeding Come From?
         </h2>
         <p className="text-sm text-[#6B7280]">
@@ -25,15 +25,15 @@ const WhereDoesTheBleedingComeFromCard = () => {
         <div className="grid md:grid-cols-2 gap-8">
           {/* Vaginal Causes */}
           <div className="space-y-4">
-            <h3 className="text-xl font-semibold flex items-center gap-2 text-[#FF4B8B]">
-              <TriangleAlert className="h-5 w-5 text-[#FF4B8B]" />
+            <h3 className="text-xl font-semibold flex items-center gap-2 text-primary-pink">
+              <TriangleAlert className="h-5 w-5 text-primary-pink" />
               Vaginal Causes
             </h3>
             <p className="text-sm text-[#6B7280]">
               Usually from direct friction or trauma during sex — known as a vaginal laceration.
             </p>
 
-            <span className="inline-flex items-center justify-center rounded-full bg-[#FEE6EA] text-[#FF4B8B] px-3 py-1 text-xs font-medium w-fit shadow-sm">
+            <span className="inline-flex items-center justify-center rounded-full bg-[#FEE6EA] text-primary-pink px-3 py-1 text-xs font-medium w-fit shadow-sm">
               May be heavier and bright red
             </span>
 
@@ -55,8 +55,8 @@ const WhereDoesTheBleedingComeFromCard = () => {
 
           {/* Cervical Causes */}
           <div className="space-y-4">
-            <h3 className="text-xl font-semibold flex items-center gap-2 text-[#FF4B8B]">
-              <Heart className="h-5 w-5 text-[#FF4B8B]" />
+            <h3 className="text-xl font-semibold flex items-center gap-2 text-primary-pink">
+              <Heart className="h-5 w-5 text-primary-pink" />
               Cervical Causes
             </h3>
             <p className="text-sm text-[#6B7280]">
@@ -120,7 +120,7 @@ const WhereDoesTheBleedingComeFromCard = () => {
                   >
                     {item.title}
                     <ChevronDown
-                      className={`h-5 w-5 text-[#FF4B8B] transition-transform duration-200 ${
+                      className={`h-5 w-5 text-primary-pink transition-transform duration-200 ${
                         openAccordion === index ? "rotate-180" : ""
                       }`}
                     />

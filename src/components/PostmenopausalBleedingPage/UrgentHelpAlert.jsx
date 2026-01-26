@@ -1,5 +1,5 @@
-import React from 'react';
-import { AlertTriangle } from 'lucide-react';
+import React from "react";
+import { AlertTriangle } from "lucide-react";
 
 export default function UrgentHelpAlert() {
   return (
@@ -10,9 +10,9 @@ export default function UrgentHelpAlert() {
       >
         {/* Header */}
         <div className="flex items-center gap-3 mb-4">
-          <AlertTriangle className="h-6 w-6 text-[#FF4B8B]" />
-          <h3 className="font-bold text-[#FF4B8B] text-lg sm:text-xl flex items-center gap-2">
-             When to Seek Urgent Help
+          <AlertTriangle className="h-6 w-6 text-primary-pink" />
+          <h3 className="font-bold text-primary-pink text-lg sm:text-xl flex items-center gap-2">
+            When to Seek Urgent Help
           </h3>
         </div>
 

@@ -46,7 +46,7 @@ export default function CurrentWork() {
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-12">
-            <h2 className="text-section text-[#FF4B8B] mb-4">Current Work and Involvement</h2>
+            <h2 className="text-section text-primary-pink mb-4">Current Work and Involvement</h2>
             <p className="text-body-large text-black max-w-2xl mx-auto">
               Balancing clinical excellence with educational leadership in robotic surgery
             </p>
@@ -54,12 +54,12 @@ export default function CurrentWork() {
 
           <div className="grid md:grid-cols-2 gap-8 md:gap-12">
             {/* MD Role Section */}
-            <div className="bg-[#FF4B8B]/10 rounded-xl p-6 md:p-8 border border-[#FF4B8B]/20">
+            <div className="bg-[#FF4B8B]/10 rounded-xl p-6 md:p-8 border border-primary-pink/20">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 rounded-lg bg-[#FF4B8B] flex items-center justify-center text-white">
                   <Building2 className="w-6 h-6" />
                 </div>
-                <h3 className="text-subsection text-[#FF4B8B] font-semibold">
+                <h3 className="text-subsection text-primary-pink font-semibold">
                   Medical Director Role
                 </h3>
               </div>
@@ -72,7 +72,9 @@ export default function CurrentWork() {
               <div className="space-y-3">
                 {mdRoleItems.map((item, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <div className="flex-shrink-0 w-6 h-6 text-[#FF4B8B] mt-0.5">{item.icon}</div>
+                    <div className="flex-shrink-0 w-6 h-6 text-primary-pink mt-0.5">
+                      {item.icon}
+                    </div>
                     <span className="text-body text-black">{item.text}</span>
                   </div>
                 ))}
@@ -98,7 +100,9 @@ export default function CurrentWork() {
               <div className="space-y-3">
                 {teachingItems.map((item, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <div className="flex-shrink-0 w-6 h-6 text-[#FF4B8B] mt-0.5">{item.icon}</div>
+                    <div className="flex-shrink-0 w-6 h-6 text-primary-pink mt-0.5">
+                      {item.icon}
+                    </div>
                     <span className="text-body text-black">{item.text}</span>
                   </div>
                 ))}
@@ -107,9 +111,11 @@ export default function CurrentWork() {
           </div>
 
           {/* Combined Impact Section */}
-          <div className="mt-12 bg-gradient-to-r from-[#FF4B8B]/10 to-[#FF4B8B]/5 rounded-xl p-6 md:p-8 border border-[#FF4B8B]/20">
+          <div className="mt-12 bg-gradient-to-r from-[#FF4B8B]/10 to-[#FF4B8B]/5 rounded-xl p-6 md:p-8 border border-primary-pink/20">
             <div className="text-center">
-              <h3 className="text-subsection text-[#FF4B8B] font-bold mb-4">A Dual Commitment</h3>
+              <h3 className="text-subsection text-primary-pink font-bold mb-4">
+                A Dual Commitment
+              </h3>
               <p className="text-body-large text-black max-w-3xl mx-auto leading-relaxed">
                 By combining hands-on clinical practice as Medical Director with active teaching and
                 mentorship across Europe, Ketan ensures that the latest advances in robotic surgery

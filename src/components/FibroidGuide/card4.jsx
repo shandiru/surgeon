@@ -10,8 +10,10 @@ const FibroidGuideCard4 = ({ setShowCard, setActiveButton }) => {
         {/* Header */}
         <div className="flex flex-col gap-2 mb-4">
           <div className="flex items-center gap-3">
-            <Lightbulb className="h-7 w-7 text-[#FF4B8B]" />
-            <h2 className="font-bold text-2xl md:text-3xl text-[#FF4B8B]">Causes & Risk Factors</h2>
+            <Lightbulb className="h-7 w-7 text-primary-pink" />
+            <h2 className="font-bold text-2xl md:text-3xl text-primary-pink">
+              Causes & Risk Factors
+            </h2>
           </div>
           <p className="text-sm md:text-base text-black">
             The exact cause is unknown, but your risk may be higher if you:

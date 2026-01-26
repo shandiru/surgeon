@@ -1,10 +1,9 @@
-'use client';
-import { Lightbulb, Star, CheckCircle2 } from 'lucide-react';
+"use client";
+import { Lightbulb, Star, CheckCircle2 } from "lucide-react";
 
 const Vaginalcard8 = () => {
   return (
     <div className="space-y-6 pb-10">
-
       {/* MAIN CARD */}
       <div
         className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto rounded-2xl p-8 border shadow-sm animate-in slide-in-from-right-5 duration-300"
@@ -19,7 +18,7 @@ const Vaginalcard8 = () => {
             className="font-semibold text-sm uppercase tracking-wide flex items-center gap-2"
             style={{ color: "#FF4B8B" }}
           >
-            <Lightbulb className="w-6 h-6 text-[#FF4B8B]" />
+            <Lightbulb className="w-6 h-6 text-primary-pink" />
             Key Takeaway
           </span>
 
@@ -36,27 +35,21 @@ const Vaginalcard8 = () => {
             borderColor: "rgb(255,197,211)",
           }}
         >
-          <h3
-            className="font-semibold flex items-center gap-2 mb-2"
-            style={{ color: "#FF4B8B" }}
-          >
-            <Star className="w-5 h-5 text-[#FF4B8B]" />
+          <h3 className="font-semibold flex items-center gap-2 mb-2" style={{ color: "#FF4B8B" }}>
+            <Star className="w-5 h-5 text-primary-pink" />
             What You Should Know
           </h3>
 
           <p className="text-sm leading-relaxed" style={{ color: "#7a2f4f" }}>
-            Vaginal cancer is rare but can be serious. Early detection through regular
-            gynecological exams and awareness of symptoms—such as abnormal bleeding,
-            unusual discharge, or pelvic pain—greatly improves treatment outcomes.
+            Vaginal cancer is rare but can be serious. Early detection through regular gynecological
+            exams and awareness of symptoms—such as abnormal bleeding, unusual discharge, or pelvic
+            pain—greatly improves treatment outcomes.
           </p>
         </div>
 
         {/* KEY POINTS LIST */}
         <div className="space-y-4">
-          <h4
-            className="font-semibold"
-            style={{ color: "#FF4B8B" }}
-          >
+          <h4 className="font-semibold" style={{ color: "#FF4B8B" }}>
             Key Points to Remember
           </h4>
 
@@ -68,12 +61,8 @@ const Vaginalcard8 = () => {
               "HPV vaccination can reduce the risk of vaginal cancer",
               "Awareness of vaginal health is important for prevention",
             ].map((item, index) => (
-              <li
-                key={index}
-                className="flex items-start gap-2"
-                style={{ color: "#7a2f4f" }}
-              >
-                <CheckCircle2 className="w-4 h-4 text-[#FF4B8B] mt-0.5 flex-shrink-0" />
+              <li key={index} className="flex items-start gap-2" style={{ color: "#7a2f4f" }}>
+                <CheckCircle2 className="w-4 h-4 text-primary-pink mt-0.5 flex-shrink-0" />
                 <span>{item}</span>
               </li>
             ))}
@@ -88,31 +77,25 @@ const Vaginalcard8 = () => {
             borderColor: "rgb(255,197,211)",
           }}
         >
-          <h4
-            className="font-semibold flex items-center gap-2"
-            style={{ color: "#FF4B8B" }}
-          >
-            <Star className="w-5 h-5 text-[#FF4B8B]" />
+          <h4 className="font-semibold flex items-center gap-2" style={{ color: "#FF4B8B" }}>
+            <Star className="w-5 h-5 text-primary-pink" />
             Final Message
           </h4>
 
           <p className="text-sm leading-relaxed mt-1" style={{ color: "#7a2f4f" }}>
-            Staying alert to changes, attending regular check-ups, and seeking medical
-            advice early if symptoms occur are key steps to protect your vaginal health
-            and improve treatment outcomes.
+            Staying alert to changes, attending regular check-ups, and seeking medical advice early
+            if symptoms occur are key steps to protect your vaginal health and improve treatment
+            outcomes.
           </p>
         </div>
 
         {/* COMPLETE GUIDE BUTTON */}
         <div className="pt-8 flex justify-center">
-          <button
-            className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all flex items-center justify-center gap-2"
-          >
+          <button className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all flex items-center justify-center gap-2">
             <Star className="w-4 h-4" />
             Complete Guide
           </button>
         </div>
-
       </div>
     </div>
   );

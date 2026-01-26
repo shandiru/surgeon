@@ -7,7 +7,7 @@ export default function SymptomsAndRiskFactorsSection() {
         {/* Symptoms You Might Notice */}
         <div className="bg-white text-[#1F2937] flex flex-col gap-6 rounded-2xl shadow-md py-6 hover:shadow-lg transition">
           <div className="px-6 border-b border-[#FEE6EA] pb-5">
-            <h2 className="font-bold flex items-center gap-2 text-xl sm:text-2xl text-[#FF4B8B]">
+            <h2 className="font-bold flex items-center gap-2 text-xl sm:text-2xl text-primary-pink">
               Symptoms You Might Notice
             </h2>
           </div>
@@ -39,7 +39,7 @@ export default function SymptomsAndRiskFactorsSection() {
         {/* Risk Factors */}
         <div className="bg-white text-[#1F2937] flex flex-col gap-6 rounded-2xl shadow-md py-6 hover:shadow-lg transition">
           <div className="px-6 border-b border-[#FEE6EA] pb-5">
-            <h2 className="font-bold flex items-center gap-2 text-xl sm:text-2xl text-[#FF4B8B]">
+            <h2 className="font-bold flex items-center gap-2 text-xl sm:text-2xl text-primary-pink">
               Risk Factors
             </h2>
           </div>

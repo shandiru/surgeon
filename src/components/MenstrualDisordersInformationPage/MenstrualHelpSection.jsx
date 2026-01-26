@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const MenstrualHelpSection = () => {
   return (
@@ -6,14 +6,14 @@ const MenstrualHelpSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
           {/* Heading */}
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#FF4B8B] leading-snug">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary-pink leading-snug">
             You don't have to struggle through menstrual problems
           </h2>
 
           {/* Description */}
           <p className="text-lg md:text-xl leading-relaxed mb-8 text-[#6B4C4C]">
-            Menstrual disorders are physical and/or emotional symptoms that occur before or during menstruation.  
-            Most have straightforward causes and can be treated effectively.
+            Menstrual disorders are physical and/or emotional symptoms that occur before or during
+            menstruation. Most have straightforward causes and can be treated effectively.
           </p>
 
           {/* CTA Button */}
@@ -28,7 +28,7 @@ const MenstrualHelpSection = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default MenstrualHelpSection
+export default MenstrualHelpSection;

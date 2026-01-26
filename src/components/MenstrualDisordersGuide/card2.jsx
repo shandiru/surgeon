@@ -1,18 +1,17 @@
-'use client';
-import React from 'react';
-import { FaRegClock, FaHeartbeat } from 'react-icons/fa';
-import { PiDropFill } from 'react-icons/pi';
-import { BsCheckCircle } from 'react-icons/bs';
-import { FiCalendar } from 'react-icons/fi';
+"use client";
+import React from "react";
+import { FaRegClock, FaHeartbeat } from "react-icons/fa";
+import { PiDropFill } from "react-icons/pi";
+import { BsCheckCircle } from "react-icons/bs";
+import { FiCalendar } from "react-icons/fi";
 
 const MenstrualDisordersGuideCard2 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6">
-
       <div className="max-w-5xl mx-auto p-6">
         {/* Title */}
-        <h2 className="text-2xl sm:text-3xl font-bold mb-10 flex items-center gap-2 text-[#FF4B8B]">
-          <FiCalendar className="text-[#FF4B8B] text-2xl" />
+        <h2 className="text-2xl sm:text-3xl font-bold mb-10 flex items-center gap-2 text-primary-pink">
+          <FiCalendar className="text-primary-pink text-2xl" />
           What's a Normal Menstrual Cycle?
         </h2>
 
@@ -70,25 +69,23 @@ const MenstrualDisordersGuideCard2 = ({ setShowCard, setActiveButton }) => {
         >
           <BsCheckCircle className="mt-0.5 text-[#e91e63] text-lg" />
           <p className="text-[#900c3f]">
-            What’s “normal” is what’s normal for you — sudden changes are worth
-            checking with your healthcare provider.
+            What’s “normal” is what’s normal for you — sudden changes are worth checking with your
+            healthcare provider.
           </p>
         </div>
-      {/* Next Button */}
-      <div className="pt-6 flex justify-center">
-        <button
-          onClick={() => {
-            setShowCard(3);
-            setActiveButton(2);
-          }}
-          className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all"
-        >
-          Learn About the Procedure
-        </button>
+        {/* Next Button */}
+        <div className="pt-6 flex justify-center">
+          <button
+            onClick={() => {
+              setShowCard(3);
+              setActiveButton(2);
+            }}
+            className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white w-[90%] md:w-[60%] lg:w-[40%] rounded-md h-10 text-sm font-medium transition-all"
+          >
+            Learn About the Procedure
+          </button>
+        </div>
       </div>
-      </div>
-
-
     </div>
   );
 };

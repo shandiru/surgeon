@@ -1,20 +1,18 @@
-'use client';
-import React from 'react';
+"use client";
+import React from "react";
 
 const IrregularBleedingGuidecard3 = ({ setShowCard, setActiveButton }) => {
   return (
     <section className="my-12 px-4">
       <main className="max-w-4xl mx-auto px-4 py-8 bg-white">
-
         {/* CARD WRAPPER */}
         <div className="bg-white text-[#333] flex flex-col gap-6 rounded-xl py-6 px-4 sm:px-6 shadow-md hover:shadow-lg transition-all duration-300">
-
           {/* HEADER */}
           <div className="grid auto-rows-min items-start gap-2 border-b border-[#ff97b3]/30 pb-4">
-            <div className="leading-snug font-semibold flex items-center gap-2 text-[#FF4B8B] text-lg sm:text-xl">
+            <div className="leading-snug font-semibold flex items-center gap-2 text-primary-pink text-lg sm:text-xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-5 h-5 text-[#FF4B8B] flex-shrink-0"
+                className="w-5 h-5 text-primary-pink flex-shrink-0"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -36,7 +34,6 @@ const IrregularBleedingGuidecard3 = ({ setShowCard, setActiveButton }) => {
 
           {/* CONTENT */}
           <div className="grid gap-4">
-
             {/* ALERT ITEMS */}
             {[
               "Bleeding between periods or after sex",
@@ -89,7 +86,6 @@ const IrregularBleedingGuidecard3 = ({ setShowCard, setActiveButton }) => {
                 experience severe bleeding or pain.
               </p>
             </div>
-
           </div>
 
           {/* CONTINUE BUTTON */}
@@ -104,7 +100,6 @@ const IrregularBleedingGuidecard3 = ({ setShowCard, setActiveButton }) => {
               Continue to Next Section
             </button>
           </div>
-
         </div>
       </main>
     </section>

@@ -11,7 +11,6 @@ const PostmenopausalBleedingGuideCard6 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="pb-10">
       <div className="max-w-4xl mx-auto px-6 animate-in slide-in-from-right-5 duration-300">
-
         {/* MAIN WRAPPER */}
         <div
           className="bg-white flex flex-col gap-6 rounded-2xl shadow-lg py-8 px-6 hover:shadow-xl transition border"
@@ -19,7 +18,7 @@ const PostmenopausalBleedingGuideCard6 = ({ setShowCard, setActiveButton }) => {
         >
           {/* HEADER */}
           <div className="pb-6 border-b border-[#FEE6EA] px-2">
-            <div className="font-bold flex items-center gap-3 text-2xl text-[#FF4B8B]">
+            <div className="font-bold flex items-center gap-3 text-2xl text-primary-pink">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="26"
@@ -76,8 +75,8 @@ const PostmenopausalBleedingGuideCard6 = ({ setShowCard, setActiveButton }) => {
                 }`}
               >
                 <p className="pb-4 text-sm text-[#4B5563]">
-                  Your doctor may ask about your medical history and perform a pelvic exam
-                  to assess abnormalities.
+                  Your doctor may ask about your medical history and perform a pelvic exam to assess
+                  abnormalities.
                 </p>
               </div>
             </div>
@@ -112,8 +111,8 @@ const PostmenopausalBleedingGuideCard6 = ({ setShowCard, setActiveButton }) => {
                 }`}
               >
                 <p className="pb-4 text-sm text-[#4B5563]">
-                  If you're due for a cervical smear test, your doctor may perform this
-                  to check for cervical abnormalities.
+                  If you're due for a cervical smear test, your doctor may perform this to check for
+                  cervical abnormalities.
                 </p>
               </div>
             </div>
@@ -148,8 +147,8 @@ const PostmenopausalBleedingGuideCard6 = ({ setShowCard, setActiveButton }) => {
                 }`}
               >
                 <p className="pb-4 text-sm text-[#4B5563]">
-                  Uses a small probe to view the ovaries, uterus and cervix. This helps
-                  assess the thickness of the womb lining and identify abnormalities.
+                  Uses a small probe to view the ovaries, uterus and cervix. This helps assess the
+                  thickness of the womb lining and identify abnormalities.
                 </p>
               </div>
             </div>
@@ -184,8 +183,8 @@ const PostmenopausalBleedingGuideCard6 = ({ setShowCard, setActiveButton }) => {
                 }`}
               >
                 <p className="pb-4 text-sm text-[#4B5563]">
-                  A thin camera is inserted through the cervix to view the womb lining.
-                  This allows direct visualisation and tissue sampling if needed.
+                  A thin camera is inserted through the cervix to view the womb lining. This allows
+                  direct visualisation and tissue sampling if needed.
                 </p>
               </div>
             </div>

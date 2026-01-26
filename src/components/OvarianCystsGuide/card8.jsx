@@ -6,9 +6,9 @@ const OvarianCystsGuideCard8 = ({ setShowCard, setActiveButton }) => {
     <div className="space-y-6 pb-10">
       <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto animate-in slide-in-from-right-5 duration-300">
         {/* ================= MAIN CARD ================= */}
-        <div className="flex flex-col gap-6 rounded-xl bg-white text-black border border-[#FF4B8B]/10 shadow-lg hover:shadow-xl transition-all duration-300 py-6 px-6 sm:px-8">
+        <div className="flex flex-col gap-6 rounded-xl bg-white text-black border border-primary-pink/10 shadow-lg hover:shadow-xl transition-all duration-300 py-6 px-6 sm:px-8">
           {/* HEADER */}
-          <div className="flex items-center gap-3 text-xl font-semibold text-[#FF4B8B]">
+          <div className="flex items-center gap-3 text-xl font-semibold text-primary-pink">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -43,13 +43,13 @@ const OvarianCystsGuideCard8 = ({ setShowCard, setActiveButton }) => {
             >
               <h4 className="font-semibold mb-2 text-black">Laparoscopy</h4>
               <p className="text-sm mb-3 text-[#555]">Keyhole surgery using small cuts</p>
-              <span className="inline-flex items-center justify-center rounded-full px-3 py-1 text-xs font-medium bg-[#FF4B8B1A] text-[#FF4B8B]">
+              <span className="inline-flex items-center justify-center rounded-full px-3 py-1 text-xs font-medium bg-[#FF4B8B1A] text-primary-pink">
                 Often used for smaller, benign cysts
               </span>
             </div>
 
             {/* Laparotomy */}
-            <div className="bg-white rounded-lg p-5 border border-[#FF4B8B]/10 shadow-md hover:shadow-lg transition-all duration-300">
+            <div className="bg-white rounded-lg p-5 border border-primary-pink/10 shadow-md hover:shadow-lg transition-all duration-300">
               <h4 className="font-semibold mb-2 text-black">Laparotomy</h4>
               <p className="text-sm mb-3 text-[#555]">
                 Open surgery through a larger cut in the abdomen

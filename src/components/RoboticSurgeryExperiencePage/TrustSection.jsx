@@ -24,7 +24,7 @@ export default function TrustSection() {
             <div className="space-y-6">
               {/* Main Heading */}
               <h2 className="text-hero md:text-5xl font-bold text-gray-900 leading-tight">
-                Why trust our <span className="text-[#FF4B8B]">robotic surgery services?</span>
+                Why trust our <span className="text-primary-pink">robotic surgery services?</span>
               </h2>
 
               {/* Descriptive Paragraph */}
@@ -38,8 +38,8 @@ export default function TrustSection() {
                 {features.map((feature, index) => (
                   <div key={index} className="flex items-start gap-4">
                     {/* Icon in Circular Background */}
-                    <div className="flex-shrink-0 w-14 h-14 rounded-full bg-[#FDE7EB] border-2 border-[#FF4B8B] flex items-center justify-center">
-                      <div className="text-[#FF4B8B]">{feature.icon}</div>
+                    <div className="flex-shrink-0 w-14 h-14 rounded-full bg-[#FDE7EB] border-2 border-primary-pink flex items-center justify-center">
+                      <div className="text-primary-pink">{feature.icon}</div>
                     </div>
 
                     {/* Feature Content */}

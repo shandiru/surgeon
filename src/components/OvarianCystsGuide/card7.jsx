@@ -8,9 +8,9 @@ const OvarianCystsGuideCard7 = ({ setShowCard, setActiveButton }) => {
         {/* ===================== GRID WRAPPER ===================== */}
         <div className="grid md:grid-cols-2 gap-6">
           {/* ===================== CARD 1 ===================== */}
-          <div className="bg-white text-black flex flex-col gap-6 rounded-xl py-6 px-5 sm:px-6 border border-[#FF4B8B]/10 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all">
+          <div className="bg-white text-black flex flex-col gap-6 rounded-xl py-6 px-5 sm:px-6 border border-primary-pink/10 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all">
             {/* Header */}
-            <div className="flex items-center gap-3 font-semibold text-[#FF4B8B] text-lg">
+            <div className="flex items-center gap-3 font-semibold text-primary-pink text-lg">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="22"
@@ -56,9 +56,9 @@ const OvarianCystsGuideCard7 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           {/* ===================== CARD 2 ===================== */}
-          <div className="bg-white text-black flex flex-col gap-6 rounded-xl py-6 px-5 sm:px-6 border border-[#FF4B8B]/10 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all">
+          <div className="bg-white text-black flex flex-col gap-6 rounded-xl py-6 px-5 sm:px-6 border border-primary-pink/10 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all">
             {/* Header */}
-            <div className="flex items-center gap-3 font-semibold text-[#FF4B8B] text-lg">
+            <div className="flex items-center gap-3 font-semibold text-primary-pink text-lg">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="22"

@@ -8,7 +8,7 @@ export default function DiagnosisAndSelfCareSection() {
       {/* How Cysts Are Diagnosed */}
       <div className="bg-white text-black flex flex-col gap-6 rounded-xl py-6 px-5 sm:px-6 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all">
         {/* Header */}
-        <div className="flex items-center gap-3 font-semibold text-[#FF4B8B] text-lg">
+        <div className="flex items-center gap-3 font-semibold text-primary-pink text-lg">
           {/* Stethoscope Icon */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +57,7 @@ export default function DiagnosisAndSelfCareSection() {
       {/* Self-Care Tips */}
       <div className="bg-white text-black flex flex-col gap-6 rounded-xl py-6 px-5 sm:px-6 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all">
         {/* Header */}
-        <div className="flex items-center gap-3 font-semibold text-[#FF4B8B] text-lg">
+        <div className="flex items-center gap-3 font-semibold text-primary-pink text-lg">
           {/* Activity Icon */}
           <svg
             xmlns="http://www.w3.org/2000/svg"

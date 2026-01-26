@@ -1,5 +1,5 @@
-'use client';
-import { Users, Heart, Star, PlusCircle } from 'lucide-react';
+"use client";
+import { Users, Heart, Star, PlusCircle } from "lucide-react";
 
 const MenstrualDisordersCard7 = ({ setShowCard, setActiveButton }) => {
   return (
@@ -18,7 +18,7 @@ const MenstrualDisordersCard7 = ({ setShowCard, setActiveButton }) => {
             className="font-semibold text-sm uppercase tracking-wide flex items-center gap-2"
             style={{ color: "#FF4B8B" }}
           >
-            <Users className="w-6 h-6 text-[#FF4B8B]" />
+            <Users className="w-6 h-6 text-primary-pink" />
             Prevention & Early Management
           </span>
 
@@ -29,13 +29,9 @@ const MenstrualDisordersCard7 = ({ setShowCard, setActiveButton }) => {
 
         {/* Prevention Section */}
         <div className="grid md:grid-cols-2 gap-6">
-
           {/* Left Column */}
           <div>
-            <h4
-              className="font-semibold mb-3"
-              style={{ color: "#FF4B8B" }}
-            >
+            <h4 className="font-semibold mb-3" style={{ color: "#FF4B8B" }}>
               Helpful Ways to Manage:
             </h4>
 
@@ -54,7 +50,7 @@ const MenstrualDisordersCard7 = ({ setShowCard, setActiveButton }) => {
                   className="flex items-start gap-2 text-sm"
                   style={{ color: "#7a2f4f" }}
                 >
-                  <PlusCircle className="w-4 h-4 text-[#FF4B8B] mt-1 flex-shrink-0" />
+                  <PlusCircle className="w-4 h-4 text-primary-pink mt-1 flex-shrink-0" />
                   <span>{item}</span>
                 </div>
               ))}
@@ -69,11 +65,8 @@ const MenstrualDisordersCard7 = ({ setShowCard, setActiveButton }) => {
               borderColor: "rgb(255,197,211)",
             }}
           >
-            <h4
-              className="font-semibold flex items-center gap-2 mb-2"
-              style={{ color: "#FF4B8B" }}
-            >
-              <Heart className="w-5 h-5 text-[#FF4B8B]" />
+            <h4 className="font-semibold flex items-center gap-2 mb-2" style={{ color: "#FF4B8B" }}>
+              <Heart className="w-5 h-5 text-primary-pink" />
               Why It Matters
             </h4>
 
@@ -83,7 +76,6 @@ const MenstrualDisordersCard7 = ({ setShowCard, setActiveButton }) => {
               and quicker treatment when needed.
             </p>
           </div>
-
         </div>
 
         {/* Final Thoughts */}
@@ -94,17 +86,14 @@ const MenstrualDisordersCard7 = ({ setShowCard, setActiveButton }) => {
             borderColor: "rgb(255,197,211)",
           }}
         >
-          <h4
-            className="font-semibold flex items-center gap-2 mb-2"
-            style={{ color: "#FF4B8B" }}
-          >
-            <Star className="w-5 h-5 text-[#FF4B8B]" />
+          <h4 className="font-semibold flex items-center gap-2 mb-2" style={{ color: "#FF4B8B" }}>
+            <Star className="w-5 h-5 text-primary-pink" />
             Take Action
           </h4>
 
           <p className="text-sm leading-relaxed" style={{ color: "#7a2f4f" }}>
-            Paying attention to what’s normal for your cycle helps you notice changes earlier. 
-            Staying proactive with lifestyle habits, check-ups, and early treatment leads to 
+            Paying attention to what’s normal for your cycle helps you notice changes earlier.
+            Staying proactive with lifestyle habits, check-ups, and early treatment leads to
             healthier long-term menstrual health.
           </p>
         </div>
@@ -121,7 +110,6 @@ const MenstrualDisordersCard7 = ({ setShowCard, setActiveButton }) => {
             Learn More
           </button>
         </div>
-
       </div>
     </div>
   );

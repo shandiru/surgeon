@@ -7,12 +7,12 @@ const OvarianCancerGuideCard1 = ({ setShowCard, setActiveButton }) => {
       {/* Card Container */}
       <div
         className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 
-        flex flex-col gap-6 rounded-2xl border border-[#FF4B8B]/10 shadow-sm 
+        flex flex-col gap-6 rounded-2xl border border-primary-pink/10 shadow-sm 
         animate-in slide-in-from-right-5 duration-300 p-8 bg-white"
       >
         {/* Card Header */}
         <div className="grid auto-rows-min items-start gap-1.5">
-          <div className="leading-none font-semibold flex items-center gap-2 text-[#FF4B8B]">
+          <div className="leading-none font-semibold flex items-center gap-2 text-primary-pink">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -23,7 +23,7 @@ const OvarianCancerGuideCard1 = ({ setShowCard, setActiveButton }) => {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="w-6 h-6 text-[#FF4B8B]"
+              className="w-6 h-6 text-primary-pink"
             >
               <circle cx="12" cy="12" r="10"></circle>
               <path d="M12 16v-4"></path>
@@ -37,7 +37,7 @@ const OvarianCancerGuideCard1 = ({ setShowCard, setActiveButton }) => {
         <div className="space-y-6">
           {/* Overview Box */}
           <div
-            className="p-4 rounded-xl border border-[#FF4B8B]/10 transition-all duration-300 
+            className="p-4 rounded-xl border border-primary-pink/10 transition-all duration-300 
             hover:shadow-lg hover:scale-105 active:scale-100 bg-light-pink-1"
           >
             <p className="text-lg leading-relaxed text-black">
@@ -57,7 +57,7 @@ const OvarianCancerGuideCard1 = ({ setShowCard, setActiveButton }) => {
           <div className="grid md:grid-cols-2 gap-6">
             {/* Quick Facts */}
             <div className="space-y-3">
-              <h4 className="font-semibold flex items-center gap-2 text-[#FF4B8B]">
+              <h4 className="font-semibold flex items-center gap-2 text-primary-pink">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -68,7 +68,7 @@ const OvarianCancerGuideCard1 = ({ setShowCard, setActiveButton }) => {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="w-4 h-4 text-[#FF4B8B]"
+                  className="w-4 h-4 text-primary-pink"
                 >
                   <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
                 </svg>
@@ -93,7 +93,7 @@ const OvarianCancerGuideCard1 = ({ setShowCard, setActiveButton }) => {
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      className="w-4 h-4 text-[#FF4B8B] mt-0.5 flex-shrink-0"
+                      className="w-4 h-4 text-primary-pink mt-0.5 flex-shrink-0"
                     >
                       <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
                       <path d="m9 11 3 3L22 4"></path>
@@ -105,9 +105,9 @@ const OvarianCancerGuideCard1 = ({ setShowCard, setActiveButton }) => {
             </div>
 
             {/* Reminder Box */}
-            <div className="p-4 rounded-xl border border-[#FF4B8B]/10 bg-light-pink-1">
-              <h4 className="font-semibold flex items-center gap-2 mb-2 text-[#FF4B8B]">
-                <Lightbulb className="text-xl text-[#FF4B8B]" />
+            <div className="p-4 rounded-xl border border-primary-pink/10 bg-light-pink-1">
+              <h4 className="font-semibold flex items-center gap-2 mb-2 text-primary-pink">
+                <Lightbulb className="text-xl text-primary-pink" />
                 Remember
               </h4>
               <p className="text-sm text-black">

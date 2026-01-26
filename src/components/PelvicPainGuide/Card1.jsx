@@ -7,15 +7,15 @@ const PelvicPainGuideCard1 = ({ setShowCard, setActiveButton }) => {
     <div className="space-y-6 pb-10 px-3">
       {/* MAIN CARD WRAPPER */}
       <div
-        className="text-[#FF4B8B] bg-[#FF4B8B]/10 max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 
+        className="text-primary-pink bg-[#FF4B8B]/10 max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 
         flex flex-col gap-6 rounded-xl py-6 shadow-sm 
         hover:z-50 transition-all duration-300 hover:bg-[#FF4B8B]/20 
-        hover:shadow-lg hover:border-[#FF4B8B]/20 active:bg-[#FF4B8B]/20 
-        active:shadow-lg active:border-[#FF4B8B]/20 hover:scale-105 active:scale-100 border border-[#FF4B8B]/10 p-6"
+        hover:shadow-lg hover:border-primary-pink/20 active:bg-[#FF4B8B]/20 
+        active:shadow-lg active:border-primary-pink/20 hover:scale-105 active:scale-100 border border-primary-pink/10 p-6"
       >
         {/* HEADER */}
         <div className="grid auto-rows-min items-start gap-1.5 px-2">
-          <div className="font-semibold flex items-center gap-3 text-2xl text-[#FF4B8B]">
+          <div className="font-semibold flex items-center gap-3 text-2xl text-primary-pink">
             <Info className="h-6 w-6" />
             What Is Pelvic Pain?
           </div>
@@ -38,8 +38,8 @@ const PelvicPainGuideCard1 = ({ setShowCard, setActiveButton }) => {
             </div>
 
             {/* KEY FACTS BOX */}
-            <div className="bg-[#FF4B8B]/10 p-4 rounded-lg border border-[#FF4B8B]/10">
-              <h4 className="font-semibold mb-2 text-[#FF4B8B]">Key Facts</h4>
+            <div className="bg-[#FF4B8B]/10 p-4 rounded-lg border border-primary-pink/10">
+              <h4 className="font-semibold mb-2 text-primary-pink">Key Facts</h4>
 
               <ul className="space-y-2 text-sm text-black">
                 {[
@@ -48,7 +48,7 @@ const PelvicPainGuideCard1 = ({ setShowCard, setActiveButton }) => {
                   "Can be acute or chronic",
                 ].map((item, index) => (
                   <li key={index} className="flex items-center gap-2">
-                    <CircleCheckBig className="h-4 w-4 text-[#FF4B8B]" />
+                    <CircleCheckBig className="h-4 w-4 text-primary-pink" />
                     {item}
                   </li>
                 ))}

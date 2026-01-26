@@ -9,8 +9,8 @@ const FibroidGuideCard1 = ({ setShowCard, setActiveButton }) => {
         {/* Header */}
         <div className="px-8 pt-8">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <Pin className="h-8 w-8 text-[#FF4B8B]" />
-            <h2 className="font-bold text-3xl text-[#FF4B8B]">What Are Fibroids?</h2>
+            <Pin className="h-8 w-8 text-primary-pink" />
+            <h2 className="font-bold text-3xl text-primary-pink">What Are Fibroids?</h2>
           </div>
         </div>
 

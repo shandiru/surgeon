@@ -1,11 +1,10 @@
-'use client';
-import { ShieldCheck, Heart, Star, PlusCircle } from 'lucide-react';
-import React from 'react';
+"use client";
+import { ShieldCheck, Heart, Star, PlusCircle } from "lucide-react";
+import React from "react";
 
 const EndometrialCard7 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6 pb-10 px-3">
-
       {/* Outer Card */}
       <div
         className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto rounded-2xl p-8 border shadow-sm animate-in slide-in-from-right-5 duration-300"
@@ -14,14 +13,13 @@ const EndometrialCard7 = ({ setShowCard, setActiveButton }) => {
           borderColor: "rgb(255,197,211)",
         }}
       >
-
         {/* Header */}
         <div className="mb-6">
           <span
             className="font-semibold text-sm uppercase tracking-wide flex items-center gap-2"
             style={{ color: "#FF4B8B" }}
           >
-            <ShieldCheck className="w-6 h-6 text-[#FF4B8B]" />
+            <ShieldCheck className="w-6 h-6 text-primary-pink" />
             Prevention & Early Detection
           </span>
 
@@ -38,21 +36,18 @@ const EndometrialCard7 = ({ setShowCard, setActiveButton }) => {
             backgroundColor: "#FFF5F8",
           }}
         >
-          <h4
-            className="font-semibold flex items-center gap-2 mb-2"
-            style={{ color: "#FF4B8B" }}
-          >
-            <Heart className="w-5 h-5 text-[#FF4B8B]" />
+          <h4 className="font-semibold flex items-center gap-2 mb-2" style={{ color: "#FF4B8B" }}>
+            <Heart className="w-5 h-5 text-primary-pink" />
             Why Prevention Matters
           </h4>
           <p className="text-sm leading-relaxed" style={{ color: "#7a2f4f" }}>
-            Early detection greatly improves treatment success. Maintaining a healthy lifestyle, awareness of warning signs, and regular check-ups can lower risk.
+            Early detection greatly improves treatment success. Maintaining a healthy lifestyle,
+            awareness of warning signs, and regular check-ups can lower risk.
           </p>
         </div>
 
         {/* Prevention Steps + Reminder */}
         <div className="grid md:grid-cols-2 gap-6">
-
           {/* Left Column - Steps */}
           <div>
             <h4 className="font-semibold mb-3" style={{ color: "#FF4B8B" }}>
@@ -60,20 +55,20 @@ const EndometrialCard7 = ({ setShowCard, setActiveButton }) => {
             </h4>
             <div className="space-y-3">
               {[
-                'Maintain a healthy weight',
-                'Use combined hormonal contraceptives when appropriate',
-                'Manage PCOS and insulin resistance',
-                'Prompt evaluation for abnormal bleeding',
-                'Consider genetic testing for strong family history / Lynch syndrome',
-                'Balanced hormone therapy (estrogen + progesterone) if HRT',
-                'Be aware of postmenopausal bleeding'
+                "Maintain a healthy weight",
+                "Use combined hormonal contraceptives when appropriate",
+                "Manage PCOS and insulin resistance",
+                "Prompt evaluation for abnormal bleeding",
+                "Consider genetic testing for strong family history / Lynch syndrome",
+                "Balanced hormone therapy (estrogen + progesterone) if HRT",
+                "Be aware of postmenopausal bleeding",
               ].map((item, index) => (
                 <div
                   key={index}
                   className="flex items-start gap-2 text-sm"
                   style={{ color: "#7a2f4f" }}
                 >
-                  <PlusCircle className="w-4 h-4 text-[#FF4B8B] mt-1 flex-shrink-0" />
+                  <PlusCircle className="w-4 h-4 text-primary-pink mt-1 flex-shrink-0" />
                   <span>{item}</span>
                 </div>
               ))}
@@ -89,7 +84,7 @@ const EndometrialCard7 = ({ setShowCard, setActiveButton }) => {
             }}
           >
             <h4 className="font-semibold flex items-center gap-2 mb-2" style={{ color: "#FF4B8B" }}>
-              <Heart className="w-5 h-5 text-[#FF4B8B]" />
+              <Heart className="w-5 h-5 text-primary-pink" />
               Remember
             </h4>
             <ul className="text-sm space-y-2" style={{ color: "#7a2f4f" }}>
@@ -99,7 +94,6 @@ const EndometrialCard7 = ({ setShowCard, setActiveButton }) => {
               <li>• Maintaining a healthy lifestyle reduces risk factors</li>
             </ul>
           </div>
-
         </div>
 
         {/* Key Takeaway */}
@@ -111,11 +105,13 @@ const EndometrialCard7 = ({ setShowCard, setActiveButton }) => {
           }}
         >
           <h4 className="font-semibold flex items-center gap-2 mb-2" style={{ color: "#FF4B8B" }}>
-            <Star className="w-5 h-5 text-[#FF4B8B]" />
+            <Star className="w-5 h-5 text-primary-pink" />
             Key Takeaway
           </h4>
           <p className="text-sm leading-relaxed" style={{ color: "#7a2f4f" }}>
-            Prevention and vigilance are powerful tools. Monitoring changes, attending regular check-ups, and managing risk factors significantly improve early detection and long-term health outcomes.
+            Prevention and vigilance are powerful tools. Monitoring changes, attending regular
+            check-ups, and managing risk factors significantly improve early detection and long-term
+            health outcomes.
           </p>
         </div>
 
@@ -131,7 +127,6 @@ const EndometrialCard7 = ({ setShowCard, setActiveButton }) => {
             Continue to Next Section
           </button>
         </div>
-
       </div>
     </div>
   );

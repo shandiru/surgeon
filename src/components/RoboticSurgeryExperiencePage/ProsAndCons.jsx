@@ -26,7 +26,9 @@ export default function ProsAndCons() {
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-12">
-            <h2 className="text-section text-[#FF4B8B] mb-4">Pros and Cons of Robotic Surgery</h2>
+            <h2 className="text-section text-primary-pink mb-4">
+              Pros and Cons of Robotic Surgery
+            </h2>
             <p className="text-body-large text-black max-w-2xl mx-auto">
               Understanding the advantages and considerations of robotic-assisted surgery
             </p>
@@ -35,15 +37,15 @@ export default function ProsAndCons() {
           {/* Two Column Layout */}
           <div className="grid md:grid-cols-2 gap-8 md:gap-12">
             {/* Pros Section */}
-            <div className="bg-[#FF4B8B]/10 rounded-xl p-6 md:p-8 border border-[#FF4B8B]/20">
+            <div className="bg-[#FF4B8B]/10 rounded-xl p-6 md:p-8 border border-primary-pink/20">
               <div className="flex items-center gap-3 mb-6">
-                <CheckCircle2 className="w-8 h-8 text-[#FF4B8B]" />
-                <h3 className="text-subsection text-[#FF4B8B] font-semibold">Advantages</h3>
+                <CheckCircle2 className="w-8 h-8 text-primary-pink" />
+                <h3 className="text-subsection text-primary-pink font-semibold">Advantages</h3>
               </div>
               <ul className="space-y-4">
                 {pros.map((item, index) => (
                   <li key={index} className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-[#FF4B8B] mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-primary-pink mt-0.5 flex-shrink-0" />
                     <span className="text-body text-black">{item}</span>
                   </li>
                 ))}
@@ -68,7 +70,7 @@ export default function ProsAndCons() {
           </div>
 
           {/* Note Section */}
-          <div className="mt-12 p-6 rounded-lg bg-[#FF4B8B]/10 border border-[#FF4B8B]/20">
+          <div className="mt-12 p-6 rounded-lg bg-[#FF4B8B]/10 border border-primary-pink/20">
             <p className="text-body text-black text-center">
               <strong>Note:</strong> The decision to use robotic surgery depends on individual
               patient circumstances, the specific procedure, and consultation with your healthcare

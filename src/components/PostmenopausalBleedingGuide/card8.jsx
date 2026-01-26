@@ -5,12 +5,10 @@ const PostmenopausalBleedingGuideCard8 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-10 pb-10">
       <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto animate-in slide-in-from-right-5 duration-300">
-
         {/* ====================================================
             TWO GRADIENT CARDS (YOUR PROVIDED CONTENT)
         ===================================================== */}
         <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
-
           {/* ---------------- CARD 1 ---------------- */}
           <div
             className="bg-gradient-to-br from-[#FFF7FA] to-[#FEE6EA] 
@@ -20,7 +18,7 @@ const PostmenopausalBleedingGuideCard8 = ({ setShowCard, setActiveButton }) => {
           >
             {/* Header */}
             <div className="px-8 pb-5 border-b border-[#FFD6E5]">
-              <div className="flex items-center gap-3 text-2xl font-bold text-[#FF4B8B]">
+              <div className="flex items-center gap-3 text-2xl font-bold text-primary-pink">
                 Emotional Wellbeing
               </div>
             </div>
@@ -43,7 +41,7 @@ const PostmenopausalBleedingGuideCard8 = ({ setShowCard, setActiveButton }) => {
           >
             {/* Header */}
             <div className="px-8 pb-5 border-b border-[#FFD6E5]">
-              <div className="flex items-center gap-3 text-2xl font-bold text-[#FF4B8B]">
+              <div className="flex items-center gap-3 text-2xl font-bold text-primary-pink">
                 Follow-Up & Support
               </div>
             </div>
@@ -55,22 +53,20 @@ const PostmenopausalBleedingGuideCard8 = ({ setShowCard, setActiveButton }) => {
               <p>• You are not alone — support is available every step of the way</p>
             </div>
           </div>
-
         </div>
 
         {/* ====================================================
             NEXT BUTTON
         ===================================================== */}
         <div className="pt-8 flex justify-center">
-  <button
-    className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white 
+          <button
+            className="bg-[#FF4B8B] hover:bg-[#FF4B8B]/80 text-white 
                w-[90%] md:w-[60%] lg:w-[40%] rounded-md 
                h-10 text-sm font-medium transition-all shadow"
-  >
-    Complete Guide
-  </button>
-</div>
-
+          >
+            Complete Guide
+          </button>
+        </div>
       </div>
     </div>
   );

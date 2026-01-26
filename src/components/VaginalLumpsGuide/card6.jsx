@@ -15,7 +15,7 @@ const VaginalLumpsGuidecard6 = ({ setShowCard, setActiveButton }) => {
             className="text-3xl font-bold mb-2 flex items-center justify-center gap-2"
             style={{ color: "#FF4B8B" }}
           >
-            <CircleAlert className="w-7 h-7 text-[#FF4B8B]" />
+            <CircleAlert className="w-7 h-7 text-primary-pink" />
             When to Seek Urgent Help
           </h2>
           <p className="text-lg" style={{ color: "#7a2f4f" }}>

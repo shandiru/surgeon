@@ -3,14 +3,13 @@ import React from "react";
 import { Brain } from "lucide-react";
 
 const PelvicPainGuidecard6 = ({ setShowCard, setActiveButton }) => {
-  return (  
+  return (
     <div className="pb-10 px-3">
       <div className="max-w-5xl mx-auto animate-in slide-in-from-right-5 duration-300">
-
         {/* MAIN CARD */}
         <div
           className="
-            text-[#FF4B8B] bg-[#FF4B8B]/10 
+            text-primary-pink bg-[#FF4B8B]/10 
             rounded-xl py-6 shadow-sm mb-10 flex flex-col gap-6
             transition-all duration-300
             hover:z-50 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd]
@@ -22,23 +21,25 @@ const PelvicPainGuidecard6 = ({ setShowCard, setActiveButton }) => {
           {/* HEADER */}
           <div className="px-6 pb-4 grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5">
             <div className="font-semibold flex items-center gap-3 text-2xl">
-              <Brain className="h-6 w-6 text-[#FF4B8B]" />
+              <Brain className="h-6 w-6 text-primary-pink" />
               Emotional Wellbeing
             </div>
           </div>
 
           {/* BODY CONTENT */}
           <div className="px-6 space-y-4 text-[#7a2f4f]">
-
             <p className="leading-relaxed">
               Chronic pelvic pain can affect mood, energy, and relationships. It’s common to feel
               frustrated, anxious, or low.
             </p>
 
-            <div className="bg-white/60 p-4 rounded-lg border shadow-sm" style={{ borderColor: "rgb(255,197,211)" }}>
+            <div
+              className="bg-white/60 p-4 rounded-lg border shadow-sm"
+              style={{ borderColor: "rgb(255,197,211)" }}
+            >
               <p className="text-sm leading-relaxed">
                 Talking to your doctor or asking for emotional support or counselling can help.
-                <strong className="text-[#FF4B8B]">
+                <strong className="text-primary-pink">
                   {" "}
                   You don't have to “just live with it” — help is available.
                 </strong>
@@ -64,7 +65,6 @@ const PelvicPainGuidecard6 = ({ setShowCard, setActiveButton }) => {
             Continue
           </button>
         </div>
-
       </div>
     </div>
   );

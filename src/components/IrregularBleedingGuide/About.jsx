@@ -27,7 +27,7 @@ const IrregularBleedingGuideAbout = ({ activeButton }) => {
       </div>
 
       {/* Main Title */}
-      <h1 className="text-hero text-balance mb-4 text-[#FF4B8B]">
+      <h1 className="text-hero text-balance mb-4 text-primary-pink">
         Understanding IrregularBleeding
       </h1>
       <p className="text-body-large text-muted-foreground text-balance text-black">

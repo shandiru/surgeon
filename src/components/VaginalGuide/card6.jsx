@@ -1,18 +1,15 @@
-'use client';
-import React from 'react';
-import { FaPills } from 'react-icons/fa';
+"use client";
+import React from "react";
+import { FaPills } from "react-icons/fa";
 
 const Vaginalcard6 = ({ setShowCard, setActiveButton }) => {
-
   const primaryPink = "#FFC5D3";
   const deepPink = "#FF4B8B";
 
   return (
-    <div >
+    <div>
       <div className="max-w-5xl px-3 mx-auto ">
-        <div
-          className="bg-white  rounded-xl shadow-md mb-10 transition duration-300 hover:shadow-lg hover:-translate-y-1 w-full"
-        >
+        <div className="bg-white  rounded-xl shadow-md mb-10 transition duration-300 hover:shadow-lg hover:-translate-y-1 w-full">
           <div
             className="px-4 sm:px-6 py-4 flex items-center gap-2 rounded-t-xl"
             style={{ backgroundColor: deepPink }}
@@ -28,7 +25,7 @@ const Vaginalcard6 = ({ setShowCard, setActiveButton }) => {
               Treatment depends on the type, stage, spread, and your overall health.
             </p>
 
-            <h3 className="text-lg sm:text-xl font-semibold text-[#FF4B8B] mb-3">
+            <h3 className="text-lg sm:text-xl font-semibold text-primary-pink mb-3">
               1. Surgery (Often the Primary Treatment)
             </h3>
 
@@ -37,9 +34,11 @@ const Vaginalcard6 = ({ setShowCard, setActiveButton }) => {
                 className="border rounded-md px-4 py-3 shadow-sm bg-white hover:shadow-md"
                 style={{ borderColor: primaryPink }}
               >
-                <strong className="text-[#FF4B8B]">Vaginectomy</strong>
+                <strong className="text-primary-pink">Vaginectomy</strong>
                 <span>
-                  {" "}– Removal of part or all of the vagina; may include nearby lymph nodes. Reconstruction can restore vaginal function.
+                  {" "}
+                  – Removal of part or all of the vagina; may include nearby lymph nodes.
+                  Reconstruction can restore vaginal function.
                 </span>
               </div>
 
@@ -47,23 +46,18 @@ const Vaginalcard6 = ({ setShowCard, setActiveButton }) => {
                 className="border rounded-md px-4 py-3 shadow-sm bg-white hover:shadow-md"
                 style={{ borderColor: primaryPink }}
               >
-                <strong className="text-[#FF4B8B]">Hysterectomy</strong>
-                <span>
-                  {" "}– Removal of the uterus and sometimes ovaries, tubes, and lymph nodes.
-                </span>
+                <strong className="text-primary-pink">Hysterectomy</strong>
+                <span> – Removal of the uterus and sometimes ovaries, tubes, and lymph nodes.</span>
               </div>
             </div>
 
-            <div
-              className="p-3 rounded-md shadow-sm mb-6"
-              style={{ backgroundColor: primaryPink }}
-            >
+            <div className="p-3 rounded-md shadow-sm mb-6" style={{ backgroundColor: primaryPink }}>
               <p className="text-white text-sm sm:text-base">
                 After surgery, patients receive enhanced recovery support to aid healing.
               </p>
             </div>
 
-            <h3 className="text-lg sm:text-xl font-semibold text-[#FF4B8B] mb-3">
+            <h3 className="text-lg sm:text-xl font-semibold text-primary-pink mb-3">
               2. Combination Treatments
             </h3>
             <p className="mb-3">In some cases, surgery may be combined with:</p>
@@ -73,7 +67,7 @@ const Vaginalcard6 = ({ setShowCard, setActiveButton }) => {
                 className="border rounded-md px-4 py-3 shadow-sm bg-white hover:shadow-md"
                 style={{ borderColor: primaryPink }}
               >
-                <strong className="text-[#FF4B8B]">Radiation therapy</strong>
+                <strong className="text-primary-pink">Radiation therapy</strong>
                 <span> – Targeted energy to destroy cancer cells.</span>
               </div>
 
@@ -81,13 +75,12 @@ const Vaginalcard6 = ({ setShowCard, setActiveButton }) => {
                 className="border rounded-md px-4 py-3 shadow-sm bg-white hover:shadow-md"
                 style={{ borderColor: primaryPink }}
               >
-                <strong className="text-[#FF4B8B]">Chemotherapy</strong>
+                <strong className="text-primary-pink">Chemotherapy</strong>
                 <span> – Drugs to kill or slow cancer growth.</span>
               </div>
             </div>
-
           </div>
-          <div className='p-6'>
+          <div className="p-6">
             <button
               onClick={() => {
                 setShowCard(7);
@@ -99,7 +92,6 @@ const Vaginalcard6 = ({ setShowCard, setActiveButton }) => {
             </button>
           </div>
         </div>
-
       </div>
     </div>
   );

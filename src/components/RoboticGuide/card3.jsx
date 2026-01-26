@@ -16,7 +16,7 @@ const RoboticGuide3 = ({ setShowCard, setActiveButton }) => {
         <div className="max-w-6xl mx-auto">
           {/* TITLE */}
           <h2
-            className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-10 text-[#FF4B8B]"
+            className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-10 text-primary-pink"
             data-aos="fade-down"
           >
             The da Vinci Surgical System
@@ -59,7 +59,7 @@ const RoboticGuide3 = ({ setShowCard, setActiveButton }) => {
               <div
                 key={index}
                 className="
-                  bg-white text-[#FF4B8B]
+                  bg-white text-primary-pink
                   flex flex-col items-center text-center 
                   gap-4 rounded-xl py-8 px-6 shadow-sm 
                   transition duration-300 transform
@@ -70,10 +70,10 @@ const RoboticGuide3 = ({ setShowCard, setActiveButton }) => {
                 "
                 data-aos="zoom-in"
               >
-                <div className="text-[#FF4B8B]">
+                <div className="text-primary-pink">
                   {React.cloneElement(item.icon, {
                     className:
-                      "mx-auto text-[#FF4B8B] " + "w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16",
+                      "mx-auto text-primary-pink " + "w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16",
                   })}
                 </div>
 

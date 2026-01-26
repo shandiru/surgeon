@@ -7,28 +7,28 @@ const RoboticGuide4 = ({ setShowCard, setActiveButton }) => {
   const cards = [
     {
       title: "Hysterectomy",
-      icon: <LuStethoscope className="w-5 h-5 text-[#FF4B8B]" />,
+      icon: <LuStethoscope className="w-5 h-5 text-primary-pink" />,
       badge: "Uterus Removal",
       description: "Preferred for complex cases including large fibroids and endometriosis.",
       points: ["Less blood loss", "Fewer complications", "Quicker recovery"],
     },
     {
       title: "Myomectomy",
-      icon: <LuHeart className="w-5 h-5 text-[#FF4B8B]" />,
+      icon: <LuHeart className="w-5 h-5 text-primary-pink" />,
       badge: "Fibroid Removal",
       description: "Precise removal of fibroids while preserving healthy uterine tissue.",
       points: ["Fertility preservation", "Tissue conservation"],
     },
     {
       title: "Endometriosis Excision",
-      icon: <LuEye className="w-5 h-5 text-[#FF4B8B]" />,
+      icon: <LuEye className="w-5 h-5 text-primary-pink" />,
       badge: "Tissue Removal",
       description: "Enhanced visualization of endometrial implants for precise treatment.",
       points: ["Meticulous dissection", "Delicate area precision"],
     },
     {
       title: "Gynecologic Cancer Surgery",
-      icon: <LuActivity className="w-5 h-5 text-[#FF4B8B]" />,
+      icon: <LuActivity className="w-5 h-5 text-primary-pink" />,
       badge: "Oncologic Procedures",
       description:
         "Used in early-stage cervical or endometrial cancer for lymph node dissection and staging.",
@@ -47,7 +47,10 @@ const RoboticGuide4 = ({ setShowCard, setActiveButton }) => {
     <div className="space-y-6 px-4 sm:px-6 lg:px-8">
       <div className="container max-w-5xl mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12 text-[#FF4B8B]" data-aos="fade-down">
+          <h2
+            className="text-3xl font-bold text-center mb-12 text-primary-pink"
+            data-aos="fade-down"
+          >
             Applications in Gynecology
           </h2>
 
@@ -59,18 +62,18 @@ const RoboticGuide4 = ({ setShowCard, setActiveButton }) => {
                 className="bg-white flex flex-col gap-6 rounded-xl border-l-4 py-6 px-6 text-center shadow-sm 
                    transition duration-300 transform
                    hover:scale-105 hover:-translate-y-2 hover:shadow-[0_8px_30px_rgba(185,18,82,0.3)]
-                   active:scale-105 active:-translate-y-2 text-[#FF4B8B] active:shadow-[0_8px_30px_rgba(185,18,82,0.3)]"
+                   active:scale-105 active:-translate-y-2 text-primary-pink active:shadow-[0_8px_30px_rgba(185,18,82,0.3)]"
                 data-aos="zoom-in"
               >
                 <div>
                   <div
-                    className="flex items-center justify-center gap-2 font-semibold mb-1 text-[#FF4B8B]"
+                    className="flex items-center justify-center gap-2 font-semibold mb-1 text-primary-pink"
                     data-aos="fade-right"
                   >
                     {card.icon}
                     {card.title}
                   </div>
-                  <span className="inline-flex rounded-md px-2 py-0.5 text-xs font-medium bg-[#FDEBED] text-[#FF4B8B]">
+                  <span className="inline-flex rounded-md px-2 py-0.5 text-xs font-medium bg-[#FDEBED] text-primary-pink">
                     {card.badge}
                   </span>
                 </div>

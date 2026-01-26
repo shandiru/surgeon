@@ -58,12 +58,12 @@ export default function FeaturesSection() {
                   }`}
                 >
                   {/* Icon */}
-                  <div className="flex-shrink-0 text-[#FF4B8B]">{feature.icon}</div>
+                  <div className="flex-shrink-0 text-primary-pink">{feature.icon}</div>
 
                   {/* Content */}
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-2">
-                      <h3 className="text-subsection text-[#FF4B8B] font-semibold">
+                      <h3 className="text-subsection text-primary-pink font-semibold">
                         {feature.title}
                       </h3>
                     </div>

@@ -1,11 +1,10 @@
-'use client';
-import { Lightbulb, Star, CheckCircle2 } from 'lucide-react';
-import React from 'react';
+"use client";
+import { Lightbulb, Star, CheckCircle2 } from "lucide-react";
+import React from "react";
 
 const EndometrialCard8 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6 pb-10 px-3">
-
       {/* Outer Card */}
       <div
         className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto rounded-2xl p-8 border shadow-sm animate-in slide-in-from-right-5 duration-300"
@@ -14,14 +13,13 @@ const EndometrialCard8 = ({ setShowCard, setActiveButton }) => {
           borderColor: "rgb(255,197,211)",
         }}
       >
-
         {/* Header */}
         <div className="mb-6">
           <span
             className="font-semibold text-sm uppercase tracking-wide flex items-center gap-2"
             style={{ color: "#FF4B8B" }}
           >
-            <Lightbulb className="w-6 h-6 text-[#FF4B8B]" />
+            <Lightbulb className="w-6 h-6 text-primary-pink" />
             Key Takeaway
           </span>
           <p className="text-sm mt-1" style={{ color: "#7a2f4f" }}>
@@ -37,15 +35,14 @@ const EndometrialCard8 = ({ setShowCard, setActiveButton }) => {
             borderColor: "rgb(255,197,211)",
           }}
         >
-          <h3
-            className="font-semibold flex items-center gap-2 mb-2"
-            style={{ color: "#FF4B8B" }}
-          >
-            <Star className="w-5 h-5 text-[#FF4B8B]" />
+          <h3 className="font-semibold flex items-center gap-2 mb-2" style={{ color: "#FF4B8B" }}>
+            <Star className="w-5 h-5 text-primary-pink" />
             What You Should Know
           </h3>
           <p className="text-sm leading-relaxed" style={{ color: "#7a2f4f" }}>
-            Endometrial cancer is often detected early because it causes clear warning signs, especially postmenopausal bleeding. Early diagnosis leads to excellent outcomes, and lifestyle factors like weight management play a significant role in reducing risk.
+            Endometrial cancer is often detected early because it causes clear warning signs,
+            especially postmenopausal bleeding. Early diagnosis leads to excellent outcomes, and
+            lifestyle factors like weight management play a significant role in reducing risk.
           </p>
         </div>
 
@@ -60,14 +57,10 @@ const EndometrialCard8 = ({ setShowCard, setActiveButton }) => {
               "Early detection significantly improves treatment success",
               "Maintaining a healthy weight reduces risk",
               "Managing PCOS and hormonal balance is important",
-              "Regular gynecological check-ups help catch changes early"
+              "Regular gynecological check-ups help catch changes early",
             ].map((item, index) => (
-              <li
-                key={index}
-                className="flex items-start gap-2"
-                style={{ color: "#7a2f4f" }}
-              >
-                <CheckCircle2 className="w-4 h-4 text-[#FF4B8B] mt-0.5 flex-shrink-0" />
+              <li key={index} className="flex items-start gap-2" style={{ color: "#7a2f4f" }}>
+                <CheckCircle2 className="w-4 h-4 text-primary-pink mt-0.5 flex-shrink-0" />
                 <span>{item}</span>
               </li>
             ))}
@@ -83,11 +76,13 @@ const EndometrialCard8 = ({ setShowCard, setActiveButton }) => {
           }}
         >
           <h4 className="font-semibold flex items-center gap-2" style={{ color: "#FF4B8B" }}>
-            <Star className="w-5 h-5 text-[#FF4B8B]" />
+            <Star className="w-5 h-5 text-primary-pink" />
             Final Message
           </h4>
           <p className="text-sm leading-relaxed mt-1" style={{ color: "#7a2f4f" }}>
-            Staying aware of warning signs, attending regular check-ups, and seeking medical evaluation promptly if anything feels unusual can make a significant difference in protecting your health.
+            Staying aware of warning signs, attending regular check-ups, and seeking medical
+            evaluation promptly if anything feels unusual can make a significant difference in
+            protecting your health.
           </p>
         </div>
 
@@ -104,7 +99,6 @@ const EndometrialCard8 = ({ setShowCard, setActiveButton }) => {
             Complete Guide
           </button>
         </div>
-
       </div>
     </div>
   );

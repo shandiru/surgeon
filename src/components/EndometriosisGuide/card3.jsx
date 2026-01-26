@@ -6,7 +6,7 @@ const Endometriosiscard3 = ({ setShowCard, setActiveButton }) => {
     <div className="space-y-6 pb-10">
       <div className="container mx-auto px-6 md:px-12">
         <div className="max-w-5xl mx-auto text-center mb-14">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#FF4B8B]">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary-pink">
             Impact on Fertility and Wellbeing
           </h2>
           <p className="text-black mt-3 max-w-2xl mx-auto">
@@ -26,7 +26,7 @@ const Endometriosiscard3 = ({ setShowCard, setActiveButton }) => {
               <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#FF4B8B]/10">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-[#FF4B8B]"
+                  className="h-6 w-6 text-primary-pink"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -38,7 +38,7 @@ const Endometriosiscard3 = ({ setShowCard, setActiveButton }) => {
                   <path d="M16 3.13a4 4 0 0 1 0 7.75" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-[#FF4B8B]">Fertility Impact</h3>
+              <h3 className="text-xl font-semibold text-primary-pink">Fertility Impact</h3>
             </div>
             <p className="text-black leading-relaxed">
               Endometriosis can make it harder to get pregnant, but many women still conceive
@@ -55,7 +55,7 @@ const Endometriosiscard3 = ({ setShowCard, setActiveButton }) => {
               <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#FF4B8B]/10">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-[#FF4B8B]"
+                  className="h-6 w-6 text-primary-pink"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -64,7 +64,7 @@ const Endometriosiscard3 = ({ setShowCard, setActiveButton }) => {
                   <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-[#FF4B8B]">Emotional Wellbeing</h3>
+              <h3 className="text-xl font-semibold text-primary-pink">Emotional Wellbeing</h3>
             </div>
             <p className="text-black leading-relaxed">
               Symptoms can affect your emotional health and quality of life. It&apos;s important to

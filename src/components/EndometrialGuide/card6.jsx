@@ -102,7 +102,7 @@ const EndometrialCard6 = ({ setShowCard, setActiveButton }) => {
           {/* Key Point Box */}
           <div className="bg-primary/5 p-4 rounded-lg border border-primary/20 mx-6">
             <h4 className="font-semibold text-primary mb-2 flex items-center gap-2">
-              <Sparkles className="w-5 h-5 text-[#FF4B8B]" />
+              <Sparkles className="w-5 h-5 text-primary-pink" />
               Key Point
             </h4>
             <p className="text-sm">

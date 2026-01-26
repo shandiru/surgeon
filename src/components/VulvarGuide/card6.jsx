@@ -18,7 +18,7 @@ const VulvarGuidecard6 = ({ setShowCard, setActiveButton }) => {
             className="font-semibold text-sm uppercase tracking-wide flex items-center gap-2"
             style={{ color: "#FF4B8B" }}
           >
-            <Heart className="w-6 h-6 text-[#FF4B8B]" />
+            <Heart className="w-6 h-6 text-primary-pink" />
             Step 3
           </span>
 
@@ -27,8 +27,8 @@ const VulvarGuidecard6 = ({ setShowCard, setActiveButton }) => {
           </h2>
 
           <p className="text-lg mt-4" style={{ color: "#7a2f4f" }}>
-            Treatment depends on the stage, size, and spread of the cancer.
-            Surgery is the most common approach.
+            Treatment depends on the stage, size, and spread of the cancer. Surgery is the most
+            common approach.
           </p>
         </div>
 
@@ -56,15 +56,12 @@ const VulvarGuidecard6 = ({ setShowCard, setActiveButton }) => {
                 className="p-6 rounded-xl border transition-all duration-300 hover:bg-[#FFF5F8] active:bg-[#FFF5F8] hover:shadow-lg"
                 style={{ borderColor: "rgb(255,197,211)" }}
               >
-                <h4
-                  className="text-lg font-semibold mb-2"
-                  style={{ color: "#FF4B8B" }}
-                >
+                <h4 className="text-lg font-semibold mb-2" style={{ color: "#FF4B8B" }}>
                   Radical Wide Local Excision
                 </h4>
                 <p style={{ color: "#7a2f4f" }}>
-                  Removing the cancerous tissue plus a margin of healthy tissue
-                  (usually at least 1 cm).
+                  Removing the cancerous tissue plus a margin of healthy tissue (usually at least 1
+                  cm).
                 </p>
               </div>
 
@@ -73,15 +70,12 @@ const VulvarGuidecard6 = ({ setShowCard, setActiveButton }) => {
                 className="p-6 rounded-xl border transition-all duration-300 hover:bg-[#FFF5F8] active:bg-[#FFF5F8] hover:shadow-lg"
                 style={{ borderColor: "rgb(255,197,211)" }}
               >
-                <h4
-                  className="text-lg font-semibold mb-2"
-                  style={{ color: "#FF4B8B" }}
-                >
+                <h4 className="text-lg font-semibold mb-2" style={{ color: "#FF4B8B" }}>
                   Radical Partial Vulvectomy
                 </h4>
                 <p style={{ color: "#7a2f4f" }}>
-                  Removing a larger section of the vulva — one or both labia,
-                  and sometimes the clitoris.
+                  Removing a larger section of the vulva — one or both labia, and sometimes the
+                  clitoris.
                 </p>
               </div>
 
@@ -90,15 +84,12 @@ const VulvarGuidecard6 = ({ setShowCard, setActiveButton }) => {
                 className="p-6 rounded-xl border transition-all duration-300 hover:bg-[#FFF5F8] active:bg-[#FFF5F8] hover:shadow-lg"
                 style={{ borderColor: "rgb(255,197,211)" }}
               >
-                <h4
-                  className="text-lg font-semibold mb-2"
-                  style={{ color: "#FF4B8B" }}
-                >
+                <h4 className="text-lg font-semibold mb-2" style={{ color: "#FF4B8B" }}>
                   Radical Vulvectomy
                 </h4>
                 <p style={{ color: "#7a2f4f" }}>
-                  Removing the entire vulva, including inner and outer labia,
-                  and possibly the clitoris.
+                  Removing the entire vulva, including inner and outer labia, and possibly the
+                  clitoris.
                 </p>
               </div>
             </div>
@@ -135,10 +126,7 @@ const VulvarGuidecard6 = ({ setShowCard, setActiveButton }) => {
                 </div>
 
                 <div>
-                  <h4
-                    className="text-lg font-semibold mb-2"
-                    style={{ color: "#FF4B8B" }}
-                  >
+                  <h4 className="text-lg font-semibold mb-2" style={{ color: "#FF4B8B" }}>
                     Radiation Therapy
                   </h4>
                   <p style={{ color: "#7a2f4f" }}>
@@ -160,10 +148,7 @@ const VulvarGuidecard6 = ({ setShowCard, setActiveButton }) => {
                 </div>
 
                 <div>
-                  <h4
-                    className="text-lg font-semibold mb-2"
-                    style={{ color: "#FF4B8B" }}
-                  >
+                  <h4 className="text-lg font-semibold mb-2" style={{ color: "#FF4B8B" }}>
                     Chemotherapy
                   </h4>
                   <p style={{ color: "#7a2f4f" }}>

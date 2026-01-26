@@ -5,7 +5,6 @@ const VaginalLumpsGuideCard4 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6 pb-10 px-3">
       <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto animate-in slide-in-from-right-5 duration-300">
-
         {/* MAIN BOX */}
         <div
           className="rounded-2xl p-8 border shadow-sm"
@@ -15,8 +14,11 @@ const VaginalLumpsGuideCard4 = ({ setShowCard, setActiveButton }) => {
           }}
         >
           {/* HEADER */}
-          <h2 className="text-3xl font-bold flex items-center gap-2 mb-4" style={{ color: "#FF4B8B" }}>
-            <AlertTriangle className="w-7 h-7 text-[#FF4B8B]" />
+          <h2
+            className="text-3xl font-bold flex items-center gap-2 mb-4"
+            style={{ color: "#FF4B8B" }}
+          >
+            <AlertTriangle className="w-7 h-7 text-primary-pink" />
             When to See Your Doctor
           </h2>
 
@@ -36,7 +38,7 @@ const VaginalLumpsGuideCard4 = ({ setShowCard, setActiveButton }) => {
               "Fever, chills, or feeling unwell",
               "Symptoms suggesting a sexually transmitted infection (STI)",
               "A lump after shaving or waxing that does not improve",
-              "Any lump that worries you or feels different"
+              "Any lump that worries you or feels different",
             ].map((symptom, index) => (
               <div
                 key={index}
@@ -48,18 +50,13 @@ const VaginalLumpsGuideCard4 = ({ setShowCard, setActiveButton }) => {
                   style={{ backgroundColor: "#FF4B8B" }}
                 ></span>
 
-                <span className="text-[#7a2f4f] text-sm leading-relaxed">
-                  {symptom}
-                </span>
+                <span className="text-[#7a2f4f] text-sm leading-relaxed">{symptom}</span>
               </div>
             ))}
           </div>
 
           {/* IMPORTANT BOX */}
-          <div
-            className="mt-8 p-6 rounded-xl"
-            style={{ backgroundColor: "#FF4B8B" }}
-          >
+          <div className="mt-8 p-6 rounded-xl" style={{ backgroundColor: "#FF4B8B" }}>
             <p className="text-white font-semibold text-lg">
               Seek medical attention if symptoms persist, worsen, or cause pain.
             </p>
@@ -78,7 +75,6 @@ const VaginalLumpsGuideCard4 = ({ setShowCard, setActiveButton }) => {
             Continue to Next Step
           </button>
         </div>
-
       </div>
     </div>
   );

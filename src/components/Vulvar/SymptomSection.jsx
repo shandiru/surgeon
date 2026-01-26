@@ -28,8 +28,8 @@ const SymptomsSection = () => {
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4 text-[#FF4B8B]">
-              <Stethoscope className="inline-block mr-2 text-[#FF4B8B]" />
+            <h2 className="text-3xl font-bold mb-4 text-primary-pink">
+              <Stethoscope className="inline-block mr-2 text-primary-pink" />
               When to See Your Doctor
             </h2>
             <p className="text-lg text-black">
@@ -41,7 +41,7 @@ const SymptomsSection = () => {
             {/* Symptom Checker Card */}
             <div className="bg-white text-gray-900 flex flex-col gap-6 rounded-xl py-6 shadow-sm transition-all duration-300 hover:shadow-md hover:scale-[1.02] active:scale-[0.98]">
               <div className="px-6">
-                <div className="font-semibold flex items-center space-x-2 text-lg text-[#FF4B8B]">
+                <div className="font-semibold flex items-center space-x-2 text-lg text-primary-pink">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="w-5 h-5"
@@ -117,7 +117,7 @@ const SymptomsSection = () => {
             {/* Assessment Card */}
             <div className="bg-white text-gray-900 flex flex-col gap-6 rounded-xl py-6 px-6 shadow-sm transition-all duration-300 hover:shadow-md hover:scale-[1.02] active:scale-[0.98]">
               <div>
-                <div className="font-semibold flex items-center space-x-2 text-lg text-[#FF4B8B]">
+                <div className="font-semibold flex items-center space-x-2 text-lg text-primary-pink">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="w-5 h-5"
@@ -134,7 +134,7 @@ const SymptomsSection = () => {
               <div className="text-center py-8">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-12 h-12 mx-auto mb-4 text-[#FF4B8B]"
+                  className="w-12 h-12 mx-auto mb-4 text-primary-pink"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"

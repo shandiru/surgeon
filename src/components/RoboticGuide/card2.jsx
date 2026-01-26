@@ -18,7 +18,7 @@ const RoboticGuide2 = ({ setShowCard, setActiveButton }) => {
         {/* Card Container */}
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
-            className="text-2xl sm:text-3xl font-bold text-center mb-12 text-[#FF4B8B]"
+            className="text-2xl sm:text-3xl font-bold text-center mb-12 text-primary-pink"
             data-aos="fade-down"
           >
             Overview of Robotic Surgery
@@ -73,8 +73,8 @@ const RoboticGuide2 = ({ setShowCard, setActiveButton }) => {
                   "
                   data-aos="zoom-in"
                 >
-                  <LuScissors className="w-10 h-10 sm:w-14 sm:h-14 text-[#FF4B8B] mx-auto mb-3" />
-                  <p className="font-semibold text-[#FF4B8B]">Minimally Invasive</p>
+                  <LuScissors className="w-10 h-10 sm:w-14 sm:h-14 text-primary-pink mx-auto mb-3" />
+                  <p className="font-semibold text-primary-pink">Minimally Invasive</p>
                 </div>
 
                 <div
@@ -89,8 +89,8 @@ const RoboticGuide2 = ({ setShowCard, setActiveButton }) => {
                   "
                   data-aos="zoom-in"
                 >
-                  <LuEye className="w-10 h-10 sm:w-14 sm:h-14 text-[#FF4B8B] mx-auto mb-3" />
-                  <p className="font-semibold text-[#FF4B8B]">Enhanced Vision</p>
+                  <LuEye className="w-10 h-10 sm:w-14 sm:h-14 text-primary-pink mx-auto mb-3" />
+                  <p className="font-semibold text-primary-pink">Enhanced Vision</p>
                 </div>
 
                 <div
@@ -105,8 +105,8 @@ const RoboticGuide2 = ({ setShowCard, setActiveButton }) => {
                   "
                   data-aos="zoom-in"
                 >
-                  <LuHand className="w-10 h-10 sm:w-14 sm:h-14 text-[#FF4B8B] mx-auto mb-3" />
-                  <p className="font-semibold text-[#FF4B8B]">Precise Control</p>
+                  <LuHand className="w-10 h-10 sm:w-14 sm:h-14 text-primary-pink mx-auto mb-3" />
+                  <p className="font-semibold text-primary-pink">Precise Control</p>
                 </div>
 
                 <div
@@ -121,8 +121,8 @@ const RoboticGuide2 = ({ setShowCard, setActiveButton }) => {
                   "
                   data-aos="zoom-in"
                 >
-                  <LuZap className="w-10 h-10 sm:w-14 sm:h-14 text-[#FF4B8B] mx-auto mb-3" />
-                  <p className="font-semibold text-[#FF4B8B]">Advanced Technology</p>
+                  <LuZap className="w-10 h-10 sm:w-14 sm:h-14 text-primary-pink mx-auto mb-3" />
+                  <p className="font-semibold text-primary-pink">Advanced Technology</p>
                 </div>
               </div>
             </div>

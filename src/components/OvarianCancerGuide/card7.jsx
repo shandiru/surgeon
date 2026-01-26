@@ -7,7 +7,7 @@ const OvarianCancerGuidecard7 = ({ setShowCard, setActiveButton }) => {
       {/* Card Container */}
       <div
         className="max-w-sm sm:max-w-2xl lg:max-w-5xl text-black mx-auto mb-10
-        flex flex-col gap-6 rounded-xl border border-[#FF4B8B]/10 py-6 shadow-sm animate-in slide-in-from-right-5 duration-300"
+        flex flex-col gap-6 rounded-xl border border-primary-pink/10 py-6 shadow-sm animate-in slide-in-from-right-5 duration-300"
       >
         {/* Card Header */}
         <div
@@ -15,8 +15,8 @@ const OvarianCancerGuidecard7 = ({ setShowCard, setActiveButton }) => {
           gap-1.5 px-6 border-b pb-6"
           style={{ borderColor: "#FFC5D3" }}
         >
-          <div className="leading-none font-semibold flex items-center gap-2 text-[#FF4B8B]">
-            <ShieldCheck className="w-6 h-6 text-[#FF4B8B]" />
+          <div className="leading-none font-semibold flex items-center gap-2 text-primary-pink">
+            <ShieldCheck className="w-6 h-6 text-primary-pink" />
             Prevention & Early Detection
           </div>
           <div className="text-muted-foreground text-sm">
@@ -27,9 +27,9 @@ const OvarianCancerGuidecard7 = ({ setShowCard, setActiveButton }) => {
         {/* Card Content */}
         <div className="px-6 space-y-4">
           {/* Prevention Overview */}
-          <div className="p-4 rounded-lg bg-light-pink-1 border border-[#FF4B8B]/10">
-            <h4 className="leading-none font-semibold flex items-center gap-2 text-[#FF4B8B]">
-              <Heart className="w-5 h-5 inline-block text-[#FF4B8B]" />
+          <div className="p-4 rounded-lg bg-light-pink-1 border border-primary-pink/10">
+            <h4 className="leading-none font-semibold flex items-center gap-2 text-primary-pink">
+              <Heart className="w-5 h-5 inline-block text-primary-pink" />
               Why Prevention Matters
             </h4>
             <p className="text-sm leading-relaxed text-black">
@@ -42,7 +42,7 @@ const OvarianCancerGuidecard7 = ({ setShowCard, setActiveButton }) => {
           {/* Prevention Steps */}
           <div className="grid md:grid-cols-2 gap-4">
             <div className="space-y-3">
-              <h4 className="font-semibold text-[#FF4B8B]">Ways to Reduce Your Risk:</h4>
+              <h4 className="font-semibold text-primary-pink">Ways to Reduce Your Risk:</h4>
               <div className="space-y-2">
                 {[
                   "Genetic testing if you have a strong family history",
@@ -53,7 +53,7 @@ const OvarianCancerGuidecard7 = ({ setShowCard, setActiveButton }) => {
                   "Being aware of symptoms and seeking prompt evaluation",
                 ].map((item, index) => (
                   <div key={index} className="flex items-start gap-2 text-sm">
-                    <PlusCircle className="w-4 h-4 mt-0.5 flex-shrink-0 text-[#FF4B8B]" />
+                    <PlusCircle className="w-4 h-4 mt-0.5 flex-shrink-0 text-primary-pink" />
                     <span className="text-black">{item}</span>
                   </div>
                 ))}
@@ -85,9 +85,9 @@ const OvarianCancerGuidecard7 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           {/* Final Thoughts */}
-          <div className="p-4 rounded-lg bg-white border border-[#FF4B8B]/10">
-            <h4 className="leading-none font-semibold flex items-center gap-2 text-[#FF4B8B]">
-              <Star className="w-5 h-5 inline-block text-[#FF4B8B]" />
+          <div className="p-4 rounded-lg bg-white border border-primary-pink/10">
+            <h4 className="leading-none font-semibold flex items-center gap-2 text-primary-pink">
+              <Star className="w-5 h-5 inline-block text-primary-pink" />
               Key Takeaway
             </h4>
             <p className="text-sm leading-relaxed text-black">

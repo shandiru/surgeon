@@ -48,7 +48,7 @@ export default function Hero() {
               <div className="space-y-6 text-center md:text-left order-2 md:order-1">
                 <h1 className="text-hero md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                   Robotic Surgery:{" "}
-                  <span className="text-[#FF4B8B]">Expertise, Experience & Innovation</span>
+                  <span className="text-primary-pink">Expertise, Experience & Innovation</span>
                 </h1>
                 <p className="text-body-large md:text-lg text-black leading-relaxed">
                   Explore the pros and cons of robotic surgery, discover Ketan's extensive
@@ -62,7 +62,7 @@ export default function Hero() {
                   <button className="cursor-pointer inline-flex items-center justify-center px-6 py-3 rounded-lg bg-[#FF4B8B] text-white font-semibold text-button hover:bg-[#E03E7C] transition-all duration-300 shadow-md hover:shadow-lg">
                     Let's Start
                   </button>
-                  <button className="cursor-pointer inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg border-2 border-[#FF4B8B] text-[#FF4B8B] font-semibold text-button hover:bg-[#FF4B8B]/10 transition-all duration-300">
+                  <button className="cursor-pointer inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg border-2 border-primary-pink text-primary-pink font-semibold text-button hover:bg-[#FF4B8B]/10 transition-all duration-300">
                     About Us
                     <ArrowRight className="w-4 h-4" />
                   </button>

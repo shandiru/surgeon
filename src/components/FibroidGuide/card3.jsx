@@ -9,8 +9,8 @@ const FibroidGuidecard3 = ({ setShowCard, setActiveButton }) => {
         {/* Header */}
         <div>
           <div className="flex items-center gap-3 mb-3">
-            <Microscope className="h-7 w-7 text-[#FF4B8B]" />
-            <h2 className="font-bold text-3xl text-[#FF4B8B]">Types of Fibroids</h2>
+            <Microscope className="h-7 w-7 text-primary-pink" />
+            <h2 className="font-bold text-3xl text-primary-pink">Types of Fibroids</h2>
           </div>
           <p className="text-black text-base">
             It's possible to have more than one type at the same time:
@@ -21,7 +21,7 @@ const FibroidGuidecard3 = ({ setShowCard, setActiveButton }) => {
         <div className="grid md:grid-cols-2 gap-6">
           {/* Submucosal */}
           <div className="rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 bg-[#FF4B8B]/10">
-            <h4 className="font-semibold mb-2 text-lg text-[#FF4B8B]">Submucosal fibroids</h4>
+            <h4 className="font-semibold mb-2 text-lg text-primary-pink">Submucosal fibroids</h4>
             <p className="text-gray-800 text-sm leading-relaxed">
               Grow under the lining of the womb (may grow on a stalk)
             </p>
@@ -29,7 +29,7 @@ const FibroidGuidecard3 = ({ setShowCard, setActiveButton }) => {
 
           {/* Intramural */}
           <div className="rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 bg-[#FF4B8B]/10">
-            <h4 className="font-semibold mb-2 text-lg text-[#FF4B8B]">Intramural fibroids</h4>
+            <h4 className="font-semibold mb-2 text-lg text-primary-pink">Intramural fibroids</h4>
             <p className="text-gray-800 text-sm leading-relaxed">
               Grow within the wall of the womb (most common)
             </p>
@@ -37,7 +37,7 @@ const FibroidGuidecard3 = ({ setShowCard, setActiveButton }) => {
 
           {/* Subserosal */}
           <div className="rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 bg-[#FF4B8B]/10">
-            <h4 className="font-semibold mb-2 text-lg text-[#FF4B8B]">Subserosal fibroids</h4>
+            <h4 className="font-semibold mb-2 text-lg text-primary-pink">Subserosal fibroids</h4>
             <p className="text-gray-800 text-sm leading-relaxed">
               Grow on the outside wall of the womb (can press on nearby organs if large)
             </p>
@@ -45,7 +45,7 @@ const FibroidGuidecard3 = ({ setShowCard, setActiveButton }) => {
 
           {/* Pedunculated */}
           <div className="rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 bg-[#FF4B8B]/10">
-            <h4 className="font-semibold mb-2 text-lg text-[#FF4B8B]">Pedunculated fibroids</h4>
+            <h4 className="font-semibold mb-2 text-lg text-primary-pink">Pedunculated fibroids</h4>
             <p className="text-gray-800 text-sm leading-relaxed">
               Grow on a stalk, either inside or outside the womb
             </p>

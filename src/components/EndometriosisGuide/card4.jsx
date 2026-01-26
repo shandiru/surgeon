@@ -15,7 +15,7 @@ const EndometriosisCard4 = ({ setShowCard, setActiveButton }) => {
     <div className="space-y-6 px-4 sm:px-6 lg:px-8">
       <div className="container max-w-5xl p-6 mx-auto px-6 md:px-12">
         <div className="max-w-4xl mx-auto text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#FF4B8B]">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary-pink">
             What Causes Endometriosis?
           </h2>
           <p className="text-lg text-black">

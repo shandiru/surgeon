@@ -1,24 +1,15 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import {
-  Info,
-  TriangleAlert,
-  Stethoscope,
-  FileText,
-  TestTube,
-  Pill,
-  Menu,
-  X,
-} from 'lucide-react';
+import React, { useState } from "react";
+import { Info, TriangleAlert, Stethoscope, FileText, TestTube, Pill, Menu, X } from "lucide-react";
 
 const tabs = [
-  { label: 'Overview', icon: <Info size={16} /> },
-  { label: 'Causes', icon: <TriangleAlert size={16} /> },
-  { label: 'When to Seek Help', icon: <Stethoscope size={16} /> },
-  { label: 'What to Track', icon: <FileText size={16} /> },
-  { label: 'Your Appointment', icon: <TestTube size={16} /> },
-  { label: 'Treatment', icon: <Pill size={16} /> },
+  { label: "Overview", icon: <Info size={16} /> },
+  { label: "Causes", icon: <TriangleAlert size={16} /> },
+  { label: "When to Seek Help", icon: <Stethoscope size={16} /> },
+  { label: "What to Track", icon: <FileText size={16} /> },
+  { label: "Your Appointment", icon: <TestTube size={16} /> },
+  { label: "Treatment", icon: <Pill size={16} /> },
 ];
 
 const IrregularBleedingNavbar = ({ activeTab, setActiveTab }) => {
@@ -45,7 +36,7 @@ const IrregularBleedingNavbar = ({ activeTab, setActiveTab }) => {
           <span className="text-base font-semibold text-[#1F2937]">Menu</span>
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="text-[#FF4B8B] focus:outline-none"
+            className="text-primary-pink focus:outline-none"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -75,20 +66,17 @@ const IrregularBleedingNavbar = ({ activeTab, setActiveTab }) => {
 };
 
 const TabButton = ({ icon, label, fullWidth = false, active, onClick }) => {
-  const base =
-    'flex items-center gap-2 px-4 py-2 text-sm font-medium transition-all';
+  const base = "flex items-center gap-2 px-4 py-2 text-sm font-medium transition-all";
   const activeClasses = active
-    ? 'bg-[#FF4B8B] text-white'
-    : 'bg-[#FFE5ED] text-[#1F2937] hover:bg-[#FFD2E1]';
+    ? "bg-[#FF4B8B] text-white"
+    : "bg-[#FFE5ED] text-[#1F2937] hover:bg-[#FFD2E1]";
   const layout = fullWidth
-    ? 'w-full justify-start rounded-md'
-    : 'justify-center whitespace-nowrap shrink-0 rounded-full';
+    ? "w-full justify-start rounded-md"
+    : "justify-center whitespace-nowrap shrink-0 rounded-full";
 
   return (
     <button onClick={onClick} className={`${base} ${activeClasses} ${layout}`}>
-      <span className="p-1 rounded-full bg-white text-[#FF4B8B]">
-        {icon}
-      </span>
+      <span className="p-1 rounded-full bg-white text-primary-pink">{icon}</span>
       {label}
     </button>
   );

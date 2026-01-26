@@ -15,9 +15,10 @@ const VaginalCard4 = ({ setShowCard, setActiveButton }) => {
       <div className="max-w-5xl p-3 mx-auto flex flex-col gap-6">
         {/* Card Container */}
         <div className="rounded-xl shadow-sm flex flex-col overflow-hidden animate-in slide-in-from-right-5 duration-300">
-
           {/* Card Header */}
-          <div className={`px-6 py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 ${deepPink} text-white`}>
+          <div
+            className={`px-6 py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 ${deepPink} text-white`}
+          >
             <div className="flex items-center gap-2">
               <FaStethoscope className="w-6 h-6" />
               <h2 className="text-xl sm:text-2xl font-semibold">Symptoms of Vaginal Cancer</h2>
@@ -26,7 +27,6 @@ const VaginalCard4 = ({ setShowCard, setActiveButton }) => {
 
           {/* Content Section */}
           <div className="grid md:grid-cols-2 gap-6 px-6 py-6 items-start">
-
             {/* Left Column */}
             <div>
               <p className="text-[#7a2f4f] mb-4 text-sm sm:text-base">
@@ -44,7 +44,7 @@ const VaginalCard4 = ({ setShowCard, setActiveButton }) => {
                   "Pelvic pain",
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-2">
-                    <span className="text-[#FF4B8B] mt-0.5">•</span>
+                    <span className="text-primary-pink mt-0.5">•</span>
                     {item}
                   </li>
                 ))}
@@ -90,7 +90,6 @@ const VaginalCard4 = ({ setShowCard, setActiveButton }) => {
               Learn More
             </button>
           </div>
-
         </div>
       </div>
     </div>

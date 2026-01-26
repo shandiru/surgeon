@@ -27,7 +27,7 @@ const VulvarGuideAbout = ({ activeButton }) => {
       </div>
 
       {/* Main Title */}
-      <h1 className="text-3xl sm:text-4xl font-bold text-balance mb-4 text-[#FF4B8B]">
+      <h1 className="text-3xl sm:text-4xl font-bold text-balance mb-4 text-primary-pink">
         Understanding Endometrial Cancer
       </h1>
       <p className="text-body-large text-muted-foreground text-balance text-black">

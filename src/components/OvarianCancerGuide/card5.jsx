@@ -31,7 +31,7 @@ const OvarianCancerGuidecard5 = ({ setShowCard, setActiveButton }) => {
       {/* CARD CONTAINER */}
       <div
         className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 
-        flex flex-col gap-8 rounded-2xl border border-[#FF4B8B]/10 shadow-sm p-8 
+        flex flex-col gap-8 rounded-2xl border border-primary-pink/10 shadow-sm p-8 
         animate-in slide-in-from-right-5 duration-300 bg-white"
       >
         {/* HEADER */}
@@ -57,8 +57,8 @@ const OvarianCancerGuidecard5 = ({ setShowCard, setActiveButton }) => {
               shadow-md transition duration-300 ease-in-out 
               hover:shadow-xl hover:-translate-y-2 active:scale-[0.98] cursor-pointer"
             >
-              <div className="flex items-center gap-3 font-semibold text-[#FF4B8B]">
-                <span className="w-8 h-8 flex items-center justify-center rounded-full border border-[#FF4B8B]/10 text-sm font-bold text-[#FF4B8B]">
+              <div className="flex items-center gap-3 font-semibold text-primary-pink">
+                <span className="w-8 h-8 flex items-center justify-center rounded-full border border-primary-pink/10 text-sm font-bold text-primary-pink">
                   {item.number}
                 </span>
                 {item.title}
@@ -71,10 +71,10 @@ const OvarianCancerGuidecard5 = ({ setShowCard, setActiveButton }) => {
         {/* WARNING BOX */}
         <div className="rounded-xl px-6 py-6 shadow-md bg-[#FF4B8B]/10">
           <div className="flex items-start gap-3">
-            <div className="w-6 h-6 rounded-full flex items-center justify-center font-bold bg-white text-[#FF4B8B]">
+            <div className="w-6 h-6 rounded-full flex items-center justify-center font-bold bg-white text-primary-pink">
               →
             </div>
-            <p className="font-medium text-[#FF4B8B]">
+            <p className="font-medium text-primary-pink">
               If ovarian cancer is suspected, these tests also help determine how far the cancer has
               spread.
             </p>

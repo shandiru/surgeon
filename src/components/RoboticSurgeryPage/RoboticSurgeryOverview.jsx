@@ -17,7 +17,10 @@ export default function RoboticSurgeryOverview() {
     <section className="py-16 bg-white" data-aos="fade-up">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12 text-[#FF4B8B]" data-aos="fade-down">
+          <h2
+            className="text-3xl font-bold text-center mb-12 text-primary-pink"
+            data-aos="fade-down"
+          >
             Overview of Robotic Surgery
           </h2>
           <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -53,8 +56,8 @@ export default function RoboticSurgeryOverview() {
                   rounded-lg p-6 bg-white cursor-pointer"
                   data-aos="zoom-in"
                 >
-                  <LuScissors className="w-14 h-14 text-[#FF4B8B] mx-auto mb-3" />
-                  <p className="font-semibold text-[#FF4B8B]">Minimally Invasive</p>
+                  <LuScissors className="w-14 h-14 text-primary-pink mx-auto mb-3" />
+                  <p className="font-semibold text-primary-pink">Minimally Invasive</p>
                 </div>
 
                 <div
@@ -64,8 +67,8 @@ export default function RoboticSurgeryOverview() {
                   rounded-lg p-6 bg-white cursor-pointer"
                   data-aos="zoom-in"
                 >
-                  <LuEye className="w-14 h-14 text-[#FF4B8B] mx-auto mb-3" />
-                  <p className="font-semibold text-[#FF4B8B]">Enhanced Vision</p>
+                  <LuEye className="w-14 h-14 text-primary-pink mx-auto mb-3" />
+                  <p className="font-semibold text-primary-pink">Enhanced Vision</p>
                 </div>
 
                 <div
@@ -75,8 +78,8 @@ export default function RoboticSurgeryOverview() {
                   rounded-lg p-6 bg-white cursor-pointer"
                   data-aos="zoom-in"
                 >
-                  <LuHand className="w-14 h-14 text-[#FF4B8B] mx-auto mb-3" />
-                  <p className="font-semibold text-[#FF4B8B]">Precise Control</p>
+                  <LuHand className="w-14 h-14 text-primary-pink mx-auto mb-3" />
+                  <p className="font-semibold text-primary-pink">Precise Control</p>
                 </div>
 
                 <div
@@ -86,8 +89,8 @@ export default function RoboticSurgeryOverview() {
                   rounded-lg p-6 bg-white cursor-pointer"
                   data-aos="zoom-in"
                 >
-                  <LuZap className="w-14 h-14 text-[#FF4B8B] mx-auto mb-3" />
-                  <p className="font-semibold text-[#FF4B8B]">Advanced Technology</p>
+                  <LuZap className="w-14 h-14 text-primary-pink mx-auto mb-3" />
+                  <p className="font-semibold text-primary-pink">Advanced Technology</p>
                 </div>
               </div>
             </div>

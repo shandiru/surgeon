@@ -23,7 +23,7 @@ export default function OvarianCystSupportCard() {
         </svg>
 
         {/* Heading */}
-        <h3 className="text-3xl font-bold mb-4 text-[#FF4B8B]">Remember</h3>
+        <h3 className="text-3xl font-bold mb-4 text-primary-pink">Remember</h3>
 
         {/* Paragraphs */}
         <div className="space-y-3 max-w-2xl mx-auto text-base leading-relaxed">

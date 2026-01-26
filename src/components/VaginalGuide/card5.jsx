@@ -8,17 +8,10 @@ const Vaginalcard5 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="w-full sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto space-y-6 p-5">
-
         {/* CARD CONTAINER */}
-        <div 
-          className="bg-white rounded-xl shadow-md transition duration-300 hover:shadow-lg hover:-translate-y-1 overflow-hidden"
-        >
-
+        <div className="bg-white rounded-xl shadow-md transition duration-300 hover:shadow-lg hover:-translate-y-1 overflow-hidden">
           {/* HEADER */}
-          <div
-            className="px-6 py-4 flex items-center gap-2"
-            style={{ backgroundColor: deepPink }}
-          >
+          <div className="px-6 py-4 flex items-center gap-2" style={{ backgroundColor: deepPink }}>
             <FaMicroscope className="text-white h-6 w-6" />
             <h2 className="text-xl sm:text-2xl font-semibold text-white">
               Diagnosis of Vaginal Cancer
@@ -31,7 +24,7 @@ const Vaginalcard5 = ({ setShowCard, setActiveButton }) => {
               Vaginal cancer may be detected during a routine pelvic exam before symptoms appear.
             </p>
 
-            <p className="text-[#FF4B8B] font-semibold mb-4 text-sm sm:text-base">
+            <p className="text-primary-pink font-semibold mb-4 text-sm sm:text-base">
               Diagnostic steps may include:
             </p>
 
@@ -60,7 +53,7 @@ const Vaginalcard5 = ({ setShowCard, setActiveButton }) => {
                   className="border rounded-md px-4 py-3 shadow-sm bg-white hover:shadow-md transition"
                   style={{ borderColor: primaryPink }}
                 >
-                  <strong className="text-[#FF4B8B]">{step.title}</strong>
+                  <strong className="text-primary-pink">{step.title}</strong>
                   <span className="text-[#7a2f4f]"> – {step.desc}</span>
                 </div>
               ))}
@@ -90,8 +83,6 @@ const Vaginalcard5 = ({ setShowCard, setActiveButton }) => {
             </button>
           </div>
         </div>
-
-
       </div>
     </div>
   );

@@ -27,7 +27,7 @@ const VaginalLumpsGuideAbout = ({ activeButton }) => {
       </div>
 
       {/* Main Title */}
-      <h1 className="text-hero text-balance mb-4 text-[#FF4B8B]">Understanding Vaginal Lumps</h1>
+      <h1 className="text-hero text-balance mb-4 text-primary-pink">Understanding Vaginal Lumps</h1>
       <p className="text-lg sm:text-xl text-muted-foreground text-balance text-black">
         What it is, why it's done, and what to expect
       </p>

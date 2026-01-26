@@ -6,10 +6,10 @@ const EndometrialCard3 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="space-y-6 pb-10 px-3">
       {/* Card Container */}
-      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-2xl border border-[#FF4B8B]/10 p-8 shadow-sm animate-in slide-in-from-right-5 duration-300 bg-white">
+      <div className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-2xl border border-primary-pink/10 p-8 shadow-sm animate-in slide-in-from-right-5 duration-300 bg-white">
         {/* Card Header */}
         <div className="grid auto-rows-min items-start gap-1.5">
-          <div className="leading-none font-semibold flex items-center gap-2 text-[#FF4B8B]">
+          <div className="leading-none font-semibold flex items-center gap-2 text-primary-pink">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -20,7 +20,7 @@ const EndometrialCard3 = ({ setShowCard, setActiveButton }) => {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="w-6 h-6 text-[#FF4B8B]"
+              className="w-6 h-6 text-primary-pink"
             >
               <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
               <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
@@ -42,53 +42,53 @@ const EndometrialCard3 = ({ setShowCard, setActiveButton }) => {
             {[
               {
                 step: "Postmenopausal Age",
-                icon: <CloudFog className="w-5 h-5 text-[#FF4B8B]" />,
+                icon: <CloudFog className="w-5 h-5 text-primary-pink" />,
                 description: "Endometrial cancer is more common after menopause.",
               },
               {
                 step: "Excess Oestrogen Exposure",
-                icon: <Sparkles className="w-5 h-5 text-[#FF4B8B]" />,
+                icon: <Sparkles className="w-5 h-5 text-primary-pink" />,
                 description: "High levels of oestrogen without progesterone increase risk.",
               },
               {
                 step: "Obesity",
-                icon: <Heart className="w-5 h-5 text-[#FF4B8B]" />,
+                icon: <Heart className="w-5 h-5 text-primary-pink" />,
                 description: "One of the strongest risk factors for endometrial cancer.",
               },
               {
                 step: "Polycystic Ovary Syndrome (PCOS)",
-                icon: <Biohazard className="w-5 h-5 text-[#FF4B8B]" />,
+                icon: <Biohazard className="w-5 h-5 text-primary-pink" />,
                 description: "PCOS can lead to hormonal imbalances that increase risk.",
               },
               {
                 step: "Early Menarche or Late Menopause",
-                icon: <CloudFog className="w-5 h-5 text-[#FF4B8B]" />,
+                icon: <CloudFog className="w-5 h-5 text-primary-pink" />,
                 description: "Longer lifetime exposure to estrogen raises risk.",
               },
               {
                 step: "Never Having Been Pregnant",
-                icon: <ShieldOff className="w-5 h-5 text-[#FF4B8B]" />,
+                icon: <ShieldOff className="w-5 h-5 text-primary-pink" />,
                 description: "Pregnancy provides protective hormonal effects.",
               },
               {
                 step: "Hormone Replacement Therapy (Oestrogen-Only)",
-                icon: <Sparkles className="w-5 h-5 text-[#FF4B8B]" />,
+                icon: <Sparkles className="w-5 h-5 text-primary-pink" />,
                 description: "Using oestrogen alone without progesterone increases risk.",
               },
               {
                 step: "Tamoxifen Use",
-                icon: <Biohazard className="w-5 h-5 text-[#FF4B8B]" />,
+                icon: <Biohazard className="w-5 h-5 text-primary-pink" />,
                 description: "Tamoxifen, used for breast cancer, can slightly raise risk.",
               },
               {
                 step: "Family History (e.g., Lynch Syndrome)",
-                icon: <ShieldOff className="w-5 h-5 text-[#FF4B8B]" />,
+                icon: <ShieldOff className="w-5 h-5 text-primary-pink" />,
                 description: "Genetic predisposition increases lifetime risk.",
               },
             ].map((item, index) => (
               <div
                 key={index}
-                className="flex gap-4 p-4 rounded-xl border border-[#FF4B8B]/10 transition-all duration-300 hover:shadow-lg active:shadow-lg bg-white"
+                className="flex gap-4 p-4 rounded-xl border border-primary-pink/10 transition-all duration-300 hover:shadow-lg active:shadow-lg bg-white"
               >
                 {/* Number Circle */}
                 <div className="flex-shrink-0">
@@ -99,7 +99,7 @@ const EndometrialCard3 = ({ setShowCard, setActiveButton }) => {
 
                 {/* Text */}
                 <div className="flex-1">
-                  <h4 className="font-semibold mb-1 flex items-center gap-2 text-[#FF4B8B]">
+                  <h4 className="font-semibold mb-1 flex items-center gap-2 text-primary-pink">
                     {item.icon}
                     {item.step}
                   </h4>
@@ -110,9 +110,9 @@ const EndometrialCard3 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           {/* Protective Factors */}
-          <div className="p-4 rounded-xl border border-[#FF4B8B]/10 mt-4 bg-[#FF4B8B]/10">
-            <h4 className="font-semibold mb-2 flex items-center gap-2 text-[#FF4B8B]">
-              <Sparkles className="w-5 h-5 text-[#FF4B8B]" />
+          <div className="p-4 rounded-xl border border-primary-pink/10 mt-4 bg-[#FF4B8B]/10">
+            <h4 className="font-semibold mb-2 flex items-center gap-2 text-primary-pink">
+              <Sparkles className="w-5 h-5 text-primary-pink" />
               Protective Factors
             </h4>
             <p className="text-sm text-black">

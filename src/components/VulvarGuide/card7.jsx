@@ -1,5 +1,5 @@
-'use client';
-import { ShieldCheck, Heart, Star, PlusCircle } from 'lucide-react';
+"use client";
+import { ShieldCheck, Heart, Star, PlusCircle } from "lucide-react";
 
 const VulvarGuidecard7 = ({ setShowCard, setActiveButton }) => {
   return (
@@ -18,7 +18,7 @@ const VulvarGuidecard7 = ({ setShowCard, setActiveButton }) => {
             className="font-semibold text-sm uppercase tracking-wide flex items-center gap-2"
             style={{ color: "#FF4B8B" }}
           >
-            <ShieldCheck className="w-6 h-6 text-[#FF4B8B]" />
+            <ShieldCheck className="w-6 h-6 text-primary-pink" />
             Prevention & Early Detection
           </span>
 
@@ -35,16 +35,13 @@ const VulvarGuidecard7 = ({ setShowCard, setActiveButton }) => {
             backgroundColor: "#FFF5F8",
           }}
         >
-          <h4
-            className="font-semibold flex items-center gap-2 mb-2"
-            style={{ color: "#FF4B8B" }}
-          >
-            <Heart className="w-5 h-5 text-[#FF4B8B]" />
+          <h4 className="font-semibold flex items-center gap-2 mb-2" style={{ color: "#FF4B8B" }}>
+            <Heart className="w-5 h-5 text-primary-pink" />
             Why Prevention Matters
           </h4>
           <p style={{ color: "#7a2f4f" }} className="text-sm leading-relaxed">
-            While vulvar cancer is uncommon, early awareness and simple preventive steps can significantly
-            reduce risk and help detect changes before they become serious.
+            While vulvar cancer is uncommon, early awareness and simple preventive steps can
+            significantly reduce risk and help detect changes before they become serious.
           </p>
         </div>
 
@@ -52,10 +49,7 @@ const VulvarGuidecard7 = ({ setShowCard, setActiveButton }) => {
         <div className="grid md:grid-cols-2 gap-6">
           {/* ---- Left Column ---- */}
           <div>
-            <h4
-              className="font-semibold mb-3"
-              style={{ color: "#FF4B8B" }}
-            >
+            <h4 className="font-semibold mb-3" style={{ color: "#FF4B8B" }}>
               You Can Reduce Risk By:
             </h4>
 
@@ -73,7 +67,7 @@ const VulvarGuidecard7 = ({ setShowCard, setActiveButton }) => {
                   className="flex items-start gap-2 text-sm"
                   style={{ color: "#7a2f4f" }}
                 >
-                  <PlusCircle className="w-4 h-4 text-[#FF4B8B] mt-1 flex-shrink-0" />
+                  <PlusCircle className="w-4 h-4 text-primary-pink mt-1 flex-shrink-0" />
                   <span>{item}</span>
                 </div>
               ))}
@@ -88,11 +82,8 @@ const VulvarGuidecard7 = ({ setShowCard, setActiveButton }) => {
               borderColor: "rgb(255,197,211)",
             }}
           >
-            <h4
-              className="font-semibold flex items-center gap-2 mb-2"
-              style={{ color: "#FF4B8B" }}
-            >
-              <Heart className="w-5 h-5 text-[#FF4B8B]" />
+            <h4 className="font-semibold flex items-center gap-2 mb-2" style={{ color: "#FF4B8B" }}>
+              <Heart className="w-5 h-5 text-primary-pink" />
               Remember
             </h4>
 
@@ -113,17 +104,15 @@ const VulvarGuidecard7 = ({ setShowCard, setActiveButton }) => {
             borderColor: "rgb(255,197,211)",
           }}
         >
-          <h4
-            className="font-semibold flex items-center gap-2 mb-2"
-            style={{ color: "#FF4B8B" }}
-          >
-            <Star className="w-5 h-5 text-[#FF4B8B]" />
+          <h4 className="font-semibold flex items-center gap-2 mb-2" style={{ color: "#FF4B8B" }}>
+            <Star className="w-5 h-5 text-primary-pink" />
             Key Takeaway
           </h4>
 
           <p className="text-sm leading-relaxed" style={{ color: "#7a2f4f" }}>
-            Prevention is powerful. By staying aware of changes, attending check-ups, and protecting yourself
-            from HPV, you take strong steps toward maintaining vulvar health and detecting issues early.
+            Prevention is powerful. By staying aware of changes, attending check-ups, and protecting
+            yourself from HPV, you take strong steps toward maintaining vulvar health and detecting
+            issues early.
           </p>
         </div>
 

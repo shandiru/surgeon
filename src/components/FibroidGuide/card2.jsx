@@ -26,7 +26,7 @@ const FibroidGuideCard2 = ({ setShowCard, setActiveButton }) => {
               <path d="M12 9v4" />
               <path d="M12 17h.01" />
             </svg>
-            <h2 className="font-bold text-3xl text-[#FF4B8B]">Symptoms of Fibroids</h2>
+            <h2 className="font-bold text-3xl text-primary-pink">Symptoms of Fibroids</h2>
           </div>
           <p className="text-black text-base">
             Some people have no symptoms, but others may experience:
@@ -37,7 +37,7 @@ const FibroidGuideCard2 = ({ setShowCard, setActiveButton }) => {
         <div className="grid md:grid-cols-2 gap-10">
           {/* Left - Physical Symptoms */}
           <div className="space-y-4">
-            <h4 className="font-semibold text-lg text-[#FF4B8B]">Physical Symptoms</h4>
+            <h4 className="font-semibold text-lg text-primary-pink">Physical Symptoms</h4>
             <ul className="space-y-2 text-black">
               <li>• Painful or heavy periods</li>
               <li>• Anaemia (from heavy bleeding)</li>
@@ -50,7 +50,7 @@ const FibroidGuideCard2 = ({ setShowCard, setActiveButton }) => {
 
           {/* Right - Other Effects */}
           <div className="space-y-4">
-            <h4 className="font-semibold text-lg text-[#FF4B8B]">Other Effects</h4>
+            <h4 className="font-semibold text-lg text-primary-pink">Other Effects</h4>
             <ul className="space-y-2 text-black">
               <li>• Constant urge to pass urine</li>
               <li>• Constipation or bloating</li>
@@ -65,7 +65,7 @@ const FibroidGuideCard2 = ({ setShowCard, setActiveButton }) => {
         {/* Highlight Box */}
         <div className="rounded-lg p-5 shadow-sm bg-[#FF4B8B]/10">
           <p className="font-medium text-base flex items-center gap-2 text-black">
-            <AlertCircle className="h-5 w-5 text-[#FF4B8B]" />
+            <AlertCircle className="h-5 w-5 text-primary-pink" />
             If left untreated, fibroids can grow and may cause complications.
           </p>
         </div>

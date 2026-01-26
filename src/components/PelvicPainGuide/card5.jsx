@@ -6,7 +6,6 @@ const PelvicPainGuidecard5 = ({ setShowCard, setActiveButton }) => {
   return (
     <div className="pb-12">
       <div className="max-w-5xl mx-auto px-4 animate-in slide-in-from-right-5 duration-300">
-
         {/* MAIN CARD */}
         <div
           className="rounded-2xl shadow-md border overflow-hidden 
@@ -16,42 +15,33 @@ const PelvicPainGuidecard5 = ({ setShowCard, setActiveButton }) => {
         >
           {/* HEADER */}
           <div className="px-8 py-6 border-b" style={{ borderColor: "rgb(255,197,211)" }}>
-            <div className="flex items-center gap-3 text-[#FF4B8B]">
+            <div className="flex items-center gap-3 text-primary-pink">
               <Stethoscope className="w-7 h-7" />
-              <h2 className="text-2xl font-bold tracking-tight">
-                How Pelvic Pain Is Investigated
-              </h2>
+              <h2 className="text-2xl font-bold tracking-tight">How Pelvic Pain Is Investigated</h2>
             </div>
             <p className="text-[#7a2f4f] mt-2 leading-relaxed">
-              Your doctor will assess your symptoms carefully using a combination of
-              history-taking, examinations, and tests.
+              Your doctor will assess your symptoms carefully using a combination of history-taking,
+              examinations, and tests.
             </p>
           </div>
 
           {/* CONTENT AREA */}
           <div className="px-8 py-6 space-y-6">
-
             {/* SECTION TITLE */}
-            <h3 className="text-lg font-semibold text-[#7a2f4f]">
-              Your doctor may:
-            </h3>
+            <h3 className="text-lg font-semibold text-[#7a2f4f]">Your doctor may:</h3>
 
             {/* TWO COLUMN GRID */}
             <div className="grid md:grid-cols-2 gap-6">
-
               {/* LEFT COLUMN */}
               <div className="space-y-4">
-
                 {/* ITEM 1 */}
                 <div
                   className="flex items-center gap-4 p-4 rounded-xl border bg-white 
                   shadow-sm hover:bg-[#FFF1F6] transition-all"
                   style={{ borderColor: "rgb(255,197,211)" }}
                 >
-                  <CircleCheck className="text-[#FF4B8B] w-5 h-5" />
-                  <span className="text-sm text-[#7a2f4f]">
-                    Take a full medical history
-                  </span>
+                  <CircleCheck className="text-primary-pink w-5 h-5" />
+                  <span className="text-sm text-[#7a2f4f]">Take a full medical history</span>
                 </div>
 
                 {/* ITEM 2 */}
@@ -60,18 +50,14 @@ const PelvicPainGuidecard5 = ({ setShowCard, setActiveButton }) => {
                   shadow-sm hover:bg-[#FFF1F6] transition-all"
                   style={{ borderColor: "rgb(255,197,211)" }}
                 >
-                  <CircleCheck className="text-[#FF4B8B] w-5 h-5" />
-                  <span className="text-sm text-[#7a2f4f]">
-                    Perform a pelvic examination
-                  </span>
+                  <CircleCheck className="text-primary-pink w-5 h-5" />
+                  <span className="text-sm text-[#7a2f4f]">Perform a pelvic examination</span>
                 </div>
               </div>
 
               {/* RIGHT COLUMN */}
               <div className="space-y-4">
-                <h4 className="font-semibold text-[#7a2f4f]">
-                  Possible Tests:
-                </h4>
+                <h4 className="font-semibold text-[#7a2f4f]">Possible Tests:</h4>
 
                 <ul className="space-y-2 text-sm text-[#7a2f4f] leading-relaxed">
                   <li>• Blood or urine tests</li>
@@ -88,8 +74,8 @@ const PelvicPainGuidecard5 = ({ setShowCard, setActiveButton }) => {
               style={{ borderColor: "rgb(255,197,211)" }}
             >
               <p className="text-sm text-[#7a2f4f] italic">
-                Identifying the cause early helps your healthcare provider create
-                the most effective treatment plan for you.
+                Identifying the cause early helps your healthcare provider create the most effective
+                treatment plan for you.
               </p>
             </div>
           </div>

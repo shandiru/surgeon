@@ -45,7 +45,7 @@ const EventDetail = () => {
               <div className="p-6 lg:p-8">
                 <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-3">{event.title}</h1>
                 <div className="flex flex-wrap items-center gap-4 mb-6">
-                  <span className="inline-flex items-center px-4 py-2 bg-[#FF4B8B]/20 text-[#FF4B8B] rounded-full font-semibold text-sm">
+                  <span className="inline-flex items-center px-4 py-2 bg-[#FF4B8B]/20 text-primary-pink rounded-full font-semibold text-sm">
                     <Calendar className="w-4 h-4 mr-2" />
                     {event.date}
                   </span>
@@ -54,21 +54,21 @@ const EventDetail = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                   <div className="flex items-start space-x-3">
-                    <MapPin className="w-5 h-5 text-[#FF4B8B] flex-shrink-0 mt-1" />
+                    <MapPin className="w-5 h-5 text-primary-pink flex-shrink-0 mt-1" />
                     <div>
                       <p className="font-semibold text-black">Location</p>
                       <p className="text-black">{event.locationName}</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <Phone className="w-5 h-5 text-[#FF4B8B] flex-shrink-0 mt-1" />
+                    <Phone className="w-5 h-5 text-primary-pink flex-shrink-0 mt-1" />
                     <div>
                       <p className="font-semibold text-black">Phone</p>
                       <p className="text-black">{event.phone}</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <Globe className="w-5 h-5 text-[#FF4B8B] flex-shrink-0 mt-1" />
+                    <Globe className="w-5 h-5 text-primary-pink flex-shrink-0 mt-1" />
                     <div>
                       <p className="font-semibold text-black">Website</p>
                       <p className="text-black">{event.website}</p>
@@ -94,7 +94,7 @@ const EventDetail = () => {
 
             {/* About Section */}
             <div className="bg-white rounded-2xl shadow-lg p-6 lg:p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4 border-b-2 border-[#FF4B8B] pb-2 inline-block">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4 border-b-2 border-primary-pink pb-2 inline-block">
                 About Event
               </h2>
               <p className="text-black leading-relaxed">{event.about}</p>
@@ -102,7 +102,7 @@ const EventDetail = () => {
 
             {/* Speakers */}
             <div className="bg-white rounded-2xl shadow-lg p-6 lg:p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-[#FF4B8B] pb-2 inline-block">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-primary-pink pb-2 inline-block">
                 Who's Speaking?
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -122,14 +122,14 @@ const EventDetail = () => {
 
             {/* FAQs */}
             <div className="bg-white rounded-2xl shadow-lg p-6 lg:p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-[#FF4B8B] pb-2 inline-block">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-primary-pink pb-2 inline-block">
                 FAQ's
               </h2>
               <div className="space-y-3">
                 {event.faqs.map((faq, index) => (
                   <div
                     key={index}
-                    className="border border-[#FF4B8B]/50 rounded-xl overflow-hidden"
+                    className="border border-primary-pink/50 rounded-xl overflow-hidden"
                   >
                     <button
                       onClick={() => setOpenFaq(openFaq === index ? -1 : index)}
@@ -172,7 +172,7 @@ const EventDetail = () => {
                     <h3 className="text-xl font-bold text-gray-900">
                       {event.organizers[activeOrganizer].name}
                     </h3>
-                    <p className="text-sm text-[#FF4B8B]">
+                    <p className="text-sm text-primary-pink">
                       Posted {event.organizers[activeOrganizer].postedDays} days ago
                     </p>
                   </div>
