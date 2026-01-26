@@ -1,4 +1,3 @@
-'use client';
 import React from 'react';
 import { FaPills } from 'react-icons/fa';
 
@@ -9,7 +8,7 @@ const Vaginalcard6 = ({ setShowCard, setActiveButton }) => {
 
   return (
     <div >
-      <div className="max-w-5xl mx-3">
+      <div className="max-w-5xl mx-auto px-4">
         <div
           className="bg-white  rounded-xl shadow-md mb-10 transition duration-300 hover:shadow-lg hover:-translate-y-1 w-full"
         >

@@ -2,21 +2,26 @@
 @import "tailwindcss";
 
 /* make `dark:` respond to .dark on <html> */
-@custom-variant dark (&:where(.dark, .dark *));  /* <-- add this line */
+@custom-variant dark (&:where(.dark, .dark *)); /* <-- add this line */
 
 /* Approved Color Palette - STRICT: Only these 4 exact colors allowed */
+/* Configure Poppins as the default font family using Tailwind v4 @theme */
 @theme {
-  --color-primary-pink: #FF4B8B;
-  --color-light-pink-1: #FDE7EB;
-  --color-light-pink-2: #FFD6E1;
+  --color-primary-pink: #ff4b8b;
+  --color-light-pink-1: #fde7eb;
+  --color-light-pink-2: #ffd6e1;
   --color-black: #000000;
-  --color-white: #FFFFFF;
+  --color-white:
+    --font-family-sans: "Poppins", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji";
 }
 
-html, body {
+html,
+body {
   width: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  font-family: "Poppins", ui-sans-serif, system-ui, sans-serif;
 }
 
 /* Typography Utility Classes */
@@ -57,5 +62,5 @@ html, body {
 }
 
 .text-nav {
-  @apply text-sm font-medium;
+  @apply text-base font-normal;
 }
