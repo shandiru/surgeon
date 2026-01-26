@@ -43,9 +43,9 @@ const ColposcopyCard2 = ({ setShowCard, setActiveButton }) => {
                 ].map((item, index) => (
                   <div
                     key={index}
-                    className="flex items-start gap-3 p-3 bg-card rounded-lg border transition-all duration-300 hover:bg-light-pink-1 hover:shadow-md border-primary-pink"
+                    className="flex items-start gap-3 p-3 bg-white rounded-lg border transition-all duration-300 hover:bg-light-pink-1 hover:shadow-md border-primary-pink"
                   >
-                    <div className="w-6 h-6 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <div className="w-6 h-6 bg-light-pink-2 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                       <span className="text-xs font-bold text-primary-pink">{index + 1}</span>
                     </div>
                     <span>{item}</span>
@@ -56,7 +56,7 @@ const ColposcopyCard2 = ({ setShowCard, setActiveButton }) => {
 
             {/* What It Can Diagnose Section */}
             <div>
-              <h4 className="font-semibold mb-3 text-accent text-primary-pink">
+              <h4 className="font-semibold mb-3 text-primary-pink">
                 What It Can Diagnose
               </h4>
               <div className="space-y-2">
@@ -68,12 +68,12 @@ const ColposcopyCard2 = ({ setShowCard, setActiveButton }) => {
                 ].map((item, index) => (
                   <div
                     key={index}
-                    className="flex items-center justify-between p-2 bg-muted rounded transition-all duration-300 hover:bg-light-pink-1 hover:shadow-md"
+                    className="flex items-center justify-between p-2 bg-light-pink-1 rounded transition-all duration-300 hover:bg-light-pink-2 hover:shadow-md"
                   >
                     <span className="text-sm">{item.label}</span>
                     <span
                       data-slot="badge"
-                      className="inline-flex items-center justify-center rounded-md border px-2 py-0.5 font-medium w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden border-transparent bg-secondary text-secondary-foreground [a&]:hover:bg-secondary/90 text-xs"
+                      className="inline-flex items-center justify-center rounded-md border px-2 py-0.5 font-medium w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none transition-[color,box-shadow] overflow-hidden border-transparent bg-light-pink-2 text-black text-xs"
                     >
                       {item.badge}
                     </span>
@@ -84,8 +84,8 @@ const ColposcopyCard2 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           {/* When to Contact Your Doctor Section */}
-          <div className="bg-destructive/10 border border-destructive/20 p-4 rounded-lg border-primary-pink ">
-            <h4 className="font-semibold text-destructive mb-2 flex items-center gap-2 text-primary-pink">
+          <div className="bg-light-pink-1 border border-primary-pink p-4 rounded-lg">
+            <h4 className="font-semibold mb-2 flex items-center gap-2 text-primary-pink">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"

@@ -40,8 +40,8 @@ const Colposcopycard5 = ({ setShowCard, setActiveButton }) => {
         </div>
         <div className="px-6 space-y-4">
           <div className="grid md:grid-cols-2 gap-4">
-            <div className="p-4 bg-primary/10 rounded-lg border border-primary/20 hover:z-50 transition-all duration-300 hover:bg-light-pink-1 hover:shadow-xl border-primary-pink active:bg-light-pink-1 active:shadow-lg active:border-primary-pink hover:scale-105 active:scale-100">
-              <h4 className="font-semibold text-primary mb-2 flex items-center gap-2 text-primary-pink">
+            <div className="p-4 bg-light-pink-1 rounded-lg border hover:z-50 transition-all duration-300 hover:bg-light-pink-2 hover:shadow-xl border-primary-pink active:bg-light-pink-1 active:shadow-lg active:border-primary-pink hover:scale-105 active:scale-100">
+              <h4 className="font-semibold mb-2 flex items-center gap-2 text-primary-pink">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -66,8 +66,8 @@ const Colposcopycard5 = ({ setShowCard, setActiveButton }) => {
                 <li>• Continue regular screening</li>
               </ul>
             </div>
-            <div className="p-4 bg-accent/10 rounded-lg border hover:z-50 transition-all duration-300 hover:bg-light-pink-1 hover:shadow-xl border-primary-pink active:bg-light-pink-1 active:shadow-lg active:border-primary-pink hover:scale-105 active:scale-100">
-              <h4 className="font-semibold text-accent-foreground mb-2 flex items-center gap-2 text-primary-pink">
+            <div className="p-4 bg-light-pink-1 rounded-lg border hover:z-50 transition-all duration-300 hover:bg-light-pink-2 hover:shadow-xl border-primary-pink active:bg-light-pink-1 active:shadow-lg active:border-primary-pink hover:scale-105 active:scale-100">
+              <h4 className="font-semibold mb-2 flex items-center gap-2 text-primary-pink">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -121,7 +121,7 @@ const Colposcopycard5 = ({ setShowCard, setActiveButton }) => {
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
-                          className="lucide lucide-chevron-down text-muted-foreground pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200"
+                          className="lucide lucide-chevron-down text-black pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200"
                         >
                           <path d="m6 9 6 6 6-6"></path>
                         </svg>
@@ -139,8 +139,8 @@ const Colposcopycard5 = ({ setShowCard, setActiveButton }) => {
             s
           </div>
 
-          <div className="bg-primary/5 p-4 rounded-lg border border-primary-pink">
-            <h4 className="font-semibold text-primary mb-2 flex items-center gap-2 text-primary-pink">
+          <div className="bg-light-pink-1 p-4 rounded-lg border border-primary-pink">
+            <h4 className="font-semibold mb-2 flex items-center gap-2 text-primary-pink">
               <Target className="w-5 h-5 text-primary-pink" />
               Key Point
             </h4>

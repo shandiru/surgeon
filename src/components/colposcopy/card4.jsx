@@ -30,7 +30,7 @@ const ColposcopyCard4 = ({ setShowCard, setActiveButton }) => {
           </div>
         </div>
         <div className="px-6 space-y-4">
-          <div className="bg-primary/5 p-4 rounded-lg border border-primary-pink">
+          <div className="bg-light-pink-1 p-4 rounded-lg border border-primary-pink">
             <p className="leading-relaxed">
               If your doctor sees anything unusual, they may take a small tissue sample (biopsy)
               <strong> immediately during your colposcopy</strong>.
@@ -58,7 +58,7 @@ const ColposcopyCard4 = ({ setShowCard, setActiveButton }) => {
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className="lucide lucide-chevron-down text-muted-foreground pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200"
+                    className="lucide lucide-chevron-down text-black pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200"
                   >
                     <path d="m6 9 6 6 6-6"></path>
                   </svg>
@@ -78,14 +78,14 @@ const ColposcopyCard4 = ({ setShowCard, setActiveButton }) => {
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        className="lucide lucide-clock w-5 h-5 text-accent mt-0.5 text-primary-pink"
+                        className="lucide lucide-clock w-5 h-5 mt-0.5 text-primary-pink"
                       >
                         <circle cx="12" cy="12" r="10"></circle>
                         <polyline points="12 6 12 12 16 14"></polyline>
                       </svg>
                       <div>
                         <p className="font-medium">Quick procedure</p>
-                        <p className="text-sm text-muted-foreground">Takes just a few seconds</p>
+                        <p className="text-sm text-black">Takes just a few seconds</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
@@ -99,7 +99,7 @@ const ColposcopyCard4 = ({ setShowCard, setActiveButton }) => {
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        className="lucide lucide-circle-alert w-5 h-5 text-accent mt-0.5 text-primary-pink"
+                        className="lucide lucide-circle-alert w-5 h-5 mt-0.5 text-primary-pink"
                       >
                         <circle cx="12" cy="12" r="10"></circle>
                         <line x1="12" x2="12" y1="8" y2="12"></line>
@@ -107,7 +107,7 @@ const ColposcopyCard4 = ({ setShowCard, setActiveButton }) => {
                       </svg>
                       <div>
                         <p className="font-medium">Mild discomfort</p>
-                        <p className="text-sm text-muted-foreground">
+                        <p className="text-sm text-black">
                           May cause a brief pinch or cramp
                         </p>
                       </div>
@@ -123,7 +123,7 @@ const ColposcopyCard4 = ({ setShowCard, setActiveButton }) => {
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        className="lucide lucide-file-text w-5 h-5 text-accent mt-0.5 text-primary-pink"
+                        className="lucide lucide-file-text w-5 h-5 mt-0.5 text-primary-pink"
                       >
                         <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
                         <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
@@ -133,7 +133,7 @@ const ColposcopyCard4 = ({ setShowCard, setActiveButton }) => {
                       </svg>
                       <div>
                         <p className="font-medium">Lab analysis</p>
-                        <p className="text-sm text-muted-foreground">
+                        <p className="text-sm text-black">
                           Sample sent to confirm cell type
                         </p>
                       </div>
@@ -164,7 +164,7 @@ const ColposcopyCard4 = ({ setShowCard, setActiveButton }) => {
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className="lucide lucide-chevron-down text-muted-foreground pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200"
+                    className="lucide lucide-chevron-down text-black pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200"
                   >
                     <path d="m6 9 6 6 6-6"></path>
                   </svg>

@@ -12,7 +12,7 @@ const Colposcopycard7 = () => {
             <Users className="w-6 h-6 text-primary" />
             Emotional Wellbeing
           </div>
-          <div className="text-muted-foreground text-sm">
+          <div className="text-black text-sm">
             It's normal to feel nervous - you're not alone
           </div>
         </div>
@@ -20,7 +20,7 @@ const Colposcopycard7 = () => {
         {/* Card Content */}
         <div className="px-6 space-y-4">
           {/* Your Feelings Matter */}
-          <div className="bg-primary/5 p-4 rounded-lg border border-primary-pink">
+          <div className="bg-light-pink-1 p-4 rounded-lg border border-primary-pink">
             <h4 className="leading-none font-semibold flex items-center gap-2 text-primary-pink">
               <Heart className="w-5 h-5 inline-block" />
               Your Feelings Matter
@@ -44,7 +44,7 @@ const Colposcopycard7 = () => {
                   "Talk to your nurse or doctor about worries",
                 ].map((item, index) => (
                   <div key={index} className="flex items-start gap-2 text-sm">
-                    <PlusCircle className="w-4 h-4 text-accent mt-0.5 flex-shrink-0 text-primary-pink" />
+                    <PlusCircle className="w-4 h-4 mt-0.5 flex-shrink-0 text-primary-pink" />
                     <span>{item}</span>
                   </div>
                 ))}
@@ -52,7 +52,7 @@ const Colposcopycard7 = () => {
             </div>
 
             {/* Remember */}
-            <div className="bg-accent/10 p-4 rounded-lg">
+            <div className="bg-light-pink-1 p-4 rounded-lg">
               <h4 className="leading-none font-semibold flex items-center gap-2 text-primary-pink">
                 <Heart className="w-5 h-5 inline-block" />
                 Remember
@@ -67,7 +67,7 @@ const Colposcopycard7 = () => {
           </div>
 
           {/* Final Thoughts */}
-          <div className="bg-card p-4 rounded-lg border border-primary-pink">
+          <div className="bg-white p-4 rounded-lg border border-primary-pink">
             <h4 className="leading-none font-semibold flex items-center gap-2 text-primary-pink">
               <Star className="w-5 h-5 inline-block" />
               Final Thoughts

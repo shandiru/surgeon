@@ -23,19 +23,19 @@ const ColposcopyGuide = ({ activeButton }) => {
         >
           <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
         </svg>
-        <span className="text-primary font-medium text-caption">Medical Education</span>
+        <span className="text-primary-pink font-medium text-caption">Medical Education</span>
       </div>
 
       {/* Main Title */}
       <h1 className="text-hero text-balance mb-4 text-primary-pink">Understanding Colposcopy</h1>
-      <p className="text-body-large text-muted-foreground text-balance text-black">
+      <p className="text-body-large text-balance text-black">
         What it is, why it's done, and what to expect
       </p>
 
       {/* Progress Bar */}
       <div className="mt-6 max-w-md mx-auto">
         <div className="flex justify-between items-center mb-2">
-          <span className="text-body-small text-muted-foreground text-black">Your Progress</span>
+          <span className="text-body-small text-black">Your Progress</span>
           <span className="text-body-small font-medium text-black">
             {completed}/{totalSteps} sections
           </span>

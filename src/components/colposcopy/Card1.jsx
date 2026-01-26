@@ -92,8 +92,8 @@ const ColposcopyCard1 = ({ setShowCard, setActiveButton }) => {
             </div>
 
             {/* Reminder Section */}
-            <div className="bg-accent/10 p-4 rounded-lg">
-              <h4 className="font-semibold text-accent-foreground mb-2 flex items-center gap-2 text-primary-pink">
+            <div className="bg-light-pink-1 p-4 rounded-lg">
+              <h4 className="font-semibold mb-2 flex items-center gap-2 text-primary-pink">
                 <Lightbulb className="text-xl " />
                 Remember
               </h4>

@@ -28,7 +28,7 @@ const Colposcopycard6 = ({ setShowCard, setActiveButton }) => {
           <div className="grid md:grid-cols-2 gap-4">
             {/* What's Normal Section */}
             <div>
-              <h4 className="font-semibold mb-3 text-primary text-primary-pink">What's Normal</h4>
+              <h4 className="font-semibold mb-3 text-primary-pink">What's Normal</h4>
               <div className="space-y-2">
                 {["Mild spotting for a few days", "Light cramping", "Slight discharge"].map(
                   (item, index) => (
@@ -57,7 +57,7 @@ const Colposcopycard6 = ({ setShowCard, setActiveButton }) => {
 
             {/* Care Instructions Section */}
             <div>
-              <h4 className="font-semibold mb-3 text-accent text-primary-pink">
+              <h4 className="font-semibold mb-3 text-primary-pink">
                 Care Instructions
               </h4>
               <div className="space-y-2">
@@ -68,7 +68,7 @@ const Colposcopycard6 = ({ setShowCard, setActiveButton }) => {
                   "Avoid vaginal sex for 5-7 days (if biopsy taken)",
                 ].map((instruction, index) => (
                   <div key={index} className="flex items-start gap-2 text-sm">
-                    <div className="w-4 h-4 bg-accent/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <div className="w-4 h-4 bg-light-pink-2 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                       <span className="text-xs font-bold text-primary-pink">!</span>
                     </div>
                     <span>{instruction}</span>
@@ -79,8 +79,8 @@ const Colposcopycard6 = ({ setShowCard, setActiveButton }) => {
           </div>
 
           {/* When to Contact Your Doctor Section */}
-          <div className="bg-destructive/10 border border-primary-pink p-4 rounded-lg">
-            <h4 className="font-semibold text-destructive mb-3 flex items-center gap-2 text-primary-pink">
+          <div className="bg-light-pink-1 border border-primary-pink p-4 rounded-lg">
+            <h4 className="font-semibold mb-3 flex items-center gap-2 text-primary-pink">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -110,7 +110,7 @@ const Colposcopycard6 = ({ setShowCard, setActiveButton }) => {
                 <li key={index}>• {item}</li>
               ))}
             </ul>
-            <p className="text-xs mt-2 text-muted-foreground">
+            <p className="text-xs mt-2 text-black">
               These may be signs of infection or complications (which are rare).
             </p>
           </div>

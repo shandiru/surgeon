@@ -30,7 +30,7 @@ const Colposcopycard3 = ({ setShowCard, setActiveButton }) => {
             </svg>
             How a Colposcopy Is Done
           </div>
-          <div className="text-muted-foreground text-sm">
+          <div className="text-black text-sm">
             Step-by-step walkthrough of the procedure
           </div>
         </div>
@@ -63,10 +63,10 @@ const Colposcopycard3 = ({ setShowCard, setActiveButton }) => {
             ].map((item, index) => (
               <div
                 key={index}
-                className="flex gap-4 p-4 bg-card rounded-lg border hover:z-50 transition-all duration-300 hover:bg-light-pink-1 hover:shadow-lg border-primary-pink active:bg-light-pink-1 active:shadow-lg active:border-primary-pink hover:scale-105 active:scale-100"
+                className="flex gap-4 p-4 bg-white rounded-lg border hover:z-50 transition-all duration-300 hover:bg-light-pink-1 hover:shadow-lg border-primary-pink active:bg-light-pink-1 active:shadow-lg active:border-primary-pink hover:scale-105 active:scale-100"
               >
                 <div className="flex-shrink-0">
-                  <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold text-primary-pink">
+                  <div className="w-10 h-10 bg-light-pink-2 rounded-full flex items-center justify-center font-bold text-primary-pink">
                     {index + 1}
                   </div>
                 </div>
@@ -75,15 +75,15 @@ const Colposcopycard3 = ({ setShowCard, setActiveButton }) => {
                     <span>{item.icon}</span>
                     {item.step}
                   </h4>
-                  <p className="text-muted-foreground text-sm">{item.description}</p>
+                  <p className="text-black text-sm">{item.description}</p>
                 </div>
               </div>
             ))}
           </div>
 
           {/* Additional Information */}
-          <div className="bg-accent/10 p-4 rounded-lg border border-primary-pink">
-            <h4 className="font-semibold text-accent-foreground mb-2 flex items-center gap-2 text-primary-pink">
+          <div className="bg-light-pink-1 p-4 rounded-lg border border-primary-pink">
+            <h4 className="font-semibold mb-2 flex items-center gap-2 text-primary-pink">
               <Sparkles className="w-5 h-5 text-primary-pink" />
               Good to Know
             </h4>
