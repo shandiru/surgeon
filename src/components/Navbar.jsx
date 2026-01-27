@@ -27,22 +27,25 @@ const treatmentGuides = [
   { label: "Colposcopy", to: "/colposcopy" },
   { label: "Ultrasound", to: "/ultrasound" },
   { label: "Hysteroscopy", to: "/Hysteroscopy" },
-  { label: "VulvarGuidePage", to: "/VulvarGuidePage" },
-  { label: "VaginalGuidePage", to: "/VaginalGuidePage" },
-  { label: "OvarianCancerGuidePage", to: "/OvarianCancerGuide" },
-  { label: "EndometrialGuidePage", to: "/EndometrialCancerGuide" },
-  { label: "CervicalCancerGuide", to: "/CervicalCancerGuide" },
-  { label: "RoboticSurgeryGuide", to: "/RoboticSurgeryGuide" },
-  { label: "EndometriosisGuide", to: "/EndometriosisGuide" },
-  { label: "CervicalScreeningGuide", to: "/CervicalScreeningGuide" },
-  { label: "FibroidGuide", to: "/FibroidGuide" },
-  { label: "IrregularBleedingGuide", to: "/IrregularBleedingGuide" },
-  { label: "OvarianCystsGuide", to: "/OvarianCystsGuide" },
-  { label: "PostmenopausalBleedingGuide", to: "/PostmenopausalBleedingGuide" },
-  { label: "MenstrualDisordersGuide", to: "/MenstrualDisordersGuide" },
-  { label: "PostcoitalBleedingGuide", to: "/PostcoitalBleedingGuide" },
-  { label: "VaginalLumpsGuide", to: "/VaginalLumpsGuide" },
-  { label: "PelvicPainGuide", to: "/PelvicPainGuide" },
+  { label: "Vulvar Guide Page", to: "/VulvarGuidePage" },
+  { label: "Vaginal Guide Page", to: "/VaginalGuidePage" },
+  { label: "Ovarian Cancer Guide Page", to: "/OvarianCancerGuide" },
+  { label: "Endometrial Guide Page", to: "/EndometrialCancerGuide" },
+  { label: "Cervical Cancer Guide", to: "/CervicalCancerGuide" },
+  { label: "Robotic Surgery Guide", to: "/RoboticSurgeryGuide" },
+  { label: "Endometriosis Guide", to: "/EndometriosisGuide" },
+  { label: "Cervical Screening Guide", to: "/CervicalScreeningGuide" },
+  { label: "Fibroid Guide", to: "/FibroidGuide" },
+  { label: "Irregular Bleeding Guide", to: "/IrregularBleedingGuide" },
+  { label: "Ovarian Cysts Guide", to: "/OvarianCystsGuide" },
+  {
+    label: "Postmenopausal Bleeding Guide",
+    to: "/PostmenopausalBleedingGuide",
+  },
+  { label: "Menstrual Disorders Guide", to: "/MenstrualDisordersGuide" },
+  { label: "Postcoital Bleeding Guide", to: "/PostcoitalBleedingGuide" },
+  { label: "Vaginal Lumps Guide", to: "/VaginalLumpsGuide" },
+  { label: "Pelvic Pain Guide", to: "/PelvicPainGuide" },
 ];
 
 const Navbar = () => {
@@ -140,7 +143,10 @@ const Navbar = () => {
             {/* Services Dropdown */}
             <div className="relative">
               <button
-                onClick={() => setIsServicesOpen(!isServicesOpen)}
+                onClick={() => {
+                  setIsServicesOpen(true);
+                  setIsAdditionalServicesOpen(false);
+                }}
                 className="flex items-center text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
               >
                 Treatments{" "}
@@ -170,9 +176,10 @@ const Navbar = () => {
             {/* Additional Services Dropdown */}
             <div className="relative">
               <button
-                onClick={() =>
-                  setIsAdditionalServicesOpen(!isAdditionalServicesOpen)
-                }
+                onClick={() => {
+                  setIsAdditionalServicesOpen(true);
+                  setIsServicesOpen(false);
+                }}
                 className="flex items-center text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
               >
                 Treatment guide{" "}
@@ -322,7 +329,10 @@ const Navbar = () => {
 
               {/* Treatments Accordion */}
               <button
-                onClick={() => setIsServicesOpen(!isServicesOpen)}
+                onClick={() => {
+                  setIsServicesOpen(true);
+                  setIsAdditionalServicesOpen(false);
+                }}
                 className="w-full flex items-center justify-between px-3 py-2 text-body-small text-gray-600 hover:text-gray-900"
               >
                 <span>Treatments</span>
@@ -346,9 +356,10 @@ const Navbar = () => {
 
               {/* Treatment Guide Accordion */}
               <button
-                onClick={() =>
-                  setIsAdditionalServicesOpen(!isAdditionalServicesOpen)
-                }
+                onClick={() => {
+                  setIsAdditionalServicesOpen(true);
+                  setIsServicesOpen(false);
+                }}
                 className="w-full flex items-center justify-between px-3 py-2 text-body-small text-gray-600 hover:text-gray-900"
               >
                 <span>Treatment guide</span>
