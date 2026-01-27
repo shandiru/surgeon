@@ -12,9 +12,7 @@ const parseBold = (text) => {
 
 const TextBlock = ({ value }) => {
   return (
-    <p className="text-lg leading-relaxed text-[#7a2f4f] [text-wrap:pretty]">
-      {parseBold(value)}
-    </p>
+    <p className="text-lg leading-relaxed text-black [text-wrap:pretty]">{parseBold(value)}</p>
   );
 };
 

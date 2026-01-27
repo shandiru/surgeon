@@ -24,7 +24,7 @@ const GuideCard = ({ section, totalSteps, setShowCard, setActiveButton }) => {
       return (
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left space-y-6 px-2 sm:px-4 lg:px-8 text-black">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary-pink [text-wrap:balance] flex items-center gap-3">
+            <h2 className="text-3xl flex md:text-4xl font-bold text-primary-pink items-start justify-end gap-3">
               {CardTitleIcon && <CardTitleIcon className="w-8 h-8 shrink-0" />}
               {section.cardTitle}
             </h2>

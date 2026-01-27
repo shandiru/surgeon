@@ -6,7 +6,7 @@ const TagsBlock = ({ tags }) => {
       {tags.map((tag, i) => (
         <span
           key={i}
-          className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-[#FF4B8B]/10 text-[#BB125B]"
+          className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-light-pink-2 text-primary-pink"
         >
           {tag}
         </span>

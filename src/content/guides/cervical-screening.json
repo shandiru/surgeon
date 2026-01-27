@@ -13,7 +13,7 @@
       "content": [
         {
           "type": "text",
-          "value": "Cervical screening — also called the **smear test** — checks the health of cells in your cervix. It is designed to **prevent cervical cancer** by identifying abnormal changes early, before they become dangerous.\n\nThe test is quick, simple, and one of the most effective ways to protect your cervical health."
+          "value": "Cervical screening — also called the **smear test** — checks the health of cells in your cervix. It is designed to **prevent cervical cancer** by identifying abnormal changes early, before they become dangerous.\n\n The test is quick, simple, and one of the most effective ways to protect your cervical health."
         },
         {
           "type": "statBox",
@@ -32,6 +32,7 @@
       "buttonLabel": "Smear Test Guidelines",
       "buttonIcon": "Activity",
       "cardTitle": "Who Needs a Smear Test?",
+      "cardTitleIcon": "Users",
       "layout": "two-column",
       "content": [
         {
@@ -43,7 +44,10 @@
           "items": [
             { "icon": "Users", "text": "Women aged 25–64" },
             { "icon": "Clock", "text": "Every 3–5 years" },
-            { "icon": "Stethoscope", "text": "Quick, simple, and painless — done right at our clinic" }
+            {
+              "icon": "Stethoscope",
+              "text": "Quick, simple, and painless — done right at our clinic"
+            }
           ]
         },
         {
@@ -58,6 +62,7 @@
       "buttonLabel": "Who Doesn't Need a Smear Test?",
       "buttonIcon": "AlertTriangle",
       "cardTitle": "Who Doesn't Usually Need a Smear Test?",
+      "cardTitleIcon": "Info",
       "layout": "single-column",
       "content": [
         {
@@ -92,8 +97,14 @@
         {
           "type": "iconList",
           "items": [
-            { "icon": "CheckCircle", "text": "Book your test mid-cycle (about a week after your period)" },
-            { "icon": "CheckCircle", "text": "Avoid spermicides, lubricants, pessaries or vaginal creams for a few days before" },
+            {
+              "icon": "CheckCircle",
+              "text": "Book your test mid-cycle (about a week after your period)"
+            },
+            {
+              "icon": "CheckCircle",
+              "text": "Avoid spermicides, lubricants, pessaries or vaginal creams for a few days before"
+            },
             { "icon": "CheckCircle", "text": "Don't have the test during your period" }
           ]
         },
@@ -153,10 +164,22 @@
         {
           "type": "accordion",
           "items": [
-            { "title": "Normal Result", "content": "Your results came back clear. You will be invited for your next screening in 3–5 years depending on your age." },
-            { "title": "Inadequate Sample", "content": "Sometimes the sample isn't clear enough to read. You'll be asked to come back for another test — this is very common and nothing to worry about." },
-            { "title": "HPV Positive + Normal Cells", "content": "HPV was found but your cells look normal. You'll be invited back in 12 months to check again." },
-            { "title": "HPV Positive + Abnormal Cells", "content": "You may be referred for a colposcopy — a closer look at your cervix. Early treatment is very effective." }
+            {
+              "title": "Normal Result",
+              "content": "Your results came back clear. You will be invited for your next screening in 3–5 years depending on your age."
+            },
+            {
+              "title": "Inadequate Sample",
+              "content": "Sometimes the sample isn't clear enough to read. You'll be asked to come back for another test — this is very common and nothing to worry about."
+            },
+            {
+              "title": "HPV Positive + Normal Cells",
+              "content": "HPV was found but your cells look normal. You'll be invited back in 12 months to check again."
+            },
+            {
+              "title": "HPV Positive + Abnormal Cells",
+              "content": "You may be referred for a colposcopy — a closer look at your cervix. Early treatment is very effective."
+            }
           ]
         }
       ]

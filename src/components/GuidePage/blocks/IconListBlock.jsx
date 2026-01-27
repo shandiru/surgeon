@@ -7,9 +7,9 @@ const IconListBlock = ({ items }) => {
       {items.map((item, i) => {
         const IconComponent = item.icon ? iconMap[item.icon] : null;
         return (
-          <li key={i} className="flex items-start gap-3 text-lg text-[#7a2f4f]">
+          <li key={i} className="flex items-start gap-3 text-lg text-black">
             {IconComponent && (
-              <span className="mt-1 text-[#FF4B8B]">
+              <span className="mt-1 text-primary-pink">
                 <IconComponent className="w-5 h-5" />
               </span>
             )}
