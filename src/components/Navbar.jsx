@@ -1,25 +1,86 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
+const treatments = [
+  { label: "Vulvar Cancer", to: "/Cancer/Vulvar" },
+  { label: "Vaginal Cancer", to: "/Cancer/VaginalCancer" },
+  { label: "Ovarian Cancer", to: "/Cancer/OvarianCancer" },
+  { label: "Endometrial Cancer", to: "/Cancer/EndometrialCancer" },
+  { label: "Cervical Cancer", to: "/Cancer/CervicalCancer" },
+  { label: "Robotic Surgery", to: "/RoboticSurgery" },
+  { label: "Robotic Surgery Experience", to: "/robotic-surgery-experience" },
+  { label: "Cervical Screening", to: "/CervicalScreening" },
+  { label: "Irregular Bleeding", to: "/IrregularBleedingInfo" },
+  { label: "Endometriosis", to: "/EndometriosisInformation" },
+  { label: "Fibroids", to: "/FibroidInformation" },
+  { label: "Menstrual Disorders", to: "/MenstrualDisordersInformation" },
+  { label: "Ovarian Cysts", to: "/OvarianCystsPage" },
+  { label: "Postcoital Bleeding", to: "/PostcoitalBleeding" },
+  { label: "Postmenopausal Bleeding", to: "/postmenopausal-bleeding" },
+  { label: "Pelvic Pain", to: "/pelvic-pain-information" },
+  { label: "Vulvar Vaginal Lumps", to: "/vulvar-vaginal-lumps" },
+];
+
+const treatmentGuides = [
+  { label: "Colposcopy", to: "/colposcopy" },
+  { label: "Ultrasound", to: "/ultrasound" },
+  { label: "Hysteroscopy", to: "/Hysteroscopy" },
+  { label: "Vulvar Guide Page", to: "/VulvarGuidePage" },
+  { label: "Vaginal Guide Page", to: "/VaginalGuidePage" },
+  { label: "Ovarian Cancer Guide Page", to: "/OvarianCancerGuide" },
+  { label: "Endometrial Guide Page", to: "/EndometrialCancerGuide" },
+  { label: "Cervical Cancer Guide", to: "/CervicalCancerGuide" },
+  { label: "Robotic Surgery Guide", to: "/RoboticSurgeryGuide" },
+  { label: "Endometriosis Guide", to: "/EndometriosisGuide" },
+  { label: "Cervical Screening Guide", to: "/CervicalScreeningGuide" },
+  { label: "Fibroid Guide", to: "/FibroidGuide" },
+  { label: "Irregular Bleeding Guide", to: "/IrregularBleedingGuide" },
+  { label: "Ovarian Cysts Guide", to: "/OvarianCystsGuide" },
+  {
+    label: "Postmenopausal Bleeding Guide",
+    to: "/PostmenopausalBleedingGuide",
+  },
+  { label: "Menstrual Disorders Guide", to: "/MenstrualDisordersGuide" },
+  { label: "Postcoital Bleeding Guide", to: "/PostcoitalBleedingGuide" },
+  { label: "Vaginal Lumps Guide", to: "/VaginalLumpsGuide" },
+  { label: "Pelvic Pain Guide", to: "/PelvicPainGuide" },
+];
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
-  const [isAdditionalServicesOpen, setIsAdditionalServicesOpen] = useState(false);
+  const [isAdditionalServicesOpen, setIsAdditionalServicesOpen] =
+    useState(false);
 
-  // Close the dropdown after clicking a link
-  const closeDropdowns = () => {
+  const navRef = useRef(null);
+
+  const closeAll = () => {
+    setIsOpen(false);
     setIsServicesOpen(false);
     setIsAdditionalServicesOpen(false);
   };
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        closeAll();
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
   return (
-    <nav className="bg-white shadow-sm sticky top-0 z-50">
+    <nav
+      className="bg-white shadow-sm fixed top-0 left-0 right-0 z-50 backdrop-blur-md"
+      ref={navRef}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Left: Logo / Name */}
-          <Link to="/" className="flex items-center">
+          <Link to="/" className="flex items-center" onClick={closeAll}>
             <img
               src="/logo.png"
               alt="Mr Ketankumar Gajjar Logo"
@@ -33,6 +94,7 @@ const Navbar = () => {
               smooth
               to="/#about"
               className="text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
+              onClick={closeAll}
             >
               About
             </HashLink>
@@ -40,6 +102,7 @@ const Navbar = () => {
               smooth
               to="/#experience"
               className="text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
+              onClick={closeAll}
             >
               Experience
             </HashLink>
@@ -47,6 +110,7 @@ const Navbar = () => {
               smooth
               to="/#specialties"
               className="text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
+              onClick={closeAll}
             >
               Specialties
             </HashLink>
@@ -54,6 +118,7 @@ const Navbar = () => {
               smooth
               to="/#education"
               className="text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
+              onClick={closeAll}
             >
               Education
             </HashLink>
@@ -61,6 +126,7 @@ const Navbar = () => {
               smooth
               to="/PublicationsPage"
               className="text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
+              onClick={closeAll}
             >
               Publications
             </HashLink>
@@ -69,6 +135,7 @@ const Navbar = () => {
               smooth
               to="/event-list"
               className="text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
+              onClick={closeAll}
             >
               Event
             </HashLink>
@@ -76,7 +143,10 @@ const Navbar = () => {
             {/* Services Dropdown */}
             <div className="relative">
               <button
-                onClick={() => setIsServicesOpen(!isServicesOpen)}
+                onClick={() => {
+                  setIsServicesOpen(true);
+                  setIsAdditionalServicesOpen(false);
+                }}
                 className="flex items-center text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
               >
                 Treatments{" "}
@@ -86,127 +156,19 @@ const Navbar = () => {
                   <FiChevronDown className="ml-1" />
                 )}
               </button>
+
               {isServicesOpen && (
                 <div className="absolute left-0 bg-white shadow-lg rounded-md mt-2 w-64 z-50">
-                  <Link
-                    to="/Cancer/Vulvar"
-                    className="block px-3 py-2 text-body-small text-gray-600 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    Vulvar Cancer
-                  </Link>
-                  <Link
-                    to="/Cancer/VaginalCancer"
-                    className="block px-3 py-2 text-body-small text-gray-600 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    Vaginal Cancer
-                  </Link>
-                  <Link
-                    to="/Cancer/OvarianCancer"
-                    className="block px-3 py-2 text-body-small text-gray-600 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    Ovarian Cancer
-                  </Link>
-                  <Link
-                    to="/Cancer/EndometrialCancer"
-                    className="block px-3 py-2 text-body-small text-gray-600 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    Endometrial Cancer
-                  </Link>
-                  <Link
-                    to="/Cancer/CervicalCancer"
-                    className="block px-3 py-2 text-body-small text-gray-600 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    Cervical Cancer
-                  </Link>
-                  <Link
-                    to="/RoboticSurgery"
-                    className="block px-3 py-2 text-body-small text-gray-600 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    Robotic Surgery
-                  </Link>
-                  <Link
-                    to="/robotic-surgery-experience"
-                    className="block px-3 py-2 text-body-small text-gray-600 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    Robotic Surgery Experience
-                  </Link>
-                  <Link
-                    to="/CervicalScreening"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    Cervical Screening
-                  </Link>
-                  <Link
-                    to="/IrregularBleedingInfo"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    Irregular Bleeding
-                  </Link>
-                  <Link
-                    to="/EndometriosisInformation"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    Endometriosis
-                  </Link>
-                  <Link
-                    to="/FibroidInformation"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    Fibroids
-                  </Link>
-                  <Link
-                    to="/MenstrualDisordersInformation"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    Menstrual Disorders
-                  </Link>
-                  <Link
-                    to="/OvarianCystsPage"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    Ovarian Cysts
-                  </Link>
-                  <Link
-                    to="/PostcoitalBleeding"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    Postcoital Bleeding
-                  </Link>
-                  <Link
-                    to="/postmenopausal-bleeding"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    Postmenopausal Bleeding
-                  </Link>
-                  <Link
-                    to="/pelvic-pain-information"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    Pelvic Pain
-                  </Link>
-                  <Link
-                    to="/vulvar-vaginal-lumps"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    Vulvar Vaginal Lumps
-                  </Link>
+                  {treatments.map((item) => (
+                    <Link
+                      key={item.to}
+                      to={item.to}
+                      className="block px-3 py-2 text-body-small text-gray-600 hover:bg-[#FFC5D3]"
+                      onClick={closeAll}
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
                 </div>
               )}
             </div>
@@ -214,7 +176,10 @@ const Navbar = () => {
             {/* Additional Services Dropdown */}
             <div className="relative">
               <button
-                onClick={() => setIsAdditionalServicesOpen(!isAdditionalServicesOpen)}
+                onClick={() => {
+                  setIsAdditionalServicesOpen(true);
+                  setIsServicesOpen(false);
+                }}
                 className="flex items-center text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
               >
                 Treatment guide{" "}
@@ -224,155 +189,19 @@ const Navbar = () => {
                   <FiChevronDown className="ml-1" />
                 )}
               </button>
+
               {isAdditionalServicesOpen && (
                 <div className="absolute left-0 bg-white shadow-lg rounded-md mt-2 w-64 z-50">
-                  <Link
-                    to="/colposcopy"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    Colposcopy
-                  </Link>
-                  <Link
-                    to="/ultrasound"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    Ultrasound
-                  </Link>
-                  <Link
-                    to="/Hysteroscopy"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    Hysteroscopy
-                  </Link>
-                  <Link
-                    to="/VulvarGuidePage"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    VulvarGuidePage
-                  </Link>
-                  <Link
-                    to="/VaginalGuidePage"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    VaginalGuidePage
-                  </Link>
-                  <Link
-                    to="/OvarianCancerGuide"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    OvarianCancerGuidePage
-                  </Link>
-                  <Link
-                    to="/EndometrialCancerGuide"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    EndometrialGuidePage
-                  </Link>
-                  <Link
-                    to="/CervicalCancerGuide"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    CervicalCancerGuide
-                  </Link>
-                  <Link
-                    to="/RoboticSurgeryGuide"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    RoboticSurgeryGuide
-                  </Link>
-                  <Link
-                    to="/EndometriosisGuide"
-                    className="block px-3 py-2 text-body-small text-gray-600 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    EndometriosisGuide
-                  </Link>
-                  <Link
-                    to="/CervicalScreeningGuide"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    CervicalScreeningGuide
-                  </Link>
-                  <Link
-                    to="/FibroidGuide"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    FibroidGuide
-                  </Link>
-                  <Link
-                    to="/CervicalScreeningGuide"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    CervicalScreeningGuide
-                  </Link>
-                  <Link
-                    to="/CervicalScreeningGuide"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    CervicalScreeningGuide
-                  </Link>
-                  <Link
-                    to="/IrregularBleedingGuide"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    IrregularBleedingGuide
-                  </Link>
-                  <Link
-                    to="/OvarianCystsGuide"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    OvarianCystsGuide
-                  </Link>
-                  <Link
-                    to="/PostmenopausalBleedingGuide"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    PostmenopausalBleedingGuide
-                  </Link>
-                  <Link
-                    to="/MenstrualDisordersGuide"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    MenstrualDisordersGuide
-                  </Link>
-                  <Link
-                    to="/PostcoitalBleedingGuide"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    PostcoitalBleedingGuide
-                  </Link>
-                  <Link
-                    to="/VaginalLumpsGuide"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    VaginalLumpsGuide
-                  </Link>
-                  <Link
-                    to="/PelvicPainGuide"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    PelvicPainGuide
-                  </Link>
+                  {treatmentGuides.map((item) => (
+                    <Link
+                      key={item.to}
+                      to={item.to}
+                      className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
+                      onClick={closeAll}
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
                 </div>
               )}
             </div>
@@ -381,6 +210,7 @@ const Navbar = () => {
               smooth
               to="/#contact"
               className="text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
+              onClick={closeAll}
             >
               Contact
             </HashLink>
@@ -392,6 +222,7 @@ const Navbar = () => {
               smooth
               to="/#contact"
               className="w-full mt-2 inline-flex items-center justify-center rounded-md text-sm font-medium transition-all shadow-xs h-9 px-4 py-2 bg-[#FFC5D3] hover:bg-[#FFC5D3] text-[#FF4B8B] mb-3"
+              onClick={closeAll}
             >
               Book Consultation
             </HashLink>
@@ -405,7 +236,12 @@ const Navbar = () => {
               aria-label="Toggle Menu"
             >
               {isOpen ? (
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -414,7 +250,12 @@ const Navbar = () => {
                   />
                 </svg>
               ) : (
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -429,355 +270,136 @@ const Navbar = () => {
 
         {/* Mobile Dropdown */}
         {isOpen && (
-          <div className="lg:hidden mt-2 space-y-1">
-            <HashLink
-              smooth
-              to="/#about"
-              className="block px-3 py-2 text-body-small text-gray-600 hover:text-gray-900"
-            >
-              About
-            </HashLink>
-            <HashLink
-              smooth
-              to="/#experience"
-              className="block px-3 py-2 text-body-small text-gray-600 hover:text-gray-900"
-            >
-              Experience
-            </HashLink>
-            <HashLink
-              smooth
-              to="/#specialties"
-              className="block px-3 py-2 text-body-small text-gray-600 hover:text-gray-900"
-            >
-              Specialties
-            </HashLink>
-            <HashLink
-              smooth
-              to="/#education"
-              className="block px-3 py-2 text-body-small text-gray-600 hover:text-gray-900"
-            >
-              Education
-            </HashLink>
-            <HashLink
-              smooth
-              to="/PublicationsPage"
-              className="text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
-            >
-              Publications
-            </HashLink>
-            <HashLink
-              smooth
-              to="/event-list"
-              className="text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
-            >
-              Event
-            </HashLink>
-
-            {/* Mobile Services */}
-            <div className="relative">
-              <button
-                onClick={() => setIsServicesOpen(!isServicesOpen)}
-                className="flex items-center text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
+          <div className="lg:hidden mt-2 border-t border-gray-200">
+            <div className="space-y-1 px-2 py-2">
+              {/* Main Links */}
+              <HashLink
+                smooth
+                to="/#about"
+                className="block px-3 py-2 text-body-small text-gray-600 hover:text-gray-900"
+                onClick={closeAll}
               >
-                Treatments{" "}
-                {isServicesOpen ? (
-                  <FiChevronUp className="ml-1" />
-                ) : (
-                  <FiChevronDown className="ml-1" />
-                )}
+                About
+              </HashLink>
+
+              <HashLink
+                smooth
+                to="/#experience"
+                className="block px-3 py-2 text-body-small text-gray-600 hover:text-gray-900"
+                onClick={closeAll}
+              >
+                Experience
+              </HashLink>
+
+              <HashLink
+                smooth
+                to="/#specialties"
+                className="block px-3 py-2 text-body-small text-gray-600 hover:text-gray-900"
+                onClick={closeAll}
+              >
+                Specialties
+              </HashLink>
+
+              <HashLink
+                smooth
+                to="/#education"
+                className="block px-3 py-2 text-body-small text-gray-600 hover:text-gray-900"
+                onClick={closeAll}
+              >
+                Education
+              </HashLink>
+
+              <HashLink
+                smooth
+                to="/PublicationsPage"
+                className="block px-3 py-2 text-body-small text-gray-600 hover:text-gray-900"
+                onClick={closeAll}
+              >
+                Publications
+              </HashLink>
+
+              <HashLink
+                smooth
+                to="/event-list"
+                className="block px-3 py-2 text-body-small text-gray-600 hover:text-gray-900"
+                onClick={closeAll}
+              >
+                Event
+              </HashLink>
+
+              {/* Treatments Accordion */}
+              <button
+                onClick={() => {
+                  setIsServicesOpen(true);
+                  setIsAdditionalServicesOpen(false);
+                }}
+                className="w-full flex items-center justify-between px-3 py-2 text-body-small text-gray-600 hover:text-gray-900"
+              >
+                <span>Treatments</span>
+                {isServicesOpen ? <FiChevronUp /> : <FiChevronDown />}
               </button>
+
               {isServicesOpen && (
                 <div className="ml-4 mt-1 space-y-1">
-                  <Link
-                    to="/Cancer/Vulvar"
-                    className="block px-3 py-2 text-body-small text-gray-600 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    Vulvar Cancer
-                  </Link>
-                  <Link
-                    to="/Cancer/VaginalCancer"
-                    className="block px-3 py-2 text-body-small text-gray-600 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    Vaginal Cancer
-                  </Link>
-                  <Link
-                    to="/Cancer/OvarianCancer"
-                    className="block px-3 py-2 text-body-small text-gray-600 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    Ovarian Cancer
-                  </Link>
-                  <Link
-                    to="/Cancer/EndometrialCancer"
-                    className="block px-3 py-2 text-body-small text-gray-600 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    Endometrial Cancer
-                  </Link>
-                  <Link
-                    to="/Cancer/CervicalCancer"
-                    className="block px-3 py-2 text-body-small text-gray-600 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    Cervical Cancer
-                  </Link>
-                  <Link
-                    to="/RoboticSurgery"
-                    className="block px-3 py-2 text-body-small text-gray-600 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    Robotic Surgery
-                  </Link>
-                  <Link
-                    to="/robotic-surgery-experience"
-                    className="block px-3 py-2 text-body-small text-gray-600 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    Robotic Surgery Experience
-                  </Link>
-                  <Link
-                    to="/CervicalScreening"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    Cervical Screening
-                  </Link>
-                  <Link
-                    to="/IrregularBleedingInfo"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    Irregular Bleeding
-                  </Link>
-                  <Link
-                    to="/EndometriosisInformation"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    Endometriosis
-                  </Link>
-                  <Link
-                    to="/FibroidInformation"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    Fibroids
-                  </Link>
-                  <Link
-                    to="/MenstrualDisordersInformation"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    Menstrual Disorders
-                  </Link>
-                  <Link
-                    to="/OvarianCystsPage"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    Ovarian Cysts
-                  </Link>
-                  <Link
-                    to="/PostcoitalBleeding"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    Postcoital Bleeding
-                  </Link>
-                  <Link
-                    to="/postmenopausal-bleeding"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    Postmenopausal Bleeding
-                  </Link>
-                  <Link
-                    to="/pelvic-pain-information"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    Pelvic Pain
-                  </Link>
-                  <Link
-                    to="/vulvar-vaginal-lumps"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    Vulvar Vaginal Lumps
-                  </Link>
+                  {treatments.map((item) => (
+                    <Link
+                      key={item.to}
+                      to={item.to}
+                      className="block px-3 py-2 text-body-small text-gray-600 hover:bg-[#FFC5D3] rounded-md"
+                      onClick={closeAll}
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
                 </div>
               )}
-            </div>
 
-            {/* Mobile Additional Services */}
-            <div className="relative">
+              {/* Treatment Guide Accordion */}
               <button
-                onClick={() => setIsAdditionalServicesOpen(!isAdditionalServicesOpen)}
-                className="flex items-center text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
+                onClick={() => {
+                  setIsAdditionalServicesOpen(true);
+                  setIsServicesOpen(false);
+                }}
+                className="w-full flex items-center justify-between px-3 py-2 text-body-small text-gray-600 hover:text-gray-900"
               >
-                Treatment guide{" "}
-                {isAdditionalServicesOpen ? (
-                  <FiChevronUp className="ml-1" />
-                ) : (
-                  <FiChevronDown className="ml-1" />
-                )}
+                <span>Treatment guide</span>
+                {isAdditionalServicesOpen ? <FiChevronUp /> : <FiChevronDown />}
               </button>
+
               {isAdditionalServicesOpen && (
                 <div className="ml-4 mt-1 space-y-1">
-                  <Link
-                    to="/colposcopy"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    Colposcopy
-                  </Link>
-                  <Link
-                    to="/ultrasound"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    Ultrasound
-                  </Link>
-                  <Link
-                    to="/Hysteroscopy"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    Hysteroscopy
-                  </Link>
-                  <Link
-                    to="/VulvarGuidePage"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    VulvarGuidePage
-                  </Link>
-                  <Link
-                    to="/VaginalGuidePage"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    VaginalGuidePage
-                  </Link>
-                  <Link
-                    to="/OvarianCancerGuide"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    OvarianCancerGuidePage
-                  </Link>
-                  <Link
-                    to="/EndometrialCancerGuide"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    EndometrialGuidePage
-                  </Link>
-                  <Link
-                    to="/CervicalCancerGuide"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    CervicalCancerGuide
-                  </Link>
-                  <Link
-                    to="/RoboticSurgeryGuide"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    RoboticSurgeryGuide
-                  </Link>
-                  <Link
-                    to="/EndometriosisGuide"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    EndometriosisGuide
-                  </Link>
-                  <Link
-                    to="/FibroidGuide"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    FibroidGuide
-                  </Link>
-                  <Link
-                    to="/CervicalScreeningGuide"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    CervicalScreeningGuide
-                  </Link>
-                  <Link
-                    to="/IrregularBleedingGuide"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    IrregularBleedingGuide
-                  </Link>
-                  <Link
-                    to="/OvarianCystsGuide"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    OvarianCystsGuide
-                  </Link>
-                  <Link
-                    to="/PostmenopausalBleedingGuide"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    PostmenopausalBleedingGuide
-                  </Link>
-                  <Link
-                    to="/MenstrualDisordersGuide"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    MenstrualDisordersGuide
-                  </Link>
-                  <Link
-                    to="/PostcoitalBleedingGuide"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    PostcoitalBleedingGuide
-                  </Link>
-                  <Link
-                    to="/VaginalLumpsGuide"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    VaginalLumpsGuide
-                  </Link>
-                  <Link
-                    to="/PelvicPainGuide"
-                    className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
-                    onClick={closeDropdowns}
-                  >
-                    PelvicPainGuide
-                  </Link>
+                  {treatmentGuides.map((item) => (
+                    <Link
+                      key={item.to}
+                      to={item.to}
+                      className="block px-3 py-2 text-body-small text-gray-600 hover:bg-[#FFC5D3] rounded-md"
+                      onClick={closeAll}
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
                 </div>
               )}
+
+              {/* Contact + CTA */}
+              <HashLink
+                smooth
+                to="/#contact"
+                className="block px-3 py-2 text-body-small text-gray-600 hover:text-gray-900"
+                onClick={closeAll}
+              >
+                Contact
+              </HashLink>
+
+              <HashLink
+                smooth
+                to="/#contact"
+                className="w-full mt-2 inline-flex items-center justify-center rounded-md text-button transition-all shadow-xs h-9 px-4 py-2 bg-[#FFC5D3] hover:bg-[#FFC5D3] text-[#FF4B8B] mb-3"
+                onClick={closeAll}
+              >
+                Book Consultation
+              </HashLink>
             </div>
-
-            <HashLink
-              smooth
-              to="/#contact"
-              className="text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
-            >
-              Contact
-            </HashLink>
-
-            <HashLink
-              smooth
-              to="/#contact"
-              className="w-full mt-2 inline-flex items-center justify-center rounded-md text-button transition-all shadow-xs h-9 px-4 py-2 bg-[#FFC5D3] hover:bg-[#FFC5D3] text-[#FF4B8B] mb-3"
-            >
-              Book Consultation
-            </HashLink>
           </div>
         )}
       </div>
