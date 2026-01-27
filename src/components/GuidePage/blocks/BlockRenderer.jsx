@@ -15,7 +15,14 @@ import CtaBlock from "./CtaBlock";
 const BlockRenderer = ({ block }) => {
   switch (block.type) {
     case "heading":
-      return <HeadingBlock text={block.text} level={block.level} icon={block.icon} subtitle={block.subtitle} />;
+      return (
+        <HeadingBlock
+          text={block.text}
+          level={block.level}
+          icon={block.icon}
+          subtitle={block.subtitle}
+        />
+      );
     case "text":
       return <TextBlock value={block.value} />;
     case "image":

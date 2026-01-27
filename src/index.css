@@ -6,9 +6,14 @@
 
 /* Configure Poppins as the default font family using Tailwind v4 @theme */
 @theme {
+  --color-primary-pink: #ff4b8b;
+  --color-light-pink-1: #fde7eb;
+  --color-light-pink-2: #ffd6e1;
+  --color-black: #000000;
+  --color-white: #fff;
   --font-family-sans:
-    "Poppins", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    "Poppins", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 html,

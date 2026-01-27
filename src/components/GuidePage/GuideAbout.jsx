@@ -7,7 +7,7 @@ const GuideAbout = ({ title, subtitle, tag, activeButton, totalSteps }) => {
   return (
     <div className="text-center mb-8 px-4 sm:px-6 md:px-8 lg:px-16">
       {/* Tag */}
-      <div className="inline-flex bg-[#FF4B8B]/10 text-[#BB125B] items-center gap-2 px-4 py-2 rounded-full mb-4">
+      <div className="inline-flex bg-light-pink-2 text-primary-pink items-center gap-2 px-4 py-2 rounded-full mb-4">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -26,18 +26,16 @@ const GuideAbout = ({ title, subtitle, tag, activeButton, totalSteps }) => {
       </div>
 
       {/* Title */}
-      <h1 className="text-hero text-balance mb-4 text-[#FF4B8B]">{title}</h1>
-      <p className="text-body-large text-muted-foreground text-balance text-[#BB125B]">
+      <h1 className="text-hero text-balance mb-4 text-primary-pink">{title}</h1>
+      <p className="text-body-large text-muted-foreground text-balance text-black mb-6">
         {subtitle}
       </p>
 
       {/* Progress Bar */}
-      <div className="mt-6 max-w-md mx-auto">
+      <div className="my-6 max-w-md mx-auto">
         <div className="flex justify-between items-center mb-2">
-          <span className="text-body-small text-muted-foreground text-[#BB125B]">
-            Your Progress
-          </span>
-          <span className="text-body-small font-medium text-[#BB125B]">
+          <span className="text-body-small text-muted-foreground text-black">Your Progress</span>
+          <span className="text-body-small font-medium text-black">
             {completed}/{totalSteps} sections
           </span>
         </div>
@@ -46,10 +44,10 @@ const GuideAbout = ({ title, subtitle, tag, activeButton, totalSteps }) => {
           aria-valuemin="0"
           aria-valuemax="100"
           aria-valuenow={progressPercentage}
-          className="bg-[#FF4B8B]/10 relative w-full overflow-hidden rounded-full h-2"
+          className="bg-light-pink-2 relative w-full overflow-hidden rounded-full h-2"
         >
           <div
-            className="bg-[#FF4B8B]/80 h-full transition-all duration-300"
+            className="bg-primary-pink h-full transition-all duration-300"
             style={{ width: `${progressPercentage}%` }}
           ></div>
         </div>
