@@ -43,6 +43,7 @@ import PostcoitalBleedingGuide from "./Page/PostcoitalBleedingGuide";
 import EventListPage from "./Page/EventListPage";
 import EventPage from "./Page/EventPages/EventPage1";
 import EventPage2 from "./Page/EventPages/EventPage2";
+import GuidePage from "./components/GuidePage/GuidePage";
 
 function App() {
   return (
@@ -52,88 +53,37 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Cancer/Vulvar" element={<VulvarCancerPage />} />
-          <Route
-            path="/Cancer/VaginalCancer"
-            element={<VaginalCancerInformationPage />}
-          />
+          <Route path="/Cancer/VaginalCancer" element={<VaginalCancerInformationPage />} />
           <Route path="/VaginalGuidePage" element={<VaginalGuidePage />} />
           <Route path="/VulvarGuidePage" element={<VulvarGuidePage />} />
-          <Route
-            path="/Cancer/OvarianCancer"
-            element={<OvarianCancerInformationPage />}
-          />
+          <Route path="/Cancer/OvarianCancer" element={<OvarianCancerInformationPage />} />
           <Route path="/OvarianCancerGuide" element={<OvarianCancerGuide />} />
-          <Route
-            path="/Cancer/EndometrialCancer"
-            element={<EndometrialCancerInformationPage />}
-          />
-          <Route
-            path="/EndometrialCancerGuide"
-            element={<EndometrialGuidePage />}
-          />
-          <Route
-            path="/Cancer/CervicalCancer"
-            element={<CervicalCancerOverviewPage />}
-          />
-          <Route
-            path="/CervicalCancerGuide"
-            element={<CervicalCancerGuide />}
-          />
+          <Route path="/Cancer/EndometrialCancer" element={<EndometrialCancerInformationPage />} />
+          <Route path="/EndometrialCancerGuide" element={<EndometrialGuidePage />} />
+          <Route path="/Cancer/CervicalCancer" element={<CervicalCancerOverviewPage />} />
+          <Route path="/CervicalCancerGuide" element={<CervicalCancerGuide />} />
           <Route path="/RoboticSurgery" element={<RoboticSurgeryPage />} />
-          <Route
-            path="/robotic-surgery-experience"
-            element={<RoboticSurgeryExperiencePage />}
-          />
+          <Route path="/robotic-surgery-experience" element={<RoboticSurgeryExperiencePage />} />
           <Route path="/RoboticSurgeryGuide" element={<RoboticGuide />} />
-          <Route
-            path="/CervicalScreening"
-            element={<CervicalScreeningPage />}
-          />
-          <Route
-            path="/CervicalScreeningGuide"
-            element={<CervicalScreeningGuide />}
-          />
-          <Route
-            path="/IrregularBleedingInfo"
-            element={<IrregularBleedingInfoPage />}
-          />
-          <Route
-            path="/IrregularBleedingGuide"
-            element={<IrregularBleedingGuide />}
-          />
-          <Route
-            path="/EndometriosisInformation"
-            element={<EndometriosisInformation />}
-          />
+          <Route path="/CervicalScreening" element={<CervicalScreeningPage />} />
+          <Route path="/CervicalScreeningGuide" element={<CervicalScreeningGuide />} />
+          <Route path="/IrregularBleedingInfo" element={<IrregularBleedingInfoPage />} />
+          <Route path="/IrregularBleedingGuide" element={<IrregularBleedingGuide />} />
+          <Route path="/EndometriosisInformation" element={<EndometriosisInformation />} />
           <Route path="/EndometriosisGuide" element={<EndometriosisGuide />} />
-          <Route
-            path="/FibroidInformation"
-            element={<FibroidInformationPage />}
-          />
+          <Route path="/FibroidInformation" element={<FibroidInformationPage />} />
           <Route path="/FibroidGuide" element={<FibroidGuide />} />
           <Route
             path="/MenstrualDisordersInformation"
             element={<MenstrualDisordersInformationPage />}
           />
-          <Route
-            path="/MenstrualDisordersGuide"
-            element={<MenstrualDisordersGuide />}
-          />
+          <Route path="/MenstrualDisordersGuide" element={<MenstrualDisordersGuide />} />
           <Route path="/OvarianCystsPage" element={<OvarianCystsPage />} />
           <Route path="/OvarianCystsGuide" element={<OvarianCystsGuide />} />
           <Route path="/PostcoitalBleeding" element={<PostcoitalBleeding />} />
-          <Route
-            path="/PostcoitalBleedingGuide"
-            element={<PostcoitalBleedingGuide />}
-          />
-          <Route
-            path="/postmenopausal-bleeding"
-            element={<PostmenopausalBleedingPage />}
-          />
-          <Route
-            path="/PostmenopausalBleedingGuide"
-            element={<PostmenopausalBleedingGuide />}
-          />
+          <Route path="/PostcoitalBleedingGuide" element={<PostcoitalBleedingGuide />} />
+          <Route path="/postmenopausal-bleeding" element={<PostmenopausalBleedingPage />} />
+          <Route path="/PostmenopausalBleedingGuide" element={<PostmenopausalBleedingGuide />} />
           <Route path="/colposcopy" element={<Colposcopy />} />
           <Route path="/ultrasound" element={<Ultrasound />} />
           <Route path="/hysteroscopy" element={<Hysteroscopy />} />
@@ -144,6 +94,7 @@ function App() {
           <Route path="/PelvicPainGuide" element={<PelvicPainGuide />} />
           <Route path="/event-list" element={<EventListPage />} />
           <Route path="/event/:id" element={<EventPage />} />
+          <Route path="/guide/:slug" element={<GuidePage />} />
         </Routes>
       </div>
       <Footer />

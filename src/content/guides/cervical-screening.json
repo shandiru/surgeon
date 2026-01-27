@@ -1,0 +1,209 @@
+{
+  "slug": "cervical-screening",
+  "title": "Understanding Cervical Screening",
+  "subtitle": "What it is, why it's done, and what to expect",
+  "tag": "Medical Education",
+  "sections": [
+    {
+      "id": 1,
+      "buttonLabel": "Overview",
+      "buttonIcon": "Info",
+      "cardTitle": "Cervical Screening Overview",
+      "layout": "two-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Cervical screening — also called the **smear test** — checks the health of cells in your cervix. It is designed to **prevent cervical cancer** by identifying abnormal changes early, before they become dangerous.\n\nThe test is quick, simple, and one of the most effective ways to protect your cervical health."
+        },
+        {
+          "type": "statBox",
+          "stat": "90%",
+          "description": "Cervical screening can detect up to 90% of early cell changes."
+        },
+        {
+          "type": "image",
+          "src": "/cervical-screening.png",
+          "alt": "Cervical screening illustration"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "buttonLabel": "Smear Test Guidelines",
+      "buttonIcon": "Activity",
+      "cardTitle": "Who Needs a Smear Test?",
+      "layout": "two-column",
+      "content": [
+        {
+          "type": "tags",
+          "tags": ["Recommended"]
+        },
+        {
+          "type": "iconList",
+          "items": [
+            { "icon": "Users", "text": "Women aged 25–64" },
+            { "icon": "Clock", "text": "Every 3–5 years" },
+            { "icon": "Stethoscope", "text": "Quick, simple, and painless — done right at our clinic" }
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/smear-test-info.png",
+          "alt": "Smear test illustration"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "buttonLabel": "Who Doesn't Need a Smear Test?",
+      "buttonIcon": "AlertTriangle",
+      "cardTitle": "Who Doesn't Usually Need a Smear Test?",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "heading",
+          "text": "Who Doesn't Usually Need a Smear Test?",
+          "level": 3,
+          "icon": "Info"
+        },
+        {
+          "type": "grid",
+          "columns": 2,
+          "items": [
+            {
+              "title": "Under 25",
+              "description": "Cervical changes are common and usually harmless. Early treatment can affect future fertility. See a doctor if you have unusual bleeding or bleeding after sex."
+            },
+            {
+              "title": "Over 65",
+              "description": "If you've had 3 normal tests in a row, no further smears are usually needed."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "buttonLabel": "Preparing for Your Smear Test",
+      "buttonIcon": "Eye",
+      "cardTitle": "Getting Ready",
+      "layout": "two-column",
+      "content": [
+        {
+          "type": "iconList",
+          "items": [
+            { "icon": "CheckCircle", "text": "Book your test mid-cycle (about a week after your period)" },
+            { "icon": "CheckCircle", "text": "Avoid spermicides, lubricants, pessaries or vaginal creams for a few days before" },
+            { "icon": "CheckCircle", "text": "Don't have the test during your period" }
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/smear-test-prep.png",
+          "alt": "Smear test preparation illustration"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "buttonLabel": "Test Preparation",
+      "buttonIcon": "ScanSearch",
+      "cardTitle": "What Happens During the Test",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "heading",
+          "text": "What Happens During the Test",
+          "level": 3,
+          "icon": "Stethoscope"
+        },
+        {
+          "type": "infoBox",
+          "title": "Takes just 5 minutes",
+          "description": "The entire procedure is quick and straightforward",
+          "icon": "Clock"
+        },
+        {
+          "type": "numberedSteps",
+          "steps": [
+            "A small speculum gently opens the vagina",
+            "A soft brush collects cells from your cervix",
+            "Your sample is sent to a lab for testing"
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "We use Dual Testing:",
+          "description": "Checking for high-risk HPV and abnormal cells (for women over 25)",
+          "icon": "Lightbulb"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "buttonLabel": "After Your Test",
+      "buttonIcon": "Syringe",
+      "cardTitle": "After Your Test",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Results usually within 1–2 weeks"
+        },
+        {
+          "type": "accordion",
+          "items": [
+            { "title": "Normal Result", "content": "Your results came back clear. You will be invited for your next screening in 3–5 years depending on your age." },
+            { "title": "Inadequate Sample", "content": "Sometimes the sample isn't clear enough to read. You'll be asked to come back for another test — this is very common and nothing to worry about." },
+            { "title": "HPV Positive + Normal Cells", "content": "HPV was found but your cells look normal. You'll be invited back in 12 months to check again." },
+            { "title": "HPV Positive + Abnormal Cells", "content": "You may be referred for a colposcopy — a closer look at your cervix. Early treatment is very effective." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "buttonLabel": "Remember",
+      "buttonIcon": "ShieldCheck",
+      "cardTitle": "Remember",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Smear tests are simple steps that protect your future."
+        },
+        {
+          "type": "grid",
+          "columns": 3,
+          "items": [
+            { "icon": "Clock", "title": "Quick" },
+            { "icon": "CheckCircle", "title": "Simple" },
+            { "icon": "Stethoscope", "title": "Life-saving" }
+          ]
+        },
+        {
+          "type": "text",
+          "value": "**Don't miss your screening — it could save your life.**"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "buttonLabel": "Ready to Book Your Test?",
+      "buttonIcon": "BookmarkCheck",
+      "cardTitle": "Ready to Book Your Test?",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Take the first step towards protecting your health and peace of mind."
+        },
+        {
+          "type": "cta",
+          "label": "Schedule Your Screening Today",
+          "icon": "Star"
+        }
+      ]
+    }
+  ]
+}
