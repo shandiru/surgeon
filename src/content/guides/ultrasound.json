@@ -1,0 +1,208 @@
+{
+  "slug": "ultrasound",
+  "title": "Understanding Gynaecological Ultrasound",
+  "subtitle": "What it is, why it's done, and what to expect",
+  "tag": "Medical Education",
+  "sections": [
+    {
+      "id": 1,
+      "buttonLabel": "Overview",
+      "buttonIcon": "Info",
+      "cardTitle": "Gynaecological Ultrasound Overview",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "A gynaecological (pelvic) ultrasound is a safe and painless way to examine the uterus, ovaries, fallopian tubes and other pelvic organs. It uses **sound waves** to create real-time images with no radiation involved."
+        },
+        {
+          "type": "statBox",
+          "stat": "10-15 min",
+          "description": "Quick, safe procedure with no radiation"
+        },
+        {
+          "type": "infoBox",
+          "title": "What We Can See",
+          "description": "Uterus size and shape, Ovaries and follicles, Endometrial lining thickness, Any abnormalities or cysts",
+          "icon": "Eye"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "buttonLabel": "Why You Might Need One",
+      "buttonIcon": "HelpCircle",
+      "cardTitle": "Why You Might Need One",
+      "cardTitleIcon": "HelpCircle",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "grid",
+          "columns": 2,
+          "items": [
+            {
+              "icon": "AlertCircle",
+              "title": "Pelvic pain"
+            },
+            {
+              "icon": "Activity",
+              "title": "Abnormal vaginal bleeding"
+            },
+            {
+              "icon": "Heart",
+              "title": "Fertility issues"
+            },
+            {
+              "icon": "Calendar",
+              "title": "Menstrual problems"
+            }
+          ]
+        },
+        {
+          "type": "accordion",
+          "items": [
+            {
+              "title": "What It Can Help With",
+              "content": "Check for abnormalities, Investigate pelvic pain, Assess fertility issues, Monitor early pregnancy, Measure endometrium"
+            }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Further Investigation",
+          "description": "If the womb lining is thicker than expected, you may be offered a hysteroscopy to investigate further.",
+          "icon": "Lightbulb"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "buttonLabel": "Types of Ultrasound",
+      "buttonIcon": "Layers",
+      "cardTitle": "Types of Ultrasound",
+      "cardTitleIcon": "Layers",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "grid",
+          "columns": 2,
+          "items": [
+            {
+              "icon": "Monitor",
+              "title": "Transabdominal Ultrasound",
+              "description": "Probe on lower tummy, gives broad view, may require full bladder"
+            },
+            {
+              "icon": "ScanSearch",
+              "title": "Transvaginal Ultrasound",
+              "description": "Probe gently inserted, gives closer detailed images, often used for fertility assessment"
+            }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Safety",
+          "description": "Both types are safe and usually painless with no known risks.",
+          "icon": "ShieldCheck"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "buttonLabel": "During the Scan",
+      "buttonIcon": "Stethoscope",
+      "cardTitle": "During the Scan",
+      "cardTitleIcon": "Stethoscope",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "numberedSteps",
+          "steps": [
+            "Positioning - lie on examination couch comfortably",
+            "Gel Application - warm gel on lower abdomen",
+            "Scanning - probe moved gently across skin",
+            "Transvaginal if needed - probe covered with sheath and lubricated"
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Comfort",
+          "description": "Most patients find the procedure comfortable and painless.",
+          "icon": "CheckCircle"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "buttonLabel": "After Your Scan",
+      "buttonIcon": "ClipboardCheck",
+      "cardTitle": "After Your Scan",
+      "cardTitleIcon": "ClipboardCheck",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "grid",
+          "columns": 3,
+          "items": [
+            {
+              "icon": "CheckCircle",
+              "title": "No restrictions"
+            },
+            {
+              "icon": "Activity",
+              "title": "Normal activities immediately"
+            },
+            {
+              "icon": "Clock",
+              "title": "No recovery time needed"
+            }
+          ]
+        },
+        {
+          "type": "accordion",
+          "items": [
+            {
+              "title": "What if something is found",
+              "content": "Your doctor will discuss treatment options or follow-up procedures"
+            }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "No Known Risks",
+          "description": "There are no known risks from diagnostic ultrasound at medical levels.",
+          "icon": "ShieldCheck"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "buttonLabel": "Emotional Wellbeing",
+      "buttonIcon": "Heart",
+      "cardTitle": "Emotional Wellbeing",
+      "cardTitleIcon": "Heart",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "It's completely normal to feel nervous about an intimate scan."
+        },
+        {
+          "type": "iconList",
+          "items": [
+            { "icon": "Users", "text": "Ask for a chaperone" },
+            { "icon": "MessageCircle", "text": "Staff will explain everything clearly" },
+            { "icon": "Clock", "text": "Go at your pace" },
+            { "icon": "HelpCircle", "text": "Ask questions anytime" }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Reassurance",
+          "description": "This is a routine and safe procedure designed to give you clarity and reassurance.",
+          "icon": "ShieldCheck"
+        }
+      ]
+    }
+  ]
+}

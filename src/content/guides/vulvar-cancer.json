@@ -1,0 +1,253 @@
+{
+  "slug": "vulvar-cancer",
+  "title": "Understanding Vulvar Cancer",
+  "subtitle": "What it is, why it's done, and what to expect",
+  "tag": "Medical Education",
+  "sections": [
+    {
+      "id": 1,
+      "buttonLabel": "Overview",
+      "buttonIcon": "Info",
+      "cardTitle": "Vulvar Cancer Overview",
+      "layout": "two-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Vulvar cancer is a type of cancer that develops on the external female genital area (the vulva), including the labia, clitoris, and skin around the vaginal opening. Although relatively rare, understanding it helps with **early detection** and **prevention**."
+        },
+        {
+          "type": "statBox",
+          "stat": "60+",
+          "description": "Most common in women over 60, often linked to HPV or chronic skin conditions"
+        },
+        {
+          "type": "image",
+          "src": "/vulvar.png",
+          "alt": "Vulvar cancer illustration"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "buttonLabel": "How It Starts",
+      "buttonIcon": "Activity",
+      "cardTitle": "How Vulvar Cancer Starts",
+      "cardTitleIcon": "Activity",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Vulvar cancer usually starts in the skin cells covering the vulva. Understanding the different types helps with early recognition and treatment."
+        },
+        {
+          "type": "grid",
+          "columns": 3,
+          "items": [
+            {
+              "title": "Squamous Cell Carcinoma",
+              "description": "85-90% of cases, begins in flat cells"
+            },
+            {
+              "title": "Melanoma of the Vulva",
+              "description": "Less common but more aggressive"
+            },
+            {
+              "title": "Pre-Cancerous Changes VIN",
+              "description": "Can be prevented with early treatment"
+            }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Early Detection Matters",
+          "description": "Detecting VIN early and treating it promptly can prevent it from developing into vulvar cancer.",
+          "icon": "Lightbulb"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "buttonLabel": "Risk Factors",
+      "buttonIcon": "AlertTriangle",
+      "cardTitle": "Key Risk Factors",
+      "cardTitleIcon": "AlertTriangle",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "accordion",
+          "items": [
+            {
+              "title": "HPV Infection",
+              "content": "High-risk HPV types, particularly HPV 16"
+            },
+            {
+              "title": "Older Age",
+              "content": "Most common after 60"
+            },
+            {
+              "title": "Smoking",
+              "content": "Weakens immune system, increases HPV persistence"
+            },
+            {
+              "title": "Long-Term Skin Conditions",
+              "content": "e.g. Lichen Sclerosus"
+            },
+            {
+              "title": "Weakened Immune System",
+              "content": "Reduced ability to fight infections and abnormal cell growth"
+            },
+            {
+              "title": "History of Cervical/Vaginal Pre-cancers",
+              "content": "Previous abnormal cell changes increase risk"
+            }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Understanding Risk",
+          "description": "Having risk factors does not mean you will get vulvar cancer — understanding them helps with early detection.",
+          "icon": "Info"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "buttonLabel": "Symptoms",
+      "buttonIcon": "Eye",
+      "cardTitle": "Recognising Symptoms",
+      "cardTitleIcon": "Eye",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "bulletList",
+          "items": [
+            "Persistent vulvar itching",
+            "A cut or sore that won't heal",
+            "A lump or mass on the vulva",
+            "Vulvar pain or tenderness",
+            "Unusual bleeding from the vulva",
+            "Burning that continues despite treatment",
+            "Changes in a mole or birthmark"
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Warning",
+          "description": "If you notice any of these symptoms, see your doctor promptly.",
+          "icon": "AlertTriangle",
+          "variant": "warning"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "buttonLabel": "Diagnosis",
+      "buttonIcon": "ScanSearch",
+      "cardTitle": "Getting Diagnosed",
+      "cardTitleIcon": "Stethoscope",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "numberedSteps",
+          "steps": [
+            "Pelvic Exam - checking vulva, vagina, uterus, ovaries for abnormalities",
+            "Biopsy - removing small tissue piece to test for cancer cells",
+            "Colposcopy - magnifying instrument to closely examine vulva"
+          ]
+        },
+        {
+          "type": "tags",
+          "tags": ["X-ray", "CT scan", "PET-CT", "MRI"]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "buttonLabel": "Treatment",
+      "buttonIcon": "Syringe",
+      "cardTitle": "Treatment Options",
+      "cardTitleIcon": "Syringe",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "accordion",
+          "items": [
+            {
+              "title": "Surgery Options",
+              "content": "Radical Wide Local Excision, Radical Partial Vulvectomy, Radical Vulvectomy"
+            },
+            {
+              "title": "Additional Treatments",
+              "content": "Radiation Therapy, Chemotherapy"
+            }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Treatment Approach",
+          "description": "Treatment depends on stage, size, and spread of cancer. Surgery is most common.",
+          "icon": "Info"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "buttonLabel": "Prevention",
+      "buttonIcon": "ShieldCheck",
+      "cardTitle": "Prevention & Early Detection",
+      "cardTitleIcon": "ShieldCheck",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "iconList",
+          "items": [
+            { "icon": "Syringe", "text": "Get HPV vaccine" },
+            { "icon": "Ban", "text": "Don't smoke" },
+            { "icon": "Stethoscope", "text": "Regular gynecological check-ups" },
+            { "icon": "Heart", "text": "Early treatment of vulvar skin conditions" },
+            { "icon": "Eye", "text": "Be aware of any vulvar skin changes" },
+            { "icon": "ShieldCheck", "text": "Practice safer sex" }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Early Detection",
+          "description": "Early detection makes treatment more effective. Regular check-ups help catch changes early.",
+          "icon": "CheckCircle"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "buttonLabel": "Key Takeaway",
+      "buttonIcon": "BookmarkCheck",
+      "cardTitle": "Key Takeaway",
+      "cardTitleIcon": "Star",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "grid",
+          "columns": 3,
+          "items": [
+            { "icon": "Clock", "title": "Early Detection" },
+            { "icon": "CheckCircle", "title": "Treatable" },
+            { "icon": "ShieldCheck", "title": "Preventable" }
+          ]
+        },
+        {
+          "type": "iconList",
+          "items": [
+            { "icon": "CheckCircle", "text": "Early detection improves treatment success" },
+            { "icon": "AlertTriangle", "text": "Persistent itching/lumps/skin changes should never be ignored" },
+            { "icon": "Stethoscope", "text": "Regular check-ups help spot changes early" },
+            { "icon": "ShieldCheck", "text": "HPV protection reduces risk" }
+          ]
+        },
+        {
+          "type": "text",
+          "value": "**Staying aware, getting regular check-ups, and seeking help early can make a powerful difference.**"
+        }
+      ]
+    }
+  ]
+}

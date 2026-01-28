@@ -1,0 +1,218 @@
+{
+  "slug": "hysteroscopy",
+  "title": "Understanding Hysteroscopy",
+  "subtitle": "What it is, why it's done, and what to expect",
+  "tag": "Medical Education",
+  "sections": [
+    {
+      "id": 1,
+      "buttonLabel": "Overview",
+      "buttonIcon": "Info",
+      "cardTitle": "Hysteroscopy Overview",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "A hysteroscopy is a simple procedure that allows a doctor to look inside your uterus (womb) using a thin telescope-like camera called a hysteroscope. It can be **diagnostic** (to diagnose problems) or **operative** (to treat problems)."
+        },
+        {
+          "type": "statBox",
+          "stat": "5-30 min",
+          "description": "5-10 minutes for diagnosis, up to 30 if treatment is done"
+        },
+        {
+          "type": "infoBox",
+          "title": "Why Hysteroscopy?",
+          "description": "Commonly offered for abnormal bleeding or fertility issues. Safe way to find and treat common womb problems.",
+          "icon": "Lightbulb"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "buttonLabel": "Why You Might Need One",
+      "buttonIcon": "HelpCircle",
+      "cardTitle": "Why You Might Need One",
+      "cardTitleIcon": "Stethoscope",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "bulletList",
+          "items": [
+            "Persistent pelvic pain",
+            "Abnormal bleeding",
+            "Difficulty getting pregnant or repeated miscarriages",
+            "Unusual menstrual cycle changes",
+            "Unexplained pain during intercourse"
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Before Scheduling",
+          "description": "Before scheduling, you'll have a consultation to discuss medical history, symptoms, and whether the procedure is appropriate.",
+          "icon": "Calendar"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "buttonLabel": "Preparing for Your Procedure",
+      "buttonIcon": "ClipboardList",
+      "cardTitle": "Preparing for Your Procedure",
+      "cardTitleIcon": "CheckCircle",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "numberedSteps",
+          "steps": [
+            "Pregnancy Test — may be asked to take one a week before",
+            "Use Contraception — between test and procedure (can't be done during pregnancy)",
+            "Pre-treatment Medicine — if having fibroids removed, may be given medicine to shrink them"
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Individual Instructions",
+          "description": "Your healthcare team will give specific instructions based on your individual case.",
+          "icon": "Info"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "buttonLabel": "During the Procedure",
+      "buttonIcon": "Activity",
+      "cardTitle": "During the Procedure",
+      "cardTitleIcon": "Stethoscope",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "A hysteroscopy is usually done as an outpatient procedure, meaning you can go home the same day."
+        },
+        {
+          "type": "accordion",
+          "items": [
+            {
+              "title": "No Anaesthetic",
+              "content": "Often done without anaesthetic — many women tolerate it well."
+            },
+            {
+              "title": "Local Anaesthetic",
+              "content": "Numbs the area around your cervix to reduce discomfort."
+            },
+            {
+              "title": "General Anaesthetic",
+              "content": "If you prefer to be asleep during the procedure, this option is available."
+            }
+          ]
+        },
+        {
+          "type": "numberedSteps",
+          "steps": [
+            "Positioning — lie on a couch with your legs supported",
+            "A speculum may be used to hold your vagina open",
+            "The hysteroscope is passed into the womb through the vagina and cervix",
+            "Fluid is gently pumped to expand the womb for a clearer view",
+            "A camera sends pictures to a monitor for the doctor to see"
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "What to Expect",
+          "description": "You may feel cramping similar to period pain, but it should not be painful.",
+          "icon": "Heart"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "buttonLabel": "Recovery & Aftercare",
+      "buttonIcon": "HeartPulse",
+      "cardTitle": "Recovery & Aftercare",
+      "cardTitleIcon": "CheckCircle",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "grid",
+          "columns": 3,
+          "items": [
+            {
+              "icon": "CheckCircle",
+              "title": "Mild Cramps",
+              "description": "Some cramping is normal"
+            },
+            {
+              "icon": "Droplet",
+              "title": "Spotting",
+              "description": "Light bleeding for a few days"
+            },
+            {
+              "icon": "Sun",
+              "title": "Return to Normal",
+              "description": "Most return to normal next day"
+            }
+          ]
+        },
+        {
+          "type": "iconList",
+          "items": [
+            { "icon": "Utensils", "text": "Eat and drink as normal" },
+            { "icon": "BedDouble", "text": "Rest if you had a general anaesthetic" },
+            { "icon": "Clock", "text": "Avoid sex for about a week" },
+            { "icon": "Pill", "text": "Use painkillers if needed" }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Next Steps",
+          "description": "Your doctor will discuss results and next steps before you leave.",
+          "icon": "MessageCircle"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "buttonLabel": "When to Seek Medical Advice",
+      "buttonIcon": "AlertTriangle",
+      "cardTitle": "When to Seek Medical Advice",
+      "cardTitleIcon": "AlertTriangle",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "grid",
+          "columns": 2,
+          "items": [
+            {
+              "icon": "Droplet",
+              "title": "Heavy Bleeding",
+              "description": "Soaking through pads quickly"
+            },
+            {
+              "icon": "Thermometer",
+              "title": "Fever",
+              "description": "Temperature of 38°C or above"
+            },
+            {
+              "icon": "AlertCircle",
+              "title": "Severe Abdominal Pain",
+              "description": "Pain that doesn't improve with painkillers"
+            },
+            {
+              "icon": "AlertTriangle",
+              "title": "Foul-smelling Discharge",
+              "description": "Unusual or unpleasant vaginal discharge"
+            }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Important Warning",
+          "description": "These symptoms may be signs of infection (which are rare). Don't hesitate to contact your healthcare provider.",
+          "icon": "ShieldAlert",
+          "variant": "warning"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,280 @@
+{
+  "slug": "colposcopy",
+  "title": "Understanding Colposcopy",
+  "subtitle": "What it is, why it's done, and what to expect",
+  "tag": "Medical Education",
+  "sections": [
+    {
+      "id": 1,
+      "buttonLabel": "Overview",
+      "buttonIcon": "Info",
+      "cardTitle": "Colposcopy Overview",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "A colposcopy is a simple procedure to look for abnormal cells on the cervix or vagina. It helps detect early cell changes **before** they develop into cancer."
+        },
+        {
+          "type": "statBox",
+          "stat": "5-10 min",
+          "description": "Quick procedure that feels similar to a smear test"
+        },
+        {
+          "type": "infoBox",
+          "title": "Key Facts",
+          "description": "Takes 5-10 minutes. Uses a special magnifying instrument. Helps detect early cell changes.",
+          "icon": "Info"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "buttonLabel": "Why You Might Need One",
+      "buttonIcon": "FileText",
+      "cardTitle": "Why You Might Need a Colposcopy",
+      "cardTitleIcon": "Stethoscope",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "tags",
+          "tags": ["Common Reasons"]
+        },
+        {
+          "type": "iconList",
+          "items": [
+            { "icon": "AlertCircle", "text": "Abnormal cervical smear results" },
+            { "icon": "AlertCircle", "text": "Unusual appearance during pelvic exam" },
+            { "icon": "AlertCircle", "text": "Positive HPV test" },
+            { "icon": "AlertCircle", "text": "Unexplained bleeding or symptoms" }
+          ]
+        },
+        {
+          "type": "tags",
+          "tags": ["What It Can Diagnose"]
+        },
+        {
+          "type": "grid",
+          "columns": 2,
+          "items": [
+            {
+              "icon": "Shield",
+              "title": "Cervical Cancer",
+              "description": "Early detection"
+            },
+            {
+              "icon": "Shield",
+              "title": "Precancerous Changes",
+              "description": "Prevention"
+            },
+            {
+              "icon": "Shield",
+              "title": "Vaginal or Vulval Cancer",
+              "description": "Screening"
+            },
+            {
+              "icon": "Shield",
+              "title": "Genital Warts",
+              "description": "Identification"
+            }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Don't Worry",
+          "description": "Being referred for a colposcopy doesn't mean you have cancer. Most abnormal smear results are caused by infections or minor cell changes.",
+          "icon": "Info"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "buttonLabel": "How It's Done",
+      "buttonIcon": "Stethoscope",
+      "cardTitle": "How a Colposcopy Is Done",
+      "cardTitleIcon": "Stethoscope",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "heading",
+          "text": "The Procedure",
+          "level": 3,
+          "icon": "Stethoscope"
+        },
+        {
+          "type": "numberedSteps",
+          "steps": [
+            "Positioning — lie on examination table like a smear test",
+            "Speculum inserted to hold vagina open",
+            "Vinegar-like solution applied to highlight abnormal cells",
+            "Colposcope examines your cervix from outside the body"
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Important Note",
+          "description": "The colposcope stays outside your body — it does not go inside.",
+          "icon": "Info"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "buttonLabel": "About Biopsies",
+      "buttonIcon": "FileText",
+      "cardTitle": "About Biopsies",
+      "cardTitleIcon": "FileText",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "If your doctor sees anything unusual, they may take a small tissue sample (biopsy) immediately during your colposcopy."
+        },
+        {
+          "type": "accordion",
+          "items": [
+            {
+              "title": "What to expect during a biopsy",
+              "content": "Quick procedure, takes a few seconds. May cause brief pinch or cramp. Sample sent to lab."
+            },
+            {
+              "title": "Why might I need a biopsy",
+              "content": "Confirms whether abnormal, precancerous, or cancerous cells are present. Most accurate way to determine cell type."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "buttonLabel": "Understanding Results",
+      "buttonIcon": "CheckCircle",
+      "cardTitle": "Understanding Your Results",
+      "cardTitleIcon": "CheckCircle",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "heading",
+          "text": "Normal Results",
+          "level": 3,
+          "icon": "CheckCircle"
+        },
+        {
+          "type": "text",
+          "value": "If your results are normal, you will return to routine smear tests. No immediate treatment is needed."
+        },
+        {
+          "type": "heading",
+          "text": "Treatment Options",
+          "level": 3,
+          "icon": "Stethoscope"
+        },
+        {
+          "type": "accordion",
+          "items": [
+            {
+              "title": "Cone Biopsy",
+              "content": "Removes a cone-shaped piece of tissue from the cervix."
+            },
+            {
+              "title": "Cryotherapy",
+              "content": "Freezing abnormal cells to destroy them."
+            },
+            {
+              "title": "LEEP",
+              "content": "Heated wire loop removes abnormal cells."
+            }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Prevention",
+          "description": "Treating abnormal cells early can prevent cervical cancer from developing.",
+          "icon": "Shield"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "buttonLabel": "After Your Procedure",
+      "buttonIcon": "Heart",
+      "cardTitle": "After Your Procedure",
+      "cardTitleIcon": "Heart",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "heading",
+          "text": "What's Normal",
+          "level": 3,
+          "icon": "CheckCircle"
+        },
+        {
+          "type": "grid",
+          "columns": 3,
+          "items": [
+            { "icon": "CheckCircle", "title": "Mild Spotting" },
+            { "icon": "CheckCircle", "title": "Light Cramping" },
+            { "icon": "CheckCircle", "title": "Slight Discharge" }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Aftercare",
+          "level": 3,
+          "icon": "Heart"
+        },
+        {
+          "type": "iconList",
+          "items": [
+            { "icon": "CheckCircle", "text": "Take paracetamol or ibuprofen for discomfort" },
+            { "icon": "Clock", "text": "Avoid tampons for 5-7 days if biopsy taken" },
+            { "icon": "Clock", "text": "No swimming for 5-7 days if biopsy taken" },
+            { "icon": "Clock", "text": "Avoid vaginal sex for 5-7 days if biopsy taken" }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "When to Call Your Doctor",
+          "description": "Contact your doctor if you experience fever, heavy or smelly discharge, severe pain, or bleeding lasting over 7 days.",
+          "icon": "AlertCircle"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "buttonLabel": "Emotional Wellbeing",
+      "buttonIcon": "Users",
+      "cardTitle": "Emotional Wellbeing",
+      "cardTitleIcon": "Heart",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "It's completely normal to feel nervous about a colposcopy."
+        },
+        {
+          "type": "heading",
+          "text": "Tips for Comfort",
+          "level": 3,
+          "icon": "Heart"
+        },
+        {
+          "type": "grid",
+          "columns": 2,
+          "items": [
+            { "icon": "Users", "title": "Ask for a chaperone" },
+            { "icon": "Users", "title": "Bring a friend" },
+            { "icon": "FileText", "title": "Write down questions" },
+            { "icon": "Heart", "title": "Practice relaxation breathing" }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "You're in Good Hands",
+          "description": "Colposcopy is safe, quick, and effective. Your healthcare team is here to support you.",
+          "icon": "Heart"
+        }
+      ]
+    }
+  ]
+}

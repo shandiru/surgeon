@@ -3,49 +3,49 @@ import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
-const treatments = [
-  { label: "Vulvar Cancer", to: "/Cancer/Vulvar" },
-  { label: "Vaginal Cancer", to: "/Cancer/VaginalCancer" },
-  { label: "Ovarian Cancer", to: "/Cancer/OvarianCancer" },
-  { label: "Endometrial Cancer", to: "/Cancer/EndometrialCancer" },
-  { label: "Cervical Cancer", to: "/Cancer/CervicalCancer" },
-  { label: "Robotic Surgery", to: "/RoboticSurgery" },
-  { label: "Robotic Surgery Experience", to: "/robotic-surgery-experience" },
-  { label: "Cervical Screening", to: "/CervicalScreening" },
-  { label: "Irregular Bleeding", to: "/IrregularBleedingInfo" },
-  { label: "Endometriosis", to: "/EndometriosisInformation" },
-  { label: "Fibroids", to: "/FibroidInformation" },
-  { label: "Menstrual Disorders", to: "/MenstrualDisordersInformation" },
-  { label: "Ovarian Cysts", to: "/OvarianCystsPage" },
-  { label: "Postcoital Bleeding", to: "/PostcoitalBleeding" },
-  { label: "Postmenopausal Bleeding", to: "/postmenopausal-bleeding" },
-  { label: "Pelvic Pain", to: "/pelvic-pain-information" },
-  { label: "Vulvar Vaginal Lumps", to: "/vulvar-vaginal-lumps" },
-];
+// const treatments = [
+//   { label: "Vulvar Cancer", to: "/Cancer/Vulvar" },
+//   { label: "Vaginal Cancer", to: "/Cancer/VaginalCancer" },
+//   { label: "Ovarian Cancer", to: "/Cancer/OvarianCancer" },
+//   { label: "Endometrial Cancer", to: "/Cancer/EndometrialCancer" },
+//   { label: "Cervical Cancer", to: "/Cancer/CervicalCancer" },
+//   { label: "Robotic Surgery", to: "/RoboticSurgery" },
+//   { label: "Robotic Surgery Experience", to: "/robotic-surgery-experience" },
+//   { label: "Cervical Screening", to: "/CervicalScreening" },
+//   { label: "Irregular Bleeding", to: "/IrregularBleedingInfo" },
+//   { label: "Endometriosis", to: "/EndometriosisInformation" },
+//   { label: "Fibroids", to: "/FibroidInformation" },
+//   { label: "Menstrual Disorders", to: "/MenstrualDisordersInformation" },
+//   { label: "Ovarian Cysts", to: "/OvarianCystsPage" },
+//   { label: "Postcoital Bleeding", to: "/PostcoitalBleeding" },
+//   { label: "Postmenopausal Bleeding", to: "/postmenopausal-bleeding" },
+//   { label: "Pelvic Pain", to: "/pelvic-pain-information" },
+//   { label: "Vulvar Vaginal Lumps", to: "/vulvar-vaginal-lumps" },
+// ];
 
 const treatmentGuides = [
-  { label: "Colposcopy", to: "/colposcopy" },
-  { label: "Ultrasound", to: "/ultrasound" },
-  { label: "Hysteroscopy", to: "/Hysteroscopy" },
-  { label: "Vulvar Guide Page", to: "/VulvarGuidePage" },
-  { label: "Vaginal Guide Page", to: "/VaginalGuidePage" },
-  { label: "Ovarian Cancer Guide Page", to: "/OvarianCancerGuide" },
-  { label: "Endometrial Guide Page", to: "/EndometrialCancerGuide" },
-  { label: "Cervical Cancer Guide", to: "/CervicalCancerGuide" },
-  { label: "Robotic Surgery Guide", to: "/RoboticSurgeryGuide" },
-  { label: "Endometriosis Guide", to: "/EndometriosisGuide" },
-  { label: "Cervical Screening Guide", to: "/CervicalScreeningGuide" },
-  { label: "Fibroid Guide", to: "/FibroidGuide" },
-  { label: "Irregular Bleeding Guide", to: "/IrregularBleedingGuide" },
-  { label: "Ovarian Cysts Guide", to: "/OvarianCystsGuide" },
+  { label: "Colposcopy Guide", to: "/guide/colposcopy" },
+  { label: "Ultrasound Guide", to: "/guide/ultrasound" },
+  { label: "Hysteroscopy Guide", to: "/guide/hysteroscopy" },
+  { label: "Vulvar Cancer Guide", to: "/guide/vulvar-cancer" },
+  { label: "Vaginal Cancer Guide", to: "/guide/vaginal-cancer" },
+  { label: "Ovarian Cancer Guide", to: "/guide/ovarian-cancer" },
+  { label: "Endometrial Cancer Guide", to: "/guide/endometrial-cancer" },
+  { label: "Cervical Cancer Guide", to: "/guide/cervical-cancer" },
+  { label: "Robotic Surgery Guide", to: "/guide/robotic-surgery" },
+  { label: "Endometriosis Guide", to: "/guide/endometriosis" },
+  { label: "Cervical Screening Guide", to: "/guide/cervical-screening" },
+  { label: "Fibroid Guide", to: "/guide/fibroids" },
+  { label: "Irregular Bleeding Guide", to: "/guide/irregular-bleeding" },
+  { label: "Ovarian Cysts Guide", to: "/guide/ovarian-cysts" },
   {
     label: "Postmenopausal Bleeding Guide",
-    to: "/PostmenopausalBleedingGuide",
+    to: "/guide/postmenopausal-bleeding",
   },
-  { label: "Menstrual Disorders Guide", to: "/MenstrualDisordersGuide" },
-  { label: "Postcoital Bleeding Guide", to: "/PostcoitalBleedingGuide" },
-  { label: "Vaginal Lumps Guide", to: "/VaginalLumpsGuide" },
-  { label: "Pelvic Pain Guide", to: "/PelvicPainGuide" },
+  { label: "Menstrual Disorders Guide", to: "/guide/menstrual-disorders" },
+  { label: "Postcoital Bleeding Guide", to: "/guide/postcoital-bleeding" },
+  { label: "Vaginal Lumps Guide", to: "/guide/vaginal-lumps" },
+  { label: "Pelvic Pain Guide", to: "/guide/pelvic-pain" },
 ];
 
 const Navbar = () => {
@@ -141,7 +141,7 @@ const Navbar = () => {
             </HashLink>
 
             {/* Services Dropdown */}
-            <div className="relative">
+            {/* <div className="relative">
               <button
                 onClick={() => {
                   setIsServicesOpen(true);
@@ -158,7 +158,7 @@ const Navbar = () => {
               </button>
 
               {isServicesOpen && (
-                <div className="absolute left-0 bg-white shadow-lg rounded-md mt-2 w-64 z-50">
+                <div className="absolute left-0 bg-white shadow-lg rounded-md mt-2 w-64 z-50 max-h-96 overflow-y-auto">
                   {treatments.map((item) => (
                     <Link
                       key={item.to}
@@ -171,7 +171,7 @@ const Navbar = () => {
                   ))}
                 </div>
               )}
-            </div>
+            </div> */}
 
             {/* Additional Services Dropdown */}
             <div className="relative">
@@ -191,7 +191,7 @@ const Navbar = () => {
               </button>
 
               {isAdditionalServicesOpen && (
-                <div className="absolute left-0 bg-white shadow-lg rounded-md mt-2 w-64 z-50">
+                <div className="absolute left-0 bg-white shadow-lg rounded-md mt-2 w-64 z-50 max-h-96 overflow-y-auto">
                   {treatmentGuides.map((item) => (
                     <Link
                       key={item.to}
@@ -341,7 +341,7 @@ const Navbar = () => {
 
               {isServicesOpen && (
                 <div className="ml-4 mt-1 space-y-1">
-                  {treatments.map((item) => (
+                  {/* {treatments.map((item) => (
                     <Link
                       key={item.to}
                       to={item.to}
@@ -350,12 +350,12 @@ const Navbar = () => {
                     >
                       {item.label}
                     </Link>
-                  ))}
+                  ))} */}
                 </div>
               )}
 
               {/* Treatment Guide Accordion */}
-              <button
+              {/* <button
                 onClick={() => {
                   setIsAdditionalServicesOpen(true);
                   setIsServicesOpen(false);
@@ -364,10 +364,10 @@ const Navbar = () => {
               >
                 <span>Treatment guide</span>
                 {isAdditionalServicesOpen ? <FiChevronUp /> : <FiChevronDown />}
-              </button>
+              </button> */}
 
               {isAdditionalServicesOpen && (
-                <div className="ml-4 mt-1 space-y-1">
+                <div className="ml-4 mt-1 space-y-1 max-h-64 overflow-y-auto">
                   {treatmentGuides.map((item) => (
                     <Link
                       key={item.to}

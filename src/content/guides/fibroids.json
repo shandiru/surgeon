@@ -1,0 +1,253 @@
+{
+  "slug": "fibroids",
+  "title": "Understanding Fibroids",
+  "subtitle": "What it is, why it's done, and what to expect",
+  "tag": "Medical Education",
+  "sections": [
+    {
+      "id": 1,
+      "buttonLabel": "What Are Fibroids",
+      "buttonIcon": "Info",
+      "cardTitle": "What Are Fibroids?",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Fibroids (also called uterine myomas or leiomyomas) are non-cancerous growths that develop in or around the uterus. They are very common, especially in women of reproductive age."
+        },
+        {
+          "type": "infoBox",
+          "title": "Key Facts",
+          "description": "Fibroids are almost always benign (non-cancerous). They vary in size from tiny seedlings to large masses. Many women have fibroids without knowing it.",
+          "icon": "Info"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "buttonLabel": "Symptoms of Fibroids",
+      "buttonIcon": "Activity",
+      "cardTitle": "Symptoms of Fibroids",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Many fibroids cause no symptoms. When symptoms occur, they may include:"
+        },
+        {
+          "type": "bulletList",
+          "items": [
+            "Heavy or prolonged menstrual bleeding",
+            "Pelvic pain or pressure",
+            "Frequent urination or difficulty emptying the bladder",
+            "Constipation",
+            "Backache or leg pains",
+            "Enlarged abdomen or bloating"
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "When to Seek Help",
+          "description": "See a doctor if you have heavy periods, pain, or difficulty with bladder or bowel function.",
+          "icon": "AlertTriangle"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "buttonLabel": "Types of Fibroids",
+      "buttonIcon": "AlertTriangle",
+      "cardTitle": "Types of Fibroids",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Fibroids are classified by their location in the uterus."
+        },
+        {
+          "type": "grid",
+          "columns": 2,
+          "items": [
+            {
+              "title": "Intramural Fibroids",
+              "description": "Grow within the muscular wall of the uterus. Most common type."
+            },
+            {
+              "title": "Subserosal Fibroids",
+              "description": "Grow on the outer surface of the uterus. Can press on nearby organs."
+            },
+            {
+              "title": "Submucosal Fibroids",
+              "description": "Grow into the inner cavity of the uterus. Can cause heavy bleeding."
+            },
+            {
+              "title": "Pedunculated Fibroids",
+              "description": "Attached to the uterus by a stalk. Can grow inside or outside the uterus."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "buttonLabel": "Causes & Risk Factors",
+      "buttonIcon": "Eye",
+      "cardTitle": "Causes & Risk Factors",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "The exact cause is unknown, but your risk may be higher if you:"
+        },
+        {
+          "type": "bulletList",
+          "items": [
+            "Have a family history of fibroids",
+            "Are of African or Caribbean heritage",
+            "Are overweight",
+            "Started your periods early",
+            "Have hormonal imbalances"
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Hormonal Connection",
+          "description": "Fibroids are linked to estrogen and progesterone. They often grow during reproductive years and shrink after menopause.",
+          "icon": "Lightbulb"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "buttonLabel": "Fertility & Pregnancy",
+      "buttonIcon": "ScanSearch",
+      "cardTitle": "Fertility & Pregnancy",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Most women with fibroids can conceive and have healthy pregnancies. However, fibroids may sometimes affect fertility or pregnancy outcomes."
+        },
+        {
+          "type": "heading",
+          "text": "Potential Effects",
+          "level": 4
+        },
+        {
+          "type": "bulletList",
+          "items": [
+            "Submucosal fibroids may interfere with implantation",
+            "Large fibroids may change the shape of the uterus",
+            "Some fibroids may increase risk of miscarriage",
+            "Fibroids may grow during pregnancy due to hormones"
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Planning Pregnancy",
+          "description": "If you have fibroids and are planning to become pregnant, discuss your options with a specialist.",
+          "icon": "Info"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "buttonLabel": "Emotional Wellbeing",
+      "buttonIcon": "Syringe",
+      "cardTitle": "Emotional Wellbeing",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Living with fibroids can affect your emotional health and quality of life. Heavy bleeding, pain, and concerns about fertility can cause stress and anxiety."
+        },
+        {
+          "type": "infoBox",
+          "title": "Support Available",
+          "description": "Don't hesitate to talk to your doctor about how fibroids are affecting you. Support groups and counselling can also help.",
+          "icon": "Info"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "buttonLabel": "Treatment Options",
+      "buttonIcon": "ShieldCheck",
+      "cardTitle": "Treatment Options",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Treatment depends on fibroid size, location, symptoms, and whether you want to have children."
+        },
+        {
+          "type": "heading",
+          "text": "Treatment Options",
+          "level": 4
+        },
+        {
+          "type": "accordion",
+          "items": [
+            {
+              "title": "Watchful Waiting",
+              "content": "If fibroids are small and not causing symptoms, monitoring may be recommended."
+            },
+            {
+              "title": "Medication",
+              "content": "Hormonal treatments to manage symptoms. Pain relievers for discomfort. Iron supplements for anemia from heavy bleeding."
+            },
+            {
+              "title": "Non-invasive Procedures",
+              "content": "MRI-guided focused ultrasound to destroy fibroid tissue. Uterine artery embolization to cut off blood supply."
+            },
+            {
+              "title": "Surgical Options",
+              "content": "Myomectomy (removal of fibroids while preserving uterus). Hysterectomy (removal of uterus) for severe cases."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "buttonLabel": "Self-Care Tips",
+      "buttonIcon": "BookmarkCheck",
+      "cardTitle": "Self-Care Tips",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "While medical treatment may be needed, lifestyle changes can help manage symptoms."
+        },
+        {
+          "type": "grid",
+          "columns": 2,
+          "items": [
+            {
+              "title": "Maintain healthy weight",
+              "description": "Excess weight is linked to fibroid growth"
+            },
+            {
+              "title": "Eat a balanced diet",
+              "description": "Include plenty of fruits, vegetables, and whole grains"
+            },
+            {
+              "title": "Stay active",
+              "description": "Regular exercise supports overall health"
+            },
+            {
+              "title": "Manage stress",
+              "description": "Relaxation techniques can help with pain"
+            }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Remember",
+          "description": "Fibroids are very common and treatable. If symptoms are affecting your life, speak to a healthcare provider about your options.",
+          "icon": "Star"
+        }
+      ]
+    }
+  ]
+}
