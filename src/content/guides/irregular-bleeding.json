@@ -1,0 +1,334 @@
+{
+  "slug": "irregular-bleeding",
+  "title": "Understanding Irregular Bleeding",
+  "subtitle": "What it is, why it's done, and what to expect",
+  "tag": "Medical Education",
+  "sections": [
+    {
+      "id": 1,
+      "buttonLabel": "Overview",
+      "buttonIcon": "Info",
+      "cardTitle": "What Is Irregular Bleeding?",
+      "layout": "two-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Irregular bleeding refers to any bleeding that occurs outside your normal menstrual cycle. This includes periods that come more or less often than usual, spotting between periods, or bleeding after menopause.\n\nUnderstanding your cycle and recognizing changes early can help identify potential issues before they become serious."
+        },
+        {
+          "type": "statBox",
+          "stat": "1 in 4",
+          "description": "Women experience irregular bleeding at some point in their lives."
+        },
+        {
+          "type": "image",
+          "src": "/irregular-bleeding-illustration.png",
+          "alt": "Irregular bleeding illustration"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "buttonLabel": "Normal vs Irregular",
+      "buttonIcon": "Activity",
+      "cardTitle": "Normal vs Irregular Periods",
+      "cardTitleIcon": "Activity",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "heading",
+          "text": "A typical period:",
+          "level": 3,
+          "icon": "CheckCircle"
+        },
+        {
+          "type": "iconList",
+          "items": [
+            { "icon": "CheckCircle", "text": "Occurs every 21–35 days" },
+            { "icon": "CheckCircle", "text": "Lasts 3–7 days" },
+            { "icon": "CheckCircle", "text": "Consistent flow pattern each month" }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Irregular bleeding includes:",
+          "level": 3,
+          "icon": "TriangleAlert"
+        },
+        {
+          "type": "iconList",
+          "items": [
+            { "icon": "TriangleAlert", "text": "Periods that come more or less often than usual" },
+            { "icon": "TriangleAlert", "text": "Spotting between periods" },
+            { "icon": "TriangleAlert", "text": "Bleeding after sex" },
+            { "icon": "TriangleAlert", "text": "Unusually heavy or prolonged periods" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "buttonLabel": "Causes",
+      "buttonIcon": "TriangleAlert",
+      "cardTitle": "Common Causes",
+      "cardTitleIcon": "TriangleAlert",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Irregular vaginal bleeding can be linked to several conditions. In most cases, the cause is not serious, but it's important to get checked."
+        },
+        {
+          "type": "tags",
+          "tags": ["Common", "Normal", "Lifestyle", "Serious"]
+        },
+        {
+          "type": "grid",
+          "columns": 2,
+          "items": [
+            {
+              "tag": "common",
+              "title": "Fibroids",
+              "description": "Non-cancerous growths in the uterus"
+            },
+            {
+              "tag": "common",
+              "title": "Endometriosis",
+              "description": "Tissue similar to uterine lining grows outside uterus"
+            },
+            {
+              "tag": "common",
+              "title": "PCOS",
+              "description": "Polycystic Ovary Syndrome affects hormone levels"
+            },
+            {
+              "tag": "common",
+              "title": "Hormonal imbalances",
+              "description": "Changes in estrogen and progesterone levels"
+            },
+            {
+              "tag": "normal",
+              "title": "Puberty or menopause",
+              "description": "Natural life stage transitions"
+            },
+            {
+              "tag": "normal",
+              "title": "Pregnancy",
+              "description": "Early pregnancy can cause irregular bleeding"
+            },
+            {
+              "tag": "lifestyle",
+              "title": "Excessive exercise",
+              "description": "Intense physical activity can affect cycles"
+            },
+            {
+              "tag": "serious",
+              "title": "PID",
+              "description": "Pelvic inflammatory disease requires treatment"
+            },
+            {
+              "tag": "serious",
+              "title": "Tumours or growths",
+              "description": "Abnormal growths need medical evaluation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "buttonLabel": "When to Seek Help",
+      "buttonIcon": "Stethoscope",
+      "cardTitle": "When to Seek Medical Advice",
+      "cardTitleIcon": "Stethoscope",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Early assessment can rule out serious problems and help you get the right care."
+        },
+        {
+          "type": "infoBox",
+          "title": "Seek advice if you experience:",
+          "description": "Any of the following symptoms warrant a medical consultation",
+          "icon": "AlertTriangle"
+        },
+        {
+          "type": "iconList",
+          "items": [
+            { "icon": "AlertTriangle", "text": "Bleeding between periods or after sex" },
+            { "icon": "AlertTriangle", "text": "Periods that are much heavier or longer than usual" },
+            { "icon": "AlertTriangle", "text": "Sudden changes to your cycle" },
+            { "icon": "AlertTriangle", "text": "Any bleeding after menopause" }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Need immediate help?",
+          "description": "Contact your healthcare provider or call your local emergency number if you experience severe bleeding or pain.",
+          "icon": "Phone"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "buttonLabel": "What to Track",
+      "buttonIcon": "FileText",
+      "cardTitle": "What to Track Before Your Appointment",
+      "cardTitleIcon": "FileText",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Bringing a few notes can really help your doctor understand your situation better."
+        },
+        {
+          "type": "numberedSteps",
+          "steps": [
+            "Record dates and length of your periods",
+            "Note how heavy the bleeding is (light, normal, or heavy)",
+            "Document any pain or other symptoms",
+            "Track lifestyle changes (stress, exercise, weight, medications)"
+          ]
+        },
+        {
+          "type": "grid",
+          "columns": 2,
+          "items": [
+            {
+              "icon": "Calendar",
+              "title": "Period Tracker",
+              "description": "Use an app or calendar to log your cycle"
+            },
+            {
+              "icon": "FileText",
+              "title": "Symptom Diary",
+              "description": "Note any unusual symptoms or patterns"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "buttonLabel": "Your Appointment",
+      "buttonIcon": "TestTube",
+      "cardTitle": "What to Expect at Your Appointment",
+      "cardTitleIcon": "TestTube",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "These tests help find the cause so you can get the most suitable treatment."
+        },
+        {
+          "type": "infoBox",
+          "title": "Typical appointment duration",
+          "description": "Most initial consultations take 20-30 minutes",
+          "icon": "Clock"
+        },
+        {
+          "type": "accordion",
+          "items": [
+            {
+              "title": "Pelvic Examination",
+              "content": "A physical examination to check for any abnormalities in your reproductive organs. This is routine and helps identify possible causes of irregular bleeding."
+            },
+            {
+              "title": "Ultrasound Scan",
+              "content": "A non-invasive scan that uses sound waves to create internal images. Helps detect fibroids, cysts, or structural issues."
+            },
+            {
+              "title": "Blood Tests",
+              "content": "Hormone checks, blood count, and other markers that help determine the cause of irregular bleeding."
+            },
+            {
+              "title": "Cervical Smear (if due)",
+              "content": "A screening test to check for abnormal cells on the cervix. Typically part of routine preventive care."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "buttonLabel": "Treatment",
+      "buttonIcon": "Pill",
+      "cardTitle": "Treatment Options",
+      "cardTitleIcon": "Heart",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Treatment depends on the underlying cause of your irregular bleeding. Your doctor will recommend the most appropriate option based on your diagnosis."
+        },
+        {
+          "type": "heading",
+          "text": "Common Treatments",
+          "level": 3,
+          "icon": "Stethoscope"
+        },
+        {
+          "type": "grid",
+          "columns": 2,
+          "items": [
+            {
+              "icon": "Pill",
+              "title": "Hormonal Therapy",
+              "description": "Birth control pills or hormonal IUDs to regulate cycles"
+            },
+            {
+              "icon": "Stethoscope",
+              "title": "Medication",
+              "description": "Tranexamic acid or NSAIDs to reduce heavy bleeding"
+            },
+            {
+              "icon": "Activity",
+              "title": "Lifestyle Changes",
+              "description": "Diet, exercise, and stress management"
+            },
+            {
+              "icon": "Heart",
+              "title": "Surgical Options",
+              "description": "For fibroids, polyps, or other structural issues"
+            }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Personalised Care",
+          "description": "Your treatment plan will be tailored to your specific needs and circumstances.",
+          "icon": "Users"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "buttonLabel": "Book Appointment",
+      "buttonIcon": "BookmarkCheck",
+      "cardTitle": "Ready to Get Checked?",
+      "cardTitleIcon": "BookmarkCheck",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Don't ignore irregular bleeding. Early assessment can provide peace of mind and ensure you get the care you need."
+        },
+        {
+          "type": "grid",
+          "columns": 3,
+          "items": [
+            { "icon": "Clock", "title": "Quick" },
+            { "icon": "CheckCircle", "title": "Confidential" },
+            { "icon": "Stethoscope", "title": "Expert Care" }
+          ]
+        },
+        {
+          "type": "cta",
+          "label": "Schedule Your Consultation Today",
+          "icon": "Star"
+        }
+      ]
+    }
+  ]
+}

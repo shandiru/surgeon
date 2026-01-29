@@ -1,0 +1,274 @@
+{
+  "slug": "menstrual-disorders",
+  "title": "Understanding Menstrual Disorders",
+  "subtitle": "What it is, why it's done, and what to expect",
+  "tag": "Medical Education",
+  "sections": [
+    {
+      "id": 1,
+      "buttonLabel": "Overview",
+      "buttonIcon": "Info",
+      "cardTitle": "What Are Menstrual Disorders?",
+      "layout": "two-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Menstrual disorders refer to any changes or problems with a person's menstrual cycle, including irregular timing, unusually heavy or light bleeding, severe pain, or the absence of periods.\n\nThese disorders are common and may be temporary or linked to underlying health conditions. Understanding them helps with early recognition and proper treatment."
+        },
+        {
+          "type": "statBox",
+          "stat": "80%",
+          "description": "Up to 80% of women experience some form of menstrual disorder during their lifetime."
+        },
+        {
+          "type": "image",
+          "src": "/menstrual-disorders-illustration.png",
+          "alt": "Menstrual disorders illustration"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "buttonLabel": "What's a Normal Menstrual Cycle?",
+      "buttonIcon": "Activity",
+      "cardTitle": "What's a Normal Menstrual Cycle?",
+      "cardTitleIcon": "Calendar",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "grid",
+          "columns": 3,
+          "items": [
+            {
+              "icon": "Clock",
+              "title": "Cycle Length",
+              "stat": "21-35",
+              "description": "days between periods"
+            },
+            {
+              "icon": "Heart",
+              "title": "Period Duration",
+              "stat": "2-7",
+              "description": "days of bleeding"
+            },
+            {
+              "icon": "Droplet",
+              "title": "Blood Loss",
+              "stat": "30-80ml",
+              "description": "3-8 soaked pads/tampons per day"
+            }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "What's Normal For You",
+          "description": "What's \"normal\" is what's normal for you - sudden changes are worth checking with your healthcare provider.",
+          "icon": "CheckCircle"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "buttonLabel": "Types of Menstrual Disorders",
+      "buttonIcon": "FileText",
+      "cardTitle": "Types of Menstrual Disorders",
+      "cardTitleIcon": "Stethoscope",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "grid",
+          "columns": 3,
+          "items": [
+            {
+              "title": "Abnormal Uterine Bleeding",
+              "description": "Heavy or prolonged bleeding"
+            },
+            {
+              "title": "Amenorrhoea",
+              "description": "No menstrual bleeding"
+            },
+            {
+              "title": "Oligomenorrhoea",
+              "description": "Infrequent or light periods"
+            },
+            {
+              "title": "Fibroids",
+              "description": "Noncancerous growths in the womb"
+            },
+            {
+              "title": "PMS",
+              "description": "Physical and emotional symptoms before your period"
+            },
+            {
+              "title": "PMDD",
+              "description": "Severe physical and emotional symptoms before your period"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "buttonLabel": "Symptoms to Watch For",
+      "buttonIcon": "AlertTriangle",
+      "cardTitle": "Symptoms to Watch For",
+      "cardTitleIcon": "AlertTriangle",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "grid",
+          "columns": 2,
+          "items": [
+            {
+              "title": "Common Symptoms",
+              "items": [
+                "Abnormal or heavy bleeding",
+                "Painful cramps",
+                "Periods fewer than 21 days apart or more than 3 months apart",
+                "Bloating or fullness in the abdomen",
+                "Headaches, low mood, or emotional distress"
+              ]
+            },
+            {
+              "title": "When to Seek Urgent Help",
+              "variant": "warning",
+              "items": [
+                "Bleeding so heavy you soak through pads/tampons every hour",
+                "Severe pain not eased by painkillers",
+                "Fainting, dizziness, or signs of severe anaemia",
+                "Any bleeding after menopause"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "buttonLabel": "Causes & Risk Factors",
+      "buttonIcon": "Info",
+      "cardTitle": "Causes & Risk Factors",
+      "cardTitleIcon": "Info",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "tags",
+          "tags": [
+            "Uterine fibroids",
+            "Hormonal imbalances",
+            "Polycystic ovary syndrome (PCOS)",
+            "Thyroid disorders",
+            "Eating disorders or sudden weight changes",
+            "Stress or chronic illness",
+            "Clotting disorders",
+            "Sexually transmitted infections (STIs)",
+            "Certain cancers",
+            "Genetics/family history",
+            "Perimenopause or early menopause"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "buttonLabel": "Treatment Options",
+      "buttonIcon": "Syringe",
+      "cardTitle": "Treatment Options",
+      "cardTitleIcon": "Stethoscope",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Treatment depends on the type and severity of your condition"
+        },
+        {
+          "type": "accordion",
+          "items": [
+            {
+              "title": "Lifestyle Changes",
+              "content": "Simple changes that can help manage symptoms:\n- Reduce salt, caffeine, sugar and alcohol before your period\n- Stay active with regular exercise\n- Manage stress through relaxation techniques\n- Get enough rest and maintain good sleep hygiene"
+            },
+            {
+              "title": "Medical Treatment",
+              "content": "Medical options your healthcare provider might recommend:\n- Pain relievers for cramps and discomfort\n- Hormonal contraceptives to regulate or reduce bleeding\n- Hormone therapy to balance hormone levels\n- Iron supplements if you have anaemia from heavy bleeding"
+            },
+            {
+              "title": "Surgical Treatment",
+              "content": "For severe cases that don't respond to other treatments:\n- Hysteroscopy or laparoscopy to treat specific areas of concern\n- Endometrial ablation to destroy the womb lining and stop periods\n- Hysterectomy (removal of the womb) - only if other treatments haven't worked and you don't plan more pregnancies"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "buttonLabel": "Prevention & Management",
+      "buttonIcon": "ShieldCheck",
+      "cardTitle": "Prevention & Early Management",
+      "cardTitleIcon": "ShieldCheck",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Simple steps to help manage and reduce the impact of menstrual disorders."
+        },
+        {
+          "type": "numberedSteps",
+          "steps": [
+            "Track menstrual cycles and symptoms regularly",
+            "Maintain a healthy weight and balanced diet",
+            "Reduce stress and practice relaxation techniques",
+            "Exercise consistently",
+            "Attend regular medical check-ups",
+            "Manage underlying conditions early (e.g., thyroid, PCOS)"
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Why It Matters",
+          "description": "While not all menstrual disorders can be prevented, understanding your cycle helps detect changes early. Early management leads to better control, reduced discomfort, and quicker treatment when needed.",
+          "icon": "Lightbulb"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "buttonLabel": "Key Takeaway",
+      "buttonIcon": "BookmarkCheck",
+      "cardTitle": "Key Takeaway",
+      "cardTitleIcon": "Lightbulb",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Menstrual disorders are common and often manageable with proper care."
+        },
+        {
+          "type": "grid",
+          "columns": 3,
+          "items": [
+            { "icon": "Clock", "title": "Track Early" },
+            { "icon": "CheckCircle", "title": "Seek Help" },
+            { "icon": "Stethoscope", "title": "Stay Informed" }
+          ]
+        },
+        {
+          "type": "iconList",
+          "title": "Key Points to Remember",
+          "items": [
+            { "icon": "CheckCircle", "text": "Menstrual disorders vary widely from heavy bleeding to absent periods" },
+            { "icon": "CheckCircle", "text": "Early identification of symptoms ensures more effective treatment" },
+            { "icon": "CheckCircle", "text": "Tracking your cycle helps detect changes sooner" },
+            { "icon": "CheckCircle", "text": "Seek medical help if your period suddenly becomes irregular or painful" },
+            { "icon": "CheckCircle", "text": "Most menstrual disorders are manageable with proper care" }
+          ]
+        },
+        {
+          "type": "cta",
+          "label": "Schedule a Consultation",
+          "icon": "Star"
+        }
+      ]
+    }
+  ]
+}

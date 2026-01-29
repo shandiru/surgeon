@@ -1,0 +1,310 @@
+{
+  "slug": "ovarian-cancer",
+  "title": "Understanding Ovarian Cancer",
+  "subtitle": "What it is, why it's done, and what to expect",
+  "tag": "Medical Education",
+  "sections": [
+    {
+      "id": 1,
+      "buttonLabel": "Overview",
+      "buttonIcon": "Info",
+      "cardTitle": "Ovarian Cancer Overview",
+      "layout": "two-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Ovarian cancer is a cancer that begins in the ovaries — the two small organs responsible for producing eggs and hormones such as oestrogen and progesterone.\n\nIt is often called a **\"silent\" cancer** because early symptoms can be vague and easily mistaken for digestive or menstrual issues.\n\n**Early detection greatly improves outcomes.**"
+        },
+        {
+          "type": "statBox",
+          "stat": "90%",
+          "description": "Epithelial ovarian cancer accounts for 90% of all ovarian cancer cases."
+        },
+        {
+          "type": "image",
+          "src": "/Ovarian.png",
+          "alt": "Ovarian cancer illustration"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "buttonLabel": "How It Starts",
+      "buttonIcon": "Activity",
+      "cardTitle": "How Ovarian Cancer Starts",
+      "cardTitleIcon": "Activity",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Ovarian cancer can develop in different types of cells inside the ovary. Understanding where it starts helps doctors diagnose the type and plan the most effective treatment."
+        },
+        {
+          "type": "grid",
+          "columns": 3,
+          "items": [
+            {
+              "title": "Epithelial Ovarian Cancer",
+              "description": "The most common type — around 90% of all ovarian cancers. It begins in the cells covering the surface of the ovary or fallopian tubes."
+            },
+            {
+              "title": "Germ Cell Tumours",
+              "description": "Start in the cells that produce eggs. These are less common and tend to affect younger women."
+            },
+            {
+              "title": "Stromal Tumours",
+              "description": "Begin in the hormone-producing cells of the ovary. They are rare and often detected earlier because they can cause hormone-related symptoms."
+            }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Did You Know?",
+          "description": "Some ovarian cancers begin in the fallopian tubes and spread to the ovary — but they are still grouped as ovarian cancer.",
+          "icon": "Lightbulb"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "buttonLabel": "Key Risk Factors",
+      "buttonIcon": "AlertTriangle",
+      "cardTitle": "Key Risk Factors",
+      "cardTitleIcon": "AlertTriangle",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Not everyone with risk factors will develop ovarian cancer, but they increase likelihood."
+        },
+        {
+          "type": "numberedSteps",
+          "steps": [
+            "Age (Especially After 50) — Most ovarian cancers occur after menopause.",
+            "Family History of Ovarian, Breast, or Colorectal Cancer — Close relatives with these cancers increase your genetic risk.",
+            "Inherited Mutations (BRCA1, BRCA2, Lynch Syndrome) — These mutations significantly increase ovarian cancer risk.",
+            "Endometriosis — Long-term endometriosis is linked to certain ovarian cancer types.",
+            "Never Having Been Pregnant — Women who have never carried a pregnancy have a slightly higher risk.",
+            "Long-Term Hormone Replacement Therapy (HRT) — Extended use of estrogen-only HRT may increase risk.",
+            "Obesity — Higher body fat can influence hormone levels that affect risk."
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Good to Know",
+          "description": "Having one or more risk factors does not mean you will get ovarian cancer — but understanding them helps with early detection and prevention.",
+          "icon": "Sparkles"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "buttonLabel": "Recognising Symptoms",
+      "buttonIcon": "Eye",
+      "cardTitle": "Symptoms of Ovarian Cancer",
+      "cardTitleIcon": "AlertTriangle",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "tags",
+          "tags": ["Warning Signs"]
+        },
+        {
+          "type": "text",
+          "value": "Ovarian cancer can cause a variety of symptoms. Some of the most common include:"
+        },
+        {
+          "type": "iconList",
+          "items": [
+            { "icon": "AlertCircle", "text": "Persistent bloating" },
+            { "icon": "AlertCircle", "text": "Swollen tummy" },
+            { "icon": "AlertCircle", "text": "Pelvic or abdominal pain/discomfort" },
+            { "icon": "AlertCircle", "text": "Loss of appetite or feeling full after eating small amounts" },
+            { "icon": "AlertCircle", "text": "Frequent or urgent need to urinate" },
+            { "icon": "AlertCircle", "text": "Indigestion or nausea" },
+            { "icon": "AlertCircle", "text": "Changes in bowel habits" },
+            { "icon": "AlertCircle", "text": "Pain during sexual intercourse" },
+            { "icon": "AlertCircle", "text": "Back pain" },
+            { "icon": "AlertCircle", "text": "Extreme tiredness" },
+            { "icon": "AlertCircle", "text": "Unexplained weight loss" }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Important",
+          "description": "If you experience these symptoms, it's important to see your GP for further tests.",
+          "icon": "AlertTriangle"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "buttonLabel": "Getting Diagnosed",
+      "buttonIcon": "ScanSearch",
+      "cardTitle": "Diagnosis of Ovarian Cancer",
+      "cardTitleIcon": "Target",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Several tests and scans can help identify ovarian cancer, including:"
+        },
+        {
+          "type": "infoBox",
+          "title": "Diagnostic Process",
+          "description": "Your doctor will use a combination of tests to confirm diagnosis and determine staging",
+          "icon": "Stethoscope"
+        },
+        {
+          "type": "grid",
+          "columns": 2,
+          "items": [
+            {
+              "title": "CT scan",
+              "description": "Produces detailed images of the ovaries and shows abnormalities"
+            },
+            {
+              "title": "X-ray",
+              "description": "Checks if cancer has spread to other areas of the body"
+            },
+            {
+              "title": "Biopsy",
+              "description": "Tissue or cells are examined for cancer"
+            },
+            {
+              "title": "Laparoscopy",
+              "description": "A small camera is inserted into the abdomen to directly examine the ovaries"
+            }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Note",
+          "description": "If ovarian cancer is suspected, these tests also help determine how far the cancer has spread.",
+          "icon": "Info"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "buttonLabel": "Treatment Options",
+      "buttonIcon": "Syringe",
+      "cardTitle": "Treatment of Ovarian Cancer",
+      "cardTitleIcon": "HeartPulse",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Treatment depends on the type of ovarian cancer, your overall health, and fertility considerations."
+        },
+        {
+          "type": "infoBox",
+          "title": "Treatment Goal",
+          "description": "The main goal is to remove the cancer whenever possible",
+          "icon": "Target"
+        },
+        {
+          "type": "accordion",
+          "items": [
+            {
+              "title": "Surgery + Chemotherapy",
+              "content": "Often used together as first-line treatment. Surgery removes visible cancer while chemotherapy targets remaining cancer cells."
+            },
+            {
+              "title": "Targeted Therapies",
+              "content": "PARP inhibitors, Angiogenesis inhibitors, and MEK inhibitors target specific pathways in cancer cells."
+            },
+            {
+              "title": "Intraperitoneal Chemotherapy",
+              "content": "Delivering chemotherapy directly into the abdominal cavity for more targeted treatment."
+            },
+            {
+              "title": "Radiation Therapy",
+              "content": "Especially effective for isolated recurrences in the pelvic area."
+            },
+            {
+              "title": "Clinical Trials",
+              "content": "Access to new and emerging treatments through research programs."
+            },
+            {
+              "title": "Complementary Therapies",
+              "content": "Supportive care to improve wellbeing alongside main treatment."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "buttonLabel": "Prevention & Early Detection",
+      "buttonIcon": "ShieldCheck",
+      "cardTitle": "Prevention & Early Detection",
+      "cardTitleIcon": "ShieldCheck",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "While there is no screening test for ovarian cancer, several steps can lower risk."
+        },
+        {
+          "type": "infoBox",
+          "title": "Why Prevention Matters",
+          "description": "Ovarian cancer often develops silently. While there is no reliable screening test, knowing your risks and making informed choices can significantly reduce the likelihood.",
+          "icon": "Heart"
+        },
+        {
+          "type": "iconList",
+          "items": [
+            { "icon": "CheckCircle", "text": "Genetic testing if you have a strong family history" },
+            { "icon": "CheckCircle", "text": "Using oral contraceptives (long-term use lowers risk)" },
+            { "icon": "CheckCircle", "text": "Maintaining a healthy body weight" },
+            { "icon": "CheckCircle", "text": "Treating endometriosis early" },
+            { "icon": "CheckCircle", "text": "Considering risk-reducing surgery (BRCA1/BRCA2 carriers)" },
+            { "icon": "CheckCircle", "text": "Being aware of symptoms and seeking prompt evaluation" }
+          ]
+        },
+        {
+          "type": "grid",
+          "columns": 3,
+          "items": [
+            { "icon": "Eye", "title": "Awareness" },
+            { "icon": "Stethoscope", "title": "Early Detection" },
+            { "icon": "ShieldCheck", "title": "Prevention" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "buttonLabel": "Key Takeaway",
+      "buttonIcon": "BookmarkCheck",
+      "cardTitle": "Key Takeaway",
+      "cardTitleIcon": "Lightbulb",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "The most important points to remember about ovarian cancer."
+        },
+        {
+          "type": "grid",
+          "columns": 3,
+          "items": [
+            { "icon": "Eye", "title": "Watch for Symptoms" },
+            { "icon": "Users", "title": "Know Your History" },
+            { "icon": "Stethoscope", "title": "Seek Help Early" }
+          ]
+        },
+        {
+          "type": "text",
+          "value": "**Persistent bloating, pelvic pain, or feeling full quickly should not be ignored.**"
+        },
+        {
+          "type": "cta",
+          "label": "Book a Consultation",
+          "icon": "Star"
+        }
+      ]
+    }
+  ]
+}

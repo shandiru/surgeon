@@ -1,0 +1,201 @@
+{
+  "slug": "robotic-surgery",
+  "title": "Understanding Robotic Surgery",
+  "subtitle": "What it is, why it's done, and what to expect",
+  "tag": "Medical Education",
+  "sections": [
+    {
+      "id": 1,
+      "buttonLabel": "Robotic Surgery",
+      "buttonIcon": "Stethoscope",
+      "cardTitle": "Robotic Surgery in Gynecology",
+      "layout": "two-column",
+      "content": [
+        {
+          "type": "heading",
+          "text": "Robotic Surgery in Gynecology",
+          "level": 1
+        },
+        {
+          "type": "text",
+          "value": "**Advanced da Vinci Surgical System**\n\nExperience the future of minimally invasive gynecologic surgery with enhanced precision, control, and superior patient outcomes through cutting-edge robotic technology."
+        },
+        {
+          "type": "image",
+          "src": "/robotic-surgery-animation.png",
+          "alt": "Robotic surgery illustration"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "buttonLabel": "Overview",
+      "buttonIcon": "AlertCircle",
+      "cardTitle": "Overview of Robotic Surgery",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Robotic surgery represents a revolutionary form of minimally invasive surgery that uses advanced technology to enhance surgical precision, control, and vision. Unlike traditional open surgery, robotic systems enable procedures through small incisions with robotic arms controlled by the surgeon from a specialized console.\n\nThe da Vinci Surgical System, developed by Intuitive Surgical, has transformed gynecologic surgery by significantly improving patient outcomes and surgical experiences."
+        },
+        {
+          "type": "grid",
+          "columns": 2,
+          "items": [
+            {
+              "icon": "Scissors",
+              "title": "Minimally Invasive"
+            },
+            {
+              "icon": "Eye",
+              "title": "Enhanced Vision"
+            },
+            {
+              "icon": "Hand",
+              "title": "Precise Control"
+            },
+            {
+              "icon": "Zap",
+              "title": "Advanced Technology"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "buttonLabel": "The da Vinci Surgical System",
+      "buttonIcon": "FileText",
+      "cardTitle": "The da Vinci Surgical System",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "heading",
+          "text": "The da Vinci Surgical System",
+          "level": 2
+        },
+        {
+          "type": "grid",
+          "columns": 4,
+          "items": [
+            {
+              "icon": "Monitor",
+              "title": "Surgeon Console",
+              "description": "Where the surgeon sits and controls the instruments with precision"
+            },
+            {
+              "icon": "Activity",
+              "title": "Patient-side Cart",
+              "description": "Holds the robotic arms and surgical instruments"
+            },
+            {
+              "icon": "Eye",
+              "title": "Vision System",
+              "description": "Provides high-definition, 3D view of the operative field"
+            },
+            {
+              "icon": "Hand",
+              "title": "Wristed Instruments",
+              "description": "Greater range of motion than human hands for ultra-precise movements"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "buttonLabel": "Applications in Gynecology",
+      "buttonIcon": "Shield",
+      "cardTitle": "Applications in Gynecology",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "heading",
+          "text": "Applications in Gynecology",
+          "level": 2
+        },
+        {
+          "type": "accordion",
+          "items": [
+            {
+              "title": "Hysterectomy (Uterus Removal)",
+              "content": "Preferred for complex cases including large fibroids and endometriosis.\n\n- Less blood loss\n- Fewer complications\n- Quicker recovery"
+            },
+            {
+              "title": "Myomectomy (Fibroid Removal)",
+              "content": "Precise removal of fibroids while preserving healthy uterine tissue.\n\n- Fertility preservation\n- Tissue conservation"
+            },
+            {
+              "title": "Endometriosis Excision (Tissue Removal)",
+              "content": "Enhanced visualization of endometrial implants for precise treatment.\n\n- Meticulous dissection\n- Delicate area precision"
+            },
+            {
+              "title": "Gynecologic Cancer Surgery (Oncologic Procedures)",
+              "content": "Used in early-stage cervical or endometrial cancer for lymph node dissection and staging.\n\n- Minimally invasive option\n- Oncologic safety comparable to open surgery"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "buttonLabel": "Advantages and Benefits",
+      "buttonIcon": "CheckCircle",
+      "cardTitle": "Advantages and Benefits",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "heading",
+          "text": "Benefits for Patients",
+          "level": 3,
+          "icon": "Users"
+        },
+        {
+          "type": "bulletList",
+          "items": [
+            "Smaller incisions, resulting in reduced scarring",
+            "Less postoperative pain",
+            "Lower risk of infection",
+            "Shorter hospital stays",
+            "Faster return to normal activities",
+            "Reduced blood loss and need for transfusion"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Advantages for Surgeons",
+          "level": 3,
+          "icon": "Stethoscope"
+        },
+        {
+          "type": "bulletList",
+          "items": [
+            "Enhanced visualization with 3D magnified views",
+            "Superior dexterity and precision",
+            "Ergonomic comfort during long procedures",
+            "Ability to perform complex procedures with greater control"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "buttonLabel": "Future of Gynecologic Surgery",
+      "buttonIcon": "Heart",
+      "cardTitle": "The Future of Gynecologic Surgery",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "The da Vinci Surgical System represents a significant advancement in gynecologic surgery, offering a safer and more effective alternative to traditional methods in many cases.\n\nAs the technology continues to evolve and become more accessible, robotic surgery is expected to play an increasingly central role in women's health care."
+        },
+        {
+          "type": "infoBox",
+          "title": "Expert Care, Advanced Technology",
+          "description": "Gynecologists who specialize in robotic surgery are uniquely positioned to offer their patients cutting-edge care with excellent outcomes, especially for complex and delicate procedures.",
+          "icon": "Star"
+        }
+      ]
+    }
+  ]
+}

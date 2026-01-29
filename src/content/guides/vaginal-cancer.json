@@ -1,0 +1,240 @@
+{
+  "slug": "vaginal-cancer",
+  "title": "Understanding Vaginal Cancer",
+  "subtitle": "What it is, why it's done, and what to expect",
+  "tag": "Medical Education",
+  "sections": [
+    {
+      "id": 1,
+      "buttonLabel": "Overview",
+      "buttonIcon": "Info",
+      "cardTitle": "Vaginal Cancer Overview",
+      "layout": "two-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Vaginal cancer is a rare cancer that begins in the tissues of the vagina — the muscular canal connecting the cervix to the outside of the body. It often first appears as **pre-cancerous changes (VAIN)**, making early detection essential."
+        },
+        {
+          "type": "statBox",
+          "stat": "60+",
+          "description": "Most common in women over 60, often linked to HPV infection"
+        },
+        {
+          "type": "image",
+          "src": "/vaginal.png",
+          "alt": "Vaginal cancer illustration"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "buttonLabel": "How It Starts",
+      "buttonIcon": "Activity",
+      "cardTitle": "How Vaginal Cancer Starts",
+      "cardTitleIcon": "Activity",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Vaginal cancer starts in the cells lining the surface of the vagina."
+        },
+        {
+          "type": "grid",
+          "columns": 2,
+          "items": [
+            {
+              "title": "Squamous Cell Carcinoma",
+              "description": "Most common (85-90%). Forms in the thin, flat cells lining the vagina. Often begins as VAIN (vaginal intraepithelial neoplasia)."
+            },
+            {
+              "title": "Adenocarcinoma",
+              "description": "Develops in gland-like cells of the vagina. Less common but may spread more easily."
+            }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "When to Seek Medical Advice",
+          "description": "Seek medical advice for unusual bleeding, persistent discharge, pelvic pain, pain during sex, or a lump inside the vagina.",
+          "icon": "AlertTriangle"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "buttonLabel": "Key Risk Factors",
+      "buttonIcon": "AlertTriangle",
+      "cardTitle": "Key Risk Factors",
+      "cardTitleIcon": "AlertTriangle",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "bulletList",
+          "items": [
+            "HPV infection (high-risk strains)",
+            "History of cervical cancer or pre-cancer",
+            "Older age (most cases occur after 60)",
+            "Smoking",
+            "Weakened immune system",
+            "Previous pelvic radiation therapy",
+            "VAIN (vaginal intraepithelial neoplasia — pre-cancerous changes)"
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Important Note",
+          "description": "Having risk factors does NOT guarantee you will get vaginal cancer. Regular screenings and HPV vaccination help reduce risk.",
+          "icon": "Info"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "buttonLabel": "Recognising Symptoms",
+      "buttonIcon": "Eye",
+      "cardTitle": "Recognising Symptoms",
+      "cardTitleIcon": "Eye",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Early vaginal cancer often has no symptoms. As it progresses, watch for these signs:"
+        },
+        {
+          "type": "grid",
+          "columns": 2,
+          "items": [
+            { "icon": "Droplet", "title": "Unusual vaginal bleeding" },
+            { "icon": "Droplets", "title": "Watery vaginal discharge" },
+            { "icon": "Circle", "title": "A lump or mass" },
+            { "icon": "AlertCircle", "title": "Painful urination" },
+            { "icon": "Clock", "title": "Frequent urination" },
+            { "icon": "XCircle", "title": "Constipation" },
+            { "icon": "Heart", "title": "Pelvic pain" }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Early Detection",
+          "description": "Routine pelvic exams are important for early detection.",
+          "icon": "Stethoscope"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "buttonLabel": "Getting Diagnosed",
+      "buttonIcon": "ScanSearch",
+      "cardTitle": "Getting Diagnosed",
+      "cardTitleIcon": "ScanSearch",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "numberedSteps",
+          "steps": [
+            "Pelvic exam — Visual inspection of the vagina and cervix using a speculum",
+            "Pap test — May reveal vaginal cancer cells",
+            "Colposcopy — Magnified examination of the vagina using a special instrument",
+            "Biopsy — Tissue sample is taken and tested for cancer"
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Diagnosis Purpose",
+          "description": "These tests help confirm diagnosis and guide treatment planning.",
+          "icon": "Lightbulb"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "buttonLabel": "Treatment Options",
+      "buttonIcon": "Syringe",
+      "cardTitle": "Treatment Options",
+      "cardTitleIcon": "Syringe",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "accordion",
+          "items": [
+            {
+              "title": "Surgery",
+              "content": "Vaginectomy — Removal of part or all of the vagina, with possible reconstruction. Hysterectomy — Removal of the uterus may also be recommended."
+            },
+            {
+              "title": "Combination Treatments",
+              "content": "Radiation therapy — Uses targeted energy to destroy cancer cells. Chemotherapy — Uses drugs to kill or slow the growth of cancer cells."
+            }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Treatment Planning",
+          "description": "Treatment depends on the type, stage, whether cancer has spread, and your overall health.",
+          "icon": "ClipboardList"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "buttonLabel": "Prevention & Early Detection",
+      "buttonIcon": "ShieldCheck",
+      "cardTitle": "Prevention & Early Detection",
+      "cardTitleIcon": "ShieldCheck",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "iconList",
+          "items": [
+            { "icon": "Syringe", "text": "HPV vaccination" },
+            { "icon": "XCircle", "text": "Avoid smoking" },
+            { "icon": "Stethoscope", "text": "Regular gynecological check-ups" },
+            { "icon": "Activity", "text": "Early treatment of VAIN" },
+            { "icon": "ShieldCheck", "text": "Practice safer sex" },
+            { "icon": "Eye", "text": "Monitor abnormal bleeding or discharge" }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Why It Matters",
+          "description": "Early detection improves treatment success. Regular check-ups and awareness help identify problems early.",
+          "icon": "Heart"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "buttonLabel": "Key Takeaway",
+      "buttonIcon": "BookmarkCheck",
+      "cardTitle": "Key Takeaway",
+      "cardTitleIcon": "BookmarkCheck",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "grid",
+          "columns": 3,
+          "items": [
+            { "icon": "Clock", "title": "Early Detection" },
+            { "icon": "CheckCircle", "title": "Treatable" },
+            { "icon": "ShieldCheck", "title": "Preventable" }
+          ]
+        },
+        {
+          "type": "iconList",
+          "items": [
+            { "icon": "CheckCircle", "text": "Early detection significantly improves treatment success" },
+            { "icon": "AlertTriangle", "text": "Report unusual bleeding, discharge, or pelvic pain promptly" },
+            { "icon": "Stethoscope", "text": "Regular check-ups detect changes early" },
+            { "icon": "Syringe", "text": "HPV vaccination reduces risk" },
+            { "icon": "Heart", "text": "Awareness of vaginal health is important" }
+          ]
+        },
+        {
+          "type": "text",
+          "value": "**Staying alert to changes, attending regular check-ups, and seeking medical advice early are key steps to protect your health.**"
+        }
+      ]
+    }
+  ]
+}
