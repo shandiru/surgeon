@@ -211,7 +211,7 @@ const Navbar = () => {
               className="text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
               onClick={closeAll}
             >
-              Robotic Surgery Experience
+              Robotic Surgery
             </Link>
 
             <HashLink
@@ -378,6 +378,14 @@ const Navbar = () => {
                   ))}
                 </div>
               )}
+
+              <Link
+                to="/robotic-surgery-experience"
+                className="block px-3 py-2 text-body-small text-gray-600 hover:bg-[#FFC5D3] rounded-md"
+                onClick={closeAll}
+              >
+                Robotic Surgery
+              </Link>
 
               {/* Contact + CTA */}
               <HashLink
