@@ -14,15 +14,19 @@
       "content": [
         {
           "type": "text",
-          "value": "Postcoital bleeding is bleeding that happens after vaginal sex. It is not part of your period."
+          "value": "Postcoital bleeding is vaginal bleeding that occurs after sexual intercourse. It is not part of a menstrual period."
         },
         {
           "type": "bulletList",
           "items": [
-            "The amount of blood can range from light spotting to heavier flow",
-            "It can happen after penetration by a penis, sex toys, or fingers",
-            "Around 1 in 10 women experience this at some point — it is common and usually not serious"
+            "The amount of bleeding can range from light spotting to heavier bleeding",
+            "It can happen after vaginal penetration, including sex toys or fingers",
+            "It can occur at any age"
           ]
+        },
+        {
+          "type": "text",
+          "value": "Many causes are benign, but postcoital bleeding should be checked, especially if it happens more than once."
         }
       ]
     },
@@ -30,27 +34,29 @@
       "id": 2,
       "buttonLabel": "Is It Painful?",
       "buttonIcon": "Activity",
-      "cardTitle": "Is It Painful?",
+      "cardTitle": "Is Postcoital Bleeding Painful?",
       "layout": "single-column",
       "content": [
         {
-          "type": "grid",
-          "columns": 2,
+          "type": "text",
+          "value": "Postcoital bleeding is often painless, but some people may also experience discomfort or pain during or after sex."
+        },
+        {
+          "type": "text",
+          "value": "Pain may occur if the cause is related to:"
+        },
+        {
+          "type": "bulletList",
           "items": [
-            {
-              "title": "Usually Painless",
-              "description": "Postcoital bleeding is usually painless"
-            },
-            {
-              "title": "Statistics",
-              "description": "Only about 15% of women who experience it also report pain during sex"
-            }
+            "Vaginal dryness or thinning of tissues",
+            "Infection or inflammation",
+            "Conditions affecting the cervix or pelvis"
           ]
         },
         {
           "type": "infoBox",
-          "title": "Did You Know?",
-          "description": "About 30% of women who bleed during sex also have other abnormal bleeding outside their period.",
+          "title": "Reminder",
+          "description": "If bleeding is accompanied by pain, pelvic discomfort, unusual discharge, or bleeding at other times, medical assessment is important.",
           "icon": "Info"
         }
       ]
@@ -65,7 +71,7 @@
       "content": [
         {
           "type": "text",
-          "value": "Postcoital bleeding usually comes from the vagina or cervix"
+          "value": "Postcoital bleeding usually comes from the vagina or cervix."
         },
         {
           "type": "heading",
@@ -75,25 +81,21 @@
         },
         {
           "type": "text",
-          "value": "Usually from direct friction or trauma during sex — known as a vaginal laceration."
+          "value": "Bleeding may result from friction or small tears in the vaginal tissues."
         },
-        {
-          "type": "tags",
-          "tags": ["May be heavier and bright red"]
-        },
+        { "type": "text", "value": "Possible reasons include:" },
         {
           "type": "bulletList",
           "items": [
-            "The vagina is not well lubricated",
-            "Estrogen levels are low (breastfeeding or menopause)",
-            "Sex is unusually rough",
-            "A foreign object is used (e.g., piercings or implants)"
+            "Vaginal dryness",
+            "Lower oestrogen levels (e.g., after menopause or while breastfeeding)",
+            "Vigorous intercourse",
+            "Use of objects that may irritate the vaginal lining"
           ]
         },
         {
           "type": "infoBox",
-          "title": "Healing Time",
-          "description": "Minor tears usually heal on their own in a few days to weeks. Larger tears may need stitches but heal within six weeks.",
+          "description": "Minor surface tears often settle on their own, but persistent pain or bleeding should be checked.",
           "icon": "Heart"
         },
         {
@@ -104,26 +106,26 @@
         },
         {
           "type": "text",
-          "value": "Bleeding from the cervix is usually light — often just seen when wiping."
+          "value": "Bleeding from the cervix is often light but may still need assessment."
         },
         {
           "type": "accordion",
           "items": [
             {
               "title": "Cervical Ectropion",
-              "content": "Inner cervical cells turn outward and are more fragile. Common during pregnancy or when using the pill. These cells bleed easily with contact."
+              "content": "Glandular cells from inside the cervix are present on the outer surface and can bleed easily with contact. This is common in younger people, during pregnancy, or with hormonal contraception."
             },
             {
               "title": "Cervical Polyps",
-              "content": "Small benign growths in the cervical canal. Have a rich blood supply and bleed easily during sex."
+              "content": "Small, usually benign growths that can bleed when touched."
             },
             {
               "title": "Cervicitis",
-              "content": "Inflammation of the cervix. Often caused by STIs like chlamydia. May have no symptoms early on but can affect fertility. Can be treated with antibiotics."
+              "content": "Inflammation of the cervix, sometimes due to infection (including STIs). Treatment depends on the cause."
             },
             {
               "title": "Cervical Cancer",
-              "content": "The least common but most serious cause. Very unlikely if you have regular cervical smear tests. Needs urgent assessment and treatment."
+              "content": "Uncommon, but postcoital bleeding can be a symptom. Screening reduces risk, but no test completely eliminates it, so persistent bleeding should always be assessed"
             }
           ]
         }
@@ -140,15 +142,15 @@
         {
           "type": "bulletList",
           "items": [
-            "Heavy bleeding (soaking pads/tampons or causing dizziness)",
-            "Bleeding after sex with pelvic pain, fever, or foul-smelling discharge",
-            "Any bleeding after menopause"
+            "Very heavy bleeding (soaking through pads/tampons quickly or feeling dizzy or faint)",
+            "Bleeding after sex with severe pelvic pain, fever, or foul-smelling discharge",
+            "Signs of infection or feeling unwell with bleeding"
           ]
         },
         {
           "type": "infoBox",
-          "title": "Important",
-          "description": "Get medical help straight away if you notice these symptoms.",
+          "title": "When to Arrange Prompt Medical Review",
+          "description": "Any bleeding after menopause\n\nBleeding after sex that happens more than once\n\nNew or unusual vaginal bleeding at any age",
           "icon": "AlertTriangle"
         }
       ]
@@ -163,27 +165,35 @@
       "content": [
         {
           "type": "text",
-          "value": "Bring this info with you — it can help your doctor find the cause quickly"
+          "value": "Bringing notes can help your doctor understand your symptoms more clearly."
         },
         {
           "type": "grid",
           "columns": 2,
           "items": [
             {
-              "title": "Timing",
-              "description": "When the bleeding happens (timing and cycle day)"
+              "title": "When the bleeding happens",
+              "description": "After every time you have sex or only sometimes, and where you are in your cycle (if still having periods)"
             },
             {
-              "title": "Amount",
-              "description": "How much blood (light spots or heavier flow)"
+              "title": "How much bleeding occurs",
+              "description": "Spotting, light bleeding, or heavier flow"
             },
             {
-              "title": "Pain",
-              "description": "If there's pain during or after sex"
+              "title": "Pain during or after sex",
+              "description": "Where the pain is and how long it lasts"
             },
             {
-              "title": "Other Symptoms",
-              "description": "Any other symptoms (discharge, odour, pelvic pain, fever)"
+              "title": "Other symptoms",
+              "description": "Unusual discharge, odour, pelvic pain, fever, or urinary symptoms"
+            },
+            {
+              "title": "Contraception and medications",
+              "description": "Specially hormonal contraception, HRT, or blood thinners"
+            },
+            {
+              "title": "Recent changes",
+              "description": "New partner, recent STI risk, menopause status"
             }
           ]
         }
@@ -202,20 +212,16 @@
           "columns": 2,
           "items": [
             {
-              "title": "Lubrication",
-              "description": "Use lubrication if vaginal dryness is an issue"
+              "description": "Use a water-based lubricant if vaginal dryness is a problem"
             },
             {
-              "title": "Moisturiser",
-              "description": "Try a vaginal moisturiser if post-menopausal"
+              "description": "Vaginal moisturisers or prescribed vaginal oestrogen can help dryness after menopause (speak to a clinician first)"
             },
             {
-              "title": "Be Gentle",
-              "description": "Avoid rough or prolonged intercourse until you've been checked"
+              "description": "Avoid painful or very vigorous intercourse until you’ve been assessed"
             },
             {
-              "title": "Regular Screening",
-              "description": "Keep up with regular cervical smear tests"
+              "description": "Stay up to date with cervical screening when invited"
             }
           ]
         }
