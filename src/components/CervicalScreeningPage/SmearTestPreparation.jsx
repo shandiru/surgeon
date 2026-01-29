@@ -4,10 +4,9 @@ export default function SmearTestPreparation() {
     <section className="py-16 bg-white rounded-xl">
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          
           {/* Left Card */}
           <div
-            className="bg-white text-[#FF4B8B] rounded-2xl shadow-md p-8 
+            className="bg-white text-primary-pink rounded-2xl shadow-md p-8 
                        transition duration-300 ease-in-out 
                        hover:scale-105 hover:-translate-y-2 hover:shadow-[0_8px_30px_rgba(176,59,102,0.25)]
                        active:scale-[0.98] active:shadow-lg cursor-pointer"

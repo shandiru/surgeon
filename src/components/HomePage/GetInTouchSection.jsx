@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function GetInTouchSection() {
   useEffect(() => {
@@ -11,33 +11,33 @@ export default function GetInTouchSection() {
 
   const cards = [
     {
-      title: 'Nottingham University Hospital',
-      subtitle: 'NHS Trust Appointments',
-      btn: 'NHS Referral Required',
+      title: "Nottingham University Hospital",
+      subtitle: "NHS Trust Appointments",
+      btn: "NHS Referral Required",
       icon: (
         <>
           <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
           <circle cx="12" cy="10" r="3" />
         </>
       ),
-      variant: 'outline',
+      variant: "outline",
     },
     {
-      title: 'Park Hospital',
-      subtitle: 'Private Consultations',
-      btn: 'Book Private Appointment',
-      link: 'https://www.circlehealthgroup.co.uk/online-booking?consultant=C6083162', // 🔗 Replace with real booking link
+      title: "Park Hospital",
+      subtitle: "Private Consultations",
+      btn: "Book Private Appointment",
+      link: "https://www.circlehealthgroup.co.uk/online-booking?consultant=C6083162", // 🔗 Replace with real booking link
       icon: (
         <>
           <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
         </>
       ),
-      variant: 'filled',
+      variant: "filled",
     },
     {
-      title: 'Spire Nottingham Hospital',
-      subtitle: 'Private Practice',
-      btn: 'Schedule Consultation',
+      title: "Spire Nottingham Hospital",
+      subtitle: "Private Practice",
+      btn: "Schedule Consultation",
       icon: (
         <>
           <path d="M8 2v4" />
@@ -46,7 +46,7 @@ export default function GetInTouchSection() {
           <path d="M3 10h18" />
         </>
       ),
-      variant: 'filled',
+      variant: "filled",
     },
   ];
 
@@ -55,17 +55,10 @@ export default function GetInTouchSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2
-            className="text-section text-[#FF4B8B] mb-4"
-            data-aos="fade-up"
-          >
+          <h2 className="text-section text-primary-pink mb-4" data-aos="fade-up">
             Get in Touch
           </h2>
-          <p
-            className="text-body-large text-gray-700"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
+          <p className="text-body-large text-gray-700" data-aos="fade-up" data-aos-delay="200">
             Schedule your consultation today
           </p>
         </div>
@@ -81,7 +74,7 @@ export default function GetInTouchSection() {
             >
               <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 bg-[#FFF1F5]">
                 <svg
-                  className="h-8 w-8 text-[#FF4B8B]"
+                  className="h-8 w-8 text-primary-pink"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -91,9 +84,7 @@ export default function GetInTouchSection() {
                   {card.icon}
                 </svg>
               </div>
-              <h3 className="text-card-title mb-2 text-gray-900">
-                {card.title}
-              </h3>
+              <h3 className="text-card-title mb-2 text-gray-900">{card.title}</h3>
               <p className="text-gray-600 text-body-small mb-4">{card.subtitle}</p>
 
               {/* Button / Link */}
@@ -106,8 +97,8 @@ export default function GetInTouchSection() {
                 >
                   {card.btn}
                 </a>
-              ) : card.variant === 'outline' ? (
-                <button className="inline-flex items-center justify-center rounded-md border text-button transition-all w-full px-4 py-2 bg-transparent text-[#FF4B8B] border-[#FF4B8B] hover:bg-[#FFE3EC]">
+              ) : card.variant === "outline" ? (
+                <button className="inline-flex items-center justify-center rounded-md border text-button transition-all w-full px-4 py-2 bg-transparent text-primary-pink border-[#FF4B8B] hover:bg-[#FFE3EC]">
                   {card.btn}
                 </button>
               ) : (

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ChevronDown } from "lucide-react";
+import { parseFormattedText } from "../utils/parseFormattedText";
 
 const AccordionBlock = ({ items }) => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -23,7 +24,7 @@ const AccordionBlock = ({ items }) => {
               }`}
             />
           </button>
-          {openIndex === i && <div className="px-6 pb-4 text-black">{item.content}</div>}
+          {openIndex === i && <div className="px-6 pb-4 text-black">{parseFormattedText(item.content)}</div>}
         </div>
       ))}
     </div>

@@ -1,15 +1,13 @@
-import React from 'react';
+import React from "react";
 
 export default function EmotionalAndSupportSection() {
   return (
     <section className="mb-12 px-4">
       <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
-        
         {/* Emotional Wellbeing Card */}
         <div className="bg-gradient-to-br from-[#FFF7FA] to-[#FEE6EA] text-[#1F2937] flex flex-col gap-6 rounded-2xl py-8 shadow-md hover:shadow-lg transition">
           <div className="px-8 pb-5 border-b border-[#FFD6E5]">
-            <div className="flex items-center gap-3 text-2xl font-bold text-[#FF4B8B]">
-              
+            <div className="flex items-center gap-3 text-2xl font-bold text-primary-pink">
               Emotional Wellbeing
             </div>
           </div>
@@ -24,8 +22,7 @@ export default function EmotionalAndSupportSection() {
         {/* Follow-Up & Support Card */}
         <div className="bg-gradient-to-br from-[#FFF7FA] to-[#FEE6EA] text-[#1F2937] flex flex-col gap-6 rounded-2xl py-8 shadow-md hover:shadow-lg transition">
           <div className="px-8 pb-5 border-b border-[#FFD6E5]">
-            <div className="flex items-center gap-3 text-2xl font-bold text-[#FF4B8B]">
-            
+            <div className="flex items-center gap-3 text-2xl font-bold text-primary-pink">
               Follow-Up & Support
             </div>
           </div>

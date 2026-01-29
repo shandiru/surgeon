@@ -1,14 +1,14 @@
-'use client';
-import React from 'react';
-import { Users, Heart, Leaf, FileText } from 'lucide-react';
+"use client";
+import React from "react";
+import { Users, Heart, Leaf, FileText } from "lucide-react";
 
 export default function SupportSelfCare() {
   return (
     <section className="mb-16 px-6 md:px-12">
       {/* Section Header */}
       <div className="flex items-center gap-3 mb-8">
-        <Users className="h-7 w-7 text-[#FF4B8B]" />
-        <h2 className="text-3xl font-bold text-[#FF4B8B]">Support &amp; Self-Care</h2>
+        <Users className="h-7 w-7 text-primary-pink" />
+        <h2 className="text-3xl font-bold text-primary-pink">Support &amp; Self-Care</h2>
       </div>
 
       {/* Grid Section */}
@@ -46,12 +46,10 @@ export default function SupportSelfCare() {
             Emotional Support
           </h3>
           <p className="text-sm leading-relaxed">
-            Severe symptoms can affect mood, energy, confidence and relationships. 
-            It's okay to ask for emotional support or counselling.
+            Severe symptoms can affect mood, energy, confidence and relationships. It's okay to ask
+            for emotional support or counselling.
           </p>
-          <p className="font-medium text-[#FF4B8B]">
-            You don't have to "just put up with it"
-          </p>
+          <p className="font-medium text-primary-pink">You don't have to "just put up with it"</p>
         </div>
       </div>
     </section>

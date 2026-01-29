@@ -1,9 +1,9 @@
-import React from 'react';
-import { Heart, Calendar, Activity, Target, Clock } from 'lucide-react'; // Importing Lucide icons
+import React from "react";
+import { Heart, Calendar, Activity, Target, Clock } from "lucide-react"; // Importing Lucide icons
 
 const SelfCareTips = () => {
   return (
-    <div className="text-[#FF4B8B] bg-[#FF4B8B]/10 max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-xl  py-6 shadow-sm hover:z-50 transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:scale-105 active:scale-100">
+    <div className="text-primary-pink bg-[#FF4B8B]/10 max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-xl  py-6 shadow-sm hover:z-50 transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:scale-105 active:scale-100">
       <div className="px-6 pt-6">
         <div className="text-center space-y-4">
           <div className="flex justify-center">
@@ -26,7 +26,9 @@ const SelfCareTips = () => {
               <Heart className="h-5 w-5 text-secondary mt-1" />
               <div>
                 <h5 className="font-medium">Use heat therapy</h5>
-                <p className="text-sm text-muted-foreground">Warm baths or hot water bottles for cramps</p>
+                <p className="text-sm text-muted-foreground">
+                  Warm baths or hot water bottles for cramps
+                </p>
               </div>
             </div>
             {/* Tip 3 */}

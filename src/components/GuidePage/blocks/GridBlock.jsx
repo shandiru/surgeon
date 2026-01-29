@@ -1,5 +1,6 @@
 import React from "react";
 import iconMap from "../iconMap";
+import { parseFormattedText } from "../utils/parseFormattedText";
 
 const GridBlock = ({ columns = 3, items }) => {
   const colClassMap = {
@@ -18,8 +19,7 @@ const GridBlock = ({ columns = 3, items }) => {
           <div
             key={i}
             className="rounded-xl border p-6 bg-light-pink-1 text-center space-y-3
-              transition duration-300 hover:scale-105 hover:-translate-y-1 hover:shadow-lg"
-            style={{ borderColor: "rgb(255,197,211)" }}
+              transition duration-300 hover:scale-105 hover:-translate-y-1 hover:shadow-lg border-primary-pink"
           >
             {IconComponent && (
               <div className="w-12 h-12 rounded-full bg-light-pink-2 flex items-center justify-center mx-auto">
@@ -27,7 +27,7 @@ const GridBlock = ({ columns = 3, items }) => {
               </div>
             )}
             {item.title && <h4 className="font-bold text-primary-pink">{item.title}</h4>}
-            {item.description && <p className="text-sm text-black">{item.description}</p>}
+            {item.description && <p className="text-sm text-black">{parseFormattedText(item.description)}</p>}
           </div>
         );
       })}

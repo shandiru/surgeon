@@ -1,7 +1,7 @@
-'use client';
-import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+"use client";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function AboutSectionView() {
   useEffect(() => {
@@ -13,8 +13,8 @@ export default function AboutSectionView() {
 
   const cards = [
     {
-      title: 'Clinical Excellence',
-      desc: 'Providing world-class care with the latest evidence-based treatments and techniques.',
+      title: "Clinical Excellence",
+      desc: "Providing world-class care with the latest evidence-based treatments and techniques.",
       icon: (
         <>
           <path d="M11 2v2" />
@@ -26,8 +26,8 @@ export default function AboutSectionView() {
       ),
     },
     {
-      title: 'Compassionate Care',
-      desc: 'Supporting patients and families through every step of their healthcare journey.',
+      title: "Compassionate Care",
+      desc: "Supporting patients and families through every step of their healthcare journey.",
       icon: (
         <>
           <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
@@ -38,8 +38,8 @@ export default function AboutSectionView() {
       ),
     },
     {
-      title: 'Research & Innovation',
-      desc: 'Contributing to medical advancement through research and professional leadership.',
+      title: "Research & Innovation",
+      desc: "Contributing to medical advancement through research and professional leadership.",
       icon: (
         <>
           <path d="M15.477 12.89l1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526" />
@@ -54,10 +54,7 @@ export default function AboutSectionView() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2
-            className="text-section text-[#FF4B8B] mb-4"
-            data-aos="fade-up"
-          >
+          <h2 className="text-section text-primary-pink mb-4" data-aos="fade-up">
             About Mr Ketankumar Gajjar
           </h2>
           <p
@@ -65,9 +62,8 @@ export default function AboutSectionView() {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            A leading consultant in gynaecological oncology, dedicated to providing
-            exceptional care and advancing women's health through clinical excellence
-            and research.
+            A leading consultant in gynaecological oncology, dedicated to providing exceptional care
+            and advancing women's health through clinical excellence and research.
           </p>
         </div>
 
@@ -85,7 +81,7 @@ export default function AboutSectionView() {
               <div className="bg-[#FF4B8B]/10 group-hover:bg-[#FF4B8B]/20 transition-colors duration-300 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-8 w-8 text-[#FF4B8B]"
+                  className="h-8 w-8 text-primary-pink"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -94,9 +90,7 @@ export default function AboutSectionView() {
                   {card.icon}
                 </svg>
               </div>
-              <h3 className="text-card-title mb-2 text-[#1F2937]">
-                {card.title}
-              </h3>
+              <h3 className="text-card-title mb-2 text-[#1F2937]">{card.title}</h3>
               <p className="text-body text-gray-600">{card.desc}</p>
             </div>
           ))}

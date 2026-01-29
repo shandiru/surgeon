@@ -5,9 +5,7 @@ export default function SmearTestReminder() {
       <div className="max-w-7xl mx-auto flex flex-col gap-10 rounded-2xl border border-[#ff97b3]/40 py-12 px-8 shadow-md bg-white">
         {/* Header */}
         <div className="text-center">
-          <h2 className="font-extrabold text-3xl mb-2 text-[#FF4B8B]">
-            Remember
-          </h2>
+          <h2 className="font-extrabold text-3xl mb-2 text-primary-pink">Remember</h2>
           <p className="text-lg text-gray-700">
             Smear tests are simple steps that protect your future.
           </p>
@@ -30,7 +28,7 @@ export default function SmearTestReminder() {
                 <polyline points="12 6 12 12 16 14" />
               </svg>
             </div>
-            <p className="font-semibold text-lg text-[#FF4B8B]">Quick</p>
+            <p className="font-semibold text-lg text-primary-pink">Quick</p>
           </div>
 
           {/* Simple */}
@@ -48,7 +46,7 @@ export default function SmearTestReminder() {
                 <path d="m9 11 3 3L22 4" />
               </svg>
             </div>
-            <p className="font-semibold text-lg text-[#FF4B8B]">Simple</p>
+            <p className="font-semibold text-lg text-primary-pink">Simple</p>
           </div>
 
           {/* Life-saving */}
@@ -69,13 +67,13 @@ export default function SmearTestReminder() {
                 <circle cx="20" cy="10" r="2" />
               </svg>
             </div>
-            <p className="font-semibold text-lg text-[#FF4B8B]">Life-saving</p>
+            <p className="font-semibold text-lg text-primary-pink">Life-saving</p>
           </div>
         </div>
 
         {/* Closing Line */}
         <div className="text-center">
-          <p className="text-2xl font-bold text-[#FF4B8B]">
+          <p className="text-2xl font-bold text-primary-pink">
             Don&apos;t miss your screening — it could save your life.
           </p>
         </div>

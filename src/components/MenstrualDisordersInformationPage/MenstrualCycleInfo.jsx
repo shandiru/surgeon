@@ -1,15 +1,15 @@
-import { FaRegClock, FaHeartbeat } from 'react-icons/fa';
-import { PiDropFill } from 'react-icons/pi';
-import { BsCheckCircle } from 'react-icons/bs';
-import { FiCalendar } from 'react-icons/fi';
+import { FaRegClock, FaHeartbeat } from "react-icons/fa";
+import { PiDropFill } from "react-icons/pi";
+import { BsCheckCircle } from "react-icons/bs";
+import { FiCalendar } from "react-icons/fi";
 
 const NormalCycleInfo = () => {
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         {/* Title */}
-        <h2 className="text-2xl sm:text-3xl font-bold mb-10 flex items-center gap-2 text-[#FF4B8B]">
-          <FiCalendar className="text-[#FF4B8B] text-2xl" />
+        <h2 className="text-2xl sm:text-3xl font-bold mb-10 flex items-center gap-2 text-primary-pink">
+          <FiCalendar className="text-primary-pink text-2xl" />
           What's a Normal Menstrual Cycle?
         </h2>
 
@@ -67,8 +67,8 @@ const NormalCycleInfo = () => {
         >
           <BsCheckCircle className="mt-0.5 text-[#e91e63] text-lg" />
           <p className="text-[#900c3f]">
-            What’s “normal” is what’s normal for you — sudden changes are worth
-            checking with your healthcare provider.
+            What’s “normal” is what’s normal for you — sudden changes are worth checking with your
+            healthcare provider.
           </p>
         </div>
       </div>

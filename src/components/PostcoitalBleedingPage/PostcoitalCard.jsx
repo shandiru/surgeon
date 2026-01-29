@@ -1,14 +1,14 @@
-import React from 'react';
+import React from "react";
 
 const PostcoitalCard = () => {
   return (
     <div
       className="max-w-6xl mx-auto mb-10 flex flex-col gap-6 rounded-xl bg-white py-6 px-6 shadow-md hover:shadow-xl hover:scale-[1.02] transition-all duration-300"
-      style={{ color: '#BB125B' }}
+      style={{ color: "#BB125B" }}
     >
       {/* Header */}
       <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 border-b pb-6">
-        <div className="font-semibold flex items-center gap-2 text-2xl text-[#FF4B8B]">
+        <div className="font-semibold flex items-center gap-2 text-2xl text-primary-pink">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -34,12 +34,16 @@ const PostcoitalCard = () => {
       {/* Content */}
       <div className="space-y-4">
         <p className="text-lg leading-relaxed">
-          Postcoital bleeding is bleeding that happens after vaginal sex. It is not part of your period.
+          Postcoital bleeding is bleeding that happens after vaginal sex. It is not part of your
+          period.
         </p>
         <ul className="space-y-2 text-[#6B7280]">
           <li>• The amount of blood can range from light spotting to heavier flow</li>
           <li>• It can happen after penetration by a penis, sex toys, or fingers</li>
-          <li>• Around 1 in 10 women experience this at some point — it is common and usually not serious</li>
+          <li>
+            • Around 1 in 10 women experience this at some point — it is common and usually not
+            serious
+          </li>
         </ul>
       </div>
     </div>

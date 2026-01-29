@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 
 export default function PostcoitalBleedingCards() {
   const cards = [
     {
-      title: 'Common Condition',
-      text: 'Around 1 in 10 women experience postcoital bleeding at some point',
+      title: "Common Condition",
+      text: "Around 1 in 10 women experience postcoital bleeding at some point",
       icon: (
         <>
           <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
@@ -15,15 +15,15 @@ export default function PostcoitalBleedingCards() {
       ),
     },
     {
-      title: 'Usually Painless',
-      text: 'Most cases are painless and not serious',
+      title: "Usually Painless",
+      text: "Most cases are painless and not serious",
       icon: (
         <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
       ),
     },
     {
-      title: 'Treatable',
-      text: 'Most causes are harmless and easily treated',
+      title: "Treatable",
+      text: "Most causes are harmless and easily treated",
       icon: (
         <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
       ),
@@ -39,14 +39,14 @@ export default function PostcoitalBleedingCards() {
               key={idx}
               className="flex flex-col gap-4 rounded-xl border py-6 px-6 bg-white text-center shadow-sm transition-all duration-300 hover:shadow-xl hover:scale-105"
               style={{
-                borderColor: '#FEE6EA',
-                color: '#1F2937',
+                borderColor: "#FEE6EA",
+                color: "#1F2937",
               }}
             >
               {/* Icon */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-10 w-10 text-[#FF4B8B] mx-auto mb-2"
+                className="h-10 w-10 text-primary-pink mx-auto mb-2"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -58,9 +58,7 @@ export default function PostcoitalBleedingCards() {
               </svg>
 
               {/* Title */}
-              <div className="font-semibold text-lg text-[#FF4B8B]">
-                {card.title}
-              </div>
+              <div className="font-semibold text-lg text-primary-pink">{card.title}</div>
 
               {/* Text */}
               <p className="text-sm text-[#6B7280]">{card.text}</p>

@@ -52,11 +52,7 @@ const GuideCard = ({ section, totalSteps, setShowCard, setActiveButton }) => {
       <div
         className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10
         flex flex-col gap-6 rounded-2xl border shadow-sm
-        animate-in slide-in-from-right-5 duration-300 p-8"
-        style={{
-          backgroundColor: "#FFFFFF",
-          borderColor: "rgb(255,197,211)",
-        }}
+        animate-in slide-in-from-right-5 duration-300 p-8 bg-white border-light-pink-2"
       >
         {renderContent()}
 
@@ -75,7 +71,9 @@ const GuideCard = ({ section, totalSteps, setShowCard, setActiveButton }) => {
               Continue to Next Section
             </button>
           ) : (
-            <div className="text-center text-[#BB125B] font-semibold text-lg">Guide Complete</div>
+            <div className="text-center text-primary-pink font-semibold text-lg">
+              Guide Complete
+            </div>
           )}
         </div>
       </div>

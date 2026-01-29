@@ -1,24 +1,27 @@
-import React from 'react';
-import { CheckCircle2, Award, Building2 } from 'lucide-react';
+import React from "react";
+import { CheckCircle2, Award, Building2 } from "lucide-react";
 
 export default function FeaturesSection() {
   const features = [
     {
       icon: <CheckCircle2 className="w-8 h-8" />,
-      title: 'Pros and Cons of Robotic Surgery',
-      description: 'Understanding the advantages and considerations of robotic-assisted surgery helps patients make informed decisions about their treatment options.',
+      title: "Pros and Cons of Robotic Surgery",
+      description:
+        "Understanding the advantages and considerations of robotic-assisted surgery helps patients make informed decisions about their treatment options.",
       highlighted: true,
     },
     {
       icon: <Award className="w-8 h-8" />,
       title: "Ketan's Experience as a Robotic Surgeon",
-      description: 'With extensive experience in robotic-assisted procedures, Ketan combines technical expertise with compassionate care to deliver superior patient outcomes.',
+      description:
+        "With extensive experience in robotic-assisted procedures, Ketan combines technical expertise with compassionate care to deliver superior patient outcomes.",
       highlighted: false,
     },
     {
       icon: <Building2 className="w-8 h-8" />,
-      title: 'Current Work and Teaching',
-      description: 'As Medical Director, Ketan oversees daily hospital operations while actively teaching robotic surgery techniques to surgeons across Europe.',
+      title: "Current Work and Teaching",
+      description:
+        "As Medical Director, Ketan oversees daily hospital operations while actively teaching robotic surgery techniques to surgeons across Europe.",
       highlighted: false,
     },
   ];
@@ -34,7 +37,8 @@ export default function FeaturesSection() {
                 Robotic Surgery Excellence
               </h2>
               <p className="text-body-large text-gray-600 max-w-2xl">
-                Comprehensive insights into robotic surgery, from understanding the benefits and considerations to exploring expert experience and current practice.
+                Comprehensive insights into robotic surgery, from understanding the benefits and
+                considerations to exploring expert experience and current practice.
               </p>
             </div>
             <div className="flex-shrink-0 md:mt-0 mt-4">
@@ -50,33 +54,25 @@ export default function FeaturesSection() {
               <React.Fragment key={index}>
                 <div
                   className={`flex items-start gap-4 p-6 rounded-lg transition-all duration-300 ${
-                    feature.highlighted
-                      ? 'bg-[#FDE7EB]'
-                      : 'bg-white'
+                    feature.highlighted ? "bg-[#FDE7EB]" : "bg-white"
                   }`}
                 >
                   {/* Icon */}
-                  <div className="flex-shrink-0 text-[#FF4B8B]">
-                    {feature.icon}
-                  </div>
+                  <div className="flex-shrink-0 text-primary-pink">{feature.icon}</div>
 
                   {/* Content */}
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-2">
-                      <h3 className="text-subsection text-[#FF4B8B] font-semibold">
+                      <h3 className="text-subsection text-primary-pink font-semibold">
                         {feature.title}
                       </h3>
                     </div>
-                    <p className="text-body text-gray-600 leading-relaxed">
-                      {feature.description}
-                    </p>
+                    <p className="text-body text-gray-600 leading-relaxed">{feature.description}</p>
                   </div>
                 </div>
 
                 {/* Divider */}
-                {index < features.length - 1 && (
-                  <div className="border-t border-gray-200" />
-                )}
+                {index < features.length - 1 && <div className="border-t border-gray-200" />}
               </React.Fragment>
             ))}
           </div>

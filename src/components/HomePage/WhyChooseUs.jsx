@@ -33,7 +33,6 @@ export default function WhyChooseUs() {
 
   return (
     <section id="why-choose-us" className="relative bg-[#FFF1F5] pb-32 overflow-hidden">
-
       {/* Header */}
       <div className="text-center mt-16 mb-24 px-4">
         <p className="text-body-small text-[#1B123D]/60 mb-3" data-aos="fade-up">
@@ -60,9 +59,7 @@ export default function WhyChooseUs() {
             rel="noopener noreferrer"
           >
             <button className="relative flex items-center bg-[#FF4B8B] hover:bg-[#E03E7C] text-white font-medium rounded-lg shadow-[0_0_20px_rgba(255,75,139,0.3)] transition-all duration-300">
-              <span className="px-5 py-3 text-button">
-                Book Appointment
-              </span>
+              <span className="px-5 py-3 text-button">Book Appointment</span>
             </button>
           </a>
 
@@ -75,17 +72,15 @@ export default function WhyChooseUs() {
 
       {/* Main Content Wrapper */}
       <div className="relative flex flex-col lg:flex-row items-center justify-center w-full">
-
         {/* MOBILE STRUCTURE: TEXT → IMAGE → ACCORDION */}
         <div className="flex flex-col lg:hidden w-full px-6 space-y-10">
-
           {/* TEXT FIRST */}
           <div data-aos="fade-up">
             <div className="inline-flex items-center space-x-2 bg-[#FFF1F5] px-3 py-1 rounded-full">
               <div className="w-5 h-5 bg-[#FF4B8B] rounded-full flex items-center justify-center">
                 <FaStethoscope className="text-white text-sm" />
               </div>
-              <span className="text-[#FF4B8B] text-body-small font-semibold">
+              <span className="text-primary-pink text-body-small font-semibold">
                 KetanKumar GynCare
               </span>
             </div>
@@ -95,10 +90,9 @@ export default function WhyChooseUs() {
             </h3>
 
             <p className="text-[#636977] text-body mt-3 leading-relaxed">
-              Experience compassionate, specialised gynaecological treatment tailored
-              to your well-being. With advanced surgical expertise and a patient-first
-              approach, we ensure you feel supported, informed, and confident every
-              step of the way.
+              Experience compassionate, specialised gynaecological treatment tailored to your
+              well-being. With advanced surgical expertise and a patient-first approach, we ensure
+              you feel supported, informed, and confident every step of the way.
             </p>
           </div>
 
@@ -177,7 +171,7 @@ export default function WhyChooseUs() {
               <div className="w-5 h-5 bg-[#FF4B8B] rounded-full flex items-center justify-center">
                 <FaStethoscope className="text-white text-sm" />
               </div>
-              <span className="text-[#FF4B8B] text-body-small font-semibold">
+              <span className="text-primary-pink text-body-small font-semibold">
                 KetanKumar GynCare
               </span>
             </div>
@@ -187,10 +181,9 @@ export default function WhyChooseUs() {
             </h3>
 
             <p className="text-[#636977] text-body leading-relaxed max-w-md">
-              Experience compassionate, specialised gynaecological treatment tailored
-              to your well-being. With advanced surgical expertise and a patient-first
-              approach, we ensure you feel supported, informed, and confident every
-              step of the way.
+              Experience compassionate, specialised gynaecological treatment tailored to your
+              well-being. With advanced surgical expertise and a patient-first approach, we ensure
+              you feel supported, informed, and confident every step of the way.
             </p>
           </div>
 
@@ -256,7 +249,6 @@ export default function WhyChooseUs() {
             />
           </div>
         </div>
-
       </div>
     </section>
   );

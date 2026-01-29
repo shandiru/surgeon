@@ -1,8 +1,8 @@
-'use client'
+"use client";
 
-import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // Import AOS styles
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 import { LuScissors, LuZap, LuShield } from "react-icons/lu";
 
 export default function CervicalCancerTreatment() {
@@ -16,15 +16,14 @@ export default function CervicalCancerTreatment() {
   return (
     <section className="py-12" data-aos="fade-up">
       <div className="max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
-        <div className="relative bg-[#fff5f8] text-[#4b1e30] rounded-xl shadow-sm px-6 py-8 mt-4 overflow-hidden border border-[#f5c2d2]">
-
+        <div className="relative bg-[#fff5f8] text-primary-pink rounded-xl shadow-sm px-6 py-8 mt-4 overflow-hidden border border-[#f5c2d2]">
           {/* Left Border Decoration */}
           <div className="absolute top-0 left-0 h-full w-[6px] bg-[#FF4B8B] rounded-bl-2xl"></div>
 
           {/* Header */}
           <div data-aos="fade-left">
-            <div className="flex items-center gap-2 text-xl font-semibold text-[#FF4B8B] mb-4">
-              <LuScissors className="w-6 h-6 text-[#FF4B8B]" />
+            <div className="flex items-center gap-2 text-xl font-semibold text-primary-pink mb-4">
+              <LuScissors className="w-6 h-6 text-primary-pink" />
               How is Cervical Cancer Treated?
             </div>
           </div>
@@ -32,7 +31,7 @@ export default function CervicalCancerTreatment() {
           {/* “We Consider” Section */}
           <div className="mt-8" data-aos="fade-up">
             <div className="bg-white p-4 rounded-lg border border-[#f5c2d2] transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]">
-              <h3 className="font-semibold mb-2 text-[#4b1e30]">We consider:</h3>
+              <h3 className="font-semibold mb-2 text-primary-pink">We consider:</h3>
               <div className="grid md:grid-cols-2 gap-2 text-sm text-[#7a2f4f ]">
                 {[
                   "Type and stage of cancer",
@@ -46,7 +45,7 @@ export default function CervicalCancerTreatment() {
                   </div>
                 ))}
               </div>
-              <p className="text-sm font-medium mt-3 text-[#FF4B8B]">
+              <p className="text-sm font-medium mt-3 text-primary-pink">
                 Our goal is to treat the cancer while tailoring care to you.
               </p>
             </div>
@@ -54,8 +53,8 @@ export default function CervicalCancerTreatment() {
 
           {/* Surgery Section */}
           <div className="mt-10" data-aos="fade-up">
-            <h3 className="font-semibold text-lg mb-4 flex items-center gap-2 text-[#FF4B8B]">
-              <LuScissors className="w-5 h-5 text-[#FF4B8B]" />
+            <h3 className="font-semibold text-lg mb-4 flex items-center gap-2 text-primary-pink">
+              <LuScissors className="w-5 h-5 text-primary-pink" />
               1. Surgery (Often the First Step)
             </h3>
             <div className="grid gap-4">
@@ -87,7 +86,7 @@ export default function CervicalCancerTreatment() {
                 >
                   <div className="w-2 h-2 bg-[#FF4B8B] rounded-full mt-2 flex-shrink-0"></div>
                   <div>
-                    <h4 className="font-medium text-[#FF4B8B]">{item.title}</h4>
+                    <h4 className="font-medium text-primary-pink">{item.title}</h4>
                     <p className="text-sm text-[#7a2f4f] mt-1">– {item.desc}</p>
                   </div>
                 </div>
@@ -97,13 +96,11 @@ export default function CervicalCancerTreatment() {
 
           {/* Combination Treatments */}
           <div className="mt-10" data-aos="fade-up">
-            <h3 className="font-semibold text-lg mb-4 flex items-center gap-2 text-[#FF4B8B]">
-              <LuZap className="w-5 h-5 text-[#FF4B8B]" />
+            <h3 className="font-semibold text-lg mb-4 flex items-center gap-2 text-primary-pink">
+              <LuZap className="w-5 h-5 text-primary-pink" />
               2. Combination Treatments
             </h3>
-            <p className="text-[#7a2f4f] mb-4">
-              In some cases, surgery may be combined with:
-            </p>
+            <p className="text-[#7a2f4f] mb-4">In some cases, surgery may be combined with:</p>
             <div className="grid md:grid-cols-2 gap-4">
               {[
                 {
@@ -125,7 +122,7 @@ export default function CervicalCancerTreatment() {
                 >
                   <div className="w-2 h-2 bg-[#FF4B8B] rounded-full mt-2 flex-shrink-0"></div>
                   <div>
-                    <h4 className="font-medium text-[#FF4B8B]">{item.title}</h4>
+                    <h4 className="font-medium text-primary-pink">{item.title}</h4>
                     <p className="text-sm text-[#7a2f4f] mt-1">– {item.desc}</p>
                   </div>
                 </div>
@@ -135,31 +132,26 @@ export default function CervicalCancerTreatment() {
 
           {/* Recovery and Support */}
           <div className="mt-10" data-aos="fade-up">
-            <h3 className="font-semibold text-lg mb-4 flex items-center gap-2 text-[#FF4B8B]">
-              <LuShield className="w-5 h-5 text-[#FF4B8B]" />
+            <h3 className="font-semibold text-lg mb-4 flex items-center gap-2 text-primary-pink">
+              <LuShield className="w-5 h-5 text-primary-pink" />
               3. Recovery & Support
             </h3>
             <div className="space-y-4">
               <div className="p-4 bg-white rounded-lg border border-[#f5c2d2] transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]">
-                <h4 className="font-medium text-[#FF4B8B] mb-2">
-                  Enhanced Recovery Programs
-                </h4>
+                <h4 className="font-medium text-primary-pink mb-2">Enhanced Recovery Programs</h4>
                 <p className="text-sm text-[#7a2f4f]">
                   Enhanced recovery after surgery programs help you heal faster.
                 </p>
               </div>
               <div className="p-4 bg-white rounded-lg border border-[#f5c2d2] transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]">
-                <h4 className="font-medium text-[#FF4B8B] mb-2">
-                  Multi-specialty Approach
-                </h4>
+                <h4 className="font-medium text-primary-pink mb-2">Multi-specialty Approach</h4>
                 <p className="text-sm text-[#7a2f4f]">
-                  Our oncologists collaborate with surgeons and specialists across
-                  different fields to create a comprehensive care plan.
+                  Our oncologists collaborate with surgeons and specialists across different fields
+                  to create a comprehensive care plan.
                 </p>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>

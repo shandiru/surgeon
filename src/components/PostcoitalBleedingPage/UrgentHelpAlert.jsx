@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const UrgentHelpAlert = () => {
   return (
@@ -24,18 +24,16 @@ const UrgentHelpAlert = () => {
           <path d="M12 9v4" />
           <path d="M12 17h.01" />
         </svg>
-        <h3 className="font-bold text-lg text-[#FF4B8B]">
-         When to Seek Urgent Help
-        </h3>
+        <h3 className="font-bold text-lg text-primary-pink">When to Seek Urgent Help</h3>
       </div>
 
       {/* Content */}
       <div className="space-y-4 text-sm text-[#444]">
         <ul className="space-y-2">
           {[
-            'Heavy bleeding (soaking pads/tampons or causing dizziness)',
-            'Bleeding after sex with pelvic pain, fever, or foul-smelling discharge',
-            'Any bleeding after menopause',
+            "Heavy bleeding (soaking pads/tampons or causing dizziness)",
+            "Bleeding after sex with pelvic pain, fever, or foul-smelling discharge",
+            "Any bleeding after menopause",
           ].map((item, idx) => (
             <li key={idx} className="flex items-start gap-2">
               <span className="w-2 h-2 rounded-full bg-[#FF4B8B] mt-2 flex-shrink-0" />

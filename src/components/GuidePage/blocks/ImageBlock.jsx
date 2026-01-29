@@ -9,8 +9,8 @@ const ImageBlock = ({ src, alt }) => {
         loading="lazy"
         className="w-full max-w-lg rounded-2xl shadow-xl
           transition duration-300 transform
-          hover:scale-105 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(255,75,139,0.5)]
-          active:scale-105 active:-translate-y-2 active:shadow-[0_10px_40px_rgba(255,75,139,0.5)]"
+          hover:scale-105 hover:-translate-y-2 hover:shadow-light-pink-2
+          active:scale-105 active:-translate-y-2 active:shadow-light-pink-2"
       />
     </div>
   );

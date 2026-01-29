@@ -1,23 +1,22 @@
 // src/pages/CervicalScreening.jsx
 export default function CervicalScreening() {
   return (
-    <header className="bg-[#FFE6EA] text-[#FF4B8B] py-20 px-6 md:px-20">
+    <header className="bg-[#FFE6EA] text-primary-pink py-20 px-6 md:px-20">
       <div className="container mx-auto">
         <div className="grid md:grid-cols-2 gap-16 items-center">
-          
           {/* Left Text */}
           <div className="text-center md:text-left space-y-6 px-4 md:px-8">
             <h1 className="text-4xl md:text-5xl font-bold drop-shadow-sm [text-wrap:balance]">
               Cervical Screening (Smear Test)
             </h1>
-            <p className="text-xl md:text-2xl text-[#FF4B8B]/80 [text-wrap:pretty]">
+            <p className="text-xl md:text-2xl text-primary-pink/80 [text-wrap:pretty]">
               A simple test that could save your life
             </p>
 
             {/* ✅ Stat Content */}
             <div className="rounded-xl border border-[#FF4B8B]/20 p-6 shadow-md bg-white/60 backdrop-blur-sm max-w-md mx-auto md:mx-0">
-              <div className="text-5xl font-extrabold mb-3 text-[#FF4B8B]">83%</div>
-              <p className="text-lg text-[#FF4B8B]/90 leading-relaxed">
+              <div className="text-5xl font-extrabold mb-3 text-primary-pink">83%</div>
+              <p className="text-lg text-primary-pink/90 leading-relaxed">
                 Regular screening can prevent up to 83% of cervical cancer cases
               </p>
             </div>

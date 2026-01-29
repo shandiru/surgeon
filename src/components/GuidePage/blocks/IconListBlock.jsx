@@ -1,5 +1,6 @@
 import React from "react";
 import iconMap from "../iconMap";
+import { parseFormattedText } from "../utils/parseFormattedText";
 
 const IconListBlock = ({ items }) => {
   return (
@@ -13,7 +14,7 @@ const IconListBlock = ({ items }) => {
                 <IconComponent className="w-5 h-5" />
               </span>
             )}
-            <span>{item.text}</span>
+            <span>{parseFormattedText(item.text)}</span>
           </li>
         );
       })}

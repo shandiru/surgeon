@@ -13,7 +13,7 @@ const GuidePage = () => {
 
   if (!guide) {
     return (
-      <div className="text-center mt-20 text-[#BB125B]">
+      <div className="text-center mt-20 text-primary-pink">
         <h1 className="text-hero">Guide Not Found</h1>
         <p className="text-body-large mt-4">The guide you are looking for does not exist.</p>
       </div>

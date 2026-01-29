@@ -1,5 +1,5 @@
-import React from 'react';
-import { Heart } from 'lucide-react'; // Importing the Heart icon from lucide-react
+import React from "react";
+import { Heart } from "lucide-react"; // Importing the Heart icon from lucide-react
 
 const PelvicHeader = () => {
   return (
@@ -13,7 +13,7 @@ const PelvicHeader = () => {
         </div>
 
         {/* Title */}
-        <h1 className="text-hero text-[#FF4B8B] text-balance mb-4 text-foreground">
+        <h1 className="text-hero text-primary-pink text-balance mb-4 text-foreground">
           Understanding Pelvic Pain
         </h1>
 

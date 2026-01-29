@@ -5,7 +5,6 @@ const Header = () => {
     <header className="bg-white border-b border-[#f9d2db] shadow-sm">
       <div className="container mx-auto px-6 md:px-12 py-10">
         <div className="flex flex-col md:flex-row items-center justify-center gap-4">
-          
           {/* Left Content */}
           <div className="flex items-center gap-3 text-center md:text-left">
             {/* Heart Icon */}
@@ -28,10 +27,10 @@ const Header = () => {
 
             {/* Title + Subtitle */}
             <div>
-              <h1 className="text-2xl md:text-3xl font-bold text-[#FF4B8B] leading-snug">
+              <h1 className="text-2xl md:text-3xl font-bold text-primary-pink leading-snug">
                 Understanding Menstrual Disorders
               </h1>
-              <p className="text-[#FF4B8B] mt-1 text-sm md:text-base">
+              <p className="text-primary-pink mt-1 text-sm md:text-base">
                 What they are, causes & treatment options
               </p>
             </div>

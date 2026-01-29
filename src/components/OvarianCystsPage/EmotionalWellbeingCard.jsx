@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import React from 'react';
+import React from "react";
 
 export default function EmotionalWellbeingCard() {
   return (
     <div className="text-[#BB125B] flex flex-col gap-6 rounded-xl bg-[#FEE6EA] py-6 px-5 sm:px-6 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all">
       {/* Card Header */}
-      <div className="flex items-center gap-3 font-semibold text-[#FF4B8B] text-lg">
+      <div className="flex items-center gap-3 font-semibold text-primary-pink text-lg">
         {/* Brain Icon */}
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +30,8 @@ export default function EmotionalWellbeingCard() {
       {/* Card Content */}
       <div className="space-y-5">
         <p className="leading-relaxed text-base">
-          Persistent pain, bloating or fertility concerns can affect mood, confidence and relationships.
+          Persistent pain, bloating or fertility concerns can affect mood, confidence and
+          relationships.
         </p>
 
         {/* Support Message */}
@@ -54,9 +55,7 @@ export default function EmotionalWellbeingCard() {
             <p className="font-medium text-[#BB125B]">
               It's okay to ask for emotional support or counselling
             </p>
-            <p className="text-sm text-[#7A3E59]">
-              You don't have to cope with it alone
-            </p>
+            <p className="text-sm text-[#7A3E59]">You don't have to cope with it alone</p>
           </div>
         </div>
       </div>

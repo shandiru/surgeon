@@ -4,20 +4,16 @@ export default function SmearTestInfoCard() {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          
           {/* Left Content Card */}
           <div
             data-slot="card"
-            className="bg-white text-[#FF4B8B] flex flex-col gap-6 rounded-xl py-8 px-6 shadow-md 
+            className="bg-white text-primary-pink flex flex-col gap-6 rounded-xl py-8 px-6 shadow-md 
               transition duration-300 transform
               hover:scale-105 hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(176,59,102,0.25)]
               active:scale-105 active:-translate-y-2 active:shadow-[0_10px_30px_rgba(176,59,102,0.25)]"
           >
             {/* Card Header */}
-            <div
-              data-slot="card-header"
-              className="flex items-center gap-3 text-2xl font-bold"
-            >
+            <div data-slot="card-header" className="flex items-center gap-3 text-2xl font-bold">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="28"

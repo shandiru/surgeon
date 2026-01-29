@@ -5,7 +5,7 @@ export default function SmearTestCTA() {
       <div className="max-w-3xl mx-auto bg-white flex flex-col gap-6 rounded-2xl border border-[#ff97b3]/40 py-12 px-6 sm:px-12 shadow-md hover:shadow-xl transition">
         {/* Header */}
         <div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-4 leading-snug text-[#FF4B8B]">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-4 leading-snug text-primary-pink">
             Ready to Book Your Test?
           </h2>
           <p className="text-[#7a2f4f] text-base sm:text-lg">

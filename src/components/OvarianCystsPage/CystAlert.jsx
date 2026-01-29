@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import React from 'react';
+import React from "react";
 
 export default function CystAlert() {
   return (
@@ -28,7 +28,7 @@ export default function CystAlert() {
             <path d="M12 17h.01" />
           </svg>
         </div>
-        <strong className="text-[#FF4B8B] font-semibold text-lg">
+        <strong className="text-primary-pink font-semibold text-lg">
           See your doctor if you have:
         </strong>
       </div>

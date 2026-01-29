@@ -12,7 +12,7 @@ export default function SmearTestFooter() {
         <div className="w-20 mx-auto border-t-2 border-[#FF4B8B]/50"></div>
 
         {/* Copyright */}
-        <p className="text-[#FF4B8B]/80 text-sm">
+        <p className="text-primary-pink/80 text-sm">
           © {new Date().getFullYear()} Women’s Health Awareness. All rights reserved.
         </p>
       </div>

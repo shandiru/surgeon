@@ -32,8 +32,8 @@ const MenstrualDisordersSection = () => {
     <section className="py-20 px-6 sm:px-10 lg:px-20 bg-white">
       {/* Header */}
       <div className="flex items-center gap-3 mb-12 text-center sm:text-left">
-        <LuStethoscope className="h-8 w-8 text-[#FF4B8B]" />
-        <h2 className="text-3xl md:text-4xl font-bold text-[#FF4B8B]">
+        <LuStethoscope className="h-8 w-8 text-primary-pink" />
+        <h2 className="text-3xl md:text-4xl font-bold text-primary-pink">
           Types of Menstrual Disorders
         </h2>
       </div>

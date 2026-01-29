@@ -1,14 +1,14 @@
-import React from 'react';
+import React from "react";
 
 export default function PostcoitalBleedingHero() {
   return (
     <section
       className="py-20 px-6 shadow-inner text-center"
-      style={{ backgroundColor: '#FEE6EA', color: '#BB125B' }} // ✅ soft pink bg + magenta text
+      style={{ backgroundColor: "#FEE6EA", color: "#BB125B" }} // ✅ soft pink bg + magenta text
     >
       <div className="max-w-3xl mx-auto">
         {/* Heading */}
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight text-[#FF4B8B]">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight text-primary-pink">
           Understanding Postcoital Bleeding
         </h1>
 

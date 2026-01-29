@@ -30,7 +30,7 @@ export default function SmearTestResultsAccordion() {
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-6 md:px-12">
-        <div className="bg-white text-[#FF4B8B] flex flex-col gap-8 rounded-2xl border border-gray-200 p-10 shadow-lg max-w-8xl mx-auto transition hover:shadow-[0_8px_30px_rgba(255,197,211,0.35)]">
+        <div className="bg-white text-primary-pink flex flex-col gap-8 rounded-2xl border border-gray-200 p-10 shadow-lg max-w-8xl mx-auto transition hover:shadow-[0_8px_30px_rgba(255,197,211,0.35)]">
           {/* Header */}
           <div className="text-center md:text-left">
             <h2 className="text-3xl md:text-4xl font-bold mb-2"> After Your Test</h2>
@@ -45,7 +45,7 @@ export default function SmearTestResultsAccordion() {
                   <button
                     type="button"
                     onClick={() => toggle(index)}
-                    className="flex w-full items-center justify-between gap-6 py-3 text-left font-medium text-[#FF4B8B] hover:text-[#7a2f4f] transition"
+                    className="flex w-full items-center justify-between gap-6 py-3 text-left font-medium text-primary-pink hover:text-[#7a2f4f] transition"
                   >
                     <span className="flex items-center gap-3 text-lg">
                       <svg

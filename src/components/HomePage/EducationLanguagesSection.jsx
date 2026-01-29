@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function EducationLanguagesSection() {
   useEffect(() => {
@@ -11,24 +11,24 @@ export default function EducationLanguagesSection() {
 
   const education = [
     {
-      title: 'MD, Biological Sciences',
-      place: 'Lancaster University',
-      years: '2010 - 2012',
+      title: "MD, Biological Sciences",
+      place: "Lancaster University",
+      years: "2010 - 2012",
     },
     {
-      title: 'MRCOG',
-      place: 'Royal College of Obstetricians and Gynaecologists',
-      years: '2006 - 2015',
+      title: "MRCOG",
+      place: "Royal College of Obstetricians and Gynaecologists",
+      years: "2006 - 2015",
     },
     {
-      title: 'MD',
-      place: 'The Maharaja Sayjirao University of Baroda, India',
-      years: '1999 - 2002',
+      title: "MD",
+      place: "The Maharaja Sayjirao University of Baroda, India",
+      years: "1999 - 2002",
     },
     {
-      title: 'MBBS',
-      place: 'The Maharaja Sayjirao University of Baroda, India',
-      years: '1993 - 1999',
+      title: "MBBS",
+      place: "The Maharaja Sayjirao University of Baroda, India",
+      years: "1993 - 1999",
     },
   ];
 
@@ -38,7 +38,7 @@ export default function EducationLanguagesSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-stretch">
           {/* Education & Qualifications */}
           <div className="flex flex-col" data-aos="fade-right">
-            <h2 className="text-section text-[#FF4B8B] mb-10 text-center lg:text-left">
+            <h2 className="text-section text-primary-pink mb-10 text-center lg:text-left">
               Education & Qualifications
             </h2>
 
@@ -52,10 +52,8 @@ export default function EducationLanguagesSection() {
                   data-aos="fade-up"
                   data-aos-delay={i * 120}
                 >
-                  <h3 className="text-card-title font-semibold text-gray-900">
-                    {item.title}
-                  </h3>
-                  <p className="text-[#FF4B8B] font-medium text-body">{item.place}</p>
+                  <h3 className="text-card-title font-semibold text-gray-900">{item.title}</h3>
+                  <p className="text-primary-pink font-medium text-body">{item.place}</p>
                   <p className="text-gray-500 text-body-small">{item.years}</p>
                 </div>
               ))}
@@ -82,7 +80,7 @@ export default function EducationLanguagesSection() {
             <div className="text-center pb-6">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-12 w-12 text-[#FF4B8B] mx-auto mb-4"
+                className="h-12 w-12 text-primary-pink mx-auto mb-4"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -92,14 +90,12 @@ export default function EducationLanguagesSection() {
                 <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
                 <path d="M2 12h20" />
               </svg>
-              <div className="font-semibold text-subsection text-gray-900">
-                Languages Spoken
-              </div>
+              <div className="font-semibold text-subsection text-gray-900">Languages Spoken</div>
             </div>
 
             <div className="flex-1 flex flex-col items-center justify-center">
               <div className="flex flex-wrap justify-center gap-4">
-                {['English', 'Hindi'].map((lang, idx) => (
+                {["English", "Hindi"].map((lang, idx) => (
                   <span
                     key={idx}
                     className="inline-flex items-center justify-center rounded-md font-medium text-body-large px-6 py-2 
@@ -120,8 +116,8 @@ export default function EducationLanguagesSection() {
                 data-aos="fade-up"
                 data-aos-delay="500"
               >
-                Fluent communication in multiple languages to better serve
-                diverse patient populations.
+                Fluent communication in multiple languages to better serve diverse patient
+                populations.
               </p>
             </div>
           </div>

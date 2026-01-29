@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import React from 'react';
+import React from "react";
 
 export default function DiagnosisAndSelfCareSection() {
   return (
@@ -8,7 +8,7 @@ export default function DiagnosisAndSelfCareSection() {
       {/* How Cysts Are Diagnosed */}
       <div className="bg-white text-[#BB125B] flex flex-col gap-6 rounded-xl py-6 px-5 sm:px-6 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all">
         {/* Header */}
-        <div className="flex items-center gap-3 font-semibold text-[#FF4B8B] text-lg">
+        <div className="flex items-center gap-3 font-semibold text-primary-pink text-lg">
           {/* Stethoscope Icon */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -34,10 +34,10 @@ export default function DiagnosisAndSelfCareSection() {
         {/* Content */}
         <div className="space-y-3">
           {[
-            'Pelvic exam',
-            'Ultrasound scan',
-            'Blood tests (to check hormones or rule out cancer)',
-            'MRI (if needed for detailed images)',
+            "Pelvic exam",
+            "Ultrasound scan",
+            "Blood tests (to check hormones or rule out cancer)",
+            "MRI (if needed for detailed images)",
           ].map((item, index) => (
             <div key={index} className="flex items-start gap-3">
               <div className="w-2 h-2 bg-[#FF4B8B] rounded-full mt-2 flex-shrink-0" />
@@ -57,7 +57,7 @@ export default function DiagnosisAndSelfCareSection() {
       {/* Self-Care Tips */}
       <div className="bg-white text-[#BB125B] flex flex-col gap-6 rounded-xl py-6 px-5 sm:px-6 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all">
         {/* Header */}
-        <div className="flex items-center gap-3 font-semibold text-[#FF4B8B] text-lg">
+        <div className="flex items-center gap-3 font-semibold text-primary-pink text-lg">
           {/* Activity Icon */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -79,9 +79,9 @@ export default function DiagnosisAndSelfCareSection() {
         {/* Content */}
         <div className="space-y-3">
           {[
-            'Track your symptoms (pain, bloating, period changes)',
-            'Manage stress and rest if in discomfort',
-            'See your doctor early if anything feels unusual',
+            "Track your symptoms (pain, bloating, period changes)",
+            "Manage stress and rest if in discomfort",
+            "See your doctor early if anything feels unusual",
           ].map((tip, index) => (
             <div key={index} className="flex items-start gap-3">
               {/* Circle Check Icon */}

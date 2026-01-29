@@ -282,7 +282,10 @@
           "type": "iconList",
           "items": [
             { "icon": "CheckCircle", "text": "HPV vaccination provides strong protection" },
-            { "icon": "CheckCircle", "text": "Regular cervical screening (Pap smear / HPV testing)" },
+            {
+              "icon": "CheckCircle",
+              "text": "Regular cervical screening (Pap smear / HPV testing)"
+            },
             { "icon": "CheckCircle", "text": "Practising safer sex" },
             { "icon": "CheckCircle", "text": "Not smoking" },
             { "icon": "CheckCircle", "text": "Prompt treatment of CIN or HPV-related changes" }
@@ -318,7 +321,10 @@
           "type": "iconList",
           "items": [
             { "icon": "CheckCircle", "text": "HPV is the main cause of cervical cancer" },
-            { "icon": "CheckCircle", "text": "Screening can detect pre-cancer before symptoms appear" },
+            {
+              "icon": "CheckCircle",
+              "text": "Screening can detect pre-cancer before symptoms appear"
+            },
             { "icon": "CheckCircle", "text": "HPV vaccination provides strong protection" },
             { "icon": "CheckCircle", "text": "Early stages often have no symptoms" },
             { "icon": "CheckCircle", "text": "Regular check-ups and prompt follow-ups save lives" }

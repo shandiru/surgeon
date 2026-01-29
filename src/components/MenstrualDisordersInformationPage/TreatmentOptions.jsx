@@ -1,9 +1,9 @@
-'use client';
-import React, { useState } from 'react';
+"use client";
+import React, { useState } from "react";
 
 const treatmentOptions = [
   {
-    title: 'Lifestyle Changes',
+    title: "Lifestyle Changes",
     content: (
       <>
         <p className="mb-2">Simple changes that can help manage symptoms:</p>
@@ -14,10 +14,10 @@ const treatmentOptions = [
           <li>Get enough rest and maintain good sleep hygiene</li>
         </ul>
       </>
-    )
+    ),
   },
   {
-    title: 'Medical Treatment',
+    title: "Medical Treatment",
     content: (
       <>
         <p className="mb-2">Medical options your healthcare provider might recommend:</p>
@@ -28,10 +28,10 @@ const treatmentOptions = [
           <li>Iron supplements if you have anaemia from heavy bleeding</li>
         </ul>
       </>
-    )
+    ),
   },
   {
-    title: 'Surgical Treatment',
+    title: "Surgical Treatment",
     content: (
       <>
         <p className="mb-2">For severe cases that don't respond to other treatments:</p>
@@ -39,12 +39,13 @@ const treatmentOptions = [
           <li>Hysteroscopy or laparoscopy to treat specific areas of concern</li>
           <li>Endometrial ablation to destroy the womb lining and stop periods</li>
           <li>
-            Hysterectomy (removal of the womb) – only if other treatments haven't worked and you don’t plan more pregnancies
+            Hysterectomy (removal of the womb) – only if other treatments haven't worked and you
+            don’t plan more pregnancies
           </li>
         </ul>
       </>
-    )
-  }
+    ),
+  },
 ];
 
 export default function TreatmentOptions() {
@@ -56,8 +57,8 @@ export default function TreatmentOptions() {
 
   return (
     <section className="mb-16 px-6 md:px-12">
-      <h2 className="text-2xl font-bold mb-6 text-[#FF4B8B]">Treatment Options</h2>
-      
+      <h2 className="text-2xl font-bold mb-6 text-primary-pink">Treatment Options</h2>
+
       <div className="space-y-4">
         {treatmentOptions.map((option, index) => (
           <div
@@ -71,7 +72,7 @@ export default function TreatmentOptions() {
             >
               <span>{option.title}</span>
               <svg
-                className={`transition-transform duration-200 ${openIndex === index ? 'rotate-180' : ''}`}
+                className={`transition-transform duration-200 ${openIndex === index ? "rotate-180" : ""}`}
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
                 height="20"

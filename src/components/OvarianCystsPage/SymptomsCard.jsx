@@ -1,21 +1,21 @@
-import React from 'react';
+import React from "react";
 
 export default function SymptomsCard() {
   const commonSymptoms = [
-    'Bloating, swelling or pressure in the lower abdomen',
-    'Pelvic pain (dull or sharp, may come and go)',
-    'Pain during periods or sex',
-    'Pain with nausea/vomiting if the ovary twists',
-    'Sudden severe pain if a cyst ruptures',
+    "Bloating, swelling or pressure in the lower abdomen",
+    "Pelvic pain (dull or sharp, may come and go)",
+    "Pain during periods or sex",
+    "Pain with nausea/vomiting if the ovary twists",
+    "Sudden severe pain if a cyst ruptures",
   ];
 
   const lessCommonSymptoms = [
-    'Lower back or thigh ache',
-    'Trouble fully emptying bladder or bowel',
-    'Breast tenderness',
-    'Unexplained weight gain',
-    'Needing to urinate more often',
-    'Unusual vaginal bleeding',
+    "Lower back or thigh ache",
+    "Trouble fully emptying bladder or bowel",
+    "Breast tenderness",
+    "Unexplained weight gain",
+    "Needing to urinate more often",
+    "Unusual vaginal bleeding",
   ];
 
   return (
@@ -24,7 +24,7 @@ export default function SymptomsCard() {
       className="flex flex-col gap-6 rounded-xl bg-white shadow-lg hover:shadow-xl transition-all duration-300 py-6 px-6"
     >
       {/* Card Header */}
-      <div className="flex items-center gap-3 text-2xl font-semibold text-[#FF4B8B]">
+      <div className="flex items-center gap-3 text-2xl font-semibold text-primary-pink">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="26"
@@ -53,9 +53,7 @@ export default function SymptomsCard() {
         <div className="grid md:grid-cols-2 gap-8">
           {/* Common Symptoms */}
           <div>
-            <h4 className="font-semibold mb-4 text-lg text-[#FF4B8B]">
-              Common Symptoms
-            </h4>
+            <h4 className="font-semibold mb-4 text-lg text-primary-pink">Common Symptoms</h4>
             <div className="space-y-3">
               {commonSymptoms.map((symptom, index) => (
                 <div key={index} className="flex items-start gap-3">
@@ -68,9 +66,7 @@ export default function SymptomsCard() {
 
           {/* Less Common Symptoms */}
           <div>
-            <h4 className="font-semibold mb-4 text-lg text-[#FF4B8B]">
-              Less Common Symptoms
-            </h4>
+            <h4 className="font-semibold mb-4 text-lg text-primary-pink">Less Common Symptoms</h4>
             <div className="space-y-3">
               {lessCommonSymptoms.map((symptom, index) => (
                 <div key={index} className="flex items-start gap-3">

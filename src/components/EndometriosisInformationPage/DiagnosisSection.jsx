@@ -1,21 +1,19 @@
 // DiagnosisSection.jsx
-import React from 'react';
+import React from "react";
 
 const steps = [
   {
-    title: 'Pelvic Examination',
-    description:
-      'Your doctor will perform a physical examination to check for abnormalities.',
+    title: "Pelvic Examination",
+    description: "Your doctor will perform a physical examination to check for abnormalities.",
   },
   {
-    title: 'Imaging Tests',
-    description:
-      'Ultrasound or MRI scans to look for signs of endometriosis and cysts.',
+    title: "Imaging Tests",
+    description: "Ultrasound or MRI scans to look for signs of endometriosis and cysts.",
   },
   {
-    title: 'Laparoscopy',
+    title: "Laparoscopy",
     description:
-      'A minor keyhole surgery using a thin camera to confirm diagnosis and sometimes take tissue samples.',
+      "A minor keyhole surgery using a thin camera to confirm diagnosis and sometimes take tissue samples.",
   },
 ];
 
@@ -26,12 +24,10 @@ const DiagnosisSection = () => {
         <div className="max-w-4xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#FF4B8B] mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary-pink mb-4">
               How It&apos;s Diagnosed
             </h2>
-            <p className="text-lg text-gray-700">
-              Understanding the diagnostic process
-            </p>
+            <p className="text-lg text-gray-700">Understanding the diagnostic process</p>
           </div>
 
           {/* Steps */}
@@ -51,12 +47,8 @@ const DiagnosisSection = () => {
 
                   {/* Content */}
                   <div>
-                    <h3 className="font-semibold text-xl text-[#FF4B8B] mb-2">
-                      {step.title}
-                    </h3>
-                    <p className="text-gray-600 leading-relaxed">
-                      {step.description}
-                    </p>
+                    <h3 className="font-semibold text-xl text-primary-pink mb-2">{step.title}</h3>
+                    <p className="text-gray-600 leading-relaxed">{step.description}</p>
                   </div>
                 </div>
               </div>
