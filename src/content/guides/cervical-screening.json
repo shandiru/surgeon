@@ -223,7 +223,7 @@
       "content": [
         {
           "type": "text",
-          "value": "Smear tests are simple steps that protect your future."
+          "value": "Cervical screening is a simple step that helps protect your future."
         },
         {
           "type": "grid",
@@ -231,12 +231,15 @@
           "items": [
             { "icon": "Clock", "title": "Quick" },
             { "icon": "CheckCircle", "title": "Simple" },
-            { "icon": "Stethoscope", "title": "Life-saving" }
+            {
+              "icon": "Stethoscope",
+              "title": "Can help prevent cervical cancer"
+            }
           ]
         },
         {
           "type": "text",
-          "value": "**Don't miss your screening — it could save your life.**"
+          "value": "**Don’t miss your screening — it’s an important way to reduce your risk.**"
         }
       ]
     }
