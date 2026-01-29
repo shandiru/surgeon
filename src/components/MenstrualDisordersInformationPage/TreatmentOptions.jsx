@@ -68,7 +68,7 @@ export default function TreatmentOptions() {
             {/* Accordion Header */}
             <button
               onClick={() => toggleAccordion(index)}
-              className="w-full flex items-center justify-between text-left font-medium py-4 px-6 text-lg text-[#BB125B] focus:outline-none"
+              className="w-full flex items-center justify-between text-left font-medium py-4 px-6 text-lg text-primary-pink focus:outline-none"
             >
               <span>{option.title}</span>
               <svg

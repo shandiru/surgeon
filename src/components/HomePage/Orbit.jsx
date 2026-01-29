@@ -8,7 +8,7 @@ export default function HeroSection() {
     <section className="relative h-132 md:h-155 lg:h-175 text-center bg-gradient-to-b from-[#FFF1F5] via-[#FFD9E7] to-[#FF4B8B] px-4 sm:px-6 pb-12 sm:pb-16">
       {/* Top Button */}
       <div className="pt-16 sm:pt-20 md:pt-24 lg:pt-32 xl:pt-36 flex justify-center">
-        <button className="text-caption border border-[#FF4B8B]/40 text-primary-pink px-3 sm:px-4 py-1 rounded-full hover:bg-primary-pink/10 transition">
+        <button className="text-caption border border-primary-pink/40 text-primary-pink px-3 sm:px-4 py-1 rounded-full hover:bg-primary-pink/10 transition">
           Get in touch
         </button>
       </div>

@@ -16,10 +16,10 @@ const HeroSectionView = () => {
           {/* Left Section */}
           <div className="hero-left" data-aos="fade-up">
             <div className="mb-4 hero-badge" data-aos="fade-down">
-              {/* <span className="inline-block border border-[#FF4B8B] text-primary-pink text-xs font-semibold px-3 py-1 rounded-full">
+              {/* <span className="inline-block border border-primary-pink text-primary-pink text-xs font-semibold px-3 py-1 rounded-full">
                 Consultant Gynaecological Oncologist
               </span> */}
-              <span className="inline-block border border-[#FF4B8B] text-primary-pink text-caption px-3 py-1 rounded-full">
+              <span className="inline-block border border-primary-pink text-primary-pink text-caption px-3 py-1 rounded-full">
                 Gynocolisgist
               </span>
             </div>
@@ -32,7 +32,7 @@ const HeroSectionView = () => {
             </h1>
 
             <p
-              className="hero-desc text-body-large text-gray-700 mb-8 leading-relaxed"
+              className="hero-desc text-body-large text-black mb-8 leading-relaxed"
               data-aos="fade-up"
             >
               With 26 years of dedicated experience in gynaecological oncology, providing
@@ -60,7 +60,7 @@ const HeroSectionView = () => {
               </a>
               <a
                 href="#about"
-                className="inline-flex items-center justify-center gap-2 text-button px-6 h-10 rounded-md border border-[#FF4B8B] text-primary-pink hover:bg-[#FFD6E1] hover:shadow-[0_0_15px_2px_rgba(255,75,139,0.4)] hover:-translate-y-0.5 transition-all"
+                className="inline-flex items-center justify-center gap-2 text-button px-6 h-10 rounded-md border border-primary-pink text-primary-pink hover:bg-[#FFD6E1] hover:shadow-[0_0_15px_2px_rgba(255,75,139,0.4)] hover:-translate-y-0.5 transition-all"
               >
                 Learn More
                 <svg
@@ -77,7 +77,7 @@ const HeroSectionView = () => {
             </div>
 
             <div
-              className="hero-icons flex items-center gap-6 text-body-small text-gray-600"
+              className="hero-icons flex items-center gap-6 text-body-small text-black/90"
               data-aos="fade-up"
             >
               <div className="flex items-center gap-2">

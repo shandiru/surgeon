@@ -17,7 +17,7 @@ export default function ProfessionalExperience() {
           <h2 className="text-section text-primary-pink mb-4" data-aos="fade-up">
             Professional Experience
           </h2>
-          <p className="text-body-large text-gray-600" data-aos="fade-up" data-aos-delay="100">
+          <p className="text-body-large text-black/90" data-aos="fade-up" data-aos-delay="100">
             Current positions and affiliations
           </p>
         </div>
@@ -46,7 +46,7 @@ export default function ProfessionalExperience() {
           ].map((item, idx) => (
             <div
               key={idx}
-              className="bg-white flex flex-col gap-4 rounded-xl border border-[#FF4B8B]/10 shadow-sm p-6 transition-all duration-300 
+              className="bg-white flex flex-col gap-4 rounded-xl border border-primary-pink/10 shadow-sm p-6 transition-all duration-300 
                          hover:shadow-[0_0_30px_4px_rgba(255,75,139,0.15)] hover:scale-[1.02] active:scale-[0.99]"
               data-aos="fade-up"
               data-aos-delay={`${idx * 150}`}
@@ -71,7 +71,7 @@ export default function ProfessionalExperience() {
                 </div>
               </div>
               <div>
-                <p className="text-gray-600 text-body-small">{item.place}</p>
+                <p className="text-black/90 text-body-small">{item.place}</p>
                 <p className="text-gray-500 text-body-small mt-1">{item.desc}</p>
               </div>
             </div>
@@ -80,7 +80,7 @@ export default function ProfessionalExperience() {
 
         {/* Membership & Leadership Section */}
         <div
-          className="bg-white flex flex-col gap-8 rounded-xl border border-[#FF4B8B]/10 shadow-sm p-8 transition-all duration-300 
+          className="bg-white flex flex-col gap-8 rounded-xl border border-primary-pink/10 shadow-sm p-8 transition-all duration-300 
                      hover:shadow-[0_0_30px_4px_rgba(255,75,139,0.2)]"
           data-aos="fade-up"
           data-aos-delay="200"
@@ -120,7 +120,7 @@ export default function ProfessionalExperience() {
                       <path d="M21.801 10A10 10 0 1 1 17 3.335" />
                       <path d="m9 11 3 3L22 4" />
                     </svg>
-                    <span className="text-gray-700">{item}</span>
+                    <span className="text-black">{item}</span>
                   </div>
                 ))}
               </div>
@@ -139,7 +139,7 @@ export default function ProfessionalExperience() {
                   data-aos-delay="300"
                 >
                   <h4 className="font-semibold text-body text-gray-900">Honorary Secretary</h4>
-                  <p className="text-gray-600 text-body-small">
+                  <p className="text-black/90 text-body-small">
                     British Gynaecological Cancer Society
                   </p>
                   <p className="text-gray-500 text-caption">July 2022 - July 2025</p>
@@ -154,7 +154,7 @@ export default function ProfessionalExperience() {
                   <h4 className="font-semibold text-body text-gray-900">
                     IT and Social Media Subgroup Chair
                   </h4>
-                  <p className="text-gray-600 text-body-small">
+                  <p className="text-black/90 text-body-small">
                     British Gynaecological Cancer Society
                   </p>
                   <p className="text-gray-500 text-caption">July 2020 - July 2023</p>
@@ -167,7 +167,7 @@ export default function ProfessionalExperience() {
                   data-aos-delay="500"
                 >
                   <h4 className="font-semibold text-body text-gray-900">Gyn Oncology Lead</h4>
-                  <p className="text-gray-600 text-body-small">Nottingham NHS</p>
+                  <p className="text-black/90 text-body-small">Nottingham NHS</p>
                   {/* <p className="text-gray-500 text-xs">[Add start date] - Present</p> */}
                 </div>
               </div>

@@ -4,9 +4,9 @@ import { CalendarDays } from "lucide-react";
 export default function RememberSection() {
   return (
     <section className="mb-12 px-4">
-      <div className="text-[#1F2937] flex flex-col gap-6 rounded-2xl border border-[#FF4B8B]/20 bg-gradient-to-br from-[#FFF5F8] to-[#FFE9F0] py-8 px-6 sm:px-8 shadow-md max-w-4xl mx-auto">
+      <div className="text-[#1F2937] flex flex-col gap-6 rounded-2xl border border-primary-pink bg-gradient-to-br from-[#FFF5F8] to-[#FFE9F0] py-8 px-6 sm:px-8 shadow-md max-w-4xl mx-auto">
         {/* Card Header */}
-        <div className="border-b border-[#FF4B8B]/20 pb-6">
+        <div className="border-b border-primary-pink pb-6">
           <h2 className="font-bold flex items-center gap-3 text-primary-pink text-2xl">Remember</h2>
         </div>
 
@@ -24,7 +24,7 @@ export default function RememberSection() {
 
         {/* CTA Button */}
         <div className="mt-8 text-center">
-          <p className="text-base sm:text-lg font-medium text-[#BB125B] mb-5">
+          <p className="text-base sm:text-lg font-medium text-primary-pink mb-5">
             If you notice postmenopausal bleeding, book an appointment right away.
           </p>
           <button

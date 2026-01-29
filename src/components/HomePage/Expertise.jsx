@@ -83,14 +83,14 @@ export default function SpecialtiesSection() {
           <h2 className="text-section text-primary-pink mb-4" data-aos="fade-up">
             Areas of Expertise
           </h2>
-          <p className="text-body-large text-gray-700" data-aos="fade-up" data-aos-delay="100">
+          <p className="text-body-large text-black" data-aos="fade-up" data-aos-delay="100">
             Specialized procedures and treatments in women's health
           </p>
         </div>
 
         {/* Primary Specialties */}
         <div
-          className="bg-white rounded-2xl p-8 mb-12 shadow-sm border border-[#FF4B8B]/10"
+          className="bg-white rounded-2xl p-8 mb-12 shadow-sm border border-primary-pink/10"
           data-aos="fade-up"
           data-aos-delay="150"
         >
@@ -112,7 +112,7 @@ export default function SpecialtiesSection() {
                   {item.icon}
                 </div>
                 <h3 className="font-semibold mb-1 text-body-small text-gray-900">{item.title}</h3>
-                <p className="text-gray-600 text-caption">{item.description}</p>
+                <p className="text-black/90 text-caption">{item.description}</p>
               </div>
             ))}
           </div>
@@ -122,7 +122,7 @@ export default function SpecialtiesSection() {
         <div className="grid md:grid-cols-2 gap-8">
           {/* Surgical */}
           <div
-            className="bg-white rounded-xl border border-[#FF4B8B]/10 shadow-sm p-6 flex flex-col gap-6 transition-all duration-300 hover:shadow-[0_0_25px_2px_rgba(255,75,139,0.25)]"
+            className="bg-white rounded-xl border border-primary-pink/10 shadow-sm p-6 flex flex-col gap-6 transition-all duration-300 hover:shadow-[0_0_25px_2px_rgba(255,75,139,0.25)]"
             data-aos="fade-up"
           >
             <div className="text-card-title font-semibold text-primary-pink">
@@ -134,7 +134,7 @@ export default function SpecialtiesSection() {
                   <FaCheckCircle className="text-primary-pink mt-1" />
                   <div>
                     <div className="font-semibold text-body text-gray-900">{item.title}</div>
-                    <p className="text-body-small text-gray-600">{item.description}</p>
+                    <p className="text-body-small text-black/90">{item.description}</p>
                   </div>
                 </li>
               ))}
@@ -143,7 +143,7 @@ export default function SpecialtiesSection() {
 
           {/* Cancer Care */}
           <div
-            className="bg-white rounded-xl border border-[#FF4B8B]/10 shadow-sm p-6 flex flex-col gap-6 transition-all duration-300 hover:shadow-[0_0_25px_2px_rgba(255,75,139,0.25)]"
+            className="bg-white rounded-xl border border-primary-pink/10 shadow-sm p-6 flex flex-col gap-6 transition-all duration-300 hover:shadow-[0_0_25px_2px_rgba(255,75,139,0.25)]"
             data-aos="fade-down"
           >
             <div className="text-card-title font-semibold text-primary-pink">Cancer Care</div>
@@ -153,7 +153,7 @@ export default function SpecialtiesSection() {
                   <FaCheckCircle className="text-primary-pink mt-1" />
                   <div>
                     <div className="font-semibold text-body text-gray-900">{item.title}</div>
-                    <p className="text-body-small text-gray-600">{item.description}</p>
+                    <p className="text-body-small text-black/90">{item.description}</p>
                   </div>
                 </li>
               ))}

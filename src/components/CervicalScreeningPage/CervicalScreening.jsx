@@ -1,7 +1,7 @@
 // src/pages/CervicalScreening.jsx
 export default function CervicalScreening() {
   return (
-    <header className="bg-[#FFE6EA] text-primary-pink py-20 px-6 md:px-20">
+    <header className="bg-light-pink-1 text-primary-pink py-20 px-6 md:px-20">
       <div className="container mx-auto">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           {/* Left Text */}
@@ -14,7 +14,7 @@ export default function CervicalScreening() {
             </p>
 
             {/* ✅ Stat Content */}
-            <div className="rounded-xl border border-[#FF4B8B]/20 p-6 shadow-md bg-white/60 backdrop-blur-sm max-w-md mx-auto md:mx-0">
+            <div className="rounded-xl border border-primary-pink p-6 shadow-md bg-white/60 backdrop-blur-sm max-w-md mx-auto md:mx-0">
               <div className="text-5xl font-extrabold mb-3 text-primary-pink">83%</div>
               <p className="text-lg text-primary-pink/90 leading-relaxed">
                 Regular screening can prevent up to 83% of cervical cancer cases

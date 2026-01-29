@@ -30,7 +30,7 @@ export default function HeroSection() {
         <h1 className="text-hero text-primary-pink mb-6">Understanding Ovarian Cysts</h1>
 
         {/* Subtext */}
-        <p className="text-body-large text-[#BB125B] max-w-2xl mx-auto mb-8 leading-relaxed">
+        <p className="text-body-large text-primary-pink max-w-2xl mx-auto mb-8 leading-relaxed">
           Your comprehensive guide to symptoms, types, and treatment options
         </p>
 

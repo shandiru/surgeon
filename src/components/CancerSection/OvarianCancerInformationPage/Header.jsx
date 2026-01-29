@@ -13,7 +13,7 @@ export default function OvarianCancerHeader() {
   }, []);
 
   return (
-    <section className="py-16 bg-[#FFE6EA]">
+    <section className="py-16 bg-light-pink-1">
       <div className="container mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center gap-12">
         {/* Text Section */}
         <div className="flex-1 text-center md:text-left space-y-6" data-aos="fade-up">
@@ -34,7 +34,7 @@ export default function OvarianCancerHeader() {
           <img
             src="/Ovarian.png"
             alt="Ovarian Cancer Awareness"
-            className="rounded-xl shadow-xl border-4 border-[#FFC5D3] max-w-sm md:max-w-md lg:max-w-lg w-full h-auto"
+            className="rounded-xl shadow-xl border-4 border-lignt-pink-1 max-w-sm md:max-w-md lg:max-w-lg w-full h-auto"
           />
         </div>
       </div>

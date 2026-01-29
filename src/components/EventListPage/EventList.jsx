@@ -31,7 +31,7 @@ export default function ListingEvents({ events = [], selectedCategory = "All Eve
         <img src={event.image} alt={event.title} className="w-full h-56 md:h-full object-cover" />
         <span
           className={`absolute top-4 right-4 px-3 py-1 text-xs font-semibold rounded-full bg-white ${
-            event.isUpcoming || event.computedStatus === "Open" ? "text-green-600" : "text-gray-600"
+            event.isUpcoming || event.computedStatus === "Open" ? "text-green-600" : "text-black/90"
           }`}
         >
           {event.computedStatus || (event.isUpcoming ? "Open" : "Now Closed")}
@@ -51,14 +51,14 @@ export default function ListingEvents({ events = [], selectedCategory = "All Eve
                 ★
               </span>
             ))}
-            <span className="text-gray-700 ml-2">{event.rating}</span>
+            <span className="text-black ml-2">{event.rating}</span>
           </div>
 
           <h3 className="text-lg font-semibold text-gray-900">{event.title}</h3>
           <p className="text-sm text-gray-500 mt-1">{event.description}</p>
-          <p className="text-sm text-gray-700 mt-1 italic">{event.talk}</p>
+          <p className="text-sm text-black mt-1 italic">{event.talk}</p>
 
-          <div className="space-y-2 text-sm text-gray-600 mt-2">
+          <div className="space-y-2 text-sm text-black/90 mt-2">
             <div className="flex items-center gap-2">
               <Calendar size={16} />
               <span>{event.Date}</span>

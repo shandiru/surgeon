@@ -58,7 +58,7 @@ export default function OvarianCancerDiagnosis() {
           {tests.map((test) => (
             <div
               key={test.id}
-              className="bg-white text-[#333] flex flex-col gap-4 rounded-xl p-6 shadow-md 
+              className="bg-white text-black flex flex-col gap-4 rounded-xl p-6 shadow-md 
                          transition duration-300 ease-in-out 
                          hover:shadow-xl hover:-translate-y-2 active:scale-[0.98] cursor-pointer"
               data-aos="fade-up"
@@ -72,7 +72,7 @@ export default function OvarianCancerDiagnosis() {
                 </span>
                 {test.title}
               </div>
-              <p className="text-gray-600">{test.description}</p>
+              <p className="text-black/90">{test.description}</p>
             </div>
           ))}
         </div>

@@ -2,11 +2,11 @@
 export default function SmearTestReminder() {
   return (
     <section className="py-16 px-6 bg-white">
-      <div className="max-w-7xl mx-auto flex flex-col gap-10 rounded-2xl border border-[#ff97b3]/40 py-12 px-8 shadow-md bg-white">
+      <div className="max-w-7xl mx-auto flex flex-col gap-10 rounded-2xl border border-light-pink-2/40 py-12 px-8 shadow-md bg-white">
         {/* Header */}
         <div className="text-center">
           <h2 className="font-extrabold text-3xl mb-2 text-primary-pink">Remember</h2>
-          <p className="text-lg text-gray-700">
+          <p className="text-lg text-black">
             Smear tests are simple steps that protect your future.
           </p>
         </div>
@@ -14,8 +14,8 @@ export default function SmearTestReminder() {
         {/* Content */}
         <div className="grid md:grid-cols-3 gap-8 text-center">
           {/* Quick */}
-          <div className="bg-light-pink-1 p-6 rounded-xl shadow-sm border border-[#ff97b3]/30 transition hover:shadow-lg hover:-translate-y-2 active:scale-[0.98]">
-            <div className="flex items-center justify-center w-16 h-16 mx-auto rounded-full bg-[#ff97b3] mb-3 shadow-md">
+          <div className="bg-light-pink-1 p-6 rounded-xl shadow-sm border border-light-pink-2/30 transition hover:shadow-lg hover:-translate-y-2 active:scale-[0.98]">
+            <div className="flex items-center justify-center w-16 h-16 mx-auto rounded-full bg-light-pink-2 mb-3 shadow-md">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-8 w-8 text-white"
@@ -32,8 +32,8 @@ export default function SmearTestReminder() {
           </div>
 
           {/* Simple */}
-          <div className="bg-light-pink-1 p-6 rounded-xl shadow-sm border border-[#ff97b3]/30 transition hover:shadow-lg hover:-translate-y-2 active:scale-[0.98]">
-            <div className="flex items-center justify-center w-16 h-16 mx-auto rounded-full bg-[#ff97b3] mb-3 shadow-md">
+          <div className="bg-light-pink-1 p-6 rounded-xl shadow-sm border border-light-pink-2/30 transition hover:shadow-lg hover:-translate-y-2 active:scale-[0.98]">
+            <div className="flex items-center justify-center w-16 h-16 mx-auto rounded-full bg-light-pink-2 mb-3 shadow-md">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-8 w-8 text-white"
@@ -50,8 +50,8 @@ export default function SmearTestReminder() {
           </div>
 
           {/* Life-saving */}
-          <div className="bg-light-pink-1 p-6 rounded-xl shadow-sm border border-[#ff97b3]/30 transition hover:shadow-lg hover:-translate-y-2 active:scale-[0.98]">
-            <div className="flex items-center justify-center w-16 h-16 mx-auto rounded-full bg-[#ff97b3] mb-3 shadow-md">
+          <div className="bg-light-pink-1 p-6 rounded-xl shadow-sm border border-light-pink-2/30 transition hover:shadow-lg hover:-translate-y-2 active:scale-[0.98]">
+            <div className="flex items-center justify-center w-16 h-16 mx-auto rounded-full bg-light-pink-2 mb-3 shadow-md">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-8 w-8 text-white"

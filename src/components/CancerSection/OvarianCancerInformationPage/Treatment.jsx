@@ -75,7 +75,7 @@ export default function OvarianCancerTreatment() {
               <h4 className="font-semibold text-lg mb-2" style={{ color: deepPink }}>
                 {item.title}
               </h4>
-              <p className="text-gray-700">{item.description}</p>
+              <p className="text-black">{item.description}</p>
             </div>
           ))}
         </div>

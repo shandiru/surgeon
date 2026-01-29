@@ -4,7 +4,7 @@ import React from "react";
 
 export default function OvarianCystSupportCard() {
   return (
-    <div className="flex flex-col gap-6 rounded-xl bg-gradient-to-r from-[#FEE6EA] to-[#FDE8F3] py-8 px-6 sm:px-8 shadow-lg hover:shadow-xl transition-all duration-300 max-w-3xl mx-auto text-[#BB125B]">
+    <div className="flex flex-col gap-6 rounded-xl bg-gradient-to-r from-[#FEE6EA] to-[#FDE8F3] py-8 px-6 sm:px-8 shadow-lg hover:shadow-xl transition-all duration-300 max-w-3xl mx-auto text-primary-pink">
       <div className="text-center">
         {/* Heart Icon */}
         <svg

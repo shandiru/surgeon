@@ -16,7 +16,7 @@ const CausesSection = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary-pink">
             What Causes Endometriosis?
           </h2>
-          <p className="text-lg text-gray-700">
+          <p className="text-lg text-black">
             The exact cause is unknown, but research suggests several possible factors:
           </p>
         </div>
@@ -25,7 +25,7 @@ const CausesSection = () => {
           {causes.map((item, index) => (
             <div
               key={index}
-              className="bg-white text-[#333] flex flex-col items-center justify-center p-8 rounded-2xl shadow-md 
+              className="bg-white text-black flex flex-col items-center justify-center p-8 rounded-2xl shadow-md 
               transition duration-300 hover:shadow-[0_0_25px_rgba(176,59,102,0.4)] hover:-translate-y-2 active:scale-[0.98]"
             >
               {/* Icon */}
@@ -34,7 +34,7 @@ const CausesSection = () => {
               </div>
 
               {/* Text */}
-              <p className="font-medium text-center text-gray-800">{item}</p>
+              <p className="font-medium text-center text-black">{item}</p>
             </div>
           ))}
         </div>

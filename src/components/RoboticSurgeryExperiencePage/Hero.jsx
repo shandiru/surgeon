@@ -50,7 +50,7 @@ export default function Hero() {
                   Robotic Surgery:{" "}
                   <span className="text-primary-pink">Expertise, Experience & Innovation</span>
                 </h1>
-                <p className="text-body-large md:text-lg text-gray-700 leading-relaxed">
+                <p className="text-body-large md:text-lg text-black leading-relaxed">
                   Explore the pros and cons of robotic surgery, discover Ketan's extensive
                   experience as a robotic surgeon, and learn about his current work as Medical
                   Director in the hospital and his teaching of robotic surgery techniques across
@@ -62,7 +62,7 @@ export default function Hero() {
                   <button className="cursor-pointer inline-flex items-center justify-center px-6 py-3 rounded-lg bg-primary-pink text-white font-semibold text-button hover:bg-[#E03E7C] transition-all duration-300 shadow-md hover:shadow-lg">
                     Let's Start
                   </button>
-                  <button className="cursor-pointer inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg border-2 border-[#FF4B8B] text-primary-pink font-semibold text-button hover:bg-primary-pink/10 transition-all duration-300">
+                  <button className="cursor-pointer inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg border-2 border-primary-pink text-primary-pink font-semibold text-button hover:bg-primary-pink/10 transition-all duration-300">
                     About Us
                     <ArrowRight className="w-4 h-4" />
                   </button>

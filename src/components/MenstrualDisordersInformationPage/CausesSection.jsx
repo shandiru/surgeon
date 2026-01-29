@@ -25,7 +25,7 @@ export default function CausesSection() {
         {riskFactors.map((factor, index) => (
           <div
             key={index}
-            className="px-5 py-3 rounded-xl bg-[#FEE6EA] text-[#BB125B] text-sm font-medium border border-[#FF4B8B]/20 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all"
+            className="px-5 py-3 rounded-xl bg-[#FEE6EA] text-primary-pink text-sm font-medium border border-primary-pink shadow-sm hover:shadow-md hover:-translate-y-1 transition-all"
           >
             {factor}
           </div>

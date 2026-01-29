@@ -26,13 +26,13 @@ export default function RoboticSurgeryOverview() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             {/* Text Content */}
             <div data-aos="fade-right">
-              <p className="text-lg text-gray-700 mb-6">
+              <p className="text-lg text-black mb-6">
                 Robotic surgery represents a revolutionary form of minimally invasive surgery that
                 uses advanced technology to enhance surgical precision, control, and vision. Unlike
                 traditional open surgery, robotic systems enable procedures through small incisions
                 with robotic arms controlled by the surgeon from a specialized console.
               </p>
-              <p className="text-lg text-gray-700">
+              <p className="text-lg text-black">
                 The da Vinci Surgical System, developed by Intuitive Surgical, has transformed
                 gynecologic surgery by significantly improving patient outcomes and surgical
                 experiences.
@@ -41,7 +41,7 @@ export default function RoboticSurgeryOverview() {
 
             {/* Features Box */}
             <div
-              className="bg-[#FFE6EE] p-8 rounded-lg border border-[#FFC5D3] 
+              className="bg-light-pink-1 p-8 rounded-lg border border-lignt-pink-1 
               transition transform duration-300 
               hover:scale-105 hover:shadow-[0_0_30px_6px_rgba(176,59,102,0.3)]
               active:scale-105 active:shadow-[0_0_30px_6px_rgba(176,59,102,0.3)]"

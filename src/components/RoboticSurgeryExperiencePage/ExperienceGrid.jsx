@@ -80,7 +80,7 @@ export default function ExperienceGrid() {
                 <h3 className="text-subsection text-gray-900 font-bold mb-3">{card.title}</h3>
 
                 {/* Description */}
-                <p className="text-body text-gray-700 leading-relaxed mb-4 flex-1">
+                <p className="text-body text-black leading-relaxed mb-4 flex-1">
                   {card.description}
                 </p>
 

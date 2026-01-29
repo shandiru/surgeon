@@ -46,7 +46,7 @@ const VulvarVaginalLumpsSection = () => {
               <div className="p-6 text-center">
                 {card.icon}
                 <h3 className="text-lg font-semibold mb-2">{card.title}</h3>
-                <p className="text-sm text-gray-700">{card.description}</p>
+                <p className="text-sm text-black">{card.description}</p>
               </div>
             </div>
           ))}

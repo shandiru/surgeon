@@ -28,7 +28,7 @@ export default function TrustSection() {
               </h2>
 
               {/* Descriptive Paragraph */}
-              <p className="text-body-large text-gray-600 leading-relaxed">
+              <p className="text-body-large text-black/90 leading-relaxed">
                 We maintain the highest standards of care and safety, providing personalized
                 attention throughout your healthcare journey.
               </p>
@@ -38,7 +38,7 @@ export default function TrustSection() {
                 {features.map((feature, index) => (
                   <div key={index} className="flex items-start gap-4">
                     {/* Icon in Circular Background */}
-                    <div className="flex-shrink-0 w-14 h-14 rounded-full bg-[#FDE7EB] border-2 border-[#FF4B8B] flex items-center justify-center">
+                    <div className="flex-shrink-0 w-14 h-14 rounded-full bg-[#FDE7EB] border-2 border-primary-pink flex items-center justify-center">
                       <div className="text-primary-pink">{feature.icon}</div>
                     </div>
 
@@ -47,7 +47,7 @@ export default function TrustSection() {
                       <h3 className="text-subsection text-gray-900 font-semibold mb-1">
                         {feature.title}
                       </h3>
-                      <p className="text-body text-gray-600 leading-relaxed">
+                      <p className="text-body text-black/90 leading-relaxed">
                         {feature.description}
                       </p>
                     </div>

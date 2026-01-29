@@ -28,7 +28,7 @@ export default function SymptomsAndRiskFactorsSection() {
             {/* Alert */}
             <div
               role="alert"
-              className="mt-6 rounded-lg bg-[#FFF0F5] px-4 py-3 text-xs text-[#BB125B] font-medium shadow-sm"
+              className="mt-6 rounded-lg bg-[#FFF0F5] px-4 py-3 text-xs text-primary-pink font-medium shadow-sm"
             >
               Hot flushes and other menopause symptoms often ease over time — but bleeding should
               never return.

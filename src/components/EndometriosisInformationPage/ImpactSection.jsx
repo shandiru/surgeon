@@ -9,7 +9,7 @@ const ImpactSection = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-primary-pink">
             Impact on Fertility and Wellbeing
           </h2>
-          <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
+          <p className="text-black/90 mt-3 max-w-2xl mx-auto">
             Endometriosis can affect different aspects of life. Understanding its impact helps in
             finding the right treatment and support.
           </p>
@@ -19,7 +19,7 @@ const ImpactSection = () => {
         <div className="grid md:grid-cols-2 gap-10">
           {/* Fertility Impact */}
           <div
-            className="bg-white text-gray-800 rounded-2xl p-8 shadow-lg transition duration-300 
+            className="bg-white text-black rounded-2xl p-8 shadow-lg transition duration-300 
           hover:shadow-[0_0_25px_rgba(176,59,102,0.4)] hover:-translate-y-2 active:scale-[0.98]"
           >
             <div className="flex items-center gap-3 mb-4">
@@ -40,7 +40,7 @@ const ImpactSection = () => {
               </div>
               <h3 className="text-xl font-semibold text-primary-pink">Fertility Impact</h3>
             </div>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-black leading-relaxed">
               Endometriosis can make it harder to get pregnant, but many women still conceive
               naturally. Early diagnosis and treatment can help protect your fertility options.
             </p>
@@ -48,7 +48,7 @@ const ImpactSection = () => {
 
           {/* Emotional Wellbeing */}
           <div
-            className="bg-white text-gray-800 rounded-2xl p-8 shadow-lg transition duration-300 
+            className="bg-white text-black rounded-2xl p-8 shadow-lg transition duration-300 
           hover:shadow-[0_0_25px_rgba(176,59,102,0.4)] hover:-translate-y-2 active:scale-[0.98]"
           >
             <div className="flex items-center gap-3 mb-4">
@@ -66,7 +66,7 @@ const ImpactSection = () => {
               </div>
               <h3 className="text-xl font-semibold text-primary-pink">Emotional Wellbeing</h3>
             </div>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-black leading-relaxed">
               Symptoms can affect your emotional health and quality of life. It&apos;s important to
               seek support and early treatment for both physical and mental wellbeing.
             </p>

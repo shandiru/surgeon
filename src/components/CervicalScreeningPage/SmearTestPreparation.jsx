@@ -13,7 +13,7 @@ export default function SmearTestPreparation() {
           >
             {/* Header */}
             <div className="flex items-center gap-3 mb-6">
-              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#ff97b3] shadow">
+              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-light-pink-2 shadow">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6 text-white"
@@ -32,11 +32,11 @@ export default function SmearTestPreparation() {
             </div>
 
             {/* Tips */}
-            <ul className="space-y-4 text-gray-700 leading-relaxed">
+            <ul className="space-y-4 text-black leading-relaxed">
               <li className="flex items-start gap-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 text-[#ff97b3] mt-1 flex-shrink-0"
+                  className="h-5 w-5 text-light-pink-2 mt-1 flex-shrink-0"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -51,7 +51,7 @@ export default function SmearTestPreparation() {
               <li className="flex items-start gap-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 text-[#ff97b3] mt-1 flex-shrink-0"
+                  className="h-5 w-5 text-light-pink-2 mt-1 flex-shrink-0"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -66,7 +66,7 @@ export default function SmearTestPreparation() {
               <li className="flex items-start gap-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 text-[#ff97b3] mt-1 flex-shrink-0"
+                  className="h-5 w-5 text-light-pink-2 mt-1 flex-shrink-0"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"

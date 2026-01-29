@@ -2,7 +2,7 @@ import React from "react";
 
 const IsItPainfulCard = () => {
   return (
-    <div className="max-w-6xl mx-auto mb-10 flex flex-col gap-6 rounded-xl bg-white py-6 px-6 shadow-md hover:shadow-xl hover:scale-[1.02] transition-all duration-300 text-[#BB125B]">
+    <div className="max-w-6xl mx-auto mb-10 flex flex-col gap-6 rounded-xl bg-white py-6 px-6 shadow-md hover:shadow-xl hover:scale-[1.02] transition-all duration-300 text-primary-pink">
       {/* Header */}
       <div className="border-b pb-6">
         <h2 className="font-semibold text-2xl text-primary-pink">Is It Painful?</h2>

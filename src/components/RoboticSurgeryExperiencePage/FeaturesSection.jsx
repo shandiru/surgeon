@@ -36,7 +36,7 @@ export default function FeaturesSection() {
               <h2 className="text-hero md:text-5xl font-bold text-gray-900 mb-4">
                 Robotic Surgery Excellence
               </h2>
-              <p className="text-body-large text-gray-600 max-w-2xl">
+              <p className="text-body-large text-black/90 max-w-2xl">
                 Comprehensive insights into robotic surgery, from understanding the benefits and
                 considerations to exploring expert experience and current practice.
               </p>
@@ -67,7 +67,7 @@ export default function FeaturesSection() {
                         {feature.title}
                       </h3>
                     </div>
-                    <p className="text-body text-gray-600 leading-relaxed">{feature.description}</p>
+                    <p className="text-body text-black/90 leading-relaxed">{feature.description}</p>
                   </div>
                 </div>
 

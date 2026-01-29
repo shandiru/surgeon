@@ -29,7 +29,7 @@ export default function ProsAndCons() {
             <h2 className="text-section text-primary-pink mb-4">
               Pros and Cons of Robotic Surgery
             </h2>
-            <p className="text-body-large text-gray-700 max-w-2xl mx-auto">
+            <p className="text-body-large text-black max-w-2xl mx-auto">
               Understanding the advantages and considerations of robotic-assisted surgery
             </p>
           </div>
@@ -37,7 +37,7 @@ export default function ProsAndCons() {
           {/* Two Column Layout */}
           <div className="grid md:grid-cols-2 gap-8 md:gap-12">
             {/* Pros Section */}
-            <div className="bg-primary-pink/10 rounded-xl p-6 md:p-8 border border-[#FF4B8B]/20">
+            <div className="bg-primary-pink/10 rounded-xl p-6 md:p-8 border border-primary-pink">
               <div className="flex items-center gap-3 mb-6">
                 <CheckCircle2 className="w-8 h-8 text-primary-pink" />
                 <h3 className="text-subsection text-primary-pink font-semibold">Advantages</h3>
@@ -46,7 +46,7 @@ export default function ProsAndCons() {
                 {pros.map((item, index) => (
                   <li key={index} className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-primary-pink mt-0.5 flex-shrink-0" />
-                    <span className="text-body text-gray-700">{item}</span>
+                    <span className="text-body text-black">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -55,14 +55,14 @@ export default function ProsAndCons() {
             {/* Cons Section */}
             <div className="bg-gray-50 rounded-xl p-6 md:p-8 border border-gray-200">
               <div className="flex items-center gap-3 mb-6">
-                <XCircle className="w-8 h-8 text-gray-600" />
-                <h3 className="text-subsection text-gray-800 font-semibold">Considerations</h3>
+                <XCircle className="w-8 h-8 text-black/90" />
+                <h3 className="text-subsection text-black font-semibold">Considerations</h3>
               </div>
               <ul className="space-y-4">
                 {cons.map((item, index) => (
                   <li key={index} className="flex items-start gap-3">
-                    <XCircle className="w-5 h-5 text-gray-600 mt-0.5 flex-shrink-0" />
-                    <span className="text-body text-gray-700">{item}</span>
+                    <XCircle className="w-5 h-5 text-black/90 mt-0.5 flex-shrink-0" />
+                    <span className="text-body text-black">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -70,8 +70,8 @@ export default function ProsAndCons() {
           </div>
 
           {/* Note Section */}
-          <div className="mt-12 p-6 rounded-lg bg-primary-pink/10 border border-[#FF4B8B]/20">
-            <p className="text-body text-[#BB125B] text-center">
+          <div className="mt-12 p-6 rounded-lg bg-primary-pink/10 border border-primary-pink">
+            <p className="text-body text-primary-pink text-center">
               <strong>Note:</strong> The decision to use robotic surgery depends on individual
               patient circumstances, the specific procedure, and consultation with your healthcare
               provider. This information is provided as a general guide.

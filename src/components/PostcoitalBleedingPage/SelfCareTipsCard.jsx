@@ -3,7 +3,7 @@ import React from "react";
 
 const SelfCareTipsCard = () => {
   return (
-    <div className="max-w-6xl text-[#BB125B] mx-auto mb-10 flex flex-col gap-6 rounded-xl bg-white py-6 shadow-md hover:shadow-lg transition-shadow">
+    <div className="max-w-6xl text-primary-pink mx-auto mb-10 flex flex-col gap-6 rounded-xl bg-white py-6 shadow-md hover:shadow-lg transition-shadow">
       {/* Header */}
       <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-2 px-6 border-b border-[#FEE6EA] pb-6">
         <div className="font-semibold text-2xl text-primary-pink flex items-center gap-2">

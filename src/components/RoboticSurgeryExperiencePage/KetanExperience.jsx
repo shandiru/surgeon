@@ -42,7 +42,7 @@ export default function KetanExperience() {
             <h2 className="text-section text-primary-pink mb-4">
               Ketan's Experience as a Robotic Surgeon
             </h2>
-            <p className="text-body-large text-gray-700 max-w-2xl mx-auto">
+            <p className="text-body-large text-black max-w-2xl mx-auto">
               A dedicated commitment to excellence in robotic-assisted gynecological surgery
             </p>
           </div>
@@ -52,7 +52,7 @@ export default function KetanExperience() {
             {experienceItems.map((item, index) => (
               <div
                 key={index}
-                className="bg-white rounded-xl p-6 md:p-8 shadow-md hover:shadow-lg transition-all duration-300 border border-[#FF4B8B]/10"
+                className="bg-white rounded-xl p-6 md:p-8 shadow-md hover:shadow-lg transition-all duration-300 border border-primary-pink/10"
               >
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-primary-pink/10 flex items-center justify-center text-primary-pink">
@@ -63,11 +63,11 @@ export default function KetanExperience() {
                       <h3 className="text-card-title text-primary-pink font-semibold">
                         {item.title}
                       </h3>
-                      <span className="text-caption text-[#BB125B] bg-primary-pink/10 px-2 py-1 rounded">
+                      <span className="text-caption text-primary-pink bg-primary-pink/10 px-2 py-1 rounded">
                         {item.detail}
                       </span>
                     </div>
-                    <p className="text-body text-gray-700 leading-relaxed">{item.description}</p>
+                    <p className="text-body text-black leading-relaxed">{item.description}</p>
                   </div>
                 </div>
               </div>
@@ -75,12 +75,12 @@ export default function KetanExperience() {
           </div>
 
           {/* Highlight Section */}
-          <div className="bg-white rounded-xl p-6 md:p-8 border-2 border-[#FF4B8B] shadow-lg">
+          <div className="bg-white rounded-xl p-6 md:p-8 border-2 border-primary-pink shadow-lg">
             <div className="text-center">
               <h3 className="text-subsection text-primary-pink font-bold mb-4">
                 Commitment to Patient Care
               </h3>
-              <p className="text-body-large text-gray-700 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-body-large text-black max-w-3xl mx-auto leading-relaxed">
                 With years of dedicated practice in robotic surgery, Ketan combines technical
                 expertise with compassionate care, ensuring each patient receives personalized
                 treatment tailored to their unique needs. His experience spans a wide range of

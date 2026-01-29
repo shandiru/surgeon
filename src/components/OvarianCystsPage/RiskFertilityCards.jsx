@@ -6,7 +6,7 @@ export default function RiskFertilityCards() {
   return (
     <div className="grid md:grid-cols-2 gap-6">
       {/* Risk Factors Card */}
-      <div className="flex flex-col gap-6 rounded-xl bg-[#FEE6EA] text-[#BB125B] py-6 px-5 sm:px-6 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all">
+      <div className="flex flex-col gap-6 rounded-xl bg-[#FEE6EA] text-primary-pink py-6 px-5 sm:px-6 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all">
         {/* Header */}
         <div className="flex items-center gap-3 font-semibold text-primary-pink text-lg">
           {/* Shield Icon */}
@@ -45,7 +45,7 @@ export default function RiskFertilityCards() {
       </div>
 
       {/* Fertility & Pregnancy Card */}
-      <div className="flex flex-col gap-6 rounded-xl bg-[#FEE6EA] text-[#BB125B] py-6 px-5 sm:px-6 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all">
+      <div className="flex flex-col gap-6 rounded-xl bg-[#FEE6EA] text-primary-pink py-6 px-5 sm:px-6 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all">
         {/* Header */}
         <div className="flex items-center gap-3 font-semibold text-primary-pink text-lg">
           {/* Heart Icon */}

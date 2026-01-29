@@ -27,7 +27,7 @@ const DiagnosisSection = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-primary-pink mb-4">
               How It&apos;s Diagnosed
             </h2>
-            <p className="text-lg text-gray-700">Understanding the diagnostic process</p>
+            <p className="text-lg text-black">Understanding the diagnostic process</p>
           </div>
 
           {/* Steps */}
@@ -35,7 +35,7 @@ const DiagnosisSection = () => {
             {steps.map((step, index) => (
               <div
                 key={index}
-                className="bg-white text-[#333] rounded-2xl shadow-md p-6 md:p-8 
+                className="bg-white text-black rounded-2xl shadow-md p-6 md:p-8 
                 transition duration-300 hover:shadow-[0_0_25px_rgba(176,59,102,0.35)] 
                 hover:-translate-y-2 active:scale-[0.98]"
               >
@@ -48,7 +48,7 @@ const DiagnosisSection = () => {
                   {/* Content */}
                   <div>
                     <h3 className="font-semibold text-xl text-primary-pink mb-2">{step.title}</h3>
-                    <p className="text-gray-600 leading-relaxed">{step.description}</p>
+                    <p className="text-black/90 leading-relaxed">{step.description}</p>
                   </div>
                 </div>
               </div>

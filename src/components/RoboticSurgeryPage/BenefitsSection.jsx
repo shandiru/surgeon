@@ -49,7 +49,7 @@ export default function BenefitsSection() {
                 {patientBenefits.map((item, idx) => (
                   <div key={idx} className="flex items-start gap-3">
                     <LuCircleCheckBig className="w-5 h-5 text-primary-pink mt-0.5 flex-shrink-0" />
-                    <p className="text-gray-700">{item}</p>
+                    <p className="text-black">{item}</p>
                   </div>
                 ))}
               </div>
@@ -70,7 +70,7 @@ export default function BenefitsSection() {
                 {surgeonBenefits.map((item, idx) => (
                   <div key={idx} className="flex items-start gap-3">
                     <LuCircleCheckBig className="w-5 h-5 text-primary-pink mt-0.5 flex-shrink-0" />
-                    <p className="text-gray-700">{item}</p>
+                    <p className="text-black">{item}</p>
                   </div>
                 ))}
               </div>

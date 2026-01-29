@@ -21,7 +21,7 @@ const VulvarCancerPage = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#FFE6EA]">
+    <div className="min-h-screen bg-light-pink-1">
       <div className="container mx-auto px-4 py-12 max-w-6xl">
         {/* Header Section */}
         <div

@@ -6,7 +6,7 @@ export default function CystAlert() {
   return (
     <div
       role="alert"
-      className="w-full rounded-xl px-6 py-5 bg-[#FFF7F9] text-[#BB125B] text-base leading-relaxed shadow-md hover:shadow-lg transition-all"
+      className="w-full rounded-xl px-6 py-5 bg-[#FFF7F9] text-primary-pink text-base leading-relaxed shadow-md hover:shadow-lg transition-all"
     >
       {/* Header */}
       <div className="flex items-start gap-3 mb-4">
@@ -34,7 +34,7 @@ export default function CystAlert() {
       </div>
 
       {/* List */}
-      <ul className="list-disc ml-8 space-y-2 text-[#BB125B]">
+      <ul className="list-disc ml-8 space-y-2 text-primary-pink">
         <li>Persistent bloating or pelvic pressure</li>
         <li>Needing to urinate more often</li>
         <li>Pelvic pain or unusual vaginal bleeding</li>

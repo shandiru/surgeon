@@ -32,7 +32,7 @@ export default function CervicalCancerTreatment() {
           <div className="mt-8" data-aos="fade-up">
             <div className="bg-white p-4 rounded-lg border border-light-pink-2 transition-all duration-300 hover:bg-light-pink-1 hover:shadow-lg hover:border-light-pink-2 active:bg-light-pink-1 active:shadow-lg active:border-light-pink-2">
               <h3 className="font-semibold mb-2 text-primary-pink">We consider:</h3>
-              <div className="grid md:grid-cols-2 gap-2 text-sm text-[#7a2f4f]">
+              <div className="grid md:grid-cols-2 gap-2 text-sm text-black">
                 {[
                   "Type and stage of cancer",
                   "Size and location of cancer cells",

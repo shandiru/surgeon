@@ -4,7 +4,7 @@ import React from "react";
 
 export default function OvarianCystSurgery() {
   return (
-    <div className="flex flex-col gap-6 rounded-xl bg-white text-[#BB125B] shadow-lg hover:shadow-xl transition-all duration-300 py-6 px-6 sm:px-8">
+    <div className="flex flex-col gap-6 rounded-xl bg-white text-primary-pink shadow-lg hover:shadow-xl transition-all duration-300 py-6 px-6 sm:px-8">
       {/* Card Header */}
       <div className="flex items-center gap-3 text-xl font-semibold text-primary-pink">
         {/* Activity Icon */}
@@ -38,7 +38,7 @@ export default function OvarianCystSurgery() {
         <div className="grid md:grid-cols-2 gap-6">
           {/* Laparoscopy */}
           <div className="bg-white rounded-lg p-5 shadow-md hover:shadow-lg transition-all duration-300">
-            <h4 className="font-semibold mb-2 text-[#BB125B]">Laparoscopy</h4>
+            <h4 className="font-semibold mb-2 text-primary-pink">Laparoscopy</h4>
             <p className="text-sm mb-3 text-[#555]">Keyhole surgery using small cuts</p>
             <span className="inline-flex items-center justify-center rounded-full px-3 py-1 text-xs font-medium bg-[#FF4B8B1A] text-primary-pink">
               Often used for smaller, benign cysts
@@ -47,11 +47,11 @@ export default function OvarianCystSurgery() {
 
           {/* Laparotomy */}
           <div className="bg-white rounded-lg p-5 shadow-md hover:shadow-lg transition-all duration-300">
-            <h4 className="font-semibold mb-2 text-[#BB125B]">Laparotomy</h4>
+            <h4 className="font-semibold mb-2 text-primary-pink">Laparotomy</h4>
             <p className="text-sm mb-3 text-[#555]">
               Open surgery through a larger cut in the abdomen
             </p>
-            <span className="inline-flex items-center justify-center rounded-full px-3 py-1 text-xs font-medium bg-[#FEE6EA] text-[#BB125B]">
+            <span className="inline-flex items-center justify-center rounded-full px-3 py-1 text-xs font-medium bg-[#FEE6EA] text-primary-pink">
               Used for larger or possibly cancerous cysts
             </span>
           </div>

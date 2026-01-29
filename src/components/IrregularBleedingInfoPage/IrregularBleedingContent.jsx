@@ -7,9 +7,9 @@ const IrregularBleedingContent = ({ activeTab }) => {
     <main className="max-w-4xl mx-auto px-4 py-8 bg-white">
       {activeTab === "Overview" && (
         <div className="space-y-6 px-4 md:px-6">
-          <div className="bg-white flex flex-col gap-6 rounded-xl border border-[#ff97b3]/30 py-6 shadow-md hover:shadow-lg transition-all duration-300">
+          <div className="bg-white flex flex-col gap-6 rounded-xl border border-light-pink-2/30 py-6 shadow-md hover:shadow-lg transition-all duration-300">
             {/* Header */}
-            <div className="grid grid-rows-[auto_auto] items-start gap-1.5 px-6 pb-4 border-b border-[#ff97b3]/20">
+            <div className="grid grid-rows-[auto_auto] items-start gap-1.5 px-6 pb-4 border-b border-light-pink-2/20">
               <div className="leading-none font-semibold flex items-center gap-2 text-primary-pink text-lg">
                 <Info className="w-5 h-5 text-primary-pink" />
                 What Is Irregular Bleeding?
@@ -21,14 +21,14 @@ const IrregularBleedingContent = ({ activeTab }) => {
               <div className="grid md:grid-cols-2 gap-6">
                 {/* Typical Period */}
                 <div className="space-y-3">
-                  <h4 className="font-semibold text-[#ff97b3]">A typical period:</h4>
+                  <h4 className="font-semibold text-light-pink-2">A typical period:</h4>
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-center gap-2">
-                      <CircleCheckBig className="w-4 h-4 text-[#ff97b3]" />
+                      <CircleCheckBig className="w-4 h-4 text-light-pink-2" />
                       Occurs every 28 days
                     </li>
                     <li className="flex items-center gap-2">
-                      <CircleCheckBig className="w-4 h-4 text-[#ff97b3]" />
+                      <CircleCheckBig className="w-4 h-4 text-light-pink-2" />
                       Lasts 5–7 days
                     </li>
                   </ul>
@@ -36,14 +36,14 @@ const IrregularBleedingContent = ({ activeTab }) => {
 
                 {/* Irregular Bleeding */}
                 <div className="space-y-3">
-                  <h4 className="font-semibold text-[#ff97b3]">Irregular bleeding includes:</h4>
+                  <h4 className="font-semibold text-light-pink-2">Irregular bleeding includes:</h4>
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-center gap-2">
-                      <TriangleAlert className="w-4 h-4 text-[#ff97b3]" />
+                      <TriangleAlert className="w-4 h-4 text-light-pink-2" />
                       Periods that come more or less often than usual
                     </li>
                     <li className="flex items-center gap-2">
-                      <TriangleAlert className="w-4 h-4 text-[#ff97b3]" />
+                      <TriangleAlert className="w-4 h-4 text-light-pink-2" />
                       Spotting between periods
                     </li>
                   </ul>
@@ -154,12 +154,12 @@ const IrregularBleedingContent = ({ activeTab }) => {
       {activeTab === "When to Seek Help" && (
         <div
           data-slot="card"
-          className="bg-white text-[#333] flex flex-col gap-6 rounded-xl py-6 px-4 sm:px-6 shadow-md hover:shadow-lg transition-all duration-300"
+          className="bg-white text-black flex flex-col gap-6 rounded-xl py-6 px-4 sm:px-6 shadow-md hover:shadow-lg transition-all duration-300"
         >
           {/* Header */}
           <div
             data-slot="card-header"
-            className="grid auto-rows-min items-start gap-2 border-b border-[#ff97b3]/30 pb-4"
+            className="grid auto-rows-min items-start gap-2 border-b border-light-pink-2/30 pb-4"
           >
             <div className="leading-snug font-semibold flex items-center gap-2 text-primary-pink text-lg sm:text-xl">
               <svg
@@ -198,7 +198,7 @@ const IrregularBleedingContent = ({ activeTab }) => {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-4 h-4 text-[#ff97b3] mt-1 flex-shrink-0"
+                  className="w-4 h-4 text-light-pink-2 mt-1 flex-shrink-0"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -217,7 +217,7 @@ const IrregularBleedingContent = ({ activeTab }) => {
               <div className="flex items-center gap-2 mb-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-5 h-5 text-[#ff97b3] flex-shrink-0"
+                  className="w-5 h-5 text-light-pink-2 flex-shrink-0"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -225,7 +225,7 @@ const IrregularBleedingContent = ({ activeTab }) => {
                 >
                   <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                 </svg>
-                <h4 className="font-semibold text-[#ff97b3] text-sm sm:text-base">
+                <h4 className="font-semibold text-light-pink-2 text-sm sm:text-base">
                   Need immediate help?
                 </h4>
               </div>
@@ -240,12 +240,12 @@ const IrregularBleedingContent = ({ activeTab }) => {
       {activeTab === "What to Track" && (
         <div
           data-slot="card"
-          className="bg-white text-[#333] flex flex-col gap-6 rounded-xl py-6 px-4 sm:px-6 shadow-md hover:shadow-lg transition-all duration-300"
+          className="bg-white text-black flex flex-col gap-6 rounded-xl py-6 px-4 sm:px-6 shadow-md hover:shadow-lg transition-all duration-300"
         >
           {/* Header */}
           <div
             data-slot="card-header"
-            className="grid auto-rows-min items-start gap-2 border-b border-[#ff97b3]/30 pb-4"
+            className="grid auto-rows-min items-start gap-2 border-b border-light-pink-2/30 pb-4"
           >
             <div className="leading-snug font-semibold flex items-center gap-2 text-primary-pink text-lg sm:text-xl">
               <svg
@@ -310,10 +310,10 @@ const IrregularBleedingContent = ({ activeTab }) => {
                 key={idx}
                 className="flex items-start gap-4 p-4 rounded-lg bg-[#fff7f9] shadow-sm hover:shadow-md transition-all duration-200"
               >
-                <div className="p-2 rounded-full bg-[#ff97b3]/10 flex-shrink-0">
+                <div className="p-2 rounded-full bg-light-pink-2/10 flex-shrink-0">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-5 h-5 text-[#ff97b3]"
+                    className="w-5 h-5 text-light-pink-2"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -323,7 +323,7 @@ const IrregularBleedingContent = ({ activeTab }) => {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-1 text-[#ff97b3] text-sm sm:text-base">
+                  <h4 className="font-semibold mb-1 text-light-pink-2 text-sm sm:text-base">
                     {item.title}
                   </h4>
                   <p className="text-xs sm:text-sm text-[#666]">{item.desc}</p>
@@ -336,12 +336,12 @@ const IrregularBleedingContent = ({ activeTab }) => {
       {activeTab === "Your Appointment" && (
         <div
           data-slot="card"
-          className="bg-white text-[#333] flex flex-col gap-6 rounded-xl py-6 px-4 sm:px-6 shadow-md hover:shadow-lg transition-all duration-300"
+          className="bg-white text-black flex flex-col gap-6 rounded-xl py-6 px-4 sm:px-6 shadow-md hover:shadow-lg transition-all duration-300"
         >
           {/* Header */}
           <div
             data-slot="card-header"
-            className="grid auto-rows-min items-start gap-2 border-b border-[#ff97b3]/30 pb-4"
+            className="grid auto-rows-min items-start gap-2 border-b border-light-pink-2/30 pb-4"
           >
             <div className="leading-snug font-semibold flex items-center gap-2 text-primary-pink text-lg sm:text-xl">
               <svg
@@ -417,7 +417,7 @@ const IrregularBleedingContent = ({ activeTab }) => {
             {/* Header */}
             <div
               data-slot="card-header"
-              className="grid auto-rows-min items-start gap-2 border-b border-[#ff97b3]/30 pb-4"
+              className="grid auto-rows-min items-start gap-2 border-b border-light-pink-2/30 pb-4"
             >
               <div className="leading-snug font-semibold flex items-center gap-2 text-primary-pink text-lg sm:text-xl">
                 <svg

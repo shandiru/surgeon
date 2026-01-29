@@ -46,7 +46,7 @@ export default function EducationLanguagesSection() {
               {education.map((item, i) => (
                 <div
                   key={i}
-                  className="bg-white p-6 rounded-lg shadow-sm text-center lg:text-left border border-[#FF4B8B]/10 
+                  className="bg-white p-6 rounded-lg shadow-sm text-center lg:text-left border border-primary-pink/10 
                              transition-all duration-300 hover:scale-[1.02] 
                              hover:shadow-[0_0_25px_3px_rgba(255,75,139,0.2)] active:scale-[0.98]"
                   data-aos="fade-up"
@@ -62,7 +62,7 @@ export default function EducationLanguagesSection() {
 
           {/* Languages Spoken */}
           <div
-            className="bg-white rounded-xl shadow-sm p-8 flex flex-col h-full border border-[#FF4B8B]/10
+            className="bg-white rounded-xl shadow-sm p-8 flex flex-col h-full border border-primary-pink/10
                        transition-all duration-300 hover:shadow-[0_0_30px_3px_rgba(255,75,139,0.25)]"
             data-aos="fade-left"
             data-aos-delay="300"
@@ -72,7 +72,7 @@ export default function EducationLanguagesSection() {
               <img
                 src="/new-doctor.png" // <-- உங்கள் doctor image path
                 alt="Doctor"
-                className="w-32 h-32 object-cover rounded-full border-4 border-[#FF4B8B]/30 shadow-md"
+                className="w-32 h-32 object-cover rounded-full border-4 border-primary-pink/30 shadow-md"
                 data-aos="zoom-in"
               />
             </div>
@@ -99,7 +99,7 @@ export default function EducationLanguagesSection() {
                   <span
                     key={idx}
                     className="inline-flex items-center justify-center rounded-md font-medium text-body-large px-6 py-2 
-                               bg-[#FFF1F5] text-gray-800 border border-[#FF4B8B]/20 
+                               bg-[#FFF1F5] text-black border border-primary-pink 
                                transition-all duration-300 hover:bg-primary-pink hover:text-white 
                                hover:shadow-[0_0_15px_1px_rgba(255,75,139,0.3)] hover:scale-105 
                                active:scale-95"
@@ -112,7 +112,7 @@ export default function EducationLanguagesSection() {
               </div>
 
               <p
-                className="text-gray-600 mt-6 text-center text-body-small"
+                className="text-black/90 mt-6 text-center text-body-small"
                 data-aos="fade-up"
                 data-aos-delay="500"
               >

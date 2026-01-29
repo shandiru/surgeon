@@ -13,7 +13,7 @@ export default function PostcoitalBleedingHero() {
         </h1>
 
         {/* Subtext */}
-        <p className="text-lg md:text-xl mb-8 opacity-90 text-[#BB125B]">
+        <p className="text-lg md:text-xl mb-8 opacity-90 text-primary-pink">
           What it is, causes, and when to seek help
         </p>
 

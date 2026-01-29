@@ -58,7 +58,7 @@ export default function AboutSectionView() {
             About Mr Ketankumar Gajjar
           </h2>
           <p
-            className="text-body-large text-gray-600 max-w-3xl mx-auto"
+            className="text-body-large text-black/90 max-w-3xl mx-auto"
             data-aos="fade-up"
             data-aos-delay="200"
           >
@@ -72,7 +72,7 @@ export default function AboutSectionView() {
           {cards.map((card, i) => (
             <div
               key={i}
-              className="group bg-white text-gray-900 flex flex-col gap-6 rounded-xl border border-[#FF4B8B]/20 shadow-sm text-center p-6 transition-all duration-300 
+              className="group bg-white text-gray-900 flex flex-col gap-6 rounded-xl border border-primary-pink shadow-sm text-center p-6 transition-all duration-300 
                          md:hover:scale-105 md:hover:shadow-[0_0_25px_3px_rgba(255,75,139,0.3)]
                          active:scale-95 active:shadow-[0_0_15px_2px_rgba(255,75,139,0.25)]"
               data-aos="fade-up"
@@ -91,7 +91,7 @@ export default function AboutSectionView() {
                 </svg>
               </div>
               <h3 className="text-card-title mb-2 text-[#1F2937]">{card.title}</h3>
-              <p className="text-body text-gray-600">{card.desc}</p>
+              <p className="text-body text-black/90">{card.desc}</p>
             </div>
           ))}
         </div>

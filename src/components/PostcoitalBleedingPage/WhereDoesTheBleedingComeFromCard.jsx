@@ -9,7 +9,7 @@ const WhereDoesTheBleedingComeFromCard = () => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto mb-10 flex flex-col gap-6 rounded-xl bg-white py-6 shadow-md hover:shadow-xl hover:scale-[1.01] transition-all duration-300 text-[#BB125B]">
+    <div className="max-w-6xl mx-auto mb-10 flex flex-col gap-6 rounded-xl bg-white py-6 shadow-md hover:shadow-xl hover:scale-[1.01] transition-all duration-300 text-primary-pink">
       {/* Header */}
       <div className="grid auto-rows-min gap-1.5 px-6 border-b border-[#FEE6EA] pb-6">
         <h2 className="font-semibold text-2xl text-primary-pink">
@@ -47,7 +47,7 @@ const WhereDoesTheBleedingComeFromCard = () => {
               </ul>
             </div>
 
-            <div className="p-4 rounded-lg bg-[#FEE6EA] text-sm text-[#BB125B] shadow-sm">
+            <div className="p-4 rounded-lg bg-[#FEE6EA] text-sm text-primary-pink shadow-sm">
               Minor tears usually heal on their own in a few days to weeks. Larger tears may need
               stitches but heal within six weeks.
             </div>
@@ -116,7 +116,7 @@ const WhereDoesTheBleedingComeFromCard = () => {
                   <button
                     type="button"
                     onClick={() => toggleAccordion(index)}
-                    className="w-full flex justify-between items-center py-4 px-4 text-sm font-medium text-[#BB125B] hover:bg-[#FFF1F5] transition-colors"
+                    className="w-full flex justify-between items-center py-4 px-4 text-sm font-medium text-primary-pink hover:bg-[#FFF1F5] transition-colors"
                   >
                     {item.title}
                     <ChevronDown

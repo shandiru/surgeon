@@ -29,8 +29,8 @@ export default function HowCommonSection() {
 
           <p className="text-center mt-6 text-base text-[#6B7280] leading-relaxed">
             Most women are diagnosed with{" "}
-            <span className="font-semibold text-[#BB125B]">non-cancerous conditions</span>, which is
-            why <span className="font-semibold">prompt assessment</span> is essential.
+            <span className="font-semibold text-primary-pink">non-cancerous conditions</span>, which
+            is why <span className="font-semibold">prompt assessment</span> is essential.
           </p>
         </div>
       </div>

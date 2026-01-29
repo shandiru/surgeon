@@ -90,7 +90,7 @@ const Navbar = () => {
             <HashLink
               smooth
               to="/#about"
-              className="text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
+              className="text-black/90 hover:text-gray-900 px-2 py-2 text-sm font-medium"
               onClick={closeAll}
             >
               About
@@ -98,7 +98,7 @@ const Navbar = () => {
             <HashLink
               smooth
               to="/#experience"
-              className="text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
+              className="text-black/90 hover:text-gray-900 px-2 py-2 text-sm font-medium"
               onClick={closeAll}
             >
               Experience
@@ -106,7 +106,7 @@ const Navbar = () => {
             <HashLink
               smooth
               to="/#specialties"
-              className="text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
+              className="text-black/90 hover:text-gray-900 px-2 py-2 text-sm font-medium"
               onClick={closeAll}
             >
               Specialties
@@ -114,7 +114,7 @@ const Navbar = () => {
             <HashLink
               smooth
               to="/#education"
-              className="text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
+              className="text-black/90 hover:text-gray-900 px-2 py-2 text-sm font-medium"
               onClick={closeAll}
             >
               Education
@@ -122,7 +122,7 @@ const Navbar = () => {
             <HashLink
               smooth
               to="/PublicationsPage"
-              className="text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
+              className="text-black/90 hover:text-gray-900 px-2 py-2 text-sm font-medium"
               onClick={closeAll}
             >
               Publications
@@ -131,7 +131,7 @@ const Navbar = () => {
             <HashLink
               smooth
               to="/event-list"
-              className="text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
+              className="text-black/90 hover:text-gray-900 px-2 py-2 text-sm font-medium"
               onClick={closeAll}
             >
               Event
@@ -144,7 +144,7 @@ const Navbar = () => {
                   setIsServicesOpen(true);
                   setIsAdditionalServicesOpen(false);
                 }}
-                className="flex items-center text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
+                className="flex items-center text-black/90 hover:text-gray-900 px-2 py-2 text-sm font-medium"
               >
                 Treatments{" "}
                 {isServicesOpen ? (
@@ -160,7 +160,7 @@ const Navbar = () => {
                     <Link
                       key={item.to}
                       to={item.to}
-                      className="block px-3 py-2 text-body-small text-gray-600 hover:bg-light-pink-1"
+                      className="block px-3 py-2 text-body-small text-black/90 hover:bg-light-pink-1"
                       onClick={closeAll}
                     >
                       {item.label}
@@ -177,7 +177,7 @@ const Navbar = () => {
                   setIsAdditionalServicesOpen(true);
                   setIsServicesOpen(false);
                 }}
-                className="flex items-center text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
+                className="flex items-center text-black/90 hover:text-gray-900 px-2 py-2 text-sm font-medium"
               >
                 Treatment guide{" "}
                 {isAdditionalServicesOpen ? (
@@ -193,7 +193,7 @@ const Navbar = () => {
                     <Link
                       key={item.to}
                       to={item.to}
-                      className="block px-4 py-2 text-body-small text-gray-700 hover:bg-light-pink-1"
+                      className="block px-4 py-2 text-body-small text-black hover:bg-light-pink-1"
                       onClick={closeAll}
                     >
                       {item.label}
@@ -206,7 +206,7 @@ const Navbar = () => {
             <Link
               smooth
               to="/robotic-surgery-experience"
-              className="text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
+              className="text-black/90 hover:text-gray-900 px-2 py-2 text-sm font-medium"
               onClick={closeAll}
             >
               Robotic Surgery
@@ -215,7 +215,7 @@ const Navbar = () => {
             <HashLink
               smooth
               to="/#contact"
-              className="text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
+              className="text-black/90 hover:text-gray-900 px-2 py-2 text-sm font-medium"
               onClick={closeAll}
             >
               Contact
@@ -238,7 +238,7 @@ const Navbar = () => {
           <div className="lg:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-800 focus:outline-none"
+              className="text-black focus:outline-none"
               aria-label="Toggle Menu"
             >
               {isOpen ? (
@@ -272,7 +272,7 @@ const Navbar = () => {
               <HashLink
                 smooth
                 to="/#about"
-                className="block px-3 py-2 text-body-small text-gray-600 hover:text-gray-900"
+                className="block px-3 py-2 text-body-small text-black/90 hover:text-gray-900"
                 onClick={closeAll}
               >
                 About
@@ -281,7 +281,7 @@ const Navbar = () => {
               <HashLink
                 smooth
                 to="/#experience"
-                className="block px-3 py-2 text-body-small text-gray-600 hover:text-gray-900"
+                className="block px-3 py-2 text-body-small text-black/90 hover:text-gray-900"
                 onClick={closeAll}
               >
                 Experience
@@ -290,7 +290,7 @@ const Navbar = () => {
               <HashLink
                 smooth
                 to="/#specialties"
-                className="block px-3 py-2 text-body-small text-gray-600 hover:text-gray-900"
+                className="block px-3 py-2 text-body-small text-black/90 hover:text-gray-900"
                 onClick={closeAll}
               >
                 Specialties
@@ -299,7 +299,7 @@ const Navbar = () => {
               <HashLink
                 smooth
                 to="/#education"
-                className="block px-3 py-2 text-body-small text-gray-600 hover:text-gray-900"
+                className="block px-3 py-2 text-body-small text-black/90 hover:text-gray-900"
                 onClick={closeAll}
               >
                 Education
@@ -308,7 +308,7 @@ const Navbar = () => {
               <HashLink
                 smooth
                 to="/PublicationsPage"
-                className="block px-3 py-2 text-body-small text-gray-600 hover:text-gray-900"
+                className="block px-3 py-2 text-body-small text-black/90 hover:text-gray-900"
                 onClick={closeAll}
               >
                 Publications
@@ -317,7 +317,7 @@ const Navbar = () => {
               <HashLink
                 smooth
                 to="/event-list"
-                className="block px-3 py-2 text-body-small text-gray-600 hover:text-gray-900"
+                className="block px-3 py-2 text-body-small text-black/90 hover:text-gray-900"
                 onClick={closeAll}
               >
                 Event
@@ -331,7 +331,7 @@ const Navbar = () => {
                   setIsAdditionalServicesOpen(!isAdditionalServicesOpen);
                   setIsServicesOpen(false);
                 }}
-                className="w-full flex items-center justify-between px-3 py-2 text-body-small text-gray-600 hover:text-gray-900"
+                className="w-full flex items-center justify-between px-3 py-2 text-body-small text-black/90 hover:text-gray-900"
               >
                 <span>Treatment guide</span>
                 {isAdditionalServicesOpen ? <FiChevronUp /> : <FiChevronDown />}
@@ -343,7 +343,7 @@ const Navbar = () => {
                     <Link
                       key={item.to}
                       to={item.to}
-                      className="block px-3 py-2 text-body-small text-gray-600 hover:bg-light-pink-1 rounded-md"
+                      className="block px-3 py-2 text-body-small text-black/90 hover:bg-light-pink-1 rounded-md"
                       onClick={closeAll}
                     >
                       {item.label}
@@ -354,7 +354,7 @@ const Navbar = () => {
 
               <Link
                 to="/robotic-surgery-experience"
-                className="block px-3 py-2 text-body-small text-gray-600 hover:bg-light-pink-1 rounded-md"
+                className="block px-3 py-2 text-body-small text-black/90 hover:bg-light-pink-1 rounded-md"
                 onClick={closeAll}
               >
                 Robotic Surgery
@@ -364,7 +364,7 @@ const Navbar = () => {
               <HashLink
                 smooth
                 to="/#contact"
-                className="block px-3 py-2 text-body-small text-gray-600 hover:text-gray-900"
+                className="block px-3 py-2 text-body-small text-black/90 hover:text-gray-900"
                 onClick={closeAll}
               >
                 Contact

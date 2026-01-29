@@ -32,10 +32,8 @@ export default function SmearTestProcedure() {
 
           {/* Highlight Box */}
           <div className="bg-light-pink-1 border border-gray-200 text-primary-pink p-4 rounded-lg shadow-sm">
-            <p className="font-semibold text-[#ff97b3] mb-1">Takes just 5 minutes</p>
-            <p className="text-gray-700 text-sm">
-              The entire procedure is quick and straightforward
-            </p>
+            <p className="font-semibold text-light-pink-2 mb-1">Takes just 5 minutes</p>
+            <p className="text-black text-sm">The entire procedure is quick and straightforward</p>
           </div>
 
           {/* Steps */}
@@ -49,15 +47,15 @@ export default function SmearTestProcedure() {
                 <div className="bg-light-pink-2 text-white rounded-full w-7 h-7 flex items-center justify-center text-sm font-bold shadow">
                   {index + 1}
                 </div>
-                <p className="text-gray-700">{step}</p>
+                <p className="text-black">{step}</p>
               </div>
             ))}
           </div>
 
           {/* Dual Testing Box */}
           <div className="bg-light-pink-1 border border-gray-200 text-primary-pink p-4 rounded-lg shadow-sm">
-            <p className="font-semibold text-[#ff97b3] mb-1">We use Dual Testing:</p>
-            <p className="text-gray-700 text-sm">
+            <p className="font-semibold text-light-pink-2 mb-1">We use Dual Testing:</p>
+            <p className="text-black text-sm">
               Checking for high-risk HPV and abnormal cells (for women over 25)
             </p>
           </div>

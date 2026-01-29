@@ -34,7 +34,7 @@ export default function DaVinciSurgicalSystem() {
             >
               <LuMonitor className="w-14 h-14 text-primary-pink mx-auto mb-2" />
               <h3 className="font-semibold text-lg">Surgeon Console</h3>
-              <p className="text-gray-700">
+              <p className="text-black">
                 Where the surgeon sits and controls the instruments with precision
               </p>
             </div>
@@ -49,7 +49,7 @@ export default function DaVinciSurgicalSystem() {
             >
               <LuActivity className="w-14 h-14 text-primary-pink mx-auto mb-2" />
               <h3 className="font-semibold text-lg">Patient-side Cart</h3>
-              <p className="text-gray-700">Holds the robotic arms and surgical instruments</p>
+              <p className="text-black">Holds the robotic arms and surgical instruments</p>
             </div>
 
             {/* Card 3 */}
@@ -62,9 +62,7 @@ export default function DaVinciSurgicalSystem() {
             >
               <LuEye className="w-14 h-14 text-primary-pink mx-auto mb-2" />
               <h3 className="font-semibold text-lg">Vision System</h3>
-              <p className="text-gray-700">
-                Provides high-definition, 3D view of the operative field
-              </p>
+              <p className="text-black">Provides high-definition, 3D view of the operative field</p>
             </div>
 
             {/* Card 4 */}
@@ -77,7 +75,7 @@ export default function DaVinciSurgicalSystem() {
             >
               <LuHand className="w-14 h-14 text-primary-pink mx-auto mb-2" />
               <h3 className="font-semibold text-lg">Wristed Instruments</h3>
-              <p className="text-gray-700">
+              <p className="text-black">
                 Greater range of motion than human hands for ultra-precise movements
               </p>
             </div>

@@ -37,14 +37,14 @@ const EmotionalWellbeingSupport = () => {
 
   return (
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 text-gray-800">
+      <div className="container mx-auto px-4 text-black">
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4 text-primary-pink">
               Emotional Wellbeing &amp; Support
             </h2>
-            <p className="text-lg text-gray-700">
+            <p className="text-lg text-black">
               Your emotional health is just as important as your physical health
             </p>
           </div>
@@ -61,7 +61,7 @@ const EmotionalWellbeingSupport = () => {
                   <div className="font-semibold text-lg mb-2" style={{ color: deepPink }}>
                     {card.title}
                   </div>
-                  <p className="text-sm text-gray-700 leading-relaxed">{card.description}</p>
+                  <p className="text-sm text-black leading-relaxed">{card.description}</p>
                 </div>
               </div>
             ))}
@@ -70,11 +70,11 @@ const EmotionalWellbeingSupport = () => {
           {/* Remember Section */}
           <div className="rounded-lg p-6 shadow-sm bg-primary-pink/10">
             <div className="text-center">
-              <h3 className="text-xl font-semibold mb-3 text-[#BB125B]">
+              <h3 className="text-xl font-semibold mb-3 text-primary-pink">
                 <Heart className="inline-block mr-2 text-primary-pink" />
                 Remember
               </h3>
-              <div className="space-y-2 mb-6 text-gray-800">
+              <div className="space-y-2 mb-6 text-black">
                 <p>• Vulvar and vaginal lumps are common and usually harmless</p>
                 <p>• Most are not cancerous and are easily treatable</p>
                 <p>• Getting checked gives peace of mind and fast treatment if needed</p>
@@ -86,7 +86,7 @@ const EmotionalWellbeingSupport = () => {
                 <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all shadow-sm h-9 px-4 py-2 bg-primary-pink text-white">
                   Book Appointment
                 </button>
-                <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all shadow-sm h-9 px-4 py-2 border border-[#FF4B8B] text-primary-pink">
+                <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all shadow-sm h-9 px-4 py-2 border border-primary-pink text-primary-pink">
                   Find Support Groups
                 </button>
               </div>

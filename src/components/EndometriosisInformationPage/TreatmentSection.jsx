@@ -36,7 +36,7 @@ const TreatmentSection = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary-pink">
               Treatment Options
             </h2>
-            <p className="text-lg text-gray-700">
+            <p className="text-lg text-black">
               Personalized treatment plans tailored to your needs
             </p>
           </div>
@@ -46,7 +46,7 @@ const TreatmentSection = () => {
             {treatments.map((item, index) => (
               <div
                 key={index}
-                className="bg-white text-[#333] flex flex-col gap-4 rounded-2xl shadow-md p-6 
+                className="bg-white text-black flex flex-col gap-4 rounded-2xl shadow-md p-6 
                 transition duration-300 hover:shadow-[0_0_25px_rgba(176,59,102,0.35)] 
                 hover:-translate-y-2 active:scale-[0.98]"
               >
@@ -54,7 +54,7 @@ const TreatmentSection = () => {
                   {item.icon}
                   {item.title}
                 </div>
-                <p className="text-gray-600 leading-relaxed">{item.description}</p>
+                <p className="text-black/90 leading-relaxed">{item.description}</p>
               </div>
             ))}
           </div>

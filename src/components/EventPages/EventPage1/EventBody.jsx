@@ -29,7 +29,7 @@ const EventDetail = () => {
   if (!event) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <h2 className="text-2xl font-bold text-gray-800">Event Not Found</h2>
+        <h2 className="text-2xl font-bold text-black">Event Not Found</h2>
       </div>
     );
   }
@@ -49,35 +49,35 @@ const EventDetail = () => {
                     <Calendar className="w-4 h-4 mr-2" />
                     {event.date}
                   </span>
-                  <span className="text-gray-600 font-medium">{event.shortLocation}</span>
+                  <span className="text-black/90 font-medium">{event.shortLocation}</span>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                   <div className="flex items-start space-x-3">
                     <MapPin className="w-5 h-5 text-primary-pink flex-shrink-0 mt-1" />
                     <div>
-                      <p className="font-semibold text-gray-700">Location</p>
-                      <p className="text-gray-600">{event.locationName}</p>
+                      <p className="font-semibold text-black">Location</p>
+                      <p className="text-black/90">{event.locationName}</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
                     <Phone className="w-5 h-5 text-primary-pink flex-shrink-0 mt-1" />
                     <div>
-                      <p className="font-semibold text-gray-700">Phone</p>
-                      <p className="text-gray-600">{event.phone}</p>
+                      <p className="font-semibold text-black">Phone</p>
+                      <p className="text-black/90">{event.phone}</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
                     <Globe className="w-5 h-5 text-primary-pink flex-shrink-0 mt-1" />
                     <div>
-                      <p className="font-semibold text-gray-700">Website</p>
-                      <p className="text-gray-600">{event.website}</p>
+                      <p className="font-semibold text-black">Website</p>
+                      <p className="text-black/90">{event.website}</p>
                     </div>
                   </div>
                 </div>
 
                 <div className="flex flex-wrap gap-4">
-                  <button className="flex items-center px-6 py-3 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-xl font-semibold transition-all">
+                  <button className="flex items-center px-6 py-3 bg-gray-100 hover:bg-gray-200 text-black rounded-xl font-semibold transition-all">
                     <Share2 className="w-5 h-5 mr-2" /> Share
                   </button>
                   <a
@@ -94,15 +94,15 @@ const EventDetail = () => {
 
             {/* About Section */}
             <div className="bg-white rounded-2xl shadow-lg p-6 lg:p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4 border-b-2 border-[#FF4B8B] pb-2 inline-block">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4 border-b-2 border-primary-pink pb-2 inline-block">
                 About Event
               </h2>
-              <p className="text-gray-700 leading-relaxed">{event.about}</p>
+              <p className="text-black leading-relaxed">{event.about}</p>
             </div>
 
             {/* Speakers */}
             <div className="bg-white rounded-2xl shadow-lg p-6 lg:p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-[#FF4B8B] pb-2 inline-block">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-primary-pink pb-2 inline-block">
                 Who's Speaking?
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -111,10 +111,10 @@ const EventDetail = () => {
                     <img
                       src={speaker.image}
                       alt={speaker.name}
-                      className="w-32 h-32 rounded-full mx-auto object-cover ring-4 ring-gray-100 group-hover:ring-[#FF4B8B] transition-all"
+                      className="w-32 h-32 rounded-full mx-auto object-cover ring-4 ring-gray-100 group-hover:ring-primary-pink transition-all"
                     />
                     <h3 className="text-lg font-bold text-gray-900 mt-4">{speaker.name}</h3>
-                    <p className="text-sm text-gray-600">{speaker.role}</p>
+                    <p className="text-sm text-black/90">{speaker.role}</p>
                   </div>
                 ))}
               </div>
@@ -122,14 +122,14 @@ const EventDetail = () => {
 
             {/* FAQs */}
             <div className="bg-white rounded-2xl shadow-lg p-6 lg:p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-[#FF4B8B] pb-2 inline-block">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-primary-pink pb-2 inline-block">
                 FAQ's
               </h2>
               <div className="space-y-3">
                 {event.faqs.map((faq, index) => (
                   <div
                     key={index}
-                    className="border border-[#FF4B8B]/50 rounded-xl overflow-hidden"
+                    className="border border-primary-pink/50 rounded-xl overflow-hidden"
                   >
                     <button
                       onClick={() => setOpenFaq(openFaq === index ? -1 : index)}
@@ -146,7 +146,7 @@ const EventDetail = () => {
                     </button>
                     {openFaq === index && (
                       <div className="p-4 bg-white">
-                        <p className="text-gray-700">{faq.answer}</p>
+                        <p className="text-black">{faq.answer}</p>
                       </div>
                     )}
                   </div>
@@ -165,7 +165,7 @@ const EventDetail = () => {
                 <div className="flex items-center space-x-4 mb-4">
                   <img
                     src={event.organizers[activeOrganizer].image}
-                    className="w-20 h-20 rounded-full object-cover ring-4 ring-[#FF4B8B]/20"
+                    className="w-20 h-20 rounded-full object-cover ring-4 ring-primary-pink"
                     alt="Host"
                   />
                   <div>
@@ -178,11 +178,11 @@ const EventDetail = () => {
                   </div>
                 </div>
                 <div className="space-y-3 mb-6">
-                  <div className="flex items-center gap-2 text-sm text-gray-700">
+                  <div className="flex items-center gap-2 text-sm text-black">
                     <MapPin size={16} color="#FF4B8B" />{" "}
                     {event.organizers[activeOrganizer].location}
                   </div>
-                  <div className="flex items-center gap-2 text-sm text-gray-700">
+                  <div className="flex items-center gap-2 text-sm text-black">
                     <Mail size={16} color="#FF4B8B" /> {event.organizers[activeOrganizer].email}
                   </div>
                 </div>
@@ -191,7 +191,7 @@ const EventDetail = () => {
                     <button
                       key={index}
                       onClick={() => setActiveOrganizer(index)}
-                      className={`w-14 h-14 rounded-full overflow-hidden ring-2 transition-all ${activeOrganizer === index ? "ring-[#FF4B8B] scale-110" : "ring-gray-200"}`}
+                      className={`w-14 h-14 rounded-full overflow-hidden ring-2 transition-all ${activeOrganizer === index ? "ring-primary-pink scale-110" : "ring-gray-200"}`}
                     >
                       <img src={org.image} alt={org.name} className="w-full h-full object-cover" />
                     </button>

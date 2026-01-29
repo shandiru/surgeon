@@ -50,7 +50,7 @@ export default function SmearTestResultsAccordion() {
                     <span className="flex items-center gap-3 text-lg">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-6 w-6 text-[#ff97b3]"
+                        className="h-6 w-6 text-light-pink-2"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -63,7 +63,7 @@ export default function SmearTestResultsAccordion() {
                     </span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className={`h-6 w-6 text-[#ff97b3] transition-transform duration-200 ${
+                      className={`h-6 w-6 text-light-pink-2 transition-transform duration-200 ${
                         openIndex === index ? "rotate-180" : ""
                       }`}
                       fill="none"

@@ -32,7 +32,7 @@ const SymptomsSection = () => {
               <Stethoscope className="inline-block mr-2 text-primary-pink" />
               When to See Your Doctor
             </h2>
-            <p className="text-lg text-gray-700">
+            <p className="text-lg text-black">
               Check any symptoms you're experiencing to understand when medical attention is needed
             </p>
           </div>
@@ -104,7 +104,7 @@ const SymptomsSection = () => {
                     <label htmlFor={id} className="text-sm cursor-pointer leading-relaxed">
                       {label}
                       {urgent && (
-                        <span className="ml-2 text-xs px-2 py-0.5 rounded bg-primary-pink/10 text-[#BB125B]">
+                        <span className="ml-2 text-xs px-2 py-0.5 rounded bg-primary-pink/10 text-primary-pink">
                           Urgent
                         </span>
                       )}
@@ -143,7 +143,7 @@ const SymptomsSection = () => {
                   <path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"></path>
                   <path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"></path>
                 </svg>
-                <p className="text-gray-700">
+                <p className="text-black">
                   Select any symptoms you're experiencing to get personalized guidance
                 </p>
               </div>

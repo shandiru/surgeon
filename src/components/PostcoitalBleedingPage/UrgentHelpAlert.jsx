@@ -42,7 +42,7 @@ const UrgentHelpAlert = () => {
           ))}
         </ul>
 
-        <p className="font-medium text-[#BB125B] bg-[#FFEAF0] p-3 rounded-md">
+        <p className="font-medium text-primary-pink bg-[#FFEAF0] p-3 rounded-md">
           Get medical help straight away if you notice these symptoms.
         </p>
       </div>

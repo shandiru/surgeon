@@ -1,13 +1,12 @@
-'use client'
+"use client";
 
 export default function EmotionalWellbeingCard() {
-  const pink = "#FFC5D3"
-  const deepPink = "#FF4B8B"
+  const pink = "#FFC5D3";
+  const deepPink = "#FF4B8B";
 
   return (
     <section className="py-12 px-4 md:px-6 bg-white">
       <div className="max-w-5xl mx-auto bg-white text-[#212529] flex flex-col gap-6 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 p-8">
-        
         {/* Header */}
         <div className="flex items-center gap-3 mb-2">
           <svg
@@ -28,12 +27,10 @@ export default function EmotionalWellbeingCard() {
             Emotional Wellbeing
           </h2>
         </div>
-        <p className="text-gray-700 text-base">
-          Fibroids can affect more than just your body:
-        </p>
+        <p className="text-black text-base">Fibroids can affect more than just your body:</p>
 
         {/* Symptoms */}
-        <div className="space-y-3 text-sm md:text-base text-gray-700 leading-relaxed">
+        <div className="space-y-3 text-sm md:text-base text-black leading-relaxed">
           <p>• Tiredness or anaemia can lower energy</p>
           <p>• Pain and heavy bleeding can affect mood</p>
           <p>• Tummy swelling can impact confidence and body image</p>
@@ -50,5 +47,5 @@ export default function EmotionalWellbeingCard() {
         </div>
       </div>
     </section>
-  )
+  );
 }

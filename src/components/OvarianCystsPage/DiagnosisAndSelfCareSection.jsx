@@ -6,7 +6,7 @@ export default function DiagnosisAndSelfCareSection() {
   return (
     <div className="grid md:grid-cols-2 gap-6">
       {/* How Cysts Are Diagnosed */}
-      <div className="bg-white text-[#BB125B] flex flex-col gap-6 rounded-xl py-6 px-5 sm:px-6 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all">
+      <div className="bg-white text-primary-pink flex flex-col gap-6 rounded-xl py-6 px-5 sm:px-6 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all">
         {/* Header */}
         <div className="flex items-center gap-3 font-semibold text-primary-pink text-lg">
           {/* Stethoscope Icon */}
@@ -47,7 +47,7 @@ export default function DiagnosisAndSelfCareSection() {
 
           {/* Note Box */}
           <div className="mt-4 p-4 rounded-lg bg-[#FEE6EA] shadow-sm">
-            <p className="text-sm font-medium text-[#BB125B]">
+            <p className="text-sm font-medium text-primary-pink">
               Most cysts are monitored over time to see if they shrink on their own.
             </p>
           </div>
@@ -55,7 +55,7 @@ export default function DiagnosisAndSelfCareSection() {
       </div>
 
       {/* Self-Care Tips */}
-      <div className="bg-white text-[#BB125B] flex flex-col gap-6 rounded-xl py-6 px-5 sm:px-6 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all">
+      <div className="bg-white text-primary-pink flex flex-col gap-6 rounded-xl py-6 px-5 sm:px-6 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all">
         {/* Header */}
         <div className="flex items-center gap-3 font-semibold text-primary-pink text-lg">
           {/* Activity Icon */}

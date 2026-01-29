@@ -79,14 +79,14 @@ export default function RememberSection() {
                 }}
               >
                 {item.icon}
-                <p className="font-medium text-gray-700">{item.text}</p>
+                <p className="font-medium text-black">{item.text}</p>
               </div>
             ))}
           </div>
 
           {/* CTA */}
           <div className="p-8 rounded-2xl shadow-lg bg-white">
-            <p className="text-lg mb-6 text-gray-700">
+            <p className="text-lg mb-6 text-black">
               If you think you may have endometriosis, book an appointment — we&apos;re here to
               help.
             </p>
