@@ -13,16 +13,16 @@
       "content": [
         {
           "type": "text",
-          "value": "Pelvic pain is felt in the lower abdomen between the belly button and groin. It can come from the reproductive organs, bladder, bowel, muscles, or connective tissue."
+          "value": "Pelvic pain is pain felt in the lower abdomen, between the belly button and the groin. It can come from the reproductive organs, bladder, bowel, muscles, or connective tissues."
         },
         {
           "type": "text",
-          "value": "Pelvic pain is different from vaginal or vulval pain (which affects the external genitals)."
+          "value": "Pelvic pain is different from vaginal or vulval pain, which affects the external genital area."
         },
         {
           "type": "infoBox",
           "title": "Key Facts",
-          "description": "Pelvic pain is a very common condition. Most causes are treatable. It can be acute or chronic.",
+          "description": "Pelvic pain is a very common condition. Most causes are treatable. It can be acute (sudden and short-term) or chronic (lasting several months or more)",
           "icon": "Info"
         }
       ]
@@ -40,19 +40,19 @@
           "items": [
             {
               "title": "Cyclic Pain",
-              "description": "Related to menstrual cycle"
+              "description": "Related to the menstrual cycle and often occurs before or during periods."
             },
             {
               "title": "Non-cyclic Pain",
-              "description": "Unrelated to periods"
+              "description": "Not linked to the menstrual cycle."
             },
             {
-              "title": "Sudden (Acute)",
-              "description": "Appears quickly, often severe"
+              "title": "Sudden Pain",
+              "description": "Appears suddenly and may be severe."
             },
             {
-              "title": "Persistent (Chronic)",
-              "description": "Lasts 3-6 months or more"
+              "title": "Chronic pelvic pain",
+              "description": "Pain that lasts 3 months or longer."
             }
           ]
         }
@@ -70,15 +70,15 @@
           "items": [
             {
               "title": "Gynaecological Causes",
-              "content": "Menstrual cramps (common before or during periods), Ovulation pain/mittelschmerz (sharp pain mid-cycle on one side), Endometriosis (womb lining tissue grows outside the uterus), Pelvic inflammatory disease/PID (infection of womb and surrounding tissues), Ectopic pregnancy (pregnancy outside the womb - medical emergency)"
+              "content": "**Menstrual cramps (dysmenorrhoea)** - Common before or during periods.\n\n**Ovulation pain (mittelschmerz)** - Short-lasting pain mid-cycle, often on one side.\n\n**Endometriosis** - Tissue similar to the womb lining grows outside the uterus.\n\n**Pelvic inflammatory disease (PID)** - Infection of the reproductive organs.\n\n**Ectopic pregnancy** - A pregnancy developing outside the womb — a medical emergency."
             },
             {
               "title": "Urinary Causes",
-              "content": "Cystitis/UTI (bladder infection or urinary tract infection), Interstitial cystitis (long-term bladder inflammation without clear cause), Urinary stones (crystals forming in kidneys or bladder)"
+              "content": "**Cystitis / UTI** - Bladder or urinary tract infection.\n\n**Interstitial cystitis (painful bladder syndrome)** - Long-term bladder pain and urinary symptoms without infection.\n\n**Urinary stones** - Stones in the kidney or urinary tract that can cause severe pain."
             },
             {
               "title": "Digestive Causes",
-              "content": "Irritable bowel syndrome/IBS (pain, bloating, constipation or diarrhoea), Appendicitis (sudden pain in the lower right abdomen)"
+              "content": "Irritable bowel syndrome (IBS) - Abdominal pain with bloating, constipation, or diarrhoea.\n\nAppendicitis - Sudden pain (often starting centrally then moving to the lower right abdomen) — urgent assessment needed."
             }
           ]
         }
@@ -93,22 +93,22 @@
       "content": [
         {
           "type": "text",
-          "value": "Seek medical advice if you:"
+          "value": "Seek urgent medical help immediately if you have:"
         },
         {
           "type": "bulletList",
           "items": [
-            "Have sudden, severe pelvic pain",
-            "Have fever, nausea, or vomiting with pelvic pain",
-            "Notice unexpected vaginal bleeding or discharge",
-            "Suspect an infection or STI",
-            "Have a known condition and pain suddenly worsens"
+            "Sudden, severe pelvic or abdominal pain",
+            "Pain with fever, vomiting, or feeling very unwell",
+            "Fainting, dizziness, or signs of shock",
+            "Heavy vaginal bleeding",
+            "Severe pain during pregnancy or if pregnancy is possible"
           ]
         },
         {
           "type": "infoBox",
-          "title": "Urgent Warning",
-          "description": "Always get urgent help for sudden severe pain, fainting, or heavy bleeding.",
+          "title": "Arrange medical advice promptly if you:",
+          "description": "Notice unexpected vaginal bleeding or unusual discharge, Suspect an infection or STI, Have ongoing pelvic pain that does not improve, Have a known condition (e.g., endometriosis, fibroids) and pain suddenly worsens",
           "icon": "AlertTriangle"
         }
       ]
@@ -122,7 +122,7 @@
       "content": [
         {
           "type": "text",
-          "value": "Your doctor will assess your symptoms carefully using a combination of history-taking, examinations, and tests."
+          "value": "Your doctor will assess your symptoms using a combination of history-taking, examination, and tests."
         },
         {
           "type": "heading",
@@ -132,28 +132,39 @@
         {
           "type": "iconList",
           "items": [
-            { "icon": "CheckCircle", "text": "Take a full medical history" },
-            { "icon": "CheckCircle", "text": "Perform a pelvic examination" }
+            {
+              "icon": "CheckCircle",
+              "text": "Take a detailed medical and menstrual history"
+            },
+            {
+              "icon": "CheckCircle",
+              "text": "Ask about bowel, bladder, and sexual health symptoms"
+            },
+            {
+              "icon": "CheckCircle",
+              "text": "Perform a pelvic examination (if appropriate and with your consent)"
+            }
           ]
         },
         {
           "type": "heading",
-          "text": "Possible Tests",
+          "text": "Possible tests (depending on symptoms):",
           "level": 4
         },
         {
           "type": "bulletList",
           "items": [
             "Blood or urine tests",
-            "Swabs for infections (STIs)",
-            "Ultrasound or MRI scan",
-            "Laparoscopy (keyhole surgery)"
+            "Swabs to check for infections, including STIs",
+            "Ultrasound scan (often transvaginal)",
+            "MRI scan in certain situations",
+            "Laparoscopy (keyhole surgery) if other tests do not explain symptoms or endometriosis is suspected"
           ]
         },
         {
           "type": "infoBox",
-          "title": "Early Investigation",
-          "description": "Identifying the cause early helps your healthcare provider create the most effective treatment plan for you.",
+          "title": "Important Note",
+          "description": "Not everyone needs all these tests. The type of investigations depends on your symptoms, age, and medical history.",
           "icon": "Lightbulb"
         }
       ]
@@ -167,12 +178,12 @@
       "content": [
         {
           "type": "text",
-          "value": "Chronic pelvic pain can affect mood, energy, and relationships. It's common to feel frustrated, anxious, or low."
+          "value": "Chronic pelvic pain can affect mood, energy levels, sleep, and relationships. It’s common to feel frustrated, anxious, or low when living with ongoing pain."
         },
         {
           "type": "infoBox",
           "title": "Support Available",
-          "description": "Talking to your doctor or asking for emotional support or counselling can help. You don't have to \"just live with it\" - help is available.",
+          "description": "Talking to your doctor and asking about emotional support, counselling, or pain management services can help. You don’t have to manage it alone — support is available.",
           "icon": "Info"
         }
       ]
@@ -190,23 +201,27 @@
           "items": [
             {
               "title": "Track your pain",
-              "description": "Note timing, triggers, and severity"
+              "description": "Note timing, triggers, severity, and where the pain is felt."
             },
             {
               "title": "Use heat therapy",
-              "description": "Warm baths or hot water bottles for cramps"
+              "description": "Warm baths or a hot water bottle can help ease cramps and muscle tension."
             },
             {
               "title": "Gentle exercise",
-              "description": "Relaxation and stress management"
+              "description": "Light movement, stretching, yoga, or walking may help reduce stiffness and improve mood."
             },
             {
-              "title": "Balanced diet",
-              "description": "Eat well and drink plenty of water"
+              "title": "Relaxation and stress management",
+              "description": "Breathing exercises, mindfulness, or relaxation techniques can help manage pain flare-ups."
+            },
+            {
+              "title": "Balanced diet and hydration",
+              "description": "Eating regularly and drinking enough fluids supports overall wellbeing."
             },
             {
               "title": "Rest when needed",
-              "description": "Take breaks when pain flares up"
+              "description": "Pace activities and take breaks when pain increases."
             }
           ]
         }
