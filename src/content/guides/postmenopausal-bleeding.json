@@ -8,17 +8,25 @@
       "id": 1,
       "buttonLabel": "Overview",
       "buttonIcon": "Info",
-      "cardTitle": "Postmenopausal Bleeding Overview",
+      "cardTitle": "What Is Postmenopausal Bleeding?",
       "layout": "two-column",
       "content": [
         {
           "type": "text",
-          "value": "Postmenopausal bleeding is any bleeding from the vagina after menopause. Menopause is confirmed once you have had **no period for 12 months**.\n\nAny vaginal bleeding after this time is not normal and should always be checked. Most causes are harmless, but sometimes bleeding can be a sign of cancer or other serious conditions."
+          "value": "Postmenopausal bleeding is any vaginal bleeding that occurs after menopause."
         },
         {
-          "type": "statBox",
-          "stat": "10%",
-          "description": "About 10% of postmenopausal women experience bleeding — most are diagnosed with non-cancerous conditions."
+          "type": "heading",
+          "value": "Key Facts",
+          "level": 3
+        },
+        {
+          "type": "bulletList",
+          "items": [
+            "Menopause is confirmed after 12 months without a period (if not using hormonal contraception that affects bleeding)",
+            "Any vaginal bleeding after this time is unusual and should be checked",
+            "Many causes are benign, but postmenopausal bleeding can sometimes be a sign of cancer or other conditions that need treatment"
+          ]
         },
         {
           "type": "image",
@@ -37,27 +45,7 @@
       "content": [
         {
           "type": "text",
-          "value": "Understanding the statistics can help put your mind at ease while emphasizing the importance of getting checked."
-        },
-        {
-          "type": "grid",
-          "columns": 2,
-          "items": [
-            {
-              "title": "10% Experience Bleeding",
-              "description": "About 10% of postmenopausal women experience some vaginal bleeding"
-            },
-            {
-              "title": "1 in 10 Cases",
-              "description": "Only about 1 in 10 cases may be linked to cancer — most are benign"
-            }
-          ]
-        },
-        {
-          "type": "infoBox",
-          "title": "Why Prompt Assessment Matters",
-          "description": "Most women are diagnosed with non-cancerous conditions, which is why prompt assessment is essential for peace of mind.",
-          "icon": "Lightbulb"
+          "value": "Postmenopausal bleeding is a relatively common reason for medical review.,Most women who experience bleeding after menopause have a benign (non-cancerous) cause, such as thinning of the vaginal tissues or the womb lining.,However, a small number of cases may be linked to cancer of the womb (endometrial cancer), which is why prompt assessment is important."
         }
       ]
     },
@@ -70,21 +58,54 @@
       "content": [
         {
           "type": "text",
-          "value": "Bleeding can range from light spotting or brown discharge to heavier, period-like bleeding."
+          "value": "Bleeding may range from light spotting or brown discharge to heavier bleeding."
         },
         {
-          "type": "grid",
-          "columns": 2,
+          "type": "heading",
+          "text": "Benign (Non-Cancerous) Causes — Most Common",
+          "level": 4
+        },
+        {
+          "type": "bulletList",
           "items": [
-            {
-              "title": "Serious Causes",
-              "description": "Endometrial (womb) cancer or uterine sarcoma, Cervical or vaginal cancer"
-            },
-            {
-              "title": "Common Benign Causes",
-              "description": "Endometrial or vaginal atrophy, Uterine fibroids or polyps, Endometrial hyperplasia, Infection of the womb lining, Hormone therapy or tamoxifen, Pelvic trauma, Bleeding from urinary tract or rectum"
-            }
+            "Vaginal or endometrial atrophy (thinning of tissues after menopause)",
+            "Endometrial or cervical polyps",
+            "Fibroids",
+            "Endometrial hyperplasia (thickened womb lining)",
+            "Hormone therapy (HRT) or tamoxifen use",
+            "Infection (less common after menopause)"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Less Common but Serious Causes",
+          "level": 4
+        },
+        {
+          "type": "bulletList",
+          "items": [
+            "Endometrial (womb) cancer",
+            "Cervical cancer",
+            "Vaginal cancer",
+            "Uterine sarcoma (rare)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Other Possible Sources of Bleeding",
+          "level": 4
+        },
+        {
+          "type": "text",
+          "value": "Sometimes bleeding thought to be vaginal may come from the:"
+        },
+        {
+          "type": "bulletList",
+          "items": ["Urinary tract", "Rectum or bowel"]
+        },
+        {
+          "type": "text",
+          "value": "These also require medical assessment."
         }
       ]
     },
@@ -97,25 +118,18 @@
       "content": [
         {
           "type": "text",
-          "value": "Many women with postmenopausal bleeding have no other symptoms, but other symptoms may include:"
+          "value": "Many women with postmenopausal bleeding have no other symptoms. However, depending on the cause, you may notice:"
         },
         {
           "type": "bulletList",
           "items": [
-            "Vaginal dryness",
-            "Decreased libido",
-            "Insomnia",
-            "Stress incontinence",
-            "More frequent urinary tract infections",
-            "Weight gain"
+            "Vaginal dryness or discomfort",
+            "Pelvic pain or pressure",
+            "Unusual vaginal discharge",
+            "Pain during sex",
+            "Urinary symptoms (such as frequency or urgency)",
+            "Feeling tired or weak if bleeding has been ongoing"
           ]
-        },
-        {
-          "type": "infoBox",
-          "title": "Important Note",
-          "description": "Hot flushes and other menopause symptoms often ease over time — but bleeding should never return.",
-          "icon": "AlertCircle",
-          "variant": "warning"
         }
       ]
     },
@@ -123,20 +137,21 @@
       "id": 5,
       "buttonLabel": "Risk Factors",
       "buttonIcon": "ScanSearch",
-      "cardTitle": "Risk Factors",
+      "cardTitle": "Risk Factors for Postmenopausal Bleeding Causes",
       "layout": "single-column",
       "content": [
         {
           "type": "text",
-          "value": "Knowing your risk helps encourage early checks and peace of mind."
+          "value": "Some factors increase the chance of conditions linked to postmenopausal bleeding, particularly endometrial (womb) problems."
         },
         {
           "type": "bulletList",
           "items": [
-            "Age over 55",
-            "Family history of endometrial, ovarian or breast cancer",
+            "Increasing age",
+            "Family history of endometrial, ovarian, or colorectal cancer (especially Lynch syndrome)",
             "Obesity",
-            "Taking tamoxifen or hormone replacement therapy (HRT)",
+            "Use of tamoxifen",
+            "Use of oestrogen-only HRT (without progesterone in women with a womb)",
             "Polycystic ovary syndrome (PCOS)",
             "Diabetes or high blood pressure"
           ]
@@ -153,26 +168,26 @@
       "content": [
         {
           "type": "text",
-          "value": "These tests are usually quick and done as outpatient procedures."
+          "value": "These tests are often done as outpatient procedures."
         },
         {
           "type": "accordion",
           "items": [
             {
               "title": "Medical History and Pelvic Exam",
-              "content": "Your doctor may ask about your medical history and perform a pelvic exam to assess abnormalities."
-            },
-            {
-              "title": "Cervical Smear Test",
-              "content": "If you're due for a cervical smear test, your doctor may perform this to check for cervical abnormalities."
+              "content": "Your doctor will ask about your symptoms, medications, and medical history, and may perform a pelvic exam."
             },
             {
               "title": "Transvaginal Ultrasound",
-              "content": "Uses a small probe to view the ovaries, uterus and cervix. This helps assess the thickness of the womb lining and identify abnormalities."
+              "content": "A small probe is placed in the vagina to look at the uterus and measure the thickness of the womb lining (endometrium). This helps identify abnormalities."
             },
             {
               "title": "Hysteroscopy",
-              "content": "A thin camera is inserted through the cervix to view the womb lining. This allows direct visualisation and tissue sampling if needed."
+              "content": "A thin camera is passed through the cervix to look inside the womb. A small tissue sample (biopsy) is often taken to check for abnormal cells."
+            },
+            {
+              "title": "Cervical screening (if due)",
+              "content": "This may be done as routine screening, but it does not explain most causes of postmenopausal bleeding."
             }
           ]
         }
@@ -182,61 +197,29 @@
       "id": 7,
       "buttonLabel": "When to Seek Urgent Help",
       "buttonIcon": "ShieldCheck",
-      "cardTitle": "When to Seek Urgent Help",
+      "cardTitle": "When to Seek Medical Advice",
       "cardTitleIcon": "AlertTriangle",
       "layout": "single-column",
       "content": [
         {
-          "type": "infoBox",
-          "title": "Don't wait and see",
-          "description": "It's important to get checked straight away if you experience any of the following symptoms.",
-          "icon": "AlertTriangle",
-          "variant": "warning"
+          "type": "text",
+          "value": "Contact your doctor promptly if you experience following symptoms."
         },
         {
           "type": "bulletList",
           "items": [
             "Any vaginal bleeding after menopause",
-            "Heavy bleeding or clots",
-            "Bleeding with pelvic pain, fever, or foul-smelling discharge",
-            "Unexplained weight loss, tiredness, or loss of appetite"
-          ]
-        }
-      ]
-    },
-    {
-      "id": 8,
-      "buttonLabel": "Key Takeaway",
-      "buttonIcon": "BookmarkCheck",
-      "cardTitle": "Key Takeaway",
-      "layout": "single-column",
-      "content": [
-        {
-          "type": "text",
-          "value": "The most important points to remember about postmenopausal bleeding."
-        },
-        {
-          "type": "grid",
-          "columns": 3,
-          "items": [
-            { "icon": "Clock", "title": "Act Promptly" },
-            { "icon": "CheckCircle", "title": "Mostly Benign" },
-            { "icon": "Stethoscope", "title": "Treatable" }
+            "Bleeding that is heavier than spotting or keeps happening",
+            "Bleeding with pelvic pain or unusual discharge",
+            "Ongoing tiredness or unexplained weight loss"
           ]
         },
         {
-          "type": "iconList",
-          "items": [
-            { "icon": "CheckCircle", "text": "Any bleeding after menopause should be checked" },
-            { "icon": "CheckCircle", "text": "Most causes are not serious and are easily treated" },
-            { "icon": "CheckCircle", "text": "Getting checked quickly brings peace of mind" },
-            { "icon": "CheckCircle", "text": "You can bring a friend or ask for a chaperone at appointments" },
-            { "icon": "CheckCircle", "text": "Support is available every step of the way" }
-          ]
-        },
-        {
-          "type": "text",
-          "value": "**Don't wait — early assessment leads to better outcomes.**"
+          "type": "infoBox",
+          "title": "Seek urgent medical help if you have:",
+          "description": "Very heavy bleeding (soaking pads quickly or passing large clots), Severe abdominal or pelvic pain, Fever or feeling unwell with bleeding, Dizziness, fainting, or signs of blood loss",
+          "icon": "AlertTriangle",
+          "variant": "warning"
         }
       ]
     }
