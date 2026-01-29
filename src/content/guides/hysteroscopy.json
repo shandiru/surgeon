@@ -7,176 +7,179 @@
     {
       "id": 1,
       "buttonLabel": "Overview",
-      "buttonIcon": "Info",
-      "cardTitle": "Hysteroscopy Overview",
+      "buttonIcon": "Stethoscope",
+      "cardTitle": "What Is a Hysteroscopy?",
+      "cardTitleIcon": "Stethoscope",
       "layout": "single-column",
       "content": [
         {
           "type": "text",
-          "value": "A hysteroscopy is a simple procedure that allows a doctor to look inside your uterus (womb) using a thin telescope-like camera called a hysteroscope. It can be **diagnostic** (to diagnose problems) or **operative** (to treat problems)."
+          "value": "A hysteroscopy is a **simple procedure** that allows a doctor to look inside your uterus (womb) using a thin telescope-like camera called a hysteroscope."
         },
         {
-          "type": "statBox",
-          "stat": "5-30 min",
-          "description": "5-10 minutes for diagnosis, up to 30 if treatment is done"
+          "type": "grid",
+          "columns": 2,
+          "items": [
+            {
+              "icon": "Activity",
+              "title": "Two Types",
+              "description": "Diagnostic Hysteroscopy — To diagnose problems. Operative Hysteroscopy — To treat problems."
+            },
+            {
+              "icon": "CheckCircle",
+              "title": "Quick Facts",
+              "description": "Diagnostic hysteroscopy is usually a short procedure, while operative hysteroscopy may take longer depending on the treatment. It is considered a safe and effective procedure, and most hysteroscopies are performed as outpatient procedures."
+            }
+          ]
         },
         {
           "type": "infoBox",
-          "title": "Why Hysteroscopy?",
-          "description": "Commonly offered for abnormal bleeding or fertility issues. Safe way to find and treat common womb problems.",
+          "title": "Remember",
+          "description": "Hysteroscopy is commonly offered for abnormal bleeding or fertility issues. It is a safe and effective way to diagnose and treat many common womb problems.",
           "icon": "Lightbulb"
         }
       ]
     },
     {
       "id": 2,
-      "buttonLabel": "Why You Might Need One",
-      "buttonIcon": "HelpCircle",
-      "cardTitle": "Why You Might Need One",
-      "cardTitleIcon": "Stethoscope",
+      "buttonLabel": "When to Seek Help",
+      "buttonIcon": "Shield",
+      "cardTitle": "When to Seek Help",
+      "cardTitleIcon": "Shield",
       "layout": "single-column",
       "content": [
         {
+          "type": "heading",
+          "text": "Important Signs",
+          "level": 3,
+          "icon": "AlertCircle"
+        },
+        {
+          "type": "text",
+          "value": "If you experience any of the following symptoms, you should seek medical advice and possibly consider a hysteroscopy:"
+        },
+        {
           "type": "bulletList",
           "items": [
-            "Persistent pelvic pain",
-            "Abnormal bleeding",
+            "Abnormal bleeding that doesn't stop",
             "Difficulty getting pregnant or repeated miscarriages",
-            "Unusual menstrual cycle changes",
-            "Unexplained pain during intercourse"
+            "Unusual changes in menstrual cycle"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Consultation with Your Doctor",
+          "level": 3,
+          "icon": "Users"
+        },
+        {
+          "type": "text",
+          "value": "Before scheduling a hysteroscopy, you will have a consultation with your doctor to discuss:"
+        },
+        {
+          "type": "bulletList",
+          "items": [
+            "Your medical history and current symptoms",
+            "Potential need for the procedure based on your symptoms",
+            "Explanation of the procedure and any risks involved",
+            "Any alternative tests or treatments that may be appropriate"
           ]
         },
         {
           "type": "infoBox",
-          "title": "Before Scheduling",
-          "description": "Before scheduling, you'll have a consultation to discuss medical history, symptoms, and whether the procedure is appropriate.",
-          "icon": "Calendar"
+          "title": "Additional Tips",
+          "description": "It's important to be fully prepared for your hysteroscopy to ensure a smooth process. You may need to: Arrange for transportation home if sedation is required. Discuss any concerns with your healthcare provider beforehand.",
+          "icon": "Lightbulb"
         }
       ]
     },
     {
       "id": 3,
-      "buttonLabel": "Preparing for Your Procedure",
-      "buttonIcon": "ClipboardList",
-      "cardTitle": "Preparing for Your Procedure",
-      "cardTitleIcon": "CheckCircle",
+      "buttonLabel": "Preparation",
+      "buttonIcon": "FileText",
+      "cardTitle": "Preparing for Your Hysteroscopy",
+      "cardTitleIcon": "FileText",
       "layout": "single-column",
       "content": [
         {
+          "type": "text",
+          "value": "Simple steps to prepare for your procedure"
+        },
+        {
           "type": "numberedSteps",
           "steps": [
-            "Pregnancy Test — may be asked to take one a week before",
-            "Use Contraception — between test and procedure (can't be done during pregnancy)",
-            "Pre-treatment Medicine — if having fibroids removed, may be given medicine to shrink them"
+            "Pregnancy test: You may need a pregnancy test before the procedure to ensure it is safe to proceed.",
+            "Use contraception: Avoid becoming pregnant before your hysteroscopy, as the procedure cannot be done during pregnancy.",
+            "Pre-treatment medicine: In some cases, medication may be given beforehand (for example before fibroid treatment) depending on your individual care plan."
           ]
         },
         {
           "type": "infoBox",
-          "title": "Individual Instructions",
-          "description": "Your healthcare team will give specific instructions based on your individual case.",
-          "icon": "Info"
+          "title": "What to Expect",
+          "description": "Your healthcare team will give you specific instructions based on your individual case. Don't hesitate to ask questions about preparation or the procedure itself.",
+          "icon": "FileText"
         }
       ]
     },
     {
       "id": 4,
       "buttonLabel": "During the Procedure",
-      "buttonIcon": "Activity",
+      "buttonIcon": "Stethoscope",
       "cardTitle": "During the Procedure",
       "cardTitleIcon": "Stethoscope",
       "layout": "single-column",
       "content": [
         {
-          "type": "text",
-          "value": "A hysteroscopy is usually done as an outpatient procedure, meaning you can go home the same day."
+          "type": "infoBox",
+          "title": "What Happens During a Hysteroscopy",
+          "description": "Step-by-step walkthrough of the procedure",
+          "icon": "Stethoscope"
         },
         {
-          "type": "accordion",
+          "type": "grid",
+          "columns": 2,
           "items": [
             {
-              "title": "No Anaesthetic",
-              "content": "Often done without anaesthetic — many women tolerate it well."
+              "icon": "Clock",
+              "title": "Timing",
+              "description": "Most hysteroscopies are done as an outpatient or day-case procedure, meaning you can usually go home the same day. A diagnostic hysteroscopy is typically quick, while an operative hysteroscopy may take longer depending on what treatment is being carried out."
             },
             {
-              "title": "Local Anaesthetic",
-              "content": "Numbs the area around your cervix to reduce discomfort."
-            },
-            {
-              "title": "General Anaesthetic",
-              "content": "If you prefer to be asleep during the procedure, this option is available."
+              "icon": "Zap",
+              "title": "Anaesthetic Options",
+              "description": "Many hysteroscopy procedures are done without general anaesthetic. Local anaesthetic may be used to reduce discomfort, while general anaesthetic might be recommended for certain procedures depending on your individual situation."
             }
           ]
         },
         {
+          "type": "heading",
+          "text": "The Procedure Steps",
+          "level": 3
+        },
+        {
           "type": "numberedSteps",
           "steps": [
-            "Positioning — lie on a couch with your legs supported",
-            "A speculum may be used to hold your vagina open",
-            "The hysteroscope is passed into the womb through the vagina and cervix",
-            "Fluid is gently pumped to expand the womb for a clearer view",
-            "A camera sends pictures to a monitor for the doctor to see"
+            "Positioning — You lie on a couch with your legs supported",
+            "Speculum Use — A speculum may be used to gently hold the vagina open",
+            "Hysteroscope Insertion — The hysteroscope is passed into the womb through the vagina and cervix",
+            "Fluid Expansion — Fluid is gently pumped in to expand the womb and improve visibility",
+            "Examination & Treatment — A camera sends images to a monitor so your doctor can examine the inside of the womb. If treatment is planned, small instruments can be used through the hysteroscope to treat abnormalities."
           ]
         },
         {
           "type": "infoBox",
-          "title": "What to Expect",
-          "description": "You may feel cramping similar to period pain, but it should not be painful.",
-          "icon": "Heart"
+          "title": "What You'll Feel",
+          "description": "You may feel cramping similar to period pain. Some people experience discomfort or pain, but this is usually short-lived. The procedure is generally well tolerated, and your team can provide pain relief if needed.",
+          "icon": "Lightbulb"
         }
       ]
     },
     {
       "id": 5,
-      "buttonLabel": "Recovery & Aftercare",
-      "buttonIcon": "HeartPulse",
-      "cardTitle": "Recovery & Aftercare",
-      "cardTitleIcon": "CheckCircle",
-      "layout": "single-column",
-      "content": [
-        {
-          "type": "grid",
-          "columns": 3,
-          "items": [
-            {
-              "icon": "CheckCircle",
-              "title": "Mild Cramps",
-              "description": "Some cramping is normal"
-            },
-            {
-              "icon": "Droplet",
-              "title": "Spotting",
-              "description": "Light bleeding for a few days"
-            },
-            {
-              "icon": "Sun",
-              "title": "Return to Normal",
-              "description": "Most return to normal next day"
-            }
-          ]
-        },
-        {
-          "type": "iconList",
-          "items": [
-            { "icon": "Utensils", "text": "Eat and drink as normal" },
-            { "icon": "BedDouble", "text": "Rest if you had a general anaesthetic" },
-            { "icon": "Clock", "text": "Avoid sex for about a week" },
-            { "icon": "Pill", "text": "Use painkillers if needed" }
-          ]
-        },
-        {
-          "type": "infoBox",
-          "title": "Next Steps",
-          "description": "Your doctor will discuss results and next steps before you leave.",
-          "icon": "MessageCircle"
-        }
-      ]
-    },
-    {
-      "id": 6,
-      "buttonLabel": "When to Seek Medical Advice",
-      "buttonIcon": "AlertTriangle",
-      "cardTitle": "When to Seek Medical Advice",
-      "cardTitleIcon": "AlertTriangle",
+      "buttonLabel": "Recovery",
+      "buttonIcon": "Heart",
+      "cardTitle": "Recovery After a Hysteroscopy",
+      "cardTitleIcon": "Heart",
       "layout": "single-column",
       "content": [
         {
@@ -184,33 +187,95 @@
           "columns": 2,
           "items": [
             {
-              "icon": "Droplet",
-              "title": "Heavy Bleeding",
-              "description": "Soaking through pads quickly"
+              "icon": "CheckCircle",
+              "title": "What's Normal",
+              "description": "After a hysteroscopy, it’s normal to have mild cramps (similar to period pain) and some spotting or light bleeding for a few days. Most people feel well enough to return to their normal activities within a day or two."
             },
             {
-              "icon": "Thermometer",
-              "title": "Fever",
-              "description": "Temperature of 38°C or above"
-            },
-            {
-              "icon": "AlertCircle",
-              "title": "Severe Abdominal Pain",
-              "description": "Pain that doesn't improve with painkillers"
-            },
-            {
-              "icon": "AlertTriangle",
-              "title": "Foul-smelling Discharge",
-              "description": "Unusual or unpleasant vaginal discharge"
+              "icon": "Heart",
+              "title": "Self-Care Tips",
+              "description": "After your hysteroscopy, you can eat and drink as normal. If you’ve had a general anaesthetic or sedation, it’s best to rest and take things easy for the remainder of the day. Avoid vaginal sex until any bleeding or discharge has stopped, and use pain relief such as paracetamol or ibuprofen if needed (as long as it’s safe for you)."
             }
           ]
         },
         {
           "type": "infoBox",
-          "title": "Important Warning",
-          "description": "These symptoms may be signs of infection (which are rare). Don't hesitate to contact your healthcare provider.",
-          "icon": "ShieldAlert",
-          "variant": "warning"
+          "title": "Results Discussion",
+          "description": "Your doctor will discuss your results and next steps before you leave. Make sure to ask any questions you have about your findings or follow-up care.",
+          "icon": "ClipboardCheck"
+        },
+        {
+          "type": "infoBox",
+          "title": "Recovery Timeline",
+          "description": "Day 1: Many people return to normal activities, depending on the procedure. First 24 hours (if you had general anaesthetic or sedation): Rest, and avoid driving, alcohol, or important decisions. After the procedure: Avoid vaginal sex until any bleeding or discharge has stopped",
+          "icon": "Clock"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "buttonLabel": "When to Seek Medical Advice",
+      "buttonIcon": "Shield",
+      "cardTitle": "When to Seek Medical Advice",
+      "cardTitleIcon": "Shield",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Important warning signs to watch for"
+        },
+        {
+          "type": "heading",
+          "text": "Contact Your Doctor Urgently If You Have:",
+          "level": 3,
+          "icon": "AlertCircle"
+        },
+        {
+          "type": "grid",
+          "columns": 2,
+          "items": [
+            {
+              "icon": "AlertTriangle",
+              "title": "Heavy Bleeding",
+              "description": "Soaking a pad every hour or passing large clots"
+            },
+            {
+              "icon": "Thermometer",
+              "title": "A high temperature",
+              "description": "38°C or above"
+            },
+            {
+              "icon": "AlertCircle",
+              "title": "Severe or worsening abdominal pain",
+              "description": "Not relieved by painkillers"
+            },
+            {
+              "icon": "AlertTriangle",
+              "title": "Foul-smelling or unusual discharge"
+            }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Emergency Contact",
+          "description": "These symptoms may be signs of infection or complications (which are rare). Don't hesitate to contact your healthcare provider if you're concerned about any symptoms.",
+          "icon": "Phone"
+        },
+        {
+          "type": "grid",
+          "columns": 2,
+          "items": [
+            {
+              "icon": "CheckCircle",
+              "title": "Normal:",
+              "description": "After a hysteroscopy, it’s normal to have mild cramping, light spotting for a few days, and a slight discharge as your body recovers."
+            },
+            {
+              "icon": "AlertCircle",
+              "title": "Concerning:",
+              "description": "After a hysteroscopy, you should seek medical advice if you experience heavy or worsening bleeding, a high fever, severe or increasing pain, or foul-smelling discharge, as these can be signs of infection or complications."
+            }
+          ]
         }
       ]
     }
