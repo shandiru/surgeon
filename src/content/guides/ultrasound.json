@@ -8,23 +8,28 @@
       "id": 1,
       "buttonLabel": "Overview",
       "buttonIcon": "Info",
-      "cardTitle": "Gynaecological Ultrasound Overview",
+      "cardTitle": "What Is a Gynaecological Ultrasound?",
       "layout": "single-column",
       "content": [
         {
           "type": "text",
-          "value": "A gynaecological (pelvic) ultrasound is a safe and painless way to examine the uterus, ovaries, fallopian tubes and other pelvic organs. It uses **sound waves** to create real-time images with no radiation involved."
+          "value": "A gynaecological (pelvic) ultrasound is a safe test that uses sound waves to examine the uterus, ovaries and other pelvic organs. Some scans may feel slightly uncomfortable, but they are not usually painful"
         },
         {
-          "type": "statBox",
-          "stat": "10-15 min",
-          "description": "Quick, safe procedure with no radiation"
-        },
-        {
-          "type": "infoBox",
-          "title": "What We Can See",
-          "description": "Uterus size and shape, Ovaries and follicles, Endometrial lining thickness, Any abnormalities or cysts",
-          "icon": "Eye"
+          "type": "grid",
+          "columns": 2,
+          "items": [
+            {
+              "icon": "Info",
+              "title": "How It Works",
+              "description": "Ultrasound works by using sound waves to create real-time images of the inside of the body. It does not use radiation, so it’s considered very safe, and it allows the clinician to view pelvic organs live during the scan. This makes it a key diagnostic tool for assessing and monitoring many gynaecological conditions."
+            },
+            {
+              "icon": "Eye",
+              "title": "What We Can See",
+              "description": "During the scan, we can assess the size and shape of the uterus, examine the ovaries and any developing follicles, and measure the thickness of the endometrial (womb) lining. It can also help identify cysts, fibroids, or other abnormalities, and in some cases, the fallopian tubes may be visible if they are enlarged or contain fluid."
+            }
+          ]
         }
       ]
     },
@@ -32,45 +37,67 @@
       "id": 2,
       "buttonLabel": "Why You Might Need One",
       "buttonIcon": "HelpCircle",
-      "cardTitle": "Why You Might Need One",
+      "cardTitle": "Why You Might Need an Ultrasound",
       "cardTitleIcon": "HelpCircle",
       "layout": "single-column",
       "content": [
         {
-          "type": "grid",
-          "columns": 2,
+          "type": "tags",
+          "tags": ["Common Symptoms"]
+        },
+        {
+          "type": "iconList",
           "items": [
-            {
-              "icon": "AlertCircle",
-              "title": "Pelvic pain"
-            },
-            {
-              "icon": "Activity",
-              "title": "Abnormal vaginal bleeding"
-            },
-            {
-              "icon": "Heart",
-              "title": "Fertility issues"
-            },
-            {
-              "icon": "Calendar",
-              "title": "Menstrual problems"
-            }
+            { "icon": "AlertCircle", "text": "Pelvic pain" },
+            { "icon": "Activity", "text": "Abnormal vaginal bleeding" },
+            { "icon": "Heart", "text": "Fertility issues" },
+            { "icon": "Calendar", "text": "Menstrual problems" }
           ]
         },
         {
-          "type": "accordion",
+          "type": "tags",
+          "tags": ["What It Can Help With"]
+        },
+        {
+          "type": "grid",
+          "columns": 3,
           "items": [
             {
-              "title": "What It Can Help With",
-              "content": "Check for abnormalities, Investigate pelvic pain, Assess fertility issues, Monitor early pregnancy, Measure endometrium"
+              "icon": "CheckCircle",
+              "title": "Check for abnormalities",
+              "description": "Diagnosis"
+            },
+            {
+              "icon": "ScanSearch",
+              "title": "Investigate pelvic pain",
+              "description": "Diagnosis"
+            },
+            {
+              "icon": "Heart",
+              "title": "Assess fertility issues",
+              "description": "Assessment & monitoring"
+            },
+            {
+              "icon": "Shield",
+              "title": "Monitor early pregnancy",
+              "description": "Assessment"
+            },
+            {
+              "icon": "Layers",
+              "title": "Measure endometrial lining",
+              "description": "Diagnosis"
+            },
+            {
+              "icon": "AlertTriangle",
+              "title": "Detect possible miscarriage or retained tissue",
+              "description": "Diagnosis"
             }
           ]
         },
         {
           "type": "infoBox",
-          "title": "Further Investigation",
-          "description": "If the womb lining is thicker than expected, you may be offered a hysteroscopy to investigate further.",
+          "title": "Important Note",
+          "description": "If the womb lining appears thicker than expected, especially if you have symptoms such as abnormal bleeding, you may be offered a hysteroscopy and biopsy to investigate further. This is a precaution to rule out significant problems and protect your health.",
           "icon": "Lightbulb"
         }
       ]
@@ -79,7 +106,7 @@
       "id": 3,
       "buttonLabel": "Types of Ultrasound",
       "buttonIcon": "Layers",
-      "cardTitle": "Types of Ultrasound",
+      "cardTitle": "Types of Gynaecological Ultrasound",
       "cardTitleIcon": "Layers",
       "layout": "single-column",
       "content": [
@@ -90,19 +117,22 @@
             {
               "icon": "Monitor",
               "title": "Transabdominal Ultrasound",
-              "description": "Probe on lower tummy, gives broad view, may require full bladder"
+              "description": "The probe is placed on your lower tummy. Gives a broad view of pelvic organs. Non-invasive external scan. May require full bladder."
             },
             {
               "icon": "ScanSearch",
               "title": "Transvaginal Ultrasound",
-              "description": "Probe gently inserted, gives closer detailed images, often used for fertility assessment"
+              "type": "bulletList",
+              "description": [
+                "A transvaginal ultrasound is performed by gently inserting the probe into the vagina, allowing closer and more detailed images of the pelvic organs. It is commonly used in fertility assessments and provides clearer views, especially during early pregnancy."
+              ]
             }
           ]
         },
         {
           "type": "infoBox",
-          "title": "Safety",
-          "description": "Both types are safe and usually painless with no known risks.",
+          "title": "Safety Information",
+          "description": "Both types of ultrasound are considered very safe. Transabdominal scans are painless, while transvaginal scans may cause mild discomfort for some people. Diagnostic ultrasound does not use radiation, and no harmful effects have been shown at the levels used in medical imaging.",
           "icon": "ShieldCheck"
         }
       ]
@@ -111,24 +141,38 @@
       "id": 4,
       "buttonLabel": "During the Scan",
       "buttonIcon": "Stethoscope",
-      "cardTitle": "During the Scan",
+      "cardTitle": "What Happens During the Scan",
       "cardTitleIcon": "Stethoscope",
       "layout": "single-column",
       "content": [
         {
+          "type": "text",
+          "value": "Step-by-step walkthrough of the procedure"
+        },
+        {
           "type": "numberedSteps",
           "steps": [
-            "Positioning - lie on examination couch comfortably",
-            "Gel Application - warm gel on lower abdomen",
-            "Scanning - probe moved gently across skin",
-            "Transvaginal if needed - probe covered with sheath and lubricated"
+            "Positioning — You'll lie on an examination couch in a comfortable position",
+            "Gel Application — A small amount of warm gel is placed on your lower abdomen",
+            "Scanning — The ultrasound probe is moved gently across the skin",
+            "Transvaginal (if needed) — For internal scan, probe is covered with sheath and lubricated before gentle insertion"
           ]
         },
         {
-          "type": "infoBox",
-          "title": "Comfort",
-          "description": "Most patients find the procedure comfortable and painless.",
-          "icon": "CheckCircle"
+          "type": "grid",
+          "columns": 2,
+          "items": [
+            {
+              "icon": "Clock",
+              "title": "Duration",
+              "description": "The scan usually takes about 10-15 minutes"
+            },
+            {
+              "icon": "CheckCircle",
+              "title": "Comfort",
+              "description": "Most people find the scan comfortable. Transvaginal scans may cause mild discomfort but are not usually painful."
+            }
+          ]
         }
       ]
     },
@@ -136,71 +180,40 @@
       "id": 5,
       "buttonLabel": "After Your Scan",
       "buttonIcon": "ClipboardCheck",
-      "cardTitle": "After Your Scan",
+      "cardTitle": "What Happens After the Scan",
       "cardTitleIcon": "ClipboardCheck",
       "layout": "single-column",
       "content": [
         {
           "type": "grid",
-          "columns": 3,
+          "columns": 2,
           "items": [
             {
               "icon": "CheckCircle",
-              "title": "No restrictions"
+              "title": "Immediate Recovery",
+              "description": "You can go straight back to normal activities. No restrictions on eating or drinking. No recovery time needed."
             },
             {
-              "icon": "Activity",
-              "title": "Normal activities immediately"
-            },
-            {
-              "icon": "Clock",
-              "title": "No recovery time needed"
+              "icon": "FileText",
+              "title": "Your Results",
+              "description": "A specialist will interpret your results. Results will be discussed with you. Follow-up tests arranged if needed. Treatment options explained if required."
             }
           ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Safety Assurance",
+          "description": "Diagnostic ultrasound is considered very safe and does not use radiation. No harmful effects have been shown at the levels used in medical imaging. Scans can be repeated when medically necessary.",
+          "icon": "ShieldCheck"
         },
         {
           "type": "accordion",
           "items": [
             {
-              "title": "What if something is found",
-              "content": "Your doctor will discuss treatment options or follow-up procedures"
+              "title": "What if something is found?",
+              "content": "If anything unusual is found, your doctor will discuss treatment options or any follow-up procedures with you. Additional tests may be required based on findings."
             }
           ]
-        },
-        {
-          "type": "infoBox",
-          "title": "No Known Risks",
-          "description": "There are no known risks from diagnostic ultrasound at medical levels.",
-          "icon": "ShieldCheck"
-        }
-      ]
-    },
-    {
-      "id": 6,
-      "buttonLabel": "Emotional Wellbeing",
-      "buttonIcon": "Heart",
-      "cardTitle": "Emotional Wellbeing",
-      "cardTitleIcon": "Heart",
-      "layout": "single-column",
-      "content": [
-        {
-          "type": "text",
-          "value": "It's completely normal to feel nervous about an intimate scan."
-        },
-        {
-          "type": "iconList",
-          "items": [
-            { "icon": "Users", "text": "Ask for a chaperone" },
-            { "icon": "MessageCircle", "text": "Staff will explain everything clearly" },
-            { "icon": "Clock", "text": "Go at your pace" },
-            { "icon": "HelpCircle", "text": "Ask questions anytime" }
-          ]
-        },
-        {
-          "type": "infoBox",
-          "title": "Reassurance",
-          "description": "This is a routine and safe procedure designed to give you clarity and reassurance.",
-          "icon": "ShieldCheck"
         }
       ]
     }
