@@ -1,0 +1,325 @@
+{
+  "slug": "ovarian-cysts",
+  "title": "Understanding Ovarian Cysts",
+  "subtitle": "What they are, how they're diagnosed, and what to expect",
+  "tag": "Medical Education",
+  "sections": [
+    {
+      "id": 1,
+      "buttonLabel": "Overview",
+      "buttonIcon": "Info",
+      "cardTitle": "Ovarian Cysts Overview",
+      "layout": "two-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Ovarian cysts are fluid-filled sacs that develop in or on the ovaries. They are common, especially in people who have not yet gone through menopause.\n\nMany cysts form as part of the normal menstrual cycle (called functional cysts)."
+        },
+        {
+          "type": "bulletList",
+          "items": [
+            "Most ovarian cysts are harmless",
+            "Many cause no symptoms and go away on their own",
+            "Some cysts can grow larger, cause pain, or need monitoring"
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Important Note",
+          "description": "Ovarian cysts are less common after menopause. While most are still benign, cysts found after menopause are usually investigated more carefully to rule out any serious causes.",
+          "icon": "Info"
+        },
+        {
+          "type": "image",
+          "src": "/Ovarian.png",
+          "alt": "Ovarian cysts illustration"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "buttonLabel": "Warning Signs",
+      "buttonIcon": "Activity",
+      "cardTitle": "When to See Your Doctor",
+      "cardTitleIcon": "AlertTriangle",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "tags",
+          "tags": ["Important"]
+        },
+        {
+          "type": "text",
+          "value": "Seek medical advice if you experience:"
+        },
+        {
+          "type": "iconList",
+          "items": [
+            {
+              "icon": "AlertTriangle",
+              "text": "Persistent bloating, abdominal swelling, or pelvic pressure"
+            },
+            {
+              "icon": "AlertTriangle",
+              "text": "Needing to urinate more often or difficulty emptying your bladder"
+            },
+            {
+              "icon": "AlertTriangle",
+              "text": "Pelvic pain that is ongoing or worsening"
+            },
+            {
+              "icon": "AlertTriangle",
+              "text": "Unusual vaginal bleeding, especially after menopause or between periods"
+            }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "description": "These symptoms can be linked to ovarian cysts or other conditions and should be assessed.",
+          "icon": "Zap"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "buttonLabel": "Types of Cysts",
+      "buttonIcon": "AlertTriangle",
+      "cardTitle": "Types of Ovarian Cysts",
+      "cardTitleIcon": "Info",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "There are several types of ovarian cysts, ranging from harmless to those requiring treatment."
+        },
+        {
+          "type": "text",
+          "value": "Most Common Types Include:"
+        },
+        {
+          "type": "accordion",
+          "items": [
+            {
+              "title": "Functional Cysts (Usually harmless)",
+              "content": "**Follicular cysts** - Form when a follicle does not release an egg and continues to grow. Most go away on their own within 1–3 months.\n\n**Corpus luteum cysts** - Form after an egg is released and the follicle reseals and fills with fluid. These usually resolve naturally."
+            },
+            {
+              "title": "Other Benign Cysts",
+              "content": "**Endometriomas** — Cysts linked to endometriosis, sometimes called “chocolate cysts.\n\n**Dermoid cysts (mature cystic teratomas)** — Develop from early cells that can form different tissue types. Usually benign.\n\n**Cystadenomas** — Fluid-filled cysts that develop from ovarian tissue and can grow large.\n\n**Polycystic ovaries (PCOS)** — PCOS involves multiple small follicles seen on scan. These are not true cysts but part of a hormonal condition."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "value": "Less Common but Important Types Include:"
+        },
+        {
+          "type": "accordion",
+          "items": [
+            {
+              "title": "Malignant (cancerous) tumours",
+              "content": "Most ovarian cysts are not cancer. However, cysts found after menopause or with concerning features need careful assessment."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "buttonLabel": "Symptoms",
+      "buttonIcon": "Eye",
+      "cardTitle": "Symptoms of Ovarian Cysts",
+      "cardTitleIcon": "Zap",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "infoBox",
+          "title": "Many cysts cause no symptoms",
+          "description": "Larger or complicated cysts may cause:",
+          "icon": "Info"
+        },
+        {
+          "type": "grid",
+          "columns": 2,
+          "items": [
+            {
+              "title": "Common Symptoms",
+              "description": "Bloating, abdominal swelling, or pressure\n\nPelvic pain (dull or sharp, may come and go)\n\nPain during periods or sex\n\nSudden severe pain with nausea or vomiting (possible ovarian torsion)\n\nSudden sharp pain if a cyst ruptures"
+            },
+            {
+              "title": "Less Common Symptoms",
+              "description": "Lower back or thigh ache\n\nFeeling unable to fully empty the bladder or bowel\n\nNeeding to urinate more often"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Important Clarifications"
+        },
+        {
+          "type": "grid",
+          "columns": 2,
+          "items": [
+            {
+              "title": "Breast tenderness & unexplained weight gain",
+              "description": "These are not typical ovarian cyst symptoms and may relate to hormonal changes or other conditions."
+            },
+            {
+              "title": "Unusual vaginal bleeding",
+              "description": "Not a classic cyst symptom and should always be checked to rule out other causes."
+            }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "When to seek help urgently",
+          "description": "Seek urgent care if you have sudden severe abdominal pain, especially with fever, vomiting, dizziness, or fainting.",
+          "icon": "Zap"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "buttonLabel": "Risk Factors",
+      "buttonIcon": "ScanSearch",
+      "cardTitle": "Risk Factors for Ovarian Cysts",
+      "cardTitleIcon": "Shield",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Certain factors can make ovarian cysts more likely:"
+        },
+        {
+          "type": "iconList",
+          "items": [
+            {
+              "icon": "AlertTriangle",
+              "text": "Ovulation-inducing fertility treatments – medicines that stimulate ovulation can increase the chance of functional cysts"
+            },
+            {
+              "icon": "AlertTriangle",
+              "text": "Endometriosis – linked to endometriomas (a type of cyst)"
+            },
+            {
+              "icon": "AlertTriangle",
+              "text": "Polycystic ovary syndrome (PCOS) – involves multiple small follicles due to hormone imbalance"
+            },
+            {
+              "icon": "AlertTriangle",
+              "text": "Previous ovarian cysts – increases the chance of future cysts"
+            },
+            {
+              "icon": "AlertTriangle",
+              "text": "Being of reproductive age – cysts are more common before menopause"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "buttonLabel": "Fertility & Pregnancy",
+      "buttonIcon": "Syringe",
+      "cardTitle": "Fertility & Pregnancy",
+      "cardTitleIcon": "Heart",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Most ovarian cysts do not affect your ability to get pregnant."
+        },
+        {
+          "type": "iconList",
+          "items": [
+            {
+              "icon": "CheckCircle",
+              "text": "Most ovarian cysts do not affect fertility"
+            },
+            {
+              "icon": "Info",
+              "text": "Some underlying conditions linked to cysts, such as PCOS or endometriosis, can affect fertility"
+            },
+            {
+              "icon": "Calendar",
+              "text": "Cysts found during pregnancy are often harmless, but larger or symptomatic cysts may need monitoring and occasionally treatment"
+            }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Important Note",
+          "description": "If you're trying to conceive and have concerns about ovarian cysts, speak to your doctor.",
+          "icon": "Lightbulb"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "buttonLabel": "Diagnosis",
+      "buttonIcon": "ShieldCheck",
+      "cardTitle": "How Ovarian Cysts Are Diagnosed",
+      "cardTitleIcon": "Stethoscope",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "numberedSteps",
+          "steps": [
+            "Pelvic examination – may detect tenderness or a mass, though small cysts may not be felt",
+            "Ultrasound scan – the main test used to confirm and assess a cyst",
+            "Blood tests – may check hormone levels or markers such as CA-125 in certain situations (mainly after menopause or if features are concerning)",
+            "MRI scan – sometimes used if ultrasound findings are unclear"
+          ]
+        },
+        {
+          "type": "text",
+          "value": "Many simple cysts are monitored over time to see if they reduce in size or resolve on their own."
+        },
+        {
+          "type": "infoBox",
+          "title": "Self-Care Tips",
+          "description": "Track your symptoms (pain, bloating, period changes)\n\nRest and manage activity levels if you feel discomfort\n\nSeek medical advice if symptoms worsen or new symptoms develop",
+          "icon": "Info"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "buttonLabel": "Treatment Options",
+      "buttonIcon": "BookmarkCheck",
+      "cardTitle": "Surgery to Remove Ovarian Cysts",
+      "cardTitleIcon": "Activity",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "infoBox",
+          "title": "When is surgery needed?",
+          "description": "Surgery may be considered if a cyst is large, causing significant symptoms, does not go away, or has features that need further assessment.",
+          "icon": "Info"
+        },
+        {
+          "type": "grid",
+          "columns": 2,
+          "items": [
+            {
+              "icon": "CheckCircle",
+              "title": "Laparoscopy",
+              "description": "Keyhole surgery using small cuts in the abdomen.\n\nOften used for smaller or uncomplicated cysts\n\nUsually involves removing the cyst while preserving the ovary where possible\n\nRecovery time is generally shorter"
+            },
+            {
+              "icon": "Stethoscope",
+              "title": "Laparotomy",
+              "description": "Open surgery through a larger abdominal cut.\n\nMay be used for very large cysts or when cancer cannot be ruled out\n\nAllows the surgeon to assess the area more thoroughly"
+            }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Important Note",
+          "description": "The type of surgery depends on the cyst’s size, appearance on scans, symptoms, and your overall health. Your specialist will discuss the benefits and risks before any procedure.",
+          "icon": "Info"
+        }
+      ]
+    }
+  ]
+}

@@ -3,56 +3,53 @@ import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
-const treatments = [
-  { label: "Vulvar Cancer", to: "/Cancer/Vulvar" },
-  { label: "Vaginal Cancer", to: "/Cancer/VaginalCancer" },
-  { label: "Ovarian Cancer", to: "/Cancer/OvarianCancer" },
-  { label: "Endometrial Cancer", to: "/Cancer/EndometrialCancer" },
-  { label: "Cervical Cancer", to: "/Cancer/CervicalCancer" },
-  { label: "Robotic Surgery", to: "/RoboticSurgery" },
-  { label: "Robotic Surgery Experience", to: "/robotic-surgery-experience" },
-  { label: "Cervical Screening", to: "/CervicalScreening" },
-  { label: "Irregular Bleeding", to: "/IrregularBleedingInfo" },
-  { label: "Endometriosis", to: "/EndometriosisInformation" },
-  { label: "Fibroids", to: "/FibroidInformation" },
-  { label: "Menstrual Disorders", to: "/MenstrualDisordersInformation" },
-  { label: "Ovarian Cysts", to: "/OvarianCystsPage" },
-  { label: "Postcoital Bleeding", to: "/PostcoitalBleeding" },
-  { label: "Postmenopausal Bleeding", to: "/postmenopausal-bleeding" },
-  { label: "Pelvic Pain", to: "/pelvic-pain-information" },
-  { label: "Vulvar Vaginal Lumps", to: "/vulvar-vaginal-lumps" },
-];
+// const treatments = [
+//   { label: "Vulvar Cancer", to: "/Cancer/Vulvar" },
+//   { label: "Vaginal Cancer", to: "/Cancer/VaginalCancer" },
+//   { label: "Ovarian Cancer", to: "/Cancer/OvarianCancer" },
+//   { label: "Endometrial Cancer", to: "/Cancer/EndometrialCancer" },
+//   { label: "Cervical Cancer", to: "/Cancer/CervicalCancer" },
+//   { label: "Robotic Surgery", to: "/RoboticSurgery" },
+//   { label: "Robotic Surgery Experience", to: "/robotic-surgery-experience" },
+//   { label: "Cervical Screening", to: "/CervicalScreening" },
+//   { label: "Irregular Bleeding", to: "/IrregularBleedingInfo" },
+//   { label: "Endometriosis", to: "/EndometriosisInformation" },
+//   { label: "Fibroids", to: "/FibroidInformation" },
+//   { label: "Menstrual Disorders", to: "/MenstrualDisordersInformation" },
+//   { label: "Ovarian Cysts", to: "/OvarianCystsPage" },
+//   { label: "Postcoital Bleeding", to: "/PostcoitalBleeding" },
+//   { label: "Postmenopausal Bleeding", to: "/postmenopausal-bleeding" },
+//   { label: "Pelvic Pain", to: "/pelvic-pain-information" },
+//   { label: "Vulvar Vaginal Lumps", to: "/vulvar-vaginal-lumps" },
+// ];
 
 const treatmentGuides = [
-  { label: "Colposcopy", to: "/colposcopy" },
-  { label: "Ultrasound", to: "/ultrasound" },
-  { label: "Hysteroscopy", to: "/Hysteroscopy" },
-  { label: "Vulvar Guide Page", to: "/VulvarGuidePage" },
-  { label: "Vaginal Guide Page", to: "/VaginalGuidePage" },
-  { label: "Ovarian Cancer Guide Page", to: "/OvarianCancerGuide" },
-  { label: "Endometrial Guide Page", to: "/EndometrialCancerGuide" },
-  { label: "Cervical Cancer Guide", to: "/CervicalCancerGuide" },
-  { label: "Robotic Surgery Guide", to: "/RoboticSurgeryGuide" },
-  { label: "Endometriosis Guide", to: "/EndometriosisGuide" },
-  { label: "Cervical Screening Guide", to: "/CervicalScreeningGuide" },
-  { label: "Fibroid Guide", to: "/FibroidGuide" },
-  { label: "Irregular Bleeding Guide", to: "/IrregularBleedingGuide" },
-  { label: "Ovarian Cysts Guide", to: "/OvarianCystsGuide" },
+  { label: "Colposcopy Guide", to: "/guide/colposcopy" },
+  { label: "Ultrasound Guide", to: "/guide/ultrasound" },
+  { label: "Hysteroscopy Guide", to: "/guide/hysteroscopy" },
+  { label: "Vulvar Cancer Guide", to: "/guide/vulvar-cancer" },
+  { label: "Vaginal Cancer Guide", to: "/guide/vaginal-cancer" },
+  { label: "Ovarian Cancer Guide", to: "/guide/ovarian-cancer" },
+  { label: "Endometrial Cancer Guide", to: "/guide/endometrial-cancer" },
+  { label: "Cervical Cancer Guide", to: "/guide/cervical-cancer" },
+  { label: "Robotic Surgery Guide", to: "/guide/robotic-surgery" },
+  { label: "Endometriosis Guide", to: "/guide/endometriosis" },
+  { label: "Cervical Screening Guide", to: "/guide/cervical-screening" },
+  { label: "Fibroid Guide", to: "/guide/fibroids" },
+  { label: "Irregular Bleeding Guide", to: "/guide/irregular-bleeding" },
+  { label: "Ovarian Cysts Guide", to: "/guide/ovarian-cysts" },
   {
     label: "Postmenopausal Bleeding Guide",
-    to: "/PostmenopausalBleedingGuide",
+    to: "/guide/postmenopausal-bleeding",
   },
-  { label: "Menstrual Disorders Guide", to: "/MenstrualDisordersGuide" },
-  { label: "Postcoital Bleeding Guide", to: "/PostcoitalBleedingGuide" },
-  { label: "Vaginal Lumps Guide", to: "/VaginalLumpsGuide" },
-  { label: "Pelvic Pain Guide", to: "/PelvicPainGuide" },
+  { label: "Postcoital Bleeding Guide", to: "/guide/postcoital-bleeding" },
+  { label: "Pelvic Pain Guide", to: "/guide/pelvic-pain" },
 ];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
-  const [isAdditionalServicesOpen, setIsAdditionalServicesOpen] =
-    useState(false);
+  const [isAdditionalServicesOpen, setIsAdditionalServicesOpen] = useState(false);
 
   const navRef = useRef(null);
 
@@ -93,7 +90,7 @@ const Navbar = () => {
             <HashLink
               smooth
               to="/#about"
-              className="text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
+              className="text-black/90 hover:text-gray-900 px-2 py-2 text-sm font-medium"
               onClick={closeAll}
             >
               About
@@ -101,7 +98,7 @@ const Navbar = () => {
             <HashLink
               smooth
               to="/#experience"
-              className="text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
+              className="text-black/90 hover:text-gray-900 px-2 py-2 text-sm font-medium"
               onClick={closeAll}
             >
               Experience
@@ -109,7 +106,7 @@ const Navbar = () => {
             <HashLink
               smooth
               to="/#specialties"
-              className="text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
+              className="text-black/90 hover:text-gray-900 px-2 py-2 text-sm font-medium"
               onClick={closeAll}
             >
               Specialties
@@ -117,7 +114,7 @@ const Navbar = () => {
             <HashLink
               smooth
               to="/#education"
-              className="text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
+              className="text-black/90 hover:text-gray-900 px-2 py-2 text-sm font-medium"
               onClick={closeAll}
             >
               Education
@@ -125,7 +122,7 @@ const Navbar = () => {
             <HashLink
               smooth
               to="/PublicationsPage"
-              className="text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
+              className="text-black/90 hover:text-gray-900 px-2 py-2 text-sm font-medium"
               onClick={closeAll}
             >
               Publications
@@ -134,20 +131,20 @@ const Navbar = () => {
             <HashLink
               smooth
               to="/event-list"
-              className="text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
+              className="text-black/90 hover:text-gray-900 px-2 py-2 text-sm font-medium"
               onClick={closeAll}
             >
               Event
             </HashLink>
 
             {/* Services Dropdown */}
-            <div className="relative">
+            {/* <div className="relative">
               <button
                 onClick={() => {
                   setIsServicesOpen(true);
                   setIsAdditionalServicesOpen(false);
                 }}
-                className="flex items-center text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
+                className="flex items-center text-black/90 hover:text-gray-900 px-2 py-2 text-sm font-medium"
               >
                 Treatments{" "}
                 {isServicesOpen ? (
@@ -158,12 +155,12 @@ const Navbar = () => {
               </button>
 
               {isServicesOpen && (
-                <div className="absolute left-0 bg-white shadow-lg rounded-md mt-2 w-64 z-50">
+                <div className="absolute left-0 bg-white shadow-lg rounded-md mt-2 w-64 z-50 max-h-96 overflow-y-auto">
                   {treatments.map((item) => (
                     <Link
                       key={item.to}
                       to={item.to}
-                      className="block px-3 py-2 text-body-small text-gray-600 hover:bg-[#FFC5D3]"
+                      className="block px-3 py-2 text-body-small text-black/90 hover:bg-light-pink-1"
                       onClick={closeAll}
                     >
                       {item.label}
@@ -171,7 +168,7 @@ const Navbar = () => {
                   ))}
                 </div>
               )}
-            </div>
+            </div> */}
 
             {/* Additional Services Dropdown */}
             <div className="relative">
@@ -180,7 +177,7 @@ const Navbar = () => {
                   setIsAdditionalServicesOpen(true);
                   setIsServicesOpen(false);
                 }}
-                className="flex items-center text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
+                className="flex items-center text-black/90 hover:text-gray-900 px-2 py-2 text-sm font-medium"
               >
                 Treatment guide{" "}
                 {isAdditionalServicesOpen ? (
@@ -191,12 +188,12 @@ const Navbar = () => {
               </button>
 
               {isAdditionalServicesOpen && (
-                <div className="absolute left-0 bg-white shadow-lg rounded-md mt-2 w-64 z-50">
+                <div className="absolute left-0 bg-white shadow-lg rounded-md mt-2 w-64 z-50 max-h-96 overflow-y-auto">
                   {treatmentGuides.map((item) => (
                     <Link
                       key={item.to}
                       to={item.to}
-                      className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
+                      className="block px-4 py-2 text-body-small text-black hover:bg-light-pink-1"
                       onClick={closeAll}
                     >
                       {item.label}
@@ -206,10 +203,19 @@ const Navbar = () => {
               )}
             </div>
 
+            <Link
+              smooth
+              to="/robotic-surgery-experience"
+              className="text-black/90 hover:text-gray-900 px-2 py-2 text-sm font-medium"
+              onClick={closeAll}
+            >
+              Robotic Surgery
+            </Link>
+
             <HashLink
               smooth
               to="/#contact"
-              className="text-gray-600 hover:text-gray-900 px-2 py-2 text-sm font-medium"
+              className="text-black/90 hover:text-gray-900 px-2 py-2 text-sm font-medium"
               onClick={closeAll}
             >
               Contact
@@ -221,7 +227,7 @@ const Navbar = () => {
             <HashLink
               smooth
               to="/#contact"
-              className="w-full mt-2 inline-flex items-center justify-center rounded-md text-sm font-medium transition-all shadow-xs h-9 px-4 py-2 bg-[#FFC5D3] hover:bg-[#FFC5D3] text-[#FF4B8B] mb-3"
+              className="w-full mt-2 inline-flex items-center justify-center rounded-md text-sm font-medium transition-all shadow-xs h-9 px-4 py-2 bg-light-pink-2 hover:bg-light-pink-1 text-primary-pink mb-3"
               onClick={closeAll}
             >
               Book Consultation
@@ -232,16 +238,11 @@ const Navbar = () => {
           <div className="lg:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-800 focus:outline-none"
+              className="text-black focus:outline-none"
               aria-label="Toggle Menu"
             >
               {isOpen ? (
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -250,12 +251,7 @@ const Navbar = () => {
                   />
                 </svg>
               ) : (
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -276,7 +272,7 @@ const Navbar = () => {
               <HashLink
                 smooth
                 to="/#about"
-                className="block px-3 py-2 text-body-small text-gray-600 hover:text-gray-900"
+                className="block px-3 py-2 text-body-small text-black/90 hover:text-gray-900"
                 onClick={closeAll}
               >
                 About
@@ -285,7 +281,7 @@ const Navbar = () => {
               <HashLink
                 smooth
                 to="/#experience"
-                className="block px-3 py-2 text-body-small text-gray-600 hover:text-gray-900"
+                className="block px-3 py-2 text-body-small text-black/90 hover:text-gray-900"
                 onClick={closeAll}
               >
                 Experience
@@ -294,7 +290,7 @@ const Navbar = () => {
               <HashLink
                 smooth
                 to="/#specialties"
-                className="block px-3 py-2 text-body-small text-gray-600 hover:text-gray-900"
+                className="block px-3 py-2 text-body-small text-black/90 hover:text-gray-900"
                 onClick={closeAll}
               >
                 Specialties
@@ -303,7 +299,7 @@ const Navbar = () => {
               <HashLink
                 smooth
                 to="/#education"
-                className="block px-3 py-2 text-body-small text-gray-600 hover:text-gray-900"
+                className="block px-3 py-2 text-body-small text-black/90 hover:text-gray-900"
                 onClick={closeAll}
               >
                 Education
@@ -312,7 +308,7 @@ const Navbar = () => {
               <HashLink
                 smooth
                 to="/PublicationsPage"
-                className="block px-3 py-2 text-body-small text-gray-600 hover:text-gray-900"
+                className="block px-3 py-2 text-body-small text-black/90 hover:text-gray-900"
                 onClick={closeAll}
               >
                 Publications
@@ -321,58 +317,33 @@ const Navbar = () => {
               <HashLink
                 smooth
                 to="/event-list"
-                className="block px-3 py-2 text-body-small text-gray-600 hover:text-gray-900"
+                className="block px-3 py-2 text-body-small text-black/90 hover:text-gray-900"
                 onClick={closeAll}
               >
                 Event
               </HashLink>
 
-              {/* Treatments Accordion */}
+              {isServicesOpen && <div className="ml-4 mt-1 space-y-1"></div>}
+
+              {/* ✅ Treatment Guide Accordion (FIXED) */}
               <button
                 onClick={() => {
-                  setIsServicesOpen(true);
-                  setIsAdditionalServicesOpen(false);
-                }}
-                className="w-full flex items-center justify-between px-3 py-2 text-body-small text-gray-600 hover:text-gray-900"
-              >
-                <span>Treatments</span>
-                {isServicesOpen ? <FiChevronUp /> : <FiChevronDown />}
-              </button>
-
-              {isServicesOpen && (
-                <div className="ml-4 mt-1 space-y-1">
-                  {treatments.map((item) => (
-                    <Link
-                      key={item.to}
-                      to={item.to}
-                      className="block px-3 py-2 text-body-small text-gray-600 hover:bg-[#FFC5D3] rounded-md"
-                      onClick={closeAll}
-                    >
-                      {item.label}
-                    </Link>
-                  ))}
-                </div>
-              )}
-
-              {/* Treatment Guide Accordion */}
-              <button
-                onClick={() => {
-                  setIsAdditionalServicesOpen(true);
+                  setIsAdditionalServicesOpen(!isAdditionalServicesOpen);
                   setIsServicesOpen(false);
                 }}
-                className="w-full flex items-center justify-between px-3 py-2 text-body-small text-gray-600 hover:text-gray-900"
+                className="w-full flex items-center justify-between px-3 py-2 text-body-small text-black/90 hover:text-gray-900"
               >
                 <span>Treatment guide</span>
                 {isAdditionalServicesOpen ? <FiChevronUp /> : <FiChevronDown />}
               </button>
 
               {isAdditionalServicesOpen && (
-                <div className="ml-4 mt-1 space-y-1">
+                <div className="ml-4 mt-1 space-y-1 max-h-64 overflow-y-auto">
                   {treatmentGuides.map((item) => (
                     <Link
                       key={item.to}
                       to={item.to}
-                      className="block px-3 py-2 text-body-small text-gray-600 hover:bg-[#FFC5D3] rounded-md"
+                      className="block px-3 py-2 text-body-small text-black/90 hover:bg-light-pink-1 rounded-md"
                       onClick={closeAll}
                     >
                       {item.label}
@@ -381,11 +352,19 @@ const Navbar = () => {
                 </div>
               )}
 
+              <Link
+                to="/robotic-surgery-experience"
+                className="block px-3 py-2 text-body-small text-black/90 hover:bg-light-pink-1 rounded-md"
+                onClick={closeAll}
+              >
+                Robotic Surgery
+              </Link>
+
               {/* Contact + CTA */}
               <HashLink
                 smooth
                 to="/#contact"
-                className="block px-3 py-2 text-body-small text-gray-600 hover:text-gray-900"
+                className="block px-3 py-2 text-body-small text-black/90 hover:text-gray-900"
                 onClick={closeAll}
               >
                 Contact
@@ -394,7 +373,7 @@ const Navbar = () => {
               <HashLink
                 smooth
                 to="/#contact"
-                className="w-full mt-2 inline-flex items-center justify-center rounded-md text-button transition-all shadow-xs h-9 px-4 py-2 bg-[#FFC5D3] hover:bg-[#FFC5D3] text-[#FF4B8B] mb-3"
+                className="w-full mt-2 inline-flex items-center justify-center rounded-md text-button transition-all shadow-xs h-9 px-4 py-2 bg-light-pink-2 hover:bg-light-pink-1 text-primary-pink mb-3"
                 onClick={closeAll}
               >
                 Book Consultation

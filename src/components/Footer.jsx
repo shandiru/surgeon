@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import React from 'react';
+import React from "react";
 import { HashLink } from "react-router-hash-link";
 
 export default function Footer() {
@@ -12,8 +12,8 @@ export default function Footer() {
           <div>
             <h2 className="text-lg font-bold mb-3">Mr Ketankumar Gajjar</h2>
             <p className="text-white/90">
-              Consultant Gynaecological Oncologist with 26 years of experience
-              providing exceptional care in women's health and cancer treatment.
+              Consultant Gynaecological Oncologist with 26 years of experience providing exceptional
+              care in women's health and cancer treatment.
             </p>
 
             {/* Contact Icons */}
@@ -26,7 +26,7 @@ export default function Footer() {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 text-[#FF4B8B]"
+                  className="h-5 w-5 text-primary-pink"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -45,13 +45,14 @@ export default function Footer() {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 text-[#FF4B8B]"
+                  className="h-5 w-5 text-primary-pink"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                   strokeWidth="2"
                 >
-                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 
                       19.79 19.79 0 0 1-8.63-3.07
                       19.5 19.5 0 0 1-6-6 
                       19.79 19.79 0 0 1-3.07-8.63 
@@ -60,7 +61,8 @@ export default function Footer() {
                       a2 2 0 0 1-.45 2.11L8.09 9.91
                       a16 16 0 0 0 6 6l1.27-1.27
                       a2 2 0 0 1 2.11-.45c.94.25 1.86.53 2.81.7
-                      A2 2 0 0 1 22 16.92z" />
+                      A2 2 0 0 1 22 16.92z"
+                  />
                 </svg>
               </a>
 
@@ -74,7 +76,7 @@ export default function Footer() {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 text-[#FF4B8B]"
+                  className="h-5 w-5 text-primary-pink"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -95,7 +97,7 @@ export default function Footer() {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 text-[#FF4B8B]"
+                  className="h-5 w-5 text-primary-pink"
                   viewBox="0 0 24 24"
                   fill="currentColor"
                 >
@@ -109,19 +111,13 @@ export default function Footer() {
           <div>
             <h2 className="text-subsection mb-3">Quick Links</h2>
             <ul className="text-white/90 space-y-1">
-              {['About', 'Experience', 'Specialties', 'Education', 'Contact'].map(
-                (link, i) => (
-                  <li key={i}>
-                    <HashLink
-                      smooth
-                      to={`/#${link.toLowerCase()}`}
-                      className="hover:underline"
-                    >
-                      {link}
-                    </HashLink>
-                  </li>
-                )
-              )}
+              {["About", "Experience", "Specialties", "Education", "Contact"].map((link, i) => (
+                <li key={i}>
+                  <HashLink smooth to={`/#${link.toLowerCase()}`} className="hover:underline">
+                    {link}
+                  </HashLink>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -152,13 +148,10 @@ export default function Footer() {
 
         {/* Bottom Line */}
         <div className="border-t border-white/40 mt-10 pt-6 text-center text-body-small text-white/80">
-          <p>
-            © 2025 Mr Ketankumar Gajjar – aecological Oncologist.
-            All rights reserved.
-          </p>
+          <p>© 2025 Mr Ketankumar Gajjar – aecological Oncologist. All rights reserved.</p>
           <p className="mt-2">Professional medical services | GMC Registered</p>
           <p className="mt-3 text-white/70">
-            Powered by{' '}
+            Powered by{" "}
             <a
               href="https://www.ansely.co.uk/"
               target="_blank"

@@ -1,26 +1,26 @@
-import React from 'react';
+import React from "react";
 
 export default function PostcoitalBleedingHero() {
   return (
     <section
       className="py-20 px-6 shadow-inner text-center"
-      style={{ backgroundColor: '#FEE6EA', color: '#BB125B' }} // ✅ soft pink bg + magenta text
+      style={{ backgroundColor: "#FEE6EA", color: "#BB125B" }} // ✅ soft pink bg + magenta text
     >
       <div className="max-w-3xl mx-auto">
         {/* Heading */}
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight text-[#FF4B8B]">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight text-primary-pink">
           Understanding Postcoital Bleeding
         </h1>
 
         {/* Subtext */}
-        <p className="text-lg md:text-xl mb-8 opacity-90 text-[#BB125B]">
+        <p className="text-lg md:text-xl mb-8 opacity-90 text-primary-pink">
           What it is, causes, and when to seek help
         </p>
 
         {/* CTA Button */}
         <button
           data-slot="button"
-          className="inline-flex items-center justify-center gap-2 text-sm font-semibold rounded-md px-7 h-11 bg-[#FF4B8B] text-white shadow-md hover:shadow-lg hover:bg-[#e43d7a] transition-all duration-300"
+          className="inline-flex items-center justify-center gap-2 text-sm font-semibold rounded-md px-7 h-11 bg-primary-pink text-white shadow-md hover:shadow-lg hover:bg-[#e43d7a] transition-all duration-300"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

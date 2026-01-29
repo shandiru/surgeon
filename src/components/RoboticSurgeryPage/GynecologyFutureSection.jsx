@@ -1,8 +1,8 @@
-'use client'
+"use client";
 
 import React, { useEffect } from "react";
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // Import AOS styles
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
 export default function GynecologyFutureSection() {
   useEffect(() => {
@@ -16,7 +16,6 @@ export default function GynecologyFutureSection() {
     <section className="py-16 bg-white" data-aos="fade-up">
       <div className="container mx-auto px-6 md:px-16">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          
           {/* Left Image with Hover/Active */}
           <div className="flex justify-center" data-aos="zoom-in">
             <img
@@ -31,29 +30,35 @@ export default function GynecologyFutureSection() {
           </div>
 
           {/* Right Text */}
-          <div className="text-center md:text-left text-[#FF4B8B] space-y-6" data-aos="fade-right">
-            <h2 className="text-3xl font-bold">
-              The Future of Gynecologic Surgery
-            </h2>
-            <p className="text-lg text-[#7a2f4f]">
-              The da Vinci Surgical System represents a significant advancement in gynecologic surgery,
-              offering a safer and more effective alternative to traditional methods in many cases.
+          <div
+            className="text-center md:text-left text-primary-pink space-y-6"
+            data-aos="fade-right"
+          >
+            <h2 className="text-3xl font-bold">The Future of Gynecologic Surgery</h2>
+            <p className="text-lg text-black">
+              The da Vinci Surgical System represents a significant advancement in gynecologic
+              surgery, offering a safer and more effective alternative to traditional methods in
+              many cases.
             </p>
-            <p className="text-lg text-[#7a2f4f]">
-              As the technology continues to evolve and become more accessible, robotic surgery is expected
-              to play an increasingly central role in women's health care.
+            <p className="text-lg text-black">
+              As the technology continues to evolve and become more accessible, robotic surgery is
+              expected to play an increasingly central role in women's health care.
             </p>
 
             {/* Highlight Box */}
-            <div className="bg-[#FFF5F8] p-6 rounded-lg shadow-md transition duration-300 
+            <div
+              className="bg-light-pink-1 p-6 rounded-lg shadow-md transition duration-300 
               hover:shadow-[0_8px_30px_rgba(176,59,102,0.25)]
-              active:shadow-[0_8px_30px_rgba(176,59,102,0.25)]" data-aos="fade-left">
-              <p className="text-xl font-semibold mb-2 text-[#FF4B8B]">
+              active:shadow-[0_8px_30px_rgba(176,59,102,0.25)]"
+              data-aos="fade-left"
+            >
+              <p className="text-xl font-semibold mb-2 text-primary-pink">
                 Expert Care, Advanced Technology
               </p>
-              <p className="text-[#7a2f4f]">
-                Gynecologists who specialize in robotic surgery are uniquely positioned to offer their
-                patients cutting-edge care with excellent outcomes, especially for complex and delicate procedures.
+              <p className="text-black">
+                Gynecologists who specialize in robotic surgery are uniquely positioned to offer
+                their patients cutting-edge care with excellent outcomes, especially for complex and
+                delicate procedures.
               </p>
             </div>
           </div>

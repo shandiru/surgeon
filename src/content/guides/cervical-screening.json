@@ -1,0 +1,247 @@
+{
+  "slug": "cervical-screening",
+  "title": "Understanding Cervical Screening",
+  "subtitle": "What it is, why it's done, and what to expect",
+  "tag": "Medical Education",
+  "sections": [
+    {
+      "id": 1,
+      "buttonLabel": "Overview",
+      "buttonIcon": "Info",
+      "cardTitle": "Cervical Screening Overview",
+      "layout": "two-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Cervical screening — sometimes called a smear test — checks the health of your cervix. It is designed to help prevent cervical cancer by identifying high-risk HPV infection and early cell changes before they develop into cancer."
+        },
+        {
+          "type": "text",
+          "value": "The test is quick and simple and is one of the most effective ways to reduce the risk of cervical cancer."
+        },
+        {
+          "type": "text",
+          "value": "Cervical screening does not test for cancer itself, but it can detect changes early so they can be monitored or treated if needed."
+        },
+        {
+          "type": "image",
+          "src": "/cervical-screening.png",
+          "alt": "Cervical screening illustration"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "buttonLabel": "Smear Test Guidelines",
+      "buttonIcon": "Activity",
+      "cardTitle": "Who Needs a Smear Test?",
+      "cardTitleIcon": "Users",
+      "layout": "two-column",
+      "content": [
+        {
+          "type": "heading",
+          "text": "Who Is Invited for Cervical Screening?",
+          "level": 3
+        },
+        {
+          "type": "text",
+          "value": "In the UK, cervical screening is offered to people with a cervix aged 25 to 64."
+        },
+        {
+          "type": "text",
+          "value": "Screening intervals:"
+        },
+        {
+          "type": "iconList",
+          "items": [
+            { "icon": "Calendar", "text": "Ages 25–49 → every 3 years" },
+            { "icon": "Calendar", "text": "Ages 50–64 → every 5 years" }
+          ]
+        },
+        {
+          "type": "text",
+          "value": "The test is usually quick and simple. Some people find it a little uncomfortable, but it should not be painful. If you feel worried or have had a difficult experience before, your nurse or doctor can help make the test more comfortable."
+        },
+        {
+          "type": "image",
+          "src": "/smear-test-info.png",
+          "alt": "Smear test illustration"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "buttonLabel": "Who Doesn't Need a Smear Test?",
+      "buttonIcon": "AlertTriangle",
+      "cardTitle": "Who Doesn't Usually Need a Smear Test?",
+      "cardTitleIcon": "Info",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "heading",
+          "text": "Who Doesn’t Usually Need Cervical Screening?",
+          "level": 3,
+          "icon": "Info"
+        },
+        {
+          "type": "grid",
+          "columns": 2,
+          "items": [
+            {
+              "title": "Under 25",
+              "description": "People under 25 are not routinely invited for screening because cervical cancer is very rare at this age. Cell changes are common and usually go away on their own, and screening could lead to unnecessary treatment.\n\n**Important:** See a doctor if you have symptoms such as unusual bleeding, bleeding after sex, or persistent discharge."
+            },
+            {
+              "title": "Over 65",
+              "description": "People aged 65 and over are usually not invited if their recent screening results have been normal. Screening may still be needed if you have not been screened since age 50 or have had previous abnormal results."
+            }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Key Point",
+          "description": "At any age, symptoms should always be checked — screening is for people without symptoms."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "buttonLabel": "Preparing for Your Smear Test",
+      "buttonIcon": "Eye",
+      "cardTitle": "Getting Ready for Cervical Screening",
+      "layout": "two-column",
+      "content": [
+        {
+          "type": "iconList",
+          "items": [
+            {
+              "icon": "CheckCircle",
+              "text": "Try to book your appointment when you are not having a period, as blood can make it harder to read the sample"
+            },
+            {
+              "icon": "CheckCircle",
+              "text": "If possible, avoid vaginal medicines, spermicides, or creams for about 2 days before the test"
+            },
+            {
+              "icon": "CheckCircle",
+              "text": "You can eat, drink, wash, and take your usual medications as normal"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "value": "You do not need special preparation. If you have symptoms, are pregnant, or use vaginal treatments, let the nurse or doctor know."
+        },
+        {
+          "type": "image",
+          "src": "/smear-test-prep.png",
+          "alt": "Smear test preparation illustration"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "buttonLabel": "Test Preparation",
+      "buttonIcon": "ScanSearch",
+      "cardTitle": "What Happens During the Test",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "heading",
+          "text": "What Happens During the Test",
+          "level": 3,
+          "icon": "Stethoscope"
+        },
+        {
+          "type": "infoBox",
+          "title": "Takes just 5 minutes",
+          "description": "The appointment usually takes only a few minutes, and the sample collection itself is very quick.",
+          "icon": "Clock"
+        },
+        {
+          "type": "numberedSteps",
+          "steps": [
+            "A small speculum is gently inserted to open the vagina so the cervix can be seen.",
+            "A soft brush is used to collect a sample of cells from the cervix.",
+            "The sample is sent to a laboratory."
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "How the Sample Is Tested",
+          "description": "The sample is first checked for high-risk HPV.If HPV is found, the same sample is then checked for cell changes.",
+          "icon": "Lightbulb"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "buttonLabel": "After Your Test",
+      "buttonIcon": "Syringe",
+      "cardTitle": "After Your Cervical Screening Test",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "You will usually receive your results by letter or message. This often takes a few weeks, though timing can vary."
+        },
+        {
+          "type": "heading",
+          "value": "Possible Results",
+          "level": 3,
+          "icon": "Info"
+        },
+        {
+          "type": "accordion",
+          "items": [
+            {
+              "title": "Normal Result (HPV not found)",
+              "content": "No high-risk HPV was detected. You will be invited for routine screening again at the usual interval."
+            },
+            {
+              "title": "Inadequate Sample",
+              "content": "The sample could not be tested properly. You will be invited to repeat the test."
+            },
+            {
+              "title": "HPV Positive + Normal Cells",
+              "content": "High-risk HPV was found, but no abnormal cell changes were seen. You will usually be invited for screening again in 1 year to check if the HPV has cleared."
+            },
+            {
+              "title": "HPV Positive + Abnormal Cells",
+              "content": "High-risk HPV and cell changes were found. You will be referred for a colposcopy to look more closely at the cervix."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "buttonLabel": "Remember",
+      "buttonIcon": "ShieldCheck",
+      "cardTitle": "Remember",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Cervical screening is a simple step that helps protect your future."
+        },
+        {
+          "type": "grid",
+          "columns": 3,
+          "items": [
+            { "icon": "Clock", "title": "Quick" },
+            { "icon": "CheckCircle", "title": "Simple" },
+            {
+              "icon": "Stethoscope",
+              "title": "Can help prevent cervical cancer"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "value": "**Don’t miss your screening — it’s an important way to reduce your risk.**"
+        }
+      ]
+    }
+  ]
+}

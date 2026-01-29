@@ -1,16 +1,13 @@
-'use client'
+"use client";
 
-import { BookOpen, Users } from 'lucide-react'
+import { BookOpen, Users } from "lucide-react";
 
 export default function UnderstandingFibroidsSection() {
-  const pink = '#FFC5D3'
-  const deepPink = '#FF4B8B'
+  const pink = "#FFC5D3";
+  const deepPink = "#FF4B8B";
 
   return (
-    <section
-      className="py-20"
-      style={{ backgroundColor: pink }}
-    >
+    <section className="py-20" style={{ backgroundColor: pink }}>
       <div className="container mx-auto px-6 text-center">
         {/* Title */}
         <h1
@@ -21,7 +18,7 @@ export default function UnderstandingFibroidsSection() {
         </h1>
 
         {/* Subtitle */}
-        <p className="text-lg md:text-xl mb-10 max-w-2xl mx-auto text-gray-700">
+        <p className="text-lg md:text-xl mb-10 max-w-2xl mx-auto text-black">
           What they are, symptoms &amp; treatment options
         </p>
 
@@ -30,7 +27,7 @@ export default function UnderstandingFibroidsSection() {
           {/* Learn More */}
           <button
             className="inline-flex items-center justify-center gap-2 text-base font-medium transition-all shadow-md hover:shadow-lg h-12 rounded-lg px-8 active:scale-[0.97]"
-            style={{ backgroundColor: deepPink, color: 'white' }}
+            style={{ backgroundColor: deepPink, color: "white" }}
           >
             <BookOpen className="h-5 w-5" />
             Learn More
@@ -47,5 +44,5 @@ export default function UnderstandingFibroidsSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

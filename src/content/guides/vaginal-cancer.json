@@ -1,0 +1,336 @@
+{
+  "slug": "vaginal-cancer",
+  "title": "Understanding Vaginal Cancer",
+  "subtitle": "What it is, why it's done, and what to expect",
+  "tag": "Medical Education",
+  "sections": [
+    {
+      "id": 1,
+      "buttonLabel": "Overview",
+      "buttonIcon": "Stethoscope",
+      "cardTitle": "What Is Vaginal Cancer?",
+      "cardTitleIcon": "Stethoscope",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Vaginal cancer is a rare cancer that starts in the tissues of the vagina — the canal that connects the cervix to the outside of the body. Some cases develop from pre-cancerous changes called **VAIN (Vaginal Intraepithelial Neoplasia)**, where abnormal cells are present in the lining of the vagina."
+        },
+        {
+          "type": "grid",
+          "columns": 2,
+          "items": [
+            {
+              "icon": "Clock",
+              "title": "Quick Facts",
+              "description": "Quick Facts: Vaginal cancer is uncommon and is more often diagnosed in women over 60. Many cases are linked to high-risk HPV infection, and it can develop from pre-cancerous vaginal cell changes (VAIN). Early stages may cause few or no symptoms."
+            },
+            {
+              "icon": "Lightbulb",
+              "title": "Remember",
+              "description": "Vaginal cancer is rare, but symptoms should not be ignored. Unusual bleeding, persistent pelvic pain, discharge, or a lump inside the vagina should be checked by a doctor. Early assessment is important, as diagnosis at an earlier stage is linked with better treatment outcomes."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "buttonLabel": "How It Starts",
+      "buttonIcon": "AlertCircle",
+      "cardTitle": "How Vaginal Cancer Develops",
+      "cardTitleIcon": "AlertCircle",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Vaginal cancer starts in the cells lining the vagina. Some cases develop from pre-cancerous changes called **VAIN (Vaginal Intraepithelial Neoplasia)**. Understanding this process helps with early detection."
+        },
+        {
+          "type": "heading",
+          "text": "Types of Vaginal Cancer",
+          "level": 3
+        },
+        {
+          "type": "grid",
+          "columns": 2,
+          "items": [
+            {
+              "icon": "Activity",
+              "title": "Squamous Cell Carcinoma (most common)",
+              "description": "Forms in the flat cells lining the vagina. It can develop from VAIN."
+            },
+            {
+              "icon": "Activity",
+              "title": "Adenocarcinoma",
+              "description": "Develops from glandular cells within the vaginal lining and is less common."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Other Rare Types",
+          "level": 3
+        },
+        {
+          "type": "grid",
+          "columns": 2,
+          "items": [
+            {
+              "icon": "Activity",
+              "title": "Melanoma of the vagina"
+            },
+            {
+              "icon": "Activity",
+              "title": "Sarcoma of the vagina (a soft tissue cancer)"
+            }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "When to Contact Your Doctor",
+          "description": "Seek medical advice if you experience unusual bleeding, persistent discharge, pelvic pain, pain during sex, or notice a lump inside the vagina. Early assessment is important, as diagnosis at an earlier stage is linked with better outcomes.",
+          "icon": "AlertCircle"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "buttonLabel": "Risk Factors",
+      "buttonIcon": "FileText",
+      "cardTitle": "Vaginal Cancer Risk Factors",
+      "cardTitleIcon": "FileText",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Common factors that may increase the risk."
+        },
+        {
+          "type": "numberedSteps",
+          "steps": [
+            "HPV infection, especially high-risk strains",
+            "History of cervical cancer or cervical pre-cancer",
+            "Older age (most cases occur after 60)",
+            "Smoking",
+            "Weakened immune system",
+            "Previous pelvic radiation therapy",
+            "VAIN (pre-cancerous vaginal cell changes)"
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Good to Know",
+          "description": "These factors increase risk but do not mean you will develop vaginal cancer. HPV vaccination helps reduce the risk of HPV-related disease. There is no routine screening programme for vaginal cancer, so any persistent vaginal symptoms or known pre-cancerous changes should be checked by a healthcare professional.",
+          "icon": "Sparkles"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "buttonLabel": "Symptoms",
+      "buttonIcon": "Eye",
+      "cardTitle": "Symptoms of Vaginal Cancer",
+      "cardTitleIcon": "Eye",
+      "layout": "two-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Early vaginal cancer may not cause symptoms. As the condition progresses, signs can include:"
+        },
+        {
+          "type": "bulletList",
+          "items": [
+            "Unusual vaginal bleeding (such as after sex or after menopause)",
+            "Watery or persistent vaginal discharge",
+            "A lump or mass inside the vagina",
+            "Pelvic pain",
+            "Pain during urination or frequent urination",
+            "Changes in bowel habits, such as constipation"
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Vaginal Cancer Awareness",
+          "description": "There is no routine screening programme for vaginal cancer. Pelvic examinations are important if you have symptoms or risk factors, as early assessment of unusual changes can support earlier diagnosis.",
+          "icon": "Info"
+        },
+        {
+          "type": "image",
+          "src": "/vaginal.png",
+          "alt": "Vaginal Cancer Awareness"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "buttonLabel": "Diagnosis",
+      "buttonIcon": "ScanSearch",
+      "cardTitle": "Diagnosis of Vaginal Cancer",
+      "cardTitleIcon": "ScanSearch",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Vaginal cancer is usually investigated after symptoms or abnormal findings on examination. The diagnostic process may include:"
+        },
+        {
+          "type": "numberedSteps",
+          "steps": [
+            "Pelvic examination – Inspection of the vulva and vagina using a speculum",
+            "Cervical screening test (if due) – May occasionally detect abnormal vaginal cells, but it is not a screening test for vaginal cancer",
+            "Vaginoscopy (colposcopy of the vagina) – A magnified examination of the vaginal lining",
+            "Biopsy – Removal of a small tissue sample to confirm whether cancer cells are present"
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Purpose",
+          "description": "These tests help confirm the diagnosis and guide treatment planning.",
+          "icon": "Info"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "buttonLabel": "Treatment",
+      "buttonIcon": "Syringe",
+      "cardTitle": "Treatment of Vaginal Cancer",
+      "cardTitleIcon": "Syringe",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Treatment depends on the cancer type, stage, location, and your overall health."
+        },
+        {
+          "type": "heading",
+          "text": "Surgery",
+          "level": 3
+        },
+        {
+          "type": "text",
+          "value": "Surgery may be used in some early-stage cancers and may involve removing part of the vagina. Lymph nodes may be assessed depending on the situation. Reconstructive surgery may be considered in selected cases."
+        },
+        {
+          "type": "heading",
+          "text": "Other Treatments",
+          "level": 3
+        },
+        {
+          "type": "grid",
+          "columns": 3,
+          "items": [
+            {
+              "icon": "Scissors",
+              "title": "Radiotherapy",
+              "description": "Often a main treatment for vaginal cancer"
+            },
+            {
+              "icon": "Scissors",
+              "title": "Chemoradiation",
+              "description": "Chemotherapy given with radiotherapy in certain cases"
+            },
+            {
+              "icon": "Scissors",
+              "title": "Chemotherapy alone",
+              "description": "Sometimes used in advanced or recurrent disease"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "buttonLabel": "Prevention",
+      "buttonIcon": "Users",
+      "cardTitle": "Prevention & Early Detection",
+      "cardTitleIcon": "Users",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Steps to reduce the risk of vaginal cancer and detect problems early."
+        },
+        {
+          "type": "grid",
+          "columns": 2,
+          "items": [
+            {
+              "icon": "Shield",
+              "title": "Ways to Reduce Risk",
+              "description": "HPV vaccination, Not smoking, Seeking medical advice for persistent vaginal symptoms, Early treatment of VAIN or cervical pre-cancers, Practising safer sex to reduce HPV exposure, Monitoring abnormal bleeding or discharge"
+            },
+            {
+              "icon": "Heart",
+              "title": "Why It Matters",
+              "description": "Early assessment of symptoms is important, as earlier diagnosis is linked with better treatment outcomes."
+            }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Take Action",
+          "description": "Protect your health by getting vaccinated, avoiding smoking, and reporting unusual symptoms promptly. These steps help reduce the risk of HPV-related disease and support early detection.",
+          "icon": "Star"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "buttonLabel": "Key Takeaway",
+      "buttonIcon": "Lightbulb",
+      "cardTitle": "Key Takeaway",
+      "cardTitleIcon": "Lightbulb",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Important points to remember about Vaginal Cancer"
+        },
+        {
+          "type": "infoBox",
+          "title": "What You Should Know",
+          "description": "Vaginal cancer is rare but can be serious. Awareness of symptoms—such as abnormal bleeding, unusual discharge, or pelvic pain—is important, as earlier diagnosis is linked with better treatment outcomes.",
+          "icon": "Star"
+        },
+        {
+          "type": "heading",
+          "text": "Key Points to Remember",
+          "level": 3
+        },
+        {
+          "type": "iconList",
+          "items": [
+            {
+              "icon": "CheckCircle",
+              "text": "Early assessment of symptoms is associated with more effective treatment"
+            },
+            {
+              "icon": "CheckCircle",
+              "text": "Report unusual bleeding, discharge, or pelvic pain promptly"
+            },
+            {
+              "icon": "CheckCircle",
+              "text": "Medical check-ups are important if you have symptoms or known risk factors"
+            },
+            {
+              "icon": "CheckCircle",
+              "text": "HPV vaccination helps reduce the risk of HPV-related vaginal disease"
+            },
+            {
+              "icon": "CheckCircle",
+              "text": "Being aware of changes supports early detection"
+            }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Final Message",
+          "description": "Staying alert to symptoms and seeking medical advice early if changes occur are key steps in protecting your health.",
+          "icon": "Star"
+        }
+      ]
+    }
+  ]
+}

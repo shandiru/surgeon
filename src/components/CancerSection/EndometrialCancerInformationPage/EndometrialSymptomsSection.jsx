@@ -1,21 +1,21 @@
-'use client'
+"use client";
 
-import React, { useEffect } from 'react'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
-import { FaExclamation } from 'react-icons/fa'
-import { LuTriangleAlert } from 'react-icons/lu'
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { FaExclamation } from "react-icons/fa";
+import { LuTriangleAlert } from "react-icons/lu";
 
 export default function EndometrialSymptomsSection() {
-  const pink = '#FFC5D3'
-  const deepPink = '#FF4B8B' // stronger deep pink for headings and important text
+  const pink = "#FFC5D3";
+  const deepPink = "#FF4B8B"; // stronger deep pink for headings and important text
 
   useEffect(() => {
     AOS.init({
       duration: 1000,
       once: true,
-    })
-  }, [])
+    });
+  }, []);
 
   return (
     <section className="py-10 px-4 md:px-6 lg:px-8 bg-white" data-aos="fade-up">
@@ -32,7 +32,6 @@ export default function EndometrialSymptomsSection() {
         <div
           className="bg-white text-gray-900 flex flex-col gap-6 rounded-xl py-6 shadow-sm mb-6 
                      transition-all duration-300 hover:shadow-md hover:scale-[1.01] active:scale-[0.99]"
-        
           data-aos="fade-up"
         >
           {/* Card Header */}
@@ -40,8 +39,9 @@ export default function EndometrialSymptomsSection() {
             <div className="font-semibold text-xl mb-1" style={{ color: deepPink }}>
               Early Warning Signs
             </div>
-            <div className="text-sm text-gray-600">
-              Endometrial cancer often shows early warning signs. The most common is abnormal vaginal bleeding.
+            <div className="text-sm text-black/90">
+              Endometrial cancer often shows early warning signs. The most common is abnormal
+              vaginal bleeding.
             </div>
           </div>
 
@@ -51,10 +51,10 @@ export default function EndometrialSymptomsSection() {
               {/* Left Column */}
               <div className="space-y-3" data-aos="fade-left">
                 {[
-                  'Unusual bleeding or spotting between periods or after menopause',
-                  'Long, heavy, or frequent bleeding (especially in women over 40)',
-                  'Thin white or clear vaginal discharge (postmenopausal women)',
-                  'Lower abdominal or pelvic pain',
+                  "Unusual bleeding or spotting between periods or after menopause",
+                  "Long, heavy, or frequent bleeding (especially in women over 40)",
+                  "Thin white or clear vaginal discharge (postmenopausal women)",
+                  "Lower abdominal or pelvic pain",
                 ].map((symptom, i) => (
                   <div key={i} className="flex items-start gap-3">
                     <span
@@ -71,10 +71,10 @@ export default function EndometrialSymptomsSection() {
               {/* Right Column */}
               <div className="space-y-3" data-aos="fade-left">
                 {[
-                  'A lump or mass in the lower abdomen',
-                  'Difficulty or pain while urinating',
-                  'Pain during sexual intercourse',
-                  'Unexplained weight loss',
+                  "A lump or mass in the lower abdomen",
+                  "Difficulty or pain while urinating",
+                  "Pain during sexual intercourse",
+                  "Unexplained weight loss",
                 ].map((symptom, i) => (
                   <div key={i} className="flex items-start gap-3">
                     <span
@@ -97,11 +97,12 @@ export default function EndometrialSymptomsSection() {
             data-aos="fade-up"
           >
             <p className="text-sm font-medium" style={{ color: deepPink }}>
-              <strong>Important:</strong> If you experience any of these symptoms, it's important to seek medical evaluation.
+              <strong>Important:</strong> If you experience any of these symptoms, it's important to
+              seek medical evaluation.
             </p>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }

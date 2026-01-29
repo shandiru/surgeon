@@ -1,0 +1,449 @@
+{
+  "slug": "ovarian-cancer",
+  "title": "Understanding Ovarian Cancer",
+  "subtitle": "What it is, why it's done, and what to expect",
+  "tag": "Medical Education",
+  "sections": [
+    {
+      "id": 1,
+      "buttonLabel": "Overview",
+      "buttonIcon": "Info",
+      "cardTitle": "Ovarian Cancer Overview",
+      "layout": "two-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Ovarian cancer begins in the ovaries — the organs that produce eggs and hormones such as oestrogen and progesterone.\n\nSymptoms can be non-specific and may be mistaken for digestive or menstrual problems. Earlier diagnosis is associated with better treatment outcomes."
+        },
+        {
+          "type": "heading",
+          "text": "Quick Facts"
+        },
+        {
+          "type": "iconList",
+          "items": [
+            {
+              "icon": "Info",
+              "text": "More common in women over 50"
+            },
+            {
+              "icon": "Info",
+              "text": "Often diagnosed at a later stage because symptoms can be non-specific"
+            },
+            {
+              "icon": "Info",
+              "text": "Epithelial ovarian cancer accounts for most cases"
+            },
+            {
+              "icon": "Info",
+              "text": "Symptoms can resemble digestive issues such as bloating"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/Ovarian.png",
+          "alt": "Ovarian cancer illustration"
+        },
+        {
+          "type": "infoBox",
+          "title": "Remember",
+          "description": "Ovarian cancer symptoms can be subtle. Persistent bloating, pelvic pain, and feeling full quickly should be checked. Awareness supports earlier detection."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "buttonLabel": "How It Starts",
+      "buttonIcon": "Activity",
+      "cardTitle": "How Ovarian Cancer Starts",
+      "cardTitleIcon": "Activity",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Ovarian cancer can develop from different types of cells in the ovary or nearby fallopian tubes. Knowing where it starts helps guide diagnosis and treatment."
+        },
+        {
+          "type": "grid",
+          "columns": 3,
+          "items": [
+            {
+              "title": "Epithelial Ovarian Cancer",
+              "description": "The most common type (about 90% of cases). Many of these cancers are now thought to begin in the lining of the fallopian tubes before involving the ovary."
+            },
+            {
+              "title": "Germ Cell Tumours",
+              "description": "Start in the cells that produce eggs. These are less common and often affect younger women."
+            },
+            {
+              "title": "Stromal Tumours",
+              "description": "Begin in the hormone-producing cells of the ovary. They are rare and may cause hormone-related symptoms."
+            }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Did You Know?",
+          "description": "Some cancers classified as ovarian cancer begin in the fallopian tubes but are grouped together because they behave in a similar way.",
+          "icon": "Lightbulb"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "buttonLabel": "Key Risk Factors",
+      "buttonIcon": "AlertTriangle",
+      "cardTitle": "Key Risk Factors",
+      "cardTitleIcon": "AlertTriangle",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "These factors can increase risk but do not mean you will develop ovarian cancer:"
+        },
+        {
+          "type": "numberedSteps",
+          "steps": [
+            "Increasing age (most common after menopause)",
+            "Family history of ovarian, breast, or colorectal cancer",
+            "Inherited gene mutations such as BRCA1, BRCA2, or Lynch syndrome",
+            "Endometriosis",
+            "Having no full-term pregnancies",
+            "Long-term hormone replacement therapy (risk varies depending on type and duration)",
+            "Obesity"
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Good to Know",
+          "description": "Having risk factors does not mean you will develop ovarian cancer. Awareness of risk factors and symptoms supports earlier medical assessment.",
+          "icon": "Sparkles"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "buttonLabel": "Recognising Symptoms",
+      "buttonIcon": "Eye",
+      "cardTitle": "Symptoms of Ovarian Cancer",
+      "cardTitleIcon": "AlertTriangle",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "tags",
+          "tags": ["Warning Signs"]
+        },
+        {
+          "type": "text",
+          "value": "Ovarian cancer symptoms are often non-specific and may be mistaken for other conditions. Key symptoms to watch for include:"
+        },
+        {
+          "type": "iconList",
+          "items": [
+            {
+              "icon": "AlertCircle",
+              "text": "Persistent bloating or swollen abdomen"
+            },
+            { "icon": "AlertCircle", "text": "Pelvic or abdominal pain" },
+            {
+              "icon": "AlertCircle",
+              "text": "Feeling full quickly or loss of appetite"
+            },
+            {
+              "icon": "AlertCircle",
+              "text": "Needing to urinate more often or urgently"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "value": "Other possible symptoms include:"
+        },
+        {
+          "type": "iconList",
+          "items": [
+            {
+              "icon": "AlertCircle",
+              "text": "changes in bowel habits"
+            },
+            { "icon": "AlertCircle", "text": "Indigestion" },
+            { "icon": "AlertCircle", "text": "Back pain" },
+            { "icon": "AlertCircle", "text": "Pain during sex" },
+            { "icon": "AlertCircle", "text": "Extreme tiredness" },
+            { "icon": "AlertCircle", "text": "Unexplained weight loss" }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Important",
+          "description": "If these symptoms are new, persistent, and occur frequently (especially more than 12 times in a month), see your GP.",
+          "icon": "AlertTriangle"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "buttonLabel": "Getting Diagnosed",
+      "buttonIcon": "ScanSearch",
+      "cardTitle": "Diagnosis of Ovarian Cancer",
+      "cardTitleIcon": "Target",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "infoBox",
+          "title": "Diagnosis of Ovarian Cancer",
+          "description": "If ovarian cancer is suspected, your doctor may arrange several tests to investigate further.",
+          "icon": "Stethoscope"
+        },
+        {
+          "type": "text",
+          "value": "Initial Tests:"
+        },
+        {
+          "type": "grid",
+          "columns": 2,
+          "items": [
+            {
+              "title": "CA125 blood test",
+              "description": "Measures a protein that can be raised in ovarian cancer"
+            },
+            {
+              "title": "Pelvic ultrasound scan",
+              "description": "Looks at the ovaries and surrounding organs"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "value": "Further Tests (if needed)"
+        },
+        {
+          "type": "grid",
+          "columns": 2,
+          "items": [
+            {
+              "title": "CT scan",
+              "description": "used to see if cancer has spread and to plan treatment"
+            },
+            {
+              "title": "MRI scan",
+              "description": "Sometimes used for detailed imaging"
+            },
+            {
+              "title": "Surgery or biopsy",
+              "description": "Tissue may be examined to confirm the diagnosis"
+            },
+            {
+              "title": "Laparoscopy",
+              "description": "Occasionally used to look inside the abdomen"
+            }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Note",
+          "description": "These tests help confirm the diagnosis and determine how far the cancer has spread.",
+          "icon": "Info"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "buttonLabel": "Treatment Options",
+      "buttonIcon": "Syringe",
+      "cardTitle": "Treatment of Ovarian Cancer",
+      "cardTitleIcon": "HeartPulse",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Treatment depends on the cancer type, stage, and your overall health."
+        },
+        {
+          "type": "infoBox",
+          "title": "Treatment Goal",
+          "description": "The aim is to remove as much cancer as possible and treat any remaining disease",
+          "icon": "Target"
+        },
+        {
+          "type": "text",
+          "value": "Main Treatments Include:"
+        },
+        {
+          "type": "accordion",
+          "items": [
+            {
+              "title": "Surgery and chemotherapy",
+              "content": "Often used together as first-line treatment"
+            },
+            {
+              "title": "Targeted therapies",
+              "content": "Such as PARP inhibitors or drugs that affect tumour blood supply, used in some cases"
+            },
+            {
+              "title": "Radiotherapy ",
+              "content": "occasionally used for symptom control or selected recurrences."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "value": "Other Approaches Include:"
+        },
+        {
+          "type": "accordion",
+          "items": [
+            {
+              "title": "Clinical trials",
+              "content": "May offer access to new treatments"
+            },
+            {
+              "title": "Supportive care",
+              "content": "Therapies to improve comfort and wellbeing alongside medical treatment"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "buttonLabel": "Prevention & Early Detection",
+      "buttonIcon": "ShieldCheck",
+      "cardTitle": "Prevention & Early Detection",
+      "cardTitleIcon": "ShieldCheck",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "While there is no routine screening test for ovarian cancer, understanding risk factors and symptoms is important."
+        },
+        {
+          "type": "infoBox",
+          "title": "Why Prevention Matters",
+          "description": "Ovarian cancer symptoms can be non-specific. Knowing your risk factors and seeking medical advice for persistent symptoms can support earlier diagnosis.",
+          "icon": "Heart"
+        },
+        {
+          "type": "text",
+          "value": "Ways to help reduce your risk include:"
+        },
+        {
+          "type": "iconList",
+          "items": [
+            {
+              "icon": "CheckCircle",
+              "text": "Genetic testing if you have a strong family history"
+            },
+            {
+              "icon": "CheckCircle",
+              "text": "Long-term use of oral contraceptives (which is associated with reduced risk)"
+            },
+            {
+              "icon": "CheckCircle",
+              "text": "Maintaining a healthy body weight"
+            },
+            {
+              "icon": "CheckCircle",
+              "text": "Managing endometriosis with medical advice"
+            },
+            {
+              "icon": "CheckCircle",
+              "text": "Considering risk-reducing surgery if you carry BRCA1/BRCA2 mutations"
+            },
+            {
+              "icon": "CheckCircle",
+              "text": "Being aware of symptoms and seeking prompt medical evaluation"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "value": "Remember"
+        },
+        {
+          "type": "iconList",
+          "items": [
+            {
+              "icon": "CheckCircle",
+              "text": "There is no routine screening test for ovarian cancer"
+            },
+            {
+              "icon": "CheckCircle",
+              "text": "Genetic testing can guide personalised prevention"
+            },
+            {
+              "icon": "CheckCircle",
+              "text": "Persistent bloating or pelvic pain should be checked"
+            },
+            {
+              "icon": "CheckCircle",
+              "text": "Earlier diagnosis is linked with better treatment outcomes"
+            }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Key Takeaway",
+          "description": "Although ovarian cancer cannot always be prevented, understanding your risk and responding to symptoms early can make an important difference.",
+          "icon": "AlertTriangle"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "buttonLabel": "Key Takeaway",
+      "buttonIcon": "BookmarkCheck",
+      "cardTitle": "Key Takeaway",
+      "cardTitleIcon": "Lightbulb",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "heading",
+          "value": "What You Should Know",
+          "level": 3
+        },
+        {
+          "type": "text",
+          "value": "Ovarian cancer symptoms can be non-specific and may be mistaken for common digestive problems. Awareness of symptoms is important, as earlier diagnosis is linked with better treatment outcomes."
+        },
+        {
+          "type": "heading",
+          "value": "Key Points to Remember",
+          "level": 3
+        },
+        {
+          "type": "iconList",
+          "items": [
+            {
+              "icon": "CheckCircle",
+              "text": "Persistent bloating, pelvic pain, or feeling full quickly should be checked"
+            },
+            {
+              "icon": "CheckCircle",
+              "text": "Symptoms may be non-specific — noticing changes over time is important"
+            },
+            {
+              "icon": "CheckCircle",
+              "text": "Family history and inherited gene changes such as BRCA1/BRCA2 increase risk"
+            },
+            {
+              "icon": "CheckCircle",
+              "text": "There is no reliable screening test, so symptom awareness matters"
+            },
+            {
+              "icon": "CheckCircle",
+              "text": "Seeking medical advice early if symptoms persist is important"
+            }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Final Message",
+          "description": "Although ovarian cancer can be hard to detect early, recognising symptoms and understanding your risk can help you seek care promptly.",
+          "icon": "Star"
+        }
+      ]
+    }
+  ]
+}

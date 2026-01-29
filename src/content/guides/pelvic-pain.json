@@ -1,0 +1,254 @@
+{
+  "slug": "pelvic-pain",
+  "title": "Understanding Pelvic Pain",
+  "subtitle": "What it is, why it's done, and what to expect",
+  "tag": "Medical Education",
+  "sections": [
+    {
+      "id": 1,
+      "buttonLabel": "What Is Pelvic Pain",
+      "buttonIcon": "Info",
+      "cardTitle": "What Is Pelvic Pain?",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Pelvic pain is pain felt in the lower abdomen, between the belly button and the groin. It can come from the reproductive organs, bladder, bowel, muscles, or connective tissues."
+        },
+        {
+          "type": "text",
+          "value": "Pelvic pain is different from vaginal or vulval pain, which affects the external genital area."
+        },
+        {
+          "type": "infoBox",
+          "title": "Key Facts",
+          "description": "Pelvic pain is a very common condition. Most causes are treatable. It can be acute (sudden and short-term) or chronic (lasting several months or more)",
+          "icon": "Info"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "buttonLabel": "Types of Pelvic Pain",
+      "buttonIcon": "Activity",
+      "cardTitle": "Types of Pelvic Pain",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "grid",
+          "columns": 2,
+          "items": [
+            {
+              "title": "Cyclic Pain",
+              "description": "Related to the menstrual cycle and often occurs before or during periods."
+            },
+            {
+              "title": "Non-cyclic Pain",
+              "description": "Not linked to the menstrual cycle."
+            },
+            {
+              "title": "Sudden Pain",
+              "description": "Appears suddenly and may be severe."
+            },
+            {
+              "title": "Chronic pelvic pain",
+              "description": "Pain that lasts 3 months or longer."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "buttonLabel": "Common Causes of Pelvic Pain",
+      "buttonIcon": "AlertTriangle",
+      "cardTitle": "Common Causes of Pelvic Pain",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "accordion",
+          "items": [
+            {
+              "title": "Gynaecological Causes",
+              "content": "**Menstrual cramps (dysmenorrhoea)** - Common before or during periods.\n\n**Ovulation pain (mittelschmerz)** - Short-lasting pain mid-cycle, often on one side.\n\n**Endometriosis** - Tissue similar to the womb lining grows outside the uterus.\n\n**Pelvic inflammatory disease (PID)** - Infection of the reproductive organs.\n\n**Ectopic pregnancy** - A pregnancy developing outside the womb — a medical emergency."
+            },
+            {
+              "title": "Urinary Causes",
+              "content": "**Cystitis / UTI** - Bladder or urinary tract infection.\n\n**Interstitial cystitis (painful bladder syndrome)** - Long-term bladder pain and urinary symptoms without infection.\n\n**Urinary stones** - Stones in the kidney or urinary tract that can cause severe pain."
+            },
+            {
+              "title": "Digestive Causes",
+              "content": "Irritable bowel syndrome (IBS) - Abdominal pain with bloating, constipation, or diarrhoea.\n\nAppendicitis - Sudden pain (often starting centrally then moving to the lower right abdomen) — urgent assessment needed."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "buttonLabel": "When to See a Doctor",
+      "buttonIcon": "Eye",
+      "cardTitle": "When to See a Doctor",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Seek urgent medical help immediately if you have:"
+        },
+        {
+          "type": "bulletList",
+          "items": [
+            "Sudden, severe pelvic or abdominal pain",
+            "Pain with fever, vomiting, or feeling very unwell",
+            "Fainting, dizziness, or signs of shock",
+            "Heavy vaginal bleeding",
+            "Severe pain during pregnancy or if pregnancy is possible"
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Arrange medical advice promptly if you:",
+          "description": "Notice unexpected vaginal bleeding or unusual discharge, Suspect an infection or STI, Have ongoing pelvic pain that does not improve, Have a known condition (e.g., endometriosis, fibroids) and pain suddenly worsens",
+          "icon": "AlertTriangle"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "buttonLabel": "How Pelvic Pain Is Investigated",
+      "buttonIcon": "ScanSearch",
+      "cardTitle": "How Pelvic Pain Is Investigated",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Your doctor will assess your symptoms using a combination of history-taking, examination, and tests."
+        },
+        {
+          "type": "heading",
+          "text": "Your doctor may:",
+          "level": 4
+        },
+        {
+          "type": "iconList",
+          "items": [
+            {
+              "icon": "CheckCircle",
+              "text": "Take a detailed medical and menstrual history"
+            },
+            {
+              "icon": "CheckCircle",
+              "text": "Ask about bowel, bladder, and sexual health symptoms"
+            },
+            {
+              "icon": "CheckCircle",
+              "text": "Perform a pelvic examination (if appropriate and with your consent)"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Possible tests (depending on symptoms):",
+          "level": 4
+        },
+        {
+          "type": "bulletList",
+          "items": [
+            "Blood or urine tests",
+            "Swabs to check for infections, including STIs",
+            "Ultrasound scan (often transvaginal)",
+            "MRI scan in certain situations",
+            "Laparoscopy (keyhole surgery) if other tests do not explain symptoms or endometriosis is suspected"
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Important Note",
+          "description": "Not everyone needs all these tests. The type of investigations depends on your symptoms, age, and medical history.",
+          "icon": "Lightbulb"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "buttonLabel": "Emotional Wellbeing",
+      "buttonIcon": "Syringe",
+      "cardTitle": "Emotional Wellbeing",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Chronic pelvic pain can affect mood, energy levels, sleep, and relationships. It’s common to feel frustrated, anxious, or low when living with ongoing pain."
+        },
+        {
+          "type": "infoBox",
+          "title": "Support Available",
+          "description": "Talking to your doctor and asking about emotional support, counselling, or pain management services can help. You don’t have to manage it alone — support is available.",
+          "icon": "Info"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "buttonLabel": "Self-Care Tips",
+      "buttonIcon": "ShieldCheck",
+      "cardTitle": "Self-Care Tips",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "grid",
+          "columns": 2,
+          "items": [
+            {
+              "title": "Track your pain",
+              "description": "Note timing, triggers, severity, and where the pain is felt."
+            },
+            {
+              "title": "Use heat therapy",
+              "description": "Warm baths or a hot water bottle can help ease cramps and muscle tension."
+            },
+            {
+              "title": "Gentle exercise",
+              "description": "Light movement, stretching, yoga, or walking may help reduce stiffness and improve mood."
+            },
+            {
+              "title": "Relaxation and stress management",
+              "description": "Breathing exercises, mindfulness, or relaxation techniques can help manage pain flare-ups."
+            },
+            {
+              "title": "Balanced diet and hydration",
+              "description": "Eating regularly and drinking enough fluids supports overall wellbeing."
+            },
+            {
+              "title": "Rest when needed",
+              "description": "Pace activities and take breaks when pain increases."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "buttonLabel": "Remember",
+      "buttonIcon": "BookmarkCheck",
+      "cardTitle": "Remember",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "bulletList",
+          "items": [
+            "Pelvic pain is common and usually treatable",
+            "Many causes are not serious, but some need prompt attention",
+            "Early assessment can bring relief and peace of mind"
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "We're Here to Help",
+          "description": "If pelvic pain is affecting your life, book an appointment - we're here to help.",
+          "icon": "Star"
+        }
+      ]
+    }
+  ]
+}

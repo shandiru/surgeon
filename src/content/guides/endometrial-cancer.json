@@ -1,0 +1,378 @@
+{
+  "slug": "endometrial-cancer",
+  "title": "Understanding Endometrial Cancer",
+  "subtitle": "What it is, why it's done, and what to expect",
+  "tag": "Medical Education",
+  "sections": [
+    {
+      "id": 1,
+      "buttonLabel": "Overview",
+      "buttonIcon": "Info",
+      "cardTitle": "Endometrial Cancer Overview",
+      "layout": "two-column",
+      "content": [
+        {
+          "type": "heading",
+          "text": "Understanding the most common type of uterine cancer"
+        },
+        {
+          "type": "text",
+          "value": "Endometrial cancer starts in the lining of the uterus (the endometrium). It is one of the most common gynaecological cancers and is often diagnosed at an early stage because it frequently causes abnormal uterine bleeding, particularly after menopause."
+        },
+        {
+          "type": "heading",
+          "text": "Quick Facts"
+        },
+        {
+          "type": "bulletList",
+          "items": [
+            "Most common in postmenopausal women",
+            "Often detected early due to abnormal bleeding",
+            "Earlier diagnosis is associated with better treatment outcomes",
+            "Risk factors include obesity, hormone therapy, and increasing age"
+          ]
+        },
+        {
+          "type": "infoBox",
+          "value": "Abnormal uterine bleeding — including bleeding after menopause, between periods, or changes in menstrual patterns — should be checked. Early assessment is important, as earlier-stage diagnosis is linked with better outcomes."
+        },
+        {
+          "type": "image",
+          "src": "/Endometrial.png",
+          "alt": "Endometrial cancer illustration"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "buttonLabel": "How It Starts",
+      "buttonIcon": "Activity",
+      "cardTitle": "How Endometrial Cancer Develops",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Endometrial cancer develops when cells in the uterine lining grow abnormally. Understanding this process helps guide early detection and treatment."
+        },
+        {
+          "type": "heading",
+          "text": "Types of Endometrial Cancer",
+          "level": 4
+        },
+        {
+          "type": "grid",
+          "columns": 2,
+          "items": [
+            {
+              "title": "Type 1 Endometrial Cancer",
+              "description": "The most common type. Often linked to excess estrogen exposure and typically slower growing."
+            },
+            {
+              "title": "Type 2 Endometrial Cancer",
+              "description": "Less common and tends to behave more aggressively. It is not usually linked to estrogen and is more likely to spread."
+            },
+            {
+              "title": "Endometrial Hyperplasia",
+              "description": "Some women develop endometrial hyperplasia, where the lining becomes thickened due to abnormal cell growth. Treatment can reduce the risk of progression to cancer."
+            }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Did You Know?",
+          "value": "Detecting and treating endometrial hyperplasia early can lower the chance of it developing into endometrial cancer.",
+          "icon": "Lightbulb"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "buttonLabel": "Key Risk Factors",
+      "buttonIcon": "AlertTriangle",
+      "cardTitle": "Key Risk Factors",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "These factors increase risk but do not mean you will develop endometrial cancer:"
+        },
+        {
+          "type": "bulletList",
+          "items": [
+            "Increasing age, especially after menopause",
+            "Long-term exposure to oestrogen without progesterone",
+            "Obesity",
+            "Polycystic ovary syndrome (PCOS)",
+            "Early first period or late menopause",
+            "Having no full-term pregnancies",
+            "Oestrogen-only hormone replacement therapy",
+            "Tamoxifen use",
+            "Family history, particularly Lynch syndrome"
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Protective Factors",
+          "description": "Pregnancy, use of combined hormonal contraceptives, and maintaining a healthy body weight are associated with a lower risk.",
+          "icon": "ShieldCheck"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "buttonLabel": "Recognising Symptoms",
+      "buttonIcon": "Eye",
+      "cardTitle": "Symptoms of Endometrial Cancer",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Endometrial cancer often shows early warning signs. The most common is abnormal vaginal bleeding."
+        },
+        {
+          "type": "heading",
+          "text": "Early Warning Signs",
+          "level": 4
+        },
+        {
+          "type": "bulletList",
+          "items": [
+            "Unusual bleeding or spotting between periods or after menopause",
+            "Long, heavy, or frequent bleeding (especially in women over 40)",
+            "Thin white or clear vaginal discharge (postmenopausal women)",
+            "Lower abdominal or pelvic pain",
+            "A lump or mass in the lower abdomen",
+            "Difficulty or pain while urinating",
+            "Pain during sexual intercourse",
+            "Unexplained weight loss"
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Important",
+          "description": "If you experience any of these symptoms, it's important to seek medical evaluation.",
+          "icon": "AlertTriangle"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "buttonLabel": "Getting Diagnosed",
+      "buttonIcon": "ScanSearch",
+      "cardTitle": "Diagnosis of Endometrial Cancer",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "If endometrial cancer is suspected, several steps may be taken."
+        },
+        {
+          "type": "heading",
+          "text": "Diagnostic steps may include:",
+          "level": 4
+        },
+        {
+          "type": "numberedSteps",
+          "steps": [
+            "Review of medical and family history",
+            "Pelvic examination",
+            "Transvaginal ultrasound to assess the womb lining",
+            "Endometrial biopsy to sample the uterine lining",
+            "Dilation and curettage (D&C) if more tissue is needed for diagnosis"
+          ]
+        },
+        {
+          "type": "text",
+          "value": "Cervical screening tests are not designed to detect endometrial cancer, but may occasionally identify abnormal cells."
+        },
+        {
+          "type": "infoBox",
+          "title": "If cancer is confirmed",
+          "description": "If cancer is confirmed, your doctor will determine the stage, which indicates how far the cancer has spread, and the grade, which describes how abnormal the cancer cells look under a microscope. These factors help guide treatment decisions.",
+          "icon": "Info"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "buttonLabel": "Treatment Options",
+      "buttonIcon": "Syringe",
+      "cardTitle": "Treatment Options",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Treatment depends on the cancer stage, type, and your overall health."
+        },
+        {
+          "type": "heading",
+          "text": "A gynaecological oncology team may recommend:",
+          "level": 4
+        },
+        {
+          "type": "grid",
+          "columns": 2,
+          "items": [
+            {
+              "title": "Surgery",
+              "description": "Often the main treatment. This usually involves removal of the uterus, ovaries, and fallopian tubes. Lymph nodes may also be assessed."
+            },
+            {
+              "title": "Radiotherapy",
+              "description": "High-energy treatment used after surgery or, in some cases, as the main treatment.."
+            },
+            {
+              "title": "Chemotherapy",
+              "description": "Anti-cancer medicines that destroy or slow cancer growth, often used in higher-stage disease."
+            },
+            {
+              "title": "Hormone Therapy",
+              "description": "May be used in selected cases where the cancer is hormone-sensitive."
+            },
+            {
+              "title": "Combination Treatment",
+              "description": "Some people receive a combination of treatments depending on their diagnosis."
+            }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Key Point",
+          "description": "Treatment plans are personalised based on the cancer stage, type, and your overall health.",
+          "icon": "Heart"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "buttonLabel": "Prevention & Early Detection",
+      "buttonIcon": "ShieldCheck",
+      "cardTitle": "Prevention & Early Detection",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "While not all cases can be prevented, some steps may reduce risk and support early diagnosis."
+        },
+        {
+          "type": "infoBox",
+          "title": "Why Prevention Matters",
+          "description": "Earlier diagnosis is associated with better treatment outcomes. Awareness of symptoms and risk factors is important.",
+          "icon": "Info"
+        },
+        {
+          "type": "heading",
+          "text": "You Can Reduce Risk By:",
+          "level": 4
+        },
+        {
+          "type": "iconList",
+          "items": [
+            {
+              "icon": "CheckCircle",
+              "text": "Maintaining a healthy body weight"
+            },
+            {
+              "icon": "CheckCircle",
+              "text": "Using combined hormonal contraceptives (which are associated with lower risk)"
+            },
+            {
+              "icon": "CheckCircle",
+              "text": "Managing PCOS and metabolic health with medical advice"
+            },
+            {
+              "icon": "CheckCircle",
+              "text": "Considering genetic testing if you have a strong family history or Lynch syndrome"
+            },
+            {
+              "icon": "CheckCircle",
+              "text": "Using combined (estrogen + progesterone) HRT if hormone therapy is needed"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Important for Early Detection",
+          "level": 4
+        },
+        {
+          "type": "bulletList",
+          "items": [
+            "Seek medical advice for abnormal uterine bleeding",
+            "Postmenopausal bleeding should always be checked"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Remember",
+          "level": 4
+        },
+        {
+          "type": "bulletList",
+          "items": [
+            "There is no routine screening programme for endometrial cancer",
+            "Awareness of abnormal bleeding is crucial",
+            "Managing lifestyle factors may help reduce risk"
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Key Takeway",
+          "description": "Understanding risk factors and seeking prompt medical advice for symptoms can support earlier diagnosis.",
+          "icon": "ShieldCheck"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "buttonLabel": "Key Takeaway",
+      "buttonIcon": "BookmarkCheck",
+      "cardTitle": "Key Takeaway",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "infoBox",
+          "title": "What You Should Know",
+          "description": "Endometrial cancer is often diagnosed early because it commonly causes noticeable symptoms, especially postmenopausal bleeding. Earlier diagnosis is linked with better treatment outcomes, and managing lifestyle factors such as body weight is associated with lower risk.",
+          "icon": "Star"
+        },
+        {
+          "type": "heading",
+          "text": "Key Points to Remember",
+          "level": 4
+        },
+        {
+          "type": "iconList",
+          "items": [
+            {
+              "icon": "CheckCircle",
+              "text": "Postmenopausal bleeding should always be checked"
+            },
+            {
+              "icon": "CheckCircle",
+              "text": "Earlier diagnosis is associated with more effective treatment"
+            },
+            {
+              "icon": "CheckCircle",
+              "text": "Maintaining a healthy weight may help reduce risk"
+            },
+            {
+              "icon": "CheckCircle",
+              "text": "Managing PCOS and hormonal health with medical advice is important"
+            },
+            {
+              "icon": "CheckCircle",
+              "text": "Seek medical review if you have symptoms or risk factors"
+            }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Final Message",
+          "description": "Staying aware of warning signs and seeking medical advice promptly if symptoms occur can make an important difference to your health.",
+          "icon": "Star"
+        }
+      ]
+    }
+  ]
+}

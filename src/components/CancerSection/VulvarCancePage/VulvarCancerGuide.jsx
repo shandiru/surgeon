@@ -21,7 +21,7 @@ const VulvarCancerPage = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#FFE6EA]">
+    <div className="min-h-screen bg-light-pink-1">
       <div className="container mx-auto px-4 py-12 max-w-6xl">
         {/* Header Section */}
         <div
@@ -35,10 +35,8 @@ const VulvarCancerPage = () => {
             >
               <FaHeartbeat className="h-4 w-4" /> Medical Information Guide
             </div>
-            <h1 className="text-3xl lg:text-5xl font-bold text-[#FF4B8B] mb-6">
-              Vulvar Cancer
-            </h1>
-            <p className="text-lg lg:text-xl text-[#7a2f4f] leading-relaxed">
+            <h1 className="text-3xl lg:text-5xl font-bold text-primary-pink mb-6">Vulvar Cancer</h1>
+            <p className="text-lg lg:text-xl text-black leading-relaxed">
               A comprehensive guide covering symptoms, diagnosis,
               <br /> and treatment options
             </p>
@@ -156,8 +154,9 @@ const VulvarCancerPage = () => {
           data-aos="fade-up"
         >
           <p className="text-white text-lg leading-relaxed max-w-3xl mx-auto">
-            This information is for educational purposes only and should not replace professional medical advice.
-            Always consult with your healthcare provider for personalized medical guidance.
+            This information is for educational purposes only and should not replace professional
+            medical advice. Always consult with your healthcare provider for personalized medical
+            guidance.
           </p>
         </div>
       </div>
@@ -193,7 +192,7 @@ const StepCard = ({
         {/* Card */}
         <div className="flex-1">
           <div
-            className="rounded-2xl p-8 border transition-all duration-300 active:bg-[#FFF5F8] active:shadow-lg hover:bg-[#FFF5F8] hover:shadow-lg"
+            className="rounded-2xl p-8 border transition-all duration-300 active:bg-light-pink-1 active:shadow-lg hover:bg-light-pink-1 hover:shadow-lg"
             style={{ backgroundColor: "#fff", borderColor: primaryPink }}
           >
             <div className="mb-6">
@@ -203,12 +202,10 @@ const StepCard = ({
               >
                 {step}
               </span>
-              <h2 className="text-3xl font-bold text-[#FF4B8B] mt-2">{title}</h2>
+              <h2 className="text-3xl font-bold text-primary-pink mt-2">{title}</h2>
             </div>
 
-            {description && (
-              <p className="text-[#7a2f4f] mb-8 text-lg">{description}</p>
-            )}
+            {description && <p className="text-black mb-8 text-lg">{description}</p>}
 
             {/* Points with Hover Effect */}
             {points && (
@@ -216,14 +213,14 @@ const StepCard = ({
                 {points.map((point, i) => (
                   <div
                     key={i}
-                    className="flex items-start gap-3 p-4 bg-white rounded-lg border transition-all duration-300 active:bg-[#FFF5F8] active:shadow-lg hover:bg-[#FFF5F8] hover:shadow-lg"
+                    className="flex items-start gap-3 p-4 bg-white rounded-lg border transition-all duration-300 active:bg-light-pink-1 active:shadow-lg hover:bg-light-pink-1 hover:shadow-lg"
                     style={{ borderColor: primaryPink }}
                   >
                     <FaCheckCircle
                       className="h-5 w-5 mt-0.5 flex-shrink-0"
                       style={{ color: deepPink }}
                     />
-                    <span className="text-[#7a2f4f]">{point}</span>
+                    <span className="text-black">{point}</span>
                   </div>
                 ))}
               </div>
@@ -231,10 +228,7 @@ const StepCard = ({
 
             {/* Alert Box */}
             {alert && (
-              <div
-                className="mt-8 p-6 rounded-xl"
-                style={{ backgroundColor: deepPink }}
-              >
+              <div className="mt-8 p-6 rounded-xl" style={{ backgroundColor: deepPink }}>
                 <p className="text-white font-semibold text-lg">{alert}</p>
               </div>
             )}
@@ -243,14 +237,12 @@ const StepCard = ({
             {subsections &&
               subsections.map((section, i) => (
                 <div key={i} className="space-y-6 mt-8">
-                  <h3 className="text-xl font-semibold text-[#FF4B8B]">
-                    {section.title}
-                  </h3>
+                  <h3 className="text-xl font-semibold text-primary-pink">{section.title}</h3>
                   <div className="space-y-4">
                     {section.items.map((item, j) => (
                       <div
                         key={j}
-                        className="flex items-start gap-6 p-6 bg-white rounded-xl border transition-all duration-300 active:bg-[#FFF5F8] active:shadow-lg hover:bg-[#FFF5F8] hover:shadow-lg"
+                        className="flex items-start gap-6 p-6 bg-white rounded-xl border transition-all duration-300 active:bg-light-pink-1 active:shadow-lg hover:bg-light-pink-1 hover:shadow-lg"
                         style={{ borderColor: primaryPink }}
                       >
                         <div
@@ -260,10 +252,10 @@ const StepCard = ({
                           {item.icon}
                         </div>
                         <div>
-                          <h4 className="text-lg font-semibold text-[#FF4B8B] mb-2">
+                          <h4 className="text-lg font-semibold text-primary-pink mb-2">
                             {item.heading}
                           </h4>
-                          <p className="text-[#7a2f4f]">{item.text}</p>
+                          <p className="text-black">{item.text}</p>
                         </div>
                       </div>
                     ))}
@@ -297,7 +289,7 @@ const StepCard = ({
                     >
                       1
                     </div>
-                    <h3 className="text-xl font-semibold text-[#FF4B8B]">
+                    <h3 className="text-xl font-semibold text-primary-pink">
                       Surgery (Primary Treatment)
                     </h3>
                   </div>
@@ -305,13 +297,13 @@ const StepCard = ({
                     {treatments.surgery.map((s, i) => (
                       <div
                         key={i}
-                        className="p-6 bg-white rounded-xl border transition-all duration-300 active:bg-[#FFF5F8] active:shadow-lg hover:bg-[#FFF5F8] hover:shadow-lg"
+                        className="p-6 bg-white rounded-xl border transition-all duration-300 active:bg-light-pink-1 active:shadow-lg hover:bg-light-pink-1 hover:shadow-lg"
                         style={{ borderColor: primaryPink }}
                       >
-                        <h4 className="text-lg font-semibold text-[#FF4B8B] mb-2">
+                        <h4 className="text-lg font-semibold text-primary-pink mb-2">
                           {s.heading}
                         </h4>
-                        <p className="text-[#7a2f4f]">{s.text}</p>
+                        <p className="text-black">{s.text}</p>
                       </div>
                     ))}
                   </div>
@@ -325,7 +317,7 @@ const StepCard = ({
                     >
                       2
                     </div>
-                    <h3 className="text-xl font-semibold text-[#FF4B8B]">
+                    <h3 className="text-xl font-semibold text-primary-pink">
                       Additional Treatments
                     </h3>
                   </div>
@@ -333,7 +325,7 @@ const StepCard = ({
                     {treatments.additional.map((a, i) => (
                       <div
                         key={i}
-                        className="flex items-start gap-4 p-6 bg-white rounded-xl border transition-all duration-300 active:bg-[#FFF5F8] active:shadow-lg hover:bg-[#FFF5F8] hover:shadow-lg"
+                        className="flex items-start gap-4 p-6 bg-white rounded-xl border transition-all duration-300 active:bg-light-pink-1 active:shadow-lg hover:bg-light-pink-1 hover:shadow-lg"
                         style={{ borderColor: primaryPink }}
                       >
                         <div
@@ -343,10 +335,10 @@ const StepCard = ({
                           {a.icon}
                         </div>
                         <div>
-                          <h4 className="text-lg font-semibold text-[#FF4B8B] mb-2">
+                          <h4 className="text-lg font-semibold text-primary-pink mb-2">
                             {a.heading}
                           </h4>
-                          <p className="text-[#7a2f4f]">{a.text}</p>
+                          <p className="text-black">{a.text}</p>
                         </div>
                       </div>
                     ))}

@@ -1,0 +1,356 @@
+{
+  "slug": "vulvar-cancer",
+  "title": "Understanding Vulvar Cancer",
+  "subtitle": "What it is, why it's done, and what to expect",
+  "tag": "Medical Education",
+  "sections": [
+    {
+      "id": 1,
+      "buttonLabel": "Overview",
+      "buttonIcon": "Info",
+      "cardTitle": "Vulvar Cancer Overview",
+      "cardTitleIcon": "Info",
+      "layout": "two-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Vulvar cancer is a type of cancer that develops on the external female genital area (the vulva), including the labia, clitoris, and skin around the vaginal opening. Although relatively rare, understanding it helps with **early detection** and **prevention**."
+        },
+        {
+          "type": "statBox",
+          "stat": "60+",
+          "description": "Quick Facts: Vulvar cancer is most common in women over 60 and is often linked to HPV or chronic skin conditions. Early detection improves outcomes. Symptoms may include itching, lumps, or noticeable skin changes."
+        },
+        {
+          "type": "image",
+          "src": "/vulvar.png",
+          "alt": "Vulvar cancer illustration"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "buttonLabel": "How It Starts",
+      "buttonIcon": "Activity",
+      "cardTitle": "How Vulvar Cancer Starts",
+      "cardTitleIcon": "Activity",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Vulvar cancer usually begins in the skin cells of the vulva. Understanding where it starts helps doctors determine the best treatment and predict how the disease may behave."
+        },
+        {
+          "type": "grid",
+          "columns": 3,
+          "items": [
+            {
+              "title": "Squamous Cell Carcinoma",
+              "description": "The most common type — 85–90% of vulvar cancers. It begins in the thin, flat cells on the surface of the vulva."
+            },
+            {
+              "title": "Melanoma of the Vulva",
+              "description": "A less common type of vulvar cancer, which can behave more aggressively, begins in the pigment-producing cells of the vulva."
+            },
+            {
+              "title": "Pre-Cancerous Changes (VIN)",
+              "description": "Some cases begin as VIN – Vulvar Intraepithelial Neoplasia, where abnormal cells appear before developing into cancer."
+            }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Did You Know?",
+          "description": "Detecting VIN early and treating it promptly can reduce the risk of it developing into vulvar cancer.",
+          "icon": "Lightbulb"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "buttonLabel": "Risk Factors",
+      "buttonIcon": "FileText",
+      "cardTitle": "Key Risk Factors",
+      "cardTitleIcon": "FileText",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Not everyone with these risk factors will develop vulvar cancer, but they increase likelihood."
+        },
+        {
+          "type": "numberedSteps",
+          "steps": [
+            "HPV Infection (High-Risk Strains) — High-risk HPV types, particularly HPV 16, significantly increase vulvar cancer risk",
+            "Older Age (Most Common After 60) — Vulvar cancer is more common in women over 60",
+            "Smoking — Smoking weakens the immune system and increases HPV persistence",
+            "Long-Term Skin Conditions (e.g., Lichen Sclerosus) — Chronic inflammatory vulvar skin disorders increase risk",
+            "Weakened Immune System — A weak immune system reduces the body's ability to repair abnormal cells",
+            "History of Cervical or Vaginal Pre-cancers — Conditions like CIN or VAIN raise the risk of similar changes on the vulva"
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Good to Know",
+          "description": "Having one or more risk factors does not mean you will get vulvar cancer — but understanding them helps with early detection and prevention.",
+          "icon": "Sparkles"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "buttonLabel": "Symptoms",
+      "buttonIcon": "Eye",
+      "cardTitle": "Recognising Symptoms",
+      "cardTitleIcon": "Eye",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Early vulvar cancer may not have obvious symptoms. As it progresses, watch for these warning signs:"
+        },
+        {
+          "type": "bulletList",
+          "items": [
+            "Persistent vulvar itching",
+            "A cut or sore that won't heal",
+            "A lump or mass on the vulva",
+            "Vulvar pain or tenderness",
+            "Unusual bleeding from the vulva",
+            "Burning that continues despite treatment",
+            "Changes in a mole or birthmark"
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Warning",
+          "description": "If you notice any of these symptoms, see your doctor promptly. Early detection significantly improves treatment outcomes.",
+          "icon": "AlertTriangle"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "buttonLabel": "Diagnosis",
+      "buttonIcon": "ScanSearch",
+      "cardTitle": "Getting Diagnosed",
+      "cardTitleIcon": "ScanSearch",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "If vulvar cancer is suspected, your doctor will perform tests to confirm the diagnosis."
+        },
+        {
+          "type": "numberedSteps",
+          "steps": [
+            "Vulvar Examination - Your doctor examines the vulva and may also check the groin area (lymph nodes) for any swelling or abnormalities. A general pelvic exam may be done if needed.",
+            "Biopsy - A small sample of tissue is taken from the affected area of the vulva and sent to a laboratory. This is the only way to confirm whether cancer cells are present.",
+            "Vulvoscopy (sometimes called colposcopy of the vulva) - A magnifying device may be used to examine the skin of the vulva more closely and guide where to take a biopsy."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Imaging Tests",
+          "level": 3
+        },
+        {
+          "type": "tags",
+          "tags": ["X-ray", "CT scan", "PET-CT", "MRI"]
+        },
+        {
+          "type": "infoBox",
+          "title": "Purpose",
+          "description": "These tests help determine the stage and spread of cancer to guide treatment planning.",
+          "icon": "Info"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "buttonLabel": "Treatment",
+      "buttonIcon": "Syringe",
+      "cardTitle": "Treatment Options",
+      "cardTitleIcon": "Syringe",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Treatment depends on the stage, size, and spread of cancer. Surgery is the most common treatment."
+        },
+        {
+          "type": "infoBox",
+          "title": "Surgery",
+          "description": "Surgery aims to remove the cancer while preserving as much healthy tissue as possible.",
+          "level": 3
+        },
+        {
+          "type": "grid",
+          "columns": 3,
+          "items": [
+            {
+              "icon": "Scissors",
+              "title": "Wide local excision",
+              "description": "Removal of the cancer with a margin of healthy tissue"
+            },
+            {
+              "icon": "Scissors",
+              "title": "More extensive vulvar surgery",
+              "description": "May be needed for larger or deeper cancers"
+            },
+            {
+              "icon": "Scissors",
+              "title": "Lymph node assessment",
+              "description": "Lymph nodes in the groin may be checked or removed to see if the cancer has spread"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Additional Treatments",
+          "level": 3
+        },
+
+        {
+          "type": "grid",
+          "columns": 3,
+          "items": [
+            {
+              "icon": "Zap",
+              "title": "Radiation Therapy",
+              "description": "May be given after surgery or sometimes instead of surgery"
+            },
+            {
+              "icon": "Pill",
+              "title": "Chemoradiation",
+              "description": "Chemotherapy given together with radiotherapy in certain cases"
+            },
+            {
+              "icon": "Pill",
+              "title": "Chemotherapy alone",
+              "description": "Occasionally used for advanced or recurrent disease"
+            }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Enhanced Recovery",
+          "description": "After surgery, patients receive enhanced recovery support to aid healing and return to normal activities.",
+          "icon": "Heart"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "buttonLabel": "Prevention",
+      "buttonIcon": "ShieldCheck",
+      "cardTitle": "Prevention & Early Detection",
+      "cardTitleIcon": "ShieldCheck",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Simple steps can help reduce risk and support early detection."
+        },
+        {
+          "type": "infoBox",
+          "title": "Why Prevention Matters",
+          "description": "Vulvar cancer is uncommon, but awareness of symptoms and risk factors can help identify changes early, when treatment is more effective.",
+          "icon": "ShieldCheck"
+        },
+        {
+          "type": "iconList",
+          "items": [
+            { "icon": "Syringe", "text": "Getting the HPV vaccine" },
+            { "icon": "Ban", "text": "Not smoking" },
+            {
+              "icon": "Stethoscope",
+              "text": "Seeking medical advice for long-term vulvar skin conditions (such as lichen sclerosus)"
+            },
+            {
+              "icon": "Heart",
+              "text": "Being aware of any persistent changes to the vulvar skin"
+            },
+            {
+              "icon": "Eye",
+              "text": "Practicing safer sex to reduce HPV exposure"
+            }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Remember",
+          "items": [
+            "Early detection is linked with better treatment outcomes",
+            "Regular check-ups are important if you have symptoms or ongoing vulvar skin conditions",
+            "HPV vaccination helps protect against HPV-related vulvar disease",
+            "Any long-lasting vulvar change (itching, lump, sore, colour change) should be reviewed"
+          ],
+          "icon": "Heart"
+        },
+        {
+          "type": "infoBox",
+          "title": "Why It Matters",
+          "description": "Staying aware of symptoms, managing skin conditions, and protecting against HPV are important steps in maintaining vulvar health and detecting problems early.",
+          "icon": "Heart"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "buttonLabel": "Key Takeaway",
+      "buttonIcon": "Star",
+      "cardTitle": "Key Takeaway",
+      "cardTitleIcon": "Star",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Important points to remember about Vulvar Cancer"
+        },
+        {
+          "type": "infoBox",
+          "title": "What You Should Know",
+          "description": "Vulvar cancer is rare but serious. Early diagnosis is linked with better outcomes, which is why understanding symptoms and being aware of changes is important.",
+          "icon": "Star"
+        },
+        {
+          "type": "heading",
+          "text": "Key Points to Remember",
+          "level": 3
+        },
+        {
+          "type": "iconList",
+          "items": [
+            {
+              "icon": "CheckCircle",
+              "text": "Early detection is associated with more effective treatment"
+            },
+            {
+              "icon": "CheckCircle",
+              "text": "Persistent itching, lumps, sores, or skin changes should be checked"
+            },
+            {
+              "icon": "CheckCircle",
+              "text": "Medical review is important if you have ongoing symptoms or vulvar skin conditions"
+            },
+            {
+              "icon": "CheckCircle",
+              "text": "HPV vaccination helps reduce the risk of HPV-related vulvar disease"
+            },
+            {
+              "icon": "CheckCircle",
+              "text": "Being aware of changes to your vulvar skin supports early detection"
+            }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Final Message",
+          "description": "Staying aware, seeking medical advice for persistent symptoms, and protecting against HPV can make a real difference in maintaining your health.",
+          "icon": "Star"
+        }
+      ]
+    }
+  ]
+}

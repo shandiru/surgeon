@@ -1,15 +1,14 @@
-'use client'
+"use client";
 
-import { Lightbulb } from "lucide-react"
+import { Lightbulb } from "lucide-react";
 
 export default function CausesAndRiskFactorsCard() {
-  const pink = "#FFC5D3"
-  const deepPink = "#FF4B8B"
+  const pink = "#FFC5D3";
+  const deepPink = "#FF4B8B";
 
   return (
     <section className="py-16 px-4 md:px-6 bg-white">
       <div className="max-w-5xl mx-auto bg-white text-[#212529] flex flex-col gap-6 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 p-8">
-
         {/* Header */}
         <div className="flex flex-col gap-2 mb-4">
           <div className="flex items-center gap-3">
@@ -18,7 +17,7 @@ export default function CausesAndRiskFactorsCard() {
               Causes & Risk Factors
             </h2>
           </div>
-          <p className="text-sm md:text-base text-gray-600">
+          <p className="text-sm md:text-base text-black/90">
             The exact cause is unknown, but your risk may be higher if you:
           </p>
         </div>
@@ -27,9 +26,9 @@ export default function CausesAndRiskFactorsCard() {
         <div className="grid md:grid-cols-2 gap-4">
           <div className="space-y-3">
             {[
-              'Have a family history of fibroids',
-              'Are of African or Caribbean heritage',
-              'Are overweight',
+              "Have a family history of fibroids",
+              "Are of African or Caribbean heritage",
+              "Are overweight",
             ].map((item, i) => (
               <span
                 key={i}
@@ -45,10 +44,7 @@ export default function CausesAndRiskFactorsCard() {
           </div>
 
           <div className="space-y-3">
-            {[
-              'Started your periods early',
-              'Have hormonal imbalances',
-            ].map((item, i) => (
+            {["Started your periods early", "Have hormonal imbalances"].map((item, i) => (
               <span
                 key={i}
                 className="block rounded-lg px-4 py-2 text-sm font-medium transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-1 active:scale-[0.98]"
@@ -64,5 +60,5 @@ export default function CausesAndRiskFactorsCard() {
         </div>
       </div>
     </section>
-  )
+  );
 }

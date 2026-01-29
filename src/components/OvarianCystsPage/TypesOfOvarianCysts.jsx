@@ -1,6 +1,6 @@
-'use client';
-import React, { useState } from 'react';
-import { Activity, ChevronDown } from 'lucide-react';
+"use client";
+import React, { useState } from "react";
+import { Activity, ChevronDown } from "lucide-react";
 
 const AccordionItem = ({ title, badge, content, imageContent }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,21 +11,21 @@ const AccordionItem = ({ title, badge, content, imageContent }) => {
         <button
           type="button"
           aria-controls="accordion-content"
-          aria-expanded={isOpen ? 'true' : 'false'}
+          aria-expanded={isOpen ? "true" : "false"}
           onClick={() => setIsOpen(!isOpen)}
           className="flex w-full items-center justify-between gap-4 px-4 py-4 text-left text-sm font-medium outline-none"
         >
           <div className="flex items-center gap-3">
             {badge && (
-              <span className="inline-flex items-center justify-center rounded-full bg-[#FF4B8B]/10 text-[#FF4B8B] px-3 py-1 text-xs font-medium">
+              <span className="inline-flex items-center justify-center rounded-full bg-primary-pink/10 text-primary-pink px-3 py-1 text-xs font-medium">
                 {badge}
               </span>
             )}
-            <span className="font-semibold text-[#BB125B]">{title}</span>
+            <span className="font-semibold text-primary-pink">{title}</span>
           </div>
           <ChevronDown
-            className={`w-5 h-5 text-[#FF4B8B] transition-transform duration-200 ${
-              isOpen ? 'rotate-180' : ''
+            className={`w-5 h-5 text-primary-pink transition-transform duration-200 ${
+              isOpen ? "rotate-180" : ""
             }`}
           />
         </button>
@@ -49,15 +49,17 @@ const OvarianCystsCard = () => {
   const functionalCystsContent = (
     <div className="grid md:grid-cols-2 gap-4">
       <div className="bg-[#fff7f9] p-4 rounded-lg shadow-sm">
-        <span className="font-bold text-[#BB125B]">Follicle Cysts</span>
+        <span className="font-bold text-primary-pink">Follicle Cysts</span>
         <p className="text-sm text-[#555] mt-1">
-          Form when a follicle does not release an egg and keeps growing. Usually disappear within 1–3 months.
+          Form when a follicle does not release an egg and keeps growing. Usually disappear within
+          1–3 months.
         </p>
       </div>
       <div className="bg-[#fff7f9] p-4 rounded-lg shadow-sm">
-        <span className="font-bold text-[#BB125B]">Corpus Luteum Cysts</span>
+        <span className="font-bold text-primary-pink">Corpus Luteum Cysts</span>
         <p className="text-sm text-[#555] mt-1">
-          Form when the follicle reseals after releasing an egg and fills with fluid. Usually resolve in a few weeks.
+          Form when the follicle reseals after releasing an egg and fills with fluid. Usually
+          resolve in a few weeks.
         </p>
       </div>
     </div>
@@ -66,32 +68,35 @@ const OvarianCystsCard = () => {
   const benignCystsContent = (
     <ul className="list-disc pl-5 space-y-2 text-[#555]">
       <li>
-        <strong className="text-[#BB125B]">Endometriomas</strong> — caused by endometriosis
+        <strong className="text-primary-pink">Endometriomas</strong> — caused by endometriosis
       </li>
       <li>
-        <strong className="text-[#BB125B]">Dermoid cysts</strong> — formed from cells present from birth
+        <strong className="text-primary-pink">Dermoid cysts</strong> — formed from cells present
+        from birth
       </li>
       <li>
-        <strong className="text-[#BB125B]">Cystadenomas</strong> — fluid-filled and can grow quite large
+        <strong className="text-primary-pink">Cystadenomas</strong> — fluid-filled and can grow
+        quite large
       </li>
       <li>
-        <strong className="text-[#BB125B]">PCOS</strong> — multiple small cysts that can cause hormone imbalance and fertility problems
+        <strong className="text-primary-pink">PCOS</strong> — multiple small cysts that can cause
+        hormone imbalance and fertility problems
       </li>
     </ul>
   );
 
   const malignantCystsContent = (
-    <div className="bg-[#FFF0F5] p-4 rounded-lg text-[#BB125B] shadow-sm">
+    <div className="bg-[#FFF0F5] p-4 rounded-lg text-primary-pink shadow-sm">
       Rare, but more common after menopause. Must be checked by a doctor to rule out ovarian cancer.
     </div>
   );
 
   return (
-    <div className="bg-[#FEE6EA] text-[#FF4B8B] flex flex-col gap-6 rounded-xl p-6 shadow-lg">
+    <div className="bg-[#FEE6EA] text-primary-pink flex flex-col gap-6 rounded-xl p-6 shadow-lg">
       {/* Header */}
-      <div className="pb-4 border-b border-[#FF4B8B]/30">
+      <div className="pb-4 border-b border-primary-pink/30">
         <div className="font-semibold flex items-center gap-3 text-2xl">
-          <Activity className="w-6 h-6 text-[#FF4B8B]" />
+          <Activity className="w-6 h-6 text-primary-pink" />
           Types of Ovarian Cysts
         </div>
       </div>

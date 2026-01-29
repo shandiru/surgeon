@@ -1,0 +1,321 @@
+{
+  "slug": "colposcopy",
+  "title": "Understanding Colposcopy",
+  "subtitle": "What it is, why it's done, and what to expect",
+  "tag": "Medical Education",
+  "sections": [
+    {
+      "id": 1,
+      "buttonLabel": "Overview",
+      "buttonIcon": "Info",
+      "cardTitle": "What Is a Colposcopy?",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "A colposcopy is a simple procedure to look for abnormal cells on the cervix or vagina."
+        },
+        {
+          "type": "heading",
+          "text": "Quick Facts",
+          "level": 3,
+          "icon": "Info"
+        },
+        {
+          "type": "iconList",
+          "items": [
+            { "icon": "Clock", "text": "Takes only 5-15 minutes" },
+            { "icon": "CheckCircle", "text": "Feels similar to a smear test" },
+            { "icon": "Eye", "text": "Uses a special magnifying instrument" },
+            { "icon": "ShieldCheck", "text": "Helps detect early cell changes" }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Remember",
+          "description": "A colposcopy helps identify changes early so they can be monitored or treated to prevent cancer. It's a preventive measure that can protect your health.",
+          "icon": "Info"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "buttonLabel": "Why You Might Need One",
+      "buttonIcon": "FileText",
+      "cardTitle": "Why You Might Need a Colposcopy",
+      "cardTitleIcon": "Stethoscope",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "tags",
+          "tags": ["Common Reasons"]
+        },
+        {
+          "type": "iconList",
+          "items": [
+            {
+              "icon": "AlertCircle",
+              "text": "Abnormal cervical smear results"
+            },
+            {
+              "icon": "AlertCircle",
+              "text": "Cervix looks unusual during an examination"
+            },
+            { "icon": "AlertCircle", "text": "Positive HPV test" },
+            {
+              "icon": "AlertCircle",
+              "text": "Follow-up of previous cervical cell changes"
+            }
+          ]
+        },
+
+        {
+          "type": "heading",
+          "text": "When to Contact Your Doctor",
+          "level": 3,
+          "icon": "AlertCircle"
+        },
+        {
+          "type": "text",
+          "value": "After a colposcopy, mild spotting and cramps are normal. Seek medical advice if you have:"
+        },
+        {
+          "type": "bulletList",
+          "items": [
+            "Heavy bleeding (soaking a pad every hour)",
+            "Severe or worsening abdominal pain",
+            "Fever or chills",
+            "Foul-smelling discharge",
+            "Feeling unwell or symptoms getting worse"
+          ]
+        },
+        {
+          "type": "text",
+          "value": "Most people recover without problems, but it’s always best to get checked if you’re concerned."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "buttonLabel": "How It's Done",
+      "buttonIcon": "Stethoscope",
+      "cardTitle": "How a Colposcopy Is Done",
+      "cardTitleIcon": "Stethoscope",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Step-by-step walkthrough of the procedure"
+        },
+        {
+          "type": "numberedSteps",
+          "steps": [
+            "Positioning — You'll lie on an examination table, just like during a smear test",
+            "Speculum Insertion — A speculum is gently inserted to hold the vagina open",
+            "Solution Application — A vinegar-like solution is applied to highlight abnormal cells",
+            "Examination — The colposcope examines your cervix closely from outside your body. Sometimes the vagina or vulva may also be checked if needed."
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Good to Know",
+          "description": "The colposcope stays outside your body — it does not go inside the vagina. Think of it like a special microscope that gives your doctor a better view.",
+          "icon": "Info"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "buttonLabel": "About Biopsies",
+      "buttonIcon": "FileText",
+      "cardTitle": "Will I Need a Biopsy?",
+      "cardTitleIcon": "FileText",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "If your doctor sees anything unusual, they may take a small tissue sample (biopsy) immediately during your colposcopy."
+        },
+        {
+          "type": "heading",
+          "text": "What to expect during a biopsy",
+          "level": 3,
+          "icon": "FileText"
+        },
+        {
+          "type": "grid",
+          "columns": 3,
+          "items": [
+            {
+              "icon": "Zap",
+              "title": "Quick procedure",
+              "description": "Takes just a few seconds"
+            },
+            {
+              "icon": "AlertCircle",
+              "title": "Mild discomfort",
+              "description": "May cause a brief pinch or cramp"
+            },
+            {
+              "icon": "TestTube",
+              "title": "Lab analysis",
+              "description": "The sample is sent to a laboratory to check for abnormal or precancerous cell changes"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Why might I need a biopsy",
+          "level": 3,
+          "icon": "HelpCircle"
+        },
+        {
+          "type": "text",
+          "value": "A biopsy helps confirm whether abnormal, precancerous, or cancerous cells are present. It's the most accurate way to determine exactly what type of cells your doctor is seeing and plan the best treatment if needed."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "buttonLabel": "Understanding Results",
+      "buttonIcon": "CheckCircle",
+      "cardTitle": "What the Results Mean",
+      "cardTitleIcon": "CheckCircle",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "heading",
+          "text": "Normal Results",
+          "level": 3,
+          "icon": "CheckCircle"
+        },
+        {
+          "type": "text",
+          "value": "If no abnormal cells are found:"
+        },
+        {
+          "type": "bulletList",
+          "items": [
+            "No immediate treatment needed",
+            "Continue regular screening"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Abnormal Results",
+          "level": 3,
+          "icon": "AlertCircle"
+        },
+        {
+          "type": "text",
+          "value": "If abnormal cells are found, treatment options include:"
+        },
+        {
+          "type": "bulletList",
+          "items": ["Cone biopsy", "LEEP procedure"]
+        },
+        {
+          "type": "heading",
+          "text": "Treatment Options Explained",
+          "level": 3,
+          "icon": "Stethoscope"
+        },
+        {
+          "type": "accordion",
+          "items": [
+            {
+              "title": "Cone Biopsy",
+              "content": "Removes a cone-shaped piece of tissue from the cervix to remove abnormal cells and allow detailed laboratory testing"
+            },
+            {
+              "title": "LEEP (Loop Electrosurgical Excision Procedure)",
+              "content": "Removes abnormal cells using a heated wire loop. Quick and effective outpatient procedure."
+            }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Key Point",
+          "description": "Key Point Treating abnormal cervical cells early greatly reduces the risk of cervical cancer developing. These treatments are very effective, and follow-up checks help make sure the cells have been successfully treated.",
+          "icon": "Shield"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "buttonLabel": "After Your Procedure",
+      "buttonIcon": "Heart",
+      "cardTitle": "After Your Colposcopy",
+      "cardTitleIcon": "Heart",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "heading",
+          "text": "What's Normal",
+          "level": 3,
+          "icon": "CheckCircle"
+        },
+        {
+          "type": "grid",
+          "columns": 3,
+          "items": [
+            { "icon": "CheckCircle", "title": "Mild spotting for a few days" },
+            { "icon": "CheckCircle", "title": "Light cramping" },
+            { "icon": "CheckCircle", "title": "Slight discharge" }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Care Instructions",
+          "level": 3,
+          "icon": "Heart"
+        },
+        {
+          "type": "iconList",
+          "items": [
+            {
+              "icon": "CheckCircle",
+              "text": "Take paracetamol or ibuprofen for discomfort (if safe for you)"
+            },
+            {
+              "icon": "Clock",
+              "text": "Avoid using tampons until any bleeding or discharge has stopped"
+            },
+            {
+              "icon": "Clock",
+              "text": "Avoid vaginal sex until bleeding or discharge has stopped"
+            },
+            {
+              "icon": "Clock",
+              "text": "Use sanitary pads instead of tampons if needed"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "When to Contact Your Doctor",
+          "level": 3,
+          "icon": "AlertCircle"
+        },
+        {
+          "type": "text",
+          "value": "Call your GP, colposcopy clinic, or NHS 111 if you have:"
+        },
+        {
+          "type": "bulletList",
+          "items": [
+            "A high temperature (38°C or above)",
+            "Heavy bleeding (soaking a pad every hour) or bleeding that is getting worse",
+            "Severe or worsening abdominal pain not relieved by painkillers",
+            "Foul-smelling or unusual vaginal discharge",
+            "Feeling generally unwell"
+          ]
+        },
+        {
+          "type": "text",
+          "value": "These may be signs of infection or complications, which are uncommon."
+        }
+      ]
+    }
+  ]
+}

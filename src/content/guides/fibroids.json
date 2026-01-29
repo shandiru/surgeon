@@ -1,0 +1,318 @@
+{
+  "slug": "fibroids",
+  "title": "Understanding Fibroids",
+  "subtitle": "What it is, why it's done, and what to expect",
+  "tag": "Medical Education",
+  "sections": [
+    {
+      "id": 1,
+      "buttonLabel": "What Are Fibroids",
+      "buttonIcon": "Info",
+      "cardTitle": "What Are Fibroids?",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Fibroids are benign (non-cancerous) growths that develop in the walls of the womb (uterus)."
+        },
+        {
+          "type": "bulletList",
+          "items": [
+            "Made of muscle and fibrous tissue",
+            "Can be single or multiple",
+            "Can vary greatly in size",
+            "Common and often treatable"
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Key Facts",
+          "description": "Fibroids are not cancer, and it is rare for a cancer of the uterus to be mistaken for a fibroid.",
+          "icon": "Info"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "buttonLabel": "Symptoms of Fibroids",
+      "buttonIcon": "Activity",
+      "cardTitle": "Symptoms of Fibroids",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Many people with fibroids have no symptoms. Others may experience:"
+        },
+        {
+          "type": "heading",
+          "text": "Physical Symptoms",
+          "level": 4
+        },
+        {
+          "type": "bulletList",
+          "items": [
+            "Heavy or painful periods",
+            "Anaemia caused by heavy bleeding",
+            "Pelvic pain or pressure",
+            "Pain or discomfort during sex",
+            "A feeling of abdominal fullness or a swollen tummy",
+            "Lower back pain"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Bladder & Bowel Symptoms",
+          "level": 4
+        },
+        {
+          "type": "bulletList",
+          "items": [
+            "Frequent need to pass urine",
+            "Difficulty emptying the bladder",
+            "Constipation or bloating"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Reproductive Effects",
+          "level": 4
+        },
+        {
+          "type": "bulletList",
+          "items": [
+            "Difficulty becoming pregnant in some cases",
+            "Increased risk of miscarriage in certain situations"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "General Effects",
+          "level": 4
+        },
+        {
+          "type": "bulletList",
+          "items": ["Tiredness, dizziness, or weakness related to anaemia"]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "buttonLabel": "Types of Fibroids",
+      "buttonIcon": "AlertTriangle",
+      "cardTitle": "Types of Fibroids",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "It’s possible to have more than one type at the same time."
+        },
+        {
+          "type": "grid",
+          "columns": 2,
+          "items": [
+            {
+              "title": "Submucosal Fibroids",
+              "description": "Grow just beneath the lining of the womb and may bulge into the uterine cavity. They can sometimes grow on a stalk."
+            },
+            {
+              "title": "Intramural Fibroids",
+              "description": "Grow within the muscle wall of the womb. These are the most common type."
+            },
+            {
+              "title": "Subserosal Fibroids",
+              "description": "Grow on the outer wall of the womb and may press on nearby organs if large."
+            },
+            {
+              "title": "Pedunculated Fibroids",
+              "description": "Fibroids that grow on a stalk. These can develop either inside the womb (submucosal) or on the outside surface (subserosal)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "buttonLabel": "Causes & Risk Factors",
+      "buttonIcon": "Eye",
+      "cardTitle": "Causes & Risk Factors",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "The exact cause of fibroids is not fully understood, but certain factors are linked to a higher chance of developing them:"
+        },
+        {
+          "type": "bulletList",
+          "items": [
+            "A family history of fibroids",
+            "Being of African or Caribbean background",
+            "Overweight or obesity",
+            "Starting periods at a younger age",
+            "Hormonal influences (fibroids are sensitive to oestrogen and progesterone)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "buttonLabel": "Fertility & Pregnancy",
+      "buttonIcon": "ScanSearch",
+      "cardTitle": "Fertility & Pregnancy",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "heading",
+          "text": "Potential Effects",
+          "level": 4
+        },
+        {
+          "type": "bulletList",
+          "items": [
+            "Fibroids can sometimes make it more difficult to become pregnant, depending on their size and location",
+            "Some types of fibroids may increase the risk of miscarriage",
+            "Fibroids may be linked to a higher chance of preterm birth in some pregnancies"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Positive Outlook",
+          "level": 4
+        },
+        {
+          "type": "bulletList",
+          "items": [
+            "Many people with fibroids have healthy pregnancies",
+            "Extra monitoring during pregnancy may be offered if needed"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "buttonLabel": "Emotional Wellbeing",
+      "buttonIcon": "Syringe",
+      "cardTitle": "Emotional Wellbeing",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Fibroids can affect more than just your body:"
+        },
+        {
+          "type": "bulletList",
+          "items": [
+            "Tiredness or anaemia can lower energy levels",
+            "Ongoing pain and heavy bleeding can affect mood and daily life",
+            "Abdominal swelling can impact confidence and body image"
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Support Available",
+          "description": "It’s okay to ask for emotional support or counselling. Living with long-term symptoms can be challenging, and support is available.",
+          "icon": "Info"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "buttonLabel": "Treatment Options",
+      "buttonIcon": "ShieldCheck",
+      "cardTitle": "Treatment Options",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Treatment depends on your symptoms, fibroid size and location, and future pregnancy plans."
+        },
+        {
+          "type": "heading",
+          "text": "Medication",
+          "level": 4
+        },
+        {
+          "type": "accordion",
+          "items": [
+            {
+              "title": "Anti-inflammatory Medicines",
+              "content": "Examples include ibuprofen. Help relieve pain but do not treat fibroids themselves."
+            },
+            {
+              "title": "Tranexamic Acid",
+              "content": "Can reduce heavy menstrual bleeding."
+            },
+            {
+              "title": "Hormonal Treatments",
+              "content": "Options such as the combined pill, hormonal coil (IUS), or progestogen tablets can help regulate periods and reduce bleeding."
+            },
+            {
+              "title": "GnRH Analogues",
+              "content": "May temporarily shrink fibroids and are sometimes used before surgery or for short-term symptom control."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Procedures & Surgery",
+          "level": 4
+        },
+        {
+          "type": "accordion",
+          "items": [
+            {
+              "title": "Myomectomy",
+              "content": "Removes fibroids while preserving the womb. May be suitable if future pregnancy is desired."
+            },
+            {
+              "title": "Hysterectomy",
+              "content": "Removal of the womb. Considered when symptoms are severe and other treatments have not helped. This is a permanent solution for fibroid-related bleeding but is major surgery."
+            },
+            {
+              "title": "Transcervical Resection of Fibroids (TCRF)",
+              "content": "Removes submucosal fibroids through the cervix using a hysteroscope."
+            },
+            {
+              "title": "Uterine Artery Embolisation (UAE)",
+              "content": "A radiology procedure that blocks blood supply to fibroids, causing them to shrink."
+            }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Key Point",
+          "description": "Treatment choice depends on symptoms, fibroid type, and fertility goals. Your healthcare team will discuss the benefits and risks of each option.",
+          "icon": "Info"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "buttonLabel": "Self-Care Tips",
+      "buttonIcon": "BookmarkCheck",
+      "cardTitle": "Self-Care Tips",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "heading",
+          "text": "Self-Care Tips",
+          "level": 4
+        },
+        {
+          "type": "bulletList",
+          "items": [
+            "Track your periods, bleeding, and pain to help monitor symptoms",
+            "If you have anaemia, eating iron-rich foods (such as leafy greens, beans, and lean red meat) may help — but medical treatment or supplements may still be needed",
+            "Stay active, manage stress, and rest when your symptoms are worse",
+            "Speak to your doctor before starting iron supplements, as doses should be guided by blood tests"
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Support & Follow-Up",
+          "description": "Regular follow-up may be arranged to monitor your symptoms and fibroids\n\nYour treatment plan can be reviewed and adjusted if your needs change\n\nSupport is available — you do not have to manage symptoms alone",
+          "icon": "Star"
+        }
+      ]
+    }
+  ]
+}

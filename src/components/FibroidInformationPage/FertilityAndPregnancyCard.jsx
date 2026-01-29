@@ -1,15 +1,14 @@
-'use client'
+"use client";
 
-import { Heart } from "lucide-react"
+import { Heart } from "lucide-react";
 
 export default function FertilityAndPregnancyCard() {
-  const pink = "#FFC5D3"
-  const deepPink = "#FF4B8B"
+  const pink = "#FFC5D3";
+  const deepPink = "#FF4B8B";
 
   return (
     <section className="py-16 px-4 md:px-6 bg-white">
       <div className="max-w-5xl mx-auto bg-white text-[#212529] flex flex-col gap-6 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 p-8">
-
         {/* Header */}
         <div className="flex items-center gap-3 mb-4">
           <Heart className="text-3xl" style={{ color: deepPink }} />
@@ -28,7 +27,7 @@ export default function FertilityAndPregnancyCard() {
             <h4 className="font-semibold mb-3 text-lg" style={{ color: deepPink }}>
               Potential Challenges
             </h4>
-            <ul className="space-y-2 text-sm text-gray-700 leading-relaxed">
+            <ul className="space-y-2 text-sm text-black leading-relaxed">
               <li>• Can sometimes make it harder to get pregnant</li>
               <li>• May slightly increase risk of miscarriage</li>
               <li>• May increase risk of preterm birth</li>
@@ -43,7 +42,7 @@ export default function FertilityAndPregnancyCard() {
             <h4 className="font-semibold mb-3 text-lg" style={{ color: deepPink }}>
               Positive Outlook
             </h4>
-            <ul className="space-y-2 text-sm text-gray-700 leading-relaxed">
+            <ul className="space-y-2 text-sm text-black leading-relaxed">
               <li>• Most women with fibroids can still have healthy pregnancies</li>
               <li>• Extra monitoring during pregnancy available</li>
             </ul>
@@ -51,5 +50,5 @@ export default function FertilityAndPregnancyCard() {
         </div>
       </div>
     </section>
-  )
+  );
 }

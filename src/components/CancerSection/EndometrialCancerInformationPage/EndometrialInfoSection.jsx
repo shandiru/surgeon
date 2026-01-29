@@ -1,35 +1,34 @@
-'use client'
+"use client";
 
-import React, { useEffect } from 'react'
-import AOS from 'aos'
-import 'aos/dist/aos.css'  
-import { FiPhone } from 'react-icons/fi'
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { FiPhone } from "react-icons/fi";
 
 export default function EndometrialInfoSection() {
-  const pink = '#FFC5D3'      // main pink
-  const deepPink = '#FF4B8B'  // brand text color
-  const pinkHover = '#f5a9bd' // hover shade
-  const pinkActive = '#e191af' // active shade
+  const pink = "#FFC5D3"; // main pink
+  const deepPink = "#FF4B8B"; // brand text color
+  const pinkHover = "#f5a9bd"; // hover shade
+  const pinkActive = "#e191af"; // active shade
 
   useEffect(() => {
     AOS.init({
       duration: 1000,
       once: true,
-    })
-  }, [])
+    });
+  }, []);
 
   return (
-    <section className="py-12 bg-[#FFE6EA]" data-aos="fade-up">
+    <section className="py-12 bg-light-pink-1" data-aos="fade-up">
       <div className="container px-4 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
-        
         {/* Content Section */}
         <div className="flex-1 text-center md:text-left" data-aos="fade-left">
           <h2 className="text-4xl font-bold mb-4" style={{ color: deepPink }}>
             Endometrial Cancer Information
           </h2>
-          <p className="text-lg text-gray-700 max-w-2xl mx-auto md:mx-0 mb-8">
-            Early detection and understanding are key to successful treatment. Learn about
-            symptoms, diagnosis, and treatment options for endometrial cancer.
+          <p className="text-lg text-black max-w-2xl mx-auto md:mx-0 mb-8">
+            Early detection and understanding are key to successful treatment. Learn about symptoms,
+            diagnosis, and treatment options for endometrial cancer.
           </p>
 
           <button
@@ -38,7 +37,7 @@ export default function EndometrialInfoSection() {
                        hover:scale-105 hover:shadow-lg active:scale-95 active:shadow-md"
             style={{
               backgroundColor: pink,
-                  // ✅ white text so it's always visible
+              // ✅ white text so it's always visible
               color: deepPink,
             }}
             onMouseOver={(e) => (e.currentTarget.style.backgroundColor = pinkHover)}
@@ -63,5 +62,5 @@ export default function EndometrialInfoSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

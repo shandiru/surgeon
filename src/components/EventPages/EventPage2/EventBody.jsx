@@ -1,5 +1,15 @@
-import React, { useState } from 'react';
-import { MapPin, Phone, Mail, Globe, Star, Share2, Calendar, ChevronDown, ChevronUp } from 'lucide-react';
+import React, { useState } from "react";
+import {
+  MapPin,
+  Phone,
+  Mail,
+  Globe,
+  Star,
+  Share2,
+  Calendar,
+  ChevronDown,
+  ChevronUp,
+} from "lucide-react";
 
 const EventDetail = () => {
   const [activeOrganizer, setActiveOrganizer] = useState(0);
@@ -13,7 +23,7 @@ const EventDetail = () => {
       location: "484 Ellis St, Francisco, CA 94102",
       email: "example@gmail.com",
       phone: "89+97872978129",
-      website: "www.yourwebsite.com"
+      website: "www.yourwebsite.com",
     },
     {
       name: "Mark Joe",
@@ -22,7 +32,7 @@ const EventDetail = () => {
       location: "484 Ellis St, Francisco, CA 94102",
       email: "example@gmail.com",
       phone: "89+97872978129",
-      website: "www.yourwebsite.com"
+      website: "www.yourwebsite.com",
     },
     {
       name: "Willma Mark",
@@ -31,14 +41,26 @@ const EventDetail = () => {
       location: "484 Ellis St, Francisco, CA 94102",
       email: "example@gmail.com",
       phone: "89+97872978129",
-      website: "www.yourwebsite.com"
-    }
+      website: "www.yourwebsite.com",
+    },
   ];
 
   const speakers = [
-    { name: "Annemijn Aarts", role: "The Netherlands", image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=300&h=300&fit=crop" },
-    { name: "Nadeem Abu-Rustum", role: "USA", image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop" },
-    { name: "Frederic Amant,", role: "The Netherlands", image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&h=300&fit=crop" }
+    {
+      name: "Annemijn Aarts",
+      role: "The Netherlands",
+      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=300&h=300&fit=crop",
+    },
+    {
+      name: "Nadeem Abu-Rustum",
+      role: "USA",
+      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop",
+    },
+    {
+      name: "Frederic Amant,",
+      role: "The Netherlands",
+      image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&h=300&fit=crop",
+    },
   ];
 
   const sponsors = [
@@ -47,7 +69,7 @@ const EventDetail = () => {
     "https://via.placeholder.com/200x80/EC4899/FFFFFF?text=Sponsor+3",
     "https://via.placeholder.com/200x80/10B981/FFFFFF?text=Sponsor+4",
     "https://via.placeholder.com/200x80/F59E0B/FFFFFF?text=Sponsor+5",
-    "https://via.placeholder.com/200x80/EF4444/FFFFFF?text=Sponsor+6"
+    "https://via.placeholder.com/200x80/EF4444/FFFFFF?text=Sponsor+6",
   ];
 
   const schedules = [
@@ -55,33 +77,37 @@ const EventDetail = () => {
       title: "Auditorium A",
       subtitle: "Introduction to WP",
       date: "Day 1 - 20 Nov 2020",
-      image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=300&h=300&fit=crop"
+      image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=300&h=300&fit=crop",
     },
     {
       title: "Auditorium B",
       subtitle: "Advanced Techniques",
       date: "Day 2 - 21 Nov 2020",
-      image: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=300&h=300&fit=crop"
-    }
+      image: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=300&h=300&fit=crop",
+    },
   ];
 
   const faqs = [
     {
       question: "Royal Park of America Produces",
-      answer: "Royal Park of America produces premium branded and private label lubricants for agriculture."
+      answer:
+        "Royal Park of America produces premium branded and private label lubricants for agriculture.",
     },
     {
       question: "Private label Lubricants",
-      answer: "Royal Park of America produces premium branded and private label lubricants for agriculture."
+      answer:
+        "Royal Park of America produces premium branded and private label lubricants for agriculture.",
     },
     {
       question: "Automotive, Fleet",
-      answer: "Royal Park of America produces premium branded and private label lubricants for agriculture."
+      answer:
+        "Royal Park of America produces premium branded and private label lubricants for agriculture.",
     },
     {
       question: "Industrial Applications",
-      answer: "Royal Park of America produces premium branded and private label lubricants for agriculture."
-    }
+      answer:
+        "Royal Park of America produces premium branded and private label lubricants for agriculture.",
+    },
   ];
 
   return (
@@ -97,27 +123,29 @@ const EventDetail = () => {
                   Annual Scientific Meeting – Bristol 2026
                 </h1>
                 <div className="flex flex-wrap items-center gap-4 mb-6">
-                  <span className="inline-flex items-center px-4 py-2 bg-[#FF4B8B]/20 text-[#FF4B8B] rounded-full font-semibold text-sm">
+                  <span className="inline-flex items-center px-4 py-2 bg-primary-pink/20 text-primary-pink rounded-full font-semibold text-sm">
                     <Calendar className="w-4 h-4 mr-2" />
-                   24th and 26th June 2026.
+                    24th and 26th June 2026.
                   </span>
-                  <span className="text-gray-600 font-medium">British Gynaecology Cancer Society</span>
+                  <span className="text-black/90 font-medium">
+                    British Gynaecology Cancer Society
+                  </span>
                 </div>
 
                 {/* Event Info Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                   <div className="flex items-start space-x-3">
-                    <MapPin className="w-5 h-5 text-[#FF4B8B] flex-shrink-0 mt-1" />
+                    <MapPin className="w-5 h-5 text-primary-pink flex-shrink-0 mt-1" />
                     <div>
-                      <p className="font-semibold text-gray-700">Location</p>
-                      <p className="text-gray-600">London and Birmingham</p>
+                      <p className="font-semibold text-black">Location</p>
+                      <p className="text-black/90">London and Birmingham</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <Phone className="w-5 h-5 text-[#FF4B8B] flex-shrink-0 mt-1" />
+                    <Phone className="w-5 h-5 text-primary-pink flex-shrink-0 mt-1" />
                     <div>
-                      <p className="font-semibold text-gray-700">Phone</p>
-                      <p className="text-gray-600">(+0064) 725 4143 68</p>
+                      <p className="font-semibold text-black">Phone</p>
+                      <p className="text-black/90">(+0064) 725 4143 68</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
@@ -127,27 +155,28 @@ const EventDetail = () => {
                       ))}
                       <Star className="w-4 h-4 text-yellow-400" />
                     </div>
-                    <span className="text-gray-600">563 reviews</span>
+                    <span className="text-black/90">563 reviews</span>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <Globe className="w-5 h-5 text-[#FF4B8B] flex-shrink-0 mt-1" />
+                    <Globe className="w-5 h-5 text-primary-pink flex-shrink-0 mt-1" />
                     <div>
-                      <p className="font-semibold text-gray-700">Website</p>
-                      <p className="text-gray-600">bgcs.org.uk</p>
+                      <p className="font-semibold text-black">Website</p>
+                      <p className="text-black/90">bgcs.org.uk</p>
                     </div>
                   </div>
                 </div>
 
                 {/* Action Buttons */}
                 <div className="flex flex-wrap gap-4">
-                  <button className="flex items-center px-6 py-3 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-xl font-semibold transition-all transform hover:scale-105">
+                  <button className="flex items-center px-6 py-3 bg-gray-100 hover:bg-gray-200 text-black rounded-xl font-semibold transition-all transform hover:scale-105">
                     <Share2 className="w-5 h-5 mr-2" />
                     Share
                   </button>
                   <a
-                    href='https://www.bgcs.org.uk/about-us/join/'
-                    target='_blank'
-                    className="flex-1 md:flex-none px-8 py-3 bg-gradient-to-r from-[#FF4B8B] to-[#FF4B8B] hover:bg-[#FF4B8B]/20 text-white rounded-xl font-semibold transition-all transform hover:scale-105 shadow-lg">
+                    href="https://www.bgcs.org.uk/about-us/join/"
+                    target="_blank"
+                    className="flex-1 md:flex-none px-8 py-3 bg-gradient-to-r from-primary-pink to-light-pink-2 hover:bg-primary-pink text-white rounded-xl font-semibold transition-all transform hover:scale-105 shadow-lg"
+                  >
                     Join Event
                   </a>
                 </div>
@@ -156,22 +185,28 @@ const EventDetail = () => {
 
             {/* About Event */}
             <div className="bg-white rounded-2xl shadow-lg p-6 lg:p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4 border-b-2 border-[#FF4B8B] pb-2 inline-block">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4 border-b-2 border-primary-pink pb-2 inline-block">
                 About Event
               </h2>
-              <div className="space-y-4 text-gray-700 leading-relaxed">
+              <div className="space-y-4 text-black leading-relaxed">
                 <p>
-                  The British Gynaecological Cancer Society (BGCS) is the professional home of health providers working and researching the area of gynaecological cancers.
+                  The British Gynaecological Cancer Society (BGCS) is the professional home of
+                  health providers working and researching the area of gynaecological cancers.
                 </p>
                 <p>
-                  Our members consist of medical practitioners, clinical nurse specialists and other allied professionals, including scientists who want to improve the outcome of all effected by gynaecological cancers. We represent trainees, nurses, unit leads, medical and clinical oncologists, gynaecological oncologists, pathologists and radiologists. Our membership is steadily increasing with at present 700 members and 220 members regularly attend our annual conference.
+                  Our members consist of medical practitioners, clinical nurse specialists and other
+                  allied professionals, including scientists who want to improve the outcome of all
+                  effected by gynaecological cancers. We represent trainees, nurses, unit leads,
+                  medical and clinical oncologists, gynaecological oncologists, pathologists and
+                  radiologists. Our membership is steadily increasing with at present 700 members
+                  and 220 members regularly attend our annual conference.
                 </p>
               </div>
             </div>
 
             {/* Speakers */}
             <div className="bg-white rounded-2xl shadow-lg p-6 lg:p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-[#FF4B8B] pb-2 inline-block">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-primary-pink pb-2 inline-block">
                 Who's Speaking?
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -181,12 +216,12 @@ const EventDetail = () => {
                       <img
                         src={speaker.image}
                         alt={speaker.name}
-                        className="w-32 h-32 rounded-full mx-auto object-cover ring-4 ring-gray-100 group-hover:ring-[#FF4B8B] transition-all"
+                        className="w-32 h-32 rounded-full mx-auto object-cover ring-4 ring-gray-100 group-hover:ring-primary-pink transition-all"
                       />
-                      <div className="absolute inset-0 rounded-full bg-[#FF4B8B] opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                      <div className="absolute inset-0 rounded-full bg-primary-pink opacity-0 group-hover:opacity-10 transition-opacity"></div>
                     </div>
                     <h3 className="text-lg font-bold text-gray-900">{speaker.name}</h3>
-                    <p className="text-sm text-gray-600">{speaker.role}</p>
+                    <p className="text-sm text-black/90">{speaker.role}</p>
                   </div>
                 ))}
               </div>
@@ -194,7 +229,7 @@ const EventDetail = () => {
 
             {/* Location */}
             <div className="bg-white rounded-2xl shadow-lg p-6 lg:p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-[#FF4B8B] pb-2 inline-block">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-primary-pink pb-2 inline-block">
                 Location
               </h2>
               <div className="rounded-xl overflow-hidden mb-6 h-64 lg:h-96 bg-gray-200">
@@ -214,11 +249,14 @@ const EventDetail = () => {
                   { icon: MapPin, text: "484 Ellis St, San Francisco, CA 94102, United States" },
                   { icon: Phone, text: "+61 2 8236 9200" },
                   { icon: Mail, text: "administrator@bgcs.org.uk" },
-                  { icon: Globe, text: "bgcs.org.uk" }
+                  { icon: Globe, text: "bgcs.org.uk" },
                 ].map((item, index) => (
-                  <div key={index} className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
-                    <item.icon className="w-5 h-5 text-[#FF4B8B] flex-shrink-0" />
-                    <span className="text-gray-700 text-sm">{item.text}</span>
+                  <div
+                    key={index}
+                    className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg"
+                  >
+                    <item.icon className="w-5 h-5 text-primary-pink flex-shrink-0" />
+                    <span className="text-black text-sm">{item.text}</span>
                   </div>
                 ))}
               </div>
@@ -226,7 +264,7 @@ const EventDetail = () => {
 
             {/* Sponsors */}
             <div className="bg-white rounded-2xl shadow-lg p-6 lg:p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-[#FF4B8B] pb-2 inline-block">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-primary-pink pb-2 inline-block">
                 Our Sponsors
               </h2>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4 lg:gap-6">
@@ -243,26 +281,29 @@ const EventDetail = () => {
 
             {/* FAQs */}
             <div className="bg-white rounded-2xl shadow-lg p-6 lg:p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-[#FF4B8B] pb-2 inline-block">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-primary-pink pb-2 inline-block">
                 FAQ's
               </h2>
               <div className="space-y-3">
                 {faqs.map((faq, index) => (
-                  <div key={index} className="border border-[#FF4B8B]/50 rounded-xl overflow-hidden">
+                  <div
+                    key={index}
+                    className="border border-primary-pink/50 rounded-xl overflow-hidden"
+                  >
                     <button
                       onClick={() => setOpenFaq(openFaq === index ? -1 : index)}
-                      className="w-full flex items-center justify-between p-4 bg-[#FF4B8B]/20 hover:bg-[#FF4B8B] transition-all"
+                      className="w-full flex items-center justify-between p-4 bg-primary-pink/20 hover:bg-primary-pink transition-all"
                     >
                       <h3 className="text-lg font-semibold text-gray-900">{faq.question}</h3>
                       {openFaq === index ? (
-                        <ChevronUp className="w-5 h-5 text-[#FF4B8B]" />
+                        <ChevronUp className="w-5 h-5 text-primary-pink" />
                       ) : (
                         <ChevronDown className="w-5 h-5 text-black" />
                       )}
                     </button>
                     {openFaq === index && (
                       <div className="p-4 bg-white">
-                        <p className="text-gray-700">{faq.answer}</p>
+                        <p className="text-black">{faq.answer}</p>
                       </div>
                     )}
                   </div>
@@ -275,7 +316,7 @@ const EventDetail = () => {
           <div className="lg:col-span-1 space-y-6">
             {/* Event Host */}
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden sticky top-6">
-              <div className="bg-gradient-to-r from-[#FF4B8B] to-[#FF4B8B] p-4">
+              <div className="bg-gradient-to-r from-primary-pink to-light-pink-2 p-4">
                 <h2 className="text-xl font-bold text-white">Who Host this Event</h2>
               </div>
               <div className="p-6">
@@ -284,13 +325,13 @@ const EventDetail = () => {
                     <img
                       src={organizers[activeOrganizer].image}
                       alt={organizers[activeOrganizer].name}
-                      className="w-20 h-20 rounded-full object-cover ring-4 ring-[#FF4B8B]/20"
+                      className="w-20 h-20 rounded-full object-cover ring-4 ring-primary-pink"
                     />
                     <div>
                       <h3 className="text-xl font-bold text-gray-900">
                         {organizers[activeOrganizer].name}
                       </h3>
-                      <p className="text-sm text-[#FF4B8B]">
+                      <p className="text-sm text-primary-pink">
                         Posted {organizers[activeOrganizer].postedDays} days ago
                       </p>
                     </div>
@@ -300,11 +341,11 @@ const EventDetail = () => {
                       { icon: MapPin, text: organizers[activeOrganizer].location },
                       { icon: Mail, text: organizers[activeOrganizer].email },
                       { icon: Phone, text: organizers[activeOrganizer].phone },
-                      { icon: Globe, text: organizers[activeOrganizer].website }
+                      { icon: Globe, text: organizers[activeOrganizer].website },
                     ].map((item, index) => (
                       <div key={index} className="flex items-start space-x-3">
-                        <item.icon className="w-5 h-5 text-[#FF4B8B] flex-shrink-0 mt-0.5" />
-                        <span className="text-sm text-gray-700">{item.text}</span>
+                        <item.icon className="w-5 h-5 text-primary-pink flex-shrink-0 mt-0.5" />
+                        <span className="text-sm text-black">{item.text}</span>
                       </div>
                     ))}
                   </div>
@@ -316,8 +357,8 @@ const EventDetail = () => {
                       onClick={() => setActiveOrganizer(index)}
                       className={`w-14 h-14 rounded-full overflow-hidden ring-2 transition-all ${
                         activeOrganizer === index
-                          ? 'ring-[#FF4B8B] scale-110'
-                          : 'ring-gray-200 hover:ring-[#FF4B8B]/50'
+                          ? "ring-[#FF4B8B] scale-110"
+                          : "ring-gray-200 hover:ring-[#FF4B8B]/50"
                       }`}
                     >
                       <img src={org.image} alt={org.name} className="w-full h-full object-cover" />
@@ -339,12 +380,12 @@ const EventDetail = () => {
                       <img
                         src={schedule.image}
                         alt={schedule.title}
-                        className="w-32 h-32 rounded-full mx-auto object-cover ring-4 ring-gray-100 group-hover:ring-[#FF4B8B] transition-all"
+                        className="w-32 h-32 rounded-full mx-auto object-cover ring-4 ring-gray-100 group-hover:ring-primary-pink transition-all"
                       />
                     </div>
                     <h3 className="text-lg font-bold text-gray-900 mb-1">{schedule.title}</h3>
-                    <p className="text-sm text-gray-600 mb-2">{schedule.subtitle}</p>
-                    <span className="inline-block px-4 py-1 bg-[#FF4B8B]/20 text-[#FF4B8B] rounded-full text-sm font-semibold">
+                    <p className="text-sm text-black/90 mb-2">{schedule.subtitle}</p>
+                    <span className="inline-block px-4 py-1 bg-primary-pink/20 text-primary-pink rounded-full text-sm font-semibold">
                       {schedule.date}
                     </span>
                   </div>

@@ -1,13 +1,13 @@
-'use client';
+"use client";
 
-import React from 'react';
+import React from "react";
 
 export default function WhatAreOvarianCysts() {
   return (
     <div className="bg-[#FEE6EA] rounded-2xl shadow-xl mb-16 max-w-6xl mx-auto">
       {/* Header */}
-      <div className="bg-[#FEE6EA] border-b border-[#FF4B8B]/20 rounded-t-2xl px-8 py-6">
-        <div className="text-[#FF4B8B] font-bold text-3xl flex items-center gap-3">
+      <div className="bg-[#FEE6EA] border-b border-primary-pink rounded-t-2xl px-8 py-6">
+        <div className="text-primary-pink font-bold text-3xl flex items-center gap-3">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="28"
@@ -29,19 +29,19 @@ export default function WhatAreOvarianCysts() {
       </div>
 
       {/* Content */}
-      <div className="p-10 space-y-8 text-[#BB125B]">
+      <div className="p-10 space-y-8 text-primary-pink">
         <div className="grid md:grid-cols-2 gap-10">
           {/* Left Column */}
           <div className="space-y-5">
             <p className="text-lg leading-relaxed">
-              Ovarian cysts are fluid-filled sacs that form in or on the ovaries.
-              They are very common and usually form during ovulation.
+              Ovarian cysts are fluid-filled sacs that form in or on the ovaries. They are very
+              common and usually form during ovulation.
             </p>
             <div className="space-y-4">
               {[
-                'Most are harmless, painless, and go away on their own',
-                'Many women get at least one cyst every month without knowing',
-                'About 8% of premenopausal women develop larger cysts that may need treatment',
+                "Most are harmless, painless, and go away on their own",
+                "Many women get at least one cyst every month without knowing",
+                "About 8% of premenopausal women develop larger cysts that may need treatment",
               ].map((point, i) => (
                 <div key={i} className="flex items-start gap-3">
                   <svg
@@ -66,8 +66,8 @@ export default function WhatAreOvarianCysts() {
           </div>
 
           {/* Right Column - Note Box */}
-          <div className="bg-white rounded-xl p-8 border border-[#FF4B8B]/10 shadow-md">
-            <h4 className="font-semibold mb-4 flex items-center gap-2 text-[#FF4B8B] text-lg">
+          <div className="bg-white rounded-xl p-8 border border-primary-pink/10 shadow-md">
+            <h4 className="font-semibold mb-4 flex items-center gap-2 text-primary-pink text-lg">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="22"
@@ -85,10 +85,9 @@ export default function WhatAreOvarianCysts() {
               </svg>
               Important Note
             </h4>
-            <p className="text-base leading-relaxed text-[#BB125B]">
-              Ovarian cysts are less common after menopause — but are more
-              likely to be cancerous if they occur. Regular check-ups are
-              important.
+            <p className="text-base leading-relaxed text-primary-pink">
+              Ovarian cysts are less common after menopause — but are more likely to be cancerous if
+              they occur. Regular check-ups are important.
             </p>
           </div>
         </div>

@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import React from 'react';
+import React from "react";
 
 export default function OvarianCystSupportCard() {
   return (
-    <div className="flex flex-col gap-6 rounded-xl bg-gradient-to-r from-[#FEE6EA] to-[#FDE8F3] py-8 px-6 sm:px-8 shadow-lg hover:shadow-xl transition-all duration-300 max-w-3xl mx-auto text-[#BB125B]">
+    <div className="flex flex-col gap-6 rounded-xl bg-gradient-to-r from-[#FEE6EA] to-[#FDE8F3] py-8 px-6 sm:px-8 shadow-lg hover:shadow-xl transition-all duration-300 max-w-3xl mx-auto text-primary-pink">
       <div className="text-center">
         {/* Heart Icon */}
         <svg
@@ -23,7 +23,7 @@ export default function OvarianCystSupportCard() {
         </svg>
 
         {/* Heading */}
-        <h3 className="text-3xl font-bold mb-4 text-[#FF4B8B]">Remember</h3>
+        <h3 className="text-3xl font-bold mb-4 text-primary-pink">Remember</h3>
 
         {/* Paragraphs */}
         <div className="space-y-3 max-w-2xl mx-auto text-base leading-relaxed">
@@ -33,9 +33,7 @@ export default function OvarianCystSupportCard() {
         </div>
 
         {/* CTA Button */}
-        <button
-          className="inline-flex items-center justify-center gap-2 text-sm font-medium text-white bg-[#FF4B8B] hover:bg-[#e43d7a] rounded-md h-11 px-8 mt-6 shadow-md hover:shadow-lg transition-all"
-        >
+        <button className="inline-flex items-center justify-center gap-2 text-sm font-medium text-white bg-primary-pink hover:bg-[#e43d7a] rounded-md h-11 px-8 mt-6 shadow-md hover:shadow-lg transition-all">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="20"
@@ -57,7 +55,8 @@ export default function OvarianCystSupportCard() {
 
         {/* Footer Note */}
         <p className="text-sm text-[#7A3E59] mt-4">
-          If you have symptoms of ovarian cysts, book an appointment — you don&apos;t have to worry alone.
+          If you have symptoms of ovarian cysts, book an appointment — you don&apos;t have to worry
+          alone.
         </p>
       </div>
     </div>

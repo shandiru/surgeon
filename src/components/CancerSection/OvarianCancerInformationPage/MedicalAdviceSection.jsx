@@ -1,20 +1,20 @@
-'use client'
+"use client";
 
-import React, { useEffect } from 'react'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
-import { FiPhone } from 'react-icons/fi'
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { FiPhone } from "react-icons/fi";
 
 export default function MedicalAdviceSection() {
-  const pink = '#FFC5D3'
-  const deepPink = '#FF4B8B'
+  const pink = "#FFC5D3";
+  const deepPink = "#FF4B8B";
 
   useEffect(() => {
     AOS.init({
       duration: 1000,
       once: true,
-    })
-  }, [])
+    });
+  }, []);
 
   return (
     <section className="py-16 bg-white">
@@ -29,22 +29,21 @@ export default function MedicalAdviceSection() {
         </h4>
 
         {/* Paragraph */}
-        <p className="text-gray-700 mb-8 max-w-2xl mx-auto leading-relaxed">
-          This information is for educational purposes only. Always consult with
-          qualified healthcare professionals for personalized medical advice
-          and treatment options.
+        <p className="text-black mb-8 max-w-2xl mx-auto leading-relaxed">
+          This information is for educational purposes only. Always consult with qualified
+          healthcare professionals for personalized medical advice and treatment options.
         </p>
 
         {/* CTA Button */}
         <button
           type="button"
           className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full font-semibold text-white shadow-md transition-all duration-300 hover:shadow-lg hover:-translate-y-1 active:scale-95"
-          style={{ backgroundColor: pink , color: deepPink}}
+          style={{ backgroundColor: pink, color: deepPink }}
         >
           <FiPhone className="w-5 h-5" />
           Contact Your Healthcare Provider
         </button>
       </div>
     </section>
-  )
+  );
 }

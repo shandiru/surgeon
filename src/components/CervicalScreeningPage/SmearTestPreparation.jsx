@@ -4,17 +4,16 @@ export default function SmearTestPreparation() {
     <section className="py-16 bg-white rounded-xl">
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          
           {/* Left Card */}
           <div
-            className="bg-white text-[#FF4B8B] rounded-2xl shadow-md p-8 
+            className="bg-white text-primary-pink rounded-2xl shadow-md p-8 
                        transition duration-300 ease-in-out 
                        hover:scale-105 hover:-translate-y-2 hover:shadow-[0_8px_30px_rgba(176,59,102,0.25)]
                        active:scale-[0.98] active:shadow-lg cursor-pointer"
           >
             {/* Header */}
             <div className="flex items-center gap-3 mb-6">
-              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#ff97b3] shadow">
+              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-light-pink-2 shadow">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6 text-white"
@@ -33,11 +32,11 @@ export default function SmearTestPreparation() {
             </div>
 
             {/* Tips */}
-            <ul className="space-y-4 text-gray-700 leading-relaxed">
+            <ul className="space-y-4 text-black leading-relaxed">
               <li className="flex items-start gap-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 text-[#ff97b3] mt-1 flex-shrink-0"
+                  className="h-5 w-5 text-light-pink-2 mt-1 flex-shrink-0"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -52,7 +51,7 @@ export default function SmearTestPreparation() {
               <li className="flex items-start gap-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 text-[#ff97b3] mt-1 flex-shrink-0"
+                  className="h-5 w-5 text-light-pink-2 mt-1 flex-shrink-0"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -67,7 +66,7 @@ export default function SmearTestPreparation() {
               <li className="flex items-start gap-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 text-[#ff97b3] mt-1 flex-shrink-0"
+                  className="h-5 w-5 text-light-pink-2 mt-1 flex-shrink-0"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"

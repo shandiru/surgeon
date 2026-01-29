@@ -4,20 +4,16 @@ export default function SmearTestInfoCard() {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          
           {/* Left Content Card */}
           <div
             data-slot="card"
-            className="bg-white text-[#FF4B8B] flex flex-col gap-6 rounded-xl py-8 px-6 shadow-md 
+            className="bg-white text-primary-pink flex flex-col gap-6 rounded-xl py-8 px-6 shadow-md 
               transition duration-300 transform
               hover:scale-105 hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(176,59,102,0.25)]
               active:scale-105 active:-translate-y-2 active:shadow-[0_10px_30px_rgba(176,59,102,0.25)]"
           >
             {/* Card Header */}
-            <div
-              data-slot="card-header"
-              className="flex items-center gap-3 text-2xl font-bold"
-            >
+            <div data-slot="card-header" className="flex items-center gap-3 text-2xl font-bold">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="28"
@@ -28,7 +24,7 @@ export default function SmearTestInfoCard() {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="h-7 w-7 text-[#ff97b3]"
+                className="h-7 w-7 text-light-pink-2"
               >
                 <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
                 <circle cx="9" cy="7" r="4" />
@@ -42,16 +38,16 @@ export default function SmearTestInfoCard() {
             <div className="space-y-6">
               <span
                 data-slot="badge"
-                className="inline-flex items-center justify-center rounded-md bg-[#ff97b3] text-white px-3 py-1 font-medium text-sm w-fit"
+                className="inline-flex items-center justify-center rounded-md bg-light-pink-2 text-white px-3 py-1 font-medium text-sm w-fit"
               >
                 Recommended
               </span>
 
-              <ul className="space-y-4 text-base text-gray-700">
+              <ul className="space-y-4 text-base text-black">
                 <li className="flex items-start gap-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 mt-0.5 flex-shrink-0 text-[#ff97b3]"
+                    className="h-5 w-5 mt-0.5 flex-shrink-0 text-light-pink-2"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -65,7 +61,7 @@ export default function SmearTestInfoCard() {
                 <li className="flex items-start gap-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 mt-0.5 flex-shrink-0 text-[#ff97b3]"
+                    className="h-5 w-5 mt-0.5 flex-shrink-0 text-light-pink-2"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -80,7 +76,7 @@ export default function SmearTestInfoCard() {
                 <li className="flex items-start gap-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 mt-0.5 flex-shrink-0 text-[#ff97b3]"
+                    className="h-5 w-5 mt-0.5 flex-shrink-0 text-light-pink-2"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"

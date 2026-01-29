@@ -1,0 +1,231 @@
+{
+  "slug": "postcoital-bleeding",
+  "title": "Understanding Postcoital Bleeding",
+  "subtitle": "What it is, why it's done, and what to expect",
+  "tag": "Medical Education",
+  "sections": [
+    {
+      "id": 1,
+      "buttonLabel": "What Is Postcoital Bleeding",
+      "buttonIcon": "Info",
+      "cardTitle": "What Is Postcoital Bleeding?",
+      "cardTitleIcon": "Stethoscope",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Postcoital bleeding is vaginal bleeding that occurs after sexual intercourse. It is not part of a menstrual period."
+        },
+        {
+          "type": "bulletList",
+          "items": [
+            "The amount of bleeding can range from light spotting to heavier bleeding",
+            "It can happen after vaginal penetration, including sex toys or fingers",
+            "It can occur at any age"
+          ]
+        },
+        {
+          "type": "text",
+          "value": "Many causes are benign, but postcoital bleeding should be checked, especially if it happens more than once."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "buttonLabel": "Is It Painful?",
+      "buttonIcon": "Activity",
+      "cardTitle": "Is Postcoital Bleeding Painful?",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Postcoital bleeding is often painless, but some people may also experience discomfort or pain during or after sex."
+        },
+        {
+          "type": "text",
+          "value": "Pain may occur if the cause is related to:"
+        },
+        {
+          "type": "bulletList",
+          "items": [
+            "Vaginal dryness or thinning of tissues",
+            "Infection or inflammation",
+            "Conditions affecting the cervix or pelvis"
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Reminder",
+          "description": "If bleeding is accompanied by pain, pelvic discomfort, unusual discharge, or bleeding at other times, medical assessment is important.",
+          "icon": "Info"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "buttonLabel": "Where Does the Bleeding Come From?",
+      "buttonIcon": "AlertTriangle",
+      "cardTitle": "Where Does the Bleeding Come From?",
+      "cardTitleIcon": "Heart",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Postcoital bleeding usually comes from the vagina or cervix."
+        },
+        {
+          "type": "heading",
+          "text": "Vaginal Causes",
+          "level": 3,
+          "icon": "AlertTriangle"
+        },
+        {
+          "type": "text",
+          "value": "Bleeding may result from friction or small tears in the vaginal tissues."
+        },
+        { "type": "text", "value": "Possible reasons include:" },
+        {
+          "type": "bulletList",
+          "items": [
+            "Vaginal dryness",
+            "Lower oestrogen levels (e.g., after menopause or while breastfeeding)",
+            "Vigorous intercourse",
+            "Use of objects that may irritate the vaginal lining"
+          ]
+        },
+        {
+          "type": "infoBox",
+          "description": "Minor surface tears often settle on their own, but persistent pain or bleeding should be checked.",
+          "icon": "Heart"
+        },
+        {
+          "type": "heading",
+          "text": "Cervical Causes",
+          "level": 3,
+          "icon": "Heart"
+        },
+        {
+          "type": "text",
+          "value": "Bleeding from the cervix is often light but may still need assessment."
+        },
+        {
+          "type": "accordion",
+          "items": [
+            {
+              "title": "Cervical Ectropion",
+              "content": "Glandular cells from inside the cervix are present on the outer surface and can bleed easily with contact. This is common in younger people, during pregnancy, or with hormonal contraception."
+            },
+            {
+              "title": "Cervical Polyps",
+              "content": "Small, usually benign growths that can bleed when touched."
+            },
+            {
+              "title": "Cervicitis",
+              "content": "Inflammation of the cervix, sometimes due to infection (including STIs). Treatment depends on the cause."
+            },
+            {
+              "title": "Cervical Cancer",
+              "content": "Uncommon, but postcoital bleeding can be a symptom. Screening reduces risk, but no test completely eliminates it, so persistent bleeding should always be assessed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "buttonLabel": "When to Seek Urgent Help",
+      "buttonIcon": "Eye",
+      "cardTitle": "When to Seek Urgent Help",
+      "cardTitleIcon": "AlertTriangle",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "bulletList",
+          "items": [
+            "Very heavy bleeding (soaking through pads/tampons quickly or feeling dizzy or faint)",
+            "Bleeding after sex with severe pelvic pain, fever, or foul-smelling discharge",
+            "Signs of infection or feeling unwell with bleeding"
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "When to Arrange Prompt Medical Review",
+          "description": "Any bleeding after menopause\n\nBleeding after sex that happens more than once\n\nNew or unusual vaginal bleeding at any age",
+          "icon": "AlertTriangle"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "buttonLabel": "What to Track Before Your Appointment",
+      "buttonIcon": "ScanSearch",
+      "cardTitle": "What to Track Before Your Appointment",
+      "cardTitleIcon": "Calendar",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Bringing notes can help your doctor understand your symptoms more clearly."
+        },
+        {
+          "type": "grid",
+          "columns": 2,
+          "items": [
+            {
+              "title": "When the bleeding happens",
+              "description": "After every time you have sex or only sometimes, and where you are in your cycle (if still having periods)"
+            },
+            {
+              "title": "How much bleeding occurs",
+              "description": "Spotting, light bleeding, or heavier flow"
+            },
+            {
+              "title": "Pain during or after sex",
+              "description": "Where the pain is and how long it lasts"
+            },
+            {
+              "title": "Other symptoms",
+              "description": "Unusual discharge, odour, pelvic pain, fever, or urinary symptoms"
+            },
+            {
+              "title": "Contraception and medications",
+              "description": "Specially hormonal contraception, HRT, or blood thinners"
+            },
+            {
+              "title": "Recent changes",
+              "description": "New partner, recent STI risk, menopause status"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "buttonLabel": "Self-Care Tips",
+      "buttonIcon": "Syringe",
+      "cardTitle": "Self-Care Tips",
+      "cardTitleIcon": "Leaf",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "grid",
+          "columns": 2,
+          "items": [
+            {
+              "description": "Use a water-based lubricant if vaginal dryness is a problem"
+            },
+            {
+              "description": "Vaginal moisturisers or prescribed vaginal oestrogen can help dryness after menopause (speak to a clinician first)"
+            },
+            {
+              "description": "Avoid painful or very vigorous intercourse until you’ve been assessed"
+            },
+            {
+              "description": "Stay up to date with cervical screening when invited"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

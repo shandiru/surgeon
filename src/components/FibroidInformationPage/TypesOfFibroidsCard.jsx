@@ -1,15 +1,14 @@
-'use client'
+"use client";
 
-import { Microscope } from "lucide-react"
+import { Microscope } from "lucide-react";
 
 export default function TypesOfFibroidsCard() {
-  const pink = "#FFC5D3"
-  const deepPink = "#FF4B8B"
+  const pink = "#FFC5D3";
+  const deepPink = "#FF4B8B";
 
   return (
     <section className="py-16 px-6 bg-white">
       <div className="max-w-5xl mx-auto bg-white text-[#212529] flex flex-col gap-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 p-8">
-
         {/* Header */}
         <div>
           <div className="flex items-center gap-3 mb-3">
@@ -18,7 +17,7 @@ export default function TypesOfFibroidsCard() {
               Types of Fibroids
             </h2>
           </div>
-          <p className="text-gray-600 text-base">
+          <p className="text-black/90 text-base">
             It's possible to have more than one type at the same time:
           </p>
         </div>
@@ -33,7 +32,7 @@ export default function TypesOfFibroidsCard() {
             <h4 className="font-semibold mb-2 text-lg" style={{ color: deepPink }}>
               Submucosal fibroids
             </h4>
-            <p className="text-gray-800 text-sm leading-relaxed">
+            <p className="text-black text-sm leading-relaxed">
               Grow under the lining of the womb (may grow on a stalk)
             </p>
           </div>
@@ -46,7 +45,7 @@ export default function TypesOfFibroidsCard() {
             <h4 className="font-semibold mb-2 text-lg" style={{ color: deepPink }}>
               Intramural fibroids
             </h4>
-            <p className="text-gray-800 text-sm leading-relaxed">
+            <p className="text-black text-sm leading-relaxed">
               Grow within the wall of the womb (most common)
             </p>
           </div>
@@ -59,7 +58,7 @@ export default function TypesOfFibroidsCard() {
             <h4 className="font-semibold mb-2 text-lg" style={{ color: deepPink }}>
               Subserosal fibroids
             </h4>
-            <p className="text-gray-800 text-sm leading-relaxed">
+            <p className="text-black text-sm leading-relaxed">
               Grow on the outside wall of the womb (can press on nearby organs if large)
             </p>
           </div>
@@ -72,12 +71,12 @@ export default function TypesOfFibroidsCard() {
             <h4 className="font-semibold mb-2 text-lg" style={{ color: deepPink }}>
               Pedunculated fibroids
             </h4>
-            <p className="text-gray-800 text-sm leading-relaxed">
+            <p className="text-black text-sm leading-relaxed">
               Grow on a stalk, either inside or outside the womb
             </p>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }

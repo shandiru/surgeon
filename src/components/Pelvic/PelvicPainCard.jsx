@@ -1,9 +1,9 @@
-import React from 'react';
-import { Info, CheckCircle } from 'lucide-react'; // Import Lucide icons
+import React from "react";
+import { Info, CheckCircle } from "lucide-react"; // Import Lucide icons
 
 const PelvicPainCard = () => {
   return (
-    <div className="text-[#FF4B8B] bg-[#FF4B8B]/10 max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-xl  py-6 shadow-sm hover:z-50 transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:scale-105 active:scale-100">
+    <div className="text-primary-pink bg-primary-pink/10 max-w-5xl mx-auto mb-10 flex flex-col gap-6 rounded-xl  py-6 shadow-sm hover:z-50 transition-all duration-300 hover:bg-light-pink-1 hover:shadow-lg hover:border-light-pink-2 active:bg-light-pink-1 active:shadow-lg active:border-light-pink-2 hover:scale-105 active:scale-100">
       {/* Card Header */}
       <div className="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 pb-6">
         <div className="font-semibold flex items-center gap-3 text-2xl">
@@ -17,10 +17,12 @@ const PelvicPainCard = () => {
         <div className="grid md:grid-cols-2 gap-6">
           <div className="space-y-4">
             <p className="text-foreground leading-relaxed">
-              Pelvic pain is felt in the lower abdomen between the belly button and groin. It can come from the reproductive organs, bladder, bowel, muscles, or connective tissue.
+              Pelvic pain is felt in the lower abdomen between the belly button and groin. It can
+              come from the reproductive organs, bladder, bowel, muscles, or connective tissue.
             </p>
             <p className="text-foreground leading-relaxed">
-              Pelvic pain is different from vaginal or vulval pain (which affects the external genitals).
+              Pelvic pain is different from vaginal or vulval pain (which affects the external
+              genitals).
             </p>
           </div>
 

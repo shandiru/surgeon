@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React, { useEffect } from "react";
 import AOS from "aos";
@@ -21,9 +21,10 @@ export default function VaginalCancerInfo() {
       <div className="max-w-4xl mx-auto px-4 py-12">
         {/* Header */}
         <div className="text-center mb-10" data-aos="fade-up">
-          <h1 className="text-4xl font-bold mb-4 text-[#FF4B8B]">Vaginal Cancer Information</h1>
-          <p className="text-lg text-[#7a2f4f] max-w-2xl mx-auto">
-            Comprehensive guide covering symptoms, diagnosis, and treatment options for vaginal cancer
+          <h1 className="text-4xl font-bold mb-4 text-primary-pink">Vaginal Cancer Information</h1>
+          <p className="text-lg text-black max-w-2xl mx-auto">
+            Comprehensive guide covering symptoms, diagnosis, and treatment options for vaginal
+            cancer
           </p>
         </div>
 
@@ -32,16 +33,19 @@ export default function VaginalCancerInfo() {
           className="bg-white rounded-xl shadow-md mb-10 transition duration-300 hover:shadow-lg hover:-translate-y-2"
           data-aos="fade-up"
         >
-          <div className="px-6 py-4 rounded-t-xl flex items-center gap-2" style={{ backgroundColor: deepPink }}>
+          <div
+            className="px-6 py-4 rounded-t-xl flex items-center gap-2"
+            style={{ backgroundColor: deepPink }}
+          >
             <FaStethoscope className="text-white h-6 w-6" />
             <h2 className="text-2xl font-semibold text-white">Symptoms of Vaginal Cancer</h2>
           </div>
           <div className="px-6 pt-4 pb-6 grid md:grid-cols-2 gap-6 items-start">
             <div>
-              <p className="text-[#7a2f4f] mb-4">
+              <p className="text-black mb-4">
                 Early vaginal cancer often has no symptoms. As it progresses, signs may include:
               </p>
-              <ul className="space-y-2 mb-6 text-sm text-[#7a2f4f]">
+              <ul className="space-y-2 mb-6 text-sm text-black">
                 {[
                   "Unusual vaginal bleeding (after intercourse or after menopause)",
                   "Watery vaginal discharge",
@@ -83,15 +87,18 @@ export default function VaginalCancerInfo() {
           className="bg-white rounded-xl shadow-md mb-10 transition duration-300 hover:shadow-lg hover:-translate-y-2"
           data-aos="fade-up"
         >
-          <div className="px-6 py-4 flex items-center gap-2 rounded-t-xl" style={{ backgroundColor: deepPink }}>
+          <div
+            className="px-6 py-4 flex items-center gap-2 rounded-t-xl"
+            style={{ backgroundColor: deepPink }}
+          >
             <FaMicroscope className="text-white h-6 w-6" />
             <h2 className="text-2xl font-semibold text-white">Diagnosis of Vaginal Cancer</h2>
           </div>
           <div className="px-6 pt-4 pb-6">
-            <p className="text-[#7a2f4f] mb-4">
+            <p className="text-black mb-4">
               Vaginal cancer may be detected during a routine pelvic exam before symptoms appear.
             </p>
-            <p className="text-[#FF4B8B] font-semibold mb-4">Diagnostic steps may include:</p>
+            <p className="text-primary-pink font-semibold mb-4">Diagnostic steps may include:</p>
             <div className="space-y-3">
               {[
                 {
@@ -117,8 +124,8 @@ export default function VaginalCancerInfo() {
                   style={{ borderColor: primaryPink }}
                   data-aos="fade-left"
                 >
-                  <strong className="text-[#FF4B8B]">{step.title}</strong>
-                  <span className="text-[#7a2f4f]"> – {step.desc}</span>
+                  <strong className="text-primary-pink">{step.title}</strong>
+                  <span className="text-black"> – {step.desc}</span>
                 </div>
               ))}
             </div>
@@ -139,16 +146,19 @@ export default function VaginalCancerInfo() {
           className="bg-white rounded-xl shadow-md mb-10 transition duration-300 hover:shadow-lg hover:-translate-y-2"
           data-aos="fade-up"
         >
-          <div className="px-6 py-4 flex items-center gap-2 rounded-t-xl" style={{ backgroundColor: deepPink }}>
+          <div
+            className="px-6 py-4 flex items-center gap-2 rounded-t-xl"
+            style={{ backgroundColor: deepPink }}
+          >
             <FaPills className="text-white h-6 w-6" />
             <h2 className="text-2xl font-semibold text-white">Treatment of Vaginal Cancer</h2>
           </div>
-          <div className="px-6 pt-4 pb-6 text-sm text-[#7a2f4f]">
+          <div className="px-6 pt-4 pb-6 text-sm text-black">
             <p className="mb-6">
               Treatment depends on the type, stage, spread, and your overall health.
             </p>
 
-            <h3 className="text-lg font-semibold text-[#FF4B8B] mb-3">
+            <h3 className="text-lg font-semibold text-primary-pink mb-3">
               1. Surgery (Often the Primary Treatment)
             </h3>
             <div className="space-y-3 mb-4">
@@ -156,28 +166,33 @@ export default function VaginalCancerInfo() {
                 className="border rounded-md px-4 py-3 shadow-sm bg-white transition duration-300 hover:shadow-md"
                 style={{ borderColor: primaryPink }}
               >
-                <strong className="text-[#FF4B8B]">Vaginectomy</strong>
-                <span> – Removal of part or all of the vagina; may include nearby lymph nodes. Reconstruction with tissue grafts can restore vaginal function.</span>
+                <strong className="text-primary-pink">Vaginectomy</strong>
+                <span>
+                  {" "}
+                  – Removal of part or all of the vagina; may include nearby lymph nodes.
+                  Reconstruction with tissue grafts can restore vaginal function.
+                </span>
               </div>
               <div
                 className="border rounded-md px-4 py-3 shadow-sm bg-white transition duration-300 hover:shadow-md"
                 style={{ borderColor: primaryPink }}
               >
-                <strong className="text-[#FF4B8B]">Hysterectomy</strong>
-                <span> – Removal of the uterus and sometimes ovaries, fallopian tubes, and lymph nodes; often combined with vaginectomy for advanced cases.</span>
+                <strong className="text-primary-pink">Hysterectomy</strong>
+                <span>
+                  {" "}
+                  – Removal of the uterus and sometimes ovaries, fallopian tubes, and lymph nodes;
+                  often combined with vaginectomy for advanced cases.
+                </span>
               </div>
             </div>
 
-            <div
-              className="p-3 rounded-md shadow-sm mb-6"
-              style={{ backgroundColor: primaryPink }}
-            >
+            <div className="p-3 rounded-md shadow-sm mb-6" style={{ backgroundColor: primaryPink }}>
               <p className="text-white text-sm">
                 After surgery, patients receive enhanced recovery support to aid healing.
               </p>
             </div>
 
-            <h3 className="text-lg font-semibold text-[#FF4B8B] mb-3">
+            <h3 className="text-lg font-semibold text-primary-pink mb-3">
               2. Combination Treatments
             </h3>
             <p className="mb-3">In some cases, surgery may be combined with:</p>
@@ -186,14 +201,14 @@ export default function VaginalCancerInfo() {
                 className="border rounded-md px-4 py-3 shadow-sm bg-white transition duration-300 hover:shadow-md"
                 style={{ borderColor: primaryPink }}
               >
-                <strong className="text-[#FF4B8B]">Radiation therapy</strong>
+                <strong className="text-primary-pink">Radiation therapy</strong>
                 <span> – Targeted energy to destroy cancer cells</span>
               </div>
               <div
                 className="border rounded-md px-4 py-3 shadow-sm bg-white transition duration-300 hover:shadow-md"
                 style={{ borderColor: primaryPink }}
               >
-                <strong className="text-[#FF4B8B]">Chemotherapy</strong>
+                <strong className="text-primary-pink">Chemotherapy</strong>
                 <span> – Drugs to kill or slow cancer growth</span>
               </div>
             </div>
@@ -207,7 +222,8 @@ export default function VaginalCancerInfo() {
           data-aos="fade-up"
         >
           <p className="text-sm text-white">
-            This information is for educational purposes only. Always consult with healthcare professionals for personalized medical advice.
+            This information is for educational purposes only. Always consult with healthcare
+            professionals for personalized medical advice.
           </p>
         </div>
       </div>

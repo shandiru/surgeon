@@ -1,24 +1,24 @@
-import React from 'react';
+import React from "react";
 
 function EndometriosisInfo() {
-  const pink = '#FFC5D3';
-  const deepPink = '#FF4B8B';
+  const pink = "#FFC5D3";
+  const deepPink = "#FF4B8B";
 
   return (
-    <section className="py-16 bg-white text-[#333] px-4">
+    <section className="py-16 bg-white text-black px-4">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4" style={{ color: deepPink }}>
             What Is Endometriosis?
           </h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-black/90">
             Understanding the condition and how it affects your body
           </p>
         </div>
 
         {/* Card */}
-        <div className="flex flex-col gap-6 rounded-2xl bg-white text-[#333] shadow-lg hover:shadow-xl transition-shadow duration-300 p-8">
+        <div className="flex flex-col gap-6 rounded-2xl bg-white text-black shadow-lg hover:shadow-xl transition-shadow duration-300 p-8">
           {/* Title */}
           <div
             className="flex items-center gap-2 font-semibold text-lg"
@@ -40,8 +40,8 @@ function EndometriosisInfo() {
           {/* Content */}
           <div className="space-y-4 mt-2">
             <p className="text-lg leading-relaxed">
-              Endometriosis is a condition where the tissue that normally lines your uterus
-              (called the endometrium) grows outside the uterus.
+              Endometriosis is a condition where the tissue that normally lines your uterus (called
+              the endometrium) grows outside the uterus.
             </p>
 
             <div className="grid md:grid-cols-2 gap-8 mt-6">
@@ -51,17 +51,17 @@ function EndometriosisInfo() {
                   This abnormal tissue can affect:
                 </h4>
                 <ul className="space-y-2">
-                  {['Ovaries', 'Fallopian tubes', 'The pelvic lining', '(In rare cases) other organs'].map(
-                    (item, i) => (
-                      <li key={i} className="flex items-center gap-2">
-                        <div
-                          className="w-2 h-2 rounded-full"
-                          style={{ backgroundColor: deepPink }}
-                        />
-                        {item}
-                      </li>
-                    )
-                  )}
+                  {[
+                    "Ovaries",
+                    "Fallopian tubes",
+                    "The pelvic lining",
+                    "(In rare cases) other organs",
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-center gap-2">
+                      <div className="w-2 h-2 rounded-full" style={{ backgroundColor: deepPink }} />
+                      {item}
+                    </li>
+                  ))}
                 </ul>
               </div>
 
@@ -71,7 +71,7 @@ function EndometriosisInfo() {
                   This can lead to:
                 </h4>
                 <ul className="space-y-2">
-                  {['Inflammation', 'Pain', 'Scarring and adhesions'].map((item, i) => (
+                  {["Inflammation", "Pain", "Scarring and adhesions"].map((item, i) => (
                     <li key={i} className="flex items-center gap-2" style={{ color: deepPink }}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -93,10 +93,7 @@ function EndometriosisInfo() {
             </div>
 
             {/* Highlight Note */}
-            <div
-              className="p-4 rounded-lg mt-6 shadow-inner"
-              style={{ backgroundColor: pink }}
-            >
+            <div className="p-4 rounded-lg mt-6 shadow-inner" style={{ backgroundColor: pink }}>
               <p className="text-sm" style={{ color: deepPink }}>
                 <strong>Important:</strong> Endometriosis is not dangerous, but it can cause
                 significant pain and affect fertility if untreated.

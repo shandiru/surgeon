@@ -1,14 +1,14 @@
-'use client';
+"use client";
 
-import React from 'react';
+import React from "react";
 
 export default function RiskFertilityCards() {
   return (
     <div className="grid md:grid-cols-2 gap-6">
       {/* Risk Factors Card */}
-      <div className="flex flex-col gap-6 rounded-xl bg-[#FEE6EA] text-[#BB125B] py-6 px-5 sm:px-6 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all">
+      <div className="flex flex-col gap-6 rounded-xl bg-[#FEE6EA] text-primary-pink py-6 px-5 sm:px-6 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all">
         {/* Header */}
-        <div className="flex items-center gap-3 font-semibold text-[#FF4B8B] text-lg">
+        <div className="flex items-center gap-3 font-semibold text-primary-pink text-lg">
           {/* Shield Icon */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -30,14 +30,14 @@ export default function RiskFertilityCards() {
         {/* Content */}
         <div className="space-y-3">
           {[
-            'Hormonal treatments that trigger ovulation',
-            'Endometriosis',
-            'Polycystic ovary syndrome (PCOS)',
-            'Family history of ovarian cysts',
-            'Being of reproductive age',
+            "Hormonal treatments that trigger ovulation",
+            "Endometriosis",
+            "Polycystic ovary syndrome (PCOS)",
+            "Family history of ovarian cysts",
+            "Being of reproductive age",
           ].map((item, index) => (
             <div key={index} className="flex items-start gap-3">
-              <div className="w-2.5 h-2.5 bg-[#FF4B8B] rounded-full mt-2 flex-shrink-0" />
+              <div className="w-2.5 h-2.5 bg-primary-pink rounded-full mt-2 flex-shrink-0" />
               <span className="text-sm">{item}</span>
             </div>
           ))}
@@ -45,9 +45,9 @@ export default function RiskFertilityCards() {
       </div>
 
       {/* Fertility & Pregnancy Card */}
-      <div className="flex flex-col gap-6 rounded-xl bg-[#FEE6EA] text-[#BB125B] py-6 px-5 sm:px-6 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all">
+      <div className="flex flex-col gap-6 rounded-xl bg-[#FEE6EA] text-primary-pink py-6 px-5 sm:px-6 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all">
         {/* Header */}
-        <div className="flex items-center gap-3 font-semibold text-[#FF4B8B] text-lg">
+        <div className="flex items-center gap-3 font-semibold text-primary-pink text-lg">
           {/* Heart Icon */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +76,7 @@ export default function RiskFertilityCards() {
                   <path d="m9 12 2 2 4-4" />
                 </>
               ),
-              text: 'Most ovarian cysts do not affect fertility',
+              text: "Most ovarian cysts do not affect fertility",
             },
             {
               icon: (
@@ -86,7 +86,7 @@ export default function RiskFertilityCards() {
                   <path d="M12 8h.01" />
                 </>
               ),
-              text: 'Some conditions (like PCOS or endometriosis) can affect fertility',
+              text: "Some conditions (like PCOS or endometriosis) can affect fertility",
             },
             {
               icon: (
@@ -97,13 +97,13 @@ export default function RiskFertilityCards() {
                   <path d="M3 10h18" />
                 </>
               ),
-              text: 'Large cysts during pregnancy may need monitoring or removal',
+              text: "Large cysts during pregnancy may need monitoring or removal",
             },
           ].map((item, index) => (
             <div key={index} className="flex items-start gap-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-5 h-5 text-[#FF4B8B] mt-0.5 flex-shrink-0"
+                className="w-5 h-5 text-primary-pink mt-0.5 flex-shrink-0"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"

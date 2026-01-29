@@ -1,15 +1,14 @@
 // src/components/IrregularBleedingHeader.jsx
 export default function IrregularBleedingHeader() {
   return (
-    <header className="bg-[#FFC5D3] py-12 px-6">
+    <header className="bg-light-pink-2 py-12 px-6">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
-        
         {/* Left Content */}
         <div className="text-center md:text-left flex-1">
-          <h1 className="text-3xl md:text-4xl font-bold mb-4 [text-wrap:balance] leading-snug text-[#FF4B8B]">
+          <h1 className="text-3xl md:text-4xl font-bold mb-4 [text-wrap:balance] leading-snug text-primary-pink">
             Understanding Irregular Vaginal Bleeding
           </h1>
-          <p className="text-lg md:text-xl [text-wrap:pretty] text-[#7a2f4f]">
+          <p className="text-lg md:text-xl [text-wrap:pretty] text-black">
             Know the signs, causes, and treatments for better health awareness
           </p>
         </div>

@@ -1,0 +1,317 @@
+{
+  "slug": "irregular-bleeding",
+  "title": "Understanding Irregular Bleeding",
+  "subtitle": "What it is, why it's done, and what to expect",
+  "tag": "Medical Education",
+  "sections": [
+    {
+      "id": 1,
+      "buttonLabel": "Overview",
+      "buttonIcon": "Info",
+      "cardTitle": "What Is Irregular Bleeding?",
+      "layout": "two-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "A “typical” menstrual cycle varies from person to person.\n\nMost cycles occur about every 21–35 days and bleeding usually lasts 3–8 days."
+        },
+        {
+          "type": "bulletList",
+          "items": [
+            "Periods that come more or less often than usual",
+            "Bleeding or spotting between periods",
+            "Bleeding after sex",
+            "Bleeding after menopause",
+            "Very heavy or very light periods",
+            "Periods that last much longer than usual"
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/irregular-bleeding-illustration.png",
+          "alt": "Irregular bleeding illustration"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "buttonLabel": "Normal vs Irregular",
+      "buttonIcon": "Activity",
+      "cardTitle": "Normal vs Irregular Periods",
+      "cardTitleIcon": "Activity",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "heading",
+          "text": "A typical period:",
+          "level": 3,
+          "icon": "CheckCircle"
+        },
+        {
+          "type": "iconList",
+          "items": [
+            { "icon": "CheckCircle", "text": "Occurs every 21–35 days" },
+            { "icon": "CheckCircle", "text": "Lasts 3–7 days" },
+            {
+              "icon": "CheckCircle",
+              "text": "Consistent flow pattern each month"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Irregular bleeding includes:",
+          "level": 3,
+          "icon": "TriangleAlert"
+        },
+        {
+          "type": "iconList",
+          "items": [
+            {
+              "icon": "TriangleAlert",
+              "text": "Periods that come more or less often than usual"
+            },
+            { "icon": "TriangleAlert", "text": "Spotting between periods" },
+            { "icon": "TriangleAlert", "text": "Bleeding after sex" },
+            {
+              "icon": "TriangleAlert",
+              "text": "Unusually heavy or prolonged periods"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "buttonLabel": "Causes",
+      "buttonIcon": "TriangleAlert",
+      "cardTitle": "Common Causes of Irregular Vaginal Bleeding",
+      "cardTitleIcon": "TriangleAlert",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Irregular bleeding can be linked to several conditions. Often the cause is not serious, but it should be checked — especially if the bleeding is new, heavy, or unusual for you."
+        },
+        {
+          "type": "text",
+          "value": "**Common Causes**"
+        },
+        {
+          "type": "bulletList",
+          "items": [
+            "Non-cancerous growths in the uterus that can cause heavy or irregular bleeding.",
+            "Tissue similar to the uterine lining grows outside the uterus and may affect bleeding patterns.",
+            "A hormone-related condition that can cause irregular or missed periods.",
+            "Fluctuations in oestrogen and progesterone levels can disrupt cycles."
+          ]
+        },
+        {
+          "type": "text",
+          "value": "**Life Stage & Hormonal Changes**"
+        },
+        {
+          "type": "bulletList",
+          "items": [
+            "Puberty or perimenopause - Hormone levels change during these times, which can make periods irregular.",
+            "Pregnancy - Early pregnancy can sometimes cause light bleeding. Any bleeding in pregnancy should be checked."
+          ]
+        },
+        {
+          "type": "text",
+          "value": "**Lifestyle Factors**"
+        },
+        {
+          "type": "bulletList",
+          "items": [
+            "Intense exercise or major weight changes - Can affect hormone balance and menstrual cycles."
+          ]
+        },
+        {
+          "type": "text",
+          "value": "**Conditions That Need Medical Assessment**"
+        },
+        {
+          "type": "bulletList",
+          "items": [
+            "Pelvic inflammatory disease (PID) - An infection of the reproductive organs that needs treatment.",
+            "Polyps or abnormal growths - Growths in the uterus or cervix that should be assessed.",
+            "Cancer (less common) - Irregular bleeding, especially after menopause or after sex, should always be checked."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "buttonLabel": "When to Seek Help",
+      "buttonIcon": "Stethoscope",
+      "cardTitle": "When to Seek Medical Advice",
+      "cardTitleIcon": "Stethoscope",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Early assessment can help identify the cause and ensure you get the right care."
+        },
+        {
+          "type": "iconList",
+          "items": [
+            {
+              "icon": "AlertTriangle",
+              "text": "Bleeding between periods or after sex"
+            },
+            {
+              "icon": "AlertTriangle",
+              "text": "Periods that are much heavier or longer than usual"
+            },
+            {
+              "icon": "AlertTriangle",
+              "text": "Sudden or unexplained changes to your cycle"
+            },
+            { "icon": "AlertTriangle", "text": "Any bleeding after menopause" }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Need immediate help?",
+          "description": "Seek urgent medical advice if you have:\n\nVery heavy bleeding (soaking through pads quickly or passing large clots)\n\nSevere or worsening abdominal or pelvic pain\n\nDizziness, fainting, or feeling unwell with heavy bleeding",
+          "icon": "Phone"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "buttonLabel": "What to Track",
+      "buttonIcon": "FileText",
+      "cardTitle": "What to Track Before Your Appointment",
+      "cardTitleIcon": "FileText",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Bringing notes can help your doctor understand your symptoms more clearly."
+        },
+        {
+          "type": "numberedSteps",
+          "steps": [
+            "Dates and length of your periods - Record when bleeding starts and ends.\n\nHow heavy the bleeding is - Note how often you change pads or tampons, whether you pass clots, or if bleeding affects daily activities.\n\nPain or other symptoms - Document pelvic pain, cramps, back pain, pain during sex, bowel or bladder symptoms, and when they occur in your cycle.\n\nBleeding between periods or after sex - Note when this happens and how often.\n\nLifestyle or health changes - Stress, exercise levels, weight changes, new medications, or contraception changes."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "buttonLabel": "Your Appointment",
+      "buttonIcon": "TestTube",
+      "cardTitle": "What to Expect at Your Appointment",
+      "cardTitleIcon": "TestTube",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "These assessments may help find the cause of irregular bleeding so the most suitable care can be planned."
+        },
+        {
+          "type": "accordion",
+          "items": [
+            {
+              "title": "Pelvic Examination",
+              "content": "A physical exam may be offered to check for tenderness, swelling, or visible causes of bleeding. You can ask to stop at any time."
+            },
+            {
+              "title": "Ultrasound Scan",
+              "content": "A scan (often transvaginal) that uses sound waves to look at the uterus and ovaries. It can help identify fibroids, cysts, thickened lining, or other structural causes."
+            },
+            {
+              "title": "Blood Tests",
+              "content": "May include checks for anaemia, hormone levels, thyroid function, or other indicators depending on symptoms."
+            },
+            {
+              "title": "Cervical Smear (if due)",
+              "content": "A routine screening test for cervical cell changes. It does not explain all causes of bleeding but may be done if you are due or have symptoms requiring it."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "buttonLabel": "Treatment",
+      "buttonIcon": "Pill",
+      "cardTitle": "Medication Options",
+      "cardTitleIcon": "Heart",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Treatment depends on the underlying cause of your irregular bleeding. Your doctor will recommend the most appropriate option based on your diagnosis."
+        },
+        {
+          "type": "heading",
+          "text": "Medication Options",
+          "level": 3,
+          "icon": "Stethoscope"
+        },
+        {
+          "type": "grid",
+          "columns": 2,
+          "items": [
+            {
+              "icon": "Stethoscope",
+              "title": "Fibroids or polyps",
+              "description": "Hormones, IUS, or procedures (e.g., hysteroscopic removal, embolisation)"
+            },
+            {
+              "icon": "Stethoscope",
+              "title": "PCOS",
+              "description": "Hormonal regulation and lifestyle support"
+            },
+            {
+              "icon": "Stethoscope",
+              "title": "Infection (PID)",
+              "description": "Antibiotics"
+            },
+            {
+              "icon": "Stethoscope",
+              "title": "Thickened womb lining",
+              "description": "Hormonal treatment or biopsy depending on age/risk"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "If Caused by a Condition",
+          "level": 3,
+          "icon": "Stethoscope"
+        },
+        {
+          "type": "grid",
+          "columns": 2,
+          "items": [
+            {
+              "icon": "Pill",
+              "title": "Hormonal treatments",
+              "description": "Combined contraceptive pill\n\nProgestogen-only methods\n\nHormonal coil (IUS)\n\nHelp regulate cycles and reduce bleeding."
+            },
+            {
+              "icon": "Stethoscope",
+              "title": "Tranexamic acid",
+              "description": "Reduces heavy bleeding during periods."
+            },
+            {
+              "icon": "Activity",
+              "title": "NSAIDs (e.g., ibuprofen)",
+              "description": "Can reduce pain and bleeding volume."
+            }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Procedures (If Medication Doesn’t Help)",
+          "description": "Hysteroscopy (to remove polyps or small fibroids)\n\nEndometrial ablation (for heavy bleeding when pregnancy not desired)\n\nSurgery (e.g., fibroid removal) in selected cases",
+          "icon": "Users"
+        }
+      ]
+    }
+  ]
+}

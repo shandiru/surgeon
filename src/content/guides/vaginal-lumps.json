@@ -1,0 +1,318 @@
+{
+  "slug": "vaginal-lumps",
+  "title": "Understanding Vaginal Lumps",
+  "subtitle": "What it is, why it's done, and what to expect",
+  "tag": "Medical Education",
+  "sections": [
+    {
+      "id": 1,
+      "buttonLabel": "Overview",
+      "buttonIcon": "Info",
+      "cardTitle": "Vaginal Lumps Overview",
+      "layout": "two-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Vaginal lumps refer to any swelling, bump, or raised area found on or inside the vagina. Most lumps are **benign (non-cancerous)** and caused by infections, blocked glands, or normal anatomical variations.\n\nHowever, persistent, painful, or growing lumps should always be checked by a doctor to rule out infection or, in rare cases, cancer."
+        },
+        {
+          "type": "statBox",
+          "stat": "90%+",
+          "description": "Most vaginal lumps are harmless and easily treatable with proper care."
+        },
+        {
+          "type": "image",
+          "src": "/vaginal.png",
+          "alt": "Vaginal health illustration"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "buttonLabel": "Common Causes",
+      "buttonIcon": "Activity",
+      "cardTitle": "Common Causes of Vulvar & Vaginal Lumps",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Understanding the different types of lumps can help you know what to expect"
+        },
+        {
+          "type": "accordion",
+          "items": [
+            {
+              "title": "Vaginal Cysts",
+              "content": "Pouch-like sacs that can contain pus, air, or scar tissue. Usually small and painless. Types include Bartholin's cysts (near the vaginal opening), Endometriosis cysts (caused by endometriosis tissue), Gartner's duct cysts (often during pregnancy), and Inclusion cysts (from vaginal trauma, e.g., after childbirth)."
+            },
+            {
+              "title": "Vaginal Polyps (Skin Tags)",
+              "content": "Small, soft outgrowths of skin. Usually harmless and painless. Treated only if they bleed or cause discomfort. Can appear as small, flesh-colored bumps. May develop due to hormonal changes or irritation."
+            },
+            {
+              "title": "Vaginal Warts or Herpes Blisters",
+              "content": "Caused by viral infections (HPV or herpes). Warts are caused by HPV (a common STI). May appear as small, irregular growths around the vaginal opening. Herpes can cause blisters or sores that may look like pimples. Both conditions are treatable with proper medical care."
+            },
+            {
+              "title": "Vaginal Cancer (Rare)",
+              "content": "Uncommon but requires immediate medical attention. Can cause persistent lumps. May also cause unusual bleeding or discharge. Advanced symptoms can include pelvic pain, back pain, constipation or leg swelling. These symptoms are more commonly caused by infections or benign lumps."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "buttonLabel": "Key Risk Factors",
+      "buttonIcon": "AlertTriangle",
+      "cardTitle": "Key Causes & Risk Factors",
+      "cardTitleIcon": "FileText",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Most vaginal lumps are harmless, treatable, and not serious — but knowing the causes helps."
+        },
+        {
+          "type": "iconList",
+          "items": [
+            { "icon": "Droplet", "text": "**Blocked Glands (Bartholin or Skene glands)** — A blocked duct can fill with fluid and form a cyst, sometimes becoming painful." },
+            { "icon": "Biohazard", "text": "**HPV Infection** — Certain HPV strains can cause lumps or warts on the vaginal or vulvar area." },
+            { "icon": "Flame", "text": "**Bacterial or Yeast Infections** — These infections can cause swelling, irritation, or small painful bumps." },
+            { "icon": "Scissors", "text": "**Skin Irritation (Shaving or Waxing)** — Ingrown hairs or irritation from hair removal can create tender lumps." },
+            { "icon": "Biohazard", "text": "**Sexually Transmitted Infections (STIs)** — Conditions like herpes, syphilis, or molluscum can cause lumps or sores." },
+            { "icon": "Sparkles", "text": "**Hormonal Changes (Pregnancy or Menopause)** — Hormonal shifts can change gland activity and increase lump formation." },
+            { "icon": "ShieldOff", "text": "**Trauma or Childbirth** — Pressure, tearing, or swelling after childbirth can cause temporary lumps." },
+            { "icon": "Flame", "text": "**Poor Hygiene or Tight Clothing** — Sweat and friction can trap bacteria and cause irritation or infection." },
+            { "icon": "ShieldOff", "text": "**Weakened Immune System** — A weak immune system makes infections and cysts more likely to occur." }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Good to Know",
+          "description": "Most causes of vaginal lumps are treatable and not serious. See a doctor if a lump becomes painful, grows, or does not go away.",
+          "icon": "Sparkles"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "buttonLabel": "Recognising Symptoms",
+      "buttonIcon": "Eye",
+      "cardTitle": "When to See Your Doctor",
+      "cardTitleIcon": "AlertTriangle",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Contact your doctor promptly if you notice any of the following:"
+        },
+        {
+          "type": "bulletList",
+          "items": [
+            "A new lump that does not disappear after 2–3 weeks",
+            "Painful or tender lump",
+            "A lump that grows in size",
+            "The lump feels unusually hard or firm",
+            "Pus, bleeding, or signs of infection",
+            "Unusual or foul-smelling vaginal discharge",
+            "Fever, chills, or feeling unwell",
+            "Symptoms suggesting a sexually transmitted infection (STI)",
+            "A lump after shaving or waxing that does not improve",
+            "Any lump that worries you or feels different"
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Important",
+          "description": "Seek medical attention if symptoms persist, worsen, or cause pain.",
+          "icon": "AlertTriangle",
+          "variant": "warning"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "buttonLabel": "Treatment",
+      "buttonIcon": "ScanSearch",
+      "cardTitle": "Treatment & Home Care",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Most lumps are easy to diagnose and treat quickly with the right approach"
+        },
+        {
+          "type": "grid",
+          "columns": 4,
+          "items": [
+            {
+              "icon": "Stethoscope",
+              "title": "Diagnosis Process",
+              "tag": "Professional Care",
+              "description": "Visual examination of the vulva and vagina, swab test for infection or abnormal cells, ultrasound scan (transvaginal or abdominal), biopsy if needed to rule out serious conditions."
+            },
+            {
+              "icon": "Pill",
+              "title": "Medical Treatment",
+              "tag": "As Needed",
+              "description": "Many lumps resolve naturally without treatment. Antibiotics for bacterial infections. Drainage of cysts when necessary. Removal of warts or polyps if causing symptoms."
+            },
+            {
+              "icon": "Home",
+              "title": "Self-Care Tips",
+              "tag": "Home Care",
+              "description": "Warm baths help cysts drain naturally. Wear loose clothing and cotton underwear. Avoid shaving or friction on the area. Avoid sexual contact if lump is painful or infected."
+            },
+            {
+              "icon": "Users",
+              "title": "Follow-Up Care",
+              "tag": "Ongoing Support",
+              "description": "Most conditions are easy to treat or monitor. Regular follow-up checks to ensure healing. You can request a chaperone during exams. Early STI treatment prevents complications."
+            }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Important Note",
+          "description": "If an STI is diagnosed, early treatment protects you and your partner. Most conditions are easily treated or monitored with proper care.",
+          "icon": "AlertCircle"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "buttonLabel": "When to seek help",
+      "buttonIcon": "Syringe",
+      "cardTitle": "When to Seek Urgent Help",
+      "cardTitleIcon": "CircleAlert",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "Get medical advice quickly if you notice any of these warning signs"
+        },
+        {
+          "type": "grid",
+          "columns": 2,
+          "items": [
+            {
+              "icon": "TrendingUp",
+              "title": "Rapidly growing lump",
+              "description": "Any lump that increases in size quickly over days or weeks."
+            },
+            {
+              "icon": "ShieldAlert",
+              "title": "Severe pain, fever or spreading redness",
+              "description": "Signs of serious infection that need immediate treatment."
+            },
+            {
+              "icon": "ShieldAlert",
+              "title": "Bleeding that won't stop",
+              "description": "Persistent or heavy bleeding from the affected area."
+            },
+            {
+              "icon": "Clock",
+              "title": "Lumps appearing after menopause",
+              "description": "New lumps in post-menopausal women require prompt evaluation."
+            }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Need Immediate Help?",
+          "description": "Don't wait if you're experiencing urgent symptoms. Call emergency services or find urgent care.",
+          "icon": "Phone",
+          "variant": "emergency"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "buttonLabel": "Prevention and Early Management",
+      "buttonIcon": "ShieldCheck",
+      "cardTitle": "Prevention & Early Management",
+      "cardTitleIcon": "ShieldCheck",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "infoBox",
+          "title": "Why Prevention Helps",
+          "description": "Most vaginal lumps are harmless, but following simple prevention steps and paying attention to changes can help diagnose issues early — and prevent infections or irritation from worsening.",
+          "icon": "Heart"
+        },
+        {
+          "type": "heading",
+          "text": "Helpful Strategies Include:",
+          "level": 4
+        },
+        {
+          "type": "iconList",
+          "items": [
+            { "icon": "PlusCircle", "text": "Wearing breathable, loose clothing" },
+            { "icon": "PlusCircle", "text": "Avoiding shaving irritation (use clean razors or trimming)" },
+            { "icon": "PlusCircle", "text": "Safe sex practices to reduce HPV and STI risks" },
+            { "icon": "PlusCircle", "text": "Good daily hygiene" },
+            { "icon": "PlusCircle", "text": "Staying hydrated" },
+            { "icon": "PlusCircle", "text": "Managing infections promptly" },
+            { "icon": "PlusCircle", "text": "Regular gynaecological check-ups" },
+            { "icon": "PlusCircle", "text": "HPV vaccination" }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Remember",
+          "description": "Monitoring changes helps catch issues early. Treat infections quickly to avoid complications. HPV vaccination lowers risk of HPV-related lumps. Seek medical advice if a lump persists or gets worse.",
+          "icon": "Heart"
+        },
+        {
+          "type": "infoBox",
+          "title": "Key Takeaway",
+          "description": "Prevention is simple: keep the area clean, avoid irritation, stay aware of changes, and follow up on any symptoms that don't settle. Early management leads to quicker treatment and peace of mind.",
+          "icon": "Star"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "buttonLabel": "Key Takeaway",
+      "buttonIcon": "BookmarkCheck",
+      "cardTitle": "Key Takeaway",
+      "cardTitleIcon": "Lightbulb",
+      "layout": "single-column",
+      "content": [
+        {
+          "type": "text",
+          "value": "The most important points to remember"
+        },
+        {
+          "type": "infoBox",
+          "title": "What You Should Know",
+          "description": "Most vaginal lumps are benign and treatable, often caused by cysts, blocked glands, or infections. Persistent, painful, or unusual lumps should be checked by a clinician to make sure you get the correct diagnosis and treatment.",
+          "icon": "Star"
+        },
+        {
+          "type": "heading",
+          "text": "Key Points to Remember",
+          "level": 4
+        },
+        {
+          "type": "iconList",
+          "items": [
+            { "icon": "CheckCircle", "text": "Most lumps are harmless and resolve with simple care" },
+            { "icon": "CheckCircle", "text": "Seek medical advice if a lump is painful, growing, or persistent" },
+            { "icon": "CheckCircle", "text": "Infections or cysts can worsen without treatment" },
+            { "icon": "CheckCircle", "text": "Good hygiene and avoiding irritation help reduce risk" },
+            { "icon": "CheckCircle", "text": "Monitoring changes helps catch problems early" }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Final Message",
+          "description": "Listen to your body. If something feels unusual or doesn't improve, a quick check with a clinician provides clarity, reassurance, and the right care. Early advice can prevent discomfort and avoid unnecessary complications.",
+          "icon": "Star"
+        }
+      ]
+    }
+  ]
+}
