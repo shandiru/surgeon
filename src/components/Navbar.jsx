@@ -42,9 +42,7 @@ const treatmentGuides = [
     label: "Postmenopausal Bleeding Guide",
     to: "/guide/postmenopausal-bleeding",
   },
-  { label: "Menstrual Disorders Guide", to: "/guide/menstrual-disorders" },
   { label: "Postcoital Bleeding Guide", to: "/guide/postcoital-bleeding" },
-  { label: "Vaginal Lumps Guide", to: "/guide/vaginal-lumps" },
   { label: "Pelvic Pain Guide", to: "/guide/pelvic-pain" },
 ];
 
