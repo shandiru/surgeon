@@ -13,12 +13,15 @@
       "content": [
         {
           "type": "text",
-          "value": "Cervical screening — also called the **smear test** — checks the health of cells in your cervix. It is designed to **prevent cervical cancer** by identifying abnormal changes early, before they become dangerous.\n\n The test is quick, simple, and one of the most effective ways to protect your cervical health."
+          "value": "Cervical screening — sometimes called a smear test — checks the health of your cervix. It is designed to help prevent cervical cancer by identifying high-risk HPV infection and early cell changes before they develop into cancer."
         },
         {
-          "type": "statBox",
-          "stat": "90%",
-          "description": "Cervical screening can detect up to 90% of early cell changes."
+          "type": "text",
+          "value": "The test is quick and simple and is one of the most effective ways to reduce the risk of cervical cancer."
+        },
+        {
+          "type": "text",
+          "value": "Cervical screening does not test for cancer itself, but it can detect changes early so they can be monitored or treated if needed."
         },
         {
           "type": "image",
@@ -36,19 +39,28 @@
       "layout": "two-column",
       "content": [
         {
-          "type": "tags",
-          "tags": ["Recommended"]
+          "type": "heading",
+          "text": "Who Is Invited for Cervical Screening?",
+          "level": 3
+        },
+        {
+          "type": "text",
+          "value": "In the UK, cervical screening is offered to people with a cervix aged 25 to 64."
+        },
+        {
+          "type": "text",
+          "value": "Screening intervals:"
         },
         {
           "type": "iconList",
           "items": [
-            { "icon": "Users", "text": "Women aged 25–64" },
-            { "icon": "Clock", "text": "Every 3–5 years" },
-            {
-              "icon": "Stethoscope",
-              "text": "Quick, simple, and painless — done right at our clinic"
-            }
+            { "icon": "Calendar", "text": "Ages 25–49 → every 3 years" },
+            { "icon": "Calendar", "text": "Ages 50–64 → every 5 years" }
           ]
+        },
+        {
+          "type": "text",
+          "value": "The test is usually quick and simple. Some people find it a little uncomfortable, but it should not be painful. If you feel worried or have had a difficult experience before, your nurse or doctor can help make the test more comfortable."
         },
         {
           "type": "image",
@@ -67,7 +79,7 @@
       "content": [
         {
           "type": "heading",
-          "text": "Who Doesn't Usually Need a Smear Test?",
+          "text": "Who Doesn’t Usually Need Cervical Screening?",
           "level": 3,
           "icon": "Info"
         },
@@ -77,13 +89,18 @@
           "items": [
             {
               "title": "Under 25",
-              "description": "Cervical changes are common and usually harmless. Early treatment can affect future fertility. See a doctor if you have unusual bleeding or bleeding after sex."
+              "description": "People under 25 are not routinely invited for screening because cervical cancer is very rare at this age. Cell changes are common and usually go away on their own, and screening could lead to unnecessary treatment.\n\n**Important:** See a doctor if you have symptoms such as unusual bleeding, bleeding after sex, or persistent discharge."
             },
             {
               "title": "Over 65",
-              "description": "If you've had 3 normal tests in a row, no further smears are usually needed."
+              "description": "People aged 65 and over are usually not invited if their recent screening results have been normal. Screening may still be needed if you have not been screened since age 50 or have had previous abnormal results."
             }
           ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Key Point",
+          "description": "At any age, symptoms should always be checked — screening is for people without symptoms."
         }
       ]
     },
@@ -91,7 +108,7 @@
       "id": 4,
       "buttonLabel": "Preparing for Your Smear Test",
       "buttonIcon": "Eye",
-      "cardTitle": "Getting Ready",
+      "cardTitle": "Getting Ready for Cervical Screening",
       "layout": "two-column",
       "content": [
         {
@@ -99,14 +116,21 @@
           "items": [
             {
               "icon": "CheckCircle",
-              "text": "Book your test mid-cycle (about a week after your period)"
+              "text": "Try to book your appointment when you are not having a period, as blood can make it harder to read the sample"
             },
             {
               "icon": "CheckCircle",
-              "text": "Avoid spermicides, lubricants, pessaries or vaginal creams for a few days before"
+              "text": "If possible, avoid vaginal medicines, spermicides, or creams for about 2 days before the test"
             },
-            { "icon": "CheckCircle", "text": "Don't have the test during your period" }
+            {
+              "icon": "CheckCircle",
+              "text": "You can eat, drink, wash, and take your usual medications as normal"
+            }
           ]
+        },
+        {
+          "type": "text",
+          "value": "You do not need special preparation. If you have symptoms, are pregnant, or use vaginal treatments, let the nurse or doctor know."
         },
         {
           "type": "image",
@@ -131,21 +155,21 @@
         {
           "type": "infoBox",
           "title": "Takes just 5 minutes",
-          "description": "The entire procedure is quick and straightforward",
+          "description": "The appointment usually takes only a few minutes, and the sample collection itself is very quick.",
           "icon": "Clock"
         },
         {
           "type": "numberedSteps",
           "steps": [
-            "A small speculum gently opens the vagina",
-            "A soft brush collects cells from your cervix",
-            "Your sample is sent to a lab for testing"
+            "A small speculum is gently inserted to open the vagina so the cervix can be seen.",
+            "A soft brush is used to collect a sample of cells from the cervix.",
+            "The sample is sent to a laboratory."
           ]
         },
         {
           "type": "infoBox",
-          "title": "We use Dual Testing:",
-          "description": "Checking for high-risk HPV and abnormal cells (for women over 25)",
+          "title": "How the Sample Is Tested",
+          "description": "The sample is first checked for high-risk HPV.If HPV is found, the same sample is then checked for cell changes.",
           "icon": "Lightbulb"
         }
       ]
@@ -154,31 +178,37 @@
       "id": 6,
       "buttonLabel": "After Your Test",
       "buttonIcon": "Syringe",
-      "cardTitle": "After Your Test",
+      "cardTitle": "After Your Cervical Screening Test",
       "layout": "single-column",
       "content": [
         {
           "type": "text",
-          "value": "Results usually within 1–2 weeks"
+          "value": "You will usually receive your results by letter or message. This often takes a few weeks, though timing can vary."
+        },
+        {
+          "type": "heading",
+          "value": "Possible Results",
+          "level": 3,
+          "icon": "Info"
         },
         {
           "type": "accordion",
           "items": [
             {
-              "title": "Normal Result",
-              "content": "Your results came back clear. You will be invited for your next screening in 3–5 years depending on your age."
+              "title": "Normal Result (HPV not found)",
+              "content": "No high-risk HPV was detected. You will be invited for routine screening again at the usual interval."
             },
             {
               "title": "Inadequate Sample",
-              "content": "Sometimes the sample isn't clear enough to read. You'll be asked to come back for another test — this is very common and nothing to worry about."
+              "content": "The sample could not be tested properly. You will be invited to repeat the test."
             },
             {
               "title": "HPV Positive + Normal Cells",
-              "content": "HPV was found but your cells look normal. You'll be invited back in 12 months to check again."
+              "content": "High-risk HPV was found, but no abnormal cell changes were seen. You will usually be invited for screening again in 1 year to check if the HPV has cleared."
             },
             {
               "title": "HPV Positive + Abnormal Cells",
-              "content": "You may be referred for a colposcopy — a closer look at your cervix. Early treatment is very effective."
+              "content": "High-risk HPV and cell changes were found. You will be referred for a colposcopy to look more closely at the cervix."
             }
           ]
         }
@@ -207,24 +237,6 @@
         {
           "type": "text",
           "value": "**Don't miss your screening — it could save your life.**"
-        }
-      ]
-    },
-    {
-      "id": 8,
-      "buttonLabel": "Ready to Book Your Test?",
-      "buttonIcon": "BookmarkCheck",
-      "cardTitle": "Ready to Book Your Test?",
-      "layout": "single-column",
-      "content": [
-        {
-          "type": "text",
-          "value": "Take the first step towards protecting your health and peace of mind."
-        },
-        {
-          "type": "cta",
-          "label": "Schedule Your Screening Today",
-          "icon": "Star"
         }
       ]
     }
