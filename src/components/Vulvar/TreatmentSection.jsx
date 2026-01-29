@@ -80,7 +80,7 @@ const TreatmentAndHomeCare = () => {
                     {card.icon}
                   </div>
                   <div className="mt-3 font-semibold text-lg text-primary-pink">{card.title}</div>
-                  <span className="inline-flex items-center justify-center rounded-md px-2 py-1 mt-2 text-xs font-medium whitespace-nowrap shrink-0 w-fit mx-auto bg-[#FF4B8B]/10 text-[#BB125B]">
+                  <span className="inline-flex items-center justify-center rounded-md px-2 py-1 mt-2 text-xs font-medium whitespace-nowrap shrink-0 w-fit mx-auto bg-primary-pink/10 text-[#BB125B]">
                     {card.tag}
                   </span>
                 </div>
@@ -99,9 +99,9 @@ const TreatmentAndHomeCare = () => {
           </div>
 
           {/* Important Note */}
-          <div className="mt-12 p-6 rounded-lg transition-all duration-300 hover:shadow-md hover:scale-[1.01] bg-[#FF4B8B]/10">
+          <div className="mt-12 p-6 rounded-lg transition-all duration-300 hover:shadow-md hover:scale-[1.01] bg-primary-pink/10">
             <div className="flex items-start space-x-3">
-              <div className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 bg-[#FF4B8B] text-white">
+              <div className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 bg-primary-pink text-white">
                 !
               </div>
               <div>

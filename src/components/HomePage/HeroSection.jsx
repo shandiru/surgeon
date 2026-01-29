@@ -42,7 +42,7 @@ const HeroSectionView = () => {
             <div className="hero-ctas flex flex-col sm:flex-row gap-4 mb-8" data-aos="fade-up">
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center gap-2 text-button px-6 h-10 rounded-md bg-[#FF4B8B] text-white shadow-sm hover:shadow-[0_0_15px_2px_rgba(255,75,139,0.5)] hover:-translate-y-0.5 transition-all"
+                className="inline-flex items-center justify-center gap-2 text-button px-6 h-10 rounded-md bg-primary-pink text-white shadow-sm hover:shadow-[0_0_15px_2px_rgba(255,75,139,0.5)] hover:-translate-y-0.5 transition-all"
               >
                 <svg
                   className="w-4 h-4"
@@ -118,7 +118,7 @@ const HeroSectionView = () => {
                 className="w-full h-96 object-cover rounded-xl"
               />
               <div
-                className="hero-bubble absolute -bottom-4 -right-4 bg-[#FF4B8B] text-white px-4 py-3 rounded-xl shadow-md"
+                className="hero-bubble absolute -bottom-4 -right-4 bg-primary-pink text-white px-4 py-3 rounded-xl shadow-md"
                 data-aos="fade-up"
               >
                 <div className="text-center">

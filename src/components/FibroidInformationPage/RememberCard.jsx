@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 export default function RememberCard() {
   return (
@@ -25,16 +25,14 @@ export default function RememberCard() {
         </div>
 
         {/* Divider */}
-        <div className="h-px bg-[#FFC5D3] my-2" />
+        <div className="h-px bg-light-pink-2 my-2" />
 
         {/* Call-to-action */}
         <div className="text-center">
           <p className="text-lg font-medium text-[#d63384] mb-6">
             If you have symptoms of fibroids, book an appointment — we're here to help.
           </p>
-          <button
-            className="inline-flex items-center justify-center gap-2 text-sm font-medium text-white bg-[#d63384] hover:bg-[#c22573] transition-all h-12 rounded-md px-8 shadow-md hover:shadow-lg active:scale-[0.97]"
-          >
+          <button className="inline-flex items-center justify-center gap-2 text-sm font-medium text-white bg-[#d63384] hover:bg-[#c22573] transition-all h-12 rounded-md px-8 shadow-md hover:shadow-lg active:scale-[0.97]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="22"
@@ -54,5 +52,5 @@ export default function RememberCard() {
         </div>
       </div>
     </section>
-  )
+  );
 }

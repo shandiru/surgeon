@@ -57,7 +57,7 @@ export default function SymptomsCard() {
             <div className="space-y-3">
               {commonSymptoms.map((symptom, index) => (
                 <div key={index} className="flex items-start gap-3">
-                  <div className="w-2 h-2 rounded-full mt-2 bg-[#FF4B8B] flex-shrink-0" />
+                  <div className="w-2 h-2 rounded-full mt-2 bg-primary-pink flex-shrink-0" />
                   <span className="text-sm text-gray-700">{symptom}</span>
                 </div>
               ))}

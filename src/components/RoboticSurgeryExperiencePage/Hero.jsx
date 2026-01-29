@@ -59,10 +59,10 @@ export default function Hero() {
 
                 {/* CTA Buttons */}
                 <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-2">
-                  <button className="cursor-pointer inline-flex items-center justify-center px-6 py-3 rounded-lg bg-[#FF4B8B] text-white font-semibold text-button hover:bg-[#E03E7C] transition-all duration-300 shadow-md hover:shadow-lg">
+                  <button className="cursor-pointer inline-flex items-center justify-center px-6 py-3 rounded-lg bg-primary-pink text-white font-semibold text-button hover:bg-[#E03E7C] transition-all duration-300 shadow-md hover:shadow-lg">
                     Let's Start
                   </button>
-                  <button className="cursor-pointer inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg border-2 border-[#FF4B8B] text-primary-pink font-semibold text-button hover:bg-[#FF4B8B]/10 transition-all duration-300">
+                  <button className="cursor-pointer inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg border-2 border-[#FF4B8B] text-primary-pink font-semibold text-button hover:bg-primary-pink/10 transition-all duration-300">
                     About Us
                     <ArrowRight className="w-4 h-4" />
                   </button>

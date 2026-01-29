@@ -23,7 +23,7 @@ const ImpactSection = () => {
           hover:shadow-[0_0_25px_rgba(176,59,102,0.4)] hover:-translate-y-2 active:scale-[0.98]"
           >
             <div className="flex items-center gap-3 mb-4">
-              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#FF4B8B]/10">
+              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary-pink/10">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6 text-primary-pink"
@@ -52,7 +52,7 @@ const ImpactSection = () => {
           hover:shadow-[0_0_25px_rgba(176,59,102,0.4)] hover:-translate-y-2 active:scale-[0.98]"
           >
             <div className="flex items-center gap-3 mb-4">
-              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#FF4B8B]/10">
+              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary-pink/10">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6 text-primary-pink"

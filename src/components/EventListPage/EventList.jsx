@@ -75,7 +75,7 @@ export default function ListingEvents({ events = [], selectedCategory = "All Eve
         </div>
 
         {/* Footer / Action */}
-        <div className="bg-[#FF4B8B] rounded-xl text-white px-5 py-4 mt-4 flex items-center justify-center">
+        <div className="bg-primary-pink rounded-xl text-white px-5 py-4 mt-4 flex items-center justify-center">
           {event.link.startsWith("http") ? (
             <a
               href={event.link}

@@ -16,9 +16,9 @@ export default function CervicalCancerTreatment() {
   return (
     <section className="py-12" data-aos="fade-up">
       <div className="max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
-        <div className="relative bg-[#fff5f8] text-primary-pink rounded-xl shadow-sm px-6 py-8 mt-4 overflow-hidden border border-[#f5c2d2]">
+        <div className="relative bg-light-pink-1 text-primary-pink rounded-xl shadow-sm px-6 py-8 mt-4 overflow-hidden border border-light-pink-2">
           {/* Left Border Decoration */}
-          <div className="absolute top-0 left-0 h-full w-[6px] bg-[#FF4B8B] rounded-bl-2xl"></div>
+          <div className="absolute top-0 left-0 h-full w-[6px] bg-primary-pink rounded-bl-2xl"></div>
 
           {/* Header */}
           <div data-aos="fade-left">
@@ -30,9 +30,9 @@ export default function CervicalCancerTreatment() {
 
           {/* “We Consider” Section */}
           <div className="mt-8" data-aos="fade-up">
-            <div className="bg-white p-4 rounded-lg border border-[#f5c2d2] transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]">
+            <div className="bg-white p-4 rounded-lg border border-light-pink-2 transition-all duration-300 hover:bg-light-pink-1 hover:shadow-lg hover:border-light-pink-2 active:bg-light-pink-1 active:shadow-lg active:border-light-pink-2">
               <h3 className="font-semibold mb-2 text-primary-pink">We consider:</h3>
-              <div className="grid md:grid-cols-2 gap-2 text-sm text-[#7a2f4f ]">
+              <div className="grid md:grid-cols-2 gap-2 text-sm text-[#7a2f4f]">
                 {[
                   "Type and stage of cancer",
                   "Size and location of cancer cells",
@@ -40,7 +40,7 @@ export default function CervicalCancerTreatment() {
                   "Your overall health and personal needs",
                 ].map((text, i) => (
                   <div key={i} className="flex items-center gap-2 ">
-                    <div className="w-1.5 h-1.5 bg-[#FF4B8B] rounded-full"></div>
+                    <div className="w-1.5 h-1.5 bg-primary-pink rounded-full"></div>
                     <span>{text}</span>
                   </div>
                 ))}
@@ -82,12 +82,12 @@ export default function CervicalCancerTreatment() {
               ].map((item, idx) => (
                 <div
                   key={idx}
-                  className="flex gap-3 p-4 bg-white rounded-lg border border-[#f5c2d2] transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]"
+                  className="flex gap-3 p-4 bg-white rounded-lg border border-light-pink-2 transition-all duration-300 hover:bg-light-pink-1 hover:shadow-lg hover:border-light-pink-2 active:bg-light-pink-1 active:shadow-lg active:border-light-pink-2"
                 >
-                  <div className="w-2 h-2 bg-[#FF4B8B] rounded-full mt-2 flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-primary-pink rounded-full mt-2 flex-shrink-0"></div>
                   <div>
                     <h4 className="font-medium text-primary-pink">{item.title}</h4>
-                    <p className="text-sm text-[#7a2f4f] mt-1">– {item.desc}</p>
+                    <p className="text-sm text-black mt-1">– {item.desc}</p>
                   </div>
                 </div>
               ))}
@@ -100,7 +100,7 @@ export default function CervicalCancerTreatment() {
               <LuZap className="w-5 h-5 text-primary-pink" />
               2. Combination Treatments
             </h3>
-            <p className="text-[#7a2f4f] mb-4">In some cases, surgery may be combined with:</p>
+            <p className="text-black mb-4">In some cases, surgery may be combined with:</p>
             <div className="grid md:grid-cols-2 gap-4">
               {[
                 {
@@ -118,12 +118,12 @@ export default function CervicalCancerTreatment() {
               ].map((item, idx) => (
                 <div
                   key={idx}
-                  className="flex gap-3 p-4 bg-white rounded-lg border border-[#f5c2d2] transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]"
+                  className="flex gap-3 p-4 bg-white rounded-lg border border-light-pink-2 transition-all duration-300 hover:bg-light-pink-1 hover:shadow-lg hover:border-light-pink-2 active:bg-light-pink-1 active:shadow-lg active:border-light-pink-2"
                 >
-                  <div className="w-2 h-2 bg-[#FF4B8B] rounded-full mt-2 flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-primary-pink rounded-full mt-2 flex-shrink-0"></div>
                   <div>
                     <h4 className="font-medium text-primary-pink">{item.title}</h4>
-                    <p className="text-sm text-[#7a2f4f] mt-1">– {item.desc}</p>
+                    <p className="text-sm text-black mt-1">– {item.desc}</p>
                   </div>
                 </div>
               ))}
@@ -137,15 +137,15 @@ export default function CervicalCancerTreatment() {
               3. Recovery & Support
             </h3>
             <div className="space-y-4">
-              <div className="p-4 bg-white rounded-lg border border-[#f5c2d2] transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]">
+              <div className="p-4 bg-white rounded-lg border border-light-pink-2 transition-all duration-300 hover:bg-light-pink-1 hover:shadow-lg hover:border-light-pink-2 active:bg-light-pink-1 active:shadow-lg active:border-light-pink-2">
                 <h4 className="font-medium text-primary-pink mb-2">Enhanced Recovery Programs</h4>
-                <p className="text-sm text-[#7a2f4f]">
+                <p className="text-sm text-black">
                   Enhanced recovery after surgery programs help you heal faster.
                 </p>
               </div>
-              <div className="p-4 bg-white rounded-lg border border-[#f5c2d2] transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]">
+              <div className="p-4 bg-white rounded-lg border border-light-pink-2 transition-all duration-300 hover:bg-light-pink-1 hover:shadow-lg hover:border-light-pink-2 active:bg-light-pink-1 active:shadow-lg active:border-light-pink-2">
                 <h4 className="font-medium text-primary-pink mb-2">Multi-specialty Approach</h4>
-                <p className="text-sm text-[#7a2f4f]">
+                <p className="text-sm text-black">
                   Our oncologists collaborate with surgeons and specialists across different fields
                   to create a comprehensive care plan.
                 </p>

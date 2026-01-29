@@ -20,7 +20,7 @@ export default function OvarianCancerHeader() {
           <h2 className="text-4xl md:text-5xl font-bold leading-snug text-primary-pink">
             Ovarian Cancer Information
           </h2>
-          <p className="text-lg md:text-xl leading-relaxed text-[#7a2f4f]">
+          <p className="text-lg md:text-xl leading-relaxed text-black">
             Understanding the symptoms, diagnosis, and treatment options for ovarian cancer.
             <br className="hidden md:block" />
             <span className="block mt-2">

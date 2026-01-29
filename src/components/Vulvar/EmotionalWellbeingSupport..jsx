@@ -68,7 +68,7 @@ const EmotionalWellbeingSupport = () => {
           </div>
 
           {/* Remember Section */}
-          <div className="rounded-lg p-6 shadow-sm bg-[#FF4B8B]/10">
+          <div className="rounded-lg p-6 shadow-sm bg-primary-pink/10">
             <div className="text-center">
               <h3 className="text-xl font-semibold mb-3 text-[#BB125B]">
                 <Heart className="inline-block mr-2 text-primary-pink" />
@@ -83,7 +83,7 @@ const EmotionalWellbeingSupport = () => {
                 </p>
               </div>
               <div className="flex justify-center space-x-4">
-                <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all shadow-sm h-9 px-4 py-2 bg-[#FF4B8B] text-white">
+                <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all shadow-sm h-9 px-4 py-2 bg-primary-pink text-white">
                   Book Appointment
                 </button>
                 <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all shadow-sm h-9 px-4 py-2 border border-[#FF4B8B] text-primary-pink">

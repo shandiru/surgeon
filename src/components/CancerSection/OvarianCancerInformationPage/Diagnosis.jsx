@@ -48,7 +48,7 @@ export default function OvarianCancerDiagnosis() {
             <FaStethoscope className="h-8 w-8" style={{ color: deepPink }} />
             <h3 className="text-3xl font-bold text-primary-pink">Diagnosis of Ovarian Cancer</h3>
           </div>
-          <p className="text-[#7a2f4f] text-lg">
+          <p className="text-black text-lg">
             Several tests and scans can help identify ovarian cancer, including:
           </p>
         </div>

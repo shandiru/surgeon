@@ -95,7 +95,7 @@ export default function SpecialtiesSection() {
           data-aos-delay="150"
         >
           <div className="text-center mb-8">
-            <span className="inline-flex items-center justify-center mx-auto rounded-md font-medium bg-[#FF4B8B] text-white px-4 py-2 text-button shadow-sm">
+            <span className="inline-flex items-center justify-center mx-auto rounded-md font-medium bg-primary-pink text-white px-4 py-2 text-button shadow-sm">
               Primary Specialty: Obstetrics & Gynaecology
             </span>
           </div>

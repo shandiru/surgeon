@@ -464,7 +464,7 @@ const IrregularBleedingContent = ({ activeTab }) => {
                     key={idx}
                     className="flex items-start gap-4 p-4 rounded-lg bg-[#fff7f9] shadow-sm hover:shadow-md transition-all duration-200"
                   >
-                    <div className="p-2 rounded-full bg-[#ff4b8b]/10 flex-shrink-0">
+                    <div className="p-2 rounded-full bg-primary-pink/10 flex-shrink-0">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="w-5 h-5 text-primary-pink"

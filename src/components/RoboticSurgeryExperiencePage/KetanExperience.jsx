@@ -55,7 +55,7 @@ export default function KetanExperience() {
                 className="bg-white rounded-xl p-6 md:p-8 shadow-md hover:shadow-lg transition-all duration-300 border border-[#FF4B8B]/10"
               >
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#FF4B8B]/10 flex items-center justify-center text-primary-pink">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-primary-pink/10 flex items-center justify-center text-primary-pink">
                     {item.icon}
                   </div>
                   <div className="flex-1">
@@ -63,7 +63,7 @@ export default function KetanExperience() {
                       <h3 className="text-card-title text-primary-pink font-semibold">
                         {item.title}
                       </h3>
-                      <span className="text-caption text-[#BB125B] bg-[#FF4B8B]/10 px-2 py-1 rounded">
+                      <span className="text-caption text-[#BB125B] bg-primary-pink/10 px-2 py-1 rounded">
                         {item.detail}
                       </span>
                     </div>

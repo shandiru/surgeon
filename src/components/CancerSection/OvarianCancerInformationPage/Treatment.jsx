@@ -54,7 +54,7 @@ export default function OvarianCancerTreatment() {
               Treatment of Ovarian Cancer
             </h3>
           </div>
-          <p className="text-[#7a2f4f] text-lg">
+          <p className="text-black text-lg">
             Treatment depends on the type of ovarian cancer, your overall health, and fertility
             considerations.
           </p>

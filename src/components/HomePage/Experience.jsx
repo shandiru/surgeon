@@ -52,7 +52,7 @@ export default function ProfessionalExperience() {
               data-aos-delay={`${idx * 150}`}
             >
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-[#FF4B8B] rounded-lg flex items-center justify-center">
+                <div className="w-12 h-12 bg-primary-pink rounded-lg flex items-center justify-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-6 w-6 text-white"

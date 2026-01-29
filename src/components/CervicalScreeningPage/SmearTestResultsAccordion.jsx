@@ -34,7 +34,7 @@ export default function SmearTestResultsAccordion() {
           {/* Header */}
           <div className="text-center md:text-left">
             <h2 className="text-3xl md:text-4xl font-bold mb-2"> After Your Test</h2>
-            <p className="text-base text-[#7a2f4f]">Results usually within 1–2 weeks</p>
+            <p className="text-base text-black">Results usually within 1–2 weeks</p>
           </div>
 
           {/* Accordion */}
@@ -45,7 +45,7 @@ export default function SmearTestResultsAccordion() {
                   <button
                     type="button"
                     onClick={() => toggle(index)}
-                    className="flex w-full items-center justify-between gap-6 py-3 text-left font-medium text-primary-pink hover:text-[#7a2f4f] transition"
+                    className="flex w-full items-center justify-between gap-6 py-3 text-left font-medium text-primary-pink hover:text-black transition"
                   >
                     <span className="flex items-center gap-3 text-lg">
                       <svg
@@ -77,7 +77,7 @@ export default function SmearTestResultsAccordion() {
                 </h3>
 
                 {openIndex === index && (
-                  <div className="mt-3 p-5 bg-[#FFF5F8] border border-gray-200 rounded-lg text-base text-[#7a2f4f] leading-relaxed">
+                  <div className="mt-3 p-5 bg-light-pink-1 border border-gray-200 rounded-lg text-base text-black leading-relaxed">
                     {item.description}
                   </div>
                 )}

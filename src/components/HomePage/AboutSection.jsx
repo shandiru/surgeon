@@ -78,7 +78,7 @@ export default function AboutSectionView() {
               data-aos="fade-up"
               data-aos-delay={i * 200}
             >
-              <div className="bg-[#FF4B8B]/10 group-hover:bg-[#FF4B8B]/20 transition-colors duration-300 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-primary-pink/10 group-hover:bg-primary-pink/20 transition-colors duration-300 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-8 w-8 text-primary-pink"

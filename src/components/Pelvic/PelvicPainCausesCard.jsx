@@ -18,7 +18,7 @@ const PelvicPainAccordion = () => {
 
   return (
     <div className="space-y-6 bg-gradient-to-b from-primary/5 to-background py-8 px-4">
-      <div className="text-primary-pink bg-[#FF4B8B]/10 max-w-5xl mx-auto mb-10 rounded-xl p-6 hover:z-50 transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd] hover:scale-105 active:scale-100">
+      <div className="text-primary-pink bg-primary-pink/10 max-w-5xl mx-auto mb-10 rounded-xl p-6 hover:z-50 transition-all duration-300 hover:bg-light-pink-1 hover:shadow-lg hover:border-light-pink-2 active:bg-light-pink-1 active:shadow-lg active:border-light-pink-2 hover:scale-105 active:scale-100">
         {/* Gynaecological Causes Accordion */}
         <div className="text-center mb-6">
           <div className="text-3xl font-semibold flex gap-2 text-left">

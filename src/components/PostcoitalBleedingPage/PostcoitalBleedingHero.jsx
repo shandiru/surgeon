@@ -20,7 +20,7 @@ export default function PostcoitalBleedingHero() {
         {/* CTA Button */}
         <button
           data-slot="button"
-          className="inline-flex items-center justify-center gap-2 text-sm font-semibold rounded-md px-7 h-11 bg-[#FF4B8B] text-white shadow-md hover:shadow-lg hover:bg-[#e43d7a] transition-all duration-300"
+          className="inline-flex items-center justify-center gap-2 text-sm font-semibold rounded-md px-7 h-11 bg-primary-pink text-white shadow-md hover:shadow-lg hover:bg-[#e43d7a] transition-all duration-300"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -24,7 +24,7 @@ export default function CervicalCancerSymptoms() {
   return (
     <section className="mt-10 py-12" data-aos="fade-up">
       <div className="max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
-        <div className="bg-[#fff5f8] text-primary-pink flex flex-col md:flex-row gap-6 rounded-xl border border-[#f5a9bd] border-l-4 border-l-[#FF4B8B] shadow-sm p-6">
+        <div className="bg-light-pink-1 text-primary-pink flex flex-col md:flex-row gap-6 rounded-xl border border-light-pink-2 border-l-4 border-l-primary-pink shadow-sm p-6">
           {/* Content Section */}
           <div className="flex flex-col gap-6 md:w-1/2" data-aos="fade-left">
             {/* Header with icon and title */}
@@ -33,7 +33,7 @@ export default function CervicalCancerSymptoms() {
                 <LuTriangleAlert className="text-primary-pink w-6 h-6" />
                 Symptoms of Cervical Cancer
               </div>
-              <p className="text-[#7a2f4f]">
+              <p className="text-black">
                 Cervical cancer often develops without early warning signs. That's why regular
                 screenings are essential.
               </p>
@@ -44,10 +44,10 @@ export default function CervicalCancerSymptoms() {
               {symptoms.map((symptom, index) => (
                 <div
                   key={index}
-                  className="flex items-center gap-3 p-3 bg-white w-full border border-[#f5c2d2] rounded-lg transition-all duration-300 hover:bg-[#fce3e8] hover:shadow-lg hover:border-[#f5a9bd] active:bg-[#fce3e8] active:shadow-lg active:border-[#f5a9bd]"
+                  className="flex items-center gap-3 p-3 bg-white w-full border border-light-pink-2 rounded-lg transition-all duration-300 hover:bg-light-pink-1 hover:shadow-lg hover:border-light-pink-2 active:bg-light-pink-1 active:shadow-lg active:border-light-pink-2"
                   data-aos="fade-left"
                 >
-                  <div className="w-2 h-2 bg-[#FF4B8B] rounded-full flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-primary-pink rounded-full flex-shrink-0"></div>
                   <span className="text-sm font-medium text-primary-pink">{symptom}</span>
                 </div>
               ))}

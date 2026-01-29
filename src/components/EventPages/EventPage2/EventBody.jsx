@@ -123,7 +123,7 @@ const EventDetail = () => {
                   Annual Scientific Meeting – Bristol 2026
                 </h1>
                 <div className="flex flex-wrap items-center gap-4 mb-6">
-                  <span className="inline-flex items-center px-4 py-2 bg-[#FF4B8B]/20 text-primary-pink rounded-full font-semibold text-sm">
+                  <span className="inline-flex items-center px-4 py-2 bg-primary-pink/20 text-primary-pink rounded-full font-semibold text-sm">
                     <Calendar className="w-4 h-4 mr-2" />
                     24th and 26th June 2026.
                   </span>
@@ -175,7 +175,7 @@ const EventDetail = () => {
                   <a
                     href="https://www.bgcs.org.uk/about-us/join/"
                     target="_blank"
-                    className="flex-1 md:flex-none px-8 py-3 bg-gradient-to-r from-[#FF4B8B] to-[#FF4B8B] hover:bg-[#FF4B8B]/20 text-white rounded-xl font-semibold transition-all transform hover:scale-105 shadow-lg"
+                    className="flex-1 md:flex-none px-8 py-3 bg-gradient-to-r from-[#FF4B8B] to-[#FF4B8B] hover:bg-primary-pink/20 text-white rounded-xl font-semibold transition-all transform hover:scale-105 shadow-lg"
                   >
                     Join Event
                   </a>
@@ -218,7 +218,7 @@ const EventDetail = () => {
                         alt={speaker.name}
                         className="w-32 h-32 rounded-full mx-auto object-cover ring-4 ring-gray-100 group-hover:ring-[#FF4B8B] transition-all"
                       />
-                      <div className="absolute inset-0 rounded-full bg-[#FF4B8B] opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                      <div className="absolute inset-0 rounded-full bg-primary-pink opacity-0 group-hover:opacity-10 transition-opacity"></div>
                     </div>
                     <h3 className="text-lg font-bold text-gray-900">{speaker.name}</h3>
                     <p className="text-sm text-gray-600">{speaker.role}</p>
@@ -292,7 +292,7 @@ const EventDetail = () => {
                   >
                     <button
                       onClick={() => setOpenFaq(openFaq === index ? -1 : index)}
-                      className="w-full flex items-center justify-between p-4 bg-[#FF4B8B]/20 hover:bg-[#FF4B8B] transition-all"
+                      className="w-full flex items-center justify-between p-4 bg-primary-pink/20 hover:bg-primary-pink transition-all"
                     >
                       <h3 className="text-lg font-semibold text-gray-900">{faq.question}</h3>
                       {openFaq === index ? (
@@ -385,7 +385,7 @@ const EventDetail = () => {
                     </div>
                     <h3 className="text-lg font-bold text-gray-900 mb-1">{schedule.title}</h3>
                     <p className="text-sm text-gray-600 mb-2">{schedule.subtitle}</p>
-                    <span className="inline-block px-4 py-1 bg-[#FF4B8B]/20 text-primary-pink rounded-full text-sm font-semibold">
+                    <span className="inline-block px-4 py-1 bg-primary-pink/20 text-primary-pink rounded-full text-sm font-semibold">
                       {schedule.date}
                     </span>
                   </div>

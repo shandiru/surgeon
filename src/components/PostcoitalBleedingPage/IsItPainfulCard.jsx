@@ -21,7 +21,7 @@ const IsItPainfulCard = () => {
 
           {/* Right Column */}
           <div>
-            <span className="inline-flex items-center rounded-full bg-[#FF4B8B] text-white px-3 py-1 text-xs font-medium mb-2 shadow-sm">
+            <span className="inline-flex items-center rounded-full bg-primary-pink text-white px-3 py-1 text-xs font-medium mb-2 shadow-sm">
               Statistics
             </span>
             <p className="leading-relaxed">

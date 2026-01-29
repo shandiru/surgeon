@@ -15,7 +15,7 @@ export default function RememberSection() {
           treatment.
         </p>
 
-        <button className="inline-flex items-center justify-center gap-2 px-8 h-12 rounded-lg font-semibold text-base text-white bg-[#FF4B8B] hover:bg-[#e93a7d] transition-all shadow-md hover:shadow-xl">
+        <button className="inline-flex items-center justify-center gap-2 px-8 h-12 rounded-lg font-semibold text-base text-white bg-primary-pink hover:bg-[#e93a7d] transition-all shadow-md hover:shadow-xl">
           Book an Appointment
         </button>
       </div>

@@ -29,8 +29,8 @@ const CausesSection = () => {
               transition duration-300 hover:shadow-[0_0_25px_rgba(176,59,102,0.4)] hover:-translate-y-2 active:scale-[0.98]"
             >
               {/* Icon */}
-              <div className="w-14 h-14 bg-[#FF4B8B]/20 rounded-full flex items-center justify-center mb-4">
-                <div className="w-6 h-6 bg-[#FF4B8B] rounded-full" />
+              <div className="w-14 h-14 bg-primary-pink/20 rounded-full flex items-center justify-center mb-4">
+                <div className="w-6 h-6 bg-primary-pink rounded-full" />
               </div>
 
               {/* Text */}

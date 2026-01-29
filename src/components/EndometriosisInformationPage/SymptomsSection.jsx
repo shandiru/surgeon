@@ -46,9 +46,7 @@ export default function SymptomsSection() {
           <h2 className="text-3xl font-bold mb-4" style={{ color: deepPink }}>
             Symptoms of Endometriosis
           </h2>
-          <p className="text-lg text-gray-600">
-            Recognizing the signs and when to seek help
-          </p>
+          <p className="text-lg text-gray-600">Recognizing the signs and when to seek help</p>
         </div>
 
         {/* Symptom Cards */}
@@ -59,7 +57,10 @@ export default function SymptomsSection() {
               className="flex flex-col gap-4 bg-white text-gray-800 rounded-2xl  shadow-md p-6 
               transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl active:scale-[0.98]"
             >
-              <div className="flex items-center gap-3 text-lg font-semibold" style={{ color: deepPink }}>
+              <div
+                className="flex items-center gap-3 text-lg font-semibold"
+                style={{ color: deepPink }}
+              >
                 {symptom.icon}
                 {symptom.title}
               </div>
@@ -69,9 +70,7 @@ export default function SymptomsSection() {
         </div>
 
         {/* Important Reminder */}
-        <div
-          className="rounded-2xl p-8 shadow-lg bg-[#FFC5D3]"
-        >
+        <div className="rounded-2xl p-8 shadow-lg bg-light-pink-2">
           <div className="flex items-start gap-4">
             <TriangleAlert className="w-8 h-8 mt-1 flex-shrink-0" style={{ color: deepPink }} />
             <div>
@@ -79,9 +78,9 @@ export default function SymptomsSection() {
                 Important Reminder
               </p>
               <p className="text-base leading-relaxed text-gray-800">
-                Many women believe severe period pain is "normal" — it isn&apos;t.  
-                You don&apos;t have to live with it.  
-                If you experience these symptoms, please consult with a healthcare provider.
+                Many women believe severe period pain is "normal" — it isn&apos;t. You don&apos;t
+                have to live with it. If you experience these symptoms, please consult with a
+                healthcare provider.
               </p>
             </div>
           </div>

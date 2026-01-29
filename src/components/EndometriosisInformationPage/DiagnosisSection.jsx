@@ -41,7 +41,7 @@ const DiagnosisSection = () => {
               >
                 <div className="flex items-start gap-6">
                   {/* Step Number */}
-                  <div className="w-12 h-12 bg-[#FF4B8B] text-white rounded-full flex items-center justify-center font-bold text-lg shadow-md">
+                  <div className="w-12 h-12 bg-primary-pink text-white rounded-full flex items-center justify-center font-bold text-lg shadow-md">
                     {index + 1}
                   </div>
 

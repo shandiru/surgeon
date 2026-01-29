@@ -1,10 +1,10 @@
-'use client'
+"use client";
 
-import React from 'react'
+import React from "react";
 
 export default function RememberSection() {
-  const pink = '#FFC5D3'
-  const deepPink = '#FF4B8B'
+  const pink = "#FFC5D3";
+  const deepPink = "#FF4B8B";
 
   return (
     <section className="py-16 bg-white">
@@ -31,7 +31,7 @@ export default function RememberSection() {
                     <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
                   </svg>
                 ),
-                text: 'Endometriosis is common and treatable',
+                text: "Endometriosis is common and treatable",
               },
               {
                 icon: (
@@ -49,7 +49,7 @@ export default function RememberSection() {
                     <path d="M16 3.13a4 4 0 0 1 0 7.75" />
                   </svg>
                 ),
-                text: 'You are not alone — support is available',
+                text: "You are not alone — support is available",
               },
               {
                 icon: (
@@ -68,7 +68,7 @@ export default function RememberSection() {
                     <circle cx="20" cy="10" r="2" />
                   </svg>
                 ),
-                text: 'Early diagnosis can relieve pain and protect fertility',
+                text: "Early diagnosis can relieve pain and protect fertility",
               },
             ].map((item, idx) => (
               <div
@@ -87,7 +87,8 @@ export default function RememberSection() {
           {/* CTA */}
           <div className="p-8 rounded-2xl shadow-lg bg-white">
             <p className="text-lg mb-6 text-gray-700">
-              If you think you may have endometriosis, book an appointment — we&apos;re here to help.
+              If you think you may have endometriosis, book an appointment — we&apos;re here to
+              help.
             </p>
 
             <div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -111,7 +112,7 @@ export default function RememberSection() {
 
               {/* Secondary Button */}
               <button
-                className="inline-flex items-center justify-center gap-2 text-sm font-medium h-11 px-6 rounded-lg shadow-sm transition hover:bg-[#FFC5D3]/20 active:scale-[0.97]"
+                className="inline-flex items-center justify-center gap-2 text-sm font-medium h-11 px-6 rounded-lg shadow-sm transition hover:bg-light-pink-1/20 active:scale-[0.97]"
                 style={{ color: deepPink }}
               >
                 <svg
@@ -134,5 +135,5 @@ export default function RememberSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

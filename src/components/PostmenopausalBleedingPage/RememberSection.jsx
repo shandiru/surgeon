@@ -29,7 +29,7 @@ export default function RememberSection() {
           </p>
           <button
             type="button"
-            className="inline-flex items-center gap-2 bg-[#FF4B8B] hover:bg-[#e63a7b] active:scale-95 transition-transform text-white text-sm font-semibold px-7 h-11 rounded-lg shadow-md focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#FF4B8B]"
+            className="inline-flex items-center gap-2 bg-primary-pink hover:bg-[#e63a7b] active:scale-95 transition-transform text-white text-sm font-semibold px-7 h-11 rounded-lg shadow-md focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#FF4B8B]"
           >
             <CalendarDays className="h-5 w-5" />
             Book Appointment

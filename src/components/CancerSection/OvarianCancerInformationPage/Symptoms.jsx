@@ -39,7 +39,7 @@ export default function OvarianCancerSymptoms() {
             <FaExclamationTriangle className="h-8 w-8" style={{ color: deepPink }} />
             <h3 className="text-3xl font-bold text-primary-pink">Symptoms of Ovarian Cancer</h3>
           </div>
-          <p className="text-[#7a2f4f] text-lg">
+          <p className="text-black text-lg">
             Ovarian cancer can cause a variety of symptoms. Some of the most common include:
           </p>
         </div>
@@ -66,7 +66,10 @@ export default function OvarianCancerSymptoms() {
         </div>
 
         {/* Alert Note */}
-        <div className="rounded-xl px-6 py-5 shadow-md bg-[#FFC5D3] text-white" data-aos="fade-up">
+        <div
+          className="rounded-xl px-6 py-5 shadow-md bg-light-pink-2 text-white"
+          data-aos="fade-up"
+        >
           <div className="flex items-start gap-3">
             <div
               className="w-6 h-6 rounded-full flex items-center justify-center mt-0.5 font-bold"

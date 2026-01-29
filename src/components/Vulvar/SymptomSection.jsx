@@ -85,7 +85,7 @@ const SymptomsSection = () => {
                       onClick={handleCheckboxChange}
                       id={id}
                       className={`w-4 h-4 border rounded-sm mt-1 flex items-center justify-center ${
-                        symptoms[id] ? "bg-[#FF4B8B] text-white" : "bg-white border-gray-400"
+                        symptoms[id] ? "bg-primary-pink text-white" : "bg-white border-gray-400"
                       }`}
                     >
                       {symptoms[id] && (
@@ -104,7 +104,7 @@ const SymptomsSection = () => {
                     <label htmlFor={id} className="text-sm cursor-pointer leading-relaxed">
                       {label}
                       {urgent && (
-                        <span className="ml-2 text-xs px-2 py-0.5 rounded bg-[#FF4B8B]/10 text-[#BB125B]">
+                        <span className="ml-2 text-xs px-2 py-0.5 rounded bg-primary-pink/10 text-[#BB125B]">
                           Urgent
                         </span>
                       )}

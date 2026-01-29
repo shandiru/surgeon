@@ -68,7 +68,7 @@ const IrregularBleedingNavbar = ({ activeTab, setActiveTab }) => {
 const TabButton = ({ icon, label, fullWidth = false, active, onClick }) => {
   const base = "flex items-center gap-2 px-4 py-2 text-sm font-medium transition-all";
   const activeClasses = active
-    ? "bg-[#FF4B8B] text-white"
+    ? "bg-primary-pink text-white"
     : "bg-[#FFE5ED] text-[#1F2937] hover:bg-[#FFD2E1]";
   const layout = fullWidth
     ? "w-full justify-start rounded-md"

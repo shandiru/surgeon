@@ -38,7 +38,7 @@ export default function SymptomsSection() {
               "Headaches, low mood, or emotional distress",
             ].map((symptom, idx) => (
               <li key={idx} className="flex items-start gap-3">
-                <div className="w-2.5 h-2.5 bg-[#FF4B8B] rounded-full mt-2 flex-shrink-0" />
+                <div className="w-2.5 h-2.5 bg-primary-pink rounded-full mt-2 flex-shrink-0" />
                 <span>{symptom}</span>
               </li>
             ))}

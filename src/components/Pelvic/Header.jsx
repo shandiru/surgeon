@@ -7,7 +7,7 @@ const PelvicHeader = () => {
       <div className="max-w-4xl mx-auto text-center">
         {/* Icon */}
         <div className="flex justify-center mb-6">
-          <div className="p-4 bg-[#FF4B8B]/10 rounded-full">
+          <div className="p-4 bg-primary-pink/10 rounded-full">
             <Heart className="h-12 w-12 text-[#d60d64] " />
           </div>
         </div>

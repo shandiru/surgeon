@@ -160,7 +160,7 @@ const Navbar = () => {
                     <Link
                       key={item.to}
                       to={item.to}
-                      className="block px-3 py-2 text-body-small text-gray-600 hover:bg-[#FFC5D3]"
+                      className="block px-3 py-2 text-body-small text-gray-600 hover:bg-light-pink-1"
                       onClick={closeAll}
                     >
                       {item.label}
@@ -193,7 +193,7 @@ const Navbar = () => {
                     <Link
                       key={item.to}
                       to={item.to}
-                      className="block px-4 py-2 text-body-small text-gray-700 hover:bg-[#FFC5D3]"
+                      className="block px-4 py-2 text-body-small text-gray-700 hover:bg-light-pink-1"
                       onClick={closeAll}
                     >
                       {item.label}
@@ -227,7 +227,7 @@ const Navbar = () => {
             <HashLink
               smooth
               to="/#contact"
-              className="w-full mt-2 inline-flex items-center justify-center rounded-md text-sm font-medium transition-all shadow-xs h-9 px-4 py-2 bg-[#FFC5D3] hover:bg-[#FFC5D3] text-primary-pink mb-3"
+              className="w-full mt-2 inline-flex items-center justify-center rounded-md text-sm font-medium transition-all shadow-xs h-9 px-4 py-2 bg-light-pink-2 hover:bg-light-pink-1 text-primary-pink mb-3"
               onClick={closeAll}
             >
               Book Consultation
@@ -343,7 +343,7 @@ const Navbar = () => {
                     <Link
                       key={item.to}
                       to={item.to}
-                      className="block px-3 py-2 text-body-small text-gray-600 hover:bg-[#FFC5D3] rounded-md"
+                      className="block px-3 py-2 text-body-small text-gray-600 hover:bg-light-pink-1 rounded-md"
                       onClick={closeAll}
                     >
                       {item.label}
@@ -354,7 +354,7 @@ const Navbar = () => {
 
               <Link
                 to="/robotic-surgery-experience"
-                className="block px-3 py-2 text-body-small text-gray-600 hover:bg-[#FFC5D3] rounded-md"
+                className="block px-3 py-2 text-body-small text-gray-600 hover:bg-light-pink-1 rounded-md"
                 onClick={closeAll}
               >
                 Robotic Surgery
@@ -373,7 +373,7 @@ const Navbar = () => {
               <HashLink
                 smooth
                 to="/#contact"
-                className="w-full mt-2 inline-flex items-center justify-center rounded-md text-button transition-all shadow-xs h-9 px-4 py-2 bg-[#FFC5D3] hover:bg-[#FFC5D3] text-primary-pink mb-3"
+                className="w-full mt-2 inline-flex items-center justify-center rounded-md text-button transition-all shadow-xs h-9 px-4 py-2 bg-light-pink-2 hover:bg-light-pink-1 text-primary-pink mb-3"
                 onClick={closeAll}
               >
                 Book Consultation

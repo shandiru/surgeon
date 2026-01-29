@@ -100,7 +100,7 @@ export default function EducationLanguagesSection() {
                     key={idx}
                     className="inline-flex items-center justify-center rounded-md font-medium text-body-large px-6 py-2 
                                bg-[#FFF1F5] text-gray-800 border border-[#FF4B8B]/20 
-                               transition-all duration-300 hover:bg-[#FF4B8B] hover:text-white 
+                               transition-all duration-300 hover:bg-primary-pink hover:text-white 
                                hover:shadow-[0_0_15px_1px_rgba(255,75,139,0.3)] hover:scale-105 
                                active:scale-95"
                     data-aos="zoom-in"

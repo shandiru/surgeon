@@ -11,7 +11,7 @@ export default function SmearTestProcedure() {
         >
           {/* Header */}
           <div className="flex items-center gap-3">
-            <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#FFC5D3] shadow-md">
+            <div className="flex items-center justify-center w-12 h-12 rounded-full bg-light-pink-2 shadow-md">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6 text-white"
@@ -31,7 +31,7 @@ export default function SmearTestProcedure() {
           </div>
 
           {/* Highlight Box */}
-          <div className="bg-[#FFF5F8] border border-gray-200 text-primary-pink p-4 rounded-lg shadow-sm">
+          <div className="bg-light-pink-1 border border-gray-200 text-primary-pink p-4 rounded-lg shadow-sm">
             <p className="font-semibold text-[#ff97b3] mb-1">Takes just 5 minutes</p>
             <p className="text-gray-700 text-sm">
               The entire procedure is quick and straightforward
@@ -46,7 +46,7 @@ export default function SmearTestProcedure() {
               "Your sample is sent to a lab for testing",
             ].map((step, index) => (
               <div key={index} className="flex items-start gap-3">
-                <div className="bg-[#FFC5D3] text-white rounded-full w-7 h-7 flex items-center justify-center text-sm font-bold shadow">
+                <div className="bg-light-pink-2 text-white rounded-full w-7 h-7 flex items-center justify-center text-sm font-bold shadow">
                   {index + 1}
                 </div>
                 <p className="text-gray-700">{step}</p>
@@ -55,7 +55,7 @@ export default function SmearTestProcedure() {
           </div>
 
           {/* Dual Testing Box */}
-          <div className="bg-[#FFF5F8] border border-gray-200 text-primary-pink p-4 rounded-lg shadow-sm">
+          <div className="bg-light-pink-1 border border-gray-200 text-primary-pink p-4 rounded-lg shadow-sm">
             <p className="font-semibold text-[#ff97b3] mb-1">We use Dual Testing:</p>
             <p className="text-gray-700 text-sm">
               Checking for high-risk HPV and abnormal cells (for women over 25)

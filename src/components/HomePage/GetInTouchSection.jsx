@@ -93,7 +93,7 @@ export default function GetInTouchSection() {
                   href={card.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center rounded-md text-button transition-all w-full px-4 py-2 bg-[#FF4B8B] hover:bg-[#ff5d96] text-white"
+                  className="inline-flex items-center justify-center rounded-md text-button transition-all w-full px-4 py-2 bg-primary-pink hover:bg-[#ff5d96] text-white"
                 >
                   {card.btn}
                 </a>
@@ -102,7 +102,7 @@ export default function GetInTouchSection() {
                   {card.btn}
                 </button>
               ) : (
-                <button className="inline-flex items-center justify-center rounded-md text-button transition-all w-full px-4 py-2 bg-[#FF4B8B] hover:bg-[#ff5d96] text-white">
+                <button className="inline-flex items-center justify-center rounded-md text-button transition-all w-full px-4 py-2 bg-primary-pink hover:bg-[#ff5d96] text-white">
                   {card.btn}
                 </button>
               )}

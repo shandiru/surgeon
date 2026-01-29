@@ -8,7 +8,7 @@ export default function HeroSection() {
     <section className="relative h-132 md:h-155 lg:h-175 text-center bg-gradient-to-b from-[#FFF1F5] via-[#FFD9E7] to-[#FF4B8B] px-4 sm:px-6 pb-12 sm:pb-16">
       {/* Top Button */}
       <div className="pt-16 sm:pt-20 md:pt-24 lg:pt-32 xl:pt-36 flex justify-center">
-        <button className="text-caption border border-[#FF4B8B]/40 text-primary-pink px-3 sm:px-4 py-1 rounded-full hover:bg-[#FF4B8B]/10 transition">
+        <button className="text-caption border border-[#FF4B8B]/40 text-primary-pink px-3 sm:px-4 py-1 rounded-full hover:bg-primary-pink/10 transition">
           Get in touch
         </button>
       </div>
@@ -25,7 +25,7 @@ export default function HeroSection() {
             href="https://www.circlehealthgroup.co.uk/consultants/ketankumar-gajjar"
             target="_blank"
           >
-            <button className="relative flex items-center bg-[#FF4B8B] hover:bg-[#E03E7C] text-white font-medium rounded-lg shadow-[0_0_20px_rgba(255,75,139,0.3)]">
+            <button className="relative flex items-center bg-primary-pink hover:bg-[#E03E7C] text-white font-medium rounded-lg shadow-[0_0_20px_rgba(255,75,139,0.3)]">
               <span className="px-3 sm:px-4 md:px-5 py-2 sm:py-2.5 md:py-3 text-button whitespace-nowrap">
                 Book an Appointment
               </span>
