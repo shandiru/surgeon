@@ -327,44 +327,19 @@ const Navbar = () => {
                 Event
               </HashLink>
 
-              {/* Treatments Accordion */}
+              {isServicesOpen && <div className="ml-4 mt-1 space-y-1"></div>}
+
+              {/* ✅ Treatment Guide Accordion (FIXED) */}
               <button
                 onClick={() => {
-                  setIsServicesOpen(true);
-                  setIsAdditionalServicesOpen(false);
-                }}
-                className="w-full flex items-center justify-between px-3 py-2 text-body-small text-gray-600 hover:text-gray-900"
-              >
-                <span>Treatments</span>
-                {isServicesOpen ? <FiChevronUp /> : <FiChevronDown />}
-              </button>
-
-              {isServicesOpen && (
-                <div className="ml-4 mt-1 space-y-1">
-                  {/* {treatments.map((item) => (
-                    <Link
-                      key={item.to}
-                      to={item.to}
-                      className="block px-3 py-2 text-body-small text-gray-600 hover:bg-[#FFC5D3] rounded-md"
-                      onClick={closeAll}
-                    >
-                      {item.label}
-                    </Link>
-                  ))} */}
-                </div>
-              )}
-
-              {/* Treatment Guide Accordion */}
-              {/* <button
-                onClick={() => {
-                  setIsAdditionalServicesOpen(true);
+                  setIsAdditionalServicesOpen(!isAdditionalServicesOpen);
                   setIsServicesOpen(false);
                 }}
                 className="w-full flex items-center justify-between px-3 py-2 text-body-small text-gray-600 hover:text-gray-900"
               >
                 <span>Treatment guide</span>
                 {isAdditionalServicesOpen ? <FiChevronUp /> : <FiChevronDown />}
-              </button> */}
+              </button>
 
               {isAdditionalServicesOpen && (
                 <div className="ml-4 mt-1 space-y-1 max-h-64 overflow-y-auto">
