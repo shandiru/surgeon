@@ -2,7 +2,13 @@ import React from "react";
 import iconMap from "../iconMap";
 
 const GridBlock = ({ columns = 3, items }) => {
-  const colClass = columns === 2 ? "grid md:grid-cols-2 gap-6" : "grid md:grid-cols-3 gap-6";
+  const colClassMap = {
+    1: "grid grid-cols-1 gap-6",
+    2: "grid md:grid-cols-2 gap-6",
+    3: "grid md:grid-cols-3 gap-6",
+    4: "grid md:grid-cols-2 lg:grid-cols-4 gap-6",
+  };
+  const colClass = colClassMap[columns] || "grid md:grid-cols-3 gap-6";
 
   return (
     <div className={colClass}>
