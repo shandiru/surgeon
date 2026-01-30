@@ -122,10 +122,7 @@
             {
               "icon": "ScanSearch",
               "title": "Transvaginal Ultrasound",
-              "type": "bulletList",
-              "description": [
-                "A transvaginal ultrasound is performed by gently inserting the probe into the vagina, allowing closer and more detailed images of the pelvic organs. It is commonly used in fertility assessments and provides clearer views, especially during early pregnancy."
-              ]
+              "description": "A transvaginal ultrasound is performed by gently inserting the probe into the vagina, allowing closer and more detailed images of the pelvic organs. It is commonly used in fertility assessments and provides clearer views, especially during early pregnancy."
             }
           ]
         },
