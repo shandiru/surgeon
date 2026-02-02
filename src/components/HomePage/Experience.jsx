@@ -14,10 +14,17 @@ export default function ProfessionalExperience() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-section text-primary-pink mb-4" data-aos="fade-up">
+          <h2
+            className="text-section text-primary-pink mb-4"
+            data-aos="fade-up"
+          >
             Professional Experience
           </h2>
-          <p className="text-body-large text-black/90" data-aos="fade-up" data-aos-delay="100">
+          <p
+            className="text-body-large text-black/90"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             Current positions and affiliations
           </p>
         </div>
@@ -35,13 +42,7 @@ export default function ProfessionalExperience() {
               hospital: "The Park Hospital (Circle Health Group)",
               role: "Consultant Gynaecologist",
               place: "Private Practice",
-              desc: "Comprehensive women's health services",
-            },
-            {
-              hospital: "The Park Hospital (Circle Health Group)",
-              role: "Consultant Gynaecologist",
-              place: "Private Practice",
-              desc: "Advanced surgical procedures",
+              desc: "Comprehensive women's health services and Advanced surgical procedures",
             },
           ].map((item, idx) => (
             <div
@@ -66,13 +67,19 @@ export default function ProfessionalExperience() {
                   </svg>
                 </div>
                 <div>
-                  <p className="font-semibold text-body-small text-gray-900">{item.hospital}</p>
-                  <p className="text-primary-pink font-medium text-body-small">{item.role}</p>
+                  <p className="font-semibold text-body-small text-gray-900">
+                    {item.hospital}
+                  </p>
+                  <p className="text-primary-pink font-medium text-body-small">
+                    {item.role}
+                  </p>
                 </div>
               </div>
               <div>
                 <p className="text-black/90 text-body-small">{item.place}</p>
-                <p className="text-gray-500 text-body-small mt-1">{item.desc}</p>
+                <p className="text-gray-500 text-body-small mt-1">
+                  {item.desc}
+                </p>
               </div>
             </div>
           ))}
@@ -138,11 +145,15 @@ export default function ProfessionalExperience() {
                   data-aos="fade-up"
                   data-aos-delay="300"
                 >
-                  <h4 className="font-semibold text-body text-gray-900">Honorary Secretary</h4>
+                  <h4 className="font-semibold text-body text-gray-900">
+                    Honorary Secretary
+                  </h4>
                   <p className="text-black/90 text-body-small">
                     British Gynaecological Cancer Society
                   </p>
-                  <p className="text-gray-500 text-caption">July 2022 - July 2025</p>
+                  <p className="text-gray-500 text-caption">
+                    July 2022 - July 2025
+                  </p>
                 </div>
 
                 <div
@@ -157,7 +168,9 @@ export default function ProfessionalExperience() {
                   <p className="text-black/90 text-body-small">
                     British Gynaecological Cancer Society
                   </p>
-                  <p className="text-gray-500 text-caption">July 2020 - July 2023</p>
+                  <p className="text-gray-500 text-caption">
+                    July 2020 - July 2023
+                  </p>
                 </div>
 
                 <div
@@ -166,8 +179,12 @@ export default function ProfessionalExperience() {
                   data-aos="fade-up"
                   data-aos-delay="500"
                 >
-                  <h4 className="font-semibold text-body text-gray-900">Gyn Oncology Lead</h4>
-                  <p className="text-black/90 text-body-small">Nottingham NHS</p>
+                  <h4 className="font-semibold text-body text-gray-900">
+                    Gyn Oncology Lead
+                  </h4>
+                  <p className="text-black/90 text-body-small">
+                    Nottingham NHS
+                  </p>
                   {/* <p className="text-gray-500 text-xs">[Add start date] - Present</p> */}
                 </div>
               </div>
