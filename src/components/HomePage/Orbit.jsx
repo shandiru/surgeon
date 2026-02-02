@@ -1,6 +1,13 @@
 "use client";
 import React from "react";
-import { FiArrowUpRight, FiUser, FiHeart, FiActivity, FiEye, FiScissors } from "react-icons/fi";
+import {
+  FiArrowUpRight,
+  FiUser,
+  FiHeart,
+  FiActivity,
+  FiEye,
+  FiScissors,
+} from "react-icons/fi";
 import { ArrowUpRight } from "lucide-react";
 
 export default function HeroSection() {
@@ -15,8 +22,10 @@ export default function HeroSection() {
 
       {/* Headings */}
       <div className="mt-4 sm:mt-6 md:mt-8">
-        <h1 className="text-hero font-semibold text-gray-900">Health Support from</h1>
-        <h2 className="text-hero font-semibold text-gray-900 mt-1">Expert Doctors</h2>
+        <h1 className="text-hero font-semibold text-gray-900">
+          Get in touch with
+        </h1>
+        <h2 className="text-hero font-semibold text-gray-900 mt-1">Ketan</h2>
 
         {/* Pink Button */}
         <div className="flex items-center justify-center py-4 sm:py-6 md:py-7 lg:py-9 xl:py-10 group transition-all duration-300">

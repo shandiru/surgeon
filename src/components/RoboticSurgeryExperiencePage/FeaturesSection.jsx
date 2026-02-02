@@ -21,7 +21,7 @@ export default function FeaturesSection() {
       icon: <Building2 className="w-8 h-8" />,
       title: "Current Work and Teaching",
       description:
-        "As Medical Director, Ketan oversees daily hospital operations while actively teaching robotic surgery techniques to surgeons across Europe.",
+        "As a lead gynecological robotic surgeon at Nottingham University Hospital and Park Hospital, Ketan oversees daily hospital operations while actively teaching robotic surgery techniques to surgeons across Europe.",
       highlighted: false,
     },
   ];
@@ -37,8 +37,9 @@ export default function FeaturesSection() {
                 Robotic Surgery Excellence
               </h2>
               <p className="text-body-large text-black/90 max-w-2xl">
-                Comprehensive insights into robotic surgery, from understanding the benefits and
-                considerations to exploring expert experience and current practice.
+                Comprehensive insights into robotic surgery, from understanding
+                the benefits and considerations to exploring expert experience
+                and current practice.
               </p>
             </div>
             <div className="flex-shrink-0 md:mt-0 mt-4">
@@ -58,7 +59,9 @@ export default function FeaturesSection() {
                   }`}
                 >
                   {/* Icon */}
-                  <div className="flex-shrink-0 text-primary-pink">{feature.icon}</div>
+                  <div className="flex-shrink-0 text-primary-pink">
+                    {feature.icon}
+                  </div>
 
                   {/* Content */}
                   <div className="flex-1">
@@ -67,12 +70,16 @@ export default function FeaturesSection() {
                         {feature.title}
                       </h3>
                     </div>
-                    <p className="text-body text-black/90 leading-relaxed">{feature.description}</p>
+                    <p className="text-body text-black/90 leading-relaxed">
+                      {feature.description}
+                    </p>
                   </div>
                 </div>
 
                 {/* Divider */}
-                {index < features.length - 1 && <div className="border-t border-gray-200" />}
+                {index < features.length - 1 && (
+                  <div className="border-t border-gray-200" />
+                )}
               </React.Fragment>
             ))}
           </div>
