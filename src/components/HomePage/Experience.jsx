@@ -30,7 +30,7 @@ export default function ProfessionalExperience() {
         </div>
 
         {/* Hospital Cards */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="flex flex-wrap justify-center gap-8 mb-16">
           {[
             {
               hospital: "Nottingham University Hospital",
@@ -47,8 +47,8 @@ export default function ProfessionalExperience() {
           ].map((item, idx) => (
             <div
               key={idx}
-              className="bg-white flex flex-col gap-4 rounded-xl border border-primary-pink/10 shadow-sm p-6 transition-all duration-300 
-                         hover:shadow-[0_0_30px_4px_rgba(255,75,139,0.15)] hover:scale-[1.02] active:scale-[0.99]"
+              className="bg-white flex flex-col gap-4 rounded-xl border border-primary-pink/10 shadow-sm p-6 transition-all duration-300
+                         hover:shadow-[0_0_30px_4px_rgba(255,75,139,0.15)] hover:scale-[1.02] active:scale-[0.99] w-full md:w-[calc(50%-1rem)] lg:w-[380px]"
               data-aos="fade-up"
               data-aos-delay={`${idx * 150}`}
             >
