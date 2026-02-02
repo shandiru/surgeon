@@ -24,10 +24,12 @@ import PublicationsPage from "./Page/PublicationsPage";
 import EventListPage from "./Page/EventListPage";
 import EventPage from "./Page/EventPages/EventPage1";
 import GuidePage from "./components/GuidePage/GuidePage";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Navbar />
       <div className="pt-16">
         <Routes>
