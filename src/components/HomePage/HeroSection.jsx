@@ -16,9 +16,6 @@ const HeroSectionView = () => {
           {/* Left Section */}
           <div className="hero-left" data-aos="fade-up">
             <div className="mb-4 hero-badge" data-aos="fade-down">
-              {/* <span className="inline-block border border-primary-pink text-primary-pink text-xs font-semibold px-3 py-1 rounded-full">
-                Consultant Gynaecological Oncologist
-              </span> */}
               <span className="inline-block border border-primary-pink text-primary-pink text-caption px-3 py-1 rounded-full">
                 Gynocolisgist
               </span>
@@ -132,7 +129,7 @@ const HeroSectionView = () => {
           <div className="relative hero-right" data-aos="fade-left">
             <div className="bg-white rounded-2xl shadow-xl p-6 relative transition-all duration-300 hover:shadow-[0_0_30px_4px_rgba(255,75,139,0.4)] hover:-translate-y-1">
               <img
-                src="/new.jpeg"
+                src="/Ketan-Gajjar.jpeg"
                 alt="Mr Ketankumar Gajjar"
                 className="w-full h-96 object-cover rounded-xl"
               />

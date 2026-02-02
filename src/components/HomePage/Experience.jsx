@@ -87,7 +87,7 @@ export default function ProfessionalExperience() {
 
         {/* Membership & Leadership Section */}
         <div
-          className="bg-white flex flex-col gap-8 rounded-xl border border-primary-pink/10 shadow-sm p-8 transition-all duration-300 
+          className="bg-white flex flex-col gap-8 rounded-xl border border-primary-pink/10 shadow-sm p-8 transition-all duration-300
                      hover:shadow-[0_0_30px_4px_rgba(255,75,139,0.2)]"
           data-aos="fade-up"
           data-aos-delay="200"
@@ -98,17 +98,30 @@ export default function ProfessionalExperience() {
             </h2>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
-            {/* Memberships */}
+            {/* Professional Memberships & Society Roles */}
             <div>
               <h3 className="text-body-large font-semibold mb-4 text-gray-900">
-                Professional Memberships
+                Professional Memberships & Society Roles
               </h3>
-              <div className="space-y-3">
+              <div className="space-y-4">
                 {[
-                  "Royal College of Obstetricians and Gynaecologists",
-                  "British Gynaecological Cancer Society",
-                  "British Society of Colposcopy and Cervical Cytology",
-                  "International Gynaecological Cancer Society",
+                  {
+                    org: "British Gynaecological Cancer Society (BGCS)",
+                    role: "Patient & Public Engagement Chair",
+                    previous: "Previously held roles: Honorary Secretary, IT & Social Media Lead, Midlands Representative, Trainees Representative",
+                  },
+                  {
+                    org: "British Society for Colposcopy and Cervical Pathology (BSCCP)",
+                    role: "BSCCP OSCE Examiner | Faculty Member (BSCCP Colposcopy Course, Birmingham)",
+                  },
+                  {
+                    org: "European Society of Gynaecological Oncology (ESGO)",
+                    role: "Member | Guidelines Reviewer | Past UK Representative",
+                  },
+                  {
+                    org: "Royal College of Obstetricians and Gynaecologists (RCOG)",
+                    role: "Tier 2 Medical Educator | Advisory Appointment Committees (AAC) Panel Member",
+                  },
                 ].map((item, idx) => (
                   <div
                     key={idx}
@@ -118,7 +131,7 @@ export default function ProfessionalExperience() {
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 text-primary-pink mt-0.5"
+                      className="h-5 w-5 text-primary-pink mt-0.5 flex-shrink-0"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -127,65 +140,110 @@ export default function ProfessionalExperience() {
                       <path d="M21.801 10A10 10 0 1 1 17 3.335" />
                       <path d="m9 11 3 3L22 4" />
                     </svg>
-                    <span className="text-black">{item}</span>
+                    <div>
+                      <span className="text-black font-medium">{item.org}</span>
+                      <p className="text-gray-600 text-caption">{item.role}</p>
+                      {item.previous && (
+                        <p className="text-gray-500 text-caption italic">{item.previous}</p>
+                      )}
+                    </div>
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* Leadership */}
+            {/* Research & Academic Supervision */}
             <div>
               <h3 className="text-body-large font-semibold mb-4 text-gray-900">
-                Leadership Positions
+                Research & Academic Supervision
               </h3>
               <div className="space-y-4">
                 <div
-                  className="bg-[#FFF1F5] p-4 rounded-lg transition-all duration-300 
-                 hover:shadow-[0_0_20px_2px_rgba(255,75,139,0.2)]"
+                  className="bg-[#FFF1F5] p-4 rounded-lg transition-all duration-300
+                   hover:shadow-[0_0_20px_2px_rgba(255,75,139,0.2)]"
                   data-aos="fade-up"
                   data-aos-delay="300"
                 >
                   <h4 className="font-semibold text-body text-gray-900">
-                    Honorary Secretary
+                    Co-supervisor for PhD Research Students
                   </h4>
-                  <p className="text-black/90 text-body-small">
-                    British Gynaecological Cancer Society
-                  </p>
-                  <p className="text-gray-500 text-caption">
-                    July 2022 - July 2025
-                  </p>
+                  <p className="text-black/90 text-body-small">University of Nottingham</p>
+                  <ul className="text-gray-600 text-caption mt-2 space-y-1">
+                    <li>• Dr Roberta Schiemer (25% supervision)</li>
+                    <li>• Dr Addo-Yobo (25% supervision)</li>
+                    <li>• Jessica Grant (10% supervision)</li>
+                  </ul>
                 </div>
+              </div>
+            </div>
 
+            {/* Leadership & Clinical Service Roles */}
+            <div>
+              <h3 className="text-body-large font-semibold mb-4 text-gray-900">
+                Leadership & Clinical Service Roles
+              </h3>
+              <div className="space-y-4">
                 <div
-                  className="bg-[#FFF1F5] p-4 rounded-lg transition-all duration-300 
-                 hover:shadow-[0_0_20px_2px_rgba(255,75,139,0.2)]"
+                  className="bg-[#FFF1F5] p-4 rounded-lg transition-all duration-300
+                   hover:shadow-[0_0_20px_2px_rgba(255,75,139,0.2)]"
                   data-aos="fade-up"
                   data-aos-delay="400"
                 >
                   <h4 className="font-semibold text-body text-gray-900">
-                    IT and Social Media Subgroup Chair
+                    Service Lead — Gynaecological Oncology
                   </h4>
                   <p className="text-black/90 text-body-small">
-                    British Gynaecological Cancer Society
-                  </p>
-                  <p className="text-gray-500 text-caption">
-                    July 2020 - July 2023
+                    Nottingham University Hospitals NHS Trust
                   </p>
                 </div>
-
                 <div
-                  className="bg-[#FFF1F5] p-4 rounded-lg transition-all duration-300 
-                 hover:shadow-[0_0_20px_2px_rgba(255,75,139,0.2)]"
+                  className="bg-[#FFF1F5] p-4 rounded-lg transition-all duration-300
+                   hover:shadow-[0_0_20px_2px_rgba(255,75,139,0.2)]"
                   data-aos="fade-up"
                   data-aos-delay="500"
                 >
                   <h4 className="font-semibold text-body text-gray-900">
-                    Gyn Oncology Lead
+                    Medical Appointment Committee — Gynaecology Representative
                   </h4>
                   <p className="text-black/90 text-body-small">
-                    Nottingham NHS
+                    Spire Nottingham Hospital
                   </p>
-                  {/* <p className="text-gray-500 text-xs">[Add start date] - Present</p> */}
+                </div>
+              </div>
+            </div>
+
+            {/* Training, Teaching & Robotic Surgery */}
+            <div>
+              <h3 className="text-body-large font-semibold mb-4 text-gray-900">
+                Training, Teaching & Robotic Surgery
+              </h3>
+              <div className="space-y-4">
+                <div
+                  className="bg-[#FFF1F5] p-4 rounded-lg transition-all duration-300
+                   hover:shadow-[0_0_20px_2px_rgba(255,75,139,0.2)]"
+                  data-aos="fade-up"
+                  data-aos-delay="600"
+                >
+                  <h4 className="font-semibold text-body text-gray-900">
+                    Subspecialty Training Programme Supervisor
+                  </h4>
+                  <ul className="text-gray-600 text-caption mt-2 space-y-1">
+                    <li>• Dr Emmanouil Katsanevakis (from May 2024)</li>
+                    <li>• Dr Roberta Schiemer (from June 2025 – Academic)</li>
+                  </ul>
+                </div>
+                <div
+                  className="bg-[#FFF1F5] p-4 rounded-lg transition-all duration-300
+                   hover:shadow-[0_0_20px_2px_rgba(255,75,139,0.2)]"
+                  data-aos="fade-up"
+                  data-aos-delay="700"
+                >
+                  <h4 className="font-semibold text-body text-gray-900">
+                    Intuitive Da Vinci Robotic Surgeon & Proctor
+                  </h4>
+                  <p className="text-black/90 text-body-small">
+                    Robotic surgery trainer & case observation supervisor (2023 onwards)
+                  </p>
                 </div>
               </div>
             </div>

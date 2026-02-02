@@ -1,15 +1,16 @@
 import React from "react";
 
 // Sections from components/HomePage
-import HeroSection from "../components/HomePage/HeroSection"
-import About from "../components/HomePage/AboutSection"
+import HeroSection from "../components/HomePage/HeroSection";
+import About from "../components/HomePage/AboutSection";
 import Experience from "../components/HomePage/Experience";
 import Expertise from "../components/HomePage/Expertise";
 import EducationLanguagesSection from "../components/HomePage/EducationLanguagesSection";
 import GetInTouchSection from "../components/HomePage/GetInTouchSection";
-import ExperienceImage from "../components/HomePage/ExperienceImage"
-import WhyChooseUs from "../components/HomePage/WhyChooseUs"
-import Orbit from "../components/HomePage/Orbit"
+import ExperienceImage from "../components/HomePage/ExperienceImage";
+import WhyChooseUs from "../components/HomePage/WhyChooseUs";
+import InsurersCarousel from "../components/HomePage/InsurersCarousel";
+import Orbit from "../components/HomePage/Orbit";
 export default function Home() {
   return (
     <div>
@@ -39,6 +40,10 @@ export default function Home() {
         <WhyChooseUs />
       </section>
 
+      {/* Insurance Providers */}
+      <section>
+        <InsurersCarousel />
+      </section>
 
       {/* Specialties / Expertise */}
       <section id="specialties" className=" bg-white">
@@ -49,7 +54,6 @@ export default function Home() {
       <section id="contact" className=" ">
         <GetInTouchSection />
       </section>
-
     </div>
   );
 }
