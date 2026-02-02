@@ -1,5 +1,12 @@
 import React from "react";
-import { Building2, GraduationCap, Users, Briefcase, Globe, BookOpen } from "lucide-react";
+import {
+  Building2,
+  GraduationCap,
+  Users,
+  Briefcase,
+  Globe,
+  BookOpen,
+} from "lucide-react";
 
 export default function CurrentWork() {
   const mdRoleItems = [
@@ -46,9 +53,12 @@ export default function CurrentWork() {
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-12">
-            <h2 className="text-section text-primary-pink mb-4">Current Work and Involvement</h2>
+            <h2 className="text-section text-primary-pink mb-4">
+              Current Work and Involvement
+            </h2>
             <p className="text-body-large text-black max-w-2xl mx-auto">
-              Balancing clinical excellence with educational leadership in robotic surgery
+              Balancing clinical excellence with educational leadership in
+              robotic surgery
             </p>
           </div>
 
@@ -64,10 +74,12 @@ export default function CurrentWork() {
                 </h3>
               </div>
               <p className="text-body text-black mb-6 leading-relaxed">
-                As Medical Director, Ketan plays a crucial role in the day-to-day operations of the
-                hospital, ensuring the highest standards of surgical care and patient safety. His
-                leadership extends beyond the operating room to include strategic planning, team
-                development, and quality improvement initiatives.
+                As a lead gynecological robotic surgeon at Nottingham University
+                Hospital and Park Hospital, Ketan plays a crucial role in the
+                day-to-day operations of the hospital, ensuring the highest
+                standards of surgical care and patient safety. His leadership
+                extends beyond the operating room to include strategic planning,
+                team development, and quality improvement initiatives.
               </p>
               <div className="space-y-3">
                 {mdRoleItems.map((item, index) => (
@@ -92,9 +104,10 @@ export default function CurrentWork() {
                 </h3>
               </div>
               <p className="text-body text-black mb-6 leading-relaxed">
-                Ketan is actively involved in teaching and training surgeons across Europe, sharing
-                his expertise in robotic-assisted surgery. Through workshops, mentorship programs,
-                and educational initiatives, he contributes to advancing surgical techniques and
+                Ketan is actively involved in teaching and training surgeons
+                across Europe, sharing his expertise in robotic-assisted
+                surgery. Through workshops, mentorship programs, and educational
+                initiatives, he contributes to advancing surgical techniques and
                 improving patient outcomes on an international scale.
               </p>
               <div className="space-y-3">
@@ -117,10 +130,12 @@ export default function CurrentWork() {
                 A Dual Commitment
               </h3>
               <p className="text-body-large text-black max-w-3xl mx-auto leading-relaxed">
-                By combining hands-on clinical practice as Medical Director with active teaching and
-                mentorship across Europe, Ketan ensures that the latest advances in robotic surgery
-                reach both patients and the next generation of surgeons. This dual role reflects a
-                commitment to excellence in both patient care and medical education.
+                By combining hands-on clinical practice as Medical Director with
+                active teaching and mentorship across Europe, Ketan ensures that
+                the latest advances in robotic surgery reach both patients and
+                the next generation of surgeons. This dual role reflects a
+                commitment to excellence in both patient care and medical
+                education.
               </p>
             </div>
           </div>
