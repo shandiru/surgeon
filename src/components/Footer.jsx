@@ -12,8 +12,8 @@ export default function Footer() {
           <div>
             <h2 className="text-lg font-bold mb-3">Mr Ketankumar Gajjar</h2>
             <p className="text-white/90">
-              Consultant Gynaecological Oncologist with 26 years of experience providing exceptional
-              care in women's health and cancer treatment.
+              Consultant Gynaecological Oncologist with 26 years of experience
+              providing exceptional care in women's health and cancer treatment.
             </p>
 
             {/* Contact Icons */}
@@ -111,9 +111,19 @@ export default function Footer() {
           <div>
             <h2 className="text-subsection mb-3">Quick Links</h2>
             <ul className="text-white/90 space-y-1">
-              {["About", "Experience", "Specialties", "Education", "Contact"].map((link, i) => (
+              {[
+                "About",
+                "Experience",
+                "Specialties",
+                "Education",
+                "Contact",
+              ].map((link, i) => (
                 <li key={i}>
-                  <HashLink smooth to={`/#${link.toLowerCase()}`} className="hover:underline">
+                  <HashLink
+                    smooth
+                    to={`/#${link.toLowerCase()}`}
+                    className="hover:underline"
+                  >
                     {link}
                   </HashLink>
                 </li>
@@ -148,8 +158,13 @@ export default function Footer() {
 
         {/* Bottom Line */}
         <div className="border-t border-white/40 mt-10 pt-6 text-center text-body-small text-white/80">
-          <p>© 2025 Mr Ketankumar Gajjar – aecological Oncologist. All rights reserved.</p>
-          <p className="mt-2">Professional medical services | GMC Registered</p>
+          <p>
+            © 2025 Mr Ketankumar Gajjar – aecological Oncologist. All rights
+            reserved.
+          </p>
+          <p className="mt-2">
+            Professional medical services | GMC Registration Number: 6083162
+          </p>
           <p className="mt-3 text-white/70">
             Powered by{" "}
             <a
