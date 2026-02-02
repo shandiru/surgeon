@@ -18,7 +18,7 @@ export default function EducationLanguagesSection() {
     {
       title: "MRCOG",
       place: "Royal College of Obstetricians and Gynaecologists",
-      years: "2006 - 2015",
+      years: "2005",
     },
     {
       title: "MD",
@@ -52,8 +52,12 @@ export default function EducationLanguagesSection() {
                   data-aos="fade-up"
                   data-aos-delay={i * 120}
                 >
-                  <h3 className="text-card-title font-semibold text-gray-900">{item.title}</h3>
-                  <p className="text-primary-pink font-medium text-body">{item.place}</p>
+                  <h3 className="text-card-title font-semibold text-gray-900">
+                    {item.title}
+                  </h3>
+                  <p className="text-primary-pink font-medium text-body">
+                    {item.place}
+                  </p>
                   <p className="text-gray-500 text-body-small">{item.years}</p>
                 </div>
               ))}
@@ -90,12 +94,14 @@ export default function EducationLanguagesSection() {
                 <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
                 <path d="M2 12h20" />
               </svg>
-              <div className="font-semibold text-subsection text-gray-900">Languages Spoken</div>
+              <div className="font-semibold text-subsection text-gray-900">
+                Languages Spoken
+              </div>
             </div>
 
             <div className="flex-1 flex flex-col items-center justify-center">
               <div className="flex flex-wrap justify-center gap-4">
-                {["English", "Hindi"].map((lang, idx) => (
+                {["English", "Hindi", "Gujarati"].map((lang, idx) => (
                   <span
                     key={idx}
                     className="inline-flex items-center justify-center rounded-md font-medium text-body-large px-6 py-2 
@@ -116,8 +122,8 @@ export default function EducationLanguagesSection() {
                 data-aos="fade-up"
                 data-aos-delay="500"
               >
-                Fluent communication in multiple languages to better serve diverse patient
-                populations.
+                Fluent communication in multiple languages to better serve
+                diverse patient populations.
               </p>
             </div>
           </div>
