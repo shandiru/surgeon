@@ -227,7 +227,7 @@ const Navbar = () => {
             <HashLink
               smooth
               to="/#contact"
-              className="w-full mt-2 inline-flex items-center justify-center rounded-md text-sm font-medium transition-all shadow-xs h-9 px-4 py-2 bg-light-pink-2 hover:bg-light-pink-1 text-primary-pink mb-3"
+              className="w-full mt-2 inline-flex items-center justify-center rounded-md text-sm font-medium transition-all shadow-xs h-9 px-4 py-2 bg-primary-pink hover:bg-[#E03E7C] text-white mb-3"
               onClick={closeAll}
             >
               Book Consultation
@@ -373,7 +373,7 @@ const Navbar = () => {
               <HashLink
                 smooth
                 to="/#contact"
-                className="w-full mt-2 inline-flex items-center justify-center rounded-md text-button transition-all shadow-xs h-9 px-4 py-2 bg-light-pink-2 hover:bg-light-pink-1 text-primary-pink mb-3"
+                className="w-full mt-2 inline-flex items-center justify-center rounded-md text-button transition-all shadow-xs h-9 px-4 py-2 bg-primary-pink hover:bg-[#E03E7C] text-white mb-3"
                 onClick={closeAll}
               >
                 Book Consultation
