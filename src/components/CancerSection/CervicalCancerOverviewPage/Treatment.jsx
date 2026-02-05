@@ -2,14 +2,14 @@
 
 import React, { useEffect } from "react";
 import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
+import "aos/dist/aos.css";
 import { LuScissors, LuZap, LuShield } from "react-icons/lu";
 
 export default function CervicalCancerTreatment() {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration
-      once: true, // Animation happens only once when scrolled
+      duration: 1000,
+      once: true,
     });
   }, []);
 
@@ -31,7 +31,9 @@ export default function CervicalCancerTreatment() {
           {/* “We Consider” Section */}
           <div className="mt-8" data-aos="fade-up">
             <div className="bg-white p-4 rounded-lg border border-light-pink-2 transition-all duration-300 hover:bg-light-pink-1 hover:shadow-lg hover:border-light-pink-2 active:bg-light-pink-1 active:shadow-lg active:border-light-pink-2">
-              <h3 className="font-semibold mb-2 text-primary-pink">We consider:</h3>
+              <h3 className="font-semibold mb-2 text-primary-pink">
+                We consider:
+              </h3>
               <div className="grid md:grid-cols-2 gap-2 text-sm text-black">
                 {[
                   "Type and stage of cancer",
@@ -86,7 +88,9 @@ export default function CervicalCancerTreatment() {
                 >
                   <div className="w-2 h-2 bg-primary-pink rounded-full mt-2 flex-shrink-0"></div>
                   <div>
-                    <h4 className="font-medium text-primary-pink">{item.title}</h4>
+                    <h4 className="font-medium text-primary-pink">
+                      {item.title}
+                    </h4>
                     <p className="text-sm text-black mt-1">– {item.desc}</p>
                   </div>
                 </div>
@@ -100,7 +104,9 @@ export default function CervicalCancerTreatment() {
               <LuZap className="w-5 h-5 text-primary-pink" />
               2. Combination Treatments
             </h3>
-            <p className="text-black mb-4">In some cases, surgery may be combined with:</p>
+            <p className="text-black mb-4">
+              In some cases, surgery may be combined with:
+            </p>
             <div className="grid md:grid-cols-2 gap-4">
               {[
                 {
@@ -122,7 +128,9 @@ export default function CervicalCancerTreatment() {
                 >
                   <div className="w-2 h-2 bg-primary-pink rounded-full mt-2 flex-shrink-0"></div>
                   <div>
-                    <h4 className="font-medium text-primary-pink">{item.title}</h4>
+                    <h4 className="font-medium text-primary-pink">
+                      {item.title}
+                    </h4>
                     <p className="text-sm text-black mt-1">– {item.desc}</p>
                   </div>
                 </div>
@@ -138,16 +146,20 @@ export default function CervicalCancerTreatment() {
             </h3>
             <div className="space-y-4">
               <div className="p-4 bg-white rounded-lg border border-light-pink-2 transition-all duration-300 hover:bg-light-pink-1 hover:shadow-lg hover:border-light-pink-2 active:bg-light-pink-1 active:shadow-lg active:border-light-pink-2">
-                <h4 className="font-medium text-primary-pink mb-2">Enhanced Recovery Programs</h4>
+                <h4 className="font-medium text-primary-pink mb-2">
+                  Enhanced Recovery Programs
+                </h4>
                 <p className="text-sm text-black">
                   Enhanced recovery after surgery programs help you heal faster.
                 </p>
               </div>
               <div className="p-4 bg-white rounded-lg border border-light-pink-2 transition-all duration-300 hover:bg-light-pink-1 hover:shadow-lg hover:border-light-pink-2 active:bg-light-pink-1 active:shadow-lg active:border-light-pink-2">
-                <h4 className="font-medium text-primary-pink mb-2">Multi-specialty Approach</h4>
+                <h4 className="font-medium text-primary-pink mb-2">
+                  Multi-specialty Approach
+                </h4>
                 <p className="text-sm text-black">
-                  Our oncologists collaborate with surgeons and specialists across different fields
-                  to create a comprehensive care plan.
+                  Our oncologists collaborate with surgeons and specialists
+                  across different fields to create a comprehensive care plan.
                 </p>
               </div>
             </div>

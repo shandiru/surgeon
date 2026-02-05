@@ -6,7 +6,7 @@ export default function ProsAndCons() {
     "Enhanced precision and control during surgery",
     "Reduced blood loss and faster recovery times",
     "Minimally invasive approach with smaller incisions",
-    "3D high-definition visualization for better accuracy",
+    "3D high-definition visualisation for better accuracy",
     "Reduced risk of complications",
     "Shorter hospital stays",
     "Less post-operative pain",

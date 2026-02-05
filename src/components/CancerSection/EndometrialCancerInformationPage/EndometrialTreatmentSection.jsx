@@ -23,7 +23,7 @@ export default function TreatmentSection() {
               Treatment Options
             </h3>
             <p className="text-sm text-black/90">
-              Treatment depends on factors such as stage, tumor size, and cancer type.
+              Treatment depends on factors such as stage, tumour size, and cancer type.
             </p>
           </div>
 
@@ -88,7 +88,7 @@ export default function TreatmentSection() {
                   style={{ backgroundColor: pink, borderColor: pink }}
                 >
                   <p className="text-sm font-medium " style={{ color: deepPink }}>
-                    <strong>Personalized Care:</strong> Every treatment plan is customized to
+                    <strong>Personalised Care:</strong> Every treatment plan is customised to
                     provide the best outcome for your health and recovery.
                   </p>
                 </div>

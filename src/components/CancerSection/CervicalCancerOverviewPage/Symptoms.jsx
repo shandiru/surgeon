@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react";
 import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
+import "aos/dist/aos.css";
 import { LuTriangleAlert } from "react-icons/lu";
 
 export default function CervicalCancerSymptoms() {
@@ -16,8 +16,8 @@ export default function CervicalCancerSymptoms() {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration
-      once: true, // Animation happens only once when scrolled
+      duration: 1000,
+      once: true,
     });
   }, []);
 
@@ -34,8 +34,8 @@ export default function CervicalCancerSymptoms() {
                 Symptoms of Cervical Cancer
               </div>
               <p className="text-black">
-                Cervical cancer often develops without early warning signs. That's why regular
-                screenings are essential.
+                Cervical cancer often develops without early warning signs.
+                That's why regular screenings are essential.
               </p>
             </div>
 
@@ -48,16 +48,21 @@ export default function CervicalCancerSymptoms() {
                   data-aos="fade-left"
                 >
                   <div className="w-2 h-2 bg-primary-pink rounded-full flex-shrink-0"></div>
-                  <span className="text-sm font-medium text-primary-pink">{symptom}</span>
+                  <span className="text-sm font-medium text-primary-pink">
+                    {symptom}
+                  </span>
                 </div>
               ))}
             </div>
           </div>
 
           {/* Image Section */}
-          <div className="md:w-1/2 flex justify-center mt-6 md:mt-0" data-aos="fade-right">
+          <div
+            className="md:w-1/2 flex justify-center mt-6 md:mt-0"
+            data-aos="fade-right"
+          >
             <img
-              src="/cervical.png" // Replace with the actual image path
+              src="/cervical.png"
               alt="Cervical Cancer Symptoms"
               className="w-full h-auto max-w-md rounded-md shadow-lg"
             />

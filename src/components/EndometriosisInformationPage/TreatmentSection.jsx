@@ -37,7 +37,7 @@ const TreatmentSection = () => {
               Treatment Options
             </h2>
             <p className="text-lg text-black">
-              Personalized treatment plans tailored to your needs
+              Personalised treatment plans tailored to your needs
             </p>
           </div>
 

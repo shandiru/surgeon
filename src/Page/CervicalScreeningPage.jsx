@@ -1,6 +1,5 @@
 import React from "react";
 
-// Sections from components/HomePage
 import CervicalScreening from "../components/CervicalScreeningPage/CervicalScreening";
 import CervicalScreeningStat from "../components/CervicalScreeningPage/CervicalScreeningStat";
 import SmearTestInfoCard from "../components/CervicalScreeningPage/SmearTestInfoCard";
@@ -14,23 +13,22 @@ import SmearTestFooter from "../components/CervicalScreeningPage/SmearTestFooter
 export default function CervicalScreeningPage() {
   return (
     <div>
-
-      <section >
+      <section>
         <CervicalScreening />
       </section>
-      <section >
+      <section>
         <SmearTestInfoCard />
       </section>
 
-      <section >
+      <section>
         <SmearTestExclusions />
       </section>
 
-      <section >
+      <section>
         <SmearTestPreparation />
       </section>
 
-      <section >
+      <section>
         <SmearTestProcedure />
       </section>
 
@@ -38,7 +36,7 @@ export default function CervicalScreeningPage() {
         <SmearTestResultsAccordion />
       </section>
 
-      <section >
+      <section>
         <SmearTestReminder />
       </section>
 
@@ -49,7 +47,6 @@ export default function CervicalScreeningPage() {
       <section>
         <SmearTestFooter />
       </section>
-
     </div>
   );
 }

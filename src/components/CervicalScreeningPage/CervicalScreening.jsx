@@ -13,9 +13,11 @@ export default function CervicalScreening() {
               A simple test that could save your life
             </p>
 
-            {/* ✅ Stat Content */}
+            {/* Stat Content */}
             <div className="rounded-xl border border-primary-pink p-6 shadow-md bg-white/60 backdrop-blur-sm max-w-md mx-auto md:mx-0">
-              <div className="text-5xl font-extrabold mb-3 text-primary-pink">83%</div>
+              <div className="text-5xl font-extrabold mb-3 text-primary-pink">
+                83%
+              </div>
               <p className="text-lg text-primary-pink/90 leading-relaxed">
                 Regular screening can prevent up to 83% of cervical cancer cases
               </p>
@@ -25,7 +27,7 @@ export default function CervicalScreening() {
           {/* Right Image with hover/active glow */}
           <div className="flex justify-center md:justify-end px-4 md:px-8">
             <img
-              src="/cervical-screening.png" // <-- place your image in /public
+              src="/cervical-screening.png"
               alt="Cervical screening illustration"
               className="w-full max-w-lg rounded-2xl shadow-xl 
               transition duration-300 transform

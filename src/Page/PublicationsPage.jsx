@@ -628,7 +628,7 @@ export default function PublicationsSection() {
           style={{ color: "#804659" }}
         >
           Academic papers and research contributions in obstetrics and
-          gynecology
+          gynaecology
         </p>
 
         {/* Content */}

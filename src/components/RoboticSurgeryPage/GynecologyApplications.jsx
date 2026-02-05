@@ -2,8 +2,14 @@
 
 import React, { useEffect } from "react";
 import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
-import { LuStethoscope, LuHeart, LuEye, LuActivity, LuCircleCheckBig } from "react-icons/lu";
+import "aos/dist/aos.css";
+import {
+  LuStethoscope,
+  LuHeart,
+  LuEye,
+  LuActivity,
+  LuCircleCheckBig,
+} from "react-icons/lu";
 
 export default function GynecologyApplications() {
   const accentPink = "#F93981"; // CTA/Highlight
@@ -14,21 +20,24 @@ export default function GynecologyApplications() {
       title: "Hysterectomy",
       icon: <LuStethoscope className="w-5 h-5 text-[#B51252]" />,
       badge: "Uterus Removal",
-      description: "Preferred for complex cases including large fibroids and endometriosis.",
+      description:
+        "Preferred for complex cases including large fibroids and endometriosis.",
       points: ["Less blood loss", "Fewer complications", "Quicker recovery"],
     },
     {
       title: "Myomectomy",
       icon: <LuHeart className="w-5 h-5 text-[#B51252]" />,
       badge: "Fibroid Removal",
-      description: "Precise removal of fibroids while preserving healthy uterine tissue.",
+      description:
+        "Precise removal of fibroids while preserving healthy uterine tissue.",
       points: ["Fertility preservation", "Tissue conservation"],
     },
     {
       title: "Endometriosis Excision",
       icon: <LuEye className="w-5 h-5 text-[#B51252]" />,
       badge: "Tissue Removal",
-      description: "Enhanced visualization of endometrial implants for precise treatment.",
+      description:
+        "Enhanced visualisation of endometrial implants for precise treatment.",
       points: ["Meticulous dissection", "Delicate area precision"],
     },
     {
@@ -37,14 +46,17 @@ export default function GynecologyApplications() {
       badge: "Oncologic Procedures",
       description:
         "Used in early-stage cervical or endometrial cancer for lymph node dissection and staging.",
-      points: ["Minimally invasive option", "Oncologic safety comparable to open surgery"],
+      points: [
+        "Minimally invasive option",
+        "Oncologic safety comparable to open surgery",
+      ],
     },
   ];
 
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration
-      once: true, // Animation happens only once when scrolled
+      duration: 1000,
+      once: true,
     });
   }, []);
 
@@ -52,8 +64,11 @@ export default function GynecologyApplications() {
     <section className="py-16 bg-white" data-aos="fade-up">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12 text-[#B51252]" data-aos="fade-down">
-            Applications in Gynecology
+          <h2
+            className="text-3xl font-bold text-center mb-12 text-[#B51252]"
+            data-aos="fade-down"
+          >
+            Applications in Gynaecology
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

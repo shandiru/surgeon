@@ -223,7 +223,7 @@ export default function VaginalCancerInfo() {
         >
           <p className="text-sm text-white">
             This information is for educational purposes only. Always consult with healthcare
-            professionals for personalized medical advice.
+            professionals for personalised medical advice.
           </p>
         </div>
       </div>

@@ -29,7 +29,7 @@ export default function TrustSection() {
 
               {/* Descriptive Paragraph */}
               <p className="text-body-large text-black/90 leading-relaxed">
-                We maintain the highest standards of care and safety, providing personalized
+                We maintain the highest standards of care and safety, providing personalised
                 attention throughout your healthcare journey.
               </p>
 

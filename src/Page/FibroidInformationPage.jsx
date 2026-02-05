@@ -1,6 +1,4 @@
 import React from "react";
-
-// Sections from components/HomePage
 import UnderstandingFibroidsSection from "../components/FibroidInformationPage/UnderstandingFibroidsSection";
 import WhatAreFibroidsCard from "../components/FibroidInformationPage/WhatAreFibroidsCard";
 import SymptomsOfFibroidsCard from "../components/FibroidInformationPage/SymptomsOfFibroidsCard";
@@ -14,48 +12,42 @@ import RememberCard from "../components/FibroidInformationPage/RememberCard";
 export default function FibroidInformationPage() {
   return (
     <div>
-      
       <section>
         <UnderstandingFibroidsSection />
       </section>
-        <section >
+      <section>
         <WhatAreFibroidsCard />
-        </section>
-        <section >
+      </section>
+      <section>
         <SymptomsOfFibroidsCard />
-        </section>
-        <section>
+      </section>
+      <section>
         <TypesOfFibroidsCard />
-        </section>
+      </section>
 
-        <section>
+      <section>
         <CausesAndRiskFactorsCard />
-        </section>
+      </section>
 
-
-        <section >
+      <section>
         <FertilityAndPregnancyCard />
-        </section>
+      </section>
 
-
-        <section >
+      <section>
         <EmotionalWellbeingCard />
-        </section>
+      </section>
 
-        <section >
+      <section>
         <TreatmentOptionsCard />
-        </section>
+      </section>
 
-        <section >
+      <section>
         <SelfCareSupportCards />
-        </section>
+      </section>
 
-
-        <section >
+      <section>
         <RememberCard />
-        </section>
-      </div>
-      
-   
+      </section>
+    </div>
   );
 }

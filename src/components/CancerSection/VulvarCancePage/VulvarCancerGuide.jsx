@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
+import "aos/dist/aos.css";
 import {
   FaExclamationTriangle,
   FaHeartbeat,
@@ -15,8 +15,8 @@ import {
 const VulvarCancerPage = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration
-      once: true, // Ensures animation happens once when scrolled
+      duration: 1000,
+      once: true,
     });
   }, []);
 
@@ -63,7 +63,7 @@ const VulvarCancerPage = () => {
           {/* Step 1: Symptoms */}
           <StepCard
             step="Step 1"
-            title="Recognizing Symptoms"
+            title="Recognising Symptoms"
             icon={<FaExclamationTriangle className="h-8 w-8" />}
             description="Vulvar cancer most often affects the labia (skin folds around the vagina), but it can occur anywhere on the vulva."
             points={[
@@ -163,7 +163,7 @@ const VulvarCancerPage = () => {
           <p className="text-white text-lg leading-relaxed max-w-3xl mx-auto">
             This information is for educational purposes only and should not
             replace professional medical advice. Always consult with your
-            healthcare provider for personalized medical guidance.
+            healthcare provider for personalised medical guidance.
           </p>
         </div>
       </div>

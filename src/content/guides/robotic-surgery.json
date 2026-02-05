@@ -8,12 +8,12 @@
       "id": 1,
       "buttonLabel": "Robotic Surgery",
       "buttonIcon": "Stethoscope",
-      "cardTitle": "Robotic Surgery in Gynecology",
+      "cardTitle": "Robotic Surgery in Gynaecology",
       "layout": "two-column",
       "content": [
         {
           "type": "heading",
-          "text": "Robotic Surgery in Gynecology",
+          "text": "Robotic Surgery in Gynaecology",
           "level": 1
         },
         {
@@ -104,14 +104,14 @@
     },
     {
       "id": 4,
-      "buttonLabel": "Applications in Gynecology",
+      "buttonLabel": "Applications in Gynaecology",
       "buttonIcon": "Shield",
-      "cardTitle": "Applications in Gynecology",
+      "cardTitle": "Applications in Gynaecology",
       "layout": "single-column",
       "content": [
         {
           "type": "heading",
-          "text": "Applications in Gynecology",
+          "text": "Applications in Gynaecology",
           "level": 2
         },
         {
@@ -127,7 +127,7 @@
             },
             {
               "title": "Endometriosis Excision (Tissue Removal)",
-              "content": "Enhanced visualization of endometrial implants for precise treatment.\n\n- Meticulous dissection\n- Delicate area precision"
+              "content": "Enhanced visualisation of endometrial implants for precise treatment.\n\n- Meticulous dissection\n- Delicate area precision"
             },
             {
               "title": "Gynecologic Cancer Surgery (Oncologic Procedures)",
@@ -170,7 +170,7 @@
         {
           "type": "bulletList",
           "items": [
-            "Enhanced visualization with 3D magnified views",
+            "Enhanced visualisation with 3D magnified views",
             "Superior dexterity and precision",
             "Ergonomic comfort during long procedures",
             "Ability to perform complex procedures with greater control"

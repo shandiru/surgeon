@@ -236,10 +236,6 @@ export default function ProfessionalExperience() {
                 <p className="text-body-small font-medium text-gray-900">
                   Subspecialty Training Programme Supervisor
                 </p>
-                <p className="text-caption text-gray-600">
-                  Dr Emmanouil Katsanevakis (May 2024) • Dr Roberta Schiemer
-                  (June 2025)
-                </p>
               </div>
               <div className="bg-white/60 rounded-lg p-3">
                 <p className="text-body-small font-medium text-gray-900">

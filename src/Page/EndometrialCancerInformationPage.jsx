@@ -1,51 +1,38 @@
 import React from "react";
 
-// Sections from components/HomePage
-
 import EndometrialInfoSection from "../components/CancerSection/EndometrialCancerInformationPage/EndometrialInfoSection";
-import  EndometrialSymptomsSection from "../components/CancerSection/EndometrialCancerInformationPage/EndometrialSymptomsSection";
-import  EndometrialDiagnosisSection from "../components/CancerSection/EndometrialCancerInformationPage/EndometrialDiagnosisSection";
-import  EndometrialTreatmentSection from "../components/CancerSection/EndometrialCancerInformationPage/EndometrialTreatmentSection";
-import  EndometrialMoreInfoSection from "../components/CancerSection/EndometrialCancerInformationPage/EndometrialMoreInfoSection";
+import EndometrialSymptomsSection from "../components/CancerSection/EndometrialCancerInformationPage/EndometrialSymptomsSection";
+import EndometrialDiagnosisSection from "../components/CancerSection/EndometrialCancerInformationPage/EndometrialDiagnosisSection";
+import EndometrialTreatmentSection from "../components/CancerSection/EndometrialCancerInformationPage/EndometrialTreatmentSection";
+import EndometrialMoreInfoSection from "../components/CancerSection/EndometrialCancerInformationPage/EndometrialMoreInfoSection";
 
-import  Footer from "../components/CancerSection/EndometrialCancerInformationPage/Footer";
+import Footer from "../components/CancerSection/EndometrialCancerInformationPage/Footer";
 
 export default function Home() {
   return (
     <div>
-      
-      <section >
+      <section>
         <EndometrialInfoSection />
       </section>
-      
-        <section >
+
+      <section>
         <EndometrialSymptomsSection />
       </section>
-      
-        <section >
+
+      <section>
         <EndometrialDiagnosisSection />
       </section>
-       <section >
+      <section>
         <EndometrialTreatmentSection />
       </section>
 
-       <section >
+      <section>
         <EndometrialMoreInfoSection />
       </section>
 
-      <section >
+      <section>
         <Footer />
       </section>
-
-
-    
-      
-    
-
-  
-    
-    
-
     </div>
   );
 }

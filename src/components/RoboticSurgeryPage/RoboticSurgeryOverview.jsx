@@ -2,14 +2,14 @@
 
 import React, { useEffect } from "react";
 import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
+import "aos/dist/aos.css";
 import { LuScissors, LuEye, LuHand, LuZap } from "react-icons/lu";
 
 export default function RoboticSurgeryOverview() {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration
-      once: true, // Animation happens only once when scrolled
+      duration: 1000,
+      once: true,
     });
   }, []);
 

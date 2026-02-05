@@ -22,7 +22,7 @@ export default function KetanExperience() {
       title: "Surgical Expertise",
       description:
         "Specialised in robotic surgery for endometrial cancer, cervical cancer, and complex benign conditions.",
-      detail: "Multiple Specializations",
+      detail: "Multiple Specialisations",
     },
     {
       icon: <Calendar className="w-6 h-6" />,
@@ -86,7 +86,7 @@ export default function KetanExperience() {
               <p className="text-body-large text-black max-w-3xl mx-auto leading-relaxed">
                 With years of dedicated practice in robotic surgery, Ketan
                 combines technical expertise with compassionate care, ensuring
-                each patient receives personalized treatment tailored to their
+                each patient receives personalised treatment tailored to their
                 unique needs. His experience spans a wide range of gynecological
                 conditions, from routine procedures to complex cancer surgeries.
               </p>

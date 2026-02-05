@@ -2,7 +2,6 @@ import React, { useState, useMemo } from "react";
 import EventListHero from "../components/EventListPage/EventListHero";
 import ListingEvents from "../components/EventListPage/EventList";
 
-// Utility function to parse date string and determine if event is upcoming or closed
 const parseEventDate = (dateString) => {
   try {
     const monthNames = [
@@ -20,7 +19,6 @@ const parseEventDate = (dateString) => {
       "December",
     ];
 
-    // Handle formats spanning multiple months like "29 April – 1 May 2026"
     const multiMonthMatch = dateString.match(
       /(\d+)\s+(\w+)\s+–\s+(\d+)\s+(\w+)\s+(\d+)/,
     );
@@ -34,7 +32,6 @@ const parseEventDate = (dateString) => {
       }
     }
 
-    // Handle formats like "12–14 September 2024" or "5–7 October 2024" (single month)
     const singleMonthMatch = dateString.match(/(\d+)–(\d+)\s+(\w+)\s+(\d+)/);
     if (singleMonthMatch) {
       const [, startDay, endDay, month, year] = singleMonthMatch;
@@ -46,7 +43,6 @@ const parseEventDate = (dateString) => {
       }
     }
 
-    // Fallback: try to parse as single date
     return new Date(dateString);
   } catch (error) {
     console.error("Error parsing date:", dateString, error);
@@ -152,11 +148,10 @@ const EventListPage = () => {
       Date: "5 December 2025",
       address: "London, UK",
       organiser: "UCL EGA Institute for Women's Health",
-      link: "https://www.ucl.ac.uk/population-health-sciences/events/2025/dec/ega-institute-womens-health-uclh-womens-health-division-20th-annual-conference-2025",
+      link: "",
     },
   ];
 
-  // Add computed status based on dates
   const eventsWithComputedStatus = useMemo(() => {
     return allEvents.map((event) => ({
       ...event,
@@ -167,15 +162,12 @@ const EventListPage = () => {
 
   const filteredEvents = useMemo(() => {
     let filtered = [...eventsWithComputedStatus];
-
-    // Filter by category based on computed status from dates
     if (selectedCategory === "Upcoming Events") {
       filtered = filtered.filter((event) => event.isUpcoming);
     } else if (selectedCategory === "Closed Events") {
       filtered = filtered.filter((event) => !event.isUpcoming);
     }
 
-    // Filter by event type
     if (selectedEventType !== "All" && selectedEventType !== "Event Type") {
       filtered = filtered.filter(
         (event) => event.eventType === selectedEventType,

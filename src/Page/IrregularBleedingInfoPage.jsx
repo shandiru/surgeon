@@ -1,5 +1,4 @@
-// src/app/IrregularBleedingInfoPage.jsx
-'use client';
+"use client";
 import React, { useState } from "react";
 
 import IrregularBleedingHeader from "../components/IrregularBleedingInfoPage/IrregularBleedingHeader";
@@ -17,7 +16,10 @@ export default function IrregularBleedingInfoPage() {
       </section>
 
       <section className="px-4 pt-12">
-        <IrregularBleedingNavbar activeTab={activeTab} setActiveTab={setActiveTab} />
+        <IrregularBleedingNavbar
+          activeTab={activeTab}
+          setActiveTab={setActiveTab}
+        />
       </section>
 
       <section className="my-12 px-4">

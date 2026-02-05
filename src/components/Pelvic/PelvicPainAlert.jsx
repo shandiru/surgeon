@@ -1,15 +1,13 @@
 import React, { useState } from "react";
-import { Phone, TriangleAlert } from "lucide-react"; // Import the required icons from lucide-react
+import { Phone, TriangleAlert } from "lucide-react";
 
 const PelvicPainAlert = () => {
-  const [isVisible, setIsVisible] = useState(true); // State to manage the visibility of the alert
-
-  // Function to close the alert
+  const [isVisible, setIsVisible] = useState(true);
   const handleClose = () => {
     setIsVisible(false);
   };
 
-  if (!isVisible) return null; // If not visible, don't render anything
+  if (!isVisible) return null;
 
   return (
     <div
@@ -22,7 +20,9 @@ const PelvicPainAlert = () => {
         className="text-muted-foreground col-start-2 grid justify-items-start gap-1 text-sm [&amp;_p]:leading-relaxed"
       >
         <div className="space-y-4">
-          <h3 className="font-semibold text-lg text-primary-pink ml-8">When to See a Doctor</h3>
+          <h3 className="font-semibold text-lg text-primary-pink ml-8">
+            When to See a Doctor
+          </h3>
           <div></div>
           <ul className="space-y-2 text-sm ml-8">
             <p className="text-foreground">Seek medical advice if you:</p>
@@ -48,7 +48,8 @@ const PelvicPainAlert = () => {
             </li>
             <div className="mt-4 p-3 rounded-lg border">
               <p className="font-semibold text-destructive">
-                Always get urgent help for sudden severe pain, fainting, or heavy bleeding.
+                Always get urgent help for sudden severe pain, fainting, or
+                heavy bleeding.
               </p>
             </div>
           </ul>

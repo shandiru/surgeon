@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react";
 import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
+import "aos/dist/aos.css";
 import { LuUsers, LuStethoscope, LuCircleCheckBig } from "react-icons/lu";
 
 export default function BenefitsSection() {
@@ -16,7 +16,7 @@ export default function BenefitsSection() {
   ];
 
   const surgeonBenefits = [
-    "Enhanced visualization with 3D magnified views",
+    "Enhanced visualisation with 3D magnified views",
     "Superior dexterity and precision",
     "Ergonomic comfort during long procedures",
     "Ability to perform complex procedures with greater control",
@@ -24,8 +24,8 @@ export default function BenefitsSection() {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration
-      once: true, // Animation happens only once when scrolled
+      duration: 1000,
+      once: true,
     });
   }, []);
 

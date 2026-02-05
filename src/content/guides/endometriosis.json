@@ -33,7 +33,7 @@
       "content": [
         {
           "type": "heading",
-          "text": "Recognizing the signs and when to seek help",
+          "text": "Recognising the signs and when to seek help",
           "level": 3,
           "icon": "AlertCircle"
         },
@@ -223,7 +223,7 @@
       "content": [
         {
           "type": "heading",
-          "text": "Personalized treatment plans tailored to your needs",
+          "text": "Personalised treatment plans tailored to your needs",
           "level": 3,
           "icon": "Users"
         },
@@ -255,7 +255,7 @@
         },
         {
           "type": "infoBox",
-          "title": "Personalized Care",
+          "title": "Personalised Care",
           "description": "We'll work closely with you to find the right balance of treatment based on your symptoms and goals.",
           "icon": "Star"
         }

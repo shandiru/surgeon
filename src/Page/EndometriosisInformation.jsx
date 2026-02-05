@@ -1,6 +1,5 @@
 import React from "react";
 
-// Sections from components/HomePage
 import EndometriosisHeroSection from "../components/EndometriosisInformationPage/EndometriosisHeroSection";
 import EndometriosisInfo from "../components/EndometriosisInformationPage/EndometriosisInfo";
 import SymptomsSection from "../components/EndometriosisInformationPage/SymptomsSection";
@@ -12,36 +11,35 @@ import RememberSection from "../components/EndometriosisInformationPage/Remember
 export default function EndometriosisInformation() {
   return (
     <div>
-
-      <section >
+      <section>
         <EndometriosisHeroSection />
       </section>
 
-      <section >
+      <section>
         <EndometriosisInfo />
       </section>
 
-      <section >
+      <section>
         <SymptomsSection />
       </section>
 
-      <section >
+      <section>
         <ImpactSection />
       </section>
 
-      <section >
+      <section>
         <CausesSection />
       </section>
 
-      <section >
+      <section>
         <DiagnosisSection />
       </section>
 
-      <section >
+      <section>
         <TreatmentSection />
       </section>
 
-      <section >
+      <section>
         <RememberSection />
       </section>
     </div>

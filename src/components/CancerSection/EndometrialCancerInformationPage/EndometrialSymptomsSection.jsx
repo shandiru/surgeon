@@ -8,7 +8,7 @@ import { LuTriangleAlert } from "react-icons/lu";
 
 export default function EndometrialSymptomsSection() {
   const pink = "#FFC5D3";
-  const deepPink = "#FF4B8B"; // stronger deep pink for headings and important text
+  const deepPink = "#FF4B8B";
 
   useEffect(() => {
     AOS.init({
@@ -36,12 +36,15 @@ export default function EndometrialSymptomsSection() {
         >
           {/* Card Header */}
           <div className="px-6">
-            <div className="font-semibold text-xl mb-1" style={{ color: deepPink }}>
+            <div
+              className="font-semibold text-xl mb-1"
+              style={{ color: deepPink }}
+            >
               Early Warning Signs
             </div>
             <div className="text-sm text-black/90">
-              Endometrial cancer often shows early warning signs. The most common is abnormal
-              vaginal bleeding.
+              Endometrial cancer often shows early warning signs. The most
+              common is abnormal vaginal bleeding.
             </div>
           </div>
 
@@ -97,8 +100,8 @@ export default function EndometrialSymptomsSection() {
             data-aos="fade-up"
           >
             <p className="text-sm font-medium" style={{ color: deepPink }}>
-              <strong>Important:</strong> If you experience any of these symptoms, it's important to
-              seek medical evaluation.
+              <strong>Important:</strong> If you experience any of these
+              symptoms, it's important to seek medical evaluation.
             </p>
           </div>
         </div>

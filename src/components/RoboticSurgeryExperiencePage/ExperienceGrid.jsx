@@ -42,7 +42,7 @@ export default function ExperienceGrid() {
       icon: <Heart className="w-6 h-6" />,
       title: "Patient Care",
       description:
-        "Compassionate care ensuring each patient receives personalized treatment tailored to their unique needs.",
+        "Compassionate care ensuring each patient receives personalised treatment tailored to their unique needs.",
       background: "bg-white",
       iconBg: "bg-primary-pink",
       hoverColor: "hover:bg-primary-pink",

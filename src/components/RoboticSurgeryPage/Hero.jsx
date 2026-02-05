@@ -12,7 +12,7 @@ export default function RoboticSurgeryHero() {
           {/* Left Text Content */}
           <div className="text-center md:text-left space-y-6">
             <h1 className="text-hero text-primary-pink leading-tight">
-              Robotic Surgery in Gynecology
+              Robotic Surgery in Gynaecology
             </h1>
             <p className="text-body-large md:text-subsection text-[#B51252]/80">
               Advanced da Vinci Surgical System

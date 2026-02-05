@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react";
 import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
+import "aos/dist/aos.css";
 import { LuPhone } from "react-icons/lu";
 
 export default function MoreInfoSection() {
@@ -11,8 +11,8 @@ export default function MoreInfoSection() {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration
-      once: true, // Animation happens only once when scrolled
+      duration: 1000,
+      once: true,
     });
   }, []);
 
@@ -20,14 +20,18 @@ export default function MoreInfoSection() {
     <section className="bg-white" data-aos="fade-up">
       <div className="max-w-6xl mx-auto text-center py-12 px-4 rounded-lg shadow-sm">
         {/* Heading */}
-        <h3 className="text-2xl font-bold mb-4" style={{ color: deepPink }} data-aos="fade-left">
+        <h3
+          className="text-2xl font-bold mb-4"
+          style={{ color: deepPink }}
+          data-aos="fade-left"
+        >
           Need More Information?
         </h3>
 
         {/* Paragraph */}
         <p className="text-black mb-6 max-w-2xl mx-auto" data-aos="fade-left">
-          If you have concerns about any symptoms or need personalized medical advice, please
-          consult with a healthcare professional.
+          If you have concerns about any symptoms or need personalised medical
+          advice, please consult with a healthcare professional.
         </p>
 
         {/* Button */}

@@ -8,7 +8,7 @@ export default function FAQSection() {
     {
       question: "What are the benefits of robotic surgery?",
       answer:
-        "Robotic surgery offers enhanced precision, reduced blood loss, faster recovery times, and smaller incisions compared to traditional surgery. The 3D high-definition visualization provides better accuracy, and patients typically experience less post-operative pain and shorter hospital stays.",
+        "Robotic surgery offers enhanced precision, reduced blood loss, faster recovery times, and smaller incisions compared to traditional surgery. The 3D high-definition visualisation provides better accuracy, and patients typically experience less post-operative pain and shorter hospital stays.",
     },
     {
       question: "How long does recovery take after robotic surgery?",

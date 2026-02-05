@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react";
 import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
+import "aos/dist/aos.css";
 import { LuMicroscope } from "react-icons/lu";
 
 export default function CervicalCancerDiagnosis() {
@@ -13,7 +13,8 @@ export default function CervicalCancerDiagnosis() {
     },
     {
       title: "Biopsy",
-      description: "a small tissue sample is removed and examined under a microscope",
+      description:
+        "a small tissue sample is removed and examined under a microscope",
     },
     {
       title: "Colposcopy",
@@ -36,8 +37,8 @@ export default function CervicalCancerDiagnosis() {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration
-      once: true, // Animation happens only once when scrolled
+      duration: 1000,
+      once: true,
     });
   }, []);
 
@@ -52,7 +53,8 @@ export default function CervicalCancerDiagnosis() {
               How is Cervical Cancer Diagnosed?
             </div>
             <p className="text-black">
-              If a Pap test shows abnormal results, your doctor may recommend further tests.
+              If a Pap test shows abnormal results, your doctor may recommend
+              further tests.
             </p>
           </div>
 
@@ -73,8 +75,12 @@ export default function CervicalCancerDiagnosis() {
                       {index + 1}
                     </div>
                     <div>
-                      <h4 className="font-medium text-primary-pink">{method.title}</h4>
-                      <p className="text-sm text-black mt-1">– {method.description}</p>
+                      <h4 className="font-medium text-primary-pink">
+                        {method.title}
+                      </h4>
+                      <p className="text-sm text-black mt-1">
+                        – {method.description}
+                      </p>
                     </div>
                   </div>
                 ))}
@@ -90,7 +96,8 @@ export default function CervicalCancerDiagnosis() {
                 Additional Imaging Tests
               </h3>
               <p className="text-black mb-4">
-                If doctors suspect the cancer has spread, additional imaging tests may be ordered:
+                If doctors suspect the cancer has spread, additional imaging
+                tests may be ordered:
               </p>
               <div className="flex flex-wrap gap-2">
                 {imagingTests.map((test, idx) => (

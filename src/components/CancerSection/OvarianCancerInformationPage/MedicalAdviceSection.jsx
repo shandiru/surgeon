@@ -31,7 +31,7 @@ export default function MedicalAdviceSection() {
         {/* Paragraph */}
         <p className="text-black mb-8 max-w-2xl mx-auto leading-relaxed">
           This information is for educational purposes only. Always consult with qualified
-          healthcare professionals for personalized medical advice and treatment options.
+          healthcare professionals for personalised medical advice and treatment options.
         </p>
 
         {/* CTA Button */}

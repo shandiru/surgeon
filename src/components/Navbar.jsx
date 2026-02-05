@@ -49,7 +49,8 @@ const treatmentGuides = [
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
-  const [isAdditionalServicesOpen, setIsAdditionalServicesOpen] = useState(false);
+  const [isAdditionalServicesOpen, setIsAdditionalServicesOpen] =
+    useState(false);
 
   const navRef = useRef(null);
 
@@ -241,7 +242,12 @@ const Navbar = () => {
               aria-label="Toggle Menu"
             >
               {isOpen ? (
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -250,7 +256,12 @@ const Navbar = () => {
                   />
                 </svg>
               ) : (
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -324,7 +335,7 @@ const Navbar = () => {
 
               {isServicesOpen && <div className="ml-4 mt-1 space-y-1"></div>}
 
-              {/* ✅ Treatment Guide Accordion (FIXED) */}
+              {/*Treatment Guide Accordion (FIXED) */}
               <button
                 onClick={() => {
                   setIsAdditionalServicesOpen(!isAdditionalServicesOpen);
