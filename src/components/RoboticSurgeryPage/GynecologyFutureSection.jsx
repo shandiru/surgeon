@@ -34,15 +34,18 @@ export default function GynecologyFutureSection() {
             className="text-center md:text-left text-primary-pink space-y-6"
             data-aos="fade-right"
           >
-            <h2 className="text-3xl font-bold">The Future of Gynecologic Surgery</h2>
+            <h2 className="text-3xl font-bold">
+              The Future of Gynecologic Surgery
+            </h2>
             <p className="text-lg text-black">
-              The da Vinci Surgical System represents a significant advancement in gynecologic
-              surgery, offering a safer and more effective alternative to traditional methods in
-              many cases.
+              The da Vinci Surgical System represents a significant advancement
+              in gynecologic surgery, offering a safer and more effective
+              alternative to traditional methods in many cases.
             </p>
             <p className="text-lg text-black">
-              As the technology continues to evolve and become more accessible, robotic surgery is
-              expected to play an increasingly central role in women's health care.
+              As the technology continues to evolve and become more accessible,
+              robotic surgery is expected to play an increasingly central role
+              in women's health care.
             </p>
 
             {/* Highlight Box */}
@@ -56,9 +59,10 @@ export default function GynecologyFutureSection() {
                 Expert Care, Advanced Technology
               </p>
               <p className="text-black">
-                Gynecologists who specialize in robotic surgery are uniquely positioned to offer
-                their patients cutting-edge care with excellent outcomes, especially for complex and
-                delicate procedures.
+                Gynecologists who specialise in robotic surgery are uniquely
+                positioned to offer their patients cutting-edge care with
+                excellent outcomes, especially for complex and delicate
+                procedures.
               </p>
             </div>
           </div>

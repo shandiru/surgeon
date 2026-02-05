@@ -1,7 +1,13 @@
 "use client";
 
 import React from "react";
-import { FaStethoscope, FaUserFriends, FaAward, FaMicroscope, FaCheckCircle } from "react-icons/fa";
+import {
+  FaStethoscope,
+  FaUserFriends,
+  FaAward,
+  FaMicroscope,
+  FaCheckCircle,
+} from "react-icons/fa";
 
 export default function SpecialtiesSection() {
   const specialties = [
@@ -22,7 +28,7 @@ export default function SpecialtiesSection() {
     },
     {
       title: "Ovarian Cancer",
-      description: "Specialized oncological care and treatment",
+      description: "Specialised oncological care and treatment",
       icon: <FaStethoscope size={28} className="text-primary-pink" />,
     },
     {
@@ -44,7 +50,8 @@ export default function SpecialtiesSection() {
     },
     {
       title: "Fibroid Treatment",
-      description: "Comprehensive management including surgical and non-surgical options",
+      description:
+        "Comprehensive management including surgical and non-surgical options",
     },
     {
       title: "Ovarian Procedures",
@@ -55,7 +62,8 @@ export default function SpecialtiesSection() {
   const cancerCare = [
     {
       title: "Ovarian Cancer",
-      description: "Specialized oncological treatment and multidisciplinary care",
+      description:
+        "Specialised oncological treatment and multidisciplinary care",
     },
     {
       title: "Endometrial Cancer",
@@ -71,7 +79,8 @@ export default function SpecialtiesSection() {
     },
     {
       title: "Cervical Cancer",
-      description: "Comprehensive cervical cancer care including prevention and treatment",
+      description:
+        "Comprehensive cervical cancer care including prevention and treatment",
     },
   ];
 
@@ -80,11 +89,18 @@ export default function SpecialtiesSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-section text-primary-pink mb-4" data-aos="fade-up">
+          <h2
+            className="text-section text-primary-pink mb-4"
+            data-aos="fade-up"
+          >
             Areas of Expertise
           </h2>
-          <p className="text-body-large text-black" data-aos="fade-up" data-aos-delay="100">
-            Specialized procedures and treatments in women's health
+          <p
+            className="text-body-large text-black"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            Specialised procedures and treatments in women's health
           </p>
         </div>
 
@@ -111,7 +127,9 @@ export default function SpecialtiesSection() {
                 <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-sm bg-white">
                   {item.icon}
                 </div>
-                <h3 className="font-semibold mb-1 text-body-small text-gray-900">{item.title}</h3>
+                <h3 className="font-semibold mb-1 text-body-small text-gray-900">
+                  {item.title}
+                </h3>
                 <p className="text-black/90 text-caption">{item.description}</p>
               </div>
             ))}
@@ -133,8 +151,12 @@ export default function SpecialtiesSection() {
                 <li key={idx} className="flex items-start gap-3">
                   <FaCheckCircle className="text-primary-pink mt-1" />
                   <div>
-                    <div className="font-semibold text-body text-gray-900">{item.title}</div>
-                    <p className="text-body-small text-black/90">{item.description}</p>
+                    <div className="font-semibold text-body text-gray-900">
+                      {item.title}
+                    </div>
+                    <p className="text-body-small text-black/90">
+                      {item.description}
+                    </p>
                   </div>
                 </li>
               ))}
@@ -146,14 +168,20 @@ export default function SpecialtiesSection() {
             className="bg-white rounded-xl border border-primary-pink/10 shadow-sm p-6 flex flex-col gap-6 transition-all duration-300 hover:shadow-[0_0_25px_2px_rgba(255,75,139,0.25)]"
             data-aos="fade-down"
           >
-            <div className="text-card-title font-semibold text-primary-pink">Cancer Care</div>
+            <div className="text-card-title font-semibold text-primary-pink">
+              Cancer Care
+            </div>
             <ul className="space-y-4">
               {cancerCare.map((item, idx) => (
                 <li key={idx} className="flex items-start gap-3">
                   <FaCheckCircle className="text-primary-pink mt-1" />
                   <div>
-                    <div className="font-semibold text-body text-gray-900">{item.title}</div>
-                    <p className="text-body-small text-black/90">{item.description}</p>
+                    <div className="font-semibold text-body text-gray-900">
+                      {item.title}
+                    </div>
+                    <p className="text-body-small text-black/90">
+                      {item.description}
+                    </p>
                   </div>
                 </li>
               ))}
