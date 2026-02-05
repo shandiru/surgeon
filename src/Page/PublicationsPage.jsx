@@ -682,7 +682,10 @@ export default function PublicationsSection() {
           <div className="flex justify-center items-center gap-4 mt-8">
             <button
               disabled={page === 1}
-              onClick={() => setPage((p) => p - 1)}
+              onClick={() => {
+                setPage((p) => p - 1);
+                setTimeout(() => window.scrollTo({ top: 0, behavior: "instant" }), 0);
+              }}
               className={`px-4 py-2 rounded-lg font-medium transition ${
                 page === 1
                   ? "opacity-40 cursor-not-allowed"
@@ -699,7 +702,10 @@ export default function PublicationsSection() {
 
             <button
               disabled={page === totalPages}
-              onClick={() => setPage((p) => p + 1)}
+              onClick={() => {
+                setPage((p) => p + 1);
+                setTimeout(() => window.scrollTo({ top: 0, behavior: "instant" }), 0);
+              }}
               className={`px-4 py-2 rounded-lg font-medium transition ${
                 page === totalPages
                   ? "opacity-40 cursor-not-allowed"
