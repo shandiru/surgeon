@@ -42,7 +42,7 @@ export default function HeroSection() {
           </a>
 
           {/* Icon Box */}
-          <span className="relative w-9 h-9 sm:w-10 sm:h-10 md:w-12 md:h-12 flex items-center justify-center overflow-hidden rounded-lg bg-[#E03E7C] ml-0.5">
+          <span className="relative w-9 h-9 sm:w-10 sm:h-10 md:w-12 md:h-12 flex items-center justify-center overflow-hidden rounded-lg bg-[#E03E7C] text-white ml-0.5">
             <ArrowUpRight className="absolute w-4 h-4 sm:w-5 sm:h-5 transform transition-all duration-300 group-hover:-translate-y-8 group-hover:translate-x-6 opacity-100" />
             <ArrowUpRight className="absolute w-4 h-4 sm:w-5 sm:h-5 transform translate-y-8 -translate-x-8 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:translate-x-0 group-hover:opacity-100" />
           </span>
