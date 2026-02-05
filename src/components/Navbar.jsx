@@ -204,7 +204,6 @@ const Navbar = () => {
             </div>
 
             <Link
-              smooth
               to="/robotic-surgery-experience"
               className="text-black/90 hover:text-gray-900 px-2 py-2 text-sm font-medium"
               onClick={closeAll}

@@ -17,7 +17,7 @@ const HeroSectionView = () => {
           <div className="hero-left" data-aos="fade-up">
             <div className="mb-4 hero-badge" data-aos="fade-down">
               <span className="inline-block border border-primary-pink text-primary-pink text-caption px-3 py-1 rounded-full">
-                Gynocolisgist
+                Gynaecologist
               </span>
             </div>
 

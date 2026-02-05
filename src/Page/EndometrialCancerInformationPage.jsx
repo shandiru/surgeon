@@ -23,7 +23,7 @@ export default function Home() {
       </section>
       
         <section >
-        < EndometrialDiagnosisSection />
+        <EndometrialDiagnosisSection />
       </section>
        <section >
         <EndometrialTreatmentSection />

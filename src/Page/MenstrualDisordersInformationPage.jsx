@@ -25,7 +25,7 @@ export default function MenstrualDisordersInformationPage() {
             <MenstrualCycleInfo />
         </section>
          <section >
-            < MenstrualDisordersSection />
+            <MenstrualDisordersSection />
         </section>
 
          <section >
@@ -36,7 +36,7 @@ export default function MenstrualDisordersInformationPage() {
             <CausesSection />
         </section>
          <section >
-            < TreatmentOptions />
+            <TreatmentOptions />
         </section>
 
          <section >

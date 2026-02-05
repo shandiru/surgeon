@@ -23,7 +23,7 @@ export default function Home() {
       </section>
 
        <section>
-        < DaVinciSurgicalSystem />
+        <DaVinciSurgicalSystem />
       </section>
         <section>
         <GynecologyApplications />
