@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
+import "aos/dist/aos.css";
 import {
   FaExclamationTriangle,
   FaHeartbeat,
@@ -15,8 +15,8 @@ import {
 const VulvarCancerPage = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration
-      once: true, // Ensures animation happens once when scrolled
+      duration: 1000,
+      once: true,
     });
   }, []);
 
@@ -35,7 +35,9 @@ const VulvarCancerPage = () => {
             >
               <FaHeartbeat className="h-4 w-4" /> Medical Information Guide
             </div>
-            <h1 className="text-3xl lg:text-5xl font-bold text-primary-pink mb-6">Vulvar Cancer</h1>
+            <h1 className="text-3xl lg:text-5xl font-bold text-primary-pink mb-6">
+              Vulvar Cancer
+            </h1>
             <p className="text-lg lg:text-xl text-black leading-relaxed">
               A comprehensive guide covering symptoms, diagnosis,
               <br /> and treatment options
@@ -61,7 +63,7 @@ const VulvarCancerPage = () => {
           {/* Step 1: Symptoms */}
           <StepCard
             step="Step 1"
-            title="Recognizing Symptoms"
+            title="Recognising Symptoms"
             icon={<FaExclamationTriangle className="h-8 w-8" />}
             description="Vulvar cancer most often affects the labia (skin folds around the vagina), but it can occur anywhere on the vulva."
             points={[
@@ -82,7 +84,7 @@ const VulvarCancerPage = () => {
             step="Step 2"
             title="Getting Diagnosed"
             icon={<FaStethoscope className="h-8 w-8" />}
-            description="Diagnosis usually begins with a physical and pelvic exam, followed by specialized tests."
+            description="Diagnosis usually begins with a physical and pelvic exam, followed by specialised tests."
             subsections={[
               {
                 title: "Examination Steps:",
@@ -105,7 +107,12 @@ const VulvarCancerPage = () => {
                 ],
               },
             ]}
-            tags={["Chest X-ray", "CT or PET-CT scan", "MRI", "Endoscopy (if needed)"]}
+            tags={[
+              "Chest X-ray",
+              "CT or PET-CT scan",
+              "MRI",
+              "Endoscopy (if needed)",
+            ]}
             data-aos="fade-up"
           />
 
@@ -154,9 +161,9 @@ const VulvarCancerPage = () => {
           data-aos="fade-up"
         >
           <p className="text-white text-lg leading-relaxed max-w-3xl mx-auto">
-            This information is for educational purposes only and should not replace professional
-            medical advice. Always consult with your healthcare provider for personalized medical
-            guidance.
+            This information is for educational purposes only and should not
+            replace professional medical advice. Always consult with your
+            healthcare provider for personalised medical guidance.
           </p>
         </div>
       </div>
@@ -202,10 +209,14 @@ const StepCard = ({
               >
                 {step}
               </span>
-              <h2 className="text-3xl font-bold text-primary-pink mt-2">{title}</h2>
+              <h2 className="text-3xl font-bold text-primary-pink mt-2">
+                {title}
+              </h2>
             </div>
 
-            {description && <p className="text-black mb-8 text-lg">{description}</p>}
+            {description && (
+              <p className="text-black mb-8 text-lg">{description}</p>
+            )}
 
             {/* Points with Hover Effect */}
             {points && (
@@ -228,7 +239,10 @@ const StepCard = ({
 
             {/* Alert Box */}
             {alert && (
-              <div className="mt-8 p-6 rounded-xl" style={{ backgroundColor: deepPink }}>
+              <div
+                className="mt-8 p-6 rounded-xl"
+                style={{ backgroundColor: deepPink }}
+              >
                 <p className="text-white font-semibold text-lg">{alert}</p>
               </div>
             )}
@@ -237,7 +251,9 @@ const StepCard = ({
             {subsections &&
               subsections.map((section, i) => (
                 <div key={i} className="space-y-6 mt-8">
-                  <h3 className="text-xl font-semibold text-primary-pink">{section.title}</h3>
+                  <h3 className="text-xl font-semibold text-primary-pink">
+                    {section.title}
+                  </h3>
                   <div className="space-y-4">
                     {section.items.map((item, j) => (
                       <div

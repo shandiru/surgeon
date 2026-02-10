@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react";
 import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
+import "aos/dist/aos.css";
 import { LuStethoscope } from "react-icons/lu";
 
 export default function EndometrialDiagnosisSection() {
@@ -11,8 +11,8 @@ export default function EndometrialDiagnosisSection() {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration
-      once: true, // Animation happens only once when scrolled
+      duration: 1000,
+      once: true,
     });
   }, []);
 
@@ -39,15 +39,18 @@ export default function EndometrialDiagnosisSection() {
               Diagnostic Process
             </div>
             <div className="text-sm text-black/90">
-              Because symptoms may be similar to other conditions, a thorough evaluation is
-              essential.
+              Because symptoms may be similar to other conditions, a thorough
+              evaluation is essential.
             </div>
           </div>
 
           {/* Card Content */}
           <div className="px-6">
             <div className="space-y-4">
-              <h4 className="font-semibold text-lg mb-3" style={{ color: deepPink }}>
+              <h4
+                className="font-semibold text-lg mb-3"
+                style={{ color: deepPink }}
+              >
                 Diagnostic steps may include:
               </h4>
 
@@ -107,7 +110,7 @@ export default function EndometrialDiagnosisSection() {
             </p>
             <ul className="text-sm space-y-1 list-disc ml-6 text-black">
               <li>How far the cancer has spread (metastasis)</li>
-              <li>Tumor size and aggressiveness</li>
+              <li>Tumour size and aggressiveness</li>
               <li>Grading system (letters and numbers) to classify severity</li>
             </ul>
           </div>
@@ -119,7 +122,8 @@ export default function EndometrialDiagnosisSection() {
             data-aos="fade-up"
           >
             <p className="text-sm font-medium" style={{ color: deepPink }}>
-              <strong>Key Point:</strong> Early detection significantly improves treatment success.
+              <strong>Key Point:</strong> Early detection significantly improves
+              treatment success.
             </p>
           </div>
         </div>

@@ -1,7 +1,5 @@
 import React from "react";
 
-// Sections from components/HomePage
-
 import Header from "../components/CancerSection/CervicalCancerOverviewPage/Header";
 import Symptoms from "../components/CancerSection/CervicalCancerOverviewPage/Symptoms";
 import Diagnosis from "../components/CancerSection/CervicalCancerOverviewPage/Diagnosis";
@@ -11,27 +9,22 @@ import Footer from "../components/CancerSection/CervicalCancerOverviewPage/Foote
 export default function Home() {
   return (
     <div>
-      
-      <section >
+      <section>
         <Header />
       </section>
-       <section >
+      <section>
         <Symptoms />
       </section>
-        <section >
+      <section>
         <Diagnosis />
       </section>
-       <section >
+      <section>
         <Treatment />
       </section>
 
-      <section >
+      <section>
         <Footer />
       </section>
-
-      
-      
-    
     </div>
   );
 }

@@ -1,12 +1,16 @@
 import iconMap from "./iconMap";
 
-const GuideButtons = ({ sections, setShowCard, activeButton, setActiveButton }) => {
+const GuideButtons = ({
+  sections,
+  setShowCard,
+  activeButton,
+  setActiveButton,
+}) => {
   const handleButtonClick = (card, index) => {
     setShowCard(card);
     setActiveButton(index);
   };
 
-  // Dynamic grid columns based on section count
   const sectionCount = sections.length;
   const getGridCols = () => {
     if (sectionCount <= 4) return "lg:grid-cols-4";
@@ -34,7 +38,9 @@ const GuideButtons = ({ sections, setShowCard, activeButton, setActiveButton }) 
             `}
           >
             <IconComponent className="w-4 h-4 mb-2" />
-            <span className="leading-tight text-base">{section.buttonLabel}</span>
+            <span className="leading-tight text-base">
+              {section.buttonLabel}
+            </span>
           </button>
         );
       })}

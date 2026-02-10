@@ -1,53 +1,67 @@
-import React, { useState, useMemo } from 'react'
-import EventListHero from '../components/EventListPage/EventListHero'
-import ListingEvents from '../components/EventListPage/EventList'
+import React, { useState, useMemo } from "react";
+import EventListHero from "../components/EventListPage/EventListHero";
+import ListingEvents from "../components/EventListPage/EventList";
 
-// Utility function to parse date string and determine if event is upcoming or closed
 const parseEventDate = (dateString) => {
   try {
-    const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 
-                        'July', 'August', 'September', 'October', 'November', 'December']
-    
-    // Handle formats spanning multiple months like "29 April – 1 May 2026"
-    const multiMonthMatch = dateString.match(/(\d+)\s+(\w+)\s+–\s+(\d+)\s+(\w+)\s+(\d+)/)
+    const monthNames = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
+    ];
+
+    const multiMonthMatch = dateString.match(
+      /(\d+)\s+(\w+)\s+–\s+(\d+)\s+(\w+)\s+(\d+)/,
+    );
     if (multiMonthMatch) {
-      const [, startDay, startMonth, endDay, endMonth, year] = multiMonthMatch
-      const endMonthIndex = monthNames.findIndex(m => m.toLowerCase() === endMonth.toLowerCase())
+      const [, startDay, startMonth, endDay, endMonth, year] = multiMonthMatch;
+      const endMonthIndex = monthNames.findIndex(
+        (m) => m.toLowerCase() === endMonth.toLowerCase(),
+      );
       if (endMonthIndex !== -1) {
-        return new Date(parseInt(year), endMonthIndex, parseInt(endDay))
+        return new Date(parseInt(year), endMonthIndex, parseInt(endDay));
       }
     }
-    
-    // Handle formats like "12–14 September 2024" or "5–7 October 2024" (single month)
-    const singleMonthMatch = dateString.match(/(\d+)–(\d+)\s+(\w+)\s+(\d+)/)
+
+    const singleMonthMatch = dateString.match(/(\d+)–(\d+)\s+(\w+)\s+(\d+)/);
     if (singleMonthMatch) {
-      const [, startDay, endDay, month, year] = singleMonthMatch
-      const monthIndex = monthNames.findIndex(m => m.toLowerCase() === month.toLowerCase())
+      const [, startDay, endDay, month, year] = singleMonthMatch;
+      const monthIndex = monthNames.findIndex(
+        (m) => m.toLowerCase() === month.toLowerCase(),
+      );
       if (monthIndex !== -1) {
-        return new Date(parseInt(year), monthIndex, parseInt(endDay))
+        return new Date(parseInt(year), monthIndex, parseInt(endDay));
       }
     }
-    
-    // Fallback: try to parse as single date
-    return new Date(dateString)
+
+    return new Date(dateString);
   } catch (error) {
-    console.error('Error parsing date:', dateString, error)
-    return null
+    console.error("Error parsing date:", dateString, error);
+    return null;
   }
-}
+};
 
 const isEventUpcoming = (dateString) => {
-  const eventDate = parseEventDate(dateString)
-  if (!eventDate) return false
-  const today = new Date()
-  today.setHours(0, 0, 0, 0)
-  eventDate.setHours(0, 0, 0, 0)
-  return eventDate >= today
-}
+  const eventDate = parseEventDate(dateString);
+  if (!eventDate) return false;
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  eventDate.setHours(0, 0, 0, 0);
+  return eventDate >= today;
+};
 
 const EventListPage = () => {
-  const [selectedCategory, setSelectedCategory] = useState('All Events')
-  const [selectedEventType, setSelectedEventType] = useState('All')
+  const [selectedCategory, setSelectedCategory] = useState("All Events");
+  const [selectedEventType, setSelectedEventType] = useState("All");
 
   const allEvents = [
     {
@@ -55,50 +69,51 @@ const EventListPage = () => {
       image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d",
       status: "Now Closed",
       eventType: "Conference",
-      rating: 4.5,
+      rating: 5.0,
       title: "British Gynaecological Cancer Society Annual Meeting 2024",
       description: "Invited Speaker / Panel Chair",
       talk: "Advances in Minimally Invasive Surgery for Gynaecological Cancers",
       Date: "12–14 September 2024",
       address: "London, UK / Virtual",
       organiser: "British Gynaecological Cancer Society",
-      link: "/event/event1"
+      link: "https://www.bgcs.org.uk/event/annual-scientific-meeting-liverpool-2024/",
     },
     {
       id: 2,
       image: "https://images.unsplash.com/photo-1519681393784-d120267933ba",
       status: "Open",
       eventType: "Conference",
-      rating: 4.8,
+      rating: 5.0,
       title: "International Oncology Conference 2024",
       description: "Keynote Speaker",
       talk: "Innovations in Cancer Treatment",
       Date: "5–7 October 2024",
       address: "New York, USA / Virtual",
       organiser: "Global Oncology Association",
-      link: "/event/event2"
+      link: "/event/event2",
     },
     {
       id: 3,
       image: "https://images.unsplash.com/photo-1528605248644-14dd04022da1",
       status: "Now Closed",
       eventType: "Conference",
-      rating: 4.3,
+      rating: 5.0,
       title: "European Gynaecological Surgery Forum",
       description: "Invited Speaker",
       talk: "Robotic Surgery Techniques",
       Date: "20–22 November 2024",
       address: "Berlin, Germany",
       organiser: "European Surgical Society",
-      link: "/event/event1",
+      link: "https://www.esgo.org/attend/endorsed-by-esgo/esgo-endorsed-meetings/",
     },
     {
       id: 4,
       image: "https://images.unsplash.com/photo-1511578314322-379afb476865",
       status: "Open",
       eventType: "Conference",
-      rating: 4.7,
-      title: "British Gynaecological Cancer Society Annual Scientific Meeting 2026",
+      rating: 5.0,
+      title:
+        "British Gynaecological Cancer Society Annual Scientific Meeting 2026",
       description: "Invited Speaker",
       talk: "Delivering Excellence in an Imperfect World",
       Date: "24–26 June 2026",
@@ -111,8 +126,9 @@ const EventListPage = () => {
       image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d",
       status: "Open",
       eventType: "Conference",
-      rating: 4.8,
-      title: "British Society for Gynaecological Endoscopy Annual Scientific Meeting 2026",
+      rating: 5.0,
+      title:
+        "British Society for Gynaecological Endoscopy Annual Scientific Meeting 2026",
       description: "Invited Speaker",
       talk: "One World, One Vision – Breaking Surgical Ground in Endoscopy",
       Date: "29 April – 1 May 2026",
@@ -120,46 +136,61 @@ const EventListPage = () => {
       organiser: "British Society for Gynaecological Endoscopy",
       link: "https://www.bsge.org.uk/asm26/",
     },
-  ]
+    {
+      id: 6,
+      image: "/event1.jpeg",
+      status: "Now Closed",
+      eventType: "Conference",
+      rating: 5.0,
+      title: "Gynae MDT Endometrial Cancer Study Day",
+      description: "Invited Speaker",
+      talk: "EGA Institute for Women's Health & UCLH Women's Health Division 20th Annual Conference",
+      Date: "5 December 2025",
+      address: "London, UK",
+      organiser: "UCL EGA Institute for Women's Health",
+      link: "",
+    },
+  ];
 
-  // Add computed status based on dates
   const eventsWithComputedStatus = useMemo(() => {
-    return allEvents.map(event => ({
+    return allEvents.map((event) => ({
       ...event,
       isUpcoming: isEventUpcoming(event.Date),
-      computedStatus: isEventUpcoming(event.Date) ? 'Open' : 'Now Closed'
-    }))
-  }, [])
+      computedStatus: isEventUpcoming(event.Date) ? "Open" : "Now Closed",
+    }));
+  }, []);
 
   const filteredEvents = useMemo(() => {
-    let filtered = [...eventsWithComputedStatus]
-
-    // Filter by category based on computed status from dates
-    if (selectedCategory === 'Upcoming Events') {
-      filtered = filtered.filter(event => event.isUpcoming)
-    } else if (selectedCategory === 'Closed Events') {
-      filtered = filtered.filter(event => !event.isUpcoming)
+    let filtered = [...eventsWithComputedStatus];
+    if (selectedCategory === "Upcoming Events") {
+      filtered = filtered.filter((event) => event.isUpcoming);
+    } else if (selectedCategory === "Closed Events") {
+      filtered = filtered.filter((event) => !event.isUpcoming);
     }
 
-    // Filter by event type
-    if (selectedEventType !== 'All' && selectedEventType !== 'Event Type') {
-      filtered = filtered.filter(event => event.eventType === selectedEventType)
+    if (selectedEventType !== "All" && selectedEventType !== "Event Type") {
+      filtered = filtered.filter(
+        (event) => event.eventType === selectedEventType,
+      );
     }
 
-    return filtered
-  }, [selectedCategory, selectedEventType, eventsWithComputedStatus])
+    return filtered;
+  }, [selectedCategory, selectedEventType, eventsWithComputedStatus]);
 
   return (
     <div>
-        <EventListHero 
-          selectedCategory={selectedCategory}
-          onCategoryChange={setSelectedCategory}
-          selectedEventType={selectedEventType}
-          onEventTypeChange={setSelectedEventType}
-        />
-        <ListingEvents events={filteredEvents} selectedCategory={selectedCategory} />
+      <EventListHero
+        selectedCategory={selectedCategory}
+        onCategoryChange={setSelectedCategory}
+        selectedEventType={selectedEventType}
+        onEventTypeChange={setSelectedEventType}
+      />
+      <ListingEvents
+        events={filteredEvents}
+        selectedCategory={selectedCategory}
+      />
     </div>
-  )
-}
+  );
+};
 
-export default EventListPage
+export default EventListPage;

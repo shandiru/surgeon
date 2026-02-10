@@ -24,7 +24,7 @@ const accordionItems = [
     id: 4,
     title: "Hysteroscopy",
     content:
-      "A thin camera is inserted through the cervix to view the womb lining directly. This allows for direct visualization and tissue sampling if needed.",
+      "A thin camera is inserted through the cervix to view the womb lining directly. This allows for direct visualisation and tissue sampling if needed.",
   },
 ];
 

@@ -46,7 +46,7 @@ export default function SymptomsSection() {
           <h2 className="text-3xl font-bold mb-4" style={{ color: deepPink }}>
             Symptoms of Endometriosis
           </h2>
-          <p className="text-lg text-black/90">Recognizing the signs and when to seek help</p>
+          <p className="text-lg text-black/90">Recognising the signs and when to seek help</p>
         </div>
 
         {/* Symptom Cards */}

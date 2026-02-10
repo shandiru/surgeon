@@ -1,5 +1,13 @@
 import React from "react";
-import { Award, GraduationCap, Target, Calendar, Heart, Users, ArrowRight } from "lucide-react";
+import {
+  Award,
+  GraduationCap,
+  Target,
+  Calendar,
+  Heart,
+  Users,
+  ArrowRight,
+} from "lucide-react";
 
 export default function ExperienceGrid() {
   const experienceCards = [
@@ -16,14 +24,14 @@ export default function ExperienceGrid() {
       icon: <Target className="w-6 h-6" />,
       title: "Surgical Expertise",
       description:
-        "Specialized in robotic surgery for endometrial cancer, cervical cancer, and complex benign conditions.",
+        "Specialised in robotic surgery for endometrial cancer, cervical cancer, and complex benign conditions.",
       background: "bg-white",
       iconBg: "bg-primary-pink",
       hoverColor: "hover:bg-primary-pink",
     },
     {
       icon: <GraduationCap className="w-6 h-6" />,
-      title: "Specialized Training",
+      title: "Specialised Training",
       description:
         "Certified in da Vinci Surgical System with advanced training in complex gynecological procedures.",
       background: "bg-[#FDE7EB]",
@@ -34,7 +42,7 @@ export default function ExperienceGrid() {
       icon: <Heart className="w-6 h-6" />,
       title: "Patient Care",
       description:
-        "Compassionate care ensuring each patient receives personalized treatment tailored to their unique needs.",
+        "Compassionate care ensuring each patient receives personalised treatment tailored to their unique needs.",
       background: "bg-white",
       iconBg: "bg-primary-pink",
       hoverColor: "hover:bg-primary-pink",
@@ -77,7 +85,9 @@ export default function ExperienceGrid() {
                 </div>
 
                 {/* Title */}
-                <h3 className="text-subsection text-gray-900 font-bold mb-3">{card.title}</h3>
+                <h3 className="text-subsection text-gray-900 font-bold mb-3">
+                  {card.title}
+                </h3>
 
                 {/* Description */}
                 <p className="text-body text-black leading-relaxed mb-4 flex-1">

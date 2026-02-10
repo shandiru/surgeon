@@ -6,7 +6,7 @@ const IrregularBleedingFooter = () => {
       <div className="max-w-4xl mx-auto text-center">
         <p className="text-sm text-light-pink-2">
           This information is for educational purposes only and should not replace professional
-          medical advice. Always consult with your healthcare provider for personalized guidance.
+          medical advice. Always consult with your healthcare provider for personalised guidance.
         </p>
       </div>
     </footer>

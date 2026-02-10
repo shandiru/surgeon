@@ -101,26 +101,58 @@ export default function ProfessionalExperience() {
           >
             <div className="flex items-center gap-3 mb-5">
               <div className="w-10 h-10 bg-primary-pink rounded-lg flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                >
                   <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
                   <circle cx="9" cy="7" r="4" />
                   <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
                   <path d="M16 3.13a4 4 0 0 1 0 7.75" />
                 </svg>
               </div>
-              <h3 className="text-body-large font-semibold text-gray-900">Society Memberships</h3>
+              <h3 className="text-body-large font-semibold text-gray-900">
+                Society Memberships
+              </h3>
             </div>
             <div className="space-y-3">
               {[
-                { abbr: "BGCS", name: "British Gynaecological Cancer Society", role: "Patient & Public Engagement Chair" },
-                { abbr: "BSCCP", name: "British Society for Colposcopy and Cervical Pathology", role: "OSCE Examiner & Faculty Member" },
-                { abbr: "ESGO", name: "European Society of Gynaecological Oncology", role: "Guidelines Reviewer & Past UK Rep" },
-                { abbr: "RCOG", name: "Royal College of Obstetricians and Gynaecologists", role: "Tier 2 Medical Educator & AAC Panel" },
+                {
+                  abbr: "BGCS",
+                  name: "British Gynaecological Cancer Society",
+                  role: "Patient & Public Engagement Chair",
+                },
+                {
+                  abbr: "BSCCP",
+                  name: "British Society for Colposcopy and Cervical Pathology",
+                  role: "OSCE Examiner & Faculty Member",
+                },
+                {
+                  abbr: "ESGO",
+                  name: "European Society of Gynaecological Oncology",
+                  role: "Guidelines Reviewer & Past UK Rep",
+                },
+                {
+                  abbr: "RCOG",
+                  name: "Royal College of Obstetricians and Gynaecologists",
+                  role: "Tier 2 Medical Educator & AAC Panel",
+                },
               ].map((item, idx) => (
-                <div key={idx} className="flex items-start gap-3 bg-white/60 rounded-lg p-3">
-                  <span className="text-primary-pink font-bold text-caption min-w-[50px]">{item.abbr}</span>
+                <div
+                  key={idx}
+                  className="flex items-start gap-3 bg-white/60 rounded-lg p-3"
+                >
+                  <span className="text-primary-pink font-bold text-caption min-w-[50px]">
+                    {item.abbr}
+                  </span>
                   <div className="flex-1">
-                    <p className="text-body-small font-medium text-gray-900">{item.name}</p>
+                    <p className="text-body-small font-medium text-gray-900">
+                      {item.name}
+                    </p>
                     <p className="text-caption text-gray-600">{item.role}</p>
                   </div>
                 </div>
@@ -136,21 +168,39 @@ export default function ProfessionalExperience() {
           >
             <div className="flex items-center gap-3 mb-5">
               <div className="w-10 h-10 bg-primary-pink rounded-lg flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                >
                   <path d="M12 2L2 7l10 5 10-5-10-5z" />
                   <path d="M2 17l10 5 10-5" />
                   <path d="M2 12l10 5 10-5" />
                 </svg>
               </div>
-              <h3 className="text-body-large font-semibold text-gray-900">Leadership Roles</h3>
+              <h3 className="text-body-large font-semibold text-gray-900">
+                Leadership Roles
+              </h3>
             </div>
             <div className="space-y-3">
               {[
-                { title: "Service Lead — Gynaecological Oncology", place: "Nottingham University Hospitals NHS Trust" },
-                { title: "Medical Appointment Committee", place: "Gynaecology Representative, Spire Nottingham Hospital" },
+                {
+                  title: "Service Lead — Gynaecological Oncology",
+                  place: "Nottingham University Hospitals NHS Trust",
+                },
+                {
+                  title: "Medical Appointment Committee",
+                  place:
+                    "Gynaecology Representative, Spire Nottingham Hospital",
+                },
               ].map((item, idx) => (
                 <div key={idx} className="bg-white/60 rounded-lg p-3">
-                  <p className="text-body-small font-medium text-gray-900">{item.title}</p>
+                  <p className="text-body-small font-medium text-gray-900">
+                    {item.title}
+                  </p>
                   <p className="text-caption text-gray-600">{item.place}</p>
                 </div>
               ))}
@@ -165,21 +215,35 @@ export default function ProfessionalExperience() {
           >
             <div className="flex items-center gap-3 mb-5">
               <div className="w-10 h-10 bg-primary-pink rounded-lg flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                >
                   <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
                   <path d="M6 12v5c3 3 9 3 12 0v-5" />
                 </svg>
               </div>
-              <h3 className="text-body-large font-semibold text-gray-900">Training & Supervision</h3>
+              <h3 className="text-body-large font-semibold text-gray-900">
+                Training & Supervision
+              </h3>
             </div>
             <div className="space-y-3">
               <div className="bg-white/60 rounded-lg p-3">
-                <p className="text-body-small font-medium text-gray-900">Subspecialty Training Programme Supervisor</p>
-                <p className="text-caption text-gray-600">Dr Emmanouil Katsanevakis (May 2024) • Dr Roberta Schiemer (June 2025)</p>
+                <p className="text-body-small font-medium text-gray-900">
+                  Subspecialty Training Programme Supervisor
+                </p>
               </div>
               <div className="bg-white/60 rounded-lg p-3">
-                <p className="text-body-small font-medium text-gray-900">Da Vinci Robotic Surgeon & Proctor</p>
-                <p className="text-caption text-gray-600">Robotic surgery trainer & case observation supervisor (2023+)</p>
+                <p className="text-body-small font-medium text-gray-900">
+                  Da Vinci Robotic Surgeon & Proctor
+                </p>
+                <p className="text-caption text-gray-600">
+                  Robotic surgery trainer & case observation supervisor (2023+)
+                </p>
               </div>
             </div>
           </div>
@@ -192,29 +256,28 @@ export default function ProfessionalExperience() {
           >
             <div className="flex items-center gap-3 mb-5">
               <div className="w-10 h-10 bg-primary-pink rounded-lg flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                >
                   <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2" />
                   <rect x="9" y="3" width="6" height="4" rx="2" />
                   <path d="M9 12h6" />
                   <path d="M9 16h6" />
                 </svg>
               </div>
-              <h3 className="text-body-large font-semibold text-gray-900">Research Supervision</h3>
+              <h3 className="text-body-large font-semibold text-gray-900">
+                Research Supervision
+              </h3>
             </div>
             <div className="bg-white/60 rounded-lg p-3">
-              <p className="text-body-small font-medium text-gray-900 mb-2">PhD Co-supervisor — University of Nottingham</p>
-              <div className="space-y-1">
-                {[
-                  { name: "Dr Roberta Schiemer", percent: "25%" },
-                  { name: "Dr Addo-Yobo", percent: "25%" },
-                  { name: "Jessica Grant", percent: "10%" },
-                ].map((student, idx) => (
-                  <div key={idx} className="flex justify-between text-caption">
-                    <span className="text-gray-700">{student.name}</span>
-                    <span className="text-primary-pink font-medium">{student.percent}</span>
-                  </div>
-                ))}
-              </div>
+              <p className="text-body-small font-medium text-gray-900 mb-2">
+                PhD Co-supervisor — University of Nottingham
+              </p>
             </div>
           </div>
         </div>

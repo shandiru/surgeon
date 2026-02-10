@@ -40,7 +40,7 @@ export default function OvarianCystsPage() {
         <DiagnosisAndSelfCareSection />
       </section>
        <section className="max-w-4xl mx-auto px-6 py-6 ">
-        < OvarianCystSurgery />
+        <OvarianCystSurgery />
       </section>
        <section className="max-w-4xl mx-auto px-6 py-6 ">
         <OvarianCystSupportCard />

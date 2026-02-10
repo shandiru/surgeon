@@ -1,6 +1,4 @@
 import React from "react";
-
-// Sections from components/HomePage
 import HeroSection from "../components/HomePage/HeroSection";
 import About from "../components/HomePage/AboutSection";
 import Experience from "../components/HomePage/Experience";

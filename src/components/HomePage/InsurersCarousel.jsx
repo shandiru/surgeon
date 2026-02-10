@@ -1,10 +1,8 @@
 "use client";
-
 import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-// Easy to edit: Just add/remove insurers here
 const insurers = [
   { name: "Benenden Health", logo: "/insurers/benenden.jpg" },
   { name: "The PHC", logo: "/insurers/phc.png" },

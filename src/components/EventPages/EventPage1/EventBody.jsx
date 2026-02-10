@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useParams } from "react-router-dom"; // 1. Import useParams
+import { useParams } from "react-router-dom";
 import {
   MapPin,
   Phone,
@@ -12,20 +12,15 @@ import {
   ChevronUp,
 } from "lucide-react";
 
-// Import the eventsData object from your Data file
 import { eventsData } from "../../../EventData/Data";
 
 const EventDetail = () => {
-  // 2. Get the ID from the URL (e.g., /event/event1)
   const { id } = useParams();
-
-  // 3. Select the specific event from your data object
   const event = eventsData[id];
 
   const [activeOrganizer, setActiveOrganizer] = useState(0);
   const [openFaq, setOpenFaq] = useState(0);
 
-  // 4. Handle Case where ID doesn't exist
   if (!event) {
     return (
       <div className="min-h-screen flex items-center justify-center">
@@ -34,7 +29,6 @@ const EventDetail = () => {
     );
   }
 
-  // 5. Use the data from the 'event' constant throughout the component
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
       <div className="container mx-auto px-4 py-8 lg:py-12">
@@ -43,13 +37,17 @@ const EventDetail = () => {
           <div className="lg:col-span-2 space-y-6">
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all hover:shadow-2xl">
               <div className="p-6 lg:p-8">
-                <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-3">{event.title}</h1>
+                <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-3">
+                  {event.title}
+                </h1>
                 <div className="flex flex-wrap items-center gap-4 mb-6">
                   <span className="inline-flex items-center px-4 py-2 bg-primary-pink/20 text-primary-pink rounded-full font-semibold text-sm">
                     <Calendar className="w-4 h-4 mr-2" />
                     {event.date}
                   </span>
-                  <span className="text-black/90 font-medium">{event.shortLocation}</span>
+                  <span className="text-black/90 font-medium">
+                    {event.shortLocation}
+                  </span>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
@@ -113,7 +111,9 @@ const EventDetail = () => {
                       alt={speaker.name}
                       className="w-32 h-32 rounded-full mx-auto object-cover ring-4 ring-gray-100 group-hover:ring-primary-pink transition-all"
                     />
-                    <h3 className="text-lg font-bold text-gray-900 mt-4">{speaker.name}</h3>
+                    <h3 className="text-lg font-bold text-gray-900 mt-4">
+                      {speaker.name}
+                    </h3>
                     <p className="text-sm text-black/90">{speaker.role}</p>
                   </div>
                 ))}
@@ -173,7 +173,8 @@ const EventDetail = () => {
                       {event.organizers[activeOrganizer].name}
                     </h3>
                     <p className="text-sm text-primary-pink">
-                      Posted {event.organizers[activeOrganizer].postedDays} days ago
+                      Posted {event.organizers[activeOrganizer].postedDays} days
+                      ago
                     </p>
                   </div>
                 </div>
@@ -183,7 +184,8 @@ const EventDetail = () => {
                     {event.organizers[activeOrganizer].location}
                   </div>
                   <div className="flex items-center gap-2 text-sm text-black">
-                    <Mail size={16} color="#FF4B8B" /> {event.organizers[activeOrganizer].email}
+                    <Mail size={16} color="#FF4B8B" />{" "}
+                    {event.organizers[activeOrganizer].email}
                   </div>
                 </div>
                 <div className="flex justify-center space-x-2">
@@ -193,7 +195,11 @@ const EventDetail = () => {
                       onClick={() => setActiveOrganizer(index)}
                       className={`w-14 h-14 rounded-full overflow-hidden ring-2 transition-all ${activeOrganizer === index ? "ring-primary-pink scale-110" : "ring-gray-200"}`}
                     >
-                      <img src={org.image} alt={org.name} className="w-full h-full object-cover" />
+                      <img
+                        src={org.image}
+                        alt={org.name}
+                        className="w-full h-full object-cover"
+                      />
                     </button>
                   ))}
                 </div>

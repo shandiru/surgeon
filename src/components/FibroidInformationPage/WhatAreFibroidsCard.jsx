@@ -1,6 +1,6 @@
 "use client";
 
-import { Pin } from "lucide-react";
+import { Pin, Check } from "lucide-react";
 
 export default function WhatAreFibroidsCard() {
   const pink = "#FFC5D3";
@@ -40,8 +40,8 @@ export default function WhatAreFibroidsCard() {
 
           {/* Highlight Box */}
           <div className="rounded-lg p-5" style={{ backgroundColor: pink }}>
-            <p className="font-semibold text-base" style={{ color: deepPink }}>
-              ✓ Fibroids are not cancer and rarely become cancerous.
+            <p className="font-semibold text-base flex items-center gap-2" style={{ color: deepPink }}>
+              <Check className="h-5 w-5" /> Fibroids are not cancer and rarely become cancerous.
             </p>
           </div>
         </div>

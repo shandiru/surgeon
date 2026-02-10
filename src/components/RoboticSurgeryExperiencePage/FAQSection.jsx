@@ -8,7 +8,7 @@ export default function FAQSection() {
     {
       question: "What are the benefits of robotic surgery?",
       answer:
-        "Robotic surgery offers enhanced precision, reduced blood loss, faster recovery times, and smaller incisions compared to traditional surgery. The 3D high-definition visualization provides better accuracy, and patients typically experience less post-operative pain and shorter hospital stays.",
+        "Robotic surgery offers enhanced precision, reduced blood loss, faster recovery times, and smaller incisions compared to traditional surgery. The 3D high-definition visualisation provides better accuracy, and patients typically experience less post-operative pain and shorter hospital stays.",
     },
     {
       question: "How long does recovery take after robotic surgery?",
@@ -28,7 +28,7 @@ export default function FAQSection() {
     {
       question: "What types of procedures can be performed robotically?",
       answer:
-        "Robotic surgery is used for various gynecological procedures including hysterectomy, myomectomy (fibroid removal), treatment of endometrial and cervical cancers, ovarian cyst removal, and complex benign conditions. Ketan specializes in robotic-assisted procedures for these conditions.",
+        "Robotic surgery is used for various gynecological procedures including hysterectomy, myomectomy (fibroid removal), treatment of endometrial and cervical cancers, ovarian cyst removal, and complex benign conditions. Ketan specialises in robotic-assisted procedures for these conditions.",
     },
   ];
 
@@ -47,10 +47,11 @@ export default function FAQSection() {
                 Frequently asked questions
               </h2>
               <p className="text-body-large text-black leading-relaxed">
-                Our experienced team is committed to ensuring that you feel comfortable and
-                confident in our care. Whether you need routine consultations, robotic surgery
-                procedures, or follow-up care, we're here to answer all your questions and provide
-                the support you need throughout your healthcare journey.
+                Our experienced team is committed to ensuring that you feel
+                comfortable and confident in our care. Whether you need routine
+                consultations, robotic surgery procedures, or follow-up care,
+                we're here to answer all your questions and provide the support
+                you need throughout your healthcare journey.
               </p>
             </div>
 
@@ -78,7 +79,9 @@ export default function FAQSection() {
                   </button>
                   {openIndex === index && (
                     <div className="mt-4 pt-4 border-t border-gray-200">
-                      <p className="text-body text-black leading-relaxed">{faq.answer}</p>
+                      <p className="text-body text-black leading-relaxed">
+                        {faq.answer}
+                      </p>
                     </div>
                   )}
                 </div>

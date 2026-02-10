@@ -1,5 +1,5 @@
 import React from "react";
-import { CalendarDays } from "lucide-react";
+import { CalendarDays, Check } from "lucide-react";
 
 export default function RememberSection() {
   return (
@@ -13,12 +13,12 @@ export default function RememberSection() {
         {/* Card Content */}
         <div className="grid md:grid-cols-2 gap-6 text-sm sm:text-base text-[#374151]">
           <div className="space-y-3">
-            <p className="font-medium">✓ Any bleeding after menopause must be checked</p>
-            <p className="font-medium">✓ Most causes are benign, but early diagnosis is vital</p>
+            <p className="font-medium flex items-center gap-2"><Check className="h-5 w-5 text-primary-pink" /> Any bleeding after menopause must be checked</p>
+            <p className="font-medium flex items-center gap-2"><Check className="h-5 w-5 text-primary-pink" /> Most causes are benign, but early diagnosis is vital</p>
           </div>
           <div className="space-y-3">
-            <p className="font-medium">✓ Prompt medical assessment saves lives</p>
-            <p className="font-medium">✓ Don't wait and worry alone</p>
+            <p className="font-medium flex items-center gap-2"><Check className="h-5 w-5 text-primary-pink" /> Prompt medical assessment saves lives</p>
+            <p className="font-medium flex items-center gap-2"><Check className="h-5 w-5 text-primary-pink" /> Don't wait and worry alone</p>
           </div>
         </div>
 

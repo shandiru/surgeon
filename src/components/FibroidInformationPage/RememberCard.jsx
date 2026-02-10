@@ -1,5 +1,7 @@
 "use client";
 
+import { Check } from "lucide-react";
+
 export default function RememberCard() {
   return (
     <section className="py-12 px-4 md:px-50 bg-white">
@@ -15,12 +17,12 @@ export default function RememberCard() {
         {/* Key points */}
         <div className="grid md:grid-cols-2 gap-6 text-base text-[#495057] leading-relaxed">
           <div className="space-y-2">
-            <p>✓ Fibroids are common and treatable</p>
-            <p>✓ They are not cancerous</p>
+            <p className="flex items-center gap-2"><Check className="h-5 w-5 text-[#d63384]" /> Fibroids are common and treatable</p>
+            <p className="flex items-center gap-2"><Check className="h-5 w-5 text-[#d63384]" /> They are not cancerous</p>
           </div>
           <div className="space-y-2">
-            <p>✓ Getting assessed early can prevent complications</p>
-            <p>✓ Early assessment can protect your fertility</p>
+            <p className="flex items-center gap-2"><Check className="h-5 w-5 text-[#d63384]" /> Getting assessed early can prevent complications</p>
+            <p className="flex items-center gap-2"><Check className="h-5 w-5 text-[#d63384]" /> Early assessment can protect your fertility</p>
           </div>
         </div>
 

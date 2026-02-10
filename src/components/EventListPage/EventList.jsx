@@ -1,26 +1,31 @@
 import React from "react";
-import { MapPin, Building2, Calendar } from "lucide-react";
-import { Link } from "react-router-dom"; // <-- import Link
+import { MapPin, Building2, Calendar, Star } from "lucide-react";
+import { Link } from "react-router-dom";
 
-export default function ListingEvents({ events = [], selectedCategory = "All Events" }) {
-  // Categorize events into Upcoming and Closed based on computed status from dates
+export default function ListingEvents({
+  events = [],
+  selectedCategory = "All Events",
+}) {
   let upcomingEvents = [];
   let closedEvents = [];
 
   if (selectedCategory === "All Events") {
-    upcomingEvents = events.filter((event) => event.isUpcoming || event.computedStatus === "Open");
+    upcomingEvents = events.filter(
+      (event) => event.isUpcoming || event.computedStatus === "Open",
+    );
     closedEvents = events.filter(
       (event) => !event.isUpcoming || event.computedStatus === "Now Closed",
     );
   } else if (selectedCategory === "Upcoming Events") {
-    upcomingEvents = events.filter((event) => event.isUpcoming || event.computedStatus === "Open");
+    upcomingEvents = events.filter(
+      (event) => event.isUpcoming || event.computedStatus === "Open",
+    );
   } else if (selectedCategory === "Closed Events") {
     closedEvents = events.filter(
       (event) => !event.isUpcoming || event.computedStatus === "Now Closed",
     );
   }
 
-  // Event Card Component
   const EventCard = ({ event }) => (
     <div
       key={event.id}
@@ -28,10 +33,16 @@ export default function ListingEvents({ events = [], selectedCategory = "All Eve
     >
       {/* Image */}
       <div className="relative md:w-80 flex-shrink-0">
-        <img src={event.image} alt={event.title} className="w-full h-56 md:h-full object-cover" />
+        <img
+          src={event.image}
+          alt={event.title}
+          className="w-full h-56 md:h-full object-cover"
+        />
         <span
           className={`absolute top-4 right-4 px-3 py-1 text-xs font-semibold rounded-full bg-white ${
-            event.isUpcoming || event.computedStatus === "Open" ? "text-green-600" : "text-black/90"
+            event.isUpcoming || event.computedStatus === "Open"
+              ? "text-green-600"
+              : "text-black/90"
           }`}
         >
           {event.computedStatus || (event.isUpcoming ? "Open" : "Now Closed")}
@@ -44,12 +55,15 @@ export default function ListingEvents({ events = [], selectedCategory = "All Eve
           {/* Rating */}
           <div className="flex items-center gap-1 text-primary-pink text-sm mb-2">
             {Array.from({ length: 5 }).map((_, i) => (
-              <span
+              <Star
                 key={i}
-                className={i < Math.round(event.rating) ? "text-primary-pink" : "text-gray-300"}
-              >
-                ★
-              </span>
+                size={16}
+                className={
+                  i < Math.round(event.rating)
+                    ? "text-primary-pink fill-primary-pink"
+                    : "text-gray-300"
+                }
+              />
             ))}
             <span className="text-black ml-2">{event.rating}</span>
           </div>
@@ -86,7 +100,10 @@ export default function ListingEvents({ events = [], selectedCategory = "All Eve
               View Programme
             </a>
           ) : (
-            <Link to={event.link} className="font-medium text-sm uppercase w-full text-center">
+            <Link
+              to={event.link}
+              className="font-medium text-sm uppercase w-full text-center"
+            >
               View Programme
             </Link>
           )}
@@ -96,17 +113,26 @@ export default function ListingEvents({ events = [], selectedCategory = "All Eve
   );
 
   return (
-    <section id="list" className="relative bg-gray-50 py-20 px-4 sm:px-6 lg:px-16">
+    <section
+      id="list"
+      className="relative bg-gray-50 py-20 px-4 sm:px-6 lg:px-16"
+    >
       {/* Heading */}
       <div className="text-center mb-14">
-        <p className="text-primary-pink font-semibold mb-2">Speaking Engagements</p>
-        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">Top Listing Events</h2>
+        <p className="text-primary-pink font-semibold mb-2">
+          Speaking Engagements
+        </p>
+        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
+          Top Listing Events
+        </h2>
       </div>
 
       {/* Upcoming Events Section */}
       {upcomingEvents.length > 0 && (
         <div className="mb-16 max-w-7xl mx-auto">
-          <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">Upcoming Events</h3>
+          <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">
+            Upcoming Events
+          </h3>
           <div className="flex flex-col gap-8">
             {upcomingEvents.map((event) => (
               <EventCard key={event.id} event={event} />
@@ -118,7 +144,9 @@ export default function ListingEvents({ events = [], selectedCategory = "All Eve
       {/* Closed Events Section */}
       {closedEvents.length > 0 && (
         <div className="max-w-7xl mx-auto">
-          <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">Closed Events</h3>
+          <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">
+            Closed Events
+          </h3>
           <div className="flex flex-col gap-8">
             {closedEvents.map((event) => (
               <EventCard key={event.id} event={event} />
