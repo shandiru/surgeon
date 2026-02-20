@@ -42,11 +42,6 @@ export default function FeaturesSection() {
                 and current practice.
               </p>
             </div>
-            <div className="flex-shrink-0 md:mt-0 mt-4">
-              <button className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-primary-pink text-white font-semibold text-button hover:bg-[#E03E7C] transition-all duration-300 shadow-md hover:shadow-lg whitespace-nowrap">
-                All Topics
-              </button>
-            </div>
           </div>
 
           {/* Content Blocks */}
