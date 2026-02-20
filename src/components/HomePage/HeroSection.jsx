@@ -10,9 +10,9 @@ const HeroSectionView = () => {
   }, []);
 
   return (
-    <section className="relative bg-[#FDE7EB] py-20">
+    <section className="relative bg-[#FDE7EB] py-16 pb-24 md:py-20 md:pb-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Section */}
           <div className="hero-left" data-aos="fade-up">
             <div className="mb-4 hero-badge" data-aos="fade-down">
@@ -80,7 +80,7 @@ const HeroSectionView = () => {
             </div>
 
             <div
-              className="hero-icons flex items-center gap-6 text-body-small text-black/90"
+              className="hero-icons flex flex-wrap items-center gap-x-6 gap-y-3 text-body-small text-black/90"
               data-aos="fade-up"
             >
               <div className="flex items-center gap-2">
@@ -131,10 +131,10 @@ const HeroSectionView = () => {
               <img
                 src="/Ketan-Gajjar.jpeg"
                 alt="Mr Ketankumar Gajjar"
-                className="w-full h-96 object-cover rounded-xl"
+                className="w-full h-64 sm:h-80 md:h-96 object-cover rounded-xl"
               />
               <div
-                className="hero-bubble absolute -bottom-4 -right-4 bg-primary-pink text-white px-4 py-3 rounded-xl shadow-md"
+                className="hero-bubble absolute -bottom-4 right-2 sm:-right-4 bg-primary-pink text-white px-4 py-3 rounded-xl shadow-md"
                 data-aos="fade-up"
               >
                 <div className="text-center">

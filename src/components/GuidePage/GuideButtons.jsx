@@ -24,7 +24,7 @@ const GuideButtons = ({
   return (
     <div
       className={`grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 ${getGridCols()}
-      gap-3 sm:gap-4 md:gap-2 px-4 sm:px-6 max-w-6xl mx-auto mb-8 lg:px-0`}
+      gap-3 sm:gap-4 md:gap-2 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto mb-8`}
     >
       {sections.map((section, index) => {
         const IconComponent = iconMap[section.buttonIcon] || iconMap.Info;
