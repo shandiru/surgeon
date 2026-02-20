@@ -199,7 +199,11 @@
         {
           "type": "numberedSteps",
           "steps": [
-            "Dates and length of your periods - Record when bleeding starts and ends.\n\nHow heavy the bleeding is - Note how often you change pads or tampons, whether you pass clots, or if bleeding affects daily activities.\n\nPain or other symptoms - Document pelvic pain, cramps, back pain, pain during sex, bowel or bladder symptoms, and when they occur in your cycle.\n\nBleeding between periods or after sex - Note when this happens and how often.\n\nLifestyle or health changes - Stress, exercise levels, weight changes, new medications, or contraception changes."
+            "Dates and length of your periods - Record when bleeding starts and ends.",
+            "How heavy the bleeding is - Note how often you change pads or tampons, whether you pass clots, or if bleeding affects daily activities.",
+            "Pain or other symptoms - Document pelvic pain, cramps, back pain, pain during sex, bowel or bladder symptoms, and when they occur in your cycle.",
+            "Bleeding between periods or after sex - Note when this happens and how often.",
+            "Lifestyle or health changes - Stress, exercise levels, weight changes, new medications, or contraception changes."
           ]
         }
       ]
