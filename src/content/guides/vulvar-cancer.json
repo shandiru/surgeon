@@ -259,6 +259,11 @@
           "icon": "ShieldCheck"
         },
         {
+          "type": "heading",
+          "text": "You Can Reduce Risk By:",
+          "level": 3
+        },
+        {
           "type": "iconList",
           "items": [
             { "icon": "Syringe", "text": "Getting the HPV vaccine" },
@@ -278,19 +283,34 @@
           ]
         },
         {
-          "type": "infoBox",
-          "title": "Remember",
+          "type": "heading",
+          "text": "Remember",
+          "level": 4
+        },
+        {
+          "type": "iconList",
           "items": [
-            "Early detection is linked with better treatment outcomes",
-            "Regular check-ups are important if you have symptoms or ongoing vulvar skin conditions",
-            "HPV vaccination helps protect against HPV-related vulvar disease",
-            "Any long-lasting vulvar change (itching, lump, sore, colour change) should be reviewed"
-          ],
-          "icon": "Heart"
+            {
+              "icon": "Info",
+              "text": "Early detection is linked with better treatment outcomes"
+            },
+            {
+              "icon": "Info",
+              "text": "Regular check-ups are important if you have symptoms or ongoing vulvar skin conditions"
+            },
+            {
+              "icon": "Info",
+              "text": "HPV vaccination helps protect against HPV-related vulvar disease"
+            },
+            {
+              "icon": "Info",
+              "text": "Any long-lasting vulvar change (itching, lump, sore, colour change) should be reviewed"
+            }
+          ]
         },
         {
           "type": "infoBox",
-          "title": "Why It Matters",
+          "title": "Key Takeaway",
           "description": "Staying aware of symptoms, managing skin conditions, and protecting against HPV are important steps in maintaining vulvar health and detecting problems early.",
           "icon": "Heart"
         }

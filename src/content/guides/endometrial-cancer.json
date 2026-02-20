@@ -13,28 +13,39 @@
       "content": [
         {
           "type": "heading",
-          "text": "Understanding the most common type of uterine cancer"
+          "text": "What Is Endometriosis?"
         },
         {
           "type": "text",
-          "value": "Endometrial cancer starts in the lining of the uterus (the endometrium). It is one of the most common gynaecological cancers and is often diagnosed at an early stage because it frequently causes abnormal uterine bleeding, particularly after menopause."
+          "value": "Endometriosis is a condition where tissue similar to the lining of the uterus (the endometrium) grows outside the uterus."
         },
         {
           "type": "heading",
-          "text": "Quick Facts"
+          "text": "This tissue can affect:",
+          "level": 4
         },
         {
           "type": "bulletList",
           "items": [
-            "Most common in postmenopausal women",
-            "Often detected early due to abnormal bleeding",
-            "Earlier diagnosis is associated with better treatment outcomes",
-            "Risk factors include obesity, hormone therapy, and increasing age"
+            "Ovaries",
+            "Fallopian tubes",
+            "The pelvic lining",
+            "Rarely, other organs"
           ]
         },
         {
+          "type": "heading",
+          "text": "It can lead to:",
+          "level": 4
+        },
+        {
+          "type": "bulletList",
+          "items": ["Inflammation", "Pain", "Scarring and adhesions"]
+        },
+        {
           "type": "infoBox",
-          "value": "Abnormal uterine bleeding — including bleeding after menopause, between periods, or changes in menstrual patterns — should be checked. Early assessment is important, as earlier-stage diagnosis is linked with better outcomes."
+          "title": "Important",
+          "description": "Endometriosis is a non-cancerous condition, but it can cause significant pain and may affect fertility."
         },
         {
           "type": "image",
@@ -47,73 +58,66 @@
       "id": 2,
       "buttonLabel": "How It Starts",
       "buttonIcon": "Activity",
-      "cardTitle": "How Endometrial Cancer Develops",
+      "cardTitle": "What Causes Endometriosis?",
       "layout": "single-column",
       "content": [
         {
           "type": "text",
-          "value": "Endometrial cancer develops when cells in the uterine lining grow abnormally. Understanding this process helps guide early detection and treatment."
+          "value": "The exact cause of endometriosis is not fully understood. Several factors are thought to play a role:"
         },
-        {
-          "type": "heading",
-          "text": "Types of Endometrial Cancer",
-          "level": 4
-        },
+
         {
           "type": "grid",
           "columns": 2,
           "items": [
             {
-              "title": "Type 1 Endometrial Cancer",
-              "description": "The most common type. Often linked to excess estrogen exposure and typically slower growing."
+              "title": "Retrograde (backward) menstruation",
+              "description": "Menstrual blood flows back through the fallopian tubes into the pelvis"
             },
             {
-              "title": "Type 2 Endometrial Cancer",
-              "description": "Less common and tends to behave more aggressively. It is not usually linked to estrogen and is more likely to spread."
+              "title": "Genetic factors",
+              "description": "Endometriosis can run in families"
             },
             {
-              "title": "Endometrial Hyperplasia",
-              "description": "Some women develop endometrial hyperplasia, where the lining becomes thickened due to abnormal cell growth. Treatment can reduce the risk of progression to cancer."
+              "title": "Immune system differences",
+              "description": "The body may not clear misplaced endometrial-like cells effectively"
+            },
+            {
+              "title": "Hormonal influences",
+              "description": "Endometriosis tissue responds to hormones such as oestrogen"
             }
           ]
         },
         {
           "type": "infoBox",
           "title": "Did You Know?",
-          "value": "Detecting and treating endometrial hyperplasia early can lower the chance of it developing into endometrial cancer.",
+          "description": "Endometriosis is likely caused by a combination of these factors rather than a single cause.",
           "icon": "Lightbulb"
         }
       ]
     },
     {
       "id": 3,
-      "buttonLabel": "Key Risk Factors",
+      "buttonLabel": "Impact on Fertility and Wellbeing",
       "buttonIcon": "AlertTriangle",
-      "cardTitle": "Key Risk Factors",
+      "cardTitle": "Impact on Fertility and Wellbeing",
       "layout": "single-column",
       "content": [
         {
           "type": "text",
-          "value": "These factors increase risk but do not mean you will develop endometrial cancer:"
+          "value": "Endometriosis can affect different aspects of life. Understanding its impact can help guide treatment and support."
         },
+
         {
-          "type": "bulletList",
-          "items": [
-            "Increasing age, especially after menopause",
-            "Long-term exposure to oestrogen without progesterone",
-            "Obesity",
-            "Polycystic ovary syndrome (PCOS)",
-            "Early first period or late menopause",
-            "Having no full-term pregnancies",
-            "Oestrogen-only hormone replacement therapy",
-            "Tamoxifen use",
-            "Family history, particularly Lynch syndrome"
-          ]
+          "type": "infoBox",
+          "title": "Fertility Impact",
+          "description": "Endometriosis can make it more difficult to become pregnant, particularly in moderate to severe cases. However, many people with endometriosis do conceive, either naturally or with medical support. Early assessment and appropriate treatment may help preserve fertility options.",
+          "icon": "ShieldCheck"
         },
         {
           "type": "infoBox",
-          "title": "Protective Factors",
-          "description": "Pregnancy, use of combined hormonal contraceptives, and maintaining a healthy body weight are associated with a lower risk.",
+          "title": "Emotional Wellbeing",
+          "description": "Living with chronic pain and fertility concerns can affect emotional wellbeing and quality of life. Seeking medical advice, pain management, and emotional support can help manage both physical and psychological effects.",
           "icon": "ShieldCheck"
         }
       ]
@@ -127,30 +131,24 @@
       "content": [
         {
           "type": "text",
-          "value": "Endometrial cancer often shows early warning signs. The most common is abnormal vaginal bleeding."
+          "value": "Endometriosis can cause a range of symptoms, which often worsen around your period."
         },
-        {
-          "type": "heading",
-          "text": "Early Warning Signs",
-          "level": 4
-        },
+
         {
           "type": "bulletList",
           "items": [
-            "Unusual bleeding or spotting between periods or after menopause",
-            "Long, heavy, or frequent bleeding (especially in women over 40)",
-            "Thin white or clear vaginal discharge (postmenopausal women)",
-            "Lower abdominal or pelvic pain",
-            "A lump or mass in the lower abdomen",
-            "Difficulty or pain while urinating",
-            "Pain during sexual intercourse",
-            "Unexplained weight loss"
+            "Painful periods – cramps that are severe, long-lasting, or worsening over time",
+            "Pelvic pain – pain between periods or chronic pelvic discomfort",
+            "Pain during or after sex",
+            "Pain when urinating – especially during menstruation",
+            "Pain during bowel movements – often worse during periods",
+            "Fertility problems – difficulty becoming pregnant"
           ]
         },
         {
           "type": "infoBox",
           "title": "Important",
-          "description": "If you experience any of these symptoms, it's important to seek medical evaluation.",
+          "description": "Period pain is common, but severe pain that interferes with daily life is not typical. If you have ongoing or worsening symptoms, seek medical advice. Early assessment can help manage symptoms and reduce the impact on your quality of life.",
           "icon": "AlertTriangle"
         }
       ]
@@ -163,33 +161,30 @@
       "layout": "single-column",
       "content": [
         {
-          "type": "text",
-          "value": "If endometrial cancer is suspected, several steps may be taken."
-        },
-        {
           "type": "heading",
-          "text": "Diagnostic steps may include:",
-          "level": 4
-        },
-        {
-          "type": "numberedSteps",
-          "steps": [
-            "Review of medical and family history",
-            "Pelvic examination",
-            "Transvaginal ultrasound to assess the womb lining",
-            "Endometrial biopsy to sample the uterine lining",
-            "Dilation and curettage (D&C) if more tissue is needed for diagnosis"
-          ]
+          "text": "How It's Diagnosed"
         },
         {
           "type": "text",
-          "value": "Cervical screening tests are not designed to detect endometrial cancer, but may occasionally identify abnormal cells."
+          "value": "Endometriosis can be difficult to diagnose because symptoms may overlap with other conditions."
         },
         {
-          "type": "infoBox",
-          "title": "If cancer is confirmed",
-          "description": "If cancer is confirmed, your doctor will determine the stage, which indicates how far the cancer has spread, and the grade, which describes how abnormal the cancer cells look under a microscope. These factors help guide treatment decisions.",
-          "icon": "Info"
+          "type": "grid",
+          "columns": 3,
+          "items": [
+            {
+              "title": "1. Pelvic Examination",
+              "description": "A pelvic exam may be done, but findings can be normal. It may help identify tenderness, nodules, or ovarian cysts."
+            },
+            {
+              "title": "2. Imaging Tests",
+              "description": "Ultrasound (often transvaginal) or MRI can help detect ovarian endometriosis (endometriomas) or deep disease, but scans may not detect all types of endometriosis."
+            },
+            {
+              "title": "3. Laparoscopy",
+              "description": "A keyhole surgical procedure that allows doctors to look inside the pelvis. This can confirm the diagnosis and allow treatment or biopsy at the same time. It is usually considered when symptoms are significant or imaging is unclear."
+            }
+          ]
         }
       ]
     },
@@ -202,175 +197,36 @@
       "content": [
         {
           "type": "text",
-          "value": "Treatment depends on the cancer stage, type, and your overall health."
+          "value": "Treatment is tailored to your symptoms, severity of disease, and future fertility plans."
         },
-        {
-          "type": "heading",
-          "text": "A gynaecological oncology team may recommend:",
-          "level": 4
-        },
+
         {
           "type": "grid",
           "columns": 2,
           "items": [
             {
-              "title": "Surgery",
-              "description": "Often the main treatment. This usually involves removal of the uterus, ovaries, and fallopian tubes. Lymph nodes may also be assessed."
-            },
-            {
-              "title": "Radiotherapy",
-              "description": "High-energy treatment used after surgery or, in some cases, as the main treatment.."
-            },
-            {
-              "title": "Chemotherapy",
-              "description": "Anti-cancer medicines that destroy or slow cancer growth, often used in higher-stage disease."
+              "title": "Pain Relief Medication",
+              "description": "Painkillers such as paracetamol or anti-inflammatory medicines (e.g., ibuprofen) are often used to help manage pain. These treat symptoms but do not treat the underlying condition."
             },
             {
               "title": "Hormone Therapy",
-              "description": "May be used in selected cases where the cancer is hormone-sensitive."
+              "description": "Hormonal treatments can reduce or suppress endometriosis activity. Options may include combined hormonal contraceptives, progestogen-only treatments, or GnRH analogues. These aim to control symptoms rather than cure the condition."
             },
             {
-              "title": "Combination Treatment",
-              "description": "Some people receive a combination of treatments depending on their diagnosis."
+              "title": "Conservative Surgery",
+              "description": "Keyhole (laparoscopic) surgery may be offered to remove or destroy endometriosis tissue while preserving the uterus and ovaries. Surgery can improve pain and may help fertility in some cases, though symptoms can return."
+            },
+            {
+              "title": "Hysterectomy",
+              "description": "Removal of the uterus may be considered for severe symptoms when other treatments have not worked and pregnancy is not desired. It is not a guaranteed cure, especially if endometriosis is present outside the uterus."
             }
           ]
         },
         {
           "type": "infoBox",
           "title": "Key Point",
-          "description": "Treatment plans are personalised based on the cancer stage, type, and your overall health.",
+          "description": "Treatment focuses on long-term symptom control and improving quality of life. Decisions are made together based on your symptoms, response to previous treatments, and personal goals.",
           "icon": "Heart"
-        }
-      ]
-    },
-    {
-      "id": 7,
-      "buttonLabel": "Prevention & Early Detection",
-      "buttonIcon": "ShieldCheck",
-      "cardTitle": "Prevention & Early Detection",
-      "layout": "single-column",
-      "content": [
-        {
-          "type": "text",
-          "value": "While not all cases can be prevented, some steps may reduce risk and support early diagnosis."
-        },
-        {
-          "type": "infoBox",
-          "title": "Why Prevention Matters",
-          "description": "Earlier diagnosis is associated with better treatment outcomes. Awareness of symptoms and risk factors is important.",
-          "icon": "Info"
-        },
-        {
-          "type": "heading",
-          "text": "You Can Reduce Risk By:",
-          "level": 4
-        },
-        {
-          "type": "iconList",
-          "items": [
-            {
-              "icon": "CheckCircle",
-              "text": "Maintaining a healthy body weight"
-            },
-            {
-              "icon": "CheckCircle",
-              "text": "Using combined hormonal contraceptives (which are associated with lower risk)"
-            },
-            {
-              "icon": "CheckCircle",
-              "text": "Managing PCOS and metabolic health with medical advice"
-            },
-            {
-              "icon": "CheckCircle",
-              "text": "Considering genetic testing if you have a strong family history or Lynch syndrome"
-            },
-            {
-              "icon": "CheckCircle",
-              "text": "Using combined (estrogen + progesterone) HRT if hormone therapy is needed"
-            }
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Important for Early Detection",
-          "level": 4
-        },
-        {
-          "type": "bulletList",
-          "items": [
-            "Seek medical advice for abnormal uterine bleeding",
-            "Postmenopausal bleeding should always be checked"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Remember",
-          "level": 4
-        },
-        {
-          "type": "bulletList",
-          "items": [
-            "There is no routine screening programme for endometrial cancer",
-            "Awareness of abnormal bleeding is crucial",
-            "Managing lifestyle factors may help reduce risk"
-          ]
-        },
-        {
-          "type": "infoBox",
-          "title": "Key Takeway",
-          "description": "Understanding risk factors and seeking prompt medical advice for symptoms can support earlier diagnosis.",
-          "icon": "ShieldCheck"
-        }
-      ]
-    },
-    {
-      "id": 8,
-      "buttonLabel": "Key Takeaway",
-      "buttonIcon": "BookmarkCheck",
-      "cardTitle": "Key Takeaway",
-      "layout": "single-column",
-      "content": [
-        {
-          "type": "infoBox",
-          "title": "What You Should Know",
-          "description": "Endometrial cancer is often diagnosed early because it commonly causes noticeable symptoms, especially postmenopausal bleeding. Earlier diagnosis is linked with better treatment outcomes, and managing lifestyle factors such as body weight is associated with lower risk.",
-          "icon": "Star"
-        },
-        {
-          "type": "heading",
-          "text": "Key Points to Remember",
-          "level": 4
-        },
-        {
-          "type": "iconList",
-          "items": [
-            {
-              "icon": "CheckCircle",
-              "text": "Postmenopausal bleeding should always be checked"
-            },
-            {
-              "icon": "CheckCircle",
-              "text": "Earlier diagnosis is associated with more effective treatment"
-            },
-            {
-              "icon": "CheckCircle",
-              "text": "Maintaining a healthy weight may help reduce risk"
-            },
-            {
-              "icon": "CheckCircle",
-              "text": "Managing PCOS and hormonal health with medical advice is important"
-            },
-            {
-              "icon": "CheckCircle",
-              "text": "Seek medical review if you have symptoms or risk factors"
-            }
-          ]
-        },
-        {
-          "type": "infoBox",
-          "title": "Final Message",
-          "description": "Staying aware of warning signs and seeking medical advice promptly if symptoms occur can make an important difference to your health.",
-          "icon": "Star"
         }
       ]
     }

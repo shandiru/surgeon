@@ -400,8 +400,7 @@
       "content": [
         {
           "type": "heading",
-          "value": "What You Should Know",
-          "level": 3
+          "text": "What You Should Know"
         },
         {
           "type": "text",
@@ -409,8 +408,7 @@
         },
         {
           "type": "heading",
-          "value": "Key Points to Remember",
-          "level": 3
+          "text": "Key Points to Remember"
         },
         {
           "type": "iconList",

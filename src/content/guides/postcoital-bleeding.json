@@ -224,6 +224,12 @@
               "description": "Stay up to date with cervical screening when invited"
             }
           ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Important Note",
+          "description": "Self-care can help with comfort, but postcoital bleeding should still be checked — especially if it happens more than once",
+          "icon": "Heart"
         }
       ]
     }
