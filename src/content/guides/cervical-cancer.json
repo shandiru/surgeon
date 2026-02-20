@@ -13,12 +13,43 @@
       "content": [
         {
           "type": "text",
-          "value": "Cervical cancer is a cancer that begins in the **cervix**, the lower part of the uterus that connects to the vagina. It is strongly linked to persistent infection with **high-risk types of HPV** (Human Papillomavirus).\n\nBecause of screening programs, cervical cancer is often detected early — sometimes even before cancer develops."
+          "value": "Cervical cancer begins in the cervix, the lower part of the uterus that connects to the vagina. It is strongly linked to persistent infection with high-risk HPV types."
         },
         {
-          "type": "statBox",
-          "stat": "99%",
-          "description": "Nearly all cervical cancers are caused by HPV infection."
+          "type": "text",
+          "value": "Because of cervical screening programmes, many cases are detected early, and screening can identify pre-cancerous changes before cancer develops. Earlier diagnosis is linked with better treatment outcomes."
+        },
+        {
+          "type": "heading",
+          "text": "Quick Fatcs",
+          "level": 4
+        },
+        {
+          "type": "iconList",
+          "items": [
+            {
+              "icon": "PlusCircle",
+              "text": "Starts in the cervix"
+            },
+            {
+              "icon": "PlusCircle",
+              "text": "Most cases are linked to high-risk HPV infection"
+            },
+            {
+              "icon": "PlusCircle",
+              "text": "Screening can detect cell changes before cancer develops"
+            },
+            {
+              "icon": "PlusCircle",
+              "text": "HPV vaccination helps reduce risk"
+            }
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Remember",
+          "description": "Regular cervical screening and HPV vaccination are important ways to reduce the risk of cervical cancer. Attending screening appointments and seeking medical advice for symptoms are key steps in prevention and early detection",
+          "icon": "Info"
         },
         {
           "type": "image",
@@ -37,7 +68,7 @@
       "content": [
         {
           "type": "text",
-          "value": "Cervical cancer usually begins with pre-cancerous changes in the cells of the cervix called **CIN (Cervical Intraepithelial Neoplasia)**. If untreated, some CIN lesions may slowly progress to cancer over many years."
+          "value": "Cervical cancer often develops from pre-cancerous changes in the cervical cells known as CIN (Cervical Intraepithelial Neoplasia). If not treated, some cases of CIN may slowly progress to cancer over many years."
         },
         {
           "type": "heading",
@@ -51,22 +82,22 @@
           "items": [
             {
               "title": "Squamous Cell Carcinoma",
-              "description": "The most common type — 70–80% of cervical cancers. Starts in the thin, flat cells on the outer surface of the cervix."
+              "description": "The most common type (about 70–80% of cases). It starts in the thin, flat cells on the outer surface of the cervix."
             },
             {
               "title": "Adenocarcinoma",
-              "description": "Begins in the glandular cells inside the cervical canal. Less common but often harder to detect through routine screening."
+              "description": "Begins in the glandular cells inside the cervical canal. It is less common and may be more difficult to detect with some screening methods."
             },
             {
               "title": "Rare Types",
-              "description": "Includes small cell neuroendocrine carcinoma and other mixed tumours. These are uncommon but tend to behave more aggressively."
+              "description": "These include neuroendocrine and other uncommon tumour types, which can behave more aggressively."
             }
           ]
         },
         {
           "type": "infoBox",
           "title": "Did You Know?",
-          "description": "CIN does not always turn into cancer. Regular screening and early treatment of abnormal cells can stop cervical cancer before it starts.",
+          "description": "CIN does not always develop into cancer. Regular screening and treatment of abnormal cells can prevent cervical cancer.",
           "icon": "Lightbulb"
         }
       ]
@@ -81,53 +112,53 @@
       "content": [
         {
           "type": "text",
-          "value": "Major factors that increase the risk of cervical cancer."
+          "value": "These factors increase risk, mainly because they affect HPV exposure or persistence:"
         },
         {
-          "type": "accordion",
+          "type": "iconList",
           "items": [
             {
-              "title": "Persistent High-Risk HPV Infection",
-              "content": "The strongest risk factor. Nearly all cervical cancers are linked to high-risk HPV types."
+              "icon": "Info",
+              "text": "1. Persistent infection with high-risk HPV types"
             },
             {
-              "title": "Smoking",
-              "content": "Smoking reduces the body's ability to clear HPV infections, increasing cancer risk."
+              "icon": "Info",
+              "text": "2. Smoking"
             },
             {
-              "title": "Weakened Immune System",
-              "content": "Conditions like HIV or long-term steroid use weaken immunity and raise risk."
+              "icon": "Info",
+              "text": "3. Weakened immune system"
             },
             {
-              "title": "Sexual Activity at a Young Age",
-              "content": "Early sexual activity increases the chance of HPV exposure."
+              "icon": "Info",
+              "text": "4. Earlier exposure to HPV through sexual activity"
             },
             {
-              "title": "Multiple Sexual Partners",
-              "content": "More partners increase the likelihood of high-risk HPV infection."
+              "icon": "Info",
+              "text": "5. Multiple sexual partners (increases likelihood of HPV exposure)"
             },
             {
-              "title": "Long-Term Oral Contraceptive Use",
-              "content": "Using the contraceptive pill for more than 5 years slightly increases risk."
+              "icon": "Info",
+              "text": "6. Long-term use of oral contraceptives (small increased risk)"
             },
             {
-              "title": "Lack of Cervical Screening",
-              "content": "Skipping Pap smears or HPV tests means abnormalities can go undetected."
+              "icon": "Info",
+              "text": "7. Not attending cervical screening (abnormal cells may go undetected)"
             },
             {
-              "title": "Other STIs (e.g., Chlamydia)",
-              "content": "Certain infections make HPV more persistent, raising risk."
+              "icon": "Info",
+              "text": "8. Some other sexually transmitted infections, which may affect HPV persistence"
             },
             {
-              "title": "Family History of Cervical Cancer",
-              "content": "Risk is slightly higher if a close relative has had cervical cancer."
+              "icon": "Info",
+              "text": "9. Family history (slightly increased risk)"
             }
           ]
         },
         {
           "type": "infoBox",
           "title": "Most Important Risk Factor",
-          "description": "HPV is the most important risk factor — nearly all cervical cancers are HPV-related.",
+          "description": "Persistent infection with high-risk HPV is the main cause of cervical cancer.",
           "icon": "AlertTriangle"
         }
       ]
@@ -142,38 +173,33 @@
       "content": [
         {
           "type": "text",
-          "value": "Cervical cancer often develops without early warning signs. That's why regular screenings are essential."
+          "value": "Cervical cancer may not cause noticeable symptoms in the early stages, which is why regular cervical screening is important."
         },
         {
           "type": "grid",
           "columns": 2,
           "items": [
             {
-              "title": "Pelvic pain",
-              "description": "Persistent pain in the pelvic area"
+              "title": "Pelvic pain"
             },
             {
-              "title": "Pain or bleeding during or after sex",
-              "description": "Unusual discomfort during intimacy"
+              "title": "Pain or bleeding during or after sex"
             },
             {
-              "title": "Unusual vaginal discharge",
-              "description": "Changes in discharge color or smell"
+              "title": "Unusual vaginal discharge"
             },
             {
-              "title": "Bleeding between periods",
-              "description": "Unexpected spotting or bleeding"
+              "title": "Bleeding between periods"
             },
             {
-              "title": "Bleeding after menopause",
-              "description": "Any bleeding after menopause should be checked"
+              "title": "Bleeding after menopause"
             }
           ]
         },
         {
           "type": "infoBox",
           "title": "Important",
-          "description": "If you notice any of these symptoms, contact your doctor promptly.",
+          "description": "If you experience any of these symptoms, seek medical advice.",
           "icon": "AlertTriangle"
         }
       ]
@@ -188,31 +214,63 @@
       "content": [
         {
           "type": "text",
-          "value": "If a Pap test shows abnormal results, your doctor may recommend further tests to confirm abnormalities."
+          "value": "If a cervical screening test shows abnormal results, further tests may be needed."
         },
         {
-          "type": "infoBox",
-          "title": "Thorough Evaluation",
-          "description": "A combination of tests helps ensure accurate diagnosis",
-          "icon": "ScanSearch"
+          "type": "heading",
+          "text": "Common Diagnostic Methods",
+          "level": 3
         },
         {
-          "type": "numberedSteps",
-          "steps": [
-            "Repeat Pap Smear or Liquid-Based Cytology",
-            "Colposcopy — a magnifying instrument to examine the cervix",
-            "Biopsy — tissue sample examined under microscope",
-            "Endo-Cervical Curettage — tissue from cervical canal",
-            "Cone Biopsy — larger tissue sample if needed"
+          "type": "iconList",
+          "items": [
+            {
+              "icon": "Stethoscope",
+              "text": "Colposcopy – A magnified examination of the cervix"
+            },
+            {
+              "icon": "Stethoscope",
+              "text": "Biopsy – A small tissue sample taken during colposcopy"
+            },
+            {
+              "icon": "Stethoscope",
+              "text": "Endocervical curettage (ECC) – Sometimes used to sample cells from the cervical canal"
+            },
+            {
+              "icon": "Stethoscope",
+              "text": "Cone biopsy – A larger tissue sample removed to confirm diagnosis or treat abnormal cells"
+            }
           ]
         },
         {
           "type": "text",
-          "value": "If doctors suspect the cancer has spread, they may recommend:"
+          "value": "Repeat cytology or HPV testing may sometimes be used depending on initial results."
         },
         {
-          "type": "tags",
-          "tags": ["X-rays", "CT scans", "MRI"]
+          "type": "heading",
+          "text": "Imaging Tests (If Cancer Is Confirmed)",
+          "level": 3
+        },
+        {
+          "type": "text",
+          "value": "If cervical cancer is diagnosed, imaging may be used to assess spread:"
+        },
+        {
+          "type": "iconList",
+          "items": [
+            {
+              "icon": "Stethoscope",
+              "text": "MRI"
+            },
+            {
+              "icon": "Stethoscope",
+              "text": "CT scan"
+            },
+            {
+              "icon": "Stethoscope",
+              "text": "Chest imaging"
+            }
+          ]
         }
       ]
     },
@@ -225,35 +283,125 @@
       "layout": "single-column",
       "content": [
         {
-          "type": "text",
-          "value": "Treatment depends on the type, stage, and spread of the cancer — as well as your overall health and personal needs."
+          "type": "heading",
+          "text": "How Is Cervical Cancer Treated?"
         },
         {
-          "type": "accordion",
+          "type": "text",
+          "value": "Treatment depends on the cancer type, stage, and your overall health. A specialist cancer team plans care tailored to you."
+        },
+        {
+          "type": "heading",
+          "text": "Surgery",
+          "level": 3
+        },
+        {
+          "type": "text",
+          "value": "Surgery may be used in early-stage cervical cancer."
+        },
+        {
+          "type": "iconList",
           "items": [
             {
-              "title": "Surgery (Often the First Step)",
-              "content": "Cryosurgery, Cone biopsy, LEEP (Loop Electrosurgical Excision Procedure), Hysterectomy, or Total pelvic exenteration for advanced cases."
+              "icon": "CheckCircle",
+              "text": "Cone biopsy (conization) – may be used for very early cancers or to preserve fertility"
             },
             {
-              "title": "Radiation Therapy",
-              "content": "High-energy rays to destroy cancer cells. May be external beam or internal (brachytherapy)."
+              "icon": "CheckCircle",
+              "text": "Simple or radical hysterectomy – removal of the uterus and cervix; lymph nodes may also be assessed"
             },
             {
-              "title": "Chemotherapy",
-              "content": "Drugs that kill or slow the growth of cancer cells. Often combined with radiation."
+              "icon": "CheckCircle",
+              "text": "Radical trachelectomy – fertility-preserving surgery in selected early cases"
             },
             {
-              "title": "Targeted or Immunotherapy",
-              "content": "Used in select cases to boost treatment effectiveness, especially for recurrent cancer."
+              "icon": "CheckCircle",
+              "text": "Pelvic exenteration – rare, used for selected advanced or recurrent cases"
             }
           ]
         },
         {
-          "type": "infoBox",
-          "title": "Recovery & Support",
-          "description": "Enhanced recovery programs and multi-specialty teams work together to design the best care plan for you.",
-          "icon": "Info"
+          "type": "heading",
+          "text": "SurRadiotherapy and Chemoradiationgery",
+          "level": 3
+        },
+        {
+          "type": "text",
+          "value": "For many people, especially with more advanced disease:"
+        },
+        {
+          "type": "iconList",
+          "items": [
+            {
+              "icon": "CheckCircle",
+              "text": "Radiotherapy – high-energy treatment to destroy cancer cells"
+            },
+            {
+              "icon": "CheckCircle",
+              "text": "Chemoradiation – chemotherapy given with radiotherapy to improve effectiveness"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Systemic Treatments",
+          "level": 3
+        },
+        {
+          "type": "iconList",
+          "items": [
+            {
+              "icon": "CheckCircle",
+              "text": "Chemotherapy – used in certain advanced or recurrent cases"
+            },
+            {
+              "icon": "CheckCircle",
+              "text": "Targeted therapy or immunotherapy – may be used in selected situations"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Recovery & Support",
+          "level": 3
+        },
+        {
+          "type": "iconList",
+          "items": [
+            {
+              "icon": "CheckCircle",
+              "text": "Enhanced recovery programmes may support healing after surgery"
+            },
+            {
+              "icon": "CheckCircle",
+              "text": "A multidisciplinary team (surgeons, oncologists, specialist nurses) provides personalised care"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "What Was Adjusted"
+        },
+        {
+          "type": "iconList",
+          "items": [
+            {
+              "icon": "Info",
+              "text": "Cryosurgery & LEEP → mainly CIN treatment"
+            },
+            {
+              "icon": "Info",
+              "text": "Hysterectomy clarified as radical/simple"
+            },
+            {
+              "icon": "Info",
+              "text": "Added trachelectomy (key fertility option)"
+            },
+            {
+              "icon": "Info",
+              "text": "Emphasised chemoradiation as core treatment, which is central in cervical cancer care"
+            }
+          ]
         }
       ]
     },
@@ -270,25 +418,44 @@
           "value": "Cervical cancer is one of the most preventable cancers."
         },
         {
+          "type": "heading",
+          "text": "Why Prevention Matters",
+          "level": 3
+        },
+        {
+          "type": "text",
+          "value": "Cervical cancer is largely preventable and is often detected early through screening. Vaccination and regular cervical screening significantly reduce risk."
+        },
+        {
+          "type": "heading",
+          "text": "Key Prevention Strategies"
+        },
+        {
           "type": "grid",
           "columns": 3,
           "items": [
-            { "icon": "CheckCircle", "title": "HPV Vaccination" },
-            { "icon": "Stethoscope", "title": "Regular Screening" },
-            { "icon": "ShieldCheck", "title": "Early Treatment" }
+            { "icon": "CheckCircle", "text": "HPV Vaccination" },
+            { "icon": "Stethoscope", "text": "Regular Screening" },
+            { "icon": "ShieldCheck", "text": "Early Treatment" }
           ]
         },
         {
           "type": "iconList",
           "items": [
-            { "icon": "CheckCircle", "text": "HPV vaccination provides strong protection" },
+            {
+              "icon": "CheckCircle",
+              "text": "HPV vaccination provides strong protection"
+            },
             {
               "icon": "CheckCircle",
               "text": "Regular cervical screening (Pap smear / HPV testing)"
             },
             { "icon": "CheckCircle", "text": "Practising safer sex" },
             { "icon": "CheckCircle", "text": "Not smoking" },
-            { "icon": "CheckCircle", "text": "Prompt treatment of CIN or HPV-related changes" }
+            {
+              "icon": "CheckCircle",
+              "text": "Prompt treatment of CIN or HPV-related changes"
+            }
           ]
         },
         {
@@ -305,34 +472,46 @@
       "layout": "single-column",
       "content": [
         {
-          "type": "text",
-          "value": "The most important points to remember about cervical cancer."
+          "type": "heading",
+          "text": "What You Should Know"
         },
         {
-          "type": "grid",
-          "columns": 3,
-          "items": [
-            { "icon": "Clock", "title": "Preventable" },
-            { "icon": "CheckCircle", "title": "Detectable" },
-            { "icon": "Stethoscope", "title": "Treatable" }
-          ]
+          "type": "text",
+          "value": "Cervical cancer is strongly linked to HPV and is largely preventable. Regular cervical screening and HPV vaccination offer strong protection. Because early stages may not cause noticeable symptoms, routine screening is an important way to detect cell changes before cancer develops."
+        },
+        {
+          "type": "heading",
+          "text": "Key Points to Remember"
         },
         {
           "type": "iconList",
           "items": [
-            { "icon": "CheckCircle", "text": "HPV is the main cause of cervical cancer" },
             {
               "icon": "CheckCircle",
-              "text": "Screening can detect pre-cancer before symptoms appear"
+              "text": "Persistent infection with high-risk HPV is the main cause of cervical cancer"
             },
-            { "icon": "CheckCircle", "text": "HPV vaccination provides strong protection" },
-            { "icon": "CheckCircle", "text": "Early stages often have no symptoms" },
-            { "icon": "CheckCircle", "text": "Regular check-ups and prompt follow-ups save lives" }
+            {
+              "icon": "CheckCircle",
+              "text": "Screening can detect pre-cancerous changes before symptoms appear"
+            },
+            {
+              "icon": "CheckCircle",
+              "text": "HPV vaccination provides strong protection against high-risk HPV types"
+            },
+            {
+              "icon": "CheckCircle",
+              "text": "Early stages may not cause symptoms"
+            },
+            {
+              "icon": "CheckCircle",
+              "text": "Attending screening and follow-up appointments is important"
+            }
           ]
         },
         {
-          "type": "text",
-          "value": "**Don't wait for symptoms — regular screening saves lives.**"
+          "type": "infoBox",
+          "title": "Final Message",
+          "description": "Cervical cancer is one of the most preventable cancers. Staying up to date with HPV vaccination, attending routine screening, and seeking medical advice for symptoms are important steps in protecting your long-term health."
         }
       ]
     }

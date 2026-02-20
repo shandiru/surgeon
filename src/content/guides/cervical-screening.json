@@ -187,7 +187,7 @@
         },
         {
           "type": "heading",
-          "value": "Possible Results",
+          "text": "Possible Results",
           "level": 3,
           "icon": "Info"
         },

@@ -16,6 +16,11 @@
           "value": "A “typical” menstrual cycle varies from person to person.\n\nMost cycles occur about every 21–35 days and bleeding usually lasts 3–8 days."
         },
         {
+          "type": "heading",
+          "text": "Irregular bleeding can include:",
+          "level": 4
+        },
+        {
           "type": "bulletList",
           "items": [
             "Periods that come more or less often than usual",
@@ -243,12 +248,43 @@
       "layout": "single-column",
       "content": [
         {
+          "type": "heading",
+          "text": "Hormonal treatments",
+          "level": 4
+        },
+        {
+          "type": "bulletList",
+          "items": [
+            "Combined contraceptive pill",
+            "Progestogen-only methods",
+            "Hormonal coil (IUS)"
+          ]
+        },
+        {
           "type": "text",
-          "value": "Treatment depends on the underlying cause of your irregular bleeding. Your doctor will recommend the most appropriate option based on your diagnosis."
+          "value": "Help regulate cycles and reduce bleeding."
         },
         {
           "type": "heading",
-          "text": "Medication Options",
+          "text": "Tranexamic acid",
+          "level": 4
+        },
+        {
+          "type": "text",
+          "value": "Reduces heavy bleeding during periods."
+        },
+        {
+          "type": "heading",
+          "text": "NSAIDs (e.g., ibuprofen)",
+          "level": 4
+        },
+        {
+          "type": "text",
+          "value": "Can reduce pain and bleeding volume."
+        },
+        {
+          "type": "heading",
+          "text": "If Caused by a Condition",
           "level": 3,
           "icon": "Stethoscope"
         },
@@ -280,36 +316,17 @@
         },
         {
           "type": "heading",
-          "text": "If Caused by a Condition",
+          "text": "Procedures (If Medication Doesn’t Help)",
           "level": 3,
           "icon": "Stethoscope"
         },
         {
-          "type": "grid",
-          "columns": 2,
+          "type": "bulletList",
           "items": [
-            {
-              "icon": "Pill",
-              "title": "Hormonal treatments",
-              "description": "Combined contraceptive pill\n\nProgestogen-only methods\n\nHormonal coil (IUS)\n\nHelp regulate cycles and reduce bleeding."
-            },
-            {
-              "icon": "Stethoscope",
-              "title": "Tranexamic acid",
-              "description": "Reduces heavy bleeding during periods."
-            },
-            {
-              "icon": "Activity",
-              "title": "NSAIDs (e.g., ibuprofen)",
-              "description": "Can reduce pain and bleeding volume."
-            }
+            "Hysteroscopy (to remove polyps or small fibroids)",
+            "Endometrial ablation (for heavy bleeding when pregnancy not desired)",
+            "Surgery (e.g., fibroid removal) in selected cases"
           ]
-        },
-        {
-          "type": "infoBox",
-          "title": "Procedures (If Medication Doesn’t Help)",
-          "description": "Hysteroscopy (to remove polyps or small fibroids)\n\nEndometrial ablation (for heavy bleeding when pregnancy not desired)\n\nSurgery (e.g., fibroid removal) in selected cases",
-          "icon": "Users"
         }
       ]
     }
