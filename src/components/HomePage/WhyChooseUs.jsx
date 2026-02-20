@@ -32,9 +32,9 @@ export default function WhyChooseUs() {
   ];
 
   return (
-    <section id="why-choose-us" className="relative bg-[#FFF1F5] pb-32 overflow-hidden">
+    <section id="why-choose-us" className="relative bg-[#FFF1F5] pb-10 lg:pb-32 overflow-hidden">
       {/* Header */}
-      <div className="text-center mt-16 mb-24 px-4">
+      <div className="text-center mt-10 mb-12 lg:mt-16 lg:mb-24 px-4">
         <p className="text-body-small text-[#1B123D]/60 mb-3" data-aos="fade-up">
           Why Choose Us?
         </p>
@@ -98,7 +98,7 @@ export default function WhyChooseUs() {
 
           {/* IMAGE SECOND */}
           <div data-aos="zoom-in">
-            <div className="w-full h-[360px] sm:h-[420px] overflow-hidden rounded-3xl shadow-[0_0_35px_rgba(255,75,139,0.25)] border-[4px] border-white">
+            <div className="w-full h-[280px] sm:h-[360px] md:h-[420px] overflow-hidden rounded-3xl shadow-[0_0_35px_rgba(255,75,139,0.25)] border-[4px] border-white">
               <img
                 src="/Ketan_Gajjar-117.jpg"
                 alt="Doctor consulting patient"
@@ -160,9 +160,9 @@ export default function WhyChooseUs() {
 
         {/* DESKTOP VERSION (unchanged) */}
         <div
-          className="relative bg-white rounded-[32px] shadow-[0_8px_40px_rgba(0,0,0,0.08)] 
-          hidden lg:flex flex-row items-center justify-between 
-          w-full max-w-[1200px] px-16 py-20 z-10 gap-x-72"
+          className="relative bg-white rounded-[32px] shadow-[0_8px_40px_rgba(0,0,0,0.08)]
+          hidden lg:flex flex-row items-center justify-between
+          w-full max-w-[1200px] px-8 xl:px-16 py-16 xl:py-20 z-10 gap-x-0"
           data-aos="fade-up"
         >
           {/* LEFT */}
@@ -188,7 +188,7 @@ export default function WhyChooseUs() {
           </div>
 
           {/* ACCORDION */}
-          <div className="flex-1 flex flex-col space-y-6 lg:pl-28">
+          <div className="flex-1 flex flex-col space-y-6 lg:pl-16 xl:pl-28">
             {features.map((item, i) => (
               <div
                 key={i}
@@ -241,7 +241,7 @@ export default function WhyChooseUs() {
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 hidden lg:block"
           data-aos="zoom-in"
         >
-          <div className="w-[340px] h-[580px] rounded-full border-[6px] border-white overflow-hidden shadow-[0_0_60px_rgba(255,75,139,0.5)]">
+          <div className="w-[260px] h-[460px] xl:w-[340px] xl:h-[580px] rounded-full border-[6px] border-white overflow-hidden shadow-[0_0_60px_rgba(255,75,139,0.5)]">
             <img
               src="/Ketan_Gajjar-117.jpg"
               alt="Doctor consulting patient"

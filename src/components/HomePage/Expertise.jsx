@@ -85,10 +85,10 @@ export default function SpecialtiesSection() {
   ];
 
   return (
-    <section id="specialties" className="bg-[#FFF1F5]">
+    <section id="specialties" className="bg-[#FFF1F5] py-16 lg:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 lg:mb-16">
           <h2
             className="text-section text-primary-pink mb-4"
             data-aos="fade-up"
@@ -106,7 +106,7 @@ export default function SpecialtiesSection() {
 
         {/* Primary Specialties */}
         <div
-          className="bg-white rounded-2xl p-8 mb-12 shadow-sm border border-primary-pink/10"
+          className="bg-white rounded-2xl p-4 sm:p-6 lg:p-8 mb-8 lg:mb-12 shadow-sm border border-primary-pink/10"
           data-aos="fade-up"
           data-aos-delay="150"
         >
@@ -116,7 +116,7 @@ export default function SpecialtiesSection() {
             </span>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 lg:gap-6">
             {specialties.map((item, idx) => (
               <div
                 key={idx}

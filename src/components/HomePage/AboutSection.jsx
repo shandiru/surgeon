@@ -53,7 +53,7 @@ export default function AboutSectionView() {
     <section className="py-20 bg-white" id="about">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 lg:mb-16">
           <h2 className="text-section text-primary-pink mb-4" data-aos="fade-up">
             About Mr Ketankumar Gajjar
           </h2>
@@ -68,7 +68,7 @@ export default function AboutSectionView() {
         </div>
 
         {/* Cards */}
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {cards.map((card, i) => (
             <div
               key={i}

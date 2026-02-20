@@ -66,7 +66,7 @@ export default function EducationLanguagesSection() {
         </div>
 
         {/* Qualifications Grid */}
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid sm:grid-cols-2 gap-4 md:gap-6">
           {education.map((item, i) => (
             <div
               key={i}
