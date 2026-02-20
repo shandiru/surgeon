@@ -48,7 +48,7 @@ const GuideCard = ({ section, totalSteps, setShowCard, setActiveButton }) => {
   };
 
   return (
-    <div className="space-y-6 pb-10">
+    <div className="space-y-6 pb-10 px-4 sm:px-6 lg:px-8">
       <div
         className="max-w-sm sm:max-w-2xl lg:max-w-5xl mx-auto mb-10
         flex flex-col gap-6 rounded-2xl border shadow-sm
