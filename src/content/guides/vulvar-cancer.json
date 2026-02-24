@@ -8,18 +8,33 @@
       "id": 1,
       "buttonLabel": "Overview",
       "buttonIcon": "Info",
-      "cardTitle": "Vulvar Cancer Overview",
+      "cardTitle": "What Is Vulvar Cancer?",
       "cardTitleIcon": "Info",
       "layout": "two-column",
       "content": [
         {
           "type": "text",
-          "value": "Vulvar cancer is a type of cancer that develops on the external female genital area (the vulva), including the labia, clitoris, and skin around the vaginal opening. Although relatively rare, understanding it helps with **early detection** and **prevention**."
+          "value": "Vulvar cancer is a type of cancer that develops on the external female genital area, known as the vulva. This includes the labia majora, labia minora, clitoris, and the skin around the vaginal opening. Although vulvar cancer is relatively rare, understanding it helps with early detection and prevention."
         },
         {
-          "type": "statBox",
-          "stat": "60+",
-          "description": "Quick Facts: Vulvar cancer is most common in women over 60 and is often linked to HPV or chronic skin conditions. Early detection improves outcomes. Symptoms may include itching, lumps, or noticeable skin changes."
+          "type": "heading",
+          "text": "Quick Facts",
+          "level": 3
+        },
+        {
+          "type": "bulletList",
+          "items": [
+            "Most common in women over 60",
+            "Often linked to HPV or chronic skin conditions",
+            "Earlier-stage detection is associated with better outcomes",
+            "Can appear as itching, lumps, or skin changes"
+          ]
+        },
+        {
+          "type": "infoBox",
+          "title": "Remember",
+          "description": "Vulvar cancer often begins with subtle skin changes. Paying attention to persistent itching, lumps, sores, or colour changes can help detect the condition early when it is most treatable.",
+          "icon": "Info"
         },
         {
           "type": "image",
@@ -133,36 +148,34 @@
       "id": 5,
       "buttonLabel": "Diagnosis",
       "buttonIcon": "ScanSearch",
-      "cardTitle": "Getting Diagnosed",
+      "cardTitle": "Examination Steps",
       "cardTitleIcon": "ScanSearch",
       "layout": "single-column",
       "content": [
         {
           "type": "text",
-          "value": "If vulvar cancer is suspected, your doctor will perform tests to confirm the diagnosis."
+          "value": "Endometriosis can be difficult to diagnose because symptoms may overlap with other conditions."
         },
         {
-          "type": "numberedSteps",
-          "steps": [
-            "Vulvar Examination - Your doctor examines the vulva and may also check the groin area (lymph nodes) for any swelling or abnormalities. A general pelvic exam may be done if needed.",
-            "Biopsy - A small sample of tissue is taken from the affected area of the vulva and sent to a laboratory. This is the only way to confirm whether cancer cells are present.",
-            "Vulvoscopy (sometimes called colposcopy of the vulva) - A magnifying device may be used to examine the skin of the vulva more closely and guide where to take a biopsy."
+          "type": "grid",
+          "columns": 3,
+          "items": [
+            {
+              "icon": "Stethoscope",
+              "title": "Vulvar Examination",
+              "description": "Your doctor examines the vulva and may also check the groin area (lymph nodes) for any swelling or abnormalities. A general pelvic exam may be done if needed."
+            },
+            {
+              "icon": "TestTube",
+              "title": "Biopsy",
+              "description": "A small sample of tissue is taken from the affected area of the vulva and sent to a laboratory. This is the only way to confirm whether cancer cells are present."
+            },
+            {
+              "icon": "Eye",
+              "title": "Vulvoscopy",
+              "description": "Sometimes called colposcopy of the vulva. A magnifying device may be used to examine the skin of the vulva more closely and guide where to take a biopsy."
+            }
           ]
-        },
-        {
-          "type": "heading",
-          "text": "Imaging Tests",
-          "level": 3
-        },
-        {
-          "type": "tags",
-          "tags": ["X-ray", "CT scan", "PET-CT", "MRI"]
-        },
-        {
-          "type": "infoBox",
-          "title": "Purpose",
-          "description": "These tests help determine the stage and spread of cancer to guide treatment planning.",
-          "icon": "Info"
         }
       ]
     },
@@ -179,10 +192,13 @@
           "value": "Treatment depends on the stage, size, and spread of cancer. Surgery is the most common treatment."
         },
         {
-          "type": "infoBox",
-          "title": "Surgery",
-          "description": "Surgery aims to remove the cancer while preserving as much healthy tissue as possible.",
+          "type": "heading",
+          "text": "Surgery",
           "level": 3
+        },
+        {
+          "type": "text",
+          "value": "Surgery aims to remove the cancer while preserving as much healthy tissue as possible."
         },
         {
           "type": "grid",
@@ -210,14 +226,17 @@
           "text": "Additional Treatments",
           "level": 3
         },
-
+        {
+          "type": "text",
+          "value": "Some people may need further treatment depending on their results:"
+        },
         {
           "type": "grid",
           "columns": 3,
           "items": [
             {
               "icon": "Zap",
-              "title": "Radiation Therapy",
+              "title": "Radiotherapy",
               "description": "May be given after surgery or sometimes instead of surgery"
             },
             {
@@ -231,12 +250,6 @@
               "description": "Occasionally used for advanced or recurrent disease"
             }
           ]
-        },
-        {
-          "type": "infoBox",
-          "title": "Enhanced Recovery",
-          "description": "After surgery, patients receive enhanced recovery support to aid healing and return to normal activities.",
-          "icon": "Heart"
         }
       ]
     },
@@ -324,10 +337,6 @@
       "cardTitleIcon": "Star",
       "layout": "single-column",
       "content": [
-        {
-          "type": "text",
-          "value": "Important points to remember about Vulvar Cancer"
-        },
         {
           "type": "infoBox",
           "title": "What You Should Know",
