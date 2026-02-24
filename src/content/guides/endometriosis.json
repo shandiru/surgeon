@@ -8,75 +8,73 @@
       "id": 1,
       "buttonLabel": "Overview",
       "buttonIcon": "Info",
-      "cardTitle": "Endometriosis Overview",
+      "cardTitle": "What Is Endometriosis?",
       "layout": "single-column",
       "content": [
         {
           "type": "text",
-          "value": "Endometriosis is a condition where tissue similar to the lining of the uterus grows outside the uterus. It can cause **chronic pain**, **fertility issues**, and significantly impact quality of life.\n\nUnderstanding the symptoms and treatment options can help you take control of your health."
+          "value": "Endometriosis is a condition where tissue similar to the lining of the uterus (the endometrium) grows outside the uterus."
+        },
+        {
+          "type": "text",
+          "value": "This tissue can affect:"
+        },
+        {
+          "type": "bulletList",
+          "items": [
+            "Ovaries",
+            "Fallopian tubes",
+            "The pelvic lining",
+            "Rarely, other organs"
+          ]
+        },
+        {
+          "type": "text",
+          "value": "It can lead to:"
+        },
+        {
+          "type": "bulletList",
+          "items": [
+            "Inflammation",
+            "Pain",
+            "Scarring and adhesions"
+          ]
         },
         {
           "type": "infoBox",
-          "title": "Key Facts",
-          "description": "Approximately 1 in 10 women of reproductive age are affected by endometriosis. Early diagnosis and treatment can help manage symptoms and protect fertility.",
+          "title": "Important",
+          "description": "Endometriosis is a non-cancerous condition, but it can cause significant pain and may affect fertility.",
           "icon": "Info"
         }
       ]
     },
     {
       "id": 2,
-      "buttonLabel": "Symptoms of Endometriosis",
+      "buttonLabel": "Symptoms",
       "buttonIcon": "AlertCircle",
       "cardTitle": "Symptoms of Endometriosis",
       "cardTitleIcon": "AlertCircle",
       "layout": "single-column",
       "content": [
         {
-          "type": "heading",
-          "text": "Recognising the signs and when to seek help",
-          "level": 3,
-          "icon": "AlertCircle"
+          "type": "text",
+          "value": "Endometriosis can cause a range of symptoms, which often worsen around your period."
         },
         {
-          "type": "grid",
-          "columns": 3,
+          "type": "bulletList",
           "items": [
-            {
-              "icon": "Calendar",
-              "title": "Painful Periods",
-              "description": "Severe menstrual cramps that may worsen over time"
-            },
-            {
-              "icon": "AlertTriangle",
-              "title": "Pelvic Pain",
-              "description": "Pain between periods, often chronic"
-            },
-            {
-              "icon": "Heart",
-              "title": "Pain During Sex",
-              "description": "Discomfort during or after sexual intercourse"
-            },
-            {
-              "icon": "AlertTriangle",
-              "title": "Urination Pain",
-              "description": "Pain when urinating, especially during periods"
-            },
-            {
-              "icon": "AlertTriangle",
-              "title": "Bowel Issues",
-              "description": "Pain during bowel movements, particularly during menstruation"
-            },
-            {
-              "icon": "Users",
-              "title": "Fertility Issues",
-              "description": "Difficulty getting pregnant or infertility"
-            }
+            "Painful periods – cramps that are severe, long-lasting, or worsening over time",
+            "Pelvic pain – pain between periods or chronic pelvic discomfort",
+            "Pain during or after sex",
+            "Pain when urinating – especially during menstruation",
+            "Pain during bowel movements – often worse during periods",
+            "Fertility problems – difficulty becoming pregnant"
           ]
         },
         {
           "type": "infoBox",
           "title": "Important Reminder",
-          "description": "Many women believe severe period pain is \"normal\" - it isn't. You don't have to live with it. If you experience these symptoms, please consult with a healthcare provider.",
+          "description": "Period pain is common, but severe pain that interferes with daily life is not typical. If you have ongoing or worsening symptoms, seek medical advice. Early assessment can help manage symptoms and reduce the impact on your quality of life.",
           "icon": "AlertTriangle"
         }
       ]
@@ -84,20 +82,14 @@
     {
       "id": 3,
       "buttonLabel": "Impact on Fertility and Wellbeing",
-      "buttonIcon": "FileText",
+      "buttonIcon": "Heart",
       "cardTitle": "Impact on Fertility and Wellbeing",
-      "cardTitleIcon": "FileText",
+      "cardTitleIcon": "Heart",
       "layout": "single-column",
       "content": [
         {
-          "type": "heading",
-          "text": "Understanding how endometriosis affects different aspects of life",
-          "level": 3,
-          "icon": "FileText"
-        },
-        {
           "type": "text",
-          "value": "Endometriosis can affect different aspects of life. Understanding its impact helps in finding the right treatment and support."
+          "value": "Endometriosis can affect different aspects of life. Understanding its impact can help guide treatment and support."
         },
         {
           "type": "grid",
@@ -106,12 +98,12 @@
             {
               "icon": "Users",
               "title": "Fertility Impact",
-              "description": "Endometriosis can make it harder to get pregnant, but many women still conceive naturally. Early diagnosis and treatment can help protect your fertility options."
+              "description": "Endometriosis can make it more difficult to become pregnant, particularly in moderate to severe cases. However, many people with endometriosis do conceive, either naturally or with medical support. Early assessment and appropriate treatment may help preserve fertility options."
             },
             {
               "icon": "Heart",
               "title": "Emotional Wellbeing",
-              "description": "Symptoms can affect your emotional health and quality of life. It's important to seek support and early treatment for both physical and mental wellbeing."
+              "description": "Living with chronic pain and fertility concerns can affect emotional wellbeing and quality of life. Seeking medical advice, pain management, and emotional support can help manage both physical and psychological effects."
             }
           ]
         }
@@ -126,137 +118,83 @@
       "layout": "single-column",
       "content": [
         {
-          "type": "heading",
-          "text": "The exact cause is unknown, but research suggests several possible factors",
-          "level": 3,
-          "icon": "Shield"
+          "type": "text",
+          "value": "The exact cause of endometriosis is not fully understood. Several factors are thought to play a role:"
         },
         {
-          "type": "grid",
-          "columns": 4,
+          "type": "bulletList",
           "items": [
-            {
-              "title": "Retrograde Menstruation",
-              "description": "Backward flow of menstrual blood into the pelvic cavity"
-            },
-            {
-              "title": "Genetics",
-              "description": "Family history may increase your risk"
-            },
-            {
-              "title": "Immune System Disorders",
-              "description": "Problems with immune system function"
-            },
-            {
-              "title": "Hormonal Imbalances",
-              "description": "Hormone-related factors that affect tissue growth"
-            }
+            "Retrograde (backward) menstruation – menstrual blood flows back through the fallopian tubes into the pelvis",
+            "Genetic factors – endometriosis can run in families",
+            "Immune system differences – the body may not clear misplaced endometrial-like cells effectively",
+            "Hormonal influences – endometriosis tissue responds to hormones such as oestrogen"
           ]
+        },
+        {
+          "type": "text",
+          "value": "Endometriosis is likely caused by a combination of these factors rather than a single cause."
         }
       ]
     },
     {
       "id": 5,
-      "buttonLabel": "Diagnosis of Endometriosis Cancer",
+      "buttonLabel": "How It's Diagnosed",
       "buttonIcon": "CheckCircle",
-      "cardTitle": "Understanding Diagnosis",
+      "cardTitle": "How It's Diagnosed",
       "cardTitleIcon": "CheckCircle",
       "layout": "single-column",
       "content": [
         {
-          "type": "heading",
-          "text": "Important information about diagnosis",
-          "level": 3,
-          "icon": "CheckCircle"
-        },
-        {
           "type": "text",
-          "value": "Diagnosing endometriosis can be challenging as symptoms vary widely. On average, it takes **7-10 years** from the onset of symptoms to receive a diagnosis."
+          "value": "Endometriosis can be difficult to diagnose because symptoms may overlap with other conditions."
         },
         {
-          "type": "iconList",
-          "items": [
-            { "icon": "Clock", "text": "Average diagnosis time: 7-10 years from first symptoms" },
-            { "icon": "Stethoscope", "text": "Multiple tests may be required for confirmation" },
-            { "icon": "CheckCircle", "text": "Early diagnosis leads to better treatment outcomes" }
+          "type": "numberedSteps",
+          "steps": [
+            "Pelvic Examination – A pelvic exam may be done, but findings can be normal. It may help identify tenderness, nodules, or ovarian cysts.",
+            "Imaging Tests – Ultrasound (often transvaginal) or MRI can help detect ovarian endometriosis (endometriomas) or deep disease, but scans may not detect all types of endometriosis.",
+            "Laparoscopy – A keyhole surgical procedure that allows doctors to look inside the pelvis. This can confirm the diagnosis and allow treatment or biopsy at the same time. It is usually considered when symptoms are significant or imaging is unclear."
           ]
-        },
-        {
-          "type": "infoBox",
-          "title": "Why Early Diagnosis Matters",
-          "description": "Early detection can prevent disease progression, preserve fertility, and improve quality of life through timely treatment.",
-          "icon": "Lightbulb"
         }
       ]
     },
     {
       "id": 6,
-      "buttonLabel": "How It's Diagnosed",
-      "buttonIcon": "Heart",
-      "cardTitle": "How It's Diagnosed",
-      "cardTitleIcon": "Heart",
-      "layout": "single-column",
-      "content": [
-        {
-          "type": "heading",
-          "text": "Understanding the diagnostic process",
-          "level": 3,
-          "icon": "Heart"
-        },
-        {
-          "type": "numberedSteps",
-          "steps": [
-            "Pelvic Examination - Your doctor will perform a physical examination to check for abnormalities.",
-            "Imaging Tests - Ultrasound or MRI scans to look for signs of endometriosis and cysts.",
-            "Laparoscopy - A minor keyhole surgery using a thin camera to confirm diagnosis and sometimes take tissue samples."
-          ]
-        }
-      ]
-    },
-    {
-      "id": 7,
       "buttonLabel": "Treatment Options",
-      "buttonIcon": "Users",
-      "cardTitle": "Treatment Options",
-      "cardTitleIcon": "Users",
+      "buttonIcon": "Stethoscope",
+      "cardTitle": "Treatment Options for Endometriosis",
+      "cardTitleIcon": "Stethoscope",
       "layout": "single-column",
       "content": [
         {
-          "type": "heading",
-          "text": "Personalised treatment plans tailored to your needs",
-          "level": 3,
-          "icon": "Users"
+          "type": "text",
+          "value": "Treatment is tailored to your symptoms, severity of disease, and future fertility plans."
         },
         {
-          "type": "grid",
-          "columns": 2,
+          "type": "accordion",
           "items": [
             {
-              "icon": "Pill",
               "title": "Pain Relief Medication",
-              "description": "Over-the-counter or prescription pain medications to manage symptoms."
+              "content": "Painkillers such as paracetamol or anti-inflammatory medicines (e.g., ibuprofen) are often used to help manage pain. These treat symptoms but do not treat the underlying condition."
             },
             {
-              "icon": "Calendar",
               "title": "Hormone Therapy",
-              "description": "Treatments to slow or stop endometrial tissue growth."
+              "content": "Hormonal treatments can reduce or suppress endometriosis activity. Options may include combined hormonal contraceptives, progestogen-only treatments, or GnRH analogues. These aim to control symptoms rather than cure the condition."
             },
             {
-              "icon": "Stethoscope",
               "title": "Conservative Surgery",
-              "description": "Removal of endometriosis tissue while preserving reproductive organs."
+              "content": "Keyhole (laparoscopic) surgery may be offered to remove or destroy endometriosis tissue while preserving the uterus and ovaries. Surgery can improve pain and may help fertility in some cases, though symptoms can return."
             },
             {
-              "icon": "Heart",
               "title": "Hysterectomy",
-              "description": "Considered only if other treatments haven't helped and you're not planning future pregnancies."
+              "content": "Removal of the uterus may be considered for severe symptoms when other treatments have not worked and pregnancy is not desired. It is not a guaranteed cure, especially if endometriosis is present outside the uterus."
             }
           ]
         },
         {
           "type": "infoBox",
-          "title": "Personalised Care",
-          "description": "We'll work closely with you to find the right balance of treatment based on your symptoms and goals.",
+          "title": "Key Point",
+          "description": "Treatment focuses on long-term symptom control and improving quality of life. Decisions are made together based on your symptoms, response to previous treatments, and personal goals.",
           "icon": "Star"
         }
       ]
