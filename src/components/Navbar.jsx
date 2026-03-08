@@ -135,7 +135,16 @@ const Navbar = () => {
               className="text-black/90 hover:text-gray-900 px-2 py-2 text-sm font-medium"
               onClick={closeAll}
             >
-              Event
+              Events
+            </HashLink>
+
+            <HashLink
+              smooth
+              to="/#testimonials"
+              className="text-black/90 hover:text-gray-900 px-2 py-2 text-sm font-medium"
+              onClick={closeAll}
+            >
+              Testimonials
             </HashLink>
 
             {/* Services Dropdown */}
@@ -180,7 +189,7 @@ const Navbar = () => {
                 }}
                 className="flex items-center text-black/90 hover:text-gray-900 px-2 py-2 text-sm font-medium"
               >
-                Treatment guide{" "}
+                Treatment guides{" "}
                 {isAdditionalServicesOpen ? (
                   <FiChevronUp className="ml-1" />
                 ) : (
@@ -337,7 +346,16 @@ const Navbar = () => {
                 className="block px-3 py-2 text-body-small text-black/90 hover:text-gray-900"
                 onClick={closeAll}
               >
-                Event
+                Events
+              </HashLink>
+
+              <HashLink
+                smooth
+                to="/#testimonials"
+                className="block px-3 py-2 text-body-small text-black/90 hover:text-gray-900"
+                onClick={closeAll}
+              >
+                Testimonials
               </HashLink>
 
               {isServicesOpen && <div className="ml-4 mt-1 space-y-1"></div>}
@@ -350,7 +368,7 @@ const Navbar = () => {
                 }}
                 className="w-full flex items-center justify-between px-3 py-2 text-body-small text-black/90 hover:text-gray-900"
               >
-                <span>Treatment guide</span>
+                <span>Treatment guides</span>
                 {isAdditionalServicesOpen ? <FiChevronUp /> : <FiChevronDown />}
               </button>
 
