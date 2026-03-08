@@ -190,6 +190,13 @@ const Navbar = () => {
 
               {isAdditionalServicesOpen && (
                 <div className="absolute left-0 bg-white shadow-lg rounded-md mt-2 w-64 z-50 max-h-96 overflow-y-auto">
+                  <Link
+                    to="/treatment-guides"
+                    className="flex items-center gap-2 px-4 py-2.5 text-body-small font-semibold text-primary-pink hover:bg-light-pink-1 border-b border-gray-100"
+                    onClick={closeAll}
+                  >
+                    View All Guides →
+                  </Link>
                   {treatmentGuides.map((item) => (
                     <Link
                       key={item.to}
@@ -349,6 +356,13 @@ const Navbar = () => {
 
               {isAdditionalServicesOpen && (
                 <div className="ml-4 mt-1 space-y-1 max-h-64 overflow-y-auto">
+                  <Link
+                    to="/treatment-guides"
+                    className="block px-3 py-2 text-body-small font-semibold text-primary-pink hover:bg-light-pink-1 rounded-md border-b border-gray-100 pb-2 mb-1"
+                    onClick={closeAll}
+                  >
+                    View All Guides →
+                  </Link>
                   {treatmentGuides.map((item) => (
                     <Link
                       key={item.to}
