@@ -7,7 +7,9 @@ import EducationLanguagesSection from "../components/HomePage/EducationLanguages
 import GetInTouchSection from "../components/HomePage/GetInTouchSection";
 import ExperienceImage from "../components/HomePage/ExperienceImage";
 import WhyChooseUs from "../components/HomePage/WhyChooseUs";
+import TreatmentSteps from "../components/HomePage/TreatmentSteps";
 import InsurersCarousel from "../components/HomePage/InsurersCarousel";
+import Testimonials from "../components/HomePage/Testimonials";
 import Orbit from "../components/HomePage/Orbit";
 export default function Home() {
   return (
@@ -38,9 +40,18 @@ export default function Home() {
         <WhyChooseUs />
       </section>
 
+      <section>
+        <TreatmentSteps />
+      </section>
+
       {/* Insurance Providers */}
       <section>
         <InsurersCarousel />
+      </section>
+
+      {/* Patient Testimonials */}
+      <section id="testimonials">
+        <Testimonials />
       </section>
 
       {/* Specialties / Expertise */}

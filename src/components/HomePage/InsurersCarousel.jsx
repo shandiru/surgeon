@@ -1,7 +1,4 @@
-"use client";
-import React, { useEffect, useState } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React, { useState } from "react";
 
 const insurers = [
   { name: "Benenden Health", logo: "/insurers/benenden.jpg" },
@@ -57,10 +54,6 @@ function InsurerCard({ insurer }) {
 }
 
 export default function InsurersCarousel() {
-  useEffect(() => {
-    AOS.init({ once: true });
-  }, []);
-
   return (
     <section className="py-16 bg-[#FFF1F5]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

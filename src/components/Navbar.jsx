@@ -1,27 +1,17 @@
 import React, { useState, useEffect, useRef } from "react";
-import { FiChevronDown, FiChevronUp } from "react-icons/fi";
-import { Link } from "react-router-dom";
+import { FiChevronDown } from "react-icons/fi";
+import { Link, useLocation } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
-// const treatments = [
-//   { label: "Vulvar Cancer", to: "/Cancer/Vulvar" },
-//   { label: "Vaginal Cancer", to: "/Cancer/VaginalCancer" },
-//   { label: "Ovarian Cancer", to: "/Cancer/OvarianCancer" },
-//   { label: "Endometrial Cancer", to: "/Cancer/EndometrialCancer" },
-//   { label: "Cervical Cancer", to: "/Cancer/CervicalCancer" },
-//   { label: "Robotic Surgery", to: "/RoboticSurgery" },
-//   { label: "Robotic Surgery Experience", to: "/robotic-surgery-experience" },
-//   { label: "Cervical Screening", to: "/CervicalScreening" },
-//   { label: "Irregular Bleeding", to: "/IrregularBleedingInfo" },
-//   { label: "Endometriosis", to: "/EndometriosisInformation" },
-//   { label: "Fibroids", to: "/FibroidInformation" },
-//   { label: "Menstrual Disorders", to: "/MenstrualDisordersInformation" },
-//   { label: "Ovarian Cysts", to: "/OvarianCystsPage" },
-//   { label: "Postcoital Bleeding", to: "/PostcoitalBleeding" },
-//   { label: "Postmenopausal Bleeding", to: "/postmenopausal-bleeding" },
-//   { label: "Pelvic Pain", to: "/pelvic-pain-information" },
-//   { label: "Vulvar Vaginal Lumps", to: "/vulvar-vaginal-lumps" },
-// ];
+// ─── Nav data ─────────────────────────────────────────────────────────────────
+
+const aboutItems = [
+  { label: "About Mr Gajjar", to: "/#about" },
+  { label: "Experience", to: "/#experience" },
+  { label: "Education", to: "/#education" },
+  { label: "Specialties", to: "/#specialties" },
+  { label: "Testimonials", to: "/#testimonials" },
+];
 
 const treatmentGuides = [
   { label: "Colposcopy Guide", to: "/guide/colposcopy" },
@@ -46,351 +36,385 @@ const treatmentGuides = [
   { label: "Pelvic Pain Guide", to: "/guide/pelvic-pain" },
 ];
 
-const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [isServicesOpen, setIsServicesOpen] = useState(false);
-  const [isAdditionalServicesOpen, setIsAdditionalServicesOpen] =
-    useState(false);
+// ─── Dropdown (desktop) ───────────────────────────────────────────────────────
 
-  const navRef = useRef(null);
+function DesktopDropdown({ label, children, isActive }) {
+  const [open, setOpen] = useState(false);
+  const closeTimer = useRef(null);
 
-  const closeAll = () => {
-    setIsOpen(false);
-    setIsServicesOpen(false);
-    setIsAdditionalServicesOpen(false);
+  const handleMouseEnter = () => {
+    clearTimeout(closeTimer.current);
+    setOpen(true);
   };
 
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (navRef.current && !navRef.current.contains(event.target)) {
-        closeAll();
-      }
-    };
+  const handleMouseLeave = () => {
+    closeTimer.current = setTimeout(() => setOpen(false), 120);
+  };
 
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
+  useEffect(() => () => clearTimeout(closeTimer.current), []);
+
+  // Close on Escape
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [open]);
+
+  return (
+    <div
+      className="relative"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      <button
+        aria-haspopup="true"
+        aria-expanded={open}
+        className={`flex items-center gap-1 px-2 py-2 text-sm font-medium transition-colors duration-150 ${
+          isActive
+            ? "text-primary-pink"
+            : "text-black/80 hover:text-primary-pink"
+        }`}
+      >
+        {label}
+        <FiChevronDown
+          className={`w-3.5 h-3.5 transition-transform duration-200 ${open ? "rotate-180" : ""}`}
+        />
+      </button>
+
+      {/* Dropdown panel */}
+      <div
+        role="menu"
+        className={`absolute left-0 top-full mt-1 bg-white border border-gray-100 rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.1)] min-w-[220px] z-50 overflow-hidden transition-all duration-200 origin-top ${
+          open
+            ? "opacity-100 scale-y-100 pointer-events-auto"
+            : "opacity-0 scale-y-95 pointer-events-none"
+        }`}
+        style={{ transformOrigin: "top" }}
+      >
+        {children}
+      </div>
+    </div>
+  );
+}
+
+// ─── Navbar ───────────────────────────────────────────────────────────────────
+
+const Navbar = () => {
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const [mobileAboutOpen, setMobileAboutOpen] = useState(false);
+  const [mobileGuidesOpen, setMobileGuidesOpen] = useState(false);
+  const navRef = useRef(null);
+  const location = useLocation();
+
+  const closeMobile = () => {
+    setMobileOpen(false);
+    setMobileAboutOpen(false);
+    setMobileGuidesOpen(false);
+  };
+
+  // Close mobile menu on route change
+  useEffect(() => {
+    closeMobile();
+  }, [location.pathname]);
+
+  // Close mobile menu on outside click
+  useEffect(() => {
+    const handler = (e) => {
+      if (navRef.current && !navRef.current.contains(e.target)) closeMobile();
+    };
+    document.addEventListener("mousedown", handler);
+    return () => document.removeEventListener("mousedown", handler);
   }, []);
+
+  // Close mobile menu on Escape
+  useEffect(() => {
+    const handler = (e) => {
+      if (e.key === "Escape") closeMobile();
+    };
+    document.addEventListener("keydown", handler);
+    return () => document.removeEventListener("keydown", handler);
+  }, []);
+
+  const isHomePage = location.pathname === "/";
+
+  const linkClass = (path) =>
+    `px-2 py-2 text-sm font-medium transition-colors duration-150 ${
+      location.pathname === path
+        ? "text-primary-pink"
+        : "text-black/80 hover:text-primary-pink"
+    }`;
 
   return (
     <nav
-      className="bg-white shadow-sm fixed top-0 left-0 right-0 z-50 backdrop-blur-md"
+      aria-label="Main navigation"
+      className="bg-white/95 backdrop-blur-sm shadow-sm fixed top-0 left-0 right-0 z-50"
       ref={navRef}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <Link to="/" className="flex items-center" onClick={closeAll}>
+          {/* Logo */}
+          <Link
+            to="/"
+            aria-label="Mr Ketankumar Gajjar — Home"
+            onClick={closeMobile}
+          >
             <img
               src="/logo.png"
-              alt="Mr Ketankumar Gajjar Logo"
-              className="h-30 w-auto md:h-28 lg:h-32 object-contain"
+              alt="Mr Ketankumar Gajjar — Gynaecological Oncologist"
+              className="h-auto w-auto md:h-28 lg:h-32 object-contain"
             />
           </Link>
 
-          {/* Desktop navigation */}
-          <div className="hidden lg:flex ml-10 space-x-1 items-center relative">
-            <HashLink
-              smooth
-              to="/#about"
-              className="text-black/90 hover:text-gray-900 px-2 py-2 text-sm font-medium"
-              onClick={closeAll}
-            >
-              About
-            </HashLink>
-            <HashLink
-              smooth
-              to="/#experience"
-              className="text-black/90 hover:text-gray-900 px-2 py-2 text-sm font-medium"
-              onClick={closeAll}
-            >
-              Experience
-            </HashLink>
-            <HashLink
-              smooth
-              to="/#specialties"
-              className="text-black/90 hover:text-gray-900 px-2 py-2 text-sm font-medium"
-              onClick={closeAll}
-            >
-              Specialties
-            </HashLink>
-            <HashLink
-              smooth
-              to="/#education"
-              className="text-black/90 hover:text-gray-900 px-2 py-2 text-sm font-medium"
-              onClick={closeAll}
-            >
-              Education
-            </HashLink>
-            <HashLink
-              smooth
-              to="/PublicationsPage"
-              className="text-black/90 hover:text-gray-900 px-2 py-2 text-sm font-medium"
-              onClick={closeAll}
-            >
-              Publications
-            </HashLink>
+          {/* ── Desktop nav ── */}
+          <div className="hidden lg:flex items-center gap-1" role="menubar">
+            {/* About dropdown */}
+            <DesktopDropdown label="About" isActive={isHomePage}>
+              {aboutItems.map((item) => (
+                <HashLink
+                  key={item.to}
+                  smooth
+                  to={item.to}
+                  role="menuitem"
+                  className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-light-pink-1 hover:text-primary-pink transition-colors"
+                  onClick={closeMobile}
+                >
+                  {item.label}
+                </HashLink>
+              ))}
+            </DesktopDropdown>
 
-            <HashLink
-              smooth
-              to="/event-list"
-              className="text-black/90 hover:text-gray-900 px-2 py-2 text-sm font-medium"
-              onClick={closeAll}
+            {/* Treatment Guides dropdown */}
+            <DesktopDropdown
+              label="Treatment Guides"
+              isActive={
+                location.pathname.startsWith("/guide") ||
+                location.pathname === "/treatment-guides"
+              }
             >
-              Event
-            </HashLink>
-
-            {/* Services Dropdown */}
-            {/* <div className="relative">
-              <button
-                onClick={() => {
-                  setIsServicesOpen(true);
-                  setIsAdditionalServicesOpen(false);
-                }}
-                className="flex items-center text-black/90 hover:text-gray-900 px-2 py-2 text-sm font-medium"
+              <Link
+                to="/treatment-guides"
+                role="menuitem"
+                className="flex items-center gap-1 px-4 py-2.5 text-sm font-semibold text-primary-pink hover:bg-light-pink-1 border-b border-gray-100 transition-colors"
+                onClick={closeMobile}
               >
-                Treatments{" "}
-                {isServicesOpen ? (
-                  <FiChevronUp className="ml-1" />
-                ) : (
-                  <FiChevronDown className="ml-1" />
-                )}
-              </button>
-
-              {isServicesOpen && (
-                <div className="absolute left-0 bg-white shadow-lg rounded-md mt-2 w-64 z-50 max-h-96 overflow-y-auto">
-                  {treatments.map((item) => (
-                    <Link
-                      key={item.to}
-                      to={item.to}
-                      className="block px-3 py-2 text-body-small text-black/90 hover:bg-light-pink-1"
-                      onClick={closeAll}
-                    >
-                      {item.label}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div> */}
-
-            {/* Additional Services Dropdown */}
-            <div className="relative">
-              <button
-                onClick={() => {
-                  setIsAdditionalServicesOpen(true);
-                  setIsServicesOpen(false);
-                }}
-                className="flex items-center text-black/90 hover:text-gray-900 px-2 py-2 text-sm font-medium"
-              >
-                Treatment guide{" "}
-                {isAdditionalServicesOpen ? (
-                  <FiChevronUp className="ml-1" />
-                ) : (
-                  <FiChevronDown className="ml-1" />
-                )}
-              </button>
-
-              {isAdditionalServicesOpen && (
-                <div className="absolute left-0 bg-white shadow-lg rounded-md mt-2 w-64 z-50 max-h-96 overflow-y-auto">
-                  {treatmentGuides.map((item) => (
-                    <Link
-                      key={item.to}
-                      to={item.to}
-                      className="block px-4 py-2 text-body-small text-black hover:bg-light-pink-1"
-                      onClick={closeAll}
-                    >
-                      {item.label}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
+                View All Guides →
+              </Link>
+              <div className="max-h-72 overflow-y-auto">
+                {treatmentGuides.map((item) => (
+                  <Link
+                    key={item.to}
+                    to={item.to}
+                    role="menuitem"
+                    className={`block px-4 py-2 text-sm transition-colors ${
+                      location.pathname === item.to
+                        ? "text-primary-pink bg-light-pink-1"
+                        : "text-gray-700 hover:bg-light-pink-1 hover:text-primary-pink"
+                    }`}
+                    onClick={closeMobile}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            </DesktopDropdown>
 
             <Link
               to="/robotic-surgery-experience"
-              className="text-black/90 hover:text-gray-900 px-2 py-2 text-sm font-medium"
-              onClick={closeAll}
+              className={linkClass("/robotic-surgery-experience")}
+              onClick={closeMobile}
             >
               Robotic Surgery
             </Link>
 
-            <HashLink
-              smooth
-              to="/#contact"
-              className="text-black/90 hover:text-gray-900 px-2 py-2 text-sm font-medium"
-              onClick={closeAll}
+            <Link
+              to="/patient-centre"
+              className={linkClass("/patient-centre")}
+              onClick={closeMobile}
             >
-              Contact
-            </HashLink>
+              Patient Centre
+            </Link>
+
+            <Link
+              to="/publications"
+              className={linkClass("/publications")}
+              onClick={closeMobile}
+            >
+              Publications
+            </Link>
+
+            <Link
+              to="/events"
+              className={linkClass("/events")}
+              onClick={closeMobile}
+            >
+              Events
+            </Link>
           </div>
 
-          {/* Right: CTA Button */}
+          {/* CTA button — desktop */}
           <div className="hidden lg:block">
             <HashLink
               smooth
               to="/#contact"
-              className="w-full mt-2 inline-flex items-center justify-center rounded-md text-sm font-medium transition-all shadow-xs h-9 px-4 py-2 bg-primary-pink hover:bg-[#E03E7C] text-white mb-3"
-              onClick={closeAll}
+              className="inline-flex items-center justify-center rounded-lg text-sm font-semibold px-5 py-2.5 bg-primary-pink hover:bg-[#E03E7C] hover:shadow-[0_0_15px_2px_rgba(255,75,139,0.4)] text-white transition-all duration-200 active:scale-95"
+              onClick={closeMobile}
             >
               Book Consultation
             </HashLink>
           </div>
 
-          {/* Mobile menu button */}
-          <div className="lg:hidden">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-black focus:outline-none"
-              aria-label="Toggle Menu"
-            >
-              {isOpen ? (
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              ) : (
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
-              )}
-            </button>
-          </div>
+          {/* Hamburger — mobile */}
+          <button
+            onClick={() => setMobileOpen(!mobileOpen)}
+            aria-label={mobileOpen ? "Close menu" : "Open menu"}
+            aria-expanded={mobileOpen}
+            aria-controls="mobile-menu"
+            className="lg:hidden p-2 rounded-lg text-gray-700 hover:bg-light-pink-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary-pink transition-colors"
+          >
+            {mobileOpen ? (
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            ) : (
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            )}
+          </button>
         </div>
+      </div>
 
-        {/* Mobile Dropdown */}
-        {isOpen && (
-          <div className="lg:hidden mt-2 border-t border-gray-200">
-            <div className="space-y-1 px-2 py-2">
-              {/* Main Links */}
-              <HashLink
-                smooth
-                to="/#about"
-                className="block px-3 py-2 text-body-small text-black/90 hover:text-gray-900"
-                onClick={closeAll}
-              >
-                About
-              </HashLink>
-
-              <HashLink
-                smooth
-                to="/#experience"
-                className="block px-3 py-2 text-body-small text-black/90 hover:text-gray-900"
-                onClick={closeAll}
-              >
-                Experience
-              </HashLink>
-
-              <HashLink
-                smooth
-                to="/#specialties"
-                className="block px-3 py-2 text-body-small text-black/90 hover:text-gray-900"
-                onClick={closeAll}
-              >
-                Specialties
-              </HashLink>
-
-              <HashLink
-                smooth
-                to="/#education"
-                className="block px-3 py-2 text-body-small text-black/90 hover:text-gray-900"
-                onClick={closeAll}
-              >
-                Education
-              </HashLink>
-
-              <HashLink
-                smooth
-                to="/PublicationsPage"
-                className="block px-3 py-2 text-body-small text-black/90 hover:text-gray-900"
-                onClick={closeAll}
-              >
-                Publications
-              </HashLink>
-
-              <HashLink
-                smooth
-                to="/event-list"
-                className="block px-3 py-2 text-body-small text-black/90 hover:text-gray-900"
-                onClick={closeAll}
-              >
-                Event
-              </HashLink>
-
-              {isServicesOpen && <div className="ml-4 mt-1 space-y-1"></div>}
-
-              {/*Treatment Guide Accordion (FIXED) */}
-              <button
-                onClick={() => {
-                  setIsAdditionalServicesOpen(!isAdditionalServicesOpen);
-                  setIsServicesOpen(false);
-                }}
-                className="w-full flex items-center justify-between px-3 py-2 text-body-small text-black/90 hover:text-gray-900"
-              >
-                <span>Treatment guide</span>
-                {isAdditionalServicesOpen ? <FiChevronUp /> : <FiChevronDown />}
-              </button>
-
-              {isAdditionalServicesOpen && (
-                <div className="ml-4 mt-1 space-y-1 max-h-64 overflow-y-auto">
-                  {treatmentGuides.map((item) => (
-                    <Link
-                      key={item.to}
-                      to={item.to}
-                      className="block px-3 py-2 text-body-small text-black/90 hover:bg-light-pink-1 rounded-md"
-                      onClick={closeAll}
-                    >
-                      {item.label}
-                    </Link>
-                  ))}
-                </div>
-              )}
-
-              <Link
-                to="/robotic-surgery-experience"
-                className="block px-3 py-2 text-body-small text-black/90 hover:bg-light-pink-1 rounded-md"
-                onClick={closeAll}
-              >
-                Robotic Surgery
-              </Link>
-
-              {/* Contact + CTA */}
-              <HashLink
-                smooth
-                to="/#contact"
-                className="block px-3 py-2 text-body-small text-black/90 hover:text-gray-900"
-                onClick={closeAll}
-              >
-                Contact
-              </HashLink>
-
-              <HashLink
-                smooth
-                to="/#contact"
-                className="w-full mt-2 inline-flex items-center justify-center rounded-md text-button transition-all shadow-xs h-9 px-4 py-2 bg-primary-pink hover:bg-[#E03E7C] text-white mb-3"
-                onClick={closeAll}
-              >
-                Book Consultation
-              </HashLink>
+      {/* ── Mobile menu ── */}
+      <div
+        id="mobile-menu"
+        role="navigation"
+        aria-label="Mobile navigation"
+        className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+          mobileOpen ? "max-h-[90vh] opacity-100" : "max-h-0 opacity-0"
+        }`}
+      >
+        <div className="border-t border-gray-100 px-4 py-3 space-y-1 overflow-y-auto max-h-[80vh]">
+          {/* About accordion */}
+          <button
+            onClick={() => setMobileAboutOpen(!mobileAboutOpen)}
+            aria-expanded={mobileAboutOpen}
+            className="w-full flex items-center justify-between px-3 py-2.5 text-sm font-medium text-gray-800 hover:bg-light-pink-1 rounded-lg transition-colors"
+          >
+            About
+            <FiChevronDown
+              className={`w-4 h-4 transition-transform duration-200 ${mobileAboutOpen ? "rotate-180" : ""}`}
+            />
+          </button>
+          <div
+            className={`overflow-hidden transition-all duration-200 ${mobileAboutOpen ? "max-h-64" : "max-h-0"}`}
+          >
+            <div className="ml-3 pl-3 border-l-2 border-light-pink-2 space-y-0.5 py-1">
+              {aboutItems.map((item) => (
+                <HashLink
+                  key={item.to}
+                  smooth
+                  to={item.to}
+                  className="block px-3 py-2 text-sm text-gray-600 hover:text-primary-pink hover:bg-light-pink-1 rounded-lg transition-colors"
+                  onClick={closeMobile}
+                >
+                  {item.label}
+                </HashLink>
+              ))}
             </div>
           </div>
-        )}
+
+          {/* Treatment Guides accordion */}
+          <button
+            onClick={() => setMobileGuidesOpen(!mobileGuidesOpen)}
+            aria-expanded={mobileGuidesOpen}
+            className="w-full flex items-center justify-between px-3 py-2.5 text-sm font-medium text-gray-800 hover:bg-light-pink-1 rounded-lg transition-colors"
+          >
+            Treatment Guides
+            <FiChevronDown
+              className={`w-4 h-4 transition-transform duration-200 ${mobileGuidesOpen ? "rotate-180" : ""}`}
+            />
+          </button>
+          <div
+            className={`overflow-hidden transition-all duration-200 ${mobileGuidesOpen ? "max-h-64" : "max-h-0"}`}
+          >
+            <div className="ml-3 pl-3 border-l-2 border-light-pink-2 space-y-0.5 py-1 overflow-y-auto max-h-52">
+              <Link
+                to="/treatment-guides"
+                className="block px-3 py-2 text-sm font-semibold text-primary-pink hover:bg-light-pink-1 rounded-lg transition-colors"
+                onClick={closeMobile}
+              >
+                View All Guides →
+              </Link>
+              {treatmentGuides.map((item) => (
+                <Link
+                  key={item.to}
+                  to={item.to}
+                  className="block px-3 py-2 text-sm text-gray-600 hover:text-primary-pink hover:bg-light-pink-1 rounded-lg transition-colors"
+                  onClick={closeMobile}
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* Flat links */}
+          {[
+            { to: "/robotic-surgery-experience", label: "Robotic Surgery" },
+            { to: "/patient-centre", label: "Patient Centre" },
+            { to: "/publications", label: "Publications" },
+            { to: "/events", label: "Events" },
+          ].map(({ to, label }) => (
+            <Link
+              key={to}
+              to={to}
+              className={`block px-3 py-2.5 text-sm font-medium rounded-lg transition-colors ${
+                location.pathname === to
+                  ? "text-primary-pink bg-light-pink-1"
+                  : "text-gray-800 hover:bg-light-pink-1 hover:text-primary-pink"
+              }`}
+              onClick={closeMobile}
+            >
+              {label}
+            </Link>
+          ))}
+
+          <div className="pt-2 pb-1">
+            <HashLink
+              smooth
+              to="/#contact"
+              className="w-full inline-flex items-center justify-center rounded-lg text-sm font-semibold px-5 py-2.5 bg-primary-pink hover:bg-[#E03E7C] text-white transition-all duration-200 active:scale-95"
+              onClick={closeMobile}
+            >
+              Book Consultation
+            </HashLink>
+          </div>
+        </div>
       </div>
     </nav>
   );

@@ -1,14 +1,6 @@
-"use client";
-
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from "react";
 
 export default function ExperienceImage() {
-  useEffect(() => {
-    AOS.init({ duration: 1000, once: false });
-  }, []);
-
   return (
     <div
       className="w-full flex justify-center py-6 sm:py-10 bg-white px-4"

@@ -1,14 +1,6 @@
-"use client";
-
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from "react";
 
 export default function GetInTouchSection() {
-  useEffect(() => {
-    AOS.init({ duration: 800, once: false });
-  }, []);
-
   const cards = [
     {
       title: "Nottingham University Hospital",

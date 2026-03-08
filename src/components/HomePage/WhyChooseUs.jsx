@@ -1,42 +1,58 @@
-"use client";
-import React, { useEffect, useState } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React, { useState } from "react";
 import { ArrowUpRight } from "lucide-react";
-import { FaUserMd, FaHeartbeat, FaHeadset, FaStethoscope } from "react-icons/fa";
+import {
+  FaUserMd,
+  FaRobot,
+  FaHospital,
+  FaUsers,
+  FaClipboardList,
+  FaStethoscope,
+} from "react-icons/fa";
 
 export default function WhyChooseUs() {
   const [openIndex, setOpenIndex] = useState(0);
   const toggleAccordion = (i) => setOpenIndex(openIndex === i ? null : i);
 
-  useEffect(() => {
-    AOS.init({ once: true, duration: 1000, offset: 100 });
-  }, []);
-
   const features = [
     {
-      title: "Personalised Care",
-      desc: "Every treatment plan is tailored to each woman’s unique needs with compassion and clarity.",
+      title: "Consultant Gynaecological Oncologist",
+      desc: "Mr Gajjar holds a specialist consultant post in gynaecological oncology, bringing focused expertise in the diagnosis, staging, and surgical treatment of gynaecological cancers.",
       icon: <FaUserMd className="text-white text-xl" />,
     },
     {
-      title: "Advanced Surgical Expertise",
-      desc: "Ketan delivers modern, minimally invasive gynaecological surgery with precision and safety.",
-      icon: <FaHeartbeat className="text-white text-xl" />,
+      title: "Robotic Surgery Expertise",
+      desc: "A highly experienced robotic surgeon, Mr Gajjar performs complex procedures using the da Vinci system — offering patients less pain, faster recovery, and reduced hospital stays.",
+      icon: <FaRobot className="text-white text-xl" />,
     },
     {
-      title: "Exceptional Patient Support",
-      desc: "From consultation to recovery, patients receive continuous guidance, comfort, and reassurance.",
-      icon: <FaHeadset className="text-white text-xl" />,
+      title: "NHS Tertiary Cancer Centre",
+      desc: "Based at a leading NHS tertiary referral centre, Mr Gajjar manages the most complex gynaecological cancer cases, bringing that same high standard to his private practice.",
+      icon: <FaHospital className="text-white text-xl" />,
+    },
+    {
+      title: "Multidisciplinary Care",
+      desc: "Every patient benefits from a collaborative approach — Mr Gajjar works closely with oncologists, radiologists, pathologists, and specialist nurses to ensure comprehensive, joined-up care.",
+      icon: <FaUsers className="text-white text-xl" />,
+    },
+    {
+      title: "Personalised Treatment Plans",
+      desc: "No two patients are the same. Mr Gajjar takes time to understand each woman’s individual circumstances, values, and goals — ensuring every plan is tailored, evidence-based, and clearly explained.",
+      icon: <FaClipboardList className="text-white text-xl" />,
     },
   ];
 
   return (
-    <section id="why-choose-us" className="relative bg-[#FFF1F5] pb-10 lg:pb-32 overflow-hidden">
+    <section
+      id="why-choose-us"
+      className="relative bg-[#FFF1F5] pb-10 lg:pb-32 overflow-hidden"
+    >
       {/* Header */}
       <div className="text-center mt-10 mb-12 lg:mt-16 lg:mb-24 px-4">
-        <p className="text-body-small text-[#1B123D]/60 mb-3" data-aos="fade-up">
-          Why Choose Us?
+        <p
+          className="text-body-small text-[#1B123D]/60 mb-3"
+          data-aos="fade-up"
+        >
+          Why Choose Mr Ketankumar Gajjar?
         </p>
 
         <h2
@@ -90,9 +106,7 @@ export default function WhyChooseUs() {
             </h3>
 
             <p className="text-[#636977] text-body mt-3 leading-relaxed">
-              Experience compassionate, specialised gynaecological treatment tailored to your
-              well-being. With advanced surgical expertise and a patient-first approach, we ensure
-              you feel supported, informed, and confident every step of the way.
+              With over 26 years of experience and 16+ years specialising in gynaecological oncology, Mr Gajjar combines world-class surgical skill with genuine compassion — so you always feel heard, informed, and in safe hands.
             </p>
           </div>
 
@@ -146,7 +160,9 @@ export default function WhyChooseUs() {
 
                 <div
                   className={`overflow-hidden transition-all duration-500 ${
-                    openIndex === i ? "max-h-28 mt-2 opacity-100" : "max-h-0 opacity-0"
+                    openIndex === i
+                      ? "max-h-40 mt-2 opacity-100"
+                      : "max-h-0 opacity-0"
                   }`}
                 >
                   <p className="text-[#636977] text-body-small leading-relaxed pl-16">
@@ -158,15 +174,14 @@ export default function WhyChooseUs() {
           </div>
         </div>
 
-        {/* DESKTOP VERSION (unchanged) */}
+        {/* DESKTOP VERSION */}
         <div
-          className="relative bg-white rounded-[32px] shadow-[0_8px_40px_rgba(0,0,0,0.08)]
-          hidden lg:flex flex-row items-center justify-between
-          w-full max-w-[1200px] px-8 xl:px-16 py-16 xl:py-20 z-10 gap-x-0"
+          className="hidden lg:flex flex-row items-center justify-between gap-8 xl:gap-12
+          w-full max-w-[1200px] px-8 xl:px-12 py-16 xl:py-20"
           data-aos="fade-up"
         >
           {/* LEFT */}
-          <div className="flex-1 space-y-6">
+          <div className="flex-1 space-y-6 bg-white rounded-[32px] shadow-[0_8px_40px_rgba(0,0,0,0.08)] px-8 py-10 z-10">
             <div className="inline-flex items-center space-x-2 bg-[#FFF1F5] px-3 py-1 rounded-full">
               <div className="w-5 h-5 bg-primary-pink rounded-full flex items-center justify-center">
                 <FaStethoscope className="text-white text-sm" />
@@ -180,27 +195,36 @@ export default function WhyChooseUs() {
               Expert Surgical Care for Every Woman
             </h3>
 
-            <p className="text-[#636977] text-body leading-relaxed max-w-md">
-              Experience compassionate, specialised gynaecological treatment tailored to your
-              well-being. With advanced surgical expertise and a patient-first approach, we ensure
-              you feel supported, informed, and confident every step of the way.
+            <p className="text-[#636977] text-body leading-relaxed">
+              With over 26 years of experience and 16+ years specialising in gynaecological oncology, Mr Gajjar combines world-class surgical skill with genuine compassion — so you always feel heard, informed, and in safe hands.
             </p>
           </div>
 
-          {/* ACCORDION */}
-          <div className="flex-1 flex flex-col space-y-6 lg:pl-16 xl:pl-28">
+          {/* CENTER IMAGE */}
+          <div className="flex-shrink-0 z-10" data-aos="zoom-in">
+            <div className="w-[220px] h-[380px] xl:w-[280px] xl:h-[460px] rounded-full border-[6px] border-white overflow-hidden shadow-[0_0_60px_rgba(255,75,139,0.5)]">
+              <img
+                src="/Ketan_Gajjar-117.jpg"
+                alt="Mr Ketankumar Gajjar"
+                className="w-full h-full object-cover object-center"
+              />
+            </div>
+          </div>
+
+          {/* RIGHT ACCORDION */}
+          <div className="flex-1 flex flex-col space-y-6 bg-white rounded-[32px] shadow-[0_8px_40px_rgba(0,0,0,0.08)] px-8 py-10 z-10">
             {features.map((item, i) => (
               <div
                 key={i}
-                className="border-b border-[#FFD6E2] pb-6 cursor-pointer"
+                className="border-b border-[#FFD6E2] pb-6 cursor-pointer last:border-0 last:pb-0"
                 onClick={() => toggleAccordion(i)}
               >
                 <div className="flex items-start justify-between">
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 rounded-full bg-primary-pink flex items-center justify-center shadow-[0_0_10px_rgba(255,75,139,0.3)]">
+                    <div className="w-10 h-10 rounded-full bg-primary-pink flex items-center justify-center shadow-[0_0_10px_rgba(255,75,139,0.3)] flex-shrink-0">
                       {item.icon}
                     </div>
-                    <h4 className="text-card-title font-semibold text-[#1B123D] pt-2">
+                    <h4 className="text-base font-semibold text-[#1B123D] pt-1.5">
                       {item.title}
                     </h4>
                   </div>
@@ -208,7 +232,7 @@ export default function WhyChooseUs() {
                   <svg
                     viewBox="0 0 20 20"
                     fill="none"
-                    className={`w-5 h-5 mt-2 transition-transform ${
+                    className={`w-5 h-5 mt-1.5 flex-shrink-0 transition-transform ${
                       openIndex === i ? "rotate-180" : ""
                     }`}
                   >
@@ -224,29 +248,17 @@ export default function WhyChooseUs() {
 
                 <div
                   className={`overflow-hidden transition-all duration-500 ${
-                    openIndex === i ? "max-h-28 mt-2 opacity-100" : "max-h-0 opacity-0"
+                    openIndex === i
+                      ? "max-h-40 mt-2 opacity-100"
+                      : "max-h-0 opacity-0"
                   }`}
                 >
-                  <p className="text-[#636977] text-body-small leading-relaxed pl-16">
+                  <p className="text-[#636977] text-body-small leading-relaxed pl-14">
                     {item.desc}
                   </p>
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-
-        {/* DESKTOP FLOATING IMAGE */}
-        <div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 hidden lg:block"
-          data-aos="zoom-in"
-        >
-          <div className="w-[260px] h-[460px] xl:w-[340px] xl:h-[580px] rounded-full border-[6px] border-white overflow-hidden shadow-[0_0_60px_rgba(255,75,139,0.5)]">
-            <img
-              src="/Ketan_Gajjar-117.jpg"
-              alt="Doctor consulting patient"
-              className="w-full h-full object-cover object-center"
-            />
           </div>
         </div>
       </div>

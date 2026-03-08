@@ -1,14 +1,6 @@
-"use client";
-
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from "react";
 
 export default function EducationLanguagesSection() {
-  useEffect(() => {
-    AOS.init({ duration: 800, once: false });
-  }, []);
-
   const education = [
     {
       title: "Subspecialist Accreditation in Gynaecological Oncology",
@@ -114,7 +106,7 @@ export default function EducationLanguagesSection() {
           <div className="flex flex-col md:flex-row items-center justify-center gap-6">
             <img
               src="/new-doctor.png"
-              alt="Doctor"
+              alt="Mr Ketankumar Gajjar"
               className="w-20 h-20 object-cover rounded-full border-4 border-primary-pink/30 shadow-md"
               data-aos="zoom-in"
             />
