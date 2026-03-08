@@ -90,7 +90,7 @@ const EventListPage = () => {
       Date: "5–7 October 2024",
       address: "New York, USA / Virtual",
       organiser: "Global Oncology Association",
-      link: "/event/event2",
+      link: "/events/event2",
     },
     {
       id: 3,

@@ -1,14 +1,6 @@
-"use client";
-
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from "react";
 
 export default function ProfessionalExperience() {
-  useEffect(() => {
-    AOS.init({ once: true });
-  }, []);
-
   return (
     <section id="experience" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

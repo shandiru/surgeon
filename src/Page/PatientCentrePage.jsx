@@ -1,6 +1,4 @@
-import React, { useState, useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React, { useState } from "react";
 import { jsPDF } from "jspdf";
 import {
   Stethoscope,
@@ -557,10 +555,6 @@ function Sidebar({ activeSection, onSelect }) {
 
 export default function PatientCentrePage() {
   const [activeSection, setActiveSection] = useState(SECTIONS[0].id);
-
-  useEffect(() => {
-    AOS.init({ duration: 700, once: true, offset: 80 });
-  }, []);
 
   const ActiveComponent = SECTION_COMPONENTS[activeSection];
 

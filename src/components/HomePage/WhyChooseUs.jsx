@@ -1,7 +1,4 @@
-"use client";
-import React, { useEffect, useState } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React, { useState } from "react";
 import { ArrowUpRight } from "lucide-react";
 import {
   FaUserMd,
@@ -15,10 +12,6 @@ import {
 export default function WhyChooseUs() {
   const [openIndex, setOpenIndex] = useState(0);
   const toggleAccordion = (i) => setOpenIndex(openIndex === i ? null : i);
-
-  useEffect(() => {
-    AOS.init({ once: true, duration: 1000, offset: 100 });
-  }, []);
 
   const features = [
     {

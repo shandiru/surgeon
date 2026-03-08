@@ -1,7 +1,5 @@
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState, useMemo } from "react";
 import { Link } from "react-router-dom";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import {
   Stethoscope,
   Activity,
@@ -246,10 +244,6 @@ function GuideCard({ guide }) {
 export default function TreatmentGuidesPage() {
   const [activeCategory, setActiveCategory] = useState("All");
   const [search, setSearch] = useState("");
-
-  useEffect(() => {
-    AOS.init({ duration: 600, once: true, offset: 60 });
-  }, []);
 
   const filtered = useMemo(() => {
     return GUIDES.filter((g) => {

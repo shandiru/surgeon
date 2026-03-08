@@ -1,7 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { Star, ChevronLeft, ChevronRight, BadgeCheck, Quote } from "lucide-react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const REVIEWS = [
   {
@@ -131,8 +129,6 @@ export default function Testimonials() {
   const [perView, setPerView] = useState(3);
 
   useEffect(() => {
-    AOS.init({ duration: 800, once: true });
-
     const updatePerView = () => {
       if (window.innerWidth >= 1024) setPerView(3);
       else if (window.innerWidth >= 640) setPerView(2);

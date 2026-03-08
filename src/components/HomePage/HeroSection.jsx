@@ -1,14 +1,7 @@
-"use client";
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from "react";
 import { ArrowUpRight } from "lucide-react";
 
 const HeroSectionView = () => {
-  useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
-  }, []);
-
   return (
     <section className="relative bg-[#FDE7EB] py-16 pb-24 md:py-20 md:pb-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
