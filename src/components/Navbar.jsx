@@ -147,6 +147,14 @@ const Navbar = () => {
               Testimonials
             </HashLink>
 
+            <Link
+              to="/patient-centre"
+              className="text-black/90 hover:text-gray-900 px-2 py-2 text-sm font-medium"
+              onClick={closeAll}
+            >
+              Patient Centre
+            </Link>
+
             {/* Services Dropdown */}
             {/* <div className="relative">
               <button
@@ -357,6 +365,14 @@ const Navbar = () => {
               >
                 Testimonials
               </HashLink>
+
+              <Link
+                to="/patient-centre"
+                className="block px-3 py-2 text-body-small text-black/90 hover:text-gray-900"
+                onClick={closeAll}
+              >
+                Patient Centre
+              </Link>
 
               {isServicesOpen && <div className="ml-4 mt-1 space-y-1"></div>}
 

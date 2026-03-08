@@ -25,6 +25,7 @@ import EventListPage from "./Page/EventListPage";
 import EventPage from "./Page/EventPages/EventPage1";
 import GuidePage from "./components/GuidePage/GuidePage";
 import TreatmentGuidesPage from "./Page/TreatmentGuidesPage";
+import PatientCentrePage from "./Page/PatientCentrePage";
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
@@ -57,6 +58,7 @@ function App() {
           <Route path="/event/:id" element={<EventPage />} />
           <Route path="/guide/:slug" element={<GuidePage />} />
           <Route path="/treatment-guides" element={<TreatmentGuidesPage />} />
+          <Route path="/patient-centre" element={<PatientCentrePage />} />
         </Routes>
       </div>
       <Footer />
