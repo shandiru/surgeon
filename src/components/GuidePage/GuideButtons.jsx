@@ -31,6 +31,7 @@ const GuideButtons = ({
         return (
           <button
             key={section.id}
+            type="button"
             onClick={() => handleButtonClick(section.id, index)}
             className={`
               flex flex-col items-center justify-center text-center w-full py-2 px-3 font-semibold rounded-md bg-light-pink-1 hover:bg-light-pink-2 text-button cursor-pointer transition-all

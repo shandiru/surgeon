@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 import guides from "../../content";
 import GuideAbout from "./GuideAbout";
@@ -10,6 +10,19 @@ const GuidePage = () => {
   const guide = guides[slug];
   const [showCard, setShowCard] = useState(1);
   const [activeButton, setActiveButton] = useState(0);
+  const isFirstRender = useRef(true);
+  const cardRef = useRef(null);
+
+  useEffect(() => {
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      return;
+    }
+    if (!cardRef.current) return;
+    // Scroll to GuideButtons/card area, accounting for fixed navbar (64px) + breathing room
+    const offset = cardRef.current.getBoundingClientRect().top + window.scrollY - 80;
+    window.scrollTo({ top: Math.max(0, offset), behavior: "smooth" });
+  }, [showCard]);
 
   if (!guide) {
     return (
@@ -31,23 +44,25 @@ const GuidePage = () => {
         activeButton={activeButton}
         totalSteps={totalSteps}
       />
-      <GuideButtons
-        sections={guide.sections}
-        setShowCard={setShowCard}
-        activeButton={activeButton}
-        setActiveButton={setActiveButton}
-      />
-      {guide.sections.map((section) =>
-        showCard === section.id ? (
-          <GuideCard
-            key={section.id}
-            section={section}
-            totalSteps={totalSteps}
-            setShowCard={setShowCard}
-            setActiveButton={setActiveButton}
-          />
-        ) : null,
-      )}
+      <div ref={cardRef}>
+        <GuideButtons
+          sections={guide.sections}
+          setShowCard={setShowCard}
+          activeButton={activeButton}
+          setActiveButton={setActiveButton}
+        />
+        {guide.sections.map((section) =>
+          showCard === section.id ? (
+            <GuideCard
+              key={section.id}
+              section={section}
+              totalSteps={totalSteps}
+              setShowCard={setShowCard}
+              setActiveButton={setActiveButton}
+            />
+          ) : null,
+        )}
+      </div>
     </div>
   );
 };
