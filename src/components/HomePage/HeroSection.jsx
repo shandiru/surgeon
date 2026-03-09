@@ -1,11 +1,11 @@
 import React from "react";
-import { ArrowUpRight } from "lucide-react";
 
 const HeroSectionView = () => {
   return (
     <section className="relative bg-[#FDE7EB] py-16 pb-24 md:py-20 md:pb-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
+
           {/* Left Section */}
           <div className="hero-left" data-aos="fade-up">
             <div className="mb-4 hero-badge" data-aos="fade-down">
@@ -40,13 +40,7 @@ const HeroSectionView = () => {
                 href="#contact"
                 className="inline-flex items-center justify-center gap-2 text-button px-6 h-10 rounded-md bg-primary-pink text-white shadow-sm hover:shadow-[0_0_15px_2px_rgba(255,75,139,0.5)] hover:-translate-y-0.5 transition-all"
               >
-                <svg
-                  className="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                   <path d="M8 2v4" />
                   <path d="M16 2v4" />
                   <rect x="3" y="4" width="18" height="18" rx="2" />
@@ -59,17 +53,28 @@ const HeroSectionView = () => {
                 className="inline-flex items-center justify-center gap-2 text-button px-6 h-10 rounded-md border border-primary-pink text-primary-pink hover:bg-[#FFD6E1] hover:shadow-[0_0_15px_2px_rgba(255,75,139,0.4)] hover:-translate-y-0.5 transition-all"
               >
                 Learn More
-                <svg
-                  className="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                   <path d="M5 12h14" />
                   <path d="m12 5 7 7-7 7" />
                 </svg>
               </a>
+            </div>
+
+            {/* ── Mobile-only image (between CTAs and icons) ── */}
+            <div className="relative md:hidden mb-8" data-aos="fade-up">
+              <div className="bg-white rounded-2xl shadow-xl p-4 relative">
+                <img
+                  src="/Ketan-Gajjar.jpeg"
+                  alt="Mr Ketankumar Gajjar"
+                  className="w-full h-64 object-cover rounded-xl"
+                />
+                <div className="absolute -bottom-4 right-2 bg-primary-pink text-white px-4 py-3 rounded-xl shadow-md">
+                  <div className="text-center">
+                    <div className="text-card-title leading-none">26</div>
+                    <div className="text-caption mt-1">Years Experience</div>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div
@@ -77,39 +82,21 @@ const HeroSectionView = () => {
               data-aos="fade-up"
             >
               <div className="flex items-center gap-2">
-                <svg
-                  className="w-5 h-5 text-primary-pink"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                >
+                <svg className="w-5 h-5 text-primary-pink" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                   <path d="M21.801 10A10 10 0 1 1 17 3.335" />
                   <path d="m9 11 3 3L22 4" />
                 </svg>
                 <span>16 Years Gynaecological Oncology</span>
               </div>
               <div className="flex items-center gap-2">
-                <svg
-                  className="w-5 h-5 text-primary-pink"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                >
+                <svg className="w-5 h-5 text-primary-pink" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                   <path d="M21.801 10A10 10 0 1 1 17 3.335" />
                   <path d="m9 11 3 3L22 4" />
                 </svg>
                 <span>26 Years Gynaecology</span>
               </div>
               <div className="flex items-center gap-2">
-                <svg
-                  className="w-5 h-5 text-primary-pink"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                >
+                <svg className="w-5 h-5 text-primary-pink" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                   <path d="M21.801 10A10 10 0 1 1 17 3.335" />
                   <path d="m9 11 3 3L22 4" />
                 </svg>
@@ -118,8 +105,8 @@ const HeroSectionView = () => {
             </div>
           </div>
 
-          {/* Right Section */}
-          <div className="relative hero-right" data-aos="fade-left">
+          {/* Right Section — desktop only */}
+          <div className="relative hero-right hidden md:block" data-aos="fade-left">
             <div className="bg-white rounded-2xl shadow-xl p-6 relative transition-all duration-300 hover:shadow-[0_0_30px_4px_rgba(255,75,139,0.4)] hover:-translate-y-1">
               <img
                 src="/Ketan-Gajjar.jpeg"
@@ -137,6 +124,7 @@ const HeroSectionView = () => {
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
