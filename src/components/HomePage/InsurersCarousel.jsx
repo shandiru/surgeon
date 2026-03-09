@@ -78,8 +78,8 @@ export default function InsurersCarousel() {
   }, []);
 
   const scroll = (dir) => {
-    // Snap scroll by 2 card widths
-    posRef.current = Math.max(0, posRef.current + dir * CARD_W * 2);
+    // Snap scroll by 1 card width
+    posRef.current = Math.max(0, posRef.current + dir * CARD_W);
     if (posRef.current >= TOTAL_W) posRef.current -= TOTAL_W;
     if (trackRef.current) {
       trackRef.current.style.transition = "transform 0.35s ease";
