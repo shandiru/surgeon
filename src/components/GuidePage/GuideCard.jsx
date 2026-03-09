@@ -60,6 +60,7 @@ const GuideCard = ({ section, totalSteps, setShowCard, setActiveButton }) => {
         <div className="pt-6 flex justify-center">
           {!isLastSection ? (
             <button
+              type="button"
               onClick={() => {
                 setShowCard(section.id + 1);
                 setActiveButton(section.id);

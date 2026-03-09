@@ -29,6 +29,8 @@ import EventPage from "./Page/EventPages/EventPage1";
 import GuidePage from "./components/GuidePage/GuidePage";
 import TreatmentGuidesPage from "./Page/TreatmentGuidesPage";
 import PatientCentrePage from "./Page/PatientCentrePage";
+import PrivacyPolicyPage from "./Page/PrivacyPolicyPage";
+import TermsAndConditionsPage from "./Page/TermsAndConditionsPage";
 import ScrollToTop from "./components/ScrollToTop";
 
 function NotFound() {
@@ -114,6 +116,8 @@ function App() {
           <Route path="/guide/:slug" element={<GuidePage />} />
           <Route path="/treatment-guides" element={<TreatmentGuidesPage />} />
           <Route path="/patient-centre" element={<PatientCentrePage />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+          <Route path="/terms-and-conditions" element={<TermsAndConditionsPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

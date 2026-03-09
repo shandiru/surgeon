@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 export default function Footer() {
@@ -109,9 +110,10 @@ export default function Footer() {
         {/* Bottom Line */}
         <div className="border-t border-white/40 mt-10 pt-6 text-center text-body-small text-white/80">
           <p>
-            © 2025 Mr Ketankumar Gajjar – Gynaecological Oncologist. All rights
+            © {new Date().getFullYear()} Mr Ketankumar Gajjar – Gynaecological Oncologist. All rights
             reserved.
           </p>
+
           <p className="mt-2">
             Professional medical services | GMC Registration Number: 6083162
           </p>
@@ -125,6 +127,15 @@ export default function Footer() {
             >
               Ansely
             </a>
+          </p>
+          <p className="mt-2 flex items-center justify-center gap-4">
+            <Link to="/privacy-policy" className="underline hover:text-white transition-colors">
+              Privacy Policy
+            </Link>
+            <span className="text-white/40">|</span>
+            <Link to="/terms-and-conditions" className="underline hover:text-white transition-colors">
+              Terms of Use
+            </Link>
           </p>
         </div>
       </div>
