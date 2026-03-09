@@ -55,7 +55,7 @@ const HeroSectionView = () => {
                 Schedule Consultation
               </a>
               <a
-                href="#about"
+                href="/treatment-guides"
                 className="inline-flex items-center justify-center gap-2 text-button px-6 h-10 rounded-md border border-primary-pink text-primary-pink hover:bg-[#FFD6E1] hover:shadow-[0_0_15px_2px_rgba(255,75,139,0.4)] hover:-translate-y-0.5 transition-all"
               >
                 Learn More

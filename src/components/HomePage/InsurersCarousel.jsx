@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 const insurers = [
   { name: "Benenden Health", logo: "/insurers/benenden.jpg" },
@@ -19,6 +19,11 @@ const insurers = [
   { name: "General and Medical", logo: "/insurers/general-medical.jpg" },
 ];
 
+// Card width + margin = 128 + 32 = 160px
+const CARD_W = 160;
+// Each card in the list
+const TOTAL_W = insurers.length * CARD_W;
+
 function InsurerCard({ insurer }) {
   const [imageError, setImageError] = useState(false);
 
@@ -29,7 +34,6 @@ function InsurerCard({ insurer }) {
                    transition-all duration-300 hover:shadow-[0_0_20px_3px_rgba(255,75,139,0.2)] hover:border-primary-pink/30 hover:scale-105
                    overflow-hidden"
       >
-        {/* Logo - visible by default, hidden on hover */}
         {!imageError ? (
           <img
             src={insurer.logo}
@@ -39,8 +43,6 @@ function InsurerCard({ insurer }) {
             onError={() => setImageError(true)}
           />
         ) : null}
-
-        {/* Name - hidden by default, visible on hover (or if image fails) */}
         <span
           className={`absolute inset-0 flex items-center justify-center text-caption text-gray-700 text-center font-medium px-2
                       transition-all duration-300
@@ -54,6 +56,40 @@ function InsurerCard({ insurer }) {
 }
 
 export default function InsurersCarousel() {
+  const trackRef = useRef(null);
+  const pausedRef = useRef(false);
+  const posRef = useRef(0);
+  const rafRef = useRef(null);
+
+  // Auto-scroll: move 0.8px per frame (~48px/s at 60fps)
+  useEffect(() => {
+    const step = () => {
+      if (!trackRef.current) return;
+      if (!pausedRef.current) {
+        posRef.current += 0.8;
+        // Reset when we've scrolled one full set width for seamless loop
+        if (posRef.current >= TOTAL_W) posRef.current -= TOTAL_W;
+        trackRef.current.style.transform = `translateX(-${posRef.current}px)`;
+      }
+      rafRef.current = requestAnimationFrame(step);
+    };
+    rafRef.current = requestAnimationFrame(step);
+    return () => cancelAnimationFrame(rafRef.current);
+  }, []);
+
+  const scroll = (dir) => {
+    // Snap scroll by 2 card widths
+    posRef.current = Math.max(0, posRef.current + dir * CARD_W * 2);
+    if (posRef.current >= TOTAL_W) posRef.current -= TOTAL_W;
+    if (trackRef.current) {
+      trackRef.current.style.transition = "transform 0.35s ease";
+      trackRef.current.style.transform = `translateX(-${posRef.current}px)`;
+      setTimeout(() => {
+        if (trackRef.current) trackRef.current.style.transition = "";
+      }, 350);
+    }
+  };
+
   return (
     <section className="py-16 bg-[#FFF1F5]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -67,26 +103,50 @@ export default function InsurersCarousel() {
           </p>
         </div>
 
-        {/* Carousel Container */}
+        {/* Carousel */}
         <div
-          className="relative overflow-hidden py-4"
+          className="relative py-4"
           data-aos="fade-up"
           data-aos-delay="100"
+          onMouseEnter={() => { pausedRef.current = true; }}
+          onMouseLeave={() => { pausedRef.current = false; }}
         >
-          {/* Gradient Overlays */}
-          <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-[#FFF1F5] to-transparent z-10 pointer-events-none" />
-          <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-[#FFF1F5] to-transparent z-10 pointer-events-none" />
+          {/* Left arrow */}
+          <button
+            type="button"
+            onClick={() => scroll(-1)}
+            aria-label="Scroll left"
+            className="absolute left-0 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full bg-white border border-primary-pink/30 shadow-sm flex items-center justify-center text-primary-pink hover:bg-light-pink-1 hover:border-primary-pink transition-all duration-200"
+          >
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+              <path d="M15 18l-6-6 6-6" />
+            </svg>
+          </button>
 
-          {/* Scrolling Track */}
-          <div className="flex animate-scroll">
-            {/* First set */}
-            {insurers.map((insurer, idx) => (
-              <InsurerCard key={`first-${idx}`} insurer={insurer} />
-            ))}
-            {/* Duplicate set for seamless loop */}
-            {insurers.map((insurer, idx) => (
-              <InsurerCard key={`second-${idx}`} insurer={insurer} />
-            ))}
+          {/* Right arrow */}
+          <button
+            type="button"
+            onClick={() => scroll(1)}
+            aria-label="Scroll right"
+            className="absolute right-0 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full bg-white border border-primary-pink/30 shadow-sm flex items-center justify-center text-primary-pink hover:bg-light-pink-1 hover:border-primary-pink transition-all duration-200"
+          >
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+              <path d="M9 18l6-6-6-6" />
+            </svg>
+          </button>
+
+          {/* Overflow window */}
+          <div className="overflow-hidden mx-10">
+            {/* Gradient overlays */}
+            <div className="absolute left-10 top-0 bottom-0 w-16 bg-gradient-to-r from-[#FFF1F5] to-transparent z-10 pointer-events-none" />
+            <div className="absolute right-10 top-0 bottom-0 w-16 bg-gradient-to-l from-[#FFF1F5] to-transparent z-10 pointer-events-none" />
+
+            {/* Track — tripled so loop never shows a gap */}
+            <div ref={trackRef} className="flex will-change-transform">
+              {[...insurers, ...insurers, ...insurers].map((insurer, idx) => (
+                <InsurerCard key={idx} insurer={insurer} />
+              ))}
+            </div>
           </div>
         </div>
       </div>

@@ -170,8 +170,8 @@ const Navbar = () => {
 
           {/* ── Desktop nav ── */}
           <div className="hidden lg:flex items-center gap-1" role="menubar">
-            {/* About dropdown */}
-            <DesktopDropdown label="About" isActive={isHomePage}>
+            {/* Home dropdown */}
+            <DesktopDropdown label="Home" isActive={isHomePage}>
               {aboutItems.map((item) => (
                 <HashLink
                   key={item.to}
@@ -319,13 +319,13 @@ const Navbar = () => {
         }`}
       >
         <div className="border-t border-gray-100 px-4 py-3 space-y-1 overflow-y-auto max-h-[80vh]">
-          {/* About accordion */}
+          {/* Home accordion */}
           <button
             onClick={() => setMobileAboutOpen(!mobileAboutOpen)}
             aria-expanded={mobileAboutOpen}
             className="w-full flex items-center justify-between px-3 py-2.5 text-sm font-medium text-gray-800 hover:bg-light-pink-1 rounded-lg transition-colors"
           >
-            About
+            Home
             <FiChevronDown
               className={`w-4 h-4 transition-transform duration-200 ${mobileAboutOpen ? "rotate-180" : ""}`}
             />
