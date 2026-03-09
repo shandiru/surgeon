@@ -1,186 +1,30 @@
 import React, { useState, useMemo } from "react";
 import { Link } from "react-router-dom";
-import {
-  Stethoscope,
-  Activity,
-  AlertCircle,
-  Shield,
-  ShieldCheck,
-  Eye,
-  ScanSearch,
-  Monitor,
-  Zap,
-  ClipboardCheck,
-  HeartPulse,
-  Layers,
-  Droplets,
-  Calendar,
-  Circle,
-  Thermometer,
-  Droplet,
-  Clock,
-  AlertTriangle,
-  ArrowRight,
-  Search,
-  BookOpen,
-} from "lucide-react";
+import { ArrowRight, Search, BookOpen } from "lucide-react";
 
 const GUIDES = [
   // Cancer
-  {
-    slug: "cervical-cancer",
-    title: "Understanding Cervical Cancer",
-    subtitle: "What it is, symptoms, diagnosis & treatment",
-    sections: 8,
-    category: "Cancer",
-    Icon: Stethoscope,
-  },
-  {
-    slug: "endometrial-cancer",
-    title: "Understanding Endometrial Cancer",
-    subtitle: "What it is, symptoms, diagnosis & treatment",
-    sections: 6,
-    category: "Cancer",
-    Icon: Activity,
-  },
-  {
-    slug: "ovarian-cancer",
-    title: "Understanding Ovarian Cancer",
-    subtitle: "What it is, symptoms, diagnosis & treatment",
-    sections: 8,
-    category: "Cancer",
-    Icon: AlertCircle,
-  },
-  {
-    slug: "vaginal-cancer",
-    title: "Understanding Vaginal Cancer",
-    subtitle: "What it is, symptoms, diagnosis & treatment",
-    sections: 8,
-    category: "Cancer",
-    Icon: Shield,
-  },
-  {
-    slug: "vulvar-cancer",
-    title: "Understanding Vulvar Cancer",
-    subtitle: "What it is, symptoms, diagnosis & treatment",
-    sections: 8,
-    category: "Cancer",
-    Icon: ShieldCheck,
-  },
+  { slug: "cervical-cancer", title: "Understanding Cervical Cancer", subtitle: "What it is, symptoms, diagnosis & treatment", sections: 8, category: "Cancer" },
+  { slug: "endometrial-cancer", title: "Understanding Endometrial Cancer", subtitle: "What it is, symptoms, diagnosis & treatment", sections: 6, category: "Cancer" },
+  { slug: "ovarian-cancer", title: "Understanding Ovarian Cancer", subtitle: "What it is, symptoms, diagnosis & treatment", sections: 8, category: "Cancer" },
+  { slug: "vaginal-cancer", title: "Understanding Vaginal Cancer", subtitle: "What it is, symptoms, diagnosis & treatment", sections: 8, category: "Cancer" },
+  { slug: "vulvar-cancer", title: "Understanding Vulvar Cancer", subtitle: "What it is, symptoms, diagnosis & treatment", sections: 8, category: "Cancer" },
   // Procedures
-  {
-    slug: "colposcopy",
-    title: "Understanding Colposcopy",
-    subtitle: "What it is, why it's done & what to expect",
-    sections: 6,
-    category: "Procedures",
-    Icon: Eye,
-  },
-  {
-    slug: "hysteroscopy",
-    title: "Understanding Hysteroscopy",
-    subtitle: "What it is, why it's done & what to expect",
-    sections: 6,
-    category: "Procedures",
-    Icon: ScanSearch,
-  },
-  {
-    slug: "ultrasound",
-    title: "Understanding Gynaecological Ultrasound",
-    subtitle: "What it is, why it's done & what to expect",
-    sections: 5,
-    category: "Procedures",
-    Icon: Monitor,
-  },
-  {
-    slug: "robotic-surgery",
-    title: "Understanding Robotic Surgery",
-    subtitle: "What it is, why it's done & what to expect",
-    sections: 6,
-    category: "Procedures",
-    Icon: Zap,
-  },
-  {
-    slug: "cervical-screening",
-    title: "Understanding Cervical Screening",
-    subtitle: "What it is, why it's done & what to expect",
-    sections: 7,
-    category: "Procedures",
-    Icon: ClipboardCheck,
-  },
+  { slug: "colposcopy", title: "Understanding Colposcopy", subtitle: "What it is, why it's done & what to expect", sections: 6, category: "Procedures" },
+  { slug: "hysteroscopy", title: "Understanding Hysteroscopy", subtitle: "What it is, why it's done & what to expect", sections: 6, category: "Procedures" },
+  { slug: "ultrasound", title: "Understanding Gynaecological Ultrasound", subtitle: "What it is, why it's done & what to expect", sections: 5, category: "Procedures" },
+  { slug: "robotic-surgery", title: "Understanding Robotic Surgery", subtitle: "What it is, why it's done & what to expect", sections: 6, category: "Procedures" },
+  { slug: "cervical-screening", title: "Understanding Cervical Screening", subtitle: "What it is, why it's done & what to expect", sections: 7, category: "Procedures" },
   // Conditions
-  {
-    slug: "endometriosis",
-    title: "Understanding Endometriosis",
-    subtitle: "Causes, symptoms, diagnosis & treatment options",
-    sections: 6,
-    category: "Conditions",
-    Icon: HeartPulse,
-  },
-  {
-    slug: "fibroids",
-    title: "Understanding Fibroids",
-    subtitle: "Causes, symptoms, diagnosis & treatment options",
-    sections: 8,
-    category: "Conditions",
-    Icon: Layers,
-  },
-  {
-    slug: "irregular-bleeding",
-    title: "Understanding Irregular Bleeding",
-    subtitle: "Causes, symptoms, diagnosis & treatment options",
-    sections: 7,
-    category: "Conditions",
-    Icon: Droplets,
-  },
-  {
-    slug: "menstrual-disorders",
-    title: "Understanding Menstrual Disorders",
-    subtitle: "Causes, symptoms, diagnosis & treatment options",
-    sections: 8,
-    category: "Conditions",
-    Icon: Calendar,
-  },
-  {
-    slug: "ovarian-cysts",
-    title: "Understanding Ovarian Cysts",
-    subtitle: "What they are, how they're diagnosed & treated",
-    sections: 8,
-    category: "Conditions",
-    Icon: Circle,
-  },
-  {
-    slug: "pelvic-pain",
-    title: "Understanding Pelvic Pain",
-    subtitle: "Causes, symptoms, diagnosis & treatment options",
-    sections: 8,
-    category: "Conditions",
-    Icon: Thermometer,
-  },
-  {
-    slug: "postcoital-bleeding",
-    title: "Understanding Postcoital Bleeding",
-    subtitle: "Causes, symptoms, diagnosis & treatment options",
-    sections: 6,
-    category: "Conditions",
-    Icon: Droplet,
-  },
-  {
-    slug: "postmenopausal-bleeding",
-    title: "Understanding Postmenopausal Bleeding",
-    subtitle: "Causes, symptoms, diagnosis & treatment options",
-    sections: 7,
-    category: "Conditions",
-    Icon: Clock,
-  },
-  {
-    slug: "vaginal-lumps",
-    title: "Understanding Vaginal Lumps",
-    subtitle: "Causes, symptoms, diagnosis & treatment options",
-    sections: 8,
-    category: "Conditions",
-    Icon: AlertTriangle,
-  },
+  { slug: "endometriosis", title: "Understanding Endometriosis", subtitle: "Causes, symptoms, diagnosis & treatment options", sections: 6, category: "Conditions" },
+  { slug: "fibroids", title: "Understanding Fibroids", subtitle: "Causes, symptoms, diagnosis & treatment options", sections: 8, category: "Conditions" },
+  { slug: "irregular-bleeding", title: "Understanding Irregular Bleeding", subtitle: "Causes, symptoms, diagnosis & treatment options", sections: 7, category: "Conditions" },
+  { slug: "menstrual-disorders", title: "Understanding Menstrual Disorders", subtitle: "Causes, symptoms, diagnosis & treatment options", sections: 8, category: "Conditions" },
+  { slug: "ovarian-cysts", title: "Understanding Ovarian Cysts", subtitle: "What they are, how they're diagnosed & treated", sections: 8, category: "Conditions" },
+  { slug: "pelvic-pain", title: "Understanding Pelvic Pain", subtitle: "Causes, symptoms, diagnosis & treatment options", sections: 8, category: "Conditions" },
+  { slug: "postcoital-bleeding", title: "Understanding Postcoital Bleeding", subtitle: "Causes, symptoms, diagnosis & treatment options", sections: 6, category: "Conditions" },
+  { slug: "postmenopausal-bleeding", title: "Understanding Postmenopausal Bleeding", subtitle: "Causes, symptoms, diagnosis & treatment options", sections: 7, category: "Conditions" },
+  { slug: "vaginal-lumps", title: "Understanding Vaginal Lumps", subtitle: "Causes, symptoms, diagnosis & treatment options", sections: 8, category: "Conditions" },
 ];
 
 const CATEGORIES = ["All", "Cancer", "Procedures", "Conditions"];
@@ -192,7 +36,7 @@ const CATEGORY_META = {
 };
 
 function GuideCard({ guide }) {
-  const { Icon, slug, title, subtitle, sections, category } = guide;
+  const { slug, title, subtitle, sections, category } = guide;
   const meta = CATEGORY_META[category];
 
   return (
@@ -204,10 +48,14 @@ function GuideCard({ guide }) {
       <div className="h-1 bg-primary-pink w-full" />
 
       <div className="p-6 flex flex-col flex-1">
-        {/* Icon + category badge */}
+        {/* Logo + category badge */}
         <div className="flex items-start justify-between mb-4">
-          <div className={`${meta.iconBg} p-3 rounded-xl group-hover:scale-110 transition-transform duration-300`}>
-            <Icon size={22} className={meta.iconColor} />
+          <div className={`${meta.iconBg} p-2 rounded-xl group-hover:scale-110 transition-transform duration-300`}>
+            <img
+              src="/logo.png"
+              alt="Mr Ketankumar Gajjar"
+              className="w-10 h-10 object-contain"
+            />
           </div>
           <span className={`${meta.badge} text-xs font-semibold px-3 py-1 rounded-full`}>
             {category}
