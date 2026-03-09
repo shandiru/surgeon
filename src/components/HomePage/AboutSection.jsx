@@ -42,9 +42,27 @@ const TOTAL = CARDS.length;
 const THRESHOLD = 65;
 
 const RANK_STYLE = [
-  { zIndex: 30, rotate: "0deg", translateY: "0px",  translateX: "0px",  scale: 1    },
-  { zIndex: 20, rotate: "4deg", translateY: "14px", translateX: "10px", scale: 0.97 },
-  { zIndex: 10, rotate: "8deg", translateY: "28px", translateX: "20px", scale: 0.94 },
+  {
+    zIndex: 30,
+    rotate: "0deg",
+    translateY: "0px",
+    translateX: "0px",
+    scale: 1,
+  },
+  {
+    zIndex: 20,
+    rotate: "4deg",
+    translateY: "14px",
+    translateX: "10px",
+    scale: 0.97,
+  },
+  {
+    zIndex: 10,
+    rotate: "8deg",
+    translateY: "28px",
+    translateX: "20px",
+    scale: 0.94,
+  },
 ];
 
 export default function AboutSectionView() {
@@ -55,23 +73,16 @@ export default function AboutSectionView() {
   const [suppressCardIdx, setSuppressCardIdx] = useState(null);
 
   // All mutable values accessed in event handlers are stored as refs
-  const stackRef       = useRef([0, 1, 2]);
-  const cardStackRef   = useRef(null);
-  const exitActiveRef  = useRef(false);
-  const shownCountRef  = useRef(1);
-  const accumRef       = useRef(0);
-  const lastDirRef     = useRef(0);
+  const stackRef = useRef([0, 1, 2]);
+  const cardStackRef = useRef(null);
+  const exitActiveRef = useRef(false);
+  const shownCountRef = useRef(1);
+  const accumRef = useRef(0);
+  const lastDirRef = useRef(0);
   const touchStartYRef = useRef(0);
 
   useEffect(() => {
     const isMobile = () => window.innerWidth < 640;
-
-    const isInFocus = () => {
-      if (!cardStackRef.current) return false;
-      const rect = cardStackRef.current.getBoundingClientRect();
-      const mid = window.innerHeight / 2;
-      return rect.top < mid && rect.bottom > mid;
-    };
 
     // Stable helper: updates state AND the mirror ref atomically
     const syncedSetStack = (updater) => {
@@ -120,13 +131,15 @@ export default function AboutSectionView() {
           const last = prev[prev.length - 1];
           return [last, ...prev.slice(0, -1)];
         });
-        setTimeout(() => { exitActiveRef.current = false; }, 480);
+        setTimeout(() => {
+          exitActiveRef.current = false;
+        }, 480);
       }
     };
 
     // ── Wheel handler ───────────────────────────────────────────────────────
     const handleWheel = (e) => {
-      if (!isMobile() || !isInFocus()) return;
+      if (!isMobile()) return;
       const dir = e.deltaY > 0 ? 1 : -1;
 
       if (dir === 1) {
@@ -136,19 +149,23 @@ export default function AboutSectionView() {
       }
 
       e.preventDefault();
-      if (dir !== lastDirRef.current) { accumRef.current = 0; lastDirRef.current = dir; }
+      if (dir !== lastDirRef.current) {
+        accumRef.current = 0;
+        lastDirRef.current = dir;
+      }
       accumRef.current += Math.abs(e.deltaY);
       if (accumRef.current >= THRESHOLD) cycle(dir);
     };
 
     // ── Touch handlers ──────────────────────────────────────────────────────
     const handleTouchStart = (e) => {
+      if (!isMobile()) return;
       touchStartYRef.current = e.touches[0].clientY;
       accumRef.current = 0;
     };
 
     const handleTouchMove = (e) => {
-      if (!isMobile() || !isInFocus()) return;
+      if (!isMobile()) return;
       const delta = touchStartYRef.current - e.touches[0].clientY;
       touchStartYRef.current = e.touches[0].clientY;
       const dir = delta > 0 ? 1 : -1;
@@ -160,19 +177,44 @@ export default function AboutSectionView() {
       }
 
       e.preventDefault();
-      if (dir !== lastDirRef.current) { accumRef.current = 0; lastDirRef.current = dir; }
+      if (dir !== lastDirRef.current) {
+        accumRef.current = 0;
+        lastDirRef.current = dir;
+      }
       accumRef.current += Math.abs(delta);
       if (accumRef.current >= THRESHOLD) cycle(dir);
     };
 
-    window.addEventListener("wheel", handleWheel, { passive: false });
-    window.addEventListener("touchstart", handleTouchStart, { passive: true });
-    window.addEventListener("touchmove", handleTouchMove, { passive: false });
-    return () => {
-      window.removeEventListener("wheel", handleWheel);
-      window.removeEventListener("touchstart", handleTouchStart);
-      window.removeEventListener("touchmove", handleTouchMove);
+    // Attach listeners directly to the card container for reliable, smooth interaction
+    const attachListeners = () => {
+      if (!cardStackRef.current) {
+        setTimeout(attachListeners, 50); // retry if not ready yet
+        return;
+      }
+      cardStackRef.current.addEventListener("wheel", handleWheel, {
+        passive: false,
+      });
+      cardStackRef.current.addEventListener("touchstart", handleTouchStart, {
+        passive: true,
+      });
+      cardStackRef.current.addEventListener("touchmove", handleTouchMove, {
+        passive: false,
+      });
     };
+
+    const detachListeners = () => {
+      if (cardStackRef.current) {
+        cardStackRef.current.removeEventListener("wheel", handleWheel);
+        cardStackRef.current.removeEventListener(
+          "touchstart",
+          handleTouchStart,
+        );
+        cardStackRef.current.removeEventListener("touchmove", handleTouchMove);
+      }
+    };
+
+    attachListeners();
+    return () => detachListeners();
   }, []); // empty — all mutable values accessed via stable refs / stable setters
 
   return (
@@ -180,12 +222,20 @@ export default function AboutSectionView() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-10 lg:mb-16">
-          <h2 className="text-section text-primary-pink mb-4" data-aos="fade-up">
+          <h2
+            className="text-section text-primary-pink mb-4"
+            data-aos="fade-up"
+          >
             About Mr Ketankumar Gajjar
           </h2>
-          <p className="text-body-large text-black/90 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
-            A leading consultant in gynaecological oncology, dedicated to providing exceptional care
-            and advancing women's health through clinical excellence and research.
+          <p
+            className="text-body-large text-black/90 max-w-3xl mx-auto"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            A leading consultant in gynaecological oncology, dedicated to
+            providing exceptional care and advancing women's health through
+            clinical excellence and research.
           </p>
         </div>
 
@@ -198,39 +248,59 @@ export default function AboutSectionView() {
           >
             {stack.map((cardIdx, rank) => {
               const s = RANK_STYLE[rank];
-              const isExiting  = cardIdx === exitingCardIdx;
+              const isExiting = cardIdx === exitingCardIdx;
               const noTransition = cardIdx === suppressCardIdx;
 
               // Compute per-card style
-              let transform  = `translateY(${s.translateY}) translateX(${s.translateX}) rotate(${s.rotate}) scale(${s.scale})`;
-              let opacity    = 1;
-              let transition = "transform 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.35s ease-out";
-              let zIndex     = s.zIndex;
+              let transform = `translateY(${s.translateY}) translateX(${s.translateX}) rotate(${s.rotate}) scale(${s.scale})`;
+              let opacity = 1;
+              let transition =
+                "transform 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.35s ease-out";
+              let zIndex = s.zIndex;
 
               if (noTransition) {
                 transition = "none";
               } else if (isExiting) {
                 // Fly up + shrink + fade
-                transform  = "translateY(-36px) translateX(6px) scale(0.84)";
-                opacity    = 0;
+                transform = "translateY(-36px) translateX(6px) scale(0.84)";
+                opacity = 0;
                 transition = "transform 0.24s ease-in, opacity 0.2s ease-in";
-                zIndex     = 40; // stay on top while exiting
+                zIndex = 40; // stay on top while exiting
               }
 
               return (
                 <div
                   key={cardIdx}
-                  style={{ position: "absolute", inset: 0, zIndex, transform, opacity, transition, transformOrigin: "bottom left" }}
+                  style={{
+                    position: "absolute",
+                    inset: 0,
+                    zIndex,
+                    transform,
+                    opacity,
+                    transition,
+                    transformOrigin: "bottom left",
+                  }}
                   className="bg-white rounded-2xl border border-primary-pink shadow-md p-6 flex flex-col items-center text-center gap-4 select-none"
                 >
                   <div className="bg-primary-pink/10 w-14 h-14 rounded-full flex items-center justify-center shrink-0">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 text-primary-pink" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-7 w-7 text-primary-pink"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                    >
                       {CARDS[cardIdx].icon}
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-card-title text-[#1F2937] mb-2">{CARDS[cardIdx].title}</h3>
-                    <p className="text-body text-black/80 text-sm leading-relaxed">{CARDS[cardIdx].desc}</p>
+                    <h3 className="text-card-title text-[#1F2937] mb-2">
+                      {CARDS[cardIdx].title}
+                    </h3>
+                    <p className="text-body text-black/80 text-sm leading-relaxed">
+                      {CARDS[cardIdx].desc}
+                    </p>
                   </div>
                 </div>
               );
@@ -243,13 +313,13 @@ export default function AboutSectionView() {
               <div
                 key={i}
                 className={`rounded-full transition-all duration-300 ${
-                  stack[0] === i ? "w-5 h-2.5 bg-primary-pink" : "w-2.5 h-2.5 bg-primary-pink/30"
+                  stack[0] === i
+                    ? "w-5 h-2.5 bg-primary-pink"
+                    : "w-2.5 h-2.5 bg-primary-pink/30"
                 }`}
               />
             ))}
           </div>
-
-          <p className="text-center text-xs text-gray-400 mt-3 tracking-wide">Scroll to explore</p>
         </div>
 
         {/* ── Desktop grid ── */}
@@ -262,11 +332,20 @@ export default function AboutSectionView() {
               data-aos-delay={i * 200}
             >
               <div className="bg-primary-pink/10 group-hover:bg-primary-pink/20 transition-colors duration-300 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-primary-pink" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-8 w-8 text-primary-pink"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                >
                   {card.icon}
                 </svg>
               </div>
-              <h3 className="text-card-title mb-2 text-[#1F2937]">{card.title}</h3>
+              <h3 className="text-card-title mb-2 text-[#1F2937]">
+                {card.title}
+              </h3>
               <p className="text-body text-black/90">{card.desc}</p>
             </div>
           ))}
