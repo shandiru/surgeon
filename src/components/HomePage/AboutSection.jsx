@@ -51,17 +51,17 @@ const RANK_STYLE = [
   },
   {
     zIndex: 20,
-    rotate: "4deg",
-    translateY: "14px",
-    translateX: "10px",
-    scale: 0.97,
+    rotate: "1.6deg",
+    translateY: "0px",
+    translateX: "0px",
+    scale: 0.96,
   },
   {
     zIndex: 10,
-    rotate: "8deg",
-    translateY: "28px",
-    translateX: "20px",
-    scale: 0.94,
+    rotate: "6deg",
+    translateY: "0px",
+    translateX: "0px",
+    scale: 0.92,
   },
 ];
 
@@ -244,7 +244,14 @@ export default function AboutSectionView() {
           <div
             ref={cardStackRef}
             className="relative mx-auto"
-            style={{ height: "280px", maxWidth: "340px" }}
+            style={{
+              height: "360px",
+              maxWidth: "420px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              overflow: "visible",
+            }}
           >
             {stack.map((cardIdx, rank) => {
               const s = RANK_STYLE[rank];
@@ -273,12 +280,14 @@ export default function AboutSectionView() {
                   key={cardIdx}
                   style={{
                     position: "absolute",
-                    inset: 0,
+                    width: "100%",
+                    maxWidth: "420px",
                     zIndex,
                     transform,
                     opacity,
                     transition,
-                    transformOrigin: "bottom left",
+                    transformOrigin: "center",
+                    willChange: "transform, opacity",
                   }}
                   className="bg-white rounded-2xl border border-primary-pink shadow-md p-6 flex flex-col items-center text-center gap-4 select-none"
                 >
