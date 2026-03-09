@@ -2,8 +2,7 @@
   "permissions": {
     "allow": [
       "Bash(tree:*)",
-      "Bash(ls:*)",
-      "Bash(npm install jspdf html2canvas)"
+      "Bash(ls:*)"
     ]
   }
 }
