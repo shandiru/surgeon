@@ -191,15 +191,24 @@ export default function AboutSectionView() {
         setTimeout(attachListeners, 50); // retry if not ready yet
         return;
       }
-      cardStackRef.current.addEventListener("wheel", handleWheel, { passive: false });
-      cardStackRef.current.addEventListener("touchstart", handleTouchStart, { passive: true });
-      cardStackRef.current.addEventListener("touchmove", handleTouchMove, { passive: false });
+      cardStackRef.current.addEventListener("wheel", handleWheel, {
+        passive: false,
+      });
+      cardStackRef.current.addEventListener("touchstart", handleTouchStart, {
+        passive: true,
+      });
+      cardStackRef.current.addEventListener("touchmove", handleTouchMove, {
+        passive: false,
+      });
     };
 
     const detachListeners = () => {
       if (cardStackRef.current) {
         cardStackRef.current.removeEventListener("wheel", handleWheel);
-        cardStackRef.current.removeEventListener("touchstart", handleTouchStart);
+        cardStackRef.current.removeEventListener(
+          "touchstart",
+          handleTouchStart,
+        );
         cardStackRef.current.removeEventListener("touchmove", handleTouchMove);
       }
     };
