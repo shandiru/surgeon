@@ -164,7 +164,7 @@ const Navbar = () => {
             <img
               src="/logo.png"
               alt="Mr Ketankumar Gajjar — Gynaecological Oncologist"
-              className="h-auto w-auto md:h-28 lg:h-32 object-contain"
+              className="h-[52px] w-auto md:h-28 lg:h-32 object-contain"
             />
           </Link>
 
