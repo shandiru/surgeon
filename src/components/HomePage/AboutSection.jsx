@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 
 const CARDS = [
   {
+    rotation: 0,
     title: "Clinical Excellence",
     desc: "Providing world-class care with the latest evidence-based treatments and techniques.",
     icon: (
@@ -15,6 +16,7 @@ const CARDS = [
     ),
   },
   {
+    rotation: 1.6,
     title: "Compassionate Care",
     desc: "Supporting patients and families through every step of their healthcare journey.",
     icon: (
@@ -27,6 +29,7 @@ const CARDS = [
     ),
   },
   {
+    rotation: 6,
     title: "Research & Innovation",
     desc: "Contributing to medical advancement through research and professional leadership.",
     icon: (
@@ -39,52 +42,28 @@ const CARDS = [
 ];
 
 const TOTAL = CARDS.length;
-const THRESHOLD = 65;
+const THRESHOLD = 55;
 
+// Stacked deck positions: front card flat, back cards rotated
 const RANK_STYLE = [
-  {
-    zIndex: 30,
-    rotate: "0deg",
-    translateY: "0px",
-    translateX: "0px",
-    scale: 1,
-  },
-  {
-    zIndex: 20,
-    rotate: "1.6deg",
-    translateY: "0px",
-    translateX: "0px",
-    scale: 0.96,
-  },
-  {
-    zIndex: 10,
-    rotate: "6deg",
-    translateY: "0px",
-    translateX: "0px",
-    scale: 0.92,
-  },
+  { zIndex: 30, rotate: "0deg",   scale: 1    },
+  { zIndex: 20, rotate: "1.6deg", scale: 0.97 },
+  { zIndex: 10, rotate: "6deg",   scale: 0.94 },
 ];
 
 export default function AboutSectionView() {
   const [stack, setStack] = useState([0, 1, 2]);
-  // exitingCardIdx: the card currently flying off screen (forward cycle)
   const [exitingCardIdx, setExitingCardIdx] = useState(null);
-  // suppressCardIdx: the card that should teleport to its new position with no transition
   const [suppressCardIdx, setSuppressCardIdx] = useState(null);
-
-  // All mutable values accessed in event handlers are stored as refs
-  const stackRef = useRef([0, 1, 2]);
-  const cardStackRef = useRef(null);
-  const exitActiveRef = useRef(false);
-  const shownCountRef = useRef(1);
-  const accumRef = useRef(0);
-  const lastDirRef = useRef(0);
+  const stackRef       = useRef([0, 1, 2]);
+  const cardStackRef   = useRef(null);
+  const exitActiveRef  = useRef(false);
+  const shownCountRef  = useRef(1);
+  const accumRef       = useRef(0);
+  const lastDirRef     = useRef(0);
   const touchStartYRef = useRef(0);
 
   useEffect(() => {
-    const isMobile = () => window.innerWidth < 640;
-
-    // Stable helper: updates state AND the mirror ref atomically
     const syncedSetStack = (updater) => {
       setStack((prev) => {
         const next = updater(prev);
@@ -99,133 +78,193 @@ export default function AboutSectionView() {
       accumRef.current = 0;
 
       if (dir === 1) {
-        // ── Forward: exit animation first, then commit ──────────────────────
+        // Fly the front card upward and fade it out, then commit
         const frontIdx = stackRef.current[0];
-        setExitingCardIdx(frontIdx); // triggers exit CSS (fly up + fade)
+        setExitingCardIdx(frontIdx);
 
         setTimeout(() => {
           shownCountRef.current = Math.min(shownCountRef.current + 1, TOTAL);
-
-          // Commit stack: front card moves to back
           syncedSetStack((prev) => {
             const [front, ...rest] = prev;
             return [...rest, front];
           });
-
-          // Teleport the just-exited card to its new back-position (no transition)
           setSuppressCardIdx(frontIdx);
           setExitingCardIdx(null);
-
-          // Two rAFs = next paint: re-enable transition on that card
           requestAnimationFrame(() => {
             requestAnimationFrame(() => {
               setSuppressCardIdx(null);
               exitActiveRef.current = false;
             });
           });
-        }, 240);
+        }, 320);
       } else {
-        // ── Backward: spring the back card to front, no exit needed ─────────
+        // Spring the back card to front
         shownCountRef.current = Math.max(shownCountRef.current - 1, 1);
         syncedSetStack((prev) => {
           const last = prev[prev.length - 1];
           return [last, ...prev.slice(0, -1)];
         });
-        setTimeout(() => {
-          exitActiveRef.current = false;
-        }, 480);
+        setTimeout(() => { exitActiveRef.current = false; }, 480);
       }
     };
 
-    // ── Wheel handler ───────────────────────────────────────────────────────
     const handleWheel = (e) => {
-      if (!isMobile()) return;
+      if (window.innerWidth >= 640) return;
       const dir = e.deltaY > 0 ? 1 : -1;
-
-      if (dir === 1) {
-        if (shownCountRef.current >= TOTAL) return; // all seen → let page scroll
-      } else {
-        if (stackRef.current[0] === 0) return; // already at first → let page scroll up
-      }
-
+      if (dir === 1 && shownCountRef.current >= TOTAL) return;
+      if (dir === -1 && stackRef.current[0] === 0) return;
       e.preventDefault();
-      if (dir !== lastDirRef.current) {
-        accumRef.current = 0;
-        lastDirRef.current = dir;
-      }
+      if (dir !== lastDirRef.current) { accumRef.current = 0; lastDirRef.current = dir; }
       accumRef.current += Math.abs(e.deltaY);
       if (accumRef.current >= THRESHOLD) cycle(dir);
     };
 
-    // ── Touch handlers ──────────────────────────────────────────────────────
     const handleTouchStart = (e) => {
-      if (!isMobile()) return;
+      if (window.innerWidth >= 640) return;
       touchStartYRef.current = e.touches[0].clientY;
       accumRef.current = 0;
     };
 
     const handleTouchMove = (e) => {
-      if (!isMobile()) return;
+      if (window.innerWidth >= 640) return;
       const delta = touchStartYRef.current - e.touches[0].clientY;
       touchStartYRef.current = e.touches[0].clientY;
       const dir = delta > 0 ? 1 : -1;
-
-      if (dir === 1) {
-        if (shownCountRef.current >= TOTAL) return;
-      } else {
-        if (stackRef.current[0] === 0) return;
-      }
-
+      if (dir === 1 && shownCountRef.current >= TOTAL) return;
+      if (dir === -1 && stackRef.current[0] === 0) return;
       e.preventDefault();
-      if (dir !== lastDirRef.current) {
-        accumRef.current = 0;
-        lastDirRef.current = dir;
-      }
+      if (dir !== lastDirRef.current) { accumRef.current = 0; lastDirRef.current = dir; }
       accumRef.current += Math.abs(delta);
       if (accumRef.current >= THRESHOLD) cycle(dir);
     };
 
-    // Attach listeners directly to the card container for reliable, smooth interaction
-    const attachListeners = () => {
-      if (!cardStackRef.current) {
-        setTimeout(attachListeners, 50); // retry if not ready yet
-        return;
-      }
-      cardStackRef.current.addEventListener("wheel", handleWheel, {
-        passive: false,
-      });
-      cardStackRef.current.addEventListener("touchstart", handleTouchStart, {
-        passive: true,
-      });
-      cardStackRef.current.addEventListener("touchmove", handleTouchMove, {
-        passive: false,
-      });
+    const attach = () => {
+      if (!cardStackRef.current) { setTimeout(attach, 50); return; }
+      cardStackRef.current.addEventListener("wheel", handleWheel, { passive: false });
+      cardStackRef.current.addEventListener("touchstart", handleTouchStart, { passive: true });
+      cardStackRef.current.addEventListener("touchmove", handleTouchMove, { passive: false });
     };
 
-    const detachListeners = () => {
-      if (cardStackRef.current) {
-        cardStackRef.current.removeEventListener("wheel", handleWheel);
-        cardStackRef.current.removeEventListener(
-          "touchstart",
-          handleTouchStart,
-        );
-        cardStackRef.current.removeEventListener("touchmove", handleTouchMove);
+    attach();
+    const el = cardStackRef.current;
+    return () => {
+      if (el) {
+        el.removeEventListener("wheel", handleWheel);
+        el.removeEventListener("touchstart", handleTouchStart);
+        el.removeEventListener("touchmove", handleTouchMove);
       }
     };
-
-    attachListeners();
-    return () => detachListeners();
-  }, []); // empty — all mutable values accessed via stable refs / stable setters
+  }, []);
 
   return (
-    <section className="py-20 bg-white" id="about">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
+    <section className="bg-white" id="about">
+
+      {/* ── Mobile: gesture-locked card deck ── */}
+      <div className="sm:hidden py-10 px-5">
+        <div className="text-center mb-8">
+          <h2 className="text-section text-primary-pink mb-4">
+            About Mr Ketankumar Gajjar
+          </h2>
+          <p className="text-body-large text-black/90 max-w-3xl mx-auto">
+            A leading consultant in gynaecological oncology, dedicated to
+            providing exceptional care and advancing women's health through
+            clinical excellence and research.
+          </p>
+        </div>
+
+        <div
+          ref={cardStackRef}
+          style={{
+            position: "relative",
+            height: 320,
+            maxWidth: 420,
+            margin: "0 auto",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            overflow: "visible",
+          }}
+        >
+          {stack.map((cardIdx, rank) => {
+            const s = RANK_STYLE[rank];
+            const isExiting   = cardIdx === exitingCardIdx;
+            const noTransition = cardIdx === suppressCardIdx;
+
+            let transform  = `rotate(${s.rotate}) scale(${s.scale})`;
+            let opacity    = 1;
+            let transition = "transform 0.45s cubic-bezier(0.25,0.46,0.45,0.94), opacity 0.35s ease-out";
+            let zIndex     = s.zIndex;
+
+            if (noTransition) {
+              transition = "none";
+            } else if (isExiting) {
+              // Fly upward and fade — matches ServicesSection exit style
+              transform  = "translateY(-180%) rotate(0deg) scale(0.9)";
+              opacity    = 0;
+              transition = "transform 0.32s ease-in, opacity 0.28s ease-in";
+              zIndex     = 40;
+            }
+
+            return (
+              <div
+                key={cardIdx}
+                style={{
+                  position: "absolute",
+                  width: "100%",
+                  maxWidth: 420,
+                  zIndex,
+                  transform,
+                  opacity,
+                  transition,
+                  transformOrigin: "center",
+                  willChange: "transform, opacity",
+                }}
+                className="bg-white rounded-2xl border border-primary-pink shadow-md p-6 flex flex-col items-center text-center gap-4 select-none"
+              >
+                <div className="bg-primary-pink/10 w-14 h-14 rounded-full flex items-center justify-center shrink-0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-7 w-7 text-primary-pink"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  >
+                    {CARDS[cardIdx].icon}
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-card-title text-[#1F2937] mb-2">
+                    {CARDS[cardIdx].title}
+                  </h3>
+                  <p className="text-body text-black/80 text-sm leading-relaxed">
+                    {CARDS[cardIdx].desc}
+                  </p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Dot indicators */}
+        <div className="flex justify-center gap-2 mt-6">
+          {CARDS.map((_, i) => (
+            <div
+              key={i}
+              className={`rounded-full transition-all duration-300 ${
+                stack[0] === i
+                  ? "w-5 h-2.5 bg-primary-pink"
+                  : "w-2.5 h-2.5 bg-primary-pink/30"
+              }`}
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* ── Desktop: regular grid ── */}
+      <div className="hidden sm:block py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10 lg:mb-16">
-          <h2
-            className="text-section text-primary-pink mb-4"
-            data-aos="fade-up"
-          >
+          <h2 className="text-section text-primary-pink mb-4" data-aos="fade-up">
             About Mr Ketankumar Gajjar
           </h2>
           <p
@@ -239,100 +278,7 @@ export default function AboutSectionView() {
           </p>
         </div>
 
-        {/* ── Mobile stacked card deck ── */}
-        <div className="sm:hidden">
-          <div
-            ref={cardStackRef}
-            className="relative mx-auto"
-            style={{
-              height: "360px",
-              maxWidth: "420px",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              overflow: "visible",
-            }}
-          >
-            {stack.map((cardIdx, rank) => {
-              const s = RANK_STYLE[rank];
-              const isExiting = cardIdx === exitingCardIdx;
-              const noTransition = cardIdx === suppressCardIdx;
-
-              // Compute per-card style
-              let transform = `translateY(${s.translateY}) translateX(${s.translateX}) rotate(${s.rotate}) scale(${s.scale})`;
-              let opacity = 1;
-              let transition =
-                "transform 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.35s ease-out";
-              let zIndex = s.zIndex;
-
-              if (noTransition) {
-                transition = "none";
-              } else if (isExiting) {
-                // Fly up + shrink + fade
-                transform = "translateY(-36px) translateX(6px) scale(0.84)";
-                opacity = 0;
-                transition = "transform 0.24s ease-in, opacity 0.2s ease-in";
-                zIndex = 40; // stay on top while exiting
-              }
-
-              return (
-                <div
-                  key={cardIdx}
-                  style={{
-                    position: "absolute",
-                    width: "100%",
-                    maxWidth: "420px",
-                    zIndex,
-                    transform,
-                    opacity,
-                    transition,
-                    transformOrigin: "center",
-                    willChange: "transform, opacity",
-                  }}
-                  className="bg-white rounded-2xl border border-primary-pink shadow-md p-6 flex flex-col items-center text-center gap-4 select-none"
-                >
-                  <div className="bg-primary-pink/10 w-14 h-14 rounded-full flex items-center justify-center shrink-0">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-7 w-7 text-primary-pink"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                    >
-                      {CARDS[cardIdx].icon}
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="text-card-title text-[#1F2937] mb-2">
-                      {CARDS[cardIdx].title}
-                    </h3>
-                    <p className="text-body text-black/80 text-sm leading-relaxed">
-                      {CARDS[cardIdx].desc}
-                    </p>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-
-          {/* Dot indicators */}
-          <div className="flex justify-center gap-2 mt-6">
-            {CARDS.map((_, i) => (
-              <div
-                key={i}
-                className={`rounded-full transition-all duration-300 ${
-                  stack[0] === i
-                    ? "w-5 h-2.5 bg-primary-pink"
-                    : "w-2.5 h-2.5 bg-primary-pink/30"
-                }`}
-              />
-            ))}
-          </div>
-        </div>
-
-        {/* ── Desktop grid ── */}
-        <div className="hidden sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {CARDS.map((card, i) => (
             <div
               key={i}
@@ -352,9 +298,7 @@ export default function AboutSectionView() {
                   {card.icon}
                 </svg>
               </div>
-              <h3 className="text-card-title mb-2 text-[#1F2937]">
-                {card.title}
-              </h3>
+              <h3 className="text-card-title mb-2 text-[#1F2937]">{card.title}</h3>
               <p className="text-body text-black/90">{card.desc}</p>
             </div>
           ))}
