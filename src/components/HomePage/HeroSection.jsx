@@ -2,7 +2,18 @@ import React from "react";
 
 const HeroSectionView = () => {
   return (
-    <section className="relative bg-[#FDE7EB] py-16 pb-24 md:py-20 md:pb-20">
+    <section className="relative py-16 pb-24 md:py-20 md:pb-20 overflow-hidden">
+      {/* Background video */}
+      <video
+        className="absolute inset-0 w-full h-full object-cover -z-10"
+        src="/hero-banner-video.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+      />
+      {/* Overlay to keep content readable */}
+      <div className="absolute inset-0 bg-[#FDE7EB]/80 -z-10" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
 
