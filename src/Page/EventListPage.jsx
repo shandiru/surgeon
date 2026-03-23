@@ -79,20 +79,6 @@ const EventListPage = () => {
       link: "https://www.bgcs.org.uk/event/annual-scientific-meeting-liverpool-2024/",
     },
     {
-      id: 2,
-      image: "https://images.unsplash.com/photo-1519681393784-d120267933ba",
-      status: "Open",
-      eventType: "Conference",
-      rating: 5.0,
-      title: "International Oncology Conference 2024",
-      description: "Keynote Speaker",
-      talk: "Innovations in Cancer Treatment",
-      Date: "5–7 October 2024",
-      address: "New York, USA / Virtual",
-      organiser: "Global Oncology Association",
-      link: "/events/event2",
-    },
-    {
       id: 3,
       image: "https://images.unsplash.com/photo-1528605248644-14dd04022da1",
       status: "Now Closed",
@@ -119,7 +105,7 @@ const EventListPage = () => {
       Date: "24–26 June 2026",
       address: "Bristol, UK",
       organiser: "British Gynaecological Cancer Society",
-      link: "https://www.bgcs.org.uk/event/asm-bristol-2026/",
+      link: "https://bsgi.org.uk/events/bgcs-annual-scientific-meeting-2026-in-bristol/",
     },
     {
       id: 5,
@@ -148,7 +134,7 @@ const EventListPage = () => {
       Date: "5 December 2025",
       address: "London, UK",
       organiser: "UCL EGA Institute for Women's Health",
-      link: "",
+      link: "https://www.ucl.ac.uk/population-health-sciences/events/2025/dec/ega-institute-womens-health-uclh-womens-health-division-20th-annual-conference-2025",
     },
   ];
 
