@@ -55,6 +55,24 @@ export default function Footer() {
                   <path d="M18.244 2H21.5l-7.397 8.445L22 22h-7.184l-5.59-7.358L3.5 22H.25l7.89-9L2 2h7.25l5.106 6.732L18.244 2zM16.9 20h2.1L7.2 4H5.1L16.9 20z" />
                 </svg>
               </a>
+
+              {/* LinkedIn */}
+              <a
+                href="https://www.linkedin.com/in/ketankumar-gajjar-9aab4423/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white p-2 rounded-md hover:bg-pink-50 hover:shadow-[0_0_10px_rgba(255,75,139,0.5)] transition"
+                aria-label="LinkedIn"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5 text-primary-pink"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path d="M20.447 20.452H17.02v-5.569c0-1.327-.025-3.037-1.852-3.037-1.854 0-2.137 1.447-2.137 2.942v5.664H9.604V9h3.29v1.561h.046c.458-.869 1.576-1.784 3.243-1.784 3.467 0 4.106 2.281 4.106 5.247v6.428zM5.337 7.433a1.912 1.912 0 1 1 0-3.824 1.912 1.912 0 0 1 0 3.824zM6.979 20.452H3.694V9h3.285v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.226.792 24 1.771 24h20.451C23.2 24 24 23.226 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
+              </a>
             </div>
           </div>
 
