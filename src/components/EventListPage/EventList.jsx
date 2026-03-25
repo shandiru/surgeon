@@ -10,20 +10,12 @@ export default function ListingEvents({
   let closedEvents = [];
 
   if (selectedCategory === "All Events") {
-    upcomingEvents = events.filter(
-      (event) => event.isUpcoming || event.computedStatus === "Open",
-    );
-    closedEvents = events.filter(
-      (event) => !event.isUpcoming || event.computedStatus === "Now Closed",
-    );
+    upcomingEvents = events.filter((event) => event.isUpcoming);
+    closedEvents = events.filter((event) => !event.isUpcoming);
   } else if (selectedCategory === "Upcoming Events") {
-    upcomingEvents = events.filter(
-      (event) => event.isUpcoming || event.computedStatus === "Open",
-    );
+    upcomingEvents = events.filter((event) => event.isUpcoming);
   } else if (selectedCategory === "Closed Events") {
-    closedEvents = events.filter(
-      (event) => !event.isUpcoming || event.computedStatus === "Now Closed",
-    );
+    closedEvents = events.filter((event) => !event.isUpcoming);
   }
 
   const EventCard = ({ event }) => (

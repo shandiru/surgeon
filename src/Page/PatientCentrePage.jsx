@@ -397,7 +397,7 @@ function ConditionsTreatedSection() {
         "Ovarian cancer",
         "Endometrial (uterine) cancer",
         "Cervical cancer",
-        "Vulval cancer",
+        "Vulvar cancer",
       ],
     },
     {

@@ -65,7 +65,7 @@ export default function Footer() {
               {[
                 "About",
                 "Experience",
-                "Specialties",
+                "Specialities",
                 "Education",
                 "Contact",
               ].map((link, i) => (

@@ -29,7 +29,7 @@ export default function GetInTouchSection() {
     {
       title: "Spire Nottingham Hospital",
       subtitle: "Private Practice",
-      btn: "Schedule Consultation",
+      btn: "Book Consultation",
       link: "https://www.spirehealthcare.com/consultant-profiles/mr-ketan-gajjar-c6083162/",
       icon: (
         <>
@@ -102,9 +102,9 @@ export default function GetInTouchSection() {
                   {card.btn}
                 </a>
               ) : card.variant === "outline" ? (
-                <button className="inline-flex items-center justify-center rounded-md border text-button transition-all w-full px-4 py-2 bg-transparent text-primary-pink border-primary-pink hover:bg-[#FFE3EC]">
+                <div className="inline-flex items-center justify-center rounded-md border text-button w-full px-4 py-2 bg-transparent text-primary-pink/60 border-primary-pink/40 cursor-not-allowed select-none">
                   {card.btn}
-                </button>
+                </div>
               ) : (
                 <button className="inline-flex items-center justify-center rounded-md text-button transition-all w-full px-4 py-2 bg-primary-pink hover:bg-[#ff5d96] text-white">
                   {card.btn}

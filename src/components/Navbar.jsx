@@ -9,7 +9,7 @@ const aboutItems = [
   { label: "About Mr Gajjar", to: "/#about" },
   { label: "Experience", to: "/#experience" },
   { label: "Education", to: "/#education" },
-  { label: "Specialties", to: "/#specialties" },
+  { label: "Specialities", to: "/#specialties" },
   { label: "Testimonials", to: "/#testimonials" },
 ];
 

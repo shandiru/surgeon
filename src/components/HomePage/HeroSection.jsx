@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const HeroSectionView = () => {
   return (
@@ -59,8 +60,8 @@ const HeroSectionView = () => {
                 </svg>
                 Schedule Consultation
               </a>
-              <a
-                href="/treatment-guides"
+              <Link
+                to="/treatment-guides"
                 className="inline-flex items-center justify-center gap-2 text-button px-6 h-10 rounded-md border border-primary-pink text-primary-pink hover:bg-[#FFD6E1] hover:shadow-[0_0_15px_2px_rgba(255,75,139,0.4)] hover:-translate-y-0.5 transition-all"
               >
                 Learn More
@@ -68,7 +69,7 @@ const HeroSectionView = () => {
                   <path d="M5 12h14" />
                   <path d="m12 5 7 7-7 7" />
                 </svg>
-              </a>
+              </Link>
             </div>
 
             {/* ── Mobile-only image (between CTAs and icons) ── */}
