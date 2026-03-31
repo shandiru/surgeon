@@ -3,6 +3,15 @@ import { File } from "lucide-react";
 
 // ----- JSON DATA -----
 const publications = [
+  // === 2026 Publications ===
+  {
+    id: 1,
+    date: "MARCH 2026",
+    type: "ARTICLE",
+    title:
+      "Risk-Reducing Salpingectomy: An Emerging, Novel Ovarian Cancer Prevention Strategy",
+    link: "https://obgyn.onlinelibrary.wiley.com/doi/full/10.1111/1471-0528.70224",
+  },
   // === 2025 Publications ===
   {
     id: 1,
